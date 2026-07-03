@@ -1,0 +1,2508 @@
+{
+    "source": "wisest-curriculum-database.pdf",
+    "generatedAt": "2026-07-03T07:21:23+00:00",
+    "counts": {
+        "total": 249,
+        "byQualification": {
+            "GCSE": 123,
+            "ALEVEL_MATHS": 83,
+            "ALEVEL_FM": 43
+        },
+        "gcseTier": {
+            "F": 91,
+            "H": 32
+        }
+    },
+    "subtopics": [
+        {
+            "id": "gcse.number.ordering",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Ordering and comparing numbers",
+            "tier": "F",
+            "description": "Order integers, decimals and fractions; use =,≠,<,>,≤,≥."
+        },
+        {
+            "id": "gcse.number.four-operations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Four operations and place value",
+            "tier": "F",
+            "description": "Formal written methods for integers, decimals, fractions and mixed numbers; place value."
+        },
+        {
+            "id": "gcse.number.negatives",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Negative numbers",
+            "tier": "F",
+            "description": "Calculating with directed numbers across all four operations, in and out of context."
+        },
+        {
+            "id": "gcse.number.order-of-operations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Priority of operations",
+            "tier": "F",
+            "description": "Brackets, powers, roots, reciprocals; inverse operations and cancellation."
+        },
+        {
+            "id": "gcse.number.factors-multiples",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Factors, multiples and primes",
+            "tier": "F",
+            "description": "Primes, factors, multiples, common factors/multiples, HCF and LCM by listing."
+        },
+        {
+            "id": "gcse.number.prime-factorisation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Prime factorisation",
+            "tier": "F",
+            "description": "Product of primes in index form; HCF and LCM via factorisation and Venn methods."
+        },
+        {
+            "id": "gcse.number.systematic-listing",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Systematic listing",
+            "tier": "F",
+            "description": "Enumerating outcomes and arrangements without omission or repetition."
+        },
+        {
+            "id": "gcse.number.product-rule",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Product rule for counting",
+            "tier": "H",
+            "description": "m ways then n ways gives m × n; applied counting problems."
+        },
+        {
+            "id": "gcse.number.powers-roots",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Powers and roots",
+            "tier": "F",
+            "description": "Integer powers, square/cube/higher roots; recognising powers of 2,3,4,5."
+        },
+        {
+            "id": "gcse.number.integer-indices",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Integer indices",
+            "tier": "F",
+            "description": "Index laws for products, quotients, powers of powers; zero and negative indices."
+        },
+        {
+            "id": "gcse.number.fractional-indices",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Fractional indices",
+            "tier": "H",
+            "description": "Evaluating and manipulating unit and non-unit fractional powers."
+        },
+        {
+            "id": "gcse.number.estimate-powers",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Estimating powers and roots",
+            "tier": "H",
+            "description": "Estimating powers and roots by bracketing between known values."
+        },
+        {
+            "id": "gcse.number.exact-calculation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Exact calculation",
+            "tier": "F",
+            "description": "Calculating exactly with fractions and multiples of π."
+        },
+        {
+            "id": "gcse.number.surds",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Surds",
+            "tier": "H",
+            "description": "Simplifying surds, expanding surd brackets, rationalising denominators."
+        },
+        {
+            "id": "gcse.number.standard-form",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Structure and calculation",
+            "name": "Standard form",
+            "tier": "F",
+            "description": "Convert to/from A × 10n, 1 ≤ A < 10; four operations in standard form."
+        },
+        {
+            "id": "gcse.number.fraction-arithmetic",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Fractions, decimals and percentages",
+            "name": "Fraction arithmetic",
+            "tier": "F",
+            "description": "Four operations on proper/improper fractions and mixed numbers."
+        },
+        {
+            "id": "gcse.number.fdp-equivalence",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Fractions, decimals and percentages",
+            "name": "FDP equivalence",
+            "tier": "F",
+            "description": "Converting between decimals, fractions and percentages both ways."
+        },
+        {
+            "id": "gcse.number.recurring-decimalscontinued",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Fractions, decimals and percentages",
+            "name": "Recurring decimals",
+            "tier": "H",
+            "description": "Proving recurring decimals equal exact fractions; converting both ways."
+        },
+        {
+            "id": "gcse.number.fractions-of-amounts",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Fractions, decimals and percentages",
+            "name": "Fractions of amounts",
+            "tier": "F",
+            "description": "Fractions as operators; fractions within ratio problems."
+        },
+        {
+            "id": "gcse.number.percentage-operators",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Fractions, decimals and percentages",
+            "name": "Percentages as operators",
+            "tier": "F",
+            "description": "Percentage of an amount by multiplier, with and without a calculator."
+        },
+        {
+            "id": "gcse.number.units",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Measures and accuracy",
+            "name": "Standard and compound units",
+            "tier": "F",
+            "description": "Mass, length, time, money; converting units and compound measures."
+        },
+        {
+            "id": "gcse.number.estimation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Measures and accuracy",
+            "name": "Estimation and checking",
+            "tier": "F",
+            "description": "Approximating to 1 s.f.; checking answers from technology."
+        },
+        {
+            "id": "gcse.number.rounding",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Measures and accuracy",
+            "name": "Rounding",
+            "tier": "F",
+            "description": "Rounding to decimal places and significant figures; appropriate accuracy."
+        },
+        {
+            "id": "gcse.number.error-intervals",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Measures and accuracy",
+            "name": "Error intervals",
+            "tier": "F",
+            "description": "Inequality notation for the interval after rounding or truncation."
+        },
+        {
+            "id": "gcse.number.bounds",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "number",
+            "topic": "Measures and accuracy",
+            "name": "Upper and lower bounds",
+            "tier": "H",
+            "description": "Bounds of compound calculations; guaranteeing max/min values."
+        },
+        {
+            "id": "gcse.algebra.notation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Algebraic notation",
+            "tier": "F",
+            "description": "Conventions ab, 3y, a2, a; interpreting expressions. b"
+        },
+        {
+            "id": "gcse.algebra.substitution",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Substitution",
+            "tier": "F",
+            "description": "Substituting values into expressions and scientific formulae."
+        },
+        {
+            "id": "gcse.algebra.vocabulary",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Algebraic vocabulary",
+            "tier": "F",
+            "description": "Distinguishing expressions, equations, formulae, identities, terms, factors."
+        },
+        {
+            "id": "gcse.algebra.simplifying",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Simplifying and single brackets",
+            "tier": "F",
+            "description": "Collecting like terms; expanding a single bracket; common factors."
+        },
+        {
+            "id": "gcse.algebra.expanding-binomials",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Expanding binomials",
+            "tier": "F",
+            "description": "Products of two binomials; Higher extends to more than two."
+        },
+        {
+            "id": "gcse.algebra.factorising-quadratics",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Factorising quadratics",
+            "tier": "F",
+            "description": "Factorising x2 + bx + c and the difference of two squares."
+        },
+        {
+            "id": "gcse.algebra.factorising-ax2",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Factorising ax2 + bx + c",
+            "tier": "H",
+            "description": "General quadratics with leading coefficient greater than one."
+        },
+        {
+            "id": "gcse.algebra.algebraic-fractions",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Algebraic fractions",
+            "tier": "H",
+            "description": "Simplifying and four operations on algebraic fractions."
+        },
+        {
+            "id": "gcse.algebra.index-laws",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Index laws in algebra",
+            "tier": "F",
+            "description": "Simplifying algebraic expressions using the laws of indices."
+        },
+        {
+            "id": "gcse.algebra.rearranging",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Rearranging formulae",
+            "tier": "F",
+            "description": "Changing the subject, including where the subject appears twice."
+        },
+        {
+            "id": "gcse.algebra.identities-proof",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Identities and argument",
+            "tier": "F",
+            "description": "Showing equivalence; algebraic argument; formal proof at Higher."
+        },
+        {
+            "id": "gcse.algebra.functions",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Notation, vocabulary and manipulation",
+            "name": "Functions",
+            "tier": "H",
+            "description": "Function notation; inverse and composite functions."
+        },
+        {
+            "id": "gcse.algebra.coordinates",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Coordinates",
+            "tier": "F",
+            "description": "All four quadrants; midpoints and coordinate problems."
+        },
+        {
+            "id": "gcse.algebra.straight-line-graphs",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Straight-line graphs",
+            "tier": "F",
+            "description": "Plotting y = mx + c; equations from gradient/point or two points."
+        },
+        {
+            "id": "gcse.algebra.gradient-intercept",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Gradient and intercepts",
+            "tier": "F",
+            "description": "Interpreting gradients and intercepts graphically and algebraically."
+        },
+        {
+            "id": "gcse.algebra.parallel-perp",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Parallel and perpendicular lines",
+            "tier": "F",
+            "description": "Parallel via equal gradients (F); perpendicular m 1 m 2 = −1 (H)."
+        },
+        {
+            "id": "gcse.algebra.quadratic-graphs",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Quadratic graphs",
+            "tier": "F",
+            "description": "Parabolas; roots, intercepts, turning points from graphs."
+        },
+        {
+            "id": "gcse.algebra.turning-points",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Turning points by completing square",
+            "tier": "H",
+            "description": "Deducing turning points algebraically and sketching."
+        },
+        {
+            "id": "gcse.algebra.cubic-reciprocal-graphs",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Cubic and reciprocal graphs",
+            "tier": "F",
+            "description": "Recognising and sketching y = x3 shapes and y = 1. x"
+        },
+        {
+            "id": "gcse.algebra.exp-trig-graphs",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Exponential and trig graphs",
+            "tier": "H",
+            "description": "Graphs of y = kx and of sin,cos,tan for any angle."
+        },
+        {
+            "id": "gcse.algebra.graph-transformations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Transformations of graphs",
+            "tier": "H",
+            "description": "Translations and reflections of f(x)."
+        },
+        {
+            "id": "gcse.algebra.real-life-graphs",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Real-life graphs",
+            "tier": "F",
+            "description": "Interpreting context graphs including distance–time and speed–time."
+        },
+        {
+            "id": "gcse.algebra.gradients-areas",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Gradients and areas under curves",
+            "tier": "H",
+            "description": "Rates via tangents and areas via trapezia; kinematic reading."
+        },
+        {
+            "id": "gcse.algebra.circle-equation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Graphs",
+            "name": "Equation of a circle",
+            "tier": "H",
+            "description": "x2 + y2 = r2; tangent to a circle at a point."
+        },
+        {
+            "id": "gcse.algebra.linear-equations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Linear equations",
+            "tier": "F",
+            "description": "One unknown, unknowns both sides, fractional coefficients."
+        },
+        {
+            "id": "gcse.algebra.quadratics-factorising",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Quadratics by factorising",
+            "tier": "F",
+            "description": "Solving by factorisation; approximate solutions from graphs."
+        },
+        {
+            "id": "gcse.algebra.quadratic-formula",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Completing square and formula",
+            "tier": "H",
+            "description": "Solving by completing the square and the quadratic formula."
+        },
+        {
+            "id": "gcse.algebra.simultaneous-linear",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Simultaneous equations (linear)",
+            "tier": "F",
+            "description": "Two linear equations, algebraically and graphically."
+        },
+        {
+            "id": "gcse.algebra.simultaneous-quadratic",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Simultaneous (linear/quadratic)",
+            "tier": "H",
+            "description": "One linear and one quadratic; algebraic and graphical."
+        },
+        {
+            "id": "gcse.algebra.iteration",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Iteration",
+            "tier": "H",
+            "description": "Approximate solutions by iterative formulae; roots in intervals."
+        },
+        {
+            "id": "gcse.algebra.forming-equations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Forming and solving",
+            "tier": "F",
+            "description": "Translating situations into equations and interpreting solutions."
+        },
+        {
+            "id": "gcse.algebra.linear-inequalitiescontinued",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Linear inequalities",
+            "tier": "F",
+            "description": "Solving in one variable; solution sets on number lines."
+        },
+        {
+            "id": "gcse.algebra.quadratic-inequalities",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Solving equations and inequalities",
+            "name": "Quadratic & 2-variable inequalities",
+            "tier": "H",
+            "description": "Quadratic inequalities; regions in two variables; set notation."
+        },
+        {
+            "id": "gcse.algebra.generating-sequences",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Sequences",
+            "name": "Generating sequences",
+            "tier": "F",
+            "description": "Terms from term-to-term and position-to-term rules."
+        },
+        {
+            "id": "gcse.algebra.special-sequences",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Sequences",
+            "name": "Special sequences",
+            "tier": "F",
+            "description": "Triangular, square, cube, arithmetic, Fibonacci, quadratic, geometric."
+        },
+        {
+            "id": "gcse.algebra.nth-term-linear",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Sequences",
+            "name": "nth term of linear sequences",
+            "tier": "F",
+            "description": "Deducing and using the nth term of arithmetic sequences."
+        },
+        {
+            "id": "gcse.algebra.nth-term-quadratic",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "algebra",
+            "topic": "Sequences",
+            "name": "nth term of quadratic sequences",
+            "tier": "H",
+            "description": "nth term of quadratic sequences; surd-ratio geometric sequences."
+        },
+        {
+            "id": "gcse.ratio.notation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Ratio",
+            "name": "Ratio notation and simplifying",
+            "tier": "F",
+            "description": "Writing, simplifying and using ratios in simplest form."
+        },
+        {
+            "id": "gcse.ratio.dividing",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Ratio",
+            "name": "Dividing in a ratio",
+            "tier": "F",
+            "description": "Part:part and part:whole division; expressing divisions as ratios."
+        },
+        {
+            "id": "gcse.ratio.problem-solving",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Ratio",
+            "name": "Ratio problem solving",
+            "tier": "F",
+            "description": "Conversion, comparison, scaling, mixing; combining ratios."
+        },
+        {
+            "id": "gcse.ratio.fractions-linear",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Ratio",
+            "name": "Ratios, fractions and linear functions",
+            "tier": "F",
+            "description": "Multiplicative relationships as ratios/fractions; link to linear graphs."
+        },
+        {
+            "id": "gcse.ratio.percentage-change",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Percentages and proportion",
+            "name": "Percentage change",
+            "tier": "F",
+            "description": "Increase/decrease with multipliers; one quantity as a percentage of another."
+        },
+        {
+            "id": "gcse.ratio.reverse-percentages",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Percentages and proportion",
+            "name": "Reverse percentages",
+            "tier": "F",
+            "description": "Finding original values after a percentage change."
+        },
+        {
+            "id": "gcse.ratio.interest",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Percentages and proportion",
+            "name": "Simple and compound interest",
+            "tier": "F",
+            "description": "Simple interest; compound growth and decay problems."
+        },
+        {
+            "id": "gcse.ratio.iterative-growth",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Percentages and proportion",
+            "name": "Iterative growth processes",
+            "tier": "H",
+            "description": "General iterative processes for repeated proportional change."
+        },
+        {
+            "id": "gcse.ratio.direct-inverse",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Percentages and proportion",
+            "name": "Direct and inverse proportion",
+            "tier": "F",
+            "description": "Numerical and graphical problems; recognising proportion graphs."
+        },
+        {
+            "id": "gcse.ratio.algebraic-proportion",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Percentages and proportion",
+            "name": "Algebraic proportion",
+            "tier": "H",
+            "description": "Building and using y = kx, y = k and power models. x"
+        },
+        {
+            "id": "gcse.ratio.unit-conversion",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Rates and compound measures",
+            "name": "Unit conversion",
+            "tier": "F",
+            "description": "Converting standard units in numerical and algebraic contexts."
+        },
+        {
+            "id": "gcse.ratio.scale",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Rates and compound measures",
+            "name": "Scale factors, diagrams and maps",
+            "tier": "F",
+            "description": "Scale drawings and map scales; lengths and areas under scaling."
+        },
+        {
+            "id": "gcse.ratio.compound-measures",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Rates and compound measures",
+            "name": "Compound measures",
+            "tier": "F",
+            "description": "Speed, density, pressure, rates of pay; converting compound units."
+        },
+        {
+            "id": "gcse.ratio.rates-on-graphs",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Rates and compound measures",
+            "name": "Rates of change on graphs",
+            "tier": "F",
+            "description": "Gradient as rate of change; direct/inverse proportion graphs."
+        },
+        {
+            "id": "gcse.ratio.instantaneous-rate",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "ratio",
+            "topic": "Rates and compound measures",
+            "name": "Instantaneous rate of change",
+            "tier": "H",
+            "description": "Gradients of chords and tangents; average vs instantaneous rate."
+        },
+        {
+            "id": "gcse.geometry.notation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Notation and drawing",
+            "tier": "F",
+            "description": "Terms for points, lines, planes, polygons; labelling; drawing from description."
+        },
+        {
+            "id": "gcse.geometry.constructions",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Constructions and loci",
+            "tier": "F",
+            "description": "Ruler-and-compass constructions; loci combining conditions."
+        },
+        {
+            "id": "gcse.geometry.angle-facts",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Angle facts",
+            "tier": "F",
+            "description": "Angles at a point, on a line, vertically opposite; angle equations."
+        },
+        {
+            "id": "gcse.geometry.parallel-angles",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Angles in parallel lines",
+            "tier": "F",
+            "description": "Alternate, corresponding and co-interior angles; multi-step reasoning."
+        },
+        {
+            "id": "gcse.geometry.polygon-angles",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Angles in polygons",
+            "tier": "F",
+            "description": "Interior and exterior angles; regular polygon properties."
+        },
+        {
+            "id": "gcse.geometry.quadrilaterals",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Quadrilateral properties",
+            "tier": "F",
+            "description": "Definitions and properties of the special quadrilaterals."
+        },
+        {
+            "id": "gcse.geometry.congruence",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Congruence",
+            "tier": "F",
+            "description": "SSS, SAS, ASA, RHS; simple congruence proofs."
+        },
+        {
+            "id": "gcse.geometry.similarity",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Similarity",
+            "tier": "F",
+            "description": "Similar shapes; length scale factors; similarity arguments."
+        },
+        {
+            "id": "gcse.geometry.transformations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Transformations",
+            "tier": "F",
+            "description": "Rotation, reflection, translation, enlargement (negative s.f. at Higher)."
+        },
+        {
+            "id": "gcse.geometry.combined-transformations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Combining transformations",
+            "tier": "H",
+            "description": "Single equivalent transformations; invariance."
+        },
+        {
+            "id": "gcse.geometry.circle-vocabulary",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Circle vocabulary",
+            "tier": "F",
+            "description": "Centre, radius, chord, diameter, tangent, arc, sector, segment."
+        },
+        {
+            "id": "gcse.geometry.circle-theorems",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "Circle theorems",
+            "tier": "H",
+            "description": "The standard circle theorems, their proofs and problems."
+        },
+        {
+            "id": "gcse.geometry.3d-plans-elevations",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Properties and constructions",
+            "name": "3D solids, plans and elevations",
+            "tier": "F",
+            "description": "Properties of solids; plans and elevations."
+        },
+        {
+            "id": "gcse.geometry.perimeter-area",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Mensuration and calculation",
+            "name": "Perimeter and area",
+            "tier": "F",
+            "description": "Triangles, parallelograms, trapezia and composite shapes."
+        },
+        {
+            "id": "gcse.geometry.circles-area",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Mensuration and calculation",
+            "name": "Circles: circumference and area",
+            "tier": "F",
+            "description": "C = 2πr, A = πr2, exactly and to given accuracy."
+        },
+        {
+            "id": "gcse.geometry.arcs-sectors",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Mensuration and calculation",
+            "name": "Arcs and sectors",
+            "tier": "F",
+            "description": "Arc length, sector area and sector angles; sector perimeter."
+        },
+        {
+            "id": "gcse.geometry.volume-prisms",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Mensuration and calculation",
+            "name": "Volume and surface area of prisms",
+            "tier": "F",
+            "description": "Cuboids, right prisms, cylinders; composite prisms."
+        },
+        {
+            "id": "gcse.geometry.spheres-cones",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Mensuration and calculation",
+            "name": "Spheres, cones and pyramids",
+            "tier": "F",
+            "description": "Surface area and volume, including composite solids."
+        },
+        {
+            "id": "gcse.geometry.similar-area-volume",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Mensuration and calculation",
+            "name": "Similar lengths, areas and volumes",
+            "tier": "H",
+            "description": "Length, area and volume scale-factor relationships."
+        },
+        {
+            "id": "gcse.geometry.bearings",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Mensuration and calculation",
+            "name": "Bearings and scale drawings",
+            "tier": "F",
+            "description": "Three-figure bearings; maps and accurate drawings."
+        },
+        {
+            "id": "gcse.geometry.pythagoras",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Pythagoras and trigonometry",
+            "name": "Pythagoras’ theorem",
+            "tier": "F",
+            "description": "Sides in right-angled triangles; distance between coordinates."
+        },
+        {
+            "id": "gcse.geometry.trig-ratios",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Pythagoras and trigonometry",
+            "name": "Trigonometric ratios",
+            "tier": "F",
+            "description": "Sine, cosine, tangent for sides and angles in right-angled triangles."
+        },
+        {
+            "id": "gcse.geometry.exact-trig",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Pythagoras and trigonometry",
+            "name": "Exact trigonometric values",
+            "tier": "F",
+            "description": "Exact sin,cos for 0–90◦ and tan for 0–60◦."
+        },
+        {
+            "id": "gcse.geometry.3d-trig",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Pythagoras and trigonometry",
+            "name": "3D Pythagoras and trigonometry",
+            "tier": "H",
+            "description": "Lengths and angles in three-dimensional figures."
+        },
+        {
+            "id": "gcse.geometry.sine-cosine-rule",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Pythagoras and trigonometry",
+            "name": "Sine and cosine rules",
+            "tier": "H",
+            "description": "General triangles, including the ambiguous case."
+        },
+        {
+            "id": "gcse.geometry.triangle-area",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Pythagoras and trigonometry",
+            "name": "Area of a triangle",
+            "tier": "H",
+            "description": "1absinC for area, sides or angles of any triangle. 2"
+        },
+        {
+            "id": "gcse.geometry.vector-notation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Vectors",
+            "name": "Vector notation and translations",
+            "tier": "F",
+            "description": "Column vectors for translations; diagrammatic representation."
+        },
+        {
+            "id": "gcse.geometry.vector-arithmetic",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Vectors",
+            "name": "Vector arithmetic",
+            "tier": "F",
+            "description": "Addition, subtraction and scalar multiplication in diagram and column form."
+        },
+        {
+            "id": "gcse.geometry.vector-proof",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "geometry",
+            "topic": "Vectors",
+            "name": "Vector geometry and proof",
+            "tier": "H",
+            "description": "Geometric arguments and proofs; collinearity and midpoints."
+        },
+        {
+            "id": "gcse.probability.experiments",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Experiments and frequency",
+            "tier": "F",
+            "description": "Recording outcomes with tables and frequency trees."
+        },
+        {
+            "id": "gcse.probability.expected-outcomescontinued",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Expected outcomes",
+            "tier": "F",
+            "description": "Randomness, fairness, equally likely events; expected frequency."
+        },
+        {
+            "id": "gcse.probability.scale-relative-freq",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Probability scale and relative frequency",
+            "tier": "F",
+            "description": "The 0–1 scale; relative frequency vs theoretical probability."
+        },
+        {
+            "id": "gcse.probability.exhaustive-events",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Exhaustive and mutually exclusive events",
+            "tier": "F",
+            "description": "Probabilities summing to one; complement rules."
+        },
+        {
+            "id": "gcse.probability.sampling-convergence",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Sampling and convergence",
+            "tier": "F",
+            "description": "Empirical distributions tending to theoretical with sample size."
+        },
+        {
+            "id": "gcse.probability.sets-venn",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Sets and Venn diagrams",
+            "tier": "F",
+            "description": "Enumerating sets and combinations with tables, grids, Venn diagrams."
+        },
+        {
+            "id": "gcse.probability.possibility-spaces",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Possibility spaces",
+            "tier": "F",
+            "description": "Sample spaces for single and combined experiments."
+        },
+        {
+            "id": "gcse.probability.tree-diagrams",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Tree diagrams",
+            "tier": "F",
+            "description": "Independent and dependent combined events; assumptions."
+        },
+        {
+            "id": "gcse.probability.conditional",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "probability",
+            "topic": "Probability",
+            "name": "Conditional probability",
+            "tier": "H",
+            "description": "Conditional probability via frequencies, two-way tables, trees, Venn."
+        },
+        {
+            "id": "gcse.statistics.sampling",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Sampling",
+            "tier": "F",
+            "description": "Inferring population properties from samples; limitations."
+        },
+        {
+            "id": "gcse.statistics.charts-tables",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Charts and tables",
+            "tier": "F",
+            "description": "Frequency tables, bar/pie charts, pictograms, vertical line charts."
+        },
+        {
+            "id": "gcse.statistics.time-series",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Time series",
+            "tier": "F",
+            "description": "Tables and line graphs for time series data; describing trends."
+        },
+        {
+            "id": "gcse.statistics.averages-spread",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Averages and spread",
+            "tier": "F",
+            "description": "Mean, median, mode, modal class, range from lists and tables; outliers."
+        },
+        {
+            "id": "gcse.statistics.comparing",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Comparing distributions",
+            "tier": "F",
+            "description": "Comparing data sets using centre and spread."
+        },
+        {
+            "id": "gcse.statistics.histograms-cf",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Histograms and cumulative frequency",
+            "tier": "H",
+            "description": "Unequal-width histograms and frequency density; cumulative frequency."
+        },
+        {
+            "id": "gcse.statistics.quartiles-boxplots",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Quartiles and box plots",
+            "tier": "H",
+            "description": "Quartiles and IQR; drawing, reading and comparing box plots."
+        },
+        {
+            "id": "gcse.statistics.scatter-correlation",
+            "qualification": "GCSE",
+            "year": null,
+            "strand": "statistics",
+            "topic": "Statistics",
+            "name": "Scatter graphs and correlation",
+            "tier": "F",
+            "description": "Correlation vs causation; lines of best fit; interpolation/extrapolation."
+        },
+        {
+            "id": "al.y1.pure.argument-notation",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Mathematical argument and notation",
+            "tier": null,
+            "description": "Statement structure; implication, equivalence, necessary and sufficient conditions."
+        },
+        {
+            "id": "al.y1.pure.proof-deduction",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Proof by deduction and exhaustion",
+            "tier": null,
+            "description": "Direct algebraic proofs; finite-case proof by exhaustion."
+        },
+        {
+            "id": "al.y1.pure.disproof",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Disproof by counterexample",
+            "tier": null,
+            "description": "Refuting general claims with a single counterexample."
+        },
+        {
+            "id": "al.y1.pure.indices-surds",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Indices and surds",
+            "tier": null,
+            "description": "Rational-exponent index laws; manipulating and rationalising surds."
+        },
+        {
+            "id": "al.y1.pure.quadratics",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Quadratic functions",
+            "tier": null,
+            "description": "Completing the square, discriminant, sketching, quadratics in a function of x."
+        },
+        {
+            "id": "al.y1.pure.simultaneous",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Simultaneous equations",
+            "tier": null,
+            "description": "Linear/linear and linear/quadratic systems; intersection interpretation."
+        },
+        {
+            "id": "al.y1.pure.inequalities",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Inequalities",
+            "tier": null,
+            "description": "Linear and quadratic inequalities; set notation and solution regions."
+        },
+        {
+            "id": "al.y1.pure.polynomials",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Polynomials and factor theorem",
+            "tier": null,
+            "description": "Expanding, factorising, dividing polynomials; factor theorem for cubics."
+        },
+        {
+            "id": "al.y1.pure.curve-sketching",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Curve sketching",
+            "tier": null,
+            "description": "Polynomial and reciprocal curves; asymptotes; solving via sketches."
+        },
+        {
+            "id": "al.y1.pure.graph-transformations",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Transformations of graphs",
+            "tier": null,
+            "description": "Effects of af(x), f(x) + a, f(x + a), f(ax) on standard curves."
+        },
+        {
+            "id": "al.y1.pure.straight-lines",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Straight lines",
+            "tier": null,
+            "description": "Gradient, midpoint, distance; ax + by + c = 0; parallel/perpendicular; modelling."
+        },
+        {
+            "id": "al.y1.pure.circles",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Circles",
+            "tier": null,
+            "description": "Centre–radius equation; completing the square; tangent and chord properties."
+        },
+        {
+            "id": "al.y1.pure.binomial",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Binomial expansion",
+            "tier": null,
+            "description": "(a + bx)n for positive integer n; (cid:0)n(cid:1) ; coefficients and approximations. r"
+        },
+        {
+            "id": "al.y1.pure.triangle-trig",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Triangle trigonometry",
+            "tier": null,
+            "description": "Sine/cosine rules, area formula; bearings and the ambiguous case."
+        },
+        {
+            "id": "al.y1.pure.trig-graphs",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Trigonometric graphs",
+            "tier": null,
+            "description": "Graphs and symmetries of sin,cos,tan; exact values; transformations."
+        },
+        {
+            "id": "al.y1.pure.trig-identities",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Identities and equations",
+            "tier": null,
+            "description": "tan ≡ sin, sin2 +cos2 ≡ 1; solving trig equations in intervals. cos"
+        },
+        {
+            "id": "al.y1.pure.exponentials",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Exponential functions",
+            "tier": null,
+            "description": "Graphs of ax and ex; gradient property of ekx."
+        },
+        {
+            "id": "al.y1.pure.logarithms",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Logarithms",
+            "tier": null,
+            "description": "Logarithm as inverse; laws of logs; solving ax = b."
+        },
+        {
+            "id": "al.y1.pure.exp-modelling",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Exponential modelling",
+            "tier": null,
+            "description": "Growth/decay models; use of ln; reduction to linear log-form."
+        },
+        {
+            "id": "al.y1.pure.differentiation",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "First principles and derivatives",
+            "tier": null,
+            "description": "Derivative as gradient/rate; differentiating xn from first principles."
+        },
+        {
+            "id": "al.y1.pure.tangents-normals",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Tangents and normals",
+            "tier": null,
+            "description": "Gradients at points; tangent and normal equations."
+        },
+        {
+            "id": "al.y1.pure.stationary-points",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Increasing, decreasing, stationary points",
+            "tier": null,
+            "description": "Second-derivative test; sketching gradient functions."
+        },
+        {
+            "id": "al.y1.pure.optimisation",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Optimisation",
+            "tier": null,
+            "description": "Setting up and solving practical maximum/minimum problems."
+        },
+        {
+            "id": "al.y1.pure.integration",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Indefinite integration",
+            "tier": null,
+            "description": "Antidifferentiation; integrating xn; finding c from a point."
+        },
+        {
+            "id": "al.y1.pure.definite-integrationcontinued",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Definite integration and areas",
+            "tier": null,
+            "description": "Definite integrals; areas between curves and the x-axis."
+        },
+        {
+            "id": "al.y1.pure.vectors",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Vector basics",
+            "tier": null,
+            "description": "Magnitude, direction, unit vectors; i,j and column notation."
+        },
+        {
+            "id": "al.y1.pure.vector-geometry",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Year 1 Pure",
+            "name": "Vector geometry",
+            "tier": null,
+            "description": "Position vectors; distance; ratios and collinearity; mechanics links."
+        },
+        {
+            "id": "al.y1.stats.sampling",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Sampling",
+            "tier": null,
+            "description": "Population vs sample; random, systematic, stratified, quota, opportunity methods."
+        },
+        {
+            "id": "al.y1.stats.location-spread",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Measures of location and spread",
+            "tier": null,
+            "description": "Mean, median, quartiles, range, IQR, variance, s.d.; linear coding."
+        },
+        {
+            "id": "al.y1.stats.data-presentation",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Data presentation",
+            "tier": null,
+            "description": "Box plots, cumulative frequency, histograms; outliers; comparing distributions."
+        },
+        {
+            "id": "al.y1.stats.regression",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Correlation and regression",
+            "tier": null,
+            "description": "Scatter diagrams; least-squares lines; interpretation and extrapolation limits."
+        },
+        {
+            "id": "al.y1.stats.probability",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Probability",
+            "tier": null,
+            "description": "Venn and tree diagrams; mutually exclusive and independent events."
+        },
+        {
+            "id": "al.y1.stats.discrete-rv",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Discrete random variables",
+            "tier": null,
+            "description": "Probability distributions and mass functions; discrete uniform."
+        },
+        {
+            "id": "al.y1.stats.binomial",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "The binomial distribution",
+            "tier": null,
+            "description": "Conditions; single and cumulative binomial probabilities."
+        },
+        {
+            "id": "al.y1.stats.hypothesis-testing",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Hypothesis testing",
+            "tier": null,
+            "description": "Hypotheses, significance, one/two-tailed binomial tests, critical regions."
+        },
+        {
+            "id": "al.y1.stats.large-data-set",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Large data set fluency",
+            "tier": null,
+            "description": "Contexts, units, sampling and typical values of the prescribed data set."
+        },
+        {
+            "id": "al.y1.mech.modelling",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Year 1 Mechanics",
+            "name": "Modelling in mechanics",
+            "tier": null,
+            "description": "Modelling assumptions; SI units; scalars and vectors."
+        },
+        {
+            "id": "al.y1.mech.kinematics-graphs",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Year 1 Mechanics",
+            "name": "Kinematics graphs",
+            "tier": null,
+            "description": "Displacement–time and velocity–time graphs; gradients and areas."
+        },
+        {
+            "id": "al.y1.mech.constant-acceleration",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Year 1 Mechanics",
+            "name": "Constant acceleration",
+            "tier": null,
+            "description": "Deriving and applying suvat; vertical motion under gravity."
+        },
+        {
+            "id": "al.y1.mech.variable-acceleration",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Year 1 Mechanics",
+            "name": "Variable acceleration",
+            "tier": null,
+            "description": "Calculus between displacement, velocity and acceleration in 1D."
+        },
+        {
+            "id": "al.y1.mech.forces-newton",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Year 1 Mechanics",
+            "name": "Forces and Newton’s laws",
+            "tier": null,
+            "description": "Force diagrams, resultants, F = ma; motion in 1D and 2D; weight."
+        },
+        {
+            "id": "al.y1.mech.connected-particles",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Year 1 Mechanics",
+            "name": "Connected particles",
+            "tier": null,
+            "description": "Newton’s third law; pulleys, tow-bars and lifts."
+        },
+        {
+            "id": "al.y2.pure.proof-contradiction",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Proof by contradiction",
+            "tier": null,
+            "description": "Contradiction arguments; irrationality of 2; infinitude of primes."
+        },
+        {
+            "id": "al.y2.pure.partial-fractions",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Algebraic and partial fractions",
+            "tier": null,
+            "description": "Simplifying rational expressions; linear and repeated linear factors."
+        },
+        {
+            "id": "al.y2.pure.functions",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Functions and their graphs",
+            "tier": null,
+            "description": "Domain/range; composite and inverse functions; the modulus function."
+        },
+        {
+            "id": "al.y2.pure.further-transformations",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Further transformations",
+            "tier": null,
+            "description": "Combined transformations and their effect on domain and range."
+        },
+        {
+            "id": "al.y2.pure.arithmetic-series",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Arithmetic sequences and series",
+            "tier": null,
+            "description": "nth term, sum formulae, sigma notation; modelling."
+        },
+        {
+            "id": "al.y2.pure.geometric-series",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Geometric sequences and series",
+            "tier": null,
+            "description": "nth term, finite sums, convergence, sum to infinity."
+        },
+        {
+            "id": "al.y2.pure.recurrence",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Recurrence and general sequences",
+            "tier": null,
+            "description": "Increasing, decreasing, periodic sequences; recurrence relations."
+        },
+        {
+            "id": "al.y2.pure.binomial-rational",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Binomial expansion (rational powers)",
+            "tier": null,
+            "description": "(1 + x)n for negative/fractional n; validity; use with partial fractions."
+        },
+        {
+            "id": "al.y2.pure.radians",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Radians, arcs and sectors",
+            "tier": null,
+            "description": "Radian measure; rθ and 1r2θ; solving in radians. 2"
+        },
+        {
+            "id": "al.y2.pure.small-angles",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Small angle approximations",
+            "tier": null,
+            "description": "sinθ ≈ θ, tanθ ≈ θ, cosθ ≈ 1 − θ2 ; validity. 2"
+        },
+        {
+            "id": "al.y2.pure.reciprocal-inverse-trig",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Reciprocal and inverse trig functions",
+            "tier": null,
+            "description": "sec,csc,cot and inverse trig functions; associated identities."
+        },
+        {
+            "id": "al.y2.pure.compound-double-angles",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Compound and double angles",
+            "tier": null,
+            "description": "Addition and double-angle formulae; proving identities; equations."
+        },
+        {
+            "id": "al.y2.pure.rsin-form",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "The form Rsin(θ + α)",
+            "tier": null,
+            "description": "Expressing asinθ + bcosθ in R form; maxima/minima; modelling."
+        },
+        {
+            "id": "al.y2.pure.parametric-curves",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Parametric curves",
+            "tier": null,
+            "description": "Sketching and converting parametric/Cartesian forms via identities."
+        },
+        {
+            "id": "al.y2.pure.parametric-modelling",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Parametric modelling",
+            "tier": null,
+            "description": "Motion along curves; intersections; parametric differentiation in context."
+        },
+        {
+            "id": "al.y2.pure.standard-derivatives",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Standard derivatives",
+            "tier": null,
+            "description": "Derivatives of sin,cos,tan,ex,ax,lnx."
+        },
+        {
+            "id": "al.y2.pure.product-quotient-chain",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Product, quotient and chain rules",
+            "tier": null,
+            "description": "Differentiating products, quotients and compositions."
+        },
+        {
+            "id": "al.y2.pure.implicit",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Implicit differentiation",
+            "tier": null,
+            "description": "Differentiating implicit relations; tangents and normals."
+        },
+        {
+            "id": "al.y2.pure.parametric-differentiation",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Parametric differentiation",
+            "tier": null,
+            "description": "dy = y˙ ; tangents and normals to parametric curves. dx x˙"
+        },
+        {
+            "id": "al.y2.pure.connected-rates",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Rates of change",
+            "tier": null,
+            "description": "Connected rates via the chain rule; growth and decay."
+        },
+        {
+            "id": "al.y2.pure.second-derivatives",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Second derivatives and curve behaviour",
+            "tier": null,
+            "description": "Convexity, concavity and points of inflection."
+        },
+        {
+            "id": "al.y2.pure.roots-iterationcontinued",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Locating roots and iteration",
+            "tier": null,
+            "description": "Change of sign and its failures; fixed-point iteration; staircase/cobweb."
+        },
+        {
+            "id": "al.y2.pure.newton-raphson",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Newton–Raphson",
+            "tier": null,
+            "description": "The method, its geometry and failure conditions."
+        },
+        {
+            "id": "al.y2.pure.numerical-integration",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Numerical integration",
+            "tier": null,
+            "description": "The trapezium rule; over- and under-estimates."
+        },
+        {
+            "id": "al.y2.pure.standard-integrals",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Standard integrals",
+            "tier": null,
+            "description": "Integrating ex, 1, trig functions and f(ax + b). x"
+        },
+        {
+            "id": "al.y2.pure.integration-substitution",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Integration by substitution",
+            "tier": null,
+            "description": "Substitution for definite and indefinite integrals, including trig."
+        },
+        {
+            "id": "al.y2.pure.integration-by-parts",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Integration by parts",
+            "tier": null,
+            "description": "Single and repeated application, including (cid:82) lnxdx."
+        },
+        {
+            "id": "al.y2.pure.integration-partial-fractions",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Integration with partial fractions",
+            "tier": null,
+            "description": "Integrating rational functions after decomposition."
+        },
+        {
+            "id": "al.y2.pure.areas-applications",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Areas and further applications",
+            "tier": null,
+            "description": "Areas between curves; parametric integration."
+        },
+        {
+            "id": "al.y2.pure.differential-equations",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Differential equations",
+            "tier": null,
+            "description": "Separation of variables; general/particular solutions; growth and cooling."
+        },
+        {
+            "id": "al.y2.pure.vectors-3d",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Year 2 Pure",
+            "name": "Vectors in three dimensions",
+            "tier": null,
+            "description": "3D coordinates, magnitude, distance; i,j,k problems."
+        },
+        {
+            "id": "al.y2.stats.regression-correlation",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Year 2 Statistics",
+            "name": "Regression and correlation",
+            "tier": null,
+            "description": "Exponential models via logs; PMCC; test for zero correlation."
+        },
+        {
+            "id": "al.y2.stats.conditional-probability",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Year 2 Statistics",
+            "name": "Conditional probability",
+            "tier": null,
+            "description": "P(A | B); multiplication law; testing independence."
+        },
+        {
+            "id": "al.y2.stats.normal-distribution",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Year 2 Statistics",
+            "name": "The normal distribution",
+            "tier": null,
+            "description": "Normal curve; probabilities and inverse-normal; finding µ and σ."
+        },
+        {
+            "id": "al.y2.stats.normal-approximation",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Year 2 Statistics",
+            "name": "Normal approximation to binomial",
+            "tier": null,
+            "description": "Conditions and continuity corrections; model choice."
+        },
+        {
+            "id": "al.y2.stats.hypothesis-normal",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Year 2 Statistics",
+            "name": "Hypothesis testing (normal)",
+            "tier": null,
+            "description": "Tests for the mean using the distribution of the sample mean."
+        },
+        {
+            "id": "al.y2.mech.moments",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Year 2 Mechanics",
+            "name": "Moments",
+            "tier": null,
+            "description": "Turning effects; equilibrium of rigid bodies; tilting; simple centres of mass."
+        },
+        {
+            "id": "al.y2.mech.forces-friction",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Year 2 Mechanics",
+            "name": "Forces and friction",
+            "tier": null,
+            "description": "Resolving on inclined planes; F ≤ µR and limiting equilibrium."
+        },
+        {
+            "id": "al.y2.mech.projectilescontinued",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Year 2 Mechanics",
+            "name": "Projectiles",
+            "tier": null,
+            "description": "Horizontal and angled projection; range, height, trajectory formulae."
+        },
+        {
+            "id": "al.y2.mech.applications-forces",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Year 2 Mechanics",
+            "name": "Applications of forces",
+            "tier": null,
+            "description": "Statics of particles; dynamics on slopes and with connected bodies."
+        },
+        {
+            "id": "al.y2.mech.further-kinematics",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Year 2 Mechanics",
+            "name": "Further kinematics",
+            "tier": null,
+            "description": "Vector methods in 2D; variable acceleration via calculus of vectors."
+        },
+        {
+            "id": "fm.y1.pure.complex-arithmetic",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Complex numbers: arithmetic",
+            "tier": null,
+            "description": "Four operations; conjugates; quadratics with complex roots."
+        },
+        {
+            "id": "fm.y1.pure.argand",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Argand diagrams",
+            "tier": null,
+            "description": "Representation; modulus and argument; mod–arg form; loci."
+        },
+        {
+            "id": "fm.y1.pure.roots-polynomials",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Roots of polynomials",
+            "tier": null,
+            "description": "Root–coefficient relations for quadratics to quartics; transforming roots."
+        },
+        {
+            "id": "fm.y1.pure.induction",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Proof by induction",
+            "tier": null,
+            "description": "Induction for series, divisibility and matrix powers."
+        },
+        {
+            "id": "fm.y1.pure.matrices",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Matrices: arithmetic and determinants",
+            "tier": null,
+            "description": "Operations; 2 × 2 and 3 × 3 determinants and inverses; systems."
+        },
+        {
+            "id": "fm.y1.pure.linear-transformations",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Linear transformations",
+            "tier": null,
+            "description": "Matrices for rotations, reflections, enlargements; invariant points/lines."
+        },
+        {
+            "id": "fm.y1.pure.series",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Series",
+            "tier": null,
+            "description": "Standard results for (cid:80) r, (cid:80) r2, (cid:80) r3 and related sums."
+        },
+        {
+            "id": "fm.y1.pure.vectors-lines-planes",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Vectors: lines and planes",
+            "tier": null,
+            "description": "Vector/Cartesian lines and planes; scalar product; angles and distances."
+        },
+        {
+            "id": "fm.y1.pure.volumes-revolution",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Volumes of revolution",
+            "tier": null,
+            "description": "Rotation about the x- and y-axes; composite regions; modelling."
+        },
+        {
+            "id": "fm.y1.stats.discrete-rv",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Discrete random variables",
+            "tier": null,
+            "description": "Expectation and variance; E(aX + b), Var(aX + b); functions of X."
+        },
+        {
+            "id": "fm.y1.stats.poisson",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "The Poisson distribution",
+            "tier": null,
+            "description": "Conditions; mean and variance; additivity; approximation to binomial."
+        },
+        {
+            "id": "fm.y1.stats.geometric-negbinomial",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Geometric and negative binomial",
+            "tier": null,
+            "description": "Trials to first and rth success; means and variances."
+        },
+        {
+            "id": "fm.y1.stats.hypothesis-tests",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Hypothesis testing (Poisson, geometric)",
+            "tier": null,
+            "description": "Tests for Poisson and geometric parameters; critical regions."
+        },
+        {
+            "id": "fm.y1.stats.central-limit",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Central limit theorem",
+            "tier": null,
+            "description": "Distribution of sample means for large samples; approximate inference."
+        },
+        {
+            "id": "fm.y1.stats.chi-squared",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Chi-squared tests",
+            "tier": null,
+            "description": "Goodness of fit; contingency tables; degrees of freedom."
+        },
+        {
+            "id": "fm.y1.mech.momentum-impulsecontinued",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
+            "name": "Momentum and impulse",
+            "tier": null,
+            "description": "Impulse–momentum in 1D and 2D; conservation of momentum."
+        },
+        {
+            "id": "fm.y1.mech.work-energy-power",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
+            "name": "Work, energy and power",
+            "tier": null,
+            "description": "Work, KE, PE; work–energy principle; power on inclines."
+        },
+        {
+            "id": "fm.y1.mech.elastic-strings-springs",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
+            "name": "Elastic strings and springs",
+            "tier": null,
+            "description": "Hooke’s law; elastic PE; energy methods with elastic components."
+        },
+        {
+            "id": "fm.y1.mech.collisions-1d",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
+            "name": "Elastic collisions in one dimension",
+            "tier": null,
+            "description": "Newton’s law of restitution; direct impacts; successive collisions."
+        },
+        {
+            "id": "fm.y2.pure.de-moivre",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Complex numbers: de Moivre",
+            "tier": null,
+            "description": "Exponential form; de Moivre’s theorem; multiple-angle identities; trig sums."
+        },
+        {
+            "id": "fm.y2.pure.roots-of-unity",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Roots of unity",
+            "tier": null,
+            "description": "nth roots of unity and of any complex number; geometric interpretation."
+        },
+        {
+            "id": "fm.y2.pure.method-of-differences",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Series: method of differences",
+            "tier": null,
+            "description": "Telescoping sums, including with partial fractions."
+        },
+        {
+            "id": "fm.y2.pure.maclaurin",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Maclaurin series",
+            "tier": null,
+            "description": "Series for ex,ln(1 + x),sinx,cosx,(1 + x)n; validity; composites."
+        },
+        {
+            "id": "fm.y2.pure.further-calculus",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Further calculus",
+            "tier": null,
+            "description": "Improper integrals; mean value; inverse-trig integrals; partial fractions."
+        },
+        {
+            "id": "fm.y2.pure.polar-coordinates",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Polar coordinates",
+            "tier": null,
+            "description": "Conversion; sketching polar curves; enclosed areas; tangents."
+        },
+        {
+            "id": "fm.y2.pure.hyperbolic-functions",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Hyperbolic functions",
+            "tier": null,
+            "description": "sinh,cosh,tanh and inverses; identities; hyperbolic calculus."
+        },
+        {
+            "id": "fm.y2.pure.first-order-des",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "First-order differential equations",
+            "tier": null,
+            "description": "Integrating factors; solution-curve families; modelling."
+        },
+        {
+            "id": "fm.y2.pure.second-order-des",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Second-order differential equations",
+            "tier": null,
+            "description": "Constant-coefficient linear equations; complementary function and PI."
+        },
+        {
+            "id": "fm.y2.pure.de-modelling",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Modelling with differential equations",
+            "tier": null,
+            "description": "Simple harmonic motion; damped and forced oscillations; coupled systems."
+        },
+        {
+            "id": "fm.y2.stats.linear-regression",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Linear regression",
+            "tier": null,
+            "description": "Least-squares model, residuals and RSS; interpreting fitted models."
+        },
+        {
+            "id": "fm.y2.stats.continuous-rv",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Continuous random variables",
+            "tier": null,
+            "description": "PDFs and CDFs; expectation, variance, median, mode; functions of X."
+        },
+        {
+            "id": "fm.y2.stats.continuous-uniform",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "The continuous uniform distribution",
+            "tier": null,
+            "description": "Properties, moments and applications of the rectangular distribution."
+        },
+        {
+            "id": "fm.y2.stats.combining-rv",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Combinations of random variables",
+            "tier": null,
+            "description": "Means and variances of linear combinations of independent variables."
+        },
+        {
+            "id": "fm.y2.stats.estimation-ci",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Estimation and confidence intervals",
+            "tier": null,
+            "description": "Unbiased estimators; confidence intervals; the t-distribution."
+        },
+        {
+            "id": "fm.y2.stats.further-tests",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Further hypothesis tests",
+            "tier": null,
+            "description": "Difference of means; F-test for variances; choosing a test."
+        },
+        {
+            "id": "fm.y2.stats.spearman",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Spearman’s rank correlation",
+            "tier": null,
+            "description": "Rank correlation coefficient and tests; when to prefer rank methods."
+        },
+        {
+            "id": "fm.y2.mech.horizontal-circular",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Horizontal circular motion",
+            "tier": null,
+            "description": "Angular speed; rω2; conical pendulum and banked tracks."
+        },
+        {
+            "id": "fm.y2.mech.vertical-circular",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Vertical circular motion",
+            "tier": null,
+            "description": "Energy methods; conditions for complete circles."
+        },
+        {
+            "id": "fm.y2.mech.com-laminas",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Centres of mass: laminas and frameworks",
+            "tier": null,
+            "description": "Uniform and composite laminas and frameworks by symmetry and moments."
+        },
+        {
+            "id": "fm.y2.mech.com-calculus",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Centres of mass: solids and calculus",
+            "tier": null,
+            "description": "Standard solids and solids of revolution by integration."
+        },
+        {
+            "id": "fm.y2.mech.statics-rigid",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Statics of rigid bodies",
+            "tier": null,
+            "description": "Equilibrium including suspension and toppling vs sliding."
+        },
+        {
+            "id": "fm.y2.mech.collisions-2d",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Elastic collisions in two dimensions",
+            "tier": null,
+            "description": "Oblique impact with surfaces and spheres; restitution on the line of centres."
+        },
+        {
+            "id": "fm.y2.mech.further-dynamics",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Further dynamics",
+            "tier": null,
+            "description": "Variable forces; vdv forms. dx"
+        }
+    ]
+}
