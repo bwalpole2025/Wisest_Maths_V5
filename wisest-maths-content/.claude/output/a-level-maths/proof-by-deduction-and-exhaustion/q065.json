@@ -1,0 +1,128 @@
+{
+  "id": "al.y1.pure.proof-deduction.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "factorisation",
+    "completing the square"
+  ],
+  "questionText": "Prove that $x^4 - x^3 - x + 1 \\ge 0$ for all real values of $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } x^4 - x^3 - x + 1 \\ge 0 \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "We factor the quartic and show it is a product of non-negative pieces.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Group the terms in pairs.",
+        "workingLatex": "(x^4 - x^3) + (-x + 1)",
+        "explanation": "Grouping the first two and last two terms sets up a common factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor each group.",
+        "workingLatex": "x^3(x - 1) - (x - 1)",
+        "explanation": "The first group gives $x^3(x-1)$; the second gives $-(x-1)$, sharing the factor $x-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Extract the common factor.",
+        "workingLatex": "(x - 1)(x^3 - 1)",
+        "explanation": "Both groups contain $(x-1)$, so we factor it out.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor the difference of cubes.",
+        "workingLatex": "x^3 - 1 = (x - 1)(x^2 + x + 1)",
+        "explanation": "Using $x^3-1=(x-1)(x^2+x+1)$ exposes a second factor of $(x-1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the full factorisation.",
+        "workingLatex": "x^4 - x^3 - x + 1 = (x - 1)^2 (x^2 + x + 1)",
+        "explanation": "Combining the two $(x-1)$ factors gives $(x-1)^2$ times the quadratic $x^2+x+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "First factor non-negative.",
+        "workingLatex": "(x - 1)^2 \\ge 0",
+        "explanation": "The square of a real number is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Analyse the quadratic factor.",
+        "workingLatex": "x^2 + x + 1",
+        "explanation": "To fix the sign of the second factor we complete the square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Complete the square.",
+        "workingLatex": "x^2 + x = \\left(x + \\tfrac{1}{2}\\right)^2 - \\tfrac{1}{4}",
+        "explanation": "Half of the coefficient $1$ is $\\tfrac12$, so $\\left(x+\\tfrac12\\right)^2=x^2+x+\\tfrac14$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify the quadratic.",
+        "workingLatex": "x^2 + x + 1 = \\left(x + \\tfrac{1}{2}\\right)^2 + \\tfrac{3}{4}",
+        "explanation": "Combining $-\\tfrac14+1$ gives $\\tfrac34$, so the quadratic is a square plus $\\tfrac34$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Second factor strictly positive.",
+        "workingLatex": "x^2 + x + 1 \\ge \\tfrac{3}{4} > 0",
+        "explanation": "Being a square plus $\\tfrac34$, the quadratic is always at least $\\tfrac34$, hence positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Combine the signs.",
+        "workingLatex": "(x-1)^2 (x^2+x+1) \\ge 0",
+        "explanation": "A non-negative factor times a positive factor is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff x = 1",
+        "explanation": "The product is zero only when $(x-1)^2=0$, i.e. $x=1$; elsewhere it is strictly positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Confirm the domain.",
+        "workingLatex": "\\forall\\, x \\in \\mathbb{R}",
+        "explanation": "Only non-negativity of real squares was used, valid for all real $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the conclusion.",
+        "workingLatex": "x^4 - x^3 - x + 1 \\ge 0 \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "Since the expression equals $(x-1)^2(x^2+x+1)$ with both factors non-negative, it is non-negative for all real $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^4-x^3-x+1=(x-1)^2(x^2+x+1)$. Here $(x-1)^2\\ge0$ and $x^2+x+1=\\left(x+\\tfrac12\\right)^2+\\tfrac34>0$, so the product is $\\ge0$, with equality at $x=1$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "id": "al.y1.pure.proof-deduction.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "factorisation",
+    "completing the square"
+  ],
+  "questionText": "Prove that $a^4 + b^4 \\ge a^3 b + a b^3$ for all real numbers $a$ and $b$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } a^4 + b^4 \\ge a^3 b + a b^3",
+        "explanation": "We form the difference and factor it into non-negative pieces.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the difference.",
+        "workingLatex": "D = a^4 + b^4 - a^3 b - a b^3",
+        "explanation": "Proving $D\\ge0$ is equivalent to the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Group the terms in pairs.",
+        "workingLatex": "(a^4 - a^3 b) + (b^4 - a b^3)",
+        "explanation": "Grouping pairs with a common factor sets up the factorisation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor each group.",
+        "workingLatex": "a^3(a - b) + b^3(b - a)",
+        "explanation": "The first group gives $a^3(a-b)$; the second gives $b^3(b-a)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Align the brackets.",
+        "workingLatex": "a^3(a - b) - b^3(a - b)",
+        "explanation": "Since $b-a=-(a-b)$, the second term becomes $-b^3(a-b)$, exposing the common factor $a-b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Extract the common factor.",
+        "workingLatex": "D = (a - b)(a^3 - b^3)",
+        "explanation": "Factoring out $(a-b)$ leaves $a^3-b^3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factor the difference of cubes.",
+        "workingLatex": "a^3 - b^3 = (a - b)(a^2 + ab + b^2)",
+        "explanation": "Using $a^3-b^3=(a-b)(a^2+ab+b^2)$ produces a second factor of $(a-b)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the full factorisation.",
+        "workingLatex": "D = (a - b)^2 (a^2 + ab + b^2)",
+        "explanation": "Combining the two $(a-b)$ factors gives $(a-b)^2$ times the quadratic form $a^2+ab+b^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "First factor non-negative.",
+        "workingLatex": "(a - b)^2 \\ge 0",
+        "explanation": "The square of a real number is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Analyse the quadratic form.",
+        "workingLatex": "a^2 + ab + b^2",
+        "explanation": "We fix its sign by completing the square, treating it as a quadratic in $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Complete the square.",
+        "workingLatex": "a^2 + ab + b^2 = \\left(a + \\tfrac{b}{2}\\right)^2 + \\tfrac{3}{4}b^2",
+        "explanation": "Half of the coefficient $b$ is $\\tfrac{b}{2}$; the leftover $b^2-\\tfrac{b^2}{4}=\\tfrac34 b^2$ completes the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Second factor non-negative.",
+        "workingLatex": "\\left(a + \\tfrac{b}{2}\\right)^2 + \\tfrac{3}{4}b^2 \\ge 0",
+        "explanation": "A sum of two squares is non-negative, so $a^2+ab+b^2\\ge0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Combine the signs.",
+        "workingLatex": "D = (a-b)^2 (a^2+ab+b^2) \\ge 0",
+        "explanation": "A product of two non-negative factors is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff a = b",
+        "explanation": "$D=0$ needs $(a-b)^2=0$ (or the quadratic zero, which also forces $a=b=0$), so equality holds iff $a=b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the conclusion.",
+        "workingLatex": "a^4 + b^4 \\ge a^3 b + a b^3 \\ \\forall a,b \\in \\mathbb{R}",
+        "explanation": "Since $D=(a-b)^2(a^2+ab+b^2)\\ge0$, the inequality holds for all real $a,b$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a^4+b^4-a^3b-ab^3=(a-b)^2(a^2+ab+b^2)$, and $a^2+ab+b^2=\\left(a+\\tfrac{b}{2}\\right)^2+\\tfrac34 b^2\\ge0$, so the difference is $\\ge0$, with equality iff $a=b$. $\\blacksquare$"
+  }
+}

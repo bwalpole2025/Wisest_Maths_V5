@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.proof-deduction.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "even numbers",
+    "divisibility",
+    "difference of squares"
+  ],
+  "questionText": "Prove that the difference between the squares of any two consecutive even numbers is divisible by $4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the two consecutive even numbers.",
+        "workingLatex": "2n \\text{ and } 2n+2, \\quad n \\in \\mathbb{Z}",
+        "explanation": "Consecutive even numbers differ by $2$, so if the first is $2n$ the next is $2n+2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the difference of squares.",
+        "workingLatex": "D = (2n+2)^2 - (2n)^2",
+        "explanation": "We subtract the smaller square from the larger, matching 'difference between the squares'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the larger square.",
+        "workingLatex": "(2n+2)^2 = 4n^2 + 8n + 4",
+        "explanation": "Expanding prepares it for the subtraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract.",
+        "workingLatex": "D = (4n^2 + 8n + 4) - 4n^2 = 8n + 4",
+        "explanation": "The $4n^2$ terms cancel, leaving $8n+4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out 4.",
+        "workingLatex": "D = 4(2n + 1)",
+        "explanation": "Both terms share a factor of $4$; extracting it exposes the divisibility.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "2n + 1 \\in \\mathbb{Z}",
+        "explanation": "Since $n$ is an integer, $D = 4\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note a sharper observation.",
+        "workingLatex": "2n+1 \\text{ is odd}",
+        "explanation": "The cofactor $2n+1$ is odd, so $D$ is divisible by $4$ but not by $8$ — the bound is exactly $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpret the form.",
+        "workingLatex": "4 \\mid D",
+        "explanation": "A number equal to $4$ times an integer is a multiple of $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "4 \\mid (2n+2)^2 - (2n)^2 \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "The difference equals $4(2n+1)$, so the difference of squares of two consecutive even numbers is divisible by $4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2n+2)^2-(2n)^2=8n+4=4(2n+1)$, a multiple of $4$ (with $2n+1$ odd, so not a multiple of $8$). $\\blacksquare$"
+  }
+}

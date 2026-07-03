@@ -1,0 +1,120 @@
+{
+  "id": "al.y1.pure.proof-deduction.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by exhaustion",
+    "cubes",
+    "modular arithmetic"
+  ],
+  "questionText": "Prove that for every integer $n$, $n^3$ is congruent to $0$, $1$ or $8$ modulo $9$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reduce to the residue of n modulo 3.",
+        "workingLatex": "n \\equiv 0, 1, 2 \\pmod 3",
+        "explanation": "We will see that the residue of $n$ modulo $3$ completely determines $n^3$ modulo $9$, so three cases suffice.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Case n = 3k.",
+        "workingLatex": "n^3 = (3k)^3 = 27k^3",
+        "explanation": "A multiple of $3$ cubes to $27k^3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Reduce mod 9.",
+        "workingLatex": "27k^3 = 9(3k^3) \\equiv 0 \\pmod 9",
+        "explanation": "Since $27=9\\times3$, the cube is a multiple of $9$, giving residue $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Case n = 3k+1.",
+        "workingLatex": "n^3 = (3k+1)^3 = 27k^3 + 27k^2 + 9k + 1",
+        "explanation": "Expanding $(3k+1)^3$ with the binomial gives these four terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Reduce mod 9.",
+        "workingLatex": "27k^3 + 27k^2 + 9k \\equiv 0 \\Rightarrow n^3 \\equiv 1 \\pmod 9",
+        "explanation": "Each of the first three terms is a multiple of $9$, leaving residue $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case n = 3k+2.",
+        "workingLatex": "n^3 = (3k+2)^3 = 27k^3 + 54k^2 + 36k + 8",
+        "explanation": "Expanding $(3k+2)^3$ gives these terms; note $54$ and $36$ are both multiples of $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Reduce mod 9.",
+        "workingLatex": "27k^3 + 54k^2 + 36k \\equiv 0 \\Rightarrow n^3 \\equiv 8 \\pmod 9",
+        "explanation": "The first three terms are multiples of $9$, leaving residue $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Collect the outcomes.",
+        "workingLatex": "n^3 \\bmod 9 \\in \\{0, 1, 8\\}",
+        "explanation": "The three cases give residues $0$, $1$ and $8$ respectively.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm the cases are exhaustive.",
+        "workingLatex": "n \\equiv 0,1,2 \\pmod 3 \\text{ covers all integers}",
+        "explanation": "Every integer is congruent to $0$, $1$ or $2$ modulo $3$, so no case is missing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Note what is excluded.",
+        "workingLatex": "n^3 \\not\\equiv 2,3,4,5,6,7 \\pmod 9",
+        "explanation": "A cube can only land on $0$, $1$ or $8$ modulo $9$; the other residues are impossible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Reflect on why 3 cases suffice.",
+        "workingLatex": "n^3 \\bmod 9 \\text{ depends only on } n \\bmod 3",
+        "explanation": "The extra factors of $3$ in each expansion become multiples of $9$ when cubed, so only $n\\bmod3$ survives.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Restate the finite check.",
+        "workingLatex": "\\{0^3, 1^3, 2^3\\} \\bmod 9 = \\{0, 1, 8\\}",
+        "explanation": "Equivalently, cubing the representatives $0,1,2$ and reducing modulo $9$ yields the full set of possibilities.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Summarise the exhaustion.",
+        "workingLatex": "\\text{all cases checked}",
+        "explanation": "Because the finite list of cases was complete, the claim is proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "n^3 \\equiv 0, 1, \\text{ or } 8 \\pmod 9",
+        "explanation": "By exhaustion, the cube of any integer is congruent to $0$, $1$ or $8$ modulo $9$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For $n=3k,\\,3k+1,\\,3k+2$ the cubes reduce mod $9$ to $0,\\,1,\\,8$ respectively (the extra terms are all multiples of $9$). Hence $n^3\\equiv0,1$ or $8\\pmod9$. $\\blacksquare$"
+  }
+}

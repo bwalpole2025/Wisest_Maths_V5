@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.proof-deduction.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "AM-GM"
+  ],
+  "questionText": "Prove that $\\dfrac{a + b}{2} \\ge \\sqrt{ab}$ for all real numbers $a \\ge 0$ and $b \\ge 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } \\tfrac{a+b}{2} \\ge \\sqrt{ab} \\text{ for } a,b \\ge 0",
+        "explanation": "This is the arithmetic-geometric mean inequality for two numbers. We need $a,b\\ge0$ so that $\\sqrt{ab}$ and $\\sqrt a,\\sqrt b$ are real.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Note the square roots are defined.",
+        "workingLatex": "\\sqrt{a}, \\sqrt{b} \\text{ real since } a, b \\ge 0",
+        "explanation": "Non-negativity guarantees real square roots, which we build the proof around.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Start from a non-negative square.",
+        "workingLatex": "(\\sqrt{a} - \\sqrt{b})^2 \\ge 0",
+        "explanation": "The square of the real number $\\sqrt a-\\sqrt b$ is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the square.",
+        "workingLatex": "(\\sqrt{a})^2 - 2\\sqrt{a}\\sqrt{b} + (\\sqrt{b})^2",
+        "explanation": "Expanding gives the three terms of a squared difference.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify using the roots.",
+        "workingLatex": "= a - 2\\sqrt{ab} + b",
+        "explanation": "Since $(\\sqrt a)^2=a$, $(\\sqrt b)^2=b$ and $\\sqrt a\\,\\sqrt b=\\sqrt{ab}$, the square simplifies neatly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the inequality.",
+        "workingLatex": "a - 2\\sqrt{ab} + b \\ge 0",
+        "explanation": "Substituting into the square inequality relates $a+b$ and $\\sqrt{ab}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange.",
+        "workingLatex": "a + b \\ge 2\\sqrt{ab}",
+        "explanation": "Adding $2\\sqrt{ab}$ to both sides isolates the two means.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Divide by 2.",
+        "workingLatex": "\\tfrac{a+b}{2} \\ge \\sqrt{ab}",
+        "explanation": "Dividing by the positive number $2$ preserves the inequality and gives the target.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff \\sqrt{a} = \\sqrt{b} \\iff a = b",
+        "explanation": "Equality needs $\\sqrt a-\\sqrt b=0$, i.e. $a=b$; otherwise the inequality is strict.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Stress the domain requirement.",
+        "workingLatex": "a, b \\ge 0 \\text{ essential}",
+        "explanation": "If $a$ or $b$ were negative, $\\sqrt{ab}$ might not be real, so the non-negativity assumption is essential.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the logical direction.",
+        "workingLatex": "(\\sqrt a - \\sqrt b)^2 \\ge 0 \\Rightarrow \\tfrac{a+b}{2} \\ge \\sqrt{ab}",
+        "explanation": "Each step followed from a known truth, so this is a valid direct proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm generality.",
+        "workingLatex": "\\forall\\, a,b \\ge 0",
+        "explanation": "The argument used only $a,b\\ge0$, so it holds for every such pair.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\tfrac{a+b}{2} \\ge \\sqrt{ab} \\ \\forall\\, a,b \\ge 0",
+        "explanation": "The arithmetic mean of two non-negative numbers is at least their geometric mean, with equality iff they are equal.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(\\sqrt a-\\sqrt b)^2\\ge0 \\Rightarrow a-2\\sqrt{ab}+b\\ge0 \\Rightarrow a+b\\ge2\\sqrt{ab} \\Rightarrow \\tfrac{a+b}{2}\\ge\\sqrt{ab}$, with equality iff $a=b$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "al.y1.pure.proof-deduction.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "completing the square",
+    "inequalities"
+  ],
+  "questionText": "Prove that $x^2 - xy + y^2 \\ge 0$ for all real numbers $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } x^2 - xy + y^2 \\ge 0 \\ \\forall x,y \\in \\mathbb{R}",
+        "explanation": "We treat the expression as a quadratic in $x$ and complete the square to reveal its sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Complete the square in x.",
+        "workingLatex": "x^2 - xy = \\left(x - \\tfrac{y}{2}\\right)^2 - \\tfrac{y^2}{4}",
+        "explanation": "Half of the coefficient $-y$ is $-\\tfrac{y}{2}$, so $\\left(x-\\tfrac{y}{2}\\right)^2=x^2-xy+\\tfrac{y^2}{4}$; subtracting $\\tfrac{y^2}{4}$ restores $x^2-xy$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute back.",
+        "workingLatex": "x^2 - xy + y^2 = \\left(x - \\tfrac{y}{2}\\right)^2 - \\tfrac{y^2}{4} + y^2",
+        "explanation": "Replacing $x^2-xy$ and keeping the $+y^2$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the y terms.",
+        "workingLatex": "= \\left(x - \\tfrac{y}{2}\\right)^2 + \\tfrac{3}{4}y^2",
+        "explanation": "Combining $-\\tfrac{y^2}{4}+y^2$ gives $\\tfrac34 y^2$, so the expression is a sum of two squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "First term non-negative.",
+        "workingLatex": "\\left(x - \\tfrac{y}{2}\\right)^2 \\ge 0",
+        "explanation": "The square of a real number is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Second term non-negative.",
+        "workingLatex": "\\tfrac{3}{4}y^2 \\ge 0",
+        "explanation": "Since $y^2\\ge0$ and $\\tfrac34>0$, the second term is also non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add the two non-negative terms.",
+        "workingLatex": "\\left(x - \\tfrac{y}{2}\\right)^2 + \\tfrac{3}{4}y^2 \\ge 0",
+        "explanation": "A sum of two non-negative quantities is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff y = 0 \\text{ and } x = 0",
+        "explanation": "Both squares vanish only when $y=0$ and $x-\\tfrac{y}{2}=0$, i.e. $x=y=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm the domain.",
+        "workingLatex": "\\forall\\, x, y \\in \\mathbb{R}",
+        "explanation": "Only non-negativity of real squares was used, valid for all real $x,y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion.",
+        "workingLatex": "x^2 - xy + y^2 \\ge 0 \\ \\forall x,y \\in \\mathbb{R}",
+        "explanation": "The expression equals $\\left(x-\\tfrac{y}{2}\\right)^2+\\tfrac34 y^2\\ge0$, so it is non-negative for all real $x,y$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2-xy+y^2=\\left(x-\\tfrac{y}{2}\\right)^2+\\tfrac34 y^2\\ge0$, with equality only at $x=y=0$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "id": "al.y1.pure.proof-deduction.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "divisibility",
+    "factorisation"
+  ],
+  "questionText": "Prove that $5n^3 + n$ is divisible by $6$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the expression.",
+        "workingLatex": "5n^3 + n",
+        "explanation": "A direct factorisation is awkward, so we rewrite it in terms of a quantity we already understand.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split off a multiple of 6.",
+        "workingLatex": "5n^3 + n = 6n^3 - (n^3 - n)",
+        "explanation": "Since $6n^3 - n^3 + n = 5n^3 + n$, this identity is exact and isolates the familiar expression $n^3-n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor the known part.",
+        "workingLatex": "n^3 - n = (n-1)\\,n\\,(n+1)",
+        "explanation": "The term $n^3-n$ factors into three consecutive integers, a form guaranteed divisible by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the expression.",
+        "workingLatex": "5n^3 + n = 6n^3 - (n-1)\\,n\\,(n+1)",
+        "explanation": "Substituting the factorisation displays the expression as a difference of two pieces.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "First piece divisible by 6.",
+        "workingLatex": "6 \\mid 6n^3",
+        "explanation": "The term $6n^3$ is plainly a multiple of $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Second piece — divisibility by 2.",
+        "workingLatex": "\\text{among } n-1, n \\text{ one is even}",
+        "explanation": "Two consecutive integers include an even one, so $(n-1)n(n+1)$ is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Second piece — divisibility by 3.",
+        "workingLatex": "\\text{among } n-1, n, n+1 \\text{ one is } \\equiv 0 \\pmod 3",
+        "explanation": "Three consecutive integers always include a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Combine for the second piece.",
+        "workingLatex": "6 \\mid (n-1)\\,n\\,(n+1)",
+        "explanation": "Divisible by $2$ and by $3$ with $\\gcd(2,3)=1$, so the triple product is divisible by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write both pieces as multiples of 6.",
+        "workingLatex": "6n^3 = 6p, \\quad (n-1)n(n+1) = 6q",
+        "explanation": "Both parts are multiples of $6$, say $6p$ and $6q$ for integers $p,q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Subtract.",
+        "workingLatex": "5n^3 + n = 6p - 6q = 6(p - q)",
+        "explanation": "A difference of two multiples of $6$ is again a multiple of $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Identify the factor.",
+        "workingLatex": "p - q \\in \\mathbb{Z}",
+        "explanation": "Since $p,q$ are integers, $5n^3+n = 6\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the conclusion.",
+        "workingLatex": "6 \\mid 5n^3 + n \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Hence $5n^3+n$ is divisible by $6$ for every integer $n$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$5n^3+n=6n^3-(n^3-n)=6n^3-(n-1)n(n+1)$. Both terms are multiples of $6$, so their difference is too. Hence $6\\mid5n^3+n$. $\\blacksquare$"
+  }
+}

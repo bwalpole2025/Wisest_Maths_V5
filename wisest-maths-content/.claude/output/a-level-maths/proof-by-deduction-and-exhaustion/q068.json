@@ -1,0 +1,135 @@
+{
+  "id": "al.y1.pure.proof-deduction.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "divisibility",
+    "factorisation"
+  ],
+  "questionText": "Prove that $n^5 - 5n^3 + 4n$ is divisible by $120$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor out the common factor.",
+        "workingLatex": "n^5 - 5n^3 + 4n = n(n^4 - 5n^2 + 4)",
+        "explanation": "Taking out $n$ leaves a quartic in $n^2$ that factors like a quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor the quadratic in n².",
+        "workingLatex": "n^4 - 5n^2 + 4 = (n^2 - 1)(n^2 - 4)",
+        "explanation": "Treating $n^2$ as the variable, $t^2-5t+4=(t-1)(t-4)$, so we get $(n^2-1)(n^2-4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor each difference of squares.",
+        "workingLatex": "(n^2-1)(n^2-4) = (n-1)(n+1)(n-2)(n+2)",
+        "explanation": "Both brackets are differences of squares: $n^2-1=(n-1)(n+1)$ and $n^2-4=(n-2)(n+2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the full factorisation.",
+        "workingLatex": "n^5 - 5n^3 + 4n = (n-2)(n-1)\\,n\\,(n+1)(n+2)",
+        "explanation": "Including the factor $n$ and ordering the brackets reveals five consecutive integers centred on $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the structure.",
+        "workingLatex": "\\text{product of 5 consecutive integers}",
+        "explanation": "The whole expression is a product of five consecutive integers, which is the key to divisibility by $120=5!$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Split 120 into coprime prime powers.",
+        "workingLatex": "120 = 8 \\times 3 \\times 5",
+        "explanation": "Since $8,3,5$ are pairwise coprime, it suffices to prove divisibility by each separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divisibility by 5.",
+        "workingLatex": "\\text{5 consecutive integers include a multiple of } 5",
+        "explanation": "Any five consecutive integers contain exactly one multiple of $5$, so $5$ divides the product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Divisibility by 3.",
+        "workingLatex": "\\text{they include 3 consecutive integers} \\Rightarrow \\text{a multiple of } 3",
+        "explanation": "Among five consecutive integers there are three consecutive ones, which always include a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Divisibility by 8 — count even factors.",
+        "workingLatex": "\\text{among 5 consecutive integers, at least two are even}",
+        "explanation": "Consecutive integers alternate parity, so five in a row contain two or three even numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Use consecutive even numbers.",
+        "workingLatex": "\\text{two consecutive evens: one is a multiple of } 4",
+        "explanation": "Two even numbers two apart are consecutive evens; one of them is divisible by $4$ and the other by $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Conclude divisibility by 8.",
+        "workingLatex": "(\\text{mult. of }4)\\times(\\text{mult. of }2) \\Rightarrow 8 \\mid P",
+        "explanation": "The product of these two even factors is divisible by $4\\times2=8$, so $8$ divides the whole product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Gather the three results.",
+        "workingLatex": "8 \\mid P,\\ 3 \\mid P,\\ 5 \\mid P",
+        "explanation": "The product is divisible by $8$, by $3$ and by $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Apply pairwise coprimality.",
+        "workingLatex": "\\gcd \\text{ pairwise } 1 \\Rightarrow 8 \\cdot 3 \\cdot 5 \\mid P",
+        "explanation": "Because $8,3,5$ are pairwise coprime, divisibility by each forces divisibility by their product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Compute the product.",
+        "workingLatex": "8 \\times 3 \\times 5 = 120",
+        "explanation": "Multiplying the coprime factors gives $120$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Note the general principle.",
+        "workingLatex": "k! \\mid \\text{product of } k \\text{ consecutive integers}",
+        "explanation": "This is a special case of the general fact that a product of $k$ consecutive integers is divisible by $k!$; here $k=5$ and $5!=120$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the conclusion.",
+        "workingLatex": "120 \\mid n^5 - 5n^3 + 4n \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Since the expression is a product of five consecutive integers, it is divisible by $120$ for every integer $n$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^5-5n^3+4n=(n-2)(n-1)n(n+1)(n+2)$, a product of five consecutive integers. It is divisible by $8$, $3$ and $5$ (pairwise coprime), hence by $120=5!$. $\\blacksquare$"
+  }
+}

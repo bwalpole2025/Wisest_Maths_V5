@@ -1,0 +1,120 @@
+{
+  "id": "al.y1.pure.proof-deduction.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "sum of squares"
+  ],
+  "questionText": "Prove that $a^2 + b^2 + c^2 + d^2 \\ge ab + bc + cd + da$ for all real numbers $a, b, c, d$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } a^2+b^2+c^2+d^2 \\ge ab+bc+cd+da",
+        "explanation": "We form the difference of the two sides and aim to write it as a sum of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the difference.",
+        "workingLatex": "D = a^2+b^2+c^2+d^2 - (ab+bc+cd+da)",
+        "explanation": "Proving $D\\ge0$ is equivalent to the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Double the difference.",
+        "workingLatex": "2D = 2a^2+2b^2+2c^2+2d^2 - 2ab - 2bc - 2cd - 2da",
+        "explanation": "Doubling lets each squared variable split so the terms can be regrouped into perfect squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Anticipate the square pieces.",
+        "workingLatex": "\\text{pair terms cyclically: } (a,b),(b,c),(c,d),(d,a)",
+        "explanation": "The cross terms $-2ab,-2bc,-2cd,-2da$ suggest four squares built from consecutive pairs in the cycle $a\\to b\\to c\\to d\\to a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Regroup the terms.",
+        "workingLatex": "2D = (a^2-2ab+b^2)+(b^2-2bc+c^2)+(c^2-2cd+d^2)+(d^2-2da+a^2)",
+        "explanation": "Each variable's two copies are distributed so that each group completes a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the count.",
+        "workingLatex": "a^2, b^2, c^2, d^2 \\text{ each appear twice}",
+        "explanation": "Every squared term is used exactly twice and every cross term exactly once, so the regrouping is an exact identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write as a sum of squares.",
+        "workingLatex": "2D = (a-b)^2 + (b-c)^2 + (c-d)^2 + (d-a)^2",
+        "explanation": "Each bracket is a perfect square, so $2D$ is a sum of four squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Apply non-negativity.",
+        "workingLatex": "(a-b)^2, (b-c)^2, (c-d)^2, (d-a)^2 \\ge 0",
+        "explanation": "Each real square is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Add the squares.",
+        "workingLatex": "2D \\ge 0",
+        "explanation": "A sum of non-negative terms is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Halve to bound D.",
+        "workingLatex": "D \\ge 0",
+        "explanation": "Dividing by $2$ preserves the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Translate back.",
+        "workingLatex": "a^2+b^2+c^2+d^2 \\ge ab+bc+cd+da",
+        "explanation": "Since $D\\ge0$, the original inequality holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff a=b=c=d",
+        "explanation": "All four squares vanish only when consecutive variables are equal all the way round, i.e. $a=b=c=d$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm the domain.",
+        "workingLatex": "\\forall\\, a,b,c,d \\in \\mathbb{R}",
+        "explanation": "Only the non-negativity of real squares was used, valid for all real inputs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "a^2+b^2+c^2+d^2 \\ge ab+bc+cd+da",
+        "explanation": "Because $2D=(a-b)^2+(b-c)^2+(c-d)^2+(d-a)^2\\ge0$, the inequality holds for all real $a,b,c,d$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2\\big(a^2+b^2+c^2+d^2-ab-bc-cd-da\\big)=(a-b)^2+(b-c)^2+(c-d)^2+(d-a)^2\\ge0$, so the inequality holds, with equality iff $a=b=c=d$. $\\blacksquare$"
+  }
+}

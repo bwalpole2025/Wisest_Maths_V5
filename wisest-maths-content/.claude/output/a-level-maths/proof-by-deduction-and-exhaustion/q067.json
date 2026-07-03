@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.proof-deduction.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "squares",
+    "modular arithmetic"
+  ],
+  "questionText": "Prove that the sum of the squares of any two consecutive integers leaves a remainder of $1$ when divided by $4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the two consecutive integers.",
+        "workingLatex": "n \\text{ and } n+1",
+        "explanation": "Let the smaller integer be $n$; the next is $n+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the sum of the squares.",
+        "workingLatex": "S = n^2 + (n+1)^2",
+        "explanation": "We square each integer and add, as the statement requires.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand.",
+        "workingLatex": "S = n^2 + n^2 + 2n + 1 = 2n^2 + 2n + 1",
+        "explanation": "Expanding $(n+1)^2$ and collecting like terms gives a single quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor the even part.",
+        "workingLatex": "S = 2(n^2 + n) + 1",
+        "explanation": "Pulling a $2$ from the first two terms separates $S$ into an even piece plus $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rewrite the bracket as a product.",
+        "workingLatex": "S = 2\\,n(n+1) + 1",
+        "explanation": "Since $n^2+n=n(n+1)$, the term becomes $2n(n+1)$; the consecutive product will supply another factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Use consecutiveness for parity.",
+        "workingLatex": "n, n+1 \\text{ consecutive} \\Rightarrow n(n+1) \\text{ even}",
+        "explanation": "Among two consecutive integers one is even, so their product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the even product.",
+        "workingLatex": "n(n+1) = 2k, \\quad k \\in \\mathbb{Z}",
+        "explanation": "Whichever of $n,n+1$ is even, the product equals $2k$ for some integer $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute into S.",
+        "workingLatex": "S = 2(2k) + 1",
+        "explanation": "Replacing $n(n+1)$ with $2k$ turns the factor $2$ into $2\\times2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify.",
+        "workingLatex": "S = 4k + 1",
+        "explanation": "Multiplying out gives $4k+1$: a multiple of $4$ plus $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Read off the remainder.",
+        "workingLatex": "S = 4k + 1, \\quad 0 \\le 1 < 4",
+        "explanation": "Because $1$ is a valid remainder (between $0$ and $3$), $S$ leaves remainder $1$ on division by $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm generality.",
+        "workingLatex": "\\forall\\, n \\in \\mathbb{Z}",
+        "explanation": "No special assumption on $n$ was used, so the result holds for every pair of consecutive integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret the result.",
+        "workingLatex": "S \\equiv 1 \\pmod 4",
+        "explanation": "This sharpens the fact that the sum is odd: it is not just odd but exactly one more than a multiple of $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "n^2 + (n+1)^2 \\equiv 1 \\pmod 4",
+        "explanation": "The sum of the squares of any two consecutive integers is a multiple of $4$ plus $1$, so it always leaves remainder $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^2+(n+1)^2=2n^2+2n+1=2n(n+1)+1$. As $n(n+1)$ is even ($=2k$), this is $4k+1$, leaving remainder $1$ modulo $4$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "al.y1.pure.proof-deduction.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "sum of squares"
+  ],
+  "questionText": "Prove that $(a + b + c)^2 \\le 3(a^2 + b^2 + c^2)$ for all real numbers $a, b, c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } (a+b+c)^2 \\le 3(a^2+b^2+c^2)",
+        "explanation": "We form the difference (larger minus smaller) and aim to write it as a sum of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the difference.",
+        "workingLatex": "D = 3(a^2+b^2+c^2) - (a+b+c)^2",
+        "explanation": "Proving $D\\ge0$ is equivalent to the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the square.",
+        "workingLatex": "(a+b+c)^2 = a^2+b^2+c^2 + 2(ab+bc+ca)",
+        "explanation": "Expanding the squared sum produces the three squares and twice the pairwise products.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into D.",
+        "workingLatex": "D = 3(a^2+b^2+c^2) - a^2-b^2-c^2 - 2(ab+bc+ca)",
+        "explanation": "Replacing $(a+b+c)^2$ by its expansion collects all the terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify.",
+        "workingLatex": "D = 2(a^2+b^2+c^2) - 2(ab+bc+ca)",
+        "explanation": "The squared terms combine to $2(a^2+b^2+c^2)$, leaving the pairwise products.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Regroup into completed squares.",
+        "workingLatex": "D = (a^2-2ab+b^2)+(b^2-2bc+c^2)+(c^2-2ca+a^2)",
+        "explanation": "Each variable's two copies are distributed so that each group is a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the count.",
+        "workingLatex": "a^2, b^2, c^2 \\text{ each used twice}",
+        "explanation": "Every squared term appears twice and every cross term once, so the regrouping is an exact identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write as a sum of squares.",
+        "workingLatex": "D = (a-b)^2 + (b-c)^2 + (c-a)^2",
+        "explanation": "Each bracket is a perfect square, so $D$ is a sum of three squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Apply non-negativity.",
+        "workingLatex": "(a-b)^2, (b-c)^2, (c-a)^2 \\ge 0",
+        "explanation": "Each real square is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Add the squares.",
+        "workingLatex": "D \\ge 0",
+        "explanation": "A sum of non-negative terms is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Translate back.",
+        "workingLatex": "(a+b+c)^2 \\le 3(a^2+b^2+c^2)",
+        "explanation": "Since $D\\ge0$, the smaller side is at most the larger, giving the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff a = b = c",
+        "explanation": "All three squares vanish only when $a=b=c$, so the bound is sharp.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm the domain.",
+        "workingLatex": "\\forall\\, a,b,c \\in \\mathbb{R}",
+        "explanation": "Only non-negativity of real squares was used, valid for all real inputs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "(a+b+c)^2 \\le 3(a^2+b^2+c^2)",
+        "explanation": "Because $3(a^2+b^2+c^2)-(a+b+c)^2=(a-b)^2+(b-c)^2+(c-a)^2\\ge0$, the inequality holds for all real $a,b,c$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3(a^2+b^2+c^2)-(a+b+c)^2=(a-b)^2+(b-c)^2+(c-a)^2\\ge0$, so $(a+b+c)^2\\le3(a^2+b^2+c^2)$, with equality iff $a=b=c$. $\\blacksquare$"
+  }
+}

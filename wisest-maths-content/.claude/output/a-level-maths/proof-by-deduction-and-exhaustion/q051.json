@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.proof-deduction.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "divisibility",
+    "factorisation"
+  ],
+  "questionText": "Prove that $3n^2 + 3n$ is divisible by $6$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the expression.",
+        "workingLatex": "3n^2 + 3n",
+        "explanation": "We start from the expression and look for a factorisation exposing a factor of $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor.",
+        "workingLatex": "3n^2 + 3n = 3n(n+1)",
+        "explanation": "Taking out $3n$ leaves a product of consecutive integers, which will supply the extra factor we need.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify what is still needed.",
+        "workingLatex": "\\text{have a factor } 3; \\text{ need a factor } 2",
+        "explanation": "We already have a $3$; to reach $6=2\\times3$ we must show $n(n+1)$ contributes a factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Use consecutiveness.",
+        "workingLatex": "n, n+1 \\text{ consecutive} \\Rightarrow \\text{one is even}",
+        "explanation": "Among two consecutive integers exactly one is even, so their product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case n even.",
+        "workingLatex": "n = 2k \\Rightarrow n(n+1) = 2k(n+1)",
+        "explanation": "If $n$ is even, the product picks up a factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case n odd.",
+        "workingLatex": "n+1 = 2k \\Rightarrow n(n+1) = 2k\\,n",
+        "explanation": "If $n$ is odd then $n+1$ is even, so again the product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Record the even product.",
+        "workingLatex": "n(n+1) = 2m, \\quad m \\in \\mathbb{Z}",
+        "explanation": "In both cases $n(n+1)=2m$ for some integer $m$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute back.",
+        "workingLatex": "3n^2 + 3n = 3 \\cdot 2m = 6m",
+        "explanation": "Replacing $n(n+1)$ with $2m$ turns the factor $3$ into $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "6 \\mid 3n^2 + 3n \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Since the expression equals $6m$, it is divisible by $6$ for every integer $n$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3n^2+3n=3n(n+1)$; as $n(n+1)$ is even ($=2m$), this is $6m$. Hence $6\\mid 3n^2+3n$. $\\blacksquare$"
+  }
+}

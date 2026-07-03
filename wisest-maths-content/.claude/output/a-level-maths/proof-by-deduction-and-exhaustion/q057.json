@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.proof-deduction.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "modular arithmetic",
+    "multiplication"
+  ],
+  "questionText": "Two integers each leave a remainder of $1$ when divided by $3$. Prove that their product also leaves a remainder of $1$ when divided by $3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the two integers.",
+        "workingLatex": "3a+1 \\text{ and } 3b+1, \\quad a,b \\in \\mathbb{Z}",
+        "explanation": "An integer with remainder $1$ on division by $3$ has the form $3a+1$; the two integers use different letters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the product.",
+        "workingLatex": "(3a+1)(3b+1)",
+        "explanation": "The claim is about their product, so we multiply the two forms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the brackets.",
+        "workingLatex": "9ab + 3a + 3b + 1",
+        "explanation": "Multiplying out gives four terms, three of which carry a factor of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Group the multiple of 3.",
+        "workingLatex": "3(3ab + a + b) + 1",
+        "explanation": "Factoring $3$ from the first three terms separates a multiple of $3$ from the leftover $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "3ab + a + b \\in \\mathbb{Z}",
+        "explanation": "Since $a,b$ are integers, $3ab+a+b$ is an integer, so $3(3ab+a+b)$ is a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Read off the remainder.",
+        "workingLatex": "3 \\mid 3(3ab+a+b), \\text{ leftover } 1",
+        "explanation": "The multiple of $3$ leaves nothing over, so the whole product leaves remainder $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the remainder is valid.",
+        "workingLatex": "0 \\le 1 < 3",
+        "explanation": "Since $1$ lies between $0$ and $2$, it is a genuine remainder on division by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpret the result.",
+        "workingLatex": "(3a+1)(3b+1) \\equiv 1 \\pmod 3",
+        "explanation": "The product is one more than a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{product} \\equiv 1 \\pmod 3",
+        "explanation": "Hence the product of two integers that are each $\\equiv1\\pmod3$ is itself $\\equiv1\\pmod3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(3a+1)(3b+1)=9ab+3a+3b+1=3(3ab+a+b)+1$, which leaves remainder $1$ on division by $3$. $\\blacksquare$"
+  }
+}

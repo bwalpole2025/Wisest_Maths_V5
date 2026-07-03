@@ -1,0 +1,100 @@
+{
+  "id": "al.y1.pure.proof-deduction.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "odd numbers",
+    "squares",
+    "modular arithmetic"
+  ],
+  "questionText": "Prove that the sum of the squares of any two consecutive odd numbers leaves a remainder of $2$ when divided by $4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the two consecutive odd numbers.",
+        "workingLatex": "2k+1 \\text{ and } 2k+3, \\quad k \\in \\mathbb{Z}",
+        "explanation": "Consecutive odd numbers differ by $2$, so if the first is $2k+1$ the next is $2k+3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the sum of the squares.",
+        "workingLatex": "S = (2k+1)^2 + (2k+3)^2",
+        "explanation": "We translate the statement directly: square each odd number and add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the first square.",
+        "workingLatex": "(2k+1)^2 = 4k^2 + 4k + 1",
+        "explanation": "Expanding prepares the first term for combination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the second square.",
+        "workingLatex": "(2k+3)^2 = 4k^2 + 12k + 9",
+        "explanation": "Expanding the second square similarly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the two squares.",
+        "workingLatex": "S = 8k^2 + 16k + 10",
+        "explanation": "Adding the expansions and collecting like terms gives a single expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Split off the multiple of 4.",
+        "workingLatex": "S = 4(2k^2 + 4k + 2) + 2",
+        "explanation": "Since $8k^2+16k+8 = 4(2k^2+4k+2)$, the leftover is $10-8=2$; this is the structure that fixes the remainder.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Identify the multiple of 4.",
+        "workingLatex": "4 \\mid 4(2k^2 + 4k + 2)",
+        "explanation": "The first part is $4$ times an integer, so it contributes nothing to the remainder.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Read off the remainder.",
+        "workingLatex": "S = 4(2k^2+4k+2) + 2, \\quad 0 \\le 2 < 4",
+        "explanation": "Because $2$ is a valid remainder (at least $0$ and less than $4$), $S$ leaves remainder $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the result.",
+        "workingLatex": "S \\equiv 2 \\pmod 4",
+        "explanation": "In particular $S$ is even but never divisible by $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm generality.",
+        "workingLatex": "\\forall\\, k \\in \\mathbb{Z}",
+        "explanation": "No special assumption on $k$ was used, so the result holds for every pair of consecutive odd numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion.",
+        "workingLatex": "S \\equiv 2 \\pmod 4",
+        "explanation": "The sum of the squares of any two consecutive odd numbers is a multiple of $4$ plus $2$, so it always leaves remainder $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2k+1)^2+(2k+3)^2=8k^2+16k+10=4(2k^2+4k+2)+2$, so the sum leaves remainder $2$ on division by $4$. $\\blacksquare$"
+  }
+}

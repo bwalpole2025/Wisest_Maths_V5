@@ -1,0 +1,128 @@
+{
+  "id": "al.y1.pure.proof-deduction.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "proof by exhaustion",
+    "divisibility",
+    "factorisation"
+  ],
+  "questionText": "Prove that $n^4 - n^2$ is divisible by $12$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor out the common factor.",
+        "workingLatex": "n^4 - n^2 = n^2(n^2 - 1)",
+        "explanation": "Taking out $n^2$ leaves a difference of squares, ready to factor further.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor the difference of squares.",
+        "workingLatex": "n^2(n^2 - 1) = n^2(n-1)(n+1)",
+        "explanation": "Since $n^2-1=(n-1)(n+1)$, the expression becomes $n^2(n-1)(n+1)$, which contains the three consecutive integers $n-1,n,n+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Split 12 into coprime factors.",
+        "workingLatex": "12 = 4 \\times 3, \\quad \\gcd(4,3)=1",
+        "explanation": "To prove divisibility by $12$ it suffices to prove divisibility by $4$ and by $3$ separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divisibility by 3 — set up cases.",
+        "workingLatex": "n \\equiv 0, 1, 2 \\pmod 3",
+        "explanation": "We use the three consecutive factors $n-1,n,n+1$ and exhaust the residues of $n$ modulo $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check each residue.",
+        "workingLatex": "n\\equiv0: 3\\mid n;\\ \\ n\\equiv1: 3\\mid(n-1);\\ \\ n\\equiv2: 3\\mid(n+1)",
+        "explanation": "In every case one of the factors is a multiple of $3$, so $3$ divides the product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Record divisibility by 3.",
+        "workingLatex": "3 \\mid n^4 - n^2",
+        "explanation": "The expression contains a factor divisible by $3$ in all cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divisibility by 4 — split on parity of n.",
+        "workingLatex": "n \\text{ even or } n \\text{ odd}",
+        "explanation": "We handle the factor of $4$ by exhausting the two parities of $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case n even.",
+        "workingLatex": "n = 2k \\Rightarrow n^2 = 4k^2",
+        "explanation": "If $n$ is even, then $n^2=4k^2$ already carries a factor of $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude the even case.",
+        "workingLatex": "4 \\mid n^2 \\Rightarrow 4 \\mid n^4 - n^2",
+        "explanation": "Since $n^2$ is a factor of the expression and is divisible by $4$, so is the whole expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Case n odd.",
+        "workingLatex": "n-1, n+1 \\text{ are consecutive even numbers}",
+        "explanation": "If $n$ is odd, both $n-1$ and $n+1$ are even, and they differ by $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Their product carries a factor of 4.",
+        "workingLatex": "(n-1)(n+1) = n^2 - 1 = 4t",
+        "explanation": "Two consecutive even numbers include a multiple of $4$, so their product is divisible by $4$ (in fact by $8$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Conclude the odd case.",
+        "workingLatex": "4 \\mid (n-1)(n+1) \\Rightarrow 4 \\mid n^4 - n^2",
+        "explanation": "Since $(n-1)(n+1)$ is a factor of the expression and is divisible by $4$, so is the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Record divisibility by 4.",
+        "workingLatex": "4 \\mid n^4 - n^2 \\text{ in both cases}",
+        "explanation": "Whether $n$ is even or odd, the expression is divisible by $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Combine using coprimality.",
+        "workingLatex": "4 \\mid E,\\ 3 \\mid E,\\ \\gcd(4,3)=1 \\Rightarrow 12 \\mid E",
+        "explanation": "Divisibility by the coprime numbers $4$ and $3$ forces divisibility by their product $12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the conclusion.",
+        "workingLatex": "12 \\mid n^4 - n^2 \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Hence $n^4-n^2$ is divisible by $12$ for every integer $n$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^4-n^2=n^2(n-1)(n+1)$. It is divisible by $3$ (three consecutive factors) and by $4$ (if $n$ even, $4\\mid n^2$; if $n$ odd, $n-1,n+1$ are consecutive evens). As $\\gcd(4,3)=1$, $12\\mid n^4-n^2$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.proof-deduction.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "algebraic identity",
+    "perfect square"
+  ],
+  "questionText": "Prove that $n^2 + (n+1)^2 + \\big(n(n+1)\\big)^2$ is a perfect square for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the expression.",
+        "workingLatex": "E = n^2 + (n+1)^2 + \\big(n(n+1)\\big)^2",
+        "explanation": "We aim to show $E$ equals the square of an integer, so we expand and try to recognise a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the middle square.",
+        "workingLatex": "(n+1)^2 = n^2 + 2n + 1",
+        "explanation": "Expanding $(n+1)^2$ prepares it for combining.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the last square.",
+        "workingLatex": "\\big(n(n+1)\\big)^2 = (n^2+n)^2 = n^4 + 2n^3 + n^2",
+        "explanation": "Since $n(n+1)=n^2+n$, its square is $n^4+2n^3+n^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add all three parts.",
+        "workingLatex": "E = n^2 + (n^2 + 2n + 1) + (n^4 + 2n^3 + n^2)",
+        "explanation": "We sum the three expanded pieces.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Collect like terms.",
+        "workingLatex": "E = n^4 + 2n^3 + 3n^2 + 2n + 1",
+        "explanation": "Combining gives a quartic; the three $n^2$ terms add to $3n^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Guess the square root.",
+        "workingLatex": "\\text{try } (n^2 + n + 1)^2",
+        "explanation": "A quartic that is a perfect square should be the square of a quadratic; $n^2+n+1$ is a natural candidate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Expand the candidate.",
+        "workingLatex": "(n^2+n+1)^2 = n^4 + 2n^3 + 3n^2 + 2n + 1",
+        "explanation": "Squaring $n^2+n+1$ term by term reproduces every coefficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare with E.",
+        "workingLatex": "E = (n^2 + n + 1)^2",
+        "explanation": "The expansion of the candidate matches $E$ exactly, so they are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the base is an integer.",
+        "workingLatex": "n^2 + n + 1 \\in \\mathbb{Z}",
+        "explanation": "For integer $n$, $n^2+n+1$ is an integer, so $E$ is the square of an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm generality.",
+        "workingLatex": "\\forall\\, n \\in \\mathbb{Z}",
+        "explanation": "The algebra held for a general $n$, so the result is not a coincidence of particular values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion.",
+        "workingLatex": "E = (n^2+n+1)^2 \\text{ is a perfect square}",
+        "explanation": "Hence $n^2+(n+1)^2+\\big(n(n+1)\\big)^2$ is always a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the neat pattern.",
+        "workingLatex": "n^2 + (n+1)^2 + \\big(n(n+1)\\big)^2 = (n^2+n+1)^2",
+        "explanation": "This is a pleasing identity: the sum of the squares of two consecutive integers and of their product is the square of one more than their product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Sanity check with a value.",
+        "workingLatex": "n=2: 4 + 9 + 36 = 49 = 7^2",
+        "explanation": "Testing $n=2$ gives $49=7^2$ and $n^2+n+1=7$, confirming the identity numerically.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^2+(n+1)^2+\\big(n(n+1)\\big)^2 = n^4+2n^3+3n^2+2n+1 = (n^2+n+1)^2$, the square of an integer. $\\blacksquare$"
+  }
+}

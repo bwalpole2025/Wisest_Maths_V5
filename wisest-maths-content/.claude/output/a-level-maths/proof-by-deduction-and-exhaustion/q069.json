@@ -1,0 +1,135 @@
+{
+  "id": "al.y1.pure.proof-deduction.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "proof by exhaustion",
+    "divisibility",
+    "modular arithmetic"
+  ],
+  "questionText": "Prove that $n^7 - n$ is divisible by $42$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Split 42 into coprime prime factors.",
+        "workingLatex": "42 = 2 \\times 3 \\times 7",
+        "explanation": "Since $2,3,7$ are pairwise coprime, it suffices to prove divisibility by each separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor out n.",
+        "workingLatex": "n^7 - n = n(n^6 - 1)",
+        "explanation": "Removing the common factor $n$ leaves $n^6-1$, a difference of squares (and cubes) ready to factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor n⁶ − 1.",
+        "workingLatex": "n^6 - 1 = (n^3 - 1)(n^3 + 1)",
+        "explanation": "Treating $n^6-1$ as $(n^3)^2-1$ splits it into $(n^3-1)(n^3+1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor further to expose consecutive integers.",
+        "workingLatex": "= (n-1)(n^2+n+1)(n+1)(n^2-n+1)",
+        "explanation": "Using $n^3-1=(n-1)(n^2+n+1)$ and $n^3+1=(n+1)(n^2-n+1)$ shows $n-1$ and $n+1$ are factors, alongside $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divisibility by 2.",
+        "workingLatex": "\\text{among } n-1, n \\text{ one is even}",
+        "explanation": "The factors include the consecutive integers $n-1$ and $n$, one of which is even, so $2\\mid n^7-n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Divisibility by 3.",
+        "workingLatex": "\\text{among } n-1, n, n+1 \\text{ one is } \\equiv 0 \\pmod 3",
+        "explanation": "The factors include three consecutive integers $n-1,n,n+1$, which always contain a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divisibility by 7 — use exhaustion.",
+        "workingLatex": "n \\equiv 0,1,2,3,4,5,6 \\pmod 7",
+        "explanation": "The factorisation does not obviously give a $7$, so we prove $7\\mid n^7-n$ by exhausting the residues of $n$ modulo $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Reduce to checking r⁷ ≡ r.",
+        "workingLatex": "n \\equiv r \\Rightarrow n^7 - n \\equiv r^7 - r \\pmod 7",
+        "explanation": "Because congruences respect powers and sums, $n^7-n$ depends only on $r=n\\bmod7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check residues 0, 1, 6.",
+        "workingLatex": "0^7\\equiv0,\\ 1^7\\equiv1,\\ 6^7\\equiv6 \\pmod 7",
+        "explanation": "For $r=0,1$ the result is immediate; $6\\equiv-1$ gives $(-1)^7=-1\\equiv6$, so $r^7\\equiv r$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check residues 2 and 5.",
+        "workingLatex": "2^7 = 128 \\equiv 2,\\quad 5^7 \\equiv 5 \\pmod 7",
+        "explanation": "Since $128 = 7\\times18 + 2$, we get $2^7\\equiv2$; likewise $5\\equiv-2$ gives $5^7\\equiv-2^7\\equiv-2\\equiv5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check residues 3 and 4.",
+        "workingLatex": "3^7 \\equiv 3,\\quad 4^7 \\equiv 4 \\pmod 7",
+        "explanation": "Direct reduction gives $3^7\\equiv3$; and $4\\equiv-3$ gives $4^7\\equiv-3^7\\equiv-3\\equiv4$. Every residue satisfies $r^7\\equiv r$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Conclude divisibility by 7.",
+        "workingLatex": "r^7 \\equiv r \\ \\forall r \\Rightarrow 7 \\mid n^7 - n",
+        "explanation": "Since $n^7\\equiv n$ for every residue, $7$ divides $n^7-n$ for all integers $n$ (Fermat's little theorem in action).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Gather the three results.",
+        "workingLatex": "2 \\mid n^7-n,\\ 3 \\mid n^7-n,\\ 7 \\mid n^7-n",
+        "explanation": "The expression is divisible by $2$, by $3$ and by $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Apply pairwise coprimality.",
+        "workingLatex": "\\gcd \\text{ pairwise } 1 \\Rightarrow 2\\cdot3\\cdot7 \\mid n^7-n",
+        "explanation": "Because $2,3,7$ are pairwise coprime, divisibility by each forces divisibility by their product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Compute the product.",
+        "workingLatex": "2 \\times 3 \\times 7 = 42",
+        "explanation": "Multiplying the coprime factors gives $42$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the conclusion.",
+        "workingLatex": "42 \\mid n^7 - n \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Hence $n^7-n$ is divisible by $42$ for every integer $n$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^7-n=n(n-1)(n+1)(n^2+n+1)(n^2-n+1)$ gives factors $2$ and $3$ from consecutive integers; exhausting $n\\bmod7$ shows $r^7\\equiv r$, so $7\\mid n^7-n$. As $2,3,7$ are coprime, $42\\mid n^7-n$. $\\blacksquare$"
+  }
+}

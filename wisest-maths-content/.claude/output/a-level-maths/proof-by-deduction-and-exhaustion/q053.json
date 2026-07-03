@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.proof-deduction.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "algebraic fractions"
+  ],
+  "questionText": "Prove that $x^2 + \\dfrac{1}{x^2} \\ge 2$ for all real numbers $x \\neq 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } x^2 + \\tfrac{1}{x^2} \\ge 2 \\text{ for } x \\neq 0",
+        "explanation": "We exclude $x=0$ so that $1/x^2$ is defined. A single square will settle the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Start from a non-negative square.",
+        "workingLatex": "\\left(x - \\tfrac{1}{x}\\right)^2 \\ge 0",
+        "explanation": "The square of the real number $x-\\tfrac1x$ is non-negative for every $x\\neq0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the square.",
+        "workingLatex": "\\left(x - \\tfrac{1}{x}\\right)^2 = x^2 - 2 + \\tfrac{1}{x^2}",
+        "explanation": "Expanding gives $x^2$, the cross term $-2\\cdot x\\cdot\\tfrac1x=-2$, and $\\tfrac1{x^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the inequality with the expansion.",
+        "workingLatex": "x^2 - 2 + \\tfrac{1}{x^2} \\ge 0",
+        "explanation": "Substituting the expansion into the square inequality relates the terms of interest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add 2 to both sides.",
+        "workingLatex": "x^2 + \\tfrac{1}{x^2} \\ge 2",
+        "explanation": "Adding $2$ moves the constant across and gives exactly the target inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff x = \\tfrac{1}{x} \\iff x = \\pm 1",
+        "explanation": "Equality needs $x-\\tfrac1x=0$, i.e. $x^2=1$, so $x=\\pm1$; the bound is sharp.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the domain.",
+        "workingLatex": "x \\neq 0",
+        "explanation": "The only requirement is $x\\neq0$ so that $\\tfrac1x$ is defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the logical direction.",
+        "workingLatex": "\\left(x-\\tfrac1x\\right)^2 \\ge 0 \\Rightarrow x^2+\\tfrac1{x^2}\\ge 2",
+        "explanation": "Each step follows from a known truth, so this is a valid direct proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "x^2 + \\tfrac{1}{x^2} \\ge 2 \\ \\forall x \\neq 0",
+        "explanation": "Starting from a non-negative square we deduced the inequality for all nonzero real $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(x-\\tfrac1x\\right)^2\\ge0 \\Rightarrow x^2-2+\\tfrac1{x^2}\\ge0 \\Rightarrow x^2+\\tfrac1{x^2}\\ge2$, with equality at $x=\\pm1$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "al.y1.pure.proof-deduction.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "even numbers",
+    "divisibility",
+    "factorisation"
+  ],
+  "questionText": "Prove that the product of any three consecutive even numbers is divisible by $48$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the three consecutive even numbers.",
+        "workingLatex": "2n,\\; 2n+2,\\; 2n+4, \\quad n \\in \\mathbb{Z}",
+        "explanation": "Consecutive even numbers step up by $2$, so starting from $2n$ they are $2n$, $2n+2$ and $2n+4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the product.",
+        "workingLatex": "P = (2n)(2n+2)(2n+4)",
+        "explanation": "The claim concerns the product of the three even numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor 2 out of each bracket.",
+        "workingLatex": "P = 2 \\cdot 2 \\cdot 2 \\cdot n(n+1)(n+2)",
+        "explanation": "Each even factor contributes a $2$: $2n=2\\cdot n$, $2n+2=2(n+1)$, $2n+4=2(n+2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect the factors of 2.",
+        "workingLatex": "P = 8\\, n(n+1)(n+2)",
+        "explanation": "Multiplying the three $2$s gives an explicit factor of $8$ times a product of three consecutive integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Reduce the goal.",
+        "workingLatex": "48 = 8 \\times 6, \\text{ so show } 6 \\mid n(n+1)(n+2)",
+        "explanation": "Since we already have a factor of $8$, it remains to show $n(n+1)(n+2)$ is divisible by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Divisibility by 2.",
+        "workingLatex": "\\text{among } n, n+1 \\text{ one is even}",
+        "explanation": "Two consecutive integers include an even one, so the triple product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divisibility by 3 — exhaust n mod 3.",
+        "workingLatex": "n\\equiv0: 3\\mid n;\\ n\\equiv1: 3\\mid(n+2);\\ n\\equiv2: 3\\mid(n+1)",
+        "explanation": "Checking each residue shows one of the three consecutive factors is always a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Combine for divisibility by 6.",
+        "workingLatex": "6 \\mid n(n+1)(n+2)",
+        "explanation": "Divisible by $2$ and by $3$ with $\\gcd(2,3)=1$, so the triple product is divisible by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Name the resulting integer.",
+        "workingLatex": "n(n+1)(n+2) = 6m, \\quad m \\in \\mathbb{Z}",
+        "explanation": "Divisibility by $6$ lets us write the triple product as $6m$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Substitute back into P.",
+        "workingLatex": "P = 8 \\cdot 6m = 48m",
+        "explanation": "Replacing the triple product with $6m$ turns the factor $8$ into $48$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Identify the factor.",
+        "workingLatex": "m \\in \\mathbb{Z}",
+        "explanation": "Since $m$ is an integer, $P = 48\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret the form.",
+        "workingLatex": "48 \\mid P",
+        "explanation": "A number equal to $48$ times an integer is a multiple of $48$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm generality.",
+        "workingLatex": "\\forall\\, n \\in \\mathbb{Z}",
+        "explanation": "No special assumption on $n$ was made, so the result holds for every triple of consecutive even numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "48 \\mid (2n)(2n+2)(2n+4)",
+        "explanation": "Hence the product of any three consecutive even numbers is divisible by $48$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2n)(2n+2)(2n+4)=8\\,n(n+1)(n+2)$. As $n(n+1)(n+2)$ is a product of three consecutive integers it is divisible by $6$, say $6m$, so $P=48m$. Hence $48\\mid P$. $\\blacksquare$"
+  }
+}
