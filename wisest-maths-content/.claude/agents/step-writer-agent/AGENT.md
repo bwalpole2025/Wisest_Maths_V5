@@ -41,7 +41,15 @@ You must respect the target step count decided by the `solution-architect`:
 
 Do not create more or fewer steps than planned unless given new instructions.
 
-### 4. Output Format
+### 4. Use the Intuitive Explanation Skill
+When writing the `explanation` field, use the `intuitive-explanation` skill to ensure the explanation is clear, conceptual, and student-friendly.
+
+### 5. Diagram Rules
+- Only create a `diagram` when the plan from `solution-architect` explicitly says `needsDiagram: true` for that step.
+- Make diagrams clean, accurate, and educationally useful.
+- Use the standard diagram JSON format expected by the frontend.
+
+### 6. Output Format
 You must return **exactly one step** in the following JSON format:
 
 ```json
