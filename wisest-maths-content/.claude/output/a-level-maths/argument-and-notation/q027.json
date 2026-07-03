@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "counterexample", "zero product"],
+  "questionText": "Let $a$ and $b$ be real numbers. Taking the statements $P: ab = 0$ and $Q: a = 0$, determine whether $P$ is a necessary condition, a sufficient condition, both, or neither, for $Q$. Justify each part, giving a counterexample where a direction fails.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Translate 'necessary' and 'sufficient' into arrows.",
+        "workingLatex": "P: ab = 0, \\quad Q: a = 0",
+        "explanation": "$P$ is sufficient for $Q$ exactly when $P \\Rightarrow Q$, and necessary for $Q$ exactly when $Q \\Rightarrow P$. So we test those two implications in turn.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set up the sufficiency test.",
+        "workingLatex": "\\text{does } ab = 0 \\Rightarrow a = 0?",
+        "explanation": "Sufficiency asks whether knowing the product is zero is enough on its own to conclude that $a$ is zero. We probe this claim with a counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Choose a counterexample for sufficiency.",
+        "workingLatex": "a = 3,\\ b = 0:\\ ab = 3 \\cdot 0 = 0",
+        "explanation": "Setting $b = 0$ forces the product to be zero no matter what $a$ is, which lets $a$ stay non-zero while $P$ still holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Show Q fails at this point.",
+        "workingLatex": "ab = 0 \\ (P \\text{ holds}) \\text{ but } a = 3 \\ne 0 \\ (Q \\text{ fails})",
+        "explanation": "Here the product is zero yet $a$ is not, so $P$ does not force $Q$. A single counterexample is enough to reject sufficiency.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude P is not sufficient.",
+        "workingLatex": "P \\not\\Rightarrow Q,\\ \\text{so } P \\text{ is not sufficient for } Q",
+        "explanation": "Because $ab = 0$ can happen without $a = 0$, the product being zero is not enough to guarantee $a = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set up the necessity test.",
+        "workingLatex": "\\text{does } a = 0 \\Rightarrow ab = 0?",
+        "explanation": "Necessity asks the other direction, namely whether $Q$ holding forces $P$ to hold as well. We check this by substituting $a = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute a = 0 into the product.",
+        "workingLatex": "a = 0 \\Rightarrow ab = 0 \\cdot b = 0",
+        "explanation": "If $a$ is zero then the product is zero regardless of $b$, because zero times anything is zero. So $Q$ always drags $P$ along with it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude P is necessary.",
+        "workingLatex": "Q \\Rightarrow P \\text{ is true, so } P \\text{ is necessary for } Q",
+        "explanation": "Since $a = 0$ cannot occur without $ab = 0$ also occurring, $P$ is a necessary condition for $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Give the intuitive reason behind the result.",
+        "workingLatex": "ab = 0 \\iff (a = 0 \\ \\text{or}\\ b = 0)",
+        "explanation": "The product being zero is a weaker requirement than $a = 0$ alone, since it can be met by $b = 0$ instead. A weaker consequence of $Q$ is exactly what 'necessary but not sufficient' looks like.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the final classification.",
+        "workingLatex": "P \\text{ is necessary but not sufficient for } Q",
+        "explanation": "Combining the two tests, $ab = 0$ is forced by $a = 0$ but does not force it back, so $P$ is necessary but not sufficient for $Q$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P$ is necessary but not sufficient for $Q$: $a = 0 \\Rightarrow ab = 0$ (necessary), but $ab = 0 \\not\\Rightarrow a = 0$, as shown by $a = 3,\\ b = 0$ (not sufficient)."
+  }
+}

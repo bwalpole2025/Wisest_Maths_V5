@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "biconditional", "contrapositive", "parity", "proof"],
+  "questionText": "Let $m$ and $n$ be integers. Consider the statements $P:\\ mn$ is odd, and $Q:\\ m$ and $n$ are both odd. Determine which of the symbols $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ correctly connects $P$ and $Q$, proving each direction that you claim.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write each statement in algebraic form.",
+        "workingLatex": "P:\\ mn \\text{ is odd}, \\qquad Q:\\ m \\text{ is odd and } n \\text{ is odd}",
+        "explanation": "Before comparing two statements we pin down exactly what each one asserts. Translating 'odd' into algebra later lets us test the claims by calculation rather than by feeling.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recognise that a biconditional needs two separate proofs.",
+        "workingLatex": "P \\Leftrightarrow Q \\ \\text{ requires both } \\ Q \\Rightarrow P \\ \\text{ and } \\ P \\Rightarrow Q",
+        "explanation": "The two-way symbol $\\Leftrightarrow$ is a pair of one-way claims bundled together, so we must establish each direction on its own. We prove the two arrows separately and only then combine them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Begin the reverse direction Q ⇒ P by writing both numbers as odd.",
+        "workingLatex": "m = 2a+1, \\quad n = 2b+1 \\qquad (a, b \\in \\mathbb{Z})",
+        "explanation": "Assume $Q$ is true and try to reach $P$. Every odd integer is one more than an even number, so the form $2a+1$ captures 'odd' exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply the two odd numbers together.",
+        "workingLatex": "mn = (2a+1)(2b+1) = 4ab + 2a + 2b + 1 = 2(2ab + a + b) + 1",
+        "explanation": "Expanding and then grouping every term except the final $1$ into a factor of $2$ shows the product has the shape 'even number plus one'. That shape is the definition of odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude the reverse direction.",
+        "workingLatex": "mn = 2k + 1 \\ \\Rightarrow\\ mn \\text{ is odd}, \\qquad \\text{so } Q \\Rightarrow P",
+        "explanation": "Since $2ab+a+b$ is an integer, $mn$ is genuinely of the form $2k+1$. Two odd factors therefore always give an odd product, so $Q$ forces $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set up the forward direction P ⇒ Q using its contrapositive.",
+        "workingLatex": "(P \\Rightarrow Q) \\ \\equiv\\ (\\neg Q \\Rightarrow \\neg P)",
+        "explanation": "Proving $P\\Rightarrow Q$ directly is awkward, but a statement and its contrapositive are logically identical. It is far easier to assume a factor is even and watch the product become even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the negation of Q.",
+        "workingLatex": "\\neg Q:\\ m \\text{ is even} \\ \\text{ or } \\ n \\text{ is even}",
+        "explanation": "The opposite of 'both are odd' is 'at least one is even'. Because the situation is symmetric in $m$ and $n$, we may assume without loss of generality that $m$ is the even one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Use the even factor to compute the product.",
+        "workingLatex": "m = 2a \\ \\Rightarrow\\ mn = (2a)n = 2(an)",
+        "explanation": "Writing the even factor as $2a$ pulls a factor of $2$ straight out of the product. A single even factor is enough to make the whole product even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude the contrapositive.",
+        "workingLatex": "mn = 2(an) \\ \\Rightarrow\\ mn \\text{ is even}, \\quad \\text{i.e. } \\neg P",
+        "explanation": "Since $an$ is an integer, $mn$ is a multiple of $2$, so $P$ fails. We have shown $\\neg Q$ leads to $\\neg P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recover the forward direction.",
+        "workingLatex": "\\neg Q \\Rightarrow \\neg P \\ \\text{ gives } \\ P \\Rightarrow Q",
+        "explanation": "Because a contrapositive is equivalent to the original implication, proving $\\neg Q\\Rightarrow\\neg P$ has proved $P\\Rightarrow Q$. So an odd product forces both factors to be odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Combine both directions to choose the symbol.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ and } \\ Q \\Rightarrow P \\ \\Rightarrow\\ P \\Leftrightarrow Q",
+        "explanation": "Each statement forces the other, which is precisely what the two-way arrow means. The correct connective is therefore $\\Leftrightarrow$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$: the product $mn$ is odd if and only if $m$ and $n$ are both odd."
+  }
+}

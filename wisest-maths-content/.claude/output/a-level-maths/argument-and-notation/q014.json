@@ -1,0 +1,60 @@
+{
+  "id": "al.y1.pure.argument-notation.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "counterexample"],
+  "questionText": "The statement \"if $x > 0$ then $x^2 > 0$\" is true for all real $x$. Write down the converse of this statement and determine, with justification, whether the converse is true.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the hypothesis and conclusion.",
+        "workingLatex": "P:\\ x > 0, \\qquad Q:\\ x^2 > 0",
+        "explanation": "Splitting the statement into $P$ and $Q$ makes the structure $P \\Rightarrow Q$ visible. This keeps clear which part is assumed and which is concluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall how the converse is formed.",
+        "workingLatex": "\\text{converse of } (P \\Rightarrow Q) = (Q \\Rightarrow P)",
+        "explanation": "The converse simply swaps the roles of hypothesis and conclusion. It is a new statement, and its truth is independent of the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the converse in symbols and words.",
+        "workingLatex": "Q \\Rightarrow P:\\ x^2 > 0 \\;\\Rightarrow\\; x > 0",
+        "explanation": "Reversing the arrow gives 'if $x^2 > 0$ then $x > 0$'. This is the claim we now need to examine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide how to test the converse.",
+        "workingLatex": "\\text{seek } x \\text{ with } x^2 > 0 \\text{ but } x \\le 0",
+        "explanation": "To disprove an implication we look for a case that satisfies the hypothesis yet fails the conclusion. Negative numbers are the obvious place to look, since squaring removes the sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Try a negative value as a counterexample.",
+        "workingLatex": "x = -1:\\ (-1)^2 = 1 > 0 \\text{ but } -1 < 0",
+        "explanation": "At $x = -1$ the square is $1$, which is positive, so the hypothesis $x^2 > 0$ holds. Yet $x = -1$ is not greater than $0$, so the conclusion fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the converse is false.",
+        "workingLatex": "Q \\not\\Rightarrow P \\;\\Rightarrow\\; \\text{converse is false}",
+        "explanation": "A single counterexample is enough to break an implication, and $x = -1$ provides one. So although the original statement is true, its converse is false; assuming otherwise would be the error of affirming the converse.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Converse: \"if $x^2 > 0$ then $x > 0$\". This is false, since $x = -1$ gives $x^2 = 1 > 0$ but $x = -1 < 0$."
+  }
+}

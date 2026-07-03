@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "necessary and sufficient"],
+  "questionText": "Consider the two statements $P:\\ x = 3$ and $Q:\\ x^2 = 9$, where $x$ is real. State, with full justification, which one of the symbols $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ correctly connects $P$ and $Q$. Hence say whether $P$ is a sufficient condition, a necessary condition, both or neither, for $Q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write down the two statements to be compared.",
+        "workingLatex": "P:\\ x = 3, \\qquad Q:\\ x^2 = 9",
+        "explanation": "Naming the statements $P$ and $Q$ lets us discuss direction without rewriting them each time. The whole task is about which statement forces the other, so we keep both clearly in view.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall what each connecting symbol claims.",
+        "workingLatex": "P \\Rightarrow Q\\ (P \\text{ forces } Q),\\quad P \\Leftarrow Q\\ (Q \\text{ forces } P),\\quad P \\Leftrightarrow Q\\ (\\text{both})",
+        "explanation": "Choosing a symbol is really choosing a direction of implication. Because $\\Leftrightarrow$ needs both one-way arrows to hold, we must test each direction separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the forward direction P implies Q.",
+        "workingLatex": "x = 3 \\Rightarrow x^2 = 3^2 = 9",
+        "explanation": "We assume $P$ and substitute into $x^2$. Squaring $3$ gives exactly $9$, so whenever $x=3$ the statement $Q$ is guaranteed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Conclude the forward implication is true.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is true}",
+        "explanation": "The substitution left no room for doubt, since the value $x=3$ produces $x^2=9$ every time. So $P$ on its own is enough to secure $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the reverse direction Q implies P.",
+        "workingLatex": "x^2 = 9 \\Rightarrow x = 3 \\text{ or } x = -3",
+        "explanation": "Now we assume $Q$ and ask whether $x$ must equal $3$. Solving $x^2=9$ gives two roots, so knowing the square is $9$ does not pin down the sign of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Produce a counterexample to the reverse direction.",
+        "workingLatex": "x = -3:\\ (-3)^2 = 9 \\text{ but } x \\neq 3",
+        "explanation": "The value $x=-3$ satisfies $Q$ yet fails $P$, and one counterexample is enough to break an implication. This shows $Q$ does not force $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Select the correct connecting symbol.",
+        "workingLatex": "P \\Rightarrow Q \\ (\\text{but } Q \\not\\Rightarrow P)",
+        "explanation": "Only the forward arrow survives testing, so the one-way symbol from $P$ to $Q$ is correct. The failure of the reverse direction rules out $\\Leftrightarrow$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Translate into necessary and sufficient language.",
+        "workingLatex": "P \\text{ is sufficient for } Q, \\text{ but not necessary}",
+        "explanation": "Because $P$ guarantees $Q$, $P$ is sufficient, meaning enough. Because $Q$ can hold via $x=-3$ without $P$, $P$ is not necessary, meaning not required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x = 3 \\Rightarrow x^2 = 9$ only. So $x = 3$ is a sufficient but not a necessary condition for $x^2 = 9$."
+  }
+}

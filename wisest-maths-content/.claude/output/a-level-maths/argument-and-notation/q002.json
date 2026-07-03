@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "counterexample"],
+  "questionText": "Consider the statement: \"If a number is a multiple of $4$, then it is even.\" Write down the converse of this statement, and determine whether the converse is true. Justify your answer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the hypothesis and conclusion of the original statement.",
+        "workingLatex": "P:\\ n \\text{ is a multiple of } 4, \\qquad Q:\\ n \\text{ is even}",
+        "explanation": "An 'if $P$ then $Q$' statement has a hypothesis $P$ and a conclusion $Q$. Separating them cleanly is what makes forming the converse mechanical rather than guesswork.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall how a converse is formed.",
+        "workingLatex": "\\text{original } P \\Rightarrow Q \\ \\longrightarrow\\ \\text{converse } Q \\Rightarrow P",
+        "explanation": "The converse simply swaps the roles of hypothesis and conclusion. It is a genuinely different claim, so its truth must be judged on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the converse in words.",
+        "workingLatex": "\\text{Converse: if } n \\text{ is even, then } n \\text{ is a multiple of } 4",
+        "explanation": "Swapping $P$ and $Q$ gives the new statement. Putting it back into words makes it easy to test against ordinary numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide how to test the converse.",
+        "workingLatex": "\\text{Seek } n \\text{ that is even but not a multiple of } 4",
+        "explanation": "To disprove a general 'if...then' claim we only need one example that meets the hypothesis but breaks the conclusion. So we hunt for an even number that is not a multiple of $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the value n = 6.",
+        "workingLatex": "6 = 2 \\times 3 \\ (\\text{even}), \\quad 6 \\neq 4k \\text{ for any integer } k",
+        "explanation": "The number $6$ is even, so it satisfies the converse's hypothesis, yet it is not a multiple of $4$. That makes it a valid counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the converse is false.",
+        "workingLatex": "\\text{Converse is false}",
+        "explanation": "A single counterexample is enough to bring down a universal statement. Because $6$ obeys the hypothesis but not the conclusion, the converse cannot be true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final result in context.",
+        "workingLatex": "Q \\not\\Rightarrow P",
+        "explanation": "Being even does not force a number to be a multiple of $4$, since even numbers like $6$ sit between the multiples $4$ and $8$. The original implication only runs one way.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Converse: \"If a number is even, then it is a multiple of $4$.\" This is false; for example $6$ is even but not a multiple of $4$."
+  }
+}

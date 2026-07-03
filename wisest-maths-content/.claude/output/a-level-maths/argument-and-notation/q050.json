@@ -1,0 +1,81 @@
+{
+  "id": "al.y1.pure.argument-notation.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "necessary and sufficient", "parity", "counterexample"],
+  "questionText": "Let $a$ and $b$ be integers. Let $P$ be the statement \"$a$ and $b$ are both even\" and let $Q$ be the statement \"$a+b$ is even\". Determine, with full justification, whether $P$ is a sufficient condition for $Q$, a necessary condition for $Q$, both, or neither.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the two statements in algebraic form.",
+        "workingLatex": "P:\\ a = 2m,\\ b = 2n\\ \\text{for integers } m,n \\qquad Q:\\ a+b = 2t\\ \\text{for some integer } t",
+        "explanation": "Turning the words 'even' into the algebra $2m$ gives us something we can compute with. Fixing exactly what $P$ and $Q$ claim is the first move before we can test how they are related.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall what sufficient and necessary mean here.",
+        "workingLatex": "\\text{sufficient}:\\ P \\Rightarrow Q, \\qquad \\text{necessary}:\\ Q \\Rightarrow P",
+        "explanation": "$P$ is sufficient for $Q$ if having $P$ guarantees $Q$, and $P$ is necessary for $Q$ if $Q$ cannot hold without $P$. These are opposite directions, so we must test each implication separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the forward direction P ⇒ Q.",
+        "workingLatex": "a + b = 2m + 2n = 2(m+n)",
+        "explanation": "Assume $P$ is true, so both numbers are even. Adding them and factoring out a $2$ shows the sum is twice an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Conclude the forward direction holds, so P is sufficient.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is true} \\;\\Rightarrow\\; P \\text{ is sufficient for } Q",
+        "explanation": "Because $m+n$ is an integer, $a+b$ is even whenever both $a$ and $b$ are even. So $P$ on its own is enough to force $Q$, which is exactly what 'sufficient' means.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the reverse direction Q ⇒ P by looking for a counterexample.",
+        "workingLatex": "\\text{try } a = 1,\\ b = 3",
+        "explanation": "To see whether $Q$ forces $P$, we hunt for a case where the sum is even but the two numbers are not both even. Two odd numbers are a natural place to look, since odd plus odd cancels the leftover units.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the counterexample satisfies Q but not P.",
+        "workingLatex": "a + b = 1 + 3 = 4 = 2\\times 2\\ (\\text{even}), \\quad \\text{but } 1,3 \\text{ are odd}",
+        "explanation": "Here the sum $4$ is even, so $Q$ holds, yet neither $1$ nor $3$ is even, so $P$ fails. A single valid counterexample is enough to break an implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Explain the general reason the reverse fails.",
+        "workingLatex": "\\text{odd} + \\text{odd} = \\text{even}",
+        "explanation": "The counterexample is not a fluke: any two odd numbers add to an even number, because their leftover units of $1$ combine to make $2$. So evenness of the sum can occur without either number being even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the reverse direction fails, so P is not necessary.",
+        "workingLatex": "Q \\not\\Rightarrow P \\;\\Rightarrow\\; P \\text{ is not necessary for } Q",
+        "explanation": "Since $Q$ can be true while $P$ is false, $Q$ does not require $P$. Hence both numbers being even is not a necessary condition for the sum being even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the overall conclusion.",
+        "workingLatex": "P \\Rightarrow Q,\\ Q \\not\\Rightarrow P \\;\\Rightarrow\\; P \\text{ sufficient but not necessary for } Q",
+        "explanation": "Only the forward implication holds, so being both even guarantees an even sum but is not required for one. In short, $P$ is sufficient but not necessary for $Q$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P$ is a sufficient but not a necessary condition for $Q$. Forward: $a=2m,\\ b=2n \\Rightarrow a+b = 2(m+n)$ is even, so $P \\Rightarrow Q$. Reverse fails: $a=1,\\ b=3$ give $a+b=4$ (even) while neither is even, so $Q \\not\\Rightarrow P$."
+  }
+}

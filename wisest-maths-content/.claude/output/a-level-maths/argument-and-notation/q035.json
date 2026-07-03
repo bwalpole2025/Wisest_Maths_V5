@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "domain", "trigonometry", "counterexample"],
+  "questionText": "Consider the statements $P:\\ \\cos\\theta = 1$ and $Q:\\ \\theta = 0$. (a) Working on the interval $[0, 2\\pi)$, classify $P$ as a necessary condition, a sufficient condition, both, or neither, for $Q$. (b) Discuss how your answer changes when $\\theta$ is allowed to range over all real numbers, $\\theta \\in \\mathbb{R}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two statements to be compared.",
+        "workingLatex": "P:\\ \\cos\\theta = 1, \\qquad Q:\\ \\theta = 0",
+        "explanation": "Necessary and sufficient are about the direction of implication, so we will test $P \\Rightarrow Q$ and $Q \\Rightarrow P$. The domain of $\\theta$ will turn out to matter, so we handle each domain in turn.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the necessary/sufficient framework.",
+        "workingLatex": "P \\text{ sufficient for } Q \\iff P \\Rightarrow Q; \\quad P \\text{ necessary for } Q \\iff Q \\Rightarrow P",
+        "explanation": "'Sufficient' means the condition is enough to force $Q$; 'necessary' means $Q$ cannot happen without it. Keeping these definitions in view stops the two ideas being confused.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "On the interval, test whether Q implies P.",
+        "workingLatex": "\\theta = 0 \\Rightarrow \\cos 0 = 1 \\Rightarrow P",
+        "explanation": "If $\\theta=0$ then its cosine is exactly 1, so $Q \\Rightarrow P$ holds. This makes $P$ a necessary condition for $Q$, and this direction does not depend on the domain at all.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "On the interval, solve cos theta = 1.",
+        "workingLatex": "\\cos\\theta = 1, \\ \\theta \\in [0,2\\pi) \\Rightarrow \\theta = 0 \\ \\text{ (only solution)}",
+        "explanation": "Over one period starting at 0, the cosine curve reaches its peak value 1 only at the very start, $\\theta=0$. So on this interval $P$ forces $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine both directions on the interval.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ and } \\ Q \\Rightarrow P \\ \\Rightarrow \\ P \\Leftrightarrow Q \\ \\text{ on } [0,2\\pi)",
+        "explanation": "Both implications hold on the interval, so $P$ is both necessary and sufficient for $Q$ there, and the two statements are equivalent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Now widen the domain to all real numbers.",
+        "workingLatex": "\\theta \\in \\mathbb{R}",
+        "explanation": "Widening the domain adds many more angles, so we must recheck each direction. Extra solutions can break an implication that held on a smaller set.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve cos theta = 1 over all reals.",
+        "workingLatex": "\\cos\\theta = 1 \\iff \\theta = 2\\pi k, \\ k \\in \\mathbb{Z}",
+        "explanation": "Cosine is periodic with period $2\\pi$, so it returns to its maximum value 1 at every full turn. There are now infinitely many solutions, not just one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check that necessity still holds.",
+        "workingLatex": "\\theta = 0 \\Rightarrow \\cos\\theta = 1, \\ \\text{ so } Q \\Rightarrow P \\ \\text{ still true}",
+        "explanation": "The reverse direction never used the domain, so $\\theta=0$ still gives cosine 1. Thus $P$ remains a necessary condition for $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Show sufficiency fails with a counterexample.",
+        "workingLatex": "\\theta = 2\\pi:\\ \\cos 2\\pi = 1 \\ (P \\text{ true}), \\ \\text{ but } \\theta \\neq 0 \\ (Q \\text{ false})",
+        "explanation": "At $\\theta=2\\pi$ the cosine is 1 yet the angle is not 0, so $P$ holds while $Q$ fails. This single counterexample shows $P$ no longer suffices for $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion for the wider domain.",
+        "workingLatex": "\\text{over } \\mathbb{R}: \\ P \\text{ necessary but not sufficient for } Q",
+        "explanation": "The forward arrow is broken while the backward arrow survives, so over all reals $P$ is necessary but not sufficient. The classification genuinely depends on the chosen domain.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "On $[0,2\\pi)$: $\\cos\\theta=1$ only at $\\theta=0$, so $P \\Leftrightarrow Q$ and $P$ is necessary and sufficient for $Q$. Over $\\mathbb{R}$: $\\cos\\theta=1$ at $\\theta=2\\pi k$, so $P$ is necessary but not sufficient (e.g. $\\theta=2\\pi$)."
+  }
+}

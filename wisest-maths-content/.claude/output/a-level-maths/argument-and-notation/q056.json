@@ -1,0 +1,130 @@
+{
+  "id": "al.y1.pure.argument-notation.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "equivalence", "contrapositive", "proof", "divisibility", "necessary and sufficient"],
+  "questionText": "Let $n$ be an integer. Prove that $n^2$ is a multiple of $3$ if and only if $n$ is a multiple of $3$. Prove the direction \"$n$ a multiple of $3 \\Rightarrow n^2$ a multiple of $3$\" directly, and prove the other direction by contrapositive using the two cases $n = 3k \\pm 1$. Hence state the necessary and sufficient relationship.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the statements and the goal.",
+        "workingLatex": "A:\\ n\\ \\text{multiple of } 3, \\quad B:\\ n^2\\ \\text{multiple of } 3, \\quad \\text{prove } A \\Leftrightarrow B",
+        "explanation": "Labelling the two claims keeps the two directions straight while we work. The target is the biconditional $A \\Leftrightarrow B$, which needs both implications proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the biconditional into two implications.",
+        "workingLatex": "A \\Leftrightarrow B \\iff (A \\Rightarrow B)\\ \\text{and}\\ (B \\Rightarrow A)",
+        "explanation": "The two-way arrow is two one-way arrows combined. We prove $A \\Rightarrow B$ directly and $B \\Rightarrow A$ by contrapositive, as the question directs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the intuition using primeness of 3.",
+        "workingLatex": "3\\ \\text{is prime} \\Rightarrow \\text{a factor of } 3 \\text{ in } n^2 \\text{ must come from } n",
+        "explanation": "Because $3$ is prime, it cannot be built from smaller pieces, so if $3$ divides $n\\times n$ it must divide one of the factors, namely $n$ itself. This is the deeper reason the two conditions match.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Begin the direct direction A ⇒ B by assuming A.",
+        "workingLatex": "\\text{assume } n = 3k \\ \\text{for some integer } k",
+        "explanation": "For the direct proof of $A \\Rightarrow B$ we assume $n$ is a multiple of $3$ and write it as $3k$. Then we compute $n^2$ and read off its divisibility.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Square n.",
+        "workingLatex": "n^2 = (3k)^2 = 9k^2",
+        "explanation": "Squaring $3k$ gives $9k^2$. The goal is to reveal a factor of $3$ in this result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factor out a 3 to show B.",
+        "workingLatex": "n^2 = 3(3k^2)",
+        "explanation": "Writing $9k^2$ as $3$ times $3k^2$ shows $n^2$ is three times an integer, so it is a multiple of $3$. Hence $B$ holds and $A \\Rightarrow B$ is proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Explain why the reverse uses the contrapositive.",
+        "workingLatex": "B \\Rightarrow A \\ \\equiv\\ \\lnot A \\Rightarrow \\lnot B",
+        "explanation": "Arguing straight from '$n^2$ divisible by $3$' to '$n$ divisible by $3$' is awkward, so we prove the equivalent contrapositive. That means showing: if $n$ is not a multiple of $3$, then $n^2$ is not a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Describe the non-multiples of 3 by their remainders.",
+        "workingLatex": "\\lnot A:\\ n = 3k + 1 \\ \\text{or}\\ n = 3k - 1",
+        "explanation": "Any integer that is not a multiple of $3$ leaves a remainder of $1$ or $2$, which we write neatly as $3k+1$ or $3k-1$. Covering both forms is what makes the case analysis complete.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Case 1: square n = 3k + 1.",
+        "workingLatex": "n = 3k+1 \\Rightarrow n^2 = 9k^2 + 6k + 1",
+        "explanation": "Expanding $(3k+1)^2$ gives $9k^2+6k+1$. We now separate the clearly divisible part from any remainder.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Show Case 1 leaves remainder 1.",
+        "workingLatex": "n^2 = 3(3k^2 + 2k) + 1",
+        "explanation": "Grouping the first two terms as $3(3k^2+2k)$ leaves a remainder of $1$, so $n^2$ is one more than a multiple of $3$. Therefore $n^2$ is not a multiple of $3$ in this case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Case 2: square n = 3k - 1.",
+        "workingLatex": "n = 3k-1 \\Rightarrow n^2 = 9k^2 - 6k + 1",
+        "explanation": "Expanding $(3k-1)^2$ gives $9k^2-6k+1$. Again we isolate a factor of $3$ from the leftover.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Show Case 2 also leaves remainder 1.",
+        "workingLatex": "n^2 = 3(3k^2 - 2k) + 1",
+        "explanation": "Writing it as $3(3k^2-2k)+1$ again leaves a remainder of $1$, so $n^2$ is not divisible by $3$. Both non-multiple forms give the same outcome.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Complete the contrapositive.",
+        "workingLatex": "\\lnot A \\Rightarrow \\lnot B \\ \\text{holds in both cases}",
+        "explanation": "In each case a non-multiple of $3$ produced an $n^2$ that is not a multiple of $3$, so the contrapositive is proved. This is exactly the content of $\\lnot A \\Rightarrow \\lnot B$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Deduce the reverse direction.",
+        "workingLatex": "\\lnot A \\Rightarrow \\lnot B \\ \\equiv\\ B \\Rightarrow A \\;\\Rightarrow\\; B \\Rightarrow A \\text{ is proved}",
+        "explanation": "Since a statement and its contrapositive are logically equivalent, proving $\\lnot A \\Rightarrow \\lnot B$ proves $B \\Rightarrow A$. The reverse implication is now secure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Combine both directions.",
+        "workingLatex": "(A \\Rightarrow B)\\ \\text{and}\\ (B \\Rightarrow A) \\;\\Rightarrow\\; A \\Leftrightarrow B \\quad \\blacksquare",
+        "explanation": "With both implications proved, the biconditional $n$ a multiple of $3 \\Leftrightarrow n^2$ a multiple of $3$ is complete. Each half was necessary to the whole.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the necessary and sufficient relationship.",
+        "workingLatex": "A \\Leftrightarrow B \\Rightarrow \\text{each condition is necessary and sufficient for the other}",
+        "explanation": "Because each statement forces the other, each is both sufficient and necessary for it. So '$n$ is a multiple of $3$' and '$n^2$ is a multiple of $3$' are equivalent, interchangeable conditions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n$ a multiple of $3 \\Leftrightarrow n^2$ a multiple of $3$. Direct: $n=3k \\Rightarrow n^2 = 3(3k^2)$. Contrapositive: $n=3k+1 \\Rightarrow n^2 = 3(3k^2+2k)+1$ and $n=3k-1 \\Rightarrow n^2 = 3(3k^2-2k)+1$, neither a multiple of $3$, so $n^2$ a multiple of $3 \\Rightarrow n$ a multiple of $3$. Both hold, so each condition is necessary and sufficient for the other."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "equivalence", "geometry"],
+  "questionText": "A student writes: 'If two lines in a plane are parallel then they never meet.' Write down the converse of this statement, and discuss whether the converse is true, working throughout within a single plane. Hence state which symbol ($\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$) correctly connects the two statements.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the hypothesis and conclusion of the original statement.",
+        "workingLatex": "P:\\ \\text{the lines are parallel}, \\qquad Q:\\ \\text{the lines never meet}",
+        "explanation": "An 'if... then...' statement has the form $P \\Rightarrow Q$. Naming the two halves separately lets us handle the converse cleanly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall how the converse is formed.",
+        "workingLatex": "\\text{converse of } (P \\Rightarrow Q) \\ \\text{is}\\ (Q \\Rightarrow P)",
+        "explanation": "The converse simply swaps the hypothesis and conclusion, reversing the direction of the arrow. It is a genuinely different claim, so its truth must be checked on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the converse in words.",
+        "workingLatex": "\\text{'If two lines in a plane never meet, then they are parallel.'}",
+        "explanation": "Applying the swap to the original sentence gives the converse. This now claims that non-meeting is enough to conclude the lines are parallel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Confirm the original statement is true.",
+        "workingLatex": "P \\Rightarrow Q:\\ \\text{parallel lines keep a constant gap, so never meet}",
+        "explanation": "Parallel lines stay the same distance apart, so they can never cross. The original implication is therefore sound.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the converse using how two coplanar lines can relate.",
+        "workingLatex": "\\text{Two lines in one plane: either they intersect, or they are parallel}",
+        "explanation": "Within a single plane there are only two possibilities for a pair of distinct lines. This clean dichotomy is what makes the converse work here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Deduce the converse from the dichotomy.",
+        "workingLatex": "\\text{never meet} \\;\\Rightarrow\\; \\text{not intersecting} \\;\\Rightarrow\\; \\text{parallel}",
+        "explanation": "If two coplanar lines never meet, the 'intersecting' option is ruled out, leaving only 'parallel'. So in a plane, never meeting does force the lines to be parallel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note why the single-plane restriction matters.",
+        "workingLatex": "\\text{In 3D: skew lines never meet yet are not parallel}",
+        "explanation": "The dichotomy fails in three dimensions, where skew lines never meet but are not parallel. Restricting to one plane is exactly what keeps the converse true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Combine both directions into the connecting symbol.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\;\\Longrightarrow\\; P \\Leftrightarrow Q",
+        "explanation": "Both the original and its converse are true for coplanar lines, so each statement implies the other and the correct connective is the two-way arrow.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Converse: 'If two lines in a plane never meet, then they are parallel.' Within a single plane this converse is TRUE, so the statements are equivalent: $P \\Leftrightarrow Q$. (In 3D the converse would fail because of skew lines.)"
+  }
+}

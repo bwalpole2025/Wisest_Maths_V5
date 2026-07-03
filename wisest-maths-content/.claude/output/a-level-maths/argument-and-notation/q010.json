@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "equivalence", "divisibility"],
+  "questionText": "A student writes the true statement \"if $n$ is a multiple of $10$ then $n$ ends in the digit $0$\", where $n$ is a positive integer. Write down the converse of this statement, decide whether the converse is true, and hence state which of $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ correctly connects the two parts.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the hypothesis and conclusion of the original statement.",
+        "workingLatex": "P:\\ n \\text{ is a multiple of } 10, \\qquad Q:\\ n \\text{ ends in the digit } 0",
+        "explanation": "Naming the two halves as $P$ and $Q$ lets us track which is the assumption and which is the consequence. The original claim is then simply $P \\Rightarrow Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall how to form a converse.",
+        "workingLatex": "\\text{converse of } (P \\Rightarrow Q) \\text{ is } (Q \\Rightarrow P)",
+        "explanation": "The converse is obtained by swapping the hypothesis and the conclusion, reversing the direction of the arrow. It is a genuinely different statement whose truth must be checked separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the converse in words.",
+        "workingLatex": "Q \\Rightarrow P:\\ \\text{if } n \\text{ ends in the digit } 0 \\text{ then } n \\text{ is a multiple of } 10",
+        "explanation": "Reading $Q \\Rightarrow P$ back into English gives the converse statement directly. This is the claim we now need to test.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the converse algebraically.",
+        "workingLatex": "n \\text{ ends in } 0 \\;\\Rightarrow\\; n = 10k \\text{ for some integer } k",
+        "explanation": "A positive integer whose last digit is $0$ can always be written as ten times another whole number, because the final $0$ carries a factor of $10$. That is exactly the definition of a multiple of $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude the converse is true.",
+        "workingLatex": "Q \\Rightarrow P \\text{ is true}",
+        "explanation": "Since every integer ending in $0$ is a multiple of $10$, the converse holds with no exceptions. There is no counterexample to find.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine both directions.",
+        "workingLatex": "P \\Rightarrow Q \\text{ and } Q \\Rightarrow P",
+        "explanation": "The original statement gives one direction and we have just proved the other. When both implications hold, the two statements say the same thing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the correct connecting symbol.",
+        "workingLatex": "P \\Leftrightarrow Q",
+        "explanation": "Because each condition forces the other, the correct connective is the two-way arrow $\\Leftrightarrow$. Being a multiple of $10$ and ending in the digit $0$ are equivalent conditions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Converse: \"if $n$ ends in the digit $0$ then $n$ is a multiple of $10$\", which is true. Both directions hold, so $P \\Leftrightarrow Q$."
+  }
+}

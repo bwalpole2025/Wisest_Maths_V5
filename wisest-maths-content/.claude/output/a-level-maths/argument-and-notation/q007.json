@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "quadratic equations"],
+  "questionText": "It is given that $x = 2 \\Rightarrow x^2 - 5x + 6 = 0$. Determine whether the converse of this implication is true, and hence state whether $x = 2$ and $x^2 - 5x + 6 = 0$ are connected by $\\Rightarrow$ or by $\\Leftrightarrow$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Confirm the given forward implication.",
+        "workingLatex": "x = 2:\\ 2^2 - 5(2) + 6 = 4 - 10 + 6 = 0",
+        "explanation": "Substituting $x=2$ makes the quadratic equal $0$, so the stated forward implication is genuinely true. This gives us a solid starting point before examining the converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down what the converse claims.",
+        "workingLatex": "\\text{Converse: } x^2 - 5x + 6 = 0 \\Rightarrow x = 2",
+        "explanation": "The converse reverses the arrow, so it asks whether satisfying the equation forces $x$ to be $2$. This is a different claim and must be checked in its own right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Decide to solve the equation to test the converse.",
+        "workingLatex": "\\text{Find all } x \\text{ with } x^2 - 5x + 6 = 0",
+        "explanation": "The converse is true only if $x=2$ is the sole solution. Finding every root of the quadratic will show whether any other value also works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 - 5x + 6 = (x - 2)(x - 3)",
+        "explanation": "We look for two numbers multiplying to $6$ and adding to $-5$, namely $-2$ and $-3$. Factorising exposes the roots directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the roots.",
+        "workingLatex": "(x - 2)(x - 3) = 0 \\Rightarrow x = 2 \\text{ or } x = 3",
+        "explanation": "A product is zero only when one factor is zero, so the equation has two solutions. The presence of a second root is exactly what threatens the converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify a counterexample to the converse.",
+        "workingLatex": "x = 3:\\ 3^2 - 5(3) + 6 = 9 - 15 + 6 = 0 \\text{ but } x \\neq 2",
+        "explanation": "The value $x=3$ satisfies the equation yet is not equal to $2$, so it meets the converse's hypothesis while breaking its conclusion. This one counterexample settles the matter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the converse is false.",
+        "workingLatex": "x^2 - 5x + 6 = 0 \\not\\Rightarrow x = 2",
+        "explanation": "Because $x=3$ also solves the equation, knowing the equation holds does not force $x=2$. The converse therefore fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the correct connecting symbol.",
+        "workingLatex": "x = 2 \\Rightarrow x^2 - 5x + 6 = 0, \\text{ but not } \\Leftrightarrow",
+        "explanation": "Only the forward direction holds, so the statements are linked by $\\Rightarrow$ and not by $\\Leftrightarrow$. Equivalence would need the equation's only root to be $2$, which it is not.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The converse is false, since $x=3$ also satisfies $x^2 - 5x + 6 = 0$ but $x \\neq 2$. So the statements are connected by $\\Rightarrow$ only, not by $\\Leftrightarrow$."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "proof", "contrapositive"],
+  "questionText": "Let $n$ be an integer. Prove that '$n$ is odd' is a necessary and sufficient condition for '$n^2$ is odd'. Prove each direction carefully, using a contrapositive argument where it is convenient, and state your conclusion using $\\Leftrightarrow$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Restate the goal as a biconditional.",
+        "workingLatex": "P: n \\text{ odd}, \\quad Q: n^2 \\text{ odd}, \\quad \\text{prove } P \\Leftrightarrow Q",
+        "explanation": "'Necessary and sufficient' means both $P \\Rightarrow Q$ and $Q \\Rightarrow P$, that is $P \\Leftrightarrow Q$. So the proof has two halves, one for each arrow.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall which arrow is 'sufficient' and which is 'necessary'.",
+        "workingLatex": "\\text{sufficient}: P \\Rightarrow Q; \\quad \\text{necessary}: Q \\Rightarrow P",
+        "explanation": "$P$ is sufficient for $Q$ if it guarantees $Q$; $P$ is necessary for $Q$ if $Q$ cannot occur without it. Establishing both gives the full equivalence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Start the sufficiency proof by writing n as odd.",
+        "workingLatex": "P \\Rightarrow Q: \\ n \\text{ odd} \\Rightarrow n = 2k + 1,\\ k \\in \\mathbb{Z}",
+        "explanation": "We prove sufficiency first. Every odd integer can be written as $2k+1$, which turns the word 'odd' into algebra we can square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Square the expression.",
+        "workingLatex": "n^2 = (2k + 1)^2 = 4k^2 + 4k + 1",
+        "explanation": "Expanding the square lets us examine the parity of the result directly rather than guessing at it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rewrite the square in the standard odd form.",
+        "workingLatex": "n^2 = 2(2k^2 + 2k) + 1",
+        "explanation": "Factoring 2 out of the even part shows $n^2$ is 'twice an integer, plus one', which is exactly the definition of an odd number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude that oddness of n is sufficient.",
+        "workingLatex": "n^2 = 2m + 1,\\ m = 2k^2 + 2k \\Rightarrow n^2 \\text{ odd, so } P \\Rightarrow Q",
+        "explanation": "The square comes out odd whenever $n$ is odd, so being odd is a sufficient condition for the square to be odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Switch to the contrapositive for the reverse direction.",
+        "workingLatex": "Q \\Rightarrow P \\ \\equiv \\ \\lnot P \\Rightarrow \\lnot Q: \\ n \\text{ even} \\Rightarrow n^2 \\text{ even}",
+        "explanation": "Proving $Q \\Rightarrow P$ directly is awkward, but its contrapositive 'if $n$ is even then $n^2$ is even' is logically identical and much easier to handle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Assume n even and square it.",
+        "workingLatex": "n = 2k \\Rightarrow n^2 = 4k^2 = 2(2k^2)",
+        "explanation": "An even integer is $2k$; squaring produces a number with an explicit factor of 2, so it is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude the contrapositive.",
+        "workingLatex": "n^2 = 2(2k^2) \\Rightarrow n^2 \\text{ even, so } \\lnot P \\Rightarrow \\lnot Q",
+        "explanation": "The square of an even number is even, which establishes the contrapositive and therefore the original implication $Q \\Rightarrow P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State necessity from the reverse implication.",
+        "workingLatex": "Q \\Rightarrow P \\text{ holds, so } n \\text{ odd is necessary for } n^2 \\text{ odd}",
+        "explanation": "Since $n^2$ can be odd only when $n$ is odd, oddness of $n$ is a necessary condition for oddness of $n^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Combine both directions into the biconditional.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\ \\Rightarrow\\ P \\Leftrightarrow Q",
+        "explanation": "With both arrows proven, the two statements are equivalent, so '$n$ is odd' is both necessary and sufficient for '$n^2$ is odd'.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Both directions hold: $n$ odd $\\Rightarrow n^2 = 2(2k^2 + 2k) + 1$ is odd (sufficient); and by contrapositive $n$ even $\\Rightarrow n^2$ even, so $n^2$ odd $\\Rightarrow n$ odd (necessary). Hence $n \\text{ odd} \\Leftrightarrow n^2 \\text{ odd}$."
+  }
+}

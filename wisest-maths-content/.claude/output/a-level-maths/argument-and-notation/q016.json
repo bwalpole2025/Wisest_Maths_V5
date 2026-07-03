@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "converse", "primes"],
+  "questionText": "Consider the statements $P:\\ p$ is prime and $p > 2$, and $Q:\\ p$ is odd. Insert the correct symbol ($\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$) between $P$ and $Q$, and justify your choice fully.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the two statements.",
+        "workingLatex": "P:\\ p \\text{ is prime and } p > 2, \\qquad Q:\\ p \\text{ is odd}",
+        "explanation": "We first make sure both statements are precise. P restricts us to primes strictly greater than $2$, while Q simply says the number is not divisible by $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Note that the symbol is a claim about direction.",
+        "workingLatex": "\\text{Test } P \\Rightarrow Q \\quad\\text{and}\\quad Q \\Rightarrow P",
+        "explanation": "The three symbols differ only in which way the implication runs, so the safe method is to test each direction on its own and then combine the results.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the forward direction P ⇒ Q.",
+        "workingLatex": "p \\text{ even and } p > 2 \\;\\Rightarrow\\; 2 \\mid p \\;\\Rightarrow\\; p \\text{ not prime}",
+        "explanation": "Suppose a prime bigger than $2$ were even. Then $2$ would divide it, giving it a factor other than $1$ and itself, so it could not be prime. This contradiction shows such a prime must be odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Conclude the forward direction holds.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is true}",
+        "explanation": "Every prime greater than $2$ is odd, so P guarantees Q. This makes P a sufficient condition for Q.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the reverse direction with a counterexample.",
+        "workingLatex": "p = 9:\\ 9 \\text{ is odd, but } 9 = 3 \\times 3 \\ (\\text{not prime})",
+        "explanation": "To check whether being odd forces P, we hunt for an odd number that fails P. The number $9$ is odd yet not prime, so a single example is enough to break the reverse direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the reverse direction fails.",
+        "workingLatex": "Q \\not\\Rightarrow P",
+        "explanation": "Because $9$ satisfies Q but not P, being odd does not guarantee 'prime and greater than $2$'. This rules out both $\\Leftarrow$ and $\\Leftrightarrow$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Select the correct connecting symbol.",
+        "workingLatex": "P \\Rightarrow Q",
+        "explanation": "Only the forward direction is valid, so the correct symbol is the single right-pointing arrow from P to Q.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Summarise in necessary / sufficient terms.",
+        "workingLatex": "P \\text{ sufficient for } Q,\\ \\text{but not necessary}",
+        "explanation": "P being prime and above $2$ is enough to force oddness, but oddness can occur without it, so P is sufficient but not necessary for Q.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Rightarrow Q$. Every prime greater than $2$ is odd, but the converse fails ($9$ is odd yet not prime), so only the one-way implication holds."
+  }
+}

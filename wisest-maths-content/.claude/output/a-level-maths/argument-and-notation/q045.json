@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "contrapositive", "case analysis", "divisibility", "proof"],
+  "questionText": "Let $n$ be an integer. Determine whether the statement \"if $n^2$ is a multiple of $3$ then $n$ is a multiple of $3$\" is true or false. Justify your answer using the contrapositive together with a case analysis on the remainder of $n$ modulo $3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the implication to be tested.",
+        "workingLatex": "P:\\ 3 \\mid n^2, \\qquad Q:\\ 3 \\mid n; \\qquad \\text{decide whether } P \\Rightarrow Q",
+        "explanation": "We name the hypothesis and the conclusion so the target implication is unambiguous. The bar notation $3\\mid n$ simply means '$3$ divides $n$ exactly'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the contrapositive as the line of attack.",
+        "workingLatex": "\\text{Prove instead } \\ \\neg Q \\Rightarrow \\neg P",
+        "explanation": "Starting from '$n^2$ is a multiple of $3$' gives us little to grip onto, whereas starting from '$n$ is not a multiple of $3$' lets us write $n$ down explicitly. The contrapositive turns a hard direction into an easy calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Justify that the contrapositive suffices.",
+        "workingLatex": "(P \\Rightarrow Q) \\ \\equiv\\ (\\neg Q \\Rightarrow \\neg P)",
+        "explanation": "An implication and its contrapositive are logically equivalent, so proving one proves the other. This is a standard and fully rigorous substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Express 'n is not a multiple of 3' as two cases.",
+        "workingLatex": "\\neg Q:\\ n = 3k + 1 \\ \\text{ or } \\ n = 3k + 2 \\qquad (k \\in \\mathbb{Z})",
+        "explanation": "Every integer leaves remainder $0$, $1$ or $2$ on division by $3$; ruling out remainder $0$ leaves exactly these two forms. Splitting into cases lets us handle each remainder completely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Square the first case.",
+        "workingLatex": "n = 3k+1:\\ n^2 = 9k^2 + 6k + 1 = 3(3k^2 + 2k) + 1",
+        "explanation": "Expanding and grouping the multiples of $3$ together isolates a leftover $+1$. This makes the remainder of $n^2$ visible at a glance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Read off the remainder in the first case.",
+        "workingLatex": "n^2 = 3m + 1 \\ (m = 3k^2 + 2k) \\ \\Rightarrow\\ 3 \\nmid n^2",
+        "explanation": "Since $m$ is an integer, $n^2$ is one more than a multiple of $3$, so it cannot itself be a multiple of $3$. The first case already gives $\\neg P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Square the second case.",
+        "workingLatex": "n = 3k+2:\\ n^2 = 9k^2 + 12k + 4 = 3(3k^2 + 4k + 1) + 1",
+        "explanation": "The same expand-and-group technique again peels off every multiple of $3$ and leaves a single $+1$. The stray $4$ contributes a $3$ and a $1$, keeping the pattern.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Read off the remainder in the second case.",
+        "workingLatex": "n^2 = 3m + 1 \\ \\Rightarrow\\ 3 \\nmid n^2",
+        "explanation": "Once more $n^2$ is one more than a multiple of $3$, so $3$ does not divide it. The second case also gives $\\neg P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine the cases to complete the contrapositive.",
+        "workingLatex": "\\text{In both cases } 3 \\nmid n^2, \\ \\text{ i.e. } \\neg P \\text{ holds}",
+        "explanation": "The two cases together cover every integer that is not a multiple of $3$, and each forces $n^2$ to miss being a multiple of $3$. So $\\neg Q$ always leads to $\\neg P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the original statement is true.",
+        "workingLatex": "\\neg Q \\Rightarrow \\neg P \\ \\Rightarrow\\ P \\Rightarrow Q \\ \\text{ is true}",
+        "explanation": "Because the contrapositive holds, the original implication holds too. If $n^2$ is a multiple of $3$, then $n$ must be a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note where the argument relies on 3 being prime.",
+        "workingLatex": "\\text{Fails for } 4:\\ 2^2 = 4 \\ \\text{ is a multiple of } 4, \\ \\text{ but } 4 \\nmid 2",
+        "explanation": "The clean split into non-zero remainders both giving $+1$ works because $3$ is prime. For a composite divisor such as $4$ the analogous claim breaks, which shows primality is genuinely doing the work here.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "True. If $n$ is not a multiple of $3$ then $n=3k+1$ or $n=3k+2$, and in each case $n^2=3m+1$, which is not a multiple of $3$. By the contrapositive, $3\\mid n^2 \\Rightarrow 3\\mid n$ (the argument uses that $3$ is prime)."
+  }
+}

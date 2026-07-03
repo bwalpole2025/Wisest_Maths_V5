@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "converse", "contrapositive", "parity"],
+  "questionText": "It is claimed that for integers $x$ and $y$, if $xy$ is even then $x$ is even or $y$ is even. Determine whether this statement is true, justifying your answer. Then write down its converse and decide whether the converse is also true. Hence state which symbol, $\\Rightarrow$ or $\\Leftrightarrow$, correctly links the statements $P:\\ xy$ is even and $Q:\\ x$ is even or $y$ is even.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the two statements in clear logical form.",
+        "workingLatex": "P:\\ xy \\text{ is even}, \\qquad Q:\\ x \\text{ is even or } y \\text{ is even}",
+        "explanation": "Naming the hypothesis $P$ and the conclusion $Q$ lets us treat the claim as $P \\Rightarrow Q$ and test it precisely. Being explicit about the 'or' in $Q$ matters, because attacking it directly would force us to juggle two separate cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose a strategy: prove the claim by its contrapositive.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ is equivalent to } \\ \\lnot Q \\Rightarrow \\lnot P",
+        "explanation": "A statement and its contrapositive are always true together, so we may prove whichever is easier. Here $\\lnot Q$ collapses to a single clean case, which is simpler than chasing the 'or' inside $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the negations using De Morgan's law.",
+        "workingLatex": "\\lnot Q:\\ x \\text{ is odd and } y \\text{ is odd}, \\qquad \\lnot P:\\ xy \\text{ is odd}",
+        "explanation": "Negating 'x even or y even' flips the 'or' to 'and' and each part to its opposite, giving 'x odd and y odd'. The contrapositive to prove is therefore: if both $x$ and $y$ are odd, then $xy$ is odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write two odd numbers in algebraic form.",
+        "workingLatex": "x = 2a+1, \\qquad y = 2b+1 \\quad (a,b \\in \\mathbb{Z})",
+        "explanation": "Every odd integer is one more than an even integer, so $2a+1$ captures any odd number. Turning the words into algebra lets us actually compute the product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply and factor out 2.",
+        "workingLatex": "xy = (2a+1)(2b+1) = 4ab+2a+2b+1 = 2(2ab+a+b)+1",
+        "explanation": "The product is an even quantity plus one, which is exactly the definition of an odd number. So multiplying two odd numbers can never produce an even result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the contrapositive, hence the original statement.",
+        "workingLatex": "\\lnot Q \\Rightarrow \\lnot P \\ \\text{ true} \\ \\Rightarrow \\ P \\Rightarrow Q \\ \\text{ true}",
+        "explanation": "Having shown that two odds give an odd product, the contrapositive holds, and therefore the original statement $P \\Rightarrow Q$ is true as well.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the converse.",
+        "workingLatex": "\\text{Converse } Q \\Rightarrow P:\\ (x \\text{ even or } y \\text{ even}) \\Rightarrow xy \\text{ even}",
+        "explanation": "The converse simply swaps hypothesis and conclusion. The truth of a statement tells us nothing automatically about its converse, so it must be checked separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Test the converse assuming x is even.",
+        "workingLatex": "x = 2k \\Rightarrow xy = 2ky = 2(ky) \\text{ even}",
+        "explanation": "If $x$ is even it carries a factor of 2, and multiplying by any integer $y$ keeps that factor, so the product is even. The case where $y$ is even works identically by symmetry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude the converse is true.",
+        "workingLatex": "Q \\Rightarrow P \\ \\text{ is true}",
+        "explanation": "A single even factor is enough to force the whole product to be even, so the converse holds in every case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine both directions.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ and } \\ Q \\Rightarrow P \\ \\Rightarrow \\ P \\Leftrightarrow Q",
+        "explanation": "When a statement and its converse are both true, the two statements are logically equivalent, which we record with the two-way symbol $\\Leftrightarrow$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The statement is true (proved via its contrapositive: two odds multiply to an odd), and its converse is also true, so $P \\Leftrightarrow Q$: $xy$ is even if and only if $x$ is even or $y$ is even."
+  }
+}

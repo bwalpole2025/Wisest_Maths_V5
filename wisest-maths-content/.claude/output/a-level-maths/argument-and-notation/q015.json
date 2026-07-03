@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "equivalence", "geometry"],
+  "questionText": "Let $P$ be the statement 'the triangle contains a $90^\\circ$ angle' and let $Q$ be the statement 'the triangle is right-angled'. Determine whether $P$ is a necessary condition, a sufficient condition, both, or neither, for $Q$. Justify your answer and state the symbol ($\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$) that connects $P$ and $Q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State clearly what each condition claims.",
+        "workingLatex": "P:\\ \\text{one interior angle equals } 90^\\circ, \\qquad Q:\\ \\text{the triangle is right-angled}",
+        "explanation": "Before comparing two statements we must know exactly what each one asserts. Writing them side by side makes it clear that both are talking about the same feature: the presence of a right angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the definition of a right-angled triangle.",
+        "workingLatex": "\\text{right-angled triangle} \\;=\\; \\text{a triangle with a } 90^\\circ \\text{ angle}",
+        "explanation": "The whole question turns on a definition. A triangle is called right-angled precisely because it has a right angle, so the two statements are describing the very same property in different words.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the two directions that must be tested.",
+        "workingLatex": "\\text{Test } P \\Rightarrow Q \\quad\\text{and}\\quad Q \\Rightarrow P",
+        "explanation": "To choose between a one-way arrow and a two-way arrow we always check each direction separately. Only if both hold can we use the biconditional.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the forward direction P ⇒ Q.",
+        "workingLatex": "\\text{angle } = 90^\\circ \\;\\Rightarrow\\; \\text{triangle is right-angled}",
+        "explanation": "If a triangle has a $90^\\circ$ angle then by definition it earns the name 'right-angled'. So P alone is enough to guarantee Q.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the reverse direction Q ⇒ P.",
+        "workingLatex": "\\text{right-angled} \\;\\Rightarrow\\; \\text{it has a } 90^\\circ \\text{ angle}",
+        "explanation": "If a triangle is right-angled then, again by definition, one of its angles must be $90^\\circ$. So Q also forces P; there is no right-angled triangle without a right angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine both directions into the correct symbol.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\;\\Longrightarrow\\; P \\Leftrightarrow Q",
+        "explanation": "Because each statement implies the other, the connective is the two-way arrow. The statements are logically equivalent, which is expected since they are two phrasings of one definition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Translate into necessary / sufficient language.",
+        "workingLatex": "P \\text{ is necessary and sufficient for } Q",
+        "explanation": "P guarantees Q, so P is sufficient; Q cannot happen without P, so P is also necessary. When both hold, we say P is a necessary and sufficient condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the final conclusion.",
+        "workingLatex": "P \\Leftrightarrow Q",
+        "explanation": "Since P is essentially the definition of Q, the two are equivalent and connected by $\\Leftrightarrow$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$. Having a $90^\\circ$ angle is both necessary and sufficient for a triangle to be right-angled, because the two statements are just the definition restated."
+  }
+}

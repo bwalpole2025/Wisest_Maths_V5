@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "equivalence", "geometry"],
+  "questionText": "Let $P$ be 'a quadrilateral has four right angles' and let $Q$ be 'the quadrilateral is a rectangle'. Determine whether $P$ is a necessary condition, a sufficient condition, both, or neither, for $Q$, and state the symbol ($\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$) connecting $P$ and $Q$. Justify your answer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two conditions.",
+        "workingLatex": "P:\\ \\text{the quadrilateral has four } 90^\\circ \\text{ angles}, \\qquad Q:\\ \\text{it is a rectangle}",
+        "explanation": "We begin by making both claims explicit. P describes a shape by its angles; Q gives it the name 'rectangle'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the definition of a rectangle.",
+        "workingLatex": "\\text{rectangle} \\;=\\; \\text{a quadrilateral with four right angles}",
+        "explanation": "The standard definition of a rectangle is a four-sided figure whose angles are all $90^\\circ$. This definition is what links the two statements.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up both directions to test.",
+        "workingLatex": "\\text{Test } P \\Rightarrow Q \\quad\\text{and}\\quad Q \\Rightarrow P",
+        "explanation": "Choosing the right symbol means checking each direction. Only if both hold do we use the biconditional.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the angle sum is consistent.",
+        "workingLatex": "90^\\circ \\times 4 = 360^\\circ = \\text{angle sum of any quadrilateral}",
+        "explanation": "Four right angles total $360^\\circ$, which is exactly the interior-angle sum of a quadrilateral. So a four-right-angled quadrilateral is genuinely possible and its sides close up into a rectangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the forward direction P ⇒ Q.",
+        "workingLatex": "\\text{four } 90^\\circ \\text{ angles} \\;\\Rightarrow\\; \\text{rectangle}",
+        "explanation": "A quadrilateral with all angles $90^\\circ$ meets the definition of a rectangle exactly, so P forces Q.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test the reverse direction Q ⇒ P.",
+        "workingLatex": "\\text{rectangle} \\;\\Rightarrow\\; \\text{four } 90^\\circ \\text{ angles}",
+        "explanation": "By definition every rectangle has four right angles, so Q forces P as well. Neither statement can hold without the other.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Combine the directions into the correct symbol.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\;\\Longrightarrow\\; P \\Leftrightarrow Q",
+        "explanation": "Because each implies the other, the connective is the two-way arrow. This is unsurprising, as P is just the definition of Q rephrased.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the conclusion in necessary / sufficient terms.",
+        "workingLatex": "P \\text{ is necessary and sufficient for } Q,\\qquad P \\Leftrightarrow Q",
+        "explanation": "P guarantees Q, so it is sufficient; Q cannot occur without P, so it is necessary. Both together give a necessary and sufficient condition.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$. Having four right angles is both necessary and sufficient for a quadrilateral to be a rectangle, since that is precisely the definition of a rectangle."
+  }
+}

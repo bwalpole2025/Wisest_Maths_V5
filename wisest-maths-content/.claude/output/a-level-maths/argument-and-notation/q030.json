@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "equivalence", "divisibility"],
+  "questionText": "Let $n$ be a whole number. Show that '$n$ ends in the digit $0$ or $5$' is a necessary and sufficient condition for '$n$ is divisible by $5$'. You must prove both directions of the implication and state your final conclusion using the symbol $\\Leftrightarrow$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the two statements to be linked.",
+        "workingLatex": "P:\\ n \\text{ ends in } 0 \\text{ or } 5, \\qquad Q:\\ 5 \\mid n",
+        "explanation": "'Necessary and sufficient' means the two statements imply each other, so our target is $P \\Leftrightarrow Q$. Naming them keeps the two directions of the proof clearly separated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Separate a number into its last digit and the rest.",
+        "workingLatex": "n = 10a + d, \\qquad a \\in \\mathbb{Z}_{\\ge 0}, \\ d \\in \\{0,1,\\dots,9\\}",
+        "explanation": "The last digit $d$ is what 'ends in' refers to, and $10a$ is everything to its left. Splitting $n$ this way lets the single digit $d$ control the whole argument.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note that the leading part is always divisible by 5.",
+        "workingLatex": "10a = 5(2a) \\Rightarrow 5 \\mid 10a",
+        "explanation": "Ten is itself a multiple of 5, so the entire 'tens and above' part $10a$ is divisible by 5 no matter what $a$ is. This is why only the last digit can decide the outcome.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Prove sufficiency: if it ends in 0 or 5 then 5 divides n.",
+        "workingLatex": "d=0:\\ n=10a=5(2a); \\qquad d=5:\\ n=10a+5=5(2a+1)",
+        "explanation": "Assuming $P$, the digit $d$ is itself a multiple of 5, and adding it to the multiple $10a$ keeps the sum a multiple of 5. So $P$ is enough to guarantee $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the forward conclusion.",
+        "workingLatex": "P \\Rightarrow Q",
+        "explanation": "Both allowed last digits produce a number equal to exactly 5 times an integer, establishing the sufficiency direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Prove necessity: if 5 divides n then the last digit is fixed.",
+        "workingLatex": "5 \\mid n \\text{ and } 5 \\mid 10a \\Rightarrow 5 \\mid (n - 10a) = d",
+        "explanation": "If 5 divides $n$ and also divides $10a$, it must divide their difference, which is the last digit $d$. Divisibility is preserved under subtraction, so this pins down $d$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for the possible last digits.",
+        "workingLatex": "d \\in \\{0,\\dots,9\\} \\text{ and } 5 \\mid d \\Rightarrow d = 0 \\text{ or } d = 5",
+        "explanation": "The only single digits that 5 divides are 0 and 5, so the number must end in one of these. That is exactly statement $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the reverse conclusion.",
+        "workingLatex": "Q \\Rightarrow P",
+        "explanation": "Divisibility by 5 has forced the final digit to be 0 or 5, establishing the necessity direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine both directions into a biconditional.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ and } \\ Q \\Rightarrow P \\ \\Rightarrow \\ P \\Leftrightarrow Q",
+        "explanation": "With both implications proved, the conditions are equivalent: each is both necessary and sufficient for the other.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Translate the result into necessary/sufficient language.",
+        "workingLatex": "P \\text{ is necessary and sufficient for } Q",
+        "explanation": "Because $P \\Rightarrow Q$, the digit condition is sufficient; because $Q \\Rightarrow P$, it is also necessary. Together this is precisely what the biconditional records.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$: a whole number ends in $0$ or $5$ if and only if it is divisible by $5$, so the digit condition is both necessary and sufficient."
+  }
+}

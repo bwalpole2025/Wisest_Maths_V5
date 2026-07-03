@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "biconditional", "equivalence", "inequalities", "real numbers"],
+  "questionText": "For real numbers $x$ and $y$, determine the logical relationship between the statement $P:\\ x^2 + y^2 = 0$ and the statement $Q:\\ x = 0$ and $y = 0$. State which of $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ connects them, and prove your claim.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write down the two statements and the domain.",
+        "workingLatex": "P:\\ x^2 + y^2 = 0, \\qquad Q:\\ x = 0 \\text{ and } y = 0 \\qquad (x, y \\in \\mathbb{R})",
+        "explanation": "We record both claims and, crucially, the fact that $x$ and $y$ are real. The domain will turn out to be exactly what makes the equivalence work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Note that a connective claim must be tested in both directions.",
+        "workingLatex": "\\text{Test } \\ Q \\Rightarrow P \\ \\text{ and } \\ P \\Rightarrow Q",
+        "explanation": "To decide between the one-way arrows and the two-way arrow we check each direction independently. Only if both hold may we write $\\Leftrightarrow$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Prove the easy direction Q ⇒ P.",
+        "workingLatex": "x = 0, \\ y = 0 \\ \\Rightarrow\\ x^2 + y^2 = 0 + 0 = 0",
+        "explanation": "If both variables are zero, substituting straight in gives a sum of zero. This direction is immediate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Record the reverse direction.",
+        "workingLatex": "Q \\Rightarrow P \\ \\text{ holds}",
+        "explanation": "So the harder question is whether the equation can force both variables to vanish. We now attack $P\\Rightarrow Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the key fact about real squares.",
+        "workingLatex": "x^2 \\ge 0 \\ \\text{ and } \\ y^2 \\ge 0 \\quad \\text{for all } x, y \\in \\mathbb{R}",
+        "explanation": "Squaring any real number can never produce a negative result, so both terms sit at or above zero. This non-negativity is the engine of the whole proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Explain why the sum cannot hide cancellation.",
+        "workingLatex": "\\text{two quantities} \\ge 0 \\ \\text{ summing to } 0 \\ \\Rightarrow\\ \\text{each is } 0",
+        "explanation": "If neither term is negative, one cannot cancel the other; the only way their total reaches zero is for both to be zero. A single positive term would push the sum strictly above zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply this to the equation.",
+        "workingLatex": "x^2 + y^2 = 0, \\ x^2 \\ge 0, \\ y^2 \\ge 0 \\ \\Rightarrow\\ x^2 = 0 \\ \\text{ and } \\ y^2 = 0",
+        "explanation": "Combining the equation with the two inequalities pins each square to zero. There is no other option consistent with all three facts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Deduce the values of x and y.",
+        "workingLatex": "x^2 = 0 \\Rightarrow x = 0, \\qquad y^2 = 0 \\Rightarrow y = 0",
+        "explanation": "The only real number whose square is zero is zero itself, so each variable must vanish. This gives exactly the statement $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Record the forward direction.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ holds}",
+        "explanation": "The equation really does force both variables to be zero. So the forward implication is established.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine both directions.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ and } \\ Q \\Rightarrow P \\ \\Rightarrow\\ P \\Leftrightarrow Q",
+        "explanation": "Each statement implies the other, so they are logically equivalent and the correct symbol is $\\Leftrightarrow$. The two conditions describe the very same situation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Highlight the reliance on the real domain.",
+        "workingLatex": "\\text{Over } \\mathbb{C}: \\ x = 1, \\ y = i \\ \\Rightarrow\\ x^2 + y^2 = 1 + (-1) = 0, \\ \\text{ yet } Q \\text{ is false}",
+        "explanation": "If complex values were allowed, a square could be negative and the equivalence would collapse. The non-negativity of squares, and hence the whole result, depends on staying within the real numbers.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$: for real $x$ and $y$, $x^2 + y^2 = 0$ if and only if $x = 0$ and $y = 0$, because a sum of non-negative squares is zero only when each square is zero."
+  }
+}

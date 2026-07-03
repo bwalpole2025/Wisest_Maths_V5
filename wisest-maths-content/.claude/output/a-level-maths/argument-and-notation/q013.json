@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["set notation", "set-builder", "divisibility", "translation"],
+  "questionText": "Using set-builder notation and the membership symbol $\\in$, write down the set of all integers $n$ that are divisible by $6$. Explain what each part of your notation means, and give the equivalent divisibility shorthand.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret 'divisible by 6' algebraically.",
+        "workingLatex": "n \\text{ divisible by } 6 \\iff n = 6k \\text{ for some integer } k",
+        "explanation": "Saying $n$ is divisible by $6$ means $6$ goes into $n$ a whole number of times, so $n$ is $6$ multiplied by some integer. Turning the phrase into $n = 6k$ gives us a condition we can write down precisely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the general shape of set-builder notation.",
+        "workingLatex": "\\{\\, \\text{element} \\in \\text{domain} : \\text{condition} \\,\\}",
+        "explanation": "Set-builder notation names a typical element, states which set it is drawn from, and then lists the property it must satisfy after the colon. The colon is read as 'such that'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Choose the domain for n.",
+        "workingLatex": "n \\in \\mathbb{Z}",
+        "explanation": "Divisibility is a property of integers, so the natural domain is $\\mathbb{Z}$, the set of all integers. Writing $n \\in \\mathbb{Z}$ says $n$ is a member of that set.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the defining condition using a second integer.",
+        "workingLatex": "n = 6k \\text{ for some } k \\in \\mathbb{Z}",
+        "explanation": "The condition after the colon must capture 'is a multiple of $6$'. Introducing a fresh integer $k$ and requiring $n = 6k$ does exactly that.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the full set.",
+        "workingLatex": "\\{\\, n \\in \\mathbb{Z} : n = 6k \\text{ for some } k \\in \\mathbb{Z} \\,\\}",
+        "explanation": "Combining the domain and the condition inside the braces gives the complete description: all integers $n$ that can be written as $6$ times an integer. This is read 'the set of integers $n$ such that $n = 6k$ for some integer $k$'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Give the divisibility shorthand.",
+        "workingLatex": "6 \\mid n",
+        "explanation": "The vertical bar in $6 \\mid n$ means '$6$ divides $n$', a compact way of writing the same condition. So the set can also be described as all $n \\in \\mathbb{Z}$ with $6 \\mid n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the notation on sample values.",
+        "workingLatex": "18 = 6 \\times 3 \\;\\Rightarrow\\; 18 \\in S; \\qquad 20 \\neq 6k \\;\\Rightarrow\\; 20 \\notin S",
+        "explanation": "Testing a member and a non-member confirms the set behaves as intended: $18$ is $6 \\times 3$ so it belongs, while $20$ is not a multiple of $6$ so it is excluded. This sanity check guards against a mis-stated condition.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$S = \\{\\, n \\in \\mathbb{Z} : n = 6k \\text{ for some } k \\in \\mathbb{Z} \\,\\}$, equivalently $\\{\\, n \\in \\mathbb{Z} : 6 \\mid n \\,\\}$."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "geometry"],
+  "questionText": "Let $P$ be the statement \"$ABCD$ is a square\" and $Q$ the statement \"$ABCD$ is a rectangle\". State, with justification, which of $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ correctly links $P$ and $Q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Note the defining properties of each shape.",
+        "workingLatex": "\\text{Square: 4 equal sides and 4 right angles};\\quad \\text{Rectangle: 4 right angles}",
+        "explanation": "Comparing statements about shapes is easiest when we list what each shape requires. A rectangle needs four right angles; a square needs those plus four equal sides.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State what the three symbols would claim.",
+        "workingLatex": "P \\Rightarrow Q,\\quad P \\Leftarrow Q,\\quad P \\Leftrightarrow Q",
+        "explanation": "Each symbol asserts a direction of implication, and the two-way symbol needs both directions. So we test 'square forces rectangle' and 'rectangle forces square' separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the forward direction P implies Q.",
+        "workingLatex": "\\text{square} \\Rightarrow \\text{4 right angles} \\Rightarrow \\text{rectangle}",
+        "explanation": "A square has four right angles, which is exactly the requirement for a rectangle. So every square already meets the definition of a rectangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Conclude the forward implication holds.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is true}",
+        "explanation": "Since a square automatically satisfies everything a rectangle demands, being a square is enough to be a rectangle. A square is simply a special rectangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the reverse direction with a counterexample.",
+        "workingLatex": "\\text{Rectangle } 2 \\times 3:\\ \\text{4 right angles but sides } 2 \\neq 3",
+        "explanation": "For the reverse we ask whether a rectangle must be a square. A $2$ by $3$ rectangle has right angles but unequal sides, so it is a rectangle that is not a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the reverse implication fails.",
+        "workingLatex": "Q \\not\\Rightarrow P",
+        "explanation": "The $2$ by $3$ rectangle satisfies $Q$ without satisfying $P$, and one counterexample is decisive. So $Q$ does not force $P$, which rules out $\\Leftrightarrow$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Select the correct symbol.",
+        "workingLatex": "P \\Rightarrow Q",
+        "explanation": "Only the forward direction survived testing, so the one-way arrow from square to rectangle is the correct connective.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpret in necessary and sufficient language.",
+        "workingLatex": "P \\text{ sufficient for } Q, \\text{ not necessary}",
+        "explanation": "Being a square is sufficient for being a rectangle but not necessary, since rectangles like the $2$ by $3$ one exist without being squares.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Rightarrow Q$: a square is always a rectangle, but not every rectangle is a square (e.g. a $2 \\times 3$ rectangle). So $\\Rightarrow$ is the correct symbol."
+  }
+}

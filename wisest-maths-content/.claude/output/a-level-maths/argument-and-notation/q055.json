@@ -1,0 +1,123 @@
+{
+  "id": "al.y1.pure.argument-notation.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "equivalence", "contrapositive", "proof", "parity", "necessary and sufficient"],
+  "questionText": "Let $n$ be an integer. Prove that $n$ is even if and only if $n^2$ is even. Prove the forward direction directly and the reverse direction by contrapositive. Hence explain why each of the two conditions is both necessary and sufficient for the other.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the statements and the goal.",
+        "workingLatex": "P:\\ n\\ \\text{is even}, \\quad Q:\\ n^2\\ \\text{is even}, \\quad \\text{prove } P \\Leftrightarrow Q",
+        "explanation": "Labelling the two claims lets us track exactly which direction we are working on. The target $P \\Leftrightarrow Q$ is a biconditional, so it will take two separate arguments to establish.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Break the biconditional into two implications.",
+        "workingLatex": "P \\Leftrightarrow Q \\iff (P \\Rightarrow Q)\\ \\text{and}\\ (Q \\Rightarrow P)",
+        "explanation": "A two-way arrow is really two one-way arrows, so proving both $P \\Rightarrow Q$ and $Q \\Rightarrow P$ proves the whole statement. We will do the first directly and the second by its contrapositive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the intuition about squaring and parity.",
+        "workingLatex": "\\text{squaring preserves parity: even} \\to \\text{even},\\ \\text{odd} \\to \\text{odd}",
+        "explanation": "Squaring a number does not change whether it is even or odd, because the factors of $2$ (or their absence) are simply repeated. This is the underlying reason the two conditions must rise and fall together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Begin the forward direction P ⇒ Q by assuming P.",
+        "workingLatex": "\\text{assume } n = 2k \\ \\text{for some integer } k",
+        "explanation": "For a direct proof of $P \\Rightarrow Q$ we assume the hypothesis, that $n$ is even, and write it as $2k$. From here we compute forwards towards the conclusion about $n^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Square n.",
+        "workingLatex": "n^2 = (2k)^2 = 4k^2",
+        "explanation": "Squaring the even form $2k$ produces $4k^2$. The point is to expose a factor of $2$ inside this expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factor out a 2 to show n² is even.",
+        "workingLatex": "n^2 = 2(2k^2)",
+        "explanation": "Writing $4k^2$ as $2$ times $2k^2$ displays $n^2$ as twice an integer. That is exactly the definition of an even number, so $Q$ holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the forward conclusion.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is proved}",
+        "explanation": "Assuming $n$ even led directly to $n^2$ even, so the forward implication is established. One half of the biconditional is now done.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain why the reverse is done by contrapositive.",
+        "workingLatex": "Q \\Rightarrow P \\ \\equiv\\ \\lnot P \\Rightarrow \\lnot Q",
+        "explanation": "Going directly from '$n^2$ even' to '$n$ even' is awkward because we would need to un-square. Instead we prove the logically equivalent contrapositive: if $n$ is not even then $n^2$ is not even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the contrapositive to be proved.",
+        "workingLatex": "\\lnot P \\Rightarrow \\lnot Q:\\ n\\ \\text{odd} \\Rightarrow n^2\\ \\text{odd}",
+        "explanation": "The negation of 'even' is 'odd', so the contrapositive says an odd $n$ has an odd square. Proving this is exactly as good as proving $Q \\Rightarrow P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Assume n is odd.",
+        "workingLatex": "n = 2k + 1 \\ \\text{for some integer } k",
+        "explanation": "We now assume the hypothesis of the contrapositive, that $n$ is odd, and write it in the standard form $2k+1$. Then we compute $n^2$ and look at its parity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Square the odd form.",
+        "workingLatex": "n^2 = (2k+1)^2 = 4k^2 + 4k + 1",
+        "explanation": "Expanding the square gives $4k^2+4k+1$. We aim to separate the part that is clearly even from a leftover $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Rewrite to expose the odd form.",
+        "workingLatex": "n^2 = 2(2k^2 + 2k) + 1",
+        "explanation": "Grouping the first two terms as $2(2k^2+2k)$ leaves a remainder of $1$, so $n^2$ is one more than an even number. That is precisely what it means for $n^2$ to be odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Complete the contrapositive and hence the reverse direction.",
+        "workingLatex": "n\\ \\text{odd} \\Rightarrow n^2\\ \\text{odd} \\;\\Rightarrow\\; Q \\Rightarrow P \\text{ is proved}",
+        "explanation": "We have shown an odd $n$ forces an odd $n^2$, so the contrapositive holds. Because a statement and its contrapositive are equivalent, $Q \\Rightarrow P$ is thereby proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Combine both directions.",
+        "workingLatex": "(P \\Rightarrow Q)\\ \\text{and}\\ (Q \\Rightarrow P) \\;\\Rightarrow\\; P \\Leftrightarrow Q \\quad \\blacksquare",
+        "explanation": "With both implications established, the biconditional $n$ even $\\Leftrightarrow n^2$ even is proved. Both halves were required, and both are now secure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Discuss necessary and sufficient.",
+        "workingLatex": "P \\Leftrightarrow Q \\Rightarrow \\text{each condition is necessary and sufficient for the other}",
+        "explanation": "Because each statement implies the other, each is both sufficient (it guarantees the other) and necessary (the other cannot hold without it). So '$n$ is even' and '$n^2$ is even' are interchangeable conditions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n$ even $\\Leftrightarrow n^2$ even. Forward (direct): $n=2k \\Rightarrow n^2 = 2(2k^2)$, even. Reverse (contrapositive): $n=2k+1 \\Rightarrow n^2 = 2(2k^2+2k)+1$, odd, so $n$ odd $\\Rightarrow n^2$ odd, i.e. $n^2$ even $\\Rightarrow n$ even. Both directions hold, so each condition is both necessary and sufficient for the other."
+  }
+}

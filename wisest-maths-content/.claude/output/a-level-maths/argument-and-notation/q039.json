@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "equivalence", "modulus", "inequalities"],
+  "questionText": "For a real number $x$, consider the statements $P:\\ |x| < 3$ and $Q:\\ -3 < x < 3$. Determine the logical relationship between $P$ and $Q$, proving both directions carefully.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two statements and the goal.",
+        "workingLatex": "P:\\ |x| < 3, \\qquad Q:\\ -3 < x < 3",
+        "explanation": "We want the correct connective between $P$ and $Q$, which means proving each implies the other or finding a counterexample. Writing both out keeps the two directions distinct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Interpret the modulus intuitively.",
+        "workingLatex": "|x| = \\text{distance from } x \\text{ to } 0",
+        "explanation": "The modulus measures how far $x$ sits from zero on the number line. Saying that distance is less than $3$ should mean $x$ lies strictly between $-3$ and $3$, which is what we now prove.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Begin the forward direction by assuming P.",
+        "workingLatex": "\\text{Assume } |x| < 3; \\ \\text{use the definition } |x| = \\begin{cases} x & x \\ge 0 \\\\ -x & x < 0 \\end{cases}",
+        "explanation": "To prove $P \\Rightarrow Q$ we assume $|x|<3$ and split by the sign of $x$, because the modulus is defined piecewise. Handling each case removes the absolute-value symbol cleanly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Forward direction, case x is non-negative.",
+        "workingLatex": "x \\ge 0:\\ |x| = x < 3 \\ \\Rightarrow \\ 0 \\le x < 3",
+        "explanation": "When $x \\ge 0$ the modulus is just $x$, so the assumption gives $x<3$. Combined with $x \\ge 0$ this sits inside the interval $(-3,3)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Forward direction, case x is negative.",
+        "workingLatex": "x < 0:\\ |x| = -x < 3 \\ \\Rightarrow \\ x > -3 \\ \\Rightarrow \\ -3 < x < 0",
+        "explanation": "When $x<0$ the modulus equals $-x$, so $-x<3$ rearranges to $x>-3$. Together with $x<0$ this again lies inside $(-3,3)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the cases for the forward direction.",
+        "workingLatex": "\\text{both cases} \\ \\Rightarrow \\ -3 < x < 3, \\quad \\text{so } P \\Rightarrow Q",
+        "explanation": "Every real $x$ falls into one of the two cases, and each led to $-3<x<3$. Hence $|x|<3$ always forces $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Begin the reverse direction by assuming Q.",
+        "workingLatex": "\\text{Assume } -3 < x < 3",
+        "explanation": "Now we prove $Q \\Rightarrow P$ by starting from the double inequality. We again split on the sign of $x$ to evaluate $|x|$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Reverse direction, case x is non-negative.",
+        "workingLatex": "x \\ge 0:\\ |x| = x < 3",
+        "explanation": "For $x \\ge 0$ the right half of $Q$ already gives $x<3$, and $|x|=x$, so the modulus is below $3$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Reverse direction, case x is negative.",
+        "workingLatex": "x < 0:\\ x > -3 \\ \\Rightarrow \\ -x < 3 \\ \\Rightarrow \\ |x| = -x < 3",
+        "explanation": "For $x<0$ the left half of $Q$ gives $x>-3$; multiplying by $-1$ flips it to $-x<3$. Since $|x|=-x$ here, the modulus is again below $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine the cases for the reverse direction.",
+        "workingLatex": "\\text{both cases} \\ \\Rightarrow \\ |x| < 3, \\quad \\text{so } Q \\Rightarrow P",
+        "explanation": "Both sign cases produced $|x|<3$, so the interval condition always forces $P$. The reverse implication is established.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Combine both directions into the final relationship.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\quad \\Rightarrow \\quad |x| < 3 \\Leftrightarrow -3 < x < 3",
+        "explanation": "Since each statement implies the other, they are logically equivalent. This is exactly why $|x|<3$ is standard shorthand for $-3<x<3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$: $|x| < 3$ if and only if $-3 < x < 3$. Both directions hold, so the statements are logically equivalent."
+  }
+}

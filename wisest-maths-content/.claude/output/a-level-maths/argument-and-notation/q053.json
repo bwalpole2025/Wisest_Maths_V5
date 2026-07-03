@@ -1,0 +1,81 @@
+{
+  "id": "al.y1.pure.argument-notation.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "equivalence", "necessary and sufficient", "number theory", "definition"],
+  "questionText": "Let $n$ be a positive integer. Let $P$ be the statement \"$n$ is prime\" and let $Q$ be the statement \"$n$ has exactly two positive divisors\". Determine which of $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ correctly connects $P$ and $Q$, justifying each direction, and comment on the case $n=1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two statements and the domain.",
+        "workingLatex": "P:\\ n\\ \\text{is prime}, \\qquad Q:\\ n\\ \\text{has exactly two positive divisors}, \\qquad n \\in \\mathbb{Z}^{+}",
+        "explanation": "We compare a named property, 'prime', with a counting property about divisors. Because divisor counts depend on staying among the positive integers, fixing $n \\in \\mathbb{Z}^{+}$ frames the whole question.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the two directions needed for a biconditional.",
+        "workingLatex": "P \\Leftrightarrow Q \\iff (P \\Rightarrow Q)\\ \\text{and}\\ (Q \\Rightarrow P)",
+        "explanation": "The two-way arrow only earns its place if each statement forces the other. So we test $P \\Rightarrow Q$ and $Q \\Rightarrow P$ as two separate claims.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the two automatic divisors of any positive integer.",
+        "workingLatex": "1 \\mid n \\ \\text{and}\\ n \\mid n \\quad \\text{for every } n \\in \\mathbb{Z}^{+}",
+        "explanation": "Every positive integer is divisible by both $1$ and itself, so these two are always present on the divisor list. This is the anchor that connects the counting statement $Q$ to the meaning of prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the forward direction P ⇒ Q.",
+        "workingLatex": "n\\ \\text{prime} \\Rightarrow n \\ge 2\\ \\text{and only divisors are } 1, n \\Rightarrow \\text{exactly two}",
+        "explanation": "Assume $n$ is prime. By definition its only positive divisors are $1$ and $n$, and since a prime satisfies $n \\ge 2$ these two are different. That leaves exactly two divisors, which is $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude the forward direction holds.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is true}",
+        "explanation": "Being prime guarantees the divisor count is exactly two, so $P$ forces $Q$. The forward implication is secure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test the reverse direction Q ⇒ P.",
+        "workingLatex": "\\text{exactly two divisors} \\Rightarrow \\{1, n\\},\\ 1 \\neq n \\Rightarrow n > 1\\ \\text{with no other divisor}",
+        "explanation": "Assume $n$ has exactly two positive divisors. They must be the two automatic ones, $1$ and $n$, and for these to be two distinct numbers we need $n>1$. With no divisor besides $1$ and itself, $n$ fits the definition of prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the reverse direction holds.",
+        "workingLatex": "Q \\Rightarrow P \\text{ is true}",
+        "explanation": "Having exactly two positive divisors pins $n$ down to being prime, so $Q$ forces $P$ as well. The reverse implication also holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Comment on the special case n = 1.",
+        "workingLatex": "\\text{divisors of } 1 = \\{1\\} \\Rightarrow \\text{one divisor} \\Rightarrow Q\\ \\text{false},\\ P\\ \\text{false}",
+        "explanation": "The number $1$ has only the single divisor $1$, so it fails the 'exactly two' test and $Q$ is false. This matches $1$ not being prime, showing the condition automatically excludes $1$ without any special rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the overall conclusion.",
+        "workingLatex": "P \\Leftrightarrow Q",
+        "explanation": "Both directions hold, so the correct connective is $\\Leftrightarrow$. In fact 'exactly two positive divisors' is just a restatement of the definition of prime, and it neatly rules out $1$ on its own.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$. Forward: a prime has only $1$ and itself as divisors, and these are distinct since $n\\ge2$, giving exactly two. Reverse: exactly two divisors must be $1$ and $n$ with $n>1$ and nothing else, i.e. prime. The case $n=1$ has just one divisor, so $Q$ (and $P$) fail — the definition excludes $1$ automatically."
+  }
+}

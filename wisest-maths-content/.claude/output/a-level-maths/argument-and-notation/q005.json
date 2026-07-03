@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "geometry"],
+  "questionText": "A student writes: \"If a shape is a square, then it has four equal sides.\" Write down the converse of this statement, and decide whether the converse is true, giving a reason.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Separate the hypothesis and conclusion.",
+        "workingLatex": "P:\\ \\text{the shape is a square}, \\qquad Q:\\ \\text{the shape has four equal sides}",
+        "explanation": "The original statement runs from $P$ to $Q$. Isolating each part is the first move in building its converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the rule for forming a converse.",
+        "workingLatex": "P \\Rightarrow Q \\ \\longrightarrow \\ Q \\Rightarrow P",
+        "explanation": "The converse swaps hypothesis and conclusion, reversing the arrow. It asks the reverse question and may have a different truth value from the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the converse in words.",
+        "workingLatex": "\\text{If a shape has four equal sides, then it is a square}",
+        "explanation": "Interchanging $P$ and $Q$ produces the new statement. Phrasing it plainly makes it easy to challenge with a specific shape.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Plan how to test the converse.",
+        "workingLatex": "\\text{Seek a shape with four equal sides that is not a square}",
+        "explanation": "One counterexample disproves a general geometric claim. So we look for a four-equal-sided shape whose other properties stop it being a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Consider a rhombus.",
+        "workingLatex": "\\text{Rhombus: four equal sides, but angles} \\neq 90^\\circ",
+        "explanation": "A rhombus has four equal sides, so it satisfies the converse's hypothesis, but its angles are not all right angles. A square additionally requires four right angles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm the rhombus breaks the conclusion.",
+        "workingLatex": "\\text{Rhombus has four equal sides but is not a square}",
+        "explanation": "Because the rhombus meets the hypothesis yet fails to be a square, it is a valid counterexample to the converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "Q \\Rightarrow P \\text{ is false}",
+        "explanation": "Four equal sides alone do not force a shape to be a square, since the angles can differ from $90^\\circ$. The converse is therefore false.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Converse: \"If a shape has four equal sides, then it is a square.\" This is false; a rhombus has four equal sides but is not a square, because its angles need not be $90^\\circ$."
+  }
+}

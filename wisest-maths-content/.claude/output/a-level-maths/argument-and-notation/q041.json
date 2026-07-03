@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "hypothesis and conclusion", "geometric series"],
+  "questionText": "Consider the conditional statement: 'If a geometric series has common ratio $r$ with $|r| < 1$, then the series converges.' Identify the hypothesis and the conclusion, and determine whether the converse is true, restricting attention to geometric series whose first term $a$ is non-zero.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the statement in explicit if-then form.",
+        "workingLatex": "\\text{If } |r| < 1 \\ \\text{then the geometric series converges}",
+        "explanation": "A conditional splits cleanly into the part assumed and the part claimed. Isolating the 'if' clause and the 'then' clause is the first step to naming them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the hypothesis and the conclusion.",
+        "workingLatex": "\\text{Hypothesis } H:\\ |r| < 1; \\qquad \\text{Conclusion } C:\\ \\text{the series converges}",
+        "explanation": "The hypothesis is the condition we are allowed to assume; the conclusion is what must follow. Labelling them makes the converse easy to write down later.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note that the original statement is a known true result.",
+        "workingLatex": "|r| < 1 \\ \\Rightarrow \\ \\sum_{k=0}^{\\infty} a r^{k} = \\frac{a}{1 - r}",
+        "explanation": "For $|r|<1$ the sum to infinity exists and equals $a/(1-r)$, so the forward statement $H \\Rightarrow C$ is true. This orients us before we probe the converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the converse statement.",
+        "workingLatex": "\\text{Converse}:\\ \\text{if the series converges then } |r| < 1",
+        "explanation": "The converse swaps hypothesis and conclusion, so it now assumes convergence and claims $|r|<1$. Whether this new statement is true must be checked separately from the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recall a general test for convergence.",
+        "workingLatex": "\\sum u_n \\text{ converges} \\ \\Rightarrow \\ u_n \\to 0",
+        "explanation": "A series can only converge if its terms shrink to zero; otherwise the running total never settles. This necessary condition is the tool for testing the converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the general term of the geometric series.",
+        "workingLatex": "u_n = a r^{\\,n-1}, \\qquad |u_n| = |a|\\,|r|^{\\,n-1}",
+        "explanation": "Each term is the previous one multiplied by $r$, giving $u_n=a r^{n-1}$. Taking magnitudes lets us track whether the terms decay.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Show the terms do not vanish when the ratio is large.",
+        "workingLatex": "|r| \\ge 1 \\ \\Rightarrow \\ |r|^{\\,n-1} \\ge 1 \\ \\Rightarrow \\ |u_n| \\ge |a| > 0",
+        "explanation": "If $|r| \\ge 1$ then its powers never drop below $1$, so each term stays at least $|a|$ in size, which is positive because $a \\neq 0$. The terms cannot tend to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Deduce divergence, then take the contrapositive.",
+        "workingLatex": "|r| \\ge 1 \\ \\Rightarrow \\ \\text{diverges} \\ \\Longleftrightarrow \\ \\text{converges} \\ \\Rightarrow \\ |r| < 1",
+        "explanation": "Since terms not tending to zero forces divergence, any $|r| \\ge 1$ diverges. The contrapositive of this is exactly the converse: convergence forces $|r|<1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Explain why the non-zero first term is needed.",
+        "workingLatex": "a = 0 \\ \\Rightarrow \\ \\sum u_n = 0 \\ \\text{converges for every } r",
+        "explanation": "If $a=0$ every term is zero, so the series converges no matter how large $r$ is, which would break the converse. Requiring $a \\neq 0$ is what makes the converse hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine the two directions.",
+        "workingLatex": "\\text{within geometric series, } a \\neq 0:\\ \\text{converges} \\ \\Leftrightarrow \\ |r| < 1",
+        "explanation": "The original gives $|r|<1 \\Rightarrow$ convergence and the converse gives convergence $\\Rightarrow |r|<1$. Together they upgrade the one-way statement to an equivalence in this setting.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the final answer.",
+        "workingLatex": "H:\\ |r| < 1, \\quad C:\\ \\text{converges}, \\quad \\text{converse true} \\ \\Rightarrow \\ H \\Leftrightarrow C",
+        "explanation": "The hypothesis is $|r|<1$ and the conclusion is convergence; the converse is true for geometric series with $a \\neq 0$. So in this restricted setting the two conditions are equivalent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Hypothesis: $|r| < 1$. Conclusion: the series converges. The converse is true for geometric series with $a \\neq 0$ (a convergent geometric series must have $|r|<1$, since $|r| \\ge 1$ keeps $|u_n| \\ge |a| > 0$). Hence in this setting convergence $\\Leftrightarrow |r| < 1$."
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "sufficient condition", "divisibility", "implication"],
+  "questionText": "Let $P$ be 'the integer $n$ is a multiple of $9$' and let $Q$ be 'the digit sum of $n$ is divisible by $9$'. Determine whether $P$ is a sufficient condition for $Q$, justifying your answer. Comment also on whether $P$ is necessary for $Q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two conditions precisely.",
+        "workingLatex": "P:\\ 9 \\mid n, \\qquad Q:\\ 9 \\mid (\\text{digit sum of } n)",
+        "explanation": "We first pin down each claim. P is about the number itself being divisible by $9$; Q is about the sum of its digits being divisible by $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall what 'sufficient' means.",
+        "workingLatex": "P \\text{ sufficient for } Q \\iff P \\Rightarrow Q",
+        "explanation": "Saying P is sufficient for Q means P on its own guarantees Q. So the task reduces to checking whether the forward implication holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the divisibility-by-9 rule.",
+        "workingLatex": "9 \\mid n \\iff 9 \\mid (\\text{digit sum of } n)",
+        "explanation": "A standard result says a number is divisible by $9$ exactly when its digit sum is. This is because every power of ten leaves remainder $1$ on division by $9$, so $n$ and its digit sum share the same remainder.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the rule to test P ⇒ Q, with an example.",
+        "workingLatex": "n = 72 = 9 \\times 8,\\quad \\text{digit sum} = 7 + 2 = 9,\\quad 9 \\mid 9",
+        "explanation": "If $n$ is a multiple of $9$ then the rule immediately gives that its digit sum is divisible by $9$; the case $n=72$ illustrates it. So P forces Q.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude sufficiency.",
+        "workingLatex": "P \\Rightarrow Q \\;\\Rightarrow\\; P \\text{ is sufficient for } Q",
+        "explanation": "Because being a multiple of $9$ guarantees a digit sum divisible by $9$, P is indeed a sufficient condition for Q.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test the reverse direction Q ⇒ P.",
+        "workingLatex": "9 \\mid (\\text{digit sum}) \\;\\Rightarrow\\; 9 \\mid n \\quad (\\text{same rule, other direction})",
+        "explanation": "The divisibility rule is itself a biconditional, so a digit sum divisible by $9$ also forces $n$ to be a multiple of $9$. This means the reverse implication holds too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Interpret the reverse direction as necessity.",
+        "workingLatex": "Q \\Rightarrow P \\;\\Rightarrow\\; P \\text{ is also necessary for } Q",
+        "explanation": "Since Q cannot hold without P, P is necessary as well. Here the condition is in fact both necessary and sufficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the overall conclusion.",
+        "workingLatex": "P \\Leftrightarrow Q",
+        "explanation": "P is at least sufficient for Q, and because the divisibility rule works both ways it is necessary too, giving a full equivalence.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Yes, $P$ is sufficient for $Q$: any multiple of $9$ has a digit sum divisible by $9$ (the divisibility rule). In fact the rule works both ways, so $P$ is also necessary; thus $P \\Leftrightarrow Q$."
+  }
+}

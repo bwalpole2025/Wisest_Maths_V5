@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "equivalence", "discriminant", "quadratics"],
+  "questionText": "For real constants $a$, $b$, $c$ with $a \\ne 0$, consider the statements $P:\\ b^2 - 4ac > 0$ and $Q:$ 'the equation $ax^2 + bx + c = 0$ has two distinct real roots'. Insert the correct symbol from $\\Rightarrow$, $\\Leftarrow$ and $\\Leftrightarrow$ between $P$ and $Q$, justifying both directions.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify P and Q and what the choice of symbol means.",
+        "workingLatex": "P: b^2 - 4ac > 0, \\quad Q: \\text{two distinct real roots}",
+        "explanation": "Choosing between $\\Rightarrow$, $\\Leftarrow$ and $\\Leftrightarrow$ is a question about direction, so we must test whether $P$ forces $Q$, whether $Q$ forces $P$, or both.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the quadratic formula for the roots.",
+        "workingLatex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+        "explanation": "The roots are built from the square root of $b^2-4ac$, so the sign of that quantity is exactly what decides the nature of the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Name the discriminant.",
+        "workingLatex": "\\Delta = b^2 - 4ac",
+        "explanation": "Giving the discriminant a name lets us reason cleanly about the $\\pm\\sqrt{\\Delta}$ term. Its sign is what splits the outcome into cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the forward direction P implies Q.",
+        "workingLatex": "\\Delta > 0 \\Rightarrow \\sqrt{\\Delta} \\in \\mathbb{R},\\ \\sqrt{\\Delta} \\ne 0",
+        "explanation": "If $\\Delta > 0$ its square root is a real, non-zero number, so the $+$ and $-$ options in the formula give two different real values. Hence $P$ guarantees two distinct real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the reverse direction Q implies P.",
+        "workingLatex": "\\text{two distinct real roots} \\Rightarrow \\pm\\sqrt{\\Delta} \\text{ real, unequal} \\Rightarrow \\Delta > 0",
+        "explanation": "If the two roots are real and distinct, the term $\\pm\\sqrt{\\Delta}$ must be real (not complex) and non-zero, or the roots would coincide. Both requirements together force $\\Delta > 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rule out the remaining discriminant cases.",
+        "workingLatex": "\\Delta = 0 \\Rightarrow \\text{repeated root}; \\quad \\Delta < 0 \\Rightarrow \\text{non-real roots}",
+        "explanation": "Checking the alternatives confirms that anything other than $\\Delta > 0$ fails to give two distinct real roots, so $Q$ can only happen when $P$ holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Select the connecting symbol.",
+        "workingLatex": "b^2 - 4ac > 0 \\ \\Leftrightarrow\\ \\text{two distinct real roots}",
+        "explanation": "Since each statement forces the other, the two are logically equivalent, so the correct connective is the double arrow $\\Leftrightarrow$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Leftrightarrow$. A positive discriminant and 'two distinct real roots' are equivalent, so $b^2 - 4ac > 0 \\Leftrightarrow$ the quadratic has two distinct real roots."
+  }
+}

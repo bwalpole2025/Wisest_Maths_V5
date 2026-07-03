@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "quantifiers", "set notation", "translation"],
+  "questionText": "Consider the statement $\\forall x \\in \\mathbb{R},\\ x^2 + 1 > 0$. Translate the statement into ordinary English, explaining what each symbol means, and determine whether the statement is true.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Decode the quantifier and set symbols.",
+        "workingLatex": "\\forall \\;=\\; \\text{'for all'}, \\qquad x \\in \\mathbb{R} \\;=\\; x \\text{ is a real number}",
+        "explanation": "Symbolic statements are read left to right like a sentence. The upside-down A means 'for every', and $\\in \\mathbb{R}$ tells us the objects we range over are the real numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Decode the inequality that follows.",
+        "workingLatex": "x^2 + 1 > 0 \\;=\\; \\text{'} x^2 + 1 \\text{ is positive'}",
+        "explanation": "The part after the comma is the property being claimed about each $x$. Here it says the value of $x^2+1$ is strictly greater than zero, i.e. positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Assemble the full English translation.",
+        "workingLatex": "\\text{'For every real number } x,\\ x^2 + 1 \\text{ is positive.'}",
+        "explanation": "Joining the pieces gives a complete sentence. The quantifier becomes the opening 'for every', and the inequality becomes the claim made about each real number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Begin testing truth by bounding the square term.",
+        "workingLatex": "x^2 \\ge 0 \\quad \\text{for all } x \\in \\mathbb{R}",
+        "explanation": "A real number squared can never be negative, since multiplying two numbers of the same sign gives a non-negative result. This fact is the key to the whole statement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add 1 to the bound.",
+        "workingLatex": "x^2 + 1 \\ge 0 + 1 = 1",
+        "explanation": "Adding the same positive amount to both sides of an inequality preserves it, so the smallest that $x^2+1$ can ever be is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare the lower bound with zero.",
+        "workingLatex": "x^2 + 1 \\ge 1 > 0",
+        "explanation": "Since the expression is always at least $1$, and $1$ is greater than $0$, the expression is strictly positive for every real $x$. No value of $x$ can make it drop to zero or below.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\forall x \\in \\mathbb{R},\\ x^2 + 1 > 0 \\ \\text{is TRUE}",
+        "explanation": "Because the property holds without exception across all real numbers, the universally quantified statement is true.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "In words: 'for every real number $x$, $x^2+1$ is positive.' The statement is TRUE, because $x^2 \\ge 0$ gives $x^2+1 \\ge 1 > 0$ for all real $x$."
+  }
+}

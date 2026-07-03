@@ -1,0 +1,116 @@
+{
+  "id": "al.y1.pure.argument-notation.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": ["logic", "completing the square", "discriminant", "quadratics", "equivalence"],
+  "questionText": "Prove that $x^2 - 6x + 10 > 0$ for all real values of $x$ by completing the square. Then compute the discriminant of $x^2 - 6x + 10$, explain how a negative discriminant relates to your proof, and state the general equivalence '(for $a>0$) the quadratic is positive for all real $x$ $\\Leftrightarrow$ it has no real roots'.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the claim and identify the coefficients.",
+        "workingLatex": "\\text{Claim: } \\forall x \\in \\mathbb{R},\\ x^2 - 6x + 10 > 0; \\qquad a=1,\\ b=-6,\\ c=10,\\ a>0",
+        "explanation": "Writing the claim with '$\\forall x$' reminds us we must cover every real number, not just a few test values. Noting that $a=1>0$ tells us the parabola opens upwards, which will matter for the interpretation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose a strategy and give its intuition.",
+        "workingLatex": "\\text{aim: write it as } (\\text{something})^2 + (\\text{positive constant})",
+        "explanation": "A square of a real number can never be negative, so if we can express the quadratic as a square plus a positive amount, positivity for all $x$ is immediate. Completing the square is the tool that produces exactly this form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Complete the square on the x-terms.",
+        "workingLatex": "x^2 - 6x = (x-3)^2 - 9",
+        "explanation": "Half of the coefficient $-6$ is $-3$, and $(x-3)^2$ expands to $x^2-6x+9$, which overshoots by $9$. Subtracting $9$ corrects for that, keeping the expression equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the whole quadratic.",
+        "workingLatex": "x^2 - 6x + 10 = (x-3)^2 - 9 + 10 = (x-3)^2 + 1",
+        "explanation": "Substituting back and combining the constants collapses the quadratic into a single square plus $1$. This is the decisive form for reading off its sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the non-negativity of a square.",
+        "workingLatex": "(x-3)^2 \\ge 0 \\quad \\text{for all real } x",
+        "explanation": "Any real number squared is at least zero, with equality only when the base is zero. This single fact is the engine of the whole proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the constant to bound the expression below.",
+        "workingLatex": "(x-3)^2 + 1 \\ge 0 + 1 = 1",
+        "explanation": "Adding $1$ to something that is at least $0$ gives something at least $1$. The expression can therefore never dip below $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude strict positivity.",
+        "workingLatex": "x^2 - 6x + 10 \\ge 1 > 0 \\quad \\text{for all real } x",
+        "explanation": "Since the value is always at least $1$, and $1$ is positive, the quadratic is strictly positive everywhere. This proves the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Locate the minimum value.",
+        "workingLatex": "\\min = 1 \\text{ at } x=3 \\ (\\text{where } (x-3)^2=0)",
+        "explanation": "The smallest value occurs when the square is zero, namely at $x=3$, giving a minimum of $1$. Because even the minimum is above zero, the curve never reaches the $x$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Connect positivity to the absence of roots.",
+        "workingLatex": "x^2-6x+10 = 0 \\text{ has no solution, since the value is always } \\ge 1",
+        "explanation": "A real root would be a value of $x$ making the expression zero, but we have shown it is always at least $1$. So the equation has no real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Compute the discriminant.",
+        "workingLatex": "\\Delta = b^2 - 4ac = (-6)^2 - 4(1)(10) = 36 - 40 = -4",
+        "explanation": "The discriminant is computed directly from the coefficients and independently measures how many real roots exist. Here it comes out negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Interpret the negative discriminant.",
+        "workingLatex": "\\Delta = -4 < 0 \\;\\Rightarrow\\; \\text{no real roots (quadratic formula needs } \\sqrt{\\Delta})",
+        "explanation": "The quadratic formula takes the square root of $\\Delta$, which has no real value when $\\Delta<0$. A negative discriminant therefore confirms there are no real roots, matching the completing-the-square finding.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the general equivalence for a > 0.",
+        "workingLatex": "(a>0):\\quad ax^2+bx+c > 0\\ \\forall x \\;\\Leftrightarrow\\; \\text{no real roots} \\;\\Leftrightarrow\\; \\Delta < 0",
+        "explanation": "When $a>0$ the parabola opens upward, so it lies entirely above the axis exactly when it never crosses it, i.e. has no real roots, i.e. $\\Delta<0$. The three descriptions are logically equivalent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Check the two methods agree.",
+        "workingLatex": "\\text{completing square: } \\min = 1 > 0; \\quad \\text{discriminant: } \\Delta = -4 < 0",
+        "explanation": "Both routes give the same verdict, which is a strong internal consistency check. A positive minimum and a negative discriminant are two faces of the same fact.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final conclusion.",
+        "workingLatex": "x^2-6x+10 = (x-3)^2+1 > 0\\ \\forall x;\\ \\Delta=-4<0;\\ \\text{graph lies wholly above the } x\\text{-axis}",
+        "explanation": "Because $a>0$ and there are no real roots, the parabola sits entirely above the $x$-axis, which is precisely why the expression is always positive. All three viewpoints reinforce one conclusion.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 6x + 10 = (x-3)^2 + 1 \\ge 1 > 0$ for all real $x$. The discriminant is $\\Delta = 36 - 40 = -4 < 0$, confirming no real roots; since $a=1>0$, the parabola lies entirely above the $x$-axis. In general, for $a>0$, the quadratic is positive for all $x$ $\\Leftrightarrow$ it has no real roots $\\Leftrightarrow$ $\\Delta<0$."
+  }
+}

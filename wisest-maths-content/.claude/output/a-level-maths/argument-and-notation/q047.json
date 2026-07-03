@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "geometry", "counterexample"],
+  "questionText": "Consider the condition $P:$ a quadrilateral has four equal sides, and the property $Q:$ the quadrilateral is a square. Classify $P$ as necessary, sufficient, both, or neither, as a condition for $Q$, justifying each part of your classification.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the condition and the property.",
+        "workingLatex": "P:\\ \\text{quadrilateral has four equal sides}, \\qquad Q:\\ \\text{it is a square}",
+        "explanation": "Fixing the labels keeps the two ideas from blurring together as we test them. We are asked how $P$ relates to $Q$, not the reverse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the precise meaning of the two words.",
+        "workingLatex": "P \\text{ sufficient for } Q \\iff P \\Rightarrow Q; \\qquad P \\text{ necessary for } Q \\iff Q \\Rightarrow P",
+        "explanation": "'Sufficient' means the condition is enough to guarantee the property, an arrow from $P$ to $Q$. 'Necessary' means the property cannot hold without the condition, an arrow from $Q$ back to $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Frame the two tests intuitively.",
+        "workingLatex": "\\text{sufficient} \\leftrightarrow \\text{'enough'}, \\qquad \\text{necessary} \\leftrightarrow \\text{'required'}",
+        "explanation": "Thinking of the words as 'enough' and 'required' makes the two directions concrete. We now check each one against the geometry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test sufficiency by hunting for a counterexample.",
+        "workingLatex": "\\text{Is } P \\Rightarrow Q? \\ \\text{ Seek four equal sides without being a square}",
+        "explanation": "To check whether four equal sides is enough, we look for a shape that has them yet fails to be a square. One counterexample would settle the sufficiency question.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Provide a rhombus as the counterexample.",
+        "workingLatex": "\\text{Rhombus with angles } 60^\\circ, 120^\\circ:\\ \\text{four equal sides, not a square}",
+        "explanation": "A tilted rhombus has all four sides equal but its angles are not right angles, so it is not a square. This exhibits $P$ true while $Q$ is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude that P is not sufficient.",
+        "workingLatex": "P \\not\\Rightarrow Q",
+        "explanation": "Because a shape can satisfy $P$ without satisfying $Q$, the condition is not enough on its own. So $P$ is not sufficient for $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Test necessity by checking Q ⇒ P.",
+        "workingLatex": "\\text{Is } Q \\Rightarrow P? \\ \\text{ Every square has four equal sides}",
+        "explanation": "Now we ask whether a square must have four equal sides. This follows straight from the definition of a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude that P is necessary.",
+        "workingLatex": "Q \\Rightarrow P \\ \\text{ is true}",
+        "explanation": "Since being a square forces the four equal sides, the property cannot hold without the condition. So $P$ is necessary for $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify what extra condition sufficiency would need.",
+        "workingLatex": "\\text{square} = \\text{four equal sides} + \\text{four right angles}",
+        "explanation": "A square requires equal angles as well as equal sides, and the rhombus is precisely the case where the angle condition is missing. This shows exactly why $P$ falls short of sufficiency.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the final classification.",
+        "workingLatex": "P \\text{ is necessary but not sufficient for } Q",
+        "explanation": "The property demands the condition ($Q\\Rightarrow P$) but the condition does not deliver the property ($P\\not\\Rightarrow Q$). Four equal sides is required for a square, yet not enough to make one.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Having four equal sides is a necessary but not sufficient condition for being a square: every square has four equal sides ($Q\\Rightarrow P$), but a non-square rhombus also has four equal sides, so $P\\not\\Rightarrow Q$."
+  }
+}

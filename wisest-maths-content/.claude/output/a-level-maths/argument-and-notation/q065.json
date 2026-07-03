@@ -1,0 +1,123 @@
+{
+  "id": "al.y1.pure.argument-notation.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": ["logic", "quantifiers", "sigma notation", "proof by induction", "series"],
+  "questionText": "The statement $S$ claims that for every natural number $n$, the sum of the first $n$ odd numbers equals $n^2$; that is, $\\forall n \\in \\mathbb{N}: \\; 1 + 3 + 5 + \\cdots + (2n-1) = n^2$. Rewrite the left-hand side using summation ($\\Sigma$) notation, and prove the statement. You may use a direct algebraic argument, a proof by induction, or both.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the sum in sigma notation.",
+        "workingLatex": "1 + 3 + 5 + \\cdots + (2n-1) = \\sum_{k=1}^{n} (2k-1)",
+        "explanation": "The $k$-th odd number is $2k-1$, so the whole list is captured by letting $k$ run from $1$ to $n$. Sigma notation turns a vague '$\\cdots$' into a precise object we can manipulate algebraically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Give the intuitive picture behind the result.",
+        "workingLatex": "\\underbrace{1}_{1^2} + \\underbrace{3}_{2^2-1^2} + \\underbrace{5}_{3^2-2^2} + \\cdots",
+        "explanation": "Each new odd number is exactly the extra area needed to grow an $m \\times m$ square into an $(m{+}1) \\times (m{+}1)$ square, since $(m+1)^2 - m^2 = 2m+1$. Stacking these L-shaped layers is why the running total is always a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Name the sum and state the target.",
+        "workingLatex": "S_n = \\sum_{k=1}^{n} (2k-1), \\qquad \\text{goal: } S_n = n^2",
+        "explanation": "Giving the sum a name lets us reason about it as a single quantity. Stating the goal explicitly keeps the algebra pointed at the right destination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Split the sum into two simpler sums.",
+        "workingLatex": "S_n = \\sum_{k=1}^{n} (2k-1) = 2\\sum_{k=1}^{n} k \\; - \\; \\sum_{k=1}^{n} 1",
+        "explanation": "Summation is linear, so a sum of differences can be separated term by term and constants pulled out front. This breaks the problem into two standard sums we already know.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recall the sum of the first n integers.",
+        "workingLatex": "\\sum_{k=1}^{n} k = \\frac{n(n+1)}{2}",
+        "explanation": "Pairing the first and last terms, the second and second-last, and so on, each pair totals $n+1$ and there are $n/2$ such pairs, giving $\\tfrac{n(n+1)}{2}$. This is the classic Gauss pairing result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the sum of the constant term.",
+        "workingLatex": "\\sum_{k=1}^{n} 1 = n",
+        "explanation": "Adding the number $1$ to itself $n$ times simply gives $n$. It is easy to overlook, but this term is essential to cancel the extra piece from doubling.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute the two known sums.",
+        "workingLatex": "S_n = 2 \\cdot \\frac{n(n+1)}{2} - n",
+        "explanation": "Replacing each piece with its closed form turns the sum into ordinary algebra. From here it is pure simplification.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify to reach the answer.",
+        "workingLatex": "S_n = n(n+1) - n = n^2 + n - n = n^2",
+        "explanation": "The factor of $2$ cancels the $2$ in the denominator, and subtracting $n$ removes the leftover linear term. What remains is exactly $n^2$, completing the direct proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the algebraic conclusion for all n.",
+        "workingLatex": "\\forall n \\in \\mathbb{N}: \\; \\sum_{k=1}^{n} (2k-1) = n^2",
+        "explanation": "The manipulation used no special value of $n$, so the identity holds for every natural number, which is exactly what the universal quantifier demands.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set up an independent proof by induction.",
+        "workingLatex": "P(n): \\; \\sum_{k=1}^{n} (2k-1) = n^2",
+        "explanation": "Induction confirms the result by a different route, which strengthens confidence and models the standard technique for statements quantified over $\\mathbb{N}$. We prove a base case and then a step that carries truth from one integer to the next.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify the base case.",
+        "workingLatex": "n=1:\\quad \\sum_{k=1}^{1}(2k-1) = 2(1)-1 = 1 = 1^2",
+        "explanation": "The base case anchors the whole chain of implications. With a single term the sum is $1$, which matches $1^2$, so $P(1)$ is true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the inductive hypothesis.",
+        "workingLatex": "\\text{Assume } P(m):\\quad \\sum_{k=1}^{m}(2k-1) = m^2",
+        "explanation": "We suppose the statement holds for some arbitrary $m$ and use it as a stepping stone. This assumption is temporary leverage, not the thing we are trying to prove outright.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Add the next odd term.",
+        "workingLatex": "\\sum_{k=1}^{m+1}(2k-1) = \\underbrace{\\sum_{k=1}^{m}(2k-1)}_{=\\,m^2} + \\big(2(m+1)-1\\big) = m^2 + (2m+1)",
+        "explanation": "The sum to $m+1$ terms is the sum to $m$ terms plus one extra odd number. Using the hypothesis for the first chunk turns the expression into simple algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Recognise the perfect square.",
+        "workingLatex": "m^2 + 2m + 1 = (m+1)^2 \\quad\\Rightarrow\\quad P(m) \\Rightarrow P(m+1)",
+        "explanation": "The result $m^2+2m+1$ factors exactly as $(m+1)^2$, which is the statement $P(m+1)$. So truth at $m$ forces truth at $m+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Conclude by the principle of induction.",
+        "workingLatex": "P(1)\\ \\text{true and}\\ P(m)\\Rightarrow P(m+1) \\;\\Rightarrow\\; \\forall n \\in \\mathbb{N}:\\ P(n)",
+        "explanation": "A true base case plus a working step gives an unbroken ladder reaching every natural number. Both the algebraic argument and induction confirm the universally quantified statement.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle \\sum_{k=1}^{n} (2k-1) = 2\\cdot\\frac{n(n+1)}{2} - n = n^2$ for all $n \\in \\mathbb{N}$, confirmed independently by induction (base $1=1^2$; step $m^2+(2m+1)=(m+1)^2$)."
+  }
+}

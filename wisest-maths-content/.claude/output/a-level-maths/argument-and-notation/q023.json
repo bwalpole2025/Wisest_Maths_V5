@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "implication", "counterexample"],
+  "questionText": "The statement $x = y \\Rightarrow x^2 = y^2$ is true for all real numbers $x$ and $y$. Write down the converse of this statement, and determine whether the converse is true, giving a counterexample if it is not.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall what the converse of an implication is.",
+        "workingLatex": "P \\Rightarrow Q \\quad \\text{has converse} \\quad Q \\Rightarrow P",
+        "explanation": "The converse swaps the roles of hypothesis and conclusion. It is a genuinely different statement, so its truth has to be checked separately from the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the hypothesis and conclusion of the original.",
+        "workingLatex": "P: x = y, \\qquad Q: x^2 = y^2",
+        "explanation": "Naming the two halves makes the swap mechanical. Here $P$ is the assumption and $Q$ is the consequence in the original implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the converse by exchanging P and Q.",
+        "workingLatex": "Q \\Rightarrow P: \\quad x^2 = y^2 \\Rightarrow x = y",
+        "explanation": "Swapping $P$ and $Q$ gives the converse, which now claims that equal squares force equal numbers. This is the statement we must test.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide how to test the converse.",
+        "workingLatex": "\\text{seek } x, y \\text{ with } x^2 = y^2 \\text{ but } x \\ne y",
+        "explanation": "An implication fails only when the hypothesis holds yet the conclusion does not. So we look for numbers with equal squares that are nevertheless unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose a pair of opposite numbers.",
+        "workingLatex": "x = 1,\\ y = -1",
+        "explanation": "A number and its negative always share the same square, which makes such a pair the natural place to look for a counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check that this pair breaks the converse.",
+        "workingLatex": "x^2 = 1,\\ y^2 = 1 \\Rightarrow x^2 = y^2; \\quad 1 \\ne -1 \\Rightarrow x \\ne y",
+        "explanation": "The squares agree, so the hypothesis $Q$ holds, but the numbers differ, so the conclusion $P$ fails. This single case is enough to break the implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "x^2 = y^2 \\Rightarrow x = y \\ \\text{ is false}",
+        "explanation": "Because a counterexample exists, the converse is false even though the original statement is true. An implication and its converse can have different truth values.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Converse: $x^2 = y^2 \\Rightarrow x = y$. It is false; for example $x = 1,\\ y = -1$ give $x^2 = y^2$ but $x \\ne y$."
+  }
+}

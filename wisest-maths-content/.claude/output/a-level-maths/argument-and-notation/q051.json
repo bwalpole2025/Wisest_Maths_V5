@@ -1,0 +1,81 @@
+{
+  "id": "al.y1.pure.argument-notation.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "quantifiers", "proof", "parity", "set notation"],
+  "questionText": "Consider the claim that the product of any two consecutive integers is even. Express this claim symbolically using a universal quantifier, explain why it is a single universally quantified statement rather than an implication with a separate hypothesis, and then prove it.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Translate the claim into symbols using a universal quantifier.",
+        "workingLatex": "\\forall n \\in \\mathbb{Z},\\ n(n+1)\\ \\text{is even}",
+        "explanation": "Two consecutive integers can be written $n$ and $n+1$, so their product is $n(n+1)$. The words 'for any' become the symbol $\\forall$, and the domain $\\mathbb{Z}$ records that $n$ ranges over all integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Explain the logical shape of the statement.",
+        "workingLatex": "\\forall n \\in \\mathbb{Z},\\ R(n) \\qquad \\text{not} \\qquad P(n) \\Rightarrow Q(n)",
+        "explanation": "The only restriction on $n$ is that it is an integer, which the quantifier already carries as its domain. There is no separate hypothesis to assume, so this is a plain universally quantified statement, not an implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the key intuition behind the proof.",
+        "workingLatex": "n,\\ n+1:\\ \\text{one is even, one is odd}",
+        "explanation": "Consecutive integers alternate in parity, so exactly one of $n$ and $n+1$ is even. Multiplying anything by an even number gives an even result, which is why the product must be even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up a proof by cases on the parity of n.",
+        "workingLatex": "\\text{every } n \\in \\mathbb{Z}\\ \\text{is even or odd}",
+        "explanation": "Every integer is either even or odd, so splitting into these two cases covers all possibilities for $n$. Proving the claim in each case therefore proves it for all integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case 1: n is even.",
+        "workingLatex": "n = 2k \\;\\Rightarrow\\; n(n+1) = 2k(n+1) = 2\\big[k(n+1)\\big]",
+        "explanation": "If $n$ itself is even we write $n=2k$; the factor of $2$ passes straight into the product. Since $k(n+1)$ is an integer, the product is twice an integer and hence even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case 2: n is odd, so n+1 is even.",
+        "workingLatex": "n = 2k+1 \\;\\Rightarrow\\; n+1 = 2k+2 = 2(k+1)",
+        "explanation": "If $n$ is odd, then its successor $n+1$ is even, and we can factor a $2$ out of $n+1$ instead. This is the case where the even number is the second of the pair.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Complete Case 2 by factoring out the 2.",
+        "workingLatex": "n(n+1) = n\\cdot 2(k+1) = 2\\big[n(k+1)\\big]",
+        "explanation": "The even factor $2(k+1)$ makes the whole product a multiple of $2$. As $n(k+1)$ is an integer, the product is again even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Combine the two cases.",
+        "workingLatex": "\\text{even case} \\to \\text{even}, \\quad \\text{odd case} \\to \\text{even}",
+        "explanation": "In both of the only two possibilities for $n$, the product $n(n+1)$ came out even. Since these cases exhaust the integers, no value of $n$ escapes the conclusion.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the proved universally quantified statement.",
+        "workingLatex": "\\forall n \\in \\mathbb{Z},\\ n(n+1)\\ \\text{is even} \\quad \\blacksquare",
+        "explanation": "Because the argument held for an arbitrary integer split into its two possible parities, it holds for every integer. This confirms the original $\\forall$ statement, with the domain $\\mathbb{Z}$ as its only condition.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The claim is $\\forall n \\in \\mathbb{Z},\\ n(n+1)\\text{ is even}$ — a universally quantified statement whose only condition is the domain $\\mathbb{Z}$, not a separate hypothesis. Proof by cases: if $n=2k$ then $n(n+1)=2[k(n+1)]$; if $n=2k+1$ then $n+1=2(k+1)$ so $n(n+1)=2[n(k+1)]$. Either way the product is even."
+  }
+}

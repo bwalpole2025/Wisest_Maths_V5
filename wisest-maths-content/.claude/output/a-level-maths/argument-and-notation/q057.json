@@ -1,0 +1,116 @@
+{
+  "id": "al.y1.pure.argument-notation.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "proof by contradiction", "irrationality", "implication", "notation"],
+  "questionText": "Prove, by contradiction, that if $x^2 = 2$ then $x$ is irrational. Set out the logical structure of your argument carefully: state clearly the assumption you are contradicting, and use correct notation throughout (in particular the set $\\mathbb{Q}$ of rational numbers).",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the claim and choose a proof strategy.",
+        "workingLatex": "\\text{Claim: } x^2 = 2 \\ \\Rightarrow\\ x \\notin \\mathbb{Q}",
+        "explanation": "The statement is an implication, so a natural strategy is to keep the hypothesis but deny the conclusion and search for a contradiction. If denying the conclusion turns out to be impossible, the implication must be true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall what rational and irrational mean.",
+        "workingLatex": "x \\in \\mathbb{Q} \\iff x = \\dfrac{p}{q}, \\ p \\in \\mathbb{Z}, \\ q \\in \\mathbb{Z}, \\ q \\neq 0",
+        "explanation": "A number is rational exactly when it can be written as a ratio of two integers. 'Irrational' simply means 'not rational', so denying the conclusion amounts to asserting that $x$ is rational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the contradiction hypothesis.",
+        "workingLatex": "\\text{Assume } x^2 = 2 \\ \\text{and}\\ x \\in \\mathbb{Q}",
+        "explanation": "In a proof by contradiction we suppose the opposite of the desired conclusion alongside the given condition. The goal is now to derive something logically impossible from these two suppositions together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write x as a fraction in lowest terms.",
+        "workingLatex": "x = \\dfrac{p}{q}, \\quad \\gcd(p,q) = 1, \\ q \\neq 0",
+        "explanation": "Any rational number can be reduced so that numerator and denominator share no common factor. Insisting on lowest terms builds in a property that we can later contradict.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the equation x^2 = 2.",
+        "workingLatex": "\\left(\\dfrac{p}{q}\\right)^2 = 2 \\ \\Rightarrow\\ \\dfrac{p^2}{q^2} = 2 \\ \\Rightarrow\\ p^2 = 2q^2",
+        "explanation": "Substituting the fraction into $x^2 = 2$ and clearing the denominator turns the problem into a statement about integers, where parity arguments become available.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Deduce that p squared is even.",
+        "workingLatex": "p^2 = 2q^2 \\ \\Rightarrow\\ p^2 \\text{ is even}",
+        "explanation": "The right-hand side is $2$ times an integer, so $p^2$ is a multiple of $2$. This gives our first foothold: information about the parity of $p$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Deduce that p itself is even via the contrapositive.",
+        "workingLatex": "p \\text{ odd} \\Rightarrow p^2 \\text{ odd}; \\ \\text{so } p^2 \\text{ even} \\Rightarrow p \\text{ even}",
+        "explanation": "If $p$ were odd, then $p = 2k+1$ gives $p^2 = 2(2k^2+2k)+1$, which is odd. Since $p^2$ is even, $p$ cannot be odd, so $p$ must be even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write p as twice an integer.",
+        "workingLatex": "p = 2m, \\quad m \\in \\mathbb{Z}",
+        "explanation": "Being even means $p$ is exactly twice some integer. Naming that integer lets us feed the fact back into the equation and continue the argument.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute p = 2m back into the equation.",
+        "workingLatex": "(2m)^2 = 2q^2 \\ \\Rightarrow\\ 4m^2 = 2q^2 \\ \\Rightarrow\\ q^2 = 2m^2",
+        "explanation": "Replacing $p$ shows that $q^2$ is also twice an integer. The same structure has reappeared, and that repetition is exactly what will force the contradiction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Deduce that q is even.",
+        "workingLatex": "q^2 = 2m^2 \\ \\Rightarrow\\ q^2 \\text{ even} \\ \\Rightarrow\\ q \\text{ even}",
+        "explanation": "By the identical parity argument used for $p$, an even square forces an even root. So $q$ is even as well.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note that p and q share the factor 2.",
+        "workingLatex": "2 \\mid p \\ \\text{and}\\ 2 \\mid q \\ \\Rightarrow\\ \\gcd(p,q) \\geq 2",
+        "explanation": "Both integers are divisible by $2$, so $2$ is a common factor of them. Their greatest common divisor is therefore at least $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confront the lowest-terms assumption.",
+        "workingLatex": "\\gcd(p,q) \\geq 2 \\ \\text{contradicts}\\ \\gcd(p,q) = 1",
+        "explanation": "We deliberately chose the fraction in lowest terms, which means their greatest common divisor is $1$. Having it be at least $2$ is a direct contradiction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Reject the false assumption.",
+        "workingLatex": "\\Rightarrow\\ (x \\in \\mathbb{Q}) \\text{ is false}",
+        "explanation": "A contradiction means one of our suppositions was untenable. The equation $x^2 = 2$ stands, so the faulty supposition must be that $x$ is rational; hence $x$ is irrational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion in implication form.",
+        "workingLatex": "x^2 = 2 \\ \\Rightarrow\\ x \\notin \\mathbb{Q} \\qquad \\blacksquare",
+        "explanation": "We assumed the hypothesis and reached the conclusion with no logical escape, which is precisely what the implication asserts. In particular this shows the specific number $\\sqrt{2}$ is irrational.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Assuming $x = \\tfrac{p}{q}$ in lowest terms forces $p$ and $q$ to both be even, contradicting $\\gcd(p,q)=1$. No such rational exists, so $x^2 = 2 \\Rightarrow x \\notin \\mathbb{Q}$; in particular $\\sqrt{2}$ is irrational."
+  }
+}

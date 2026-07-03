@@ -1,0 +1,149 @@
+{
+  "id": "al.y1.pure.argument-notation.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "proof",
+  "tags": ["logic", "counterexample", "biconditional", "necessary and sufficient", "geometry"],
+  "questionText": "Consider the statement: 'if a quadrilateral has four equal sides, then it is a square'. Show that this statement is false. Then state a corrected biconditional characterisation of a square of the form 'a quadrilateral is a square $\\Leftrightarrow$ it has four equal sides AND at least one right angle', prove both directions, and explain why the pair of conditions {four equal sides, one right angle} is necessary and sufficient for a square.",
+  "questionDiagram": {
+    "type": "comparison-figure",
+    "description": "Two quadrilaterals drawn side by side, both with four equal-length sides, to contrast a rhombus (no right angle) against a square (right angles), showing that equal sides alone do not force a square.",
+    "elements": [
+      {
+        "shape": "rhombus",
+        "label": "Rhombus",
+        "sides": "all four equal, length s",
+        "angles": ["60 degrees", "120 degrees", "60 degrees", "120 degrees"],
+        "note": "four equal sides but not a square (counterexample)"
+      },
+      {
+        "shape": "square",
+        "label": "Square",
+        "sides": "all four equal, length s",
+        "angles": ["90 degrees", "90 degrees", "90 degrees", "90 degrees"],
+        "note": "four equal sides and right angles"
+      }
+    ]
+  },
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the logical structure.",
+        "workingLatex": "P:\\ \\text{quadrilateral has four equal sides}, \\quad S:\\ \\text{it is a square}; \\quad \\text{claim } P \\Rightarrow S",
+        "explanation": "The statement is a one-way implication, so it can be broken by a single shape satisfying $P$ but not $S$. Naming the conditions makes the target of the counterexample precise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the definitions involved.",
+        "workingLatex": "\\text{square: four equal sides AND four right angles}; \\quad \\text{four equal sides alone: rhombus}",
+        "explanation": "A square demands both equal sides and right angles, whereas 'four equal sides' by itself only defines a rhombus. Pinning down definitions is what lets us spot the gap in the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Plan the disproof.",
+        "workingLatex": "\\text{find a quadrilateral with four equal sides that is not a square}",
+        "explanation": "Disproving $P \\Rightarrow S$ requires exactly one shape with equal sides but the wrong angles. A rhombus that is not a square is the natural candidate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Produce the counterexample.",
+        "workingLatex": "\\text{rhombus with angles } 60^{\\circ}, 120^{\\circ}, 60^{\\circ}, 120^{\\circ} \\text{ (see diagram)}",
+        "explanation": "This rhombus has all four sides equal yet none of its angles is a right angle, so it cannot be a square. It satisfies $P$ but violates $S$, exactly what a counterexample needs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude the original statement is false.",
+        "workingLatex": "P \\text{ true}, \\ S \\text{ false for this shape} \\;\\Rightarrow\\; P \\Rightarrow S \\text{ is FALSE}",
+        "explanation": "One valid counterexample is enough to refute the universal claim. Having four equal sides is therefore not sufficient to force a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note that equal sides is still necessary.",
+        "workingLatex": "S \\Rightarrow P \\ (\\text{a square does have four equal sides})",
+        "explanation": "Although equal sides do not guarantee a square, every square does have equal sides, so the condition is necessary. It is the sufficiency, not the necessity, that fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Diagnose the missing ingredient.",
+        "workingLatex": "\\text{rhombus fails only because its angles are not } 90^{\\circ}",
+        "explanation": "The single feature separating our counterexample from a square is the angle. Adding a right-angle requirement should close the gap, motivating the corrected statement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the corrected biconditional.",
+        "workingLatex": "S \\Leftrightarrow C, \\quad C:\\ \\text{four equal sides AND at least one right angle}",
+        "explanation": "We propose that a square is characterised by equal sides together with one right angle. Writing it as a biconditional signals that both implications must now be proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Prove the easy direction S ⇒ C.",
+        "workingLatex": "\\text{square} \\Rightarrow \\text{four equal sides and four right angles} \\Rightarrow C",
+        "explanation": "A square by definition has four equal sides and four right angles, so it certainly has at least one right angle. This direction is immediate from the definition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Begin the reverse direction C ⇒ S.",
+        "workingLatex": "\\text{assume four equal sides and one } 90^{\\circ} \\text{ angle} \\Rightarrow \\text{shape is a rhombus (a parallelogram)}",
+        "explanation": "Four equal sides make the quadrilateral a rhombus, and every rhombus is a parallelogram with opposite sides parallel. Parallelogram angle properties are the key to propagating the single right angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use co-interior (consecutive) angles.",
+        "workingLatex": "\\text{consecutive angles of a parallelogram sum to } 180^{\\circ}: \\ 180^{\\circ} - 90^{\\circ} = 90^{\\circ}",
+        "explanation": "In a parallelogram each pair of adjacent angles is supplementary. So if one angle is $90^{\\circ}$, both of its neighbours must also be $90^{\\circ}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use equal opposite angles for the fourth.",
+        "workingLatex": "\\text{opposite angles equal} \\Rightarrow \\text{fourth angle} = 90^{\\circ}; \\ \\text{all four are } 90^{\\circ}",
+        "explanation": "Opposite angles of a parallelogram are equal, so the remaining angle matches the first at $90^{\\circ}$. That forces every angle to be a right angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude C ⇒ S.",
+        "workingLatex": "\\text{four equal sides} + \\text{four right angles} = \\text{square} \\;\\Rightarrow\\; C \\Rightarrow S",
+        "explanation": "A quadrilateral with four equal sides and four right angles is by definition a square. So the pair of conditions is enough to force a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Combine into the biconditional.",
+        "workingLatex": "S \\Rightarrow C \\ \\text{and}\\ C \\Rightarrow S \\;\\Rightarrow\\; S \\Leftrightarrow C",
+        "explanation": "Both implications hold, so the corrected characterisation is a genuine two-way equivalence. The definition and the condition describe exactly the same shapes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Show neither condition alone suffices.",
+        "workingLatex": "\\text{equal sides only} \\to \\text{rhombus}; \\quad \\text{one right angle only} \\to \\text{e.g. rectangle}",
+        "explanation": "A rhombus has equal sides without right angles, and a non-square rectangle has a right angle without equal sides. Each condition alone fails, which is why the square needs both together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the necessary-and-sufficient conclusion.",
+        "workingLatex": "\\{\\text{four equal sides},\\ \\text{one right angle}\\} \\text{ is necessary and sufficient for a square}",
+        "explanation": "Together the two conditions are both required by a square and enough to guarantee one, so as a pair they are necessary and sufficient. The original claim failed only because it dropped the right-angle half.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The statement is FALSE: a rhombus with angles $60^{\\circ},120^{\\circ},60^{\\circ},120^{\\circ}$ has four equal sides but is not a square. Corrected: a quadrilateral is a square $\\Leftrightarrow$ it has four equal sides AND at least one right angle. Reverse direction: four equal sides make it a rhombus (a parallelogram), so one $90^{\\circ}$ angle forces all four angles to be $90^{\\circ}$, giving a square. Hence the pair {four equal sides, one right angle} is necessary and sufficient for a square, while neither condition alone suffices."
+  }
+}

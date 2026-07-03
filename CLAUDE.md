@@ -19,6 +19,17 @@ Target: Up to **70 questions per subtopic**, each with detailed worked solutions
 ### Output Format
 All generated questions must follow the exact `Question` TypeScript interface used in the frontend (including `workedSolution.steps[]`, `questionDiagram`, `finalAnswer`, etc.).
 
+## Output Format Rule (Mandatory)
+
+Every time a question or batch of questions is generated, the final output must be **valid TypeScript code** in this exact format:
+
+```ts
+import { Question } from "@/lib/types";
+
+export const questions: Question[] = [
+  // full Question objects here
+];
+
 ## Architecture
 
 This project uses a **multi-agent + skill** system:

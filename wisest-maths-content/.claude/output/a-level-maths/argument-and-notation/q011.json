@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "equivalence", "equations"],
+  "questionText": "Insert the correct symbol from $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ between the statements $2x + 1 = 7$ and $x = 3$, and justify your choice.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Clarify what the task requires.",
+        "workingLatex": "2x + 1 = 7 \\;\\square\\; x = 3",
+        "explanation": "Choosing between $\\Rightarrow$, $\\Leftarrow$ and $\\Leftrightarrow$ is really deciding which statement forces which. So we must test both directions of implication rather than just solving.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Test the forward direction by solving the equation.",
+        "workingLatex": "2x + 1 = 7 \\;\\Rightarrow\\; 2x = 6 \\;\\Rightarrow\\; x = 3",
+        "explanation": "Assume the left statement holds. Subtracting $1$ from both sides and then dividing by $2$ are valid operations, and they lead uniquely to $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Record that the forward implication is valid.",
+        "workingLatex": "(2x + 1 = 7) \\;\\Rightarrow\\; (x = 3)",
+        "explanation": "The equation has $x = 3$ as its only solution, so knowing $2x + 1 = 7$ guarantees $x = 3$. The forward arrow therefore holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the reverse direction by substitution.",
+        "workingLatex": "x = 3 \\;\\Rightarrow\\; 2(3) + 1 = 7 \\;\\checkmark",
+        "explanation": "Now assume the right statement. Substituting $x = 3$ back into $2x + 1$ gives $7$, so the left statement is recovered exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Record that the reverse implication is valid.",
+        "workingLatex": "(x = 3) \\;\\Rightarrow\\; (2x + 1 = 7)",
+        "explanation": "Because the value $x = 3$ makes the equation true, the right statement forces the left. So the backward arrow holds as well.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note that every solving step was reversible.",
+        "workingLatex": "\\text{add/subtract and multiply/divide by nonzero are reversible}",
+        "explanation": "Each operation used to solve a linear equation can be undone, so no information is lost or added along the way. This is why both directions come out true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the correct connecting symbol.",
+        "workingLatex": "2x + 1 = 7 \\;\\Leftrightarrow\\; x = 3",
+        "explanation": "Since each statement implies the other, the two are equivalent and the correct symbol is $\\Leftrightarrow$. The two equations describe exactly the same set of solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x + 1 = 7 \\Leftrightarrow x = 3$. Both implications hold because every step of solving the linear equation is reversible."
+  }
+}

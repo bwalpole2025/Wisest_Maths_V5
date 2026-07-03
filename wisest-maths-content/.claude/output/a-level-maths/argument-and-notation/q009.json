@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": ["logic", "quantifiers", "set notation", "translation"],
+  "questionText": "Translate the statement \"there exists an integer $n$ such that $n^2 = 16$\" into symbolic form using the quantifier $\\exists$ together with $\\in$ and $\\mathbb{Z}$. State whether the resulting statement is true or false, justifying your answer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Break the sentence into its three logical parts.",
+        "workingLatex": "\\text{(i) there exists} \\quad \\text{(ii) an integer } n \\quad \\text{(iii) } n^2 = 16",
+        "explanation": "Translating words to symbols is easier once we separate the claim of existence, the type of object, and the property it must satisfy. Each part maps onto one piece of notation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Replace 'there exists' with the existential quantifier.",
+        "workingLatex": "\\text{there exists} \\;\\longrightarrow\\; \\exists",
+        "explanation": "The phrase 'there exists' is exactly what the symbol $\\exists$ stands for. It claims at least one object of the stated kind can be found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Express 'n is an integer' using set membership.",
+        "workingLatex": "n \\text{ is an integer} \\;\\longrightarrow\\; n \\in \\mathbb{Z}",
+        "explanation": "$\\mathbb{Z}$ is the set of all integers, and $\\in$ means 'is a member of'. So $n \\in \\mathbb{Z}$ is the compact way of saying $n$ is an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Keep the property as an equation.",
+        "workingLatex": "n^2 = 16",
+        "explanation": "The condition the integer must meet is already algebraic, so it carries straight over unchanged. This is the 'such that' clause of the sentence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the full symbolic statement.",
+        "workingLatex": "\\exists\\, n \\in \\mathbb{Z},\\ n^2 = 16",
+        "explanation": "Placing the quantifier first, then the domain, then the property reads as 'there is an integer $n$ for which $n^2 = 16$'. This mirrors the original sentence exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test the truth of the statement by finding a witness.",
+        "workingLatex": "n = 4:\\ 4^2 = 16 \\;\\checkmark",
+        "explanation": "An existential statement is true as soon as we can exhibit one object that works. Since $4$ is an integer and $4^2 = 16$, the claim is satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude, noting a second witness exists.",
+        "workingLatex": "n = -4:\\ (-4)^2 = 16 \\;\\Rightarrow\\; \\text{statement is true}",
+        "explanation": "In fact $-4$ also works, but even one witness is enough to make an existential statement true. Hence the statement is true.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\exists\\, n \\in \\mathbb{Z},\\ n^2 = 16$. The statement is true, with witnesses $n = 4$ and $n = -4$."
+  }
+}

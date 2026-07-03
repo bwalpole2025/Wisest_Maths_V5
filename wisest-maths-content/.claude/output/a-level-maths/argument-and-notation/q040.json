@@ -1,0 +1,102 @@
+{
+  "id": "al.y1.pure.argument-notation.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "equivalence", "divisibility", "counterexample"],
+  "questionText": "Let $n$ be an integer. Show that $12 \\mid n$ if and only if $3 \\mid n$ and $4 \\mid n$. Then explain why the analogous statement with the pair $2$ and $6$ fails, i.e. why $(2 \\mid n \\text{ and } 6 \\mid n)$ does not force $12 \\mid n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the statements to be linked.",
+        "workingLatex": "P:\\ 12 \\mid n, \\qquad Q:\\ 3 \\mid n \\ \\text{and}\\ 4 \\mid n",
+        "explanation": "Proving an 'if and only if' means establishing both $P \\Rightarrow Q$ and $Q \\Rightarrow P$. Naming the two claims keeps the two halves of the argument organised.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Prove the forward direction P implies Q.",
+        "workingLatex": "12 \\mid n \\ \\Rightarrow \\ n = 12k = 3(4k) = 4(3k)",
+        "explanation": "If $n$ is a multiple of $12$ we can write $n=12k$ and regroup the factors. Seeing $n$ as $3$ times an integer and as $4$ times an integer shows both smaller divisibilities at once.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Conclude the forward direction.",
+        "workingLatex": "3 \\mid n \\ \\text{and}\\ 4 \\mid n, \\quad \\text{so } P \\Rightarrow Q",
+        "explanation": "Because $12$ already contains both a factor of $3$ and a factor of $4$, any multiple of $12$ inherits both. The forward implication is immediate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Begin the reverse direction Q implies P.",
+        "workingLatex": "\\text{Assume } 3 \\mid n \\ \\text{and}\\ 4 \\mid n",
+        "explanation": "The harder direction is to show the two separate divisibilities combine to give divisibility by $12$. We start from both facts and work towards $n=12t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use divisibility by 4 to write n explicitly.",
+        "workingLatex": "4 \\mid n \\ \\Rightarrow \\ n = 4m \\ \\text{for some integer } m",
+        "explanation": "Turning $4 \\mid n$ into the equation $n=4m$ gives us something algebraic to substitute into the other condition. This is the standard way to use a divisibility fact.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply divisibility by 3 together with coprimality.",
+        "workingLatex": "3 \\mid 4m, \\ \\gcd(3,4) = 1 \\ \\Rightarrow \\ 3 \\mid m",
+        "explanation": "Since $3$ divides $4m$ but shares no factor with $4$, it must divide the other factor $m$ (Euclid's lemma). Coprimality of $3$ and $4$ is the crucial ingredient here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Deduce divisibility by 12 and finish the reverse direction.",
+        "workingLatex": "m = 3t \\ \\Rightarrow \\ n = 4m = 12t \\ \\Rightarrow \\ 12 \\mid n",
+        "explanation": "Writing $m=3t$ and substituting back gives $n=12t$, so $12 \\mid n$. This completes $Q \\Rightarrow P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the biconditional.",
+        "workingLatex": "12 \\mid n \\ \\Leftrightarrow \\ (3 \\mid n \\ \\text{and}\\ 4 \\mid n)",
+        "explanation": "Both directions hold, so the two conditions are equivalent. The equivalence works because $3$ and $4$ are coprime, giving $\\operatorname{lcm}(3,4)=12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set up the analogous statement with 2 and 6.",
+        "workingLatex": "R:\\ 2 \\mid n \\ \\text{and}\\ 6 \\mid n; \\quad \\text{does } R \\Rightarrow 12 \\mid n?",
+        "explanation": "We now test whether replacing the pair $3,4$ by $2,6$ still forces divisibility by $12$. A single counterexample would show it does not.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Give a counterexample.",
+        "workingLatex": "n = 6:\\ 2 \\mid 6 \\ \\text{and}\\ 6 \\mid 6, \\ \\text{but}\\ 12 \\nmid 6",
+        "explanation": "The number $6$ is divisible by both $2$ and $6$, yet it is not divisible by $12$. So the condition $R$ holds while the conclusion fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Explain why the argument breaks down.",
+        "workingLatex": "\\gcd(2,6) = 2 \\neq 1, \\quad \\operatorname{lcm}(2,6) = 6 \\neq 12",
+        "explanation": "Here $2$ and $6$ share the factor $2$, so their least common multiple is only $6$, not their product $12$. The overlapping factor is double-counted, which is exactly why divisibility by both forces only divisibility by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the final conclusion.",
+        "workingLatex": "12 \\mid n \\Leftrightarrow (3 \\mid n \\ \\text{and}\\ 4 \\mid n); \\quad (2 \\mid n \\ \\text{and}\\ 6 \\mid n) \\not\\Rightarrow 12 \\mid n",
+        "explanation": "Splitting a divisor into two factors gives an equivalence only when those factors are coprime. With coprime $3$ and $4$ it works; with the non-coprime $2$ and $6$ it does not.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$12 \\mid n \\Leftrightarrow (3 \\mid n \\text{ and } 4 \\mid n)$, because $3$ and $4$ are coprime so $\\operatorname{lcm}(3,4)=12$. The pair $2,6$ fails: $n=6$ is divisible by $2$ and by $6$ but not by $12$, since $\\gcd(2,6)=2$ gives $\\operatorname{lcm}(2,6)=6$."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "quantifiers", "negation", "set notation"],
+  "questionText": "Consider the statement $S:\\ \\exists\\, x \\in \\mathbb{R} \\text{ such that } x^2 + 1 = 0$. Determine whether $S$ is true or false over $\\mathbb{R}$. Contrast $S$ with the corresponding universal statement $T:\\ \\forall\\, x \\in \\mathbb{R},\\ x^2 + 1 = 0$, and write down the negation of $S$, stating whether that negation is true.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Translate the existential statement into words.",
+        "workingLatex": "S:\\ \\text{there is at least one real } x \\text{ with } x^2 + 1 = 0",
+        "explanation": "The symbol $\\exists$ claims that a suitable value exists somewhere in the stated set. Reading it in words makes clear we only need one witness for $S$ to be true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the key fact about squares of real numbers.",
+        "workingLatex": "x^2 \\ge 0 \\quad \\text{for all } x \\in \\mathbb{R}",
+        "explanation": "A real number squared can never be negative, since multiplying two numbers of the same sign gives a non-negative result. This bound is the engine that drives the whole question.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Bound the left-hand side of the equation.",
+        "workingLatex": "x^2 + 1 \\ge 0 + 1 = 1",
+        "explanation": "Adding $1$ to something that is at least $0$ gives something at least $1$. So the expression $x^2+1$ is always positive for real inputs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Conclude no real solution exists.",
+        "workingLatex": "x^2 + 1 \\ge 1 > 0 \\quad \\Rightarrow \\quad x^2 + 1 \\neq 0",
+        "explanation": "Since the expression is never less than $1$, it can never equal $0$. There is no real value that satisfies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the truth value of S over the reals.",
+        "workingLatex": "S \\text{ is false over } \\mathbb{R}",
+        "explanation": "An existential statement is false precisely when no member of the set works. Because every real $x$ fails, $S$ is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note how the truth of S depends on the domain.",
+        "workingLatex": "\\text{Over } \\mathbb{C}:\\ x = i \\Rightarrow i^2 + 1 = -1 + 1 = 0",
+        "explanation": "The falsehood of $S$ is tied to the domain $\\mathbb{R}$; over the complex numbers a witness does exist. Stating the domain is therefore essential when giving a truth value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the corresponding universal statement T.",
+        "workingLatex": "T:\\ \\forall\\, x \\in \\mathbb{R},\\ x^2 + 1 = 0",
+        "explanation": "The universal statement $T$ claims the equation holds for every real number, a far stronger demand than $S$. One failing value is enough to make $T$ false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Test T with a single value.",
+        "workingLatex": "x = 0:\\ 0^2 + 1 = 1 \\neq 0 \\quad \\Rightarrow \\quad T \\text{ is false}",
+        "explanation": "Since $x=0$ already breaks the equation, the 'for all' claim collapses immediately. This highlights the contrast: $\\exists$ needs one success, whereas $\\forall$ is destroyed by one failure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Recall the rule for negating an existential statement.",
+        "workingLatex": "\\neg\\big(\\exists\\, x \\in \\mathbb{R},\\ P(x)\\big) \\equiv \\forall\\, x \\in \\mathbb{R},\\ \\neg P(x)",
+        "explanation": "Negating 'there exists one that works' gives 'every one fails'. The quantifier flips from $\\exists$ to $\\forall$ and the inner statement is negated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the negation of S.",
+        "workingLatex": "\\neg S:\\ \\forall\\, x \\in \\mathbb{R},\\ x^2 + 1 \\neq 0",
+        "explanation": "Applying the rule to $S$ replaces $\\exists$ with $\\forall$ and turns $=0$ into $\\neq 0$. This says the equation has no real solution at all.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the truth value of the negation and check consistency.",
+        "workingLatex": "\\neg S \\text{ is true, since } x^2 + 1 \\ge 1 > 0",
+        "explanation": "Step 4 already showed $x^2+1$ is never zero, so $\\neg S$ is true. This is exactly what we expect: a statement and its negation always have opposite truth values, and $S$ was false.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$S$ is false over $\\mathbb{R}$ (indeed $x^2+1 \\ge 1 > 0$). The universal statement $T$ is also false (e.g. $x=0$). The negation is $\\neg S:\\ \\forall\\, x \\in \\mathbb{R},\\ x^2 + 1 \\neq 0$, which is true."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "al.y1.pure.argument-notation.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "discriminant", "completing the square", "quadratics"],
+  "questionText": "Find the necessary and sufficient condition on the real constant $k$ for which $x^2 + kx + 9 > 0$ holds for all real $x$. Give your answer as an interval, prove both directions of the equivalence, and explain carefully why the endpoint values of $k$ are excluded.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the problem and identify coefficients.",
+        "workingLatex": "\\text{Find all } k:\\ \\forall x \\in \\mathbb{R},\\ x^2+kx+9 > 0; \\qquad a=1,\\ b=k,\\ c=9,\\ a>0",
+        "explanation": "We are hunting for the full set of $k$-values that keep the quadratic positive everywhere, so the answer will be a condition on $k$. Recording $a=1>0$ fixes that the parabola opens upward.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Give the geometric intuition.",
+        "workingLatex": "a>0 \\Rightarrow \\text{upward parabola; positive everywhere} \\Leftrightarrow \\text{never touches the } x\\text{-axis}",
+        "explanation": "An upward-opening parabola stays strictly above the axis precisely when it has no real roots, because a root is a point where it meets the axis. This turns a positivity question into a question about roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Translate 'no real roots' into the discriminant.",
+        "workingLatex": "\\text{no real roots} \\Leftrightarrow \\Delta < 0, \\qquad \\Delta = b^2 - 4ac = k^2 - 36",
+        "explanation": "The discriminant decides the number of real roots, and strictly no roots corresponds to $\\Delta<0$. Computing it from the coefficients gives $k^2-36$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Record the equivalence chain to be solved.",
+        "workingLatex": "x^2+kx+9 > 0\\ \\forall x \\;\\Leftrightarrow\\; \\text{no real roots} \\;\\Leftrightarrow\\; k^2 - 36 < 0",
+        "explanation": "Chaining the equivalences shows the positivity condition reduces exactly to an inequality in $k$. Solving that inequality will give the required set.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the discriminant inequality.",
+        "workingLatex": "k^2 - 36 < 0 \\Leftrightarrow k^2 < 36 \\Leftrightarrow |k| < 6 \\Leftrightarrow -6 < k < 6",
+        "explanation": "The inequality $k^2<36$ means $k$ is within distance $6$ of zero, which is the interval from $-6$ to $6$. This is our candidate answer, still to be justified in both directions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the candidate answer.",
+        "workingLatex": "k \\in (-6, 6)",
+        "explanation": "The open interval $(-6,6)$ is the proposed necessary and sufficient condition. Because the question asks to prove both directions, we now verify it rather than stop at the discriminant shortcut.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Begin the sufficient direction by completing the square.",
+        "workingLatex": "(\\Leftarrow)\\ \\text{assume } -6<k<6. \\quad x^2+kx+9 = \\left(x+\\tfrac{k}{2}\\right)^2 - \\tfrac{k^2}{4} + 9",
+        "explanation": "To show the condition is sufficient we assume $-6<k<6$ and prove positivity directly. Completing the square exposes the minimum value cleanly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the constant term after completing the square.",
+        "workingLatex": "x^2+kx+9 = \\left(x+\\tfrac{k}{2}\\right)^2 + \\left(9 - \\tfrac{k^2}{4}\\right)",
+        "explanation": "The quadratic is now a square bracket plus the constant $9-\\tfrac{k^2}{4}$. The sign of that constant controls whether the whole expression can stay positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Show the constant is positive under the assumption.",
+        "workingLatex": "-6<k<6 \\Rightarrow k^2 < 36 \\Rightarrow \\tfrac{k^2}{4} < 9 \\Rightarrow 9 - \\tfrac{k^2}{4} > 0",
+        "explanation": "The assumption bounds $k^2$ below $36$, so $\\tfrac{k^2}{4}$ stays below $9$ and the leftover constant is strictly positive. That positive floor is what we need.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the sufficient direction.",
+        "workingLatex": "\\left(x+\\tfrac{k}{2}\\right)^2 \\ge 0 \\;\\Rightarrow\\; x^2+kx+9 \\ge 9 - \\tfrac{k^2}{4} > 0 \\ \\forall x",
+        "explanation": "A non-negative square added to a positive constant is always positive. So $-6<k<6$ guarantees the quadratic is positive for every real $x$; the condition is sufficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Begin the necessary direction.",
+        "workingLatex": "(\\Rightarrow)\\ \\text{assume } x^2+kx+9 > 0\\ \\forall x. \\quad \\text{Least value occurs at } x=-\\tfrac{k}{2}",
+        "explanation": "To show the condition is necessary we suppose positivity holds everywhere and deduce the bound on $k$. The tightest test is the minimum point, where the square bracket vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Force the minimum value to be positive.",
+        "workingLatex": "\\min = 9 - \\tfrac{k^2}{4} > 0",
+        "explanation": "If the expression is positive for all $x$, then in particular its smallest value must be positive. That minimum is exactly the constant $9-\\tfrac{k^2}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve to recover the interval.",
+        "workingLatex": "9 - \\tfrac{k^2}{4} > 0 \\Rightarrow k^2 < 36 \\Rightarrow -6 < k < 6",
+        "explanation": "Rearranging the minimum-value inequality returns exactly $-6<k<6$. So positivity everywhere cannot happen outside this interval, proving the condition is necessary.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check why the endpoints fail.",
+        "workingLatex": "k=6:\\ x^2+6x+9=(x+3)^2=0 \\text{ at } x=-3; \\quad k=-6:\\ (x-3)^2=0 \\text{ at } x=3",
+        "explanation": "At $k=\\pm 6$ the discriminant is zero, giving a repeated root where the quadratic equals $0$, not something $>0$. Because strict positivity fails at that single point, the endpoints are correctly excluded and the interval must be open.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Assemble the final biconditional.",
+        "workingLatex": "x^2+kx+9 > 0\\ \\forall x \\;\\Leftrightarrow\\; k \\in (-6,6)",
+        "explanation": "Both directions are proved, so membership of the open interval is the necessary and sufficient condition. The strict inequalities at the ends encode that the endpoints genuinely fail.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$k \\in (-6, 6)$, i.e. $-6 < k < 6$. Since $a=1>0$, positivity for all $x$ $\\Leftrightarrow$ no real roots $\\Leftrightarrow$ $\\Delta = k^2 - 36 < 0 \\Leftrightarrow |k| < 6$. The endpoints $k = \\pm 6$ give a repeated root where $(x \\pm 3)^2 = 0$, so the expression is $0$ rather than $>0$ there and they are excluded."
+  }
+}

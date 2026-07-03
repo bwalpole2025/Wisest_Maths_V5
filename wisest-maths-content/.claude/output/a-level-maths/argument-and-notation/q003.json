@@ -1,0 +1,74 @@
+{
+  "id": "al.y1.pure.argument-notation.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "inequalities"],
+  "questionText": "Let $x$ be a real number. Determine whether the condition $x > 5$ is (a) a sufficient condition, and (b) a necessary condition, for $x > 2$. Justify each answer carefully.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up the two conditions as P and Q.",
+        "workingLatex": "P:\\ x > 5, \\qquad Q:\\ x > 2",
+        "explanation": "We label the conditions so we can test the two directions of implication. 'Sufficient' and 'necessary' are just names for those two directions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State what sufficient and necessary mean here.",
+        "workingLatex": "P \\text{ sufficient for } Q \\Leftrightarrow (P \\Rightarrow Q); \\quad P \\text{ necessary for } Q \\Leftrightarrow (Q \\Rightarrow P)",
+        "explanation": "$P$ is sufficient for $Q$ if $P$ alone guarantees $Q$; $P$ is necessary for $Q$ if $Q$ cannot happen without $P$. These are opposite directions, so we check each in turn.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Picture the two conditions as sets on the number line.",
+        "workingLatex": "\\{x : x > 5\\} \\subset \\{x : x > 2\\}",
+        "explanation": "Every number bigger than $5$ is automatically bigger than $2$, so the set for $P$ sits entirely inside the set for $Q$. This picture predicts both results before any algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test sufficiency: assume P and deduce Q.",
+        "workingLatex": "x > 5 > 2 \\Rightarrow x > 2",
+        "explanation": "If $x$ exceeds $5$ then it certainly exceeds $2$, since $5$ is already greater than $2$. So $P$ forces $Q$ and the forward implication holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude P is sufficient.",
+        "workingLatex": "P \\Rightarrow Q \\text{ true, so } P \\text{ is sufficient}",
+        "explanation": "Because assuming $P$ always delivers $Q$, the condition $x>5$ is enough on its own to secure $x>2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test necessity with a counterexample.",
+        "workingLatex": "x = 3:\\ 3 > 2 \\ (Q \\text{ holds}) \\text{ but } 3 \\not> 5 \\ (P \\text{ fails})",
+        "explanation": "For $P$ to be necessary, $Q$ would have to fail whenever $P$ fails. The value $x=3$ satisfies $Q$ without satisfying $P$, so $Q$ can hold without $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude P is not necessary.",
+        "workingLatex": "Q \\not\\Rightarrow P, \\text{ so } P \\text{ is not necessary}",
+        "explanation": "Since $x=3$ meets $x>2$ while missing $x>5$, the condition $x>5$ is not required for $x>2$. Numbers between $2$ and $5$ satisfy $Q$ on their own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Combine the two conclusions.",
+        "workingLatex": "P \\text{ sufficient but not necessary for } Q",
+        "explanation": "The forward test passed and the reverse test failed, so $x>5$ is sufficient but not necessary for $x>2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x > 5$ is a sufficient condition for $x > 2$ (since $x>5 \\Rightarrow x>2$) but not a necessary one (e.g. $x=3$ gives $x>2$ without $x>5$)."
+  }
+}

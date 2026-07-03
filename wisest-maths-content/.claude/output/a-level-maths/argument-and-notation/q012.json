@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "counterexample"],
+  "questionText": "For real numbers $x$, let $P$ be the statement $x^2 = 4$ and let $Q$ be the statement $x = 2$. Determine whether $P$ is a sufficient condition for $Q$, and whether $P$ is a necessary condition for $Q$. Justify each answer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two statements and the domain.",
+        "workingLatex": "P:\\ x^2 = 4, \\qquad Q:\\ x = 2, \\qquad x \\in \\mathbb{R}",
+        "explanation": "Working over the real numbers matters here, because $x^2 = 4$ has two real solutions. Keeping the domain in view stops us from quietly assuming $x$ is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the meaning of sufficient and necessary.",
+        "workingLatex": "P \\text{ sufficient for } Q \\iff P \\Rightarrow Q; \\qquad P \\text{ necessary for } Q \\iff Q \\Rightarrow P",
+        "explanation": "$P$ is sufficient when it guarantees $Q$, and $P$ is necessary when $Q$ cannot hold without it. These correspond to the two opposite directions of implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test sufficiency: does P ⇒ Q?",
+        "workingLatex": "x^2 = 4 \\;\\Rightarrow\\; x = 2 \\text{ or } x = -2",
+        "explanation": "Assuming $x^2 = 4$ and taking square roots gives two possibilities, not one. So knowing $x^2 = 4$ does not pin $x$ down to the value $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Give a counterexample and conclude P is not sufficient.",
+        "workingLatex": "x = -2:\\ (-2)^2 = 4 \\text{ but } -2 \\neq 2 \\;\\Rightarrow\\; P \\not\\Rightarrow Q",
+        "explanation": "The value $x = -2$ satisfies $P$ yet fails $Q$, which is a direct counterexample to $P \\Rightarrow Q$. Hence $P$ is not sufficient for $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test necessity: does Q ⇒ P?",
+        "workingLatex": "x = 2 \\;\\Rightarrow\\; x^2 = 2^2 = 4",
+        "explanation": "Now assume $Q$, so $x = 2$. Squaring gives $x^2 = 4$, which is exactly $P$, so $Q$ forces $P$ every time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude P is necessary.",
+        "workingLatex": "Q \\Rightarrow P \\;\\Rightarrow\\; P \\text{ is necessary for } Q",
+        "explanation": "Because $x = 2$ cannot occur without $x^2 = 4$ also holding, the condition $P$ is required whenever $Q$ is true. That is precisely what necessary means.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the overall conclusion.",
+        "workingLatex": "P \\text{ is necessary but not sufficient for } Q",
+        "explanation": "The implication runs only from $Q$ to $P$, so $P$ is required for $Q$ but does not guarantee it. Thus $P$ is necessary but not sufficient for $Q$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P$ is necessary but not sufficient for $Q$: $x = 2 \\Rightarrow x^2 = 4$, but $x^2 = 4$ allows $x = -2$, so $x^2 = 4 \\not\\Rightarrow x = 2$."
+  }
+}

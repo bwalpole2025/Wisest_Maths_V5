@@ -1,0 +1,116 @@
+{
+  "id": "al.y1.pure.argument-notation.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "proof", "inequality", "absolute value", "quantifiers"],
+  "questionText": "Prove the triangle inequality $|x + y| \\le |x| + |y|$ for all real numbers $x$ and $y$. Make the universal nature of the claim explicit, and determine the necessary and sufficient condition on $x$ and $y$ for equality to hold.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the universal claim and the plan.",
+        "workingLatex": "\\forall x, y \\in \\mathbb{R}: \\ |x + y| \\le |x| + |y|",
+        "explanation": "The claim must hold for every real pair, so we prove it in general rather than by examples. The cleanest route is to sandwich $x+y$ between fixed bounds and then convert to a modulus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound x by its own modulus.",
+        "workingLatex": "-|x| \\le x \\le |x|",
+        "explanation": "Every real number lies between the negative and positive versions of its size. This double inequality is true whether $x$ is positive, negative or zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Bound y in the same way.",
+        "workingLatex": "-|y| \\le y \\le |y|",
+        "explanation": "The identical fact holds for $y$. Having both variables trapped between symmetric bounds lets us combine them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add the two double inequalities.",
+        "workingLatex": "-(|x| + |y|) \\le x + y \\le |x| + |y|",
+        "explanation": "Adding inequalities that point the same way preserves the direction. This traps the sum $x+y$ between $-(|x|+|y|)$ and $+(|x|+|y|)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recall the modulus characterisation.",
+        "workingLatex": "-a \\le t \\le a \\ (a \\ge 0) \\iff |t| \\le a",
+        "explanation": "Saying a quantity lies between $-a$ and $a$ is exactly the same as saying its modulus is at most $a$. This is the bridge from the sandwich to an inequality about $|x+y|$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply it to finish the main inequality.",
+        "workingLatex": "|x + y| \\le |x| + |y| \\quad \\forall x, y \\in \\mathbb{R} \\qquad \\blacksquare",
+        "explanation": "Taking $t = x+y$ and $a = |x|+|y|$ in the previous line gives the triangle inequality directly. It holds for all reals, proving the universal statement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Prepare the equality analysis by squaring.",
+        "workingLatex": "|x+y|^2 = (x+y)^2 = x^2 + 2xy + y^2",
+        "explanation": "Both sides of the inequality are non-negative, so we may compare their squares without changing which is larger. Squaring removes the modulus on the left cleanly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Square the right-hand side.",
+        "workingLatex": "(|x|+|y|)^2 = x^2 + 2|x||y| + y^2 = x^2 + 2|xy| + y^2",
+        "explanation": "Expanding and using $|x||y| = |xy|$ gives a form ready to compare with the left square. The only difference between the two squares is in the cross term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Take the difference of the squares.",
+        "workingLatex": "(|x|+|y|)^2 - |x+y|^2 = 2(|xy| - xy)",
+        "explanation": "Subtracting the two expanded squares cancels the $x^2$ and $y^2$ terms, leaving only twice the gap between $|xy|$ and $xy$. This gap is where equality is won or lost.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm the sign of the difference.",
+        "workingLatex": "|xy| \\ge xy \\Rightarrow 2(|xy| - xy) \\ge 0",
+        "explanation": "A number is never greater than its own modulus, so $|xy| \\ge xy$ always. This re-confirms the inequality and shows the difference is zero only when $|xy| = xy$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Link equal squares to equal values.",
+        "workingLatex": "|x+y| \\ge 0, \\ |x|+|y| \\ge 0 \\Rightarrow (\\text{equal squares} \\iff \\text{equal values})",
+        "explanation": "For non-negative quantities, they are equal exactly when their squares are equal. So equality in the triangle inequality happens precisely when the difference of squares is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve the equality condition on the cross term.",
+        "workingLatex": "|xy| = xy \\iff xy \\ge 0",
+        "explanation": "A quantity equals its own modulus exactly when it is non-negative. So the difference of squares vanishes if and only if $xy \\ge 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the equality condition.",
+        "workingLatex": "|x+y| = |x| + |y| \\iff xy \\ge 0",
+        "explanation": "Equality holds exactly when $x$ and $y$ have the same sign or at least one of them is zero. When they have opposite signs there is genuine cancellation and the inequality is strict.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Express the condition as necessary and sufficient.",
+        "workingLatex": "xy \\ge 0 \\text{ is necessary and sufficient for equality}",
+        "explanation": "The proof shows $xy \\ge 0$ both forces equality and is forced by it, so it is exactly equivalent to equality. This completes the description of when the triangle inequality is tight.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "From $-|x| \\le x \\le |x|$ and $-|y| \\le y \\le |y|$, adding gives $-(|x|+|y|) \\le x+y \\le |x|+|y|$, i.e. $|x+y| \\le |x|+|y|$ for all real $x,y$. Comparing squares, $(|x|+|y|)^2 - |x+y|^2 = 2(|xy|-xy)$, so equality holds if and only if $xy \\ge 0$ (same sign or a zero), which is necessary and sufficient."
+  }
+}

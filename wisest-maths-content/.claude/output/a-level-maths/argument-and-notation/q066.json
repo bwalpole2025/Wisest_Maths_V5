@@ -1,0 +1,130 @@
+{
+  "id": "al.y1.pure.argument-notation.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "proof",
+  "tags": ["logic", "counterexample", "converse", "necessary and sufficient", "primes"],
+  "questionText": "Consider the statement: 'if $n$ is prime, then $2^n - 1$ is prime'. Investigate whether this statement is true. If it is false, disprove it with an explicit counterexample. Then examine its converse, decide whether the converse is true, and state precisely whether '$n$ is prime' is a necessary condition, a sufficient condition, both, or neither, for '$2^n-1$ is prime'.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the logical structure of the statement.",
+        "workingLatex": "P(n):\\ n \\text{ is prime}, \\qquad Q(n):\\ 2^n-1 \\text{ is prime}; \\qquad \\text{claim: } P(n) \\Rightarrow Q(n)",
+        "explanation": "Numbers of the form $2^n-1$ are called Mersenne numbers, and the claim is a universal implication over all $n$. Naming $P$ and $Q$ clarifies exactly which direction is being asserted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Decide how such a statement can be disproved.",
+        "workingLatex": "\\text{To disprove } \\forall n\\,(P \\Rightarrow Q): \\text{ find one } n \\text{ with } P(n) \\text{ true but } Q(n) \\text{ false}",
+        "explanation": "A single counterexample is enough to destroy a 'for all' claim, whereas no finite number of successes could ever prove it. So our search is for one prime $n$ whose Mersenne number is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check small primes to build intuition.",
+        "workingLatex": "n=2\\!:\\,3,\\quad n=3\\!:\\,7,\\quad n=5\\!:\\,31,\\quad n=7\\!:\\,127 \\ (\\text{all prime})",
+        "explanation": "Testing the first few primes shows the pattern holds early, which is exactly why the claim is tempting. This also warns us that surface-level evidence can be misleading.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Emphasise why examples are not a proof.",
+        "workingLatex": "P(2),P(3),P(5),P(7) \\text{ hold} \\;\\not\\Rightarrow\\; \\forall n\\,(P\\Rightarrow Q)",
+        "explanation": "Confirming several cases never establishes a universal statement, because the next case could always fail. This is the core discipline of the topic: verify structure, do not just pattern-match.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the next prime, n = 11.",
+        "workingLatex": "n=11 \\ (\\text{prime}): \\quad 2^{11} = 2048, \\quad 2^{11}-1 = 2047",
+        "explanation": "The number $11$ is prime, so $P(11)$ is true and it is a legitimate test case. We now need to determine whether $2047$ is prime or composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise 2047.",
+        "workingLatex": "2047 = 23 \\times 89",
+        "explanation": "Trial division by small primes eventually reveals the factor $23$, and dividing gives $89$. Finding any factor other than $1$ and itself is enough to show a number is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Verify the factorisation.",
+        "workingLatex": "23 \\times 89 = 23 \\times 90 - 23 = 2070 - 23 = 2047 \\;\\checkmark",
+        "explanation": "Checking the multiplication guards against arithmetic slips in the counterexample, which must be airtight. The product confirms $2047$ genuinely equals $23 \\times 89$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the original statement is false.",
+        "workingLatex": "P(11) \\text{ true},\\ Q(11) \\text{ false} \\;\\Rightarrow\\; P \\Rightarrow Q \\text{ is FALSE}",
+        "explanation": "We have a prime $n=11$ whose Mersenne number $2047$ is composite, so the implication fails for this $n$. One valid counterexample settles it: the statement is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the converse and set out to test it.",
+        "workingLatex": "\\text{Converse } Q \\Rightarrow P: \\ \\text{if } 2^n-1 \\text{ is prime then } n \\text{ is prime}",
+        "explanation": "The converse swaps hypothesis and conclusion, and its truth is logically independent of the original. We must judge it on its own merits rather than assume it follows.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Prove the converse via its contrapositive.",
+        "workingLatex": "\\text{Contrapositive: } n \\text{ composite} \\Rightarrow 2^n-1 \\text{ composite}. \\ \\text{Let } n = ab,\\ 1<a,b<n",
+        "explanation": "Proving the contrapositive is logically equivalent and far easier here. If $n$ is composite we can write it as a product $ab$ with both factors strictly between $1$ and $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Apply the factorisation identity for Mersenne numbers.",
+        "workingLatex": "2^{ab}-1 = (2^a-1)\\left(2^{a(b-1)} + 2^{a(b-2)} + \\cdots + 2^a + 1\\right)",
+        "explanation": "Using $x^b-1 = (x-1)(x^{b-1}+\\cdots+1)$ with $x = 2^a$ shows $2^a-1$ divides $2^n-1$. This exposes a genuine factor built from the composite structure of $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the divisor is proper.",
+        "workingLatex": "1 < a < n \\;\\Rightarrow\\; 1 < 2^a - 1 < 2^n - 1",
+        "explanation": "Because $a$ lies strictly between $1$ and $n$, the factor $2^a-1$ is bigger than $1$ but smaller than $2^n-1$. A proper factor greater than $1$ means the number is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude the converse is true.",
+        "workingLatex": "n \\text{ composite} \\Rightarrow 2^n-1 \\text{ composite} \\;\\equiv\\; 2^n-1 \\text{ prime} \\Rightarrow n \\text{ prime (TRUE)}",
+        "explanation": "The contrapositive holds, so the converse it is equivalent to also holds. Whenever a Mersenne number is prime, its exponent must have been prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Compare the two directions.",
+        "workingLatex": "P \\Rightarrow Q \\text{ FALSE}, \\quad Q \\Rightarrow P \\text{ TRUE} \\;\\Rightarrow\\; P \\not\\Leftrightarrow Q",
+        "explanation": "One direction fails and the other holds, so the statements are not equivalent and no two-way arrow connects them. This asymmetry is the whole point of the question.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Translate into necessary/sufficient language.",
+        "workingLatex": "Q \\Rightarrow P \\Rightarrow P \\text{ necessary for } Q; \\qquad P \\not\\Rightarrow Q \\Rightarrow P \\text{ not sufficient for } Q",
+        "explanation": "Since $2^n-1$ prime forces $n$ prime, primality of $n$ is required (necessary) for the Mersenne number to be prime. But since primality of $n$ does not guarantee it, primality of $n$ is not sufficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the final classification.",
+        "workingLatex": "\\text{'}n \\text{ prime'} \\text{ is necessary but not sufficient for '}2^n-1 \\text{ prime'}",
+        "explanation": "Pulling the two directions together gives the precise verdict: primality of $n$ is a necessary but not a sufficient condition. The failed case $n=11$ is exactly what breaks sufficiency.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The statement is FALSE: $n=11$ is prime but $2^{11}-1 = 2047 = 23 \\times 89$ is composite. Its converse '$2^n-1$ prime $\\Rightarrow n$ prime' is TRUE. Hence the statements are not equivalent, and '$n$ is prime' is a necessary but not sufficient condition for '$2^n-1$ is prime'."
+  }
+}

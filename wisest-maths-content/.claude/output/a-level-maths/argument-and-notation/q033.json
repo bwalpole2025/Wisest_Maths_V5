@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "contrapositive", "counterexample", "divisibility"],
+  "questionText": "For integers $n$, consider the true implication '$n$ is a multiple of $4 \\Rightarrow n$ is even'. Write down its converse and its contrapositive. For each of these two new statements, state whether it is true or false, justifying your decision with a proof or a counterexample.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the parts of the original implication.",
+        "workingLatex": "P:\\ 4 \\mid n, \\quad Q:\\ n \\text{ even}, \\quad \\text{original } P \\Rightarrow Q",
+        "explanation": "Labelling the hypothesis and conclusion lets us build the converse and contrapositive mechanically. The original is given as true, but that alone settles neither new statement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Confirm the original implication is true.",
+        "workingLatex": "n=4k=2(2k) \\Rightarrow n \\text{ even}, \\ \\text{ so } P \\Rightarrow Q \\ \\text{ true}",
+        "explanation": "A multiple of 4 contains a factor of 2, so it is automatically even. Confirming this gives a firm anchor, since the contrapositive will share its truth value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall how the converse and contrapositive are formed.",
+        "workingLatex": "\\text{converse: } Q \\Rightarrow P, \\qquad \\text{contrapositive: } \\lnot Q \\Rightarrow \\lnot P",
+        "explanation": "The converse swaps the two parts; the contrapositive swaps and negates them. These are different constructions and in general behave differently.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the converse.",
+        "workingLatex": "Q \\Rightarrow P:\\ n \\text{ even} \\Rightarrow 4 \\mid n",
+        "explanation": "Reversing the arrow claims that evenness alone forces divisibility by 4. We must test whether that stronger claim actually holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Give a counterexample to the converse.",
+        "workingLatex": "n=6:\\ 6 \\text{ even}, \\ \\text{ but } 6 = 4k \\text{ has no integer solution}",
+        "explanation": "Six is even yet not a multiple of 4, so it satisfies $Q$ but not $P$. A single counterexample is enough to prove the converse false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the truth of the converse.",
+        "workingLatex": "Q \\Rightarrow P \\ \\text{ is false}",
+        "explanation": "Evenness does not guarantee divisibility by 4, because a number can carry exactly one factor of 2. The converse therefore fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the contrapositive.",
+        "workingLatex": "\\lnot Q \\Rightarrow \\lnot P:\\ n \\text{ odd} \\Rightarrow n \\text{ is not a multiple of } 4",
+        "explanation": "Negating 'even' gives 'odd', and negating 'multiple of 4' gives 'not a multiple of 4'. This is the contrapositive of the original implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Use logical equivalence to judge the contrapositive.",
+        "workingLatex": "(\\lnot Q \\Rightarrow \\lnot P) \\equiv (P \\Rightarrow Q)",
+        "explanation": "A statement and its contrapositive are logically equivalent, so they always have the same truth value. Since the original is true, the contrapositive is true too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Verify the contrapositive directly as a check.",
+        "workingLatex": "n \\text{ odd} \\Rightarrow n \\neq 2m; \\ \\text{ but } 4k=2(2k) \\text{ even}, \\ \\text{ so } n \\neq 4k",
+        "explanation": "Directly, an odd number cannot equal a multiple of 4 because every multiple of 4 is even. This confirms the contrapositive on its own terms as well.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Summarise the three truth values.",
+        "workingLatex": "\\text{original: true}, \\quad \\text{converse: false}, \\quad \\text{contrapositive: true}",
+        "explanation": "The converse can differ in truth from the original, while the contrapositive must match it. That is exactly the pattern we found here.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Converse '$n$ even $\\Rightarrow 4 \\mid n$' is false (counterexample $n=6$). Contrapositive '$n$ odd $\\Rightarrow n$ is not a multiple of $4$' is true, being logically equivalent to the true original."
+  }
+}

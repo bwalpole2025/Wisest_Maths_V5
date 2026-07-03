@@ -1,0 +1,116 @@
+{
+  "id": "al.y1.pure.argument-notation.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "biconditional", "parity", "contrapositive", "quantifiers"],
+  "questionText": "Let $a, b \\in \\mathbb{Z}$. Prove that $ab$ is odd if and only if $a$ and $b$ are both odd. State the result with explicit quantifiers, prove each direction (using the contrapositive for one of them), and hence comment on what is necessary and what is sufficient.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the result with explicit quantifiers.",
+        "workingLatex": "\\forall a, b \\in \\mathbb{Z}: \\ ab \\text{ odd} \\iff (a \\text{ odd} \\ \\wedge\\ b \\text{ odd})",
+        "explanation": "The claim is a universally quantified biconditional, so it must hold for every pair of integers and in both logical directions. Writing the quantifier out keeps the scope of the argument clear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the definitions of even and odd.",
+        "workingLatex": "n \\text{ even} \\iff n = 2k; \\quad n \\text{ odd} \\iff n = 2k+1, \\ k \\in \\mathbb{Z}",
+        "explanation": "Parity proofs work by turning the words 'even' and 'odd' into algebraic forms. Every integer is exactly one of these, which we will rely on later.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set out the two-direction plan.",
+        "workingLatex": "\\text{Prove } (\\Leftarrow) \\text{ directly and } (\\Rightarrow) \\text{ by contrapositive}",
+        "explanation": "The reverse direction is easy to handle by direct expansion, while the forward direction is cleaner through its contrapositive. Choosing the right tool for each keeps the working short.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Reverse direction: assume both are odd.",
+        "workingLatex": "a = 2m+1, \\quad b = 2n+1, \\quad m, n \\in \\mathbb{Z}",
+        "explanation": "Assuming the right-hand side, we write both integers in odd form with their own parameters. This lets us compute the product explicitly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand the product.",
+        "workingLatex": "ab = (2m+1)(2n+1) = 4mn + 2m + 2n + 1",
+        "explanation": "Multiplying out gives a sum of terms we can regroup. The aim is to isolate a leftover $+1$ after pulling out a factor of two.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the product in odd form.",
+        "workingLatex": "ab = 2(2mn + m + n) + 1",
+        "explanation": "Since $2mn + m + n$ is an integer, the product has the form $2K + 1$. That is exactly the definition of an odd number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the reverse direction.",
+        "workingLatex": "\\Rightarrow ab \\text{ odd}; \\quad (a \\text{ odd} \\wedge b \\text{ odd}) \\Rightarrow ab \\text{ odd}",
+        "explanation": "The expansion shows the product of two odd numbers is odd. Being both odd is therefore sufficient for the product to be odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Forward direction: state the contrapositive.",
+        "workingLatex": "\\text{Contrapositive: } \\neg(a \\text{ odd} \\wedge b \\text{ odd}) \\Rightarrow ab \\text{ even}",
+        "explanation": "Proving 'if $ab$ odd then both odd' directly is awkward, so we negate both sides and swap them. This gives an equivalent statement that is easier to attack.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the negated hypothesis.",
+        "workingLatex": "\\neg(a \\text{ odd} \\wedge b \\text{ odd}) \\equiv (a \\text{ even} \\ \\vee\\ b \\text{ even})",
+        "explanation": "By De Morgan's law the negation of an 'and' is an 'or' of the negations, and for integers 'not odd' means 'even'. So we must show that at least one even factor makes the product even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Assume one factor is even.",
+        "workingLatex": "\\text{WLOG } a = 2m, \\quad m \\in \\mathbb{Z}",
+        "explanation": "Because the product $ab$ is symmetric in $a$ and $b$, we may assume without loss of generality that it is $a$ that is even. The argument for $b$ even is identical.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Show the product is even.",
+        "workingLatex": "ab = 2m \\cdot b = 2(mb) \\Rightarrow ab \\text{ even}",
+        "explanation": "A single factor of two in $a$ survives into the product, so $ab$ is twice an integer. Hence the product is even whenever a factor is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Return to the forward statement.",
+        "workingLatex": "\\Rightarrow ab \\text{ odd} \\Rightarrow (a \\text{ odd} \\wedge b \\text{ odd})",
+        "explanation": "A statement and its contrapositive are logically equivalent, so proving the contrapositive proves the forward direction. If the product is odd, neither factor can be even, so both are odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Combine both directions.",
+        "workingLatex": "\\Rightarrow ab \\text{ odd} \\iff (a \\text{ odd} \\wedge b \\text{ odd})",
+        "explanation": "With both implications established, the biconditional holds for all integer pairs. Each side is now known to guarantee the other.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State necessity and sufficiency.",
+        "workingLatex": "(a \\text{ odd} \\wedge b \\text{ odd}) \\text{ is necessary and sufficient for } ab \\text{ odd}",
+        "explanation": "The reverse direction makes the condition sufficient and the forward direction makes it necessary. Together they say '$a$ and $b$ both odd' is exactly equivalent to '$ab$ odd'.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\forall a,b \\in \\mathbb{Z}: ab$ odd $\\iff a,b$ both odd. Reverse: $(2m+1)(2n+1)=2(2mn+m+n)+1$ is odd. Forward (contrapositive): if $a$ or $b$ is even, say $a=2m$, then $ab=2(mb)$ is even. Hence both factors being odd is necessary and sufficient for $ab$ to be odd."
+  }
+}

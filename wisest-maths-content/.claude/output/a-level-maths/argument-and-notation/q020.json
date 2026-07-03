@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "sufficient condition", "divisibility", "proof"],
+  "questionText": "Let $n$ be an integer. Determine whether the statement '$n$ is a multiple of $5$' is a sufficient condition for '$n^2$ is a multiple of $5$'. Justify your answer with algebra.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the two statements.",
+        "workingLatex": "P:\\ n \\text{ is a multiple of } 5, \\qquad Q:\\ n^2 \\text{ is a multiple of } 5",
+        "explanation": "Labelling the conditions keeps the argument organised. P is a claim about $n$; Q is a claim about $n^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State what needs to be shown.",
+        "workingLatex": "P \\text{ sufficient for } Q \\iff P \\Rightarrow Q",
+        "explanation": "P is sufficient for Q precisely when assuming P lets us deduce Q. So we assume $n$ is a multiple of $5$ and try to reach a statement about $n^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the assumption P algebraically.",
+        "workingLatex": "n = 5k \\quad \\text{for some integer } k",
+        "explanation": "Turning 'multiple of $5$' into $n=5k$ converts the wording into algebra we can manipulate. The letter $k$ stands for whatever integer makes this true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Square both sides.",
+        "workingLatex": "n^2 = (5k)^2 = 25k^2",
+        "explanation": "Squaring is the natural move because Q is a statement about $n^2$. This expresses $n^2$ directly in terms of the integer $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out 5 to reveal the multiple.",
+        "workingLatex": "25k^2 = 5\\,(5k^2)",
+        "explanation": "Pulling out a factor of $5$ shows $n^2$ as $5$ times an integer, since $5k^2$ is an integer. That is exactly the form 'multiple of $5$' requires.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the implication holds.",
+        "workingLatex": "n^2 = 5\\,(5k^2) \\;\\Rightarrow\\; Q \\text{ is true}, \\quad \\text{so } P \\Rightarrow Q",
+        "explanation": "We started from P and derived Q with no gaps, so the forward implication is proven. Being a multiple of $5$ guarantees the square is a multiple of $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final answer.",
+        "workingLatex": "P \\text{ is a sufficient condition for } Q",
+        "explanation": "Since $P \\Rightarrow Q$ was established directly, P is sufficient for Q. The clean factorisation is what makes the guarantee watertight.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Yes, it is sufficient. If $n = 5k$ then $n^2 = 25k^2 = 5(5k^2)$, which is a multiple of $5$; hence $P \\Rightarrow Q$."
+  }
+}

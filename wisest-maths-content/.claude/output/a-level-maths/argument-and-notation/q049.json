@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "quantifiers", "existence", "counterexample", "functions"],
+  "questionText": "The function $f$ is defined by $f(x) = x^2$ for all $x \\in \\mathbb{R}$. Show that $f$ is not one-to-one (not injective) on $\\mathbb{R}$ by producing an existence ($\\exists$) counterexample to the definition of injectivity.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the definition of a one-to-one function.",
+        "workingLatex": "f \\text{ injective}:\\ \\forall a, b \\in \\mathbb{R}, \\ f(a) = f(b) \\Rightarrow a = b",
+        "explanation": "A one-to-one function never sends two different inputs to the same output. The definition is a universal ($\\forall$) statement, which shapes how we must disprove it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the negation of injectivity.",
+        "workingLatex": "\\neg(\\text{injective}):\\ \\exists\\, a, b \\in \\mathbb{R} \\ \\text{ with } \\ a \\neq b \\ \\text{ and } \\ f(a) = f(b)",
+        "explanation": "Negating a 'for all' statement produces a 'there exists' statement. To show the function is not injective we only need one pair of distinct inputs sharing an output.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Explain why a single example is enough.",
+        "workingLatex": "\\text{one witnessing pair } (a, b) \\ \\Rightarrow\\ \\neg(\\text{injective})",
+        "explanation": "An existence claim is proved the instant we exhibit one object that works, so no general argument is needed. This is the cheapest way to defeat a universal statement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a strategy for finding the pair.",
+        "workingLatex": "\\text{squaring erases sign: } (-c)^2 = c^2",
+        "explanation": "Because squaring a number and its negative give the same result, any nonzero value and its negative make natural candidates. This tells us where to look for a collision.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Select specific values.",
+        "workingLatex": "a = -1, \\quad b = 1, \\qquad a \\neq b",
+        "explanation": "We pick the simplest such pair, $-1$ and $1$, which are clearly different real numbers. Keeping the numbers small makes the check transparent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the function at both inputs.",
+        "workingLatex": "f(-1) = (-1)^2 = 1, \\qquad f(1) = 1^2 = 1",
+        "explanation": "Substituting each value into $f(x)=x^2$ gives the same output of $1$. The two distinct inputs land on a single point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Record the collision explicitly.",
+        "workingLatex": "f(-1) = f(1) = 1 \\ \\text{ while } \\ -1 \\neq 1",
+        "explanation": "We have equal outputs from unequal inputs, which is precisely the situation injectivity forbids. This is the heart of the counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Match the example to the existence statement.",
+        "workingLatex": "\\exists\\, a \\neq b \\ \\text{ with } \\ f(a) = f(b) \\ \\checkmark",
+        "explanation": "The pair $(-1, 1)$ satisfies every part of the negated definition. So the existence statement that contradicts injectivity is now established.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "f(x) = x^2 \\ \\text{ is not one-to-one on } \\mathbb{R}",
+        "explanation": "Having produced a valid witnessing pair, we have proved $f$ is not injective on the reals. A single counterexample is a complete proof of the negation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Note the role of the domain.",
+        "workingLatex": "\\text{Restricted to } [0, \\infty), \\ f \\ \\text{ would be one-to-one}",
+        "explanation": "The failure came entirely from allowing negative inputs alongside positive ones. Shrinking the domain to remove the negatives would repair injectivity, which shows the domain is essential to the claim.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$f$ is not one-to-one on $\\mathbb{R}$: there exist $a \\neq b$ with $f(a) = f(b)$, for example $f(-1) = f(1) = 1$ while $-1 \\neq 1$."
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "id": "al.y1.pure.argument-notation.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "equivalence", "coordinate geometry"],
+  "questionText": "Two lines in the plane are non-vertical, with gradients $m_1$ and $m_2$. Let $P$ be the statement \"$m_1 m_2 = -1$\" and let $Q$ be the statement \"the two lines are perpendicular\". Classify $P$ as a necessary condition, a sufficient condition, both, or neither, for $Q$, and state the correct connecting symbol.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two statements and note the domain restriction.",
+        "workingLatex": "P:\\ m_1 m_2 = -1, \\qquad Q:\\ \\text{the lines are perpendicular} \\quad (\\text{both lines non-vertical})",
+        "explanation": "The word 'non-vertical' guarantees both gradients $m_1$ and $m_2$ actually exist as real numbers. Fixing this domain first matters, because the gradient rule only makes sense when neither line is vertical.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall necessary, sufficient and the connecting symbols.",
+        "workingLatex": "\\text{sufficient}:\\ P \\Rightarrow Q, \\quad \\text{necessary}:\\ Q \\Rightarrow P, \\quad \\text{both}:\\ P \\Leftrightarrow Q",
+        "explanation": "If both implications hold then the two statements are logically equivalent and $P$ is both necessary and sufficient. So the plan is to test each direction and see whether we land on the two-way arrow.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the intuition linking gradients and right angles.",
+        "workingLatex": "m_2 = -\\frac{1}{m_1} \\;\\Leftrightarrow\\; m_1 m_2 = -1",
+        "explanation": "Rotating a line by $90^\\circ$ turns a gradient into its negative reciprocal, which is precisely the relationship $m_1 m_2 = -1$. This geometric fact is what ties the algebra to perpendicularity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the forward direction P ⇒ Q.",
+        "workingLatex": "m_1 m_2 = -1 \\;\\Rightarrow\\; m_2 = -\\tfrac{1}{m_1} \\;\\Rightarrow\\; \\text{lines are perpendicular}",
+        "explanation": "Assume $P$. Then each gradient is the negative reciprocal of the other, so the two directions differ by a quarter turn and the lines meet at a right angle. Hence $P$ guarantees $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude P is sufficient.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is true} \\;\\Rightarrow\\; P \\text{ is sufficient for } Q",
+        "explanation": "Because the gradient product $-1$ forces the lines to be perpendicular, $P$ on its own is enough to secure $Q$. That is the definition of a sufficient condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test the reverse direction Q ⇒ P.",
+        "workingLatex": "\\text{perpendicular, non-vertical} \\;\\Rightarrow\\; m_2 = -\\tfrac{1}{m_1} \\;\\Rightarrow\\; m_1 m_2 = -1",
+        "explanation": "Now assume $Q$: the two non-vertical lines meet at a right angle. The right angle forces each gradient to be the negative reciprocal of the other, and multiplying them gives $-1$. Hence $Q$ guarantees $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude P is necessary.",
+        "workingLatex": "Q \\Rightarrow P \\text{ is true} \\;\\Rightarrow\\; P \\text{ is necessary for } Q",
+        "explanation": "Since perpendicular non-vertical lines must have gradient product $-1$, the condition $P$ cannot be dispensed with when $Q$ holds. So $P$ is necessary for $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain why the non-vertical restriction is stated.",
+        "workingLatex": "\\text{vertical} \\perp \\text{horizontal, yet gradient product undefined}",
+        "explanation": "A vertical line paired with a horizontal one is perpendicular but has an undefined gradient, so the product $m_1 m_2 = -1$ cannot even be written. Restricting to non-vertical lines is exactly what keeps the equivalence clean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the overall conclusion.",
+        "workingLatex": "P \\Leftrightarrow Q \\;\\Rightarrow\\; P \\text{ is both necessary and sufficient for } Q",
+        "explanation": "Both directions hold, so the correct connective is the two-way arrow $\\Leftrightarrow$. For non-vertical lines, $m_1 m_2 = -1$ is both a necessary and a sufficient condition for perpendicularity.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P$ is both necessary and sufficient for $Q$, so $P \\Leftrightarrow Q$. For non-vertical lines, $m_1 m_2 = -1$ means each gradient is the negative reciprocal of the other, which holds exactly when the lines are perpendicular."
+  }
+}

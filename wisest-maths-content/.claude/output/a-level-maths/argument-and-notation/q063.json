@@ -1,0 +1,126 @@
+{
+  "id": "al.y1.pure.argument-notation.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "expression",
+  "tags": ["logic", "biconditional", "geometry", "triangle", "necessary and sufficient"],
+  "questionText": "Let $ABC$ be a triangle with sides $a = BC$, $b = CA$, $c = AB$ opposite the interior angles $A$, $B$, $C$ respectively. Prove that the triangle is equilateral if and only if it is equiangular (all three angles equal to $60^\\circ$). Prove both directions, and phrase your final conclusion using necessary and sufficient conditions.",
+  "questionDiagram": {
+    "type": "geometry",
+    "description": "Triangle ABC with its three sides and three interior angles labelled, used to relate equal sides to equal angles.",
+    "elements": [
+      "Triangle ABC",
+      "Side a = BC, opposite angle A",
+      "Side b = CA, opposite angle B",
+      "Side c = AB, opposite angle C",
+      "Interior angles A, B, C at vertices A, B, C"
+    ]
+  },
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the biconditional and the plan.",
+        "workingLatex": "\\text{Prove: equilateral } (a=b=c) \\iff \\text{equiangular } (A=B=C=60^\\circ)",
+        "explanation": "The statement joins two properties with 'if and only if', so it must be proved in both directions. We prove equilateral implies equiangular first, then the converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Record the angle-sum fact.",
+        "workingLatex": "A + B + C = 180^\\circ",
+        "explanation": "The interior angles of any triangle add to $180^\\circ$. This is what will pin the common angle down to a specific value once we know the angles are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Forward direction: assume equilateral.",
+        "workingLatex": "\\text{Assume } a = b = c",
+        "explanation": "We start from all three sides being equal and aim to deduce the angles. The isosceles-triangle theorem links equal sides to equal opposite angles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the isosceles theorem to one pair.",
+        "workingLatex": "b = c \\Rightarrow B = C \\quad (\\text{equal sides} \\Rightarrow \\text{equal opposite angles})",
+        "explanation": "Sides $b$ and $c$ are opposite angles $B$ and $C$, so equal sides force those angles to be equal. This is the base-angles property of an isosceles triangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the isosceles theorem to a second pair.",
+        "workingLatex": "a = b \\Rightarrow A = B",
+        "explanation": "Repeating the argument for sides $a$ and $b$, which are opposite angles $A$ and $B$, gives another equal pair. Two overlapping equalities will chain all three angles together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine to get all angles equal.",
+        "workingLatex": "\\Rightarrow A = B = C",
+        "explanation": "From $A=B$ and $B=C$ the three angles are all equal to one another. The triangle is therefore equiangular in the sense of having three equal angles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the common angle.",
+        "workingLatex": "3A = 180^\\circ \\Rightarrow A = B = C = 60^\\circ",
+        "explanation": "Substituting three equal angles into the angle sum gives $3A = 180^\\circ$. Dividing shows each angle is exactly $60^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the forward direction.",
+        "workingLatex": "\\text{equilateral} \\Rightarrow \\text{equiangular } (60^\\circ \\text{ each})",
+        "explanation": "Equal sides have forced equal angles, each measuring $60^\\circ$. This completes the first implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Reverse direction: assume equiangular.",
+        "workingLatex": "\\text{Assume } A = B = C = 60^\\circ",
+        "explanation": "Now we begin from equal angles and must recover equal sides. The converse of the isosceles theorem provides the needed link.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Apply the converse isosceles theorem once.",
+        "workingLatex": "B = C \\Rightarrow b = c \\quad (\\text{equal angles} \\Rightarrow \\text{equal opposite sides})",
+        "explanation": "If two angles are equal then the sides opposite them are equal; this is the converse of the base-angles property, and also follows from the sine rule. So $b = c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Apply the converse isosceles theorem again.",
+        "workingLatex": "A = B \\Rightarrow a = b",
+        "explanation": "Using another equal pair of angles gives a second pair of equal sides. Chaining these will force all three sides to agree.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Combine to get all sides equal.",
+        "workingLatex": "\\Rightarrow a = b = c",
+        "explanation": "From $a=b$ and $b=c$ all three sides are equal to one another. The triangle is therefore equilateral.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude the reverse direction.",
+        "workingLatex": "\\text{equiangular} \\Rightarrow \\text{equilateral}",
+        "explanation": "Equal angles have forced equal sides, completing the second implication. Both directions are now established.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Combine into the biconditional.",
+        "workingLatex": "\\text{equilateral} \\iff \\text{equiangular}",
+        "explanation": "Since each property implies the other, they are equivalent. Being equilateral is a necessary and sufficient condition for being equiangular, and vice versa.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Forward: $a=b=c$ with the isosceles theorem gives $A=B=C$, and the angle sum makes each $60^\\circ$. Reverse: $A=B=C=60^\\circ$ with the converse isosceles theorem gives $a=b=c$. Hence a triangle is equilateral $\\iff$ it is equiangular; each condition is necessary and sufficient for the other."
+  }
+}

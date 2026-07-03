@@ -1,0 +1,123 @@
+{
+  "id": "al.y1.pure.argument-notation.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "biconditional", "discriminant", "quadratic", "necessary and sufficient"],
+  "questionText": "For the quadratic equation $ax^2 + bx + c = 0$ with real coefficients and $a \\neq 0$, the discriminant is $\\Delta = b^2 - 4ac$. State and fully justify the three biconditionals: $\\Delta > 0 \\iff$ two distinct real roots; $\\Delta = 0 \\iff$ one repeated real root; $\\Delta < 0 \\iff$ no real roots. In each case classify the discriminant condition as necessary, sufficient, or both.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the three claims to be proved.",
+        "workingLatex": "\\Delta > 0 \\iff \\text{2 distinct real}, \\quad \\Delta = 0 \\iff \\text{1 repeated}, \\quad \\Delta < 0 \\iff \\text{none}",
+        "explanation": "Each claim is a biconditional, so for each we must show the discriminant condition forces the root count and vice versa. Completing the square once will let us settle all three together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Divide through by the leading coefficient.",
+        "workingLatex": "a \\neq 0:\\ x^2 + \\dfrac{b}{a}x + \\dfrac{c}{a} = 0",
+        "explanation": "The condition $a \\neq 0$ is what makes the equation genuinely quadratic and lets us divide safely. A monic equation is easier to complete the square on.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Complete the square.",
+        "workingLatex": "\\left(x + \\dfrac{b}{2a}\\right)^2 - \\dfrac{b^2}{4a^2} + \\dfrac{c}{a} = 0",
+        "explanation": "Rewriting the $x$-terms as a perfect square isolates the variable inside a single squared bracket. Everything about the number of roots then follows from that one square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange to isolate the square.",
+        "workingLatex": "\\left(x + \\dfrac{b}{2a}\\right)^2 = \\dfrac{b^2}{4a^2} - \\dfrac{c}{a} = \\dfrac{b^2 - 4ac}{4a^2}",
+        "explanation": "Moving the constants to the right expresses a square equal to a single fraction. The numerator is exactly the discriminant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Introduce the discriminant and its sign.",
+        "workingLatex": "\\left(x + \\dfrac{b}{2a}\\right)^2 = \\dfrac{\\Delta}{4a^2}, \\quad 4a^2 > 0",
+        "explanation": "Since $4a^2$ is a positive square, the sign of the right-hand side is identical to the sign of $\\Delta$. So the discriminant alone controls what happens.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the real-square principle.",
+        "workingLatex": "t^2 = \\dfrac{\\Delta}{4a^2} \\text{ has real } t \\iff \\dfrac{\\Delta}{4a^2} \\geq 0 \\iff \\Delta \\geq 0",
+        "explanation": "A real number squared can never be negative, so a real solution exists only when the right-hand side is at least zero. This single fact is the engine of all three cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Take square roots when the discriminant is non-negative.",
+        "workingLatex": "x = \\dfrac{-b \\pm \\sqrt{\\Delta}}{2a}",
+        "explanation": "When $\\Delta \\geq 0$ we may square-root both sides, recovering the familiar quadratic formula. The $\\pm$ is where the count of roots is decided.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case Delta positive: forward direction.",
+        "workingLatex": "\\Delta > 0:\\ \\sqrt{\\Delta} > 0 \\Rightarrow \\dfrac{-b+\\sqrt{\\Delta}}{2a} \\neq \\dfrac{-b-\\sqrt{\\Delta}}{2a}",
+        "explanation": "A strictly positive discriminant gives a nonzero square root, so the two signs produce two genuinely different real values. Hence there are two distinct real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Case Delta positive: converse and biconditional.",
+        "workingLatex": "\\text{2 distinct real roots} \\Rightarrow \\sqrt{\\Delta} \\text{ real and } \\neq 0 \\Rightarrow \\Delta > 0",
+        "explanation": "Conversely, two distinct real roots can only come from a real, nonzero square-root term, which forces $\\Delta > 0$. Both directions hold, so $\\Delta > 0 \\iff$ two distinct real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Case Delta zero: both directions.",
+        "workingLatex": "\\Delta = 0:\\ x = \\dfrac{-b}{2a} \\text{ (repeated)}; \\ \\text{equal roots} \\Rightarrow \\sqrt{\\Delta} = 0 \\Rightarrow \\Delta = 0",
+        "explanation": "A zero discriminant collapses the $\\pm$ to a single value, giving one repeated root. Conversely a single repeated root means the two formula values coincide, forcing $\\sqrt{\\Delta}=0$, so $\\Delta = 0 \\iff$ one repeated root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Case Delta negative: both directions.",
+        "workingLatex": "\\Delta < 0:\\ \\dfrac{\\Delta}{4a^2} < 0 \\Rightarrow \\text{no real } x; \\ \\text{no real roots} \\Rightarrow \\Delta < 0",
+        "explanation": "If $\\Delta < 0$ the square would have to equal a negative number, which no real value allows, so there are no real roots. Conversely, absence of real roots rules out $\\Delta \\geq 0$, giving $\\Delta < 0 \\iff$ no real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the cases are exhaustive and exclusive.",
+        "workingLatex": "\\Delta > 0, \\ \\Delta = 0, \\ \\Delta < 0 \\text{ partition all possibilities}",
+        "explanation": "Every real $\\Delta$ falls into exactly one of these three ranges, and each is matched with a distinct root count. That one-to-one pairing is what makes each implication reversible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Classify each condition.",
+        "workingLatex": "\\text{Each } \\Delta\\text{-condition is both necessary and sufficient for its root-count}",
+        "explanation": "Because each statement is a proven biconditional, the discriminant sign is enough to force the outcome (sufficient) and is also forced by it (necessary). So every one is necessary and sufficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Justify why a biconditional gives both.",
+        "workingLatex": "P \\iff Q \\Rightarrow P \\text{ necessary and sufficient for } Q",
+        "explanation": "The forward arrow $P \\Rightarrow Q$ makes $P$ sufficient for $Q$, while $Q \\Rightarrow P$ makes $P$ necessary. Having both is exactly the meaning of 'necessary and sufficient'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Summarise the three biconditionals.",
+        "workingLatex": "\\Delta > 0 \\iff \\text{2 roots}, \\ \\Delta = 0 \\iff \\text{1 root}, \\ \\Delta < 0 \\iff \\text{0 roots}",
+        "explanation": "Collecting the results, the sign of the discriminant is a complete and reliable test for the number of real roots. Each equivalence is a necessary and sufficient condition.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Completing the square gives $\\left(x+\\tfrac{b}{2a}\\right)^2 = \\tfrac{\\Delta}{4a^2}$ with $4a^2>0$, so the sign of $\\Delta$ fixes the root count: $\\Delta>0 \\iff$ two distinct real roots, $\\Delta=0 \\iff$ one repeated root, $\\Delta<0 \\iff$ no real roots. Each discriminant condition is necessary and sufficient for its root-count."
+  }
+}

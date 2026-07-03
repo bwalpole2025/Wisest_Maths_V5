@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "quantifiers", "set notation"],
+  "questionText": "Translate the statement \"for all real numbers $x$, $x^2$ is greater than or equal to $0$\" into symbolic form using quantifier and set notation. Explain what each symbol means, and state whether the statement is true.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the logical shape of the sentence.",
+        "workingLatex": "(\\text{for all } x \\text{ of a certain type})\\ (\\text{a property of } x)",
+        "explanation": "The sentence makes a claim about every real number, not one specific value. Recognising it as a 'for all' statement tells us a universal quantifier is needed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the symbol for 'for all'.",
+        "workingLatex": "\\forall",
+        "explanation": "The universal quantifier $\\forall$ is read 'for all' or 'for every'. It signals that what follows must hold without a single exception.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Express 'x is a real number' in set notation.",
+        "workingLatex": "x \\in \\mathbb{R}",
+        "explanation": "The symbol $\\in$ means 'is an element of', and $\\mathbb{R}$ denotes the set of all real numbers. Together they restrict $x$ to the reals.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the property being asserted.",
+        "workingLatex": "x^2 \\ge 0",
+        "explanation": "The phrase 'greater than or equal to $0$' is captured by $\\ge 0$. This is the condition claimed to hold for every real $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the full symbolic statement.",
+        "workingLatex": "\\forall x \\in \\mathbb{R},\\ x^2 \\ge 0",
+        "explanation": "Reading left to right, this says 'for all $x$ in the reals, $x$ squared is at least $0$'. The quantifier and domain come first, then the property.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Decide whether the statement is true.",
+        "workingLatex": "x^2 = x \\cdot x \\ge 0 \\text{ for every real } x",
+        "explanation": "A real number squared is either a positive times a positive or a negative times a negative, and it is $0$ when $x=0$. In every case the result is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\forall x \\in \\mathbb{R},\\ x^2 \\ge 0 \\text{ is true}",
+        "explanation": "Since no real number has a negative square, the universal claim holds with no exceptions, so the statement is true.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\forall x \\in \\mathbb{R},\\ x^2 \\ge 0$, read 'for all real $x$, $x^2 \\ge 0$'. The statement is true."
+  }
+}

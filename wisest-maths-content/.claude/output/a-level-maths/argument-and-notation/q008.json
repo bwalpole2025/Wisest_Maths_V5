@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "implication", "geometry"],
+  "questionText": "Consider the statement: \"If a triangle is equilateral then it is isosceles.\" Let $P$ be \"the triangle is equilateral\" and $Q$ be \"the triangle is isosceles\". Determine whether $P$ is a sufficient condition for $Q$, a necessary condition for $Q$, both, or neither. Justify your answer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Pin down the definitions of the two properties.",
+        "workingLatex": "P:\\ \\text{all three sides equal}, \\qquad Q:\\ \\text{at least two sides equal}",
+        "explanation": "Before comparing the statements we fix exactly what each word means. 'Equilateral' demands all three sides equal, while 'isosceles' only asks for at least two equal sides, so equilateral is the stricter condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall what sufficient and necessary mean.",
+        "workingLatex": "\\text{sufficient}:\\ P \\Rightarrow Q, \\qquad \\text{necessary}:\\ Q \\Rightarrow P",
+        "explanation": "$P$ is sufficient for $Q$ when having $P$ guarantees $Q$, and $P$ is necessary for $Q$ when $Q$ cannot happen without $P$. These are two separate directions, so we test each one on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the forward direction P ⇒ Q.",
+        "workingLatex": "\\text{all three sides equal} \\Rightarrow \\text{at least two sides equal}",
+        "explanation": "Assume the triangle is equilateral. If all three sides are equal, then in particular two of them are equal, which is precisely what 'isosceles' requires.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Conclude the forward direction holds, so P is sufficient.",
+        "workingLatex": "P \\Rightarrow Q \\text{ is true} \\;\\Rightarrow\\; P \\text{ is sufficient for } Q",
+        "explanation": "Every equilateral triangle is automatically isosceles, so being equilateral is enough on its own to make the triangle isosceles. That is exactly the meaning of a sufficient condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the reverse direction Q ⇒ P with a counterexample.",
+        "workingLatex": "\\text{sides } 5,\\,5,\\,3:\\ \\text{isosceles but not equilateral}",
+        "explanation": "To check necessity we ask whether being isosceles forces the triangle to be equilateral. A triangle with sides 5, 5 and 3 has two equal sides yet not three, so it satisfies $Q$ but not $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the reverse direction fails, so P is not necessary.",
+        "workingLatex": "Q \\not\\Rightarrow P \\;\\Rightarrow\\; P \\text{ is not necessary for } Q",
+        "explanation": "The counterexample shows a triangle can be isosceles without being equilateral, so $Q$ does not require $P$. Hence being equilateral is not a necessary condition for being isosceles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the overall conclusion.",
+        "workingLatex": "P \\text{ is sufficient but not necessary for } Q",
+        "explanation": "Only the forward implication holds, so equilateral is enough to guarantee isosceles but is not required for it. In short, $P$ is sufficient but not necessary for $Q$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P$ is a sufficient but not a necessary condition for $Q$: every equilateral triangle is isosceles ($P \\Rightarrow Q$), but a $5,5,3$ triangle is isosceles without being equilateral."
+  }
+}

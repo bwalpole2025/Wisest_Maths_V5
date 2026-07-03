@@ -1,0 +1,116 @@
+{
+  "id": "al.y1.pure.argument-notation.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "equivalence", "quadratic", "necessary and sufficient"],
+  "questionText": "Consider the statements $P:\\ x^2 - 4x + 3 = 0$, $\\ Q:\\ x = 1$ and $\\ R:\\ x = 3$, where $x \\in \\mathbb{R}$. Investigate all the logical implications among $P$, $Q$ and $R$: establish whether $Q \\Rightarrow P$, whether $R \\Rightarrow P$, whether $P \\Rightarrow (Q \\vee R)$, and whether $P \\Rightarrow Q$. Hence express the complete relationship between $P$ and the pair $Q,R$ using logical connectives, and comment on necessity and sufficiency.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Lay out the three statements and the plan.",
+        "workingLatex": "P:\\ x^2 - 4x + 3 = 0, \\quad Q:\\ x = 1, \\quad R:\\ x = 3",
+        "explanation": "Before deciding which arrows connect the statements, we record exactly what each one says. Because each symbol claims a direction, we will have to test both directions of every link separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic in P.",
+        "workingLatex": "x^2 - 4x + 3 = (x-1)(x-3)",
+        "explanation": "Factorising exposes the roots directly, which is the fastest route to relating $P$ to the two candidate values $x=1$ and $x=3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite P as a product equal to zero.",
+        "workingLatex": "P \\iff (x-1)(x-3) = 0",
+        "explanation": "Since the factorisation is an identity, the equation $P$ holds under exactly the same conditions as the product being zero. This is a genuine equivalence, not just an implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the zero-product principle.",
+        "workingLatex": "(x-1)(x-3) = 0 \\iff x = 1 \\ \\text{or}\\ x = 3",
+        "explanation": "A product of real numbers is zero if and only if one of the factors is zero. This converts the algebra into a logical 'or' of the two value statements.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the disjunction Q or R.",
+        "workingLatex": "P \\iff (Q \\vee R)",
+        "explanation": "The right-hand side is precisely the statement '$Q$ or $R$'. So already we can see the natural full relationship is a biconditional with the disjunction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test Q implies P by substitution.",
+        "workingLatex": "x = 1:\\ 1 - 4 + 3 = 0 \\ \\checkmark \\ \\Rightarrow\\ Q \\Rightarrow P",
+        "explanation": "Assuming $Q$ and putting $x=1$ into the quadratic gives zero, so $P$ holds. Hence $Q$ is enough on its own to guarantee $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Test R implies P by substitution.",
+        "workingLatex": "x = 3:\\ 9 - 12 + 3 = 0 \\ \\checkmark \\ \\Rightarrow\\ R \\Rightarrow P",
+        "explanation": "Assuming $R$ and putting $x=3$ into the quadratic also gives zero, so $P$ holds. Thus $R$ likewise guarantees $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm P implies the disjunction Q or R.",
+        "workingLatex": "P \\Rightarrow (x-1)(x-3) = 0 \\Rightarrow (Q \\vee R)",
+        "explanation": "If $P$ holds, the factorised form forces one factor to vanish, giving $x=1$ or $x=3$. So $P$ cannot be true unless at least one of $Q$, $R$ is true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Test P implies Q with a counterexample.",
+        "workingLatex": "x = 3:\\ P \\text{ true}, \\ Q \\text{ false} \\ \\Rightarrow\\ P \\not\\Rightarrow Q",
+        "explanation": "At $x=3$ the equation $P$ holds but $Q$ (which says $x=1$) is false. A single counterexample is enough to show $P$ does not force $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Note the symmetric failure P implies R.",
+        "workingLatex": "x = 1:\\ P \\text{ true}, \\ R \\text{ false} \\ \\Rightarrow\\ P \\not\\Rightarrow R",
+        "explanation": "By the mirror-image argument, $x=1$ satisfies $P$ but not $R$. So $P$ on its own pins the value down only to the pair, not to either one individually.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Assemble both directions with the disjunction.",
+        "workingLatex": "(Q \\vee R) \\Rightarrow P \\ \\text{and}\\ P \\Rightarrow (Q \\vee R)",
+        "explanation": "Steps 6-7 give the disjunction implying $P$, and step 8 gives $P$ implying the disjunction. Both directions holding is exactly the condition for a biconditional.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the complete relationship.",
+        "workingLatex": "P \\iff (Q \\vee R)",
+        "explanation": "Combining the two implications yields a clean equivalence between $P$ and 'either $Q$ or $R$'. This is the tightest true statement linking $P$ to the value statements.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Translate into necessary and sufficient language.",
+        "workingLatex": "Q \\text{ sufficient, not necessary, for } P; \\quad (Q \\vee R) \\text{ necessary and sufficient for } P",
+        "explanation": "Each of $Q$ and $R$ guarantees $P$ so is sufficient, but neither is required (the other root works instead) so neither is necessary. The disjunction is both required and enough, so it is necessary and sufficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Summarise all the implications.",
+        "workingLatex": "Q \\Rightarrow P, \\ R \\Rightarrow P, \\ P \\Rightarrow (Q \\vee R), \\ P \\not\\Rightarrow Q, \\ P \\iff (Q \\vee R)",
+        "explanation": "Collecting the verified links gives a full picture: the individual values are one-way sufficient conditions, while their disjunction is the exact equivalent of $P$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-1)(x-3)=0$ gives $P \\iff (Q \\vee R)$. Both $Q \\Rightarrow P$ and $R \\Rightarrow P$ hold, and $P \\Rightarrow (Q \\vee R)$, but $P \\not\\Rightarrow Q$ (since $x=3$ satisfies $P$). Each of $Q, R$ is sufficient but not necessary for $P$; $Q \\vee R$ is necessary and sufficient for $P$."
+  }
+}

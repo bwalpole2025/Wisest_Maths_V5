@@ -1,0 +1,116 @@
+{
+  "id": "al.y1.pure.argument-notation.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": ["logic", "equivalence", "necessary and sufficient", "completing the square", "discriminant"],
+  "questionText": "Consider the quadratic expression $ax^2 + bx + c$, where $a, b, c$ are real numbers and $a \\neq 0$. Call it a perfect square trinomial if it can be written as $a(x+d)^2$ for some real number $d$. Let $P$ be the statement '$ax^2+bx+c$ is a perfect square trinomial' and let $Q$ be the statement '$b^2 = 4ac$'. Prove that $P \\Leftrightarrow Q$ by proving both directions, and hence describe the relationship between the two conditions using the language of necessary and sufficient conditions.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set out the two statements and the goal.",
+        "workingLatex": "P:\\ ax^2+bx+c = a(x+d)^2 \\text{ for some real } d, \\qquad Q:\\ b^2 = 4ac",
+        "explanation": "A biconditional $P \\Leftrightarrow Q$ is really two separate claims joined together, so before any algebra we write down exactly what each side asserts. This keeps us honest about what has to be proved in each direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Give the intuitive reason the discriminant should appear.",
+        "workingLatex": "b^2 - 4ac = \\text{discriminant}, \\qquad b^2 = 4ac \\Leftrightarrow b^2 - 4ac = 0",
+        "explanation": "A perfect square such as $a(x+d)^2$ touches zero at exactly one point $x=-d$, meaning a single repeated root. The discriminant $b^2-4ac$ counts real roots, so 'repeated root' matching 'discriminant zero' is why the target condition is $b^2=4ac$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Begin the forward direction by assuming P.",
+        "workingLatex": "\\text{Assume } P:\\quad ax^2+bx+c = a(x+d)^2",
+        "explanation": "To prove $P \\Rightarrow Q$ we start by supposing $P$ is true and aim to reach $Q$. Assuming the perfect-square form gives us a concrete expression to expand and compare.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the perfect-square form.",
+        "workingLatex": "a(x+d)^2 = a\\left(x^2 + 2dx + d^2\\right) = ax^2 + 2ad\\,x + ad^2",
+        "explanation": "Expanding lets us line the assumed form up against the original $ax^2+bx+c$. Once both are written as standard quadratics, matching coefficients is straightforward.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Match coefficients of like powers of x.",
+        "workingLatex": "b = 2ad, \\qquad c = ad^2",
+        "explanation": "Two quadratics are equal for all $x$ exactly when their matching coefficients agree. Comparing the $x$ terms gives $b=2ad$ and the constants give $c=ad^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute b squared from the matched coefficient.",
+        "workingLatex": "b^2 = (2ad)^2 = 4a^2 d^2",
+        "explanation": "We square the expression for $b$ so that we can compare it directly with $4ac$. Squaring $2ad$ produces the factor $4a^2d^2$ we will need.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute 4ac from the matched coefficient.",
+        "workingLatex": "4ac = 4a\\,(ad^2) = 4a^2 d^2",
+        "explanation": "Substituting $c=ad^2$ into $4ac$ gives exactly the same quantity as $b^2$. Building both sides independently and seeing them coincide is the cleanest way to establish the equality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the forward implication.",
+        "workingLatex": "b^2 = 4a^2 d^2 = 4ac \\quad\\Rightarrow\\quad P \\Rightarrow Q",
+        "explanation": "Since $b^2$ and $4ac$ both equal $4a^2d^2$, they are equal to each other, so $Q$ holds. This proves that being a perfect square is enough to force $b^2=4ac$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Begin the reverse direction by completing the square.",
+        "workingLatex": "\\text{Assume } Q:\\ b^2=4ac.\\quad ax^2+bx+c = a\\left(x^2 + \\tfrac{b}{a}x\\right) + c",
+        "explanation": "Now we assume $Q$ and try to reach $P$. Factoring $a$ out of the quadratic terms is the first move of completing the square, which is the natural way to reveal a perfect-square form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Finish completing the square.",
+        "workingLatex": "= a\\left(x + \\tfrac{b}{2a}\\right)^2 - a\\cdot\\tfrac{b^2}{4a^2} + c = a\\left(x + \\tfrac{b}{2a}\\right)^2 + \\left(c - \\tfrac{b^2}{4a}\\right)",
+        "explanation": "Completing the square always leaves a squared bracket plus a constant remainder. Whether the expression is a perfect square depends entirely on whether that leftover constant vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use the assumption to kill the constant remainder.",
+        "workingLatex": "b^2 = 4ac \\;\\Rightarrow\\; c - \\tfrac{b^2}{4a} = c - \\tfrac{4ac}{4a} = c - c = 0",
+        "explanation": "This is where the hypothesis $b^2=4ac$ does its work: it makes the leftover constant exactly zero. Without that condition a nonzero remainder would spoil the perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Conclude the reverse implication.",
+        "workingLatex": "ax^2+bx+c = a\\left(x + \\tfrac{b}{2a}\\right)^2 \\quad\\Rightarrow\\quad Q \\Rightarrow P",
+        "explanation": "With the remainder gone, the expression is $a(x+d)^2$ with $d=\\tfrac{b}{2a}$, which is precisely the definition of a perfect square trinomial. So $Q$ is enough to force $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Combine both directions into the biconditional.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\quad\\Rightarrow\\quad P \\Leftrightarrow Q",
+        "explanation": "Having proved each implication separately, the two arrows combine into a single two-way arrow. A statement is proved 'if and only if' exactly when both one-way implications hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion in necessary/sufficient language.",
+        "workingLatex": "b^2 = 4ac \\ \\text{is necessary and sufficient for}\\ ax^2+bx+c\\ \\text{to be a perfect square}",
+        "explanation": "Because each condition forces the other, $b^2=4ac$ is both necessary and sufficient for the expression to be a perfect square. Sufficient means it guarantees the square; necessary means the square cannot occur without it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$: the quadratic $ax^2+bx+c$ (with $a \\neq 0$) is a perfect square trinomial if and only if $b^2 = 4ac$. Hence $b^2=4ac$ is a necessary and sufficient condition for the expression to be a perfect square."
+  }
+}

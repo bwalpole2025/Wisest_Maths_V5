@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "sufficient condition", "inequalities"],
+  "questionText": "Let $x$ and $y$ be real numbers, and consider the statements $P:\\ (x > 2 \\text{ and } y > 3)$ and $Q:\\ x + y > 5$. Determine which of $P$ and $Q$ implies the other. Hence state whether $P$ is a sufficient condition, a necessary condition, both, or neither, for $Q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the two conditions precisely.",
+        "workingLatex": "P:\\ x > 2 \\ \\text{and}\\ y > 3, \\qquad Q:\\ x + y > 5",
+        "explanation": "Comparing two statements starts with writing each one exactly as given. $P$ places a separate lower bound on each variable, while $Q$ only controls their sum, so they carry different information.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Clarify what has to be checked.",
+        "workingLatex": "P \\Rightarrow Q \\ ? \\qquad Q \\Rightarrow P \\ ?",
+        "explanation": "Deciding which statement implies the other means testing each direction on its own. One direction can hold while the other fails, so we must not assume symmetry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Assume P to test the forward direction.",
+        "workingLatex": "x > 2, \\qquad y > 3",
+        "explanation": "To show $P \\Rightarrow Q$ we take $P$ as given and try to reach $Q$. Having both bounds available is the natural starting point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add the two inequalities.",
+        "workingLatex": "x + y > 2 + 3",
+        "explanation": "Two inequalities pointing the same way can be added term by term. Adding the lower bounds gives a lower bound on the sum $x+y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude the forward implication holds.",
+        "workingLatex": "x + y > 5 \\quad \\Rightarrow \\quad P \\Rightarrow Q \\ \\text{is true}",
+        "explanation": "The bound simplifies to exactly $Q$. So whenever both variables clear their individual thresholds, their sum is forced above $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test the reverse direction by seeking a counterexample.",
+        "workingLatex": "\\text{Seek } x, y \\text{ with } x + y > 5 \\text{ but not } (x > 2 \\text{ and } y > 3)",
+        "explanation": "To decide whether $Q \\Rightarrow P$, a single counterexample is enough to break it. We look for a large sum built without meeting both separate conditions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Choose specific values.",
+        "workingLatex": "x = 10, \\qquad y = 0",
+        "explanation": "Letting one variable be large and the other small keeps the sum big while sacrificing one of the two bounds. This is a promising way to satisfy $Q$ but not $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check that Q holds for these values.",
+        "workingLatex": "x + y = 10 + 0 = 10 > 5",
+        "explanation": "The sum comfortably exceeds $5$, so these numbers do satisfy $Q$. That is required for a valid counterexample to the reverse direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check that P fails for these values.",
+        "workingLatex": "y = 0 \\not> 3 \\quad \\Rightarrow \\quad P \\ \\text{is false}",
+        "explanation": "Although $x=10>2$, the second requirement $y>3$ fails because $y=0$. Since $P$ needs both parts, it is false here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the reverse implication fails.",
+        "workingLatex": "Q \\not\\Rightarrow P",
+        "explanation": "We found values making $Q$ true and $P$ false, so $Q$ does not guarantee $P$. This rules out the two-way arrow $\\Leftrightarrow$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Translate into necessary / sufficient language.",
+        "workingLatex": "P \\Rightarrow Q \\text{ only} \\quad \\Rightarrow \\quad P \\text{ sufficient, not necessary for } Q",
+        "explanation": "Because $P$ guarantees $Q$, it is sufficient. Because $Q$ can hold without $P$ (as $x=10,\\ y=0$ showed), $P$ is not necessary. 'Sufficient' means enough; 'necessary' means required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Rightarrow Q$ but $Q \\not\\Rightarrow P$ (e.g. $x=10,\\ y=0$). So $P$ is a sufficient but not a necessary condition for $Q$."
+  }
+}

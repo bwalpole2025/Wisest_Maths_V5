@@ -1,0 +1,81 @@
+{
+  "id": "al.y1.pure.argument-notation.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": ["logic", "quantifiers", "set notation", "proof", "rational numbers"],
+  "questionText": "Prove that the sum of any two rational numbers is rational, beginning from the definition of a rational number. Explain also why this result is a universally quantified ($\\forall$) statement, and write the claim itself using quantifier and set notation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the claim using quantifier and set notation.",
+        "workingLatex": "\\forall x, y \\in \\mathbb{Q}, \\ x + y \\in \\mathbb{Q}",
+        "explanation": "The word 'any' signals that the claim ranges over every pair of rationals, which is exactly what $\\forall$ (for all) records. Stating it symbolically fixes precisely what must be proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the definition of a rational number.",
+        "workingLatex": "r \\in \\mathbb{Q} \\iff r = \\tfrac{p}{q}, \\ p \\in \\mathbb{Z}, \\ q \\in \\mathbb{Z}, \\ q \\neq 0",
+        "explanation": "A rational number is a ratio of two integers with nonzero denominator. Starting from this definition means every later step rests on solid ground rather than intuition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Represent two arbitrary rational numbers.",
+        "workingLatex": "x = \\tfrac{a}{b}, \\quad y = \\tfrac{c}{d}, \\qquad a,b,c,d \\in \\mathbb{Z}, \\ b,d \\neq 0",
+        "explanation": "We assume nothing about $x$ and $y$ beyond being rational, so whatever we prove will apply to every rational. Using letters rather than specific numbers is what makes the argument universal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add the two fractions over a common denominator.",
+        "workingLatex": "x + y = \\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}",
+        "explanation": "Putting the fractions over the common denominator $bd$ combines them into a single ratio. Now we just need to check that this ratio fits the definition of rational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Show the numerator is an integer.",
+        "workingLatex": "a,b,c,d \\in \\mathbb{Z} \\Rightarrow ad + bc \\in \\mathbb{Z}",
+        "explanation": "Integers are closed under multiplication and addition, so $ad+bc$ is again an integer. The numerator therefore causes no problem.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Show the denominator is a nonzero integer.",
+        "workingLatex": "b,d \\in \\mathbb{Z}, \\ b,d \\neq 0 \\Rightarrow bd \\in \\mathbb{Z}, \\ bd \\neq 0",
+        "explanation": "The product of two integers is an integer, and a product of nonzero numbers is nonzero. So the denominator $bd$ is a valid, nonzero integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Match the sum to the definition of rational.",
+        "workingLatex": "x+y = \\frac{ad+bc}{bd} = \\frac{\\text{integer}}{\\text{nonzero integer}}",
+        "explanation": "The sum is an integer divided by a nonzero integer, which is precisely the form required for a rational number. Every condition of the definition is met.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the sum is rational.",
+        "workingLatex": "x + y \\in \\mathbb{Q}",
+        "explanation": "Since the sum matches the definition, it is rational. The proof is complete for the two numbers we selected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Explain why the statement is universally quantified.",
+        "workingLatex": "\\text{general } a,b,c,d \\Rightarrow \\text{result holds } \\forall x,y \\in \\mathbb{Q}",
+        "explanation": "Because we never used any special feature of $x$ and $y$, the same reasoning works for every pair of rationals, so the result is 'for all', not merely 'there exists'. An $\\exists$ claim would need only one example, but here we have covered all cases at once.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Writing $x=\\tfrac{a}{b}$, $y=\\tfrac{c}{d}$ gives $x+y=\\tfrac{ad+bc}{bd}$, an integer over a nonzero integer, so $x+y \\in \\mathbb{Q}$. As the proof uses arbitrary rationals, it establishes the universal statement $\\forall x,y \\in \\mathbb{Q},\\ x+y \\in \\mathbb{Q}$."
+  }
+}

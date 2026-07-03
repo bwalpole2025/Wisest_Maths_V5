@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "converse", "fallacy", "counterexample"],
+  "questionText": "A student argues: \"If it rains, then the ground gets wet. The ground is wet, so it must have rained.\" Identify the logical error in this reasoning, naming the fallacy, and give a mathematical analogue of the same error using the statement $x^2 = 9$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Introduce symbols for the two everyday statements.",
+        "workingLatex": "R:\\ \\text{it rains}, \\qquad W:\\ \\text{the ground is wet}",
+        "explanation": "Replacing the sentences with symbols strips away the story and exposes the pure logical shape of the argument. It is the shape, not the topic, that is either valid or invalid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the premise that is given.",
+        "workingLatex": "\\text{Premise: } R \\Rightarrow W",
+        "explanation": "'If it rains, the ground gets wet' is a one-way implication: rain guarantees wetness. It says nothing on its own about what wetness guarantees.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write out the structure of the student's argument.",
+        "workingLatex": "\\text{Given } R \\Rightarrow W \\ \\text{ and } \\ W, \\ \\text{ they conclude } R",
+        "explanation": "The argument starts from the implication and the fact that the ground is wet, then leaps to the cause. Laying it out this way lets us check whether the conclusion really follows.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compare with the valid pattern (modus ponens).",
+        "workingLatex": "\\text{Valid: } \\ R \\Rightarrow W, \\ R \\ \\therefore\\ W",
+        "explanation": "The genuinely valid move is to affirm the first part $R$ and deduce the second part $W$. Here $R$ is exactly what we are trying to prove, so this valid route is not available.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the invalid pattern actually used.",
+        "workingLatex": "\\text{Used: } \\ R \\Rightarrow W, \\ W \\ \\therefore\\ R \\quad (\\text{invalid})",
+        "explanation": "The student affirms the second part $W$ and concludes the first part $R$. This reversal is the classic error known as affirming the consequent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Explain what the argument secretly assumes.",
+        "workingLatex": "\\text{It silently uses the converse } \\ W \\Rightarrow R",
+        "explanation": "To get from $W$ back to $R$ you would need the converse implication, but the converse is a different claim that was never given. Treating a statement and its converse as the same thing is the heart of the fallacy.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Show the converse can fail.",
+        "workingLatex": "\\text{A sprinkler makes } W \\text{ true while } R \\text{ is false}",
+        "explanation": "Any other cause of a wet ground breaks the converse, so wetness does not pin down rain as the cause. A single such situation is enough to show the reasoning is unsound.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the mathematical analogue.",
+        "workingLatex": "P:\\ x = 3, \\qquad Q:\\ x^2 = 9, \\qquad P \\Rightarrow Q",
+        "explanation": "Here $x=3$ genuinely forces $x^2=9$, mirroring 'rain forces wetness'. We now watch a student make the same reversed leap in a purely mathematical setting.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the flawed mathematical reasoning.",
+        "workingLatex": "\\text{Flaw: from } x^2 = 9 \\ \\text{ conclude } \\ x = 3",
+        "explanation": "This affirms the consequent $Q$ and jumps to $P$, exactly as the wet-ground argument did. It quietly assumes the converse $x^2=9\\Rightarrow x=3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Give the counterexample.",
+        "workingLatex": "x = -3:\\ (-3)^2 = 9 \\ \\text{ but } \\ x \\neq 3",
+        "explanation": "The value $-3$ satisfies $x^2=9$ yet is not $3$, so the converse is false. This is the mathematical twin of the sprinkler that wets the ground without rain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the correct implication.",
+        "workingLatex": "x^2 = 9 \\ \\Rightarrow\\ x = 3 \\ \\text{ or } \\ x = -3",
+        "explanation": "The honest conclusion keeps both roots joined by 'or', because $x^2=9$ narrows $x$ down only to that pair. Dropping the second possibility is what created the fallacy.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The error is the fallacy of affirming the consequent (affirming the converse): from $R\\Rightarrow W$ and $W$ one cannot deduce $R$. The mathematical analogue is deducing $x=3$ from $x^2=9$; this fails because $x=-3$ also satisfies $x^2=9$, so $x^2=9\\Rightarrow x=3$ or $x=-3$."
+  }
+}

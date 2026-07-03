@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "converse", "counterexample", "geometry"],
+  "questionText": "$ABCD$ is a quadrilateral. Consider the statements $P:\\ ABCD$ is a rhombus, and $Q:\\ ABCD$ has perpendicular diagonals. Determine the logical relationship between $P$ and $Q$, deciding which of $\\Rightarrow$, $\\Leftarrow$ or $\\Leftrightarrow$ applies. Hence state whether being a rhombus is a necessary condition, a sufficient condition, both, or neither, for having perpendicular diagonals.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the two geometric statements.",
+        "workingLatex": "P:\\ ABCD \\text{ is a rhombus}, \\qquad Q:\\ \\text{diagonals of } ABCD \\text{ are perpendicular}",
+        "explanation": "To pick the right connective we must test whether each property forces the other. Naming the statements keeps the two directions apart.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the defining property of a rhombus.",
+        "workingLatex": "\\text{rhombus} = \\text{parallelogram with all four sides equal}",
+        "explanation": "A rhombus is a parallelogram whose four sides are equal in length. This high degree of symmetry is what constrains its diagonals.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the forward direction P implies Q.",
+        "workingLatex": "\\text{diagonals bisect each other and are perpendicular bisectors}",
+        "explanation": "In a rhombus the diagonals are perpendicular bisectors of each other: each diagonal splits it into two congruent triangles that meet at right angles at the centre. So a rhombus always has perpendicular diagonals.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the forward conclusion.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ is true}",
+        "explanation": "Every rhombus automatically has perpendicular diagonals, so the property $Q$ is guaranteed by being a rhombus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up a test of the converse.",
+        "workingLatex": "\\text{seek } ABCD \\text{ with perpendicular diagonals but not a rhombus}",
+        "explanation": "To decide the converse we look for a single quadrilateral that has perpendicular diagonals yet fails to be a rhombus. If even one exists, the converse is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Choose a kite as the counterexample.",
+        "workingLatex": "\\text{kite: } AB=AD, \\ CB=CD, \\ AB \\neq CB",
+        "explanation": "A kite has two pairs of adjacent equal sides but not all four equal, so it is not a rhombus. It is the natural shape to try because its lopsided symmetry still constrains the diagonals.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Show the kite has perpendicular diagonals.",
+        "workingLatex": "\\text{axis of symmetry } \\perp \\text{ other diagonal} \\Rightarrow \\text{diagonals} \\perp",
+        "explanation": "The axis of a kite is the perpendicular bisector of the other diagonal, so the diagonals meet at right angles. Thus $Q$ holds while $P$ fails, giving a valid counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the converse is false.",
+        "workingLatex": "Q \\not\\Rightarrow P",
+        "explanation": "Because the kite satisfies $Q$ but not $P$, the converse fails, which immediately rules out the two-way symbol $\\Leftrightarrow$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Select the correct connecting symbol.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ only}",
+        "explanation": "Only the forward implication survives, so the correct connective is the one-way arrow from rhombus to perpendicular diagonals.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Translate into necessary/sufficient language.",
+        "workingLatex": "P \\text{ sufficient for } Q, \\ \\text{ not necessary}",
+        "explanation": "Being a rhombus guarantees perpendicular diagonals, so it is sufficient; but perpendicular diagonals can occur without a rhombus (the kite), so it is not necessary.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Rightarrow Q$ only. A rhombus always has perpendicular diagonals, but a kite has perpendicular diagonals without being a rhombus, so the converse is false. Being a rhombus is therefore a sufficient but not a necessary condition for having perpendicular diagonals."
+  }
+}

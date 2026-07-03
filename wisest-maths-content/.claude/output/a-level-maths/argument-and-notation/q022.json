@@ -1,0 +1,67 @@
+{
+  "id": "al.y1.pure.argument-notation.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": ["logic", "quantifiers", "implication", "primes"],
+  "questionText": "Express the statement 'every even integer greater than $2$ is not prime' symbolically, using the universal quantifier $\\forall$, the membership symbol $\\in$, and an implication $\\Rightarrow$. State whether the statement is true, giving a brief reason.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the three ingredients a symbolic form needs.",
+        "workingLatex": "\\text{quantifier} \\ + \\ \\text{hypothesis} \\ + \\ \\text{conclusion}",
+        "explanation": "A symbolic version of a general claim needs a quantifier to say 'for all', a hypothesis picking out which numbers we mean, and a conclusion asserted about them. Naming these parts first tells us exactly what to translate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce the variable and its domain with the quantifier.",
+        "workingLatex": "\\forall n \\in \\mathbb{Z}",
+        "explanation": "The claim is about integers, so we quantify over $n$ in $\\mathbb{Z}$. The symbol $\\forall$ means 'for every', and $\\in \\mathbb{Z}$ fixes the world of objects we are discussing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the hypothesis 'even and greater than 2'.",
+        "workingLatex": "(n \\text{ is even}) \\land (n > 2)",
+        "explanation": "The phrase 'even integer greater than 2' is a condition selecting a subset of integers, so it belongs on the left of the implication. The word 'and' becomes $\\land$ because both properties must hold together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the conclusion 'not prime'.",
+        "workingLatex": "n \\text{ is not prime}",
+        "explanation": "What the statement asserts about those numbers is that they fail to be prime, so this becomes the right-hand side of the implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the parts into one symbolic statement.",
+        "workingLatex": "\\forall n \\in \\mathbb{Z},\\ (n \\text{ is even} \\land n > 2) \\Rightarrow n \\text{ is not prime}",
+        "explanation": "The implication $\\Rightarrow$ links the condition to the conclusion, while the quantifier ranges over the whole thing. This is the required symbolic form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Analyse whether such an integer can be prime.",
+        "workingLatex": "n \\text{ even},\\ n > 2 \\Rightarrow n = 2m,\\ m \\ge 2",
+        "explanation": "An even number is a multiple of 2, and being larger than 2 forces the other factor $m$ to be at least 2. So the number is a genuine product of two factors each bigger than 1.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the statement is true.",
+        "workingLatex": "2 \\mid n,\\ 2 \\ne n \\Rightarrow n \\text{ is composite, so not prime}",
+        "explanation": "A prime has no divisors other than 1 and itself, but here 2 is a divisor different from $n$, so $n$ is composite. Hence every such integer is not prime and the statement is true.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\forall n \\in \\mathbb{Z},\\ (n \\text{ is even} \\land n > 2) \\Rightarrow n \\text{ is not prime}$. The statement is true, since such an $n$ has 2 as a proper divisor and is therefore composite."
+  }
+}

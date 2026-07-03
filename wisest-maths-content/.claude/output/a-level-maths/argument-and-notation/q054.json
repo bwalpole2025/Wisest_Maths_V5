@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "converse", "equivalence", "polynomial roots", "domain"],
+  "questionText": "The statement \"if $x=1$ then $x^3 - 1 = 0$\" is true. Its converse is \"if $x^3 - 1 = 0$ then $x = 1$\". Determine whether the converse is true, treating the cases where $x$ ranges over the real numbers $\\mathbb{R}$ and over the complex numbers $\\mathbb{C}$ separately.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Confirm the original implication is true.",
+        "workingLatex": "x = 1 \\Rightarrow x^3 - 1 = 1 - 1 = 0",
+        "explanation": "Substituting $x=1$ makes $x^3-1$ equal to zero, so the original 'if $x=1$ then $x^3-1=0$' certainly holds. Establishing this reminds us the original and its converse are different claims to be judged on their own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the converse that must be tested.",
+        "workingLatex": "\\text{converse}:\\ x^3 - 1 = 0 \\Rightarrow x = 1",
+        "explanation": "The converse swaps hypothesis and conclusion, so now we assume the equation holds and ask whether $x$ is forced to be $1$. Whether this is true depends entirely on which roots the equation has.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note that the converse's truth may depend on the number system.",
+        "workingLatex": "\\text{roots of } x^3 - 1 = 0 \\ ?",
+        "explanation": "A cubic can have hidden roots that are not real, so the answer may differ over $\\mathbb{R}$ and over $\\mathbb{C}$. This is why the question asks us to treat the two domains separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the cubic.",
+        "workingLatex": "x^3 - 1 = (x-1)(x^2 + x + 1)",
+        "explanation": "Since $x=1$ is a known root, $(x-1)$ is a factor, and dividing out gives the quadratic $x^2+x+1$. Factorising separates the obvious root from any others hiding in the quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the factorised form equal to zero.",
+        "workingLatex": "(x-1)(x^2 + x + 1) = 0 \\Rightarrow x = 1 \\ \\text{or}\\ x^2 + x + 1 = 0",
+        "explanation": "A product is zero exactly when one of its factors is zero, so the roots are $x=1$ together with any solutions of $x^2+x+1=0$. The whole question now rests on that quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Examine the quadratic over the reals using its discriminant.",
+        "workingLatex": "x^2 + x + 1:\\ b^2 - 4ac = 1 - 4 = -3 < 0",
+        "explanation": "A negative discriminant means the quadratic has no real roots, so over $\\mathbb{R}$ it never equals zero. Hence within the reals the equation gains no extra solutions from this factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the converse over the reals.",
+        "workingLatex": "\\text{over } \\mathbb{R}:\\ \\text{only root is } x = 1 \\Rightarrow \\text{converse true}",
+        "explanation": "With the quadratic contributing no real roots, $x=1$ is the only real solution of $x^3-1=0$. So over the reals the converse is true, and together with the original we get $x^3-1=0 \\Leftrightarrow x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve the quadratic over the complex numbers.",
+        "workingLatex": "x = \\frac{-1 \\pm \\sqrt{-3}}{2} = \\frac{-1 \\pm i\\sqrt{3}}{2}",
+        "explanation": "Over $\\mathbb{C}$ the square root of $-3$ exists as $i\\sqrt{3}$, so the quadratic formula delivers two complex roots. These are the other two cube roots of unity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude the converse over the complex numbers.",
+        "workingLatex": "\\text{over } \\mathbb{C}:\\ x^3 - 1 = 0 \\text{ has roots } 1,\\ \\tfrac{-1 + i\\sqrt{3}}{2},\\ \\tfrac{-1 - i\\sqrt{3}}{2} \\Rightarrow \\text{converse false}",
+        "explanation": "Over the complex numbers there are three roots, so a solution of $x^3-1=0$ need not be $x=1$. Those two extra roots are counterexamples, making the converse false over $\\mathbb{C}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the overall conclusion.",
+        "workingLatex": "\\mathbb{R}:\\ \\text{converse true } (\\Leftrightarrow); \\qquad \\mathbb{C}:\\ \\text{converse false}",
+        "explanation": "The very same converse is true over the reals but false over the complex numbers. This shows that the truth of an implication can depend on the domain we allow the variable to take.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Over $\\mathbb{R}$ the converse is true: $x^3-1=(x-1)(x^2+x+1)$ and $x^2+x+1$ has discriminant $-3<0$, so $x=1$ is the only real root, giving $x^3-1=0 \\Leftrightarrow x=1$. Over $\\mathbb{C}$ the converse is false: the quadratic gives two further roots $x=\\tfrac{-1\\pm i\\sqrt{3}}{2}$."
+  }
+}

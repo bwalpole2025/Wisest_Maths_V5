@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "equivalence", "implication", "quadratic", "sufficient not necessary"],
+  "questionText": "Consider the statements $P:\\ x^2 - 5x + 6 = 0$ and $Q:\\ x = 2 \\text{ or } x = 3$, where $x$ is real. Show that $P \\Leftrightarrow Q$. Then, taking $R:\\ x = 2$, explain carefully why $R$ is linked to $P$ only by $\\Rightarrow$ and not by $\\Leftrightarrow$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set out the statements and their domain.",
+        "workingLatex": "P:\\ x^2-5x+6=0, \\quad Q:\\ x=2 \\text{ or } x=3, \\quad x \\in \\mathbb{R}",
+        "explanation": "We are comparing a quadratic equation with a statement about its roots. Establishing $P \\Leftrightarrow Q$ means showing each statement forces the other.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 - 5x + 6 = (x-2)(x-3)",
+        "explanation": "Finding two numbers that multiply to $6$ and add to $5$ gives the factors. Factorising rewrites the equation in a form where the zero-product rule applies directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the zero-product principle.",
+        "workingLatex": "(x-2)(x-3) = 0 \\iff x-2=0 \\ \\text{ or } \\ x-3=0",
+        "explanation": "A product of real numbers is zero exactly when at least one factor is zero, and this is a genuine two-way equivalence rather than a one-way deduction. That single fact will carry both directions of the biconditional at once.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Confirm the forward direction P implies Q.",
+        "workingLatex": "x^2-5x+6=0 \\Rightarrow (x-2)(x-3)=0 \\Rightarrow x=2 \\text{ or } x=3",
+        "explanation": "If the equation holds, the factored product is zero, forcing one bracket to vanish. So any solution must be 2 or 3.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm the reverse direction Q implies P by substitution.",
+        "workingLatex": "x=2:\\ 4-10+6=0 \\ \\checkmark \\qquad x=3:\\ 9-15+6=0 \\ \\checkmark",
+        "explanation": "Substituting each value back returns zero, so each really is a root. This confirms that '$x=2$ or $x=3$' guarantees the equation holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the biconditional.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{ and } \\ Q \\Rightarrow P \\ \\Rightarrow \\ P \\Leftrightarrow Q",
+        "explanation": "Both directions hold, so the equation and the pair of roots are logically equivalent statements.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Introduce the single-value statement R.",
+        "workingLatex": "R:\\ x=2",
+        "explanation": "$R$ names just one of the two solutions. We test the two directions between $R$ and $P$ separately to see which arrows are valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Show R implies P.",
+        "workingLatex": "x=2 \\Rightarrow 4-10+6=0 \\Rightarrow P \\text{ true}",
+        "explanation": "Putting $x=2$ into the equation gives zero, so $R$ is enough to make $P$ true. This makes $R$ a sufficient condition for $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Show P does not imply R using the other root.",
+        "workingLatex": "x=3 \\ \\text{ satisfies } P \\ \\text{ but } R \\ \\text{ is false}",
+        "explanation": "The value $x=3$ solves the equation yet is not $2$, so $P$ can hold while $R$ fails. One counterexample is enough to break the reverse arrow.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the correct link between R and P.",
+        "workingLatex": "R \\Rightarrow P \\ \\text{ but } \\ P \\not\\Rightarrow R \\ \\Rightarrow \\ \\text{only } R \\Rightarrow P",
+        "explanation": "Since only one direction survives, $R$ and $P$ are joined by $\\Rightarrow$ alone: $R$ is sufficient but not necessary for $P$. Claiming equivalence would wrongly assert that 2 is the only root.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-2)(x-3)=0$ gives $P \\Leftrightarrow Q$. For $R:\\ x=2$ we have $R \\Rightarrow P$ but $P \\not\\Rightarrow R$ (since $x=3$ also works), so $R$ links to $P$ only by $\\Rightarrow$: it is sufficient but not necessary."
+  }
+}

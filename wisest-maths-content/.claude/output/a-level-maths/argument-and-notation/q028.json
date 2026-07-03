@@ -1,0 +1,88 @@
+{
+  "id": "al.y1.pure.argument-notation.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "implication", "counterexample", "inequalities"],
+  "questionText": "For real numbers $a$ and $b$, decide whether the implication $a > b \\Rightarrow a^2 > b^2$ is true. If it is not, give a counterexample, and then state and prove one additional condition on $a$ and $b$ under which the implication does hold.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the claim to be tested.",
+        "workingLatex": "\\text{Claim}: \\ a > b \\Rightarrow a^2 > b^2",
+        "explanation": "We treat this as an implication to be tested. If even one pair $(a, b)$ satisfies the hypothesis but not the conclusion, the claim is false in general.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose a candidate counterexample.",
+        "workingLatex": "a = 1,\\ b = -2",
+        "explanation": "Pairing a small positive number with a 'more negative' one is a good test, because a negative number of large size has a large square. First we confirm the hypothesis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the hypothesis holds.",
+        "workingLatex": "a > b:\\ 1 > -2 \\ \\text{(true)}",
+        "explanation": "The pair satisfies $a > b$, so the hypothesis holds and this is a legitimate case in which to test the conclusion.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the conclusion fails.",
+        "workingLatex": "a^2 = 1,\\ b^2 = 4 \\Rightarrow a^2 < b^2",
+        "explanation": "The squares reverse the order: $1$ is less than $4$, so $a^2 > b^2$ fails even though $a > b$. The implication is therefore false in general.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Explain why the implication breaks.",
+        "workingLatex": "|{-2}| = 2 > 1 = |1|",
+        "explanation": "Squaring compares sizes, not signed values, and here $b = -2$ is larger in magnitude than $a = 1$. Ordering by value on its own says nothing about ordering by magnitude.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify what truly controls the squares.",
+        "workingLatex": "a^2 > b^2 \\iff |a| > |b|",
+        "explanation": "Since $a^2 = |a|^2$, the inequality between squares is exactly the inequality between magnitudes. To repair the implication we must make $a > b$ also guarantee $|a| > |b|$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Propose an extra condition.",
+        "workingLatex": "\\text{require } b \\ge 0, \\ \\text{i.e. assume } a > b \\ge 0",
+        "explanation": "If both numbers are non-negative then their order by value and their order by magnitude agree, which should repair the implication. We now prove this works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factor the difference of two squares.",
+        "workingLatex": "a^2 - b^2 = (a - b)(a + b)",
+        "explanation": "Writing the gap between the squares as a product lets us decide its sign from the signs of the two factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Determine the sign of each factor under the condition.",
+        "workingLatex": "a > b \\Rightarrow a - b > 0; \\quad a > b \\ge 0 \\Rightarrow a + b > 0",
+        "explanation": "The first factor is positive because $a > b$; the second is positive because both numbers are non-negative and $a > 0$. A product of two positives is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the repaired implication.",
+        "workingLatex": "a > b \\ge 0 \\Rightarrow a^2 - b^2 > 0 \\Rightarrow a^2 > b^2",
+        "explanation": "With both factors positive the squares satisfy $a^2 > b^2$, so requiring $a > b \\ge 0$ makes the implication true. More generally $a > |b|$ already forces $a^2 > b^2$, and $a > b \\ge 0$ is a special case of it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "False in general: $a = 1,\\ b = -2$ give $a > b$ but $a^2 = 1 < 4 = b^2$. It becomes true under the extra condition $a > b \\ge 0$, since then $a^2 - b^2 = (a - b)(a + b) > 0$."
+  }
+}

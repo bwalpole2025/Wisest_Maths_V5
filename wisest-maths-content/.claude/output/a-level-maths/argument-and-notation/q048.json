@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "set notation", "interval notation", "inequalities", "disjunction"],
+  "questionText": "Solve the inequality $x^2 - x - 6 > 0$ for real $x$, and express the solution set in both set-builder and interval notation. Explain the role played by the logical connective 'or' in your answer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 - x - 6 = (x - 3)(x + 2)",
+        "explanation": "We look for two numbers multiplying to $-6$ and adding to $-1$, namely $-3$ and $+2$. Factorising turns a quadratic inequality into a statement about the sign of a product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Locate the critical values.",
+        "workingLatex": "(x - 3)(x + 2) = 0 \\ \\Rightarrow\\ x = 3, \\ x = -2",
+        "explanation": "The product changes sign only where a factor is zero, so these two points split the number line into regions. They are the boundaries we must test around.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State when a product of two numbers is positive.",
+        "workingLatex": "(x - 3)(x + 2) > 0 \\iff \\text{both factors positive, or both negative}",
+        "explanation": "A product is positive exactly when its two factors share the same sign. This naturally breaks the problem into two cases to examine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the 'both positive' case.",
+        "workingLatex": "x - 3 > 0 \\text{ and } x + 2 > 0 \\ \\Rightarrow\\ x > 3 \\text{ and } x > -2 \\ \\Rightarrow\\ x > 3",
+        "explanation": "For both factors to be positive, $x$ must exceed both roots at once, and the tighter requirement $x>3$ wins. The connective here is 'and', so we keep only the overlap.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the 'both negative' case.",
+        "workingLatex": "x - 3 < 0 \\text{ and } x + 2 < 0 \\ \\Rightarrow\\ x < 3 \\text{ and } x < -2 \\ \\Rightarrow\\ x < -2",
+        "explanation": "For both factors to be negative, $x$ must lie below both roots, and the tighter requirement $x<-2$ wins. Again 'and' inside the case forces the overlap.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the two cases with 'or'.",
+        "workingLatex": "x < -2 \\ \\text{ or } \\ x > 3",
+        "explanation": "Either case, on its own, makes the product positive, so a value solves the inequality if it satisfies one region or the other. The 'or' joins the two separate solution pieces rather than intersecting them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm with the shape of the parabola.",
+        "workingLatex": "y = x^2 - x - 6 \\ \\text{ opens upward}, \\ > 0 \\ \\text{ outside the roots}",
+        "explanation": "An upward parabola sits above the axis on the two outer arms and dips below between its roots. This matches the two-piece 'outside the roots' answer we found algebraically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the solution in set-builder notation.",
+        "workingLatex": "\\{ x \\in \\mathbb{R} : x < -2 \\} \\ \\cup \\ \\{ x \\in \\mathbb{R} : x > 3 \\}",
+        "explanation": "Each region becomes a set of real numbers satisfying one inequality. The union symbol $\\cup$ is the set-theoretic form of the word 'or'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Explain why union captures 'or'.",
+        "workingLatex": "x \\in A \\cup B \\iff x \\in A \\ \\text{ or } \\ x \\in B",
+        "explanation": "Belonging to a union means belonging to at least one of the sets, which is exactly what 'or' asserts. The logical connective and the set operation are two views of the same idea.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the solution in interval notation.",
+        "workingLatex": "(-\\infty, -2) \\ \\cup \\ (3, \\infty)",
+        "explanation": "Each strict inequality becomes an open interval, and the union joins them. Open brackets exclude the endpoints because the inequality is strict.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Contrast with what 'and' would give.",
+        "workingLatex": "\\{ x < -2 \\} \\cap \\{ x > 3 \\} = \\varnothing",
+        "explanation": "Replacing 'or' with 'and' would demand a number below $-2$ and above $3$ simultaneously, which is impossible. This is why the correct connective for combining the two cases is 'or', not 'and'.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x < -2$ or $x > 3$; in set-builder notation $\\{ x \\in \\mathbb{R} : x < -2 \\} \\cup \\{ x \\in \\mathbb{R} : x > 3 \\}$, and in interval notation $(-\\infty, -2) \\cup (3, \\infty)$. The 'or' means the solution is the union of the two regions, since a value need satisfy only one of them."
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "equivalence", "Pythagoras"],
+  "questionText": "A triangle has sides of length $a$, $b$ and $c$, where $c$ is the longest side. Consider the condition $P:\\ a^2 + b^2 = c^2$ and the statement $Q:\\ \\text{the triangle is right-angled}$. Determine whether $P$ is a necessary condition, a sufficient condition, both, or neither, for $Q$, justifying each direction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up the condition and the statement.",
+        "workingLatex": "P:\\ a^2 + b^2 = c^2, \\qquad Q:\\ \\text{triangle is right-angled}",
+        "explanation": "We label the two claims so we can track each direction of implication. Because $c$ is the longest side, any right angle must sit opposite $c$, i.e. $c$ would be the hypotenuse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the meaning of necessary and sufficient.",
+        "workingLatex": "P \\text{ sufficient for } Q \\Leftrightarrow P \\Rightarrow Q; \\quad P \\text{ necessary for } Q \\Leftrightarrow Q \\Rightarrow P",
+        "explanation": "A sufficient condition guarantees the outcome; a necessary condition is one the outcome cannot occur without. Checking both directions tells us which labels apply.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the necessary direction Q implies P (Pythagoras).",
+        "workingLatex": "Q \\Rightarrow P:\\ \\text{right-angled with hypotenuse } c",
+        "explanation": "We assume the triangle is right-angled and ask whether the relation must follow. This is exactly the situation Pythagoras' theorem describes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply Pythagoras' theorem.",
+        "workingLatex": "\\text{right angle opposite } c \\ \\Rightarrow \\ a^2 + b^2 = c^2",
+        "explanation": "In a right-angled triangle the square on the hypotenuse equals the sum of the squares on the other two sides. So a right angle forces the relation $P$ to hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude P is necessary for Q.",
+        "workingLatex": "Q \\Rightarrow P \\quad \\Rightarrow \\quad P \\text{ is necessary for } Q",
+        "explanation": "Since the triangle cannot be right-angled without satisfying the relation, $P$ is a requirement for $Q$. That is precisely what 'necessary' means.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test the sufficient direction P implies Q (converse of Pythagoras).",
+        "workingLatex": "P \\Rightarrow Q:\\ \\text{assume } a^2 + b^2 = c^2",
+        "explanation": "Now we assume only the algebraic relation and ask whether a right angle is forced. This is the converse of Pythagoras, which needs its own justification rather than being assumed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Introduce the cosine rule for the angle opposite c.",
+        "workingLatex": "c^2 = a^2 + b^2 - 2ab\\cos C",
+        "explanation": "The cosine rule relates the three sides to the angle $C$ opposite side $c$. It lets us convert the side relation into information about that angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute the assumed relation.",
+        "workingLatex": "a^2 + b^2 = a^2 + b^2 - 2ab\\cos C \\ \\Rightarrow \\ 2ab\\cos C = 0",
+        "explanation": "Replacing $c^2$ by $a^2+b^2$ cancels those terms and isolates the cosine term. What remains must equal zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the angle C.",
+        "workingLatex": "a, b > 0 \\ \\Rightarrow \\ \\cos C = 0 \\ \\Rightarrow \\ C = 90^\\circ",
+        "explanation": "Side lengths are positive, so $2ab \\neq 0$ and the cosine itself must be zero. The only triangle angle with zero cosine is $90^\\circ$, so the triangle is right-angled: $P \\Rightarrow Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine both directions.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\quad \\Rightarrow \\quad P \\Leftrightarrow Q",
+        "explanation": "With each statement forcing the other, the two are logically equivalent. The single symbol $\\Leftrightarrow$ captures this two-way link.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the final classification.",
+        "workingLatex": "P \\text{ is necessary and sufficient for } Q",
+        "explanation": "Equivalence means $P$ is both necessary (from Pythagoras) and sufficient (from its converse). So the side relation is exactly the condition for the triangle to be right-angled.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$: the relation is necessary (Pythagoras' theorem) and sufficient (its converse). So $a^2+b^2=c^2$ is a necessary and sufficient condition for the triangle to be right-angled."
+  }
+}

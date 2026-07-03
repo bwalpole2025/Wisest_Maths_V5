@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "counterexample", "inequalities"],
+  "questionText": "For real numbers $x$, consider the statements $A: x^2 > x$ and $B: x > 1$. Determine which of $\\Rightarrow$, $\\Leftarrow$, $\\Leftrightarrow$ or 'none of these' correctly describes the relationship $A\\ ?\\ B$, testing each direction and using a counterexample where a direction fails. State your conclusion using the language of necessary and sufficient conditions.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up the problem and note both directions must be tested.",
+        "workingLatex": "A: x^2 > x, \\quad B: x > 1",
+        "explanation": "The correct connective depends on direction, so we separately ask whether $B$ forces $A$ and whether $A$ forces $B$. Only after both tests can we choose a symbol.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite A as a product inequality.",
+        "workingLatex": "x^2 > x \\iff x^2 - x > 0 \\iff x(x - 1) > 0",
+        "explanation": "Moving everything to one side and factoring turns the inequality into a product compared with zero, which reveals exactly which $x$ make $A$ true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Read off the solution set of A.",
+        "workingLatex": "x(x - 1) > 0 \\iff x < 0 \\ \\text{or}\\ x > 1",
+        "explanation": "A product of two factors is positive when both are negative or both positive, giving $x < 0$ or $x > 1$. This region is larger than just $x > 1$, which is worth remembering.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Begin the forward test: assume B.",
+        "workingLatex": "x > 1 \\Rightarrow x > 1 > 0",
+        "explanation": "We start from $B$ and try to reach $A$. Knowing $x > 1$ also tells us $x$ is positive, which lets us multiply the inequality safely without flipping it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply the inequality by the positive number x.",
+        "workingLatex": "x > 1 \\Rightarrow x \\cdot x > 1 \\cdot x \\Rightarrow x^2 > x",
+        "explanation": "Multiplying both sides of $x > 1$ by the positive number $x$ preserves the direction and yields exactly $x^2 > x$. So $B$ genuinely produces $A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude the forward direction holds.",
+        "workingLatex": "B \\Rightarrow A \\ \\text{ is true}",
+        "explanation": "Every $x$ greater than 1 satisfies $x^2 > x$, so $B$ is enough to guarantee $A$. This makes $B$ a sufficient condition for $A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the reverse test by seeking a counterexample.",
+        "workingLatex": "\\text{seek } x \\text{ with } x^2 > x \\text{ but } x \\le 1",
+        "explanation": "To break the reverse implication we want a value satisfying $A$ yet failing $B$. Step 3 showed $A$ also holds for $x < 0$, so that region is the place to look.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Choose a negative test value.",
+        "workingLatex": "x = -2:\\ x^2 = 4,\\ x = -2",
+        "explanation": "A negative value lies in the $x < 0$ part of $A$'s solution set, so it should satisfy $A$ while clearly not exceeding 1.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the counterexample against both statements.",
+        "workingLatex": "4 > -2 \\Rightarrow A \\text{ holds}; \\quad -2 \\not> 1 \\Rightarrow B \\text{ fails}",
+        "explanation": "Here $A$ is true but $B$ is false, so this single value shows that $A$ does not force $B$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine the two tests to pick the symbol.",
+        "workingLatex": "A \\not\\Rightarrow B,\\ B \\Rightarrow A \\ \\Rightarrow\\ A \\Leftarrow B",
+        "explanation": "Only the direction from $B$ to $A$ survives, so the relationship is the single left arrow $A \\Leftarrow B$; the counterexample rules out the two-way $\\Leftrightarrow$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Translate into necessary and sufficient language.",
+        "workingLatex": "B \\text{ is sufficient, but not necessary, for } A",
+        "explanation": "Because $x > 1$ guarantees $x^2 > x$, yet $x^2 > x$ can occur without $x > 1$ (as $x = -2$ showed), $B$ is a sufficient but not necessary condition for $A$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$A \\Leftarrow B$ only, i.e. $x > 1 \\Rightarrow x^2 > x$, but $A \\not\\Rightarrow B$ since $x = -2$ gives $x^2 = 4 > -2$. So $x > 1$ is sufficient but not necessary for $x^2 > x$; in full, $x^2 > x \\Leftrightarrow (x < 0 \\ \\text{or}\\ x > 1)$."
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "id": "al.y1.pure.argument-notation.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "expression",
+  "tags": ["logic", "biconditional", "geometry", "parallelogram", "necessary and sufficient"],
+  "questionText": "Let $ABCD$ be a quadrilateral whose diagonals $AC$ and $BD$ meet at $M$. Prove that $ABCD$ is a parallelogram if and only if its diagonals bisect each other, that is, $AM = CM$ and $BM = DM$. Prove both directions carefully, and state your conclusion in the language of necessary and sufficient conditions.",
+  "questionDiagram": {
+    "type": "geometry",
+    "description": "Quadrilateral ABCD with vertices labelled in order; the two diagonals AC and BD are drawn and cross at the point M inside the quadrilateral.",
+    "elements": [
+      "Quadrilateral ABCD with vertices A, B, C, D taken in order",
+      "Diagonal AC",
+      "Diagonal BD",
+      "Point M = intersection of AC and BD"
+    ]
+  },
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the biconditional and the plan.",
+        "workingLatex": "\\text{Prove: } ABCD \\text{ parallelogram} \\iff (AM = CM \\ \\text{and}\\ BM = DM)",
+        "explanation": "A biconditional makes two separate claims joined by 'if and only if', so it must be proved in two directions. We will prove the forward implication first, then its converse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Fix the notation for the crossing point.",
+        "workingLatex": "AC \\cap BD = M",
+        "explanation": "Naming the intersection $M$ lets us talk precisely about the four segments the diagonals are cut into. Bisection then means $M$ is the midpoint of each diagonal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Forward direction: assume a parallelogram.",
+        "workingLatex": "\\text{Assume } ABCD \\text{ parallelogram} \\Rightarrow AB \\parallel DC \\ \\text{and}\\ AB = DC",
+        "explanation": "By definition of a parallelogram the opposite sides $AB$ and $DC$ are both parallel and equal in length. These two facts are what drive the congruence we need.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify equal alternate angles.",
+        "workingLatex": "\\angle ABM = \\angle CDM, \\quad \\angle BAM = \\angle DCM",
+        "explanation": "The parallel sides $AB$ and $DC$ are cut by the diagonals acting as transversals. Alternate angles across parallel lines are equal, giving two matching angle pairs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the ASA congruence criterion.",
+        "workingLatex": "\\triangle ABM \\equiv \\triangle CDM \\quad (\\text{ASA})",
+        "explanation": "The two triangles share two equal angles with the equal side $AB = DC$ between them. Angle-Side-Angle then guarantees the triangles are congruent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Read off the corresponding equal sides.",
+        "workingLatex": "\\Rightarrow AM = CM \\ \\text{and}\\ BM = DM",
+        "explanation": "Congruent triangles have all corresponding sides equal. The sides matching up are exactly the halves of the two diagonals, so $M$ is the midpoint of each.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the forward direction.",
+        "workingLatex": "ABCD \\text{ parallelogram} \\Rightarrow \\text{diagonals bisect each other}",
+        "explanation": "Having shown $M$ splits both diagonals into equal halves, we have established that in any parallelogram the diagonals bisect each other.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Reverse direction: assume the diagonals bisect.",
+        "workingLatex": "\\text{Assume } AM = CM \\ \\text{and}\\ BM = DM",
+        "explanation": "We now start from the bisection property alone and must recover the full parallelogram. This is the converse, so nothing about parallel sides may be assumed yet.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use vertically opposite angles at M.",
+        "workingLatex": "\\angle AMB = \\angle CMD \\quad (\\text{vertically opposite})",
+        "explanation": "The diagonals cross at $M$, so the angles on opposite sides of the crossing are vertically opposite and hence equal. This supplies the included angle for a congruence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Apply the SAS congruence criterion.",
+        "workingLatex": "\\triangle AMB \\equiv \\triangle CMD \\quad (\\text{SAS})",
+        "explanation": "We have $AM = CM$, $BM = DM$ and the equal included angle between them. Side-Angle-Side then makes the two triangles congruent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Deduce a pair of sides equal and parallel.",
+        "workingLatex": "\\Rightarrow AB = CD \\ \\text{and}\\ \\angle BAM = \\angle DCM \\Rightarrow AB \\parallel CD",
+        "explanation": "Congruence gives $AB = CD$, and it also gives equal alternate angles $\\angle BAM = \\angle DCM$. Equal alternate angles across the transversal $AC$ force $AB$ to be parallel to $CD$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Invoke the equal-and-parallel theorem.",
+        "workingLatex": "AB = CD \\ \\text{and}\\ AB \\parallel CD \\Rightarrow ABCD \\text{ parallelogram}",
+        "explanation": "A quadrilateral with one pair of opposite sides both equal in length and parallel is a parallelogram. Having established that pair, the shape is determined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude the reverse direction.",
+        "workingLatex": "\\text{diagonals bisect each other} \\Rightarrow ABCD \\text{ parallelogram}",
+        "explanation": "Starting only from the bisection property we have rebuilt the parallelogram, completing the converse implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Combine into the biconditional.",
+        "workingLatex": "ABCD \\text{ parallelogram} \\iff (AM = CM \\ \\text{and}\\ BM = DM)",
+        "explanation": "Both implications hold, so the two conditions are equivalent. The diagonals bisecting each other is therefore a necessary and sufficient condition for $ABCD$ to be a parallelogram.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Forward: a parallelogram gives $\\triangle ABM \\equiv \\triangle CDM$ (ASA), so $AM=CM$, $BM=DM$. Reverse: bisecting diagonals give $\\triangle AMB \\equiv \\triangle CMD$ (SAS), so $AB = CD$ and $AB \\parallel CD$, making a parallelogram. Hence $ABCD$ is a parallelogram $\\iff$ its diagonals bisect each other, which is necessary and sufficient."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "id": "al.y1.pure.argument-notation.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": ["logic", "equivalence", "necessary and sufficient", "rational numbers", "proof structure"],
+  "questionText": "A real number $x$ is rational if $x = \\tfrac{p}{q}$ for some integers $p$ and $q$ with $q \\neq 0$. State precisely the biconditional '$x$ is rational $\\Leftrightarrow$ $x$ has a terminating or recurring (eventually periodic) decimal expansion', and lay out the structure of its proof. For each direction, identify clearly what must be established and give the key idea, emphasising the logical structure over exhaustive rigour.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the biconditional precisely.",
+        "workingLatex": "\\forall x \\in \\mathbb{R}: \\quad x \\in \\mathbb{Q} \\;\\Leftrightarrow\\; x \\text{ has a terminating or recurring decimal expansion}",
+        "explanation": "Framing the claim with a quantifier over all real $x$ makes clear it is a general theorem, not a statement about one number. Writing $\\mathbb{Q} = \\{p/q : p,q \\in \\mathbb{Z},\\ q \\neq 0\\}$ fixes exactly what 'rational' means.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Clarify the vocabulary of decimal expansions.",
+        "workingLatex": "\\text{terminating: } 0.375; \\quad \\text{recurring: } 0.1\\overline{6}; \\quad \\text{both are 'eventually periodic'}",
+        "explanation": "A terminating decimal can be seen as one whose repeating block is $0$, so both cases fall under 'eventually periodic'. Uniting them avoids treating termination as a genuinely separate phenomenon.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Explain what proving a biconditional requires.",
+        "workingLatex": "A \\Leftrightarrow B \\ \\text{needs}\\ (A \\Rightarrow B)\\ \\text{and}\\ (B \\Rightarrow A)",
+        "explanation": "An 'if and only if' is two implications that must each be proved. Splitting the task in two is the essential structural move, since one direction can be easy while the other is subtle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the forward direction and its obligation.",
+        "workingLatex": "(\\Rightarrow)\\ \\ x \\in \\mathbb{Q} \\Rightarrow x \\text{ terminates or recurs}",
+        "explanation": "Here we start from a fraction and must show its decimal cannot wander on forever without pattern. The obligation is to explain why some structure is forced on the digits.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Introduce long division as the mechanism.",
+        "workingLatex": "x = \\tfrac{p}{q}: \\ \\text{long division produces at each stage a remainder } r,\\ 0 \\le r < q",
+        "explanation": "Converting a fraction to a decimal is repeated division, and each stage leaves a remainder. Watching those remainders, rather than the digits themselves, is the key to the whole argument.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Observe the finiteness of possible remainders.",
+        "workingLatex": "r \\in \\{0, 1, 2, \\ldots, q-1\\} \\quad (\\text{only } q \\text{ possibilities})",
+        "explanation": "Every remainder is a whole number less than $q$, so there are only finitely many values it can take. Finiteness is the pressure that will force repetition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the pigeonhole principle.",
+        "workingLatex": "\\text{among the first } q+1 \\text{ remainders, two must coincide (pigeonhole)}",
+        "explanation": "With only $q$ possible remainders, after at most $q+1$ steps some remainder must recur. This is the pigeonhole principle: more slots filled than distinct labels available forces a repeat.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain why a repeated remainder forces periodicity.",
+        "workingLatex": "\\text{remainder } r \\text{ determines the next digit and next remainder} \\Rightarrow \\text{the block repeats}",
+        "explanation": "The division process is deterministic: the current remainder alone dictates the next digit and remainder. So once a remainder reappears, the entire sequence of digits after it must cycle identically, giving a recurring decimal (or a terminating one if the remainder is $0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Close the forward direction.",
+        "workingLatex": "x \\in \\mathbb{Q} \\Rightarrow \\text{decimal terminates or recurs} \\quad \\checkmark",
+        "explanation": "The finiteness of remainders plus determinism together guarantee eventual periodicity for every fraction. That completes the first of the two required implications.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the reverse direction and its obligation.",
+        "workingLatex": "(\\Leftarrow)\\ \\ x \\text{ terminates or recurs} \\Rightarrow x \\in \\mathbb{Q}",
+        "explanation": "Now we begin with a patterned decimal and must produce an actual fraction. The obligation is to exhibit integers $p$ and $q$ with $x = p/q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Handle the terminating case.",
+        "workingLatex": "0.d_1 d_2 \\cdots d_n = \\frac{d_1 d_2 \\cdots d_n}{10^{\\,n}} \\in \\mathbb{Q}",
+        "explanation": "A decimal that stops after $n$ places is just an integer divided by a power of ten. This case is immediate and needs no machinery beyond reading off the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set up the recurring case as a geometric series.",
+        "workingLatex": "0.\\overline{d_1 \\cdots d_m} = \\frac{B}{10^m} + \\frac{B}{10^{2m}} + \\cdots, \\quad B = \\overline{d_1 \\cdots d_m}",
+        "explanation": "A purely repeating decimal is the same block $B$ shifted further right each time, which is a geometric series with ratio $10^{-m}$. Recognising the geometric structure is what makes the sum computable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Sum the series to a fraction.",
+        "workingLatex": "= \\frac{B/10^m}{1 - 10^{-m}} = \\frac{B}{10^m - 1} \\in \\mathbb{Q}",
+        "explanation": "The geometric series formula collapses the infinite sum into a single fraction with integer numerator and denominator. Any eventually periodic decimal is a rational prefix plus such a tail, so it too is rational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Close the reverse direction.",
+        "workingLatex": "x \\text{ terminates or recurs} \\Rightarrow x \\in \\mathbb{Q} \\quad \\checkmark",
+        "explanation": "Both a terminating decimal and a recurring one have been written explicitly as fractions. That discharges the second implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Assemble the biconditional and the condition.",
+        "workingLatex": "(\\Rightarrow)\\ \\text{and}\\ (\\Leftarrow) \\;\\Rightarrow\\; x \\in \\mathbb{Q} \\Leftrightarrow x \\text{ terminates or recurs}",
+        "explanation": "With both implications proved, the two-way arrow stands. Having a terminating-or-recurring decimal is therefore both necessary and sufficient for a real number to be rational.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x \\in \\mathbb{Q} \\Leftrightarrow x$ has a terminating or recurring decimal expansion. Forward: long division of $p/q$ has only $q$ possible remainders, so by pigeonhole a remainder repeats and the digits become periodic. Reverse: a terminating decimal is $\\tfrac{\\text{integer}}{10^n}$, and a recurring block sums as a geometric series to $\\tfrac{B}{10^m-1}$; both are fractions. Hence the decimal condition is necessary and sufficient for rationality."
+  }
+}

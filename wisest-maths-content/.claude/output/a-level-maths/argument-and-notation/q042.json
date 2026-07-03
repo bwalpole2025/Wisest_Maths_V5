@@ -1,0 +1,95 @@
+{
+  "id": "al.y1.pure.argument-notation.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Mathematical argument and notation",
+  "subtopicId": "al.y1.pure.argument-notation",
+  "difficulty": "Intermediate",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": ["logic", "necessary and sufficient", "equivalence", "discriminant"],
+  "questionText": "For the quadratic equation $ax^2 + bx + c = 0$ with $a \\neq 0$ and real coefficients, classify the condition $b^2 - 4ac \\ge 0$ as necessary, sufficient, both, or neither, for the statement 'the equation has at least one real root'. Justify each direction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up the condition and the statement.",
+        "workingLatex": "P:\\ \\Delta = b^2 - 4ac \\ge 0, \\qquad Q:\\ ax^2 + bx + c = 0 \\text{ has a real root}",
+        "explanation": "We label the discriminant condition $P$ and the existence of a real root $Q$. Classifying $P$ means checking whether $P \\Rightarrow Q$, whether $Q \\Rightarrow P$, or both.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the meaning of necessary and sufficient.",
+        "workingLatex": "P \\text{ sufficient} \\Leftrightarrow P \\Rightarrow Q; \\quad P \\text{ necessary} \\Leftrightarrow Q \\Rightarrow P",
+        "explanation": "A sufficient condition guarantees real roots; a necessary one is unavoidable if real roots exist. We will settle each label by proving the corresponding implication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Choose completing the square as the working tool.",
+        "workingLatex": "a \\neq 0 \\ \\Rightarrow \\ \\text{divide by } a: \\ x^2 + \\frac{b}{a}x + \\frac{c}{a} = 0",
+        "explanation": "Because $a \\neq 0$ we may divide through by $a$, which lets us complete the square. This single manipulation will expose both implications at once.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Complete the square.",
+        "workingLatex": "\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{b^2 - 4ac}{4a^2}",
+        "explanation": "Rewriting the equation as a perfect square equal to a constant isolates $x$ inside a square. The constant on the right is built directly from the discriminant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Relate the sign of the right-hand side to the discriminant.",
+        "workingLatex": "4a^2 > 0 \\ \\Rightarrow \\ \\operatorname{sign}\\!\\left(\\frac{b^2 - 4ac}{4a^2}\\right) = \\operatorname{sign}(\\Delta)",
+        "explanation": "The denominator $4a^2$ is strictly positive, so the right-hand side has the same sign as $\\Delta$. Whether that side is non-negative is therefore controlled entirely by $\\Delta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the key equivalence about real solutions.",
+        "workingLatex": "\\left(x + \\tfrac{b}{2a}\\right)^2 \\ge 0 \\ \\text{for real } x \\ \\Rightarrow \\ \\text{real } x \\text{ exists} \\Leftrightarrow \\text{RHS} \\ge 0",
+        "explanation": "A real square is never negative, so the equation can be satisfied by a real $x$ only when the right-hand side is non-negative. This links the existence of a real root to the sign of $\\Delta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Prove the sufficient direction P implies Q.",
+        "workingLatex": "\\Delta \\ge 0 \\ \\Rightarrow \\ x = -\\frac{b}{2a} \\pm \\frac{\\sqrt{\\Delta}}{2|a|} \\ \\text{are real}",
+        "explanation": "If $\\Delta \\ge 0$ then $\\sqrt{\\Delta}$ is real, so taking square roots produces genuine real values of $x$. Thus a non-negative discriminant guarantees at least one real root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the boundary and interior cases.",
+        "workingLatex": "\\Delta = 0 \\ \\Rightarrow \\ \\text{one repeated root}; \\quad \\Delta > 0 \\ \\Rightarrow \\ \\text{two distinct roots}",
+        "explanation": "When $\\Delta=0$ the two roots coincide, still giving 'at least one' real root, and when $\\Delta>0$ there are two. Either way $Q$ holds, so $P \\Rightarrow Q$ is confirmed and $P$ is sufficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Prove the necessary direction Q implies P.",
+        "workingLatex": "\\text{real root } x_0 \\ \\Rightarrow \\ \\frac{\\Delta}{4a^2} = \\left(x_0 + \\tfrac{b}{2a}\\right)^2 \\ge 0 \\ \\Rightarrow \\ \\Delta \\ge 0",
+        "explanation": "If a real root exists, substituting it makes the right-hand side equal to a real square, which is non-negative. Multiplying by the positive $4a^2$ forces $\\Delta \\ge 0$, so $Q \\Rightarrow P$ and $P$ is necessary.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine both directions.",
+        "workingLatex": "P \\Rightarrow Q \\ \\text{and}\\ Q \\Rightarrow P \\ \\Rightarrow \\ P \\Leftrightarrow Q",
+        "explanation": "Each statement implies the other, so a non-negative discriminant and the existence of a real root are logically equivalent. The two-way arrow captures this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the final classification.",
+        "workingLatex": "b^2 - 4ac \\ge 0 \\text{ is necessary and sufficient for a real root}",
+        "explanation": "Equivalence means the discriminant condition is both necessary and sufficient. So $\\Delta \\ge 0$ is exactly the condition for the quadratic to have at least one real root.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P \\Leftrightarrow Q$: $b^2 - 4ac \\ge 0$ is both necessary and sufficient for $ax^2+bx+c=0$ (with $a \\neq 0$) to have at least one real root."
+  }
+}
