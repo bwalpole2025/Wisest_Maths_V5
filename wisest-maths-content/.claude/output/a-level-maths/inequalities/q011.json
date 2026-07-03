@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $2 - 3x \\le 11$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the term in x.",
+        "workingLatex": "-3x \\le 11 - 2",
+        "explanation": "Subtracting $2$ from both sides moves the constant across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "-3x \\le 9",
+        "explanation": "Combining $11 - 2$ gives $9$, so we have $-3x \\le 9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Prepare to divide by a negative.",
+        "workingLatex": "\\text{divide by } -3 \\Rightarrow \\text{reverse the sign}",
+        "explanation": "Dividing by the negative number $-3$ will reverse the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide and reverse the sign.",
+        "workingLatex": "x \\ge -3",
+        "explanation": "Dividing both sides by $-3$ and flipping $\\le$ to $\\ge$ gives $x \\ge -3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\ge -3",
+        "explanation": "Any value of $x$ at least $-3$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the boundary value.",
+        "workingLatex": "x = -3: \\ 2 - 3(-3) = 11 \\le 11 \\ \\checkmark",
+        "explanation": "Substituting $x = -3$ gives $11 \\le 11$, which is true, confirming the boundary is included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value outside.",
+        "workingLatex": "x = -4: \\ 2 - 3(-4) = 14 \\not\\le 11",
+        "explanation": "Testing $x = -4$ gives $14 \\le 11$, which is false, confirming values below $-3$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x \\ge -3\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are at least $-3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x \\ge -3",
+        "explanation": "The solution is $x \\ge -3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2 - 3x \\le 11 \\Rightarrow -3x \\le 9 \\Rightarrow x \\ge -3$ (dividing by $-3$ reverses the inequality)."
+  }
+}

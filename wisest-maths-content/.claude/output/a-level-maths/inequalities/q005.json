@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "variable both sides"
+  ],
+  "questionText": "Solve the inequality $2x + 3 < x + 8$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Collect the x terms on one side.",
+        "workingLatex": "2x - x + 3 < 8",
+        "explanation": "Subtracting $x$ from both sides gathers the variable terms together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "x + 3 < 8",
+        "explanation": "Combining $2x - x$ gives $x$, leaving $x + 3 < 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract 3 from both sides.",
+        "workingLatex": "x < 5",
+        "explanation": "Subtracting $3$ isolates $x$ without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x < 5",
+        "explanation": "Any value of $x$ less than $5$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 4: \\ 2(4) + 3 = 11 < 4 + 8 = 12 \\ \\checkmark",
+        "explanation": "Substituting $x = 4$ gives $11 < 12$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x < 5",
+        "explanation": "The solution to the inequality is $x < 5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x + 3 < x + 8 \\Rightarrow x < 5$"
+  }
+}

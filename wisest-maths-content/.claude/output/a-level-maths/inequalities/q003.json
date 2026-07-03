@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.inequalities.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear"
+  ],
+  "questionText": "Solve the inequality $4x + 1 \\ge 9$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Aim to isolate x.",
+        "workingLatex": "4x + 1 \\ge 9",
+        "explanation": "We isolate the $x$ term, keeping the inequality sign as we work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Subtract 1 from both sides.",
+        "workingLatex": "4x \\ge 8",
+        "explanation": "Subtracting the same number from both sides does not change the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide both sides by 4.",
+        "workingLatex": "x \\ge 2",
+        "explanation": "Dividing by the positive number $4$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\ge 2",
+        "explanation": "Any value of $x$ at least $2$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 3: \\ 4(3) + 1 = 13 \\ge 9 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ (which is at least $2$) gives a true statement, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x \\ge 2",
+        "explanation": "The solution is $x \\ge 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$4x + 1 \\ge 9 \\Rightarrow 4x \\ge 8 \\Rightarrow x \\ge 2$"
+  }
+}

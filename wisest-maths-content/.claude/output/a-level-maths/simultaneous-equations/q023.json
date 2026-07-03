@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.simultaneous.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "substitution"
+  ],
+  "questionText": "Solve the simultaneous equations $2x + y = 7$ and $xy = 6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "2x + y = 7 \\ (\\text{linear}), \\quad xy = 6 \\ (\\text{quadratic})",
+        "explanation": "The product $xy$ makes the second equation quadratic; substituting the linear equation gives a quadratic in one variable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange the linear equation.",
+        "workingLatex": "y = 7 - 2x",
+        "explanation": "Making $y$ the subject of the linear equation prepares it for substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the second equation.",
+        "workingLatex": "x(7 - 2x) = 6",
+        "explanation": "Replacing $y$ with $7 - 2x$ in $xy = 6$ gives an equation in $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand.",
+        "workingLatex": "7x - 2x^2 = 6",
+        "explanation": "Multiplying out the bracket gives $7x - 2x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange to standard form.",
+        "workingLatex": "2x^2 - 7x + 6 = 0",
+        "explanation": "Moving all terms to one side (and making the $x^2$ coefficient positive) gives a standard quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise.",
+        "workingLatex": "(2x - 3)(x - 2) = 0",
+        "explanation": "Splitting the middle term, $2x^2 - 7x + 6$ factorises as $(2x-3)(x-2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x.",
+        "workingLatex": "x = \\dfrac{3}{2} \\ \\text{ or } \\ x = 2",
+        "explanation": "Setting each factor to zero gives the two $x$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find y for x = 2.",
+        "workingLatex": "y = 7 - 2(2) = 3",
+        "explanation": "Substituting $x = 2$ into $y = 7 - 2x$ gives $y = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find y for x = 3/2.",
+        "workingLatex": "y = 7 - 2\\left(\\tfrac{3}{2}\\right) = 4",
+        "explanation": "Substituting $x = \\tfrac32$ into $y = 7 - 2x$ gives $y = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(2, 3) \\ \\text{ and } \\ \\left(\\tfrac{3}{2}, 4\\right)",
+        "explanation": "Each $x$ pairs with its $y$ to give a solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the products.",
+        "workingLatex": "2 \\times 3 = 6, \\quad \\tfrac{3}{2} \\times 4 = 6 \\ \\checkmark",
+        "explanation": "Both pairs satisfy $xy = 6$, confirming that part of the system.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check the linear equation.",
+        "workingLatex": "2(2) + 3 = 7, \\quad 2\\left(\\tfrac{3}{2}\\right) + 4 = 7 \\ \\checkmark",
+        "explanation": "Both pairs also satisfy $2x + y = 7$, so each is a genuine solution of the whole system.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (2, 3) \\text{ or } \\left(\\tfrac{3}{2}, 4\\right)",
+        "explanation": "The solutions are $(2, 3)$ and $\\left(\\tfrac32, 4\\right)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 7 - 2x \\Rightarrow x(7-2x) = 6 \\Rightarrow 2x^2 - 7x + 6 = (2x-3)(x-2) = 0 \\Rightarrow (2,3) \\text{ or } \\left(\\tfrac{3}{2}, 4\\right)$"
+  }
+}

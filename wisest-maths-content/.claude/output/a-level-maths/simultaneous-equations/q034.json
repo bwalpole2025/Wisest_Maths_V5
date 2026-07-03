@@ -1,0 +1,93 @@
+{
+  "id": "al.y1.pure.simultaneous.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "scaling",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $3x + 2y = 16$ and $2x + 3y = 19$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "3x + 2y = 16 \\ (1), \\quad 2x + 3y = 19 \\ (2)",
+        "explanation": "No coefficients match, so we scale both equations to eliminate $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Scale equation (1).",
+        "workingLatex": "3 \\times (1): \\ 9x + 6y = 48 \\ (3)",
+        "explanation": "Multiplying (1) by $3$ makes the $y$ coefficient $6y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Scale equation (2).",
+        "workingLatex": "2 \\times (2): \\ 4x + 6y = 38 \\ (4)",
+        "explanation": "Multiplying (2) by $2$ makes the $y$ coefficient $6y$ as well, ready to subtract.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract to eliminate y.",
+        "workingLatex": "(3) - (4): \\ 5x = 10",
+        "explanation": "Both equations have $6y$, so subtracting removes the $y$ terms, leaving $5x = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x.",
+        "workingLatex": "x = 2",
+        "explanation": "Dividing by $5$ gives $x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute back.",
+        "workingLatex": "3(2) + 2y = 16",
+        "explanation": "Putting $x = 2$ into equation (1) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify.",
+        "workingLatex": "6 + 2y = 16 \\Rightarrow 2y = 10",
+        "explanation": "Subtracting $6$ gives $2y = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for y.",
+        "workingLatex": "y = 5",
+        "explanation": "Dividing by $2$ gives $y = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check in equation (2).",
+        "workingLatex": "2(2) + 3(5) = 4 + 15 = 19 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the solution.",
+        "workingLatex": "x = 2, \\ y = 5",
+        "explanation": "The solution is $x = 2$ and $y = 5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Scaling to $6y$ and subtracting: $5x = 10 \\Rightarrow x = 2$, then $y = 5$. Solution: $x = 2,\\ y = 5$."
+  }
+}

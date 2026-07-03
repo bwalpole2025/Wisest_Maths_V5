@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "brackets"
+  ],
+  "questionText": "Solve the inequality $2(x + 1) < 10$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the bracket.",
+        "workingLatex": "2x + 2 < 10",
+        "explanation": "Multiplying out the bracket gives a simpler linear inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Subtract 2 from both sides.",
+        "workingLatex": "2x < 8",
+        "explanation": "Subtracting $2$ isolates the $x$ term without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide both sides by 2.",
+        "workingLatex": "x < 4",
+        "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x < 4",
+        "explanation": "Any value of $x$ less than $4$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 3: \\ 2(3 + 1) = 8 < 10 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ gives $8 < 10$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x < 4",
+        "explanation": "The solution to the inequality is $x < 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2(x + 1) < 10 \\Rightarrow 2x + 2 < 10 \\Rightarrow x < 4$"
+  }
+}

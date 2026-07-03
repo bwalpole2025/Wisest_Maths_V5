@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $-4x < 8$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Note the coefficient of x is negative.",
+        "workingLatex": "-4x < 8",
+        "explanation": "Dividing an inequality by a negative number reverses the inequality sign — the key idea here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Prepare to divide by -4.",
+        "workingLatex": "\\text{divide by } -4 \\Rightarrow \\text{reverse the sign}",
+        "explanation": "We flag the sign reversal before dividing so we do not forget it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide and reverse the sign.",
+        "workingLatex": "x > -2",
+        "explanation": "Dividing both sides by $-4$ and flipping $<$ to $>$ gives $x > -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x > -2",
+        "explanation": "Any value of $x$ greater than $-2$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 0: \\ -4(0) = 0 < 8 \\ \\checkmark",
+        "explanation": "Substituting $x = 0$ (which is greater than $-2$) gives $0 < 8$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a value outside.",
+        "workingLatex": "x = -3: \\ -4(-3) = 12 \\not< 8",
+        "explanation": "Testing $x = -3$ gives $12 < 8$, which is false, confirming values below $-2$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the sign flip mattered.",
+        "workingLatex": "\\text{keeping } < \\text{ would give the wrong side}",
+        "explanation": "Had we not flipped the sign, we would have written $x < -2$, the exact opposite set.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x > -2\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are greater than $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x > -2",
+        "explanation": "The solution is $x > -2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-4x < 8 \\Rightarrow x > -2$ (dividing by $-4$ reverses the inequality)."
+  }
+}

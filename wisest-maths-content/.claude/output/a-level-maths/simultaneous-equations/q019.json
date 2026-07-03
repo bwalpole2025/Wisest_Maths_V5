@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "substitution",
+    "intersection"
+  ],
+  "questionText": "Solve the simultaneous equations $y = x + 1$ and $y = x^2 - 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "y = x + 1 \\ (\\text{line}), \\quad y = x^2 - 1 \\ (\\text{curve})",
+        "explanation": "One equation is linear and one is quadratic, so substitution gives a single quadratic to solve; the solutions are the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the expressions for y equal.",
+        "workingLatex": "x^2 - 1 = x + 1",
+        "explanation": "Both equations give $y$, so at any common point the two expressions must be equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic.",
+        "workingLatex": "x^2 - x - 2 = 0",
+        "explanation": "Bringing all terms to one side gives a quadratic in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise.",
+        "workingLatex": "(x - 2)(x + 1) = 0",
+        "explanation": "Two numbers multiplying to $-2$ and adding to $-1$ are $-2$ and $1$, giving these factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x.",
+        "workingLatex": "x = 2 \\ \\text{ or } \\ x = -1",
+        "explanation": "Setting each factor to zero gives the two $x$-coordinates of the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y for x = 2.",
+        "workingLatex": "y = 2 + 1 = 3",
+        "explanation": "Substituting $x = 2$ into the line $y = x + 1$ gives $y = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y for x = -1.",
+        "workingLatex": "y = -1 + 1 = 0",
+        "explanation": "Substituting $x = -1$ into the line gives $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(2, 3) \\ \\text{ and } \\ (-1, 0)",
+        "explanation": "Each $x$ pairs with its $y$ to give a coordinate point where the line meets the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the first point on the curve.",
+        "workingLatex": "y = 2^2 - 1 = 3 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ into the curve also gives $y = 3$, confirming the point lies on both graphs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the second point on the curve.",
+        "workingLatex": "y = (-1)^2 - 1 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = -1$ into the curve gives $y = 0$, confirming the second intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the number of intersections.",
+        "workingLatex": "\\text{two real roots} \\Rightarrow \\text{two crossing points}",
+        "explanation": "Because the quadratic gave two distinct roots, the line and curve meet at two separate points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret geometrically.",
+        "workingLatex": "\\text{the line crosses the curve at two points}",
+        "explanation": "Two real solutions mean the line and the parabola intersect at two distinct points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (2, 3) \\text{ or } (-1, 0)",
+        "explanation": "The solutions are $(2, 3)$ and $(-1, 0)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 1 = x + 1 \\Rightarrow x^2 - x - 2 = (x-2)(x+1) = 0 \\Rightarrow (2,3) \\text{ or } (-1,0)$"
+  }
+}

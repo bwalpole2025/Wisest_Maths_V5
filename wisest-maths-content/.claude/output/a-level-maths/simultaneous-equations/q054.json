@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.simultaneous.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "substitution",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $y = x - 1$ and $3x + y = 15$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Note one variable is isolated.",
+        "workingLatex": "y = x - 1",
+        "explanation": "Since $y$ is given in terms of $x$, we substitute it into the other equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the other equation.",
+        "workingLatex": "3x + (x - 1) = 15",
+        "explanation": "Replacing $y$ with $x - 1$ in $3x + y = 15$ gives an equation in $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify.",
+        "workingLatex": "4x - 1 = 15",
+        "explanation": "Collecting the $x$ terms gives $4x - 1 = 15$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for x.",
+        "workingLatex": "4x = 16 \\Rightarrow x = 4",
+        "explanation": "Adding $1$ then dividing by $4$ gives $x = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find y.",
+        "workingLatex": "y = 4 - 1 = 3",
+        "explanation": "Substituting $x = 4$ into $y = x - 1$ gives $y = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check.",
+        "workingLatex": "3(4) + 3 = 12 + 3 = 15 \\ \\checkmark",
+        "explanation": "Substituting into $3x + y = 15$ confirms the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solution.",
+        "workingLatex": "x = 4, \\ y = 3",
+        "explanation": "The solution is $x = 4$ and $y = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Substituting $y = x - 1$: $4x - 1 = 15 \\Rightarrow x = 4$, $y = 3$. Solution: $x = 4,\\ y = 3$."
+  }
+}

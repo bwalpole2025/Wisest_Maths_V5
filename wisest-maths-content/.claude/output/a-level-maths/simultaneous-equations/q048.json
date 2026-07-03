@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.simultaneous.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "substitution"
+  ],
+  "questionText": "Solve the simultaneous equations $x + y = 7$ and $xy = 10$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "x + y = 7 \\ (\\text{linear}), \\quad xy = 10 \\ (\\text{quadratic})",
+        "explanation": "The product $xy$ makes the second equation quadratic; substituting the linear equation gives a quadratic in one variable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange the linear equation.",
+        "workingLatex": "y = 7 - x",
+        "explanation": "Making $y$ the subject of the linear equation prepares it for substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the second equation.",
+        "workingLatex": "x(7 - x) = 10",
+        "explanation": "Replacing $y$ with $7 - x$ in $xy = 10$ gives an equation in $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand.",
+        "workingLatex": "7x - x^2 = 10",
+        "explanation": "Multiplying out the bracket gives $7x - x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange to standard form.",
+        "workingLatex": "x^2 - 7x + 10 = 0",
+        "explanation": "Moving all terms to one side (with a positive $x^2$ coefficient) gives a standard quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise.",
+        "workingLatex": "(x - 2)(x - 5) = 0",
+        "explanation": "Two numbers multiplying to $10$ and adding to $-7$ are $-2$ and $-5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x.",
+        "workingLatex": "x = 2 \\ \\text{ or } \\ x = 5",
+        "explanation": "Setting each factor to zero gives the two $x$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find y for x = 2.",
+        "workingLatex": "y = 7 - 2 = 5",
+        "explanation": "Substituting $x = 2$ into $y = 7 - x$ gives $y = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find y for x = 5.",
+        "workingLatex": "y = 7 - 5 = 2",
+        "explanation": "Substituting $x = 5$ into $y = 7 - x$ gives $y = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(2, 5) \\ \\text{ and } \\ (5, 2)",
+        "explanation": "Each $x$ pairs with its $y$; note the two solutions are the same pair of numbers in each order.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the products.",
+        "workingLatex": "2 \\times 5 = 10, \\quad 5 \\times 2 = 10 \\ \\checkmark",
+        "explanation": "Both pairs satisfy $xy = 10$, confirming the solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check the sums.",
+        "workingLatex": "2 + 5 = 7, \\quad 5 + 2 = 7 \\ \\checkmark",
+        "explanation": "Both pairs also satisfy $x + y = 7$, so each solves the whole system.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (2, 5) \\text{ or } (5, 2)",
+        "explanation": "The solutions are $(2, 5)$ and $(5, 2)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 7 - x \\Rightarrow x(7-x) = 10 \\Rightarrow x^2 - 7x + 10 = (x-2)(x-5) = 0 \\Rightarrow (2,5) \\text{ or } (5,2)$"
+  }
+}

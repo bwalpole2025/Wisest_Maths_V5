@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "factorising"
+  ],
+  "questionText": "Solve the inequality $x^2 + 5x + 4 < 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 + 5x + 4 = (x + 1)(x + 4)",
+        "explanation": "Factorising finds the critical values where the expression equals zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "x = -1 \\ \\text{ and } \\ x = -4",
+        "explanation": "Setting each factor to zero gives the roots $-1$ and $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{opens upward}",
+        "explanation": "The positive $x^2$ coefficient means the parabola dips below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide where the curve is below the axis.",
+        "workingLatex": "\\text{between the roots}",
+        "explanation": "For an upward parabola, $y < 0$ strictly between the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the solution.",
+        "workingLatex": "-4 < x < -1",
+        "explanation": "The inequality $< 0$ holds for $x$ strictly between $-4$ and $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : -4 < x < -1\\}",
+        "explanation": "In set notation the solution is the set of $x$ with $-4 < x < -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value inside.",
+        "workingLatex": "x = -2: \\ (-1)(2) = -2 < 0 \\ \\checkmark",
+        "explanation": "At $x = -2$ the product is negative, confirming the inequality holds between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 0: \\ (1)(4) = 4 \\not< 0",
+        "explanation": "At $x = 0$ the product is positive, confirming the inequality fails outside the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "-4 < x < -1",
+        "explanation": "The solution is $-4 < x < -1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x+1)(x+4) < 0 \\Rightarrow -4 < x < -1$ (between the roots)."
+  }
+}

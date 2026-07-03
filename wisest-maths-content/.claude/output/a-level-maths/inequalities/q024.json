@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "combined",
+    "linear and quadratic",
+    "intersection of solutions"
+  ],
+  "questionText": "Find the values of $x$ that satisfy both $x^2 - 4 < 0$ and $2x + 1 > 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Solve the quadratic inequality first.",
+        "workingLatex": "x^2 - 4 < 0",
+        "explanation": "We solve each inequality separately, then combine the solution sets.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "(x - 2)(x + 2) < 0",
+        "explanation": "The difference of squares factorises, giving critical values $2$ and $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve the quadratic inequality.",
+        "workingLatex": "-2 < x < 2",
+        "explanation": "An upward parabola is below the axis between its roots, so $x^2 - 4 < 0$ gives $-2 < x < 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the linear inequality.",
+        "workingLatex": "2x + 1 > 0",
+        "explanation": "Now we solve the second inequality on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange.",
+        "workingLatex": "2x > -1",
+        "explanation": "Subtracting $1$ from both sides gives $2x > -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Divide by 2.",
+        "workingLatex": "x > -\\tfrac{1}{2}",
+        "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same, giving $x > -\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the overlap.",
+        "workingLatex": "-2 < x < 2 \\ \\text{ and } \\ x > -\\tfrac{1}{2}",
+        "explanation": "Both conditions must hold at once, so we find where the two solution sets overlap.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Take the more restrictive lower bound.",
+        "workingLatex": "x > -\\tfrac{1}{2} \\text{ beats } x > -2",
+        "explanation": "Since $-\\tfrac12$ is greater than $-2$, the binding lower limit is $x > -\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Keep the upper bound.",
+        "workingLatex": "x < 2",
+        "explanation": "The upper limit $x < 2$ from the quadratic still applies.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine into one range.",
+        "workingLatex": "-\\tfrac{1}{2} < x < 2",
+        "explanation": "The overlap of the two solution sets is $-\\tfrac12 < x < 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 0: \\ 0 - 4 = -4 < 0, \\ 2(0) + 1 = 1 > 0 \\ \\checkmark",
+        "explanation": "At $x = 0$ both inequalities hold, confirming the overlap is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check a value outside.",
+        "workingLatex": "x = -1: \\ 2(-1) + 1 = -1 \\not> 0",
+        "explanation": "At $x = -1$ the linear inequality fails, confirming that region is correctly excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "-\\tfrac{1}{2} < x < 2",
+        "explanation": "The values satisfying both inequalities are $-\\tfrac12 < x < 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 4 < 0 \\Rightarrow -2 < x < 2$; $2x + 1 > 0 \\Rightarrow x > -\\tfrac{1}{2}$. Overlap: $-\\tfrac{1}{2} < x < 2$."
+  }
+}

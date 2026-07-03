@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "fractions"
+  ],
+  "questionText": "Solve the inequality $\\dfrac{x}{3} - 2 > 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Add 2 to both sides.",
+        "workingLatex": "\\dfrac{x}{3} > 3",
+        "explanation": "Removing the constant first isolates the fraction, keeping the inequality direction the same.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply both sides by 3.",
+        "workingLatex": "x > 9",
+        "explanation": "Multiplying by the positive number $3$ clears the fraction and keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Interpret the solution.",
+        "workingLatex": "x > 9",
+        "explanation": "Any value of $x$ greater than $9$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check a test value.",
+        "workingLatex": "x = 12: \\ \\tfrac{12}{3} - 2 = 2 > 1 \\ \\checkmark",
+        "explanation": "Substituting $x = 12$ gives $2 > 1$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the boundary is excluded.",
+        "workingLatex": "x = 9: \\ \\tfrac{9}{3} - 2 = 1 \\not> 1",
+        "explanation": "At $x = 9$ the expression equals $1$, which is not greater than $1$, so the boundary is correctly excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x > 9",
+        "explanation": "The solution to the inequality is $x > 9$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{x}{3} - 2 > 1 \\Rightarrow \\dfrac{x}{3} > 3 \\Rightarrow x > 9$"
+  }
+}

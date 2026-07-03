@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "double inequality"
+  ],
+  "questionText": "Solve the inequality $2 \\le 4x - 6 < 14$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a double inequality.",
+        "workingLatex": "2 \\le 4x - 6 < 14",
+        "explanation": "This says $4x - 6$ lies between $2$ and $14$; we operate on all three parts together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add 6 to all three parts.",
+        "workingLatex": "2 + 6 \\le 4x < 14 + 6",
+        "explanation": "Adding $6$ throughout keeps the chain of inequalities balanced.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify.",
+        "workingLatex": "8 \\le 4x < 20",
+        "explanation": "Working out the outer values gives $8 \\le 4x < 20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide all three parts by 4.",
+        "workingLatex": "2 \\le x < 5",
+        "explanation": "Dividing by the positive number $4$ throughout keeps both inequality signs the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "2 \\le x < 5",
+        "explanation": "The solution is all $x$ between $2$ (included) and $5$ (excluded).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 3: \\ 4(3) - 6 = 6, \\ 2 \\le 6 < 14 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ gives $6$, which lies in the required range, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the lower boundary.",
+        "workingLatex": "x = 2: \\ 4(2) - 6 = 2 \\ge 2 \\ \\checkmark",
+        "explanation": "At $x = 2$ the value is $2$, which satisfies $\\ge 2$, so $2$ is correctly included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the upper boundary.",
+        "workingLatex": "x = 5: \\ 4(5) - 6 = 14, \\ 14 < 14 \\text{ is false}",
+        "explanation": "At $x = 5$ the value is $14$, which is not strictly less than $14$, so $5$ is correctly excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "2 \\le x < 5",
+        "explanation": "The solution is $2 \\le x < 5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2 \\le 4x - 6 < 14 \\Rightarrow 8 \\le 4x < 20 \\Rightarrow 2 \\le x < 5$"
+  }
+}

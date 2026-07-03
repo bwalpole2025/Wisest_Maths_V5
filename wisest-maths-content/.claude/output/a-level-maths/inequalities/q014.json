@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "factorising"
+  ],
+  "questionText": "Solve the inequality $x^2 - 5x + 6 < 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 - 5x + 6 = (x - 2)(x - 3)",
+        "explanation": "Factorising finds the critical values where the expression equals zero, which divide the number line into regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "x = 2 \\ \\text{ and } \\ x = 3",
+        "explanation": "Setting each factor to zero gives the roots $2$ and $3$, where the parabola crosses the $x$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{coefficient of } x^2 > 0 \\Rightarrow \\text{opens upward}",
+        "explanation": "A positive $x^2$ coefficient means the parabola is a `smile', dipping below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide where the curve is below the axis.",
+        "workingLatex": "\\text{below the axis between the roots}",
+        "explanation": "For an upward parabola, $y < 0$ (below the axis) exactly between the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the solution.",
+        "workingLatex": "2 < x < 3",
+        "explanation": "The inequality $< 0$ therefore holds for $x$ strictly between $2$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : 2 < x < 3\\}",
+        "explanation": "In set notation the solution is the set of $x$ with $2 < x < 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 2.5: \\ (0.5)(-0.5) = -0.25 < 0 \\ \\checkmark",
+        "explanation": "At $x = 2.5$ the product is negative, confirming the inequality holds between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 4: \\ (2)(1) = 2 \\not< 0",
+        "explanation": "At $x = 4$ the product is positive, confirming the inequality fails outside the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "2 < x < 3",
+        "explanation": "The solution is $2 < x < 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-2)(x-3) < 0 \\Rightarrow 2 < x < 3$ (below the axis between the roots)."
+  }
+}

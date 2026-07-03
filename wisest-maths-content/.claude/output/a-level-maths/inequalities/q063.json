@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "difference of squares"
+  ],
+  "questionText": "Solve the inequality $x^2 - 16 \\ge 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the difference of squares.",
+        "workingLatex": "x^2 - 16 = (x - 4)(x + 4)",
+        "explanation": "Since $16 = 4^2$, the expression factorises as a difference of two squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "x = 4 \\ \\text{ and } \\ x = -4",
+        "explanation": "Setting each factor to zero gives the roots $4$ and $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{opens upward}",
+        "explanation": "The positive $x^2$ coefficient means the parabola lies above the axis outside its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide where the curve is on or above the axis.",
+        "workingLatex": "\\text{outside the roots}",
+        "explanation": "For an upward parabola, $\\ge 0$ holds at and outside the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the solution.",
+        "workingLatex": "x \\le -4 \\ \\text{ or } \\ x \\ge 4",
+        "explanation": "The inequality $\\ge 0$ holds for $x$ at most $-4$ or at least $4$, including the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x \\le -4\\} \\cup \\{x : x \\ge 4\\}",
+        "explanation": "The solution is the union of the two outer regions, including the boundary values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value between the roots.",
+        "workingLatex": "x = 0: \\ 0 - 16 = -16 \\not\\ge 0",
+        "explanation": "At $x = 0$ the value is negative, confirming the inequality fails between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 5: \\ 25 - 16 = 9 \\ge 0 \\ \\checkmark",
+        "explanation": "At $x = 5$ the value is positive, confirming the inequality holds outside the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x \\le -4 \\ \\text{ or } \\ x \\ge 4",
+        "explanation": "The solution is $x \\le -4$ or $x \\ge 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-4)(x+4) \\ge 0 \\Rightarrow x \\le -4 \\text{ or } x \\ge 4$ (outside the roots)."
+  }
+}

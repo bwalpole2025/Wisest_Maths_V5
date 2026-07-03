@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $10 - 3x > 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the term in x.",
+        "workingLatex": "-3x > 1 - 10",
+        "explanation": "Subtracting $10$ from both sides moves the constant across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "-3x > -9",
+        "explanation": "Combining $1 - 10$ gives $-9$, so we have $-3x > -9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Prepare to divide by a negative.",
+        "workingLatex": "\\text{divide by } -3 \\Rightarrow \\text{reverse the sign}",
+        "explanation": "Dividing by the negative number $-3$ will reverse the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide and reverse the sign.",
+        "workingLatex": "x < 3",
+        "explanation": "Dividing both sides by $-3$ and flipping $>$ to $<$ gives $x < 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "x < 3",
+        "explanation": "Any value of $x$ less than $3$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a test value.",
+        "workingLatex": "x = 0: \\ 10 - 3(0) = 10 > 1 \\ \\checkmark",
+        "explanation": "Substituting $x = 0$ gives $10 > 1$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 4: \\ 10 - 3(4) = -2 \\not> 1",
+        "explanation": "Testing $x = 4$ gives $-2 > 1$, which is false, confirming values above $3$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x < 3\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are less than $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x < 3",
+        "explanation": "The solution to the inequality is $x < 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$10 - 3x > 1 \\Rightarrow -3x > -9 \\Rightarrow x < 3$ (dividing by $-3$ reverses the inequality)."
+  }
+}

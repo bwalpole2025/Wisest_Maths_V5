@@ -1,0 +1,186 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 24% 4%;
+    --foreground: 220 20% 96%;
+    --card: 240 20% 8%;
+    --card-foreground: 220 20% 96%;
+    --muted: 240 14% 14%;
+    --muted-foreground: 232 12% 62%;
+    --primary: 263 90% 66%;
+    --primary-foreground: 240 24% 6%;
+    --border: 240 14% 18%;
+    --input: 240 14% 18%;
+    --ring: 263 90% 66%;
+  }
+
+  .light {
+    --background: 240 30% 99%;
+    --foreground: 240 30% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 30% 8%;
+    --muted: 240 20% 94%;
+    --muted-foreground: 240 8% 42%;
+    --primary: 263 80% 56%;
+    --primary-foreground: 0 0% 100%;
+    --border: 240 16% 88%;
+    --input: 240 16% 88%;
+    --ring: 263 80% 56%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "ss01";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: hsl(var(--primary) / 0.3);
+  }
+
+  /* Refined scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.25);
+    border-radius: 9999px;
+    border: 3px solid transparent;
+    background-clip: content-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--muted-foreground) / 0.4);
+    background-clip: content-box;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-white/[0.08] bg-white/[0.03] backdrop-blur-xl;
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.05) inset,
+      0 20px 40px -20px hsl(240 60% 2% / 0.6);
+  }
+
+  .light .glass {
+    @apply border-black/[0.06] bg-white/70;
+    box-shadow:
+      0 1px 0 0 hsl(0 0% 100% / 0.8) inset,
+      0 20px 40px -24px hsl(240 30% 40% / 0.18);
+  }
+
+  .card-glow {
+    position: relative;
+  }
+  .card-glow::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      130deg,
+      hsl(263 90% 66% / 0.5),
+      transparent 35%,
+      transparent 65%,
+      hsl(190 90% 60% / 0.4)
+    );
+    -webkit-mask:
+      linear-gradient(#000 0 0) content-box,
+      linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+  }
+  .card-glow:hover::before {
+    opacity: 1;
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(
+      110deg,
+      hsl(220 20% 98%),
+      hsl(263 90% 78%) 40%,
+      hsl(190 90% 70%) 70%,
+      hsl(220 20% 98%)
+    );
+    background-size: 200% auto;
+    animation: gradient-x 8s ease infinite;
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(to right, hsl(var(--border) / 0.4) 1px, transparent 1px),
+      linear-gradient(to bottom, hsl(var(--border) / 0.4) 1px, transparent 1px);
+    background-size: 56px 56px;
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
+  }
+
+  .dot-bg {
+    background-image: radial-gradient(hsl(var(--muted-foreground) / 0.18) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+  .animate-in-up {
+    animation: in-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
+  }
+}
+
+@keyframes in-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---- KaTeX theming ---- */
+.katex {
+  font-size: 1.06em;
+}
+.katex-display {
+  margin: 0;
+  padding: 0.15rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.katex-display::-webkit-scrollbar {
+  height: 6px;
+}
+.math-inline .katex {
+  color: hsl(263 90% 82%);
+  font-size: 1em;
+}
+.light .math-inline .katex {
+  color: hsl(263 70% 46%);
+}

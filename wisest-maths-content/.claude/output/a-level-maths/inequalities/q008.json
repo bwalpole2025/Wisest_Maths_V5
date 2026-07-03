@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "variable both sides"
+  ],
+  "questionText": "Solve the inequality $4x > x + 9$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Collect the x terms on one side.",
+        "workingLatex": "4x - x > 9",
+        "explanation": "Subtracting $x$ from both sides gathers the variable terms on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "3x > 9",
+        "explanation": "Combining $4x - x$ gives $3x$, leaving $3x > 9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide both sides by 3.",
+        "workingLatex": "x > 3",
+        "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x > 3",
+        "explanation": "Any value of $x$ greater than $3$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 4: \\ 4(4) = 16 > 4 + 9 = 13 \\ \\checkmark",
+        "explanation": "Substituting $x = 4$ gives $16 > 13$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x > 3",
+        "explanation": "The solution to the inequality is $x > 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$4x > x + 9 \\Rightarrow 3x > 9 \\Rightarrow x > 3$"
+  }
+}

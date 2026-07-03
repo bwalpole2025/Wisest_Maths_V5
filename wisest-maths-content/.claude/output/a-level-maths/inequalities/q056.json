@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "variable both sides"
+  ],
+  "questionText": "Solve the inequality $6x - 2 \\ge 4x + 6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Collect the x terms on one side.",
+        "workingLatex": "6x - 4x - 2 \\ge 6",
+        "explanation": "Subtracting $4x$ from both sides gathers the variable terms on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "2x - 2 \\ge 6",
+        "explanation": "Combining $6x - 4x$ gives $2x$, leaving $2x - 2 \\ge 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add 2 to both sides.",
+        "workingLatex": "2x \\ge 8",
+        "explanation": "Adding $2$ isolates the term in $x$ without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide both sides by 2.",
+        "workingLatex": "x \\ge 4",
+        "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the boundary value.",
+        "workingLatex": "x = 4: \\ 6(4) - 2 = 22 \\ge 4(4) + 6 = 22 \\ \\checkmark",
+        "explanation": "Substituting the boundary $x = 4$ gives $22 \\ge 22$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x \\ge 4",
+        "explanation": "The solution to the inequality is $x \\ge 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$6x - 2 \\ge 4x + 6 \\Rightarrow 2x \\ge 8 \\Rightarrow x \\ge 4$"
+  }
+}

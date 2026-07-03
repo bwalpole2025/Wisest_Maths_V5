@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "combined",
+    "quadratic and linear",
+    "intersection of solutions"
+  ],
+  "questionText": "Find the values of $x$ that satisfy both $x^2 - x - 2 \\le 0$ and $x > 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Solve the quadratic inequality first.",
+        "workingLatex": "x^2 - x - 2 \\le 0",
+        "explanation": "We solve each inequality separately, then combine the solution sets.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "(x - 2)(x + 1) \\le 0",
+        "explanation": "Factorising gives critical values $2$ and $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the shape.",
+        "workingLatex": "\\text{opens upward} \\Rightarrow \\le 0 \\text{ between roots}",
+        "explanation": "An upward parabola is on or below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the quadratic inequality.",
+        "workingLatex": "-1 \\le x \\le 2",
+        "explanation": "So $x^2 - x - 2 \\le 0$ holds for $-1 \\le x \\le 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the second inequality.",
+        "workingLatex": "x > 0",
+        "explanation": "The second condition restricts $x$ to positive values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set up the overlap.",
+        "workingLatex": "-1 \\le x \\le 2 \\ \\text{ and } \\ x > 0",
+        "explanation": "Both conditions must hold at once, so we find where the two solution sets overlap.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Take the more restrictive lower bound.",
+        "workingLatex": "x > 0 \\text{ beats } x \\ge -1",
+        "explanation": "Since $0$ is greater than $-1$, the binding lower limit is $x > 0$ (and $0$ is excluded).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Keep the upper bound.",
+        "workingLatex": "x \\le 2",
+        "explanation": "The upper limit $x \\le 2$ from the quadratic still applies, with $2$ included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine into one range.",
+        "workingLatex": "0 < x \\le 2",
+        "explanation": "The overlap of the two solution sets is $0 < x \\le 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Express in interval notation.",
+        "workingLatex": "x \\in (0, 2]",
+        "explanation": "In interval notation the solution is the half-open interval from $0$ (excluded) to $2$ (included).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 1: \\ 1 - 1 - 2 = -2 \\le 0, \\ 1 > 0 \\ \\checkmark",
+        "explanation": "At $x = 1$ both inequalities hold, confirming the overlap is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check a value outside.",
+        "workingLatex": "x = -0.5: \\ x > 0 \\text{ fails}",
+        "explanation": "At $x = -0.5$ the condition $x > 0$ fails, confirming negative values are excluded despite satisfying the quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "0 < x \\le 2",
+        "explanation": "The values satisfying both inequalities are $0 < x \\le 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - x - 2 \\le 0 \\Rightarrow -1 \\le x \\le 2$; with $x > 0$ the overlap is $0 < x \\le 2$."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "double inequality"
+  ],
+  "questionText": "Solve the inequality $-4 \\le 2x + 2 < 8$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a double inequality.",
+        "workingLatex": "-4 \\le 2x + 2 < 8",
+        "explanation": "This says $2x + 2$ lies between $-4$ and $8$; we operate on all three parts together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Subtract 2 from all three parts.",
+        "workingLatex": "-4 - 2 \\le 2x < 8 - 2",
+        "explanation": "Subtracting $2$ throughout keeps the chain of inequalities balanced.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify.",
+        "workingLatex": "-6 \\le 2x < 6",
+        "explanation": "Working out the outer values gives $-6 \\le 2x < 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide all three parts by 2.",
+        "workingLatex": "-3 \\le x < 3",
+        "explanation": "Dividing by the positive number $2$ throughout keeps both inequality signs the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "-3 \\le x < 3",
+        "explanation": "The solution is all $x$ between $-3$ (included) and $3$ (excluded).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 0: \\ 2(0) + 2 = 2, \\ -4 \\le 2 < 8 \\ \\checkmark",
+        "explanation": "Substituting $x = 0$ gives $2$, which lies in the required range, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the lower boundary.",
+        "workingLatex": "x = -3: \\ 2(-3) + 2 = -4 \\ge -4 \\ \\checkmark",
+        "explanation": "At $x = -3$ the value is $-4$, which satisfies $\\ge -4$, so $-3$ is correctly included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the upper boundary.",
+        "workingLatex": "x = 3: \\ 2(3) + 2 = 8, \\ 8 < 8 \\text{ is false}",
+        "explanation": "At $x = 3$ the value is $8$, which is not strictly less than $8$, so $3$ is correctly excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "-3 \\le x < 3",
+        "explanation": "The solution is $-3 \\le x < 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-4 \\le 2x + 2 < 8 \\Rightarrow -6 \\le 2x < 6 \\Rightarrow -3 \\le x < 3$"
+  }
+}

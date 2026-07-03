@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "word problem",
+    "linear",
+    "elimination"
+  ],
+  "questionText": "Three apples and two bananas cost $\\pounds 1.30$. Two apples and four bananas cost $\\pounds 1.40$. Find the cost of one apple and one banana.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Define the variables (in pence).",
+        "workingLatex": "a = \\text{apple cost}, \\ b = \\text{banana cost}",
+        "explanation": "Working in pence avoids decimals; $a$ and $b$ are the costs of one apple and one banana.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Translate the first statement.",
+        "workingLatex": "3a + 2b = 130 \\ (1)",
+        "explanation": "Three apples and two bananas costing $\\pounds1.30$ becomes $3a + 2b = 130$ pence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Translate the second statement.",
+        "workingLatex": "2a + 4b = 140 \\ (2)",
+        "explanation": "Two apples and four bananas costing $\\pounds1.40$ becomes $2a + 4b = 140$ pence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify equation (2).",
+        "workingLatex": "a + 2b = 70 \\ (3)",
+        "explanation": "Dividing equation (2) by $2$ gives the simpler equation $a + 2b = 70$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract to eliminate b.",
+        "workingLatex": "(1) - (3): \\ (3a + 2b) - (a + 2b) = 130 - 70",
+        "explanation": "Both (1) and (3) contain $2b$, so subtracting removes the $b$ terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for a.",
+        "workingLatex": "2a = 60 \\Rightarrow a = 30",
+        "explanation": "The $b$ terms cancel, leaving $2a = 60$, so $a = 30$ pence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute back to find b.",
+        "workingLatex": "30 + 2b = 70",
+        "explanation": "Putting $a = 30$ into equation (3) gives an equation in $b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for b.",
+        "workingLatex": "2b = 40 \\Rightarrow b = 20",
+        "explanation": "Rearranging gives $2b = 40$, so $b = 20$ pence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the first equation.",
+        "workingLatex": "3(30) + 2(20) = 90 + 40 = 130 \\ \\checkmark",
+        "explanation": "Substituting into equation (1) confirms the first condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the second equation.",
+        "workingLatex": "2(30) + 4(20) = 60 + 80 = 140 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms the second condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Convert back to pounds.",
+        "workingLatex": "a = 30\\text{p}, \\quad b = 20\\text{p}",
+        "explanation": "An apple costs $30$ pence and a banana costs $20$ pence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Sense-check the prices.",
+        "workingLatex": "\\text{apple dearer than banana, both under } \\pounds 1",
+        "explanation": "The apple costing more than the banana and both being modest everyday prices is a reasonable reality check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "\\text{apple } 30\\text{p}, \\ \\text{banana } 20\\text{p}",
+        "explanation": "One apple costs $30$p and one banana costs $20$p.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3a + 2b = 130,\\ 2a + 4b = 140$; solving gives $a = 30,\\ b = 20$. Apple $30$p, banana $20$p."
+  }
+}

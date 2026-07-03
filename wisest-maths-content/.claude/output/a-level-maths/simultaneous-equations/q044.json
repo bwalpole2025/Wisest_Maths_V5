@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "substitution",
+    "intersection"
+  ],
+  "questionText": "Solve the simultaneous equations $y = 2x + 1$ and $y = x^2 + 2x - 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "y = 2x + 1 \\ (\\text{line}), \\quad y = x^2 + 2x - 3 \\ (\\text{curve})",
+        "explanation": "Setting the two expressions for $y$ equal gives a single quadratic whose solutions are the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the expressions equal.",
+        "workingLatex": "x^2 + 2x - 3 = 2x + 1",
+        "explanation": "At a common point both expressions for $y$ are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic.",
+        "workingLatex": "x^2 - 4 = 0",
+        "explanation": "The $2x$ terms cancel from both sides, leaving $x^2 - 4 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the difference of squares.",
+        "workingLatex": "(x - 2)(x + 2) = 0",
+        "explanation": "Since $x^2 - 4$ is a difference of two squares, it factorises as $(x-2)(x+2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x.",
+        "workingLatex": "x = 2 \\ \\text{ or } \\ x = -2",
+        "explanation": "Setting each factor to zero gives the two $x$-coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y for x = 2.",
+        "workingLatex": "y = 2(2) + 1 = 5",
+        "explanation": "Substituting $x = 2$ into the line $y = 2x + 1$ gives $y = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y for x = -2.",
+        "workingLatex": "y = 2(-2) + 1 = -3",
+        "explanation": "Substituting $x = -2$ into the line gives $y = -3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(2, 5) \\ \\text{ and } \\ (-2, -3)",
+        "explanation": "Each $x$ pairs with its $y$ to give an intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the first point on the curve.",
+        "workingLatex": "2^2 + 2(2) - 3 = 4 + 4 - 3 = 5 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ into the curve gives $y = 5$, confirming the point lies on both graphs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the second point on the curve.",
+        "workingLatex": "(-2)^2 + 2(-2) - 3 = 4 - 4 - 3 = -3 \\ \\checkmark",
+        "explanation": "Substituting $x = -2$ into the curve gives $y = -3$, confirming the second point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the number of intersections.",
+        "workingLatex": "\\text{two real roots} \\Rightarrow \\text{two points}",
+        "explanation": "The quadratic had two distinct roots, so the line meets the curve at two separate points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret geometrically.",
+        "workingLatex": "\\text{the line crosses the curve twice}",
+        "explanation": "Two real solutions mean the line and the parabola intersect at two distinct points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (2, 5) \\text{ or } (-2, -3)",
+        "explanation": "The solutions are $(2, 5)$ and $(-2, -3)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + 2x - 3 = 2x + 1 \\Rightarrow x^2 - 4 = 0 \\Rightarrow x = \\pm 2 \\Rightarrow (2,5) \\text{ or } (-2,-3)$"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.inequalities.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "rearranging"
+  ],
+  "questionText": "Solve the inequality $x^2 + 2x > 8$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rearrange to standard form.",
+        "workingLatex": "x^2 + 2x - 8 > 0",
+        "explanation": "Bringing the $8$ across so the right side is zero prepares the quadratic for factorising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 + 2x - 8 = (x + 4)(x - 2)",
+        "explanation": "Factorising reveals the critical values where the expression is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the critical values.",
+        "workingLatex": "x = -4 \\ \\text{ and } \\ x = 2",
+        "explanation": "Setting each factor to zero gives the roots $-4$ and $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Order the critical values.",
+        "workingLatex": "-4 < 2",
+        "explanation": "Ordering the roots divides the number line into three regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{opens upward}",
+        "explanation": "The positive $x^2$ coefficient means the parabola lies above the axis outside its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Decide where the curve is above the axis.",
+        "workingLatex": "\\text{outside the roots}",
+        "explanation": "For an upward parabola, $y > 0$ strictly outside the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the solution.",
+        "workingLatex": "x < -4 \\ \\text{ or } \\ x > 2",
+        "explanation": "The inequality $> 0$ holds for $x$ less than $-4$ or greater than $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x < -4\\} \\cup \\{x : x > 2\\}",
+        "explanation": "The solution is the union of the two outer regions, with the roots excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 3: \\ 9 + 6 = 15 > 8 \\ \\checkmark",
+        "explanation": "Testing $x = 3$ in the original gives $15 > 8$, which is true, confirming the outer region works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check a value between the roots.",
+        "workingLatex": "x = 0: \\ 0 + 0 = 0 \\not> 8",
+        "explanation": "Testing $x = 0$ gives $0 > 8$, which is false, confirming values between the roots fail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the other outer region.",
+        "workingLatex": "x = -5: \\ 25 - 10 = 15 > 8 \\ \\checkmark",
+        "explanation": "Testing $x = -5$ gives $15 > 8$, which is true, confirming the left region works too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the boundaries are excluded.",
+        "workingLatex": "\\text{strict } > \\Rightarrow \\text{roots not included}",
+        "explanation": "Because the inequality is strict, the roots $-4$ and $2$ are excluded from the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x < -4 \\ \\text{ or } \\ x > 2",
+        "explanation": "The solution is $x < -4$ or $x > 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + 2x > 8 \\Rightarrow x^2 + 2x - 8 = (x+4)(x-2) > 0 \\Rightarrow x < -4 \\text{ or } x > 2$"
+  }
+}

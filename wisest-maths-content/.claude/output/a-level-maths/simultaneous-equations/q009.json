@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.simultaneous.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $2x + 3y = 12$ and $4x - 3y = 6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "2x + 3y = 12 \\ (1), \\quad 4x - 3y = 6 \\ (2)",
+        "explanation": "Numbering the equations helps track the elimination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Spot the matching coefficients.",
+        "workingLatex": "+3y \\text{ and } -3y",
+        "explanation": "The $y$ terms already have equal and opposite coefficients, so adding the equations will eliminate $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the equations.",
+        "workingLatex": "(2x + 3y) + (4x - 3y) = 12 + 6",
+        "explanation": "Adding term by term removes the $y$ terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "6x = 18 \\Rightarrow x = 3",
+        "explanation": "The $y$ terms cancel, leaving $6x = 18$, so $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "2(3) + 3y = 12",
+        "explanation": "Putting $x = 3$ into equation (1) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "6 + 3y = 12 \\Rightarrow 3y = 6",
+        "explanation": "Subtracting $6$ from both sides gives $3y = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for y.",
+        "workingLatex": "y = 2",
+        "explanation": "Dividing by $3$ gives $y = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in the other equation.",
+        "workingLatex": "4(3) - 3(2) = 12 - 6 = 6 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 3, \\ y = 2",
+        "explanation": "The solution is $x = 3$ and $y = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Adding gives $6x = 18 \\Rightarrow x = 3$, then $y = 2$. Solution: $x = 3,\\ y = 2$."
+  }
+}

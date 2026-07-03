@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "word problem",
+    "linear",
+    "geometry"
+  ],
+  "questionText": "A rectangle has a perimeter of $26$ cm. Its length is $3$ cm more than its width. Find its length and width.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Define the variables.",
+        "workingLatex": "l = \\text{length}, \\ w = \\text{width}",
+        "explanation": "Introducing letters for the two unknown dimensions turns the words into algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Translate the perimeter.",
+        "workingLatex": "2(l + w) = 26",
+        "explanation": "The perimeter of a rectangle is twice the sum of length and width, and this equals $26$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the perimeter equation.",
+        "workingLatex": "l + w = 13 \\ (1)",
+        "explanation": "Dividing by $2$ gives the tidy equation $l + w = 13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Translate the length condition.",
+        "workingLatex": "l = w + 3 \\ (2)",
+        "explanation": "`The length is $3$ cm more than the width' becomes $l = w + 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute (2) into (1).",
+        "workingLatex": "(w + 3) + w = 13",
+        "explanation": "Replacing $l$ with $w + 3$ gives an equation in $w$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "2w + 3 = 13",
+        "explanation": "Collecting the $w$ terms gives $2w + 3 = 13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for w.",
+        "workingLatex": "2w = 10 \\Rightarrow w = 5",
+        "explanation": "Subtracting $3$ then dividing by $2$ gives $w = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the length.",
+        "workingLatex": "l = 5 + 3 = 8",
+        "explanation": "Substituting $w = 5$ into $l = w + 3$ gives $l = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the perimeter.",
+        "workingLatex": "2(8 + 5) = 2(13) = 26 \\ \\checkmark",
+        "explanation": "The perimeter is $26$ cm, matching the given information.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the length condition.",
+        "workingLatex": "8 = 5 + 3 \\ \\checkmark",
+        "explanation": "The length is indeed $3$ cm more than the width.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the dimensions are sensible.",
+        "workingLatex": "l = 8 > w = 5 > 0",
+        "explanation": "Both dimensions are positive and the length exceeds the width, as expected for a valid rectangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the area as a further check.",
+        "workingLatex": "\\text{area} = 8 \\times 5 = 40 \\text{ cm}^2",
+        "explanation": "As an extra consistency check, the rectangle's area works out to a sensible $40$ cm$^2$ from the found dimensions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "\\text{length } 8\\text{ cm}, \\ \\text{width } 5\\text{ cm}",
+        "explanation": "The rectangle is $8$ cm long and $5$ cm wide.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$l + w = 13,\\ l = w + 3$; substituting gives $2w + 3 = 13 \\Rightarrow w = 5,\\ l = 8$. Length $8$ cm, width $5$ cm."
+  }
+}

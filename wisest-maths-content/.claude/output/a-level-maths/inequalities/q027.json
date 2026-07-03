@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.inequalities.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear"
+  ],
+  "questionText": "Solve the inequality $3x - 7 \\le 5$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Aim to isolate x.",
+        "workingLatex": "3x - 7 \\le 5",
+        "explanation": "We isolate the term in $x$, keeping the inequality sign as we work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add 7 to both sides.",
+        "workingLatex": "3x \\le 12",
+        "explanation": "Adding $7$ to both sides isolates the $x$ term without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide both sides by 3.",
+        "workingLatex": "x \\le 4",
+        "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\le 4",
+        "explanation": "Any value of $x$ at most $4$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the boundary value.",
+        "workingLatex": "x = 4: \\ 3(4) - 7 = 5 \\le 5 \\ \\checkmark",
+        "explanation": "Substituting the boundary $x = 4$ gives $5 \\le 5$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x \\le 4",
+        "explanation": "The solution is $x \\le 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3x - 7 \\le 5 \\Rightarrow 3x \\le 12 \\Rightarrow x \\le 4$"
+  }
+}

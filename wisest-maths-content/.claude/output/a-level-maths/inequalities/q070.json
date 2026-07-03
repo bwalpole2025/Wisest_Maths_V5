@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "combined",
+    "quadratic and linear",
+    "intersection of solutions"
+  ],
+  "questionText": "Find the values of $x$ that satisfy both $x^2 - 9 \\le 0$ and $x - 1 > 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Solve the quadratic inequality first.",
+        "workingLatex": "x^2 - 9 \\le 0",
+        "explanation": "We solve each inequality separately, then combine the solution sets.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "(x - 3)(x + 3) \\le 0",
+        "explanation": "The difference of squares factorises, giving critical values $3$ and $-3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the shape.",
+        "workingLatex": "\\text{opens upward} \\Rightarrow \\le 0 \\text{ between roots}",
+        "explanation": "An upward parabola is on or below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the quadratic inequality.",
+        "workingLatex": "-3 \\le x \\le 3",
+        "explanation": "So $x^2 - 9 \\le 0$ holds for $-3 \\le x \\le 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the linear inequality.",
+        "workingLatex": "x - 1 > 0 \\Rightarrow x > 1",
+        "explanation": "Adding $1$ to both sides gives $x > 1$ for the second condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set up the overlap.",
+        "workingLatex": "-3 \\le x \\le 3 \\ \\text{ and } \\ x > 1",
+        "explanation": "Both conditions must hold at once, so we find where the two solution sets overlap.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Take the more restrictive lower bound.",
+        "workingLatex": "x > 1 \\text{ beats } x \\ge -3",
+        "explanation": "Since $1$ is greater than $-3$, the binding lower limit is $x > 1$ (and $1$ is excluded).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Keep the upper bound.",
+        "workingLatex": "x \\le 3",
+        "explanation": "The upper limit $x \\le 3$ from the quadratic still applies, with $3$ included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine into one range.",
+        "workingLatex": "1 < x \\le 3",
+        "explanation": "The overlap of the two solution sets is $1 < x \\le 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Express in interval notation.",
+        "workingLatex": "x \\in (1, 3]",
+        "explanation": "In interval notation the solution is the half-open interval from $1$ (excluded) to $3$ (included).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 2: \\ 4 - 9 = -5 \\le 0, \\ 2 - 1 = 1 > 0 \\ \\checkmark",
+        "explanation": "At $x = 2$ both inequalities hold, confirming the overlap is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 0: \\ x - 1 = -1 \\not> 0",
+        "explanation": "At $x = 0$ the condition $x - 1 > 0$ fails, confirming values at most $1$ are excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "1 < x \\le 3",
+        "explanation": "The values satisfying both inequalities are $1 < x \\le 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 9 \\le 0 \\Rightarrow -3 \\le x \\le 3$; with $x > 1$ the overlap is $1 < x \\le 3$."
+  }
+}

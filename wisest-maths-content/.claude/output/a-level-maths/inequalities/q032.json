@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "variable both sides"
+  ],
+  "questionText": "Solve the inequality $7x + 2 \\le 3x + 18$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Collect the x terms on one side.",
+        "workingLatex": "7x - 3x + 2 \\le 18",
+        "explanation": "Subtracting $3x$ from both sides gathers the variable terms on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "4x + 2 \\le 18",
+        "explanation": "Combining $7x - 3x$ gives $4x$, leaving $4x + 2 \\le 18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract 2 from both sides.",
+        "workingLatex": "4x \\le 16",
+        "explanation": "Subtracting $2$ isolates the term in $x$ without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide both sides by 4.",
+        "workingLatex": "x \\le 4",
+        "explanation": "Dividing by the positive number $4$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 4: \\ 7(4) + 2 = 30 \\le 3(4) + 18 = 30 \\ \\checkmark",
+        "explanation": "Substituting the boundary $x = 4$ gives $30 \\le 30$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x \\le 4",
+        "explanation": "The solution is $x \\le 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$7x + 2 \\le 3x + 18 \\Rightarrow 4x \\le 16 \\Rightarrow x \\le 4$"
+  }
+}

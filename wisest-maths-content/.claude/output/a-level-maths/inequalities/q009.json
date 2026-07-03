@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $-3x > 12$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Note the coefficient of x is negative.",
+        "workingLatex": "-3x > 12",
+        "explanation": "When we divide (or multiply) an inequality by a negative number, the inequality sign must be reversed — the key idea here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Divide both sides by -3.",
+        "workingLatex": "\\dfrac{-3x}{-3} \\ \\text{vs} \\ \\dfrac{12}{-3}",
+        "explanation": "We divide both sides by $-3$ to isolate $x$, remembering the sign will flip.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Reverse the inequality sign.",
+        "workingLatex": "x < -4",
+        "explanation": "Because we divided by a negative number, $>$ becomes $<$, giving $x < -4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x < -4",
+        "explanation": "Any value of $x$ less than $-4$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = -5: \\ -3(-5) = 15 > 12 \\ \\checkmark",
+        "explanation": "Substituting $x = -5$ (which is less than $-4$) gives $15 > 12$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a value on the wrong side.",
+        "workingLatex": "x = 0: \\ -3(0) = 0 \\not> 12",
+        "explanation": "Testing $x = 0$ gives $0 > 12$, which is false, confirming that values above $-4$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the sign flip mattered.",
+        "workingLatex": "\\text{forgetting to flip would give the wrong side}",
+        "explanation": "Had we kept $>$, we would have written $x > -4$, the exact opposite set — so the flip is essential.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x < -4\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are less than $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x < -4",
+        "explanation": "The solution is $x < -4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-3x > 12 \\Rightarrow x < -4$ (dividing by $-3$ reverses the inequality)."
+  }
+}

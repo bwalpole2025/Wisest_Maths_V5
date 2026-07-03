@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.simultaneous.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $3x + 4y = 16$ and $5x - 4y = 16$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "3x + 4y = 16 \\ (1), \\quad 5x - 4y = 16 \\ (2)",
+        "explanation": "The $y$ terms are already equal and opposite, so adding will eliminate $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add the equations.",
+        "workingLatex": "(3x + 4y) + (5x - 4y) = 16 + 16",
+        "explanation": "The $+4y$ and $-4y$ cancel when we add the two equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify to find x.",
+        "workingLatex": "8x = 32 \\Rightarrow x = 4",
+        "explanation": "The $y$ terms cancel, leaving $8x = 32$, so $x = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute back.",
+        "workingLatex": "3(4) + 4y = 16",
+        "explanation": "Putting $x = 4$ into equation (1) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify.",
+        "workingLatex": "12 + 4y = 16 \\Rightarrow 4y = 4",
+        "explanation": "Subtracting $12$ gives $4y = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for y.",
+        "workingLatex": "y = 1",
+        "explanation": "Dividing by $4$ gives $y = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the intermediate solution.",
+        "workingLatex": "x = 4, \\ y = 1",
+        "explanation": "So far we have $x = 4$ and $y = 1$; we verify before finalising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in equation (2).",
+        "workingLatex": "5(4) - 4(1) = 20 - 4 = 16 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 4, \\ y = 1",
+        "explanation": "The solution is $x = 4$ and $y = 1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Adding gives $8x = 32 \\Rightarrow x = 4$, then $y = 1$. Solution: $x = 4,\\ y = 1$."
+  }
+}

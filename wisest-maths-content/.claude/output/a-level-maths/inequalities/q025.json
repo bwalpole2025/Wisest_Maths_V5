@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "leading coefficient",
+    "factorising"
+  ],
+  "questionText": "Solve the inequality $3x^2 - 5x - 2 \\le 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "3x^2 - 5x - 2 = (3x + 1)(x - 2)",
+        "explanation": "Splitting the middle term (using $ac = -6$, with $1$ and $-6$) factorises this quadratic with leading coefficient $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "3x + 1 = 0 \\Rightarrow x = -\\tfrac{1}{3}, \\quad x - 2 = 0 \\Rightarrow x = 2",
+        "explanation": "Setting each factor to zero gives the roots $-\\tfrac13$ and $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Order the critical values.",
+        "workingLatex": "-\\tfrac{1}{3} < 2",
+        "explanation": "Placing the roots in order divides the number line into three regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{coefficient of } x^2 = 3 > 0 \\Rightarrow \\text{opens upward}",
+        "explanation": "A positive $x^2$ coefficient means the parabola dips below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Decide where the curve is on or below the axis.",
+        "workingLatex": "\\text{between the roots}",
+        "explanation": "For an upward parabola, $\\le 0$ holds at and between the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the solution.",
+        "workingLatex": "-\\tfrac{1}{3} \\le x \\le 2",
+        "explanation": "The inequality $\\le 0$ holds for $x$ between $-\\tfrac13$ and $2$, including the roots themselves.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Express in interval notation.",
+        "workingLatex": "x \\in \\left[-\\tfrac{1}{3}, \\, 2\\right]",
+        "explanation": "In interval notation the solution is the closed interval from $-\\tfrac13$ to $2$, with both endpoints included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Test a value inside.",
+        "workingLatex": "x = 0: \\ (1)(-2) = -2 \\le 0 \\ \\checkmark",
+        "explanation": "At $x = 0$ the product is negative, confirming the inequality holds between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Test a value to the right.",
+        "workingLatex": "x = 3: \\ (10)(1) = 10 \\not\\le 0",
+        "explanation": "At $x = 3$ the product is positive, confirming the inequality fails to the right of the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Test a value to the left.",
+        "workingLatex": "x = -1: \\ (-2)(-3) = 6 \\not\\le 0",
+        "explanation": "At $x = -1$ the product is positive, confirming the inequality fails to the left of the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the boundaries are included.",
+        "workingLatex": "\\text{non-strict } \\le 0 \\Rightarrow \\text{roots included}",
+        "explanation": "Because the inequality allows equality, the roots $-\\tfrac13$ and $2$ (where the value is zero) are part of the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Summarise the sign pattern.",
+        "workingLatex": "+ \\ | \\ - \\ | \\ + \\quad \\text{at } -\\tfrac{1}{3}, 2",
+        "explanation": "The parabola is positive outside the roots and negative between them, so $\\le 0$ picks out the middle region.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "-\\tfrac{1}{3} \\le x \\le 2",
+        "explanation": "The solution is $-\\tfrac13 \\le x \\le 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(3x+1)(x-2) \\le 0 \\Rightarrow -\\tfrac{1}{3} \\le x \\le 2$ (between the roots)."
+  }
+}

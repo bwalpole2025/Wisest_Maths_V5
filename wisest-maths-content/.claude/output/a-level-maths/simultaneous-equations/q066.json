@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "tangent",
+    "repeated root"
+  ],
+  "questionText": "Solve the simultaneous equations $y = 2x - 4$ and $y = x^2 - 2x$, and state the geometric relationship between the line and the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "y = 2x - 4 \\ (\\text{line}), \\quad y = x^2 - 2x \\ (\\text{curve})",
+        "explanation": "Setting the two expressions for $y$ equal gives a quadratic; its number of roots reveals how line and curve meet.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the expressions equal.",
+        "workingLatex": "x^2 - 2x = 2x - 4",
+        "explanation": "At a common point both expressions for $y$ are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic.",
+        "workingLatex": "x^2 - 4x + 4 = 0",
+        "explanation": "Bringing all terms to one side gives $x^2 - 4x + 4 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the discriminant.",
+        "workingLatex": "\\Delta = (-4)^2 - 4(1)(4) = 16 - 16 = 0",
+        "explanation": "A zero discriminant signals a single repeated root, i.e. the line touches the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise the perfect square.",
+        "workingLatex": "(x - 2)^2 = 0",
+        "explanation": "The quadratic is a perfect square, confirming the repeated root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x.",
+        "workingLatex": "x = 2 \\text{ (repeated)}",
+        "explanation": "The only solution is $x = 2$, occurring twice.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y.",
+        "workingLatex": "y = 2(2) - 4 = 0",
+        "explanation": "Substituting $x = 2$ into the line $y = 2x - 4$ gives $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the single point.",
+        "workingLatex": "(2, 0)",
+        "explanation": "There is just one common point, $(2, 0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the point on the curve.",
+        "workingLatex": "2^2 - 2(2) = 4 - 4 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ into the curve also gives $y = 0$, confirming the point lies on both graphs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Interpret the single solution.",
+        "workingLatex": "\\text{one repeated root} \\Rightarrow \\text{tangent}",
+        "explanation": "A single repeated solution means the line meets the curve at exactly one point without crossing it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the geometric relationship.",
+        "workingLatex": "\\text{the line is a tangent to the curve}",
+        "explanation": "Because there is one point of contact, the line $y = 2x - 4$ is a tangent to the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Summarise.",
+        "workingLatex": "\\text{tangent at } (2, 0)",
+        "explanation": "The line touches the curve at the single point $(2, 0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (2, 0), \\text{ the line is a tangent}",
+        "explanation": "The only solution is $(2, 0)$, and the line is a tangent to the curve there.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 2x = 2x - 4 \\Rightarrow x^2 - 4x + 4 = (x-2)^2 = 0$ (repeated) $\\Rightarrow (2,0)$; the line is a tangent."
+  }
+}

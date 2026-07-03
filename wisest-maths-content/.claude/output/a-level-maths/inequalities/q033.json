@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "variable both sides"
+  ],
+  "questionText": "Solve the inequality $2x - 1 > x + 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Collect the x terms on one side.",
+        "workingLatex": "2x - x - 1 > 2",
+        "explanation": "Subtracting $x$ from both sides gathers the variable terms together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "x - 1 > 2",
+        "explanation": "Combining $2x - x$ gives $x$, leaving $x - 1 > 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add 1 to both sides.",
+        "workingLatex": "x > 3",
+        "explanation": "Adding $1$ isolates $x$ without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x > 3",
+        "explanation": "Any value of $x$ greater than $3$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 4: \\ 2(4) - 1 = 7 > 4 + 2 = 6 \\ \\checkmark",
+        "explanation": "Substituting $x = 4$ gives $7 > 6$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x > 3",
+        "explanation": "The solution to the inequality is $x > 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x - 1 > x + 2 \\Rightarrow x > 3$"
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.inequalities.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "rearranging"
+  ],
+  "questionText": "Solve the inequality $x^2 < 3x + 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rearrange to standard form.",
+        "workingLatex": "x^2 - 3x - 4 < 0",
+        "explanation": "Bringing all terms to one side gives a quadratic compared with zero, ready to factorise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 - 3x - 4 = (x - 4)(x + 1)",
+        "explanation": "Factorising reveals the critical values where the expression is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the critical values.",
+        "workingLatex": "x = 4 \\ \\text{ and } \\ x = -1",
+        "explanation": "Setting each factor to zero gives the roots $4$ and $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Order the critical values.",
+        "workingLatex": "-1 < 4",
+        "explanation": "Ordering the roots divides the number line into three regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{opens upward}",
+        "explanation": "The positive $x^2$ coefficient means the parabola dips below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Decide where the curve is below the axis.",
+        "workingLatex": "\\text{between the roots}",
+        "explanation": "For an upward parabola, $y < 0$ strictly between the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the solution.",
+        "workingLatex": "-1 < x < 4",
+        "explanation": "The inequality $< 0$ holds for $x$ strictly between $-1$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : -1 < x < 4\\}",
+        "explanation": "In set notation the solution is the set of $x$ with $-1 < x < 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 0: \\ 0 < 3(0) + 4 = 4 \\ \\checkmark",
+        "explanation": "Testing $x = 0$ in the original gives $0 < 4$, which is true, confirming the interior works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 5: \\ 25 < 3(5) + 4 = 19 \\text{ is false}",
+        "explanation": "Testing $x = 5$ gives $25 < 19$, which is false, confirming values outside the interval fail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the boundaries are excluded.",
+        "workingLatex": "\\text{strict } < \\Rightarrow \\text{roots not included}",
+        "explanation": "Because the inequality is strict, the roots $-1$ and $4$ (where the two sides are equal) are excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Express in interval notation.",
+        "workingLatex": "x \\in (-1, 4)",
+        "explanation": "In interval notation the solution is the open interval from $-1$ to $4$, with both endpoints excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "-1 < x < 4",
+        "explanation": "The solution is $-1 < x < 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 < 3x + 4 \\Rightarrow x^2 - 3x - 4 = (x-4)(x+1) < 0 \\Rightarrow -1 < x < 4$"
+  }
+}

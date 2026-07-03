@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "discriminant",
+    "real roots",
+    "range of a parameter"
+  ],
+  "questionText": "Find the range of values of $k$ for which the equation $x^2 + kx + 4 = 0$ has real roots.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition for real roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac \\ge 0",
+        "explanation": "A quadratic has real roots (distinct or repeated) exactly when its discriminant is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = k,\\ c = 4",
+        "explanation": "Here the middle coefficient is the unknown $k$, which the condition will constrain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = k^2 - 4(1)(4) = k^2 - 16",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $k^2 - 16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the inequality.",
+        "workingLatex": "k^2 - 16 \\ge 0",
+        "explanation": "For real roots the discriminant must be at least zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise.",
+        "workingLatex": "(k - 4)(k + 4) \\ge 0",
+        "explanation": "The left-hand side is a difference of squares, so it factorises as $(k-4)(k+4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the critical values.",
+        "workingLatex": "k = 4 \\ \\text{ and } \\ k = -4",
+        "explanation": "The expression is zero at $k = 4$ and $k = -4$, dividing the $k$-line into regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note the shape in k.",
+        "workingLatex": "\\text{upward parabola in } k",
+        "explanation": "As a quadratic in $k$, this opens upward, so it is non-negative outside (and at) its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Decide where it is non-negative.",
+        "workingLatex": "\\text{on/outside the roots}",
+        "explanation": "For the upward parabola, $\\ge 0$ holds at and outside the two critical values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write the range.",
+        "workingLatex": "k \\le -4 \\ \\text{ or } \\ k \\ge 4",
+        "explanation": "The discriminant is non-negative precisely for these values of $k$, including the boundaries (which give equal roots).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Test a value inside.",
+        "workingLatex": "k = 0: \\ 0 - 16 = -16 < 0",
+        "explanation": "At $k = 0$ the discriminant is negative, so there are no real roots — confirming the middle region is excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Test a value outside.",
+        "workingLatex": "k = 5: \\ 25 - 16 = 9 \\ge 0 \\ \\checkmark",
+        "explanation": "At $k = 5$ the discriminant is non-negative, confirming real roots occur in the outer region.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Include the boundaries.",
+        "workingLatex": "k = 4: \\ 16 - 16 = 0 \\ge 0 \\ \\checkmark",
+        "explanation": "At $k = \\pm 4$ the discriminant is zero, giving equal (still real) roots, so the boundaries are included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "k \\le -4 \\ \\text{ or } \\ k \\ge 4",
+        "explanation": "The equation has real roots when $k \\le -4$ or $k \\ge 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = k^2 - 16 \\ge 0 \\Rightarrow (k-4)(k+4) \\ge 0 \\Rightarrow k \\le -4 \\text{ or } k \\ge 4$"
+  }
+}

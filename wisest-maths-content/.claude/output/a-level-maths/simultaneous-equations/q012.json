@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.simultaneous.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "scaling",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $3x + 2y = 16$ and $2x - y = 6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "3x + 2y = 16 \\ (1), \\quad 2x - y = 6 \\ (2)",
+        "explanation": "The coefficients do not match, so we scale one equation first.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Scale equation (2).",
+        "workingLatex": "2 \\times (2): \\ 4x - 2y = 12 \\ (3)",
+        "explanation": "Multiplying equation (2) by $2$ makes its $y$ coefficient $-2y$, opposite to the $+2y$ in (1).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add to eliminate y.",
+        "workingLatex": "(1) + (3): \\ (3x + 2y) + (4x - 2y) = 16 + 12",
+        "explanation": "The $+2y$ and $-2y$ now cancel when the equations are added.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "7x = 28 \\Rightarrow x = 4",
+        "explanation": "The $y$ terms cancel, leaving $7x = 28$, so $x = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "2(4) - y = 6",
+        "explanation": "Putting $x = 4$ into equation (2) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "8 - y = 6 \\Rightarrow y = 2",
+        "explanation": "Rearranging gives $y = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the intermediate solution.",
+        "workingLatex": "x = 4, \\ y = 2",
+        "explanation": "So far we have $x = 4$ and $y = 2$; we verify before finalising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in equation (1).",
+        "workingLatex": "3(4) + 2(2) = 12 + 4 = 16 \\ \\checkmark",
+        "explanation": "Substituting into equation (1) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 4, \\ y = 2",
+        "explanation": "The solution is $x = 4$ and $y = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Scaling (2) by 2 and adding: $7x = 28 \\Rightarrow x = 4$, then $y = 2$. Solution: $x = 4,\\ y = 2$."
+  }
+}

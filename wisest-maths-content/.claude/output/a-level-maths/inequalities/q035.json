@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $4 - 5x > -6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the term in x.",
+        "workingLatex": "-5x > -6 - 4",
+        "explanation": "Subtracting $4$ from both sides moves the constant across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "-5x > -10",
+        "explanation": "Combining $-6 - 4$ gives $-10$, so we have $-5x > -10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Prepare to divide by a negative.",
+        "workingLatex": "\\text{divide by } -5 \\Rightarrow \\text{reverse the sign}",
+        "explanation": "Dividing by the negative number $-5$ will reverse the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide and reverse the sign.",
+        "workingLatex": "x < 2",
+        "explanation": "Dividing both sides by $-5$ and flipping $>$ to $<$ gives $x < 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "x < 2",
+        "explanation": "Any value of $x$ less than $2$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a test value.",
+        "workingLatex": "x = 0: \\ 4 - 5(0) = 4 > -6 \\ \\checkmark",
+        "explanation": "Substituting $x = 0$ gives $4 > -6$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 3: \\ 4 - 5(3) = -11 \\not> -6",
+        "explanation": "Testing $x = 3$ gives $-11 > -6$, which is false, confirming values above $2$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x < 2\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are less than $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x < 2",
+        "explanation": "The solution to the inequality is $x < 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$4 - 5x > -6 \\Rightarrow -5x > -10 \\Rightarrow x < 2$ (dividing by $-5$ reverses the inequality)."
+  }
+}

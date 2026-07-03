@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "brackets"
+  ],
+  "questionText": "Solve the inequality $3(x - 2) > 6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the bracket.",
+        "workingLatex": "3x - 6 > 6",
+        "explanation": "Multiplying out the bracket removes it, giving a simpler linear inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add 6 to both sides.",
+        "workingLatex": "3x > 12",
+        "explanation": "Adding $6$ to both sides isolates the term in $x$ without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide both sides by 3.",
+        "workingLatex": "x > 4",
+        "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x > 4",
+        "explanation": "Any value of $x$ greater than $4$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 5: \\ 3(5 - 2) = 9 > 6 \\ \\checkmark",
+        "explanation": "Substituting $x = 5$ gives $9 > 6$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x > 4",
+        "explanation": "The solution to the inequality is $x > 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3(x - 2) > 6 \\Rightarrow 3x - 6 > 6 \\Rightarrow 3x > 12 \\Rightarrow x > 4$"
+  }
+}

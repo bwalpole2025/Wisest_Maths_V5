@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Quadratic functions",
-  "currentSubtopicId": "al.y1.pure.quadratics",
+  "currentSubtopic": "Inequalities",
+  "currentSubtopicId": "al.y1.pure.inequalities",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -10,13 +10,15 @@
     "al.y1.pure.proof-deduction",
     "al.y1.pure.disproof",
     "al.y1.pure.indices-surds",
-    "al.y1.pure.quadratics"
+    "al.y1.pure.quadratics",
+    "al.y1.pure.simultaneous",
+    "al.y1.pure.inequalities"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 5,
-      "totalQuestionsGenerated": 350
+      "completedSubtopics": 7,
+      "totalQuestionsGenerated": 490
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.inequalities.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear"
+  ],
+  "questionText": "Solve the inequality $2x - 5 \\le 7$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Aim to isolate x.",
+        "workingLatex": "2x - 5 \\le 7",
+        "explanation": "We isolate the term in $x$, treating the inequality like an equation but watching the sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add 5 to both sides.",
+        "workingLatex": "2x \\le 12",
+        "explanation": "Adding the same number to both sides leaves the inequality direction unchanged.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide both sides by 2.",
+        "workingLatex": "x \\le 6",
+        "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\le 6",
+        "explanation": "Any value of $x$ less than or equal to $6$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 6: \\ 2(6) - 5 = 7 \\le 7 \\ \\checkmark",
+        "explanation": "Substituting the boundary value $x = 6$ gives $7 \\le 7$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x \\le 6",
+        "explanation": "The solution is $x \\le 6$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x - 5 \\le 7 \\Rightarrow 2x \\le 12 \\Rightarrow x \\le 6$"
+  }
+}

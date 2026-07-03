@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.simultaneous.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $x + y = 6$ and $3x - y = 10$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "x + y = 6 \\ (1), \\quad 3x - y = 10 \\ (2)",
+        "explanation": "Numbering the equations helps track the elimination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose a variable to eliminate.",
+        "workingLatex": "\\text{add (1) and (2) to remove } y",
+        "explanation": "The $+y$ and $-y$ are opposites, so adding cancels $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the equations.",
+        "workingLatex": "(x + y) + (3x - y) = 6 + 10",
+        "explanation": "Adding term by term removes the $y$ terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "4x = 16 \\Rightarrow x = 4",
+        "explanation": "The $y$ terms cancel, leaving $4x = 16$, so $x = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "4 + y = 6 \\Rightarrow y = 2",
+        "explanation": "Putting $x = 4$ into equation (1) gives $y = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check in the other equation.",
+        "workingLatex": "3(4) - 2 = 12 - 2 = 10 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solution.",
+        "workingLatex": "x = 4, \\ y = 2",
+        "explanation": "The solution is $x = 4$ and $y = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Adding gives $4x = 16 \\Rightarrow x = 4$, then $y = 2$. Solution: $x = 4,\\ y = 2$."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "factorising"
+  ],
+  "questionText": "Solve the inequality $x^2 - 2x - 8 \\le 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 - 2x - 8 = (x - 4)(x + 2)",
+        "explanation": "Factorising finds the critical values where the expression equals zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "x = 4 \\ \\text{ and } \\ x = -2",
+        "explanation": "Setting each factor to zero gives the roots $4$ and $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{opens upward}",
+        "explanation": "The positive $x^2$ coefficient means the parabola dips below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide where the curve is on or below the axis.",
+        "workingLatex": "\\text{between the roots}",
+        "explanation": "For an upward parabola, $\\le 0$ holds at and between the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the solution.",
+        "workingLatex": "-2 \\le x \\le 4",
+        "explanation": "The inequality $\\le 0$ holds for $x$ between $-2$ and $4$, including the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Express in interval notation.",
+        "workingLatex": "x \\in [-2, 4]",
+        "explanation": "In interval notation the solution is the closed interval from $-2$ to $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 0: \\ (-4)(2) = -8 \\le 0 \\ \\checkmark",
+        "explanation": "At $x = 0$ the product is negative, confirming the inequality holds between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 5: \\ (1)(7) = 7 \\not\\le 0",
+        "explanation": "At $x = 5$ the product is positive, confirming the inequality fails outside the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "-2 \\le x \\le 4",
+        "explanation": "The solution is $-2 \\le x \\le 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-4)(x+2) \\le 0 \\Rightarrow -2 \\le x \\le 4$ (between the roots)."
+  }
+}

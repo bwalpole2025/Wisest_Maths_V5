@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $-2x \\le 10$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Note the coefficient of x is negative.",
+        "workingLatex": "-2x \\le 10",
+        "explanation": "Dividing an inequality by a negative number reverses the inequality sign — the key idea here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Prepare to divide by -2.",
+        "workingLatex": "\\text{divide by } -2 \\Rightarrow \\text{reverse the sign}",
+        "explanation": "We flag the sign reversal before dividing so we do not forget it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide and reverse the sign.",
+        "workingLatex": "x \\ge -5",
+        "explanation": "Dividing both sides by $-2$ and flipping $\\le$ to $\\ge$ gives $x \\ge -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\ge -5",
+        "explanation": "Any value of $x$ at least $-5$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a test value.",
+        "workingLatex": "x = 0: \\ -2(0) = 0 \\le 10 \\ \\checkmark",
+        "explanation": "Substituting $x = 0$ (which is at least $-5$) gives $0 \\le 10$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a value outside.",
+        "workingLatex": "x = -6: \\ -2(-6) = 12 \\not\\le 10",
+        "explanation": "Testing $x = -6$ gives $12 \\le 10$, which is false, confirming values below $-5$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the boundary.",
+        "workingLatex": "x = -5: \\ -2(-5) = 10 \\le 10 \\ \\checkmark",
+        "explanation": "At $x = -5$ the value is $10$, satisfying $\\le 10$, so the boundary is included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x \\ge -5\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are at least $-5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x \\ge -5",
+        "explanation": "The solution is $x \\ge -5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-2x \\le 10 \\Rightarrow x \\ge -5$ (dividing by $-2$ reverses the inequality)."
+  }
+}

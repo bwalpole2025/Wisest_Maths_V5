@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "circle",
+    "intersection"
+  ],
+  "questionText": "Solve the simultaneous equations $y = x + 1$ and $x^2 + y^2 = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "y = x + 1 \\ (\\text{line}), \\quad x^2 + y^2 = 1 \\ (\\text{circle})",
+        "explanation": "Substituting the line into the circle gives a single quadratic whose solutions are the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the circle equation.",
+        "workingLatex": "x^2 + (x + 1)^2 = 1",
+        "explanation": "Replacing $y$ with $x + 1$ gives an equation in $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the bracket.",
+        "workingLatex": "x^2 + x^2 + 2x + 1 = 1",
+        "explanation": "Expanding $(x + 1)^2$ gives $x^2 + 2x + 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect terms.",
+        "workingLatex": "2x^2 + 2x + 1 = 1",
+        "explanation": "Combining the two $x^2$ terms gives $2x^2 + 2x + 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange to standard form.",
+        "workingLatex": "2x^2 + 2x = 0",
+        "explanation": "Subtracting $1$ from both sides leaves $2x^2 + 2x = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise.",
+        "workingLatex": "2x(x + 1) = 0",
+        "explanation": "Both terms share a factor of $2x$, so we factorise rather than using the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x.",
+        "workingLatex": "x = 0 \\ \\text{ or } \\ x = -1",
+        "explanation": "Setting each factor to zero gives the two $x$-coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find y for x = 0.",
+        "workingLatex": "y = 0 + 1 = 1",
+        "explanation": "Substituting $x = 0$ into $y = x + 1$ gives $y = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find y for x = -1.",
+        "workingLatex": "y = -1 + 1 = 0",
+        "explanation": "Substituting $x = -1$ into $y = x + 1$ gives $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(0, 1) \\ \\text{ and } \\ (-1, 0)",
+        "explanation": "Each $x$ pairs with its $y$ to give an intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check a point on the circle.",
+        "workingLatex": "0^2 + 1^2 = 1 \\ \\checkmark",
+        "explanation": "The point $(0, 1)$ satisfies $x^2 + y^2 = 1$, confirming it lies on the circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret geometrically.",
+        "workingLatex": "\\text{the line cuts the unit circle at two points}",
+        "explanation": "Two real solutions mean the line meets the circle at two distinct points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (0, 1) \\text{ or } (-1, 0)",
+        "explanation": "The solutions are $(0, 1)$ and $(-1, 0)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + (x+1)^2 = 1 \\Rightarrow 2x^2 + 2x = 2x(x+1) = 0 \\Rightarrow (0,1) \\text{ or } (-1,0)$"
+  }
+}

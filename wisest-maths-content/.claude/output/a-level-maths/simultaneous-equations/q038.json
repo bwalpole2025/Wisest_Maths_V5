@@ -1,0 +1,87 @@
+{
+  "id": "al.y1.pure.simultaneous.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "scaling",
+    "linear",
+    "negative solution"
+  ],
+  "questionText": "Solve the simultaneous equations $4x + 3y = 1$ and $2x - y = 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "4x + 3y = 1 \\ (1), \\quad 2x - y = 3 \\ (2)",
+        "explanation": "We scale equation (2) so its $y$ term matches equation (1).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Scale equation (2).",
+        "workingLatex": "3 \\times (2): \\ 6x - 3y = 9 \\ (3)",
+        "explanation": "Multiplying (2) by $3$ makes the $y$ coefficient $-3y$, opposite to the $+3y$ in (1).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add to eliminate y.",
+        "workingLatex": "(1) + (3): \\ (4x + 3y) + (6x - 3y) = 1 + 9",
+        "explanation": "The $+3y$ and $-3y$ cancel when the equations are added.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "10x = 10 \\Rightarrow x = 1",
+        "explanation": "The $y$ terms cancel, leaving $10x = 10$, so $x = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "2(1) - y = 3",
+        "explanation": "Putting $x = 1$ into equation (2) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "2 - y = 3 \\Rightarrow y = -1",
+        "explanation": "Rearranging gives $y = -1$; a negative solution is perfectly valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the intermediate solution.",
+        "workingLatex": "x = 1, \\ y = -1",
+        "explanation": "So far we have $x = 1$ and $y = -1$; we verify before finalising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in equation (1).",
+        "workingLatex": "4(1) + 3(-1) = 4 - 3 = 1 \\ \\checkmark",
+        "explanation": "Substituting into equation (1) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 1, \\ y = -1",
+        "explanation": "The solution is $x = 1$ and $y = -1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Scaling (2) by 3 and adding: $10x = 10 \\Rightarrow x = 1$, then $y = -1$. Solution: $x = 1,\\ y = -1$."
+  }
+}

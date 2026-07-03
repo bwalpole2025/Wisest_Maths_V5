@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "factorising"
+  ],
+  "questionText": "Solve the inequality $x^2 - 6x + 8 > 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 - 6x + 8 = (x - 2)(x - 4)",
+        "explanation": "Factorising finds the critical values where the expression equals zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "x = 2 \\ \\text{ and } \\ x = 4",
+        "explanation": "Setting each factor to zero gives the roots $2$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{opens upward}",
+        "explanation": "The positive $x^2$ coefficient means the parabola lies above the axis outside its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Decide where the curve is above the axis.",
+        "workingLatex": "\\text{outside the roots}",
+        "explanation": "For an upward parabola, $y > 0$ strictly outside the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the solution.",
+        "workingLatex": "x < 2 \\ \\text{ or } \\ x > 4",
+        "explanation": "The inequality $> 0$ holds for $x$ less than $2$ or greater than $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x < 2\\} \\cup \\{x : x > 4\\}",
+        "explanation": "The solution is the union of the two outer regions, with the roots excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value between the roots.",
+        "workingLatex": "x = 3: \\ (1)(-1) = -1 \\not> 0",
+        "explanation": "At $x = 3$ the product is negative, confirming the inequality fails between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 5: \\ (3)(1) = 3 > 0 \\ \\checkmark",
+        "explanation": "At $x = 5$ the product is positive, confirming the inequality holds outside the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x < 2 \\ \\text{ or } \\ x > 4",
+        "explanation": "The solution is $x < 2$ or $x > 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-2)(x-4) > 0 \\Rightarrow x < 2 \\text{ or } x > 4$ (outside the roots)."
+  }
+}

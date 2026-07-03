@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.simultaneous.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "word problem",
+    "linear-quadratic"
+  ],
+  "questionText": "The difference between two numbers is $4$ and the sum of their squares is $40$. Find the two numbers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Define the variables.",
+        "workingLatex": "\\text{let the numbers be } x \\text{ and } y",
+        "explanation": "Introducing letters for the two unknown numbers turns the words into algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Translate the difference.",
+        "workingLatex": "x - y = 4 \\ (1)",
+        "explanation": "`The difference is $4$' becomes $x - y = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Translate the sum of squares.",
+        "workingLatex": "x^2 + y^2 = 40 \\ (2)",
+        "explanation": "`The sum of their squares is $40$' becomes $x^2 + y^2 = 40$; this is the quadratic equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange the linear equation.",
+        "workingLatex": "x = y + 4",
+        "explanation": "Making $x$ the subject of the linear equation prepares it for substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute into the quadratic.",
+        "workingLatex": "(y + 4)^2 + y^2 = 40",
+        "explanation": "Replacing $x$ with $y + 4$ in equation (2) gives an equation in $y$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand.",
+        "workingLatex": "y^2 + 8y + 16 + y^2 = 40",
+        "explanation": "Expanding $(y + 4)^2$ gives $y^2 + 8y + 16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect and simplify.",
+        "workingLatex": "2y^2 + 8y - 24 = 0 \\Rightarrow y^2 + 4y - 12 = 0",
+        "explanation": "Combining terms, subtracting $40$, and dividing by $2$ gives a simpler quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise.",
+        "workingLatex": "(y + 6)(y - 2) = 0",
+        "explanation": "Two numbers multiplying to $-12$ and adding to $4$ are $6$ and $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for y.",
+        "workingLatex": "y = -6 \\ \\text{ or } \\ y = 2",
+        "explanation": "Setting each factor to zero gives the two values of $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the matching x values.",
+        "workingLatex": "y = -6 \\Rightarrow x = -2, \\quad y = 2 \\Rightarrow x = 6",
+        "explanation": "Substituting each $y$ into $x = y + 4$ gives the paired $x$ values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the two number pairs.",
+        "workingLatex": "(6, 2) \\ \\text{ and } \\ (-2, -6)",
+        "explanation": "So the two numbers are either $6$ and $2$, or $-2$ and $-6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check one pair.",
+        "workingLatex": "6 - 2 = 4, \\quad 6^2 + 2^2 = 36 + 4 = 40 \\ \\checkmark",
+        "explanation": "The pair $6, 2$ has difference $4$ and sum of squares $40$, satisfying both conditions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "\\text{the numbers are } 6, 2 \\ \\text{ or } \\ -2, -6",
+        "explanation": "The two numbers are $6$ and $2$, or $-2$ and $-6$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x - y = 4,\\ x^2 + y^2 = 40$; substituting gives $y^2 + 4y - 12 = 0 \\Rightarrow (6,2) \\text{ or } (-2,-6)$."
+  }
+}

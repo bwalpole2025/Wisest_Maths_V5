@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "substitution",
+    "intersection"
+  ],
+  "questionText": "Solve the simultaneous equations $y = x - 2$ and $y = x^2 - 4x + 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "y = x - 2 \\ (\\text{line}), \\quad y = x^2 - 4x + 2 \\ (\\text{curve})",
+        "explanation": "Setting the two expressions for $y$ equal gives a single quadratic whose solutions are the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the expressions equal.",
+        "workingLatex": "x^2 - 4x + 2 = x - 2",
+        "explanation": "At a common point both expressions for $y$ are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic.",
+        "workingLatex": "x^2 - 5x + 4 = 0",
+        "explanation": "Bringing all terms to one side gives $x^2 - 5x + 4 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise.",
+        "workingLatex": "(x - 1)(x - 4) = 0",
+        "explanation": "Two numbers multiplying to $4$ and adding to $-5$ are $-1$ and $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x.",
+        "workingLatex": "x = 1 \\ \\text{ or } \\ x = 4",
+        "explanation": "Setting each factor to zero gives the two $x$-coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y for x = 1.",
+        "workingLatex": "y = 1 - 2 = -1",
+        "explanation": "Substituting $x = 1$ into the line $y = x - 2$ gives $y = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y for x = 4.",
+        "workingLatex": "y = 4 - 2 = 2",
+        "explanation": "Substituting $x = 4$ into the line gives $y = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(1, -1) \\ \\text{ and } \\ (4, 2)",
+        "explanation": "Each $x$ pairs with its $y$ to give an intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the first point on the curve.",
+        "workingLatex": "1 - 4 + 2 = -1 \\ \\checkmark",
+        "explanation": "Substituting $x = 1$ into the curve gives $y = -1$, confirming the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the second point on the curve.",
+        "workingLatex": "16 - 16 + 2 = 2 \\ \\checkmark",
+        "explanation": "Substituting $x = 4$ into the curve gives $y = 2$, confirming the second point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the number of intersections.",
+        "workingLatex": "\\text{two real roots} \\Rightarrow \\text{two points}",
+        "explanation": "The quadratic had two distinct roots, so the line meets the curve at two separate points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret geometrically.",
+        "workingLatex": "\\text{the line crosses the curve twice}",
+        "explanation": "Two real solutions mean the line and the parabola intersect at two distinct points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (1, -1) \\text{ or } (4, 2)",
+        "explanation": "The solutions are $(1, -1)$ and $(4, 2)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 4x + 2 = x - 2 \\Rightarrow x^2 - 5x + 4 = (x-1)(x-4) = 0 \\Rightarrow (1,-1) \\text{ or } (4,2)$"
+  }
+}

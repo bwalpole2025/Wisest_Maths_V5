@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "substitution",
+    "intersection"
+  ],
+  "questionText": "Solve the simultaneous equations $y = 2x$ and $y = x^2 - 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "y = 2x \\ (\\text{line}), \\quad y = x^2 - 3 \\ (\\text{curve})",
+        "explanation": "Substituting the line into the curve gives a single quadratic; its solutions are the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the expressions for y equal.",
+        "workingLatex": "x^2 - 3 = 2x",
+        "explanation": "At a common point both expressions for $y$ are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic.",
+        "workingLatex": "x^2 - 2x - 3 = 0",
+        "explanation": "Bringing all terms to one side gives a quadratic in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise.",
+        "workingLatex": "(x - 3)(x + 1) = 0",
+        "explanation": "Two numbers multiplying to $-3$ and adding to $-2$ are $-3$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x.",
+        "workingLatex": "x = 3 \\ \\text{ or } \\ x = -1",
+        "explanation": "Setting each factor to zero gives the two $x$-coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y for x = 3.",
+        "workingLatex": "y = 2(3) = 6",
+        "explanation": "Substituting $x = 3$ into $y = 2x$ gives $y = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y for x = -1.",
+        "workingLatex": "y = 2(-1) = -2",
+        "explanation": "Substituting $x = -1$ into $y = 2x$ gives $y = -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(3, 6) \\ \\text{ and } \\ (-1, -2)",
+        "explanation": "Each $x$ pairs with its $y$ to give an intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the first point on the curve.",
+        "workingLatex": "3^2 - 3 = 6 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ into the curve gives $y = 6$, confirming the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the second point on the curve.",
+        "workingLatex": "(-1)^2 - 3 = -2 \\ \\checkmark",
+        "explanation": "Substituting $x = -1$ into the curve gives $y = -2$, confirming the second point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the number of intersections.",
+        "workingLatex": "\\text{two real roots} \\Rightarrow \\text{two points}",
+        "explanation": "The quadratic had two distinct roots, so the line meets the parabola at two separate points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret geometrically.",
+        "workingLatex": "\\text{two intersection points}",
+        "explanation": "The line crosses the parabola at two distinct points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (3, 6) \\text{ or } (-1, -2)",
+        "explanation": "The solutions are $(3, 6)$ and $(-1, -2)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 3 = 2x \\Rightarrow x^2 - 2x - 3 = (x-3)(x+1) = 0 \\Rightarrow (3,6) \\text{ or } (-1,-2)$"
+  }
+}

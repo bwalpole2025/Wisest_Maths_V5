@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.simultaneous.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $5x + 2y = 16$ and $3x - 2y = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "5x + 2y = 16 \\ (1), \\quad 3x - 2y = 0 \\ (2)",
+        "explanation": "Numbering the equations helps track the elimination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Spot the matching coefficients.",
+        "workingLatex": "+2y \\text{ and } -2y",
+        "explanation": "The $y$ terms have equal and opposite coefficients, so adding will eliminate $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the equations.",
+        "workingLatex": "(5x + 2y) + (3x - 2y) = 16 + 0",
+        "explanation": "Adding term by term removes the $y$ terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "8x = 16 \\Rightarrow x = 2",
+        "explanation": "The $y$ terms cancel, leaving $8x = 16$, so $x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "3(2) - 2y = 0",
+        "explanation": "Putting $x = 2$ into equation (2) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "6 - 2y = 0 \\Rightarrow 2y = 6",
+        "explanation": "Rearranging gives $2y = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for y.",
+        "workingLatex": "y = 3",
+        "explanation": "Dividing by $2$ gives $y = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in the other equation.",
+        "workingLatex": "5(2) + 2(3) = 10 + 6 = 16 \\ \\checkmark",
+        "explanation": "Substituting into equation (1) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 2, \\ y = 3",
+        "explanation": "The solution is $x = 2$ and $y = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Adding gives $8x = 16 \\Rightarrow x = 2$, then $y = 3$. Solution: $x = 2,\\ y = 3$."
+  }
+}

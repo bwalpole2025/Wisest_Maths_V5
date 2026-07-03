@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "circle",
+    "intersection"
+  ],
+  "questionText": "Solve the simultaneous equations $x + y = 5$ and $x^2 + y^2 = 17$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "x + y = 5 \\ (\\text{line}), \\quad x^2 + y^2 = 17 \\ (\\text{circle})",
+        "explanation": "The second equation is a circle; substituting the line into it gives a single quadratic whose solutions are the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange the linear equation.",
+        "workingLatex": "y = 5 - x",
+        "explanation": "Making $y$ the subject of the line prepares it for substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the second equation.",
+        "workingLatex": "x^2 + (5 - x)^2 = 17",
+        "explanation": "Replacing $y$ with $5 - x$ gives an equation in $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the bracket.",
+        "workingLatex": "x^2 + 25 - 10x + x^2 = 17",
+        "explanation": "Expanding $(5 - x)^2$ gives $25 - 10x + x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Collect terms.",
+        "workingLatex": "2x^2 - 10x + 25 = 17",
+        "explanation": "Combining the two $x^2$ terms gives $2x^2 - 10x + 25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange to standard form.",
+        "workingLatex": "2x^2 - 10x + 8 = 0",
+        "explanation": "Subtracting $17$ from both sides gives a quadratic equal to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide through by 2.",
+        "workingLatex": "x^2 - 5x + 4 = 0",
+        "explanation": "Dividing every term by $2$ simplifies the quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise.",
+        "workingLatex": "(x - 1)(x - 4) = 0",
+        "explanation": "Two numbers multiplying to $4$ and adding to $-5$ are $-1$ and $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x.",
+        "workingLatex": "x = 1 \\ \\text{ or } \\ x = 4",
+        "explanation": "Setting each factor to zero gives the two $x$-coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the matching y values.",
+        "workingLatex": "x = 1 \\Rightarrow y = 4, \\quad x = 4 \\Rightarrow y = 1",
+        "explanation": "Substituting each $x$ into $y = 5 - x$ gives the paired $y$ values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check a point on the circle.",
+        "workingLatex": "1^2 + 4^2 = 1 + 16 = 17 \\ \\checkmark",
+        "explanation": "The point $(1, 4)$ satisfies $x^2 + y^2 = 17$, confirming it lies on the circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret geometrically.",
+        "workingLatex": "\\text{the line is a chord meeting the circle twice}",
+        "explanation": "Two real solutions mean the line cuts the circle at two points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (1, 4) \\text{ or } (4, 1)",
+        "explanation": "The solutions are $(1, 4)$ and $(4, 1)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 5 - x \\Rightarrow x^2 + (5-x)^2 = 17 \\Rightarrow x^2 - 5x + 4 = 0 \\Rightarrow (1,4) \\text{ or } (4,1)$"
+  }
+}

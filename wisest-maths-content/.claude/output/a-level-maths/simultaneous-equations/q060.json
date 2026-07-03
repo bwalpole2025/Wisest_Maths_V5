@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.simultaneous.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "scaling",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $4x + y = 7$ and $2x + 3y = 11$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "4x + y = 7 \\ (1), \\quad 2x + 3y = 11 \\ (2)",
+        "explanation": "We scale equation (1) so its $y$ term matches equation (2).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Scale equation (1).",
+        "workingLatex": "3 \\times (1): \\ 12x + 3y = 21 \\ (3)",
+        "explanation": "Multiplying (1) by $3$ makes the $y$ coefficient $3y$, matching equation (2).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract to eliminate y.",
+        "workingLatex": "(3) - (2): \\ (12x + 3y) - (2x + 3y) = 21 - 11",
+        "explanation": "Both equations now have $3y$, so subtracting removes the $y$ terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "10x = 10 \\Rightarrow x = 1",
+        "explanation": "The $y$ terms cancel, leaving $10x = 10$, so $x = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "4(1) + y = 7",
+        "explanation": "Putting $x = 1$ into equation (1) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "4 + y = 7 \\Rightarrow y = 3",
+        "explanation": "Subtracting $4$ gives $y = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the intermediate solution.",
+        "workingLatex": "x = 1, \\ y = 3",
+        "explanation": "So far we have $x = 1$ and $y = 3$; we verify before finalising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in equation (2).",
+        "workingLatex": "2(1) + 3(3) = 2 + 9 = 11 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 1, \\ y = 3",
+        "explanation": "The solution is $x = 1$ and $y = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Scaling (1) by 3 and subtracting: $10x = 10 \\Rightarrow x = 1$, then $y = 3$. Solution: $x = 1,\\ y = 3$."
+  }
+}

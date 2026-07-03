@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.simultaneous.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "scaling",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $2x + 3y = 13$ and $4x - y = 5$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "2x + 3y = 13 \\ (1), \\quad 4x - y = 5 \\ (2)",
+        "explanation": "We scale equation (2) so its $y$ term matches equation (1).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Scale equation (2).",
+        "workingLatex": "3 \\times (2): \\ 12x - 3y = 15 \\ (3)",
+        "explanation": "Multiplying (2) by $3$ makes the $y$ coefficient $-3y$, opposite to the $+3y$ in (1).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add to eliminate y.",
+        "workingLatex": "(1) + (3): \\ (2x + 3y) + (12x - 3y) = 13 + 15",
+        "explanation": "The $+3y$ and $-3y$ cancel when the equations are added.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "14x = 28 \\Rightarrow x = 2",
+        "explanation": "The $y$ terms cancel, leaving $14x = 28$, so $x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "4(2) - y = 5",
+        "explanation": "Putting $x = 2$ into equation (2) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "8 - y = 5 \\Rightarrow y = 3",
+        "explanation": "Rearranging gives $y = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the intermediate solution.",
+        "workingLatex": "x = 2, \\ y = 3",
+        "explanation": "So far we have $x = 2$ and $y = 3$; we verify before finalising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in equation (1).",
+        "workingLatex": "2(2) + 3(3) = 4 + 9 = 13 \\ \\checkmark",
+        "explanation": "Substituting into equation (1) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 2, \\ y = 3",
+        "explanation": "The solution is $x = 2$ and $y = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Scaling (2) by 3 and adding: $14x = 28 \\Rightarrow x = 2$, then $y = 3$. Solution: $x = 2,\\ y = 3$."
+  }
+}

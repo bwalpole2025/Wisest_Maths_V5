@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $3 - x \\ge -2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the term in x.",
+        "workingLatex": "-x \\ge -2 - 3",
+        "explanation": "Subtracting $3$ from both sides moves the constant across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "-x \\ge -5",
+        "explanation": "Combining $-2 - 3$ gives $-5$, so we have $-x \\ge -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Prepare to multiply by a negative.",
+        "workingLatex": "\\text{multiply by } -1 \\Rightarrow \\text{reverse the sign}",
+        "explanation": "Multiplying by $-1$ to make $x$ positive will reverse the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply and reverse the sign.",
+        "workingLatex": "x \\le 5",
+        "explanation": "Multiplying both sides by $-1$ and flipping $\\ge$ to $\\le$ gives $x \\le 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\le 5",
+        "explanation": "Any value of $x$ at most $5$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the boundary value.",
+        "workingLatex": "x = 5: \\ 3 - 5 = -2 \\ge -2 \\ \\checkmark",
+        "explanation": "Substituting $x = 5$ gives $-2 \\ge -2$, which is true, confirming the boundary is included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 6: \\ 3 - 6 = -3 \\not\\ge -2",
+        "explanation": "Testing $x = 6$ gives $-3 \\ge -2$, which is false, confirming values above $5$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x \\le 5\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are at most $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x \\le 5",
+        "explanation": "The solution is $x \\le 5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3 - x \\ge -2 \\Rightarrow -x \\ge -5 \\Rightarrow x \\le 5$ (multiplying by $-1$ reverses the inequality)."
+  }
+}

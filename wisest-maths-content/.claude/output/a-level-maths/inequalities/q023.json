@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "discriminant",
+    "positive definite",
+    "range of a parameter"
+  ],
+  "questionText": "Find the range of values of $k$ for which $x^2 + 6x + k > 0$ for all real values of $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the condition graphically.",
+        "workingLatex": "\\text{parabola stays entirely above the } x\\text{-axis}",
+        "explanation": "For $x^2 + 6x + k > 0$ to hold for every $x$, the upward parabola must never touch or cross the $x$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the condition for no real roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac < 0",
+        "explanation": "An upward parabola stays strictly above the axis exactly when the quadratic has no real roots, i.e. a negative discriminant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = 6,\\ c = k",
+        "explanation": "Here the constant term is the unknown $k$, which the condition will constrain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = 6^2 - 4(1)(k) = 36 - 4k",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $36 - 4k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the inequality.",
+        "workingLatex": "36 - 4k < 0",
+        "explanation": "For no real roots the discriminant must be strictly negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange.",
+        "workingLatex": "36 < 4k",
+        "explanation": "Adding $4k$ to both sides moves it across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide by 4.",
+        "workingLatex": "9 < k",
+        "explanation": "Dividing both sides by the positive number $4$ preserves the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rewrite the inequality.",
+        "workingLatex": "k > 9",
+        "explanation": "So the condition holds for $k$ greater than $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Test a value inside.",
+        "workingLatex": "k = 10: \\ \\Delta = 36 - 40 = -4 < 0 \\ \\checkmark",
+        "explanation": "At $k = 10$ the discriminant is negative, so the quadratic is always positive — confirming the range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Test the boundary.",
+        "workingLatex": "k = 9: \\ \\Delta = 36 - 36 = 0",
+        "explanation": "At $k = 9$ the discriminant is zero, so the parabola just touches the axis and $> 0$ fails at one point; hence $9$ is excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm with completing the square.",
+        "workingLatex": "k = 9: \\ x^2 + 6x + 9 = (x + 3)^2 \\ge 0",
+        "explanation": "At $k = 9$ the expression is $(x+3)^2$, which is zero at $x = -3$, so it is not strictly positive — consistent with excluding $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the strict range.",
+        "workingLatex": "k > 9",
+        "explanation": "Only for $k > 9$ is the quadratic strictly positive for every real $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "k > 9",
+        "explanation": "The quadratic is positive for all real $x$ when $k > 9$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = 36 - 4k < 0 \\Rightarrow k > 9$ (so the parabola never reaches the $x$-axis)."
+  }
+}

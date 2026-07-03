@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.simultaneous.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "scaling",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $5x - 2y = 6$ and $3x + 4y = 14$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "5x - 2y = 6 \\ (1), \\quad 3x + 4y = 14 \\ (2)",
+        "explanation": "We scale equation (1) so its $y$ term matches equation (2).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Scale equation (1).",
+        "workingLatex": "2 \\times (1): \\ 10x - 4y = 12 \\ (3)",
+        "explanation": "Multiplying (1) by $2$ makes the $y$ coefficient $-4y$, opposite to the $+4y$ in (2).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add to eliminate y.",
+        "workingLatex": "(2) + (3): \\ (3x + 4y) + (10x - 4y) = 14 + 12",
+        "explanation": "The $+4y$ and $-4y$ cancel when the equations are added.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "13x = 26 \\Rightarrow x = 2",
+        "explanation": "The $y$ terms cancel, leaving $13x = 26$, so $x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "5(2) - 2y = 6",
+        "explanation": "Putting $x = 2$ into equation (1) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "10 - 2y = 6 \\Rightarrow 2y = 4",
+        "explanation": "Rearranging gives $2y = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for y.",
+        "workingLatex": "y = 2",
+        "explanation": "Dividing by $2$ gives $y = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in equation (2).",
+        "workingLatex": "3(2) + 4(2) = 6 + 8 = 14 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 2, \\ y = 2",
+        "explanation": "The solution is $x = 2$ and $y = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Scaling (1) by 2 and adding: $13x = 26 \\Rightarrow x = 2$, then $y = 2$. Solution: $x = 2,\\ y = 2$."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.inequalities.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "negative solution"
+  ],
+  "questionText": "Solve the inequality $2x + 8 \\le 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Aim to isolate x.",
+        "workingLatex": "2x + 8 \\le 2",
+        "explanation": "We isolate the term in $x$, keeping the inequality sign as we work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Subtract 8 from both sides.",
+        "workingLatex": "2x \\le -6",
+        "explanation": "Subtracting $8$ from both sides isolates the $x$ term without changing the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide both sides by 2.",
+        "workingLatex": "x \\le -3",
+        "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\le -3",
+        "explanation": "Any value of $x$ at most $-3$ satisfies the inequality; a negative answer is fine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the boundary value.",
+        "workingLatex": "x = -3: \\ 2(-3) + 8 = 2 \\le 2 \\ \\checkmark",
+        "explanation": "Substituting the boundary $x = -3$ gives $2 \\le 2$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x \\le -3",
+        "explanation": "The solution to the inequality is $x \\le -3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x + 8 \\le 2 \\Rightarrow 2x \\le -6 \\Rightarrow x \\le -3$"
+  }
+}

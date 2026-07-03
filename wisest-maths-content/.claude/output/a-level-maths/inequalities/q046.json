@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.inequalities.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "negative leading coefficient"
+  ],
+  "questionText": "Solve the inequality $5 - 4x - x^2 > 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Multiply through by -1.",
+        "workingLatex": "x^2 + 4x - 5 < 0",
+        "explanation": "Multiplying by $-1$ makes the $x^2$ coefficient positive, which is easier to handle — but it reverses the inequality sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "x^2 + 4x - 5 = (x + 5)(x - 1)",
+        "explanation": "Factorising reveals the critical values where the expression is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the critical values.",
+        "workingLatex": "x = -5 \\ \\text{ and } \\ x = 1",
+        "explanation": "Setting each factor to zero gives the roots $-5$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Note the shape of the rewritten parabola.",
+        "workingLatex": "\\text{opens upward}",
+        "explanation": "After multiplying by $-1$, the parabola $x^2 + 4x - 5$ opens upward, dipping below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Decide where the curve is below the axis.",
+        "workingLatex": "\\text{between the roots}",
+        "explanation": "For the upward parabola, $< 0$ holds strictly between the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the solution.",
+        "workingLatex": "-5 < x < 1",
+        "explanation": "The inequality (equivalent to the original) holds for $x$ strictly between $-5$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Express in interval notation.",
+        "workingLatex": "x \\in (-5, 1)",
+        "explanation": "In interval notation the solution is the open interval from $-5$ to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 0: \\ 5 - 0 - 0 = 5 > 0 \\ \\checkmark",
+        "explanation": "Testing $x = 0$ in the original gives $5 > 0$, which is true, confirming the interior works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a value outside.",
+        "workingLatex": "x = 2: \\ 5 - 8 - 4 = -7 \\not> 0",
+        "explanation": "Testing $x = 2$ gives $-7 > 0$, which is false, confirming values outside the interval fail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the other side.",
+        "workingLatex": "x = -6: \\ 5 + 24 - 36 = -7 \\not> 0",
+        "explanation": "Testing $x = -6$ also gives a negative value, confirming the region to the left is excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the sign-flip was key.",
+        "workingLatex": "> \\to < \\text{ when multiplying by } -1",
+        "explanation": "Reversing the inequality when multiplying by $-1$ was essential; skipping it would give the wrong region.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the boundaries are excluded.",
+        "workingLatex": "\\text{strict} \\Rightarrow \\text{roots not included}",
+        "explanation": "Because the inequality is strict, the roots $-5$ and $1$ are excluded from the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "-5 < x < 1",
+        "explanation": "The solution is $-5 < x < 1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$5 - 4x - x^2 > 0 \\Rightarrow x^2 + 4x - 5 < 0 \\Rightarrow (x+5)(x-1) < 0 \\Rightarrow -5 < x < 1$"
+  }
+}

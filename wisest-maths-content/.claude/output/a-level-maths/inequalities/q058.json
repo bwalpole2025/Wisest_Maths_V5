@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "dividing by negative"
+  ],
+  "questionText": "Solve the inequality $5 - 2x \\le 11$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the term in x.",
+        "workingLatex": "-2x \\le 11 - 5",
+        "explanation": "Subtracting $5$ from both sides moves the constant across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify.",
+        "workingLatex": "-2x \\le 6",
+        "explanation": "Combining $11 - 5$ gives $6$, so we have $-2x \\le 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Prepare to divide by a negative.",
+        "workingLatex": "\\text{divide by } -2 \\Rightarrow \\text{reverse the sign}",
+        "explanation": "Dividing by the negative number $-2$ will reverse the inequality direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide and reverse the sign.",
+        "workingLatex": "x \\ge -3",
+        "explanation": "Dividing both sides by $-2$ and flipping $\\le$ to $\\ge$ gives $x \\ge -3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "x \\ge -3",
+        "explanation": "Any value of $x$ at least $-3$ satisfies the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a test value.",
+        "workingLatex": "x = 0: \\ 5 - 2(0) = 5 \\le 11 \\ \\checkmark",
+        "explanation": "Substituting $x = 0$ gives $5 \\le 11$, which is true, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check a value outside.",
+        "workingLatex": "x = -4: \\ 5 - 2(-4) = 13 \\not\\le 11",
+        "explanation": "Testing $x = -4$ gives $13 \\le 11$, which is false, confirming values below $-3$ do not work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x \\ge -3\\}",
+        "explanation": "In set notation the solution is the set of all real $x$ that are at least $-3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x \\ge -3",
+        "explanation": "The solution is $x \\ge -3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$5 - 2x \\le 11 \\Rightarrow -2x \\le 6 \\Rightarrow x \\ge -3$ (dividing by $-2$ reverses the inequality)."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.simultaneous.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "linear-quadratic",
+    "substitution",
+    "intersection"
+  ],
+  "questionText": "Solve the simultaneous equations $y = 3x - 1$ and $y = x^2 + x - 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a linear-quadratic system.",
+        "workingLatex": "y = 3x - 1 \\ (\\text{line}), \\quad y = x^2 + x - 4 \\ (\\text{curve})",
+        "explanation": "Setting the two expressions for $y$ equal gives a single quadratic to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the expressions equal.",
+        "workingLatex": "x^2 + x - 4 = 3x - 1",
+        "explanation": "At a common point both expressions for $y$ are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic.",
+        "workingLatex": "x^2 - 2x - 3 = 0",
+        "explanation": "Bringing all terms to one side gives $x^2 - 2x - 3 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise.",
+        "workingLatex": "(x - 3)(x + 1) = 0",
+        "explanation": "Two numbers multiplying to $-3$ and adding to $-2$ are $-3$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x.",
+        "workingLatex": "x = 3 \\ \\text{ or } \\ x = -1",
+        "explanation": "Setting each factor to zero gives the two $x$-coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y for x = 3.",
+        "workingLatex": "y = 3(3) - 1 = 8",
+        "explanation": "Substituting $x = 3$ into the line $y = 3x - 1$ gives $y = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y for x = -1.",
+        "workingLatex": "y = 3(-1) - 1 = -4",
+        "explanation": "Substituting $x = -1$ into the line gives $y = -4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the solution pairs.",
+        "workingLatex": "(3, 8) \\ \\text{ and } \\ (-1, -4)",
+        "explanation": "Each $x$ pairs with its $y$ to give an intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the first point on the curve.",
+        "workingLatex": "3^2 + 3 - 4 = 9 + 3 - 4 = 8 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ into the curve gives $y = 8$, confirming the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the second point on the curve.",
+        "workingLatex": "(-1)^2 + (-1) - 4 = 1 - 1 - 4 = -4 \\ \\checkmark",
+        "explanation": "Substituting $x = -1$ into the curve gives $y = -4$, confirming the second point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the number of intersections.",
+        "workingLatex": "\\text{two real roots} \\Rightarrow \\text{two points}",
+        "explanation": "The quadratic had two distinct roots, so the line meets the curve at two separate points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret geometrically.",
+        "workingLatex": "\\text{the line crosses the curve twice}",
+        "explanation": "Two real solutions mean the line and the parabola intersect at two distinct points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solution.",
+        "workingLatex": "(x, y) = (3, 8) \\text{ or } (-1, -4)",
+        "explanation": "The solutions are $(3, 8)$ and $(-1, -4)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + x - 4 = 3x - 1 \\Rightarrow x^2 - 2x - 3 = (x-3)(x+1) = 0 \\Rightarrow (3,8) \\text{ or } (-1,-4)$"
+  }
+}

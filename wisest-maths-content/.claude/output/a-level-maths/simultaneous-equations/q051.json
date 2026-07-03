@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.simultaneous.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $x + y = 9$ and $x - y = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "x + y = 9 \\ (1), \\quad x - y = 1 \\ (2)",
+        "explanation": "Numbering the equations lets us combine them clearly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose a variable to eliminate.",
+        "workingLatex": "\\text{add (1) and (2) to remove } y",
+        "explanation": "The $+y$ and $-y$ are opposites, so adding the equations cancels $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the equations.",
+        "workingLatex": "(x + y) + (x - y) = 9 + 1",
+        "explanation": "Adding term by term keeps the equation balanced and removes $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to find x.",
+        "workingLatex": "2x = 10 \\Rightarrow x = 5",
+        "explanation": "The $y$ terms cancel, leaving $2x = 10$, so $x = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "5 + y = 9 \\Rightarrow y = 4",
+        "explanation": "Putting $x = 5$ into equation (1) gives $y = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check in the other equation.",
+        "workingLatex": "5 - 4 = 1 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solution.",
+        "workingLatex": "x = 5, \\ y = 4",
+        "explanation": "The solution is $x = 5$ and $y = 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Adding gives $2x = 10 \\Rightarrow x = 5$, then $y = 4$. Solution: $x = 5,\\ y = 4$."
+  }
+}

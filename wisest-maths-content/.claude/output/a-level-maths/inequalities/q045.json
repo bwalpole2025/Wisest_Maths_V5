@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "leading coefficient",
+    "factorising"
+  ],
+  "questionText": "Solve the inequality $2x^2 - 5x - 3 < 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "2x^2 - 5x - 3 = (2x + 1)(x - 3)",
+        "explanation": "Splitting the middle term (using $ac = -6$, with $1$ and $-6$) factorises this quadratic with leading coefficient $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "2x + 1 = 0 \\Rightarrow x = -\\tfrac{1}{2}, \\quad x - 3 = 0 \\Rightarrow x = 3",
+        "explanation": "Setting each factor to zero gives the roots $-\\tfrac12$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Order the critical values.",
+        "workingLatex": "-\\tfrac{1}{2} < 3",
+        "explanation": "Placing the roots in order divides the number line into three regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{coefficient of } x^2 = 2 > 0 \\Rightarrow \\text{opens upward}",
+        "explanation": "A positive $x^2$ coefficient means the parabola dips below the axis between its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Decide where the curve is below the axis.",
+        "workingLatex": "\\text{between the roots}",
+        "explanation": "For an upward parabola, $y < 0$ strictly between the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the solution.",
+        "workingLatex": "-\\tfrac{1}{2} < x < 3",
+        "explanation": "The inequality $< 0$ holds for $x$ strictly between $-\\tfrac12$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Express in interval notation.",
+        "workingLatex": "x \\in \\left(-\\tfrac{1}{2}, \\, 3\\right)",
+        "explanation": "In interval notation the solution is the open interval from $-\\tfrac12$ to $3$, endpoints excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Test the left region.",
+        "workingLatex": "x = -1: \\ (-1)(-4) = 4 \\not< 0",
+        "explanation": "At $x = -1$ the product is positive, confirming the inequality fails to the left of the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Test the middle region.",
+        "workingLatex": "x = 0: \\ (1)(-3) = -3 < 0 \\ \\checkmark",
+        "explanation": "At $x = 0$ the product is negative, confirming the inequality holds between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Test the right region.",
+        "workingLatex": "x = 4: \\ (9)(1) = 9 \\not< 0",
+        "explanation": "At $x = 4$ the product is positive, confirming the inequality fails to the right of the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the boundaries are excluded.",
+        "workingLatex": "\\text{strict } < 0 \\Rightarrow \\text{roots not included}",
+        "explanation": "Because the inequality is strict, the roots $-\\tfrac12$ and $3$ (where the value is zero) are excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Summarise the sign pattern.",
+        "workingLatex": "+ \\ | \\ - \\ | \\ + \\quad \\text{at } -\\tfrac{1}{2}, 3",
+        "explanation": "The parabola is positive outside the roots and negative between them, so $< 0$ picks out the middle region.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "-\\tfrac{1}{2} < x < 3",
+        "explanation": "The solution is $-\\tfrac12 < x < 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2x+1)(x-3) < 0 \\Rightarrow -\\tfrac{1}{2} < x < 3$ (between the roots)."
+  }
+}

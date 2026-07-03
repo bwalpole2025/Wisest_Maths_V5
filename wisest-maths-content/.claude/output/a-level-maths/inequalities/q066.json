@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.inequalities.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "quadratic",
+    "leading coefficient",
+    "factorising"
+  ],
+  "questionText": "Solve the inequality $2x^2 + x - 6 \\ge 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "2x^2 + x - 6 = (2x - 3)(x + 2)",
+        "explanation": "Splitting the middle term (using $ac = -12$, with $4$ and $-3$) factorises this quadratic with leading coefficient $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the critical values.",
+        "workingLatex": "2x - 3 = 0 \\Rightarrow x = \\tfrac{3}{2}, \\quad x + 2 = 0 \\Rightarrow x = -2",
+        "explanation": "Setting each factor to zero gives the roots $\\tfrac32$ and $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Order the critical values.",
+        "workingLatex": "-2 < \\tfrac{3}{2}",
+        "explanation": "Placing the roots in order divides the number line into three regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Note the shape of the parabola.",
+        "workingLatex": "\\text{coefficient of } x^2 = 2 > 0 \\Rightarrow \\text{opens upward}",
+        "explanation": "A positive $x^2$ coefficient means the parabola lies above the axis outside its roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Decide where the curve is on or above the axis.",
+        "workingLatex": "\\text{outside the roots}",
+        "explanation": "For an upward parabola, $\\ge 0$ holds at and outside the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the solution.",
+        "workingLatex": "x \\le -2 \\ \\text{ or } \\ x \\ge \\tfrac{3}{2}",
+        "explanation": "The inequality $\\ge 0$ holds for $x$ at most $-2$ or at least $\\tfrac32$, including the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Express in set notation.",
+        "workingLatex": "\\{x : x \\le -2\\} \\cup \\{x : x \\ge \\tfrac{3}{2}\\}",
+        "explanation": "The solution is the union of the two outer regions, including the boundary values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Test the left region.",
+        "workingLatex": "x = -3: \\ (-9)(-1) = 9 \\ge 0 \\ \\checkmark",
+        "explanation": "At $x = -3$ the product is positive, confirming the inequality holds in the left region.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Test the middle region.",
+        "workingLatex": "x = 0: \\ (-3)(2) = -6 \\not\\ge 0",
+        "explanation": "At $x = 0$ the product is negative, confirming the inequality fails between the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Test the right region.",
+        "workingLatex": "x = 2: \\ (1)(4) = 4 \\ge 0 \\ \\checkmark",
+        "explanation": "At $x = 2$ the product is positive, confirming the inequality holds in the right region.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the boundaries are included.",
+        "workingLatex": "\\text{non-strict } \\ge 0 \\Rightarrow \\text{roots included}",
+        "explanation": "Because the inequality allows equality, the roots $-2$ and $\\tfrac32$ are part of the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Summarise the sign pattern.",
+        "workingLatex": "+ \\ | \\ - \\ | \\ + \\quad \\text{at } -2, \\tfrac{3}{2}",
+        "explanation": "The parabola is positive outside the roots and negative between them, matching the two outer regions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x \\le -2 \\ \\text{ or } \\ x \\ge \\tfrac{3}{2}",
+        "explanation": "The solution is $x \\le -2$ or $x \\ge \\tfrac32$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2x-3)(x+2) \\ge 0 \\Rightarrow x \\le -2 \\text{ or } x \\ge \\tfrac{3}{2}$ (outside the roots)."
+  }
+}

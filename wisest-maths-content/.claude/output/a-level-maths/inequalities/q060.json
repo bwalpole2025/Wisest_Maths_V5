@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.inequalities.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Inequalities",
+  "subtopicId": "al.y1.pure.inequalities",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "inequalities",
+    "linear",
+    "double inequality"
+  ],
+  "questionText": "Solve the inequality $-3 < 2x - 5 \\le 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a double inequality.",
+        "workingLatex": "-3 < 2x - 5 \\le 3",
+        "explanation": "This says $2x - 5$ lies between $-3$ and $3$; we operate on all three parts together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add 5 to all three parts.",
+        "workingLatex": "-3 + 5 < 2x \\le 3 + 5",
+        "explanation": "Adding $5$ throughout keeps the chain of inequalities balanced.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify.",
+        "workingLatex": "2 < 2x \\le 8",
+        "explanation": "Working out the outer values gives $2 < 2x \\le 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide all three parts by 2.",
+        "workingLatex": "1 < x \\le 4",
+        "explanation": "Dividing by the positive number $2$ throughout keeps both inequality signs the same way round.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the solution.",
+        "workingLatex": "1 < x \\le 4",
+        "explanation": "The solution is all $x$ between $1$ (excluded) and $4$ (included).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check a value inside.",
+        "workingLatex": "x = 2: \\ 2(2) - 5 = -1, \\ -3 < -1 \\le 3 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ gives $-1$, which lies in the required range, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the lower boundary.",
+        "workingLatex": "x = 1: \\ 2(1) - 5 = -3, \\ -3 < -3 \\text{ is false}",
+        "explanation": "At $x = 1$ the value is $-3$, which is not strictly greater than $-3$, so $1$ is correctly excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the upper boundary.",
+        "workingLatex": "x = 4: \\ 2(4) - 5 = 3 \\le 3 \\ \\checkmark",
+        "explanation": "At $x = 4$ the value is $3$, which satisfies $\\le 3$, so $4$ is correctly included.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "1 < x \\le 4",
+        "explanation": "The solution is $1 < x \\le 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-3 < 2x - 5 \\le 3 \\Rightarrow 2 < 2x \\le 8 \\Rightarrow 1 < x \\le 4$"
+  }
+}

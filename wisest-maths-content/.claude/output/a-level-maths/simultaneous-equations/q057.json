@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.simultaneous.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Simultaneous equations",
+  "subtopicId": "al.y1.pure.simultaneous",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simultaneous equations",
+    "elimination",
+    "linear"
+  ],
+  "questionText": "Solve the simultaneous equations $4x + 3y = 18$ and $5x - 3y = 9$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Label the equations.",
+        "workingLatex": "4x + 3y = 18 \\ (1), \\quad 5x - 3y = 9 \\ (2)",
+        "explanation": "The $y$ terms are already equal and opposite, so adding will eliminate $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add the equations.",
+        "workingLatex": "(4x + 3y) + (5x - 3y) = 18 + 9",
+        "explanation": "The $+3y$ and $-3y$ cancel when we add the two equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify to find x.",
+        "workingLatex": "9x = 27 \\Rightarrow x = 3",
+        "explanation": "The $y$ terms cancel, leaving $9x = 27$, so $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute back.",
+        "workingLatex": "4(3) + 3y = 18",
+        "explanation": "Putting $x = 3$ into equation (1) gives an equation in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify.",
+        "workingLatex": "12 + 3y = 18 \\Rightarrow 3y = 6",
+        "explanation": "Subtracting $12$ gives $3y = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for y.",
+        "workingLatex": "y = 2",
+        "explanation": "Dividing by $3$ gives $y = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the intermediate solution.",
+        "workingLatex": "x = 3, \\ y = 2",
+        "explanation": "So far we have $x = 3$ and $y = 2$; we verify before finalising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check in equation (2).",
+        "workingLatex": "5(3) - 3(2) = 15 - 6 = 9 \\ \\checkmark",
+        "explanation": "Substituting into equation (2) confirms both equations are satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solution.",
+        "workingLatex": "x = 3, \\ y = 2",
+        "explanation": "The solution is $x = 3$ and $y = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Adding gives $9x = 27 \\Rightarrow x = 3$, then $y = 2$. Solution: $x = 3,\\ y = 2$."
+  }
+}
