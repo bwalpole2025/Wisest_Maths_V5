@@ -1,7 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
-  "currentTopic": "",
-  "currentSubtopic": "",
+  "currentTopic": "Year 1 Pure",
+  "currentSubtopic": "Mathematical argument and notation",
+  "currentSubtopicId": "al.y1.pure.argument-notation",
   "questionsGenerated": 0,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [],
