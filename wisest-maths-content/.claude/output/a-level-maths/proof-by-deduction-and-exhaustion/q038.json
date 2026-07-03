@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "odd numbers",
+    "even numbers"
+  ],
+  "questionText": "Prove that the sum of an even number and an odd number is odd.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the even number.",
+        "workingLatex": "2a, \\quad a \\in \\mathbb{Z}",
+        "explanation": "Every even number is $2$ times an integer, so it has the form $2a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Represent the odd number.",
+        "workingLatex": "2b+1, \\quad b \\in \\mathbb{Z}",
+        "explanation": "Every odd number is one more than an even number, so it has the form $2b+1$; it needs its own letter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the sum.",
+        "workingLatex": "2a + (2b+1)",
+        "explanation": "The statement is about adding an even and an odd number, so we write their sum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "2a + 2b + 1",
+        "explanation": "Removing the bracket gathers the two even parts and leaves the $+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor the even part.",
+        "workingLatex": "2(a + b) + 1",
+        "explanation": "Pulling out $2$ separates the sum into an even piece plus a leftover $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "a + b \\in \\mathbb{Z}",
+        "explanation": "Since $a,b$ are integers, $2(a+b)$ is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "2(a+b)+1 \\text{ is odd}",
+        "explanation": "The sum has the form (even)$+1$, so it is odd; an even plus an odd is always odd.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2a+(2b+1)=2(a+b)+1$, which is even $+1$, hence odd. $\\blacksquare$"
+  }
+}

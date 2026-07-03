@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "odd numbers",
+    "even numbers"
+  ],
+  "questionText": "Prove that the sum of any two odd numbers is even.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the first odd number.",
+        "workingLatex": "2a+1, \\quad a \\in \\mathbb{Z}",
+        "explanation": "Every odd number is one more than an even number, so it has the form $2a+1$. Using a letter keeps the argument general.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Represent the second odd number.",
+        "workingLatex": "2b+1, \\quad b \\in \\mathbb{Z}",
+        "explanation": "The second odd number is independent of the first, so it needs its own letter $b$; writing it as $2a+1$ would wrongly force the two to be equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the sum.",
+        "workingLatex": "(2a+1) + (2b+1)",
+        "explanation": "The claim is about adding the two odd numbers, so we write their sum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "2a + 2b + 2",
+        "explanation": "Adding removes the brackets and gathers the two constant $1$s into a $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out the common 2.",
+        "workingLatex": "2(a + b + 1)",
+        "explanation": "Pulling out a factor of $2$ is the decisive move: it displays the sum explicitly as twice something.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "a + b + 1 \\in \\mathbb{Z}",
+        "explanation": "Since $a$ and $b$ are integers, so is $a+b+1$; hence the sum is $2 \\times (\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "2(a+b+1) \\text{ is even}",
+        "explanation": "A number equal to $2$ times an integer is even by definition, so the sum of any two odd numbers is even.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2a+1)+(2b+1)=2a+2b+2=2(a+b+1)$, which is $2\\times$ an integer, hence even. $\\blacksquare$"
+  }
+}

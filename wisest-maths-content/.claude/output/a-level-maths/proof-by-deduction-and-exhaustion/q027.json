@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.proof-deduction.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "sum of squares"
+  ],
+  "questionText": "Prove that $a^2 + b^2 + c^2 \\ge ab + bc + ca$ for all real numbers $a$, $b$ and $c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } a^2+b^2+c^2 \\ge ab+bc+ca",
+        "explanation": "We must show one expression never falls below the other for any real $a,b,c$. A sum-of-squares identity will make the sign clear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the difference.",
+        "workingLatex": "D = a^2+b^2+c^2 - (ab+bc+ca)",
+        "explanation": "Proving $D\\ge0$ is equivalent to the inequality, so we focus on the difference.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Double the difference.",
+        "workingLatex": "2D = 2a^2 + 2b^2 + 2c^2 - 2ab - 2bc - 2ca",
+        "explanation": "Multiplying by $2$ is a standard trick: it lets each squared term split cleanly into two, ready to form perfect squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Regroup the terms.",
+        "workingLatex": "2D = (a^2 - 2ab + b^2) + (b^2 - 2bc + c^2) + (c^2 - 2ca + a^2)",
+        "explanation": "Each squared variable appears twice in $2D$, so we can distribute the terms into three groups, each matching a completed square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the regrouping.",
+        "workingLatex": "a^2\\!+\\!a^2,\\ b^2\\!+\\!b^2,\\ c^2\\!+\\!c^2 \\text{ and } -2ab, -2bc, -2ca",
+        "explanation": "Counting shows every term of $2D$ is used exactly once, so the regrouping is an identity, not an approximation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write as a sum of squares.",
+        "workingLatex": "2D = (a-b)^2 + (b-c)^2 + (c-a)^2",
+        "explanation": "Each bracket is a perfect square, so $2D$ is a sum of three squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply non-negativity.",
+        "workingLatex": "(a-b)^2, (b-c)^2, (c-a)^2 \\ge 0",
+        "explanation": "Every real square is non-negative, so each of the three terms is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add the squares.",
+        "workingLatex": "2D \\ge 0",
+        "explanation": "A sum of non-negative quantities is non-negative, so $2D\\ge0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Halve to bound D.",
+        "workingLatex": "D \\ge 0",
+        "explanation": "Dividing by the positive number $2$ preserves the inequality, giving $D\\ge0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Translate back.",
+        "workingLatex": "a^2+b^2+c^2 \\ge ab+bc+ca",
+        "explanation": "Since $D\\ge0$, the original inequality holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff a = b = c",
+        "explanation": "Equality needs all three squares zero, i.e. $a=b=c$; this shows the bound is sharp.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the domain.",
+        "workingLatex": "\\forall\\, a,b,c \\in \\mathbb{R}",
+        "explanation": "The only fact used was that real squares are non-negative, valid for all real $a,b,c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "a^2+b^2+c^2 \\ge ab+bc+ca",
+        "explanation": "The difference equals $\\tfrac12\\!\\left[(a-b)^2+(b-c)^2+(c-a)^2\\right]\\ge0$, so the inequality holds for all real $a,b,c$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2\\big(a^2+b^2+c^2-ab-bc-ca\\big)=(a-b)^2+(b-c)^2+(c-a)^2\\ge0$, so $a^2+b^2+c^2\\ge ab+bc+ca$, with equality iff $a=b=c$. $\\blacksquare$"
+  }
+}

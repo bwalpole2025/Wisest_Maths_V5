@@ -1,0 +1,92 @@
+{
+  "id": "al.y1.pure.proof-deduction.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "divisibility",
+    "factorisation"
+  ],
+  "questionText": "Prove that $n^3 + 2n$ is divisible by $3$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite to expose a familiar expression.",
+        "workingLatex": "n^3 + 2n = n^3 - n + 3n",
+        "explanation": "Splitting $2n$ as $-n+3n$ is a clever regrouping: it turns part of the expression into $n^3-n$, which factors into consecutive integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor the n³ − n part.",
+        "workingLatex": "n^3 - n = (n-1)\\,n\\,(n+1)",
+        "explanation": "Using $n^3-n=n(n^2-1)=(n-1)n(n+1)$ produces three consecutive integers, a structure that guarantees a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the whole expression.",
+        "workingLatex": "n^3 + 2n = (n-1)\\,n\\,(n+1) + 3n",
+        "explanation": "Combining the two parts gives a sum of a triple product and $3n$; we now show each piece is divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divisibility of the product — set up cases.",
+        "workingLatex": "n \\equiv 0, 1, 2 \\pmod 3",
+        "explanation": "Every integer leaves remainder $0$, $1$ or $2$ modulo $3$; checking these exhaustive cases settles the product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case n ≡ 0.",
+        "workingLatex": "3 \\mid n",
+        "explanation": "If $n$ is a multiple of $3$, the middle factor $n$ makes the product divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case n ≡ 1.",
+        "workingLatex": "3 \\mid (n-1)",
+        "explanation": "If $n\\equiv1$, then $n-1\\equiv0$, so the factor $n-1$ is divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Case n ≡ 2.",
+        "workingLatex": "3 \\mid (n+1)",
+        "explanation": "If $n\\equiv2$, then $n+1\\equiv0$, so the factor $n+1$ is divisible by $3$. In every case the product is a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Divisibility of the second term.",
+        "workingLatex": "3 \\mid 3n",
+        "explanation": "The term $3n$ is plainly a multiple of $3$ for any integer $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Add two multiples of 3.",
+        "workingLatex": "3 \\mid \\big[(n-1)n(n+1) + 3n\\big]",
+        "explanation": "The sum of two multiples of $3$ is again a multiple of $3$, so the whole expression is divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion.",
+        "workingLatex": "3 \\mid n^3 + 2n \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Both pieces are divisible by $3$, so $n^3+2n$ is divisible by $3$ for every integer $n$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^3+2n=(n-1)n(n+1)+3n$. The triple product of consecutive integers is divisible by $3$, and $3n$ is too, so their sum is divisible by $3$. $\\blacksquare$"
+  }
+}

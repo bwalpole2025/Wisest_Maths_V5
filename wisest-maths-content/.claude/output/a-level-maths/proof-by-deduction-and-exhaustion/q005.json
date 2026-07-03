@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.proof-deduction.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "odd numbers",
+    "algebra"
+  ],
+  "questionText": "Prove that the sum of the squares of any two consecutive integers is odd.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Let the first integer be general.",
+        "workingLatex": "n \\in \\mathbb{Z}",
+        "explanation": "A single letter $n$ for the first integer lets one argument cover every possible pair.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the second consecutive integer.",
+        "workingLatex": "n \\text{ and } n+1",
+        "explanation": "The next integer is one greater, namely $n+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the sum of the squares.",
+        "workingLatex": "S = n^2 + (n+1)^2",
+        "explanation": "The statement is about squaring each integer and adding, so we write exactly that.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the squared bracket.",
+        "workingLatex": "(n+1)^2 = n^2 + 2n + 1",
+        "explanation": "Expanding $(n+1)^2$ using the binomial gives $n^2+2n+1$; we need it in expanded form to combine like terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the two squares.",
+        "workingLatex": "S = n^2 + n^2 + 2n + 1 = 2n^2 + 2n + 1",
+        "explanation": "Adding $n^2$ to the expansion and collecting like terms gathers everything into a single quadratic expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factor the even part.",
+        "workingLatex": "S = 2(n^2 + n) + 1",
+        "explanation": "Pulling a $2$ out of the first two terms separates $S$ into an explicitly even piece plus a leftover $1$ — the structure that decides oddness.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Analyse the bracketed term.",
+        "workingLatex": "n^2 + n \\in \\mathbb{Z}",
+        "explanation": "Since $n$ is an integer, $n^2+n$ is also an integer, so $2(n^2+n)$ is a whole number of twos, i.e. even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add the remaining 1.",
+        "workingLatex": "S = (\\text{even}) + 1",
+        "explanation": "An even number with $1$ added is always odd, because it is the number immediately after an even number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "S = 2(n^2+n)+1 \\text{ is odd for all } n \\in \\mathbb{Z}",
+        "explanation": "$S$ has the form (even)$+1$ for a general integer $n$, so the sum of the squares of two consecutive integers is always odd.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$S=n^2+(n+1)^2=2n^2+2n+1=2(n^2+n)+1$. As $n^2+n$ is an integer, $S$ is even $+1$, hence odd. $\\blacksquare$"
+  }
+}

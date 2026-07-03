@@ -1,0 +1,99 @@
+{
+  "id": "al.y1.pure.proof-deduction.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by exhaustion",
+    "modular arithmetic",
+    "squares"
+  ],
+  "questionText": "Prove by exhaustion that for every integer $n$, $n^2$ is congruent to $0$, $1$ or $4$ modulo $5$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reduce to the residue of n mod 5.",
+        "workingLatex": "n = 5k + r, \\quad r \\in \\{0,1,2,3,4\\}",
+        "explanation": "Writing $n$ as $5k+r$ means $n^2 = 25k^2 + 10kr + r^2$; the first two terms are multiples of $5$, so only $r^2$ affects the residue.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the reduced problem.",
+        "workingLatex": "n^2 \\equiv r^2 \\pmod 5",
+        "explanation": "Because only $r^2$ matters, we just check the five possible residues $r=0,\\dots,4$ — a finite, exhaustive check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Case r = 0.",
+        "workingLatex": "0^2 = 0 \\equiv 0",
+        "explanation": "The residue $0$ squares to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Case r = 1.",
+        "workingLatex": "1^2 = 1 \\equiv 1",
+        "explanation": "The residue $1$ squares to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case r = 2.",
+        "workingLatex": "2^2 = 4 \\equiv 4",
+        "explanation": "The residue $2$ squares to $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case r = 3.",
+        "workingLatex": "3^2 = 9 \\equiv 4",
+        "explanation": "Since $9 = 5 + 4$, the residue $3$ squares to $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Case r = 4.",
+        "workingLatex": "4^2 = 16 \\equiv 1",
+        "explanation": "Since $16 = 15 + 1$, the residue $4$ squares to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Collect the outcomes.",
+        "workingLatex": "\\{0, 1, 4, 4, 1\\} = \\{0, 1, 4\\}",
+        "explanation": "The five cases produce only the residues $0$, $1$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compare with the excluded residues.",
+        "workingLatex": "2, 3 \\notin \\{0,1,4\\}",
+        "explanation": "In particular $n^2$ is never congruent to $2$ or $3$ modulo $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm the cases are exhaustive.",
+        "workingLatex": "r \\in \\{0,1,2,3,4\\} \\text{ all covered}",
+        "explanation": "Every possible residue of $n$ has been checked, so nothing is missing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion.",
+        "workingLatex": "n^2 \\equiv 0, 1, \\text{ or } 4 \\pmod 5",
+        "explanation": "By exhaustion, the square of any integer is congruent to $0$, $1$ or $4$ modulo $5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "With $n=5k+r$, $n^2\\equiv r^2\\pmod5$. Testing $r=0,1,2,3,4$ gives residues $\\{0,1,4,4,1\\}=\\{0,1,4\\}$. Hence $n^2\\equiv0,1$ or $4\\pmod5$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "al.y1.pure.proof-deduction.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "odd numbers",
+    "divisibility"
+  ],
+  "questionText": "Prove that if $n$ is odd, then $n^2 - 1$ is divisible by $8$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the odd number in standard form.",
+        "workingLatex": "n = 2k+1, \\quad k \\in \\mathbb{Z}",
+        "explanation": "Since $n$ is odd, it is one more than an even number, so $n=2k+1$. This lets us compute $n^2-1$ explicitly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the expression.",
+        "workingLatex": "n^2 - 1 = (2k+1)^2 - 1",
+        "explanation": "Replacing $n$ turns the target into something we can expand and factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the square.",
+        "workingLatex": "(2k+1)^2 - 1 = 4k^2 + 4k + 1 - 1",
+        "explanation": "Expanding $(2k+1)^2$ gives $4k^2+4k+1$, and the $+1$ is cancelled by the $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify.",
+        "workingLatex": "n^2 - 1 = 4k^2 + 4k",
+        "explanation": "After the constant cancels, only the two terms with a factor of $4$ remain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor.",
+        "workingLatex": "n^2 - 1 = 4k(k+1)",
+        "explanation": "Factoring out $4k$ leaves $k+1$, so we now have $4$ times a product of consecutive integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify what is still needed.",
+        "workingLatex": "\\text{need one more factor of } 2 \\text{ from } k(k+1)",
+        "explanation": "We have $4k(k+1)$; to reach a multiple of $8$ we must show $k(k+1)$ supplies one further factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use consecutiveness.",
+        "workingLatex": "k, k+1 \\text{ consecutive} \\Rightarrow \\text{one is even}",
+        "explanation": "Among two consecutive integers exactly one is even, so their product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case k even.",
+        "workingLatex": "k = 2m \\Rightarrow k(k+1) = 2m(k+1)",
+        "explanation": "If $k$ is even, the product $k(k+1)$ clearly contains a factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Case k odd.",
+        "workingLatex": "k+1 = 2m \\Rightarrow k(k+1) = 2m\\,k",
+        "explanation": "If $k$ is odd then $k+1$ is even, so again the product is even. Both cases give $k(k+1)=2m$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Substitute back.",
+        "workingLatex": "n^2 - 1 = 4 \\cdot 2m = 8m",
+        "explanation": "Replacing $k(k+1)$ with $2m$ turns the factor $4$ into $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion.",
+        "workingLatex": "8 \\mid n^2 - 1 \\text{ for odd } n",
+        "explanation": "Since $n^2-1=8m$ with $m$ an integer, it is divisible by $8$ whenever $n$ is odd.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "If $n=2k+1$ then $n^2-1=4k(k+1)$. As $k(k+1)$ is a product of consecutive integers it is even, say $2m$, so $n^2-1=8m$. Hence $8\\mid n^2-1$ for odd $n$. $\\blacksquare$"
+  }
+}

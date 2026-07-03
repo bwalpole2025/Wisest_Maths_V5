@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.proof-deduction.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "squares"
+  ],
+  "questionText": "Prove that $x^2 + y^2 \\ge 2xy$ for all real numbers $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start from a guaranteed non-negative quantity.",
+        "workingLatex": "(x - y)^2 \\ge 0",
+        "explanation": "The square of any real number is non-negative, so $(x-y)^2\\ge0$ is true for all real $x,y$. This is the engine of the proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the square.",
+        "workingLatex": "(x - y)^2 = x^2 - 2xy + y^2",
+        "explanation": "Expanding turns the compact square into the terms we want to compare.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the inequality with the expansion.",
+        "workingLatex": "x^2 - 2xy + y^2 \\ge 0",
+        "explanation": "Substituting the expansion into $(x-y)^2\\ge0$ gives an inequality in the three terms of interest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add 2xy to both sides.",
+        "workingLatex": "x^2 + y^2 \\ge 2xy",
+        "explanation": "Adding $2xy$ to each side moves the cross term across while preserving the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the result.",
+        "workingLatex": "x^2 + y^2 \\ge 2xy",
+        "explanation": "This is exactly the statement we set out to prove, now derived from a true square inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify when equality holds.",
+        "workingLatex": "\\text{equality} \\iff x = y",
+        "explanation": "Equality needs $(x-y)^2=0$, i.e. $x=y$; otherwise the inequality is strict. This confirms the bound is sharp.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the domain.",
+        "workingLatex": "\\text{valid for all } x, y \\in \\mathbb{R}",
+        "explanation": "The only fact used was that a real square is non-negative, which holds for every real $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the logical direction.",
+        "workingLatex": "(x-y)^2 \\ge 0 \\Rightarrow x^2+y^2 \\ge 2xy",
+        "explanation": "Each step was a forward implication from a known truth, so the argument is a valid direct proof, not assuming what we want to show.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "x^2 + y^2 \\ge 2xy \\ \\forall x,y \\in \\mathbb{R}",
+        "explanation": "Starting from $(x-y)^2\\ge0$ we deduced the inequality for all real $x,y$, with equality exactly when $x=y$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-y)^2\\ge0 \\Rightarrow x^2-2xy+y^2\\ge0 \\Rightarrow x^2+y^2\\ge2xy$, with equality iff $x=y$. $\\blacksquare$"
+  }
+}

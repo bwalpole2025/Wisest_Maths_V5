@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.proof-deduction.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "cubes",
+    "modular arithmetic",
+    "parity"
+  ],
+  "questionText": "Prove that the difference between the cubes of two consecutive integers leaves a remainder of $1$ when divided by $6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the two consecutive integers.",
+        "workingLatex": "n \\text{ and } n+1",
+        "explanation": "Let the smaller integer be $n$ and the larger $n+1$; a single letter keeps the argument general.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the difference of cubes.",
+        "workingLatex": "D = (n+1)^3 - n^3",
+        "explanation": "We subtract the smaller cube from the larger, matching 'difference between the cubes'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the leading cube.",
+        "workingLatex": "(n+1)^3 = n^3 + 3n^2 + 3n + 1",
+        "explanation": "Expanding $(n+1)^3$ prepares it for the subtraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract the cubes.",
+        "workingLatex": "D = 3n^2 + 3n + 1",
+        "explanation": "The $n^3$ terms cancel, leaving $3n^2+3n+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor the multiple-of-3 part.",
+        "workingLatex": "D = 3(n^2 + n) + 1",
+        "explanation": "Pulling $3$ from the first two terms separates $D$ into a multiple of $3$ plus $1$ — but we need a multiple of $6$, so more work is needed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the bracket as a product.",
+        "workingLatex": "D = 3n(n+1) + 1",
+        "explanation": "Since $n^2+n=n(n+1)$, the term becomes $3n(n+1)$; the product of consecutive integers is the key to gaining an extra factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use consecutiveness for parity.",
+        "workingLatex": "n, n+1 \\text{ consecutive} \\Rightarrow \\text{one even}",
+        "explanation": "Among two consecutive integers one is even, so $n(n+1)$ is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case n even / n odd.",
+        "workingLatex": "n(n+1) = 2k, \\quad k \\in \\mathbb{Z}",
+        "explanation": "Whether $n$ is even or $n+1$ is even, the product $n(n+1)$ equals $2k$ for some integer $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute into D.",
+        "workingLatex": "D = 3(2k) + 1",
+        "explanation": "Replacing $n(n+1)$ with $2k$ turns the factor $3$ into $3\\times2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify.",
+        "workingLatex": "D = 6k + 1",
+        "explanation": "Multiplying out gives $6k+1$: a multiple of $6$ plus $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Identify the remainder.",
+        "workingLatex": "D = 6k + 1, \\quad 0 \\le 1 < 6",
+        "explanation": "Because $1$ is a valid remainder (between $0$ and $5$), $D$ leaves remainder $1$ on division by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm generality.",
+        "workingLatex": "\\forall\\, n \\in \\mathbb{Z}",
+        "explanation": "No special assumption about $n$ was made, so the result holds for every pair of consecutive integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "(n+1)^3 - n^3 \\equiv 1 \\pmod 6",
+        "explanation": "The difference of cubes equals $6k+1$, so it always leaves remainder $1$ when divided by $6$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(n+1)^3-n^3=3n^2+3n+1=3n(n+1)+1$. As $n(n+1)$ is even, say $2k$, this equals $6k+1$, leaving remainder $1$ modulo $6$. $\\blacksquare$"
+  }
+}

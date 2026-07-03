@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "even numbers"
+  ],
+  "questionText": "Prove that the sum of any four consecutive integers is even.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Let the first integer be general.",
+        "workingLatex": "n \\in \\mathbb{Z}",
+        "explanation": "Using $n$ for the first integer keeps the argument valid for every starting value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the four consecutive integers.",
+        "workingLatex": "n,\\; n+1,\\; n+2,\\; n+3",
+        "explanation": "Consecutive integers rise by $1$, so the four numbers are $n$ through $n+3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add them.",
+        "workingLatex": "S = n + (n+1) + (n+2) + (n+3)",
+        "explanation": "The claim is about their total, so we sum the four integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "S = 4n + 6",
+        "explanation": "Four $n$ terms give $4n$, and the constants $1+2+3$ give $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out 2.",
+        "workingLatex": "S = 2(2n + 3)",
+        "explanation": "Both terms are even, so factoring $2$ shows the sum is twice an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "2n + 3 \\in \\mathbb{Z}",
+        "explanation": "Since $n$ is an integer, $2n+3$ is an integer, so $S=2\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "S = 2(2n+3) \\text{ is even}",
+        "explanation": "The sum equals $2(2n+3)$, which is even by definition, so the sum of any four consecutive integers is even.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n+(n+1)+(n+2)+(n+3)=4n+6=2(2n+3)$, which is even. Hence the sum of any four consecutive integers is even. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.proof-deduction.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "odd numbers",
+    "difference of squares"
+  ],
+  "questionText": "Prove that the difference between the squares of any two consecutive integers is odd.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the two consecutive integers.",
+        "workingLatex": "n \\text{ and } n+1",
+        "explanation": "Let the smaller integer be $n$; the next one is $n+1$. A single letter keeps the argument general.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the difference of their squares.",
+        "workingLatex": "D = (n+1)^2 - n^2",
+        "explanation": "We subtract the square of the smaller from the square of the larger, matching 'difference between the squares'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the leading square.",
+        "workingLatex": "(n+1)^2 = n^2 + 2n + 1",
+        "explanation": "Expanding $(n+1)^2$ prepares the two squares for subtraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract the squares.",
+        "workingLatex": "D = (n^2 + 2n + 1) - n^2 = 2n + 1",
+        "explanation": "The $n^2$ terms cancel, leaving the simple expression $2n+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the standard odd form.",
+        "workingLatex": "D = 2n + 1",
+        "explanation": "An expression of the form $2 \\times (\\text{integer}) + 1$ is exactly what we call an odd number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Justify the components.",
+        "workingLatex": "2n \\text{ even}, \\quad 2n+1 \\text{ odd}",
+        "explanation": "Since $n$ is an integer, $2n$ is even, and adding $1$ makes the result odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "D = 2n+1 \\text{ is odd for all } n \\in \\mathbb{Z}",
+        "explanation": "The difference simplifies to $2n+1$, which is odd for every integer $n$, so the claim holds in general.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(n+1)^2-n^2=2n+1$, which is of the form (even)$+1$ and therefore odd for every integer $n$. $\\blacksquare$"
+  }
+}

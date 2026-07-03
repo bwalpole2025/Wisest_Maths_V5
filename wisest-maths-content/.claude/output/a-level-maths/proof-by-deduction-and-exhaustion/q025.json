@@ -1,0 +1,128 @@
+{
+  "id": "al.y1.pure.proof-deduction.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "proof by exhaustion",
+    "consecutive integers",
+    "divisibility"
+  ],
+  "questionText": "Prove that the product of any four consecutive integers is divisible by $24$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the product.",
+        "workingLatex": "P = n(n+1)(n+2)(n+3)",
+        "explanation": "Let $P$ be the product of the four consecutive integers starting at $n$. We must show $24 \\mid P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split 24 into coprime factors.",
+        "workingLatex": "24 = 8 \\times 3, \\quad \\gcd(8,3)=1",
+        "explanation": "It suffices to prove divisibility by $8$ and by $3$ separately, since $8$ and $3$ share no common factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divisibility by 3 — locate a multiple of 3.",
+        "workingLatex": "\\text{among } n, n+1, n+2 \\text{ one is } \\equiv 0 \\pmod 3",
+        "explanation": "Any three consecutive integers contain a multiple of $3$, and $n,n+1,n+2$ are among our four factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Justify by exhausting n mod 3.",
+        "workingLatex": "n\\equiv0:\\, 3\\mid n;\\ \\ n\\equiv1:\\, 3\\mid(n+2);\\ \\ n\\equiv2:\\, 3\\mid(n+1)",
+        "explanation": "Checking each remainder confirms one of the first three factors is always divisible by $3$, so $3 \\mid P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Record divisibility by 3.",
+        "workingLatex": "3 \\mid P",
+        "explanation": "In every case a factor is a multiple of $3$, so the whole product is.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Divisibility by 8 — count the even factors.",
+        "workingLatex": "\\text{among 4 consecutive integers, exactly two are even}",
+        "explanation": "Consecutive integers alternate parity, so among four in a row precisely two are even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Describe the two even factors.",
+        "workingLatex": "\\text{two consecutive even numbers: } 2m \\text{ and } 2m+2",
+        "explanation": "The two even factors differ by $2$, so they are consecutive even numbers, writable as $2m$ and $2m+2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factor out the twos.",
+        "workingLatex": "(2m)(2m+2) = 4m(m+1)",
+        "explanation": "Each even factor contributes a $2$, giving an explicit factor of $4$ times $m(m+1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use consecutiveness of m and m+1.",
+        "workingLatex": "m, m+1 \\text{ consecutive} \\Rightarrow m(m+1) = 2t",
+        "explanation": "Among two consecutive integers one is even, so $m(m+1)$ is even, say $2t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the even part is divisible by 8.",
+        "workingLatex": "(2m)(2m+2) = 4 \\cdot 2t = 8t",
+        "explanation": "Substituting $m(m+1)=2t$ shows the product of the two even factors is divisible by $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Lift to the whole product.",
+        "workingLatex": "8 \\mid (2m)(2m+2) \\Rightarrow 8 \\mid P",
+        "explanation": "Since these two even numbers are factors of $P$, and their product is divisible by $8$, so is $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Gather the two results.",
+        "workingLatex": "8 \\mid P \\text{ and } 3 \\mid P",
+        "explanation": "We have now established divisibility by both $8$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Apply coprimality.",
+        "workingLatex": "\\gcd(8,3)=1",
+        "explanation": "Because $8$ and $3$ are coprime, divisibility by each separately forces divisibility by their product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Deduce divisibility by 24.",
+        "workingLatex": "24 \\mid P",
+        "explanation": "Combining the coprime factors gives $8 \\times 3 = 24$ dividing $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the conclusion.",
+        "workingLatex": "24 \\mid n(n+1)(n+2)(n+3) \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Hence the product of any four consecutive integers is divisible by $24$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Among four consecutive integers one of $n,n+1,n+2$ is a multiple of $3$, and the two even factors are consecutive evens whose product is $8t$. So $3\\mid P$ and $8\\mid P$; as $\\gcd(8,3)=1$, $24\\mid P$. $\\blacksquare$"
+  }
+}

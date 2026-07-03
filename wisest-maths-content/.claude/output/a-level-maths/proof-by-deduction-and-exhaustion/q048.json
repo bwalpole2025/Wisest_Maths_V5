@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.proof-deduction.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "squares"
+  ],
+  "questionText": "Prove that $2(a^2 + b^2) \\ge (a + b)^2$ for all real numbers $a$ and $b$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } 2(a^2+b^2) \\ge (a+b)^2",
+        "explanation": "We form the difference of the two sides and aim to write it as a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the right-hand side.",
+        "workingLatex": "(a+b)^2 = a^2 + 2ab + b^2",
+        "explanation": "Expanding lets us subtract term by term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the difference.",
+        "workingLatex": "2(a^2+b^2) - (a+b)^2 = 2a^2 + 2b^2 - a^2 - 2ab - b^2",
+        "explanation": "Subtracting the expansion from $2(a^2+b^2)$ collects all the terms in one place.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify.",
+        "workingLatex": "= a^2 - 2ab + b^2",
+        "explanation": "Combining like terms leaves a familiar quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise a perfect square.",
+        "workingLatex": "a^2 - 2ab + b^2 = (a-b)^2",
+        "explanation": "This is exactly $(a-b)^2$, whose sign we know.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Use non-negativity of a square.",
+        "workingLatex": "(a-b)^2 \\ge 0",
+        "explanation": "The square of the real number $a-b$ is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the difference is non-negative.",
+        "workingLatex": "2(a^2+b^2) - (a+b)^2 \\ge 0",
+        "explanation": "Since the difference equals a non-negative square, it is itself non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rearrange to the target.",
+        "workingLatex": "2(a^2+b^2) \\ge (a+b)^2",
+        "explanation": "Moving $(a+b)^2$ across gives the inequality we wanted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "2(a^2+b^2) \\ge (a+b)^2 \\ \\forall a,b \\in \\mathbb{R}",
+        "explanation": "The difference is $(a-b)^2\\ge0$, so the inequality holds for all real $a,b$, with equality when $a=b$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2(a^2+b^2)-(a+b)^2=a^2-2ab+b^2=(a-b)^2\\ge0$, so $2(a^2+b^2)\\ge(a+b)^2$, with equality iff $a=b$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "al.y1.pure.proof-deduction.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by exhaustion",
+    "modular arithmetic",
+    "squares",
+    "parity"
+  ],
+  "questionText": "Prove that for every integer $n$, the value $n^2$ leaves a remainder of $0$ or $1$ when divided by $4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose an exhaustive split of the integers.",
+        "workingLatex": "n \\text{ is even or } n \\text{ is odd}",
+        "explanation": "Every integer is either even or odd, and nothing else. Splitting into these two cases is exhaustive, so proving the claim in each case proves it for all $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Case 1: write n as even.",
+        "workingLatex": "n = 2k, \\quad k \\in \\mathbb{Z}",
+        "explanation": "An even integer is $2$ times some integer $k$; this lets us compute its square explicitly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Square the even form.",
+        "workingLatex": "n^2 = (2k)^2 = 4k^2",
+        "explanation": "Squaring $2k$ gives $4k^2$, which is exactly $4$ times an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Read off the remainder for the even case.",
+        "workingLatex": "n^2 = 4k^2 \\Rightarrow \\text{remainder } 0",
+        "explanation": "Because $4k^2$ is a whole number of fours, dividing by $4$ leaves nothing over: the remainder is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case 2: write n as odd.",
+        "workingLatex": "n = 2k+1, \\quad k \\in \\mathbb{Z}",
+        "explanation": "An odd integer is one more than an even integer, so it has the form $2k+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Square the odd form.",
+        "workingLatex": "n^2 = (2k+1)^2 = 4k^2 + 4k + 1",
+        "explanation": "Expanding $(2k+1)^2$ produces two terms with a factor of $4$ and a leftover $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Group the multiple-of-4 part.",
+        "workingLatex": "n^2 = 4(k^2 + k) + 1",
+        "explanation": "Factoring $4$ from the first two terms shows the square is a multiple of $4$ plus a remainder of exactly $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Read off the remainder for the odd case.",
+        "workingLatex": "n^2 = 4(k^2+k) + 1 \\Rightarrow \\text{remainder } 1",
+        "explanation": "Since $k^2+k$ is an integer, $4(k^2+k)$ divides exactly by $4$, leaving remainder $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine the two cases.",
+        "workingLatex": "\\text{remainder} \\in \\{0, 1\\}",
+        "explanation": "The even case gives remainder $0$ and the odd case gives remainder $1$; no other outcome is possible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm the cases are exhaustive.",
+        "workingLatex": "\\text{even} \\cup \\text{odd} = \\mathbb{Z}",
+        "explanation": "Because every integer is even or odd, these two cases account for all integers, so nothing has been missed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion.",
+        "workingLatex": "n^2 \\equiv 0 \\text{ or } 1 \\pmod 4",
+        "explanation": "For any integer $n$, its square leaves a remainder of $0$ or $1$ on division by $4$, as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "If $n=2k$ then $n^2=4k^2$ (remainder $0$); if $n=2k+1$ then $n^2=4(k^2+k)+1$ (remainder $1$). These cases exhaust all integers, so $n^2$ leaves remainder $0$ or $1$ modulo $4$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "id": "al.y1.pure.proof-deduction.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "even integers",
+    "divisibility"
+  ],
+  "questionText": "Prove that the product of any two consecutive even integers is divisible by $8$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the first even integer algebraically.",
+        "workingLatex": "2n, \\quad n \\in \\mathbb{Z}",
+        "explanation": "Every even integer is $2$ times an integer, so writing the first one as $2n$ captures all even numbers without loss of generality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the next consecutive even integer.",
+        "workingLatex": "2n + 2",
+        "explanation": "Consecutive *even* integers differ by $2$, not $1$, so the next even number after $2n$ is $2n+2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the product.",
+        "workingLatex": "P = 2n(2n+2)",
+        "explanation": "The claim is about the product, so we multiply the two even integers together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor a 2 out of the second bracket.",
+        "workingLatex": "P = 2n \\cdot 2(n+1) = 4n(n+1)",
+        "explanation": "Both factors are even, so each contributes a factor of $2$. Pulling these out gives an explicit $4$, which is already two-thirds of the way to $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify what is still needed.",
+        "workingLatex": "\\text{need one more factor of } 2 \\text{ from } n(n+1)",
+        "explanation": "We have $4n(n+1)$; to reach a multiple of $8$ we must show $n(n+1)$ contributes one further factor of $2$, i.e. that it is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Observe the structure of n(n+1).",
+        "workingLatex": "n \\text{ and } n+1 \\text{ are consecutive integers}",
+        "explanation": "$n$ and $n+1$ follow one after another, and among any two consecutive integers exactly one is even. We confirm this with a short two-case check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Case: n is even.",
+        "workingLatex": "n = 2m \\Rightarrow n(n+1) = 2m(n+1)",
+        "explanation": "If $n$ itself is even, the product $n(n+1)$ clearly contains a factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case: n is odd.",
+        "workingLatex": "n+1 = 2m \\Rightarrow n(n+1) = 2m\\,n",
+        "explanation": "If $n$ is odd then $n+1$ is even, so again the product picks up a factor of $2$. These two cases cover every integer $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Record the consequence.",
+        "workingLatex": "n(n+1) = 2k, \\quad k \\in \\mathbb{Z}",
+        "explanation": "In both cases $n(n+1)$ is even, so it equals $2k$ for some integer $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Substitute back into the product.",
+        "workingLatex": "P = 4 \\cdot 2k = 8k",
+        "explanation": "Replacing $n(n+1)$ with $2k$ turns the factor $4$ into $8$, giving the multiple of $8$ we were aiming for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion.",
+        "workingLatex": "8 \\mid P \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Since $P = 8k$ with $k$ an integer, the product is divisible by $8$ for every choice of consecutive even integers.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Writing the integers as $2n$ and $2n+2$, the product is $4n(n+1)$. As $n(n+1)$ is a product of consecutive integers it is even, say $2k$, so $P=8k$. Hence the product is divisible by $8$. $\\blacksquare$"
+  }
+}

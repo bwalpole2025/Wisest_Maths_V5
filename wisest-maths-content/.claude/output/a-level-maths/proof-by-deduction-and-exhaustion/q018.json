@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.proof-deduction.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "squares",
+    "modular arithmetic"
+  ],
+  "questionText": "Prove that the sum of the squares of any three consecutive integers leaves a remainder of $2$ when divided by $3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the integers symmetrically.",
+        "workingLatex": "n-1,\\; n,\\; n+1",
+        "explanation": "Centring the three consecutive integers on $n$ makes the outer squares expand as mirror images, so many terms cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the sum of the squares.",
+        "workingLatex": "S = (n-1)^2 + n^2 + (n+1)^2",
+        "explanation": "We translate the statement directly: square each integer and add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the first square.",
+        "workingLatex": "(n-1)^2 = n^2 - 2n + 1",
+        "explanation": "Expanding prepares the outer terms to be combined with the central $n^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the third square.",
+        "workingLatex": "(n+1)^2 = n^2 + 2n + 1",
+        "explanation": "This expansion mirrors the previous one, with the sign of the middle term flipped.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the three squares.",
+        "workingLatex": "S = 3n^2 + 2",
+        "explanation": "The $-2n$ and $+2n$ cancel; the three $n^2$ terms give $3n^2$ and the constants $1+0+1$ give $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Split off the multiple of 3.",
+        "workingLatex": "S = 3n^2 + 2",
+        "explanation": "The term $3n^2$ is a multiple of $3$, and $2$ is what remains — this is exactly the structure that fixes the remainder.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Identify the multiple of 3.",
+        "workingLatex": "3 \\mid 3n^2",
+        "explanation": "Since $n^2$ is an integer, $3n^2$ is divisible by $3$ with nothing left over.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Read off the remainder.",
+        "workingLatex": "S = 3n^2 + 2, \\quad 0 \\le 2 < 3",
+        "explanation": "Because $2$ is a valid remainder (at least $0$ and less than $3$), $S$ leaves remainder $2$ on division by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "S \\equiv 2 \\pmod 3 \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "The sum of the squares of any three consecutive integers is a multiple of $3$ plus $2$, so it always leaves remainder $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "With integers $n-1,n,n+1$, the sum of squares is $3n^2+2$. As $3n^2$ is a multiple of $3$, the remainder on division by $3$ is $2$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "al.y1.pure.proof-deduction.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "sum of squares"
+  ],
+  "questionText": "Prove that $x^2 + y^2 + 1 \\ge xy + x + y$ for all real numbers $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } x^2 + y^2 + 1 \\ge xy + x + y",
+        "explanation": "We must show the left side never drops below the right for any real $x,y$. Expressing the difference as a sum of squares will settle the sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the difference.",
+        "workingLatex": "D = x^2 + y^2 + 1 - (xy + x + y)",
+        "explanation": "Proving $D\\ge0$ is equivalent to the inequality, so we study $D$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Double the difference.",
+        "workingLatex": "2D = 2x^2 + 2y^2 + 2 - 2xy - 2x - 2y",
+        "explanation": "Doubling lets each squared term split so the expression can be rebuilt as perfect squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Anticipate the square pieces.",
+        "workingLatex": "\\text{aim: } (x-y)^2 + (x-1)^2 + (y-1)^2",
+        "explanation": "The cross terms $-2xy, -2x, -2y$ suggest three squares built from the pairs $(x,y),(x,1),(y,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand the candidate squares.",
+        "workingLatex": "(x-y)^2 + (x-1)^2 + (y-1)^2 = 2x^2 + 2y^2 - 2xy - 2x - 2y + 2",
+        "explanation": "Expanding the three squares and adding them reproduces every term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Match against 2D.",
+        "workingLatex": "2x^2 + 2y^2 + 2 - 2xy - 2x - 2y",
+        "explanation": "This is exactly $2D$, so the three squares account for all its terms — the grouping is an identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write 2D as a sum of squares.",
+        "workingLatex": "2D = (x-y)^2 + (x-1)^2 + (y-1)^2",
+        "explanation": "We have expressed $2D$ as a sum of three perfect squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Apply non-negativity.",
+        "workingLatex": "(x-y)^2, (x-1)^2, (y-1)^2 \\ge 0",
+        "explanation": "Each real square is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Add the squares.",
+        "workingLatex": "2D \\ge 0",
+        "explanation": "A sum of non-negative terms is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Halve to bound D.",
+        "workingLatex": "D \\ge 0",
+        "explanation": "Dividing by $2$ preserves the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Translate back.",
+        "workingLatex": "x^2 + y^2 + 1 \\ge xy + x + y",
+        "explanation": "Since $D\\ge0$, the original inequality holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Identify the equality case.",
+        "workingLatex": "\\text{equality} \\iff x = y = 1",
+        "explanation": "All three squares vanish only when $x=y$ and $x=1$ and $y=1$, i.e. $x=y=1$; so the bound is sharp.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm the domain.",
+        "workingLatex": "\\forall\\, x, y \\in \\mathbb{R}",
+        "explanation": "Only the non-negativity of real squares was used, which holds for all real $x,y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "x^2 + y^2 + 1 \\ge xy + x + y",
+        "explanation": "Because $2D=(x-y)^2+(x-1)^2+(y-1)^2\\ge0$, the inequality holds for all real $x$ and $y$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2\\big(x^2+y^2+1-xy-x-y\\big)=(x-y)^2+(x-1)^2+(y-1)^2\\ge0$, so $x^2+y^2+1\\ge xy+x+y$, with equality iff $x=y=1$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "id": "al.y1.pure.proof-deduction.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by exhaustion",
+    "squares",
+    "digits",
+    "modular arithmetic"
+  ],
+  "questionText": "Prove by exhaustion that the units digit of a perfect square is never $2$, $3$, $7$ or $8$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reduce to the units digit of the base.",
+        "workingLatex": "n = 10a + d, \\quad d \\in \\{0,\\dots,9\\}",
+        "explanation": "Write $n$ in terms of its units digit $d$. Squaring, $n^2=100a^2+20ad+d^2$; the first two terms are multiples of $10$, so only $d^2$ affects the units digit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the reduced problem.",
+        "workingLatex": "\\text{units digit of } n^2 = \\text{units digit of } d^2",
+        "explanation": "Because only $d^2$ influences the units digit, we only need to examine the ten possible values of $d$ — a finite check suited to exhaustion.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use a symmetry to halve the work.",
+        "workingLatex": "(10-d)^2 = 100 - 20d + d^2 \\equiv d^2 \\pmod{10}",
+        "explanation": "Since $(10-d)^2$ and $d^2$ share the same units digit, digits $d$ and $10-d$ give the same result, so it suffices to test $d=0,1,2,3,4,5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Case d = 0 and d = 1.",
+        "workingLatex": "0^2 = 0,\\quad 1^2 = 1",
+        "explanation": "These give units digits $0$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case d = 2 and d = 3.",
+        "workingLatex": "2^2 = 4,\\quad 3^2 = 9",
+        "explanation": "These give units digits $4$ and $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case d = 4 and d = 5.",
+        "workingLatex": "4^2 = 16,\\quad 5^2 = 25",
+        "explanation": "These give units digits $6$ and $5$; by the symmetry, $d=6,7,8,9$ repeat digits already found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect all possible units digits.",
+        "workingLatex": "\\{0, 1, 4, 5, 6, 9\\}",
+        "explanation": "Gathering the results of every case gives exactly this set of achievable units digits for a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare with the forbidden digits.",
+        "workingLatex": "2, 3, 7, 8 \\notin \\{0,1,4,5,6,9\\}",
+        "explanation": "None of $2,3,7,8$ appears in the list of possible units digits.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm the cases are exhaustive.",
+        "workingLatex": "d \\in \\{0,\\dots,9\\} \\text{ all covered}",
+        "explanation": "Every possible units digit of $n$ has been accounted for (directly or by symmetry), so no case is missing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Interpret the exhaustion.",
+        "workingLatex": "\\text{no } n^2 \\text{ ends in } 2,3,7,8",
+        "explanation": "Since a square's units digit must come from the set found, it can never be one of the excluded digits.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{units digit of } n^2 \\notin \\{2,3,7,8\\}",
+        "explanation": "By checking every case, the units digit of a perfect square is never $2$, $3$, $7$ or $8$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The units digit of $n^2$ equals that of $d^2$ where $d$ is the units digit of $n$. Testing $d=0\\text{–}5$ (the rest repeat by symmetry) gives units digits $\\{0,1,4,5,6,9\\}$, which excludes $2,3,7,8$. $\\blacksquare$"
+  }
+}

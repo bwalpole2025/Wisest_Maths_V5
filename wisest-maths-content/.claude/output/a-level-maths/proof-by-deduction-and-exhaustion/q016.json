@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "place value",
+    "divisibility"
+  ],
+  "questionText": "A two-digit number has tens digit $a$ and units digit $b$. Prove that the sum of this number and the number formed by reversing its digits is divisible by $11$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Express the two-digit number using place value.",
+        "workingLatex": "10a + b, \\quad a \\in \\{1,\\dots,9\\},\\ b \\in \\{0,\\dots,9\\}",
+        "explanation": "A two-digit number is $10 \\times (\\text{tens digit}) + (\\text{units digit})$, so it equals $10a+b$. Place value turns the digits into algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Express the reversed number.",
+        "workingLatex": "10b + a",
+        "explanation": "Reversing swaps the roles of the digits, so the tens digit becomes $b$ and the units digit becomes $a$, giving $10b+a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the two numbers.",
+        "workingLatex": "(10a + b) + (10b + a)",
+        "explanation": "The statement is about their sum, so we add the original and its reverse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "11a + 11b",
+        "explanation": "The $a$ terms give $10a+a=11a$ and the $b$ terms give $b+10b=11b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out 11.",
+        "workingLatex": "11(a + b)",
+        "explanation": "Both terms share a factor of $11$; pulling it out exposes the divisibility we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "a + b \\in \\mathbb{Z}",
+        "explanation": "Digits are integers, so $a+b$ is an integer, making the sum $11 \\times (\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "11 \\mid (10a+b)+(10b+a)",
+        "explanation": "The sum equals $11(a+b)$, a multiple of $11$, so a two-digit number plus its reverse is always divisible by $11$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(10a+b)+(10b+a)=11a+11b=11(a+b)$, a multiple of $11$. Hence the number plus its reverse is divisible by $11$. $\\blacksquare$"
+  }
+}

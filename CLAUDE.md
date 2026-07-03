@@ -30,6 +30,21 @@ export const questions: Question[] = [
   // full Question objects here
 ];
 
+## Full Subtopic Build Command
+
+When the user says:
+- "create subtopic [name] with build"
+- "build subtopic [name]"
+- "complete subtopic [name]"
+
+You must:
+- Treat it as a request to generate **all 70 questions** for that exact subtopic.
+- Keep generating questions (one by one or in batches) until the subtopic has 70 questions with full worked solutions and diagrams where appropriate.
+- Use the full pipeline each time.
+- At the end, output the complete result as clean TypeScript code in the exact format the user wants (with the import line and `export const questions: Question[] = [...]`).
+- Update `progress.json` as you go.
+- Only stop when the subtopic reaches 70 questions or the user tells you to stop.
+
 ## Architecture
 
 This project uses a **multi-agent + skill** system:

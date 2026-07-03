@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "place value",
+    "divisibility"
+  ],
+  "questionText": "A three-digit number is written with the same digit $a$ in every position (for example $444$). Prove that this number is divisible by $3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the number using place value.",
+        "workingLatex": "100a + 10a + a, \\quad a \\in \\{1,\\dots,9\\}",
+        "explanation": "Each digit contributes its face value times its place value; all three digits are $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add the place values.",
+        "workingLatex": "= 111a",
+        "explanation": "Combining $100a+10a+a$ gives $111a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor 111.",
+        "workingLatex": "111 = 3 \\times 37",
+        "explanation": "The number $111$ factors as $3\\times37$, which reveals a factor of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the number.",
+        "workingLatex": "111a = 3 \\times (37a)",
+        "explanation": "Substituting the factorisation displays a factor of $3$ explicitly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "37a \\in \\mathbb{Z}",
+        "explanation": "Since $a$ is a digit, $37a$ is an integer, so the number is $3\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the form.",
+        "workingLatex": "3 \\mid 3(37a)",
+        "explanation": "A number equal to $3$ times an integer is a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "3 \\mid \\overline{aaa}",
+        "explanation": "A three-digit number with all equal digits equals $111a=3(37a)$, so it is divisible by $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\overline{aaa}=100a+10a+a=111a=3(37a)$, a multiple of $3$. Hence it is divisible by $3$. $\\blacksquare$"
+  }
+}

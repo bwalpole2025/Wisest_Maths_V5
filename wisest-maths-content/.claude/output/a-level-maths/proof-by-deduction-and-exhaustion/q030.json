@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.proof-deduction.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "squares",
+    "divisibility"
+  ],
+  "questionText": "Prove that the sum of the squares of any five consecutive integers is divisible by $5$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the integers symmetrically.",
+        "workingLatex": "n-2,\\; n-1,\\; n,\\; n+1,\\; n+2",
+        "explanation": "Centring the five consecutive integers on the middle value $n$ makes the linear terms cancel in pairs when we expand and add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the sum of the squares.",
+        "workingLatex": "S = (n-2)^2 + (n-1)^2 + n^2 + (n+1)^2 + (n+2)^2",
+        "explanation": "We translate the statement directly: square each of the five integers and add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand (n-2)².",
+        "workingLatex": "(n-2)^2 = n^2 - 4n + 4",
+        "explanation": "Expanding the leftmost square prepares it for combination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand (n-1)².",
+        "workingLatex": "(n-1)^2 = n^2 - 2n + 1",
+        "explanation": "The next square expands similarly, with a smaller linear term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand (n+1)².",
+        "workingLatex": "(n+1)^2 = n^2 + 2n + 1",
+        "explanation": "This mirrors $(n-1)^2$ with the sign of the middle term flipped.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand (n+2)².",
+        "workingLatex": "(n+2)^2 = n^2 + 4n + 4",
+        "explanation": "This mirrors $(n-2)^2$; the symmetric layout means the linear terms will cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add the squared coefficients.",
+        "workingLatex": "n^2 + n^2 + n^2 + n^2 + n^2 = 5n^2",
+        "explanation": "Each of the five expansions contributes one $n^2$, giving $5n^2$ in total.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Cancel the linear terms.",
+        "workingLatex": "-4n - 2n + 0 + 2n + 4n = 0",
+        "explanation": "The symmetric $\\pm4n$ and $\\pm2n$ pairs cancel exactly, which is why centring on $n$ was worthwhile.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Add the constants.",
+        "workingLatex": "4 + 1 + 0 + 1 + 4 = 10",
+        "explanation": "Summing the constant terms from each expansion gives $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine into a simplified sum.",
+        "workingLatex": "S = 5n^2 + 10",
+        "explanation": "Collecting the pieces leaves $S=5n^2+10$, with the linear part gone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Factor out 5.",
+        "workingLatex": "S = 5(n^2 + 2)",
+        "explanation": "Both terms are multiples of $5$, so factoring exposes the divisibility we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "n^2 + 2 \\in \\mathbb{Z}",
+        "explanation": "For integer $n$, $n^2+2$ is an integer, so $S$ is $5$ times a whole number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "5 \\mid S \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "The sum of the squares of any five consecutive integers equals $5(n^2+2)$, hence is always divisible by $5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Centring on $n$, the sum of squares is $5n^2+10=5(n^2+2)$, a multiple of $5$. Hence the sum of the squares of any five consecutive integers is divisible by $5$. $\\blacksquare$"
+  }
+}

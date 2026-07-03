@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "odd numbers",
+    "squares"
+  ],
+  "questionText": "Prove that the square of any odd number is odd.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent a general odd number.",
+        "workingLatex": "n = 2k+1, \\quad k \\in \\mathbb{Z}",
+        "explanation": "Every odd number is one more than an even number, so it has the form $2k+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write its square.",
+        "workingLatex": "n^2 = (2k+1)^2",
+        "explanation": "The claim is about the square, so we square the odd form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the bracket.",
+        "workingLatex": "n^2 = 4k^2 + 4k + 1",
+        "explanation": "Expanding $(2k+1)^2$ produces two terms containing a factor of $4$ and a leftover $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Group the even part.",
+        "workingLatex": "n^2 = 2(2k^2 + 2k) + 1",
+        "explanation": "Factoring $2$ from the first two terms separates the square into an even piece plus a leftover $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "2k^2 + 2k \\in \\mathbb{Z}",
+        "explanation": "Since $k$ is an integer, $2k^2+2k$ is an integer, so $2(2k^2+2k)$ is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the remaining 1.",
+        "workingLatex": "n^2 = (\\text{even}) + 1",
+        "explanation": "An even number plus one is odd, so the square has the form that defines an odd number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "n^2 \\text{ is odd}",
+        "explanation": "For any odd $n=2k+1$, its square is even $+1$, hence odd. So the square of an odd number is always odd.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "If $n=2k+1$ then $n^2=4k^2+4k+1=2(2k^2+2k)+1$, which is even $+1$, hence odd. $\\blacksquare$"
+  }
+}

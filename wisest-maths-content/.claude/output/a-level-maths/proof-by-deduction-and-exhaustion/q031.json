@@ -1,0 +1,78 @@
+{
+  "id": "al.y1.pure.proof-deduction.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "completing the square"
+  ],
+  "questionText": "Prove that $x^2 + 4 \\ge 4x$ for all real values of $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } x^2 + 4 \\ge 4x \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "We want one side never to fall below the other. Moving everything to one side turns this into a statement about the sign of a single expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange to one side.",
+        "workingLatex": "x^2 - 4x + 4 \\ge 0",
+        "explanation": "Subtracting $4x$ from both sides is reversible, so proving this equivalent inequality proves the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recognise a perfect square.",
+        "workingLatex": "x^2 - 4x + 4 = (x-2)^2",
+        "explanation": "The left-hand side factors exactly as $(x-2)^2$, which is the whole point: squares have a known sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the inequality.",
+        "workingLatex": "(x-2)^2 \\ge 0",
+        "explanation": "Replacing the quadratic by its square form makes the claim transparent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use non-negativity of a square.",
+        "workingLatex": "(x-2)^2 \\ge 0 \\text{ is always true}",
+        "explanation": "The square of any real number is at least $0$, so this inequality holds for every real $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Reverse the rearrangement.",
+        "workingLatex": "x^2 - 4x + 4 \\ge 0 \\Rightarrow x^2 + 4 \\ge 4x",
+        "explanation": "Adding $4x$ back to both sides returns us to the original inequality, now known to be true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note the equality case.",
+        "workingLatex": "\\text{equality when } x = 2",
+        "explanation": "The two sides are equal exactly when $(x-2)^2=0$, i.e. $x=2$; elsewhere the inequality is strict.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the conclusion.",
+        "workingLatex": "x^2 + 4 \\ge 4x \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "Because the difference is a perfect square, it is never negative, so the inequality holds for all real $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2+4-4x=(x-2)^2\\ge0$, so $x^2+4\\ge4x$ for all real $x$, with equality at $x=2$. $\\blacksquare$"
+  }
+}

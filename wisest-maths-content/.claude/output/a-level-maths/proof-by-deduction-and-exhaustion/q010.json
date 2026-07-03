@@ -1,0 +1,136 @@
+{
+  "id": "al.y1.pure.proof-deduction.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "proof by exhaustion",
+    "divisibility",
+    "modular arithmetic",
+    "factorisation"
+  ],
+  "questionText": "Prove that $n^5 - n$ is divisible by $30$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor out the common factor.",
+        "workingLatex": "n^5 - n = n(n^4 - 1)",
+        "explanation": "Removing the shared factor $n$ leaves $n^4-1$, which is a difference of squares ready to factor further.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor the difference of squares.",
+        "workingLatex": "n^4 - 1 = (n^2-1)(n^2+1)",
+        "explanation": "Treating $n^4-1$ as $(n^2)^2-1^2$ splits it into $(n^2-1)(n^2+1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor n²−1 as well.",
+        "workingLatex": "n^5 - n = (n-1)\\,n\\,(n+1)\\,(n^2+1)",
+        "explanation": "Since $n^2-1=(n-1)(n+1)$, the whole expression becomes a product containing three consecutive integers together with $n^2+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Split the target 30 into coprime factors.",
+        "workingLatex": "30 = 2 \\times 3 \\times 5",
+        "explanation": "The factors $2$, $3$ and $5$ are pairwise coprime, so it is enough to prove divisibility by each of them separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divisibility by 2.",
+        "workingLatex": "(n-1)\\,n \\text{ consecutive} \\Rightarrow \\text{even}",
+        "explanation": "Among the two consecutive integers $n-1$ and $n$ one is even, so the product already contains a factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Divisibility by 3.",
+        "workingLatex": "(n-1)\\,n\\,(n+1) \\text{ are three consecutive integers}",
+        "explanation": "Any three consecutive integers include a multiple of $3$, so this block supplies a factor of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up divisibility by 5.",
+        "workingLatex": "n \\equiv 0,1,2,3,4 \\pmod 5",
+        "explanation": "The factors are not five consecutive integers, so divisibility by $5$ is not automatic. We prove it by exhausting the five residues of $n$ modulo $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case n ≡ 0 (mod 5).",
+        "workingLatex": "5 \\mid n",
+        "explanation": "If $n$ is a multiple of $5$, the factor $n$ makes the product divisible by $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Case n ≡ 1 (mod 5).",
+        "workingLatex": "n - 1 \\equiv 0 \\Rightarrow 5 \\mid (n-1)",
+        "explanation": "If $n \\equiv 1$, then $n-1$ is a multiple of $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Case n ≡ 4 (mod 5).",
+        "workingLatex": "n + 1 \\equiv 0 \\Rightarrow 5 \\mid (n+1)",
+        "explanation": "If $n \\equiv 4$, then $n+1 \\equiv 5 \\equiv 0$, so $n+1$ is a multiple of $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Case n ≡ 2 (mod 5).",
+        "workingLatex": "n^2 + 1 \\equiv 4 + 1 = 5 \\equiv 0 \\pmod 5",
+        "explanation": "Here the linear factors miss $5$, but $n^2+1 \\equiv 0$, so the factor $n^2+1$ rescues divisibility by $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Case n ≡ 3 (mod 5).",
+        "workingLatex": "n^2 + 1 \\equiv 9 + 1 = 10 \\equiv 0 \\pmod 5",
+        "explanation": "Similarly $n \\equiv 3$ gives $n^2+1 \\equiv 0$, so again $5$ divides the product. All five residues are now covered.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude divisibility by 5.",
+        "workingLatex": "5 \\mid (n-1)n(n+1)(n^2+1)",
+        "explanation": "Every residue class modulo $5$ produces a factor divisible by $5$, so the product always is.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Gather the three divisibility results.",
+        "workingLatex": "2 \\mid P, \\; 3 \\mid P, \\; 5 \\mid P",
+        "explanation": "We have now shown the expression is divisible by $2$, by $3$ and by $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Apply pairwise coprimality.",
+        "workingLatex": "\\gcd\\text{-coprime} \\Rightarrow 2 \\cdot 3 \\cdot 5 = 30 \\mid P",
+        "explanation": "Because $2$, $3$ and $5$ share no common factors, divisibility by each separately forces divisibility by their product $30$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the conclusion.",
+        "workingLatex": "30 \\mid n^5 - n \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "For every integer $n$, $n^5-n$ is divisible by $30$, which completes the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^5-n=(n-1)n(n+1)(n^2+1)$. Three consecutive integers give factors $2$ and $3$; exhausting $n\\bmod5$ shows $5$ divides one factor in every case. As $2,3,5$ are coprime, $30\\mid n^5-n$. $\\blacksquare$"
+  }
+}

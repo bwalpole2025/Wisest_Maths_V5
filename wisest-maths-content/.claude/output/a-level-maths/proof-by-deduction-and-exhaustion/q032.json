@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "place value",
+    "divisibility"
+  ],
+  "questionText": "A two-digit number has tens digit $a$ and units digit $b$. Prove that the number minus the number formed by reversing its digits is divisible by $9$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the number using place value.",
+        "workingLatex": "10a + b, \\quad a \\in \\{1,\\dots,9\\},\\ b \\in \\{0,\\dots,9\\}",
+        "explanation": "A two-digit number is ten times its tens digit plus its units digit, so it equals $10a+b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the reversed number.",
+        "workingLatex": "10b + a",
+        "explanation": "Reversing swaps the digits, so the tens digit becomes $b$ and the units digit becomes $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the difference.",
+        "workingLatex": "(10a + b) - (10b + a)",
+        "explanation": "The statement is about subtracting the reverse from the original, so we write that difference.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "9a - 9b",
+        "explanation": "The $a$ terms give $10a-a=9a$ and the $b$ terms give $b-10b=-9b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out 9.",
+        "workingLatex": "9(a - b)",
+        "explanation": "Both terms share a factor of $9$; extracting it exposes the divisibility we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "a - b \\in \\mathbb{Z}",
+        "explanation": "Digits are integers, so $a-b$ is an integer, making the difference $9\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "9 \\mid (10a+b)-(10b+a)",
+        "explanation": "The difference equals $9(a-b)$, a multiple of $9$, so a two-digit number minus its reverse is always divisible by $9$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(10a+b)-(10b+a)=9a-9b=9(a-b)$, a multiple of $9$. Hence the number minus its reverse is divisible by $9$. $\\blacksquare$"
+  }
+}

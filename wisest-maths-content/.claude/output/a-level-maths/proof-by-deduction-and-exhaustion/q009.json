@@ -1,0 +1,129 @@
+{
+  "id": "al.y1.pure.proof-deduction.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "proof by exhaustion",
+    "primes",
+    "divisibility",
+    "difference of squares"
+  ],
+  "questionText": "Prove that for any prime number $p > 3$, the value $p^2 - 1$ is divisible by $24$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor the expression.",
+        "workingLatex": "p^2 - 1 = (p-1)(p+1)",
+        "explanation": "Recognising $p^2-1$ as a difference of squares turns a single number into a product of two factors that straddle $p$, which we can analyse individually.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split 24 into coprime factors.",
+        "workingLatex": "24 = 8 \\times 3, \\quad \\gcd(8,3)=1",
+        "explanation": "To prove divisibility by $24$ it suffices to prove divisibility by $8$ and by $3$ separately, since $8$ and $3$ have no common factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use primality to fix the parity of p.",
+        "workingLatex": "p > 3 \\text{ prime} \\Rightarrow p \\text{ is odd}",
+        "explanation": "The only even prime is $2$; every prime greater than $3$ is therefore odd. This controls the factors $p-1$ and $p+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Describe the two factors.",
+        "workingLatex": "p-1 \\text{ and } p+1 \\text{ are consecutive even integers}",
+        "explanation": "Since $p$ is odd, both $p-1$ and $p+1$ are even, and they differ by $2$, so they are consecutive even numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Introduce the halves.",
+        "workingLatex": "p-1 = 2a, \\; p+1 = 2b, \\quad b = a+1",
+        "explanation": "Writing each even factor as twice an integer exposes two factors of $2$, and the halves $a,b$ turn out to be consecutive integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the product.",
+        "workingLatex": "(p-1)(p+1) = 4ab",
+        "explanation": "Multiplying the two even factors gives $4ab$; the factor $4$ is explicit, and we still need one more factor of $2$ to reach $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use consecutiveness of a and b.",
+        "workingLatex": "a, b=a+1 \\text{ consecutive} \\Rightarrow ab = 2c",
+        "explanation": "Among two consecutive integers one is even, so their product $ab$ is even and can be written as $2c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude divisibility by 8.",
+        "workingLatex": "(p-1)(p+1) = 4 \\cdot 2c = 8c",
+        "explanation": "Substituting $ab=2c$ turns $4ab$ into $8c$, so the product is divisible by $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use primality to exclude a multiple of 3.",
+        "workingLatex": "3 \\nmid p \\text{ since } p>3 \\text{ is prime}",
+        "explanation": "A prime bigger than $3$ cannot be a multiple of $3$ (otherwise $3$ would divide it and it would not be prime), so $p \\equiv 1$ or $2 \\pmod 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Case p ≡ 1 (mod 3).",
+        "workingLatex": "p - 1 \\equiv 0 \\Rightarrow 3 \\mid (p-1)",
+        "explanation": "If $p$ leaves remainder $1$ modulo $3$, then $p-1$ is a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Case p ≡ 2 (mod 3).",
+        "workingLatex": "p + 1 \\equiv 0 \\Rightarrow 3 \\mid (p+1)",
+        "explanation": "If $p$ leaves remainder $2$, then $p+1$ is a multiple of $3$. These are the only two possibilities, so one factor is always divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Conclude divisibility by 3.",
+        "workingLatex": "3 \\mid (p-1)(p+1)",
+        "explanation": "In both admissible cases a factor is divisible by $3$, hence so is the product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Combine the two results.",
+        "workingLatex": "8 \\mid p^2-1 \\text{ and } 3 \\mid p^2-1",
+        "explanation": "We have shown the product is divisible by both $8$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Apply coprimality.",
+        "workingLatex": "\\gcd(8,3)=1 \\Rightarrow 24 \\mid p^2-1",
+        "explanation": "Because $8$ and $3$ are coprime, divisibility by each forces divisibility by their product $24$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the conclusion.",
+        "workingLatex": "24 \\mid p^2 - 1 \\text{ for all primes } p>3",
+        "explanation": "For every prime greater than $3$, $p^2-1$ is divisible by $24$, as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$p^2-1=(p-1)(p+1)$. As $p>3$ is prime it is odd, so $p-1,p+1$ are consecutive even numbers giving a factor of $8$; and $p\\not\\equiv0\\pmod3$ forces $3$ to divide $p-1$ or $p+1$. Since $\\gcd(8,3)=1$, $24\\mid p^2-1$. $\\blacksquare$"
+  }
+}

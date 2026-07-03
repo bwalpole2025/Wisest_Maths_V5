@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.proof-deduction.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "algebraic identity",
+    "perfect square",
+    "factorisation"
+  ],
+  "questionText": "Prove that the product of any four consecutive integers, increased by $1$, is a perfect square.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the quantity to analyse.",
+        "workingLatex": "E = n(n+1)(n+2)(n+3) + 1",
+        "explanation": "Let $E$ be the product of four consecutive integers plus $1$. We aim to show $E$ equals the square of an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Pair the factors strategically.",
+        "workingLatex": "[\\,n(n+3)\\,]\\,[\\,(n+1)(n+2)\\,]",
+        "explanation": "Pairing the outer factors and the inner factors is the key idea: both pairs will share a common quadratic, revealing hidden structure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the outer pair.",
+        "workingLatex": "n(n+3) = n^2 + 3n",
+        "explanation": "Multiplying the outer factors gives $n^2+3n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the inner pair.",
+        "workingLatex": "(n+1)(n+2) = n^2 + 3n + 2",
+        "explanation": "Multiplying the inner factors gives $n^2+3n+2$, the same quadratic as before but $+2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Introduce a substitution.",
+        "workingLatex": "\\text{let } u = n^2 + 3n",
+        "explanation": "Both pairs are built from $n^2+3n$, so naming it $u$ turns a quartic into a simple quadratic in $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the product.",
+        "workingLatex": "n(n+1)(n+2)(n+3) = u(u+2)",
+        "explanation": "With the substitution the four-factor product becomes $u(u+2)$, which is far easier to handle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Expand u(u+2).",
+        "workingLatex": "u(u+2) = u^2 + 2u",
+        "explanation": "Expanding gives $u^2+2u$, one short of a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add the 1.",
+        "workingLatex": "E = u^2 + 2u + 1",
+        "explanation": "Including the $+1$ from the original expression completes $u^2+2u$ into a recognisable square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Recognise the perfect square.",
+        "workingLatex": "E = (u + 1)^2",
+        "explanation": "The expression $u^2+2u+1$ factors exactly as $(u+1)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Substitute back for u.",
+        "workingLatex": "E = (n^2 + 3n + 1)^2",
+        "explanation": "Replacing $u$ with $n^2+3n$ gives $E=(n^2+3n+1)^2$ in terms of the original variable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the base is an integer.",
+        "workingLatex": "n^2 + 3n + 1 \\in \\mathbb{Z}",
+        "explanation": "For integer $n$, the quantity $n^2+3n+1$ is an integer, so $E$ is the square of an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the conclusion.",
+        "workingLatex": "E = (n^2+3n+1)^2 \\text{ is a perfect square}",
+        "explanation": "Hence $n(n+1)(n+2)(n+3)+1$ is always a perfect square, namely $(n^2+3n+1)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Note the structure that made it work.",
+        "workingLatex": "u(u+2)+1 = (u+1)^2",
+        "explanation": "The proof hinged on spotting that the product telescopes to $u(u+2)$, which is always one less than a perfect square.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Pairing gives $n(n+3)=u$ and $(n+1)(n+2)=u+2$ with $u=n^2+3n$, so the product is $u(u+2)=u^2+2u$. Adding $1$ gives $(u+1)^2=(n^2+3n+1)^2$, a perfect square. $\\blacksquare$"
+  }
+}

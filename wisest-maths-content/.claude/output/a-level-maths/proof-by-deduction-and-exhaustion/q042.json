@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "odd numbers",
+    "even numbers"
+  ],
+  "questionText": "Prove that the difference between any two odd numbers is even.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the first odd number.",
+        "workingLatex": "2a+1, \\quad a \\in \\mathbb{Z}",
+        "explanation": "Every odd number has the form $2a+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Represent the second odd number.",
+        "workingLatex": "2b+1, \\quad b \\in \\mathbb{Z}",
+        "explanation": "The second odd number is independent, so it uses its own letter $b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the difference.",
+        "workingLatex": "(2a+1) - (2b+1)",
+        "explanation": "The statement is about subtracting one odd number from another.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Remove the brackets.",
+        "workingLatex": "2a + 1 - 2b - 1",
+        "explanation": "Distributing the minus sign changes the sign of both terms in the second bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify.",
+        "workingLatex": "2a - 2b",
+        "explanation": "The $+1$ and $-1$ cancel, leaving only the even terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factor out 2.",
+        "workingLatex": "2(a - b)",
+        "explanation": "Pulling out $2$ shows the difference is twice an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "2(a-b) \\text{ is even}",
+        "explanation": "Since $a-b$ is an integer, the difference is $2\\times(\\text{integer})$, hence even; the difference of two odd numbers is always even.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2a+1)-(2b+1)=2a-2b=2(a-b)$, which is even. Hence the difference of two odd numbers is even. $\\blacksquare$"
+  }
+}

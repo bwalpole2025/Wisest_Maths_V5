@@ -1,0 +1,78 @@
+{
+  "id": "al.y1.pure.proof-deduction.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "proof by exhaustion",
+    "prime numbers",
+    "even numbers"
+  ],
+  "questionText": "Prove by exhaustion that every even number $k$ with $4 \\le k \\le 12$ can be written as the sum of two prime numbers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall what proof by exhaustion requires.",
+        "workingLatex": "\\text{check every case in the range}",
+        "explanation": "Proof by exhaustion works when there are only finitely many cases: we simply verify the claim for each one. Here the range is small enough to list completely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "List all the even numbers in the range.",
+        "workingLatex": "k \\in \\{4, 6, 8, 10, 12\\}",
+        "explanation": "The even numbers from $4$ to $12$ inclusive are these five values. Listing them makes the finite set of cases explicit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Case k = 4.",
+        "workingLatex": "4 = 2 + 2",
+        "explanation": "Both parts are $2$, which is prime, so $4$ is a sum of two primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Case k = 6.",
+        "workingLatex": "6 = 3 + 3",
+        "explanation": "Here $3$ is prime, and $3+3=6$, so the case holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case k = 8.",
+        "workingLatex": "8 = 3 + 5",
+        "explanation": "Both $3$ and $5$ are prime and add to $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case k = 10.",
+        "workingLatex": "10 = 5 + 5 \\quad (\\text{or } 3 + 7)",
+        "explanation": "Both $5$ and $5$ are prime; note there can be more than one valid decomposition, but we only need one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Case k = 12.",
+        "workingLatex": "12 = 5 + 7",
+        "explanation": "Both $5$ and $7$ are prime and sum to $12$, completing the final case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude from the completed case check.",
+        "workingLatex": "\\text{all 5 cases verified}",
+        "explanation": "Every even number in the range has been expressed as a sum of two primes, and there are no other cases. Since the list was exhaustive, the statement is proved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$4=2+2,\\;6=3+3,\\;8=3+5,\\;10=5+5,\\;12=5+7$. Each even number in the range is a sum of two primes, and these are all the cases, so the statement is true. $\\blacksquare$"
+  }
+}

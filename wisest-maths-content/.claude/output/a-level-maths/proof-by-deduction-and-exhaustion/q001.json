@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "odd numbers"
+  ],
+  "questionText": "Prove by deduction that the sum of any two consecutive integers is odd.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent a general integer with a letter.",
+        "workingLatex": "n \\in \\mathbb{Z}",
+        "explanation": "To prove a statement about *any* two consecutive integers, we use a letter $n$ to stand for the first one. Whatever we prove about $n$ then holds for every integer at once, so a single argument covers all cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the next consecutive integer.",
+        "workingLatex": "n \\text{ and } n+1",
+        "explanation": "'Consecutive' means the numbers follow one after another, so the second integer is exactly one more than the first: $n+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the sum of the two integers.",
+        "workingLatex": "S = n + (n+1)",
+        "explanation": "The claim is about their sum, so we add the two expressions. Keeping everything in terms of $n$ lets the algebra do the reasoning for us.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the sum.",
+        "workingLatex": "S = 2n + 1",
+        "explanation": "Collecting the two $n$ terms gives $2n$, and the constant is $1$. Writing the sum in this compact form is what reveals its structure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the standard form of an odd number.",
+        "workingLatex": "S = 2n + 1",
+        "explanation": "Any integer of the form $2 \\times (\\text{integer}) + 1$ is odd, because $2n$ is even and adding $1$ lands us on the next number up, which cannot be even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Justify that the two components behave as needed.",
+        "workingLatex": "2n \\text{ even}, \\quad 2n+1 \\text{ odd}",
+        "explanation": "Since $n$ is an integer, $2n$ is a whole number of twos, i.e. even. An even number plus one is always odd, with no exceptions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "S = 2n+1 \\text{ is odd for all } n \\in \\mathbb{Z}",
+        "explanation": "The sum simplified to the exact form that defines an odd number, and this held for a completely general $n$. That is precisely what a proof by deduction requires.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The sum is $n+(n+1)=2n+1$, which has the form (even)$+1$ and is therefore odd for every integer $n$. Hence the sum of any two consecutive integers is odd. $\\blacksquare$"
+  }
+}

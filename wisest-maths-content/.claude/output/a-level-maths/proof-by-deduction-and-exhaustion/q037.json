@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.proof-deduction.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "even numbers",
+    "divisibility",
+    "squares"
+  ],
+  "questionText": "Prove that if $n$ is even, then $n^2$ is divisible by $4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the even number in standard form.",
+        "workingLatex": "n = 2k, \\quad k \\in \\mathbb{Z}",
+        "explanation": "An even number is $2$ times an integer, so $n=2k$; this lets us compute its square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Square it.",
+        "workingLatex": "n^2 = (2k)^2",
+        "explanation": "The claim is about $n^2$, so we square the even form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the square.",
+        "workingLatex": "n^2 = 4k^2",
+        "explanation": "Squaring $2k$ gives $4k^2$, since $(2k)^2=2^2k^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Display the factor of 4.",
+        "workingLatex": "n^2 = 4 \\times k^2",
+        "explanation": "The result is explicitly $4$ times $k^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify k² as an integer.",
+        "workingLatex": "k^2 \\in \\mathbb{Z}",
+        "explanation": "Since $k$ is an integer, so is $k^2$, making $n^2=4\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the form.",
+        "workingLatex": "4 \\mid 4k^2",
+        "explanation": "A number equal to $4$ times an integer is a multiple of $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "4 \\mid n^2 \\text{ for even } n",
+        "explanation": "For any even $n=2k$, its square is $4k^2$, so $n^2$ is divisible by $4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "If $n=2k$ then $n^2=4k^2=4\\times k^2$, a multiple of $4$. Hence $n^2$ is divisible by $4$ whenever $n$ is even. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.proof-deduction.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "completing the square",
+    "inequalities"
+  ],
+  "questionText": "Prove that $x^2 + 6x + 10 > 0$ for all real values of $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } x^2 + 6x + 10 > 0 \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "We want the quadratic to be strictly positive everywhere; completing the square makes its sign clear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Focus on the quadratic and linear terms.",
+        "workingLatex": "x^2 + 6x",
+        "explanation": "We complete the square on $x^2+6x$ first and adjust the constant afterwards.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Complete the square.",
+        "workingLatex": "x^2 + 6x = (x+3)^2 - 9",
+        "explanation": "Half of $6$ is $3$, so $(x+3)^2=x^2+6x+9$; subtracting $9$ restores the original terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute back.",
+        "workingLatex": "x^2 + 6x + 10 = (x+3)^2 - 9 + 10",
+        "explanation": "Replacing $x^2+6x$ and keeping the $+10$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the constant.",
+        "workingLatex": "= (x+3)^2 + 1",
+        "explanation": "Combining $-9+10$ gives $+1$, so the quadratic is a square plus $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Use non-negativity of a square.",
+        "workingLatex": "(x+3)^2 \\ge 0",
+        "explanation": "The square of any real number is at least $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add 1.",
+        "workingLatex": "(x+3)^2 + 1 \\ge 1",
+        "explanation": "Adding $1$ preserves the inequality, so the expression is at least $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare with zero.",
+        "workingLatex": "(x+3)^2 + 1 \\ge 1 > 0",
+        "explanation": "Since $1>0$, the expression is strictly positive; its minimum value $1$ occurs at $x=-3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "x^2 + 6x + 10 > 0 \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "The quadratic equals $(x+3)^2+1\\ge1$, so it is positive for every real $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2+6x+10=(x+3)^2+1\\ge1>0$ for all real $x$. $\\blacksquare$"
+  }
+}

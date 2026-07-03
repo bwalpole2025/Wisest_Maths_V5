@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "place value",
+    "divisibility"
+  ],
+  "questionText": "A two-digit number has tens digit $a$ and units digit $b$. Prove that the number minus the sum of its digits is divisible by $9$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the number using place value.",
+        "workingLatex": "10a + b",
+        "explanation": "A two-digit number equals ten times its tens digit plus its units digit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the sum of its digits.",
+        "workingLatex": "a + b",
+        "explanation": "The digit sum simply adds the two digits together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the difference.",
+        "workingLatex": "(10a + b) - (a + b)",
+        "explanation": "We subtract the digit sum from the number, as the statement requires.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify.",
+        "workingLatex": "9a",
+        "explanation": "The $b$ terms cancel and $10a-a=9a$, leaving a single term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Display the factor of 9.",
+        "workingLatex": "9a = 9 \\times a",
+        "explanation": "The result is exactly $9$ times the tens digit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify a as an integer.",
+        "workingLatex": "a \\in \\mathbb{Z}",
+        "explanation": "The digit $a$ is an integer, so the difference is $9\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "9 \\mid (10a+b)-(a+b)",
+        "explanation": "The difference equals $9a$, a multiple of $9$, so a two-digit number minus its digit sum is always divisible by $9$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(10a+b)-(a+b)=9a$, a multiple of $9$. Hence the number minus its digit sum is divisible by $9$. $\\blacksquare$"
+  }
+}

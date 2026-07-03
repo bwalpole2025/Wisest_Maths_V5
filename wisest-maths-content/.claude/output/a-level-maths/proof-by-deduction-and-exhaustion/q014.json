@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "divisibility"
+  ],
+  "questionText": "Prove that the sum of any five consecutive integers is divisible by $5$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the integers symmetrically.",
+        "workingLatex": "n-2,\\; n-1,\\; n,\\; n+1,\\; n+2",
+        "explanation": "Centring the five consecutive integers on the middle value $n$ makes the outer terms cancel in pairs when we add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write their sum.",
+        "workingLatex": "S = (n-2)+(n-1)+n+(n+1)+(n+2)",
+        "explanation": "We add all five integers, keeping everything in terms of the middle value $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Cancel the balanced terms.",
+        "workingLatex": "S = 5n",
+        "explanation": "The $-2$ and $+2$ cancel, and the $-1$ and $+1$ cancel, leaving five copies of $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor out 5.",
+        "workingLatex": "S = 5 \\times n",
+        "explanation": "Writing the sum as $5$ times $n$ exposes the factor of $5$ we are trying to prove is present.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify n as an integer.",
+        "workingLatex": "n \\in \\mathbb{Z}",
+        "explanation": "The middle value $n$ is an integer, so $S$ is $5$ multiplied by a whole number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the form.",
+        "workingLatex": "5 \\mid 5n",
+        "explanation": "A number equal to $5$ times an integer is a multiple of $5$ by definition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "5 \\mid S \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "The sum of any five consecutive integers equals $5n$, so it is always divisible by $5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Centring on $n$, the sum is $(n-2)+(n-1)+n+(n+1)+(n+2)=5n$, a multiple of $5$. Hence the sum of any five consecutive integers is divisible by $5$. $\\blacksquare$"
+  }
+}

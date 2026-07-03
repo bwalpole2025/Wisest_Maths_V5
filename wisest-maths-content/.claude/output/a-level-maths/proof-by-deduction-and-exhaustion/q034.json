@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "even numbers",
+    "divisibility"
+  ],
+  "questionText": "Prove that the sum of any three consecutive even numbers is divisible by $6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the first even number.",
+        "workingLatex": "2n, \\quad n \\in \\mathbb{Z}",
+        "explanation": "Every even number is $2$ times an integer, so the first is $2n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the next two even numbers.",
+        "workingLatex": "2n+2 \\text{ and } 2n+4",
+        "explanation": "Consecutive even numbers go up in steps of $2$, so the next two are $2n+2$ and $2n+4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the three numbers.",
+        "workingLatex": "S = 2n + (2n+2) + (2n+4)",
+        "explanation": "The claim concerns their sum, so we add the three even numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "S = 6n + 6",
+        "explanation": "There are three $2n$ terms giving $6n$, and the constants $2$ and $4$ give $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out 6.",
+        "workingLatex": "S = 6(n + 1)",
+        "explanation": "Both terms share a factor of $6$; pulling it out exposes divisibility by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "n + 1 \\in \\mathbb{Z}",
+        "explanation": "Since $n$ is an integer, $S$ is $6$ times a whole number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "6 \\mid S \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "The sum equals $6(n+1)$, so the sum of any three consecutive even numbers is divisible by $6$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2n+(2n+2)+(2n+4)=6n+6=6(n+1)$, a multiple of $6$. Hence the sum of three consecutive even numbers is divisible by $6$. $\\blacksquare$"
+  }
+}

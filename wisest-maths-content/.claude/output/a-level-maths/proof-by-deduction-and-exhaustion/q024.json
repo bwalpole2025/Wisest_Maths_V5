@@ -1,0 +1,106 @@
+{
+  "id": "al.y1.pure.proof-deduction.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "proof by exhaustion",
+    "divisibility"
+  ],
+  "questionText": "Prove that $n(n+1)(2n+1)$ is divisible by $6$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the product.",
+        "workingLatex": "P = n(n+1)(2n+1)",
+        "explanation": "We label the expression $P$ so we can refer to it while proving divisibility by $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split 6 into coprime factors.",
+        "workingLatex": "6 = 2 \\times 3, \\quad \\gcd(2,3)=1",
+        "explanation": "To prove divisibility by $6$ it suffices to prove divisibility by $2$ and by $3$ separately, because $2$ and $3$ have no common factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divisibility by 2.",
+        "workingLatex": "n, n+1 \\text{ consecutive} \\Rightarrow \\text{one is even}",
+        "explanation": "The factors $n$ and $n+1$ are consecutive integers, so one of them is even, making $P$ even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Record divisibility by 2.",
+        "workingLatex": "2 \\mid P",
+        "explanation": "An even factor makes the whole product even, so $P$ is divisible by $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divisibility by 3 — set up cases.",
+        "workingLatex": "n \\equiv 0, 1, 2 \\pmod 3",
+        "explanation": "We exhaust the three possible remainders of $n$ modulo $3$; the factor $2n+1$ means we must check each explicitly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Case n ≡ 0.",
+        "workingLatex": "3 \\mid n",
+        "explanation": "If $n$ is a multiple of $3$, the factor $n$ makes $P$ divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Case n ≡ 1.",
+        "workingLatex": "2n+1 \\equiv 2(1)+1 = 3 \\equiv 0 \\pmod 3",
+        "explanation": "If $n\\equiv1$, then $2n+1\\equiv0$, so the factor $2n+1$ is divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case n ≡ 2.",
+        "workingLatex": "n+1 \\equiv 0 \\pmod 3",
+        "explanation": "If $n\\equiv2$, then $n+1\\equiv0$, so the factor $n+1$ is divisible by $3$. Every case yields a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Record divisibility by 3.",
+        "workingLatex": "3 \\mid P",
+        "explanation": "In all three exhaustive cases one factor is divisible by $3$, so $P$ is divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine the results.",
+        "workingLatex": "2 \\mid P \\text{ and } 3 \\mid P",
+        "explanation": "We have shown $P$ is divisible by both $2$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Apply coprimality.",
+        "workingLatex": "\\gcd(2,3)=1 \\Rightarrow 6 \\mid P",
+        "explanation": "Because $2$ and $3$ are coprime, divisibility by each forces divisibility by their product $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the conclusion.",
+        "workingLatex": "6 \\mid n(n+1)(2n+1) \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "Hence $n(n+1)(2n+1)$ is divisible by $6$ for every integer $n$ — the fact behind the sum-of-squares formula.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n(n+1)$ is even so $2\\mid P$; checking $n\\equiv0,1,2\\pmod3$ shows one factor is always a multiple of $3$ so $3\\mid P$. As $\\gcd(2,3)=1$, $6\\mid P$. $\\blacksquare$"
+  }
+}

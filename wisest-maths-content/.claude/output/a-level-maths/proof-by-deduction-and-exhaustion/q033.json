@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "even numbers",
+    "factorisation"
+  ],
+  "questionText": "Prove that $n^2 + 3n$ is even for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the expression.",
+        "workingLatex": "n^2 + 3n",
+        "explanation": "We begin from the expression to be shown even and look for a factorisation that reveals its parity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor.",
+        "workingLatex": "n^2 + 3n = n(n + 3)",
+        "explanation": "Taking out $n$ writes the expression as a product, which is easier to reason about than a sum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up a parity argument.",
+        "workingLatex": "n \\text{ is even or odd}",
+        "explanation": "Every integer is even or odd; we check that the product is even in each case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Case: n even.",
+        "workingLatex": "n = 2k \\Rightarrow n(n+3) = 2k(n+3)",
+        "explanation": "If $n$ is even, the factor $n$ carries a $2$, so the product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Case: n odd.",
+        "workingLatex": "n = 2k+1 \\Rightarrow n+3 = 2k+4 = 2(k+2)",
+        "explanation": "If $n$ is odd, then $n+3$ is even, so the other factor carries a $2$ and the product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the cases.",
+        "workingLatex": "n(n+3) = 2m, \\quad m \\in \\mathbb{Z}",
+        "explanation": "In both exhaustive cases the product is twice an integer, hence even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "n^2 + 3n \\text{ is even for all } n \\in \\mathbb{Z}",
+        "explanation": "Whichever parity $n$ has, one factor of $n(n+3)$ is even, so $n^2+3n$ is always even.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^2+3n=n(n+3)$. If $n$ is even the first factor is even; if $n$ is odd then $n+3$ is even. Either way the product is even. $\\blacksquare$"
+  }
+}

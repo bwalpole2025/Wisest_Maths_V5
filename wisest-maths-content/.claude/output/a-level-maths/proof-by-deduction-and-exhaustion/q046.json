@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.proof-deduction.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "inequalities",
+    "algebraic fractions"
+  ],
+  "questionText": "Prove that $a + \\dfrac{1}{a} \\ge 2$ for all real numbers $a > 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } a + \\tfrac{1}{a} \\ge 2 \\text{ for } a > 0",
+        "explanation": "We restrict to $a>0$ so that $1/a$ is defined and positive. We show the difference from $2$ is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the difference from 2.",
+        "workingLatex": "a + \\tfrac{1}{a} - 2",
+        "explanation": "Proving this is $\\ge0$ is equivalent to the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write over a common denominator.",
+        "workingLatex": "\\dfrac{a^2 - 2a + 1}{a}",
+        "explanation": "Combining the terms over $a$ turns the expression into a single fraction we can analyse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recognise the numerator.",
+        "workingLatex": "a^2 - 2a + 1 = (a-1)^2",
+        "explanation": "The numerator is a perfect square, which is the key to fixing its sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rewrite the difference.",
+        "workingLatex": "a + \\tfrac{1}{a} - 2 = \\dfrac{(a-1)^2}{a}",
+        "explanation": "Substituting the square gives a fraction whose sign is now easy to read.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Sign of the numerator.",
+        "workingLatex": "(a-1)^2 \\ge 0",
+        "explanation": "The square of a real number is non-negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Sign of the denominator.",
+        "workingLatex": "a > 0",
+        "explanation": "By assumption $a$ is positive, so the denominator is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Sign of the quotient.",
+        "workingLatex": "\\dfrac{(a-1)^2}{a} \\ge 0",
+        "explanation": "A non-negative numerator over a positive denominator is non-negative, so $a+\\tfrac1a-2\\ge0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "a + \\tfrac{1}{a} \\ge 2 \\text{ for } a > 0",
+        "explanation": "Hence $a+\\tfrac1a\\ge2$, with equality when $a=1$. Note the positivity of $a$ was essential.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a+\\tfrac1a-2=\\dfrac{(a-1)^2}{a}\\ge0$ for $a>0$, so $a+\\tfrac1a\\ge2$, with equality at $a=1$. $\\blacksquare$"
+  }
+}

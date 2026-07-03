@@ -1,0 +1,78 @@
+{
+  "id": "al.y1.pure.proof-deduction.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "odd numbers",
+    "divisibility"
+  ],
+  "questionText": "Prove that the sum of any three consecutive odd numbers is divisible by $3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Represent the first odd number.",
+        "workingLatex": "2n+1, \\quad n \\in \\mathbb{Z}",
+        "explanation": "Every odd number has the form $2n+1$; using a letter keeps the proof general.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the next two odd numbers.",
+        "workingLatex": "2n+3 \\text{ and } 2n+5",
+        "explanation": "Consecutive odd numbers increase by $2$, so the next two are $2n+3$ and $2n+5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the three numbers.",
+        "workingLatex": "S = (2n+1) + (2n+3) + (2n+5)",
+        "explanation": "The statement concerns their sum, so we add the three odd numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "S = 6n + 9",
+        "explanation": "Three $2n$ terms give $6n$, and $1+3+5$ gives $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out 3.",
+        "workingLatex": "S = 3(2n + 3)",
+        "explanation": "Both terms are multiples of $3$; factoring exposes the divisibility.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the bracket as an integer.",
+        "workingLatex": "2n + 3 \\in \\mathbb{Z}",
+        "explanation": "Since $n$ is an integer, $S=3\\times(\\text{integer})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note the neat interpretation.",
+        "workingLatex": "S = 3 \\times (\\text{middle number})",
+        "explanation": "Here $2n+3$ is the middle odd number, so the sum is three times the middle term — a nice sanity check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the conclusion.",
+        "workingLatex": "3 \\mid S \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "The sum equals $3(2n+3)$, so the sum of any three consecutive odd numbers is divisible by $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2n+1)+(2n+3)+(2n+5)=6n+9=3(2n+3)$, a multiple of $3$ (indeed three times the middle number). $\\blacksquare$"
+  }
+}

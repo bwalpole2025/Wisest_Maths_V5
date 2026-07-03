@@ -1,16 +1,18 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Mathematical argument and notation",
-  "currentSubtopicId": "al.y1.pure.argument-notation",
-  "questionsGenerated": 0,
+  "currentSubtopic": "Proof by deduction and exhaustion",
+  "currentSubtopicId": "al.y1.pure.proof-deduction",
+  "questionsGenerated": 30,
   "targetQuestionsPerSubtopic": 70,
-  "completedSubtopics": [],
+  "completedSubtopics": [
+    "al.y1.pure.argument-notation"
+  ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 0,
-      "totalQuestionsGenerated": 0
+      "completedSubtopics": 1,
+      "totalQuestionsGenerated": 100
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

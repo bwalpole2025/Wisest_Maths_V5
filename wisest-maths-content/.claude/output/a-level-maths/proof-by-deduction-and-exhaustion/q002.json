@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.proof-deduction.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "consecutive integers",
+    "divisibility"
+  ],
+  "questionText": "Prove by deduction that the sum of any three consecutive integers is divisible by $3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Let the first integer be general.",
+        "workingLatex": "n \\in \\mathbb{Z}",
+        "explanation": "Using $n$ for the first of the three integers means our conclusion will automatically apply to every possible starting value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the next two consecutive integers.",
+        "workingLatex": "n,\\; n+1,\\; n+2",
+        "explanation": "Consecutive integers increase by $1$ each time, so the three numbers are $n$, $n+1$ and $n+2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the three integers.",
+        "workingLatex": "S = n + (n+1) + (n+2)",
+        "explanation": "The statement concerns their total, so we sum them and keep everything in terms of $n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify by collecting like terms.",
+        "workingLatex": "S = 3n + 3",
+        "explanation": "There are three $n$ terms giving $3n$, and the constants $1$ and $2$ give $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out the common factor of 3.",
+        "workingLatex": "S = 3(n+1)",
+        "explanation": "Factoring is the key move: it exposes a factor of $3$ explicitly, which is exactly the property we are trying to prove.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the factored form.",
+        "workingLatex": "S = 3 \\times (n+1), \\quad n+1 \\in \\mathbb{Z}",
+        "explanation": "Because $n+1$ is an integer, $S$ is $3$ multiplied by a whole number. By definition that means $S$ is a multiple of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "3 \\mid S \\text{ for all } n \\in \\mathbb{Z}",
+        "explanation": "We reached $3(n+1)$ from a general starting integer, so divisibility by $3$ holds for every set of three consecutive integers.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The sum is $n+(n+1)+(n+2)=3n+3=3(n+1)$. As $n+1$ is an integer, the sum is a multiple of $3$. Hence the sum of any three consecutive integers is divisible by $3$. $\\blacksquare$"
+  }
+}

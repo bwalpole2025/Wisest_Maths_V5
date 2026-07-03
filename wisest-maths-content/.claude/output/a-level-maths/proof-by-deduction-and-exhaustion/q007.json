@@ -1,0 +1,107 @@
+{
+  "id": "al.y1.pure.proof-deduction.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Proof by deduction and exhaustion",
+  "subtopicId": "al.y1.pure.proof-deduction",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "proof by deduction",
+    "proof by exhaustion",
+    "divisibility",
+    "factorisation"
+  ],
+  "questionText": "Prove that $n^3 - n$ is divisible by $6$ for every integer $n$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor out the common factor.",
+        "workingLatex": "n^3 - n = n(n^2 - 1)",
+        "explanation": "Taking out the shared factor $n$ is the natural first step and sets up a difference of squares inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor the difference of squares.",
+        "workingLatex": "n(n^2-1) = n(n-1)(n+1)",
+        "explanation": "Since $n^2-1=(n-1)(n+1)$, the expression becomes a product of three linear factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Reorder into consecutive integers.",
+        "workingLatex": "(n-1)\\,n\\,(n+1)",
+        "explanation": "Written in increasing order, these are three *consecutive* integers. That structure is the key to the whole proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Split the target 6 into coprime factors.",
+        "workingLatex": "6 = 2 \\times 3, \\quad \\gcd(2,3)=1",
+        "explanation": "To show divisibility by $6$ it is enough to show divisibility by $2$ and by $3$ separately, because $2$ and $3$ share no common factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divisibility by 2.",
+        "workingLatex": "n-1, n \\text{ consecutive} \\Rightarrow \\text{one is even}",
+        "explanation": "Among any two consecutive integers one must be even, so the product contains a factor of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Record divisibility by 2.",
+        "workingLatex": "2 \\mid (n-1)\\,n\\,(n+1)",
+        "explanation": "An even factor makes the whole product even, so it is divisible by $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up divisibility by 3 via cases.",
+        "workingLatex": "n \\equiv 0, 1, \\text{ or } 2 \\pmod 3",
+        "explanation": "Every integer leaves remainder $0$, $1$ or $2$ on division by $3$. Checking these three exhaustive cases settles divisibility by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Case n ≡ 0 (mod 3).",
+        "workingLatex": "3 \\mid n",
+        "explanation": "If $n$ is itself a multiple of $3$, the factor $n$ supplies the divisibility.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Case n ≡ 1 (mod 3).",
+        "workingLatex": "n - 1 \\equiv 0 \\Rightarrow 3 \\mid (n-1)",
+        "explanation": "If $n$ leaves remainder $1$, then $n-1$ is a multiple of $3$, so the factor $n-1$ supplies it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Case n ≡ 2 (mod 3).",
+        "workingLatex": "n + 1 \\equiv 0 \\Rightarrow 3 \\mid (n+1)",
+        "explanation": "If $n$ leaves remainder $2$, then $n+1$ is a multiple of $3$. So in every case one factor is divisible by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Record divisibility by 3.",
+        "workingLatex": "3 \\mid (n-1)\\,n\\,(n+1)",
+        "explanation": "All three cases produce a factor divisible by $3$, so the product always is.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Combine to conclude.",
+        "workingLatex": "2 \\mid P \\text{ and } 3 \\mid P \\Rightarrow 6 \\mid P",
+        "explanation": "The product is divisible by both $2$ and $3$, and since these are coprime it is divisible by their product $6$. Hence $n^3-n$ is divisible by $6$ for all integers $n$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$n^3-n=(n-1)n(n+1)$, a product of three consecutive integers. One factor is even (so $2\\mid P$) and one is a multiple of $3$ (so $3\\mid P$); as $\\gcd(2,3)=1$, $6\\mid P$. $\\blacksquare$"
+  }
+}
