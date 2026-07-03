@@ -86,6 +86,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 7,
     load: () => import("./year-1-pure/inequalities").then((m) => m.questions),
   },
+  {
+    slug: "polynomials-and-factor-theorem",
+    id: "al.y1.pure.polynomials",
+    name: "Polynomials and factor theorem",
+    blurb: "Division, the factor and remainder theorems, and factorising cubics.",
+    gradient: "from-teal-400 to-cyan-500",
+    order: 8,
+    load: () => import("./year-1-pure/polynomials-and-factor-theorem").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

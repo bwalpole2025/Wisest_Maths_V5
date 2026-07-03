@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Inequalities",
-  "currentSubtopicId": "al.y1.pure.inequalities",
+  "currentSubtopic": "Polynomials and factor theorem",
+  "currentSubtopicId": "al.y1.pure.polynomials",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -12,13 +12,14 @@
     "al.y1.pure.indices-surds",
     "al.y1.pure.quadratics",
     "al.y1.pure.simultaneous",
-    "al.y1.pure.inequalities"
+    "al.y1.pure.inequalities",
+    "al.y1.pure.polynomials"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 7,
-      "totalQuestionsGenerated": 490
+      "completedSubtopics": 8,
+      "totalQuestionsGenerated": 560
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
