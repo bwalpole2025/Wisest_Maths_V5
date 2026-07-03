@@ -1,11 +1,17 @@
-import { allQuestions, subtopics, stats } from "@/lib/questions";
-import { QuestionList } from "@/components/question-list";
-import { SubtopicCard } from "@/components/subtopic-card";
+import { subtopics, stats } from "@/lib/questions";
+import { SubtopicBrowser } from "@/components/subtopic-browser";
 import { Reveal } from "@/components/reveal";
 import { SectionLabel } from "@/components/ui";
 import { Footer } from "@/components/footer";
 
 export default function QuestionBankPage() {
+  const tabs = subtopics.map((s) => ({
+    slug: s.slug,
+    name: s.name,
+    gradient: s.gradient,
+    count: s.count,
+  }));
+
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-36">
@@ -15,25 +21,14 @@ export default function QuestionBankPage() {
             Every question, fully solved
           </h1>
           <p className="mt-3 max-w-xl text-muted-foreground">
-            Browse {stats.total} questions across {stats.subtopics} subtopics. Filter by difficulty or search by
-            keyword, tag or id — then open any one for the full step-by-step solution.
+            Switch between {stats.subtopics} subtopics below — each set of questions is loaded on demand.
+            Filter by difficulty or search by keyword, tag or id, then open any one for the full solution.
           </p>
         </Reveal>
 
-        {/* subtopic quick-jump */}
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-          {subtopics.map((s, i) => (
-            <SubtopicCard key={s.id} subtopic={s} index={i} />
-          ))}
-        </div>
-
-        {/* full searchable list */}
-        <div className="mt-16">
-          <Reveal>
-            <h2 className="mb-6 font-display text-2xl font-bold tracking-tight">All questions</h2>
-          </Reveal>
-          <QuestionList questions={allQuestions} />
-        </div>
+        <Reveal delay={0.08} className="mt-12">
+          <SubtopicBrowser tabs={tabs} initialSlug={subtopics[0].slug} />
+        </Reveal>
       </section>
 
       <Footer />

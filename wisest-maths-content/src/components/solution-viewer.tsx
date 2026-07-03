@@ -8,6 +8,11 @@ import { MathText, MathBlock } from "@/components/math";
 import { DifficultyBadge, Pill } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
+/**
+ * SolvedQuestionViewer — pass a single `question` object and it renders the
+ * question, an interactive step-by-step solution timeline, and the final answer.
+ * Exported below as both `SolutionViewer` and `SolvedQuestionViewer`.
+ */
 export function SolutionViewer({ question: q }: { question: Question }) {
   const steps = q.workedSolution.steps;
   const total = steps.length;
@@ -169,3 +174,5 @@ export function SolutionViewer({ question: q }: { question: Question }) {
     </div>
   );
 }
+
+export { SolutionViewer as SolvedQuestionViewer };

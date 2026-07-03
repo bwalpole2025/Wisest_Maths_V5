@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowLeftCircle } from "lucide-react";
-import { allQuestions, getQuestionById, slugify } from "@/lib/questions";
+import { allQuestions, getQuestionById, slugForSubtopicId } from "@/lib/questions";
 import { SolutionViewer } from "@/components/solution-viewer";
 import { Reveal } from "@/components/reveal";
 import { Footer } from "@/components/footer";
@@ -20,7 +20,7 @@ export default async function SolvePage({ params }: { params: Promise<{ id: stri
   const idx = siblings.findIndex((q) => q.id === question.id);
   const prev = idx > 0 ? siblings[idx - 1] : undefined;
   const next = idx < siblings.length - 1 ? siblings[idx + 1] : undefined;
-  const subtopicSlug = slugify(question.subtopicId);
+  const subtopicSlug = slugForSubtopicId(question.subtopicId);
 
   return (
     <>

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { difficultyClasses } from "@/lib/questions";
+import { difficultyClasses } from "@/lib/difficulty";
 import type { Difficulty } from "@/lib/types";
 
 export function SectionLabel({ children }: { children: React.ReactNode }) {
