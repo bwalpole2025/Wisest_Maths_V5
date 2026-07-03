@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "algebra",
+    "expanding brackets"
+  ],
+  "questionText": "Disprove the statement: ``For all real numbers $a$ and $b$, $(a+b)^2 = a^2 + b^2$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ a,b:\\ (a+b)^2 = a^2 + b^2",
+        "explanation": "The claim asserts the identity holds for *all* $a,b$; one pair where the two sides differ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "A single pair of numbers making the two sides unequal is enough to refute a `for all' identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the correct expansion.",
+        "workingLatex": "(a+b)^2 = a^2 + 2ab + b^2",
+        "explanation": "The true expansion has an extra middle term $2ab$, which the claim ignores; the counterexample should make $2ab \\neq 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose simple non-zero values.",
+        "workingLatex": "a = 1, \\quad b = 1",
+        "explanation": "Taking $a=b=1$ keeps $2ab = 2 \\neq 0$, so the missing term will show up.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the left-hand side.",
+        "workingLatex": "(1+1)^2 = 2^2 = 4",
+        "explanation": "Squaring the sum, $(1+1)^2 = 2^2 = 4$, so the left-hand side is $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the right-hand side.",
+        "workingLatex": "1^2 + 1^2 = 1 + 1 = 2",
+        "explanation": "The right side gives $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "4 \\neq 2 \\Rightarrow \\text{the statement is false}",
+        "explanation": "At $a=b=1$ the sides are $4$ and $2$, which are unequal, so the claimed identity is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=b=1$: then $(a+b)^2 = 4$ but $a^2+b^2 = 2$. Since $4 \\neq 2$, the statement is false. $\\blacksquare$"
+  }
+}

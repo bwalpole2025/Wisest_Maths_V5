@@ -1,0 +1,65 @@
+{
+  "id": "al.y1.pure.disproof.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "geometry",
+    "shapes"
+  ],
+  "questionText": "Disprove the statement: ``Every rectangle is a square.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{rectangles}:\\ \\text{it is a square}",
+        "explanation": "The claim asserts *every* rectangle is a square; one rectangle that is not a square disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single rectangle whose four sides are not all equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the definitions.",
+        "workingLatex": "\\text{rectangle: 4 right angles};\\ \\text{square: rectangle with all sides equal}",
+        "explanation": "A square is a special rectangle; a rectangle need not have equal sides, so we look for unequal side lengths.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Construct a specific rectangle.",
+        "workingLatex": "\\text{sides } 2 \\text{ and } 3",
+        "explanation": "A rectangle with width $2$ and height $3$ has four right angles, so it is a genuine rectangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compare its sides.",
+        "workingLatex": "2 \\neq 3",
+        "explanation": "Its adjacent sides are $2$ and $3$, which are unequal, so it is not a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "A $2 \\times 3$ rectangle is a rectangle but not a square, so the claim `every rectangle is a square' is disproved. (The correct direction is that every square is a rectangle.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "A $2 \\times 3$ rectangle has four right angles but unequal sides ($2 \\neq 3$), so it is not a square. Hence the statement is false. $\\blacksquare$"
+  }
+}

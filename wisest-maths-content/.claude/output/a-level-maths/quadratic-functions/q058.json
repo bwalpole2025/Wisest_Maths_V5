@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "quadratic formula",
+    "surd roots"
+  ],
+  "questionText": "Solve the equation $2x^2 + 4x - 1 = 0$, giving your answers in surd form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the quadratic formula.",
+        "workingLatex": "x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+        "explanation": "The quadratic does not factorise over the integers, so the formula gives the roots directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 2,\\ b = 4,\\ c = -1",
+        "explanation": "Reading off the coefficients gives the values to substitute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Compute the discriminant.",
+        "workingLatex": "b^2 - 4ac = 16 - (-8) = 24",
+        "explanation": "Here $4^2 = 16$ and $4ac = 4(2)(-1) = -8$, so the discriminant is $16 + 8 = 24$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into the formula.",
+        "workingLatex": "x = \\dfrac{-4 \\pm \\sqrt{24}}{4}",
+        "explanation": "With $-b = -4$ and $2a = 4$, the roots are $\\tfrac{-4 \\pm \\sqrt{24}}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the surd.",
+        "workingLatex": "\\sqrt{24} = 2\\sqrt{6}",
+        "explanation": "Taking out the square factor $4$ from $24$ simplifies $\\sqrt{24}$ to $2\\sqrt6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the roots.",
+        "workingLatex": "x = \\dfrac{-4 \\pm 2\\sqrt{6}}{4}",
+        "explanation": "Substituting the simplified surd gives this form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Cancel the common factor of 2.",
+        "workingLatex": "x = \\dfrac{-2 \\pm \\sqrt{6}}{2}",
+        "explanation": "Dividing numerator and denominator by $2$ gives the simplest surd form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the sum of the roots.",
+        "workingLatex": "\\dfrac{-2+\\sqrt6}{2} + \\dfrac{-2-\\sqrt6}{2} = -2 = -\\dfrac{b}{a}",
+        "explanation": "The roots add to $-2$, matching $-b/a = -2$, confirming the answers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solutions.",
+        "workingLatex": "x = \\dfrac{-2 \\pm \\sqrt{6}}{2}",
+        "explanation": "The two roots are $\\tfrac{-2 + \\sqrt6}{2}$ and $\\tfrac{-2 - \\sqrt6}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x = \\dfrac{-4 \\pm \\sqrt{24}}{4} = \\dfrac{-4 \\pm 2\\sqrt{6}}{4} = \\dfrac{-2 \\pm \\sqrt{6}}{2}$"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.disproof.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities"
+  ],
+  "questionText": "Disprove the statement: ``For all real numbers $x$, $x^2 > 0$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ x \\in \\mathbb{R}:\\ x^2 > 0",
+        "explanation": "The claim asserts a *strict* inequality for all real $x$; one value where $x^2$ is not positive disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single real number whose square is not strictly greater than $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the exceptional value.",
+        "workingLatex": "x = 0 \\Rightarrow x^2 = 0",
+        "explanation": "Squares are non-negative, but zero squares to zero, which is not strictly positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose that value.",
+        "workingLatex": "x = 0",
+        "explanation": "We test $x=0$, the only real number with a zero square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the square.",
+        "workingLatex": "0^2 = 0",
+        "explanation": "The square of $0$ is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare with zero.",
+        "workingLatex": "0 > 0 \\text{ is false}",
+        "explanation": "Since $0$ is not strictly greater than $0$, the inequality fails at $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $x=0$, $x^2 = 0$ is not positive, so the claim is disproved. (The correct statement is $x^2\\ge0$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $x=0$: then $x^2 = 0$, which is not $>0$. Hence the statement is false (the correct claim is $x^2 \\ge 0$). $\\blacksquare$"
+  }
+}

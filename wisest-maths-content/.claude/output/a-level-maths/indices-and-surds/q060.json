@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "negative fractional solution"
+  ],
+  "questionText": "Solve the equation $16^{x} = \\dfrac{1}{2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose a common base.",
+        "workingLatex": "16 = 2^4, \\quad \\dfrac{1}{2} = 2^{-1}",
+        "explanation": "Both sides can be written as powers of $2$; the fraction $\\tfrac12$ needs a negative index.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the left-hand side.",
+        "workingLatex": "16^{x} = \\left(2^4\\right)^{x} = 2^{4x}",
+        "explanation": "Using the power-of-a-power law gives $2^{4x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the right-hand side.",
+        "workingLatex": "\\dfrac{1}{2} = 2^{-1}",
+        "explanation": "A reciprocal corresponds to a negative index, so $\\tfrac12 = 2^{-1}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Equate the two expressions.",
+        "workingLatex": "2^{4x} = 2^{-1}",
+        "explanation": "Both sides are now powers of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Equate the indices.",
+        "workingLatex": "4x = -1",
+        "explanation": "Equal powers of the same base force equal indices, giving $4x = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x.",
+        "workingLatex": "x = -\\dfrac{1}{4}",
+        "explanation": "Dividing both sides by $4$ gives $x = -\\tfrac14$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the solution.",
+        "workingLatex": "16^{-1/4} = \\dfrac{1}{16^{1/4}} = \\dfrac{1}{2} \\ \\checkmark",
+        "explanation": "Substituting back, $16^{-1/4} = \\tfrac12$, so the solution works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Sense-check the sign.",
+        "workingLatex": "\\tfrac{1}{2} < 1 \\Rightarrow x < 0",
+        "explanation": "Because the right-hand side is less than $1$, the index must be negative, and $-\\tfrac14$ is.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x = -\\dfrac{1}{4}",
+        "explanation": "The solution of $16^x = \\tfrac12$ is $x = -\\tfrac14$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$16^x = \\dfrac{1}{2} \\Rightarrow 2^{4x} = 2^{-1} \\Rightarrow 4x = -1 \\Rightarrow x = -\\dfrac{1}{4}$"
+  }
+}

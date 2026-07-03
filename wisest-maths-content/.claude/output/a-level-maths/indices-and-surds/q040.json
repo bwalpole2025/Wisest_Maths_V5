@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "expanding brackets",
+    "squaring surds"
+  ],
+  "questionText": "Express $\\left(\\sqrt{2} + \\sqrt{3}\\right)^{2}$ in the form $a + b\\sqrt{6}$, where $a$ and $b$ are integers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the square as a product.",
+        "workingLatex": "\\left(\\sqrt{2}+\\sqrt{3}\\right)^2 = \\left(\\sqrt{2}+\\sqrt{3}\\right)\\left(\\sqrt{2}+\\sqrt{3}\\right)",
+        "explanation": "Squaring means multiplying the bracket by itself, which we expand with the standard identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the expansion identity.",
+        "workingLatex": "(a+b)^2 = a^2 + 2ab + b^2",
+        "explanation": "Using this with $a=\\sqrt2$ and $b=\\sqrt3$ keeps the expansion organised.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Square the first term.",
+        "workingLatex": "a^2 = \\left(\\sqrt{2}\\right)^2 = 2",
+        "explanation": "Squaring $\\sqrt2$ removes the root and gives the rational $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the middle term.",
+        "workingLatex": "2ab = 2 \\times \\sqrt{2} \\times \\sqrt{3} = 2\\sqrt{6}",
+        "explanation": "The cross term multiplies the two surds: $\\sqrt2\\times\\sqrt3 = \\sqrt6$, so $2ab = 2\\sqrt6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Square the second term.",
+        "workingLatex": "b^2 = \\left(\\sqrt{3}\\right)^2 = 3",
+        "explanation": "Squaring $\\sqrt3$ gives the rational $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the three parts.",
+        "workingLatex": "2 + 2\\sqrt{6} + 3",
+        "explanation": "Collecting the pieces gives $2 + 2\\sqrt6 + 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Combine the rational terms.",
+        "workingLatex": "2 + 3 = 5",
+        "explanation": "The whole-number parts $2$ and $3$ add to $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write in the required form.",
+        "workingLatex": "5 + 2\\sqrt{6}",
+        "explanation": "Placing the rational part first gives $5 + 2\\sqrt6$, matching the form $a+b\\sqrt6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the surd cannot simplify.",
+        "workingLatex": "6 = 2 \\times 3 \\text{ has no square factor}",
+        "explanation": "Since $6$ has no square factor greater than $1$, $\\sqrt6$ is already in simplest form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Identify a and b.",
+        "workingLatex": "a = 5, \\quad b = 2",
+        "explanation": "Comparing with $a+b\\sqrt6$ gives the integers $a=5$ and $b=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify numerically.",
+        "workingLatex": "(1.414 + 1.732)^2 \\approx 9.90",
+        "explanation": "The original expression evaluates to about $9.90$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Match the check.",
+        "workingLatex": "5 + 2(2.449) \\approx 9.90",
+        "explanation": "The answer $5 + 2\\sqrt6$ also gives about $9.90$, confirming it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "5 + 2\\sqrt{6}",
+        "explanation": "The expression equals $5 + 2\\sqrt6$, so $a=5$ and $b=2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(\\sqrt{2}+\\sqrt{3}\\right)^2 = 2 + 2\\sqrt{6} + 3 = 5 + 2\\sqrt{6}$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.disproof.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "prime-generating polynomial"
+  ],
+  "questionText": "Euler observed that $n^2 + n + 41$ is prime for many values of $n$. Disprove the claim that ``$n^2 + n + 41$ is prime for every integer $n \\ge 0$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 0:\\ n^2 + n + 41 \\text{ is prime}",
+        "explanation": "The claim asserts primality for *every* $n\\ge0$. A single $n$ giving a composite value disproves it, no matter how many earlier values are prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We do not need to find all failures — just one $n$ where $n^2+n+41$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Verify the pattern for small n.",
+        "workingLatex": "n=0: 41,\\ \\ n=1: 43,\\ \\ n=2: 47,\\ \\ n=3: 53",
+        "explanation": "These values are all prime, and this run of primes continues for a long time, which is why the polynomial is famous and the claim looks plausible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Look for structure that forces a factor.",
+        "workingLatex": "n^2 + n + 41 \\text{ shares a factor with } 41 \\text{ when } 41 \\mid n^2+n",
+        "explanation": "If the value is a multiple of $41$, it cannot be prime (once it exceeds $41$). This happens when $41$ divides $n^2+n=n(n+1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose n to create the factor 41.",
+        "workingLatex": "n = 40",
+        "explanation": "Taking $n=40$ makes $n+1=41$, so $n(n+1)=40\\times41$ is a multiple of $41$ — a deliberate choice, not random.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the polynomial.",
+        "workingLatex": "40^2 + 40 + 41 = 1600 + 40 + 41 = 1681",
+        "explanation": "Substituting $n=40$ gives $1681$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factorise the result.",
+        "workingLatex": "1681 = 41 \\times 41 = 41^2",
+        "explanation": "The value $1681$ is $41$ squared, so it is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confront the claim.",
+        "workingLatex": "40^2+40+41 = 41^2 \\text{ is not prime}",
+        "explanation": "At $n=40$ the polynomial produces a perfect square, which is certainly not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Explain the inevitability.",
+        "workingLatex": "n = 41 \\text{ also fails: } 41^2 + 41 + 41 = 41 \\times 43",
+        "explanation": "The value $n=41$ fails too, confirming the counterexample is structural, not a fluke.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Reflect on the lesson.",
+        "workingLatex": "\\text{a long run of cases is not a proof}",
+        "explanation": "Even $40$ consecutive successes do not establish a universal claim; only a proof would, and here no proof exists because the claim is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the correct qualified statement.",
+        "workingLatex": "n^2+n+41 \\text{ is prime for } 0 \\le n \\le 39 \\text{ only}",
+        "explanation": "The polynomial is prime for $n=0,\\dots,39$, but the universal claim over all $n\\ge0$ is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the counterexample once more.",
+        "workingLatex": "1681 = 41^2, \\quad 41 \\nmid 1 \\text{ and } 41 \\ne 1681",
+        "explanation": "Since $1681$ has the proper divisor $41$, it is genuinely composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $n=40$, $n^2+n+41 = 1681 = 41^2$ is composite, so the claim is disproved by this single counterexample.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "At $n=40$: $40^2+40+41 = 1681 = 41^2$, which is composite. Hence ``$n^2+n+41$ is prime for every $n\\ge0$'' is false (it is prime only for $0\\le n\\le39$). $\\blacksquare$"
+  }
+}

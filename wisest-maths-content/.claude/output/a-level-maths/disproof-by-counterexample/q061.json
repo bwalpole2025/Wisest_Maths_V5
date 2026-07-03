@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "divisibility"
+  ],
+  "questionText": "Disprove the statement: ``For every integer $n$, if $n$ is divisible by $2$ and by $4$, then $n$ is divisible by $8$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a conditional for all integers.",
+        "workingLatex": "\\forall\\ n:\\ (2 \\mid n \\text{ and } 4 \\mid n) \\Rightarrow 8 \\mid n",
+        "explanation": "The claim asserts divisibility by $8$ follows from divisibility by $2$ and $4$; one $n$ failing this disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need an $n$ divisible by both $2$ and $4$ but not by $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Spot the redundancy.",
+        "workingLatex": "4 \\mid n \\Rightarrow 2 \\mid n",
+        "explanation": "Divisibility by $4$ already implies divisibility by $2$, so the two conditions together only guarantee divisibility by $4$, not $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a multiple of 4 that is not a multiple of 8.",
+        "workingLatex": "n = 4",
+        "explanation": "The number $4$ is divisible by $4$ (and hence by $2$) but is the classic example that is not divisible by $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the hypotheses.",
+        "workingLatex": "2 \\mid 4 \\text{ and } 4 \\mid 4",
+        "explanation": "Both $2$ and $4$ divide $4$, so the hypotheses hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the conclusion.",
+        "workingLatex": "4 = 8(0) + 4, \\text{ so } 8 \\nmid 4",
+        "explanation": "Dividing $4$ by $8$ leaves remainder $4$, so $8$ does not divide $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confront the claim.",
+        "workingLatex": "2 \\mid 4,\\ 4 \\mid 4, \\text{ but } 8 \\nmid 4",
+        "explanation": "The hypotheses hold yet the conclusion fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the correct implication.",
+        "workingLatex": "(2 \\mid n \\text{ and } 4 \\mid n) \\Rightarrow 4 \\mid n",
+        "explanation": "The conditions only force divisibility by $4$; concluding $8\\mid n$ over-reaches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "With $n=4$, the hypotheses hold but $8\\nmid4$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=4$: it is divisible by $2$ and by $4$, but $8 \\nmid 4$. Hence the statement is false. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.quadratics.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "factorising",
+    "difference of two squares"
+  ],
+  "questionText": "Factorise $x^2 - 49$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the difference of two squares.",
+        "workingLatex": "x^2 - 49 = x^2 - 7^2",
+        "explanation": "Since $49 = 7^2$, the expression is a difference of two squares with a standard factorisation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the identity.",
+        "workingLatex": "a^2 - b^2 = (a - b)(a + b)",
+        "explanation": "The difference-of-squares identity factorises the expression with $a = x$ and $b = 7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the identity.",
+        "workingLatex": "x^2 - 49 = (x - 7)(x + 7)",
+        "explanation": "Substituting $a = x$ and $b = 7$ gives the two factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check by expanding.",
+        "workingLatex": "(x-7)(x+7) = x^2 + 7x - 7x - 49 = x^2 - 49 \\ \\checkmark",
+        "explanation": "Expanding returns the original expression, since the middle terms cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the absence of a middle term.",
+        "workingLatex": "+7x - 7x = 0",
+        "explanation": "The cross terms cancel exactly, which is characteristic of a difference of two squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "(x - 7)(x + 7)",
+        "explanation": "The factorised form is $(x-7)(x+7)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 49 = (x-7)(x+7)$"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "nature of roots"
+  ],
+  "questionText": "Use the discriminant to determine the nature of the roots of $2x^2 - 3x + 2 = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the role of the discriminant.",
+        "workingLatex": "\\Delta = b^2 - 4ac",
+        "explanation": "The sign of the discriminant tells us whether the roots are real and distinct, equal, or not real.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the three cases.",
+        "workingLatex": "\\Delta > 0,\\ \\Delta = 0,\\ \\Delta < 0",
+        "explanation": "Positive means two distinct real roots, zero means one repeated root, and negative means no real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 2,\\ b = -3,\\ c = 2",
+        "explanation": "Reading off the coefficients gives the values to substitute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into the formula.",
+        "workingLatex": "\\Delta = (-3)^2 - 4(2)(2)",
+        "explanation": "Putting the coefficients into $b^2 - 4ac$ sets up the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Work out each part.",
+        "workingLatex": "(-3)^2 = 9, \\quad 4(2)(2) = 16",
+        "explanation": "Computing the square and the product separately keeps the arithmetic clear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the discriminant.",
+        "workingLatex": "\\Delta = 9 - 16 = -7",
+        "explanation": "Subtracting gives $\\Delta = -7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare with zero.",
+        "workingLatex": "-7 < 0",
+        "explanation": "The discriminant is negative, which corresponds to the `no real roots' case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpret graphically.",
+        "workingLatex": "\\text{parabola does not meet the } x\\text{-axis}",
+        "explanation": "A negative discriminant means the upward parabola stays above the $x$-axis, so it has no real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{no real roots}",
+        "explanation": "Since $\\Delta = -7 < 0$, the equation $2x^2 - 3x + 2 = 0$ has no real roots.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = (-3)^2 - 4(2)(2) = 9 - 16 = -7 < 0$, so the equation has no real roots."
+  }
+}

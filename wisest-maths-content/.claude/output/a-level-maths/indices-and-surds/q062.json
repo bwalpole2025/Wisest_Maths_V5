@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "fractional indices",
+    "adding indices"
+  ],
+  "questionText": "Simplify $a^{\\frac{2}{3}} \\times a^{\\frac{5}{6}}$, leaving your answer as a single power of $a$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the operation.",
+        "workingLatex": "a^{\\frac{2}{3}} \\times a^{\\frac{5}{6}}",
+        "explanation": "We are multiplying two powers of the same base $a$, so the multiplication law applies even though the indices are fractions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the multiplication law.",
+        "workingLatex": "a^m \\times a^n = a^{m+n}",
+        "explanation": "Multiplying powers of the same base means adding the indices, and fractional indices are added like any other fractions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the sum of indices.",
+        "workingLatex": "\\dfrac{2}{3} + \\dfrac{5}{6}",
+        "explanation": "We must add the two fractional indices to find the combined power.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find a common denominator.",
+        "workingLatex": "\\dfrac{2}{3} = \\dfrac{4}{6}",
+        "explanation": "Rewriting $\\tfrac23$ as $\\tfrac46$ gives both fractions the denominator $6$, ready to add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the fractions.",
+        "workingLatex": "\\dfrac{4}{6} + \\dfrac{5}{6} = \\dfrac{9}{6}",
+        "explanation": "Adding the numerators over the common denominator gives $\\tfrac96$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the index.",
+        "workingLatex": "\\dfrac{9}{6} = \\dfrac{3}{2}",
+        "explanation": "Cancelling a factor of $3$ reduces $\\tfrac96$ to $\\tfrac32$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the single power.",
+        "workingLatex": "a^{\\frac{3}{2}}",
+        "explanation": "Placing the simplified index on the base gives $a^{3/2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the meaning.",
+        "workingLatex": "a^{3/2} = \\sqrt{a^3}",
+        "explanation": "An index of $\\tfrac32$ means the square root of $a$ cubed, a useful way to interpret the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "a^{\\frac{3}{2}}",
+        "explanation": "The simplified expression is $a^{3/2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a^{\\frac{2}{3}} \\times a^{\\frac{5}{6}} = a^{\\frac{4}{6} + \\frac{5}{6}} = a^{\\frac{9}{6}} = a^{\\frac{3}{2}}$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.disproof.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "factorials"
+  ],
+  "questionText": "Disprove the claim that ``$p! + 1$ is prime for every prime number $p$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{primes } p:\\ p! + 1 \\text{ is prime}",
+        "explanation": "The claim asserts primality of $p!+1$ for *every* prime $p$; one prime giving a composite value disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one prime $p$ for which $p!+1$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check p = 2.",
+        "workingLatex": "2! + 1 = 2 + 1 = 3 \\text{ (prime)}",
+        "explanation": "For $p=2$ the value is $3$, which is prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check p = 3.",
+        "workingLatex": "3! + 1 = 6 + 1 = 7 \\text{ (prime)}",
+        "explanation": "For $p=3$ the value is $7$, again prime, so the claim holds for the first two primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Move to p = 5.",
+        "workingLatex": "p = 5",
+        "explanation": "The next prime is $5$; we test $5!+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the factorial.",
+        "workingLatex": "5! = 1 \\times 2 \\times 3 \\times 4 \\times 5 = 120",
+        "explanation": "The factorial $5!$ equals $120$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add 1.",
+        "workingLatex": "5! + 1 = 121",
+        "explanation": "So the value at $p=5$ is $121$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise the result.",
+        "workingLatex": "121 = 11 \\times 11 = 11^2",
+        "explanation": "The value $121$ is $11$ squared, hence composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm it is composite.",
+        "workingLatex": "121 \\text{ has divisor } 11 \\Rightarrow \\text{composite}",
+        "explanation": "With the proper divisor $11$, the number $121$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confront the claim.",
+        "workingLatex": "5! + 1 = 121 \\text{ is not prime}",
+        "explanation": "At the prime $p=5$ the value is composite, contradicting the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Comment on the pattern.",
+        "workingLatex": "\\text{prime for } p=2,3 \\text{ then composite at } p=5",
+        "explanation": "Two successes were not enough to guarantee the rest — the recurring lesson of disproof by counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the earlier cases.",
+        "workingLatex": "3, 7 \\text{ prime}",
+        "explanation": "This confirms $p=5$ is the first failure among primes, so the counterexample is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $p=5$, $p!+1 = 121 = 11^2$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For the prime $p=5$: $p! + 1 = 121 = 11^2$, which is composite. Hence ``$p!+1$ is prime for every prime $p$'' is false. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.disproof.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "factorials"
+  ],
+  "questionText": "Disprove the claim that ``$n! + 1$ is prime for every positive integer $n$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 1:\\ n! + 1 \\text{ is prime}",
+        "explanation": "Here $n! = 1\\times2\\times\\cdots\\times n$. The claim asserts $n!+1$ is prime for *every* $n$; one composite value disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one $n$ for which $n!+1$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check n = 1 and n = 2.",
+        "workingLatex": "1! + 1 = 2,\\quad 2! + 1 = 3 \\text{ (both prime)}",
+        "explanation": "For $n=1,2$ the values $2$ and $3$ are prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check n = 3.",
+        "workingLatex": "3! + 1 = 6 + 1 = 7 \\text{ (prime)}",
+        "explanation": "For $n=3$ the value is $7$, again prime, so the claim holds so far.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Move to n = 4.",
+        "workingLatex": "n = 4",
+        "explanation": "We test $n=4$ to see whether the pattern continues.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the factorial.",
+        "workingLatex": "4! = 1 \\times 2 \\times 3 \\times 4 = 24",
+        "explanation": "The factorial $4!$ equals $24$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add 1.",
+        "workingLatex": "4! + 1 = 25",
+        "explanation": "So the value at $n=4$ is $25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise the result.",
+        "workingLatex": "25 = 5 \\times 5 = 5^2",
+        "explanation": "The number $25$ is $5$ squared, hence composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm it is composite.",
+        "workingLatex": "25 \\text{ has divisor } 5 \\Rightarrow \\text{composite}",
+        "explanation": "Since $25$ has the proper divisor $5$, it is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confront the claim.",
+        "workingLatex": "4! + 1 = 25 \\text{ is not prime}",
+        "explanation": "At $n=4$ the expression is composite, contradicting the universal claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Comment on the pattern.",
+        "workingLatex": "\\text{prime for } n=1,2,3 \\text{ then composite at } n=4",
+        "explanation": "Three successes followed by a failure again warn against trusting a short run of examples.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the earlier cases.",
+        "workingLatex": "2, 3, 7 \\text{ all prime}",
+        "explanation": "This confirms $n=4$ is the first failure, so the counterexample is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $n=4$, $n!+1 = 25 = 5^2$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For $n=4$: $4! + 1 = 25 = 5^2$, which is composite. Hence ``$n!+1$ is prime for every positive integer $n$'' is false. $\\blacksquare$"
+  }
+}

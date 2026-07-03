@@ -1,0 +1,92 @@
+{
+  "id": "al.y1.pure.quadratics.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "disguised quadratic",
+    "substitution"
+  ],
+  "questionText": "Solve the equation $x^4 - 5x^2 + 4 = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Spot the quadratic structure.",
+        "workingLatex": "x^4 = \\left(x^2\\right)^2",
+        "explanation": "Since $x^4 = (x^2)^2$, the equation is a quadratic in $x^2$ rather than in $x$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce a substitution.",
+        "workingLatex": "\\text{let } u = x^2",
+        "explanation": "Replacing $x^2$ by $u$ turns the quartic into a standard quadratic we can factorise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the equation in u.",
+        "workingLatex": "u^2 - 5u + 4 = 0",
+        "explanation": "With $u = x^2$, the equation becomes $u^2 - 5u + 4 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "(u - 1)(u - 4) = 0",
+        "explanation": "We need two numbers multiplying to $4$ and adding to $5$, namely $1$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for u.",
+        "workingLatex": "u = 1 \\ \\text{ or } \\ u = 4",
+        "explanation": "Setting each factor to zero gives the two values of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Return to the substitution.",
+        "workingLatex": "x^2 = 1 \\ \\text{ or } \\ x^2 = 4",
+        "explanation": "Each value of $u$ is really $x^2$, so we now solve two simple equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve x² = 1.",
+        "workingLatex": "x = \\pm 1",
+        "explanation": "Taking square roots gives $x = 1$ and $x = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve x² = 4.",
+        "workingLatex": "x = \\pm 2",
+        "explanation": "Taking square roots gives $x = 2$ and $x = -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "List all solutions.",
+        "workingLatex": "x = \\pm 1, \\ \\pm 2",
+        "explanation": "A quartic can have up to four roots, and here all four are real: $\\pm1$ and $\\pm2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the answer.",
+        "workingLatex": "x = -2, -1, 1, 2",
+        "explanation": "The four solutions are $x = -2, -1, 1, 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Let $u = x^2$: then $u^2 - 5u + 4 = (u-1)(u-4) = 0 \\Rightarrow x^2 = 1 \\text{ or } 4 \\Rightarrow x = \\pm 1, \\pm 2$"
+  }
+}

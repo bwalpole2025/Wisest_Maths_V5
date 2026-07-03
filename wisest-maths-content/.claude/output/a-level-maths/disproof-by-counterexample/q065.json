@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.disproof.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes"
+  ],
+  "questionText": "Disprove the claim that ``$n^2 + 1$ is prime for every even positive integer $n$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{even } n \\ge 2:\\ n^2 + 1 \\text{ is prime}",
+        "explanation": "The claim asserts primality of $n^2+1$ for *every* even $n$; one even $n$ giving a composite value disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one even $n$ for which $n^2+1$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check n = 2.",
+        "workingLatex": "2^2 + 1 = 5 \\text{ (prime)}",
+        "explanation": "For $n=2$ the value is $5$, which is prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check n = 4.",
+        "workingLatex": "4^2 + 1 = 17 \\text{ (prime)}",
+        "explanation": "For $n=4$ the value is $17$, again prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check n = 6.",
+        "workingLatex": "6^2 + 1 = 37 \\text{ (prime)}",
+        "explanation": "For $n=6$ the value is $37$, prime — the first three even values all work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Move to n = 8.",
+        "workingLatex": "n = 8",
+        "explanation": "We test the next even number, $n=8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the expression.",
+        "workingLatex": "8^2 + 1 = 64 + 1 = 65",
+        "explanation": "Substituting $n=8$ gives $65$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise the result.",
+        "workingLatex": "65 = 5 \\times 13",
+        "explanation": "Since $65$ ends in $5$ it is divisible by $5$, giving $65 = 5\\times13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm it is composite.",
+        "workingLatex": "65 \\text{ has divisor } 5 \\Rightarrow \\text{composite}",
+        "explanation": "With the proper divisor $5$, the number $65$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confront the claim.",
+        "workingLatex": "8^2 + 1 = 65 \\text{ is not prime}",
+        "explanation": "At $n=8$ the value is composite, contradicting the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Comment on the pattern.",
+        "workingLatex": "\\text{three primes, then a composite}",
+        "explanation": "The first three even values gave primes, once again showing a short run of successes proves nothing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the earlier cases.",
+        "workingLatex": "5, 17, 37 \\text{ all prime}",
+        "explanation": "This confirms $n=8$ is the first even failure, so the counterexample is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $n=8$, $n^2+1 = 65 = 5\\times13$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For the even number $n=8$: $n^2+1 = 65 = 5 \\times 13$, which is composite. Hence the statement is false. $\\blacksquare$"
+  }
+}

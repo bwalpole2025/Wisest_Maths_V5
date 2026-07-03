@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "index laws",
+    "dividing"
+  ],
+  "questionText": "Simplify $\\dfrac{y^7}{y^2}$, leaving your answer in index form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the operation.",
+        "workingLatex": "\\dfrac{y^7}{y^2}",
+        "explanation": "We are dividing two powers of the same base $y$, which the division law of indices handles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the relevant index law.",
+        "workingLatex": "\\dfrac{y^m}{y^n} = y^{m-n}",
+        "explanation": "Dividing powers of the same base keeps the base and subtracts the indices, since two factors of $y$ cancel from the seven on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract the indices.",
+        "workingLatex": "m - n = 7 - 2 = 5",
+        "explanation": "Subtracting $2$ from $7$ leaves $5$ factors of $y$ after cancellation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the simplified power.",
+        "workingLatex": "\\dfrac{y^7}{y^2} = y^{5}",
+        "explanation": "Placing the difference of indices on the base gives $y^5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check by cancelling.",
+        "workingLatex": "\\dfrac{y \\cdot y \\cdot y \\cdot y \\cdot y \\cdot y \\cdot y}{y \\cdot y} = y^5",
+        "explanation": "Cancelling the two bottom $y$'s against two of the seven on top leaves exactly five, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "y^{5}",
+        "explanation": "The simplified expression in index form is $y^5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{y^7}{y^2} = y^{7-2} = y^{5}$"
+  }
+}

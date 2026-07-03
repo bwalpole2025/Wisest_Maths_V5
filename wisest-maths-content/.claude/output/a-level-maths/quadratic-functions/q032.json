@@ -1,0 +1,70 @@
+{
+  "id": "al.y1.pure.quadratics.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square"
+  ],
+  "questionText": "Express $x^2 - 4x + 9$ in the form $(x + p)^2 + q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Focus on the first two terms.",
+        "workingLatex": "x^2 - 4x",
+        "explanation": "We complete the square on $x^2 - 4x$ first, then adjust the constant afterwards.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Halve the coefficient of x.",
+        "workingLatex": "p = \\dfrac{-4}{2} = -2",
+        "explanation": "The number inside the bracket is half the coefficient of $x$, so $p = -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the square and its correction.",
+        "workingLatex": "x^2 - 4x = (x - 2)^2 - 4",
+        "explanation": "Expanding $(x-2)^2$ gives $x^2 - 4x + 4$, so we subtract $4$ to keep the value unchanged.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Reintroduce the constant.",
+        "workingLatex": "x^2 - 4x + 9 = (x - 2)^2 - 4 + 9",
+        "explanation": "Replacing $x^2 - 4x$ and keeping the original $+9$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the constant.",
+        "workingLatex": "-4 + 9 = 5",
+        "explanation": "Combining the constants gives $+5$, so $q = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the completed square.",
+        "workingLatex": "(x - 2)^2 + 5",
+        "explanation": "The expression in completed-square form is $(x-2)^2 + 5$; since $q = 5 > 0$, the expression is always positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer.",
+        "workingLatex": "(x - 2)^2 + 5",
+        "explanation": "The completed-square form is $(x-2)^2 + 5$, so $p = -2$ and $q = 5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 4x + 9 = (x-2)^2 - 4 + 9 = (x-2)^2 + 5$"
+  }
+}

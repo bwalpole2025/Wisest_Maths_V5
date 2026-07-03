@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "fractional indices",
+    "evaluating"
+  ],
+  "questionText": "Evaluate $125^{\\frac{2}{3}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the base as a cube.",
+        "workingLatex": "125 = 5^3",
+        "explanation": "Spotting that $125$ is $5^3$ makes the cube root immediate and avoids awkward arithmetic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Interpret the fractional index.",
+        "workingLatex": "125^{\\frac{2}{3}} = \\left(125^{\\frac{1}{3}}\\right)^{2}",
+        "explanation": "The denominator $3$ means a cube root and the numerator $2$ means square it; doing the root first keeps numbers small.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Take the cube root.",
+        "workingLatex": "125^{\\frac{1}{3}} = 5",
+        "explanation": "Since $5^3 = 125$, the cube root of $125$ is $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the remaining power.",
+        "workingLatex": "\\left(125^{\\frac{1}{3}}\\right)^{2} = 5^{2}",
+        "explanation": "The numerator $2$ tells us to square the cube root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the square.",
+        "workingLatex": "5^2 = 25",
+        "explanation": "Squaring the cube root $5$ gives $5^2 = 25$, the value of the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the intermediate result.",
+        "workingLatex": "125^{\\frac{2}{3}} = 25",
+        "explanation": "Combining the steps gives $125^{2/3} = 25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Sense-check.",
+        "workingLatex": "25^3 = 15625 = 125^2 \\ \\checkmark",
+        "explanation": "Cubing $25$ gives $125^2$, confirming that $25$ is indeed $125^{2/3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "125^{0.667} \\approx 25",
+        "explanation": "Evaluating the original power on a calculator gives about $25$, matching the exact answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "25",
+        "explanation": "The value of $125^{2/3}$ is $25$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$125^{\\frac{2}{3}} = \\left(125^{1/3}\\right)^{2} = 5^2 = 25$"
+  }
+}

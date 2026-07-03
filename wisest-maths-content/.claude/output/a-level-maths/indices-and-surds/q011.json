@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "expanding brackets",
+    "difference of two squares"
+  ],
+  "questionText": "Expand and simplify $\\left(2 + \\sqrt{3}\\right)\\left(2 - \\sqrt{3}\\right)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the structure.",
+        "workingLatex": "(a+b)(a-b) \\text{ with } a = 2,\\ b = \\sqrt{3}",
+        "explanation": "The two brackets are a `difference of two squares' pattern, so the cross terms will cancel and no surd should remain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the difference-of-squares identity.",
+        "workingLatex": "(a+b)(a-b) = a^2 - b^2",
+        "explanation": "Using this identity is quicker than expanding all four terms, and it explains why the surd disappears.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the values.",
+        "workingLatex": "= 2^2 - \\left(\\sqrt{3}\\right)^2",
+        "explanation": "Here $a=2$ and $b=\\sqrt3$, so we square each.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Square the first term.",
+        "workingLatex": "2^2 = 4",
+        "explanation": "Squaring the first term $a=2$ gives $4$, the rational part before subtraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Square the surd.",
+        "workingLatex": "\\left(\\sqrt{3}\\right)^2 = 3",
+        "explanation": "Squaring a square root undoes the root, so $(\\sqrt3)^2 = 3$ — this is why the answer is rational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract.",
+        "workingLatex": "4 - 3 = 1",
+        "explanation": "Taking $3$ from $4$ leaves the value $1$ after the two squares are combined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note why the answer is rational.",
+        "workingLatex": "\\text{cross terms } +2\\sqrt3 \\text{ and } -2\\sqrt3 \\text{ cancel}",
+        "explanation": "Because the two brackets are conjugates, the surd cross terms cancel during expansion, leaving a purely rational result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "(2+1.732)(2-1.732) \\approx 3.732 \\times 0.268 \\approx 1",
+        "explanation": "Multiplying the decimal approximations of the two brackets gives about $1$, confirming the exact answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "1",
+        "explanation": "The expression simplifies to the rational number $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(2+\\sqrt{3}\\right)\\left(2-\\sqrt{3}\\right) = 2^2 - \\left(\\sqrt{3}\\right)^2 = 4 - 3 = 1$"
+  }
+}

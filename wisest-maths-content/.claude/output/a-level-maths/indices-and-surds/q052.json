@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "subtracting surds",
+    "like surds"
+  ],
+  "questionText": "Simplify $5\\sqrt{2} - 2\\sqrt{2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise like surds.",
+        "workingLatex": "5\\sqrt{2} \\text{ and } 2\\sqrt{2} \\text{ share } \\sqrt{2}",
+        "explanation": "Both terms are multiples of the same surd $\\sqrt2$, so they are `like' surds that can be combined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Treat like surds as like terms.",
+        "workingLatex": "5\\sqrt{2} - 2\\sqrt{2} = (5 - 2)\\sqrt{2}",
+        "explanation": "Just as $5x - 2x = 3x$, we subtract the coefficients while keeping the common $\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract the coefficients.",
+        "workingLatex": "5 - 2 = 3",
+        "explanation": "Subtracting $2$ from $5$ leaves $3$ copies of $\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the combined surd.",
+        "workingLatex": "3\\sqrt{2}",
+        "explanation": "Attaching the coefficient $3$ to $\\sqrt2$ gives the simplified surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm it is fully simplified.",
+        "workingLatex": "2 \\text{ is prime}",
+        "explanation": "Since $2$ has no square factor, $\\sqrt2$ cannot be reduced, so the answer is complete.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "3\\sqrt{2}",
+        "explanation": "The simplified expression is $3\\sqrt2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$5\\sqrt{2} - 2\\sqrt{2} = (5-2)\\sqrt{2} = 3\\sqrt{2}$"
+  }
+}

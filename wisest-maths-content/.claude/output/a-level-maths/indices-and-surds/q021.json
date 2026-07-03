@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "index laws",
+    "power of a product"
+  ],
+  "questionText": "Simplify $\\left(2x^3\\right)^4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the structure.",
+        "workingLatex": "\\left(2x^3\\right)^4",
+        "explanation": "We are raising a product ($2$ times $x^3$) to a power, so the outer index applies to each factor inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the power-of-a-product law.",
+        "workingLatex": "(ab)^n = a^n b^n",
+        "explanation": "Every factor inside the bracket is raised to the outer power, because the whole product is used as a factor four times.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Raise the coefficient to the power.",
+        "workingLatex": "2^4 = 16",
+        "explanation": "The number $2$ is raised to the fourth power, giving $16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Raise the variable power.",
+        "workingLatex": "\\left(x^3\\right)^4 = x^{12}",
+        "explanation": "Using the power-of-a-power law, the indices multiply: $3\\times4 = 12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the two parts.",
+        "workingLatex": "\\left(2x^3\\right)^4 = 16x^{12}",
+        "explanation": "Multiplying the results gives the fully simplified expression $16x^{12}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "16x^{12}",
+        "explanation": "The simplified form is $16x^{12}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(2x^3\\right)^4 = 2^4 \\left(x^3\\right)^4 = 16x^{12}$"
+  }
+}

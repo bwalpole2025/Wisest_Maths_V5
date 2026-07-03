@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "expanding brackets",
+    "cubing"
+  ],
+  "questionText": "Expand and simplify $\\left(1 + \\sqrt{3}\\right)^{3}$, giving your answer in the form $a + b\\sqrt{3}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the cube as a square times the bracket.",
+        "workingLatex": "\\left(1+\\sqrt{3}\\right)^{3} = \\left(1+\\sqrt{3}\\right)^{2}\\left(1+\\sqrt{3}\\right)",
+        "explanation": "Cubing is easier in two stages: first square the bracket, then multiply by one more copy of it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the square.",
+        "workingLatex": "\\left(1+\\sqrt{3}\\right)^{2} = 1 + 2\\sqrt{3} + 3 = 4 + 2\\sqrt{3}",
+        "explanation": "Using $(a+b)^2 = a^2 + 2ab + b^2$ with $a=1,\\ b=\\sqrt3$ gives $4 + 2\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the remaining product.",
+        "workingLatex": "\\left(4 + 2\\sqrt{3}\\right)\\left(1 + \\sqrt{3}\\right)",
+        "explanation": "We now multiply the squared result by the final bracket to complete the cube.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply the first terms.",
+        "workingLatex": "4 \\times 1 = 4",
+        "explanation": "The product of the first terms is $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply the outer terms.",
+        "workingLatex": "4 \\times \\sqrt{3} = 4\\sqrt{3}",
+        "explanation": "Multiplying $4$ by $\\sqrt3$ gives $4\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Multiply the inner terms.",
+        "workingLatex": "2\\sqrt{3} \\times 1 = 2\\sqrt{3}",
+        "explanation": "Multiplying $2\\sqrt3$ by $1$ gives $2\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Multiply the last terms.",
+        "workingLatex": "2\\sqrt{3} \\times \\sqrt{3} = 2 \\times 3 = 6",
+        "explanation": "Multiplying $2\\sqrt3$ by $\\sqrt3$ gives $2(\\sqrt3)^2 = 6$, a rational term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Collect the rational terms.",
+        "workingLatex": "4 + 6 = 10",
+        "explanation": "The whole-number parts $4$ and $6$ add to $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Collect the surd terms.",
+        "workingLatex": "4\\sqrt{3} + 2\\sqrt{3} = 6\\sqrt{3}",
+        "explanation": "The surd parts $4\\sqrt3$ and $2\\sqrt3$ combine to $6\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write in the required form.",
+        "workingLatex": "10 + 6\\sqrt{3}",
+        "explanation": "Combining gives $10 + 6\\sqrt3$, matching the form $a + b\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Identify a and b.",
+        "workingLatex": "a = 10, \\quad b = 6",
+        "explanation": "Comparing with $a + b\\sqrt3$ gives the integers $a = 10$ and $b = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify numerically.",
+        "workingLatex": "(1 + 1.732)^3 \\approx 20.39,\\quad 10 + 6(1.732) \\approx 20.39",
+        "explanation": "Both the original expression and $10 + 6\\sqrt3$ evaluate to about $20.39$, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "10 + 6\\sqrt{3}",
+        "explanation": "The expanded, simplified expression is $10 + 6\\sqrt3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(1+\\sqrt{3}\\right)^{3} = \\left(4 + 2\\sqrt{3}\\right)\\left(1+\\sqrt{3}\\right) = 10 + 6\\sqrt{3}$"
+  }
+}

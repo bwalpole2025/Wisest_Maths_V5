@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities",
+    "reciprocals"
+  ],
+  "questionText": "Disprove the statement: ``For every positive real number $x$, $\\dfrac{1}{x} < x$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ x > 0:\\ \\tfrac{1}{x} < x",
+        "explanation": "The claim asserts the reciprocal is always smaller for positive $x$; one $x$ where $\\tfrac1x\\ge x$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single positive $x$ for which $\\tfrac1x<x$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "See where reciprocals are large.",
+        "workingLatex": "0 < x < 1 \\Rightarrow \\tfrac{1}{x} > 1 > x",
+        "explanation": "For $x$ between $0$ and $1$, the reciprocal exceeds $1$ and hence exceeds $x$, reversing the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a value below 1.",
+        "workingLatex": "x = \\tfrac{1}{2}",
+        "explanation": "We test $x=\\tfrac12$, a positive number less than $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the reciprocal.",
+        "workingLatex": "\\tfrac{1}{x} = \\tfrac{1}{1/2} = 2",
+        "explanation": "The reciprocal of $\\tfrac12$ is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare with x.",
+        "workingLatex": "2 < \\tfrac{1}{2} \\text{ is false}",
+        "explanation": "Since $2 > \\tfrac12$, the claim $\\tfrac1x<x$ fails at $x=\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $x=\\tfrac12$, $\\tfrac1x = 2 > \\tfrac12 = x$, so the claim is disproved. (It holds only for $x>1$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $x=\\tfrac12$: then $\\tfrac1x = 2$, which is greater than $\\tfrac12$. So $\\tfrac1x < x$ fails, and the statement is false. $\\blacksquare$"
+  }
+}

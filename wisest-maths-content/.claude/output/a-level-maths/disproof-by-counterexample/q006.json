@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.disproof.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes"
+  ],
+  "questionText": "Disprove the statement: ``Every number of the form $4n + 1$, where $n$ is a positive integer, is prime.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 1:\\ 4n+1 \\text{ is prime}",
+        "explanation": "The statement claims every such number is prime; one composite value of $4n+1$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We only need a single $n$ for which $4n+1$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the first case.",
+        "workingLatex": "n=1: 4(1)+1 = 5 \\text{ (prime)}",
+        "explanation": "For $n=1$ the value is $5$, which is prime — consistent with the claim so far.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Move to the next case.",
+        "workingLatex": "n = 2: 4(2)+1 = 9",
+        "explanation": "For $n=2$ the value is $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise it.",
+        "workingLatex": "9 = 3 \\times 3",
+        "explanation": "Since $9=3\\times3$, it is composite, not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confront the claim.",
+        "workingLatex": "4(2)+1 = 9 \\text{ is not prime}",
+        "explanation": "So the value at $n=2$ has the form $4n+1$ but is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Because $9=4(2)+1$ is composite, the claim `every number of the form $4n+1$ is prime' is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For $n=2$, $4n+1 = 9 = 3 \\times 3$ is not prime. Hence the statement is false. $\\blacksquare$"
+  }
+}

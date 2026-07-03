@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "negative fractional indices",
+    "evaluating"
+  ],
+  "questionText": "Evaluate $16^{-\\frac{3}{4}}$, giving your answer as an exact fraction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Deal with the negative sign first.",
+        "workingLatex": "16^{-\\frac{3}{4}} = \\dfrac{1}{16^{\\frac{3}{4}}}",
+        "explanation": "A negative index means take the reciprocal, so we move the positive power $16^{3/4}$ into the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Interpret the fractional index.",
+        "workingLatex": "16^{\\frac{3}{4}} = \\left(16^{\\frac{1}{4}}\\right)^{3}",
+        "explanation": "The denominator $4$ is a fourth root and the numerator $3$ is a cube; doing the root first keeps the numbers small.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Take the fourth root of 16.",
+        "workingLatex": "16^{\\frac{1}{4}} = 2",
+        "explanation": "Since $2^4 = 16$, the fourth root of $16$ is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the remaining power.",
+        "workingLatex": "\\left(16^{\\frac{1}{4}}\\right)^{3} = 2^{3}",
+        "explanation": "The numerator $3$ tells us to cube the fourth root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the cube.",
+        "workingLatex": "2^3 = 8",
+        "explanation": "Cubing $2$ gives $8$, so $16^{3/4} = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute back into the reciprocal.",
+        "workingLatex": "16^{-\\frac{3}{4}} = \\dfrac{1}{8}",
+        "explanation": "Putting $16^{3/4}=8$ into the denominator gives $\\tfrac18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the sign is handled.",
+        "workingLatex": "\\text{negative index} \\Rightarrow \\text{a fraction} < 1",
+        "explanation": "The answer is a proper fraction, which is expected because a negative index makes a number bigger than $1$ shrink.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "16^{-0.75} = 0.125 = \\tfrac{1}{8}",
+        "explanation": "Evaluating the original power on a calculator gives $0.125$, which is exactly $\\tfrac18$, confirming the working.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{1}{8}",
+        "explanation": "The exact value of $16^{-3/4}$ is $\\tfrac18$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$16^{-\\frac{3}{4}} = \\dfrac{1}{16^{\\frac{3}{4}}} = \\dfrac{1}{\\left(16^{1/4}\\right)^{3}} = \\dfrac{1}{2^{3}} = \\dfrac{1}{8}$"
+  }
+}

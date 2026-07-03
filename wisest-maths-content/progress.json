@@ -1,19 +1,22 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Proof by deduction and exhaustion",
-  "currentSubtopicId": "al.y1.pure.proof-deduction",
+  "currentSubtopic": "Quadratic functions",
+  "currentSubtopicId": "al.y1.pure.quadratics",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
     "al.y1.pure.argument-notation",
-    "al.y1.pure.proof-deduction"
+    "al.y1.pure.proof-deduction",
+    "al.y1.pure.disproof",
+    "al.y1.pure.indices-surds",
+    "al.y1.pure.quadratics"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 2,
-      "totalQuestionsGenerated": 140
+      "completedSubtopics": 5,
+      "totalQuestionsGenerated": 350
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

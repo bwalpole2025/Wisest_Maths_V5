@@ -1,0 +1,121 @@
+{
+  "id": "al.y1.pure.disproof.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "Fermat numbers"
+  ],
+  "questionText": "Fermat conjectured that every number of the form $F_k = 2^{2^k} + 1$ is prime. Disprove the claim that ``$2^{2^k} + 1$ is prime for every integer $k \\ge 0$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ k \\ge 0:\\ F_k = 2^{2^k} + 1 \\text{ is prime}",
+        "explanation": "These are the Fermat numbers. The claim asserts they are *all* prime; one composite $F_k$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one $k$ for which $F_k$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the first few Fermat numbers.",
+        "workingLatex": "F_0=3,\\ F_1=5,\\ F_2=17,\\ F_3=257",
+        "explanation": "For $k=0,1,2,3$ the values $3,5,17,257$ are all prime, which is why Fermat believed the pattern continued.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the next one.",
+        "workingLatex": "F_4 = 2^{16} + 1 = 65537 \\text{ (prime)}",
+        "explanation": "Even $F_4 = 65537$ is prime, so the first five Fermat numbers are all prime — a persuasive run.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Move to the next case.",
+        "workingLatex": "k = 5",
+        "explanation": "We test $F_5$, the case where Euler famously found the pattern to break.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write down the exponent.",
+        "workingLatex": "2^5 = 32",
+        "explanation": "For $k=5$ the exponent is $2^5 = 32$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the Fermat number.",
+        "workingLatex": "F_5 = 2^{32} + 1 = 4294967297",
+        "explanation": "Computing gives $F_5 = 4294967297$, a ten-digit number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the known factor.",
+        "workingLatex": "641 \\mid 4294967297",
+        "explanation": "Euler discovered that $641$ divides $F_5$; this is the crucial factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Exhibit the factorisation.",
+        "workingLatex": "4294967297 = 641 \\times 6700417",
+        "explanation": "Dividing gives $F_5 = 641 \\times 6700417$, with both factors greater than $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm it is composite.",
+        "workingLatex": "F_5 \\text{ has divisor } 641 \\Rightarrow \\text{composite}",
+        "explanation": "Since $641$ is a proper divisor, $F_5$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confront the claim.",
+        "workingLatex": "k = 5:\\ F_5 = 641 \\times 6700417 \\text{ is composite}",
+        "explanation": "So $F_5$ is a Fermat number that is not prime, contradicting the conjecture.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Reflect on the historical lesson.",
+        "workingLatex": "\\text{5 primes then a composite}",
+        "explanation": "Fermat's five successes were not a proof; Euler's single counterexample overturned the conjecture — a landmark example of disproof by counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify the small cases were prime.",
+        "workingLatex": "3, 5, 17, 257, 65537 \\text{ all prime}",
+        "explanation": "This confirms $k=5$ is the first failure, so the counterexample is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $k=5$, $F_5 = 2^{32}+1 = 641 \\times 6700417$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For $k=5$: $F_5 = 2^{32}+1 = 4294967297 = 641 \\times 6700417$, which is composite (Euler, 1732). Hence ``$2^{2^k}+1$ is prime for every $k\\ge0$'' is false. $\\blacksquare$"
+  }
+}

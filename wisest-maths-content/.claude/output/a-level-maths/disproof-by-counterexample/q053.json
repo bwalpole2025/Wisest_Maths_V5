@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities",
+    "cubes"
+  ],
+  "questionText": "Disprove the statement: ``For every integer $n$, $n^3 > n$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\in \\mathbb{Z}:\\ n^3 > n",
+        "explanation": "The claim covers *all* integers, including negatives; one integer where $n^3 \\le n$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single integer for which $n^3>n$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Notice positive integers past 1 obey it.",
+        "workingLatex": "n = 2: 8 > 2",
+        "explanation": "For $n\\ge2$ the cube exceeds the number, so the flaw must lie among small or negative integers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a negative value.",
+        "workingLatex": "n = -2",
+        "explanation": "We test $n=-2$, where cubing produces a more negative result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the cube.",
+        "workingLatex": "(-2)^3 = -8",
+        "explanation": "The cube of $-2$ is $-8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare with n.",
+        "workingLatex": "-8 > -2 \\text{ is false}",
+        "explanation": "Since $-8 < -2$, the inequality $n^3>n$ fails at $n=-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $n=-2$, $n^3 = -8 < -2 = n$, so the claim is disproved by this counterexample.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=-2$: then $n^3 = -8$, which is less than $-2 = n$. Hence the statement is false. $\\blacksquare$"
+  }
+}

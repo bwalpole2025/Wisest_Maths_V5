@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds",
+    "dividing"
+  ],
+  "questionText": "Simplify $\\dfrac{\\sqrt{12} + \\sqrt{3}}{\\sqrt{3}}$, giving your answer as an integer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Simplify the first surd in the numerator.",
+        "workingLatex": "\\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}",
+        "explanation": "Taking out the square factor $4$ turns $\\sqrt{12}$ into $2\\sqrt3$, so the numerator becomes a multiple of $\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the numerator.",
+        "workingLatex": "2\\sqrt{3} + \\sqrt{3} = 3\\sqrt{3}",
+        "explanation": "The two terms are like surds, so adding the coefficients gives $3\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the whole fraction.",
+        "workingLatex": "\\dfrac{\\sqrt{12} + \\sqrt{3}}{\\sqrt{3}} = \\dfrac{3\\sqrt{3}}{\\sqrt{3}}",
+        "explanation": "Replacing the numerator with its simplified form gives a much cleaner fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel the common surd.",
+        "workingLatex": "\\dfrac{3\\sqrt{3}}{\\sqrt{3}} = 3 \\times \\dfrac{\\sqrt{3}}{\\sqrt{3}}",
+        "explanation": "The $\\sqrt3$ on top and bottom are identical, so they divide to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the surd ratio.",
+        "workingLatex": "\\dfrac{\\sqrt{3}}{\\sqrt{3}} = 1",
+        "explanation": "Any non-zero quantity divided by itself is $1$, clearing the surd entirely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the result.",
+        "workingLatex": "3 \\times 1 = 3",
+        "explanation": "Multiplying $3$ by $1$ leaves the integer $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Alternative check.",
+        "workingLatex": "\\dfrac{\\sqrt{12}}{\\sqrt{3}} + \\dfrac{\\sqrt{3}}{\\sqrt{3}} = \\sqrt{4} + 1 = 2 + 1 = 3",
+        "explanation": "Splitting the fraction and using $\\tfrac{\\sqrt{12}}{\\sqrt3} = \\sqrt{4} = 2$ gives the same answer by a second route.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{3.46 + 1.73}{1.73} \\approx 3",
+        "explanation": "Approximate decimals give about $3$, a useful sanity check on the exact answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "3",
+        "explanation": "The simplified value of the expression is the integer $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sqrt{12} + \\sqrt{3}}{\\sqrt{3}} = \\dfrac{2\\sqrt{3} + \\sqrt{3}}{\\sqrt{3}} = \\dfrac{3\\sqrt{3}}{\\sqrt{3}} = 3$"
+  }
+}

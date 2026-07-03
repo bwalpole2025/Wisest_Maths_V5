@@ -1,0 +1,87 @@
+{
+  "id": "al.y1.pure.disproof.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "geometry",
+    "congruence",
+    "area"
+  ],
+  "questionText": "Disprove the statement: ``If two triangles have the same area, then they are congruent.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a conditional for all triangles.",
+        "workingLatex": "\\forall\\ \\triangle_1, \\triangle_2:\\ \\text{equal area} \\Rightarrow \\text{congruent}",
+        "explanation": "The claim asserts equal area forces congruence; two equal-area triangles that are not congruent disprove it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair of triangles with equal area but different shapes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the area formula.",
+        "workingLatex": "\\text{area} = \\tfrac{1}{2} \\times \\text{base} \\times \\text{height}",
+        "explanation": "Area depends only on the product of base and height, so different base/height pairs can give the same area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose the first triangle.",
+        "workingLatex": "\\text{base } 4,\\ \\text{height } 3 \\Rightarrow \\text{area} = 6",
+        "explanation": "A triangle with base $4$ and height $3$ has area $\\tfrac12\\times4\\times3 = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose the second triangle.",
+        "workingLatex": "\\text{base } 6,\\ \\text{height } 2 \\Rightarrow \\text{area} = 6",
+        "explanation": "A triangle with base $6$ and height $2$ also has area $\\tfrac12\\times6\\times2 = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm the areas match.",
+        "workingLatex": "6 = 6",
+        "explanation": "Both triangles have area $6$, satisfying the hypothesis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Show they are not congruent.",
+        "workingLatex": "(4,3) \\neq (6,2)",
+        "explanation": "Their base and height differ, so the triangles have different dimensions and cannot be congruent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain the intuition.",
+        "workingLatex": "\\text{same product, different factors}",
+        "explanation": "Equal area only fixes the product base$\\times$height; the individual measurements — and hence the shapes — can still differ.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Two triangles with bases/heights $(4,3)$ and $(6,2)$ both have area $6$ but are not congruent, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "A triangle with base $4$, height $3$ and one with base $6$, height $2$ both have area $6$, yet they are not congruent. Hence the statement is false. $\\blacksquare$"
+  }
+}

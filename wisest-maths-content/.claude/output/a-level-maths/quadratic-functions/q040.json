@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.quadratics.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "solving",
+    "factorising",
+    "leading coefficient"
+  ],
+  "questionText": "Solve the equation $2x^2 - 5x - 3 = 0$ by factorising.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 2,\\ b = -5,\\ c = -3",
+        "explanation": "With leading coefficient $2$, we look for two numbers multiplying to $ac = -6$ and adding to $b = -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the two key numbers.",
+        "workingLatex": "(-6) \\times 1 = -6, \\quad (-6) + 1 = -5",
+        "explanation": "The numbers $-6$ and $1$ multiply to $ac = -6$ and add to $-5$, so they split the middle term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Split the middle term.",
+        "workingLatex": "2x^2 - 6x + x - 3",
+        "explanation": "Rewriting $-5x$ as $-6x + x$ prepares the expression for factorising by grouping.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise in pairs.",
+        "workingLatex": "2x(x - 3) + 1(x - 3)",
+        "explanation": "Grouping the first two and last two terms reveals the common bracket $(x - 3)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Extract the common bracket.",
+        "workingLatex": "(x - 3)(2x + 1) = 0",
+        "explanation": "Factoring out $(x - 3)$ gives the fully factorised equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the zero-product rule.",
+        "workingLatex": "x - 3 = 0 \\ \\text{ or } \\ 2x + 1 = 0",
+        "explanation": "Setting each bracket to zero gives two linear equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve each equation.",
+        "workingLatex": "x = 3 \\ \\text{ or } \\ x = -\\dfrac{1}{2}",
+        "explanation": "Solving the two equations gives the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a solution.",
+        "workingLatex": "2(9) - 5(3) - 3 = 18 - 15 - 3 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ gives $0$, confirming it is a genuine root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solutions.",
+        "workingLatex": "x = 3, \\ x = -\\dfrac{1}{2}",
+        "explanation": "The solutions are $x = 3$ and $x = -\\tfrac12$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x^2 - 5x - 3 = (x-3)(2x+1) = 0 \\Rightarrow x = 3 \\text{ or } x = -\\tfrac{1}{2}$"
+  }
+}

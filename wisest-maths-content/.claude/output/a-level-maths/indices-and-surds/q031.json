@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "negative fractional indices",
+    "evaluating"
+  ],
+  "questionText": "Evaluate $32^{-\\frac{2}{5}}$, giving your answer as an exact fraction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Deal with the negative sign first.",
+        "workingLatex": "32^{-\\frac{2}{5}} = \\dfrac{1}{32^{\\frac{2}{5}}}",
+        "explanation": "A negative index means take the reciprocal, so the positive power $32^{2/5}$ moves into the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recognise the base as a fifth power.",
+        "workingLatex": "32 = 2^5",
+        "explanation": "Spotting $32 = 2^5$ makes the fifth root clean and easy to evaluate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Interpret the fractional index.",
+        "workingLatex": "32^{\\frac{2}{5}} = \\left(32^{\\frac{1}{5}}\\right)^{2}",
+        "explanation": "The denominator $5$ is a fifth root and the numerator $2$ is a square; the root first keeps numbers small.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Take the fifth root.",
+        "workingLatex": "32^{\\frac{1}{5}} = 2",
+        "explanation": "Since $2^5 = 32$, the fifth root of $32$ is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the remaining power.",
+        "workingLatex": "\\left(32^{\\frac{1}{5}}\\right)^{2} = 2^2 = 4",
+        "explanation": "Squaring the fifth root gives $2^2 = 4$, so $32^{2/5} = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute into the reciprocal.",
+        "workingLatex": "32^{-\\frac{2}{5}} = \\dfrac{1}{4}",
+        "explanation": "Putting $32^{2/5} = 4$ into the denominator gives $\\tfrac14$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Sense-check the sign.",
+        "workingLatex": "\\text{negative index} \\Rightarrow \\text{fraction} < 1",
+        "explanation": "The negative index makes the value a proper fraction, and $\\tfrac14 < 1$ agrees.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "32^{-0.4} \\approx 0.25 = \\tfrac{1}{4}",
+        "explanation": "Evaluating the original power gives about $0.25$, confirming the exact answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{1}{4}",
+        "explanation": "The exact value of $32^{-2/5}$ is $\\tfrac14$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$32^{-\\frac{2}{5}} = \\dfrac{1}{32^{2/5}} = \\dfrac{1}{\\left(2^5\\right)^{2/5}} = \\dfrac{1}{2^2} = \\dfrac{1}{4}$"
+  }
+}

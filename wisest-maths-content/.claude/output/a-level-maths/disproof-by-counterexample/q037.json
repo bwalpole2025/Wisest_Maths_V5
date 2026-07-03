@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "number theory",
+    "gcd"
+  ],
+  "questionText": "Disprove the statement: ``For all positive integers $a$, $b$ and $c$, if $\\gcd(a,b) = 1$ and $\\gcd(b,c) = 1$ then $\\gcd(a,c) = 1$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ a,b,c:\\ \\gcd(a,b){=}1,\\ \\gcd(b,c){=}1 \\Rightarrow \\gcd(a,c){=}1",
+        "explanation": "The claim asserts that coprimality is `transitive' through $b$; one triple breaking this disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need $a,b,c$ satisfying both hypotheses but with $a,c$ sharing a factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "See why it can fail.",
+        "workingLatex": "a \\text{ and } c \\text{ may share a factor that } b \\text{ avoids}",
+        "explanation": "Coprimality with $b$ says nothing about how $a$ and $c$ relate to each other, so let $a,c$ share a factor that $b$ lacks.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a shared factor for a and c.",
+        "workingLatex": "a = 2, \\quad c = 2",
+        "explanation": "Let $a$ and $c$ both be $2$ so they share the factor $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose b coprime to both.",
+        "workingLatex": "b = 3",
+        "explanation": "Pick $b=3$, which shares no factor with $2$, so both hypotheses can hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the first hypothesis.",
+        "workingLatex": "\\gcd(2,3) = 1",
+        "explanation": "$2$ and $3$ are coprime, so $\\gcd(a,b)=1$ holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the second hypothesis.",
+        "workingLatex": "\\gcd(3,2) = 1",
+        "explanation": "$3$ and $2$ are coprime, so $\\gcd(b,c)=1$ holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the conclusion.",
+        "workingLatex": "\\gcd(2,2) = 2 \\neq 1",
+        "explanation": "But $\\gcd(a,c)=\\gcd(2,2)=2$, so $a$ and $c$ are not coprime — the conclusion fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "With $a=2,\\ b=3,\\ c=2$ both hypotheses hold but $\\gcd(a,c)=2$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=2,\\ b=3,\\ c=2$: then $\\gcd(a,b)=\\gcd(b,c)=1$, but $\\gcd(a,c)=\\gcd(2,2)=2\\neq1$. Hence the statement is false. $\\blacksquare$"
+  }
+}

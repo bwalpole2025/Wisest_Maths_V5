@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "irrational numbers"
+  ],
+  "questionText": "Disprove the statement: ``The product of two irrational numbers is always irrational.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{irrational } x, y:\\ xy \\text{ is irrational}",
+        "explanation": "The claim is about *every* pair of irrationals; one pair whose product is rational disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair of irrational numbers whose product is rational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall a standard irrational number.",
+        "workingLatex": "\\sqrt{2} \\text{ is irrational}",
+        "explanation": "It is a well-known fact that $\\sqrt2$ cannot be written as a fraction, so it is irrational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply it by itself.",
+        "workingLatex": "x = \\sqrt{2}, \\quad y = \\sqrt{2}",
+        "explanation": "We choose both numbers to be $\\sqrt2$; each is irrational, satisfying the hypothesis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute the product.",
+        "workingLatex": "\\sqrt{2} \\times \\sqrt{2} = 2",
+        "explanation": "By the definition of a square root, $\\sqrt2\\times\\sqrt2 = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Classify the product.",
+        "workingLatex": "2 \\in \\mathbb{Q} \\text{ (rational)}",
+        "explanation": "The result $2$ is an integer, hence rational, not irrational.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confront the claim.",
+        "workingLatex": "\\text{irrational} \\times \\text{irrational} = \\text{rational}",
+        "explanation": "So the product of two irrational numbers came out rational, contradicting the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Acknowledge the general behaviour.",
+        "workingLatex": "\\text{the product is only \\emph{sometimes} irrational}",
+        "explanation": "The example shows the product *can* be rational, so the word `always' is wrong.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "With $x=y=\\sqrt2$, both irrational, the product is $2$, which is rational, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $x=y=\\sqrt2$, both irrational. Then $xy = \\sqrt2 \\times \\sqrt2 = 2$, which is rational. Hence the statement is false. $\\blacksquare$"
+  }
+}

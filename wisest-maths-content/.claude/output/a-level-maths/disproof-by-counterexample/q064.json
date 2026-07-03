@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.disproof.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "prime-generating polynomial"
+  ],
+  "questionText": "Disprove the claim that ``$n^2 + n + 17$ is prime for every integer $n \\ge 0$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 0:\\ n^2 + n + 17 \\text{ is prime}",
+        "explanation": "The claim asserts primality for *every* $n\\ge0$; one composite value disproves it, however long the initial run of primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one $n$ making $n^2+n+17$ composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Verify the early pattern.",
+        "workingLatex": "n=0: 17,\\ n=1: 19,\\ n=2: 23,\\ n=3: 29",
+        "explanation": "These values are all prime, and the run continues for a while, which is why the polynomial is a well-known prime generator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Look for structure forcing a factor of 17.",
+        "workingLatex": "17 \\mid n^2 + n + 17 \\iff 17 \\mid n(n+1)",
+        "explanation": "The value is a multiple of $17$ exactly when $17$ divides $n^2+n = n(n+1)$, and then it cannot be prime once it exceeds $17$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose n to create the factor.",
+        "workingLatex": "n = 16 \\Rightarrow n + 1 = 17",
+        "explanation": "Taking $n=16$ makes $n+1 = 17$, so $n(n+1)$ is a multiple of $17$ — a deliberate, structural choice.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the polynomial.",
+        "workingLatex": "16^2 + 16 + 17 = 256 + 16 + 17 = 289",
+        "explanation": "Substituting $n=16$ gives $289$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factorise the result.",
+        "workingLatex": "289 = 17 \\times 17 = 17^2",
+        "explanation": "The value $289$ is $17$ squared, hence composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm it is composite.",
+        "workingLatex": "289 \\text{ has divisor } 17 \\Rightarrow \\text{composite}",
+        "explanation": "With the proper divisor $17$, the number $289$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confront the claim.",
+        "workingLatex": "16^2 + 16 + 17 = 17^2 \\text{ is not prime}",
+        "explanation": "At $n=16$ the polynomial produces a perfect square, contradicting the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Explain why this was inevitable.",
+        "workingLatex": "n = 16 \\text{ makes } n+1 = 17 \\text{ a factor}",
+        "explanation": "Any prime-generating polynomial $n^2+n+c$ fails at $n=c-1$, because then $c$ divides the value — the run always ends.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the correct qualified statement.",
+        "workingLatex": "n^2+n+17 \\text{ is prime only for } 0 \\le n \\le 15",
+        "explanation": "The polynomial is prime for $n=0,\\dots,15$, but the universal claim over all $n\\ge0$ is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the earlier cases were prime.",
+        "workingLatex": "n = 0, \\dots, 15 \\text{ all give primes}",
+        "explanation": "This confirms $n=16$ is the first failure, so the counterexample is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $n=16$, $n^2+n+17 = 289 = 17^2$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "At $n=16$: $16^2+16+17 = 289 = 17^2$, which is composite. Hence ``$n^2+n+17$ is prime for every $n\\ge0$'' is false (it is prime only for $0\\le n\\le15$). $\\blacksquare$"
+  }
+}

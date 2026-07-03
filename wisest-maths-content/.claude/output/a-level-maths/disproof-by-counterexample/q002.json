@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "odd numbers"
+  ],
+  "questionText": "Disprove the statement: ``Every odd number is prime.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{odd } n:\\ n \\text{ is prime}",
+        "explanation": "The statement claims all odd numbers are prime; one odd number that is not prime will disprove it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "To refute a `for all' claim we just need a single failing case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Notice the early cases look convincing.",
+        "workingLatex": "3, 5, 7 \\text{ are odd and prime}",
+        "explanation": "The first few odd numbers greater than $1$ are prime, which is why the statement seems plausible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the next odd number.",
+        "workingLatex": "n = 9",
+        "explanation": "We examine $9$, the next odd number after $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise it.",
+        "workingLatex": "9 = 3 \\times 3",
+        "explanation": "Since $9$ has $3$ as a divisor, it is composite, not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confront the claim.",
+        "workingLatex": "9 \\text{ is odd but not prime}",
+        "explanation": "So $9$ is an odd number that fails to be prime — a direct counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Because $9$ is odd and composite, the claim `every odd number is prime' is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$9$ is odd but $9 = 3 \\times 3$ is composite, so it is a counterexample. Hence ``every odd number is prime'' is false. $\\blacksquare$"
+  }
+}

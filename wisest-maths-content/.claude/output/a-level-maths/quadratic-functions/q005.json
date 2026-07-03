@@ -1,0 +1,70 @@
+{
+  "id": "al.y1.pure.quadratics.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square"
+  ],
+  "questionText": "Express $x^2 + 6x + 5$ in the form $(x + p)^2 + q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Focus on the first two terms.",
+        "workingLatex": "x^2 + 6x",
+        "explanation": "To complete the square we deal with $x^2 + 6x$ first, then adjust the constant afterwards.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Halve the coefficient of x.",
+        "workingLatex": "p = \\dfrac{6}{2} = 3",
+        "explanation": "The number inside the bracket is half the coefficient of $x$, so $p = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the square and its correction.",
+        "workingLatex": "x^2 + 6x = (x + 3)^2 - 9",
+        "explanation": "Expanding $(x+3)^2$ gives $x^2 + 6x + 9$, so we subtract $9$ to keep the value unchanged.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Reintroduce the constant.",
+        "workingLatex": "x^2 + 6x + 5 = (x + 3)^2 - 9 + 5",
+        "explanation": "Replacing $x^2+6x$ and keeping the original $+5$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the constant.",
+        "workingLatex": "-9 + 5 = -4",
+        "explanation": "Combining the constants gives $-4$, so $q = -4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the completed square.",
+        "workingLatex": "(x + 3)^2 - 4",
+        "explanation": "The expression in completed-square form is $(x+3)^2 - 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer.",
+        "workingLatex": "(x + 3)^2 - 4",
+        "explanation": "The completed-square form is $(x+3)^2 - 4$, so $p = 3$ and $q = -4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + 6x + 5 = (x+3)^2 - 9 + 5 = (x+3)^2 - 4$"
+  }
+}

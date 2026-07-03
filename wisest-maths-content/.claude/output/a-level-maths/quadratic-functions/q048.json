@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.quadratics.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "disguised quadratic",
+    "substitution"
+  ],
+  "questionText": "Solve the equation $\\left(x^2 - x\\right)^2 - 8\\left(x^2 - x\\right) + 12 = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Spot the repeated expression.",
+        "workingLatex": "\\text{let } u = x^2 - x",
+        "explanation": "The expression $x^2 - x$ appears squared and linearly, so substituting $u$ for it gives a quadratic in $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the equation in u.",
+        "workingLatex": "u^2 - 8u + 12 = 0",
+        "explanation": "Replacing $x^2 - x$ by $u$ turns the equation into a standard quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "(u - 2)(u - 6) = 0",
+        "explanation": "We need two numbers multiplying to $12$ and adding to $8$, namely $2$ and $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for u.",
+        "workingLatex": "u = 2 \\ \\text{ or } \\ u = 6",
+        "explanation": "Setting each factor to zero gives the two values of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Return to the first case.",
+        "workingLatex": "x^2 - x = 2",
+        "explanation": "The value $u = 2$ means $x^2 - x = 2$, which we solve for $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve the first quadratic.",
+        "workingLatex": "x^2 - x - 2 = 0 \\Rightarrow (x - 2)(x + 1) = 0",
+        "explanation": "Rearranging and factorising gives roots $x = 2$ and $x = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "List the first pair of roots.",
+        "workingLatex": "x = 2 \\ \\text{ or } \\ x = -1",
+        "explanation": "These come from the case $u = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Return to the second case.",
+        "workingLatex": "x^2 - x = 6",
+        "explanation": "The value $u = 6$ means $x^2 - x = 6$, which we solve for $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve the second quadratic.",
+        "workingLatex": "x^2 - x - 6 = 0 \\Rightarrow (x - 3)(x + 2) = 0",
+        "explanation": "Rearranging and factorising gives roots $x = 3$ and $x = -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List the second pair of roots.",
+        "workingLatex": "x = 3 \\ \\text{ or } \\ x = -2",
+        "explanation": "These come from the case $u = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Collect all solutions.",
+        "workingLatex": "x = -2, -1, 2, 3",
+        "explanation": "Both cases together give four real solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check one solution.",
+        "workingLatex": "x = 2: (4 - 2)^2 - 8(4 - 2) + 12 = 4 - 16 + 12 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ gives $0$, confirming it satisfies the original equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x = -2, -1, 2, 3",
+        "explanation": "The four solutions are $x = -2, -1, 2, 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Let $u = x^2 - x$: then $(u-2)(u-6) = 0$, so $x^2-x = 2$ or $6$, giving $x = -2, -1, 2, 3$."
+  }
+}

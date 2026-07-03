@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Express $\\dfrac{1}{2 - \\sqrt{3}}$ in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{rationalise and write as } a + b\\sqrt{3}",
+        "explanation": "We must clear the surd from the denominator and then read off the integer coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the conjugate.",
+        "workingLatex": "\\text{conjugate of } 2 - \\sqrt{3} \\text{ is } 2 + \\sqrt{3}",
+        "explanation": "For the two-term denominator we multiply by its conjugate, producing a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Explain why the conjugate works.",
+        "workingLatex": "(2-\\sqrt{3})(2+\\sqrt{3}) = 2^2 - (\\sqrt{3})^2",
+        "explanation": "The conjugate exploits the difference-of-squares identity, which squares away the surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{1}{2-\\sqrt{3}} \\times \\dfrac{2+\\sqrt{3}}{2+\\sqrt{3}}",
+        "explanation": "Multiplying by $1$ in this form preserves the value while rationalising the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the denominator.",
+        "workingLatex": "2^2 - (\\sqrt{3})^2 = 4 - 3 = 1",
+        "explanation": "The difference of squares gives $4 - 3 = 1$, an especially clean denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the numerator.",
+        "workingLatex": "1 \\times (2 + \\sqrt{3}) = 2 + \\sqrt{3}",
+        "explanation": "The top becomes $2 + \\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the fraction.",
+        "workingLatex": "\\dfrac{2 + \\sqrt{3}}{1}",
+        "explanation": "Placing the numerator over the denominator $1$ gives this fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify.",
+        "workingLatex": "2 + \\sqrt{3}",
+        "explanation": "Dividing by $1$ leaves $2 + \\sqrt3$, already in the form $a + b\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify a and b.",
+        "workingLatex": "a = 2, \\quad b = 1",
+        "explanation": "Comparing with $a + b\\sqrt3$ gives the integers $a = 2$ and $b = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Sanity-check the denominator.",
+        "workingLatex": "\\text{denominator became } 1",
+        "explanation": "Because the conjugate product was $1$, the rationalisation was particularly simple.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{1}{2 - 1.732} \\approx 3.73",
+        "explanation": "The original expression evaluates to about $3.73$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Match the check.",
+        "workingLatex": "2 + 1.732 \\approx 3.73",
+        "explanation": "The answer $2 + \\sqrt3$ also gives about $3.73$, confirming it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "2 + \\sqrt{3}",
+        "explanation": "The expression equals $2 + \\sqrt3$, so $a = 2$ and $b = 1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1}{2-\\sqrt{3}} = \\dfrac{2+\\sqrt{3}}{4-3} = \\dfrac{2+\\sqrt{3}}{1} = 2 + \\sqrt{3}$"
+  }
+}

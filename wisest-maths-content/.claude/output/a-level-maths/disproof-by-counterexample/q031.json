@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "algebraic fractions"
+  ],
+  "questionText": "Disprove the statement: ``For all non-zero real numbers $a$ and $b$, $\\dfrac{1}{a+b} = \\dfrac{1}{a} + \\dfrac{1}{b}$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ a,b \\neq 0:\\ \\tfrac{1}{a+b} = \\tfrac{1}{a} + \\tfrac{1}{b}",
+        "explanation": "The claim asserts equality for *all* non-zero $a,b$; one pair where the sides differ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair making the two sides unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the correct combination.",
+        "workingLatex": "\\tfrac{1}{a} + \\tfrac{1}{b} = \\tfrac{a+b}{ab}",
+        "explanation": "The true sum of the reciprocals is $\\tfrac{a+b}{ab}$, not $\\tfrac{1}{a+b}$, so the claim inverts things incorrectly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose simple values.",
+        "workingLatex": "a = 1, \\quad b = 1",
+        "explanation": "Taking $a=b=1$ keeps the arithmetic simple and both sides defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the left-hand side.",
+        "workingLatex": "\\tfrac{1}{1+1} = \\tfrac{1}{2}",
+        "explanation": "The left side is $\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the right-hand side.",
+        "workingLatex": "\\tfrac{1}{1} + \\tfrac{1}{1} = 2",
+        "explanation": "Adding the two reciprocals, $\\tfrac11+\\tfrac11 = 2$, so the right-hand side is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare.",
+        "workingLatex": "\\tfrac{1}{2} \\neq 2",
+        "explanation": "The two sides are clearly unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note how far apart they are.",
+        "workingLatex": "2 = 4 \\times \\tfrac{1}{2}",
+        "explanation": "The right side is four times the left, so this is not a small rounding discrepancy but a genuine failure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $a=b=1$ the sides are $\\tfrac12$ and $2$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=b=1$: then $\\tfrac{1}{a+b} = \\tfrac12$ but $\\tfrac1a + \\tfrac1b = 2$. Since $\\tfrac12 \\neq 2$, the statement is false. $\\blacksquare$"
+  }
+}

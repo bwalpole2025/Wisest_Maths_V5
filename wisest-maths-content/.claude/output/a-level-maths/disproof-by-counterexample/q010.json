@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities"
+  ],
+  "questionText": "Disprove the statement: ``For all real numbers $x$, $x^2 \\ge x$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ x \\in \\mathbb{R}:\\ x^2 \\ge x",
+        "explanation": "The claim covers *all* real $x$, not just integers; one real value where $x^2<x$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single real number for which $x^2\\ge x$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Notice integers obey it.",
+        "workingLatex": "x=2: 4\\ge2,\\quad x=0: 0\\ge0",
+        "explanation": "For integers the inequality holds, so the flaw must lie among non-integer values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Focus on the interval between 0 and 1.",
+        "workingLatex": "0 < x < 1 \\Rightarrow x^2 < x",
+        "explanation": "Squaring a proper fraction makes it smaller, so this is where the claim should break.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose a specific value.",
+        "workingLatex": "x = \\tfrac{1}{2}",
+        "explanation": "We test $x=\\tfrac12$, a real number strictly between $0$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the square.",
+        "workingLatex": "x^2 = \\left(\\tfrac{1}{2}\\right)^2 = \\tfrac{1}{4}",
+        "explanation": "Squaring $\\tfrac12$ gives $\\tfrac14$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare the two sides.",
+        "workingLatex": "\\tfrac{1}{4} \\ge \\tfrac{1}{2} \\text{ is false}",
+        "explanation": "Since $\\tfrac14<\\tfrac12$, the inequality $x^2\\ge x$ fails at $x=\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the correct restricted statement.",
+        "workingLatex": "x^2 \\ge x \\text{ holds only for } x \\le 0 \\text{ or } x \\ge 1",
+        "explanation": "The inequality is actually true outside the open interval $(0,1)$; it is the unrestricted `for all real $x$' version that fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $x=\\tfrac12$ we have $x^2=\\tfrac14<\\tfrac12=x$, so the claim is disproved by this counterexample.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $x=\\tfrac12$: then $x^2 = \\tfrac14 < \\tfrac12 = x$, so $x^2 \\ge x$ fails. Hence the statement is false. $\\blacksquare$"
+  }
+}

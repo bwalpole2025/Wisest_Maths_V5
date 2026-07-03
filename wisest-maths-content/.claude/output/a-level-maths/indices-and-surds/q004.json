@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "negative indices",
+    "evaluating"
+  ],
+  "questionText": "Evaluate $2^{-3}$, giving your answer as an exact fraction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the negative index.",
+        "workingLatex": "2^{-3}",
+        "explanation": "A negative index signals a reciprocal, so the first job is to turn the negative power into a positive one underneath a fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the negative-index law.",
+        "workingLatex": "a^{-n} = \\dfrac{1}{a^{n}}",
+        "explanation": "A negative index means `one over' the corresponding positive power, because dividing repeatedly by the base is the reverse of multiplying.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the law.",
+        "workingLatex": "2^{-3} = \\dfrac{1}{2^{3}}",
+        "explanation": "Rewriting with a positive index puts $2^3$ in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the positive power.",
+        "workingLatex": "2^3 = 8",
+        "explanation": "Computing $2\\times2\\times2$ gives $8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the fraction.",
+        "workingLatex": "2^{-3} = \\dfrac{1}{8}",
+        "explanation": "Substituting $2^3=8$ gives the exact value $\\tfrac18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{1}{8}",
+        "explanation": "The exact value of $2^{-3}$ is $\\tfrac18$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2^{-3} = \\dfrac{1}{2^{3}} = \\dfrac{1}{8}$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.disproof.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "Mersenne numbers"
+  ],
+  "questionText": "Disprove the claim that ``$2^p - 1$ is prime for every prime number $p$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{primes } p:\\ 2^p - 1 \\text{ is prime}",
+        "explanation": "The numbers $2^p-1$ are called Mersenne numbers. The claim asserts they are prime for *every* prime $p$; one composite case disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one prime $p$ for which $2^p-1$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the first few primes.",
+        "workingLatex": "p=2: 3,\\ \\ p=3: 7,\\ \\ p=5: 31,\\ \\ p=7: 127",
+        "explanation": "For $p=2,3,5,7$ the values $3,7,31,127$ are all prime, which makes the claim look convincing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Move to the next prime.",
+        "workingLatex": "p = 11",
+        "explanation": "The next prime after $7$ is $11$; we test $2^{11}-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the power.",
+        "workingLatex": "2^{11} = 2048",
+        "explanation": "Computing the power gives $2^{11}=2048$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract 1.",
+        "workingLatex": "2^{11} - 1 = 2047",
+        "explanation": "So the Mersenne number for $p=11$ is $2047$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Search for a factor.",
+        "workingLatex": "2047 \\div 23 = 89",
+        "explanation": "Testing small primes, $2047$ is divisible by $23$, giving quotient $89$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise the result.",
+        "workingLatex": "2047 = 23 \\times 89",
+        "explanation": "Both $23$ and $89$ are greater than $1$, so this is a genuine factorisation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm it is composite.",
+        "workingLatex": "2047 \\text{ has divisor } 23 \\Rightarrow \\text{composite}",
+        "explanation": "Since $2047$ has a proper divisor $23$, it is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confront the claim.",
+        "workingLatex": "p = 11 \\text{ prime, but } 2^{11}-1 = 2047 \\text{ composite}",
+        "explanation": "Here $p=11$ is prime yet $2^p-1$ is composite, exactly the failure the claim forbids.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Draw the general lesson.",
+        "workingLatex": "\\text{primality of } p \\not\\Rightarrow \\text{primality of } 2^p-1",
+        "explanation": "A prime exponent is necessary but not sufficient for $2^p-1$ to be prime, so the universal claim is too strong.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the small cases really were prime.",
+        "workingLatex": "3, 7, 31, 127 \\text{ all prime}",
+        "explanation": "This confirms the counterexample at $p=11$ is the first failure, not an error in the earlier cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $p=11$, $2^p-1 = 2047 = 23\\times89$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For the prime $p=11$: $2^{11}-1 = 2047 = 23 \\times 89$, which is composite. Hence ``$2^p-1$ is prime for every prime $p$'' is false. $\\blacksquare$"
+  }
+}

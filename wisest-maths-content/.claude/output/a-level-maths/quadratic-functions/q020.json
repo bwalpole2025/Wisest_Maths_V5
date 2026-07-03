@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "minimum value",
+    "leading coefficient"
+  ],
+  "questionText": "Express $3x^2 - 12x + 7$ in the form $a(x - p)^2 + q$, and hence state the minimum value of the expression.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor the leading coefficient from the x terms.",
+        "workingLatex": "3x^2 - 12x = 3\\left(x^2 - 4x\\right)",
+        "explanation": "With a leading coefficient of $3$, we factor it out of the $x$ terms so the bracket is monic and ready to complete.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the full expression.",
+        "workingLatex": "3\\left(x^2 - 4x\\right) + 7",
+        "explanation": "Only the $x$ terms go inside the bracket; the constant $+7$ stays outside for now.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Halve the coefficient of x inside.",
+        "workingLatex": "\\dfrac{-4}{2} = -2",
+        "explanation": "Half of $-4$ is $-2$, which will appear inside the squared bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Complete the square inside.",
+        "workingLatex": "x^2 - 4x = (x - 2)^2 - 4",
+        "explanation": "Expanding $(x-2)^2$ gives $x^2 - 4x + 4$, so we subtract $4$ inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "3\\left[(x - 2)^2 - 4\\right] + 7",
+        "explanation": "Replacing the bracket gives the whole expression in terms of a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand the outer multiplier.",
+        "workingLatex": "3(x - 2)^2 - 12 + 7",
+        "explanation": "Multiplying the $3$ through affects both the square and the $-4$, giving $-12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the constant.",
+        "workingLatex": "-12 + 7 = -5",
+        "explanation": "Combining $-12 + 7$ gives $-5$, so $q = -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the completed square.",
+        "workingLatex": "3(x - 2)^2 - 5",
+        "explanation": "The expression in the required form is $3(x-2)^2 - 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify a, p and q.",
+        "workingLatex": "a = 3,\\ p = 2,\\ q = -5",
+        "explanation": "Comparing with $a(x-p)^2 + q$ gives these three values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find where the square is smallest.",
+        "workingLatex": "(x - 2)^2 \\ge 0, \\text{ least when } x = 2",
+        "explanation": "A square is never negative and equals zero when $x = 2$, which is where the whole expression is smallest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Read off the minimum value.",
+        "workingLatex": "3(0) - 5 = -5",
+        "explanation": "At $x = 2$ the squared term is zero, leaving the minimum value $-5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify numerically.",
+        "workingLatex": "x = 2: 3(4) - 12(2) + 7 = 12 - 24 + 7 = -5 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ into the original expression gives $-5$, confirming the minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "3(x - 2)^2 - 5, \\text{ minimum value } -5",
+        "explanation": "The completed-square form is $3(x-2)^2 - 5$, and the minimum value is $-5$ (at $x = 2$).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3x^2 - 12x + 7 = 3(x-2)^2 - 5$, so the minimum value is $-5$ (at $x = 2$)."
+  }
+}

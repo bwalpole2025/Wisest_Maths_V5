@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "common base"
+  ],
+  "questionText": "Solve the equation $4^{x+1} = 8^{x-1}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose a common base.",
+        "workingLatex": "4 = 2^2, \\quad 8 = 2^3",
+        "explanation": "Both $4$ and $8$ are powers of $2$, so rewriting with base $2$ lets us compare indices directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the left-hand side.",
+        "workingLatex": "4^{x+1} = \\left(2^2\\right)^{x+1} = 2^{2(x+1)}",
+        "explanation": "Using the power-of-a-power law multiplies the indices, giving $2^{2(x+1)}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the right-hand side.",
+        "workingLatex": "8^{x-1} = \\left(2^3\\right)^{x-1} = 2^{3(x-1)}",
+        "explanation": "Similarly the right-hand side becomes $2^{3(x-1)}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation with equal bases.",
+        "workingLatex": "2^{2(x+1)} = 2^{3(x-1)}",
+        "explanation": "Both sides are now powers of $2$, so the equation reduces to comparing exponents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Equate the indices.",
+        "workingLatex": "2(x+1) = 3(x-1)",
+        "explanation": "Equal powers of the same base force equal indices, giving a linear equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand the left-hand side.",
+        "workingLatex": "2x + 2",
+        "explanation": "Multiplying out $2(x+1)$ gives $2x + 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Expand the right-hand side.",
+        "workingLatex": "3x - 3",
+        "explanation": "Multiplying out $3(x-1)$ gives $3x - 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form the linear equation.",
+        "workingLatex": "2x + 2 = 3x - 3",
+        "explanation": "Setting the two expanded indices equal gives this equation in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Collect the terms.",
+        "workingLatex": "2 + 3 = 3x - 2x",
+        "explanation": "Moving $x$ terms to one side and numbers to the other gives $5 = x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for x.",
+        "workingLatex": "x = 5",
+        "explanation": "Combining the terms on each side gives the single solution $x = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the left-hand side.",
+        "workingLatex": "4^{5+1} = 4^{6} = 4096",
+        "explanation": "Substituting $x=5$, the left side is $4^6 = 4096$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check the right-hand side.",
+        "workingLatex": "8^{5-1} = 8^{4} = 4096",
+        "explanation": "And the right side is $8^4 = 4096$, so both sides agree.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x = 5",
+        "explanation": "The solution of $4^{x+1} = 8^{x-1}$ is $x = 5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$4^{x+1} = 8^{x-1} \\Rightarrow 2^{2(x+1)} = 2^{3(x-1)} \\Rightarrow 2x+2 = 3x-3 \\Rightarrow x = 5$"
+  }
+}

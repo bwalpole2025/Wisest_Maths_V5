@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "fractional solution"
+  ],
+  "questionText": "Solve the equation $8^{x} = 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose a common base.",
+        "workingLatex": "8 = 2^3, \\quad 4 = 2^2",
+        "explanation": "Both $8$ and $4$ are powers of $2$, so rewriting with base $2$ lets us compare indices directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the left-hand side.",
+        "workingLatex": "8^{x} = \\left(2^3\\right)^{x} = 2^{3x}",
+        "explanation": "Using the power-of-a-power law gives $2^{3x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the right-hand side.",
+        "workingLatex": "4 = 2^{2}",
+        "explanation": "Expressing $4$ as $2^2$ puts both sides in the same form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Equate the two expressions.",
+        "workingLatex": "2^{3x} = 2^{2}",
+        "explanation": "Both sides are now powers of $2$, so we can compare exponents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Equate the indices.",
+        "workingLatex": "3x = 2",
+        "explanation": "Equal powers of the same base force equal indices, giving $3x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x.",
+        "workingLatex": "x = \\dfrac{2}{3}",
+        "explanation": "Dividing both sides by $3$ gives the fractional solution $x = \\tfrac23$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the solution.",
+        "workingLatex": "8^{2/3} = \\left(\\sqrt[3]{8}\\right)^2 = 2^2 = 4 \\ \\checkmark",
+        "explanation": "Substituting back, $8^{2/3} = 4$, so the solution works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Sense-check the size.",
+        "workingLatex": "8^0 = 1 < 4 < 8 = 8^1 \\Rightarrow 0 < x < 1",
+        "explanation": "Because $4$ lies between $8^0$ and $8^1$, the solution must be between $0$ and $1$, and $\\tfrac23$ fits.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x = \\dfrac{2}{3}",
+        "explanation": "The solution of $8^x = 4$ is $x = \\tfrac23$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$8^x = 4 \\Rightarrow 2^{3x} = 2^{2} \\Rightarrow 3x = 2 \\Rightarrow x = \\dfrac{2}{3}$"
+  }
+}

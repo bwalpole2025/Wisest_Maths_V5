@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "turning point"
+  ],
+  "questionText": "Find the coordinates of the turning point of the curve $y = x^2 - 6x + 11$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Plan to complete the square.",
+        "workingLatex": "y = x^2 - 6x + 11",
+        "explanation": "Completing the square rewrites the quadratic so that the turning point can be read off directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Halve the coefficient of x.",
+        "workingLatex": "\\dfrac{-6}{2} = -3",
+        "explanation": "Half of $-6$ is $-3$, which will appear inside the squared bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Complete the square on the x terms.",
+        "workingLatex": "x^2 - 6x = (x - 3)^2 - 9",
+        "explanation": "Expanding $(x-3)^2$ gives $x^2 - 6x + 9$, so we subtract $9$ to compensate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Reintroduce the constant.",
+        "workingLatex": "y = (x - 3)^2 - 9 + 11",
+        "explanation": "Replacing $x^2 - 6x$ and keeping the $+11$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify.",
+        "workingLatex": "y = (x - 3)^2 + 2",
+        "explanation": "Combining $-9 + 11$ gives $+2$, so the curve is $(x-3)^2 + 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the completed-square form.",
+        "workingLatex": "y = (x - h)^2 + k \\Rightarrow \\text{vertex } (h, k)",
+        "explanation": "In this form the turning point is at $(h, k)$, because the square is smallest (zero) when $x = h$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Read off the vertex.",
+        "workingLatex": "h = 3, \\quad k = 2",
+        "explanation": "Comparing $(x-3)^2 + 2$ with $(x-h)^2 + k$ gives $h = 3$ and $k = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the type of turning point.",
+        "workingLatex": "\\text{coefficient of } x^2 > 0 \\Rightarrow \\text{minimum}",
+        "explanation": "Since the $x^2$ coefficient is positive, the parabola opens upward and the turning point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "(3, 2)",
+        "explanation": "The turning point is the minimum point $(3, 2)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = x^2 - 6x + 11 = (x-3)^2 + 2$, so the minimum turning point is $(3, 2)$."
+  }
+}

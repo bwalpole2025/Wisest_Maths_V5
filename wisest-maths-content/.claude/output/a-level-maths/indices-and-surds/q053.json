@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "index laws",
+    "multiplying"
+  ],
+  "questionText": "Simplify $\\left(2a^3\\right)\\left(3a^4\\right)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Group numbers and powers separately.",
+        "workingLatex": "\\left(2a^3\\right)\\left(3a^4\\right) = (2 \\times 3)\\left(a^3 \\times a^4\\right)",
+        "explanation": "Multiplication can be rearranged, so we collect the number parts together and the powers of $a$ together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply the coefficients.",
+        "workingLatex": "2 \\times 3 = 6",
+        "explanation": "Multiplying the numerical coefficients $2$ and $3$ gives $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the multiplication law of indices.",
+        "workingLatex": "a^m \\times a^n = a^{m+n}",
+        "explanation": "Multiplying powers of the same base means adding the indices.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add the indices.",
+        "workingLatex": "a^3 \\times a^4 = a^{3+4} = a^{7}",
+        "explanation": "Adding $3$ and $4$ gives $7$ factors of $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the parts.",
+        "workingLatex": "6a^{7}",
+        "explanation": "Multiplying the coefficient $6$ and the power $a^7$ gives $6a^7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "6a^{7}",
+        "explanation": "The simplified expression is $6a^7$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(2a^3\\right)\\left(3a^4\\right) = 6a^{3+4} = 6a^{7}$"
+  }
+}

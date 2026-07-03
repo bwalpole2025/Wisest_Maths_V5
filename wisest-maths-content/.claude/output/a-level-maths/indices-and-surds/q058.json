@@ -1,0 +1,84 @@
+{
+  "id": "al.y1.pure.indices-surds.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "expanding brackets"
+  ],
+  "questionText": "Expand and simplify $\\left(3 + \\sqrt{5}\\right)\\left(2 - \\sqrt{5}\\right)$, giving your answer in the form $a + b\\sqrt{5}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Plan the expansion.",
+        "workingLatex": "\\text{multiply each term in the first bracket by each in the second}",
+        "explanation": "We expand the two brackets fully (all four products), then collect rational and surd terms — the standard `FOIL' approach.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply the first terms.",
+        "workingLatex": "3 \\times 2 = 6",
+        "explanation": "The product of the first terms in each bracket is $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Multiply the outer terms.",
+        "workingLatex": "3 \\times (-\\sqrt{5}) = -3\\sqrt{5}",
+        "explanation": "Multiplying $3$ by $-\\sqrt5$ gives $-3\\sqrt5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply the inner terms.",
+        "workingLatex": "\\sqrt{5} \\times 2 = 2\\sqrt{5}",
+        "explanation": "Multiplying $\\sqrt5$ by $2$ gives $2\\sqrt5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply the last terms.",
+        "workingLatex": "\\sqrt{5} \\times (-\\sqrt{5}) = -5",
+        "explanation": "Multiplying $\\sqrt5$ by $-\\sqrt5$ gives $-(\\sqrt5)^2 = -5$, a rational term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the rational terms.",
+        "workingLatex": "6 - 5 = 1",
+        "explanation": "The whole-number parts $6$ and $-5$ combine to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect the surd terms.",
+        "workingLatex": "-3\\sqrt{5} + 2\\sqrt{5} = -\\sqrt{5}",
+        "explanation": "The surd parts $-3\\sqrt5$ and $2\\sqrt5$ combine to $-\\sqrt5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write in the required form.",
+        "workingLatex": "1 - \\sqrt{5}",
+        "explanation": "Combining gives $1 - \\sqrt5$, matching the form $a + b\\sqrt5$ with $a=1$ and $b=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "1 - \\sqrt{5}",
+        "explanation": "The expanded, simplified expression is $1 - \\sqrt5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(3+\\sqrt{5}\\right)\\left(2-\\sqrt{5}\\right) = 6 - 3\\sqrt{5} + 2\\sqrt{5} - 5 = 1 - \\sqrt{5}$"
+  }
+}

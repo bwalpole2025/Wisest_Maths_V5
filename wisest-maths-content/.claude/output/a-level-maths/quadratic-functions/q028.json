@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.quadratics.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "solving",
+    "factorising"
+  ],
+  "questionText": "Solve the equation $x^2 - 7x + 10 = 0$ by factorising.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify what the factors must do.",
+        "workingLatex": "\\text{product} = 10, \\quad \\text{sum} = -7",
+        "explanation": "We need two numbers multiplying to $c = 10$ and adding to $b = -7$; both must be negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the two key numbers.",
+        "workingLatex": "(-2) \\times (-5) = 10, \\quad (-2) + (-5) = -7",
+        "explanation": "The numbers $-2$ and $-5$ multiply to $10$ and add to $-7$, so they are the ones we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the factorised form.",
+        "workingLatex": "(x - 2)(x - 5) = 0",
+        "explanation": "Placing the two numbers into brackets gives the factorised quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the zero-product rule.",
+        "workingLatex": "x - 2 = 0 \\ \\text{ or } \\ x - 5 = 0",
+        "explanation": "A product is zero only if one factor is zero, so we set each bracket to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve each equation.",
+        "workingLatex": "x = 2 \\ \\text{ or } \\ x = 5",
+        "explanation": "Solving gives the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the solutions.",
+        "workingLatex": "x = 2, \\ x = 5",
+        "explanation": "The solutions are $x = 2$ and $x = 5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 7x + 10 = (x-2)(x-5) = 0 \\Rightarrow x = 2 \\text{ or } x = 5$"
+  }
+}

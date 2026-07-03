@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "surds",
+    "algebra"
+  ],
+  "questionText": "Disprove the statement: ``For all real numbers $a, b \\ge 0$, $\\sqrt{a^2 + b^2} = a + b$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ a,b \\ge 0:\\ \\sqrt{a^2+b^2} = a+b",
+        "explanation": "The claim asserts equality for *all* non-negative $a,b$; one pair where the sides differ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair making the two sides unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Pick a convenient Pythagorean pair.",
+        "workingLatex": "a = 3, \\quad b = 4",
+        "explanation": "Choosing $3$ and $4$ gives a perfect-square sum, keeping the arithmetic clean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the left-hand side.",
+        "workingLatex": "\\sqrt{3^2 + 4^2} = \\sqrt{9 + 16} = \\sqrt{25} = 5",
+        "explanation": "The left side is $\\sqrt{25}=5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the right-hand side.",
+        "workingLatex": "3 + 4 = 7",
+        "explanation": "Adding the two numbers directly, $3+4 = 7$, so the right-hand side is $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare.",
+        "workingLatex": "5 \\neq 7",
+        "explanation": "The two sides are different, so the claimed identity fails here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $a=3,\\ b=4$ we get $5 \\neq 7$, so $\\sqrt{a^2+b^2}=a+b$ is disproved. (In general $\\sqrt{a^2+b^2}\\le a+b$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=3,\\ b=4$: then $\\sqrt{a^2+b^2} = \\sqrt{25} = 5$ but $a+b = 7$. Since $5 \\neq 7$, the statement is false. $\\blacksquare$"
+  }
+}

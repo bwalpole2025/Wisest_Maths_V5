@@ -1,0 +1,70 @@
+{
+  "id": "al.y1.pure.indices-surds.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds"
+  ],
+  "questionText": "Simplify $\\sqrt{50}$, giving your answer in the form $a\\sqrt{b}$ where $b$ is as small as possible.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Look for a square factor.",
+        "workingLatex": "50 = 25 \\times 2",
+        "explanation": "To simplify a surd we split the number under the root into a perfect square times whatever is left, and $25$ is the largest square factor of $50$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the surd over the product.",
+        "workingLatex": "\\sqrt{50} = \\sqrt{25 \\times 2}",
+        "explanation": "Rewriting $50$ as $25\\times2$ prepares the surd to be broken apart.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the product rule for surds.",
+        "workingLatex": "\\sqrt{25 \\times 2} = \\sqrt{25} \\times \\sqrt{2}",
+        "explanation": "The root of a product equals the product of the roots, which lets us pull out the square part.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the square root of 25.",
+        "workingLatex": "\\sqrt{25} = 5",
+        "explanation": "Since $25$ is a perfect square, its root is the whole number $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the parts.",
+        "workingLatex": "\\sqrt{50} = 5\\sqrt{2}",
+        "explanation": "Writing the $5$ in front of the remaining $\\sqrt2$ gives the simplified surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check b cannot be reduced.",
+        "workingLatex": "2 \\text{ has no square factor} > 1",
+        "explanation": "Since $2$ is prime, no further square can be taken out, so the surd is fully simplified.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer.",
+        "workingLatex": "5\\sqrt{2}",
+        "explanation": "The simplified form is $5\\sqrt2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{50} = \\sqrt{25 \\times 2} = \\sqrt{25}\\,\\sqrt{2} = 5\\sqrt{2}$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "maximum value",
+    "negative coefficient"
+  ],
+  "questionText": "Express $-2x^2 + 8x - 3$ in the form $a(x - p)^2 + q$, and hence state the maximum value.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor the leading coefficient from the x terms.",
+        "workingLatex": "-2x^2 + 8x = -2\\left(x^2 - 4x\\right)",
+        "explanation": "Factoring the negative leading coefficient $-2$ from the $x$ terms leaves a monic bracket; note the sign of the $x$ term flips inside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the full expression.",
+        "workingLatex": "-2\\left(x^2 - 4x\\right) - 3",
+        "explanation": "Only the $x$ terms go inside the bracket; the constant $-3$ stays outside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Halve the coefficient of x inside.",
+        "workingLatex": "\\dfrac{-4}{2} = -2",
+        "explanation": "Half of $-4$ is $-2$, which will appear inside the squared bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Complete the square inside.",
+        "workingLatex": "x^2 - 4x = (x - 2)^2 - 4",
+        "explanation": "Expanding $(x-2)^2$ gives $x^2 - 4x + 4$, so we subtract $4$ inside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "-2\\left[(x - 2)^2 - 4\\right] - 3",
+        "explanation": "Replacing the bracket gives the expression in terms of a square, multiplied by $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Distribute the -2.",
+        "workingLatex": "-2(x - 2)^2 + 8 - 3",
+        "explanation": "Multiplying $-2$ through changes the sign of both terms inside, turning $-4$ into $+8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the constant.",
+        "workingLatex": "8 - 3 = 5",
+        "explanation": "Combining $8 - 3$ gives $+5$, so $q = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the completed square.",
+        "workingLatex": "-2(x - 2)^2 + 5",
+        "explanation": "The expression in the required form is $-2(x-2)^2 + 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify a, p and q.",
+        "workingLatex": "a = -2,\\ p = 2,\\ q = 5",
+        "explanation": "Comparing with $a(x-p)^2 + q$ gives these three values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Use the sign of the square.",
+        "workingLatex": "-2(x - 2)^2 \\le 0",
+        "explanation": "Since $(x-2)^2 \\ge 0$ and the coefficient is $-2$, this term is at most $0$; the expression is largest when it is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find where the maximum occurs.",
+        "workingLatex": "(x - 2)^2 = 0 \\Rightarrow x = 2",
+        "explanation": "The squared term is zero only at $x = 2$, which is therefore where the expression is greatest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the maximum value.",
+        "workingLatex": "x = 2: -2(4) + 8(2) - 3 = -8 + 16 - 3 = 5 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ into the original expression gives $5$, confirming the maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "-2(x - 2)^2 + 5, \\text{ maximum value } 5",
+        "explanation": "The completed form is $-2(x-2)^2 + 5$, and the maximum value is $5$ (at $x = 2$); the parabola opens downward.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-2x^2 + 8x - 3 = -2(x-2)^2 + 5$, so the maximum value is $5$ (at $x = 2$)."
+  }
+}

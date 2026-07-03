@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "divisibility",
+    "parity"
+  ],
+  "questionText": "Disprove the statement: ``Every multiple of $3$ is odd.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{multiples of } 3:\\ \\text{odd}",
+        "explanation": "The statement claims all multiples of $3$ are odd; one even multiple of $3$ refutes it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "A single failing multiple of $3$ is enough to disprove the `for all' claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Notice some multiples are odd.",
+        "workingLatex": "3, 9, 15 \\text{ are odd}",
+        "explanation": "Several small multiples of $3$ are indeed odd, which is why the claim can seem believable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Consider another multiple of 3.",
+        "workingLatex": "6 = 3 \\times 2",
+        "explanation": "The number $6$ is a multiple of $3$ (it equals $3\\times2$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check its parity.",
+        "workingLatex": "6 = 2 \\times 3 \\text{ is even}",
+        "explanation": "Since $6$ is divisible by $2$, it is even, not odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confront the claim.",
+        "workingLatex": "6 \\text{ is a multiple of } 3 \\text{ but even}",
+        "explanation": "So $6$ is a multiple of $3$ that fails the property `is odd'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Because $6$ is an even multiple of $3$, the claim `every multiple of $3$ is odd' is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$6$ is a multiple of $3$ but is even, so it is a counterexample. Hence the statement is false. $\\blacksquare$"
+  }
+}

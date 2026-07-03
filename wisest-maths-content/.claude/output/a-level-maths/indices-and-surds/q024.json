@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.indices-surds.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds"
+  ],
+  "questionText": "Simplify $\\sqrt{18}$, giving your answer in the form $a\\sqrt{b}$ where $b$ is as small as possible.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the largest square factor.",
+        "workingLatex": "18 = 9 \\times 2",
+        "explanation": "We split $18$ into a perfect square times what is left, and $9$ is the largest square that divides $18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the surd over the product.",
+        "workingLatex": "\\sqrt{18} = \\sqrt{9 \\times 2}",
+        "explanation": "Rewriting $18$ as $9\\times2$ prepares the surd to be broken apart using the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule.",
+        "workingLatex": "\\sqrt{9 \\times 2} = \\sqrt{9} \\times \\sqrt{2}",
+        "explanation": "The root of a product is the product of the roots, letting us pull out the square part.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the square root of 9.",
+        "workingLatex": "\\sqrt{9} = 3",
+        "explanation": "Since $9$ is a perfect square, its root is the whole number $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the parts.",
+        "workingLatex": "\\sqrt{18} = 3\\sqrt{2}",
+        "explanation": "Writing $3$ in front of the remaining $\\sqrt2$ gives the simplified surd; $2$ is prime so it cannot reduce further.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "3\\sqrt{2}",
+        "explanation": "The simplified form is $3\\sqrt2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{18} = \\sqrt{9 \\times 2} = 3\\sqrt{2}$"
+  }
+}

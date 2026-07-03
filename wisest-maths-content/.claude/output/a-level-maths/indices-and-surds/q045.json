@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.indices-surds.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "common base",
+    "fractional solution"
+  ],
+  "questionText": "Solve the equation $9^{\\,2x-1} = 27$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose a common base.",
+        "workingLatex": "9 = 3^2, \\quad 27 = 3^3",
+        "explanation": "Both $9$ and $27$ are powers of $3$, so rewriting with base $3$ lets us compare indices directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the left-hand side.",
+        "workingLatex": "9^{\\,2x-1} = \\left(3^2\\right)^{2x-1} = 3^{\\,2(2x-1)}",
+        "explanation": "Using the power-of-a-power law multiplies the indices, giving $3^{2(2x-1)}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the right-hand side.",
+        "workingLatex": "27 = 3^{3}",
+        "explanation": "Expressing $27$ as $3^3$ puts both sides in the same form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation with equal bases.",
+        "workingLatex": "3^{\\,2(2x-1)} = 3^{3}",
+        "explanation": "Both sides are now powers of $3$, so the equation reduces to comparing exponents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Equate the indices.",
+        "workingLatex": "2(2x-1) = 3",
+        "explanation": "Equal powers of the same base force equal indices, giving a linear equation in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand the bracket.",
+        "workingLatex": "4x - 2 = 3",
+        "explanation": "Multiplying out $2(2x-1)$ gives $4x - 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add 2 to both sides.",
+        "workingLatex": "4x = 5",
+        "explanation": "Moving the constant across gives $4x = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Divide by 4.",
+        "workingLatex": "x = \\dfrac{5}{4}",
+        "explanation": "Dividing both sides by $4$ gives the fractional solution $x = \\tfrac54$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Work out the exponent at this x.",
+        "workingLatex": "2x - 1 = 2\\left(\\tfrac{5}{4}\\right) - 1 = \\tfrac{3}{2}",
+        "explanation": "Substituting $x=\\tfrac54$ into the exponent $2x-1$ gives $\\tfrac32$, ready for the check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the value.",
+        "workingLatex": "9^{\\,3/2} = \\left(\\sqrt{9}\\right)^3 = 3^3 = 27 \\ \\checkmark",
+        "explanation": "Since $9^{3/2}$ is the cube of $\\sqrt9 = 3$, it equals $27$, matching the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the solution.",
+        "workingLatex": "27 = 27 \\ \\checkmark",
+        "explanation": "Both sides equal $27$, so the solution $x = \\tfrac54$ is verified.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Sense-check the exponent.",
+        "workingLatex": "1 < \\tfrac{3}{2} < 2 \\text{ since } 9^1 < 27 < 9^2",
+        "explanation": "Because $27$ lies between $9^1 = 9$ and $9^2 = 81$, the exponent $2x-1$ must be between $1$ and $2$, and $\\tfrac32$ is.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x = \\dfrac{5}{4}",
+        "explanation": "The solution of $9^{2x-1} = 27$ is $x = \\tfrac54$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$9^{\\,2x-1} = 27 \\Rightarrow 3^{2(2x-1)} = 3^{3} \\Rightarrow 4x - 2 = 3 \\Rightarrow x = \\dfrac{5}{4}$"
+  }
+}

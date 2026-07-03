@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Show that $\\dfrac{1}{\\sqrt{5} - 2} + \\dfrac{1}{\\sqrt{5} + 2}$ simplifies to $2\\sqrt{5}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Notice the denominators are conjugates.",
+        "workingLatex": "\\sqrt{5} - 2 \\text{ and } \\sqrt{5} + 2",
+        "explanation": "The two denominators are conjugates, so each rationalises very cleanly and their product is a simple rational number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rationalise the first fraction.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{5}-2} \\times \\dfrac{\\sqrt{5}+2}{\\sqrt{5}+2}",
+        "explanation": "Multiplying the first fraction by its conjugate over itself clears the surd from its denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the first denominator.",
+        "workingLatex": "(\\sqrt{5}-2)(\\sqrt{5}+2) = 5 - 4 = 1",
+        "explanation": "The difference of squares gives $(\\sqrt5)^2 - 2^2 = 5 - 4 = 1$, a particularly clean denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the first fraction.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{5}-2} = \\sqrt{5} + 2",
+        "explanation": "With denominator $1$, the first fraction is simply $\\sqrt5 + 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rationalise the second fraction.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{5}+2} \\times \\dfrac{\\sqrt{5}-2}{\\sqrt{5}-2}",
+        "explanation": "Similarly we multiply the second fraction by its conjugate over itself.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the second denominator.",
+        "workingLatex": "(\\sqrt{5}+2)(\\sqrt{5}-2) = 5 - 4 = 1",
+        "explanation": "Again the difference of squares gives $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the second fraction.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{5}+2} = \\sqrt{5} - 2",
+        "explanation": "With denominator $1$, the second fraction is $\\sqrt5 - 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add the two results.",
+        "workingLatex": "\\left(\\sqrt{5} + 2\\right) + \\left(\\sqrt{5} - 2\\right)",
+        "explanation": "We now add the two rationalised fractions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Cancel the constant terms.",
+        "workingLatex": "+2 - 2 = 0",
+        "explanation": "The $+2$ and $-2$ cancel, which is why the sum comes out as a single surd term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine the surd terms.",
+        "workingLatex": "\\sqrt{5} + \\sqrt{5} = 2\\sqrt{5}",
+        "explanation": "Adding the two $\\sqrt5$ terms gives $2\\sqrt5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the simplified result.",
+        "workingLatex": "2\\sqrt{5}",
+        "explanation": "The sum simplifies exactly to $2\\sqrt5$, as required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{1}{0.236} + \\dfrac{1}{4.236} \\approx 4.47 = 2\\sqrt{5}",
+        "explanation": "The two fractions evaluate to about $4.24$ and $0.24$, summing to $4.47 = 2\\sqrt5$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{5}-2} + \\dfrac{1}{\\sqrt{5}+2} = 2\\sqrt{5}",
+        "explanation": "Both algebra and the numerical check confirm the sum equals $2\\sqrt5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1}{\\sqrt{5}-2} + \\dfrac{1}{\\sqrt{5}+2} = (\\sqrt{5}+2) + (\\sqrt{5}-2) = 2\\sqrt{5}$"
+  }
+}

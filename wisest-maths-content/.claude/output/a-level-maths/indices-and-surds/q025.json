@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.indices-surds.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "multiplying surds"
+  ],
+  "questionText": "Simplify $\\sqrt{8} \\times \\sqrt{2}$, giving your answer as an integer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the product rule for surds.",
+        "workingLatex": "\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}",
+        "explanation": "Multiplying two surds combines them under a single root, which often reveals a perfect square hidden in the product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply the numbers under one root.",
+        "workingLatex": "\\sqrt{8} \\times \\sqrt{2} = \\sqrt{8 \\times 2}",
+        "explanation": "Placing $8$ and $2$ under one square root gives $\\sqrt{16}$ once we multiply.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Work out the product inside.",
+        "workingLatex": "8 \\times 2 = 16",
+        "explanation": "Multiplying $8$ by $2$ gives $16$, which happens to be a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the square root.",
+        "workingLatex": "\\sqrt{16} = 4",
+        "explanation": "Since $16$ is a perfect square, its root is the whole number $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm the surd disappears.",
+        "workingLatex": "4 \\in \\mathbb{Z}",
+        "explanation": "The product was a perfect square, so the surds cancel out completely and leave an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "4",
+        "explanation": "The value of $\\sqrt8 \\times \\sqrt2$ is the integer $4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{8} \\times \\sqrt{2} = \\sqrt{16} = 4$"
+  }
+}

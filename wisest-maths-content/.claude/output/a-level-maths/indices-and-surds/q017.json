@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "common base"
+  ],
+  "questionText": "Solve the equation $9^{x} = 27^{\\,x-1}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write both bases as powers of 3.",
+        "workingLatex": "9 = 3^2, \\quad 27 = 3^3",
+        "explanation": "Both $9$ and $27$ are powers of $3$, so rewriting with base $3$ will let us compare indices directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the left-hand side.",
+        "workingLatex": "9^{x} = \\left(3^2\\right)^{x} = 3^{2x}",
+        "explanation": "Applying the power-of-a-power law gives $3^{2x}$ on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the right-hand side.",
+        "workingLatex": "27^{\\,x-1} = \\left(3^3\\right)^{x-1} = 3^{3(x-1)}",
+        "explanation": "Similarly the right-hand side becomes $3^{3(x-1)}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the equation with a common base.",
+        "workingLatex": "3^{2x} = 3^{3(x-1)}",
+        "explanation": "Both sides are now powers of $3$, so the equation reduces to comparing exponents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Equate the indices.",
+        "workingLatex": "2x = 3(x-1)",
+        "explanation": "Equal powers of the same base force equal indices, giving a linear equation in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand the bracket.",
+        "workingLatex": "2x = 3x - 3",
+        "explanation": "Multiplying out the right-hand side gives $3x - 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect the x terms.",
+        "workingLatex": "2x - 3x = -3",
+        "explanation": "Subtracting $3x$ from both sides gathers the $x$ terms on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify.",
+        "workingLatex": "-x = -3",
+        "explanation": "Combining $2x - 3x$ gives $-x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x.",
+        "workingLatex": "x = 3",
+        "explanation": "Multiplying both sides by $-1$ gives $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Substitute back into the left side.",
+        "workingLatex": "9^{3} = 729",
+        "explanation": "Substituting $x=3$ into the left-hand side gives $9^3 = 729$, which we compare with the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Substitute back into the right side.",
+        "workingLatex": "27^{\\,3-1} = 27^{2} = 729",
+        "explanation": "And $27^{2} = 729$, so both sides agree.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the solution.",
+        "workingLatex": "729 = 729 \\ \\checkmark",
+        "explanation": "Since both sides equal $729$, the solution $x=3$ is verified.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x = 3",
+        "explanation": "The solution of $9^x = 27^{x-1}$ is $x = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$9^x = 27^{x-1} \\Rightarrow 3^{2x} = 3^{3(x-1)} \\Rightarrow 2x = 3x - 3 \\Rightarrow x = 3$"
+  }
+}

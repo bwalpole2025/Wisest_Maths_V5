@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "quadratic formula",
+    "surd roots"
+  ],
+  "questionText": "Solve the equation $x^2 + 4x + 1 = 0$, giving your answers in surd form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the quadratic formula.",
+        "workingLatex": "x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+        "explanation": "When a quadratic does not factorise nicely, the formula gives the roots directly from the coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = 4,\\ c = 1",
+        "explanation": "Reading off the coefficients gives the values to substitute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Compute the discriminant.",
+        "workingLatex": "b^2 - 4ac = 16 - 4 = 12",
+        "explanation": "The discriminant is $12$; being positive but not a perfect square, the roots are irrational (surds).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into the formula.",
+        "workingLatex": "x = \\dfrac{-4 \\pm \\sqrt{12}}{2}",
+        "explanation": "Putting the coefficients and discriminant into the formula sets up the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the surd.",
+        "workingLatex": "\\sqrt{12} = 2\\sqrt{3}",
+        "explanation": "Taking out the square factor $4$ from $12$ simplifies $\\sqrt{12}$ to $2\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the roots.",
+        "workingLatex": "x = \\dfrac{-4 \\pm 2\\sqrt{3}}{2}",
+        "explanation": "Substituting the simplified surd gives this form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide through by 2.",
+        "workingLatex": "x = -2 \\pm \\sqrt{3}",
+        "explanation": "Dividing every term in the numerator by $2$ gives the simplest surd form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the sum of the roots.",
+        "workingLatex": "(-2+\\sqrt{3}) + (-2-\\sqrt{3}) = -4 = -\\dfrac{b}{a}",
+        "explanation": "The two roots add to $-4$, which equals $-b/a = -4$, giving a quick confirmation of the answers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the solutions.",
+        "workingLatex": "x = -2 + \\sqrt{3}, \\ x = -2 - \\sqrt{3}",
+        "explanation": "The two roots are $-2 + \\sqrt3$ and $-2 - \\sqrt3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x = \\dfrac{-4 \\pm \\sqrt{12}}{2} = \\dfrac{-4 \\pm 2\\sqrt{3}}{2} = -2 \\pm \\sqrt{3}$"
+  }
+}

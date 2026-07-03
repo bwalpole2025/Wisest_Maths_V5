@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "range of a parameter",
+    "inequalities"
+  ],
+  "questionText": "Find the range of values of $k$ for which the equation $x^2 + kx + 4 = 0$ has two distinct real roots.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition for two distinct real roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac > 0",
+        "explanation": "A quadratic has two distinct real roots exactly when its discriminant is strictly positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = k,\\ c = 4",
+        "explanation": "Here the middle coefficient is the unknown $k$, which the condition will constrain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = k^2 - 4(1)(4) = k^2 - 16",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $k^2 - 16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the inequality.",
+        "workingLatex": "k^2 - 16 > 0",
+        "explanation": "For two distinct real roots the discriminant must be strictly greater than zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise.",
+        "workingLatex": "(k - 4)(k + 4) > 0",
+        "explanation": "The left-hand side is a difference of squares, so it factorises as $(k-4)(k+4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the critical values.",
+        "workingLatex": "k = 4 \\ \\text{ and } \\ k = -4",
+        "explanation": "The expression is zero at $k = 4$ and $k = -4$; these split the number line into regions to test.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Analyse the sign of the product.",
+        "workingLatex": "\\text{positive outside the roots}",
+        "explanation": "An upward parabola in $k$ is positive outside its roots, i.e. for $k < -4$ or $k > 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Test a value inside.",
+        "workingLatex": "k = 0: (0-4)(0+4) = -16 < 0",
+        "explanation": "Testing $k = 0$ gives a negative value, confirming the inside region does not satisfy the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Test a value outside.",
+        "workingLatex": "k = 5: (5-4)(5+4) = 9 > 0",
+        "explanation": "Testing $k = 5$ gives a positive value, confirming the outside region does satisfy the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the solution set.",
+        "workingLatex": "k < -4 \\ \\text{ or } \\ k > 4",
+        "explanation": "The discriminant is positive precisely for these values of $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Exclude the boundary values.",
+        "workingLatex": "k \\neq \\pm 4",
+        "explanation": "At $k = \\pm 4$ the discriminant is zero (equal roots), so these are excluded since we need *distinct* roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Write as two intervals.",
+        "workingLatex": "k \\in (-\\infty, -4) \\cup (4, \\infty)",
+        "explanation": "The solution is the union of two open intervals, with the boundary values $\\pm 4$ excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "k < -4 \\ \\text{ or } \\ k > 4",
+        "explanation": "The equation has two distinct real roots when $k < -4$ or $k > 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = k^2 - 16 > 0 \\Rightarrow (k-4)(k+4) > 0 \\Rightarrow k < -4 \\text{ or } k > 4$"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.indices-surds.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds"
+  ],
+  "questionText": "Simplify $\\sqrt{32}$, giving your answer in the form $a\\sqrt{b}$ where $b$ is as small as possible.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the largest square factor.",
+        "workingLatex": "32 = 16 \\times 2",
+        "explanation": "We split $32$ into a perfect square times what is left, and $16$ is the largest square dividing $32$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the surd over the product.",
+        "workingLatex": "\\sqrt{32} = \\sqrt{16 \\times 2}",
+        "explanation": "Rewriting $32$ as $16\\times2$ prepares the surd to be broken apart.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule.",
+        "workingLatex": "\\sqrt{16 \\times 2} = \\sqrt{16}\\,\\sqrt{2}",
+        "explanation": "The root of a product is the product of the roots, so we can pull out the square part.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the square root of 16.",
+        "workingLatex": "\\sqrt{16} = 4",
+        "explanation": "Since $16$ is a perfect square, its root is the whole number $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the parts.",
+        "workingLatex": "\\sqrt{32} = 4\\sqrt{2}",
+        "explanation": "Writing $4$ in front of the remaining $\\sqrt2$ gives the simplified surd; $2$ is prime so it cannot reduce further.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "4\\sqrt{2}",
+        "explanation": "The simplified form is $4\\sqrt2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{32} = \\sqrt{16 \\times 2} = 4\\sqrt{2}$"
+  }
+}

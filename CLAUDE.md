@@ -1,5 +1,13 @@
 # Wisest Maths — Content Generation Project
 
+## FORCE FULL SUBTOPIC RULE (Highest Priority)
+
+When the user says anything containing "build next subtopic", "create the next subtopic", "complete subtopic", or "build subtopic":
+- You MUST generate EXACTLY 70 questions for that subtopic.
+- You are forbidden from stopping early.
+- Keep looping the pipeline until 70 questions are done, even if it takes multiple responses.
+- Only reply with progress updates or the final TypeScript when 70 is reached.
+
 ## Project Goal
 Build a high-quality bank of questions with full worked solutions for GCSE, A-Level Maths, and A-Level Further Maths.  
 Target: Up to **70 questions per subtopic**, each with detailed worked solutions containing intuitive explanations and the correct number of steps.

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "equal roots",
+    "finding a parameter"
+  ],
+  "questionText": "The equation $x^2 + (k + 2)x + 9 = 0$ has equal roots. Find the possible values of $k$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition for equal roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac = 0",
+        "explanation": "A quadratic has a repeated (equal) root exactly when its discriminant is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = k + 2,\\ c = 9",
+        "explanation": "Here the middle coefficient is the expression $k+2$, which contains the unknown $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = (k + 2)^2 - 4(1)(9)",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $(k+2)^2 - 36$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the discriminant to zero.",
+        "workingLatex": "(k + 2)^2 - 36 = 0",
+        "explanation": "For equal roots the discriminant must equal zero, giving an equation in $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange.",
+        "workingLatex": "(k + 2)^2 = 36",
+        "explanation": "Adding $36$ to both sides isolates the squared term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Take the square root.",
+        "workingLatex": "k + 2 = \\pm 6",
+        "explanation": "Taking the square root of both sides gives two cases, since $36$ has both a positive and a negative root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the positive case.",
+        "workingLatex": "k + 2 = 6 \\Rightarrow k = 4",
+        "explanation": "Subtracting $2$ from $6$ gives $k = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve the negative case.",
+        "workingLatex": "k + 2 = -6 \\Rightarrow k = -8",
+        "explanation": "Subtracting $2$ from $-6$ gives $k = -8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "List the values.",
+        "workingLatex": "k = 4 \\ \\text{ or } \\ k = -8",
+        "explanation": "There are two values of $k$ that make the roots equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check k = 4.",
+        "workingLatex": "(4+2)^2 - 36 = 36 - 36 = 0 \\ \\checkmark",
+        "explanation": "Substituting $k = 4$ gives a discriminant of $0$, confirming equal roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check k = -8.",
+        "workingLatex": "(-8+2)^2 - 36 = 36 - 36 = 0 \\ \\checkmark",
+        "explanation": "Substituting $k = -8$ also gives a discriminant of $0$, confirming equal roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the symmetry.",
+        "workingLatex": "k + 2 = \\pm 6 \\Rightarrow k = -2 \\pm 6",
+        "explanation": "The $\\pm$ from the square root produces two values of $k$, symmetric about $k = -2$: namely $4$ and $-8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "k = 4 \\ \\text{ or } \\ k = -8",
+        "explanation": "The equation has equal roots when $k = 4$ or $k = -8$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = (k+2)^2 - 36 = 0 \\Rightarrow k + 2 = \\pm 6 \\Rightarrow k = 4 \\text{ or } k = -8$"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "divisors",
+    "squares"
+  ],
+  "questionText": "Disprove the statement: ``Every positive integer has an even number of positive divisors.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 1:\\ \\tau(n) \\text{ is even}",
+        "explanation": "Here $\\tau(n)$ is the number of positive divisors. The claim says it is always even; one integer with an odd count disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single integer whose divisors come in an odd number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "See why divisors usually pair up.",
+        "workingLatex": "d \\mid n \\Rightarrow \\tfrac{n}{d} \\mid n",
+        "explanation": "Divisors normally pair as $d$ and $\\tfrac{n}{d}$, which is why the count is usually even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Spot when a pair collapses.",
+        "workingLatex": "d = \\tfrac{n}{d} \\iff n = d^2",
+        "explanation": "A divisor pairs with itself exactly when $n$ is a perfect square, leaving an unpaired divisor and an odd total.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose a perfect square.",
+        "workingLatex": "n = 4",
+        "explanation": "We test $n=4=2^2$, a perfect square, where the pairing should break.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "List its divisors.",
+        "workingLatex": "1, 2, 4",
+        "explanation": "The positive divisors of $4$ are $1$, $2$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Count them.",
+        "workingLatex": "\\tau(4) = 3",
+        "explanation": "There are $3$ divisors — the middle one, $2$, is its own partner since $2\\times2=4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the parity.",
+        "workingLatex": "3 \\text{ is odd}",
+        "explanation": "Three is an odd number, so $4$ has an odd number of divisors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Since $4$ has exactly $3$ (odd) divisors, the claim `every integer has an even number of divisors' is disproved. In fact this fails for every perfect square.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$4$ has divisors $1, 2, 4$ — exactly $3$ of them, an odd number. Hence the statement is false (it fails for every perfect square). $\\blacksquare$"
+  }
+}

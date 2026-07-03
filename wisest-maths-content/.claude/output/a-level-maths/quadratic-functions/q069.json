@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.quadratics.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "sum and product of roots",
+    "symmetric functions"
+  ],
+  "questionText": "The roots of the equation $x^2 - 6x + k = 0$ are $\\alpha$ and $\\beta$, where $\\alpha^2 + \\beta^2 = 20$. Find the value of $k$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the sum and product of roots.",
+        "workingLatex": "\\alpha + \\beta = -\\dfrac{b}{a}, \\quad \\alpha\\beta = \\dfrac{c}{a}",
+        "explanation": "For $x^2 - 6x + k = 0$ (with $a = 1$), the roots relate to the coefficients through these two formulas.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the sum of the roots.",
+        "workingLatex": "\\alpha + \\beta = 6",
+        "explanation": "Since $-b/a = 6$, the roots sum to $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the product of the roots.",
+        "workingLatex": "\\alpha\\beta = k",
+        "explanation": "Since $c/a = k$, the roots multiply to $k$ — the quantity we want to find.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recall the key identity.",
+        "workingLatex": "\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta",
+        "explanation": "This identity expresses the sum of the squares in terms of the sum and product, which we already know.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the known values.",
+        "workingLatex": "20 = 6^2 - 2k",
+        "explanation": "Putting $\\alpha^2 + \\beta^2 = 20$, $\\alpha + \\beta = 6$ and $\\alpha\\beta = k$ into the identity gives an equation in $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the square.",
+        "workingLatex": "20 = 36 - 2k",
+        "explanation": "Working out $6^2 = 36$ gives $20 = 36 - 2k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange.",
+        "workingLatex": "2k = 36 - 20",
+        "explanation": "Moving terms across to isolate $k$ gives $2k = 16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute.",
+        "workingLatex": "2k = 16",
+        "explanation": "Subtracting gives $2k = 16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for k.",
+        "workingLatex": "k = 8",
+        "explanation": "Dividing by $2$ gives $k = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Verify with the actual roots.",
+        "workingLatex": "x^2 - 6x + 8 = (x - 2)(x - 4)",
+        "explanation": "With $k = 8$ the equation factorises, giving roots $\\alpha = 2$ and $\\beta = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the condition.",
+        "workingLatex": "2^2 + 4^2 = 4 + 16 = 20 \\ \\checkmark",
+        "explanation": "The roots $2$ and $4$ satisfy $\\alpha^2 + \\beta^2 = 20$, confirming $k = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm real roots exist.",
+        "workingLatex": "\\Delta = 36 - 32 = 4 > 0",
+        "explanation": "The discriminant is positive, so the roots are genuinely real, as required for the condition to make sense.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "k = 8",
+        "explanation": "The value of $k$ satisfying the condition $\\alpha^2 + \\beta^2 = 20$ is $k = 8$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\alpha + \\beta = 6,\\ \\alpha\\beta = k$; $\\alpha^2+\\beta^2 = (\\alpha+\\beta)^2 - 2\\alpha\\beta = 36 - 2k = 20 \\Rightarrow k = 8$"
+  }
+}

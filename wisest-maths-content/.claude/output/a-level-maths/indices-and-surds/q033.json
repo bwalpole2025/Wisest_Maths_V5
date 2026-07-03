@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "simplifying"
+  ],
+  "questionText": "Rationalise the denominator and simplify $\\dfrac{3}{\\sqrt{6}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{remove the surd from the denominator}",
+        "explanation": "Rationalising rewrites the fraction with a whole-number denominator, which is the standard tidy form for a surd expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the surd.",
+        "workingLatex": "\\dfrac{3}{\\sqrt{6}} \\times \\dfrac{\\sqrt{6}}{\\sqrt{6}}",
+        "explanation": "Multiplying by $\\tfrac{\\sqrt6}{\\sqrt6} = 1$ keeps the value the same while clearing the surd, since $\\sqrt6\\times\\sqrt6 = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Work out the numerator.",
+        "workingLatex": "3 \\times \\sqrt{6} = 3\\sqrt{6}",
+        "explanation": "The top becomes $3\\sqrt6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Work out the denominator.",
+        "workingLatex": "\\sqrt{6} \\times \\sqrt{6} = 6",
+        "explanation": "The bottom becomes the rational number $6$, which was the aim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the fraction.",
+        "workingLatex": "\\dfrac{3\\sqrt{6}}{6}",
+        "explanation": "Combining top and bottom gives $\\tfrac{3\\sqrt6}{6}$, which can still be simplified.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel the common factor.",
+        "workingLatex": "\\dfrac{3}{6} = \\dfrac{1}{2}",
+        "explanation": "The numbers $3$ and $6$ share a factor of $3$, so the fraction reduces to $\\tfrac12$ of $\\sqrt6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the simplified form.",
+        "workingLatex": "\\dfrac{\\sqrt{6}}{2}",
+        "explanation": "After cancelling, the expression becomes $\\tfrac{\\sqrt6}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{3}{\\sqrt6} \\approx 1.225,\\quad \\dfrac{\\sqrt6}{2} \\approx 1.225",
+        "explanation": "Both forms evaluate to about $1.225$, confirming they are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{\\sqrt{6}}{2}",
+        "explanation": "The rationalised, simplified form is $\\tfrac{\\sqrt6}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{3}{\\sqrt{6}} = \\dfrac{3\\sqrt{6}}{6} = \\dfrac{\\sqrt{6}}{2}$"
+  }
+}

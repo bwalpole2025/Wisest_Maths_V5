@@ -1,0 +1,87 @@
+{
+  "id": "al.y1.pure.disproof.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "geometry",
+    "area",
+    "perimeter"
+  ],
+  "questionText": "Disprove the statement: ``Any two rectangles with the same area have the same perimeter.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{rectangles } R_1, R_2:\\ \\text{equal area} \\Rightarrow \\text{equal perimeter}",
+        "explanation": "The claim asserts equal area forces equal perimeter; two equal-area rectangles with different perimeters disprove it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair of rectangles with the same area but different perimeters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Fix a common area.",
+        "workingLatex": "\\text{area} = 12",
+        "explanation": "We choose area $12$ and find two different rectangles achieving it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Pick two factor pairs of 12.",
+        "workingLatex": "1 \\times 12 \\quad \\text{and} \\quad 3 \\times 4",
+        "explanation": "Both $1\\times12$ and $3\\times4$ have area $12$, but very different shapes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute the first perimeter.",
+        "workingLatex": "P_1 = 2(1 + 12) = 26",
+        "explanation": "The long thin rectangle has perimeter $26$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the second perimeter.",
+        "workingLatex": "P_2 = 2(3 + 4) = 14",
+        "explanation": "The more compact rectangle has perimeter $14$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare.",
+        "workingLatex": "26 \\neq 14",
+        "explanation": "Same area, but the perimeters differ substantially.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain the intuition.",
+        "workingLatex": "\\text{elongating a rectangle raises its perimeter}",
+        "explanation": "Area fixes the product of the sides, but perimeter depends on their sum, which grows as the rectangle is stretched.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The $1\\times12$ and $3\\times4$ rectangles have equal area $12$ but perimeters $26$ and $14$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "A $1 \\times 12$ rectangle and a $3 \\times 4$ rectangle both have area $12$, but their perimeters are $26$ and $14$. Hence the statement is false. $\\blacksquare$"
+  }
+}

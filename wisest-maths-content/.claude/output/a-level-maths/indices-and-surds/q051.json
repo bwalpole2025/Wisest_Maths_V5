@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "fractional indices",
+    "roots"
+  ],
+  "questionText": "Evaluate $81^{\\frac{1}{4}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the fractional index.",
+        "workingLatex": "81^{\\frac{1}{4}} = \\sqrt[4]{81}",
+        "explanation": "An index of $\\tfrac14$ means the fourth root, so we want the number that raised to the fourth power gives $81$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State what the fourth root asks for.",
+        "workingLatex": "\\text{find } n \\text{ with } n^4 = 81",
+        "explanation": "The fourth root of $81$ is the value $n$ whose fourth power is $81$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test a candidate.",
+        "workingLatex": "3^4 = 81",
+        "explanation": "Since $3^2 = 9$ and $9^2 = 81$, we have $3^4 = 81$, so $3$ works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the result.",
+        "workingLatex": "81^{\\frac{1}{4}} = 3",
+        "explanation": "Therefore the fourth root of $81$ is $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check.",
+        "workingLatex": "3^4 = 3 \\times 3 \\times 3 \\times 3 = 81 \\ \\checkmark",
+        "explanation": "Multiplying four $3$'s together returns $81$, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "3",
+        "explanation": "The value of $81^{1/4}$ is $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$81^{\\frac{1}{4}} = \\sqrt[4]{81} = 3$"
+  }
+}

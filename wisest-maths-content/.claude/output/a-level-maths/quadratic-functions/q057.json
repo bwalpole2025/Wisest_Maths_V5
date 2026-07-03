@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.quadratics.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "solving",
+    "repeated root",
+    "perfect square"
+  ],
+  "questionText": "Solve the equation $4x^2 - 4x + 1 = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 4,\\ b = -4,\\ c = 1",
+        "explanation": "We first check the discriminant to anticipate the type of roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compute the discriminant.",
+        "workingLatex": "\\Delta = (-4)^2 - 4(4)(1) = 16 - 16 = 0",
+        "explanation": "The discriminant is zero, signalling a single repeated root and a perfect-square quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recognise the square terms.",
+        "workingLatex": "4x^2 = (2x)^2, \\quad 1 = 1^2",
+        "explanation": "The first and last terms are perfect squares of $2x$ and $1$, suggesting the factorisation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the middle term.",
+        "workingLatex": "2(2x)(1) = 4x",
+        "explanation": "For $(2x - 1)^2$ the middle term is $-2(2x)(1) = -4x$, matching the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the factorised form.",
+        "workingLatex": "(2x - 1)^2 = 0",
+        "explanation": "So the quadratic is the perfect square $(2x - 1)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve the squared bracket.",
+        "workingLatex": "2x - 1 = 0",
+        "explanation": "A squared bracket equals zero only when the bracket itself is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x.",
+        "workingLatex": "x = \\dfrac{1}{2}",
+        "explanation": "Adding $1$ and dividing by $2$ gives $x = \\tfrac12$, a repeated root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check by substitution.",
+        "workingLatex": "4\\left(\\tfrac{1}{4}\\right) - 4\\left(\\tfrac{1}{2}\\right) + 1 = 1 - 2 + 1 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = \\tfrac12$ gives $0$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x = \\dfrac{1}{2} \\text{ (repeated)}",
+        "explanation": "The equation has the single repeated solution $x = \\tfrac12$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = 0$ and $4x^2 - 4x + 1 = (2x-1)^2 = 0 \\Rightarrow x = \\tfrac{1}{2}$ (repeated)."
+  }
+}

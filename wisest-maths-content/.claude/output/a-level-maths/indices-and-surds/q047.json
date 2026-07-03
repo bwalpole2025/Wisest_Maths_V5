@@ -1,0 +1,65 @@
+{
+  "id": "al.y1.pure.indices-surds.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "index laws",
+    "dividing",
+    "negative indices"
+  ],
+  "questionText": "Simplify $x^{8} \\div x^{-2}$, leaving your answer in index form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the operation.",
+        "workingLatex": "\\dfrac{x^{8}}{x^{-2}}",
+        "explanation": "We are dividing two powers of the same base $x$, so the division law of indices applies even with a negative index below.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the division law.",
+        "workingLatex": "\\dfrac{x^m}{x^n} = x^{m-n}",
+        "explanation": "Dividing powers of the same base means subtracting the lower index from the upper one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract the indices.",
+        "workingLatex": "8 - (-2) = 8 + 2 = 10",
+        "explanation": "Subtracting a negative index is the same as adding, so $8-(-2) = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the simplified power.",
+        "workingLatex": "x^{8} \\div x^{-2} = x^{10}",
+        "explanation": "Placing the resulting index on the base gives $x^{10}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check the direction.",
+        "workingLatex": "\\text{dividing by } x^{-2} = \\text{multiplying by } x^{2}",
+        "explanation": "Since $x^{-2}$ is $\\tfrac{1}{x^2}$, dividing by it multiplies by $x^2$, which raises the index — consistent with $10 > 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x^{10}",
+        "explanation": "The simplified expression is $x^{10}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^{8} \\div x^{-2} = x^{8-(-2)} = x^{10}$"
+  }
+}

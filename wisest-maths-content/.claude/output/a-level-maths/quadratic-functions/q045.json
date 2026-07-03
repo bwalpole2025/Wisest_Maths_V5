@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "minimum value",
+    "leading coefficient"
+  ],
+  "questionText": "Express $2x^2 - 12x + 5$ in the form $a(x - p)^2 + q$, and hence state the minimum value.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor the leading coefficient from the x terms.",
+        "workingLatex": "2x^2 - 12x = 2\\left(x^2 - 6x\\right)",
+        "explanation": "With leading coefficient $2$, we factor it from the $x$ terms so the bracket is monic and ready to complete.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the full expression.",
+        "workingLatex": "2\\left(x^2 - 6x\\right) + 5",
+        "explanation": "Only the $x$ terms go inside the bracket; the constant $+5$ stays outside for now.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Halve the coefficient of x inside.",
+        "workingLatex": "\\dfrac{-6}{2} = -3",
+        "explanation": "Half of $-6$ is $-3$, which will appear inside the squared bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Complete the square inside.",
+        "workingLatex": "x^2 - 6x = (x - 3)^2 - 9",
+        "explanation": "Expanding $(x-3)^2$ gives $x^2 - 6x + 9$, so we subtract $9$ inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "2\\left[(x - 3)^2 - 9\\right] + 5",
+        "explanation": "Replacing the bracket gives the whole expression in terms of a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand the outer multiplier.",
+        "workingLatex": "2(x - 3)^2 - 18 + 5",
+        "explanation": "Multiplying the $2$ through affects both the square and the $-9$, giving $-18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the constant.",
+        "workingLatex": "-18 + 5 = -13",
+        "explanation": "Combining $-18 + 5$ gives $-13$, so $q = -13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the completed square.",
+        "workingLatex": "2(x - 3)^2 - 13",
+        "explanation": "The expression in the required form is $2(x-3)^2 - 13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify a, p and q.",
+        "workingLatex": "a = 2,\\ p = 3,\\ q = -13",
+        "explanation": "Comparing with $a(x-p)^2 + q$ gives these three values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find where the square is smallest.",
+        "workingLatex": "(x - 3)^2 \\ge 0, \\text{ least when } x = 3",
+        "explanation": "A square is never negative and equals zero when $x = 3$, which is where the expression is smallest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Read off the minimum value.",
+        "workingLatex": "2(0) - 13 = -13",
+        "explanation": "At $x = 3$ the squared term is zero, leaving the minimum value $-13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify numerically.",
+        "workingLatex": "x = 3: 2(9) - 12(3) + 5 = 18 - 36 + 5 = -13 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ into the original expression gives $-13$, confirming the minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "2(x - 3)^2 - 13, \\text{ minimum value } -13",
+        "explanation": "The completed-square form is $2(x-3)^2 - 13$, and the minimum value is $-13$ (at $x = 3$).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x^2 - 12x + 5 = 2(x-3)^2 - 13$, so the minimum value is $-13$ (at $x = 3$)."
+  }
+}

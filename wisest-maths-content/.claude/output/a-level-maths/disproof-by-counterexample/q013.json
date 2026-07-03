@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "divisibility"
+  ],
+  "questionText": "Disprove the statement: ``If a positive integer is divisible by $4$ and by $6$, then it is divisible by $24$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ m:\\ (4 \\mid m \\text{ and } 6 \\mid m) \\Rightarrow 24 \\mid m",
+        "explanation": "The claim asserts divisibility by $24$ follows from divisibility by $4$ and $6$; one $m$ failing this disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We seek an $m$ divisible by both $4$ and $6$ but not by $24$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Spot why the claim over-counts.",
+        "workingLatex": "4 = 2^2,\\ 6 = 2 \\times 3;\\ \\operatorname{lcm}(4,6) = 12",
+        "explanation": "The two conditions only force divisibility by the least common multiple $12$, not by $24$; the shared factor of $2$ is double-counted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose the least common multiple.",
+        "workingLatex": "m = 12",
+        "explanation": "We test $m=12$, the smallest number divisible by both $4$ and $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the hypotheses.",
+        "workingLatex": "12 = 4 \\times 3 \\text{ and } 12 = 6 \\times 2",
+        "explanation": "So $12$ is divisible by both $4$ and $6$, satisfying the hypothesis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the conclusion.",
+        "workingLatex": "12 = 24 \\times 0 + 12, \\text{ so } 24 \\nmid 12",
+        "explanation": "Dividing $12$ by $24$ leaves remainder $12$, so $12$ is not divisible by $24$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confront the claim.",
+        "workingLatex": "4 \\mid 12,\\ 6 \\mid 12, \\text{ but } 24 \\nmid 12",
+        "explanation": "The hypotheses both hold, yet the conclusion fails, which is exactly what a counterexample requires.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the correct statement.",
+        "workingLatex": "\\operatorname{lcm}(4,6) = 12",
+        "explanation": "The most that divisibility by $4$ and $6$ guarantees is divisibility by their lowest common multiple $12$, not $24$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Since $12$ is divisible by $4$ and $6$ but not by $24$, the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $m=12$: it is divisible by $4$ and by $6$, but $24 \\nmid 12$. Hence the statement is false. $\\blacksquare$"
+  }
+}

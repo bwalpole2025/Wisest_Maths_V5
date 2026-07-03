@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.indices-surds.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds"
+  ],
+  "questionText": "Simplify $\\sqrt{75}$, giving your answer in the form $a\\sqrt{b}$ where $b$ is as small as possible.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the largest square factor.",
+        "workingLatex": "75 = 25 \\times 3",
+        "explanation": "We split $75$ into a perfect square times what is left, and $25$ is the largest square dividing $75$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the surd over the product.",
+        "workingLatex": "\\sqrt{75} = \\sqrt{25 \\times 3}",
+        "explanation": "Rewriting $75$ as $25\\times3$ prepares the surd to be broken apart.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule.",
+        "workingLatex": "\\sqrt{25 \\times 3} = \\sqrt{25}\\,\\sqrt{3}",
+        "explanation": "The root of a product equals the product of the roots, letting us pull out the square part.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the square root of 25.",
+        "workingLatex": "\\sqrt{25} = 5",
+        "explanation": "Since $25$ is a perfect square, its root is the whole number $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the parts.",
+        "workingLatex": "\\sqrt{75} = 5\\sqrt{3}",
+        "explanation": "Writing $5$ in front of the remaining $\\sqrt3$ gives the simplified surd; $3$ is prime so it cannot reduce further.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "5\\sqrt{3}",
+        "explanation": "The simplified form is $5\\sqrt3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$"
+  }
+}

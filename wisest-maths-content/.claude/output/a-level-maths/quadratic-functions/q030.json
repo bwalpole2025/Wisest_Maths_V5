@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.quadratics.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square"
+  ],
+  "questionText": "Express $x^2 + 10x$ in the form $(x + p)^2 + q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Halve the coefficient of x.",
+        "workingLatex": "p = \\dfrac{10}{2} = 5",
+        "explanation": "The number inside the bracket is half the coefficient of $x$, so $p = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the square.",
+        "workingLatex": "(x + 5)^2 = x^2 + 10x + 25",
+        "explanation": "Expanding $(x+5)^2$ produces the required $x^2 + 10x$ plus an extra $25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the correction needed.",
+        "workingLatex": "\\text{we have an extra } +25",
+        "explanation": "The square introduced a $+25$ that was not in the original, so we must subtract it back.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract the extra constant.",
+        "workingLatex": "x^2 + 10x = (x + 5)^2 - 25",
+        "explanation": "Subtracting $25$ keeps the value equal to the original $x^2 + 10x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify p and q.",
+        "workingLatex": "p = 5, \\quad q = -25",
+        "explanation": "Comparing with $(x+p)^2 + q$ gives $p = 5$ and $q = -25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "(x + 5)^2 - 25",
+        "explanation": "The completed-square form is $(x+5)^2 - 25$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + 10x = (x+5)^2 - 25$"
+  }
+}

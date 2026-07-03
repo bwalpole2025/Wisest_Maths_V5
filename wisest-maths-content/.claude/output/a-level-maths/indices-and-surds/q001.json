@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "index laws",
+    "simplifying"
+  ],
+  "questionText": "Simplify $x^5 \\times x^3$, leaving your answer in index form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the operation.",
+        "workingLatex": "x^5 \\times x^3",
+        "explanation": "We are multiplying two powers of the same base $x$, which is exactly the situation the multiplication law of indices handles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the relevant index law.",
+        "workingLatex": "x^m \\times x^n = x^{m+n}",
+        "explanation": "When multiplying powers of the same base, you keep the base and add the indices, because you are combining $5$ factors of $x$ with $3$ more.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the indices.",
+        "workingLatex": "m + n = 5 + 3 = 8",
+        "explanation": "Adding the two indices $5$ and $3$ gives $8$, the total number of factors of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the combined power.",
+        "workingLatex": "x^5 \\times x^3 = x^{8}",
+        "explanation": "Placing the summed index on the common base gives $x^8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check the meaning.",
+        "workingLatex": "\\underbrace{x \\cdots x}_{5} \\times \\underbrace{x \\cdots x}_{3} = \\underbrace{x \\cdots x}_{8}",
+        "explanation": "Written out in full, five $x$'s times three $x$'s really is eight $x$'s multiplied together, confirming the law.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "x^{8}",
+        "explanation": "The simplified expression in index form is $x^8$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^5 \\times x^3 = x^{5+3} = x^{8}$"
+  }
+}

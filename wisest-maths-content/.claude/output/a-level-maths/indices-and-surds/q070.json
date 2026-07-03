@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "common base"
+  ],
+  "questionText": "Solve the equation $16^{x} = 8^{\\,x+1}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose a common base.",
+        "workingLatex": "16 = 2^4, \\quad 8 = 2^3",
+        "explanation": "Both $16$ and $8$ are powers of $2$, so rewriting with base $2$ lets us compare indices directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the left-hand side.",
+        "workingLatex": "16^{x} = \\left(2^4\\right)^{x} = 2^{4x}",
+        "explanation": "Using the power-of-a-power law gives $2^{4x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the right-hand side.",
+        "workingLatex": "8^{\\,x+1} = \\left(2^3\\right)^{x+1} = 2^{3(x+1)}",
+        "explanation": "Similarly the right-hand side becomes $2^{3(x+1)}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation with equal bases.",
+        "workingLatex": "2^{4x} = 2^{3(x+1)}",
+        "explanation": "Both sides are now powers of $2$, so the equation reduces to comparing exponents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Equate the indices.",
+        "workingLatex": "4x = 3(x+1)",
+        "explanation": "Equal powers of the same base force equal indices, giving a linear equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand the right-hand side.",
+        "workingLatex": "4x = 3x + 3",
+        "explanation": "Multiplying out $3(x+1)$ gives $3x + 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect the x terms.",
+        "workingLatex": "4x - 3x = 3",
+        "explanation": "Subtracting $3x$ from both sides gathers the $x$ terms on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for x.",
+        "workingLatex": "x = 3",
+        "explanation": "Combining $4x - 3x$ gives $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the left-hand side.",
+        "workingLatex": "16^{3} = 4096",
+        "explanation": "Substituting $x=3$, the left side is $16^3 = 4096$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the right-hand side.",
+        "workingLatex": "8^{\\,3+1} = 8^{4} = 4096",
+        "explanation": "And the right side is $8^4 = 4096$, so both sides agree.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the solution.",
+        "workingLatex": "4096 = 4096 \\ \\checkmark",
+        "explanation": "Since both sides equal $4096$, the solution $x = 3$ is verified.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the method.",
+        "workingLatex": "\\text{common base, then equate indices}",
+        "explanation": "Rewriting both sides with the same base and comparing exponents is the standard approach for these equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x = 3",
+        "explanation": "The solution of $16^x = 8^{x+1}$ is $x = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$16^{x} = 8^{\\,x+1} \\Rightarrow 2^{4x} = 2^{3(x+1)} \\Rightarrow 4x = 3x + 3 \\Rightarrow x = 3$"
+  }
+}

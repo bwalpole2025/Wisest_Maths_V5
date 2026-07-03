@@ -1,0 +1,84 @@
+{
+  "id": "al.y1.pure.indices-surds.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator"
+  ],
+  "questionText": "Rationalise the denominator of $\\dfrac{1}{\\sqrt{5}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{remove the surd from the denominator}",
+        "explanation": "`Rationalising' means rewriting the fraction so the bottom is a whole number, which makes it easier to interpret and combine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose what to multiply by.",
+        "workingLatex": "\\text{multiply top and bottom by } \\sqrt{5}",
+        "explanation": "Multiplying by $\\tfrac{\\sqrt5}{\\sqrt5}$ (which equals $1$) does not change the value but will clear the surd, since $\\sqrt5\\times\\sqrt5 = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Multiply the fraction.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{5}} \\times \\dfrac{\\sqrt{5}}{\\sqrt{5}}",
+        "explanation": "We apply the same factor to numerator and denominator to keep the fraction equivalent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Work out the numerator.",
+        "workingLatex": "1 \\times \\sqrt{5} = \\sqrt{5}",
+        "explanation": "The top becomes $\\sqrt5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Work out the denominator.",
+        "workingLatex": "\\sqrt{5} \\times \\sqrt{5} = 5",
+        "explanation": "The bottom becomes $\\sqrt5\\times\\sqrt5 = 5$, a rational number, which was the aim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the result.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{5}} = \\dfrac{\\sqrt{5}}{5}",
+        "explanation": "Combining top and bottom gives $\\tfrac{\\sqrt5}{5}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the denominator is rational.",
+        "workingLatex": "5 \\in \\mathbb{Q}",
+        "explanation": "The denominator is now the whole number $5$, so the fraction is rationalised.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{1}{\\sqrt5} \\approx 0.447,\\quad \\dfrac{\\sqrt5}{5} \\approx 0.447",
+        "explanation": "Both forms evaluate to about $0.447$, so the rationalised fraction has the same value as the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{\\sqrt{5}}{5}",
+        "explanation": "The rationalised form is $\\tfrac{\\sqrt5}{5}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1}{\\sqrt{5}} = \\dfrac{1}{\\sqrt{5}} \\times \\dfrac{\\sqrt{5}}{\\sqrt{5}} = \\dfrac{\\sqrt{5}}{5}$"
+  }
+}

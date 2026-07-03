@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "solving",
+    "factorising",
+    "leading coefficient"
+  ],
+  "questionText": "Solve the equation $3x^2 - 5x - 2 = 0$ by factorising.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 3,\\ b = -5,\\ c = -2",
+        "explanation": "With a leading coefficient of $3$, we look for two numbers multiplying to $ac = -6$ and adding to $b = -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the two key numbers.",
+        "workingLatex": "1 \\times (-6) = -6, \\quad 1 + (-6) = -5",
+        "explanation": "The numbers $1$ and $-6$ multiply to $ac = -6$ and add to $-5$, so they split the middle term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Split the middle term.",
+        "workingLatex": "3x^2 + x - 6x - 2",
+        "explanation": "Rewriting $-5x$ as $+x - 6x$ prepares the expression for factorising by grouping.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the first pair.",
+        "workingLatex": "x(3x + 1)",
+        "explanation": "Taking $x$ out of $3x^2 + x$ gives $x(3x+1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise the second pair.",
+        "workingLatex": "-2(3x + 1)",
+        "explanation": "Taking $-2$ out of $-6x - 2$ gives $-2(3x+1)$, revealing the same bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Extract the common bracket.",
+        "workingLatex": "(3x + 1)(x - 2) = 0",
+        "explanation": "Factoring out $(3x+1)$ gives the fully factorised equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the zero-product rule.",
+        "workingLatex": "3x + 1 = 0 \\ \\text{ or } \\ x - 2 = 0",
+        "explanation": "Setting each bracket to zero gives two linear equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve the first bracket.",
+        "workingLatex": "3x + 1 = 0 \\Rightarrow x = -\\dfrac{1}{3}",
+        "explanation": "Solving $3x + 1 = 0$ gives $x = -\\tfrac13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve the second bracket.",
+        "workingLatex": "x - 2 = 0 \\Rightarrow x = 2",
+        "explanation": "Solving $x - 2 = 0$ gives $x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check by substitution.",
+        "workingLatex": "3(4) - 5(2) - 2 = 12 - 10 - 2 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ gives $0$, confirming it is a root (a similar check works for $-\\tfrac13$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify the second root.",
+        "workingLatex": "3\\left(\\tfrac{1}{9}\\right) - 5\\left(-\\tfrac{1}{3}\\right) - 2 = \\tfrac{1}{3} + \\tfrac{5}{3} - 2 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = -\\tfrac13$ also gives $0$, confirming the second root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Comment on the method.",
+        "workingLatex": "\\text{split the middle term, then group}",
+        "explanation": "For a leading coefficient other than $1$, splitting the middle term using $ac$ and grouping is the reliable factorising method.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the solutions.",
+        "workingLatex": "x = 2, \\ x = -\\tfrac{1}{3}",
+        "explanation": "The solutions are $x = 2$ and $x = -\\tfrac13$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3x^2 - 5x - 2 = (3x+1)(x-2) = 0 \\Rightarrow x = -\\tfrac{1}{3} \\text{ or } x = 2$"
+  }
+}

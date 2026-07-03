@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "twin primes"
+  ],
+  "questionText": "Disprove the statement: ``If $p$ is an odd prime, then $p + 2$ is also prime.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a conditional for all odd primes.",
+        "workingLatex": "\\forall\\ \\text{odd primes } p:\\ p + 2 \\text{ is prime}",
+        "explanation": "The claim asserts $p+2$ is prime for *every* odd prime $p$; one odd prime with $p+2$ composite disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single odd prime $p$ for which $p+2$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the twin-prime cases.",
+        "workingLatex": "p=3: 5,\\quad p=5: 7 \\ (\\text{both prime})",
+        "explanation": "For $p=3$ and $p=5$ the number $p+2$ is prime (these are twin-prime pairs), which makes the claim look plausible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Move to p = 7.",
+        "workingLatex": "p = 7",
+        "explanation": "We test the next odd prime, $p=7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate p + 2.",
+        "workingLatex": "7 + 2 = 9",
+        "explanation": "Adding $2$ to the prime $7$ gives $p+2 = 9$, which we now test for primality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise the result.",
+        "workingLatex": "9 = 3 \\times 3",
+        "explanation": "Since $9=3\\times3$, it is composite, not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confront the claim.",
+        "workingLatex": "p = 7 \\text{ prime, but } 9 \\text{ composite}",
+        "explanation": "So $7$ is an odd prime for which $p+2$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Comment on twin primes.",
+        "workingLatex": "\\text{not every prime has a twin}",
+        "explanation": "Twin primes like $(3,5)$ and $(5,7)$ exist, but they do not occur after every prime, so the universal claim fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $p=7$, $p+2 = 9 = 3^2$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take the odd prime $p=7$: then $p+2 = 9 = 3 \\times 3$, which is composite. Hence the statement is false. $\\blacksquare$"
+  }
+}

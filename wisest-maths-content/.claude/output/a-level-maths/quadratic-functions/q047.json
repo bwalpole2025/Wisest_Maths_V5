@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "proof",
+    "always positive"
+  ],
+  "questionText": "Prove that $x^2 - 4x + 7 > 0$ for all real values of $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{show } x^2 - 4x + 7 > 0 \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "We show the quadratic is always positive by completing the square, which reveals its minimum value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Focus on the first two terms.",
+        "workingLatex": "x^2 - 4x",
+        "explanation": "We complete the square on $x^2 - 4x$ first, then adjust the constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Halve the coefficient of x.",
+        "workingLatex": "\\dfrac{-4}{2} = -2",
+        "explanation": "Half of $-4$ is $-2$, which will appear inside the squared bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Complete the square.",
+        "workingLatex": "x^2 - 4x = (x - 2)^2 - 4",
+        "explanation": "Expanding $(x-2)^2$ gives $x^2 - 4x + 4$, so we subtract $4$ to compensate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Reintroduce the constant.",
+        "workingLatex": "x^2 - 4x + 7 = (x - 2)^2 - 4 + 7",
+        "explanation": "Replacing $x^2 - 4x$ and keeping the $+7$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify.",
+        "workingLatex": "= (x - 2)^2 + 3",
+        "explanation": "Combining $-4 + 7$ gives $+3$, so the quadratic equals $(x-2)^2 + 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the non-negativity of a square.",
+        "workingLatex": "(x - 2)^2 \\ge 0",
+        "explanation": "The square of any real number is at least $0$, whatever value $x$ takes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add 3 to both sides.",
+        "workingLatex": "(x - 2)^2 + 3 \\ge 3",
+        "explanation": "Adding $3$ preserves the inequality, so the expression is at least $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compare with zero.",
+        "workingLatex": "(x - 2)^2 + 3 \\ge 3 > 0",
+        "explanation": "Since $3 > 0$, the whole expression is strictly positive for every real $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Identify the minimum.",
+        "workingLatex": "\\text{minimum value } 3 \\text{ at } x = 2",
+        "explanation": "The least value $3$ occurs when the square is zero, i.e. at $x = 2$; it is still positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the discriminant agrees.",
+        "workingLatex": "\\Delta = 16 - 28 = -12 < 0",
+        "explanation": "A negative discriminant independently confirms the quadratic never reaches zero, so it keeps one sign (positive here).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Interpret graphically.",
+        "workingLatex": "\\text{parabola lies entirely above the } x\\text{-axis}",
+        "explanation": "With a positive leading coefficient and no real roots, the whole parabola sits above the $x$-axis, matching the algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude.",
+        "workingLatex": "x^2 - 4x + 7 > 0 \\ \\forall x \\in \\mathbb{R}",
+        "explanation": "Because the expression equals $(x-2)^2 + 3 \\ge 3 > 0$, it is positive for all real $x$. $\\blacksquare$",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 4x + 7 = (x-2)^2 + 3 \\ge 3 > 0$ for all real $x$. $\\blacksquare$"
+  }
+}

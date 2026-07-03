@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Rationalise the denominator of $\\dfrac{4}{\\sqrt{7} - \\sqrt{3}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the conjugate.",
+        "workingLatex": "\\text{conjugate of } \\sqrt{7} - \\sqrt{3} \\text{ is } \\sqrt{7} + \\sqrt{3}",
+        "explanation": "For a two-term surd denominator we multiply by its conjugate, which turns the bottom into a surd-free difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{4}{\\sqrt{7}-\\sqrt{3}} \\times \\dfrac{\\sqrt{7}+\\sqrt{3}}{\\sqrt{7}+\\sqrt{3}}",
+        "explanation": "Multiplying by $1$ in this form preserves the value while setting up the denominator to rationalise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator.",
+        "workingLatex": "(\\sqrt{7}-\\sqrt{3})(\\sqrt{7}+\\sqrt{3}) = 7 - 3 = 4",
+        "explanation": "The difference of squares gives $(\\sqrt7)^2 - (\\sqrt3)^2 = 7 - 3 = 4$, a rational denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the numerator.",
+        "workingLatex": "4\\left(\\sqrt{7} + \\sqrt{3}\\right)",
+        "explanation": "The top becomes $4$ times the conjugate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Form the fraction.",
+        "workingLatex": "\\dfrac{4\\left(\\sqrt{7}+\\sqrt{3}\\right)}{4}",
+        "explanation": "Placing the numerator over the rational denominator $4$ gives this fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel the common factor.",
+        "workingLatex": "\\dfrac{4}{4} = 1",
+        "explanation": "The factor of $4$ on top and bottom cancels neatly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the simplified result.",
+        "workingLatex": "\\sqrt{7} + \\sqrt{3}",
+        "explanation": "After cancelling, the expression reduces to $\\sqrt7 + \\sqrt3$ with no denominator at all.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{4}{2.646 - 1.732} \\approx 4.38,\\quad \\sqrt{7} + \\sqrt{3} \\approx 4.38",
+        "explanation": "Both the original and simplified forms evaluate to about $4.38$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\sqrt{7} + \\sqrt{3}",
+        "explanation": "The rationalised expression is $\\sqrt7 + \\sqrt3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{4}{\\sqrt{7}-\\sqrt{3}} = \\dfrac{4\\left(\\sqrt{7}+\\sqrt{3}\\right)}{7-3} = \\dfrac{4\\left(\\sqrt{7}+\\sqrt{3}\\right)}{4} = \\sqrt{7} + \\sqrt{3}$"
+  }
+}

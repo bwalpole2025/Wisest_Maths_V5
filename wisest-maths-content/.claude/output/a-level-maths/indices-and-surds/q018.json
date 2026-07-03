@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Rationalise the denominator of $\\dfrac{\\sqrt{5} + \\sqrt{2}}{\\sqrt{5} - \\sqrt{2}}$, giving your answer in the form $a + b\\sqrt{10}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the conjugate.",
+        "workingLatex": "\\text{conjugate of } \\sqrt{5} - \\sqrt{2} \\text{ is } \\sqrt{5} + \\sqrt{2}",
+        "explanation": "To clear a two-term surd denominator we multiply by its conjugate, because $(\\,)(\\,)$ then becomes a difference of two squares with no surds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}} \\times \\dfrac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}",
+        "explanation": "Multiplying by $1$ in this form keeps the value unchanged while setting up the denominator to rationalise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator.",
+        "workingLatex": "\\left(\\sqrt{5}-\\sqrt{2}\\right)\\left(\\sqrt{5}+\\sqrt{2}\\right) = 5 - 2 = 3",
+        "explanation": "The difference of squares gives $(\\sqrt5)^2-(\\sqrt2)^2 = 5-2 = 3$, a rational denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the numerator as a square.",
+        "workingLatex": "\\left(\\sqrt{5}+\\sqrt{2}\\right)^2 = 5 + 2\\sqrt{10} + 2",
+        "explanation": "The numerator is $(\\sqrt5+\\sqrt2)^2$; expanding gives $5$, the cross term $2\\sqrt{5}\\sqrt{2}=2\\sqrt{10}$, and $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerator.",
+        "workingLatex": "5 + 2 + 2\\sqrt{10} = 7 + 2\\sqrt{10}",
+        "explanation": "Adding the rational parts $5$ and $2$ gives $7 + 2\\sqrt{10}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the combined fraction.",
+        "workingLatex": "\\dfrac{7 + 2\\sqrt{10}}{3}",
+        "explanation": "Placing the simplified numerator over the rational denominator gives this fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Split into the required form.",
+        "workingLatex": "\\dfrac{7}{3} + \\dfrac{2}{3}\\sqrt{10}",
+        "explanation": "Separating the rational and surd parts writes the answer as $a + b\\sqrt{10}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify a and b.",
+        "workingLatex": "a = \\dfrac{7}{3}, \\quad b = \\dfrac{2}{3}",
+        "explanation": "Comparing with $a + b\\sqrt{10}$ gives $a=\\tfrac73$ and $b=\\tfrac23$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the denominator is rational.",
+        "workingLatex": "3 \\in \\mathbb{Q}",
+        "explanation": "The denominator is now the whole number $3$, so the expression is fully rationalised.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Note why the conjugate works.",
+        "workingLatex": "(p-q)(p+q) = p^2 - q^2",
+        "explanation": "The conjugate exploits the difference-of-squares identity, which squares away both surds at once.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{2.236 + 1.414}{2.236 - 1.414} \\approx 4.44",
+        "explanation": "The original evaluates to about $4.44$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Match the check.",
+        "workingLatex": "\\dfrac{7 + 2(3.162)}{3} \\approx 4.44",
+        "explanation": "The rationalised form also gives about $4.44$, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{7 + 2\\sqrt{10}}{3}",
+        "explanation": "The rationalised expression is $\\tfrac{7+2\\sqrt{10}}{3}$, i.e. $\\tfrac73 + \\tfrac23\\sqrt{10}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}-\\sqrt{2}} = \\dfrac{\\left(\\sqrt{5}+\\sqrt{2}\\right)^2}{5-2} = \\dfrac{7 + 2\\sqrt{10}}{3}$"
+  }
+}

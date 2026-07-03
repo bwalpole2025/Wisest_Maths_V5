@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "cubes",
+    "algebra"
+  ],
+  "questionText": "Disprove the statement: ``For all real numbers $a$ and $b$, if $a^2 = b^2$ then $a^3 = b^3$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a conditional for all reals.",
+        "workingLatex": "\\forall\\ a,b:\\ a^2 = b^2 \\Rightarrow a^3 = b^3",
+        "explanation": "The claim asserts equal squares force equal cubes; one pair with $a^2=b^2$ but $a^3\\neq b^3$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair satisfying the hypothesis but failing the conclusion.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note squares lose sign but cubes keep it.",
+        "workingLatex": "(-x)^2 = x^2 \\text{ but } (-x)^3 = -x^3",
+        "explanation": "Squaring hides sign while cubing preserves it, so a number and its negative agree on squares but disagree on cubes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a number and its negative.",
+        "workingLatex": "a = 2, \\quad b = -2",
+        "explanation": "We pick $a=2$ and $b=-2$, negatives of each other.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the hypothesis.",
+        "workingLatex": "a^2 = 4, \\quad b^2 = (-2)^2 = 4",
+        "explanation": "Both squares equal $4$, so the hypothesis $a^2=b^2$ holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the cubes.",
+        "workingLatex": "a^3 = 8, \\quad b^3 = (-2)^3 = -8",
+        "explanation": "The cubes are $8$ and $-8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the conclusion.",
+        "workingLatex": "8 \\neq -8",
+        "explanation": "The cubes are different, so the conclusion $a^3=b^3$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain why.",
+        "workingLatex": "a = -b \\Rightarrow a^3 = -b^3",
+        "explanation": "Because $a$ and $b$ are negatives, their cubes are negatives of each other, hence unequal (unless both are $0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "With $a=2,\\ b=-2$, $a^2=b^2$ but $a^3=8\\neq-8=b^3$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=2,\\ b=-2$: then $a^2 = b^2 = 4$, but $a^3 = 8$ and $b^3 = -8$, so $a^3 \\neq b^3$. Hence the statement is false. $\\blacksquare$"
+  }
+}

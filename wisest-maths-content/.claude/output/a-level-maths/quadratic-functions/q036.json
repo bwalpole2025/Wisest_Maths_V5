@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "fractions"
+  ],
+  "questionText": "Express $x^2 + 3x + 1$ in the form $\\left(x + p\\right)^2 + q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Focus on the first two terms.",
+        "workingLatex": "x^2 + 3x",
+        "explanation": "We complete the square on $x^2 + 3x$ first; the odd coefficient will give a fractional $p$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Halve the coefficient of x.",
+        "workingLatex": "p = \\dfrac{3}{2}",
+        "explanation": "Half of $3$ is $\\tfrac32$, so this is the number inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the square.",
+        "workingLatex": "\\left(x + \\tfrac{3}{2}\\right)^2 = x^2 + 3x + \\tfrac{9}{4}",
+        "explanation": "Expanding $\\left(x+\\tfrac32\\right)^2$ gives $x^2 + 3x + \\tfrac94$, an extra $\\tfrac94$ over what we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract the extra constant.",
+        "workingLatex": "x^2 + 3x = \\left(x + \\tfrac{3}{2}\\right)^2 - \\tfrac{9}{4}",
+        "explanation": "Subtracting $\\tfrac94$ keeps the value equal to $x^2 + 3x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Reintroduce the constant.",
+        "workingLatex": "x^2 + 3x + 1 = \\left(x + \\tfrac{3}{2}\\right)^2 - \\tfrac{9}{4} + 1",
+        "explanation": "Replacing $x^2 + 3x$ and keeping the original $+1$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the constants.",
+        "workingLatex": "-\\tfrac{9}{4} + 1 = -\\tfrac{9}{4} + \\tfrac{4}{4} = -\\tfrac{5}{4}",
+        "explanation": "Writing $1$ as $\\tfrac44$ lets us subtract to get $-\\tfrac54$, so $q = -\\tfrac54$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the completed square.",
+        "workingLatex": "\\left(x + \\tfrac{3}{2}\\right)^2 - \\tfrac{5}{4}",
+        "explanation": "The expression in completed-square form is $\\left(x+\\tfrac32\\right)^2 - \\tfrac54$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the minimum.",
+        "workingLatex": "\\text{minimum } -\\tfrac{5}{4} \\text{ at } x = -\\tfrac{3}{2}",
+        "explanation": "Since a square is at least zero, the least value is $-\\tfrac54$, occurring when $x = -\\tfrac32$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\left(x + \\tfrac{3}{2}\\right)^2 - \\tfrac{5}{4}",
+        "explanation": "So $p = \\tfrac32$ and $q = -\\tfrac54$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + 3x + 1 = \\left(x + \\tfrac{3}{2}\\right)^2 - \\tfrac{9}{4} + 1 = \\left(x + \\tfrac{3}{2}\\right)^2 - \\tfrac{5}{4}$"
+  }
+}

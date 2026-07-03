@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "squares",
+    "algebra"
+  ],
+  "questionText": "Disprove the statement: ``If $a^2 = b^2$ then $a = b$,'' where $a$ and $b$ are real numbers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a conditional for all reals.",
+        "workingLatex": "\\forall\\ a,b:\\ a^2 = b^2 \\Rightarrow a = b",
+        "explanation": "The statement claims equal squares force equal numbers; one pair with equal squares but unequal values disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair $(a,b)$ satisfying the hypothesis $a^2=b^2$ but failing the conclusion $a=b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall that squaring hides sign.",
+        "workingLatex": "(-x)^2 = x^2",
+        "explanation": "A number and its negative have the same square, which is the source of the flaw.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a specific pair.",
+        "workingLatex": "a = 3, \\quad b = -3",
+        "explanation": "We pick $a=3$ and $b=-3$, which are negatives of each other.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the hypothesis.",
+        "workingLatex": "a^2 = 9, \\quad b^2 = (-3)^2 = 9",
+        "explanation": "Both squares equal $9$, so the condition $a^2=b^2$ is satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the conclusion.",
+        "workingLatex": "a = 3 \\neq -3 = b",
+        "explanation": "Yet $a$ and $b$ are not equal, so the conclusion fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The pair $a=3,\\ b=-3$ has $a^2=b^2$ but $a\\neq b$, so the claim is disproved. (The correct statement is $a=\\pm b$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=3,\\ b=-3$: then $a^2 = b^2 = 9$ but $a \\neq b$. Hence the statement is false. $\\blacksquare$"
+  }
+}

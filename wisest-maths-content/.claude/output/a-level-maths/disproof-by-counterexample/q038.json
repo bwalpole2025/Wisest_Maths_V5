@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes"
+  ],
+  "questionText": "Disprove the statement: ``Every integer greater than $1$ can be written as the sum of two prime numbers.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n > 1:\\ n = p + q \\text{ with } p, q \\text{ prime}",
+        "explanation": "The claim covers *all* integers above $1$ (Goldbach's conjecture is only about even numbers); one integer that is not such a sum disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single integer that cannot be split into two primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Focus on odd numbers.",
+        "workingLatex": "n \\text{ odd} \\Rightarrow \\text{one prime must be } 2",
+        "explanation": "An odd sum of two primes needs one even prime, namely $2$, so $n$ would have to equal $2 + (\\text{prime})$; if $n-2$ is composite, $n$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose an odd number with n − 2 composite.",
+        "workingLatex": "n = 11 \\Rightarrow n - 2 = 9",
+        "explanation": "Take $n=11$; then $n-2 = 9$, which is composite, so the only chance $2+9$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check all splittings.",
+        "workingLatex": "2+9,\\ 3+8,\\ 5+6,\\ 7+4",
+        "explanation": "We list the ways to write $11$ as an ordered sum and test whether both parts are prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate each pair.",
+        "workingLatex": "9,8,6,4 \\text{ are all composite}",
+        "explanation": "In every splitting one part ($9,8,6$ or $4$) is composite, so no pair of primes sums to $11$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm 11 is not such a sum.",
+        "workingLatex": "11 \\neq p + q \\text{ for primes } p,q",
+        "explanation": "Since every candidate pair fails, $11$ cannot be written as a sum of two primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note why odd numbers are the weak point.",
+        "workingLatex": "11 - 2 = 9 = 3 \\times 3 \\text{ is composite}",
+        "explanation": "The only way an odd number is a sum of two primes is $2+(\\text{prime})$, but $11-2=9$ is composite, sealing the failure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The integer $11>1$ is not a sum of two primes, so the claim is disproved. (Goldbach's conjecture concerns only *even* integers.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=11$: the splittings $2{+}9,\\,3{+}8,\\,5{+}6,\\,7{+}4$ each contain a composite number, so $11$ is not a sum of two primes. Hence the statement is false. $\\blacksquare$"
+  }
+}

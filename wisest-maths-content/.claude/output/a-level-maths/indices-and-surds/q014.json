@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Rationalise the denominator of $\\dfrac{1}{\\sqrt{3} + 1}$, giving your answer in the form $\\dfrac{\\sqrt{3} - 1}{c}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the goal.",
+        "workingLatex": "\\text{remove the surd from the two-term denominator}",
+        "explanation": "The denominator $\\sqrt3+1$ has two terms, so we clear the surd by multiplying by its conjugate, which produces a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the conjugate.",
+        "workingLatex": "\\text{conjugate of } \\sqrt{3} + 1 \\text{ is } \\sqrt{3} - 1",
+        "explanation": "The conjugate keeps the same terms but flips the sign between them, so their product has no surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{3}+1} \\times \\dfrac{\\sqrt{3}-1}{\\sqrt{3}-1}",
+        "explanation": "Multiplying by $\\tfrac{\\sqrt3-1}{\\sqrt3-1}=1$ leaves the value unchanged while setting up the denominator to rationalise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the denominator.",
+        "workingLatex": "(\\sqrt{3}+1)(\\sqrt{3}-1) = 3 - 1 = 2",
+        "explanation": "The difference of squares gives $(\\sqrt3)^2 - 1^2 = 3 - 1 = 2$, a rational denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Work out the numerator.",
+        "workingLatex": "1 \\times (\\sqrt{3}-1) = \\sqrt{3} - 1",
+        "explanation": "The top simply becomes $\\sqrt3 - 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the combined fraction.",
+        "workingLatex": "\\dfrac{\\sqrt{3}-1}{2}",
+        "explanation": "Placing the numerator over the rational denominator gives $\\tfrac{\\sqrt3-1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the denominator is rational.",
+        "workingLatex": "2 \\in \\mathbb{Q}",
+        "explanation": "The denominator is now the whole number $2$, so the surd has been cleared and $c=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{1}{\\sqrt{3}+1} \\approx 0.366,\\quad \\dfrac{\\sqrt{3}-1}{2} \\approx 0.366",
+        "explanation": "Both the original and rationalised forms evaluate to about $0.366$, confirming they are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{\\sqrt{3} - 1}{2}",
+        "explanation": "The rationalised form is $\\tfrac{\\sqrt3-1}{2}$, so $c = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1}{\\sqrt{3}+1} = \\dfrac{1}{\\sqrt{3}+1} \\times \\dfrac{\\sqrt{3}-1}{\\sqrt{3}-1} = \\dfrac{\\sqrt{3}-1}{3-1} = \\dfrac{\\sqrt{3}-1}{2}$"
+  }
+}

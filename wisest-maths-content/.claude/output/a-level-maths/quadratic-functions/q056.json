@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.quadratics.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "equal roots"
+  ],
+  "questionText": "Find the discriminant of $x^2 - 4x + 4$ and state what it tells you about the roots.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the discriminant formula.",
+        "workingLatex": "\\Delta = b^2 - 4ac",
+        "explanation": "The discriminant $b^2 - 4ac$ determines the nature of the roots of $ax^2 + bx + c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = -4,\\ c = 4",
+        "explanation": "Reading off the coefficients gives the values to substitute into the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the formula.",
+        "workingLatex": "\\Delta = (-4)^2 - 4(1)(4)",
+        "explanation": "Putting the coefficients into $b^2 - 4ac$ sets up the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Work out each part.",
+        "workingLatex": "(-4)^2 = 16, \\quad 4(1)(4) = 16",
+        "explanation": "Computing the square and the product separately keeps the arithmetic clear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute the discriminant.",
+        "workingLatex": "\\Delta = 16 - 16 = 0",
+        "explanation": "Subtracting gives $\\Delta = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the result.",
+        "workingLatex": "\\Delta = 0 \\Rightarrow \\text{one repeated (equal) root}",
+        "explanation": "A zero discriminant means the quadratic has a single repeated root; indeed $x^2 - 4x + 4 = (x-2)^2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = (-4)^2 - 4(1)(4) = 0$, so the equation has one repeated root ($x = 2$)."
+  }
+}

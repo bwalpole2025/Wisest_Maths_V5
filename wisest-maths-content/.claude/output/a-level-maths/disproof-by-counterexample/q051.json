@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "modular arithmetic"
+  ],
+  "questionText": "Disprove the statement: ``Every prime number is of the form $6k + 1$ or $6k - 1$ for some integer $k$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{primes } p:\\ p = 6k \\pm 1",
+        "explanation": "The claim asserts *every* prime has this form; one prime that does not disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single prime not congruent to $\\pm1$ modulo $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "List the residues that 6k ± 1 covers.",
+        "workingLatex": "6k+1 \\equiv 1,\\quad 6k-1 \\equiv 5 \\pmod 6",
+        "explanation": "Numbers of the form $6k\\pm1$ leave remainder $1$ or $5$ on division by $6$, so a prime with a different remainder is a counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Look at the small primes.",
+        "workingLatex": "2, 3, 5, 7, 11, \\dots",
+        "explanation": "The rule works from $5$ onward, but the first two primes deserve a check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the prime 3.",
+        "workingLatex": "3 = 6(0) + 3 \\equiv 3 \\pmod 6",
+        "explanation": "The prime $3$ leaves remainder $3$ modulo $6$, which is neither $1$ nor $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm 3 is not of the required form.",
+        "workingLatex": "3 \\neq 6k \\pm 1",
+        "explanation": "There is no integer $k$ with $6k\\pm1 = 3$, so $3$ escapes the pattern (and so does $2$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The prime $3$ is not of the form $6k\\pm1$, so the claim is disproved. (It is true only for primes $p>3$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The prime $3$ leaves remainder $3$ modulo $6$, so it is not of the form $6k\\pm1$ (nor is $2$). Hence the statement is false. $\\blacksquare$"
+  }
+}

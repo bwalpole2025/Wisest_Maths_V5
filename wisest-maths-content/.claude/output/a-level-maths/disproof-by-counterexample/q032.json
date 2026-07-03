@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "indices"
+  ],
+  "questionText": "Disprove the statement: ``For all positive integers $a$, $m$ and $n$, $\\left(a^m\\right)^n = a^{m+n}$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ a,m,n:\\ (a^m)^n = a^{m+n}",
+        "explanation": "The claim asserts a law of indices for *all* $a,m,n$; one triple where the sides differ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single triple making the two sides unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the correct index law.",
+        "workingLatex": "(a^m)^n = a^{mn}",
+        "explanation": "Raising a power to a power *multiplies* the indices, giving $a^{mn}$, not $a^{m+n}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose values where mn ≠ m+n.",
+        "workingLatex": "a = 2,\\ m = 2,\\ n = 3",
+        "explanation": "Here $mn = 6$ while $m+n = 5$, so the two exponents differ and the sides should too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the left-hand side.",
+        "workingLatex": "(2^2)^3 = 4^3 = 64",
+        "explanation": "The left side is $(2^2)^3 = 4^3 = 64$, matching $a^{mn}=2^6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the right-hand side.",
+        "workingLatex": "2^{m+n} = 2^{5} = 32",
+        "explanation": "The right side is $2^{2+3} = 2^5 = 32$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare.",
+        "workingLatex": "64 \\neq 32",
+        "explanation": "The two sides are unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Pinpoint the error.",
+        "workingLatex": "mn = 6 \\neq 5 = m+n",
+        "explanation": "The mismatch traces exactly to using $m+n$ instead of the correct $mn$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "With $a=2,\\ m=2,\\ n=3$ the sides are $64$ and $32$, so the claim is disproved. (The correct law is $(a^m)^n=a^{mn}$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=2,\\ m=2,\\ n=3$: then $(a^m)^n = 4^3 = 64$ but $a^{m+n} = 2^5 = 32$. Since $64 \\neq 32$, the statement is false. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.quadratics.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "factorising"
+  ],
+  "questionText": "Factorise $x^2 + 7x + 12$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify what the factors must do.",
+        "workingLatex": "\\text{product} = 12, \\quad \\text{sum} = 7",
+        "explanation": "For a quadratic $x^2 + bx + c$ we need two numbers multiplying to $c=12$ and adding to $b=7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "List factor pairs of 12.",
+        "workingLatex": "1 \\times 12,\\ 2 \\times 6,\\ 3 \\times 4",
+        "explanation": "Checking the factor pairs of $12$ lets us find which pair also adds to $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Select the correct pair.",
+        "workingLatex": "3 + 4 = 7",
+        "explanation": "The pair $3$ and $4$ multiplies to $12$ and adds to $7$, so it is the one we need.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the factorised form.",
+        "workingLatex": "(x + 3)(x + 4)",
+        "explanation": "Placing the two numbers into brackets gives the factorisation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check by expanding.",
+        "workingLatex": "(x+3)(x+4) = x^2 + 7x + 12 \\ \\checkmark",
+        "explanation": "Expanding the brackets returns the original expression, confirming the factorisation is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "(x + 3)(x + 4)",
+        "explanation": "The factorised form is $(x+3)(x+4)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + 7x + 12 = (x+3)(x+4)$"
+  }
+}

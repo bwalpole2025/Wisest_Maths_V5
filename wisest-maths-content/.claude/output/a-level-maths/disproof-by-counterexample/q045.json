@@ -1,0 +1,115 @@
+{
+  "id": "al.y1.pure.disproof.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "geometry",
+    "area",
+    "perimeter"
+  ],
+  "questionText": "Disprove the claim that ``any two shapes with the same perimeter have the same area.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{shapes } A, B:\\ \\text{equal perimeter} \\Rightarrow \\text{equal area}",
+        "explanation": "The claim asserts equal perimeter forces equal area; two equal-perimeter shapes with different areas disprove it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair of shapes with the same perimeter but different areas.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Restrict to rectangles for simplicity.",
+        "workingLatex": "\\text{use two rectangles with perimeter } 16",
+        "explanation": "Rectangles make area and perimeter easy to compute, so we fix a common perimeter of $16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a square.",
+        "workingLatex": "4 \\times 4:\\ P = 2(4+4) = 16",
+        "explanation": "A $4\\times4$ square has perimeter $16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Choose a different rectangle with the same perimeter.",
+        "workingLatex": "6 \\times 2:\\ P = 2(6+2) = 16",
+        "explanation": "A $6\\times2$ rectangle also has perimeter $16$, since $6+2 = 4+4 = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the first area.",
+        "workingLatex": "\\text{area}(4 \\times 4) = 16",
+        "explanation": "The square's area is $4\\times4 = 16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the second area.",
+        "workingLatex": "\\text{area}(6 \\times 2) = 12",
+        "explanation": "The rectangle's area is $6\\times2 = 12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare.",
+        "workingLatex": "16 \\neq 12",
+        "explanation": "Same perimeter, but the areas differ.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Explain the intuition.",
+        "workingLatex": "\\text{fixed perimeter fixes the sum of sides, not the product}",
+        "explanation": "Perimeter fixes the sum of the side lengths, whereas area is their product, which changes as the rectangle becomes less square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Note the extremal case.",
+        "workingLatex": "\\text{the square maximises area for a fixed perimeter}",
+        "explanation": "Among rectangles of a given perimeter the square has the largest area, so other rectangles have strictly smaller area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the counterexample.",
+        "workingLatex": "P_1 = P_2 = 16, \\quad A_1 = 16 \\neq 12 = A_2",
+        "explanation": "The two rectangles share perimeter $16$ but have different areas, exactly the required counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Generalise briefly.",
+        "workingLatex": "\\text{the same holds for many shape pairs}",
+        "explanation": "The phenomenon is general: equal perimeter does not pin down area, as this rectangle pair already shows.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The $4\\times4$ and $6\\times2$ rectangles have equal perimeter $16$ but areas $16$ and $12$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "A $4 \\times 4$ square and a $6 \\times 2$ rectangle both have perimeter $16$, but their areas are $16$ and $12$. Hence the statement is false. $\\blacksquare$"
+  }
+}

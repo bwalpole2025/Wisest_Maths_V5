@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.quadratics.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "equal roots",
+    "finding a parameter"
+  ],
+  "questionText": "Find the value of $k$ for which the equation $x^2 - 6x + k = 0$ has equal roots.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition for equal roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac = 0",
+        "explanation": "A quadratic has a repeated (equal) root exactly when its discriminant is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = -6,\\ c = k",
+        "explanation": "Here the constant term is the unknown $k$, which we will solve for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = (-6)^2 - 4(1)(k) = 36 - 4k",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $36 - 4k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the discriminant to zero.",
+        "workingLatex": "36 - 4k = 0",
+        "explanation": "For equal roots the discriminant must equal zero, giving an equation in $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange.",
+        "workingLatex": "4k = 36",
+        "explanation": "Adding $4k$ to both sides isolates the term in $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for k.",
+        "workingLatex": "k = 9",
+        "explanation": "Dividing both sides by $4$ gives $k = 9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Verify the discriminant.",
+        "workingLatex": "36 - 4(9) = 36 - 36 = 0 \\ \\checkmark",
+        "explanation": "Substituting $k = 9$ back gives a discriminant of $0$, confirming equal roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the repeated root.",
+        "workingLatex": "x = -\\dfrac{b}{2a} = \\dfrac{6}{2} = 3",
+        "explanation": "With $k = 9$ the equation is $x^2 - 6x + 9 = (x-3)^2 = 0$, so the repeated root is $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "k = 9",
+        "explanation": "The equation has equal roots when $k = 9$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = 36 - 4k = 0 \\Rightarrow k = 9$"
+  }
+}

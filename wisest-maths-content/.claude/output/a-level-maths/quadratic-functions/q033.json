@@ -1,0 +1,63 @@
+{
+  "id": "al.y1.pure.quadratics.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant"
+  ],
+  "questionText": "Find the value of the discriminant of $2x^2 + 3x + 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the discriminant formula.",
+        "workingLatex": "\\Delta = b^2 - 4ac",
+        "explanation": "The discriminant $b^2 - 4ac$ determines the nature of the roots of $ax^2 + bx + c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 2,\\ b = 3,\\ c = 1",
+        "explanation": "Reading off the coefficients gives the values to substitute into the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the formula.",
+        "workingLatex": "\\Delta = 3^2 - 4(2)(1)",
+        "explanation": "Putting the coefficients into $b^2 - 4ac$ sets up the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Work out each part.",
+        "workingLatex": "3^2 = 9, \\quad 4(2)(1) = 8",
+        "explanation": "Computing the square and the product separately reduces the chance of error.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract.",
+        "workingLatex": "\\Delta = 9 - 8 = 1",
+        "explanation": "Taking $8$ from $9$ gives a discriminant of $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "\\Delta = 1",
+        "explanation": "The discriminant is $1$; being positive, the quadratic has two distinct real roots.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = b^2 - 4ac = 3^2 - 4(2)(1) = 9 - 8 = 1$"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "parity"
+  ],
+  "questionText": "Disprove the statement: ``The sum of any two consecutive prime numbers is even.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{consecutive primes } p, q:\\ p + q \\text{ is even}",
+        "explanation": "The claim asserts the sum is *always* even; one consecutive pair with an odd sum disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair of consecutive primes whose sum is odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "See why it usually looks true.",
+        "workingLatex": "\\text{odd} + \\text{odd} = \\text{even}",
+        "explanation": "Most primes are odd, and two odds sum to an even number, which makes the claim seem right — but $2$ is an even prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Use the first two primes.",
+        "workingLatex": "p = 2, \\quad q = 3",
+        "explanation": "The very first consecutive prime pair is $2$ and $3$, and $2$ is the exceptional even prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm they are consecutive primes.",
+        "workingLatex": "2, 3 \\text{ with no prime between them}",
+        "explanation": "There is no prime strictly between $2$ and $3$, so they are genuinely consecutive primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add them.",
+        "workingLatex": "2 + 3 = 5",
+        "explanation": "Their sum is $5$, which we now test for parity to challenge the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the parity.",
+        "workingLatex": "5 \\text{ is odd}",
+        "explanation": "Since $5$ is odd, this pair of consecutive primes breaks the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain the exception.",
+        "workingLatex": "\\text{even} + \\text{odd} = \\text{odd}",
+        "explanation": "Because one of the primes is the even prime $2$, the sum is even $+$ odd $=$ odd, unlike the odd+odd case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The consecutive primes $2$ and $3$ sum to $5$, which is odd, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take the consecutive primes $2$ and $3$: their sum is $5$, which is odd. Hence the statement is false. $\\blacksquare$"
+  }
+}

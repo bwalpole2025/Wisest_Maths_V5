@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Rationalise the denominator of $\\dfrac{3}{\\sqrt{5} - \\sqrt{2}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the conjugate.",
+        "workingLatex": "\\text{conjugate of } \\sqrt{5} - \\sqrt{2} \\text{ is } \\sqrt{5} + \\sqrt{2}",
+        "explanation": "For a two-term surd denominator we multiply by its conjugate, turning the bottom into a surd-free difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{3}{\\sqrt{5}-\\sqrt{2}} \\times \\dfrac{\\sqrt{5}+\\sqrt{2}}{\\sqrt{5}+\\sqrt{2}}",
+        "explanation": "Multiplying by $1$ in this form preserves the value while setting up the denominator to rationalise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator.",
+        "workingLatex": "(\\sqrt{5}-\\sqrt{2})(\\sqrt{5}+\\sqrt{2}) = 5 - 2 = 3",
+        "explanation": "The difference of squares gives $(\\sqrt5)^2 - (\\sqrt2)^2 = 5 - 2 = 3$, a rational denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the numerator.",
+        "workingLatex": "3\\left(\\sqrt{5} + \\sqrt{2}\\right)",
+        "explanation": "The top becomes $3$ times the conjugate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Form the fraction.",
+        "workingLatex": "\\dfrac{3\\left(\\sqrt{5}+\\sqrt{2}\\right)}{3}",
+        "explanation": "Placing the numerator over the rational denominator $3$ gives this fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel the common factor.",
+        "workingLatex": "\\dfrac{3}{3} = 1",
+        "explanation": "The factor of $3$ on top and bottom cancels neatly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the simplified result.",
+        "workingLatex": "\\sqrt{5} + \\sqrt{2}",
+        "explanation": "After cancelling, the expression reduces to $\\sqrt5 + \\sqrt2$ with no denominator at all.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{3}{2.236 - 1.414} \\approx 3.65,\\quad \\sqrt{5} + \\sqrt{2} \\approx 3.65",
+        "explanation": "Both the original and simplified forms evaluate to about $3.65$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\sqrt{5} + \\sqrt{2}",
+        "explanation": "The rationalised expression is $\\sqrt5 + \\sqrt2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{3}{\\sqrt{5}-\\sqrt{2}} = \\dfrac{3\\left(\\sqrt{5}+\\sqrt{2}\\right)}{5-2} = \\dfrac{3\\left(\\sqrt{5}+\\sqrt{2}\\right)}{3} = \\sqrt{5} + \\sqrt{2}$"
+  }
+}

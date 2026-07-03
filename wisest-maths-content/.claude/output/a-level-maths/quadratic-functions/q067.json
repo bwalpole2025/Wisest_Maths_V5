@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "tangent line",
+    "finding a parameter"
+  ],
+  "questionText": "The line $y = x + c$ is a tangent to the curve $y = x^2 - 3x + 5$. Find the value of $c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set the line equal to the curve.",
+        "workingLatex": "x^2 - 3x + 5 = x + c",
+        "explanation": "Where the line meets the curve their $y$-values are equal, so we set the two expressions equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange to a single quadratic.",
+        "workingLatex": "x^2 - 3x + 5 - x - c = 0",
+        "explanation": "Bringing all terms to one side gives a quadratic whose roots are the $x$-coordinates of the intersections.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify.",
+        "workingLatex": "x^2 - 4x + (5 - c) = 0",
+        "explanation": "Collecting like terms gives $x^2 - 4x + (5 - c) = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Use the tangency condition.",
+        "workingLatex": "\\text{tangent} \\Rightarrow \\Delta = 0",
+        "explanation": "A tangent touches the curve at exactly one point, so the quadratic must have a single repeated root, i.e. discriminant zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = -4,\\ c_{q} = 5 - c",
+        "explanation": "Reading off the coefficients of the intersection quadratic (using $c_q$ for its constant) prepares the discriminant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = (-4)^2 - 4(1)(5 - c)",
+        "explanation": "Substituting into $b^2 - 4ac$ gives $16 - 4(5 - c)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Expand.",
+        "workingLatex": "\\Delta = 16 - 20 + 4c",
+        "explanation": "Multiplying out $-4(5 - c)$ gives $-20 + 4c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify.",
+        "workingLatex": "\\Delta = 4c - 4",
+        "explanation": "Combining the constants gives $\\Delta = 4c - 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set the discriminant to zero.",
+        "workingLatex": "4c - 4 = 0",
+        "explanation": "For tangency the discriminant must be zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for c.",
+        "workingLatex": "c = 1",
+        "explanation": "Adding $4$ and dividing by $4$ gives $c = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify the tangency.",
+        "workingLatex": "x^2 - 4x + 4 = (x - 2)^2 = 0",
+        "explanation": "With $c = 1$ the intersection quadratic is a perfect square, confirming a single repeated root (a tangent).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the point of contact.",
+        "workingLatex": "x = 2 \\Rightarrow y = 2 + 1 = 3",
+        "explanation": "The repeated root $x = 2$ gives the point of contact $(2, 3)$ on the line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "c = 1",
+        "explanation": "The line is a tangent to the curve when $c = 1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 3x + 5 = x + c \\Rightarrow x^2 - 4x + (5 - c) = 0$; tangent $\\Rightarrow \\Delta = 16 - 4(5 - c) = 0 \\Rightarrow c = 1$"
+  }
+}

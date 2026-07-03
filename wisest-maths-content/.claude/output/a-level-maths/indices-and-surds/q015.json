@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds",
+    "dividing surds"
+  ],
+  "questionText": "Simplify $\\dfrac{\\sqrt{8} + \\sqrt{18}}{\\sqrt{2}}$, giving your answer as an integer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Simplify the first surd on top.",
+        "workingLatex": "\\sqrt{8} = \\sqrt{4 \\times 2} = 2\\sqrt{2}",
+        "explanation": "Taking out the square factor $4$ turns $\\sqrt8$ into $2\\sqrt2$, so the numerator becomes a multiple of $\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify the second surd on top.",
+        "workingLatex": "\\sqrt{18} = \\sqrt{9 \\times 2} = 3\\sqrt{2}",
+        "explanation": "Taking out the square factor $9$ turns $\\sqrt{18}$ into $3\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the like surds in the numerator.",
+        "workingLatex": "2\\sqrt{2} + 3\\sqrt{2} = 5\\sqrt{2}",
+        "explanation": "Both terms are multiples of $\\sqrt2$, so we add the coefficients to get $5\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the whole fraction.",
+        "workingLatex": "\\dfrac{\\sqrt{8} + \\sqrt{18}}{\\sqrt{2}} = \\dfrac{5\\sqrt{2}}{\\sqrt{2}}",
+        "explanation": "Replacing the numerator with its simplified form gives a much cleaner fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel the common surd.",
+        "workingLatex": "\\dfrac{5\\sqrt{2}}{\\sqrt{2}} = 5 \\times \\dfrac{\\sqrt{2}}{\\sqrt{2}}",
+        "explanation": "The $\\sqrt2$ on top and bottom are identical, so they divide to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the surd ratio.",
+        "workingLatex": "\\dfrac{\\sqrt{2}}{\\sqrt{2}} = 1",
+        "explanation": "Any non-zero quantity divided by itself is $1$, clearing the surd entirely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the result.",
+        "workingLatex": "5 \\times 1 = 5",
+        "explanation": "Multiplying $5$ by $1$ leaves $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the answer is an integer.",
+        "workingLatex": "5 \\in \\mathbb{Z}",
+        "explanation": "The surds have cancelled completely, leaving the whole number $5$, as required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Alternative check.",
+        "workingLatex": "\\dfrac{5\\sqrt2}{\\sqrt2} = 5\\sqrt{\\tfrac{2}{2}} = 5\\sqrt{1} = 5",
+        "explanation": "Combining the roots first gives $5\\sqrt{1}=5$, confirming the result by a second route.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{2.83 + 4.24}{1.41} \\approx 5",
+        "explanation": "Approximate decimals give about $5$, a useful sanity check on the exact answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Comment on the method.",
+        "workingLatex": "\\text{simplify surds before dividing}",
+        "explanation": "Simplifying each surd first turned an awkward-looking fraction into a simple cancellation — the key strategy here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the tidy structure.",
+        "workingLatex": "\\text{numerator was a multiple of the denominator}",
+        "explanation": "Because the numerator reduced to $5\\sqrt2$ and the denominator was $\\sqrt2$, the division was exact.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "5",
+        "explanation": "The simplified value of the expression is the integer $5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sqrt{8}+\\sqrt{18}}{\\sqrt{2}} = \\dfrac{2\\sqrt{2}+3\\sqrt{2}}{\\sqrt{2}} = \\dfrac{5\\sqrt{2}}{\\sqrt{2}} = 5$"
+  }
+}

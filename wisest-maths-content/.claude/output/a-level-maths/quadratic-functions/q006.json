@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.quadratics.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "solving",
+    "common factor"
+  ],
+  "questionText": "Solve the equation $x^2 - 4x = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Look for a common factor.",
+        "workingLatex": "x^2 - 4x = x(x - 4)",
+        "explanation": "Both terms contain a factor of $x$, so we factorise it out rather than looking for two numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the product to zero.",
+        "workingLatex": "x(x - 4) = 0",
+        "explanation": "The equation becomes a product of two factors equal to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the zero-product rule.",
+        "workingLatex": "x = 0 \\ \\text{ or } \\ x - 4 = 0",
+        "explanation": "A product is zero only if one factor is zero, so either $x=0$ or the bracket is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the second equation.",
+        "workingLatex": "x - 4 = 0 \\Rightarrow x = 4",
+        "explanation": "Solving the bracket gives the second root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note both roots.",
+        "workingLatex": "x = 0 \\ \\text{ or } \\ x = 4",
+        "explanation": "Do not divide by $x$ at the start, or the root $x=0$ would be lost — factorising keeps both.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the solutions.",
+        "workingLatex": "x = 0, \\ x = 4",
+        "explanation": "The solutions are $x = 0$ and $x = 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 4x = x(x-4) = 0 \\Rightarrow x = 0 \\text{ or } x = 4$"
+  }
+}

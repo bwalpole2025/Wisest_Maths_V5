@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "consecutive integers",
+    "parity"
+  ],
+  "questionText": "Disprove the statement: ``The product of two consecutive integers is always odd.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n:\\ n(n+1) \\text{ is odd}",
+        "explanation": "The claim asserts the product of consecutive integers is *always* odd; one even product disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair of consecutive integers whose product is even.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the parity of consecutive integers.",
+        "workingLatex": "\\text{one of } n, n+1 \\text{ is even}",
+        "explanation": "Among two consecutive integers one is always even, so their product should be even — the opposite of the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a specific pair.",
+        "workingLatex": "n = 2,\\ n+1 = 3",
+        "explanation": "We test the consecutive integers $2$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute the product.",
+        "workingLatex": "2 \\times 3 = 6",
+        "explanation": "Multiplying the consecutive integers $2$ and $3$ gives a product of $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the parity.",
+        "workingLatex": "6 = 2 \\times 3 \\text{ is even}",
+        "explanation": "Since $6$ is divisible by $2$, it is even, not odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The product $2\\times3 = 6$ is even, so the claim that such products are always odd is disproved (in fact they are always even).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=2$: then $n(n+1) = 2 \\times 3 = 6$, which is even. Hence the statement is false. $\\blacksquare$"
+  }
+}

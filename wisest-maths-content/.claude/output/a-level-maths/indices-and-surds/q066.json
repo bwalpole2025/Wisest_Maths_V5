@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Express $\\dfrac{2 + \\sqrt{3}}{2 - \\sqrt{3}}$ in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the conjugate of the denominator.",
+        "workingLatex": "\\text{conjugate of } 2 - \\sqrt{3} \\text{ is } 2 + \\sqrt{3}",
+        "explanation": "To rationalise the two-term denominator we multiply by its conjugate, turning the bottom into a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{2+\\sqrt{3}}{2-\\sqrt{3}} \\times \\dfrac{2+\\sqrt{3}}{2+\\sqrt{3}}",
+        "explanation": "Multiplying by $1$ in this form preserves the value while clearing the surd from the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator.",
+        "workingLatex": "(2-\\sqrt{3})(2+\\sqrt{3}) = 4 - 3 = 1",
+        "explanation": "The difference of squares gives $2^2 - (\\sqrt3)^2 = 4 - 3 = 1$, an especially clean denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the numerator.",
+        "workingLatex": "(2+\\sqrt{3})^2 = 4 + 4\\sqrt{3} + 3",
+        "explanation": "The numerator is $(2+\\sqrt3)^2$; expanding gives $4$, the cross term $4\\sqrt3$, and $(\\sqrt3)^2 = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerator.",
+        "workingLatex": "4 + 3 + 4\\sqrt{3} = 7 + 4\\sqrt{3}",
+        "explanation": "Adding the rational parts $4 + 3 = 7$ gives $7 + 4\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the fraction.",
+        "workingLatex": "\\dfrac{7 + 4\\sqrt{3}}{1}",
+        "explanation": "Placing the numerator over the denominator $1$ gives this fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide by one.",
+        "workingLatex": "7 + 4\\sqrt{3}",
+        "explanation": "Dividing by $1$ leaves the expression unchanged, already in the form $a + b\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify a and b.",
+        "workingLatex": "a = 7, \\quad b = 4",
+        "explanation": "Comparing with $a + b\\sqrt3$ gives the integers $a = 7$ and $b = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Note why the denominator was 1.",
+        "workingLatex": "2^2 - (\\sqrt{3})^2 = 1",
+        "explanation": "The clean denominator of $1$ is what makes this rationalisation especially tidy.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{2 + 1.732}{2 - 1.732} \\approx 13.93",
+        "explanation": "The original expression evaluates to about $13.93$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Match the check.",
+        "workingLatex": "7 + 4(1.732) \\approx 13.93",
+        "explanation": "The answer $7 + 4\\sqrt3$ also gives about $13.93$, confirming it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Comment on the method.",
+        "workingLatex": "\\text{multiply by the conjugate, then expand}",
+        "explanation": "The conjugate method plus a careful expansion of the numerator is the standard route for these problems.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "7 + 4\\sqrt{3}",
+        "explanation": "The expression equals $7 + 4\\sqrt3$, so $a = 7$ and $b = 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{2+\\sqrt{3}}{2-\\sqrt{3}} = \\dfrac{(2+\\sqrt{3})^2}{4-3} = \\dfrac{7 + 4\\sqrt{3}}{1} = 7 + 4\\sqrt{3}$"
+  }
+}

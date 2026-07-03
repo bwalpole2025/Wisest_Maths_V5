@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "negative indices"
+  ],
+  "questionText": "Solve the equation $2^{x} = \\dfrac{1}{8}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Aim for a common base.",
+        "workingLatex": "\\text{write } \\tfrac{1}{8} \\text{ as a power of } 2",
+        "explanation": "Expressing both sides as powers of $2$ lets us compare indices; the fraction will need a negative index.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Express 8 as a power of 2.",
+        "workingLatex": "8 = 2^3",
+        "explanation": "Since $2\\times2\\times2 = 8$, we have $8 = 2^3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the reciprocal with a negative index.",
+        "workingLatex": "\\dfrac{1}{8} = \\dfrac{1}{2^3} = 2^{-3}",
+        "explanation": "A reciprocal corresponds to a negative index, so $\\tfrac18 = 2^{-3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the equation.",
+        "workingLatex": "2^{x} = 2^{-3}",
+        "explanation": "Both sides are now powers of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Equate the indices.",
+        "workingLatex": "x = -3",
+        "explanation": "Equal powers of the same base force equal indices, giving $x = -3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the solution.",
+        "workingLatex": "2^{-3} = \\dfrac{1}{8} \\ \\checkmark",
+        "explanation": "Substituting back, $2^{-3} = \\tfrac18$, so the solution works.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Sense-check the sign.",
+        "workingLatex": "\\tfrac{1}{8} < 1 \\Rightarrow x < 0",
+        "explanation": "Because the right-hand side is less than $1$, the index must be negative, and $-3$ is.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the meaning.",
+        "workingLatex": "2^{-3} \\text{ means } \\tfrac{1}{2^3}",
+        "explanation": "A negative index is just a compact way of writing a reciprocal, consistent with the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x = -3",
+        "explanation": "The solution of $2^x = \\tfrac18$ is $x = -3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2^x = \\dfrac{1}{8} = 2^{-3} \\Rightarrow x = -3$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "maximum value",
+    "negative coefficient"
+  ],
+  "questionText": "Express $5 + 4x - x^2$ in the form $a - (x - b)^2$, and hence find the maximum value of the expression.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder into descending powers.",
+        "workingLatex": "5 + 4x - x^2 = -x^2 + 4x + 5",
+        "explanation": "Writing the quadratic with the $x^2$ term first makes the negative leading coefficient clear, which we must handle before completing the square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor -1 from the x terms.",
+        "workingLatex": "-x^2 + 4x = -\\left(x^2 - 4x\\right)",
+        "explanation": "Taking $-1$ out of the $x^2$ and $x$ terms leaves a monic bracket ready to complete; the sign of the $x$ term flips inside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the full expression.",
+        "workingLatex": "-\\left(x^2 - 4x\\right) + 5",
+        "explanation": "The constant $+5$ stays outside the bracket for now.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Halve the coefficient of x inside.",
+        "workingLatex": "\\dfrac{-4}{2} = -2",
+        "explanation": "Half of $-4$ is $-2$, which will appear inside the squared bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Complete the square inside.",
+        "workingLatex": "x^2 - 4x = (x - 2)^2 - 4",
+        "explanation": "Expanding $(x-2)^2$ gives $x^2 - 4x + 4$, so we subtract $4$ inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute back.",
+        "workingLatex": "-\\left[(x - 2)^2 - 4\\right] + 5",
+        "explanation": "Replacing the bracket gives the whole expression in terms of a square, still multiplied by $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Distribute the minus sign.",
+        "workingLatex": "-(x - 2)^2 + 4 + 5",
+        "explanation": "Multiplying the $-1$ through changes the sign of both terms inside, turning $-4$ into $+4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify the constant.",
+        "workingLatex": "9 - (x - 2)^2",
+        "explanation": "Combining $4 + 5 = 9$ gives the required form $9 - (x-2)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify a and b.",
+        "workingLatex": "a = 9, \\quad b = 2",
+        "explanation": "Comparing with $a - (x-b)^2$ gives $a = 9$ and $b = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Use the sign of the square.",
+        "workingLatex": "(x - 2)^2 \\ge 0 \\Rightarrow -(x-2)^2 \\le 0",
+        "explanation": "A square is never negative, so subtracting it can only reduce $9$; the largest value occurs when the square is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find where the maximum occurs.",
+        "workingLatex": "(x - 2)^2 = 0 \\Rightarrow x = 2",
+        "explanation": "The subtracted square is zero only at $x = 2$, which is therefore where the expression is greatest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the maximum value.",
+        "workingLatex": "x = 2: \\ 5 + 4(2) - 2^2 = 5 + 8 - 4 = 9 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ into the original expression gives $9$, confirming the maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "9 - (x - 2)^2, \\ \\text{maximum value } 9",
+        "explanation": "The completed form is $9 - (x-2)^2$, and the maximum value is $9$ (at $x = 2$), since the $x^2$ coefficient is negative the parabola opens downward.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$5 + 4x - x^2 = 9 - (x-2)^2$, so the maximum value is $9$ (at $x = 2$)."
+  }
+}

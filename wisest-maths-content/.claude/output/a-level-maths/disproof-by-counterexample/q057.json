@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "Goldbach"
+  ],
+  "questionText": "Disprove the statement: ``Every even number greater than $2$ can be written as the sum of two \\emph{distinct} prime numbers.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{even } n > 2:\\ n = p + q,\\ p \\neq q \\text{ prime}",
+        "explanation": "The claim strengthens Goldbach's conjecture by demanding the two primes be *distinct*; one even number needing equal primes disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single even $n>2$ that cannot be split into two *different* primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Look at the smallest candidate.",
+        "workingLatex": "n = 4",
+        "explanation": "The smallest even number greater than $2$ is $4$, where few primes are available.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "List the primes available.",
+        "workingLatex": "\\text{primes} \\le 4: 2, 3",
+        "explanation": "Only the primes $2$ and $3$ are at most $4$, limiting the possible sums.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Try to write 4 as a sum of two primes.",
+        "workingLatex": "4 = 2 + 2",
+        "explanation": "The only way to write $4$ as a sum of two primes is $2+2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the distinctness condition.",
+        "workingLatex": "2 = 2 \\Rightarrow \\text{not distinct}",
+        "explanation": "But the two primes here are both $2$, so they are not distinct, violating the requirement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rule out other splittings.",
+        "workingLatex": "4 = 3 + 1,\\ 1 \\text{ not prime}",
+        "explanation": "The only other splitting $3+1$ fails because $1$ is not prime, so no distinct-prime representation exists.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confront the claim.",
+        "workingLatex": "4 \\neq p + q \\text{ with distinct primes}",
+        "explanation": "The even number $4$ genuinely has no representation as a sum of two distinct primes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Since $4$ requires $2+2$ (not distinct), the strengthened claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=4$: the only prime sum is $4 = 2 + 2$, whose primes are not distinct. Hence the statement is false. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "modular arithmetic"
+  ],
+  "questionText": "Disprove the statement: ``Every prime number greater than $2$ is congruent to $1$ modulo $4$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{primes } p > 2:\\ p \\equiv 1 \\pmod 4",
+        "explanation": "The claim asserts *every* odd prime leaves remainder $1$ on division by $4$; one prime $\\equiv3$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single prime $p>2$ with $p\\equiv3\\pmod4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall odd primes split into two classes.",
+        "workingLatex": "p \\equiv 1 \\text{ or } 3 \\pmod 4",
+        "explanation": "Every odd number is $\\equiv1$ or $\\equiv3$ modulo $4$, so we look for a prime in the $\\equiv3$ class.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check some primes.",
+        "workingLatex": "5 \\equiv 1,\\quad 13 \\equiv 1",
+        "explanation": "Primes like $5$ and $13$ are $\\equiv1$, supporting the claim, but we must test others.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test the prime 3.",
+        "workingLatex": "3 = 4(0) + 3",
+        "explanation": "The prime $3$ leaves remainder $3$ on division by $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the residue.",
+        "workingLatex": "3 \\equiv 3 \\pmod 4",
+        "explanation": "So $3\\equiv3\\pmod4$, not $\\equiv1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confront the claim.",
+        "workingLatex": "3 > 2 \\text{ is prime but } 3 \\not\\equiv 1 \\pmod 4",
+        "explanation": "The prime $3$ exceeds $2$ yet is not $\\equiv1$ modulo $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note there are many such primes.",
+        "workingLatex": "7 \\equiv 3,\\ 11 \\equiv 3,\\ 19 \\equiv 3 \\pmod 4",
+        "explanation": "Infinitely many primes ($3,7,11,19,\\dots$) are $\\equiv3\\pmod4$, so the failure is widespread, not a fluke.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "The prime $3$ (and $7,11,\\dots$) is $\\equiv3\\pmod4$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The prime $3 > 2$ satisfies $3 \\equiv 3 \\pmod 4$, not $1$. Hence the statement is false (primes like $7, 11, 19$ also fail). $\\blacksquare$"
+  }
+}

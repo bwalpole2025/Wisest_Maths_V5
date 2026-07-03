@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "forming a quadratic",
+    "roots"
+  ],
+  "questionText": "Find a quadratic equation, with integer coefficients, whose roots are $-1$ and $4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write each root as a factor.",
+        "workingLatex": "x = -1 \\Rightarrow (x + 1), \\quad x = 4 \\Rightarrow (x - 4)",
+        "explanation": "If $x = r$ is a root, then $(x - r)$ is a factor, so the roots give the factors $(x+1)$ and $(x-4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the product of the factors.",
+        "workingLatex": "(x + 1)(x - 4) = 0",
+        "explanation": "A quadratic with these roots is the product of the two factors set equal to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the brackets.",
+        "workingLatex": "x^2 - 4x + x - 4",
+        "explanation": "Multiplying out all four products gives these terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect like terms.",
+        "workingLatex": "x^2 - 3x - 4",
+        "explanation": "Combining $-4x + x = -3x$ simplifies the middle term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the equation.",
+        "workingLatex": "x^2 - 3x - 4 = 0",
+        "explanation": "Setting the expression to zero gives a quadratic with integer coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check via sum and product of roots.",
+        "workingLatex": "(-1) + 4 = 3 = -\\dfrac{b}{a}, \\quad (-1)(4) = -4 = \\dfrac{c}{a}",
+        "explanation": "The sum of the roots equals $-b/a$ and the product equals $c/a$, both of which match.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute a root to confirm.",
+        "workingLatex": "4^2 - 3(4) - 4 = 16 - 12 - 4 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 4$ gives $0$, confirming the quadratic is satisfied.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note that multiples also work.",
+        "workingLatex": "\\text{e.g. } 2x^2 - 6x - 8 = 0 \\text{ has the same roots}",
+        "explanation": "Any nonzero multiple of the equation keeps the same roots, so this is one of infinitely many answers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x^2 - 3x - 4 = 0",
+        "explanation": "A suitable quadratic equation is $x^2 - 3x - 4 = 0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x+1)(x-4) = x^2 - 3x - 4 = 0$"
+  }
+}

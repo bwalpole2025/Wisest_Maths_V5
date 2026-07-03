@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds",
+    "adding and subtracting surds"
+  ],
+  "questionText": "Simplify $\\sqrt{48} + \\sqrt{27} - \\sqrt{12}$, giving your answer in the form $a\\sqrt{b}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Simplify the first surd.",
+        "workingLatex": "\\sqrt{48} = \\sqrt{16 \\times 3} = 4\\sqrt{3}",
+        "explanation": "The largest square factor of $48$ is $16$, so $\\sqrt{48} = 4\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify the second surd.",
+        "workingLatex": "\\sqrt{27} = \\sqrt{9 \\times 3} = 3\\sqrt{3}",
+        "explanation": "The square factor $9$ comes out of $27$, giving $3\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the third surd.",
+        "workingLatex": "\\sqrt{12} = \\sqrt{4 \\times 3} = 2\\sqrt{3}",
+        "explanation": "The square factor $4$ comes out of $12$, giving $2\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the whole expression.",
+        "workingLatex": "4\\sqrt{3} + 3\\sqrt{3} - 2\\sqrt{3}",
+        "explanation": "All three surds reduce to multiples of $\\sqrt3$, so they are like surds that can be combined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise like surds.",
+        "workingLatex": "\\text{all terms are multiples of } \\sqrt{3}",
+        "explanation": "Sharing the same irrational part means we simply add and subtract the coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the coefficients.",
+        "workingLatex": "4 + 3 - 2 = 5",
+        "explanation": "Working left to right, $4+3-2 = 5$ copies of $\\sqrt3$ remain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the simplified surd.",
+        "workingLatex": "5\\sqrt{3}",
+        "explanation": "Attaching the coefficient $5$ to $\\sqrt3$ gives the simplified expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "6.93 + 5.20 - 3.46 \\approx 8.66,\\quad 5\\sqrt{3} \\approx 8.66",
+        "explanation": "Both the original expression and $5\\sqrt3$ evaluate to about $8.66$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "5\\sqrt{3}",
+        "explanation": "The simplified expression is $5\\sqrt3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{48} + \\sqrt{27} - \\sqrt{12} = 4\\sqrt{3} + 3\\sqrt{3} - 2\\sqrt{3} = 5\\sqrt{3}$"
+  }
+}

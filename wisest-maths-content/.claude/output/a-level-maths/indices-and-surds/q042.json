@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Express $\\dfrac{\\left(\\sqrt{3} + 1\\right)^{2}}{\\sqrt{3} - 1}$ in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the numerator.",
+        "workingLatex": "\\left(\\sqrt{3}+1\\right)^2 = 3 + 2\\sqrt{3} + 1 = 4 + 2\\sqrt{3}",
+        "explanation": "Squaring the bracket first turns the numerator into the simpler surd expression $4 + 2\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the fraction.",
+        "workingLatex": "\\dfrac{4 + 2\\sqrt{3}}{\\sqrt{3} - 1}",
+        "explanation": "Replacing the numerator with its expanded form gives a fraction with a two-term surd denominator to rationalise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the conjugate.",
+        "workingLatex": "\\text{conjugate of } \\sqrt{3} - 1 \\text{ is } \\sqrt{3} + 1",
+        "explanation": "To clear the denominator we multiply by its conjugate, producing a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{4 + 2\\sqrt{3}}{\\sqrt{3}-1} \\times \\dfrac{\\sqrt{3}+1}{\\sqrt{3}+1}",
+        "explanation": "Multiplying by $1$ in this form preserves the value while rationalising the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the denominator.",
+        "workingLatex": "(\\sqrt{3}-1)(\\sqrt{3}+1) = 3 - 1 = 2",
+        "explanation": "The difference of squares gives $(\\sqrt3)^2 - 1^2 = 2$, a rational denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand the numerator.",
+        "workingLatex": "(4 + 2\\sqrt{3})(\\sqrt{3}+1) = 4\\sqrt{3} + 4 + 2 \\cdot 3 + 2\\sqrt{3}",
+        "explanation": "Multiplying out all four products, and using $\\sqrt3\\times\\sqrt3 = 3$, gives these terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect the numerator terms.",
+        "workingLatex": "= 10 + 6\\sqrt{3}",
+        "explanation": "The rational parts $4 + 6 = 10$ and the surd parts $4\\sqrt3 + 2\\sqrt3 = 6\\sqrt3$ combine to $10 + 6\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the fraction.",
+        "workingLatex": "\\dfrac{10 + 6\\sqrt{3}}{2}",
+        "explanation": "Placing the simplified numerator over the denominator $2$ gives this fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Divide each term by 2.",
+        "workingLatex": "\\dfrac{10}{2} + \\dfrac{6\\sqrt{3}}{2} = 5 + 3\\sqrt{3}",
+        "explanation": "Dividing both terms by $2$ gives $5 + 3\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Identify a and b.",
+        "workingLatex": "a = 5, \\quad b = 3",
+        "explanation": "Comparing with $a+b\\sqrt3$ gives the integers $a=5$ and $b=3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{(1.732+1)^2}{1.732-1} \\approx 10.20",
+        "explanation": "The original expression evaluates to about $10.20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Match the check.",
+        "workingLatex": "5 + 3(1.732) \\approx 10.20",
+        "explanation": "The answer $5 + 3\\sqrt3$ also gives about $10.20$, confirming it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "5 + 3\\sqrt{3}",
+        "explanation": "The expression equals $5 + 3\\sqrt3$, so $a=5$ and $b=3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\left(\\sqrt{3}+1\\right)^2}{\\sqrt{3}-1} = \\dfrac{4+2\\sqrt{3}}{\\sqrt{3}-1} = \\dfrac{(4+2\\sqrt{3})(\\sqrt{3}+1)}{2} = \\dfrac{10+6\\sqrt{3}}{2} = 5 + 3\\sqrt{3}$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "range of a parameter",
+    "distinct roots"
+  ],
+  "questionText": "Find the range of values of $k$ for which the equation $kx^2 + 4x + 1 = 0$ has two distinct real roots. ($k \\neq 0$.)",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Note the equation must be quadratic.",
+        "workingLatex": "k \\neq 0",
+        "explanation": "For the equation to be a quadratic with two roots, the leading coefficient $k$ must be non-zero (as stated).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the condition for two distinct real roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac > 0",
+        "explanation": "A quadratic has two distinct real roots exactly when its discriminant is strictly positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = k,\\ b = 4,\\ c = 1",
+        "explanation": "Here the leading coefficient is the unknown $k$, which the condition will constrain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = 4^2 - 4(k)(1) = 16 - 4k",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $16 - 4k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the inequality.",
+        "workingLatex": "16 - 4k > 0",
+        "explanation": "For two distinct real roots the discriminant must be strictly greater than zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange.",
+        "workingLatex": "16 > 4k",
+        "explanation": "Adding $4k$ to both sides moves it across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide by 4.",
+        "workingLatex": "4 > k",
+        "explanation": "Dividing both sides by the positive number $4$ preserves the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rewrite the inequality.",
+        "workingLatex": "k < 4",
+        "explanation": "So the discriminant is positive for $k < 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine with the earlier restriction.",
+        "workingLatex": "k < 4 \\text{ and } k \\neq 0",
+        "explanation": "We must also exclude $k = 0$, since then the equation would be linear, not quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Test a value.",
+        "workingLatex": "k = 1: \\ 16 - 4 = 12 > 0 \\ \\checkmark",
+        "explanation": "Testing $k = 1$ gives a positive discriminant, confirming two distinct real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Test the boundary.",
+        "workingLatex": "k = 4: \\ 16 - 16 = 0",
+        "explanation": "At $k = 4$ the discriminant is zero (equal roots), so the boundary is correctly excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Write the solution.",
+        "workingLatex": "k < 4, \\ k \\neq 0",
+        "explanation": "The discriminant is positive for all $k < 4$ except $k = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "k < 4 \\ \\text{ and } \\ k \\neq 0",
+        "explanation": "The equation has two distinct real roots when $k < 4$ and $k \\neq 0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = 16 - 4k > 0 \\Rightarrow k < 4$; together with $k \\neq 0$, the range is $k < 4,\\ k \\neq 0$."
+  }
+}

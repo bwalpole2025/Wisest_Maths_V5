@@ -1,0 +1,121 @@
+{
+  "id": "al.y1.pure.disproof.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "primorial"
+  ],
+  "questionText": "Let $p_1, p_2, \\dots$ be the primes in order. Disprove the claim that ``the product of the first $k$ primes, plus $1$, is always prime.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ k:\\ (p_1 p_2 \\cdots p_k) + 1 \\text{ is prime}",
+        "explanation": "These `primorial plus one' numbers appear in Euclid's proof of the infinitude of primes. The claim that they are *always* prime needs only one composite value to fail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one $k$ for which the primorial plus one is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the first four cases.",
+        "workingLatex": "3,\\ 7,\\ 31,\\ 211",
+        "explanation": "For $k=1,2,3,4$ we get $2{+}1{=}3$, $6{+}1{=}7$, $30{+}1{=}31$, $210{+}1{=}211$ — all prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the fifth case.",
+        "workingLatex": "2 \\cdot 3 \\cdot 5 \\cdot 7 \\cdot 11 + 1 = 2311 \\text{ (prime)}",
+        "explanation": "For $k=5$ the value $2311$ is also prime, so the first five cases all work — a convincing run.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Move to k = 6.",
+        "workingLatex": "k = 6",
+        "explanation": "We include the sixth prime, $13$, and test the resulting number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the product of the first six primes.",
+        "workingLatex": "2 \\cdot 3 \\cdot 5 \\cdot 7 \\cdot 11 \\cdot 13 = 30030",
+        "explanation": "The product of the first six primes is $30030$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add 1.",
+        "workingLatex": "30030 + 1 = 30031",
+        "explanation": "So the sixth primorial-plus-one is $30031$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise the result.",
+        "workingLatex": "30031 = 59 \\times 509",
+        "explanation": "Testing primes, $30031$ is divisible by $59$, giving $30031 = 59\\times509$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm it is composite.",
+        "workingLatex": "30031 \\text{ has divisor } 59 \\Rightarrow \\text{composite}",
+        "explanation": "With the proper divisor $59$, the number $30031$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confront the claim.",
+        "workingLatex": "30031 = 59 \\times 509 \\text{ is composite}",
+        "explanation": "At $k=6$ the primorial plus one is composite, contradicting the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Clarify the subtlety.",
+        "workingLatex": "59, 509 \\text{ are new primes, not among } p_1, \\dots, p_6",
+        "explanation": "Euclid's argument only guarantees a *new* prime factor (here $59$), not that the number itself is prime — a common misreading the claim makes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the earlier cases.",
+        "workingLatex": "3, 7, 31, 211, 2311 \\text{ all prime}",
+        "explanation": "This confirms $k=6$ is the first failure, so the counterexample is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Reflect on the lesson.",
+        "workingLatex": "\\text{five primes, then a composite}",
+        "explanation": "Five successes did not make a proof; the sixth case breaks the pattern, illustrating disproof by counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $k=6$, $(p_1\\cdots p_6)+1 = 30031 = 59\\times509$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For $k=6$: $2\\cdot3\\cdot5\\cdot7\\cdot11\\cdot13 + 1 = 30031 = 59 \\times 509$, which is composite. Hence the claim is false (Euclid's argument only guarantees a new prime *factor*, not primality). $\\blacksquare$"
+  }
+}

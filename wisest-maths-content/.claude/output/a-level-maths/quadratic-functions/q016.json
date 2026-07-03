@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.quadratics.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "equal roots",
+    "finding a parameter"
+  ],
+  "questionText": "Find the values of $k$ for which the equation $x^2 + kx + 9 = 0$ has equal roots.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition for equal roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac = 0",
+        "explanation": "A quadratic has a repeated (equal) root exactly when its discriminant is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = k,\\ c = 9",
+        "explanation": "Here the middle coefficient is the unknown $k$, which we will solve for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = k^2 - 4(1)(9) = k^2 - 36",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $k^2 - 36$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the discriminant to zero.",
+        "workingLatex": "k^2 - 36 = 0",
+        "explanation": "For equal roots the discriminant must equal zero, giving an equation in $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange.",
+        "workingLatex": "k^2 = 36",
+        "explanation": "Adding $36$ to both sides isolates $k^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Take the square root.",
+        "workingLatex": "k = \\pm 6",
+        "explanation": "Both the positive and negative square roots satisfy $k^2 = 36$, so there are two values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Interpret the two values.",
+        "workingLatex": "k = 6 \\text{ or } k = -6",
+        "explanation": "Each value of $k$ makes the quadratic a perfect square with a single repeated root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify one value.",
+        "workingLatex": "k = 6: \\ 6^2 - 36 = 0 \\ \\checkmark",
+        "explanation": "Substituting $k = 6$ gives a discriminant of $0$, confirming equal roots (and $k = -6$ works identically).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "k = \\pm 6",
+        "explanation": "The equation has equal roots when $k = 6$ or $k = -6$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = k^2 - 36 = 0 \\Rightarrow k^2 = 36 \\Rightarrow k = \\pm 6$"
+  }
+}

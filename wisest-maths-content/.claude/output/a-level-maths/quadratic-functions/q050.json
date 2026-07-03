@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.quadratics.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "sum and product of roots",
+    "finding coefficients"
+  ],
+  "questionText": "The quadratic equation $x^2 + px + q = 0$ has roots $2$ and $5$. Find the values of $p$ and $q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the sum and product of roots.",
+        "workingLatex": "\\alpha + \\beta = -\\dfrac{b}{a}, \\quad \\alpha\\beta = \\dfrac{c}{a}",
+        "explanation": "For $ax^2 + bx + c = 0$ the roots sum to $-b/a$ and multiply to $c/a$; here $a = 1$, $b = p$, $c = q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Specialise to this equation.",
+        "workingLatex": "\\alpha + \\beta = -p, \\quad \\alpha\\beta = q",
+        "explanation": "With $a = 1$, the sum of the roots is $-p$ and the product is $q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the sum of the given roots.",
+        "workingLatex": "2 + 5 = 7",
+        "explanation": "The two given roots add to $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Equate to minus p.",
+        "workingLatex": "-p = 7",
+        "explanation": "Since the sum of the roots equals $-p$, we set $-p = 7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for p.",
+        "workingLatex": "p = -7",
+        "explanation": "Multiplying both sides by $-1$ gives $p = -7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the product of the given roots.",
+        "workingLatex": "2 \\times 5 = 10",
+        "explanation": "The two given roots multiply to $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Equate to q.",
+        "workingLatex": "q = 10",
+        "explanation": "Since the product of the roots equals $q$, we have $q = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the quadratic.",
+        "workingLatex": "x^2 - 7x + 10 = 0",
+        "explanation": "Substituting $p = -7$ and $q = 10$ gives the full equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Factorise to check.",
+        "workingLatex": "x^2 - 7x + 10 = (x - 2)(x - 5)",
+        "explanation": "Factorising should reproduce the two given roots if $p$ and $q$ are correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the first root.",
+        "workingLatex": "x = 2: \\ 4 - 14 + 10 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 2$ gives $0$, confirming it is a root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the second root.",
+        "workingLatex": "x = 5: \\ 25 - 35 + 10 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 5$ also gives $0$, confirming the second root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the values.",
+        "workingLatex": "p = -7, \\quad q = 10",
+        "explanation": "So the coefficients are $p = -7$ and $q = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "p = -7, \\ q = 10",
+        "explanation": "The quadratic $x^2 - 7x + 10 = 0$ has the required roots, so $p = -7$ and $q = 10$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Sum of roots $= 2 + 5 = 7 = -p \\Rightarrow p = -7$; product $= 2 \\times 5 = 10 = q$. So $p = -7,\\ q = 10$."
+  }
+}

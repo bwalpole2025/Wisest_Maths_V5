@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.disproof.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes"
+  ],
+  "questionText": "Disprove the claim that ``if $p$ is prime, then $p^2 + p + 1$ is also prime.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{primes } p:\\ p^2 + p + 1 \\text{ is prime}",
+        "explanation": "The claim asserts primality of $p^2+p+1$ for *every* prime $p$; one prime giving a composite value disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one prime $p$ for which $p^2+p+1$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check p = 2.",
+        "workingLatex": "2^2 + 2 + 1 = 7 \\text{ (prime)}",
+        "explanation": "For $p=2$ the value is $7$, which is prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check p = 3.",
+        "workingLatex": "3^2 + 3 + 1 = 13 \\text{ (prime)}",
+        "explanation": "For $p=3$ the value is $13$, again prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check p = 5.",
+        "workingLatex": "5^2 + 5 + 1 = 31 \\text{ (prime)}",
+        "explanation": "For $p=5$ the value is $31$, prime — so the first three primes all work.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Move to p = 7.",
+        "workingLatex": "p = 7",
+        "explanation": "We continue to the next prime, $p=7$, to test whether the pattern holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the expression.",
+        "workingLatex": "7^2 + 7 + 1 = 49 + 7 + 1 = 57",
+        "explanation": "Substituting $p=7$ gives $57$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise the result.",
+        "workingLatex": "57 = 3 \\times 19",
+        "explanation": "Since $5+7=12$ is divisible by $3$, so is $57$; indeed $57 = 3\\times19$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm it is composite.",
+        "workingLatex": "57 \\text{ has divisor } 3 \\Rightarrow \\text{composite}",
+        "explanation": "With a proper divisor $3$, the number $57$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confront the claim.",
+        "workingLatex": "p = 7 \\text{ prime, but } 57 \\text{ composite}",
+        "explanation": "Here $p=7$ is prime yet $p^2+p+1$ is composite, contradicting the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Comment on the pattern.",
+        "workingLatex": "\\text{three primes, then a composite}",
+        "explanation": "Three initial successes did not guarantee the rest — a recurring warning in disproof by counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the earlier cases.",
+        "workingLatex": "7, 13, 31 \\text{ all prime}",
+        "explanation": "This confirms $p=7$ is the first failure, so the counterexample is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $p=7$, $p^2+p+1 = 57 = 3\\times19$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "For the prime $p=7$: $p^2+p+1 = 57 = 3 \\times 19$, which is composite. Hence ``$p$ prime $\\Rightarrow p^2+p+1$ prime'' is false. $\\blacksquare$"
+  }
+}

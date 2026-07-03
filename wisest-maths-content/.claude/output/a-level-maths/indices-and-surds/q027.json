@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "negative indices",
+    "evaluating"
+  ],
+  "questionText": "Evaluate $5^{-2}$, giving your answer as an exact fraction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the negative index.",
+        "workingLatex": "5^{-2}",
+        "explanation": "A negative index signals a reciprocal, so we rewrite the power as one over the corresponding positive power.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the negative-index law.",
+        "workingLatex": "a^{-n} = \\dfrac{1}{a^{n}}",
+        "explanation": "A negative index means `one over' the positive power, since a negative exponent undoes repeated multiplication.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the law.",
+        "workingLatex": "5^{-2} = \\dfrac{1}{5^{2}}",
+        "explanation": "Rewriting with a positive index puts $5^2$ in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the positive power.",
+        "workingLatex": "5^2 = 25",
+        "explanation": "Squaring $5$ gives $5^2 = 25$, which sits in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the fraction.",
+        "workingLatex": "5^{-2} = \\dfrac{1}{25}",
+        "explanation": "Substituting $5^2 = 25$ gives the exact value $\\tfrac{1}{25}$, a fraction smaller than $1$ as expected for a negative index.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{1}{25}",
+        "explanation": "The exact value of $5^{-2}$ is $\\tfrac{1}{25}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$5^{-2} = \\dfrac{1}{5^{2}} = \\dfrac{1}{25}$"
+  }
+}

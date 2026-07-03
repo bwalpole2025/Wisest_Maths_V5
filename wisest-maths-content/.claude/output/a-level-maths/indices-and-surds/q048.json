@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "fractional indices",
+    "evaluating"
+  ],
+  "questionText": "Evaluate $4^{\\frac{3}{2}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the fractional index.",
+        "workingLatex": "4^{\\frac{3}{2}} = \\left(4^{\\frac{1}{2}}\\right)^{3}",
+        "explanation": "The denominator $2$ means a square root and the numerator $3$ means cube it; taking the root first keeps the numbers small.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Take the square root.",
+        "workingLatex": "4^{\\frac{1}{2}} = 2",
+        "explanation": "Since $2^2 = 4$, the square root of $4$ is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the remaining power.",
+        "workingLatex": "\\left(4^{\\frac{1}{2}}\\right)^{3} = 2^{3}",
+        "explanation": "The numerator $3$ tells us to cube the square root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the cube.",
+        "workingLatex": "2^3 = 8",
+        "explanation": "Cubing the square root $2$ gives $2^3 = 8$, the value of the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the intermediate result.",
+        "workingLatex": "4^{\\frac{3}{2}} = 8",
+        "explanation": "Combining the steps gives $4^{3/2} = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "8",
+        "explanation": "The value of $4^{3/2}$ is $8$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$4^{\\frac{3}{2}} = \\left(4^{1/2}\\right)^{3} = 2^{3} = 8$"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "geometry",
+    "quadrilaterals"
+  ],
+  "questionText": "Disprove the statement: ``Any quadrilateral with all four sides equal in length is a square.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{quadrilaterals with 4 equal sides}:\\ \\text{square}",
+        "explanation": "The claim asserts that equal sides force a square; one equal-sided quadrilateral that is not a square disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single four-equal-sided quadrilateral that is not a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall what a square also requires.",
+        "workingLatex": "\\text{square} = \\text{equal sides} + \\text{right angles}",
+        "explanation": "A square needs both equal sides *and* right angles; a shape can have equal sides without right angles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Construct a rhombus.",
+        "workingLatex": "\\text{4 sides of length } 1,\\ \\text{angles } 60^\\circ \\text{ and } 120^\\circ",
+        "explanation": "A rhombus with side $1$ and interior angles $60^\\circ$ and $120^\\circ$ has all sides equal but is `pushed over'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm all four sides are equal.",
+        "workingLatex": "\\text{all sides} = 1",
+        "explanation": "By construction every side has length $1$, so the shape genuinely satisfies the hypothesis `all four sides equal'.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check its angles.",
+        "workingLatex": "60^\\circ \\neq 90^\\circ",
+        "explanation": "Its angles are not right angles, so it fails the square's angle condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare areas to confirm.",
+        "workingLatex": "\\text{rhombus area} = 1^2 \\sin 60^\\circ = \\tfrac{\\sqrt3}{2} \\approx 0.87",
+        "explanation": "Its area is $\\sin 60^\\circ\\approx0.87$, whereas a unit square has area $1$ — numerical confirmation that it is not a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the shape.",
+        "workingLatex": "\\text{this is a (non-square) rhombus}",
+        "explanation": "A four-equal-sided quadrilateral that is not a square is precisely a rhombus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "A rhombus with $60^\\circ$ angles has four equal sides but is not a square, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "A rhombus with side $1$ and angles $60^\\circ, 120^\\circ$ has four equal sides but is not a square (its angles are not $90^\\circ$, and its area $\\tfrac{\\sqrt3}{2}\\neq1$). Hence the statement is false. $\\blacksquare$"
+  }
+}

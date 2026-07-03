@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "common base"
+  ],
+  "questionText": "Solve the equation $3^{x} = 81$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Aim for a common base.",
+        "workingLatex": "\\text{write } 81 \\text{ as a power of } 3",
+        "explanation": "Both sides should be powers of $3$ so that we can compare their indices directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Express 81 as a power of 3.",
+        "workingLatex": "81 = 3^4",
+        "explanation": "Repeatedly multiplying $3$ gives $3,9,27,81$, so $81 = 3^4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the equation.",
+        "workingLatex": "3^{x} = 3^{4}",
+        "explanation": "Both sides are now powers of the same base $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Equate the indices.",
+        "workingLatex": "x = 4",
+        "explanation": "If two powers of the same base are equal, their indices must be equal, giving $x = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the solution.",
+        "workingLatex": "3^4 = 81 \\ \\checkmark",
+        "explanation": "Substituting back, $3^4 = 81$, so the solution satisfies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Sense-check the size.",
+        "workingLatex": "3^3 = 27 < 81 < 243 = 3^5 \\Rightarrow 3 < x < 5",
+        "explanation": "Since $81$ lies between $3^3$ and $3^5$, the solution must be between $3$ and $5$, and $4$ fits.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note uniqueness.",
+        "workingLatex": "3^x \\text{ is one-to-one}",
+        "explanation": "Because the exponential function is strictly increasing, there is exactly one solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Connect to logarithms.",
+        "workingLatex": "x = \\log_{3} 81 = 4",
+        "explanation": "Equivalently, $x$ is the logarithm of $81$ to base $3$; this is another way to see that the answer is $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "x = 4",
+        "explanation": "The solution of $3^x = 81$ is $x = 4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3^x = 81 = 3^4 \\Rightarrow x = 4$"
+  }
+}

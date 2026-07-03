@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.disproof.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities"
+  ],
+  "questionText": "Disprove the statement: ``For every positive integer $n$, $n^2 > n$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 1:\\ n^2 > n",
+        "explanation": "The statement claims the square always strictly exceeds the number; a single failing $n$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We only need one positive integer for which $n^2>n$ is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Notice larger values obey it.",
+        "workingLatex": "n=2: 4>2,\\quad n=3: 9>3",
+        "explanation": "For $n\\ge2$ the inequality holds, which makes the claim look true.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the smallest positive integer.",
+        "workingLatex": "n = 1",
+        "explanation": "The boundary case $n=1$ is where such inequalities often fail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate both sides.",
+        "workingLatex": "n^2 = 1^2 = 1, \\quad n = 1",
+        "explanation": "Both $n^2$ and $n$ equal $1$ when $n=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare.",
+        "workingLatex": "1 > 1 \\text{ is false}",
+        "explanation": "Since $1$ is not strictly greater than $1$, the inequality fails at $n=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $n=1$ we have $n^2=n$, not $n^2>n$, so the claim is disproved by this counterexample.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "At $n=1$, $n^2 = 1 = n$, so $n^2 > n$ fails. Hence the statement is false. $\\blacksquare$"
+  }
+}

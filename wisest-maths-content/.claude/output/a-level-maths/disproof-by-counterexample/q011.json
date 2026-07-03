@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities",
+    "squares"
+  ],
+  "questionText": "Disprove the statement: ``For all real numbers $x$ and $y$, if $x > y$ then $x^2 > y^2$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a conditional for all reals.",
+        "workingLatex": "\\forall\\ x,y:\\ x > y \\Rightarrow x^2 > y^2",
+        "explanation": "The claim asserts the implication for every pair; one pair with $x>y$ but $x^2\\le y^2$ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We seek $x>y$ for which the squares do not preserve the order.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note where squaring misbehaves.",
+        "workingLatex": "\\text{squaring ignores sign and magnitude order}",
+        "explanation": "A larger number can have a smaller square if it is closer to zero than a negative number, so negatives are the place to look.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose a specific pair.",
+        "workingLatex": "x = 1, \\quad y = -3",
+        "explanation": "Here $x=1$ is greater than $y=-3$, so the hypothesis $x>y$ holds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm the hypothesis.",
+        "workingLatex": "1 > -3 \\text{ is true}",
+        "explanation": "Indeed $1$ lies to the right of $-3$ on the number line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the squares.",
+        "workingLatex": "x^2 = 1, \\quad y^2 = (-3)^2 = 9",
+        "explanation": "Squaring gives $x^2=1$ and $y^2=9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare the squares.",
+        "workingLatex": "x^2 = 1 > 9 = y^2 \\text{ is false}",
+        "explanation": "Since $1<9$, we have $x^2<y^2$, so the conclusion $x^2>y^2$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain the underlying reason.",
+        "workingLatex": "|y| = 3 > 1 = |x|",
+        "explanation": "Squaring compares distance from zero, and $y=-3$ is further from zero than $x=1$, so its square is larger despite $y<x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "With $x=1>y=-3$ but $x^2=1<9=y^2$, the implication is disproved. (It holds only when both $x$ and $y$ are non-negative.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $x=1,\\ y=-3$: then $x>y$ but $x^2 = 1 < 9 = y^2$. Hence the statement is false. $\\blacksquare$"
+  }
+}

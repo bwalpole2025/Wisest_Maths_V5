@@ -1,0 +1,87 @@
+{
+  "id": "al.y1.pure.disproof.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "number theory",
+    "gcd",
+    "lcm"
+  ],
+  "questionText": "Disprove the statement: ``For all positive integers $a$ and $b$, $\\gcd(a,b) \\times \\operatorname{lcm}(a,b) = a + b$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ a,b:\\ \\gcd(a,b) \\times \\operatorname{lcm}(a,b) = a + b",
+        "explanation": "The claim asserts an identity for *all* $a,b$; one pair where the sides differ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair making the two sides unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the true identity.",
+        "workingLatex": "\\gcd(a,b) \\times \\operatorname{lcm}(a,b) = a \\times b",
+        "explanation": "The correct relation multiplies to $ab$, not $a+b$; a counterexample should have $ab \\neq a+b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose numbers with a common factor.",
+        "workingLatex": "a = 4, \\quad b = 6",
+        "explanation": "Taking $a=4,\\ b=6$ gives a shared factor and $ab=24 \\neq 10 = a+b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute the gcd.",
+        "workingLatex": "\\gcd(4,6) = 2",
+        "explanation": "The greatest common divisor of $4$ and $6$ is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the lcm.",
+        "workingLatex": "\\operatorname{lcm}(4,6) = 12",
+        "explanation": "The lowest common multiple of $4$ and $6$ is $12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the left-hand side.",
+        "workingLatex": "\\gcd \\times \\operatorname{lcm} = 2 \\times 12 = 24",
+        "explanation": "The product is $2\\times12 = 24$ (which indeed equals $ab = 24$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the right-hand side.",
+        "workingLatex": "a + b = 4 + 6 = 10",
+        "explanation": "The right side is $4+6 = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "24 \\neq 10 \\Rightarrow \\text{the statement is false}",
+        "explanation": "At $a=4,\\ b=6$ the sides are $24$ and $10$, so the claim is disproved. (The correct identity is $\\gcd\\times\\operatorname{lcm} = ab$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=4,\\ b=6$: then $\\gcd \\times \\operatorname{lcm} = 2 \\times 12 = 24$, but $a+b = 10$. Since $24 \\neq 10$, the statement is false. $\\blacksquare$"
+  }
+}

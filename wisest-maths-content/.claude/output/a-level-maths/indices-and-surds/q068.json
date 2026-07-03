@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "rationalising the denominator",
+    "conjugates"
+  ],
+  "questionText": "Express $\\dfrac{\\sqrt{5} + 1}{\\sqrt{5} - 1}$ in the form $a + b\\sqrt{5}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the conjugate.",
+        "workingLatex": "\\text{conjugate of } \\sqrt{5} - 1 \\text{ is } \\sqrt{5} + 1",
+        "explanation": "For the two-term surd denominator we multiply by its conjugate, producing a surd-free difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the conjugate.",
+        "workingLatex": "\\dfrac{\\sqrt{5}+1}{\\sqrt{5}-1} \\times \\dfrac{\\sqrt{5}+1}{\\sqrt{5}+1}",
+        "explanation": "Multiplying by $1$ in this form preserves the value while rationalising the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator.",
+        "workingLatex": "(\\sqrt{5}-1)(\\sqrt{5}+1) = 5 - 1 = 4",
+        "explanation": "The difference of squares gives $(\\sqrt5)^2 - 1^2 = 5 - 1 = 4$, a rational denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the numerator.",
+        "workingLatex": "(\\sqrt{5}+1)^2 = 5 + 2\\sqrt{5} + 1",
+        "explanation": "The numerator is $(\\sqrt5+1)^2$; expanding gives $5$, the cross term $2\\sqrt5$, and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerator.",
+        "workingLatex": "5 + 1 + 2\\sqrt{5} = 6 + 2\\sqrt{5}",
+        "explanation": "Adding the rational parts $5 + 1 = 6$ gives $6 + 2\\sqrt5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the fraction.",
+        "workingLatex": "\\dfrac{6 + 2\\sqrt{5}}{4}",
+        "explanation": "Placing the numerator over the denominator $4$ gives this fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factor out the common 2.",
+        "workingLatex": "\\dfrac{2\\left(3 + \\sqrt{5}\\right)}{4}",
+        "explanation": "Both numerator terms share a factor of $2$, which we take out ready to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Cancel the common factor.",
+        "workingLatex": "\\dfrac{3 + \\sqrt{5}}{2}",
+        "explanation": "Cancelling the $2$ against the $4$ leaves the denominator $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Split into the required form.",
+        "workingLatex": "\\dfrac{3}{2} + \\dfrac{1}{2}\\sqrt{5}",
+        "explanation": "Separating the rational and surd parts writes the answer as $a + b\\sqrt5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Identify a and b.",
+        "workingLatex": "a = \\dfrac{3}{2}, \\quad b = \\dfrac{1}{2}",
+        "explanation": "Comparing with $a + b\\sqrt5$ gives $a = \\tfrac32$ and $b = \\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify numerically.",
+        "workingLatex": "\\dfrac{2.236 + 1}{2.236 - 1} \\approx 2.62",
+        "explanation": "The original expression evaluates to about $2.62$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Match the check.",
+        "workingLatex": "\\dfrac{3 + 2.236}{2} \\approx 2.62",
+        "explanation": "The answer $\\tfrac{3 + \\sqrt5}{2}$ also gives about $2.62$, confirming it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "\\dfrac{3 + \\sqrt{5}}{2}",
+        "explanation": "The expression equals $\\tfrac{3 + \\sqrt5}{2}$, i.e. $\\tfrac32 + \\tfrac12\\sqrt5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sqrt{5}+1}{\\sqrt{5}-1} = \\dfrac{(\\sqrt{5}+1)^2}{5-1} = \\dfrac{6 + 2\\sqrt{5}}{4} = \\dfrac{3 + \\sqrt{5}}{2}$"
+  }
+}

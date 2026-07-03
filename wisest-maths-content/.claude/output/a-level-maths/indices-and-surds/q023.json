@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "negative indices",
+    "fractions"
+  ],
+  "questionText": "Evaluate $\\left(\\dfrac{1}{2}\\right)^{-2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the negative index.",
+        "workingLatex": "\\left(\\tfrac{1}{2}\\right)^{-2}",
+        "explanation": "A negative index on a fraction tells us to take the reciprocal of the fraction and then apply the positive power.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the reciprocal rule.",
+        "workingLatex": "\\left(\\tfrac{a}{b}\\right)^{-n} = \\left(\\tfrac{b}{a}\\right)^{n}",
+        "explanation": "Flipping the fraction turns the negative index into a positive one, because dividing by a fraction is the same as multiplying by its reciprocal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Flip the fraction.",
+        "workingLatex": "\\left(\\tfrac{1}{2}\\right)^{-2} = \\left(\\tfrac{2}{1}\\right)^{2} = 2^2",
+        "explanation": "Turning $\\tfrac12$ upside down gives $2$, now raised to the positive power $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the power.",
+        "workingLatex": "2^2 = 4",
+        "explanation": "Squaring the flipped base $2$ gives $2^2 = 4$, the value of the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check the size.",
+        "workingLatex": "\\text{negative index of a fraction} < 1 \\Rightarrow \\text{answer} > 1",
+        "explanation": "Raising a number smaller than $1$ to a negative power gives a result bigger than $1$, and $4>1$ fits.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "4",
+        "explanation": "The value of $\\left(\\tfrac12\\right)^{-2}$ is $4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(\\tfrac{1}{2}\\right)^{-2} = \\left(\\tfrac{2}{1}\\right)^{2} = 2^2 = 4$"
+  }
+}

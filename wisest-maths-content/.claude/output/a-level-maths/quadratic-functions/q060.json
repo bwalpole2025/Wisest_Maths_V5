@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.quadratics.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "turning point",
+    "leading coefficient"
+  ],
+  "questionText": "Find the coordinates of the turning point of the curve $y = 2x^2 - 8x + 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Factor the leading coefficient from the x terms.",
+        "workingLatex": "2x^2 - 8x = 2\\left(x^2 - 4x\\right)",
+        "explanation": "Completing the square with a leading coefficient requires factoring the $2$ out of the $x$ terms first.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the full expression.",
+        "workingLatex": "y = 2\\left(x^2 - 4x\\right) + 3",
+        "explanation": "Only the $x$ terms go inside the bracket; the constant $+3$ stays outside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Halve the coefficient of x inside.",
+        "workingLatex": "\\dfrac{-4}{2} = -2",
+        "explanation": "Half of $-4$ is $-2$, which will appear inside the squared bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Complete the square inside.",
+        "workingLatex": "x^2 - 4x = (x - 2)^2 - 4",
+        "explanation": "Expanding $(x-2)^2$ gives $x^2 - 4x + 4$, so we subtract $4$ inside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back.",
+        "workingLatex": "y = 2\\left[(x - 2)^2 - 4\\right] + 3",
+        "explanation": "Replacing the bracket gives the expression in terms of a square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand and simplify.",
+        "workingLatex": "y = 2(x - 2)^2 - 8 + 3 = 2(x - 2)^2 - 5",
+        "explanation": "Multiplying the $2$ through gives $-8$, and $-8 + 3 = -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Read off the vertex.",
+        "workingLatex": "y = 2(x - h)^2 + k \\Rightarrow (h, k) = (2, -5)",
+        "explanation": "In this form the turning point is at $(h, k)$, so the vertex is $(2, -5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the type.",
+        "workingLatex": "\\text{coefficient of } x^2 > 0 \\Rightarrow \\text{minimum}",
+        "explanation": "Since the $x^2$ coefficient is positive, the parabola opens upward and the turning point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "(2, -5)",
+        "explanation": "The turning point is the minimum point $(2, -5)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 2x^2 - 8x + 3 = 2(x-2)^2 - 5$, so the minimum turning point is $(2, -5)$."
+  }
+}

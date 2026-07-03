@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "nature of roots"
+  ],
+  "questionText": "Use the discriminant to show that the equation $x^2 + x + 1 = 0$ has no real roots.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall what the discriminant tells us.",
+        "workingLatex": "\\Delta = b^2 - 4ac",
+        "explanation": "The sign of the discriminant decides the nature of the roots: negative means no real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the rule for no real roots.",
+        "workingLatex": "\\Delta < 0 \\Rightarrow \\text{no real roots}",
+        "explanation": "If $b^2 - 4ac$ is negative, the formula would require the square root of a negative number, which is not real.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = 1,\\ c = 1",
+        "explanation": "Reading off the coefficients gives the values to substitute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into the formula.",
+        "workingLatex": "\\Delta = 1^2 - 4(1)(1)",
+        "explanation": "Putting the coefficients into $b^2 - 4ac$ sets up the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Work out each part.",
+        "workingLatex": "1^2 = 1, \\quad 4(1)(1) = 4",
+        "explanation": "Computing the square and the product separately keeps the arithmetic clear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the discriminant.",
+        "workingLatex": "\\Delta = 1 - 4 = -3",
+        "explanation": "Subtracting gives $\\Delta = -3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the rule.",
+        "workingLatex": "-3 < 0",
+        "explanation": "Since the discriminant is negative, the condition for no real roots is met.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpret graphically.",
+        "workingLatex": "\\text{parabola stays above the } x\\text{-axis}",
+        "explanation": "A negative discriminant means the upward parabola never crosses the $x$-axis, which is the graphical picture of having no real roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude.",
+        "workingLatex": "\\text{no real roots}",
+        "explanation": "Because $\\Delta = -3 < 0$, the equation $x^2 + x + 1 = 0$ has no real roots.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = 1^2 - 4(1)(1) = -3 < 0$, so the equation has no real roots. $\\blacksquare$"
+  }
+}

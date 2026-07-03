@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "simplifying surds",
+    "subtracting surds"
+  ],
+  "questionText": "Simplify $\\sqrt{72} - \\sqrt{8}$, giving your answer in the form $a\\sqrt{b}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Simplify the first surd.",
+        "workingLatex": "\\sqrt{72} = \\sqrt{36 \\times 2} = 6\\sqrt{2}",
+        "explanation": "The largest square factor of $72$ is $36$, so $\\sqrt{72}=6\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify the second surd.",
+        "workingLatex": "\\sqrt{8} = \\sqrt{4 \\times 2} = 2\\sqrt{2}",
+        "explanation": "The largest square factor of $8$ is $4$, so $\\sqrt8 = 2\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the difference.",
+        "workingLatex": "\\sqrt{72} - \\sqrt{8} = 6\\sqrt{2} - 2\\sqrt{2}",
+        "explanation": "Both surds reduce to multiples of $\\sqrt2$, so they are like surds ready to be combined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recognise like surds.",
+        "workingLatex": "6\\sqrt{2} \\text{ and } 2\\sqrt{2} \\text{ share } \\sqrt{2}",
+        "explanation": "Because the irrational parts match, we can subtract the coefficients just like like terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract the coefficients.",
+        "workingLatex": "6 - 2 = 4",
+        "explanation": "Subtracting $2$ from $6$ leaves $4$ copies of $\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine.",
+        "workingLatex": "6\\sqrt{2} - 2\\sqrt{2} = 4\\sqrt{2}",
+        "explanation": "Attaching the coefficient $4$ to $\\sqrt2$ gives the simplified surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check b is fully reduced.",
+        "workingLatex": "2 \\text{ is prime}",
+        "explanation": "Since $2$ has no square factor, the surd cannot be simplified further.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "\\sqrt{72}-\\sqrt{8} \\approx 8.49 - 2.83 = 5.66,\\quad 4\\sqrt{2} \\approx 5.66",
+        "explanation": "Both the original difference and $4\\sqrt2$ evaluate to about $5.66$, confirming the simplification.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "4\\sqrt{2}",
+        "explanation": "The simplified difference is $4\\sqrt2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{72} - \\sqrt{8} = 6\\sqrt{2} - 2\\sqrt{2} = 4\\sqrt{2}$"
+  }
+}

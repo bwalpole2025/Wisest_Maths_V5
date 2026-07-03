@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "surds",
+    "algebra"
+  ],
+  "questionText": "Disprove the statement: ``For all real numbers $a, b \\ge 0$, $\\left(\\sqrt{a} + \\sqrt{b}\\right)^2 = a + b$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ a,b \\ge 0:\\ (\\sqrt a + \\sqrt b)^2 = a + b",
+        "explanation": "The claim asserts an identity for *all* non-negative $a,b$; one pair where the sides differ disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single pair making the two sides unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the correct expansion.",
+        "workingLatex": "(\\sqrt a + \\sqrt b)^2 = a + 2\\sqrt{ab} + b",
+        "explanation": "Expanding the square leaves a cross term $2\\sqrt{ab}$, which the claim drops; a counterexample should make it non-zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose values with ab > 0.",
+        "workingLatex": "a = 1, \\quad b = 1",
+        "explanation": "With $a=b=1$ the cross term $2\\sqrt{ab}=2\\neq0$, so the sides should differ.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the left-hand side.",
+        "workingLatex": "(\\sqrt 1 + \\sqrt 1)^2 = (1+1)^2 = 4",
+        "explanation": "The left side is $(1+1)^2 = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the right-hand side.",
+        "workingLatex": "a + b = 1 + 1 = 2",
+        "explanation": "The right side is $1+1 = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare.",
+        "workingLatex": "4 \\neq 2",
+        "explanation": "The two sides are unequal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Pinpoint the missing term.",
+        "workingLatex": "4 - 2 = 2 = 2\\sqrt{ab}",
+        "explanation": "The gap of $2$ is exactly the cross term $2\\sqrt{ab}$ the claim ignored.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $a=b=1$ the sides are $4$ and $2$, so the identity is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $a=b=1$: then $(\\sqrt a+\\sqrt b)^2 = (1+1)^2 = 4$ but $a+b = 2$. Since $4 \\neq 2$, the statement is false. $\\blacksquare$"
+  }
+}

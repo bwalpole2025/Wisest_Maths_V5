@@ -1,0 +1,65 @@
+{
+  "id": "al.y1.pure.disproof.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "parity"
+  ],
+  "questionText": "Show, by means of a counterexample, that the following statement is false: ``Every prime number is odd.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ \\text{primes } p:\\ p \\text{ is odd}",
+        "explanation": "The statement asserts something about *every* prime. To disprove a `for all' claim we only need a single case where it fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample} \\Rightarrow \\text{statement false}",
+        "explanation": "A universal statement is false as soon as one example breaks it; we do not need to examine every prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Look at the smallest prime.",
+        "workingLatex": "p = 2",
+        "explanation": "The number $2$ is prime, since its only positive divisors are $1$ and $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check its parity.",
+        "workingLatex": "2 = 2 \\times 1 \\text{ is even}",
+        "explanation": "The number $2$ is divisible by $2$, so it is even, not odd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confront the claim.",
+        "workingLatex": "2 \\text{ is prime but not odd}",
+        "explanation": "Here is a prime that fails the property `is odd', which is exactly what the statement forbids.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "Because $2$ is a prime that is even, the claim `every prime is odd' is disproved by this single counterexample.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2$ is prime but even, so it is a counterexample. Hence ``every prime number is odd'' is false. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.disproof.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "factorisation"
+  ],
+  "questionText": "Disprove the claim that ``$n^4 + 4$ is composite for every positive integer $n$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 1:\\ n^4 + 4 \\text{ is composite}",
+        "explanation": "The claim asserts $n^4+4$ is *never* prime; one $n$ giving a prime value disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one $n\\ge1$ for which $n^4+4$ is prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the Sophie Germain factorisation.",
+        "workingLatex": "n^4 + 4 = (n^2 - 2n + 2)(n^2 + 2n + 2)",
+        "explanation": "This identity shows $n^4+4$ factorises, which is why it is composite for most $n$ — but a factor can equal $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find when a factor equals 1.",
+        "workingLatex": "n^2 - 2n + 2 = (n-1)^2 + 1 = 1 \\iff n = 1",
+        "explanation": "The smaller factor $(n-1)^2+1$ equals $1$ only at $n=1$, collapsing the factorisation and giving the one chance to be prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate at n = 1.",
+        "workingLatex": "1^4 + 4 = 5",
+        "explanation": "Substituting $n=1$ gives $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check primality.",
+        "workingLatex": "5 \\text{ is prime}",
+        "explanation": "The number $5$ has only divisors $1$ and $5$, so it is prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Verify via the factorisation.",
+        "workingLatex": "n=1: (1)(5) = 5",
+        "explanation": "With $n=1$ the factors are $1$ and $5$, so the `factorisation' is trivial and the value is genuinely prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confront the claim.",
+        "workingLatex": "1^4 + 4 = 5 \\text{ is prime, not composite}",
+        "explanation": "At $n=1$ the value is prime, contradicting the claim that it is always composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm the pattern for larger n.",
+        "workingLatex": "n=2: 20,\\ n=3: 85 \\ (\\text{composite})",
+        "explanation": "For $n\\ge2$ both factors exceed $1$, so $n^4+4$ is indeed composite — the claim fails *only* at $n=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Explain the single exception.",
+        "workingLatex": "n = 1 \\text{ makes the smaller factor } 1",
+        "explanation": "The claim is `almost' true: it fails at exactly one value, $n=1$, where the factorisation degenerates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Restate the correct version.",
+        "workingLatex": "n^4 + 4 \\text{ is composite for } n \\ge 2",
+        "explanation": "The correct statement restricts to $n\\ge2$; extending it to all $n\\ge1$ makes it false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the counterexample.",
+        "workingLatex": "5 \\text{ prime} \\Rightarrow n=1 \\text{ works}",
+        "explanation": "Since $5$ is prime, $n=1$ is a valid counterexample to the `always composite' claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $n=1$, $n^4+4 = 5$ is prime, so the claim that $n^4+4$ is always composite is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=1$: then $n^4+4 = 5$, which is prime (the factorisation $(n^2-2n+2)(n^2+2n+2)$ degenerates to $1 \\times 5$). Hence the claim is false. $\\blacksquare$"
+  }
+}

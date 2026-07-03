@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.indices-surds.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "fractional indices",
+    "roots"
+  ],
+  "questionText": "Evaluate $27^{\\frac{1}{3}}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the fractional index.",
+        "workingLatex": "27^{\\frac{1}{3}} = \\sqrt[3]{27}",
+        "explanation": "An index of $\\tfrac13$ means the cube root, so we are looking for the number that cubes to give $27$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State what a cube root asks for.",
+        "workingLatex": "\\text{find } n \\text{ with } n^3 = 27",
+        "explanation": "The cube root of $27$ is the value $n$ whose cube is $27$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test a candidate.",
+        "workingLatex": "3^3 = 27",
+        "explanation": "Cubing $3$ gives $27$, so $3$ is the required number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the result.",
+        "workingLatex": "27^{\\frac{1}{3}} = 3",
+        "explanation": "Therefore the cube root of $27$ is $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check.",
+        "workingLatex": "3 \\times 3 \\times 3 = 27 \\ \\checkmark",
+        "explanation": "Multiplying three $3$'s back together returns $27$, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer.",
+        "workingLatex": "3",
+        "explanation": "The value of $27^{1/3}$ is $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$27^{\\frac{1}{3}} = \\sqrt[3]{27} = 3$"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.quadratics.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "completing the square",
+    "fractions"
+  ],
+  "questionText": "Express $x^2 - 5x + 7$ in the form $\\left(x + p\\right)^2 + q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Focus on the first two terms.",
+        "workingLatex": "x^2 - 5x",
+        "explanation": "We complete the square on $x^2 - 5x$ first; the odd coefficient gives a fractional $p$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Halve the coefficient of x.",
+        "workingLatex": "p = \\dfrac{-5}{2}",
+        "explanation": "Half of $-5$ is $-\\tfrac52$, so this is the number inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the square.",
+        "workingLatex": "\\left(x - \\tfrac{5}{2}\\right)^2 = x^2 - 5x + \\tfrac{25}{4}",
+        "explanation": "Expanding $\\left(x-\\tfrac52\\right)^2$ gives $x^2 - 5x + \\tfrac{25}{4}$, an extra $\\tfrac{25}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract the extra constant.",
+        "workingLatex": "x^2 - 5x = \\left(x - \\tfrac{5}{2}\\right)^2 - \\tfrac{25}{4}",
+        "explanation": "Subtracting $\\tfrac{25}{4}$ keeps the value equal to $x^2 - 5x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Reintroduce the constant.",
+        "workingLatex": "x^2 - 5x + 7 = \\left(x - \\tfrac{5}{2}\\right)^2 - \\tfrac{25}{4} + 7",
+        "explanation": "Replacing $x^2 - 5x$ and keeping the original $+7$ gives an equivalent expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the constants.",
+        "workingLatex": "-\\tfrac{25}{4} + \\tfrac{28}{4} = \\tfrac{3}{4}",
+        "explanation": "Writing $7$ as $\\tfrac{28}{4}$ lets us add to get $\\tfrac34$, so $q = \\tfrac34$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the completed square.",
+        "workingLatex": "\\left(x - \\tfrac{5}{2}\\right)^2 + \\tfrac{3}{4}",
+        "explanation": "The expression in completed-square form is $\\left(x-\\tfrac52\\right)^2 + \\tfrac34$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the minimum.",
+        "workingLatex": "\\text{minimum } \\tfrac{3}{4} \\text{ at } x = \\tfrac{5}{2}",
+        "explanation": "Since $q = \\tfrac34 > 0$, the least value is $\\tfrac34$, so the expression is always positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "\\left(x - \\tfrac{5}{2}\\right)^2 + \\tfrac{3}{4}",
+        "explanation": "So $p = -\\tfrac52$ and $q = \\tfrac34$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - 5x + 7 = \\left(x - \\tfrac{5}{2}\\right)^2 - \\tfrac{25}{4} + 7 = \\left(x - \\tfrac{5}{2}\\right)^2 + \\tfrac{3}{4}$"
+  }
+}

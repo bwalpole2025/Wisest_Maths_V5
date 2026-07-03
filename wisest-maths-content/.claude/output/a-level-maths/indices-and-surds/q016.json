@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "expanding brackets",
+    "squaring surds"
+  ],
+  "questionText": "Express $\\left(2 - \\sqrt{3}\\right)^{2}$ in the form $a + b\\sqrt{3}$, where $a$ and $b$ are integers.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the square as a product.",
+        "workingLatex": "\\left(2 - \\sqrt{3}\\right)^{2} = \\left(2 - \\sqrt{3}\\right)\\left(2 - \\sqrt{3}\\right)",
+        "explanation": "Squaring means multiplying the bracket by itself, so we expand the two identical factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the expansion identity.",
+        "workingLatex": "(a-b)^2 = a^2 - 2ab + b^2",
+        "explanation": "Using this identity with $a=2$ and $b=\\sqrt3$ organises the expansion and reduces slips.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Square the first term.",
+        "workingLatex": "a^2 = 2^2 = 4",
+        "explanation": "The first term squared is $2^2 = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the middle term.",
+        "workingLatex": "-2ab = -2 \\times 2 \\times \\sqrt{3} = -4\\sqrt{3}",
+        "explanation": "The cross term is $-2ab$; here it gives $-4\\sqrt3$, the surd part of the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Square the surd term.",
+        "workingLatex": "b^2 = \\left(\\sqrt{3}\\right)^2 = 3",
+        "explanation": "Squaring $\\sqrt3$ removes the root, giving the rational $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the three parts.",
+        "workingLatex": "4 - 4\\sqrt{3} + 3",
+        "explanation": "Collecting all three pieces gives $4 - 4\\sqrt3 + 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Combine the rational terms.",
+        "workingLatex": "4 + 3 = 7",
+        "explanation": "The whole-number parts $4$ and $3$ add to $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write in the required form.",
+        "workingLatex": "7 - 4\\sqrt{3}",
+        "explanation": "Placing the rational part first gives the form $a+b\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify a and b.",
+        "workingLatex": "a = 7, \\quad b = -4",
+        "explanation": "Comparing with $a+b\\sqrt3$ gives $a=7$ and $b=-4$, both integers as required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Sanity-check the sign.",
+        "workingLatex": "b < 0 \\text{ expected since } \\sqrt{3} \\text{ was subtracted}",
+        "explanation": "Subtracting a surd and squaring naturally leaves a negative surd coefficient, matching $b=-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify numerically.",
+        "workingLatex": "(2 - 1.732)^2 \\approx 0.072,\\quad 7 - 4(1.732) \\approx 0.072",
+        "explanation": "Both the original expression and $7-4\\sqrt3$ evaluate to about $0.07$, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the method.",
+        "workingLatex": "\\text{square the bracket, then collect rational and surd parts}",
+        "explanation": "The general strategy is to expand fully and then group the rational terms separately from the surd terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "7 - 4\\sqrt{3}",
+        "explanation": "The expression equals $7 - 4\\sqrt3$, so $a=7$ and $b=-4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(2-\\sqrt{3}\\right)^2 = 4 - 4\\sqrt{3} + 3 = 7 - 4\\sqrt{3}$"
+  }
+}

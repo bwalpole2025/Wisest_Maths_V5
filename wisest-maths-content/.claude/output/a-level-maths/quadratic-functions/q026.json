@@ -1,0 +1,64 @@
+{
+  "id": "al.y1.pure.quadratics.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "solving",
+    "factorising"
+  ],
+  "questionText": "Solve the equation $x^2 + 8x + 15 = 0$ by factorising.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify what the factors must do.",
+        "workingLatex": "\\text{product} = 15, \\quad \\text{sum} = 8",
+        "explanation": "For $x^2 + bx + c$ we need two numbers multiplying to $c = 15$ and adding to $b = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the two key numbers.",
+        "workingLatex": "3 \\times 5 = 15, \\quad 3 + 5 = 8",
+        "explanation": "The numbers $3$ and $5$ multiply to $15$ and add to $8$, so they are the ones we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the factorised form.",
+        "workingLatex": "(x + 3)(x + 5) = 0",
+        "explanation": "Placing the two numbers into brackets gives the factorised quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the zero-product rule.",
+        "workingLatex": "x + 3 = 0 \\ \\text{ or } \\ x + 5 = 0",
+        "explanation": "A product is zero only if one factor is zero, so we set each bracket to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve each equation.",
+        "workingLatex": "x = -3 \\ \\text{ or } \\ x = -5",
+        "explanation": "Solving the two linear equations gives the two roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the solutions.",
+        "workingLatex": "x = -3, \\ x = -5",
+        "explanation": "The solutions are $x = -3$ and $x = -5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + 8x + 15 = (x+3)(x+5) = 0 \\Rightarrow x = -3 \\text{ or } x = -5$"
+  }
+}

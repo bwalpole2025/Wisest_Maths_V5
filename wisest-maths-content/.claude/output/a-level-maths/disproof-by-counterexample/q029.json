@@ -1,0 +1,72 @@
+{
+  "id": "al.y1.pure.disproof.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "factorisation"
+  ],
+  "questionText": "Disprove the statement: ``The number $n^2 - 1$ is never prime, for any integer $n \\ge 2$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 2:\\ n^2 - 1 \\text{ is not prime}",
+        "explanation": "The claim says $n^2-1$ is *never* prime; a single $n$ giving a prime value disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need one $n\\ge2$ for which $n^2-1$ is prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factorise the expression.",
+        "workingLatex": "n^2 - 1 = (n-1)(n+1)",
+        "explanation": "The difference of squares factorises; this normally makes it composite, but the factor $n-1$ can equal $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Spot when a factor becomes 1.",
+        "workingLatex": "n - 1 = 1 \\iff n = 2",
+        "explanation": "When $n=2$, the factor $n-1=1$, so the product reduces to a single non-trivial factor — the one chance to be prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate at that value.",
+        "workingLatex": "n = 2:\\ 2^2 - 1 = 3",
+        "explanation": "Substituting $n=2$ gives $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check primality.",
+        "workingLatex": "3 \\text{ is prime}",
+        "explanation": "The number $3$ has only divisors $1$ and $3$, so it is prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $n=2$, $n^2-1 = 3$ is prime, so the claim `$n^2-1$ is never prime' is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=2$: then $n^2 - 1 = 3$, which is prime. Hence the statement is false. $\\blacksquare$"
+  }
+}

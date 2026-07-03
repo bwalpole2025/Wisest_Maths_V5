@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.indices-surds.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "index laws",
+    "power of a product"
+  ],
+  "questionText": "Simplify $\\left(3a^2 b^3\\right)^{2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the structure.",
+        "workingLatex": "\\left(3a^2 b^3\\right)^{2}",
+        "explanation": "We are raising a product of three factors ($3$, $a^2$ and $b^3$) to a power, so the outer index applies to each factor separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the power-of-a-product law.",
+        "workingLatex": "(xyz)^n = x^n y^n z^n",
+        "explanation": "Every factor inside the bracket is raised to the outer power, because the whole product is used as a factor twice.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Raise the coefficient.",
+        "workingLatex": "3^2 = 9",
+        "explanation": "The number $3$ squared gives $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Raise the first variable power.",
+        "workingLatex": "\\left(a^2\\right)^2 = a^{4}",
+        "explanation": "Using the power-of-a-power law, the indices multiply: $2\\times2 = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Raise the second variable power.",
+        "workingLatex": "\\left(b^3\\right)^2 = b^{6}",
+        "explanation": "Again the indices multiply: $3\\times2 = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the parts.",
+        "workingLatex": "9a^4 b^6",
+        "explanation": "Multiplying the results gives the fully simplified expression $9a^4b^6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer.",
+        "workingLatex": "9a^4 b^6",
+        "explanation": "The simplified form is $9a^4b^6$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(3a^2 b^3\\right)^{2} = 3^2 \\left(a^2\\right)^2 \\left(b^3\\right)^2 = 9a^4 b^6$"
+  }
+}

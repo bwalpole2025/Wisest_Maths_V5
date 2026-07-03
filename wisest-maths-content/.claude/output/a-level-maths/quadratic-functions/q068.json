@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.quadratics.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "disguised quadratic",
+    "substitution"
+  ],
+  "questionText": "Solve the equation $x^4 - 5x^2 - 36 = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Spot the quadratic structure.",
+        "workingLatex": "x^4 = \\left(x^2\\right)^2",
+        "explanation": "Since $x^4 = (x^2)^2$, the equation is a quadratic in $x^2$ rather than in $x$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce a substitution.",
+        "workingLatex": "\\text{let } u = x^2, \\ u \\ge 0",
+        "explanation": "Replacing $x^2$ by $u$ (which is non-negative for real $x$) turns the quartic into a quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the equation in u.",
+        "workingLatex": "u^2 - 5u - 36 = 0",
+        "explanation": "With $u = x^2$, the equation becomes $u^2 - 5u - 36 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "(u - 9)(u + 4) = 0",
+        "explanation": "We need two numbers multiplying to $-36$ and adding to $-5$, namely $-9$ and $+4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for u.",
+        "workingLatex": "u = 9 \\ \\text{ or } \\ u = -4",
+        "explanation": "Setting each factor to zero gives the two values of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Reject the impossible value.",
+        "workingLatex": "u = x^2 \\ge 0 \\Rightarrow u = -4 \\text{ rejected}",
+        "explanation": "Since $u = x^2$ cannot be negative, the value $u = -4$ gives no real solutions and is discarded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Keep the valid value.",
+        "workingLatex": "x^2 = 9",
+        "explanation": "Only $u = 9$ leads to real solutions, giving $x^2 = 9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for x.",
+        "workingLatex": "x = \\pm 3",
+        "explanation": "Taking square roots gives $x = 3$ and $x = -3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Note the number of real roots.",
+        "workingLatex": "\\text{2 real roots (not 4)}",
+        "explanation": "Because one value of $u$ was rejected, the quartic has only two real roots, not the maximum of four.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check a solution.",
+        "workingLatex": "x = 3: \\ 81 - 45 - 36 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = 3$ gives $0$, confirming it satisfies the original equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Comment on the rejected case.",
+        "workingLatex": "x^2 = -4 \\text{ has no real solutions}",
+        "explanation": "The rejected case would give complex roots, which are outside the real-number solutions asked for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Consider the method.",
+        "workingLatex": "\\text{substitute, solve, then reject invalid } u",
+        "explanation": "For disguised quadratics it is essential to check that each value of the substituted variable is admissible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x = \\pm 3",
+        "explanation": "The real solutions are $x = 3$ and $x = -3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Let $u = x^2$: then $u^2 - 5u - 36 = (u-9)(u+4) = 0$; $u = -4$ is rejected, so $x^2 = 9 \\Rightarrow x = \\pm 3$."
+  }
+}

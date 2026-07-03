@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.indices-surds.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "surds",
+    "expanding brackets",
+    "distributing"
+  ],
+  "questionText": "Simplify $\\sqrt{2}\\left(\\sqrt{8} + \\sqrt{18}\\right)$, giving your answer as an integer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Plan to distribute.",
+        "workingLatex": "\\sqrt{2}\\left(\\sqrt{8} + \\sqrt{18}\\right) = \\sqrt{2}\\sqrt{8} + \\sqrt{2}\\sqrt{18}",
+        "explanation": "We multiply the outside surd into each term in the bracket, using the product rule on each piece.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply the first pair of surds.",
+        "workingLatex": "\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16}",
+        "explanation": "Combining under one root gives $\\sqrt{2\\times8} = \\sqrt{16}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate the first root.",
+        "workingLatex": "\\sqrt{16} = 4",
+        "explanation": "Since $16$ is a perfect square, this term is the whole number $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply the second pair of surds.",
+        "workingLatex": "\\sqrt{2} \\times \\sqrt{18} = \\sqrt{36}",
+        "explanation": "Combining under one root gives $\\sqrt{2\\times18} = \\sqrt{36}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the second root.",
+        "workingLatex": "\\sqrt{36} = 6",
+        "explanation": "Since $36$ is a perfect square, this term is the whole number $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the two results.",
+        "workingLatex": "4 + 6 = 10",
+        "explanation": "Adding the two whole numbers gives $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the surds vanish.",
+        "workingLatex": "10 \\in \\mathbb{Z}",
+        "explanation": "Both products were perfect squares, so no surd remains and the answer is an integer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically.",
+        "workingLatex": "1.414 \\times (2.828 + 4.243) \\approx 10",
+        "explanation": "Multiplying the decimal approximations gives about $10$, confirming the exact answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer.",
+        "workingLatex": "10",
+        "explanation": "The simplified value of the expression is the integer $10$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt{2}\\left(\\sqrt{8}+\\sqrt{18}\\right) = \\sqrt{16} + \\sqrt{36} = 4 + 6 = 10$"
+  }
+}

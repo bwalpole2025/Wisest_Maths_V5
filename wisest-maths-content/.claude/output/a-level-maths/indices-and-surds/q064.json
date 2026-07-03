@@ -1,0 +1,113 @@
+{
+  "id": "al.y1.pure.indices-surds.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Indices and surds",
+  "subtopicId": "al.y1.pure.indices-surds",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "indices",
+    "solving index equations",
+    "hidden quadratic"
+  ],
+  "questionText": "Solve the equation $4^{x} - 5\\left(2^{x}\\right) + 4 = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Spot the hidden quadratic.",
+        "workingLatex": "4^{x} = \\left(2^{x}\\right)^{2}",
+        "explanation": "Since $4^x = (2^2)^x = (2^x)^2$, the equation is a quadratic in the quantity $2^x$ rather than in $x$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce a substitution.",
+        "workingLatex": "\\text{let } y = 2^{x}",
+        "explanation": "Replacing $2^x$ by $y$ turns the equation into a standard quadratic we can factorise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the equation in y.",
+        "workingLatex": "y^2 - 5y + 4 = 0",
+        "explanation": "With $y = 2^x$, the equation becomes $y^2 - 5y + 4 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the quadratic.",
+        "workingLatex": "(y - 1)(y - 4) = 0",
+        "explanation": "We need two numbers multiplying to $4$ and adding to $5$, namely $1$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for y.",
+        "workingLatex": "y = 1 \\quad \\text{or} \\quad y = 4",
+        "explanation": "Setting each factor to zero gives the two possible values of $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Return to the substitution.",
+        "workingLatex": "2^{x} = 1 \\quad \\text{or} \\quad 2^{x} = 4",
+        "explanation": "Each value of $y$ is really $2^x$, so we solve two simple index equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the first index equation.",
+        "workingLatex": "2^{x} = 2^{0} \\Rightarrow x = 0",
+        "explanation": "Since $2^0 = 1$, the equation $2^x = 1$ gives $x = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve the second index equation.",
+        "workingLatex": "2^{x} = 2^{2} \\Rightarrow x = 2",
+        "explanation": "Writing $4$ as $2^2$ and comparing indices gives $x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "List the solutions.",
+        "workingLatex": "x = 0 \\quad \\text{or} \\quad x = 2",
+        "explanation": "Both values are valid because $2^x$ is always positive, matching the positive roots $y = 1, 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check x = 0.",
+        "workingLatex": "4^{0} - 5(2^{0}) + 4 = 1 - 5 + 4 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x=0$ gives $1 - 5 + 4 = 0$, so it satisfies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check x = 2.",
+        "workingLatex": "4^{2} - 5(2^{2}) + 4 = 16 - 20 + 4 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x=2$ gives $16 - 20 + 4 = 0$, so it also satisfies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm no roots were lost.",
+        "workingLatex": "y = 1, 4 > 0",
+        "explanation": "Both $y$-values are positive, so each gives a genuine solution for $x$; none had to be rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "x = 0 \\ \\text{or} \\ x = 2",
+        "explanation": "The solutions of the equation are $x = 0$ and $x = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Let $y = 2^x$: then $y^2 - 5y + 4 = 0 \\Rightarrow (y-1)(y-4) = 0 \\Rightarrow 2^x = 1 \\text{ or } 4 \\Rightarrow x = 0 \\text{ or } x = 2$"
+  }
+}

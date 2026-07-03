@@ -1,0 +1,86 @@
+{
+  "id": "al.y1.pure.disproof.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities",
+    "powers"
+  ],
+  "questionText": "Disprove the statement: ``For every positive integer $n$, $2^n > n^2$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 1:\\ 2^n > n^2",
+        "explanation": "The claim asserts the inequality for *all* positive integers; one $n$ where it fails disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single positive integer for which $2^n>n^2$ is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the very first case.",
+        "workingLatex": "n = 1:\\ 2^1 = 2 > 1 = 1^2 \\ \\checkmark",
+        "explanation": "At $n=1$ the inequality holds, so we must look a little further.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test n = 2.",
+        "workingLatex": "n = 2",
+        "explanation": "We evaluate both sides at $n=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate both sides.",
+        "workingLatex": "2^2 = 4, \\quad 2^2 = 4",
+        "explanation": "Here $2^n = 4$ and $n^2 = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare.",
+        "workingLatex": "4 > 4 \\text{ is false}",
+        "explanation": "Since $4$ is not strictly greater than $4$, the inequality fails at $n=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note the neighbouring failures.",
+        "workingLatex": "n=3: 8 > 9 \\text{ false},\\ \\ n=4: 16 > 16 \\text{ false}",
+        "explanation": "The inequality also fails at $n=3,4$, only recovering from $n=5$ onward — so `for all $n$' is definitely wrong.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the counterexample.",
+        "workingLatex": "n = 2:\\ 2^n = n^2 = 4",
+        "explanation": "At $n=2$ the two sides are equal, so the strict inequality does not hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $n=2$, $2^n = 4 = n^2$, so $2^n>n^2$ fails and the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=2$: then $2^n = 4 = n^2$, so $2^n > n^2$ fails (it also fails at $n=3,4$). Hence the statement is false. $\\blacksquare$"
+  }
+}

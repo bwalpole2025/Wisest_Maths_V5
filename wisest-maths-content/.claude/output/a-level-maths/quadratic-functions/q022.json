@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "equal roots",
+    "finding a parameter"
+  ],
+  "questionText": "The equation $kx^2 + 3x + 2 = 0$ has equal roots. Find the value of $k$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Note the equation must be quadratic.",
+        "workingLatex": "k \\neq 0",
+        "explanation": "For the equation to be a genuine quadratic (and to have `roots' in the usual sense), the leading coefficient $k$ must be non-zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the condition for equal roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac = 0",
+        "explanation": "A quadratic has a repeated (equal) root exactly when its discriminant is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = k,\\ b = 3,\\ c = 2",
+        "explanation": "Here the leading coefficient is the unknown $k$, which we will solve for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into the discriminant.",
+        "workingLatex": "\\Delta = 3^2 - 4(k)(2)",
+        "explanation": "Putting the coefficients into $b^2 - 4ac$ sets up the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the discriminant.",
+        "workingLatex": "\\Delta = 9 - 8k",
+        "explanation": "Working out $3^2 = 9$ and $4(k)(2) = 8k$ gives $9 - 8k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set the discriminant to zero.",
+        "workingLatex": "9 - 8k = 0",
+        "explanation": "For equal roots the discriminant must equal zero, giving an equation in $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange.",
+        "workingLatex": "8k = 9",
+        "explanation": "Adding $8k$ to both sides isolates the term in $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for k.",
+        "workingLatex": "k = \\dfrac{9}{8}",
+        "explanation": "Dividing both sides by $8$ gives $k = \\tfrac98$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm k is non-zero.",
+        "workingLatex": "k = \\tfrac{9}{8} \\neq 0",
+        "explanation": "Since $\\tfrac98 \\neq 0$, the equation really is quadratic, so the answer is valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Verify the discriminant.",
+        "workingLatex": "9 - 8\\left(\\tfrac{9}{8}\\right) = 9 - 9 = 0 \\ \\checkmark",
+        "explanation": "Substituting $k = \\tfrac98$ back gives a discriminant of $0$, confirming equal roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the repeated root.",
+        "workingLatex": "x = -\\dfrac{b}{2a} = -\\dfrac{3}{2 \\cdot 9/8} = -\\dfrac{4}{3}",
+        "explanation": "For equal roots the single root is $x = -\\tfrac{b}{2a}$; substituting gives $x = -\\tfrac43$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check the repeated root.",
+        "workingLatex": "\\tfrac{9}{8}\\left(\\tfrac{16}{9}\\right) + 3\\left(-\\tfrac{4}{3}\\right) + 2 = 2 - 4 + 2 = 0 \\ \\checkmark",
+        "explanation": "Substituting $x = -\\tfrac43$ into the equation gives $0$, confirming the single repeated root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "k = \\dfrac{9}{8}",
+        "explanation": "The equation has equal roots when $k = \\tfrac98$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = 9 - 8k = 0 \\Rightarrow k = \\dfrac{9}{8}$"
+  }
+}

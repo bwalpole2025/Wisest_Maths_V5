@@ -1,0 +1,71 @@
+{
+  "id": "al.y1.pure.disproof.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities"
+  ],
+  "questionText": "Disprove the statement: ``For every integer $n$, $n^2 + 1 > 2n$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\in \\mathbb{Z}:\\ n^2 + 1 > 2n",
+        "explanation": "The claim asserts a strict inequality for *all* integers; one integer giving equality (or less) disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single integer for which $n^2+1>2n$ fails.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite to spot the tight case.",
+        "workingLatex": "n^2 + 1 - 2n = (n-1)^2",
+        "explanation": "The difference is $(n-1)^2$, which is zero at $n=1$ — exactly where a *strict* inequality must fail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Choose that value.",
+        "workingLatex": "n = 1",
+        "explanation": "We test $n=1$, where the difference vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate both sides.",
+        "workingLatex": "n^2 + 1 = 2, \\quad 2n = 2",
+        "explanation": "Both sides equal $2$ when $n=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare.",
+        "workingLatex": "2 > 2 \\text{ is false}",
+        "explanation": "Since $2$ is not strictly greater than $2$, the inequality fails at $n=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $n=1$ we have $n^2+1 = 2 = 2n$, so the strict inequality is disproved. (The correct statement uses $\\ge$.)",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=1$: then $n^2+1 = 2 = 2n$, so $n^2+1 > 2n$ fails. Hence the statement is false. $\\blacksquare$"
+  }
+}

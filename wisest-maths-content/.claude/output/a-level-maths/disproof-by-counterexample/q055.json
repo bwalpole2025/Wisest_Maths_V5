@@ -1,0 +1,85 @@
+{
+  "id": "al.y1.pure.disproof.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes"
+  ],
+  "questionText": "Disprove the statement: ``If $p$ is prime, then $2p + 1$ is also prime.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a conditional for all primes.",
+        "workingLatex": "\\forall\\ \\text{primes } p:\\ 2p + 1 \\text{ is prime}",
+        "explanation": "The claim asserts $2p+1$ is prime for *every* prime $p$; one prime with $2p+1$ composite disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single prime $p$ for which $2p+1$ is composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the small primes.",
+        "workingLatex": "p=2: 5,\\ p=3: 7,\\ p=5: 11 \\ (\\text{all prime})",
+        "explanation": "For $p=2,3,5$ the value $2p+1$ is prime (these are called Sophie Germain primes), so the claim seems to hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Move to p = 7.",
+        "workingLatex": "p = 7",
+        "explanation": "We test the next prime, $p=7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate 2p + 1.",
+        "workingLatex": "2(7) + 1 = 15",
+        "explanation": "Substituting the prime $p=7$ gives $2p+1 = 2(7)+1 = 15$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise the result.",
+        "workingLatex": "15 = 3 \\times 5",
+        "explanation": "Since $15=3\\times5$, it is composite, not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confront the claim.",
+        "workingLatex": "p = 7 \\text{ prime, but } 15 \\text{ composite}",
+        "explanation": "So $7$ is a prime for which $2p+1$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify the earlier cases.",
+        "workingLatex": "5, 7, 11 \\text{ all prime}",
+        "explanation": "This confirms $p=7$ is the first failure, so the counterexample is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $p=7$, $2p+1 = 15 = 3\\times5$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take the prime $p=7$: then $2p+1 = 15 = 3 \\times 5$, which is composite. Hence the statement is false. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "al.y1.pure.disproof.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "primes",
+    "prime-generating polynomial"
+  ],
+  "questionText": "The polynomial $n^2 - 79n + 1601$ produces primes for a remarkably long run of values. Disprove the claim that ``$n^2 - 79n + 1601$ is prime for every integer $n \\ge 0$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 0:\\ n^2 - 79n + 1601 \\text{ is prime}",
+        "explanation": "The claim asserts primality for *every* $n\\ge0$; one composite value disproves it, no matter how long the prime run.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need just one $n$ making the value composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the impressive early behaviour.",
+        "workingLatex": "n=0: 1601,\\ n=1: 1523,\\ n=2: 1447 \\ (\\text{all prime})",
+        "explanation": "This polynomial is famous for producing primes for every $n$ from $0$ to $79$, which makes the universal claim very tempting.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Relate it to a known prime generator.",
+        "workingLatex": "n^2 - 79n + 1601 = (n-40)^2 + (n-40) + 41",
+        "explanation": "Substituting $m = n-40$ turns it into Euler's $m^2+m+41$, so it must fail where that polynomial fails, namely $m=40$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Translate the failure point.",
+        "workingLatex": "m = 40 \\iff n = 80",
+        "explanation": "Euler's polynomial fails at $m=40$, corresponding to $n = m+40 = 80$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the polynomial at n = 80.",
+        "workingLatex": "80^2 - 79(80) + 1601 = 6400 - 6320 + 1601 = 1681",
+        "explanation": "Substituting $n=80$ gives $1681$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factorise the result.",
+        "workingLatex": "1681 = 41 \\times 41 = 41^2",
+        "explanation": "The value $1681$ is $41$ squared, hence composite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm it is composite.",
+        "workingLatex": "1681 \\text{ has divisor } 41 \\Rightarrow \\text{composite}",
+        "explanation": "With the proper divisor $41$, the number $1681$ is not prime.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confront the claim.",
+        "workingLatex": "80^2 - 79(80) + 1601 = 41^2 \\text{ is not prime}",
+        "explanation": "At $n=80$ the polynomial produces a perfect square, contradicting the claim.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Explain the structural reason.",
+        "workingLatex": "(n-40)^2 + (n-40) + 41 \\text{ fails at } n-40 = 40",
+        "explanation": "The shift shows it is Euler's polynomial in disguise, so its long prime run (0–79) ends for exactly the same reason.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the correct qualified statement.",
+        "workingLatex": "\\text{prime only for } 0 \\le n \\le 79",
+        "explanation": "The polynomial is prime for $n=0,\\dots,79$ — an extraordinary $80$-term run — but the universal claim is still false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Reflect on the lesson.",
+        "workingLatex": "80 \\text{ successes} \\neq \\text{a proof}",
+        "explanation": "Even an $80$-value run of primes does not establish a universal claim; only a proof would, and here none exists.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify the earlier cases.",
+        "workingLatex": "n = 0, \\dots, 79 \\text{ all give primes}",
+        "explanation": "This confirms $n=80$ is the first failure, so the counterexample is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "For $n=80$, $n^2-79n+1601 = 1681 = 41^2$ is composite, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "At $n=80$: $80^2 - 79(80) + 1601 = 1681 = 41^2$, which is composite. (It equals Euler's $m^2+m+41$ with $m=n-40$.) Hence the claim is false — it is prime only for $0\\le n\\le79$. $\\blacksquare$"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.quadratics.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Quadratic functions",
+  "subtopicId": "al.y1.pure.quadratics",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "quadratics",
+    "discriminant",
+    "range of a parameter",
+    "no real roots"
+  ],
+  "questionText": "Find the range of values of $k$ for which the equation $x^2 + (k - 1)x + 1 = 0$ has no real roots.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition for no real roots.",
+        "workingLatex": "\\Delta = b^2 - 4ac < 0",
+        "explanation": "A quadratic has no real roots exactly when its discriminant is strictly negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the coefficients.",
+        "workingLatex": "a = 1,\\ b = k - 1,\\ c = 1",
+        "explanation": "Here the middle coefficient is the expression $k - 1$, which contains the unknown $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the discriminant.",
+        "workingLatex": "\\Delta = (k - 1)^2 - 4(1)(1)",
+        "explanation": "Substituting the coefficients into $b^2 - 4ac$ gives $(k-1)^2 - 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the inequality.",
+        "workingLatex": "(k - 1)^2 - 4 < 0",
+        "explanation": "For no real roots the discriminant must be strictly negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange.",
+        "workingLatex": "(k - 1)^2 < 4",
+        "explanation": "Adding $4$ to both sides isolates the squared term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Take square roots carefully.",
+        "workingLatex": "|k - 1| < 2",
+        "explanation": "A squared quantity less than $4$ means its size is less than $2$, i.e. $|k-1| < 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write as a double inequality.",
+        "workingLatex": "-2 < k - 1 < 2",
+        "explanation": "Removing the modulus gives a range: $k - 1$ lies strictly between $-2$ and $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add 1 throughout.",
+        "workingLatex": "-1 < k < 3",
+        "explanation": "Adding $1$ to all three parts isolates $k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a value inside.",
+        "workingLatex": "k = 1: (0)^2 - 4 = -4 < 0 \\ \\checkmark",
+        "explanation": "Testing $k = 1$ gives a negative discriminant, confirming no real roots inside the range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check a boundary value.",
+        "workingLatex": "k = 3: (2)^2 - 4 = 0",
+        "explanation": "At $k = 3$ the discriminant is zero (equal roots), so the boundary is correctly excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write the solution.",
+        "workingLatex": "-1 < k < 3",
+        "explanation": "The discriminant is negative precisely for $k$ strictly between $-1$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Express in interval notation.",
+        "workingLatex": "k \\in (-1, 3)",
+        "explanation": "The solution is the open interval $(-1, 3)$, excluding the endpoints where the discriminant is zero (equal roots).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answer.",
+        "workingLatex": "-1 < k < 3",
+        "explanation": "The equation has no real roots when $-1 < k < 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\Delta = (k-1)^2 - 4 < 0 \\Rightarrow (k-1)^2 < 4 \\Rightarrow -2 < k-1 < 2 \\Rightarrow -1 < k < 3$"
+  }
+}

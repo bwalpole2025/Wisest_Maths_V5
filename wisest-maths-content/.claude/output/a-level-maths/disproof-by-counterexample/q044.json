@@ -1,0 +1,114 @@
+{
+  "id": "al.y1.pure.disproof.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 1 Pure",
+  "subtopic": "Disproof by counterexample",
+  "subtopicId": "al.y1.pure.disproof",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "counterexample",
+  "tags": [
+    "disproof",
+    "counterexample",
+    "inequalities",
+    "factorials"
+  ],
+  "questionText": "Disprove the claim that ``$n! > 2^n$ for every positive integer $n$.''",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Read the claim as a universal statement.",
+        "workingLatex": "\\forall\\ n \\ge 1:\\ n! > 2^n",
+        "explanation": "The claim asserts the inequality for *all* positive integers; one $n$ where it fails disproves it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the disproof principle.",
+        "workingLatex": "\\text{one counterexample suffices}",
+        "explanation": "We need a single $n$ for which $n! > 2^n$ is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Test the smallest case.",
+        "workingLatex": "n = 1",
+        "explanation": "Small values are where factorials lag behind powers, so we start at $n=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate both sides at n = 1.",
+        "workingLatex": "1! = 1, \\quad 2^1 = 2",
+        "explanation": "Here $n! = 1$ and $2^n = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compare.",
+        "workingLatex": "1 > 2 \\text{ is false}",
+        "explanation": "Since $1 < 2$, the inequality fails immediately at $n=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check nearby cases too.",
+        "workingLatex": "n=2: 2 > 4 \\text{ false},\\ \\ n=3: 6 > 8 \\text{ false}",
+        "explanation": "The inequality also fails at $n=2$ and $n=3$, so the claim is wrong for several small values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find where it starts to hold.",
+        "workingLatex": "n = 4: 24 > 16 \\ \\checkmark",
+        "explanation": "Only from $n=4$ onward does $n!$ overtake $2^n$, because each new factor eventually exceeds $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain the early failure.",
+        "workingLatex": "\\text{first factors } 1, 2 \\text{ do not exceed } 2",
+        "explanation": "The factorial's early factors ($1$ and $2$) fail to keep pace with the doubling of $2^n$, so it starts behind.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Focus on the cleanest counterexample.",
+        "workingLatex": "n = 1: 1! = 1 < 2 = 2^1",
+        "explanation": "The value $n=1$ is the simplest single counterexample.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confront the claim.",
+        "workingLatex": "1! > 2^1 \\text{ is false}",
+        "explanation": "At $n=1$ the strict inequality does not hold.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note the correct qualified statement.",
+        "workingLatex": "n! > 2^n \\text{ holds only for } n \\ge 4",
+        "explanation": "The inequality is true for $n\\ge4$, but the universal `for every $n$' version is false.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the counterexample.",
+        "workingLatex": "n = 1 \\ge 1, \\quad 1! = 1 < 2",
+        "explanation": "The value $n=1$ is a valid positive integer that violates the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion.",
+        "workingLatex": "\\text{the statement is false}",
+        "explanation": "At $n=1$ (also $n=2,3$), $n! < 2^n$, so the claim is disproved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Take $n=1$: then $n! = 1$ but $2^n = 2$, so $n! > 2^n$ fails (it also fails at $n=2,3$). Hence the statement is false. $\\blacksquare$"
+  }
+}
