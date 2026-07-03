@@ -1,0 +1,26 @@
+{
+  "currentLevel": "A-Level Maths",
+  "currentTopic": "",
+  "currentSubtopic": "",
+  "questionsGenerated": 0,
+  "targetQuestionsPerSubtopic": 70,
+  "completedSubtopics": [],
+  "overallProgress": {
+    "A-Level Maths": {
+      "totalSubtopics": 83,
+      "completedSubtopics": 0,
+      "totalQuestionsGenerated": 0
+    },
+    "A-Level Further Maths": {
+      "totalSubtopics": 43,
+      "completedSubtopics": 0,
+      "totalQuestionsGenerated": 0
+    },
+    "GCSE": {
+      "totalSubtopics": 123,
+      "completedSubtopics": 0,
+      "totalQuestionsGenerated": 0
+    }
+  },
+  "lastUpdated": "2026-07-03"
+}
