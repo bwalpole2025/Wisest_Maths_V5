@@ -23,6 +23,11 @@ import { questions as trigGraphs } from "@/data/questions/a-level-maths/year-1-p
 import { questions as trigIdentities } from "@/data/questions/a-level-maths/year-1-pure/identities-and-equations";
 import { questions as exponentials } from "@/data/questions/a-level-maths/year-1-pure/exponential-functions";
 import { questions as logarithms } from "@/data/questions/a-level-maths/year-1-pure/logarithms";
+import { questions as expModelling } from "@/data/questions/a-level-maths/year-1-pure/exponential-modelling";
+import { questions as differentiation } from "@/data/questions/a-level-maths/year-1-pure/first-principles-and-derivatives";
+import { questions as tangentsNormals } from "@/data/questions/a-level-maths/year-1-pure/tangents-and-normals";
+import { questions as stationaryPoints } from "@/data/questions/a-level-maths/year-1-pure/stationary-points";
+import { questions as optimisation } from "@/data/questions/a-level-maths/year-1-pure/optimisation";
 
 export { slugForSubtopicId };
 
@@ -45,6 +50,11 @@ export const allQuestions: Question[] = [
   ...trigIdentities,
   ...exponentials,
   ...logarithms,
+  ...expModelling,
+  ...differentiation,
+  ...tangentsNormals,
+  ...stationaryPoints,
+  ...optimisation,
 ];
 
 export interface SubtopicSummary {

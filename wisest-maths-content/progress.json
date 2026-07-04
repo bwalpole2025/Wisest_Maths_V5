@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Logarithms",
-  "currentSubtopicId": "al.y1.pure.logarithms",
+  "currentSubtopic": "Optimisation",
+  "currentSubtopicId": "al.y1.pure.optimisation",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -23,13 +23,18 @@
     "al.y1.pure.trig-graphs",
     "al.y1.pure.trig-identities",
     "al.y1.pure.exponentials",
-    "al.y1.pure.logarithms"
+    "al.y1.pure.logarithms",
+    "al.y1.pure.exp-modelling",
+    "al.y1.pure.differentiation",
+    "al.y1.pure.tangents-normals",
+    "al.y1.pure.stationary-points",
+    "al.y1.pure.optimisation"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 18,
-      "totalQuestionsGenerated": 1260
+      "completedSubtopics": 23,
+      "totalQuestionsGenerated": 1610
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
