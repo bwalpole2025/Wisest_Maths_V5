@@ -1,0 +1,165 @@
+{
+  "_comment": "Module→Topic grouping for A-Level Maths & Further Maths, keyed by qualification/year/strand/last-id-segment. GCSE uses the curriculum's own `topic` field. A-Level groups follow the DfE subject-content sections.",
+  "ALEVEL_MATHS": {
+    "y1": {
+      "pure": {
+        "argument-notation": "Proof",
+        "proof-deduction": "Proof",
+        "disproof": "Proof",
+        "indices-surds": "Algebra and functions",
+        "quadratics": "Algebra and functions",
+        "simultaneous": "Algebra and functions",
+        "inequalities": "Algebra and functions",
+        "polynomials": "Algebra and functions",
+        "curve-sketching": "Algebra and functions",
+        "graph-transformations": "Algebra and functions",
+        "straight-lines": "Coordinate geometry",
+        "circles": "Coordinate geometry",
+        "binomial": "Sequences and series",
+        "triangle-trig": "Trigonometry",
+        "trig-graphs": "Trigonometry",
+        "trig-identities": "Trigonometry",
+        "exponentials": "Exponentials and logarithms",
+        "logarithms": "Exponentials and logarithms",
+        "exp-modelling": "Exponentials and logarithms",
+        "differentiation": "Differentiation",
+        "tangents-normals": "Differentiation",
+        "stationary-points": "Differentiation",
+        "optimisation": "Differentiation",
+        "integration": "Integration",
+        "definite-integration": "Integration",
+        "vectors": "Vectors",
+        "vector-geometry": "Vectors"
+      },
+      "stats": {
+        "sampling": "Statistical sampling",
+        "location-spread": "Data presentation and interpretation",
+        "data-presentation": "Data presentation and interpretation",
+        "regression": "Data presentation and interpretation",
+        "large-data-set": "Data presentation and interpretation",
+        "probability": "Probability",
+        "discrete-rv": "Statistical distributions",
+        "binomial": "Statistical distributions",
+        "hypothesis-testing": "Hypothesis testing"
+      },
+      "mech": {
+        "modelling": "Quantities and modelling",
+        "kinematics-graphs": "Kinematics",
+        "constant-acceleration": "Kinematics",
+        "variable-acceleration": "Kinematics",
+        "forces-newton": "Forces and Newton's laws",
+        "connected-particles": "Forces and Newton's laws"
+      }
+    },
+    "y2": {
+      "pure": {
+        "proof-contradiction": "Proof",
+        "partial-fractions": "Algebra and functions",
+        "functions": "Algebra and functions",
+        "further-transformations": "Algebra and functions",
+        "arithmetic-series": "Sequences and series",
+        "geometric-series": "Sequences and series",
+        "recurrence": "Sequences and series",
+        "binomial-rational": "Sequences and series",
+        "radians": "Trigonometry",
+        "small-angles": "Trigonometry",
+        "reciprocal-inverse-trig": "Trigonometry",
+        "compound-double-angles": "Trigonometry",
+        "rsin-form": "Trigonometry",
+        "parametric-curves": "Coordinate geometry",
+        "parametric-modelling": "Coordinate geometry",
+        "standard-derivatives": "Differentiation",
+        "product-quotient-chain": "Differentiation",
+        "implicit": "Differentiation",
+        "parametric-differentiation": "Differentiation",
+        "connected-rates": "Differentiation",
+        "second-derivatives": "Differentiation",
+        "roots-iteration": "Numerical methods",
+        "newton-raphson": "Numerical methods",
+        "numerical-integration": "Numerical methods",
+        "standard-integrals": "Integration",
+        "integration-substitution": "Integration",
+        "integration-by-parts": "Integration",
+        "integration-partial-fractions": "Integration",
+        "areas-applications": "Integration",
+        "differential-equations": "Integration",
+        "vectors-3d": "Vectors"
+      },
+      "stats": {
+        "regression-correlation": "Data presentation and interpretation",
+        "conditional-probability": "Probability",
+        "normal-distribution": "Statistical distributions",
+        "normal-approximation": "Statistical distributions",
+        "hypothesis-normal": "Hypothesis testing"
+      },
+      "mech": {
+        "moments": "Moments",
+        "forces-friction": "Forces and Newton's laws",
+        "applications-forces": "Forces and Newton's laws",
+        "projectiles": "Kinematics",
+        "further-kinematics": "Kinematics"
+      }
+    }
+  },
+  "ALEVEL_FM": {
+    "y1": {
+      "pure": {
+        "complex-arithmetic": "Complex numbers",
+        "argand": "Complex numbers",
+        "roots-polynomials": "Roots of polynomials",
+        "induction": "Proof by induction",
+        "matrices": "Matrices",
+        "linear-transformations": "Matrices",
+        "series": "Series",
+        "vectors-lines-planes": "Vectors",
+        "volumes-revolution": "Further calculus"
+      },
+      "stats": {
+        "discrete-rv": "Discrete distributions",
+        "poisson": "Discrete distributions",
+        "geometric-negbinomial": "Discrete distributions",
+        "hypothesis-tests": "Hypothesis testing",
+        "central-limit": "Central limit theorem",
+        "chi-squared": "Chi-squared tests"
+      },
+      "mech": {
+        "momentum-impulse": "Momentum and impulse",
+        "work-energy-power": "Work, energy and power",
+        "elastic-strings-springs": "Elastic strings and springs",
+        "collisions-1d": "Elastic collisions"
+      }
+    },
+    "y2": {
+      "pure": {
+        "de-moivre": "Complex numbers",
+        "roots-of-unity": "Complex numbers",
+        "method-of-differences": "Series",
+        "maclaurin": "Series",
+        "further-calculus": "Further calculus",
+        "polar-coordinates": "Polar coordinates",
+        "hyperbolic-functions": "Hyperbolic functions",
+        "first-order-des": "Differential equations",
+        "second-order-des": "Differential equations",
+        "de-modelling": "Differential equations"
+      },
+      "stats": {
+        "linear-regression": "Regression and correlation",
+        "spearman": "Regression and correlation",
+        "continuous-rv": "Continuous distributions",
+        "continuous-uniform": "Continuous distributions",
+        "combining-rv": "Combinations of random variables",
+        "estimation-ci": "Estimation and confidence intervals",
+        "further-tests": "Hypothesis testing"
+      },
+      "mech": {
+        "horizontal-circular": "Circular motion",
+        "vertical-circular": "Circular motion",
+        "com-laminas": "Centres of mass",
+        "com-calculus": "Centres of mass",
+        "statics-rigid": "Statics of rigid bodies",
+        "collisions-2d": "Elastic collisions",
+        "further-dynamics": "Further dynamics"
+      }
+    }
+  }
+}

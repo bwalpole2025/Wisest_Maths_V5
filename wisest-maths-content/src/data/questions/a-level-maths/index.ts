@@ -104,6 +104,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 9,
     load: () => import("./year-1-pure/curve-sketching").then((m) => m.questions),
   },
+  {
+    slug: "transformations-of-graphs",
+    id: "al.y1.pure.graph-transformations",
+    name: "Transformations of graphs",
+    blurb: "Translations, stretches and reflections of standard curves.",
+    gradient: "from-blue-400 to-violet-500",
+    order: 10,
+    load: () => import("./year-1-pure/transformations-of-graphs").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

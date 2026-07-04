@@ -12,6 +12,9 @@ import { questions as indicesSurds } from "@/data/questions/a-level-maths/year-1
 import { questions as quadratics } from "@/data/questions/a-level-maths/year-1-pure/quadratic-functions";
 import { questions as simultaneous } from "@/data/questions/a-level-maths/year-1-pure/simultaneous-equations";
 import { questions as inequalities } from "@/data/questions/a-level-maths/year-1-pure/inequalities";
+import { questions as polynomials } from "@/data/questions/a-level-maths/year-1-pure/polynomials-and-factor-theorem";
+import { questions as curveSketching } from "@/data/questions/a-level-maths/year-1-pure/curve-sketching";
+import { questions as graphTransformations } from "@/data/questions/a-level-maths/year-1-pure/transformations-of-graphs";
 
 export { slugForSubtopicId };
 
@@ -23,6 +26,9 @@ export const allQuestions: Question[] = [
   ...quadratics,
   ...simultaneous,
   ...inequalities,
+  ...polynomials,
+  ...curveSketching,
+  ...graphTransformations,
 ];
 
 export interface SubtopicSummary {

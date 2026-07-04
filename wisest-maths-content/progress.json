@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Curve sketching",
-  "currentSubtopicId": "al.y1.pure.curve-sketching",
+  "currentSubtopic": "Transformations of graphs",
+  "currentSubtopicId": "al.y1.pure.graph-transformations",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -14,13 +14,14 @@
     "al.y1.pure.simultaneous",
     "al.y1.pure.inequalities",
     "al.y1.pure.polynomials",
-    "al.y1.pure.curve-sketching"
+    "al.y1.pure.curve-sketching",
+    "al.y1.pure.graph-transformations"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 9,
-      "totalQuestionsGenerated": 630
+      "completedSubtopics": 10,
+      "totalQuestionsGenerated": 700
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

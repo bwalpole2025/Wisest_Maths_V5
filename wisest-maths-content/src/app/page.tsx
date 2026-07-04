@@ -126,7 +126,7 @@ export default function Home() {
           <div>
             <SectionLabel>The curriculum</SectionLabel>
             <h2 className="mt-5 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Seven subtopics, fully solved
+              {stats.subtopics} subtopics, fully solved
             </h2>
           </div>
           <Link

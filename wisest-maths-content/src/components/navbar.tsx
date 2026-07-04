@@ -10,8 +10,9 @@ import { cn } from "@/lib/utils";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/dashboard", label: "Dashboard" },
+  { href: "/curriculum", label: "Curriculum" },
   { href: "/questions", label: "Question Bank" },
+  { href: "/dashboard", label: "Dashboard" },
 ];
 
 export function Navbar() {
@@ -53,7 +54,7 @@ export function Navbar() {
         <div className="flex items-center gap-2">
           <ThemeToggle />
           <Link
-            href="/questions"
+            href="/curriculum"
             className="group hidden items-center gap-1 rounded-full bg-foreground px-4 py-2 text-sm font-semibold text-background transition-transform hover:scale-[1.03] sm:flex"
           >
             Start solving
