@@ -3,11 +3,17 @@
 import Link from "next/link";
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Search, ArrowRight, SlidersHorizontal } from "lucide-react";
+import { Search, SlidersHorizontal } from "lucide-react";
 import type { Question, Difficulty } from "@/lib/types";
 import { MathText } from "@/components/math";
-import { DifficultyBadge, Pill } from "@/components/ui";
+import { difficultyOutline } from "@/lib/difficulty";
 import { cn } from "@/lib/utils";
+
+/** Per-question number derived from its id suffix (…q007 → 7), stable across filtering. */
+function questionNumber(id: string): number {
+  const suffix = id.split(".").pop() ?? "";
+  return parseInt(suffix.replace(/\D/g, ""), 10) || 0;
+}
 
 const FILTERS: (Difficulty | "All")[] = ["All", "Easy", "Intermediate", "Hard"];
 
@@ -68,40 +74,61 @@ export function QuestionList({ questions }: { questions: Question[] }) {
       </div>
 
       {/* list */}
-      <div className="mt-4 grid gap-3">
+      <div className="mt-4 grid gap-4">
         <AnimatePresence mode="popLayout">
-          {filtered.map((q, i) => (
-            <motion.div
-              key={q.id}
-              layout
-              initial={{ opacity: 0, y: 12 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.98 }}
-              transition={{ duration: 0.35, delay: Math.min(i, 12) * 0.02 }}
-            >
-              <Link href={`/solve/${q.id}`} className="group block">
-                <div className="glass card-glow flex items-center gap-4 rounded-2xl p-4 transition-transform duration-200 group-hover:-translate-y-0.5 sm:p-5">
-                  <span className="hidden shrink-0 font-mono text-xs text-muted-foreground sm:block">
-                    {q.id.split(".").pop()}
+          {filtered.map((q, i) => {
+            const num = questionNumber(q.id);
+            return (
+              <motion.div
+                key={q.id}
+                layout
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.35, delay: Math.min(i, 12) * 0.02 }}
+                className="glass card-glow overflow-hidden rounded-2xl transition-transform duration-200 hover:-translate-y-0.5"
+              >
+                {/* header */}
+                <div className="flex items-center gap-3 p-4 sm:px-5">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-teal-400/25 bg-teal-400/[0.08] font-display text-lg font-bold text-teal-300">
+                    {num}
                   </span>
-                  <div className="min-w-0 flex-1">
-                    <p className="line-clamp-2 text-[15px] font-medium leading-relaxed text-foreground/95">
-                      <MathText text={q.questionText} />
-                    </p>
-                    <div className="mt-2.5 flex flex-wrap items-center gap-2">
-                      <DifficultyBadge level={q.difficulty} />
-                      <Pill>{q.marks} marks</Pill>
-                      <Pill>{q.workedSolution.steps.length} steps</Pill>
-                      {q.tags.slice(0, 2).map((t) => (
-                        <Pill key={t} className="hidden md:inline-flex">{t}</Pill>
-                      ))}
-                    </div>
-                  </div>
-                  <ArrowRight className="h-5 w-5 shrink-0 text-muted-foreground transition-all group-hover:translate-x-1 group-hover:text-foreground" />
+                  <h3 className="min-w-0 truncate text-base font-semibold text-foreground sm:text-lg">
+                    {q.subtopic} {String(num).padStart(2, "0")}
+                  </h3>
+                  <span
+                    className={cn(
+                      "shrink-0 rounded-md border px-2.5 py-1 text-xs font-semibold",
+                      difficultyOutline[q.difficulty],
+                    )}
+                  >
+                    {q.difficulty}
+                  </span>
+                  <span className="ml-auto shrink-0 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-muted-foreground">
+                    {q.marks} mark{q.marks === 1 ? "" : "s"}
+                  </span>
                 </div>
-              </Link>
-            </motion.div>
-          ))}
+
+                {/* divider */}
+                <div className="border-t border-white/[0.06]" />
+
+                {/* body */}
+                <div className="p-5 sm:p-6">
+                  <div className="text-[15px] leading-relaxed text-foreground/90 sm:text-base">
+                    <MathText text={q.questionText} />
+                  </div>
+                  <div className="mt-6 flex justify-end">
+                    <Link
+                      href={`/solve/${q.id}`}
+                      className="inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-teal-400 to-cyan-500 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/20 transition-all hover:brightness-110 hover:shadow-cyan-500/30 active:scale-[0.98]"
+                    >
+                      Attempt
+                    </Link>
+                  </div>
+                </div>
+              </motion.div>
+            );
+          })}
         </AnimatePresence>
 
         {filtered.length === 0 && (

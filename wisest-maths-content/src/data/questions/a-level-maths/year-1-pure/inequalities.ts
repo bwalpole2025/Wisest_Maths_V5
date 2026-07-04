@@ -37,7 +37,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 3.",
           "workingLatex": "x > 3",
           "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 3",
+            "caption": "Open circle at 3 — 3 is not included, and everything larger is shaded.",
+            "alt": "Number line with an open circle at 3 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -100,7 +110,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 2.",
           "workingLatex": "x \\le 6",
           "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": 1,
+            "max": 11,
+            "endpoint": 6,
+            "direction": "left",
+            "closed": true,
+            "label": "x ≤ 6",
+            "caption": "Solid circle at 6 — 6 is included, and everything smaller is shaded.",
+            "alt": "Number line with a solid circle at 6 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -163,7 +183,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 4.",
           "workingLatex": "x \\ge 2",
           "explanation": "Dividing by the positive number $4$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -3,
+            "max": 7,
+            "endpoint": 2,
+            "direction": "right",
+            "closed": true,
+            "label": "x ≥ 2",
+            "caption": "Solid circle at 2 — 2 is included, and everything larger is shaded.",
+            "alt": "Number line with a solid circle at 2 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -227,7 +257,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 3.",
           "workingLatex": "x > 4",
           "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -1,
+            "max": 9,
+            "endpoint": 4,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 4",
+            "caption": "Open circle at 4 — 4 is not included, and everything larger is shaded.",
+            "alt": "Number line with an open circle at 4 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -291,7 +331,17 @@ export const questions: Question[] = [
           "description": "Subtract 3 from both sides.",
           "workingLatex": "x < 5",
           "explanation": "Subtracting $3$ isolates $x$ without changing the inequality direction.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": 0,
+            "max": 10,
+            "endpoint": 5,
+            "direction": "left",
+            "closed": false,
+            "label": "x < 5",
+            "caption": "Open circle at 5 — 5 is not included, and everything smaller is shaded.",
+            "alt": "Number line with an open circle at 5 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -348,7 +398,17 @@ export const questions: Question[] = [
           "description": "Multiply both sides by 2.",
           "workingLatex": "x < 6",
           "explanation": "Multiplying by the positive number $2$ clears the fraction and keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": 1,
+            "max": 11,
+            "endpoint": 6,
+            "direction": "left",
+            "closed": false,
+            "label": "x < 6",
+            "caption": "Open circle at 6 — 6 is not included, and everything smaller is shaded.",
+            "alt": "Number line with an open circle at 6 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 3,
@@ -418,7 +478,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 5.",
           "workingLatex": "x \\le 3",
           "explanation": "Dividing by the positive number $5$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "left",
+            "closed": true,
+            "label": "x ≤ 3",
+            "caption": "Solid circle at 3 — 3 is included, and everything smaller is shaded.",
+            "alt": "Number line with a solid circle at 3 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -482,7 +552,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 3.",
           "workingLatex": "x > 3",
           "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 3",
+            "caption": "Open circle at 3 — 3 is not included, and everything larger is shaded.",
+            "alt": "Number line with an open circle at 3 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -546,7 +626,21 @@ export const questions: Question[] = [
           "description": "Reverse the inequality sign.",
           "workingLatex": "x < -4",
           "explanation": "Because we divided by a negative number, $>$ becomes $<$, giving $x < -4$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -9,
+            "max": 1,
+            "beforeEndpoint": -4,
+            "beforeDirection": "right",
+            "beforeClosed": false,
+            "beforeLabel": "-3x > 12",
+            "afterEndpoint": -4,
+            "afterDirection": "left",
+            "afterClosed": false,
+            "afterLabel": "x < -4",
+            "caption": "Dividing by -3 reflects the ray — the > sign flips to <.",
+            "alt": "Two number lines about the point -4: the upper points right, the lower is the mirror image pointing left, showing the sign flip."
+          }
         },
         {
           "stepNumber": 4,
@@ -638,7 +732,21 @@ export const questions: Question[] = [
           "description": "Divide and reverse the sign.",
           "workingLatex": "x \\le 3",
           "explanation": "Dividing both sides by $-2$ and flipping $\\ge$ to $\\le$ gives $x \\le 3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -2,
+            "max": 8,
+            "beforeEndpoint": 3,
+            "beforeDirection": "right",
+            "beforeClosed": true,
+            "beforeLabel": "-2x ≥ -6",
+            "afterEndpoint": 3,
+            "afterDirection": "left",
+            "afterClosed": true,
+            "afterLabel": "x ≤ 3",
+            "caption": "Dividing by -2 reflects the ray — the ≥ sign flips to ≤.",
+            "alt": "Two number lines about the point 3: the upper points right, the lower is the mirror image pointing left, showing the sign flip."
+          }
         },
         {
           "stepNumber": 5,
@@ -723,7 +831,21 @@ export const questions: Question[] = [
           "description": "Divide and reverse the sign.",
           "workingLatex": "x \\ge -3",
           "explanation": "Dividing both sides by $-3$ and flipping $\\le$ to $\\ge$ gives $x \\ge -3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -8,
+            "max": 2,
+            "beforeEndpoint": -3,
+            "beforeDirection": "left",
+            "beforeClosed": true,
+            "beforeLabel": "-3x ≤ 9",
+            "afterEndpoint": -3,
+            "afterDirection": "right",
+            "afterClosed": true,
+            "afterLabel": "x ≥ -3",
+            "caption": "Dividing by -3 reflects the ray — the ≤ sign flips to ≥.",
+            "alt": "Two number lines about the point -3: the upper points left, the lower is the mirror image pointing right, showing the sign flip."
+          }
         },
         {
           "stepNumber": 5,
@@ -808,7 +930,18 @@ export const questions: Question[] = [
           "description": "Divide all three parts by 2.",
           "workingLatex": "-1 < x \\le 3",
           "explanation": "Dividing by the positive number $2$ throughout keeps both inequality signs the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineInterval",
+            "min": -5,
+            "max": 7,
+            "lower": -1,
+            "upper": 3,
+            "lowerClosed": false,
+            "upperClosed": true,
+            "label": "-1 < x ≤ 3",
+            "caption": "-1 excluded (hollow), 3 included (solid); the band between is shaded.",
+            "alt": "Number line with a hollow circle at -1, a solid circle at 3, and the interval between them shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -893,7 +1026,18 @@ export const questions: Question[] = [
           "description": "Divide all three parts by 3.",
           "workingLatex": "-1 \\le x < 3",
           "explanation": "Dividing by the positive number $3$ throughout keeps both inequality signs the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineInterval",
+            "min": -5,
+            "max": 7,
+            "lower": -1,
+            "upper": 3,
+            "lowerClosed": true,
+            "upperClosed": false,
+            "label": "-1 ≤ x < 3",
+            "caption": "-1 included (solid), 3 excluded (hollow); the band between is shaded.",
+            "alt": "Number line with a solid circle at -1, a hollow circle at 3, and the interval between them shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -985,7 +1129,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "2 < x < 3",
           "explanation": "The inequality $< 0$ therefore holds for $x$ strictly between $2$ and $3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": 2,
+            "r2": 3,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "2 < x < 3",
+            "caption": "x² - 5x + 6 < 0: below the axis between the roots 2 and 3.",
+            "alt": "Upward parabola crossing the x-axis at 2 and 3, with the region between the roots below the axis highlighted."
+          }
         },
         {
           "stepNumber": 6,
@@ -1070,7 +1224,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x \\le -3 \\ \\text{ or } \\ x \\ge 3",
           "explanation": "The inequality $\\ge 0$ holds for $x$ at most $-3$ or at least $3$, including the roots themselves.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -3,
+            "r2": 3,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": true,
+            "label": "x ≤ -3 or x ≥ 3",
+            "caption": "x² - 9 ≥ 0: on or above the axis outside the roots -3 and 3.",
+            "alt": "Upward parabola crossing the x-axis at -3 and 3, with the two outer regions (x ≤ -3 and x ≥ 3) shaded and the roots marked as solid points."
+          }
         },
         {
           "stepNumber": 6,
@@ -1155,7 +1319,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "0 \\le x \\le 4",
           "explanation": "The inequality $\\le 0$ holds for $x$ between $0$ and $4$, including the roots.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": 0,
+            "r2": 4,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": true,
+            "label": "0 ≤ x ≤ 4",
+            "caption": "x² - 4x ≤ 0: on or below the axis between the roots 0 and 4.",
+            "alt": "Upward parabola crossing the x-axis at 0 and 4, with the region between the roots shaded and the endpoints included as solid points."
+          }
         },
         {
           "stepNumber": 6,
@@ -1247,7 +1421,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-4 \\le x \\le 4",
           "explanation": "The inequality holds for $x$ between $-4$ and $4$, including the boundary values.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -4,
+            "r2": 4,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": true,
+            "label": "-4 ≤ x ≤ 4",
+            "caption": "x² - 16 ≤ 0: on or below the axis between the roots -4 and 4.",
+            "alt": "Upward parabola crossing the x-axis at -4 and 4, with the region between the roots shaded and the endpoints included as solid points."
+          }
         },
         {
           "stepNumber": 7,
@@ -1325,7 +1509,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x < -2 \\ \\text{ or } \\ x > 3",
           "explanation": "The inequality $> 0$ holds for $x$ less than $-2$ or greater than $3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -2,
+            "r2": 3,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": false,
+            "label": "x < -2 or x > 3",
+            "caption": "x² - x - 6 > 0: above the axis outside the roots -2 and 3.",
+            "alt": "Upward parabola crossing the x-axis at -2 and 3, with the two outer regions shaded and the roots marked as open points."
+          }
         },
         {
           "stepNumber": 6,
@@ -1418,7 +1612,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x < -2 \\ \\text{ or } \\ x > \\tfrac{1}{2}",
           "explanation": "The inequality $> 0$ holds for $x$ less than $-2$ or greater than $\\tfrac12$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -2,
+            "r2": 0.5,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": false,
+            "label": "x < -2 or x > 1/2",
+            "caption": "(2x-1)(x+2) > 0: above the axis outside the roots -2 and ½.",
+            "alt": "Upward parabola crossing the x-axis at -2 and 0.5, with the two outer regions shaded and the roots marked as open points."
+          }
         },
         {
           "stepNumber": 7,
@@ -1531,7 +1735,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-3 \\le x \\le 2",
           "explanation": "The inequality $x^2 + x - 6 \\le 0$ (equivalent to the original) holds for $-3 \\le x \\le 2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -3,
+            "r2": 2,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": true,
+            "label": "-3 ≤ x ≤ 2",
+            "caption": "Rewritten as x² + x - 6 ≤ 0: on or below the axis between the roots -3 and 2.",
+            "alt": "Upward parabola crossing the x-axis at -3 and 2, with the region between the roots shaded and the endpoints included as solid points."
+          }
         },
         {
           "stepNumber": 7,
@@ -1651,7 +1865,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-1 < x < 4",
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-1$ and $4$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -1,
+            "r2": 4,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "-1 < x < 4",
+            "caption": "x² - 3x - 4 < 0: below the axis between the roots -1 and 4.",
+            "alt": "Upward parabola crossing the x-axis at -1 and 4, with the region between the roots shaded and the roots marked as open points."
+          }
         },
         {
           "stepNumber": 8,
@@ -1723,7 +1947,15 @@ export const questions: Question[] = [
           "description": "State the condition for real roots.",
           "workingLatex": "\\Delta = b^2 - 4ac \\ge 0",
           "explanation": "A quadratic has real roots (distinct or repeated) exactly when its discriminant is non-negative.",
-          "diagram": null
+          "diagram": {
+            "kind": "discriminantTriad",
+            "highlight": [
+              "two",
+              "equal"
+            ],
+            "caption": "Real roots need Δ = b² - 4ac ≥ 0 (two distinct roots or one repeated root).",
+            "alt": "Three parabola panels: Δ>0 crossing the axis twice, Δ=0 touching once, Δ<0 not touching; the first two panels (Δ ≥ 0) are highlighted."
+          }
         },
         {
           "stepNumber": 2,
@@ -1844,7 +2076,14 @@ export const questions: Question[] = [
           "description": "State the condition for no real roots.",
           "workingLatex": "\\Delta = b^2 - 4ac < 0",
           "explanation": "An upward parabola stays strictly above the axis exactly when the quadratic has no real roots, i.e. a negative discriminant.",
-          "diagram": null
+          "diagram": {
+            "kind": "discriminantTriad",
+            "highlight": [
+              "none"
+            ],
+            "caption": "'Positive for all x' needs Δ < 0 — the upward parabola never reaches the axis.",
+            "alt": "Three parabola panels; the Δ<0 panel, where the upward parabola stays entirely above the x-axis, is highlighted."
+          }
         },
         {
           "stepNumber": 3,
@@ -2014,7 +2253,48 @@ export const questions: Question[] = [
           "description": "Combine into one range.",
           "workingLatex": "-\\tfrac{1}{2} < x < 2",
           "explanation": "The overlap of the two solution sets is $-\\tfrac12 < x < 2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "intersectionStack",
+            "min": -3,
+            "max": 3,
+            "rows": [
+              {
+                "label": "x² - 4 < 0",
+                "intervals": [
+                  {
+                    "from": -2,
+                    "to": 2,
+                    "fromClosed": false,
+                    "toClosed": false
+                  }
+                ]
+              },
+              {
+                "label": "2x + 1 > 0",
+                "intervals": [
+                  {
+                    "from": -0.5,
+                    "to": null,
+                    "fromClosed": false
+                  }
+                ]
+              },
+              {
+                "label": "both",
+                "highlight": true,
+                "intervals": [
+                  {
+                    "from": -0.5,
+                    "to": 2,
+                    "fromClosed": false,
+                    "toClosed": false
+                  }
+                ]
+              }
+            ],
+            "caption": "The answer is where BOTH conditions are shaded: -½ < x < 2.",
+            "alt": "Three stacked number lines: -2 to 2 for the quadratic, x greater than -0.5 for the linear, and their overlap from -0.5 to 2 highlighted."
+          }
         },
         {
           "stepNumber": 11,
@@ -2100,7 +2380,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-\\tfrac{1}{3} \\le x \\le 2",
           "explanation": "The inequality $\\le 0$ holds for $x$ between $-\\tfrac13$ and $2$, including the roots themselves.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -0.3333,
+            "r2": 2,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": true,
+            "label": "-1/3 ≤ x ≤ 2",
+            "caption": "(3x+1)(x-2) ≤ 0: on or below the axis between the roots -⅓ and 2.",
+            "alt": "Upward parabola crossing the x-axis at -1/3 and 2, with the region between the roots shaded and the endpoints included as solid points."
+          }
         },
         {
           "stepNumber": 7,
@@ -2191,7 +2481,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 5.",
           "workingLatex": "x > 3",
           "explanation": "Dividing by the positive number $5$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 3",
+            "caption": "Open circle at 3 — 3 is not included; shade to the right.",
+            "alt": "Number line with an open circle at 3 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -2254,7 +2554,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 3.",
           "workingLatex": "x \\le 4",
           "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -1,
+            "max": 9,
+            "endpoint": 4,
+            "direction": "left",
+            "closed": true,
+            "label": "x ≤ 4",
+            "caption": "Solid circle at 4 — 4 is included; shade to the left.",
+            "alt": "Number line with a solid circle at 4 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -2318,7 +2628,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 2.",
           "workingLatex": "x < 4",
           "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -1,
+            "max": 9,
+            "endpoint": 4,
+            "direction": "left",
+            "closed": false,
+            "label": "x < 4",
+            "caption": "Open circle at 4 — 4 is not included; shade to the left.",
+            "alt": "Number line with an open circle at 4 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -2381,7 +2701,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 6.",
           "workingLatex": "x \\ge 2",
           "explanation": "Dividing by the positive number $6$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -3,
+            "max": 7,
+            "endpoint": 2,
+            "direction": "right",
+            "closed": true,
+            "label": "x ≥ 2",
+            "caption": "Solid circle at 2 — 2 is included, then everything to its right.",
+            "alt": "Number line with a solid circle at 2 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -2452,7 +2782,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 3.",
           "workingLatex": "x < 4",
           "explanation": "Dividing by the positive number $3$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -1,
+            "max": 9,
+            "endpoint": 4,
+            "direction": "left",
+            "closed": false,
+            "label": "x < 4",
+            "caption": "Open circle at 4 — 4 is not included, then everything to its left.",
+            "alt": "Number line with an open circle at 4 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -2502,7 +2842,17 @@ export const questions: Question[] = [
           "description": "Multiply both sides by 3.",
           "workingLatex": "x > 9",
           "explanation": "Multiplying by the positive number $3$ clears the fraction and keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": 4,
+            "max": 14,
+            "endpoint": 9,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 9",
+            "caption": "Open circle at 9 — 9 is not included, then everything to its right.",
+            "alt": "Number line with an open circle at 9 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 3,
@@ -2580,7 +2930,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 4.",
           "workingLatex": "x \\le 4",
           "explanation": "Dividing by the positive number $4$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -1,
+            "max": 9,
+            "endpoint": 4,
+            "direction": "left",
+            "closed": true,
+            "label": "x ≤ 4",
+            "caption": "Solid circle at 4 — 4 is included, then everything to its left.",
+            "alt": "Number line with a solid circle at 4 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -2637,7 +2997,17 @@ export const questions: Question[] = [
           "description": "Add 1 to both sides.",
           "workingLatex": "x > 3",
           "explanation": "Adding $1$ isolates $x$ without changing the inequality direction.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 3",
+            "caption": "Open circle at 3 — 3 is not included, then everything to its right.",
+            "alt": "Number line with an open circle at 3 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -2701,7 +3071,21 @@ export const questions: Question[] = [
           "description": "Divide and reverse the sign.",
           "workingLatex": "x \\ge -5",
           "explanation": "Dividing both sides by $-2$ and flipping $\\le$ to $\\ge$ gives $x \\ge -5$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -10,
+            "max": 0,
+            "beforeEndpoint": -5,
+            "beforeDirection": "left",
+            "beforeClosed": true,
+            "beforeLabel": "-2x ≤ 10",
+            "afterEndpoint": -5,
+            "afterDirection": "right",
+            "afterClosed": true,
+            "afterLabel": "x ≥ -5",
+            "caption": "Dividing by -2 reflects the line — ≤ flips to ≥.",
+            "alt": "Two number lines at -5: the top shaded left for the un-flipped sign, the bottom shaded right for the correct answer x ≥ -5."
+          }
         },
         {
           "stepNumber": 4,
@@ -2793,7 +3177,21 @@ export const questions: Question[] = [
           "description": "Divide and reverse the sign.",
           "workingLatex": "x < 2",
           "explanation": "Dividing both sides by $-5$ and flipping $>$ to $<$ gives $x < 2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -3,
+            "max": 7,
+            "beforeEndpoint": 2,
+            "beforeDirection": "right",
+            "beforeClosed": false,
+            "beforeLabel": "-5x > -10",
+            "afterEndpoint": 2,
+            "afterDirection": "left",
+            "afterClosed": false,
+            "afterLabel": "x < 2",
+            "caption": "Dividing by -5 reflects the line — > flips to <.",
+            "alt": "Two number lines at 2: the top shaded right for the un-flipped sign, the bottom shaded left for the correct answer x < 2."
+          }
         },
         {
           "stepNumber": 5,
@@ -2878,7 +3276,21 @@ export const questions: Question[] = [
           "description": "Multiply and reverse the sign.",
           "workingLatex": "x \\le 5",
           "explanation": "Multiplying both sides by $-1$ and flipping $\\ge$ to $\\le$ gives $x \\le 5$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": 0,
+            "max": 10,
+            "beforeEndpoint": 5,
+            "beforeDirection": "right",
+            "beforeClosed": true,
+            "beforeLabel": "-x ≥ -5",
+            "afterEndpoint": 5,
+            "afterDirection": "left",
+            "afterClosed": true,
+            "afterLabel": "x ≤ 5",
+            "caption": "Multiplying by -1 reflects the line — ≥ flips to ≤.",
+            "alt": "Two number lines at 5: the top shaded right for the un-flipped sign, the bottom shaded left for the correct answer x ≤ 5."
+          }
         },
         {
           "stepNumber": 5,
@@ -2963,7 +3375,18 @@ export const questions: Question[] = [
           "description": "Divide all three parts by 2.",
           "workingLatex": "-3 \\le x < 3",
           "explanation": "Dividing by the positive number $2$ throughout keeps both inequality signs the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineInterval",
+            "min": -6,
+            "max": 6,
+            "lower": -3,
+            "upper": 3,
+            "lowerClosed": true,
+            "upperClosed": false,
+            "label": "-3 ≤ x < 3",
+            "caption": "-3 included (solid), 3 excluded (hollow).",
+            "alt": "Number line with a solid circle at -3, an open circle at 3, and the region between them shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -3048,7 +3471,18 @@ export const questions: Question[] = [
           "description": "Divide all three parts by 4.",
           "workingLatex": "2 \\le x < 5",
           "explanation": "Dividing by the positive number $4$ throughout keeps both inequality signs the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineInterval",
+            "min": -2,
+            "max": 9,
+            "lower": 2,
+            "upper": 5,
+            "lowerClosed": true,
+            "upperClosed": false,
+            "label": "2 ≤ x < 5",
+            "caption": "2 included (solid), 5 excluded (hollow).",
+            "alt": "Number line with a solid circle at 2, an open circle at 5, and the region between them shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -3140,7 +3574,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-3 < x < 1",
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-3$ and $1$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -3,
+            "r2": 1,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "-3 < x < 1",
+            "caption": "x² + 2x - 3 < 0: below the axis between the roots.",
+            "alt": "Upward parabola crossing the x-axis at -3 and 1, with the region between the roots (below the axis) shaded."
+          }
         },
         {
           "stepNumber": 6,
@@ -3225,7 +3669,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x < 3 \\ \\text{ or } \\ x > 4",
           "explanation": "The inequality $> 0$ holds for $x$ less than $3$ or greater than $4$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": 3,
+            "r2": 4,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": false,
+            "label": "x < 3 or x > 4",
+            "caption": "x² - 7x + 12 > 0: above the axis outside the roots.",
+            "alt": "Upward parabola crossing the x-axis at 3 and 4, with the two regions outside the roots (above the axis) shaded."
+          }
         },
         {
           "stepNumber": 6,
@@ -3310,7 +3764,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-5 \\le x \\le 5",
           "explanation": "The inequality $\\le 0$ holds for $x$ between $-5$ and $5$, including the boundary values.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -5,
+            "r2": 5,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": true,
+            "label": "-5 ≤ x ≤ 5",
+            "caption": "x² - 25 ≤ 0: on or below the axis between the roots.",
+            "alt": "Upward parabola crossing the x-axis at -5 and 5, with the region between the roots (below the axis) shaded and the roots included."
+          }
         },
         {
           "stepNumber": 6,
@@ -3395,7 +3859,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x \\le -3 \\ \\text{ or } \\ x \\ge 0",
           "explanation": "The inequality $\\ge 0$ holds for $x$ at most $-3$ or at least $0$, including the roots.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -3,
+            "r2": 0,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": true,
+            "label": "x ≤ -3 or x ≥ 0",
+            "caption": "x² + 3x ≥ 0: on or above the axis outside the roots.",
+            "alt": "Upward parabola crossing the x-axis at -3 and 0, with the two regions outside the roots (above the axis) shaded and the roots included."
+          }
         },
         {
           "stepNumber": 6,
@@ -3480,7 +3954,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-4 < x < -1",
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-4$ and $-1$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -4,
+            "r2": -1,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "-4 < x < -1",
+            "caption": "x² + 5x + 4 < 0: below the axis between the roots -4 and -1.",
+            "alt": "Upward parabola crossing the x-axis at -4 and -1, with the region between the roots (below the axis) shaded and the roots shown as open circles."
+          }
         },
         {
           "stepNumber": 6,
@@ -3573,7 +4057,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x \\le \\tfrac{1}{3} \\ \\text{ or } \\ x \\ge 2",
           "explanation": "The inequality $\\ge 0$ holds for $x$ at most $\\tfrac13$ or at least $2$, including the roots.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": 0.3333333333333333,
+            "r2": 2,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": true,
+            "label": "x ≤ 1/3 or x ≥ 2",
+            "caption": "3x² - 7x + 2 ≥ 0: on or above the axis outside the roots 1/3 and 2.",
+            "alt": "Upward parabola crossing the x-axis at one third and 2, with the two outer regions (on or above the axis) shaded and the roots shown as solid circles."
+          }
         },
         {
           "stepNumber": 7,
@@ -3687,7 +4181,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-\\tfrac{1}{2} < x < 3",
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-\\tfrac12$ and $3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -0.5,
+            "r2": 3,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "-1/2 < x < 3",
+            "caption": "2x² - 5x - 3 < 0: below the axis between the roots -1/2 and 3.",
+            "alt": "Upward parabola crossing the x-axis at -0.5 and 3, with the region between the roots shaded and the roots shown as open circles."
+          }
         },
         {
           "stepNumber": 7,
@@ -3800,7 +4304,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-5 < x < 1",
           "explanation": "The inequality (equivalent to the original) holds for $x$ strictly between $-5$ and $1$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -5,
+            "r2": 1,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "-5 < x < 1",
+            "caption": "Rewritten as x² + 4x - 5 < 0: below the axis between the roots -5 and 1.",
+            "alt": "Upward parabola crossing the x-axis at -5 and 1, with the region between the roots shaded and the roots shown as open circles."
+          }
         },
         {
           "stepNumber": 7,
@@ -3927,7 +4441,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x < -1 \\ \\text{ or } \\ x > 3",
           "explanation": "The inequality $> 0$ holds for $x$ less than $-1$ or greater than $3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -1,
+            "r2": 3,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": false,
+            "label": "x < -1 or x > 3",
+            "caption": "x² - 2x - 3 > 0: above the axis outside the roots -1 and 3.",
+            "alt": "Upward parabola crossing the x-axis at -1 and 3, with the two outer regions above the axis shaded and the roots shown as open circles."
+          }
         },
         {
           "stepNumber": 9,
@@ -3992,7 +4516,14 @@ export const questions: Question[] = [
           "description": "State the condition for no real roots.",
           "workingLatex": "\\Delta = b^2 - 4ac < 0",
           "explanation": "A quadratic has no real roots exactly when its discriminant is strictly negative.",
-          "diagram": null
+          "diagram": {
+            "kind": "discriminantTriad",
+            "highlight": [
+              "none"
+            ],
+            "caption": "'No real roots' needs Δ < 0 — the parabola stays clear of the x-axis.",
+            "alt": "Three parabola panels: two distinct roots (Δ>0), one repeated root (Δ=0), and no roots (Δ<0); the no-roots panel is highlighted."
+          }
         },
         {
           "stepNumber": 2,
@@ -4106,7 +4637,15 @@ export const questions: Question[] = [
           "description": "State the condition for real roots.",
           "workingLatex": "\\Delta = b^2 - 4ac \\ge 0",
           "explanation": "A quadratic has real roots (distinct or repeated) exactly when its discriminant is non-negative.",
-          "diagram": null
+          "diagram": {
+            "kind": "discriminantTriad",
+            "highlight": [
+              "two",
+              "equal"
+            ],
+            "caption": "'Has real roots' needs Δ ≥ 0 — two distinct roots or one repeated root.",
+            "alt": "Three parabola panels: two distinct roots (Δ>0), one repeated root (Δ=0), and no roots (Δ<0); the two-roots and repeated-root panels are highlighted."
+          }
         },
         {
           "stepNumber": 2,
@@ -4276,7 +4815,48 @@ export const questions: Question[] = [
           "description": "Combine into one range.",
           "workingLatex": "0 < x \\le 2",
           "explanation": "The overlap of the two solution sets is $0 < x \\le 2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "intersectionStack",
+            "min": -2,
+            "max": 4,
+            "rows": [
+              {
+                "label": "x² - x - 2 ≤ 0",
+                "intervals": [
+                  {
+                    "from": -1,
+                    "to": 2,
+                    "fromClosed": true,
+                    "toClosed": true
+                  }
+                ]
+              },
+              {
+                "label": "x > 0",
+                "intervals": [
+                  {
+                    "from": 0,
+                    "to": null,
+                    "fromClosed": false
+                  }
+                ]
+              },
+              {
+                "label": "both",
+                "highlight": true,
+                "intervals": [
+                  {
+                    "from": 0,
+                    "to": 2,
+                    "fromClosed": false,
+                    "toClosed": true
+                  }
+                ]
+              }
+            ],
+            "caption": "The answer is where BOTH conditions overlap: 0 < x ≤ 2.",
+            "alt": "Stacked number lines: -1 to 2 for the quadratic, 0 rightwards for x>0, and their overlap from 0 (open) to 2 (closed) highlighted."
+          }
         },
         {
           "stepNumber": 10,
@@ -4346,7 +4926,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 4.",
           "workingLatex": "x > 3",
           "explanation": "Dividing by the positive number $4$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 3",
+            "caption": "Open circle at 3 — 3 is not included.",
+            "alt": "Number line with an open circle at 3 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -4410,7 +5000,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 2.",
           "workingLatex": "x \\le -3",
           "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -8,
+            "max": 2,
+            "endpoint": -3,
+            "direction": "left",
+            "closed": true,
+            "label": "x ≤ -3",
+            "caption": "Solid circle at -3 — -3 is included.",
+            "alt": "Number line with a solid circle at -3 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -4474,7 +5074,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 6.",
           "workingLatex": "x \\ge 3",
           "explanation": "Dividing by the positive number $6$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "right",
+            "closed": true,
+            "label": "x ≥ 3",
+            "caption": "Solid circle at 3 — 3 is included.",
+            "alt": "Number line with a solid circle at 3 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 4,
@@ -4545,7 +5155,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 4.",
           "workingLatex": "x < 3",
           "explanation": "Dividing by the positive number $4$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -2,
+            "max": 8,
+            "endpoint": 3,
+            "direction": "left",
+            "closed": false,
+            "label": "x < 3",
+            "caption": "Open circle at 3 — 3 is not included.",
+            "alt": "Number line with an open circle at 3 and the region to its left shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -4595,7 +5215,17 @@ export const questions: Question[] = [
           "description": "Multiply both sides by 4.",
           "workingLatex": "x > 8",
           "explanation": "Multiplying by the positive number $4$ clears the fraction and keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": 3,
+            "max": 13,
+            "endpoint": 8,
+            "direction": "right",
+            "closed": false,
+            "label": "x > 8",
+            "caption": "Open circle at 8 — 8 is not included.",
+            "alt": "Number line with an open circle at 8 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 3,
@@ -4673,7 +5303,17 @@ export const questions: Question[] = [
           "description": "Divide both sides by 2.",
           "workingLatex": "x \\ge 4",
           "explanation": "Dividing by the positive number $2$ keeps the inequality sign the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineRay",
+            "min": -1,
+            "max": 9,
+            "endpoint": 4,
+            "direction": "right",
+            "closed": true,
+            "label": "x ≥ 4",
+            "caption": "Solid circle at 4 — 4 is included.",
+            "alt": "Number line with a solid circle at 4 and the region to its right shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -4730,7 +5370,21 @@ export const questions: Question[] = [
           "description": "Divide and reverse the sign.",
           "workingLatex": "x > -2",
           "explanation": "Dividing both sides by $-4$ and flipping $<$ to $>$ gives $x > -2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -7,
+            "max": 3,
+            "beforeEndpoint": -2,
+            "beforeDirection": "left",
+            "beforeClosed": false,
+            "beforeLabel": "-4x < 8",
+            "afterEndpoint": -2,
+            "afterDirection": "right",
+            "afterClosed": false,
+            "afterLabel": "x > -2",
+            "caption": "Dividing -4x < 8 by -4 reflects the ray — the sign flips to give x > -2.",
+            "alt": "Two number lines with endpoint at -2: the top shows the un-flipped ray pointing left, the bottom shows the correct flipped ray x > -2 pointing right, both open circles."
+          }
         },
         {
           "stepNumber": 4,
@@ -4822,7 +5476,21 @@ export const questions: Question[] = [
           "description": "Divide and reverse the sign.",
           "workingLatex": "x \\ge -3",
           "explanation": "Dividing both sides by $-2$ and flipping $\\le$ to $\\ge$ gives $x \\ge -3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -8,
+            "max": 2,
+            "beforeEndpoint": -3,
+            "beforeDirection": "left",
+            "beforeClosed": true,
+            "beforeLabel": "-2x ≤ 6",
+            "afterEndpoint": -3,
+            "afterDirection": "right",
+            "afterClosed": true,
+            "afterLabel": "x ≥ -3",
+            "caption": "Dividing -2x ≤ 6 by -2 reflects the ray — the sign flips to give x ≥ -3.",
+            "alt": "Two number lines with endpoint at -3: the top ray points left, the bottom flipped ray x ≥ -3 points right, both solid circles."
+          }
         },
         {
           "stepNumber": 5,
@@ -4907,7 +5575,21 @@ export const questions: Question[] = [
           "description": "Divide and reverse the sign.",
           "workingLatex": "x < 3",
           "explanation": "Dividing both sides by $-3$ and flipping $>$ to $<$ gives $x < 3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "signFlipMirror",
+            "min": -2,
+            "max": 8,
+            "beforeEndpoint": 3,
+            "beforeDirection": "right",
+            "beforeClosed": false,
+            "beforeLabel": "-3x > -9",
+            "afterEndpoint": 3,
+            "afterDirection": "left",
+            "afterClosed": false,
+            "afterLabel": "x < 3",
+            "caption": "Dividing -3x > -9 by -3 reflects the ray — the sign flips to give x < 3.",
+            "alt": "Two number lines with endpoint at 3: the top ray points right, the bottom flipped ray x < 3 points left, both open circles."
+          }
         },
         {
           "stepNumber": 5,
@@ -4992,7 +5674,18 @@ export const questions: Question[] = [
           "description": "Divide all three parts by 2.",
           "workingLatex": "1 < x \\le 4",
           "explanation": "Dividing by the positive number $2$ throughout keeps both inequality signs the same way round.",
-          "diagram": null
+          "diagram": {
+            "kind": "numberLineInterval",
+            "min": -3,
+            "max": 8,
+            "lower": 1,
+            "upper": 4,
+            "lowerClosed": false,
+            "upperClosed": true,
+            "label": "1 < x ≤ 4",
+            "caption": "1 excluded (hollow), 4 included (solid).",
+            "alt": "Number line from -3 to 8 with an open circle at 1, a solid circle at 4, and the region between them shaded."
+          }
         },
         {
           "stepNumber": 5,
@@ -5084,7 +5777,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-2 \\le x \\le 4",
           "explanation": "The inequality $\\le 0$ holds for $x$ between $-2$ and $4$, including the roots.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -2,
+            "r2": 4,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": true,
+            "label": "-2 ≤ x ≤ 4",
+            "caption": "x² - 2x - 8 ≤ 0: on or below the axis between the roots -2 and 4.",
+            "alt": "Upward parabola crossing the x-axis at -2 and 4, shaded on and between the roots where it lies on or below the axis."
+          }
         },
         {
           "stepNumber": 6,
@@ -5169,7 +5872,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x < 2 \\ \\text{ or } \\ x > 4",
           "explanation": "The inequality $> 0$ holds for $x$ less than $2$ or greater than $4$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": 2,
+            "r2": 4,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": false,
+            "label": "x < 2 or x > 4",
+            "caption": "x² - 6x + 8 > 0: above the axis outside the roots 2 and 4.",
+            "alt": "Upward parabola crossing at 2 and 4, shaded to the left of 2 and to the right of 4 where it lies above the axis."
+          }
         },
         {
           "stepNumber": 6,
@@ -5254,7 +5967,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x \\le -4 \\ \\text{ or } \\ x \\ge 4",
           "explanation": "The inequality $\\ge 0$ holds for $x$ at most $-4$ or at least $4$, including the roots.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -4,
+            "r2": 4,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": true,
+            "label": "x ≤ -4 or x ≥ 4",
+            "caption": "x² - 16 ≥ 0: on or above the axis outside the roots -4 and 4.",
+            "alt": "Upward parabola crossing at -4 and 4, shaded on and outside the roots where it lies on or above the axis."
+          }
         },
         {
           "stepNumber": 6,
@@ -5339,7 +6062,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-4 < x < 0",
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-4$ and $0$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -4,
+            "r2": 0,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "-4 < x < 0",
+            "caption": "x² + 4x < 0: below the axis between the roots -4 and 0.",
+            "alt": "Upward parabola crossing at -4 and 0, shaded strictly between the roots where it dips below the axis."
+          }
         },
         {
           "stepNumber": 6,
@@ -5432,7 +6165,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "-\\tfrac{3}{2} < x < \\tfrac{3}{2}",
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-\\tfrac32$ and $\\tfrac32$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -1.5,
+            "r2": 1.5,
+            "opensUp": true,
+            "region": "interior",
+            "rootsClosed": false,
+            "label": "-3/2 < x < 3/2",
+            "caption": "4x² - 9 < 0: below the axis between the roots -3/2 and 3/2.",
+            "alt": "Upward parabola crossing at -1.5 and 1.5, shaded strictly between the roots where it dips below the axis."
+          }
         },
         {
           "stepNumber": 7,
@@ -5546,7 +6289,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x \\le -2 \\ \\text{ or } \\ x \\ge \\tfrac{3}{2}",
           "explanation": "The inequality $\\ge 0$ holds for $x$ at most $-2$ or at least $\\tfrac32$, including the roots.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -2,
+            "r2": 1.5,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": true,
+            "label": "x ≤ -2 or x ≥ 3/2",
+            "caption": "2x² + x - 6 ≥ 0: on or above the axis outside the roots -2 and 3/2.",
+            "alt": "Upward parabola crossing at -2 and 1.5, shaded on and outside the roots where it lies on or above the axis."
+          }
         },
         {
           "stepNumber": 7,
@@ -5659,7 +6412,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x \\le -3 \\ \\text{ or } \\ x \\ge 1",
           "explanation": "The inequality (equivalent to the original) holds for $x$ at most $-3$ or at least $1$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -3,
+            "r2": 1,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": true,
+            "label": "x ≤ -3 or x ≥ 1",
+            "caption": "Rewritten as x² + 2x - 3 ≥ 0: on or above the axis outside the roots -3 and 1.",
+            "alt": "Upward parabola crossing at -3 and 1, shaded on and outside the roots where it lies on or above the axis."
+          }
         },
         {
           "stepNumber": 7,
@@ -5779,7 +6542,17 @@ export const questions: Question[] = [
           "description": "Write the solution.",
           "workingLatex": "x < -4 \\ \\text{ or } \\ x > 2",
           "explanation": "The inequality $> 0$ holds for $x$ less than $-4$ or greater than $2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "parabolaRegion",
+            "r1": -4,
+            "r2": 2,
+            "opensUp": true,
+            "region": "exterior",
+            "rootsClosed": false,
+            "label": "x < -4 or x > 2",
+            "caption": "x² + 2x - 8 > 0: above the axis outside the roots -4 and 2.",
+            "alt": "Upward parabola crossing at -4 and 2, shaded to the left of -4 and to the right of 2 where it lies above the axis."
+          }
         },
         {
           "stepNumber": 8,
@@ -5851,7 +6624,14 @@ export const questions: Question[] = [
           "description": "State the condition for no real roots.",
           "workingLatex": "\\Delta = b^2 - 4ac < 0",
           "explanation": "A quadratic has no real roots exactly when its discriminant is strictly negative.",
-          "diagram": null
+          "diagram": {
+            "kind": "discriminantTriad",
+            "highlight": [
+              "none"
+            ],
+            "caption": "'No real roots' needs Δ < 0 — the parabola misses the x-axis.",
+            "alt": "Three discriminant panels; the Δ < 0 panel (no real roots, parabola not touching the axis) is highlighted."
+          }
         },
         {
           "stepNumber": 2,
@@ -6021,7 +6801,48 @@ export const questions: Question[] = [
           "description": "Combine into one range.",
           "workingLatex": "1 < x \\le 3",
           "explanation": "The overlap of the two solution sets is $1 < x \\le 3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "intersectionStack",
+            "min": -5,
+            "max": 5,
+            "rows": [
+              {
+                "label": "x² - 9 ≤ 0",
+                "intervals": [
+                  {
+                    "from": -3,
+                    "to": 3,
+                    "fromClosed": true,
+                    "toClosed": true
+                  }
+                ]
+              },
+              {
+                "label": "x - 1 > 0",
+                "intervals": [
+                  {
+                    "from": 1,
+                    "to": null,
+                    "fromClosed": false
+                  }
+                ]
+              },
+              {
+                "label": "both",
+                "highlight": true,
+                "intervals": [
+                  {
+                    "from": 1,
+                    "to": 3,
+                    "fromClosed": false,
+                    "toClosed": true
+                  }
+                ]
+              }
+            ],
+            "caption": "The answer is where BOTH conditions are shaded: 1 < x ≤ 3.",
+            "alt": "Three stacked number lines: x² - 9 ≤ 0 shaded from -3 to 3, x - 1 > 0 shaded to the right of 1, and the highlighted overlap from just above 1 to 3."
+          }
         },
         {
           "stepNumber": 10,

@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Lock, ChevronRight, Eye, RotateCcw, Sparkles, Trophy } from "lucide-react";
 import type { Question } from "@/lib/types";
 import { MathText, MathBlock } from "@/components/math";
+import { Diagram } from "@/components/diagram";
 import { DifficultyBadge, Pill } from "@/components/ui";
 import { cn } from "@/lib/utils";
 
@@ -37,6 +38,11 @@ export function SolutionViewer({ question: q }: { question: Question }) {
             <Pill key={t}>{t}</Pill>
           ))}
         </div>
+        {q.questionDiagram && (
+          <div className="mx-auto mt-5 max-w-md">
+            <Diagram spec={q.questionDiagram} />
+          </div>
+        )}
       </div>
 
       {/* controls */}
@@ -126,6 +132,7 @@ export function SolutionViewer({ question: q }: { question: Question }) {
                         <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                           <MathText text={step.explanation} />
                         </p>
+                        {step.diagram && <Diagram spec={step.diagram} />}
                       </motion.div>
                     ) : (
                       <motion.button

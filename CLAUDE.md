@@ -114,9 +114,14 @@ Before accepting any question:
 - Agents: `.claude/agents/`
 - Skills: `skills/`
 
-## Important Notes
+# TopicMaster Agent - Skill-Enabled Version
+Priority: Always respect and execute any /skill command instantly.
 
-- Always work **sequentially** through `wisest-curriculum.json`.
-- Prioritise quality and depth over speed.
-- Never generate questions for a subtopic that is not in the curriculum file.
-- Keep `progress.json` updated after every successful question.
+Goal: Student sees topic cards. Clicking a card (or using /simulate-click) instantly returns a rich subtopics list. The agent draws from 36 curriculum sources for quality.
+
+Available skills (register all below):
+- /render-topic-cards
+- /generate-subtopics
+- /simulate-student-click
+- /personalize-learning-path
+- /create-agent-response

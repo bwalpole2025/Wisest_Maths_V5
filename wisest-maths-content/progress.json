@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Transformations of graphs",
-  "currentSubtopicId": "al.y1.pure.graph-transformations",
+  "currentSubtopic": "Logarithms",
+  "currentSubtopicId": "al.y1.pure.logarithms",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -15,13 +15,21 @@
     "al.y1.pure.inequalities",
     "al.y1.pure.polynomials",
     "al.y1.pure.curve-sketching",
-    "al.y1.pure.graph-transformations"
+    "al.y1.pure.graph-transformations",
+    "al.y1.pure.straight-lines",
+    "al.y1.pure.circles",
+    "al.y1.pure.binomial",
+    "al.y1.pure.triangle-trig",
+    "al.y1.pure.trig-graphs",
+    "al.y1.pure.trig-identities",
+    "al.y1.pure.exponentials",
+    "al.y1.pure.logarithms"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 10,
-      "totalQuestionsGenerated": 700
+      "completedSubtopics": 18,
+      "totalQuestionsGenerated": 1260
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

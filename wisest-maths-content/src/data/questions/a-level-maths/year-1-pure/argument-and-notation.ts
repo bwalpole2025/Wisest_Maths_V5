@@ -5181,6 +5181,7 @@ export const questions: Question[] = [
     ],
     "questionText": "Let $ABCD$ be a quadrilateral whose diagonals $AC$ and $BD$ meet at $M$. Prove that $ABCD$ is a parallelogram if and only if its diagonals bisect each other, that is, $AM = CM$ and $BM = DM$. Prove both directions carefully, and state your conclusion in the language of necessary and sufficient conditions.",
     "questionDiagram": {
+      "kind": "descriptive",
       "type": "geometry",
       "description": "Quadrilateral ABCD with vertices labelled in order; the two diagonals AC and BD are drawn and cross at the point M inside the quadrilateral.",
       "elements": [
@@ -5685,6 +5686,7 @@ export const questions: Question[] = [
     ],
     "questionText": "Let $ABC$ be a triangle with sides $a = BC$, $b = CA$, $c = AB$ opposite the interior angles $A$, $B$, $C$ respectively. Prove that the triangle is equilateral if and only if it is equiangular (all three angles equal to $60^\\circ$). Prove both directions, and phrase your final conclusion using necessary and sufficient conditions.",
     "questionDiagram": {
+      "kind": "descriptive",
       "type": "geometry",
       "description": "Triangle ABC with its three sides and three interior angles labelled, used to relate equal sides to equal angles.",
       "elements": [
@@ -6584,6 +6586,7 @@ export const questions: Question[] = [
     ],
     "questionText": "Consider the statement: 'if a quadrilateral has four equal sides, then it is a square'. Show that this statement is false. Then state a corrected biconditional characterisation of a square of the form 'a quadrilateral is a square $\\Leftrightarrow$ it has four equal sides AND at least one right angle', prove both directions, and explain why the pair of conditions {four equal sides, one right angle} is necessary and sufficient for a square.",
     "questionDiagram": {
+      "kind": "descriptive",
       "type": "comparison-figure",
       "description": "Two quadrilaterals drawn side by side, both with four equal-length sides, to contrast a rhombus (no right angle) against a square (right angles), showing that equal sides alone do not force a square.",
       "elements": [

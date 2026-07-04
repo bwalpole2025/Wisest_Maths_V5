@@ -15,6 +15,14 @@ import { questions as inequalities } from "@/data/questions/a-level-maths/year-1
 import { questions as polynomials } from "@/data/questions/a-level-maths/year-1-pure/polynomials-and-factor-theorem";
 import { questions as curveSketching } from "@/data/questions/a-level-maths/year-1-pure/curve-sketching";
 import { questions as graphTransformations } from "@/data/questions/a-level-maths/year-1-pure/transformations-of-graphs";
+import { questions as straightLines } from "@/data/questions/a-level-maths/year-1-pure/straight-lines";
+import { questions as circles } from "@/data/questions/a-level-maths/year-1-pure/circles";
+import { questions as binomial } from "@/data/questions/a-level-maths/year-1-pure/binomial-expansion";
+import { questions as triangleTrig } from "@/data/questions/a-level-maths/year-1-pure/triangle-trigonometry";
+import { questions as trigGraphs } from "@/data/questions/a-level-maths/year-1-pure/trigonometric-graphs";
+import { questions as trigIdentities } from "@/data/questions/a-level-maths/year-1-pure/identities-and-equations";
+import { questions as exponentials } from "@/data/questions/a-level-maths/year-1-pure/exponential-functions";
+import { questions as logarithms } from "@/data/questions/a-level-maths/year-1-pure/logarithms";
 
 export { slugForSubtopicId };
 
@@ -29,6 +37,14 @@ export const allQuestions: Question[] = [
   ...polynomials,
   ...curveSketching,
   ...graphTransformations,
+  ...straightLines,
+  ...circles,
+  ...binomial,
+  ...triangleTrig,
+  ...trigGraphs,
+  ...trigIdentities,
+  ...exponentials,
+  ...logarithms,
 ];
 
 export interface SubtopicSummary {
