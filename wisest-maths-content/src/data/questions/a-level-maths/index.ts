@@ -95,6 +95,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 8,
     load: () => import("./year-1-pure/polynomials-and-factor-theorem").then((m) => m.questions),
   },
+  {
+    slug: "curve-sketching",
+    id: "al.y1.pure.curve-sketching",
+    name: "Curve sketching",
+    blurb: "Cubics, quartics, reciprocals, intersections and repeated roots.",
+    gradient: "from-cyan-400 to-blue-500",
+    order: 9,
+    load: () => import("./year-1-pure/curve-sketching").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>
