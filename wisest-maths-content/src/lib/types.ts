@@ -1,5 +1,93 @@
 export type Difficulty = "Easy" | "Intermediate" | "Hard";
 
+/* ------------------------------------------------------------- mechanics */
+
+/** Direction of a force / motion arrow in a mechanics figure. */
+export type MechDir = "up" | "down" | "left" | "right";
+
+/** A labelled mass. `label` is raw LaTeX (e.g. "5\\,\\text{kg}", "m_A"). */
+export interface MechMass {
+  label: string;
+}
+
+/** One body in a horizontal "train" of connected bodies. */
+export interface MechBody {
+  /** Raw-LaTeX label drawn on the body (e.g. "A", "2\\,\\text{kg}"). */
+  label: string;
+  /** Visual style. Default "block". */
+  shape?: "car" | "engine" | "trailer" | "block" | "particle";
+}
+
+/** How two consecutive bodies are joined. */
+export type MechConnector = "string" | "rod" | "bar" | "coupling" | "contact";
+
+/** An external force arrow acting on a body in a "train" scene. */
+export interface MechForce {
+  /** Index into `bodies` the force acts on. */
+  body: number;
+  dir: MechDir;
+  /** Raw-LaTeX label (e.g. "T", "3000\\,\\text{N}", "\\mu R"). */
+  label: string;
+  /** Draw in the blue accent — the force being solved for. */
+  accent?: boolean;
+}
+
+/** The four connected-particles diagram archetypes. */
+export type MechScene =
+  | {
+      /** Two masses hanging either side of a single fixed pulley (Atwood machine). */
+      scene: "atwood";
+      /** Pulley mount. Default "ceiling". */
+      mount?: "ceiling" | "beam";
+      left: MechMass;
+      right: MechMass;
+      /** Which mass is accelerating downward — drawn with accent motion arrows. */
+      descending?: "left" | "right";
+      /** Draw the weight arrow under each mass. */
+      showWeights?: boolean;
+      /** One string segment hangs slack (e.g. after a mass lands) — drawn dashed. */
+      slackSide?: "left" | "right";
+    }
+  | {
+      /** A mass on a horizontal table joined by a string over an edge pulley to a hanging mass. */
+      scene: "tablePulley";
+      table: MechMass & { rough?: boolean };
+      hanging: MechMass;
+      /** Which edge the pulley sits at. Default "right". */
+      pulleySide?: "left" | "right";
+      /** Draw tension arrows (T) on both string segments. */
+      showTension?: boolean;
+      /** Draw weight arrows under each mass. */
+      showWeights?: boolean;
+    }
+  | {
+      /** A row of connected bodies on a surface: car+trailer, engine+trucks, blocks, joined particles. */
+      scene: "train";
+      bodies: MechBody[];
+      /** Connector between consecutive bodies; length = bodies.length − 1. Default all "string". */
+      connectors?: MechConnector[];
+      /** External force arrows. */
+      forces?: MechForce[];
+      /** Acceleration arrow drawn above the row. */
+      accel?: { dir: "left" | "right"; label?: string };
+      /** Draw the ground line + hatching. Default true. */
+      ground?: boolean;
+    }
+  | {
+      /** A lift/elevator: a car on a cable, optionally holding a person. */
+      scene: "lift";
+      /** Draw a person standing inside the car. */
+      person?: boolean;
+      /** Cable to the ceiling carrying this tension label (omit ⇒ no cable). */
+      cable?: string;
+      /** Floor-reaction label on the person (e.g. "R"). */
+      reaction?: string;
+      /** Weight label (e.g. "mg", "80g"). */
+      weight?: string;
+      /** Acceleration arrow beside the car. */
+      accel?: { dir: "up" | "down"; label?: string };
+    };
+
 /**
  * MAFS diagram specs — small, self-contained visual archetypes rendered as SVG
  * by <Diagram>. Attached to a question (`questionDiagram`) or a single solution
@@ -227,7 +315,13 @@ export type Diagram =
       elements?: unknown[];
       caption?: string;
       alt?: string;
-    };
+    }
+  | ({
+      /** A native-SVG mechanics figure (force/pulley/lift diagram). See MechScene. */
+      kind: "mechanics";
+      caption?: string;
+      alt: string;
+    } & MechScene);
 
 export interface SolutionStep {
   stepNumber: number;

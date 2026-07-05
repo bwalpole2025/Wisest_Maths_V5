@@ -1043,6 +1043,407 @@ function ProbDistFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "probDist
   );
 }
 
+/* ------------------------------------------------------------- mechanics */
+
+type MechSpec = Extract<DiagramSpec, { kind: "mechanics" }>;
+type MechScene<S extends string> = Extract<MechSpec, { scene: S }>;
+
+const STEEL = "#e5e7eb"; // body fill
+const STEEL_DK = "#cbd5e1"; // body fill (second shade)
+
+/** Raw-LaTeX label placed in the SVG (no texify — the caller writes exact TeX). */
+function MLabel({
+  tex,
+  x,
+  y,
+  size = 14,
+  color = INK,
+  align = "center",
+  w = 120,
+  chip = false,
+}: {
+  tex: string;
+  x: number;
+  y: number;
+  size?: number;
+  color?: string;
+  align?: "center" | "left" | "right";
+  w?: number;
+  chip?: boolean;
+}) {
+  if (!tex) return null;
+  const html = katex.renderToString(tex, { throwOnError: false, strict: false, output: "html", displayMode: false });
+  const h = /frac|_|\^/.test(tex) ? size * 2 : size * 1.55;
+  const left = align === "center" ? x - w / 2 : align === "left" ? x : x - w;
+  const justify = align === "center" ? "center" : align === "left" ? "flex-start" : "flex-end";
+  return (
+    <foreignObject x={left} y={y - h / 2} width={w} height={h} style={{ overflow: "visible" }}>
+      <div style={{ display: "flex", alignItems: "center", justifyContent: justify, width: `${w}px`, height: `${h}px`, fontSize: `${size}px`, lineHeight: 1, color }}>
+        <span style={chip ? { background: "rgba(255,255,255,0.9)", padding: "0 3px", borderRadius: 3 } : undefined} dangerouslySetInnerHTML={{ __html: html }} />
+      </div>
+    </foreignObject>
+  );
+}
+
+/** A vector arrow with a clean head at (x2,y2). */
+function Vec({ x1, y1, x2, y2, color = INK, width = 1.8, dashed = false }: { x1: number; y1: number; x2: number; y2: number; color?: string; width?: number; dashed?: boolean }) {
+  const ang = Math.atan2(y2 - y1, x2 - x1);
+  const hs = 7;
+  const a1 = ang + Math.PI - 0.42;
+  const a2 = ang + Math.PI + 0.42;
+  return (
+    <>
+      <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={color} strokeWidth={width} strokeLinecap="round" strokeDasharray={dashed ? "5 3" : undefined} />
+      <path
+        d={`M ${x2 + hs * Math.cos(a1)} ${y2 + hs * Math.sin(a1)} L ${x2} ${y2} L ${x2 + hs * Math.cos(a2)} ${y2 + hs * Math.sin(a2)}`}
+        fill="none"
+        stroke={color}
+        strokeWidth={width}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </>
+  );
+}
+
+/** A pulley wheel with a hub. */
+function Pulley({ cx, cy, r = 15 }: { cx: number; cy: number; r?: number }) {
+  return (
+    <>
+      <circle cx={cx} cy={cy} r={r} fill="#ffffff" stroke={INK} strokeWidth={1.8} />
+      <circle cx={cx} cy={cy} r={2.4} fill={INK} />
+    </>
+  );
+}
+
+/** A fixed surface: a solid line with short 45° hatch ticks on one side. */
+function Hatch({ x1, x2, y, dir = "down", n = 14 }: { x1: number; x2: number; y: number; dir?: "up" | "down"; n?: number }) {
+  const dy = dir === "down" ? 7 : -7;
+  const ticks: React.ReactNode[] = [];
+  for (let i = 0; i < n; i++) {
+    const x = x1 + ((x2 - x1) * (i + 0.5)) / n;
+    ticks.push(<line key={i} x1={x} y1={y} x2={x - 7} y2={y + dy} stroke={INK_SOFT} strokeWidth={1} />);
+  }
+  return (
+    <>
+      <line x1={x1} y1={y} x2={x2} y2={y} stroke={INK} strokeWidth={1.6} />
+      {ticks}
+    </>
+  );
+}
+
+/** Draw a force arrow anchored at a body edge, pointing outward, with its label past the tip. */
+function ForceArrow({ x, y, dir, len = 34, label, color = INK, accent = false }: { x: number; y: number; dir: "up" | "down" | "left" | "right"; len?: number; label: string; color?: string; accent?: boolean }) {
+  const col = accent ? ACCENT : color;
+  const w = accent ? 2.4 : 1.8;
+  const d = { up: [0, -1], down: [0, 1], left: [-1, 0], right: [1, 0] }[dir];
+  const x2 = x + d[0] * len;
+  const y2 = y + d[1] * len;
+  // label just beyond the tip, offset off the shaft
+  const lx = dir === "left" ? x2 - 4 : dir === "right" ? x2 + 4 : x2;
+  const ly = dir === "up" ? y2 - 10 : dir === "down" ? y2 + 10 : y2 - 11;
+  const lalign = dir === "left" ? "right" : dir === "right" ? "left" : "center";
+  return (
+    <>
+      <Vec x1={x} y1={y} x2={x2} y2={y2} color={col} width={w} />
+      <MLabel tex={label} x={lx} y={ly} size={13} color={col} align={lalign as "left" | "right" | "center"} w={90} />
+    </>
+  );
+}
+
+/* --- scene: Atwood machine (two masses, one pulley) --- */
+function AtwoodFigure({ spec }: { spec: MechScene<"atwood"> }) {
+  const W = 340;
+  const H = 320;
+  const cx = W / 2;
+  const ceilingY = 24;
+  const pr = 20;
+  const pcy = 78;
+  const boxW = 40;
+  const boxH = 40;
+  const lx = cx - pr; // left string x (left tangent)
+  const rx = cx + pr; // right string x
+  const mid = 150;
+  const off = 34;
+  const leftTop = spec.descending === "left" ? mid + off : spec.descending === "right" ? mid - off : mid;
+  const rightTop = spec.descending === "right" ? mid + off : spec.descending === "left" ? mid - off : mid;
+  const beam = spec.mount === "beam";
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* ceiling / beam + mount */}
+      {beam ? <rect x={cx - 60} y={ceilingY} width={120} height={12} fill={STEEL_DK} stroke={INK} strokeWidth={1.4} /> : <Hatch x1={cx - 70} x2={cx + 70} y={ceilingY} dir="up" />}
+      <line x1={cx} y1={beam ? ceilingY + 12 : ceilingY} x2={cx} y2={pcy - pr} stroke={INK} strokeWidth={1.6} />
+      <Pulley cx={cx} cy={pcy} r={pr} />
+
+      {/* strings */}
+      <line x1={lx} y1={pcy} x2={lx} y2={leftTop} stroke={INK} strokeWidth={1.4} strokeDasharray={spec.slackSide === "left" ? "5 3" : undefined} />
+      <line x1={rx} y1={pcy} x2={rx} y2={rightTop} stroke={INK} strokeWidth={1.4} strokeDasharray={spec.slackSide === "right" ? "5 3" : undefined} />
+
+      {/* masses */}
+      <rect x={lx - boxW / 2} y={leftTop} width={boxW} height={boxH} rx={4} fill={STEEL} stroke={INK} strokeWidth={1.6} />
+      <rect x={rx - boxW / 2} y={rightTop} width={boxW} height={boxH} rx={4} fill={STEEL} stroke={INK} strokeWidth={1.6} />
+      <MLabel tex={spec.left.label} x={lx} y={leftTop + boxH / 2} size={13} w={boxW + 30} />
+      <MLabel tex={spec.right.label} x={rx} y={rightTop + boxH / 2} size={13} w={boxW + 30} />
+
+      {/* weights */}
+      {spec.showWeights && (
+        <>
+          <ForceArrow x={lx} y={leftTop + boxH} dir="down" len={26} label={spec.left.label.replace(/\\,\\text\{kg\}/, "g")} />
+          <ForceArrow x={rx} y={rightTop + boxH} dir="down" len={26} label={spec.right.label.replace(/\\,\\text\{kg\}/, "g")} />
+        </>
+      )}
+
+      {/* acceleration arrows */}
+      {spec.descending === "left" && (
+        <>
+          <ForceArrow x={lx - boxW / 2 - 12} y={leftTop + boxH / 2} dir="down" len={30} label="a" accent />
+          <ForceArrow x={rx + boxW / 2 + 12} y={rightTop + boxH / 2} dir="up" len={30} label="a" accent />
+        </>
+      )}
+      {spec.descending === "right" && (
+        <>
+          <ForceArrow x={rx + boxW / 2 + 12} y={rightTop + boxH / 2} dir="down" len={30} label="a" accent />
+          <ForceArrow x={lx - boxW / 2 - 12} y={leftTop + boxH / 2} dir="up" len={30} label="a" accent />
+        </>
+      )}
+    </svg>
+  );
+}
+
+/* --- scene: mass on a table, string over an edge pulley, hanging mass --- */
+function TablePulleyFigure({ spec }: { spec: MechScene<"tablePulley"> }) {
+  const W = 420;
+  const H = 300;
+  const flip = spec.pulleySide === "left";
+  const Ts = 132; // table surface y
+  const tableL = 44;
+  const tableR = 320;
+  const edgeX = tableR; // pulley at right edge (mirrored below if flip)
+  const pr = 13;
+  const boxW = 56;
+  const boxH = 34;
+  const aCx = (tableL + tableR) / 2 - 26;
+  const stringY = Ts - boxH / 2;
+  const Btop = Ts + 54;
+  const Bh = 36;
+
+  const inner = (
+    <>
+      {/* table top + legs (fixed) */}
+      <Hatch x1={tableL} x2={tableR} y={Ts} dir="down" n={16} />
+      <line x1={tableL + 14} y1={Ts} x2={tableL + 14} y2={Ts + 66} stroke={INK} strokeWidth={1.6} />
+      <line x1={tableR - 14} y1={Ts} x2={tableR - 14} y2={Ts + 66} stroke={INK} strokeWidth={1.6} />
+      {/* rough surface texture */}
+      {spec.table.rough &&
+        Array.from({ length: 12 }).map((_, i) => {
+          const x = aCx - boxW / 2 + (boxW * i) / 11;
+          return <line key={i} x1={x} y1={Ts} x2={x - 4} y2={Ts - 4} stroke={INK_SOFT} strokeWidth={0.9} />;
+        })}
+
+      {/* mass A on the table */}
+      <rect x={aCx - boxW / 2} y={Ts - boxH} width={boxW} height={boxH} rx={4} fill={STEEL} stroke={INK} strokeWidth={1.6} />
+      <MLabel tex={spec.table.label} x={aCx} y={Ts - boxH / 2} size={13} w={boxW + 20} />
+
+      {/* pulley + string */}
+      <Pulley cx={edgeX} cy={stringY} r={pr} />
+      <line x1={aCx + boxW / 2} y1={stringY} x2={edgeX} y2={stringY} stroke={INK} strokeWidth={1.4} />
+      <line x1={edgeX + pr} y1={stringY} x2={edgeX + pr} y2={Btop} stroke={INK} strokeWidth={1.4} />
+
+      {/* hanging mass B */}
+      <rect x={edgeX + pr - boxW / 2} y={Btop} width={boxW} height={Bh} rx={4} fill={STEEL} stroke={INK} strokeWidth={1.6} />
+      <MLabel tex={spec.hanging.label} x={edgeX + pr} y={Btop + Bh / 2} size={13} w={boxW + 20} />
+
+      {/* tension arrows */}
+      {spec.showTension && (
+        <>
+          <ForceArrow x={aCx + boxW / 2 + 2} y={stringY} dir="right" len={26} label="T" />
+          <ForceArrow x={edgeX + pr} y={Btop - 2} dir="up" len={26} label="T" />
+        </>
+      )}
+      {/* weights */}
+      {spec.showWeights && <ForceArrow x={edgeX + pr} y={Btop + Bh} dir="down" len={28} label={spec.hanging.label.replace(/\\,\\text\{kg\}/, "g")} />}
+    </>
+  );
+
+  // mirror horizontally for a left-edge pulley
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {flip ? <g transform={`translate(${W},0) scale(-1,1)`}>{inner}</g> : inner}
+    </svg>
+  );
+}
+
+/* --- scene: a horizontal row of connected bodies --- */
+function TrainFigure({ spec }: { spec: MechScene<"train"> }) {
+  const W = 470;
+  const groundY = 188;
+  const showGround = spec.ground !== false;
+  const shapeW: Record<string, number> = { car: 66, engine: 66, trailer: 56, block: 46, particle: 20 };
+  const shapeH: Record<string, number> = { car: 42, engine: 46, trailer: 36, block: 34, particle: 20 };
+  const gap = 30;
+  const bodies = spec.bodies;
+  const widths = bodies.map((b) => shapeW[b.shape ?? "block"]);
+  const connectors = spec.connectors ?? bodies.slice(1).map(() => "string" as const);
+  // contact connectors mean the two bodies touch (no gap)
+  const gaps: number[] = bodies.slice(1).map((_, i) => (connectors[i] === "contact" ? 0 : gap));
+  const totalW = widths.reduce((a, c) => a + c, 0) + gaps.reduce((a, c) => a + c, 0);
+  let cursor = (W - totalW) / 2;
+  const rects = bodies.map((b, i) => {
+    const w = widths[i];
+    const h = shapeH[b.shape ?? "block"];
+    const x = cursor;
+    cursor += w + (gaps[i] ?? 0);
+    return { x, w, h, top: groundY - h, cxv: x + w / 2, cy: groundY - h / 2, b };
+  });
+
+  const wheel = (cx: number, cy: number) => <circle cx={cx} cy={cy} r={5} fill="#ffffff" stroke={INK} strokeWidth={1.5} />;
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H_TRAIN}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* ground */}
+      {showGround && <Hatch x1={20} x2={W - 20} y={groundY} dir="down" n={22} />}
+
+      {/* connectors */}
+      {rects.slice(1).map((r, i) => {
+        const l = rects[i];
+        const y = groundY - Math.min(l.h, r.h) / 2;
+        const x1 = l.x + l.w;
+        const x2 = r.x;
+        const c = connectors[i];
+        if (c === "contact") return null;
+        if (c === "rod" || c === "bar" || c === "coupling") {
+          return (
+            <g key={i}>
+              <line x1={x1} y1={y} x2={x2} y2={y} stroke={INK} strokeWidth={2.4} />
+              <line x1={x1} y1={y - 4} x2={x1} y2={y + 4} stroke={INK} strokeWidth={1.6} />
+              <line x1={x2} y1={y - 4} x2={x2} y2={y + 4} stroke={INK} strokeWidth={1.6} />
+            </g>
+          );
+        }
+        return <line key={i} x1={x1} y1={y} x2={x2} y2={y} stroke={INK} strokeWidth={1.4} />;
+      })}
+
+      {/* bodies */}
+      {rects.map((r, i) => {
+        const shape = r.b.shape ?? "block";
+        if (shape === "particle") {
+          return (
+            <g key={i}>
+              <circle cx={r.cxv} cy={groundY - 10} r={9} fill={INK} />
+              <MLabel tex={r.b.label} x={r.cxv} y={groundY - 30} size={13} w={60} />
+            </g>
+          );
+        }
+        return (
+          <g key={i}>
+            <rect x={r.x} y={r.top} width={r.w} height={r.h} rx={5} fill={i % 2 ? STEEL_DK : STEEL} stroke={INK} strokeWidth={1.6} />
+            <MLabel tex={r.b.label} x={r.cxv} y={r.cy} size={13} w={r.w + 16} />
+            {(shape === "car" || shape === "engine" || shape === "trailer") && (
+              <>
+                {wheel(r.x + r.w * 0.24, groundY)}
+                {wheel(r.x + r.w * 0.76, groundY)}
+              </>
+            )}
+          </g>
+        );
+      })}
+
+      {/* forces: vertical ones on the body; horizontal ones drawn above the body
+          (staggered by direction) with a light leader, so they never overlap
+          neighbouring bodies or the connectors — standard textbook style. */}
+      {(spec.forces ?? []).map((f, i) => {
+        const r = rects[f.body];
+        if (!r) return null;
+        if (f.dir === "up") return <ForceArrow key={i} x={r.cxv} y={r.top} dir="up" len={32} label={f.label} accent={f.accent} />;
+        if (f.dir === "down") return <ForceArrow key={i} x={r.cxv} y={groundY} dir="down" len={30} label={f.label} accent={f.accent} />;
+        const col = f.accent ? ACCENT : INK;
+        const level = f.dir === "left" ? r.top - 36 : r.top - 14;
+        const endX = f.dir === "right" ? r.cxv + 36 : r.cxv - 36;
+        return (
+          <g key={i}>
+            <line x1={r.cxv} y1={r.top} x2={r.cxv} y2={level} stroke={col} strokeWidth={1} strokeDasharray="2 2" opacity={0.5} />
+            <Vec x1={r.cxv} y1={level} x2={endX} y2={level} color={col} width={f.accent ? 2.4 : 1.8} />
+            <MLabel tex={f.label} x={f.dir === "right" ? endX + 4 : endX - 4} y={level - 10} align={f.dir === "right" ? "left" : "right"} size={13} color={col} w={92} />
+          </g>
+        );
+      })}
+
+      {/* acceleration */}
+      {spec.accel && (
+        <ForceArrow x={spec.accel.dir === "right" ? W - 90 : 90} y={28} dir={spec.accel.dir} len={44} label={spec.accel.label ?? "a"} accent />
+      )}
+    </svg>
+  );
+}
+
+/* --- scene: a lift on a cable, optionally with a person --- */
+function LiftFigure({ spec }: { spec: MechScene<"lift"> }) {
+  const W = 300;
+  const H = 340;
+  const cx = W / 2;
+  const ceilingY = 22;
+  const carX = cx - 66;
+  const carTop = 116;
+  const carW = 132;
+  const carH = 150;
+  const floorY = carTop + carH;
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* ceiling + cable */}
+      {spec.cable && (
+        <>
+          <Hatch x1={cx - 54} x2={cx + 54} y={ceilingY} dir="up" />
+          <line x1={cx} y1={ceilingY} x2={cx} y2={carTop} stroke={INK} strokeWidth={1.5} />
+        </>
+      )}
+
+      {/* the car */}
+      <rect x={carX} y={carTop} width={carW} height={carH} rx={6} fill="#ffffff" stroke={INK} strokeWidth={2} />
+      <line x1={carX + 6} y1={floorY - 6} x2={carX + carW - 6} y2={floorY - 6} stroke={INK_SOFT} strokeWidth={1.2} />
+
+      {/* person */}
+      {spec.person && (
+        <g stroke={INK} strokeWidth={1.8} fill="none" strokeLinecap="round">
+          <circle cx={cx} cy={carTop + 54} r={10} fill={STEEL} />
+          <line x1={cx} y1={carTop + 64} x2={cx} y2={floorY - 34} />
+          <line x1={cx} y1={carTop + 74} x2={cx - 16} y2={carTop + 92} />
+          <line x1={cx} y1={carTop + 74} x2={cx + 16} y2={carTop + 92} />
+          <line x1={cx} y1={floorY - 34} x2={cx - 14} y2={floorY - 8} />
+          <line x1={cx} y1={floorY - 34} x2={cx + 14} y2={floorY - 8} />
+        </g>
+      )}
+
+      {/* cable tension */}
+      {spec.cable && <ForceArrow x={cx} y={carTop} dir="up" len={40} label={spec.cable} accent />}
+      {/* reaction on the person from the floor */}
+      {spec.reaction && spec.person && <ForceArrow x={cx + 30} y={floorY - 8} dir="up" len={40} label={spec.reaction} />}
+      {/* weight */}
+      {spec.weight && <ForceArrow x={spec.person ? cx : cx} y={spec.person ? carTop + 66 : floorY} dir="down" len={40} label={spec.weight} />}
+      {/* acceleration */}
+      {spec.accel && <ForceArrow x={carX + carW + 34} y={carTop + carH / 2} dir={spec.accel.dir} len={44} label={spec.accel.label ?? "a"} accent />}
+    </svg>
+  );
+}
+
+const H_TRAIN = 236;
+
+function MechanicsFigure({ spec }: { spec: MechSpec }) {
+  switch (spec.scene) {
+    case "atwood":
+      return <AtwoodFigure spec={spec} />;
+    case "tablePulley":
+      return <TablePulleyFigure spec={spec} />;
+    case "train":
+      return <TrainFigure spec={spec} />;
+    case "lift":
+      return <LiftFigure spec={spec} />;
+    default:
+      return null;
+  }
+}
+
 /* ---------------------------------------------------------------- dispatcher */
 
 function toRows(spec: DiagramSpec): { min: number; max: number; rows: Row[] } | null {
@@ -1177,6 +1578,7 @@ export function Diagram({ spec, className }: { spec: DiagramSpec; className?: st
   else if (spec.kind === "venn3") body = <Venn3Figure spec={spec} />;
   else if (spec.kind === "probTree") body = <ProbTreeFigure spec={spec} />;
   else if (spec.kind === "probDist") body = <ProbDistFigure spec={spec} />;
+  else if (spec.kind === "mechanics") body = <MechanicsFigure spec={spec} />;
   else {
     const rows = toRows(spec);
     body = rows ? <NumberLineFigure min={rows.min} max={rows.max} rows={rows.rows} /> : null;

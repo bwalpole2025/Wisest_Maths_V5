@@ -374,6 +374,33 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 39,
     load: () => import("./year-1-stats/discrete-random-variables").then((m) => m.questions),
   },
+  {
+    slug: "the-binomial-distribution",
+    id: "al.y1.stats.binomial",
+    name: "The binomial distribution",
+    blurb: "The binomial model X ~ B(n, p) and its conditions, the probability formula, cumulative probabilities and modelling.",
+    gradient: "from-teal-400 to-cyan-500",
+    order: 40,
+    load: () => import("./year-1-stats/the-binomial-distribution").then((m) => m.questions),
+  },
+  {
+    slug: "hypothesis-testing",
+    id: "al.y1.stats.hypothesis-testing",
+    name: "Hypothesis testing",
+    blurb: "Binomial hypothesis tests: null and alternative hypotheses, one- and two-tailed tests, critical regions, p-values and conclusions in context.",
+    gradient: "from-cyan-400 to-sky-500",
+    order: 41,
+    load: () => import("./year-1-stats/hypothesis-testing").then((m) => m.questions),
+  },
+  {
+    slug: "large-data-set-fluency",
+    id: "al.y1.stats.large-data-set",
+    name: "Large data set fluency",
+    blurb: "The Edexcel weather large data set: its structure, variables, units and conventions, and applying Year-1 statistics to weather-data extracts.",
+    gradient: "from-sky-400 to-blue-500",
+    order: 42,
+    load: () => import("./year-1-stats/large-data-set-fluency").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

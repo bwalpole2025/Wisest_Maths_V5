@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Statistics",
-  "currentSubtopic": "Discrete random variables",
-  "currentSubtopicId": "al.y1.stats.discrete-rv",
+  "currentSubtopic": "Large data set fluency",
+  "currentSubtopicId": "al.y1.stats.large-data-set",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -44,13 +44,16 @@
     "al.y1.stats.data-presentation",
     "al.y1.stats.regression",
     "al.y1.stats.probability",
-    "al.y1.stats.discrete-rv"
+    "al.y1.stats.discrete-rv",
+    "al.y1.stats.binomial",
+    "al.y1.stats.hypothesis-testing",
+    "al.y1.stats.large-data-set"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 39,
-      "totalQuestionsGenerated": 2730
+      "completedSubtopics": 42,
+      "totalQuestionsGenerated": 2940
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

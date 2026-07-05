@@ -44,6 +44,9 @@ import { questions as dataPresentation } from "@/data/questions/a-level-maths/ye
 import { questions as correlationRegression } from "@/data/questions/a-level-maths/year-1-stats/correlation-and-regression";
 import { questions as probability } from "@/data/questions/a-level-maths/year-1-stats/probability";
 import { questions as discreteRandomVariables } from "@/data/questions/a-level-maths/year-1-stats/discrete-random-variables";
+import { questions as theBinomialDistribution } from "@/data/questions/a-level-maths/year-1-stats/the-binomial-distribution";
+import { questions as hypothesisTesting } from "@/data/questions/a-level-maths/year-1-stats/hypothesis-testing";
+import { questions as largeDataSetFluency } from "@/data/questions/a-level-maths/year-1-stats/large-data-set-fluency";
 
 export { slugForSubtopicId };
 
@@ -87,6 +90,9 @@ export const allQuestions: Question[] = [
   ...correlationRegression,
   ...probability,
   ...discreteRandomVariables,
+  ...theBinomialDistribution,
+  ...hypothesisTesting,
+  ...largeDataSetFluency,
 ];
 
 export interface SubtopicSummary {
