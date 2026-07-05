@@ -105,13 +105,21 @@
     "y1": {
       "pure": {
         "complex-arithmetic": "Complex numbers",
+        "complex-quadratics": "Complex numbers",
         "argand": "Complex numbers",
+        "argand-loci": "Complex numbers",
         "roots-polynomials": "Roots of polynomials",
+        "transforming-roots": "Roots of polynomials",
         "induction": "Proof by induction",
-        "matrices": "Matrices",
-        "linear-transformations": "Matrices",
         "series": "Series",
+        "matrices": "Matrices",
+        "determinants-inverses": "Matrices",
+        "matrix-systems": "Matrices",
+        "linear-transformations": "Matrices",
+        "invariance": "Matrices",
         "vectors-lines-planes": "Vectors",
+        "scalar-product": "Vectors",
+        "vector-distances": "Vectors",
         "volumes-revolution": "Further calculus"
       },
       "stats": {
@@ -120,44 +128,63 @@
         "geometric-negbinomial": "Discrete distributions",
         "hypothesis-tests": "Hypothesis testing",
         "central-limit": "Central limit theorem",
-        "chi-squared": "Chi-squared tests"
+        "chi-squared": "Chi-squared tests",
+        "contingency-tables": "Chi-squared tests",
+        "pgf": "Probability generating functions",
+        "quality-of-tests": "Hypothesis testing"
       },
       "mech": {
         "momentum-impulse": "Momentum and impulse",
+        "impulse-vectors": "Momentum and impulse",
         "work-energy-power": "Work, energy and power",
         "elastic-strings-springs": "Elastic strings and springs",
-        "collisions-1d": "Elastic collisions"
+        "elastic-energy": "Elastic strings and springs",
+        "collisions-1d": "Elastic collisions",
+        "successive-collisions": "Elastic collisions"
       }
     },
     "y2": {
       "pure": {
+        "complex-exponential": "Complex numbers",
         "de-moivre": "Complex numbers",
+        "multiple-angles": "Complex numbers",
+        "trig-series": "Complex numbers",
         "roots-of-unity": "Complex numbers",
         "method-of-differences": "Series",
         "maclaurin": "Series",
         "further-calculus": "Further calculus",
+        "inverse-trig-calculus": "Further calculus",
+        "further-integration": "Further calculus",
+        "volumes-parametric": "Further calculus",
         "polar-coordinates": "Polar coordinates",
+        "polar-areas": "Polar coordinates",
         "hyperbolic-functions": "Hyperbolic functions",
+        "hyperbolic-calculus": "Hyperbolic functions",
         "first-order-des": "Differential equations",
         "second-order-des": "Differential equations",
-        "de-modelling": "Differential equations"
+        "de-modelling": "Differential equations",
+        "coupled-des": "Differential equations"
       },
       "stats": {
         "linear-regression": "Regression and correlation",
-        "spearman": "Regression and correlation",
         "continuous-rv": "Continuous distributions",
         "continuous-uniform": "Continuous distributions",
         "combining-rv": "Combinations of random variables",
+        "unbiased-estimators": "Estimation and confidence intervals",
         "estimation-ci": "Estimation and confidence intervals",
-        "further-tests": "Hypothesis testing"
+        "variance-inference": "Hypothesis testing",
+        "further-tests": "Hypothesis testing",
+        "spearman": "Regression and correlation"
       },
       "mech": {
         "horizontal-circular": "Circular motion",
         "vertical-circular": "Circular motion",
         "com-laminas": "Centres of mass",
+        "com-frameworks": "Centres of mass",
         "com-calculus": "Centres of mass",
         "statics-rigid": "Statics of rigid bodies",
         "collisions-2d": "Elastic collisions",
+        "oblique-spheres": "Elastic collisions",
         "further-dynamics": "Further dynamics"
       }
     }

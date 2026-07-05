@@ -1,12 +1,12 @@
 {
     "source": "wisest-curriculum-database.pdf",
-    "generatedAt": "2026-07-03T07:21:23+00:00",
+    "generatedAt": "2026-07-05T04:57:16+00:00",
     "counts": {
-        "total": 249,
+        "total": 276,
         "byQualification": {
             "GCSE": 123,
             "ALEVEL_MATHS": 83,
-            "ALEVEL_FM": 43
+            "ALEVEL_FM": 70
         },
         "gcseTier": {
             "F": 91,
@@ -2082,7 +2082,17 @@
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
             "name": "Complex numbers: arithmetic",
             "tier": null,
-            "description": "Four operations; conjugates; quadratics with complex roots."
+            "description": "Four operations on complex numbers; complex conjugates; equating real and imaginary parts."
+        },
+        {
+            "id": "fm.y1.pure.complex-quadratics",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Complex roots of polynomials",
+            "tier": null,
+            "description": "Quadratics, cubics and quartics with real coefficients and complex roots; conjugate-pair arguments."
         },
         {
             "id": "fm.y1.pure.argand",
@@ -2092,7 +2102,17 @@
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
             "name": "Argand diagrams",
             "tier": null,
-            "description": "Representation; modulus and argument; mod–arg form; loci."
+            "description": "Points and vectors in the complex plane; modulus and argument; modulus–argument form."
+        },
+        {
+            "id": "fm.y1.pure.argand-loci",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Loci and regions",
+            "tier": null,
+            "description": "Loci |z − a| = r, |z − a| = |z − b|, arg(z − a) = θ; shading regions; extremising |z| and arg z on a locus."
         },
         {
             "id": "fm.y1.pure.roots-polynomials",
@@ -2102,7 +2122,17 @@
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
             "name": "Roots of polynomials",
             "tier": null,
-            "description": "Root–coefficient relations for quadratics to quartics; transforming roots."
+            "description": "Root–coefficient relations for quadratics to quartics; sums of powers of roots."
+        },
+        {
+            "id": "fm.y1.pure.transforming-roots",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Transforming roots",
+            "tier": null,
+            "description": "Forming new polynomials whose roots are linear transformations of the roots of a given polynomial."
         },
         {
             "id": "fm.y1.pure.induction",
@@ -2112,7 +2142,17 @@
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
             "name": "Proof by induction",
             "tier": null,
-            "description": "Induction for series, divisibility and matrix powers."
+            "description": "Induction for series results, divisibility and matrix powers."
+        },
+        {
+            "id": "fm.y1.pure.series",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Sums of series",
+            "tier": null,
+            "description": "Standard results for Σr, Σr², Σr³; sums of related series by linearity and splitting."
         },
         {
             "id": "fm.y1.pure.matrices",
@@ -2120,9 +2160,29 @@
             "year": "y1",
             "strand": "pure",
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
-            "name": "Matrices: arithmetic and determinants",
+            "name": "Matrix arithmetic",
             "tier": null,
-            "description": "Operations; 2 × 2 and 3 × 3 determinants and inverses; systems."
+            "description": "Addition, scalar and matrix multiplication; zero and identity matrices; non-commutativity."
+        },
+        {
+            "id": "fm.y1.pure.determinants-inverses",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Determinants and inverses",
+            "tier": null,
+            "description": "2 × 2 and 3 × 3 determinants and inverses; singularity; det(AB) and (AB)⁻¹ properties."
+        },
+        {
+            "id": "fm.y1.pure.matrix-systems",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Systems of linear equations",
+            "tier": null,
+            "description": "Matrix solution of three simultaneous equations; consistency; geometric configurations of three planes."
         },
         {
             "id": "fm.y1.pure.linear-transformations",
@@ -2132,17 +2192,17 @@
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
             "name": "Linear transformations",
             "tier": null,
-            "description": "Matrices for rotations, reflections, enlargements; invariant points/lines."
+            "description": "Matrices for rotations, reflections, enlargements and stretches in 2D; rotations about coordinate axes in 3D; successive transformations; determinant as area/volume scale factor."
         },
         {
-            "id": "fm.y1.pure.series",
+            "id": "fm.y1.pure.invariance",
             "qualification": "ALEVEL_FM",
             "year": "y1",
             "strand": "pure",
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
-            "name": "Series",
+            "name": "Invariant points and lines",
             "tier": null,
-            "description": "Standard results for (cid:80) r, (cid:80) r2, (cid:80) r3 and related sums."
+            "description": "Invariant points; invariant lines and lines of invariant points of 2D matrix transformations."
         },
         {
             "id": "fm.y1.pure.vectors-lines-planes",
@@ -2150,9 +2210,29 @@
             "year": "y1",
             "strand": "pure",
             "topic": "Further Maths Year 1: Pure (Core Pure 1)",
-            "name": "Vectors: lines and planes",
+            "name": "Equations of lines and planes",
             "tier": null,
-            "description": "Vector/Cartesian lines and planes; scalar product; angles and distances."
+            "description": "Vector and Cartesian equations of lines in 3D and of planes, including the scalar-product form."
+        },
+        {
+            "id": "fm.y1.pure.scalar-product",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Scalar product methods",
+            "tier": null,
+            "description": "Angles between two lines, two planes, and a line and a plane; perpendicularity and parallelism conditions."
+        },
+        {
+            "id": "fm.y1.pure.vector-distances",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "pure",
+            "topic": "Further Maths Year 1: Pure (Core Pure 1)",
+            "name": "Intersections and distances",
+            "tier": null,
+            "description": "Intersections of lines and of a line with a plane; perpendicular distances point–line, point–plane and between skew lines; reflections."
         },
         {
             "id": "fm.y1.pure.volumes-revolution",
@@ -2182,7 +2262,7 @@
             "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
             "name": "The Poisson distribution",
             "tier": null,
-            "description": "Conditions; mean and variance; additivity; approximation to binomial."
+            "description": "Conditions; mean and variance; additivity; approximation to the binomial."
         },
         {
             "id": "fm.y1.stats.geometric-negbinomial",
@@ -2220,19 +2300,59 @@
             "year": "y1",
             "strand": "stats",
             "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
-            "name": "Chi-squared tests",
+            "name": "Chi-squared goodness of fit",
             "tier": null,
-            "description": "Goodness of fit; contingency tables; degrees of freedom."
+            "description": "Goodness of fit to discrete uniform, binomial, Poisson and geometric models; pooling classes; degrees of freedom."
         },
         {
-            "id": "fm.y1.mech.momentum-impulsecontinued",
+            "id": "fm.y1.stats.contingency-tables",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Contingency tables",
+            "tier": null,
+            "description": "Chi-squared tests of independence; expected frequencies; degrees of freedom (r − 1)(c − 1)."
+        },
+        {
+            "id": "fm.y1.stats.pgf",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Probability generating functions",
+            "tier": null,
+            "description": "PGFs of standard discrete distributions; mean and variance from G(t); sums of independent variables."
+        },
+        {
+            "id": "fm.y1.stats.quality-of-tests",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Quality of tests",
+            "tier": null,
+            "description": "Type I and Type II errors; size and power of a test; power functions."
+        },
+        {
+            "id": "fm.y1.mech.momentum-impulse",
             "qualification": "ALEVEL_FM",
             "year": "y1",
             "strand": "mech",
             "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
             "name": "Momentum and impulse",
             "tier": null,
-            "description": "Impulse–momentum in 1D and 2D; conservation of momentum."
+            "description": "Impulse–momentum principle and conservation of momentum for direct motion in a line."
+        },
+        {
+            "id": "fm.y1.mech.impulse-vectors",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
+            "name": "Impulse and momentum in 2D",
+            "tier": null,
+            "description": "Impulse and momentum as vectors; impact and jerk problems in two dimensions."
         },
         {
             "id": "fm.y1.mech.work-energy-power",
@@ -2242,7 +2362,7 @@
             "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
             "name": "Work, energy and power",
             "tier": null,
-            "description": "Work, KE, PE; work–energy principle; power on inclines."
+            "description": "Work, kinetic and potential energy; work–energy principle; power, including on inclines."
         },
         {
             "id": "fm.y1.mech.elastic-strings-springs",
@@ -2252,7 +2372,17 @@
             "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
             "name": "Elastic strings and springs",
             "tier": null,
-            "description": "Hooke’s law; elastic PE; energy methods with elastic components."
+            "description": "Hooke’s law for strings and springs; tension and thrust; equilibrium with elastic components."
+        },
+        {
+            "id": "fm.y1.mech.elastic-energy",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
+            "name": "Elastic energy",
+            "tier": null,
+            "description": "Elastic potential energy; energy conservation and the work–energy principle with elastic strings and springs."
         },
         {
             "id": "fm.y1.mech.collisions-1d",
@@ -2262,7 +2392,27 @@
             "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
             "name": "Elastic collisions in one dimension",
             "tier": null,
-            "description": "Newton’s law of restitution; direct impacts; successive collisions."
+            "description": "Newton’s law of restitution; direct impact of spheres and impact with a fixed surface; kinetic energy loss."
+        },
+        {
+            "id": "fm.y1.mech.successive-collisions",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "mech",
+            "topic": "Further Maths Year 1: Mechanics (Further Mechanics 1)",
+            "name": "Successive collisions",
+            "tier": null,
+            "description": "Successive direct impacts between spheres and with walls; conditions for further collisions."
+        },
+        {
+            "id": "fm.y2.pure.complex-exponential",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Exponential form",
+            "tier": null,
+            "description": "re^(iθ) form; multiplication and division; the geometric effect of multiplying by a complex number."
         },
         {
             "id": "fm.y2.pure.de-moivre",
@@ -2270,9 +2420,29 @@
             "year": "y2",
             "strand": "pure",
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
-            "name": "Complex numbers: de Moivre",
+            "name": "De Moivre’s theorem",
             "tier": null,
-            "description": "Exponential form; de Moivre’s theorem; multiple-angle identities; trig sums."
+            "description": "Statement and proof by induction; integer and rational powers of complex numbers."
+        },
+        {
+            "id": "fm.y2.pure.multiple-angles",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Multiple-angle identities",
+            "tier": null,
+            "description": "Expressing cos nθ, sin nθ in powers of trig functions and vice versa; applications to equations and integration."
+        },
+        {
+            "id": "fm.y2.pure.trig-series",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Trigonometric series",
+            "tier": null,
+            "description": "Sums of trigonometric series via geometric series of complex exponentials (C + iS method)."
         },
         {
             "id": "fm.y2.pure.roots-of-unity",
@@ -2282,7 +2452,7 @@
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
             "name": "Roots of unity",
             "tier": null,
-            "description": "nth roots of unity and of any complex number; geometric interpretation."
+            "description": "nth roots of unity and of any complex number; geometric interpretation and regular polygons."
         },
         {
             "id": "fm.y2.pure.method-of-differences",
@@ -2302,7 +2472,7 @@
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
             "name": "Maclaurin series",
             "tier": null,
-            "description": "Series for ex,ln(1 + x),sinx,cosx,(1 + x)n; validity; composites."
+            "description": "Series for eˣ, ln(1 + x), sin x, cos x, (1 + x)ⁿ; validity; series of composites."
         },
         {
             "id": "fm.y2.pure.further-calculus",
@@ -2310,9 +2480,39 @@
             "year": "y2",
             "strand": "pure",
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
-            "name": "Further calculus",
+            "name": "Improper integrals and mean value",
             "tier": null,
-            "description": "Improper integrals; mean value; inverse-trig integrals; partial fractions."
+            "description": "Improper integrals with infinite limits or unbounded integrands; the mean value of a function."
+        },
+        {
+            "id": "fm.y2.pure.inverse-trig-calculus",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Inverse trigonometric calculus",
+            "tier": null,
+            "description": "Differentiating inverse trig functions; integrals reducing to arcsin and arctan forms."
+        },
+        {
+            "id": "fm.y2.pure.further-integration",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Further integration",
+            "tier": null,
+            "description": "Integration of rational functions via partial fractions with quadratic factors; harder substitutions."
+        },
+        {
+            "id": "fm.y2.pure.volumes-parametric",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Volumes: parametric and modelling",
+            "tier": null,
+            "description": "Volumes of revolution for parametrically defined curves; adding and subtracting volumes; modelling."
         },
         {
             "id": "fm.y2.pure.polar-coordinates",
@@ -2322,7 +2522,17 @@
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
             "name": "Polar coordinates",
             "tier": null,
-            "description": "Conversion; sketching polar curves; enclosed areas; tangents."
+            "description": "Polar–Cartesian conversion; sketching curves r = f(θ)."
+        },
+        {
+            "id": "fm.y2.pure.polar-areas",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Polar areas and tangents",
+            "tier": null,
+            "description": "Areas enclosed by polar curves via ∫ ½r² dθ; tangents parallel and perpendicular to the initial line."
         },
         {
             "id": "fm.y2.pure.hyperbolic-functions",
@@ -2332,7 +2542,17 @@
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
             "name": "Hyperbolic functions",
             "tier": null,
-            "description": "sinh,cosh,tanh and inverses; identities; hyperbolic calculus."
+            "description": "Definitions, graphs and identities of sinh, cosh, tanh; inverses and their logarithmic forms; equations."
+        },
+        {
+            "id": "fm.y2.pure.hyperbolic-calculus",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Hyperbolic calculus",
+            "tier": null,
+            "description": "Differentiating and integrating hyperbolic and inverse hyperbolic functions; integrals yielding arsinh, arcosh forms."
         },
         {
             "id": "fm.y2.pure.first-order-des",
@@ -2342,7 +2562,7 @@
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
             "name": "First-order differential equations",
             "tier": null,
-            "description": "Integrating factors; solution-curve families; modelling."
+            "description": "Integrating factors; families of solution curves; modelling."
         },
         {
             "id": "fm.y2.pure.second-order-des",
@@ -2352,7 +2572,7 @@
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
             "name": "Second-order differential equations",
             "tier": null,
-            "description": "Constant-coefficient linear equations; complementary function and PI."
+            "description": "Constant-coefficient linear equations; complementary function and particular integral."
         },
         {
             "id": "fm.y2.pure.de-modelling",
@@ -2362,7 +2582,17 @@
             "topic": "Further Maths Year 2: Pure (Core Pure 2)",
             "name": "Modelling with differential equations",
             "tier": null,
-            "description": "Simple harmonic motion; damped and forced oscillations; coupled systems."
+            "description": "Simple harmonic motion; damped and forced oscillations."
+        },
+        {
+            "id": "fm.y2.pure.coupled-des",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "pure",
+            "topic": "Further Maths Year 2: Pure (Core Pure 2)",
+            "name": "Coupled differential equations",
+            "tier": null,
+            "description": "Coupled first-order simultaneous linear equations; reduction to second order; interacting-population models."
         },
         {
             "id": "fm.y2.stats.linear-regression",
@@ -2402,7 +2632,17 @@
             "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
             "name": "Combinations of random variables",
             "tier": null,
-            "description": "Means and variances of linear combinations of independent variables."
+            "description": "Means and variances of linear combinations of independent variables, including normal combinations."
+        },
+        {
+            "id": "fm.y2.stats.unbiased-estimators",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Unbiased estimators",
+            "tier": null,
+            "description": "Estimators and sampling distributions; bias; unbiased estimators of µ and σ²; comparing estimators by variance."
         },
         {
             "id": "fm.y2.stats.estimation-ci",
@@ -2410,9 +2650,19 @@
             "year": "y2",
             "strand": "stats",
             "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
-            "name": "Estimation and confidence intervals",
+            "name": "Confidence intervals",
             "tier": null,
-            "description": "Unbiased estimators; confidence intervals; the t-distribution."
+            "description": "Confidence intervals for a mean using the normal and t-distributions."
+        },
+        {
+            "id": "fm.y2.stats.variance-inference",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "stats",
+            "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+            "name": "Inference for variance",
+            "tier": null,
+            "description": "Chi-squared confidence intervals and hypothesis tests for a population variance."
         },
         {
             "id": "fm.y2.stats.further-tests",
@@ -2422,7 +2672,7 @@
             "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
             "name": "Further hypothesis tests",
             "tier": null,
-            "description": "Difference of means; F-test for variances; choosing a test."
+            "description": "Tests for the difference of means; F-test for equality of variances; choosing an appropriate test."
         },
         {
             "id": "fm.y2.stats.spearman",
@@ -2432,7 +2682,7 @@
             "topic": "Further Maths Year 2: Statistics (Further Statistics 2)",
             "name": "Spearman’s rank correlation",
             "tier": null,
-            "description": "Rank correlation coefficient and tests; when to prefer rank methods."
+            "description": "Rank correlation coefficient and associated tests; when to prefer rank methods to the PMCC."
         },
         {
             "id": "fm.y2.mech.horizontal-circular",
@@ -2442,7 +2692,7 @@
             "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
             "name": "Horizontal circular motion",
             "tier": null,
-            "description": "Angular speed; rω2; conical pendulum and banked tracks."
+            "description": "Angular speed; acceleration rω²; conical pendulum and banked tracks."
         },
         {
             "id": "fm.y2.mech.vertical-circular",
@@ -2452,7 +2702,7 @@
             "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
             "name": "Vertical circular motion",
             "tier": null,
-            "description": "Energy methods; conditions for complete circles."
+            "description": "Energy methods on vertical circles; conditions for complete circles vs leaving the circle."
         },
         {
             "id": "fm.y2.mech.com-laminas",
@@ -2460,9 +2710,19 @@
             "year": "y2",
             "strand": "mech",
             "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
-            "name": "Centres of mass: laminas and frameworks",
+            "name": "Centres of mass: laminas",
             "tier": null,
-            "description": "Uniform and composite laminas and frameworks by symmetry and moments."
+            "description": "Uniform and composite laminas by symmetry and moments; remainder (cut-out) bodies."
+        },
+        {
+            "id": "fm.y2.mech.com-frameworks",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Centres of mass: frameworks",
+            "tier": null,
+            "description": "Frameworks of rods and wires, including circular arcs; composite frameworks by moments."
         },
         {
             "id": "fm.y2.mech.com-calculus",
@@ -2482,7 +2742,7 @@
             "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
             "name": "Statics of rigid bodies",
             "tier": null,
-            "description": "Equilibrium including suspension and toppling vs sliding."
+            "description": "Equilibrium of rigid bodies including suspension; toppling vs sliding on a plane."
         },
         {
             "id": "fm.y2.mech.collisions-2d",
@@ -2490,9 +2750,19 @@
             "year": "y2",
             "strand": "mech",
             "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
-            "name": "Elastic collisions in two dimensions",
+            "name": "Oblique impact with a surface",
             "tier": null,
-            "description": "Oblique impact with surfaces and spheres; restitution on the line of centres."
+            "description": "Oblique impact of a smooth sphere with a fixed surface; restitution normal to the surface; deflection angles and KE loss."
+        },
+        {
+            "id": "fm.y2.mech.oblique-spheres",
+            "qualification": "ALEVEL_FM",
+            "year": "y2",
+            "strand": "mech",
+            "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
+            "name": "Oblique impact of spheres",
+            "tier": null,
+            "description": "Oblique impacts of two smooth spheres; restitution along the line of centres; successive oblique impacts."
         },
         {
             "id": "fm.y2.mech.further-dynamics",
@@ -2502,7 +2772,7 @@
             "topic": "Further Maths Year 2: Mechanics (Further Mechanics 2)",
             "name": "Further dynamics",
             "tier": null,
-            "description": "Variable forces; vdv forms. dx"
+            "description": "Motion under variable forces; a = v dv/dx forms; inverse-square gravitation."
         }
     ]
 }

@@ -32,6 +32,13 @@ import { questions as indefiniteIntegration } from "@/data/questions/a-level-mat
 import { questions as definiteIntegration } from "@/data/questions/a-level-maths/year-1-pure/definite-integration-and-areas";
 import { questions as vectorBasics } from "@/data/questions/a-level-maths/year-1-pure/vector-basics";
 import { questions as vectorGeometry } from "@/data/questions/a-level-maths/year-1-pure/vector-geometry";
+import { questions as modellingInMechanics } from "@/data/questions/a-level-maths/year-1-mech/modelling-in-mechanics";
+import { questions as kinematicsGraphs } from "@/data/questions/a-level-maths/year-1-mech/kinematics-graphs";
+import { questions as constantAcceleration } from "@/data/questions/a-level-maths/year-1-mech/constant-acceleration";
+import { questions as variableAcceleration } from "@/data/questions/a-level-maths/year-1-mech/variable-acceleration";
+import { questions as forcesAndNewtonsLaws } from "@/data/questions/a-level-maths/year-1-mech/forces-and-newtons-laws";
+import { questions as connectedParticles } from "@/data/questions/a-level-maths/year-1-mech/connected-particles";
+import { questions as sampling } from "@/data/questions/a-level-maths/year-1-stats/sampling";
 
 export { slugForSubtopicId };
 
@@ -63,6 +70,13 @@ export const allQuestions: Question[] = [
   ...definiteIntegration,
   ...vectorBasics,
   ...vectorGeometry,
+  ...modellingInMechanics,
+  ...kinematicsGraphs,
+  ...constantAcceleration,
+  ...variableAcceleration,
+  ...forcesAndNewtonsLaws,
+  ...connectedParticles,
+  ...sampling,
 ];
 
 export interface SubtopicSummary {

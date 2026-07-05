@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Vector geometry",
-  "currentSubtopicId": "al.y1.pure.vector-geometry",
+  "currentTopic": "Year 1 Statistics",
+  "currentSubtopic": "Sampling",
+  "currentSubtopicId": "al.y1.stats.sampling",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -32,13 +32,20 @@
     "al.y1.pure.integration",
     "al.y1.pure.definite-integrationcontinued",
     "al.y1.pure.vectors",
-    "al.y1.pure.vector-geometry"
+    "al.y1.pure.vector-geometry",
+    "al.y1.mech.modelling",
+    "al.y1.mech.kinematics-graphs",
+    "al.y1.mech.constant-acceleration",
+    "al.y1.mech.variable-acceleration",
+    "al.y1.mech.forces-newton",
+    "al.y1.mech.connected-particles",
+    "al.y1.stats.sampling"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 27,
-      "totalQuestionsGenerated": 1890
+      "completedSubtopics": 34,
+      "totalQuestionsGenerated": 2380
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
@@ -51,5 +58,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-04"
+  "lastUpdated": "2026-07-05"
 }

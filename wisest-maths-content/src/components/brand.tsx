@@ -12,9 +12,6 @@ export function Brand({ className }: { className?: string }) {
         <span className="font-display text-[0.95rem] font-semibold tracking-tight text-foreground">
           Wisest Maths
         </span>
-        <span className="text-[0.62rem] font-medium uppercase tracking-[0.18em] text-muted-foreground">
-          A-Level Mastery
-        </span>
       </span>
     </Link>
   );
