@@ -72,11 +72,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["lift", "normal-reaction", "equilibrium", "weight"],
   "questionText": "A person of mass $60\\ \\text{kg}$ stands in a lift that is at rest. Modelling the person as a particle, find the normal reaction from the lift floor. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A particle representing the person inside a lift. An arrow labelled R points upward (the floor's reaction) and an arrow labelled mg = 588 N points downward (the weight).",
-    "alt": "A person in a lift with upward reaction R and downward weight."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q002.png","alt":"A person in a lift with upward reaction R and downward weight."},
   "workedSolution": {
     "steps": [
       {
@@ -136,11 +132,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["blocks-in-contact", "system", "f-equals-ma", "acceleration"],
   "questionText": "Two blocks $A$ and $B$, of masses $3\\ \\text{kg}$ and $2\\ \\text{kg}$, are in contact on a smooth horizontal surface. A horizontal force of $20\\ \\text{N}$ is applied to $A$, pushing the blocks toward $B$. Find the acceleration of the blocks.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Two blocks side by side on a smooth surface: block A (3 kg) on the left with a 20 N force pushing it to the right, in contact with block B (2 kg) on the right.",
-    "alt": "Blocks A and B in contact, a 20 N force pushing A into B."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q003.png","alt":"Blocks A and B in contact, a 20 N force pushing A into B."},
   "workedSolution": {
     "steps": [
       {
@@ -200,11 +192,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["blocks-in-contact", "contact-force", "newtons-third-law", "f-equals-ma"],
   "questionText": "Two blocks $A$ ($3\\ \\text{kg}$) and $B$ ($2\\ \\text{kg}$) are in contact on a smooth horizontal surface. A horizontal force of $20\\ \\text{N}$ pushes $A$ toward $B$, giving both blocks an acceleration of $4\\ \\text{m s}^{-2}$. Find the force that $A$ exerts on $B$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Block B (2 kg) isolated on the right, with a single horizontal contact force from A pushing it to the right.",
-    "alt": "Block B alone with the contact force from A acting on it."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q004.png","alt":"Block B alone with the contact force from A acting on it."},
   "workedSolution": {
     "steps": [
       {
@@ -292,11 +280,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["car-trailer", "tow-bar", "system", "acceleration"],
   "questionText": "A car of mass $1200\\ \\text{kg}$ tows a trailer of mass $300\\ \\text{kg}$ along a straight horizontal road. The engine provides a driving force of $3000\\ \\text{N}$ and there are no resistances to motion. Find the acceleration of the car and trailer.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A car (1200 kg) connected by a tow-bar to a trailer (300 kg) behind it. A driving force of 3000 N acts forwards on the car.",
-    "alt": "Car towing a trailer with a 3000 N driving force."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q005.png","alt":"Car towing a trailer with a 3000 N driving force."},
   "workedSolution": {
     "steps": [
       {
@@ -356,11 +340,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["car-trailer", "tow-bar", "tension", "f-equals-ma"],
   "questionText": "A car of mass $1200\\ \\text{kg}$ tows a trailer of mass $300\\ \\text{kg}$ with a driving force of $3000\\ \\text{N}$ and no resistances, giving an acceleration of $2\\ \\text{m s}^{-2}$. Find the tension in the tow-bar.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "The trailer (300 kg) isolated, with the tension T in the tow-bar pulling it forwards.",
-    "alt": "Trailer alone with tow-bar tension T acting forwards."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q006.png","alt":"Trailer alone with tow-bar tension T acting forwards."},
   "workedSolution": {
     "steps": [
       {
@@ -441,11 +421,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["connected-string", "smooth-table", "system", "acceleration"],
   "questionText": "Two particles $P$ ($4\\ \\text{kg}$) and $Q$ ($6\\ \\text{kg}$) are joined by a light inextensible string and lie on a smooth horizontal table. A horizontal force of $30\\ \\text{N}$ is applied to $Q$, dragging $P$ behind it. Find the acceleration of the particles.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Particle P (4 kg) joined by a string to particle Q (6 kg), on a smooth table. A 30 N force pulls Q horizontally away from P.",
-    "alt": "Two particles joined by a string, a 30 N force pulling on Q."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q007.png","alt":"Two particles joined by a string, a 30 N force pulling on Q."},
   "workedSolution": {
     "steps": [
       {
@@ -505,11 +481,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["connected-string", "tension", "smooth-table", "f-equals-ma"],
   "questionText": "Two particles $P$ ($4\\ \\text{kg}$) and $Q$ ($6\\ \\text{kg}$) are joined by a light inextensible string on a smooth table. A force of $30\\ \\text{N}$ applied to $Q$ gives the system an acceleration of $3\\ \\text{m s}^{-2}$, with $P$ trailing behind. Find the tension in the string.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Particle P (4 kg) isolated, with the string tension T pulling it forwards toward Q.",
-    "alt": "Particle P alone with string tension T acting forwards."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q008.png","alt":"Particle P alone with string tension T acting forwards."},
   "workedSolution": {
     "steps": [
       {
@@ -590,11 +562,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["lift", "normal-reaction", "accelerating-up", "apparent-weight"],
   "questionText": "A person of mass $70\\ \\text{kg}$ stands on the floor of a lift that is accelerating upwards at $2\\ \\text{m s}^{-2}$. Find the normal reaction between the person and the floor. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A person modelled as a particle in a lift. Upward reaction R from the floor and downward weight 70g. The lift accelerates upward at 2 m/s^2.",
-    "alt": "Person in an upward-accelerating lift with reaction R and weight."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q009.png","alt":"Person in an upward-accelerating lift with reaction R and weight."},
   "workedSolution": {
     "steps": [
       {
@@ -675,11 +643,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["lift", "normal-reaction", "accelerating-down", "apparent-weight"],
   "questionText": "A person of mass $50\\ \\text{kg}$ stands in a lift that is accelerating downwards at $1.5\\ \\text{m s}^{-2}$. Find the normal reaction from the floor. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A person as a particle in a lift accelerating downward at 1.5 m/s^2, with upward reaction R and downward weight 50g.",
-    "alt": "Person in a downward-accelerating lift with reaction R and weight."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q010.png","alt":"Person in a downward-accelerating lift with reaction R and weight."},
   "workedSolution": {
     "steps": [
       {
@@ -760,11 +724,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["car-trailer", "resistance", "system", "acceleration"],
   "questionText": "A car of mass $1000\\ \\text{kg}$ tows a trailer of mass $250\\ \\text{kg}$ along a straight horizontal road. The engine's driving force is $2500\\ \\text{N}$. Resistances of $400\\ \\text{N}$ act on the car and $100\\ \\text{N}$ on the trailer. Find the acceleration.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A car (1000 kg) towing a trailer (250 kg). Forward driving force 2500 N on the car; resistance 400 N backwards on the car and 100 N backwards on the trailer.",
-    "alt": "Car and trailer with driving force and two resistances."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q011.png","alt":"Car and trailer with driving force and two resistances."},
   "workedSolution": {
     "steps": [
       {
@@ -845,11 +805,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["car-trailer", "resistance", "tension", "tow-bar"],
   "questionText": "For the car ($1000\\ \\text{kg}$) and trailer ($250\\ \\text{kg}$) of the previous problem — driving force $2500\\ \\text{N}$, resistances $400\\ \\text{N}$ (car) and $100\\ \\text{N}$ (trailer), acceleration $1.6\\ \\text{m s}^{-2}$ — find the tension in the tow-bar.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "The trailer (250 kg) isolated: tow-bar tension T pulling it forwards, resistance 100 N backwards.",
-    "alt": "Trailer alone with tension forwards and 100 N resistance backwards."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q012.png","alt":"Trailer alone with tension forwards and 100 N resistance backwards."},
   "workedSolution": {
     "steps": [
       {
@@ -1071,11 +1027,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["light-rod", "thrust", "blocks", "f-equals-ma"],
   "questionText": "Two blocks $A$ ($2\\ \\text{kg}$) and $B$ ($3\\ \\text{kg}$) are joined by a light rod and rest on a smooth horizontal surface, with $A$ behind $B$. A horizontal force of $15\\ \\text{N}$ is applied to $A$, pushing the blocks forwards. Find the acceleration and the force in the rod, stating whether it is a tension or a thrust.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Block A (2 kg) behind block B (3 kg), joined by a light rod, on a smooth surface. A 15 N force pushes A forwards toward B.",
-    "alt": "Blocks A and B joined by a rod, a 15 N push on A."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q015.png","alt":"Blocks A and B joined by a rod, a 15 N push on A."},
   "workedSolution": {
     "steps": [
       {
@@ -1156,11 +1108,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["car-caravan", "resistance", "driving-force", "reverse-problem"],
   "questionText": "A car of mass $900\\ \\text{kg}$ tows a caravan of mass $600\\ \\text{kg}$ on a straight horizontal road. Resistances of $300\\ \\text{N}$ (car) and $200\\ \\text{N}$ (caravan) act. The car accelerates at $0.5\\ \\text{m s}^{-2}$. Find the driving force of the engine.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Car (900 kg) towing a caravan (600 kg), driving force D forwards on the car, resistances 300 N (car) and 200 N (caravan) backwards.",
-    "alt": "Car and caravan with unknown driving force and two resistances."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q016.png","alt":"Car and caravan with unknown driving force and two resistances."},
   "workedSolution": {
     "steps": [
       {
@@ -1544,11 +1492,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["lift", "cable-tension", "accelerating-up", "f-equals-ma"],
   "questionText": "A lift of mass $500\\ \\text{kg}$ is raised by a vertical cable and accelerates upwards at $1.2\\ \\text{m s}^{-2}$. Find the tension in the cable. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A lift box hanging from a cable. Cable tension T acts upward; the lift's weight 500g acts downward. The lift accelerates up at 1.2 m/s^2.",
-    "alt": "Lift on a cable with tension up and weight down, accelerating upward."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q021.png","alt":"Lift on a cable with tension up and weight down, accelerating upward."},
   "workedSolution": {
     "steps": [
       {
@@ -1629,11 +1573,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["lift", "cable-tension", "reaction", "person-in-lift"],
   "questionText": "A lift of mass $800\\ \\text{kg}$ carries a person of mass $60\\ \\text{kg}$ and accelerates upwards at $1.5\\ \\text{m s}^{-2}$. Find (a) the tension in the supporting cable, and (b) the reaction between the person and the floor. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A lift (800 kg) on a cable containing a person (60 kg). Cable tension T up on the lift; between person and floor a reaction R. System accelerates up at 1.5 m/s^2.",
-    "alt": "Lift with a person, cable tension and floor reaction, accelerating up."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q022.png","alt":"Lift with a person, cable tension and floor reaction, accelerating up."},
   "workedSolution": {
     "steps": [
       {
@@ -2295,11 +2235,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["train", "multiple-couplings", "system", "tension"],
   "questionText": "A locomotive of mass $6000\\ \\text{kg}$ pulls two trucks along a straight horizontal track. Truck $A$ ($3000\\ \\text{kg}$) is coupled directly behind the locomotive and truck $B$ ($2000\\ \\text{kg}$) behind $A$. The driving force is $22000\\ \\text{N}$ and resistances are negligible. Find (a) the acceleration, (b) the tension in the coupling between the locomotive and $A$, and (c) the tension in the coupling between $A$ and $B$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A locomotive (6000 kg) with a 22000 N driving force, coupled to truck A (3000 kg), coupled to truck B (2000 kg) at the rear. Two couplings carry tensions T1 (loco-A) and T2 (A-B).",
-    "alt": "Locomotive pulling truck A then truck B, two coupling tensions."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q030.png","alt":"Locomotive pulling truck A then truck B, two coupling tensions."},
   "workedSolution": {
     "steps": [
       {
@@ -2408,11 +2344,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "atwood", "two-hanging-masses", "acceleration"],
   "questionText": "Two particles of masses $5\\ \\text{kg}$ and $3\\ \\text{kg}$ hang from the ends of a light inextensible string passing over a smooth fixed pulley. The system is released from rest. Find the acceleration of the particles. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A smooth pulley at the top with a string over it. A 5 kg mass hangs on the left and a 3 kg mass on the right. The 5 kg mass descends, the 3 kg mass rises.",
-    "alt": "Pulley with 5 kg and 3 kg masses hanging, 5 kg descending."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q031.png","alt":"Pulley with 5 kg and 3 kg masses hanging, 5 kg descending."},
   "workedSolution": {
     "steps": [
       {
@@ -2581,11 +2513,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "atwood", "force-on-pulley", "tension"],
   "questionText": "Particles of masses $8\\ \\text{kg}$ and $2\\ \\text{kg}$ hang over a smooth fixed pulley on a light inextensible string and are released from rest. Find (a) the acceleration, (b) the tension, and (c) the force exerted on the pulley by the string. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A smooth pulley with an 8 kg mass on one side and a 2 kg mass on the other. Both string segments hang vertically downward from the pulley, each with tension T.",
-    "alt": "Pulley with 8 kg and 2 kg masses, both string segments vertical."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q033.png","alt":"Pulley with 8 kg and 2 kg masses, both string segments vertical."},
   "workedSolution": {
     "steps": [
       {
@@ -3141,11 +3069,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "atwood", "force-on-support", "tension"],
   "questionText": "Particles of masses $3\\ \\text{kg}$ and $2\\ \\text{kg}$ hang over a smooth pulley fixed to a beam, on a light inextensible string, released from rest. Find (a) the acceleration, (b) the tension, and (c) the force the pulley exerts on the beam. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A pulley fixed to a horizontal beam above, with a 3 kg mass and a 2 kg mass hanging from a string over it, both segments vertical.",
-    "alt": "Pulley on a beam with 3 kg and 2 kg masses hanging."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q039.png","alt":"Pulley on a beam with 3 kg and 2 kg masses hanging."},
   "workedSolution": {
     "steps": [
       {
@@ -3321,11 +3245,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "table-and-hanging", "smooth-table", "acceleration"],
   "questionText": "A particle $A$ of mass $3\\ \\text{kg}$ lies on a smooth horizontal table. A light inextensible string attached to $A$ runs over a smooth pulley at the edge of the table and carries a particle $B$ of mass $2\\ \\text{kg}$ hanging freely. The system is released from rest. Find the acceleration. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Particle A (3 kg) on a smooth table, string running horizontally to a pulley at the table edge, then vertically down to hanging particle B (2 kg). B falls, A slides toward the pulley.",
-    "alt": "Table mass A connected over an edge pulley to hanging mass B."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q041.png","alt":"Table mass A connected over an edge pulley to hanging mass B."},
   "workedSolution": {
     "steps": [
       {
@@ -3494,11 +3414,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "table-and-hanging", "suvat", "tension"],
   "questionText": "A particle $A$ ($6\\ \\text{kg}$) on a smooth table is connected by a light inextensible string over a smooth edge pulley to a hanging particle $B$ ($4\\ \\text{kg}$). The system is released from rest. Find (a) the acceleration, (b) the tension, and (c) the speed of $B$ after it has fallen $1\\ \\text{m}$. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Particle A (6 kg) on a smooth table connected over an edge pulley to hanging particle B (4 kg).",
-    "alt": "6 kg table mass connected over a pulley to a 4 kg hanging mass."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q043.png","alt":"6 kg table mass connected over a pulley to a 4 kg hanging mass."},
   "workedSolution": {
     "steps": [
       {
@@ -4047,11 +3963,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "table-and-hanging", "force-on-pulley", "resultant"],
   "questionText": "A particle $A$ ($4\\ \\text{kg}$) on a smooth table is connected over a smooth edge pulley to a hanging particle $B$ ($3\\ \\text{kg}$). Find (a) the acceleration, (b) the tension, and (c) the magnitude of the force exerted on the pulley by the string. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Particle A (4 kg) on a smooth table; string runs horizontally to the edge pulley then vertically down to hanging particle B (3 kg). At the pulley one string segment is horizontal and one is vertical.",
-    "alt": "Edge pulley with one horizontal and one vertical string segment."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q049.png","alt":"Edge pulley with one horizontal and one vertical string segment."},
   "workedSolution": {
     "steps": [
       {
@@ -4368,11 +4280,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "rough-table", "friction", "suvat"],
   "questionText": "A particle $A$ of mass $4\\ \\text{kg}$ lies on a rough horizontal table with coefficient of friction $\\mu = 0.25$. It is connected by a light inextensible string over a smooth edge pulley to a hanging particle $B$ of mass $3\\ \\text{kg}$. The system is released from rest. Find (a) the acceleration, (b) the tension, and (c) the distance moved in the first $1\\ \\text{s}$. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "Particle A (4 kg) on a rough table (mu = 0.25) connected over an edge pulley to hanging particle B (3 kg). Friction acts on A opposing its motion toward the pulley.",
-    "alt": "Rough-table mass A connected over a pulley to hanging mass B."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q053.png","alt":"Rough-table mass A connected over a pulley to hanging mass B."},
   "workedSolution": {
     "steps": [
       {
@@ -4488,11 +4396,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["car-trailer", "braking", "thrust", "tow-bar"],
   "questionText": "A car of mass $1000\\ \\text{kg}$ tows a trailer of mass $500\\ \\text{kg}$. While moving, the driver brakes, producing a braking force of $3000\\ \\text{N}$ on the car. Ignoring other resistances, find the deceleration and the force in the tow-bar, stating whether it is a tension or a thrust.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A car (1000 kg) towing a trailer (500 kg). A braking force of 3000 N acts backwards on the car; the tow-bar force on the trailer is to be found.",
-    "alt": "Car braking while towing a trailer, tow-bar force unknown."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q054.png","alt":"Car braking while towing a trailer, tow-bar force unknown."},
   "workedSolution": {
     "steps": [
       {
@@ -5122,11 +5026,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["pulley", "atwood", "string-goes-slack", "two-phase"],
   "questionText": "Particles of masses $5\\ \\text{kg}$ and $3\\ \\text{kg}$ hang over a smooth pulley on a light inextensible string, released from rest. The $5\\ \\text{kg}$ mass descends $1\\ \\text{m}$ and hits the floor, where it stays. Find (a) the acceleration during the first phase, (b) the speed when the $5\\ \\text{kg}$ mass lands, and (c) the further height the $3\\ \\text{kg}$ mass rises after the string goes slack. Take $g = 9.8\\ \\text{m s}^{-2}$.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A pulley with a 5 kg mass (starting 1 m above the floor) and a 3 kg mass. The 5 kg descends and lands; afterwards the string goes slack and the 3 kg mass rises freely.",
-    "alt": "Atwood machine where the heavier mass lands and the string goes slack."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.connected-particles.q061.png","alt":"Atwood machine where the heavier mass lands and the string goes slack."},
   "workedSolution": {
     "steps": [
       {

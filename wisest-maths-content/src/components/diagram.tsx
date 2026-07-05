@@ -406,6 +406,643 @@ function DiscriminantTriad({ spec }: { spec: Extract<DiagramSpec, { kind: "discr
   );
 }
 
+/* ------------------------------------------------- statistics chart helpers */
+
+/** "Nice" tick step (1/2/2.5/5 × 10ᵏ) for an axis running 0 → maxVal. */
+function niceTicksFromZero(maxVal: number, target = 5): number[] {
+  if (!(maxVal > 0)) return [0];
+  const raw = maxVal / target;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const norm = raw / mag;
+  const step = (norm <= 1 ? 1 : norm <= 2 ? 2 : norm <= 2.5 ? 2.5 : norm <= 5 ? 5 : 10) * mag;
+  const out: number[] = [];
+  for (let t = 0; t <= maxVal + step * 1e-6; t += step) out.push(Number(t.toFixed(6)));
+  return out;
+}
+
+/** "Nice" ticks across an arbitrary [min,max] range. */
+function niceAxisTicks(min: number, max: number, target = 8): number[] {
+  const span = max - min;
+  if (!(span > 0)) return [min];
+  const raw = span / target;
+  const mag = Math.pow(10, Math.floor(Math.log10(raw)));
+  const norm = raw / mag;
+  const step = (norm <= 1 ? 1 : norm <= 2 ? 2 : norm <= 2.5 ? 2.5 : norm <= 5 ? 5 : 10) * mag;
+  const start = Math.ceil(min / step - 1e-9) * step;
+  const out: number[] = [];
+  for (let t = start; t <= max + step * 1e-6; t += step) out.push(Number(t.toFixed(6)));
+  return out;
+}
+
+/** Numeral for an axis tick: integers plainly, else trimmed decimal, proper minus glyph. */
+function fmtNum(t: number): string {
+  const r = Math.round(t);
+  let s = Math.abs(t - r) < 1e-9 ? `${Math.abs(r)}` : `${Math.abs(t)}`;
+  if (s.includes(".")) s = s.replace(/0+$/, "").replace(/\.$/, "");
+  return t < 0 ? `${MINUS}${s}` : s;
+}
+
+/** Axis title as upright text (units/words), e.g. "time (s)". */
+function axisTitleTex(label?: string): string {
+  return label ? `\\text{${label}}` : "";
+}
+
+/* --------------------------------------------------------------- box plot */
+
+function BoxPlotFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "boxPlot" }> }) {
+  const { axisMin, axisMax } = spec;
+  const outliers = spec.outliers ?? [];
+  const W = 470;
+  const P = 46;
+  const x = (v: number) => P + ((v - axisMin) / (axisMax - axisMin)) * (W - 2 * P);
+  const cy = 74; // vertical centre of the box band
+  const bh = 34; // box half-height
+  const axisY = 168;
+  const numeralsY = axisY + 22;
+  const H = spec.showValues ? numeralsY + 40 : numeralsY + 24;
+  const ticks = niceAxisTicks(axisMin, axisMax, 8);
+
+  const cross = (cx: number, cyv: number, r = 5) => (
+    <>
+      <line x1={cx - r} y1={cyv - r} x2={cx + r} y2={cyv + r} stroke={INK} strokeWidth={1.6} strokeLinecap="round" />
+      <line x1={cx - r} y1={cyv + r} x2={cx + r} y2={cyv - r} stroke={INK} strokeWidth={1.6} strokeLinecap="round" />
+    </>
+  );
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* faint vertical grid down to the axis */}
+      {ticks.map((t) => (
+        <line key={`gv${t}`} x1={x(t)} x2={x(t)} y1={cy - bh - 14} y2={axisY} stroke={GRID} strokeWidth={1} />
+      ))}
+
+      {/* whiskers */}
+      <line x1={x(spec.whiskerLow)} x2={x(spec.q1)} y1={cy} y2={cy} stroke={INK} strokeWidth={1.6} />
+      <line x1={x(spec.q3)} x2={x(spec.whiskerHigh)} y1={cy} y2={cy} stroke={INK} strokeWidth={1.6} />
+      <line x1={x(spec.whiskerLow)} x2={x(spec.whiskerLow)} y1={cy - bh * 0.5} y2={cy + bh * 0.5} stroke={INK} strokeWidth={1.6} />
+      <line x1={x(spec.whiskerHigh)} x2={x(spec.whiskerHigh)} y1={cy - bh * 0.5} y2={cy + bh * 0.5} stroke={INK} strokeWidth={1.6} />
+
+      {/* the box (Q1–Q3) with the median line — the accent element */}
+      <rect x={x(spec.q1)} y={cy - bh} width={x(spec.q3) - x(spec.q1)} height={2 * bh} fill={ACCENT_FILL} stroke={ACCENT} strokeWidth={1.8} />
+      <line x1={x(spec.median)} x2={x(spec.median)} y1={cy - bh} y2={cy + bh} stroke={ACCENT} strokeWidth={2.6} />
+
+      {/* outliers as crosses */}
+      {outliers.map((o, i) => (
+        <g key={`o${i}`}>{cross(x(o), cy)}</g>
+      ))}
+
+      {/* optional value labels above the plot */}
+      {spec.showValues &&
+        [spec.whiskerLow, spec.q1, spec.median, spec.q3, spec.whiskerHigh].map((v, i) => (
+          <TexLabel key={`v${i}`} tex={rationalTex(v)} x={x(v)} y={cy - bh - 12} size={12} color={INK_SOFT} w={60} />
+        ))}
+
+      {/* number-line axis */}
+      <line x1={P - 6} x2={W - P + 6} y1={axisY} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <AxisArrows x1={P - 6} x2={W - P + 6} y={axisY} />
+      {ticks.map((t) => (
+        <line key={`tk${t}`} x1={x(t)} x2={x(t)} y1={axisY - 4} y2={axisY + 4} stroke={INK} strokeWidth={1.1} />
+      ))}
+      {ticks.map((t) => (
+        <text key={`n${t}`} x={x(t)} y={numeralsY} textAnchor="middle" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>
+          {fmtNum(t)}
+        </text>
+      ))}
+      <text x={W - P + 10} y={axisY - 7} fontFamily={ITALIC} fontStyle="italic" fontSize={13} fill={INK_SOFT}>x</text>
+
+      {/* axis title (units) */}
+      {spec.axisLabel && <TexLabel tex={axisTitleTex(spec.axisLabel)} x={W / 2} y={numeralsY + 20} size={13} color={INK_SOFT} w={260} />}
+    </svg>
+  );
+}
+
+/* -------------------------------------------------------------- histogram */
+
+function HistogramFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "histogram" }> }) {
+  const bars = spec.bars;
+  const xMin = Math.min(...bars.map((b) => b.x0));
+  const xMax = Math.max(...bars.map((b) => b.x1));
+  const fdMax = Math.max(...bars.map((b) => b.freqDensity));
+  const yTicks = niceTicksFromZero(fdMax, 5);
+  const yTop = yTicks[yTicks.length - 1];
+  const boundaries = Array.from(new Set(bars.flatMap((b) => [b.x0, b.x1]))).sort((a, b) => a - b);
+
+  const W = 470;
+  const PL = 52;
+  const PR = 22;
+  const PT = 30;
+  const PB = 54;
+  const H = 300;
+  const axisY = H - PB;
+  const x = (v: number) => PL + ((v - xMin) / (xMax - xMin)) * (W - PL - PR);
+  const y = (v: number) => axisY - (v / yTop) * (axisY - PT);
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* horizontal grid at y-ticks */}
+      {yTicks.map((t) => (
+        <line key={`gh${t}`} x1={PL} x2={W - PR} y1={y(t)} y2={y(t)} stroke={t === 0 ? GRID_STRONG : GRID} strokeWidth={1} />
+      ))}
+      {/* vertical grid at class boundaries */}
+      {boundaries.map((b) => (
+        <line key={`gv${b}`} x1={x(b)} x2={x(b)} y1={PT} y2={axisY} stroke={GRID} strokeWidth={1} />
+      ))}
+
+      {/* bars */}
+      {bars.map((b, i) => (
+        <rect key={`b${i}`} x={x(b.x0)} y={y(b.freqDensity)} width={x(b.x1) - x(b.x0)} height={axisY - y(b.freqDensity)} fill={ACCENT_FILL} stroke={ACCENT} strokeWidth={1.6} />
+      ))}
+
+      {/* y-axis */}
+      <line x1={PL} x2={PL} y1={PT - 10} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <VArrow x={PL} yTop={PT - 10} />
+      {yTicks.map((t) => (
+        <g key={`yt${t}`}>
+          <line x1={PL - 4} x2={PL} y1={y(t)} y2={y(t)} stroke={INK} strokeWidth={1.1} />
+          <text x={PL - 8} y={y(t) + 4} textAnchor="end" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>{fmtNum(t)}</text>
+        </g>
+      ))}
+
+      {/* x-axis */}
+      <line x1={PL} x2={W - PR} y1={axisY} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <AxisArrows x1={PL} x2={W - PR} y={axisY} />
+      {boundaries.map((b) => (
+        <g key={`xt${b}`}>
+          <line x1={x(b)} x2={x(b)} y1={axisY} y2={axisY + 4} stroke={INK} strokeWidth={1.1} />
+          <text x={x(b)} y={axisY + 18} textAnchor="middle" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>{fmtNum(b)}</text>
+        </g>
+      ))}
+
+      {/* axis titles */}
+      <TexLabel tex={axisTitleTex(spec.yAxisLabel ?? "frequency density")} x={PL - 2} y={PT - 20} align="left" size={12} color={INK_SOFT} w={220} />
+      {spec.xAxisLabel && <TexLabel tex={axisTitleTex(spec.xAxisLabel)} x={(PL + W - PR) / 2} y={axisY + 38} size={13} color={INK_SOFT} w={260} />}
+    </svg>
+  );
+}
+
+/* -------------------------------------------------- cumulative frequency */
+
+function CumulativeFrequencyFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "cumulativeFrequency" }> }) {
+  const pts = spec.origin !== undefined ? [{ x: spec.origin, cf: 0 }, ...spec.points] : [...spec.points];
+  const xMin = pts[0].x;
+  const xMax = pts[pts.length - 1].x;
+  const cfMax = Math.max(...pts.map((p) => p.cf));
+  const yTicks = niceTicksFromZero(cfMax, 5);
+  const yTop = yTicks[yTicks.length - 1];
+  const xTicks = Array.from(new Set(pts.map((p) => p.x))).sort((a, b) => a - b);
+
+  const W = 470;
+  const PL = 52;
+  const PR = 22;
+  const PT = 26;
+  const PB = 54;
+  const H = 310;
+  const axisY = H - PB;
+  const x = (v: number) => PL + ((v - xMin) / (xMax - xMin)) * (W - PL - PR);
+  const y = (v: number) => axisY - (v / yTop) * (axisY - PT);
+
+  // x on the polyline at a given cumulative frequency (linear interpolation)
+  const xAtCf = (cf: number): number | null => {
+    for (let i = 0; i < pts.length - 1; i++) {
+      const a = pts[i];
+      const b = pts[i + 1];
+      if ((cf >= a.cf && cf <= b.cf) || (cf <= a.cf && cf >= b.cf)) {
+        if (b.cf === a.cf) return a.x;
+        return a.x + ((cf - a.cf) / (b.cf - a.cf)) * (b.x - a.x);
+      }
+    }
+    return null;
+  };
+
+  const curve = pts.map((p) => `${x(p.x)},${y(p.cf)}`).join(" ");
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* grid */}
+      {yTicks.map((t) => (
+        <line key={`gh${t}`} x1={PL} x2={W - PR} y1={y(t)} y2={y(t)} stroke={t === 0 ? GRID_STRONG : GRID} strokeWidth={1} />
+      ))}
+      {xTicks.map((t) => (
+        <line key={`gv${t}`} x1={x(t)} x2={x(t)} y1={PT} y2={axisY} stroke={GRID} strokeWidth={1} />
+      ))}
+
+      {/* read-off guides (dashed accent) */}
+      {(spec.readoffs ?? []).map((r, i) => {
+        const xr = xAtCf(r.cf);
+        if (xr === null) return null;
+        return (
+          <g key={`ro${i}`}>
+            <line x1={PL} y1={y(r.cf)} x2={x(xr)} y2={y(r.cf)} stroke={ACCENT} strokeWidth={1.3} strokeDasharray="4 3" />
+            <line x1={x(xr)} y1={y(r.cf)} x2={x(xr)} y2={axisY} stroke={ACCENT} strokeWidth={1.3} strokeDasharray="4 3" />
+            <circle cx={x(xr)} cy={y(r.cf)} r={3.5} fill={ACCENT} />
+            {r.label && <TexLabel tex={r.label} x={x(xr)} y={y(r.cf) - 12} size={12} color={ACCENT} w={70} chip />}
+          </g>
+        );
+      })}
+
+      {/* the cumulative frequency curve + points */}
+      <polyline points={curve} fill="none" stroke={CURVE} strokeWidth={2} strokeLinejoin="round" />
+      {pts.map((p, i) => (
+        <circle key={`p${i}`} cx={x(p.x)} cy={y(p.cf)} r={2.8} fill={CURVE} />
+      ))}
+
+      {/* y-axis */}
+      <line x1={PL} x2={PL} y1={PT - 10} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <VArrow x={PL} yTop={PT - 10} />
+      {yTicks.map((t) => (
+        <g key={`yt${t}`}>
+          <line x1={PL - 4} x2={PL} y1={y(t)} y2={y(t)} stroke={INK} strokeWidth={1.1} />
+          <text x={PL - 8} y={y(t) + 4} textAnchor="end" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>{fmtNum(t)}</text>
+        </g>
+      ))}
+
+      {/* x-axis */}
+      <line x1={PL} x2={W - PR} y1={axisY} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <AxisArrows x1={PL} x2={W - PR} y={axisY} />
+      {xTicks.map((t) => (
+        <g key={`xt${t}`}>
+          <line x1={x(t)} x2={x(t)} y1={axisY} y2={axisY + 4} stroke={INK} strokeWidth={1.1} />
+          <text x={x(t)} y={axisY + 18} textAnchor="middle" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>{fmtNum(t)}</text>
+        </g>
+      ))}
+
+      {/* axis titles */}
+      <TexLabel tex={axisTitleTex(spec.yAxisLabel ?? "cumulative frequency")} x={PL - 2} y={PT - 18} align="left" size={12} color={INK_SOFT} w={240} />
+      {spec.xAxisLabel && <TexLabel tex={axisTitleTex(spec.xAxisLabel)} x={(PL + W - PR) / 2} y={axisY + 38} size={13} color={INK_SOFT} w={260} />}
+    </svg>
+  );
+}
+
+/* ----------------------------------------------------------------- scatter */
+
+function ScatterFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "scatter" }> }) {
+  const pts = spec.points;
+  const line = spec.line;
+  const predict = spec.predict;
+
+  // --- x-range: from data (+ prediction), padded, then snapped to nice ticks.
+  const xsData = [...pts.map((p) => p.x), ...(predict ? [predict.x] : [])];
+  const rawXmin = Math.min(...xsData);
+  const rawXmax = Math.max(...xsData);
+  const padX = (rawXmax - rawXmin || Math.abs(rawXmax) || 1) * 0.08;
+  const xTicks = niceAxisTicks(rawXmin - padX, rawXmax + padX, 6);
+  const xMin = spec.xMin ?? Math.min(rawXmin - padX, xTicks[0]);
+  const xMax = spec.xMax ?? Math.max(rawXmax + padX, xTicks[xTicks.length - 1]);
+
+  // --- y-range: data (+ prediction) AND the line's endpoints, so the line stays in-frame.
+  const lineY = (v: number) => (line ? line.a + line.b * v : 0);
+  const ysData = [
+    ...pts.map((p) => p.y),
+    ...(predict ? [predict.y] : []),
+    ...(line ? [lineY(xMin), lineY(xMax)] : []),
+  ];
+  const rawYmin = Math.min(...ysData);
+  const rawYmax = Math.max(...ysData);
+  const padY = (rawYmax - rawYmin || Math.abs(rawYmax) || 1) * 0.1;
+  const yTicks = niceAxisTicks(rawYmin - padY, rawYmax + padY, 6);
+  const yMin = spec.yMin ?? Math.min(rawYmin - padY, yTicks[0]);
+  const yMax = spec.yMax ?? Math.max(rawYmax + padY, yTicks[yTicks.length - 1]);
+
+  const W = 470;
+  const PL = 54;
+  const PR = 24;
+  const PT = 26;
+  const PB = 54;
+  const H = 320;
+  const axisY = H - PB;
+  const x = (v: number) => PL + ((v - xMin) / (xMax - xMin)) * (W - PL - PR);
+  const y = (v: number) => axisY - ((v - yMin) / (yMax - yMin)) * (axisY - PT);
+
+  const cross = (cx: number, cyv: number, r = 4) => (
+    <>
+      <line x1={cx - r} y1={cyv - r} x2={cx + r} y2={cyv + r} stroke={CURVE} strokeWidth={1.5} strokeLinecap="round" />
+      <line x1={cx - r} y1={cyv + r} x2={cx + r} y2={cyv - r} stroke={CURVE} strokeWidth={1.5} strokeLinecap="round" />
+    </>
+  );
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* grid */}
+      {yTicks.map((t) => (
+        <line key={`gh${t}`} x1={PL} x2={W - PR} y1={y(t)} y2={y(t)} stroke={GRID} strokeWidth={1} />
+      ))}
+      {xTicks.map((t) => (
+        <line key={`gv${t}`} x1={x(t)} x2={x(t)} y1={PT} y2={axisY} stroke={GRID} strokeWidth={1} />
+      ))}
+
+      {/* least-squares regression line (the accent element) */}
+      {line && (
+        <line
+          x1={x(xMin)}
+          y1={y(lineY(xMin))}
+          x2={x(xMax)}
+          y2={y(lineY(xMax))}
+          stroke={ACCENT}
+          strokeWidth={2.2}
+          strokeLinecap="round"
+        />
+      )}
+
+      {/* prediction read-off with dashed guides to both axes */}
+      {predict && (
+        <g>
+          <line x1={PL} y1={y(predict.y)} x2={x(predict.x)} y2={y(predict.y)} stroke={ACCENT} strokeWidth={1.3} strokeDasharray="4 3" />
+          <line x1={x(predict.x)} y1={y(predict.y)} x2={x(predict.x)} y2={axisY} stroke={ACCENT} strokeWidth={1.3} strokeDasharray="4 3" />
+          <circle cx={x(predict.x)} cy={y(predict.y)} r={4} fill={ACCENT} />
+          {predict.label && <TexLabel tex={predict.label} x={x(predict.x)} y={y(predict.y) - 13} size={12} color={ACCENT} w={90} chip />}
+        </g>
+      )}
+
+      {/* data points as crosses */}
+      {pts.map((p, i) => (
+        <g key={`pt${i}`}>{cross(x(p.x), y(p.y))}</g>
+      ))}
+
+      {/* y-axis */}
+      <line x1={PL} x2={PL} y1={PT - 10} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <VArrow x={PL} yTop={PT - 10} />
+      {yTicks.map((t) => (
+        <g key={`yt${t}`}>
+          <line x1={PL - 4} x2={PL} y1={y(t)} y2={y(t)} stroke={INK} strokeWidth={1.1} />
+          <text x={PL - 8} y={y(t) + 4} textAnchor="end" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>{fmtNum(t)}</text>
+        </g>
+      ))}
+
+      {/* x-axis */}
+      <line x1={PL} x2={W - PR} y1={axisY} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <AxisArrows x1={PL} x2={W - PR} y={axisY} />
+      {xTicks.map((t) => (
+        <g key={`xt${t}`}>
+          <line x1={x(t)} x2={x(t)} y1={axisY} y2={axisY + 4} stroke={INK} strokeWidth={1.1} />
+          <text x={x(t)} y={axisY + 18} textAnchor="middle" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>{fmtNum(t)}</text>
+        </g>
+      ))}
+
+      {/* axis titles */}
+      {spec.yAxisLabel && <TexLabel tex={axisTitleTex(spec.yAxisLabel)} x={PL - 2} y={PT - 16} align="left" size={12} color={INK_SOFT} w={240} />}
+      {spec.xAxisLabel && <TexLabel tex={axisTitleTex(spec.xAxisLabel)} x={(PL + W - PR) / 2} y={axisY + 38} size={13} color={INK_SOFT} w={280} />}
+    </svg>
+  );
+}
+
+/* --------------------------------------------------------------- Venn / tree */
+
+/** Deterministic, SSR-stable id from a seed string (for per-diagram clip/mask ids). */
+function hashId(seed: string): string {
+  let h = 5381;
+  for (let i = 0; i < seed.length; i++) h = ((h << 5) + h + seed.charCodeAt(i)) >>> 0;
+  return "vd" + h.toString(36);
+}
+
+const HI_FILL = "rgba(29,78,216,0.16)"; // region shading for Venn highlights
+
+function Venn2Figure({ spec }: { spec: Extract<DiagramSpec, { kind: "venn2" }> }) {
+  const W = 460;
+  const H = 300;
+  const uid = hashId([spec.setALabel, spec.setBLabel, spec.onlyA, spec.both, spec.onlyB, spec.outside ?? ""].join("|"));
+  const rx = 24, ry = 24, rw = W - 48, rh = H - 48;
+  const cy = ry + rh / 2 + 4;
+  const r = 92;
+  const cxA = W / 2 - 46;
+  const cxB = W / 2 + 46;
+  const hi = new Set(spec.highlight ?? []);
+  const idA = `${uid}A`, idB = `${uid}B`, idNotA = `${uid}na`, idNotB = `${uid}nb`, idOut = `${uid}o`;
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <clipPath id={idA}><circle cx={cxA} cy={cy} r={r} /></clipPath>
+        <clipPath id={idB}><circle cx={cxB} cy={cy} r={r} /></clipPath>
+        <mask id={idNotB}><rect x={0} y={0} width={W} height={H} fill="white" /><circle cx={cxB} cy={cy} r={r} fill="black" /></mask>
+        <mask id={idNotA}><rect x={0} y={0} width={W} height={H} fill="white" /><circle cx={cxA} cy={cy} r={r} fill="black" /></mask>
+        <mask id={idOut}><rect x={0} y={0} width={W} height={H} fill="white" /><circle cx={cxA} cy={cy} r={r} fill="black" /><circle cx={cxB} cy={cy} r={r} fill="black" /></mask>
+      </defs>
+
+      {/* highlight shading */}
+      {hi.has("outside") && <rect x={rx} y={ry} width={rw} height={rh} fill={HI_FILL} mask={`url(#${idOut})`} />}
+      {hi.has("onlyA") && <g clipPath={`url(#${idA})`} mask={`url(#${idNotB})`}><rect x={0} y={0} width={W} height={H} fill={HI_FILL} /></g>}
+      {hi.has("onlyB") && <g clipPath={`url(#${idB})`} mask={`url(#${idNotA})`}><rect x={0} y={0} width={W} height={H} fill={HI_FILL} /></g>}
+      {hi.has("both") && <g clipPath={`url(#${idA})`}><circle cx={cxB} cy={cy} r={r} fill={HI_FILL} /></g>}
+
+      {/* universal rectangle + circles */}
+      <rect x={rx} y={ry} width={rw} height={rh} fill="none" stroke={INK} strokeWidth={1.4} />
+      <circle cx={cxA} cy={cy} r={r} fill="none" stroke={INK} strokeWidth={1.6} />
+      <circle cx={cxB} cy={cy} r={r} fill="none" stroke={INK} strokeWidth={1.6} />
+
+      {/* set labels */}
+      <TexLabel tex={spec.setALabel} x={cxA - r * 0.72} y={cy - r * 0.78} size={16} color={INK} w={40} />
+      <TexLabel tex={spec.setBLabel} x={cxB + r * 0.72} y={cy - r * 0.78} size={16} color={INK} w={40} />
+      {spec.universalLabel && <TexLabel tex={spec.universalLabel} x={rx + 14} y={ry + 14} size={14} color={INK_SOFT} w={40} />}
+
+      {/* region values */}
+      {spec.onlyA !== "" && <TexLabel tex={spec.onlyA} x={cxA - r * 0.46} y={cy} size={15} color={INK} w={80} />}
+      {spec.both !== "" && <TexLabel tex={spec.both} x={(cxA + cxB) / 2} y={cy} size={15} color={INK} w={80} />}
+      {spec.onlyB !== "" && <TexLabel tex={spec.onlyB} x={cxB + r * 0.46} y={cy} size={15} color={INK} w={80} />}
+      {spec.outside && <TexLabel tex={spec.outside} x={rx + rw - 22} y={ry + rh - 16} size={14} color={INK_SOFT} w={70} />}
+    </svg>
+  );
+}
+
+function Venn3Figure({ spec }: { spec: Extract<DiagramSpec, { kind: "venn3" }> }) {
+  const W = 460;
+  const H = 360;
+  const rx = 22, ry = 22, rw = W - 44, rh = H - 44;
+  const cx = W / 2;
+  const cy = ry + rh / 2 + 2;
+  const o = 52; // centre-to-circle offset
+  const r = 96;
+  const A = { x: cx, y: cy - o };
+  const B = { x: cx - o * 0.866, y: cy + o * 0.5 };
+  const C = { x: cx + o * 0.866, y: cy + o * 0.5 };
+  const L = (tex: string, x: number, y: number, soft = false) =>
+    tex !== "" ? <TexLabel tex={tex} x={x} y={y} size={14} color={soft ? INK_SOFT : INK} w={64} /> : null;
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      <rect x={rx} y={ry} width={rw} height={rh} fill="none" stroke={INK} strokeWidth={1.4} />
+      <circle cx={A.x} cy={A.y} r={r} fill="none" stroke={INK} strokeWidth={1.6} />
+      <circle cx={B.x} cy={B.y} r={r} fill="none" stroke={INK} strokeWidth={1.6} />
+      <circle cx={C.x} cy={C.y} r={r} fill="none" stroke={INK} strokeWidth={1.6} />
+
+      {/* set labels just outside each circle */}
+      <TexLabel tex={spec.setALabel} x={A.x} y={A.y - r - 12} size={16} color={INK} w={40} />
+      <TexLabel tex={spec.setBLabel} x={B.x - r * 0.78} y={B.y + r * 0.82} size={16} color={INK} w={40} />
+      <TexLabel tex={spec.setCLabel} x={C.x + r * 0.78} y={C.y + r * 0.82} size={16} color={INK} w={40} />
+      {spec.universalLabel && <TexLabel tex={spec.universalLabel} x={rx + 14} y={ry + 14} size={14} color={INK_SOFT} w={40} />}
+
+      {/* region values (approximate centroids) */}
+      {L(spec.onlyA, A.x, A.y - r * 0.42)}
+      {L(spec.onlyB, B.x - r * 0.42, B.y + r * 0.34)}
+      {L(spec.onlyC, C.x + r * 0.42, C.y + r * 0.34)}
+      {L(spec.AB, cx - o * 0.92, cy - o * 0.16)}
+      {L(spec.AC, cx + o * 0.92, cy - o * 0.16)}
+      {L(spec.BC, cx, cy + o * 0.98)}
+      {L(spec.ABC, cx, cy + o * 0.18)}
+      {spec.outside ? L(spec.outside, rx + rw - 24, ry + rh - 16, true) : null}
+    </svg>
+  );
+}
+
+function ProbTreeFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "probTree" }> }) {
+  type Leaf = { i: number; b: (typeof spec.branches)[number]; c: NonNullable<(typeof spec.branches)[number]["children"]>[number] | null; y: number };
+  const leaves: Leaf[] = [];
+  spec.branches.forEach((b, i) => {
+    const kids = b.children && b.children.length ? b.children : [null];
+    kids.forEach((c) => leaves.push({ i, b, c, y: 0 }));
+  });
+  const twoLevel = spec.branches.some((b) => b.children && b.children.length);
+  const nLeaves = leaves.length;
+  const W = 520;
+  const top = 28;
+  const H = Math.max(180, nLeaves * 46 + top);
+  const rootX = 34;
+  const l1X = twoLevel ? 196 : 300;
+  const l2X = 330;
+  // spread leaves evenly across [top, H-top]
+  leaves.forEach((lf, k) => (lf.y = top + (k + 0.5) * ((H - 2 * top) / nLeaves)));
+  const rootY = H / 2;
+  const l1nodes = spec.branches.map((b, i) => {
+    const ys = leaves.filter((lf) => lf.i === i).map((lf) => lf.y);
+    return { i, b, y: ys.reduce((a, c) => a + c, 0) / ys.length };
+  });
+
+  const branch = (x1: number, y1: number, x2: number, y2: number, prob: string, hot: boolean) => (
+    <>
+      <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={hot ? ACCENT : INK} strokeWidth={hot ? 2.2 : 1.4} />
+      <TexLabel tex={prob} x={x1 + (x2 - x1) * 0.5} y={y1 + (y2 - y1) * 0.5 - 9} size={12.5} color={hot ? ACCENT : INK_SOFT} w={70} chip />
+    </>
+  );
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* level-1 branches */}
+      {l1nodes.map((n) => {
+        const hot = !!(n.b.children && n.b.children.every((c) => c.highlight)) || false;
+        return (
+          <g key={`l1${n.i}`}>
+            {branch(rootX + 6, rootY, l1X, n.y, n.b.prob, hot)}
+            <TexLabel tex={n.b.label} x={l1X + 16} y={n.y} size={14} color={INK} w={40} />
+          </g>
+        );
+      })}
+      {/* level-2 branches */}
+      {twoLevel &&
+        leaves.map((lf, k) => {
+          if (!lf.c) return null;
+          const n = l1nodes[lf.i];
+          const hot = !!lf.c.highlight;
+          return (
+            <g key={`l2${k}`}>
+              {branch(l1X + 22, n.y, l2X, lf.y, lf.c.prob, hot)}
+              <TexLabel tex={lf.c.label} x={l2X + 14} y={lf.y} size={14} color={INK} w={36} />
+              {(lf.c.outcome || lf.c.result) && (
+                <TexLabel
+                  tex={`${lf.c.outcome ? `\\text{${lf.c.outcome}}` : ""}${lf.c.outcome && lf.c.result ? "\\;=\\;" : ""}${lf.c.result ?? ""}`}
+                  x={l2X + 44}
+                  y={lf.y}
+                  align="left"
+                  size={13}
+                  color={hot ? ACCENT : INK_SOFT}
+                  w={150}
+                />
+              )}
+            </g>
+          );
+        })}
+      {/* root node */}
+      <circle cx={rootX} cy={rootY} r={3} fill={INK} />
+      {/* level-1 nodes */}
+      {l1nodes.map((n) => (
+        <circle key={`n1${n.i}`} cx={l1X} cy={n.y} r={2.6} fill={INK} />
+      ))}
+      {twoLevel && leaves.map((lf, k) => (lf.c ? <circle key={`n2${k}`} cx={l2X} cy={lf.y} r={2.6} fill={INK} /> : null))}
+    </svg>
+  );
+}
+
+/* ------------------------------------------------ discrete probability dist */
+
+/** Parse a probability given as raw LaTeX ("\\tfrac{1}{6}", "3/10", "0.2") to a number. */
+function probToNum(s: string): number {
+  let m = s.match(/^\\[dt]?frac\{(-?\d+(?:\.\d+)?)\}\{(-?\d+(?:\.\d+)?)\}$/);
+  if (m) return parseFloat(m[1]) / parseFloat(m[2]);
+  m = s.match(/^(-?\d+(?:\.\d+)?)\s*\/\s*(-?\d+(?:\.\d+)?)$/);
+  if (m) return parseFloat(m[1]) / parseFloat(m[2]);
+  const f = parseFloat(s);
+  return isFinite(f) ? f : 0;
+}
+
+function ProbDistFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "probDist" }> }) {
+  const vals = spec.values;
+  const n = vals.length;
+  const heights = vals.map((v) => probToNum(v.p));
+  const pMax = Math.max(...heights, 0.0001);
+  const yTicks = niceTicksFromZero(pMax, 5);
+  // Guarantee the top tick covers pMax (nice-rounding can fall short, e.g. 1/6 → 0.15).
+  const yStep = yTicks.length > 1 ? yTicks[1] - yTicks[0] : pMax;
+  while (yTicks[yTicks.length - 1] < pMax - 1e-9) yTicks.push(Number((yTicks[yTicks.length - 1] + yStep).toFixed(6)));
+  const yTop = yTicks[yTicks.length - 1];
+  const hi = new Set((spec.highlight ?? []).map((h) => String(h)));
+
+  const W = 470;
+  const PL = 56;
+  const PR = 24;
+  const PT = 26;
+  const PB = 54;
+  const H = 300;
+  const axisY = H - PB;
+  const plotW = W - PL - PR;
+  const xPos = (i: number) => PL + ((i + 0.5) / n) * plotW;
+  const y = (v: number) => axisY - (v / yTop) * (axisY - PT);
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      {/* horizontal grid at probability ticks */}
+      {yTicks.map((t) => (
+        <line key={`gh${t}`} x1={PL} x2={W - PR} y1={y(t)} y2={y(t)} stroke={t === 0 ? GRID_STRONG : GRID} strokeWidth={1} />
+      ))}
+
+      {/* sticks + dots */}
+      {vals.map((v, i) => {
+        const hot = hi.has(String(v.x));
+        const col = hot ? ACCENT : CURVE;
+        return (
+          <g key={`s${i}`}>
+            <line x1={xPos(i)} x2={xPos(i)} y1={axisY} y2={y(heights[i])} stroke={col} strokeWidth={hot ? 2.6 : 2} />
+            <circle cx={xPos(i)} cy={y(heights[i])} r={hot ? 4 : 3.2} fill={col} />
+            {/* probability label above each stick */}
+            <TexLabel tex={v.p} x={xPos(i)} y={y(heights[i]) - 12} size={12} color={hot ? ACCENT : INK_SOFT} w={64} />
+          </g>
+        );
+      })}
+
+      {/* y-axis */}
+      <line x1={PL} x2={PL} y1={PT - 10} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <VArrow x={PL} yTop={PT - 10} />
+      {yTicks.map((t) => (
+        <g key={`yt${t}`}>
+          <line x1={PL - 4} x2={PL} y1={y(t)} y2={y(t)} stroke={INK} strokeWidth={1.1} />
+          <text x={PL - 8} y={y(t) + 4} textAnchor="end" fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>{fmtNum(t)}</text>
+        </g>
+      ))}
+
+      {/* x-axis */}
+      <line x1={PL} x2={W - PR} y1={axisY} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <AxisArrows x1={PL} x2={W - PR} y={axisY} />
+      {vals.map((v, i) => (
+        <g key={`xt${i}`}>
+          <line x1={xPos(i)} x2={xPos(i)} y1={axisY} y2={axisY + 4} stroke={INK} strokeWidth={1.1} />
+          <TexLabel tex={String(v.x)} x={xPos(i)} y={axisY + 16} size={12.5} color={INK_SOFT} w={48} />
+        </g>
+      ))}
+
+      {/* axis titles (rendered as math so P, X render italic) */}
+      <TexLabel tex={spec.yAxisLabel ?? "P(X = x)"} x={PL - 4} y={PT - 14} align="left" size={12.5} color={INK_SOFT} w={120} />
+      <TexLabel tex={spec.xAxisLabel ?? "x"} x={(PL + W - PR) / 2} y={axisY + 38} size={13} color={INK_SOFT} w={120} />
+    </svg>
+  );
+}
+
 /* ---------------------------------------------------------------- dispatcher */
 
 function toRows(spec: DiagramSpec): { min: number; max: number; rows: Row[] } | null {
@@ -520,9 +1157,26 @@ export function Diagram({ spec, className }: { spec: DiagramSpec; className?: st
     );
   }
 
+  if (spec.kind === "image") {
+    return (
+      <Plate caption={spec.caption} alt={spec.alt} className={className}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={spec.src} alt={spec.alt} style={{ width: "100%", height: "auto", display: "block" }} />
+      </Plate>
+    );
+  }
+
   let body: React.ReactNode;
   if (spec.kind === "parabolaRegion") body = <ParabolaRegion spec={spec} />;
   else if (spec.kind === "discriminantTriad") body = <DiscriminantTriad spec={spec} />;
+  else if (spec.kind === "boxPlot") body = <BoxPlotFigure spec={spec} />;
+  else if (spec.kind === "histogram") body = <HistogramFigure spec={spec} />;
+  else if (spec.kind === "cumulativeFrequency") body = <CumulativeFrequencyFigure spec={spec} />;
+  else if (spec.kind === "scatter") body = <ScatterFigure spec={spec} />;
+  else if (spec.kind === "venn2") body = <Venn2Figure spec={spec} />;
+  else if (spec.kind === "venn3") body = <Venn3Figure spec={spec} />;
+  else if (spec.kind === "probTree") body = <ProbTreeFigure spec={spec} />;
+  else if (spec.kind === "probDist") body = <ProbDistFigure spec={spec} />;
   else {
     const rows = toRows(spec);
     body = rows ? <NumberLineFigure min={rows.min} max={rows.max} rows={rows.rows} /> : null;

@@ -39,6 +39,11 @@ import { questions as variableAcceleration } from "@/data/questions/a-level-math
 import { questions as forcesAndNewtonsLaws } from "@/data/questions/a-level-maths/year-1-mech/forces-and-newtons-laws";
 import { questions as connectedParticles } from "@/data/questions/a-level-maths/year-1-mech/connected-particles";
 import { questions as sampling } from "@/data/questions/a-level-maths/year-1-stats/sampling";
+import { questions as locationSpread } from "@/data/questions/a-level-maths/year-1-stats/measures-of-location-and-spread";
+import { questions as dataPresentation } from "@/data/questions/a-level-maths/year-1-stats/data-presentation";
+import { questions as correlationRegression } from "@/data/questions/a-level-maths/year-1-stats/correlation-and-regression";
+import { questions as probability } from "@/data/questions/a-level-maths/year-1-stats/probability";
+import { questions as discreteRandomVariables } from "@/data/questions/a-level-maths/year-1-stats/discrete-random-variables";
 
 export { slugForSubtopicId };
 
@@ -77,6 +82,11 @@ export const allQuestions: Question[] = [
   ...forcesAndNewtonsLaws,
   ...connectedParticles,
   ...sampling,
+  ...locationSpread,
+  ...dataPresentation,
+  ...correlationRegression,
+  ...probability,
+  ...discreteRandomVariables,
 ];
 
 export interface SubtopicSummary {

@@ -72,11 +72,7 @@ export const questions: Question[] = [
   "answerType": "numeric",
   "tags": ["displacement-time-graph", "gradient", "velocity", "constant-velocity"],
   "questionText": "A particle moves in a straight line. Its displacement–time graph is a single straight line passing through the origin $(0,0)$ and the point $(5,20)$, where $t$ is measured in seconds and $s$ in metres. Find the velocity of the particle.",
-  "questionDiagram": {
-    "kind": "descriptive",
-    "description": "A displacement–time graph with displacement $s$ (m) up the vertical axis and time $t$ (s) along the horizontal axis. A single straight line segment begins at the origin $(0,0)$ and rises steadily to the point $(5,20)$. The segment is a straight line with constant gradient throughout.",
-    "alt": "Displacement–time graph: a straight line from (0,0) rising to (5,20)."
-  },
+  "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.kinematics-graphs.q002.png","alt":"Displacement–time graph: a straight line from (0,0) rising to (5,20)."},
   "workedSolution": {
     "steps": [
       {

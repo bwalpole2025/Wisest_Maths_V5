@@ -3588,11 +3588,7 @@ export const questions: Question[] = [
     "answerType": "numeric",
     "tags": ["suvat", "velocity-time-graph", "multi-stage", "train-motion", "kinematics"],
     "questionText": "A train starts from rest and accelerates uniformly at $0.5\\ \\text{m s}^{-2}$ until it reaches its maximum speed of $20\\ \\text{m s}^{-1}$. It travels at this speed for a while, then decelerates uniformly at $1\\ \\text{m s}^{-2}$ until it comes to rest. The total distance travelled is $4000\\ \\text{m}$. Find the total time for the journey.",
-    "questionDiagram": {
-      "kind": "descriptive",
-      "description": "A velocity-time graph. The horizontal axis is time (s), the vertical axis is velocity (m/s). The line rises as a straight segment from the origin up to a plateau at v = 20 m/s (gentle slope, acceleration 0.5), runs horizontally along v = 20 for a long stretch, then falls as a straight segment back down to zero (steeper slope, deceleration 1). The whole area under the trapezium is labelled 'total area = 4000 m'.",
-      "alt": "Trapezium-shaped velocity-time graph: gentle rise to 20 m/s, long constant stretch, steeper fall to rest, total enclosed area 4000 m."
-    },
+    "questionDiagram": {"kind":"image","src":"/mechanics/al.y1.mech.constant-acceleration.q054.png","alt":"Trapezium-shaped velocity-time graph: gentle rise to 20 m/s, long constant stretch, steeper fall to rest, total enclosed area 4000 m."},
     "workedSolution": {
       "steps": [
         {
