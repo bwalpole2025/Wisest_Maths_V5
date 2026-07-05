@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 1 Pure",
-  "currentSubtopic": "Optimisation",
-  "currentSubtopicId": "al.y1.pure.optimisation",
+  "currentSubtopic": "Vector geometry",
+  "currentSubtopicId": "al.y1.pure.vector-geometry",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -28,13 +28,17 @@
     "al.y1.pure.differentiation",
     "al.y1.pure.tangents-normals",
     "al.y1.pure.stationary-points",
-    "al.y1.pure.optimisation"
+    "al.y1.pure.optimisation",
+    "al.y1.pure.integration",
+    "al.y1.pure.definite-integrationcontinued",
+    "al.y1.pure.vectors",
+    "al.y1.pure.vector-geometry"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 23,
-      "totalQuestionsGenerated": 1610
+      "completedSubtopics": 27,
+      "totalQuestionsGenerated": 1890
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

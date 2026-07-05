@@ -230,6 +230,42 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 23,
     load: () => import("./year-1-pure/optimisation").then((m) => m.questions),
   },
+  {
+    slug: "indefinite-integration",
+    id: "al.y1.pure.integration",
+    name: "Indefinite integration",
+    blurb: "Antidifferentiation, integrating powers of x, and finding the constant from a point.",
+    gradient: "from-sky-400 to-blue-500",
+    order: 24,
+    load: () => import("./year-1-pure/indefinite-integration").then((m) => m.questions),
+  },
+  {
+    slug: "definite-integration-and-areas",
+    id: "al.y1.pure.definite-integrationcontinued",
+    name: "Definite integration and areas",
+    blurb: "Evaluating definite integrals and finding areas between curves, lines and the x-axis.",
+    gradient: "from-blue-400 to-indigo-500",
+    order: 25,
+    load: () => import("./year-1-pure/definite-integration-and-areas").then((m) => m.questions),
+  },
+  {
+    slug: "vector-basics",
+    id: "al.y1.pure.vectors",
+    name: "Vector basics",
+    blurb: "Magnitude, direction and unit vectors, using i, j and column notation.",
+    gradient: "from-indigo-400 to-purple-500",
+    order: 26,
+    load: () => import("./year-1-pure/vector-basics").then((m) => m.questions),
+  },
+  {
+    slug: "vector-geometry",
+    id: "al.y1.pure.vector-geometry",
+    name: "Vector geometry",
+    blurb: "Position vectors, distance, midpoints, ratios, collinearity and mechanics links.",
+    gradient: "from-purple-400 to-fuchsia-500",
+    order: 27,
+    load: () => import("./year-1-pure/vector-geometry").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

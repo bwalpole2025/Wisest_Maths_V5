@@ -43,8 +43,10 @@ const SUBS: RawSub[] = (rawData as { subtopics: RawSub[] }).subtopics.map((s) =>
 type TopicMap = Record<string, Record<string, Record<string, Record<string, string>>>>;
 const TOPICS = topicMap as unknown as TopicMap;
 
-/** Built subtopics (real 70-question banks), keyed by curriculum id. */
-const built = new Map(builtSummaries.map((s) => [s.id, s]));
+/** Built subtopics (real 70-question banks), keyed by cleaned curriculum id
+ *  so parse-artifact ids (e.g. "…definite-integrationcontinued") still match
+ *  the cleaned ids used throughout this module. */
+const built = new Map(builtSummaries.map((s) => [cleanId(s.id), s]));
 
 /* --------------------------------------------------------------- metadata */
 

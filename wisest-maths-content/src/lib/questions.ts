@@ -28,6 +28,10 @@ import { questions as differentiation } from "@/data/questions/a-level-maths/yea
 import { questions as tangentsNormals } from "@/data/questions/a-level-maths/year-1-pure/tangents-and-normals";
 import { questions as stationaryPoints } from "@/data/questions/a-level-maths/year-1-pure/stationary-points";
 import { questions as optimisation } from "@/data/questions/a-level-maths/year-1-pure/optimisation";
+import { questions as indefiniteIntegration } from "@/data/questions/a-level-maths/year-1-pure/indefinite-integration";
+import { questions as definiteIntegration } from "@/data/questions/a-level-maths/year-1-pure/definite-integration-and-areas";
+import { questions as vectorBasics } from "@/data/questions/a-level-maths/year-1-pure/vector-basics";
+import { questions as vectorGeometry } from "@/data/questions/a-level-maths/year-1-pure/vector-geometry";
 
 export { slugForSubtopicId };
 
@@ -55,6 +59,10 @@ export const allQuestions: Question[] = [
   ...tangentsNormals,
   ...stationaryPoints,
   ...optimisation,
+  ...indefiniteIntegration,
+  ...definiteIntegration,
+  ...vectorBasics,
+  ...vectorGeometry,
 ];
 
 export interface SubtopicSummary {
