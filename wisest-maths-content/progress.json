@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Reciprocal and inverse trig functions",
-  "currentSubtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "currentSubtopic": "Compound and double angles",
+  "currentSubtopicId": "al.y2.pure.compound-double-angles",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -59,13 +59,14 @@
     "al.y2.pure.radians",
     "al.y2.stats.conditional-probability",
     "al.y2.pure.small-angles",
-    "al.y2.pure.reciprocal-inverse-trig"
+    "al.y2.pure.reciprocal-inverse-trig",
+    "al.y2.pure.compound-double-angles"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 54,
-      "totalQuestionsGenerated": 3780
+      "completedSubtopics": 55,
+      "totalQuestionsGenerated": 3850
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

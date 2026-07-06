@@ -501,6 +501,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/reciprocal-and-inverse-trig-functions").then((m) => m.questions),
   },
   {
+    slug: "compound-and-double-angles",
+    id: "al.y2.pure.compound-double-angles",
+    name: "Compound and double angles",
+    blurb: "Addition formulae for sin, cos and tan, the double-angle and triple-angle results, exact values by combining standard angles, proving identities and solving trigonometric equations.",
+    gradient: "from-sky-400 to-blue-500",
+    order: 54,
+    load: () => import("./year-2-pure/compound-and-double-angles").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",
