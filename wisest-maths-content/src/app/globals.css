@@ -164,6 +164,31 @@
   }
 }
 
+/* Entrance reveal driven purely by CSS so content is NEVER left invisible if
+   JS/animation fails to run. Elements default to visible; the animation only
+   plays it in. Per-element offset/delay via the --rise-y / --rise-delay vars. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(var(--rise-y, 16px));
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.rise {
+  animation: rise 0.6s cubic-bezier(0.16, 1, 0.3, 1) both;
+  animation-delay: var(--rise-delay, 0s);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
 /* ---- KaTeX theming ---- */
 .katex {
   font-size: 1.06em;

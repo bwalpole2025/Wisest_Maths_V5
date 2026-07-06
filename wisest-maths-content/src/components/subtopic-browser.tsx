@@ -95,7 +95,7 @@ export function SubtopicBrowser({ tabs, initialSlug }: { tabs: SubtopicTab[]; in
         {loading ? (
           <BrowserSkeleton />
         ) : (
-          <motion.div key={active} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
+          <motion.div key={active} initial={false} animate={{ opacity: 1 }} transition={{ duration: 0.3 }}>
             <QuestionList questions={questions} />
           </motion.div>
         )}

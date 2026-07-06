@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
@@ -21,11 +22,9 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4">
-      <motion.nav
-        initial={{ y: -24, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-        className="glass flex w-full max-w-6xl items-center justify-between gap-4 rounded-full px-3 py-2 pl-4"
+      <nav
+        className="glass rise flex w-full max-w-6xl items-center justify-between gap-4 rounded-full px-3 py-2 pl-4"
+        style={{ "--rise-y": "-24px" } as CSSProperties}
       >
         <Brand />
 
@@ -61,7 +60,7 @@ export function Navbar() {
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
-      </motion.nav>
+      </nav>
     </header>
   );
 }

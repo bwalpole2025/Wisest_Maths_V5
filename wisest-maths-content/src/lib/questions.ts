@@ -47,6 +47,17 @@ import { questions as discreteRandomVariables } from "@/data/questions/a-level-m
 import { questions as theBinomialDistribution } from "@/data/questions/a-level-maths/year-1-stats/the-binomial-distribution";
 import { questions as hypothesisTesting } from "@/data/questions/a-level-maths/year-1-stats/hypothesis-testing";
 import { questions as largeDataSetFluency } from "@/data/questions/a-level-maths/year-1-stats/large-data-set-fluency";
+import { questions as proofByContradiction } from "@/data/questions/a-level-maths/year-2-pure/proof-by-contradiction";
+import { questions as algebraicAndPartialFractions } from "@/data/questions/a-level-maths/year-2-pure/algebraic-and-partial-fractions";
+import { questions as functionsAndTheirGraphs } from "@/data/questions/a-level-maths/year-2-pure/functions-and-their-graphs";
+import { questions as furtherTransformations } from "@/data/questions/a-level-maths/year-2-pure/further-transformations";
+import { questions as arithmeticSequencesAndSeries } from "@/data/questions/a-level-maths/year-2-pure/arithmetic-sequences-and-series";
+import { questions as geometricSequencesAndSeries } from "@/data/questions/a-level-maths/year-2-pure/geometric-sequences-and-series";
+import { questions as recurrenceAndGeneralSequences } from "@/data/questions/a-level-maths/year-2-pure/recurrence-and-general-sequences";
+import { questions as binomialExpansionRationalPowers } from "@/data/questions/a-level-maths/year-2-pure/binomial-expansion-rational-powers";
+import { questions as radiansArcsAndSectors } from "@/data/questions/a-level-maths/year-2-pure/radians-arcs-and-sectors";
+import { questions as smallAngleApproximations } from "@/data/questions/a-level-maths/year-2-pure/small-angle-approximations";
+import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 
 export { slugForSubtopicId };
 
@@ -93,6 +104,17 @@ export const allQuestions: Question[] = [
   ...theBinomialDistribution,
   ...hypothesisTesting,
   ...largeDataSetFluency,
+  ...proofByContradiction,
+  ...algebraicAndPartialFractions,
+  ...functionsAndTheirGraphs,
+  ...furtherTransformations,
+  ...arithmeticSequencesAndSeries,
+  ...geometricSequencesAndSeries,
+  ...recurrenceAndGeneralSequences,
+  ...binomialExpansionRationalPowers,
+  ...radiansArcsAndSectors,
+  ...smallAngleApproximations,
+  ...conditionalProbability,
 ];
 
 export interface SubtopicSummary {

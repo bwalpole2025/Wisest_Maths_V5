@@ -82,7 +82,7 @@ export function QuestionList({ questions }: { questions: Question[] }) {
               <motion.div
                 key={q.id}
                 layout
-                initial={{ opacity: 0, y: 12 }}
+                initial={false}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.35, delay: Math.min(i, 12) * 0.02 }}

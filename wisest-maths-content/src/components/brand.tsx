@@ -8,10 +8,8 @@ export function Brand({ className }: { className?: string }) {
         <span className="font-display text-lg font-bold leading-none text-white">∑</span>
         <span className="absolute inset-0 translate-y-full bg-white/20 transition-transform duration-500 group-hover:translate-y-0" />
       </span>
-      <span className="flex flex-col leading-none">
-        <span className="font-display text-[0.95rem] font-semibold tracking-tight text-foreground">
-          Wisest Maths
-        </span>
+      <span className="font-display text-[0.95rem] font-semibold leading-none tracking-tight text-foreground">
+        Wisest Maths
       </span>
     </Link>
   );

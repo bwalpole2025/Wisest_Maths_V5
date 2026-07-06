@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
+import type { CSSProperties } from "react";
 import { ArrowRight } from "lucide-react";
 import type { SubtopicSummary } from "@/lib/questions";
 import { cn } from "@/lib/utils";
@@ -9,11 +9,9 @@ import { cn } from "@/lib/utils";
 export function SubtopicCard({ subtopic, index = 0 }: { subtopic: SubtopicSummary; index?: number }) {
   const s = subtopic;
   return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
-      transition={{ duration: 0.55, delay: (index % 4) * 0.06, ease: [0.16, 1, 0.3, 1] }}
+    <div
+      className="rise"
+      style={{ "--rise-delay": `${(index % 4) * 0.06}s`, "--rise-y": "24px" } as CSSProperties}
     >
       <Link href={`/questions/${s.slug}`} className="group block h-full">
         <div className="card-glow glass relative flex h-full flex-col overflow-hidden rounded-3xl p-6 transition-transform duration-300 group-hover:-translate-y-1">
@@ -61,6 +59,6 @@ export function SubtopicCard({ subtopic, index = 0 }: { subtopic: SubtopicSummar
           </div>
         </div>
       </Link>
-    </motion.div>
+    </div>
   );
 }

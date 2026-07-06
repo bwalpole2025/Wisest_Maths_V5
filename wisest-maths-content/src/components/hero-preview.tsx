@@ -52,7 +52,7 @@ export function HeroPreview() {
           {steps.map((s, i) => (
             <motion.div
               key={i}
-              initial={{ opacity: 0, x: 12 }}
+              initial={false}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5 + i * 0.25, duration: 0.5 }}
               className="flex gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-3"
@@ -71,7 +71,7 @@ export function HeroPreview() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, y: 8 }}
+          initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4, duration: 0.5 }}
           className="mt-5 rounded-2xl border border-emerald-400/20 bg-emerald-500/[0.07] p-3"
