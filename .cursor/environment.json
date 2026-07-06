@@ -1,0 +1,14 @@
+{
+  "name": "wisest-maths",
+  "install": "npm --prefix wisest-maths-content install --no-audit --no-fund",
+  "terminals": [
+    {
+      "name": "app",
+      "command": "bash scripts/run-app-dev.sh",
+      "description": "Next.js dev server for the Wisest Maths app, served on port 3000 (host 0.0.0.0)."
+    }
+  ],
+  "ports": [
+    { "name": "app", "port": 3000 }
+  ]
+}
