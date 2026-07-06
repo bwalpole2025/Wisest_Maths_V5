@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "The form Rsin(θ + α)",
-  "currentSubtopicId": "al.y2.pure.rsin-form",
+  "currentSubtopic": "Parametric curves",
+  "currentSubtopicId": "al.y2.pure.parametric-curves",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -61,13 +61,14 @@
     "al.y2.pure.small-angles",
     "al.y2.pure.reciprocal-inverse-trig",
     "al.y2.pure.compound-double-angles",
-    "al.y2.pure.rsin-form"
+    "al.y2.pure.rsin-form",
+    "al.y2.pure.parametric-curves"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 56,
-      "totalQuestionsGenerated": 3920
+      "completedSubtopics": 57,
+      "totalQuestionsGenerated": 3990
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

@@ -519,6 +519,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/the-form-rsin-theta-plus-alpha").then((m) => m.questions),
   },
   {
+    slug: "parametric-curves",
+    id: "al.y2.pure.parametric-curves",
+    name: "Parametric curves",
+    blurb: "Plotting points from a parameter, converting between parametric and Cartesian forms via substitution and trig identities, domains and restrictions, intersections and self-crossings.",
+    gradient: "from-indigo-400 to-purple-500",
+    order: 56,
+    load: () => import("./year-2-pure/parametric-curves").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",
