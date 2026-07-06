@@ -1,0 +1,11 @@
+{
+  "install": "cd wisest-maths-content && npm install",
+  "terminals": [
+    {
+      "name": "Next.js Dev Server",
+      "command": "cd wisest-maths-content && npm run dev -- -H :: -p 3000",
+      "ports": [3000]
+    }
+  ],
+  "ports": [3000]
+}
