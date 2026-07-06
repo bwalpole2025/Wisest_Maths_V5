@@ -510,6 +510,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/compound-double-angles").then((m) => m.questions),
   },
   {
+    slug: "rsin-form",
+    id: "al.y2.pure.rsin-form",
+    name: "The form Rsin(θ + α)",
+    blurb: "Rewriting a sin x + b cos x as a single shifted sine term, finding R and alpha, and solving equations and ranges using the transformed form.",
+    gradient: "from-indigo-400 to-violet-500",
+    order: 55,
+    load: () => import("./year-2-pure/rsin-form").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",

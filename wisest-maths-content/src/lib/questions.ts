@@ -59,6 +59,7 @@ import { questions as radiansArcsAndSectors } from "@/data/questions/a-level-mat
 import { questions as smallAngleApproximations } from "@/data/questions/a-level-maths/year-2-pure/small-angle-approximations";
 import { questions as reciprocalAndInverseTrigFunctions } from "@/data/questions/a-level-maths/year-2-pure/reciprocal-and-inverse-trig-functions";
 import { questions as compoundDoubleAngles } from "@/data/questions/a-level-maths/year-2-pure/compound-double-angles";
+import { questions as rsinForm } from "@/data/questions/a-level-maths/year-2-pure/rsin-form";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 
 export { slugForSubtopicId };
@@ -118,6 +119,7 @@ export const allQuestions: Question[] = [
   ...smallAngleApproximations,
   ...reciprocalAndInverseTrigFunctions,
   ...compoundDoubleAngles,
+  ...rsinForm,
   ...conditionalProbability,
 ];
 
