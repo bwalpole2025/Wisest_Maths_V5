@@ -1,0 +1,9 @@
+{
+  "name": "wisest-maths-workspace",
+  "private": true,
+  "scripts": {
+    "dev": "bash scripts/run-app-dev.sh",
+    "build": "npm --prefix wisest-maths-content run build",
+    "start": "npm --prefix wisest-maths-content run start"
+  }
+}
