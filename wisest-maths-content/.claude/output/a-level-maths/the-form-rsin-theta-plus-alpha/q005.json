@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "Rsin",
+    "difference"
+  ],
+  "questionText": "Express $\\sqrt{3}\\sin\\theta - \\cos\\theta$ in the form $R\\sin(\\theta - \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the target form",
+        "workingLatex": "R\\sin(\\theta - \\alpha) = R\\cos\\alpha\\sin\\theta - R\\sin\\alpha\\cos\\theta",
+        "explanation": "The minus form expands with a minus between the terms, matching the given difference.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = \\sqrt3, \\quad R\\sin\\alpha = 1",
+        "explanation": "Matching the sine term gives $R\\cos\\alpha = \\sqrt3$; matching the cosine term (both sides negative) gives $R\\sin\\alpha = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R",
+        "workingLatex": "R^2 = (\\sqrt3)^2 + 1^2 = 4 \\;\\Rightarrow\\; R = 2",
+        "explanation": "The sum of squares gives $R = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{1}{\\sqrt3} \\;\\Rightarrow\\; \\alpha = 30^\\circ",
+        "explanation": "The ratio gives $\\tan\\alpha = \\frac{1}{\\sqrt3}$, so $\\alpha = 30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the final form",
+        "workingLatex": "\\sqrt3\\sin\\theta - \\cos\\theta = 2\\sin(\\theta - 30^\\circ)",
+        "explanation": "Both values are exact, giving the required harmonic form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sqrt3\\sin\\theta - \\cos\\theta = 2\\sin(\\theta - 30^\\circ)$"
+  }
+}

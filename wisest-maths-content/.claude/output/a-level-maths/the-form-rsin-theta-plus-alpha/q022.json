@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "single solution"
+  ],
+  "questionText": "Solve $7\\sin\\theta + 24\\cos\\theta = 25$ for $0^\\circ \\le \\theta < 360^\\circ$, giving your answer to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{7^2 + 24^2} = 25",
+        "explanation": "The amplitude is $25$ (a $7$-$24$-$25$ triangle), which equals the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha and write the form",
+        "workingLatex": "7\\sin\\theta + 24\\cos\\theta = 25\\sin(\\theta + 73.74^\\circ)",
+        "explanation": "With $\\tan\\alpha = \\frac{24}{7}$, the phase angle is about $73.74^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the equation",
+        "workingLatex": "25\\sin(\\theta + 73.74^\\circ) = 25",
+        "explanation": "Substituting the harmonic form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta + 73.74^\\circ) = 1",
+        "explanation": "Since the right side equals the amplitude, the sine must be at its maximum of $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the bracket",
+        "workingLatex": "\\theta + 73.74^\\circ = 90^\\circ",
+        "explanation": "Sine equals $1$ only at $90^\\circ$ within one revolution, so there is a single solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for theta",
+        "workingLatex": "\\theta = 90^\\circ - 73.74^\\circ \\approx 16^\\circ",
+        "explanation": "Subtracting the phase shift gives the unique solution near $16^\\circ$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 16^\\circ$"
+  }
+}

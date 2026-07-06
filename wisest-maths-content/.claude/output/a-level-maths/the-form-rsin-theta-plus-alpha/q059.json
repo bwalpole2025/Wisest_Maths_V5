@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "exact"
+  ],
+  "questionText": "Solve $\\cos\\theta + \\sin\\theta = -1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in R-form",
+        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt2\\sin(\\theta + 45^\\circ)",
+        "explanation": "Equal unit coefficients give amplitude $\\sqrt2$ and phase $45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set up the equation",
+        "workingLatex": "\\sqrt2\\sin(\\theta + 45^\\circ) = -1 \\;\\Rightarrow\\; \\sin(\\theta + 45^\\circ) = -\\frac{1}{\\sqrt2}",
+        "explanation": "Dividing by $\\sqrt2$ gives a standard negative exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the shifted interval",
+        "workingLatex": "45^\\circ \\le \\theta + 45^\\circ < 405^\\circ",
+        "explanation": "Adding the shift to the bounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta + 45^\\circ = 225^\\circ, 315^\\circ",
+        "explanation": "A negative sine of $\\frac{1}{\\sqrt2}$ gives third- and fourth-quadrant angles $225^\\circ$ and $315^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = 180^\\circ, 270^\\circ",
+        "explanation": "Subtracting $45^\\circ$ from each gives the solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Verify one solution",
+        "workingLatex": "\\theta = 180^\\circ: \\cos 180^\\circ + \\sin 180^\\circ = -1 + 0 = -1 \\;\\checkmark",
+        "explanation": "Substituting confirms the solution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 180^\\circ, 270^\\circ$"
+  }
+}

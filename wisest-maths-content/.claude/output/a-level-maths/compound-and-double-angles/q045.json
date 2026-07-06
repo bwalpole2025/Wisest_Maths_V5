@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "cosecant"
+  ],
+  "questionText": "Prove that $\\cot\\theta + \\tan\\theta \\equiv 2\\csc 2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite both terms in sine and cosine",
+        "workingLatex": "\\cot\\theta + \\tan\\theta = \\frac{\\cos\\theta}{\\sin\\theta} + \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Converting to basic functions lets us combine the two fractions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\frac{\\cos^2\\theta + \\sin^2\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "The numerator becomes the Pythagorean sum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "= \\frac{1}{\\sin\\theta\\cos\\theta}",
+        "explanation": "The numerator equals $1$, greatly simplifying the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the denominator as a double angle",
+        "workingLatex": "\\sin\\theta\\cos\\theta = \\tfrac{1}{2}\\sin 2\\theta",
+        "explanation": "Half of $\\sin 2\\theta$ equals $\\sin\\theta\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute",
+        "workingLatex": "= \\frac{1}{\\tfrac{1}{2}\\sin 2\\theta}",
+        "explanation": "The denominator is now in terms of $2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "= \\frac{2}{\\sin 2\\theta}",
+        "explanation": "Dividing by $\\frac{1}{2}$ doubles the value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise cosecant and conclude",
+        "workingLatex": "= 2\\csc 2\\theta \\;\\blacksquare",
+        "explanation": "One over $\\sin 2\\theta$ is $\\csc 2\\theta$, giving $2\\csc 2\\theta$ and completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cot\\theta + \\tan\\theta \\equiv 2\\csc 2\\theta$"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "cosecant",
+    "cotangent"
+  ],
+  "questionText": "Prove that $(1 + \\cot\\theta)^2 + (1 - \\cot\\theta)^2 \\equiv 2\\csc^2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = (1 + \\cot\\theta)^2 + (1 - \\cot\\theta)^2",
+        "explanation": "We expand both squares; the cross terms should cancel, which is the point of this structure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the first square",
+        "workingLatex": "(1 + \\cot\\theta)^2 = 1 + 2\\cot\\theta + \\cot^2\\theta",
+        "explanation": "The first bracket expands with a positive cross term $+2\\cot\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the second square",
+        "workingLatex": "(1 - \\cot\\theta)^2 = 1 - 2\\cot\\theta + \\cot^2\\theta",
+        "explanation": "The second bracket expands with a negative cross term $-2\\cot\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add the two expansions",
+        "workingLatex": "= 1 + 2\\cot\\theta + \\cot^2\\theta + 1 - 2\\cot\\theta + \\cot^2\\theta",
+        "explanation": "Writing both out side by side shows the cross terms are equal and opposite.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel the cross terms and collect",
+        "workingLatex": "= 2 + 2\\cot^2\\theta",
+        "explanation": "The $+2\\cot\\theta$ and $-2\\cot\\theta$ cancel, leaving a constant and a cotangent-squared term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factor out the common factor of two",
+        "workingLatex": "= 2(1 + \\cot^2\\theta)",
+        "explanation": "Taking out $2$ prepares the bracket to be replaced by a Pythagorean identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the identity and conclude",
+        "workingLatex": "= 2\\csc^2\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "Since $1 + \\cot^2\\theta = \\csc^2\\theta$, the expression becomes $2\\csc^2\\theta$, matching the right-hand side.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(1 + \\cot\\theta)^2 + (1 - \\cot\\theta)^2 \\equiv 2\\csc^2\\theta$"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "cosecant"
+  ],
+  "questionText": "Prove that $\\csc\\theta - \\sin\\theta \\equiv \\cos\\theta\\cot\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = \\csc\\theta - \\sin\\theta",
+        "explanation": "We work from the left-hand side towards the right, using the reciprocal definition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite cosecant as a reciprocal",
+        "workingLatex": "= \\frac{1}{\\sin\\theta} - \\sin\\theta",
+        "explanation": "Converting cosecant to one over sine puts both terms over sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form a common denominator",
+        "workingLatex": "= \\frac{1 - \\sin^2\\theta}{\\sin\\theta}",
+        "explanation": "Combining over $\\sin\\theta$ merges the terms into one fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 - \\sin^2\\theta = \\cos^2\\theta",
+        "explanation": "The numerator rearranges the Pythagorean identity, becoming $\\cos^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the numerator",
+        "workingLatex": "= \\frac{\\cos^2\\theta}{\\sin\\theta}",
+        "explanation": "The fraction now has cosine squared on top, ready to be split.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Split off a cotangent",
+        "workingLatex": "= \\cos\\theta \\cdot \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Separating one cosine leaves $\\frac{\\cos\\theta}{\\sin\\theta}$, which is cotangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise the cotangent and conclude",
+        "workingLatex": "= \\cos\\theta\\cot\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "This is precisely the right-hand side, so the identity holds.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\csc\\theta - \\sin\\theta \\equiv \\cos\\theta\\cot\\theta$"
+  }
+}

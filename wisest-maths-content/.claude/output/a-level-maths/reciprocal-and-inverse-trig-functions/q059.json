@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "secant",
+    "cosecant",
+    "tangent"
+  ],
+  "questionText": "Solve $\\sec\\theta = 2\\csc\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite both sides in sine and cosine",
+        "workingLatex": "\\frac{1}{\\cos\\theta} = \\frac{2}{\\sin\\theta}",
+        "explanation": "Converting the reciprocal functions makes it possible to cross-multiply and reach a tangent equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Cross-multiply",
+        "workingLatex": "\\sin\\theta = 2\\cos\\theta",
+        "explanation": "Multiplying both sides by $\\sin\\theta\\cos\\theta$ clears the fractions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide by cosine to form a tangent",
+        "workingLatex": "\\frac{\\sin\\theta}{\\cos\\theta} = 2 \\;\\Rightarrow\\; \\tan\\theta = 2",
+        "explanation": "Dividing by $\\cos\\theta$ turns the equation into a simple tangent equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the principal value",
+        "workingLatex": "\\theta = \\tan^{-1}(2) \\approx 63.4^\\circ",
+        "explanation": "The inverse tangent of $2$ gives the first-quadrant solution, about $63.4^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the period of tangent",
+        "workingLatex": "\\theta = 63.4^\\circ + 180^\\circ = 243.4^\\circ",
+        "explanation": "Tangent repeats every $180^\\circ$, giving a second solution in the third quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check both keep the functions defined",
+        "workingLatex": "\\sin\\theta \\ne 0, \\cos\\theta \\ne 0 \\;\\checkmark",
+        "explanation": "Neither solution makes sine or cosine zero, so both secant and cosecant are defined and the solutions are valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta \\approx 63^\\circ, 243^\\circ",
+        "explanation": "Rounding gives the two solutions in the required interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 63^\\circ, 243^\\circ$"
+  }
+}

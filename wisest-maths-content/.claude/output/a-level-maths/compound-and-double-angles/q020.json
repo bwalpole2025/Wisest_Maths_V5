@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "given ratio",
+    "obtuse",
+    "quadrant"
+  ],
+  "questionText": "Given that $\\cos\\theta = -\\dfrac{3}{5}$ and $\\theta$ is obtuse, find the exact values of $\\sin 2\\theta$ and $\\cos 2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find sine using the identity",
+        "workingLatex": "\\sin^2\\theta = 1 - \\left(-\\tfrac{3}{5}\\right)^2 = \\frac{16}{25}",
+        "explanation": "We need sine for the $\\sin 2\\theta$ formula; the identity gives its square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the sign of sine",
+        "workingLatex": "\\theta \\text{ obtuse} \\;\\Rightarrow\\; \\sin\\theta = +\\frac{4}{5}",
+        "explanation": "In the second quadrant sine is positive, so we take the positive root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the sine double angle formula",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta = 2\\cdot\\frac{4}{5}\\cdot\\left(-\\frac{3}{5}\\right)",
+        "explanation": "Substituting the sine and cosine values into the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate sin 2θ",
+        "workingLatex": "\\sin 2\\theta = -\\frac{24}{25}",
+        "explanation": "The product is negative because cosine is negative, giving $-\\frac{24}{25}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the cosine double angle formula",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1 = 2\\cdot\\frac{9}{25} - 1",
+        "explanation": "The cosine-only form is convenient since cosine is given directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate cos 2θ",
+        "workingLatex": "\\cos 2\\theta = \\frac{18}{25} - 1 = -\\frac{7}{25}",
+        "explanation": "Simplifying gives $-\\frac{7}{25}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Sanity check with the Pythagorean identity",
+        "workingLatex": "\\left(\\tfrac{24}{25}\\right)^2 + \\left(\\tfrac{7}{25}\\right)^2 = \\frac{576 + 49}{625} = 1 \\;\\checkmark",
+        "explanation": "Since $\\sin^2 2\\theta + \\cos^2 2\\theta = 1$, the two answers are mutually consistent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 2\\theta = -\\dfrac{24}{25}, \\quad \\cos 2\\theta = -\\dfrac{7}{25}$"
+  }
+}

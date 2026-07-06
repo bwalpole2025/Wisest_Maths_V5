@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "circle",
+    "translated"
+  ],
+  "questionText": "A curve has parametric equations $x = 3 + 2\\cos\\theta$, $y = -1 + 2\\sin\\theta$. Find the Cartesian equation and state the centre and radius.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the trig functions",
+        "workingLatex": "\\cos\\theta = \\frac{x - 3}{2}, \\quad \\sin\\theta = \\frac{y + 1}{2}",
+        "explanation": "Subtracting the constant and dividing by $2$ isolates each trig function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\left(\\frac{x-3}{2}\\right)^2 + \\left(\\frac{y+1}{2}\\right)^2 = 1",
+        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ removes $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify",
+        "workingLatex": "\\frac{(x-3)^2}{4} + \\frac{(y+1)^2}{4} = 1",
+        "explanation": "Squaring gives denominators of $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply through by 4",
+        "workingLatex": "(x-3)^2 + (y+1)^2 = 4",
+        "explanation": "Clearing the denominator gives the standard circle form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Read off centre and radius",
+        "workingLatex": "\\text{centre } (3, -1), \\quad \\text{radius } 2",
+        "explanation": "The equation is a circle; the radius is $\\sqrt4 = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x-3)^2 + (y+1)^2 = 4$; centre $(3,-1)$, radius $2$."
+  }
+}

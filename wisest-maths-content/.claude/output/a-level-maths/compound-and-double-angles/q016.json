@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "double angle",
+    "simplify",
+    "cosine"
+  ],
+  "questionText": "Write $1 - 2\\sin^2 4\\theta$ as a single trigonometric term.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the relevant form of the cosine double angle formula",
+        "workingLatex": "\\cos 2X = 1 - 2\\sin^2 X",
+        "explanation": "The expression exactly matches the sine form of the cosine double angle formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the inner angle",
+        "workingLatex": "X = 4\\theta",
+        "explanation": "Comparing $1 - 2\\sin^2 4\\theta$ with $1 - 2\\sin^2 X$ gives $X = 4\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the formula",
+        "workingLatex": "1 - 2\\sin^2 4\\theta = \\cos(2\\cdot 4\\theta)",
+        "explanation": "Substituting folds the expression into a single cosine of the doubled angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the angle",
+        "workingLatex": "= \\cos 8\\theta",
+        "explanation": "Doubling $4\\theta$ gives $8\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check with a value",
+        "workingLatex": "\\theta = 0: 1 - 0 = 1 = \\cos 0 \\;\\checkmark",
+        "explanation": "At $\\theta = 0$ both sides equal $1$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "1 - 2\\sin^2 4\\theta = \\cos 8\\theta",
+        "explanation": "The expression simplifies to a single cosine term.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos 8\\theta$"
+  }
+}

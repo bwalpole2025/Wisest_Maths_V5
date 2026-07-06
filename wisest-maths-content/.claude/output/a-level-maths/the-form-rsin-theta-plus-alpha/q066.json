@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.rsin-form.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "range",
+    "reciprocal",
+    "max min"
+  ],
+  "questionText": "Find the maximum and minimum values of $\\dfrac{1}{10 + 6\\sin\\theta - 8\\cos\\theta}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the varying part in R-form",
+        "workingLatex": "6\\sin\\theta - 8\\cos\\theta = 10\\sin(\\theta - \\alpha)",
+        "explanation": "The amplitude is $\\sqrt{36 + 64} = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound the denominator",
+        "workingLatex": "10 - 10 \\le 10 + 10\\sin(\\theta - \\alpha) \\le 10 + 10",
+        "explanation": "The sine part ranges over $[-10,10]$, so the denominator ranges over $[0, 20]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the denominator reaches zero",
+        "workingLatex": "\\text{denominator} = 0 \\text{ is possible}",
+        "explanation": "When the sine equals $-1$, the denominator is $0$, so the fraction is undefined there and can grow without bound nearby.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Conclude about the maximum",
+        "workingLatex": "\\text{no finite maximum}",
+        "explanation": "As the denominator approaches $0$ from above, the fraction tends to $+\\infty$, so there is no finite maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the minimum",
+        "workingLatex": "\\text{min} = \\frac{1}{20}",
+        "explanation": "The smallest positive fraction comes from the largest denominator $20$, giving $\\frac{1}{20}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "\\text{min} = \\frac{1}{20}, \\quad \\text{no maximum}",
+        "explanation": "This example highlights why checking whether the denominator can vanish matters.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum $= \\dfrac{1}{20}$; there is no finite maximum (denominator can reach $0$)."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "coordinates",
+    "extremes"
+  ],
+  "questionText": "A curve has parametric equations $x = 3 + t$, $y = 2 - t^2$. Find the coordinates of the highest point of the curve and state the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Make t the subject",
+        "workingLatex": "t = x - 3",
+        "explanation": "Rearranging the linear $x$-equation gives $t$ in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = 2 - (x - 3)^2",
+        "explanation": "Replacing $t$ gives the Cartesian equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recognise the maximum from the form",
+        "workingLatex": "y = 2 - (x - 3)^2 \\le 2",
+        "explanation": "A subtracted square is largest (zero) when the bracket is zero, so $y$ has a maximum of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find where the maximum occurs",
+        "workingLatex": "x - 3 = 0 \\;\\Rightarrow\\; x = 3",
+        "explanation": "The vertex is at $x = 3$, where the squared term vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the highest point",
+        "workingLatex": "(3, 2)",
+        "explanation": "This corresponds to $t = 0$; the downward parabola has its peak here.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Highest point $(3, 2)$; $y = 2 - (x - 3)^2$."
+  }
+}

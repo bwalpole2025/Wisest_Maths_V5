@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "fractions",
+    "cosecant"
+  ],
+  "questionText": "Prove that $\\dfrac{\\sec\\theta + \\csc\\theta}{1 + \\tan\\theta} \\equiv \\csc\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the numerator in sine and cosine",
+        "workingLatex": "\\sec\\theta + \\csc\\theta = \\frac{1}{\\cos\\theta} + \\frac{1}{\\sin\\theta}",
+        "explanation": "Converting the reciprocal functions is the first step towards combining the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Combine the numerator over a common denominator",
+        "workingLatex": "= \\frac{\\sin\\theta + \\cos\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "Adding the two fractions gives a single numerator $\\sin\\theta + \\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the denominator of the main fraction",
+        "workingLatex": "1 + \\tan\\theta = 1 + \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\cos\\theta + \\sin\\theta}{\\cos\\theta}",
+        "explanation": "Expressing the denominator over cosine reveals the same $\\sin\\theta + \\cos\\theta$ factor that appears in the numerator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the whole expression as a division",
+        "workingLatex": "\\frac{\\sec\\theta + \\csc\\theta}{1 + \\tan\\theta} = \\frac{\\;\\frac{\\sin\\theta + \\cos\\theta}{\\sin\\theta\\cos\\theta}\\;}{\\;\\frac{\\cos\\theta + \\sin\\theta}{\\cos\\theta}\\;}",
+        "explanation": "Substituting both rewritten parts sets up a division of two fractions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divide by multiplying by the reciprocal",
+        "workingLatex": "= \\frac{\\sin\\theta + \\cos\\theta}{\\sin\\theta\\cos\\theta}\\times\\frac{\\cos\\theta}{\\cos\\theta + \\sin\\theta}",
+        "explanation": "Dividing by a fraction means multiplying by its reciprocal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel the common sum factor",
+        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "Since $\\sin\\theta + \\cos\\theta = \\cos\\theta + \\sin\\theta$, that factor cancels top and bottom.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Cancel the cosine",
+        "workingLatex": "= \\frac{1}{\\sin\\theta}",
+        "explanation": "The remaining cosine cancels, leaving one over sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Recognise the reciprocal and conclude",
+        "workingLatex": "= \\csc\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "One over sine is cosecant, matching the right-hand side and completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sec\\theta + \\csc\\theta}{1 + \\tan\\theta} \\equiv \\csc\\theta$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "coordinates",
+    "substitution"
+  ],
+  "questionText": "A curve is given parametrically by $x = 2t$, $y = t^2$. Find the coordinates of the point where $t = 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Understand what the parameter does",
+        "workingLatex": "x = 2t, \\quad y = t^2",
+        "explanation": "Each value of the parameter $t$ generates one point on the curve, by giving both an $x$ and a $y$. So we simply substitute the given $t$ into each equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute t into the x-equation",
+        "workingLatex": "x = 2(3) = 6",
+        "explanation": "Putting $t = 3$ into $x = 2t$ gives the horizontal coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute t into the y-equation",
+        "workingLatex": "y = 3^2 = 9",
+        "explanation": "Putting $t = 3$ into $y = t^2$ gives the vertical coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine into a coordinate pair",
+        "workingLatex": "(x, y) = (6, 9)",
+        "explanation": "The two values together give the point on the curve corresponding to $t = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check with the Cartesian shape",
+        "workingLatex": "t = \\tfrac{x}{2} \\;\\Rightarrow\\; y = \\left(\\tfrac{x}{2}\\right)^2 = \\tfrac{x^2}{4}",
+        "explanation": "Eliminating $t$ shows the curve is the parabola $y = \\frac{x^2}{4}$; the point $(6,9)$ satisfies it since $\\frac{36}{4} = 9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "(6, 9)",
+        "explanation": "This is the required point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(6, 9)$"
+  }
+}

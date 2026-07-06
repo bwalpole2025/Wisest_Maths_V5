@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "harmonic form",
+    "proof",
+    "minimum"
+  ],
+  "questionText": "Prove that the least value of $a\\sin\\theta + b\\cos\\theta + c$ (with $a, b > 0$) is $c - \\sqrt{a^2 + b^2}$, and state the value of $\\sin(\\theta + \\alpha)$ where it occurs.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the varying part in R-form",
+        "workingLatex": "a\\sin\\theta + b\\cos\\theta = R\\sin(\\theta + \\alpha), \\quad R = \\sqrt{a^2 + b^2}",
+        "explanation": "The R-form collapses the two oscillating terms into one sine of amplitude $R$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the whole expression",
+        "workingLatex": "a\\sin\\theta + b\\cos\\theta + c = R\\sin(\\theta + \\alpha) + c",
+        "explanation": "The constant $c$ simply shifts the whole thing vertically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the range of the sine",
+        "workingLatex": "-1 \\le \\sin(\\theta + \\alpha) \\le 1",
+        "explanation": "The sine is bounded between $-1$ and $1$ for every angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Scale by R and shift by c",
+        "workingLatex": "c - R \\le R\\sin(\\theta + \\alpha) + c \\le c + R",
+        "explanation": "Multiplying by the positive $R$ and adding $c$ gives the range of the full expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the least value",
+        "workingLatex": "\\text{least} = c - R = c - \\sqrt{a^2 + b^2}",
+        "explanation": "The minimum of the expression is its lower bound.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State when it occurs",
+        "workingLatex": "\\sin(\\theta + \\alpha) = -1",
+        "explanation": "The least value is attained exactly when the sine reaches its minimum of $-1$, completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Least value $= c - \\sqrt{a^2 + b^2}$, when $\\sin(\\theta + \\alpha) = -1$."
+  }
+}

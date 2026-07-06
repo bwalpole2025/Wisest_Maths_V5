@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.parametric-curves.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "trig",
+    "circle"
+  ],
+  "questionText": "A curve has parametric equations $x = 3\\cos\\theta$, $y = 3\\sin\\theta$. Find the Cartesian equation and describe the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Make the trig functions the subjects",
+        "workingLatex": "\\cos\\theta = \\frac{x}{3}, \\quad \\sin\\theta = \\frac{y}{3}",
+        "explanation": "When the parameter is an angle, we eliminate it using a trig identity. First isolate $\\cos\\theta$ and $\\sin\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the Pythagorean identity",
+        "workingLatex": "\\cos^2\\theta + \\sin^2\\theta = 1",
+        "explanation": "This identity lets us combine the two expressions and remove $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute",
+        "workingLatex": "\\left(\\frac{x}{3}\\right)^2 + \\left(\\frac{y}{3}\\right)^2 = 1",
+        "explanation": "Inserting the expressions for cosine and sine gives an equation in $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify",
+        "workingLatex": "\\frac{x^2}{9} + \\frac{y^2}{9} = 1",
+        "explanation": "Squaring each fraction gives denominators of $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply through by 9",
+        "workingLatex": "x^2 + y^2 = 9",
+        "explanation": "Clearing the denominator gives the standard circle equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Describe the curve",
+        "workingLatex": "x^2 + y^2 = 9 \\text{ (circle, centre } O, \\text{ radius } 3)",
+        "explanation": "This is a circle centred at the origin with radius $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + y^2 = 9$, a circle centre $(0,0)$ radius $3$."
+  }
+}

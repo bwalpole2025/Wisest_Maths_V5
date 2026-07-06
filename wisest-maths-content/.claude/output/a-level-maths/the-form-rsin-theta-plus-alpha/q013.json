@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $\\sqrt3\\sin\\theta - \\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in harmonic form",
+        "workingLatex": "\\sqrt3\\sin\\theta - \\cos\\theta = 2\\sin(\\theta - 30^\\circ)",
+        "explanation": "From $R = 2$ and $\\tan\\alpha = \\frac{1}{\\sqrt3}$, the expression becomes a single sine, which is far easier to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the equation",
+        "workingLatex": "2\\sin(\\theta - 30^\\circ) = 1",
+        "explanation": "Substituting the harmonic form turns the equation into a standard sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta - 30^\\circ) = \\frac{1}{2}",
+        "explanation": "Dividing by $2$ gives a recognisable value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the shifted interval",
+        "workingLatex": "-30^\\circ \\le \\theta - 30^\\circ < 330^\\circ",
+        "explanation": "Subtracting $30^\\circ$ from the bounds gives the interval for the shifted angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta - 30^\\circ = 30^\\circ, 150^\\circ",
+        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$ in this interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the shift back",
+        "workingLatex": "\\theta = 60^\\circ, 180^\\circ",
+        "explanation": "Adding $30^\\circ$ to each solution recovers $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta = 60^\\circ, 180^\\circ",
+        "explanation": "Both lie in the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 60^\\circ, 180^\\circ$"
+  }
+}

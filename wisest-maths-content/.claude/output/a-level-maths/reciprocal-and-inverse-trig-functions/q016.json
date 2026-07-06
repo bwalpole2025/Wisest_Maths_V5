@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "arctan",
+    "exact values",
+    "radians"
+  ],
+  "questionText": "Find the exact value of $\\arctan\\left(\\sqrt{3}\\right)$, giving your answer in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the inverse tangent",
+        "workingLatex": "\\arctan\\left(\\sqrt{3}\\right) = \\theta \\;\\Leftrightarrow\\; \\tan\\theta = \\sqrt{3}",
+        "explanation": "We seek the angle whose tangent is $\\sqrt{3}$, taken from the principal range of arctangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the principal range of arctan",
+        "workingLatex": "-\\frac{\\pi}{2} < \\theta < \\frac{\\pi}{2}",
+        "explanation": "Arctangent gives angles strictly inside this interval, so the answer must be chosen from here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall which standard angle has tangent root three",
+        "workingLatex": "\\tan\\frac{\\pi}{3} = \\sqrt{3}",
+        "explanation": "From the $30$-$60$-$90$ triangle, the tangent of $60^\\circ$, or $\\frac{\\pi}{3}$, is $\\sqrt{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the angle lies in range",
+        "workingLatex": "-\\frac{\\pi}{2} < \\frac{\\pi}{3} < \\frac{\\pi}{2} \\;\\checkmark",
+        "explanation": "The angle $\\frac{\\pi}{3}$ sits inside the arctangent range, so it is the valid output.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note that the input is positive",
+        "workingLatex": "\\sqrt{3} > 0 \\;\\Rightarrow\\; \\theta > 0",
+        "explanation": "A positive tangent in the principal range corresponds to a positive angle, consistent with our answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\arctan\\left(\\sqrt{3}\\right) = \\frac{\\pi}{3}",
+        "explanation": "This is the exact value in radians.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\arctan\\left(\\sqrt{3}\\right) = \\dfrac{\\pi}{3}$"
+  }
+}

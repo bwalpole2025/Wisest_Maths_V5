@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "arcsin",
+    "negative",
+    "radians"
+  ],
+  "questionText": "Find the exact value of $\\arcsin\\left(-\\dfrac{1}{2}\\right)$, giving your answer in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the inverse sine",
+        "workingLatex": "\\arcsin\\left(-\\tfrac{1}{2}\\right) = \\theta \\;\\Leftrightarrow\\; \\sin\\theta = -\\tfrac{1}{2}",
+        "explanation": "We need the angle whose sine is $-\\frac{1}{2}$, chosen from the principal range of arcsine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the principal range of arcsin",
+        "workingLatex": "-\\frac{\\pi}{2} \\le \\theta \\le \\frac{\\pi}{2}",
+        "explanation": "Arcsine outputs angles in this range, which includes negative angles, so a negative answer is possible here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the odd symmetry of arcsine",
+        "workingLatex": "\\arcsin(-x) = -\\arcsin(x)",
+        "explanation": "Arcsine is an odd function, so a negative input simply flips the sign of the output. This lets us reuse the positive case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recall the positive case",
+        "workingLatex": "\\arcsin\\left(\\tfrac{1}{2}\\right) = \\frac{\\pi}{6}",
+        "explanation": "We already know the angle with sine one half is $\\frac{\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the sign flip",
+        "workingLatex": "\\arcsin\\left(-\\tfrac{1}{2}\\right) = -\\frac{\\pi}{6}",
+        "explanation": "Flipping the sign gives $-\\frac{\\pi}{6}$, which indeed lies in the principal range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Verify by checking the sine",
+        "workingLatex": "\\sin\\left(-\\tfrac{\\pi}{6}\\right) = -\\tfrac{1}{2} \\;\\checkmark",
+        "explanation": "Substituting back confirms the sine of $-\\frac{\\pi}{6}$ is $-\\frac{1}{2}$, so our answer is correct.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\arcsin\\left(-\\dfrac{1}{2}\\right) = -\\dfrac{\\pi}{6}$"
+  }
+}

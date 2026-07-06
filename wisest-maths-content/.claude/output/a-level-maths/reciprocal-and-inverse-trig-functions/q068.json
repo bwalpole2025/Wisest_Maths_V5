@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "cosecant",
+    "cotangent"
+  ],
+  "questionText": "Prove that $\\dfrac{\\csc\\theta}{\\cot\\theta + \\tan\\theta} \\equiv \\cos\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the denominator in sine and cosine",
+        "workingLatex": "\\cot\\theta + \\tan\\theta = \\frac{\\cos\\theta}{\\sin\\theta} + \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Converting to basic functions lets us combine the denominator into a single fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\frac{\\cos^2\\theta + \\sin^2\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "Adding the fractions produces the Pythagorean expression on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "= \\frac{1}{\\sin\\theta\\cos\\theta}",
+        "explanation": "Since $\\cos^2\\theta + \\sin^2\\theta = 1$, the denominator simplifies to $\\frac{1}{\\sin\\theta\\cos\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the whole expression",
+        "workingLatex": "\\frac{\\csc\\theta}{\\cot\\theta + \\tan\\theta} = \\frac{\\csc\\theta}{\\;\\frac{1}{\\sin\\theta\\cos\\theta}\\;}",
+        "explanation": "Substituting the simplified denominator sets up a division by a fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divide by multiplying by the reciprocal",
+        "workingLatex": "= \\csc\\theta\\times\\sin\\theta\\cos\\theta",
+        "explanation": "Dividing by $\\frac{1}{\\sin\\theta\\cos\\theta}$ is multiplying by $\\sin\\theta\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite cosecant",
+        "workingLatex": "= \\frac{1}{\\sin\\theta}\\times\\sin\\theta\\cos\\theta",
+        "explanation": "Replacing cosecant with one over sine exposes the cancellation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Cancel the sine and conclude",
+        "workingLatex": "= \\cos\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "The sine terms cancel, leaving cosine, which matches the right-hand side and completes the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\csc\\theta}{\\cot\\theta + \\tan\\theta} \\equiv \\cos\\theta$"
+  }
+}

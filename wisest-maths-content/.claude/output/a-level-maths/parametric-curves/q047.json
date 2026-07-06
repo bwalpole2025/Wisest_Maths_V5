@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "hyperbola",
+    "scaled"
+  ],
+  "questionText": "A curve has parametric equations $x = \\sec\\theta$, $y = 3\\tan\\theta$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the trig functions",
+        "workingLatex": "\\sec\\theta = x, \\quad \\tan\\theta = \\frac{y}{3}",
+        "explanation": "Dividing the $y$-equation by $3$ isolates $\\tan\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the linking identity",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = 1",
+        "explanation": "This identity connects the two parameters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute",
+        "workingLatex": "x^2 - \\left(\\frac{y}{3}\\right)^2 = 1",
+        "explanation": "Inserting the parametric expressions eliminates $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify",
+        "workingLatex": "x^2 - \\frac{y^2}{9} = 1",
+        "explanation": "Squaring the fraction gives $\\frac{y^2}{9}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the curve",
+        "workingLatex": "x^2 - \\frac{y^2}{9} = 1 \\text{ (hyperbola)}",
+        "explanation": "This is a hyperbola with vertices at $(\\pm 1, 0)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - \\dfrac{y^2}{9} = 1$"
+  }
+}

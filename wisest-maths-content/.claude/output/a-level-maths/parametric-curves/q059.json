@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.parametric-curves.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "ellipse",
+    "intersection"
+  ],
+  "questionText": "A curve has parametric equations $x = 2\\cos\\theta$, $y = 3\\sin\\theta$. Find the exact coordinates of the points where the curve meets the line $y = x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set the expressions equal",
+        "workingLatex": "3\\sin\\theta = 2\\cos\\theta",
+        "explanation": "The condition $y = x$ equates the two parametric expressions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form a tangent equation",
+        "workingLatex": "\\tan\\theta = \\frac{2}{3}",
+        "explanation": "Dividing both sides by $3\\cos\\theta$ gives a tangent equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Build the reference triangle",
+        "workingLatex": "\\tan\\theta = \\frac{2}{3} \\;\\Rightarrow\\; \\text{hypotenuse} = \\sqrt{13}",
+        "explanation": "A tangent of $\\frac{2}{3}$ gives a right triangle with sides $2$, $3$, hypotenuse $\\sqrt{13}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the first-quadrant point",
+        "workingLatex": "\\cos\\theta = \\frac{3}{\\sqrt{13}}, \\; \\sin\\theta = \\frac{2}{\\sqrt{13}}",
+        "explanation": "Using the triangle for the first solution where both are positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute the coordinates",
+        "workingLatex": "x = 2\\cdot\\frac{3}{\\sqrt{13}} = \\frac{6}{\\sqrt{13}}, \\; y = 3\\cdot\\frac{2}{\\sqrt{13}} = \\frac{6}{\\sqrt{13}}",
+        "explanation": "Both coordinates equal $\\frac{6}{\\sqrt{13}}$, confirming the point lies on $y = x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the second point",
+        "workingLatex": "\\left(-\\frac{6}{\\sqrt{13}}, -\\frac{6}{\\sqrt{13}}\\right)",
+        "explanation": "The angle $\\theta + \\pi$ gives the diametrically opposite point, with both signs flipped.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "\\left(\\pm\\frac{6\\sqrt{13}}{13}, \\pm\\frac{6\\sqrt{13}}{13}\\right)",
+        "explanation": "Rationalising, the two points are $\\left(\\frac{6\\sqrt{13}}{13}, \\frac{6\\sqrt{13}}{13}\\right)$ and its negative.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\left(\\dfrac{6\\sqrt{13}}{13}, \\dfrac{6\\sqrt{13}}{13}\\right)$ and $\\left(-\\dfrac{6\\sqrt{13}}{13}, -\\dfrac{6\\sqrt{13}}{13}\\right)$"
+  }
+}

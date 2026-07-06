@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.rsin-form.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "radians",
+    "exact"
+  ],
+  "questionText": "Solve $\\cos\\theta + \\sqrt3\\sin\\theta = 1$ for $0 \\le \\theta < 2\\pi$, giving exact answers in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder and identify coefficients",
+        "workingLatex": "\\sqrt3\\sin\\theta + \\cos\\theta",
+        "explanation": "Writing sine first, the coefficients are $\\sqrt3$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{3 + 1} = 2, \\quad \\tan\\alpha = \\frac{1}{\\sqrt3} \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{6}",
+        "explanation": "The amplitude is $2$ and the phase is $\\frac{\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the harmonic form",
+        "workingLatex": "\\sqrt3\\sin\\theta + \\cos\\theta = 2\\sin\\left(\\theta + \\frac{\\pi}{6}\\right)",
+        "explanation": "Combining gives the single-sine form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation",
+        "workingLatex": "2\\sin\\left(\\theta + \\frac{\\pi}{6}\\right) = 1 \\;\\Rightarrow\\; \\sin\\left(\\theta + \\frac{\\pi}{6}\\right) = \\frac{1}{2}",
+        "explanation": "Dividing by $2$ gives a standard exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the shifted interval",
+        "workingLatex": "\\frac{\\pi}{6} \\le \\theta + \\frac{\\pi}{6} < 2\\pi + \\frac{\\pi}{6}",
+        "explanation": "Adding the shift to the bounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta + \\frac{\\pi}{6} = \\frac{5\\pi}{6}, \\; \\frac{13\\pi}{6}",
+        "explanation": "Sine one half occurs at $\\frac{\\pi}{6}$ and $\\frac{5\\pi}{6}$; the value $\\frac{\\pi}{6}$ is at the boundary giving $\\theta = 0$, and adding $2\\pi$ to it gives $\\frac{13\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Include the boundary solution and subtract the shift",
+        "workingLatex": "\\theta = 0, \\; \\frac{2\\pi}{3}",
+        "explanation": "From $\\frac{\\pi}{6} \\to \\theta = 0$, from $\\frac{5\\pi}{6} \\to \\theta = \\frac{2\\pi}{3}$; the value $\\frac{13\\pi}{6}$ gives $\\theta = 2\\pi$, which is out of range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 0, \\dfrac{2\\pi}{3}$"
+  }
+}

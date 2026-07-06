@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
+  "tags": [
+    "compound angles",
+    "tangent",
+    "formula recall"
+  ],
+  "questionText": "Write down the compound angle formula for $\\tan(A + B)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the tangent addition formula",
+        "workingLatex": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
+        "explanation": "The tangent formula is a fraction, with the sum of tangents on top and $1$ minus their product on the bottom.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Note where the formula comes from",
+        "workingLatex": "\\tan(A + B) = \\frac{\\sin(A + B)}{\\cos(A + B)}",
+        "explanation": "It is derived by dividing the sine addition formula by the cosine addition formula, then dividing top and bottom by $\\cos A\\cos B$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the sign pattern",
+        "workingLatex": "+B: \\; \\text{top } +, \\text{ bottom } -",
+        "explanation": "For a plus inside the bracket, the numerator has a plus and the denominator has a minus. The denominator sign is always opposite to the numerator sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Sanity check with a known value",
+        "workingLatex": "\\tan(45^\\circ + 0^\\circ) = \\frac{1 + 0}{1 - 0} = 1 \\;\\checkmark",
+        "explanation": "Testing with $A = 45^\\circ, B = 0^\\circ$ gives $1$, matching $\\tan 45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the restriction",
+        "workingLatex": "1 - \\tan A\\tan B \\ne 0",
+        "explanation": "The formula is undefined when the denominator is zero, which corresponds to $A + B$ being an odd multiple of $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final formula",
+        "workingLatex": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
+        "explanation": "This is the required compound angle formula for tangent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\tan(A + B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}$"
+  }
+}

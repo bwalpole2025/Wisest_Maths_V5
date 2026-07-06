@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Express $8\\cos\\theta - 15\\sin\\theta$ as $R\\cos(\\theta + \\alpha)$ and hence solve $8\\cos\\theta - 15\\sin\\theta = 8.5$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{8^2 + 15^2} = 17",
+        "explanation": "The amplitude is $17$ (an $8$-$15$-$17$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{15}{8} \\;\\Rightarrow\\; \\alpha \\approx 61.93^\\circ",
+        "explanation": "For the cosine form, $\\tan\\alpha$ is the sine coefficient over the cosine coefficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the harmonic form",
+        "workingLatex": "8\\cos\\theta - 15\\sin\\theta = 17\\cos(\\theta + 61.93^\\circ)",
+        "explanation": "Combining gives the single-cosine form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation",
+        "workingLatex": "\\cos(\\theta + 61.93^\\circ) = \\frac{8.5}{17} = 0.5",
+        "explanation": "Dividing by $17$ gives cosine equal to $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve within the shifted interval",
+        "workingLatex": "\\theta + 61.93^\\circ = 60^\\circ, 300^\\circ, 420^\\circ",
+        "explanation": "Cosine $0.5$ occurs at $60^\\circ$ and $300^\\circ$; within $[61.93^\\circ, 421.93^\\circ)$ the valid values are $300^\\circ$ and $60^\\circ + 360^\\circ = 420^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift and round",
+        "workingLatex": "\\theta \\approx 238^\\circ, 358^\\circ",
+        "explanation": "Subtracting $61.93^\\circ$ from the valid values and rounding gives the solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 238^\\circ, 358^\\circ$"
+  }
+}

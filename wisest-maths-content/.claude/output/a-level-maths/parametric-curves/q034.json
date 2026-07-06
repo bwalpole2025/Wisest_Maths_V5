@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "circle",
+    "origin"
+  ],
+  "questionText": "A curve has parametric equations $x = 5\\cos\\theta - 2$, $y = 5\\sin\\theta + 3$. Find the Cartesian equation and determine whether the curve passes through the origin.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the trig functions",
+        "workingLatex": "\\cos\\theta = \\frac{x + 2}{5}, \\quad \\sin\\theta = \\frac{y - 3}{5}",
+        "explanation": "Rearranging each parametric equation isolates the trig functions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\left(\\frac{x+2}{5}\\right)^2 + \\left(\\frac{y-3}{5}\\right)^2 = 1",
+        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ removes $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify to circle form",
+        "workingLatex": "(x + 2)^2 + (y - 3)^2 = 25",
+        "explanation": "Multiplying through by $25$ gives a circle centre $(-2, 3)$, radius $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Test the origin",
+        "workingLatex": "(0 + 2)^2 + (0 - 3)^2 = 4 + 9 = 13",
+        "explanation": "Substituting $(0,0)$ into the left-hand side gives $13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compare with the radius squared",
+        "workingLatex": "13 \\ne 25",
+        "explanation": "The origin gives $13$, not $25$, so it does not satisfy the circle equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude",
+        "workingLatex": "\\sqrt{13} < 5 \\;\\Rightarrow\\; \\text{origin is inside, not on, the circle}",
+        "explanation": "Since the origin's distance from the centre ($\\sqrt{13}$) is less than the radius $5$, the origin lies inside the circle, so the curve does not pass through it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x+2)^2 + (y-3)^2 = 25$; the curve does not pass through the origin."
+  }
+}

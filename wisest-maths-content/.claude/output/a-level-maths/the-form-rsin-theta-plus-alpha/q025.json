@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "range",
+    "function"
+  ],
+  "questionText": "State the range of the function $f(\\theta) = 9\\sin\\theta - 12\\cos\\theta + 4$ for $\\theta \\in \\mathbb{R}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the amplitude",
+        "workingLatex": "R = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15",
+        "explanation": "The oscillating part has amplitude $15$ (a $9$-$12$-$15$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the harmonic form",
+        "workingLatex": "f(\\theta) = 15\\sin(\\theta - \\alpha) + 4",
+        "explanation": "The exact phase angle is not needed for the range, only the amplitude and the constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Bound the sine term",
+        "workingLatex": "-15 \\le 15\\sin(\\theta - \\alpha) \\le 15",
+        "explanation": "The amplitude scales the sine range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add the constant",
+        "workingLatex": "-11 \\le f(\\theta) \\le 19",
+        "explanation": "Adding $4$ shifts the range up.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the range",
+        "workingLatex": "-11 \\le f(\\theta) \\le 19",
+        "explanation": "Since sine attains both $\\pm 1$, every value in this interval is achieved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-11 \\le f(\\theta) \\le 19$"
+  }
+}

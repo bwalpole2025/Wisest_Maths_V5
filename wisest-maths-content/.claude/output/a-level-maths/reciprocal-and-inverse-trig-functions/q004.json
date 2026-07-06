@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "reciprocal trig",
+    "secant",
+    "exact values"
+  ],
+  "questionText": "Find the exact value of $\\sec 60^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write secant as one over cosine",
+        "workingLatex": "\\sec 60^\\circ = \\frac{1}{\\cos 60^\\circ}",
+        "explanation": "To find an exact value of secant, first convert it to a cosine problem, because the exact values of cosine are the ones we know from the special triangles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the exact value of cosine 60 degrees",
+        "workingLatex": "\\cos 60^\\circ = \\frac{1}{2}",
+        "explanation": "This is a standard exact value from the $30$-$60$-$90$ triangle, one you are expected to recall without a calculator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the value",
+        "workingLatex": "\\sec 60^\\circ = \\frac{1}{\\;\\frac{1}{2}\\;}",
+        "explanation": "Replacing cosine with its exact value turns the problem into a simple reciprocal of a fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the reciprocal",
+        "workingLatex": "\\frac{1}{\\;\\frac{1}{2}\\;} = 2",
+        "explanation": "The reciprocal of a half is two, since dividing $1$ by $\\frac{1}{2}$ means asking how many halves fit into one whole.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the answer is sensible",
+        "workingLatex": "|\\sec\\theta| \\ge 1 \\;\\checkmark",
+        "explanation": "Secant should always be at least $1$ in size, and $2$ satisfies this, which gives us confidence the value is right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\sec 60^\\circ = 2",
+        "explanation": "This is the exact value requested, with no rounding involved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sec 60^\\circ = 2$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
+  "tags": [
+    "reciprocal trig",
+    "secant",
+    "definition"
+  ],
+  "questionText": "Write down the definition of $\\sec\\theta$ in terms of $\\cos\\theta$, and state the values of $\\theta$ for which it is undefined.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the three reciprocal trig functions",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\csc\\theta = \\frac{1}{\\sin\\theta}, \\quad \\cot\\theta = \\frac{1}{\\tan\\theta}",
+        "explanation": "Listing all three reciprocal functions together helps you see the pattern: each one is simply one divided by a standard trig function. This makes it easy to pick out the one you need.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify which cofunction secant reciprocates",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "A useful memory aid is that secant pairs with cosine, even though it starts with the same letters as sine. The third letters line up: se-C-ant with C-osine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Determine when the definition breaks down",
+        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\sec\\theta \\text{ undefined}",
+        "explanation": "Because secant is one over cosine, it has no value wherever the denominator cosine is zero. Division by zero is not allowed, so those angles must be excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the angles where cosine is zero",
+        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\theta = 90^\\circ + 180^\\circ n = \\tfrac{\\pi}{2} + \\pi n",
+        "explanation": "Cosine crosses zero at $90^\\circ$ and then every $180^\\circ$ after that. Writing this with an integer $n$ captures all such angles in one compact statement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the size of secant near these angles",
+        "workingLatex": "|\\cos\\theta| \\le 1 \\;\\Rightarrow\\; |\\sec\\theta| \\ge 1",
+        "explanation": "Since cosine never exceeds $1$ in size, its reciprocal never drops below $1$ in size. This tells you secant always lives outside the band between $-1$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final definition and restriction",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\theta \\ne \\tfrac{\\pi}{2} + \\pi n",
+        "explanation": "This gives the complete answer: the definition together with the excluded angles, which is exactly what the question asks for.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sec\\theta = \\dfrac{1}{\\cos\\theta}$, undefined when $\\theta = \\tfrac{\\pi}{2} + \\pi n$ (i.e. $\\cos\\theta = 0$)."
+  }
+}

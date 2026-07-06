@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "circle",
+    "point test"
+  ],
+  "questionText": "A curve has parametric equations $x = 4\\cos\\theta + 1$, $y = 4\\sin\\theta - 2$. Determine whether the point $(5, -2)$ lies on the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the x-coordinate",
+        "workingLatex": "4\\cos\\theta + 1 = 5 \\;\\Rightarrow\\; \\cos\\theta = 1",
+        "explanation": "Setting the $x$-equation to $5$ gives a cosine value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the angle",
+        "workingLatex": "\\cos\\theta = 1 \\;\\Rightarrow\\; \\theta = 0",
+        "explanation": "Cosine equals $1$ only at $\\theta = 0$ (within one revolution).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the y-coordinate for this angle",
+        "workingLatex": "y = 4\\sin 0 - 2 = 0 - 2 = -2",
+        "explanation": "Substituting $\\theta = 0$ into the $y$-equation gives $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compare with the required y",
+        "workingLatex": "-2 = -2 \\;\\checkmark",
+        "explanation": "The computed $y$ matches the required value, so both coordinates agree for $\\theta = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude",
+        "workingLatex": "(5, -2) \\text{ lies on the curve (at } \\theta = 0)",
+        "explanation": "Because a single parameter value gives both coordinates, the point is on the curve.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Yes, $(5, -2)$ lies on the curve (at $\\theta = 0$)."
+  }
+}

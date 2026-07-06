@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "inverse trig",
+    "proof",
+    "arcsin",
+    "arccos"
+  ],
+  "questionText": "Prove that $\\arcsin x + \\arccos x = \\dfrac{\\pi}{2}$ for all $x$ with $-1 \\le x \\le 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the arcsine angle",
+        "workingLatex": "\\text{let } \\alpha = \\arcsin x, \\text{ so } \\sin\\alpha = x",
+        "explanation": "Naming the arcsine gives an angle $\\alpha$ whose sine is $x$, which is the key relationship to exploit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the range of alpha",
+        "workingLatex": "-\\frac{\\pi}{2} \\le \\alpha \\le \\frac{\\pi}{2}",
+        "explanation": "Arcsine always returns an angle in this principal range, which we will need to check the final angle is valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the cofunction identity",
+        "workingLatex": "\\sin\\alpha = \\cos\\left(\\frac{\\pi}{2} - \\alpha\\right)",
+        "explanation": "The cofunction identity converts a sine into a cosine of the complementary angle, linking the problem to arccosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the value of sine",
+        "workingLatex": "\\cos\\left(\\frac{\\pi}{2} - \\alpha\\right) = x",
+        "explanation": "Since $\\sin\\alpha = x$, the complementary cosine also equals $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the complementary angle lies in the arccos range",
+        "workingLatex": "-\\frac{\\pi}{2} \\le \\alpha \\le \\frac{\\pi}{2} \\;\\Rightarrow\\; 0 \\le \\frac{\\pi}{2} - \\alpha \\le \\pi",
+        "explanation": "Subtracting the bounds shows $\\frac{\\pi}{2} - \\alpha$ lies in $[0,\\pi]$, exactly the range where arccosine is defined and single-valued.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply arccosine",
+        "workingLatex": "\\arccos x = \\frac{\\pi}{2} - \\alpha",
+        "explanation": "Because the complementary angle is in the valid range and has cosine $x$, it must be $\\arccos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute back for alpha",
+        "workingLatex": "\\arccos x = \\frac{\\pi}{2} - \\arcsin x",
+        "explanation": "Replacing $\\alpha$ with its definition rewrites the relationship in terms of the two inverse functions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rearrange to conclude",
+        "workingLatex": "\\arcsin x + \\arccos x = \\frac{\\pi}{2} \\;\\blacksquare",
+        "explanation": "Adding $\\arcsin x$ to both sides gives the required identity, valid for all $x$ in $[-1,1]$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\arcsin x + \\arccos x = \\dfrac{\\pi}{2}$"
+  }
+}

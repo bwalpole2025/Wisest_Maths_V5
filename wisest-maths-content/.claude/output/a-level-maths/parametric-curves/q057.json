@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "restricted domain"
+  ],
+  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2 + 3$ for $t \\ge 0$. Find the Cartesian equation and state the domain and range.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Make t the subject",
+        "workingLatex": "x = 2t \\;\\Rightarrow\\; t = \\frac{x}{2}",
+        "explanation": "The linear $x$-equation gives $t$ in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = \\left(\\frac{x}{2}\\right)^2 + 3 = \\frac{x^2}{4} + 3",
+        "explanation": "Replacing $t$ removes the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the domain",
+        "workingLatex": "t \\ge 0 \\;\\Rightarrow\\; x = 2t \\ge 0",
+        "explanation": "Since $t$ is non-negative, so is $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the range",
+        "workingLatex": "t \\ge 0 \\;\\Rightarrow\\; y = t^2 + 3 \\ge 3",
+        "explanation": "The least value of $t^2$ is $0$, so $y$ is at least $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "y = \\frac{x^2}{4} + 3, \\; x \\ge 0, \\; y \\ge 3",
+        "explanation": "Only the right half of the parabola (from the vertex $(0,3)$) is traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = \\dfrac{x^2}{4} + 3$ for $x \\ge 0$ (range $y \\ge 3$)."
+  }
+}

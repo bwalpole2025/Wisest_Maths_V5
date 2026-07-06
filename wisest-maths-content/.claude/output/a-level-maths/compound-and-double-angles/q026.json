@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "cotangent"
+  ],
+  "questionText": "Prove that $\\dfrac{\\sin 2\\theta}{1 - \\cos 2\\theta} \\equiv \\cot\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the numerator",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "We rewrite both double angles in terms of $\\theta$, choosing forms that cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the useful form of the denominator",
+        "workingLatex": "1 - \\cos 2\\theta = 1 - (1 - 2\\sin^2\\theta) = 2\\sin^2\\theta",
+        "explanation": "Using the sine form makes the denominator collapse to $2\\sin^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the fraction",
+        "workingLatex": "\\frac{\\sin 2\\theta}{1 - \\cos 2\\theta} = \\frac{2\\sin\\theta\\cos\\theta}{2\\sin^2\\theta}",
+        "explanation": "Substituting both parts gives a fraction ready to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel common factors",
+        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Cancelling the $2$ and one sine leaves cosine over sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the result",
+        "workingLatex": "= \\cot\\theta \\;\\blacksquare",
+        "explanation": "Cosine over sine is cotangent, matching the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note the contrast",
+        "workingLatex": "\\frac{\\sin 2\\theta}{1 + \\cos 2\\theta} = \\tan\\theta, \\quad \\frac{\\sin 2\\theta}{1 - \\cos 2\\theta} = \\cot\\theta",
+        "explanation": "Swapping the sign in the denominator swaps tangent for cotangent, a neat pairing worth remembering.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sin 2\\theta}{1 - \\cos 2\\theta} \\equiv \\cot\\theta$"
+  }
+}

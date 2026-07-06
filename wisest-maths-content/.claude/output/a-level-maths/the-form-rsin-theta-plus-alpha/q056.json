@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $\\sqrt3\\sin 2\\theta - \\cos 2\\theta = 1$ for $0^\\circ \\le \\theta < 180^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the varying part in R-form",
+        "workingLatex": "\\sqrt3\\sin 2\\theta - \\cos 2\\theta = 2\\sin(2\\theta - 30^\\circ)",
+        "explanation": "With coefficients $\\sqrt3$ and $1$, the amplitude is $2$ and $\\tan\\alpha = \\frac{1}{\\sqrt3}$, so $\\alpha = 30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the equation",
+        "workingLatex": "2\\sin(2\\theta - 30^\\circ) = 1 \\;\\Rightarrow\\; \\sin(2\\theta - 30^\\circ) = \\frac{1}{2}",
+        "explanation": "Substituting and dividing by $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the interval for the argument",
+        "workingLatex": "-30^\\circ \\le 2\\theta - 30^\\circ < 330^\\circ",
+        "explanation": "Since $\\theta \\in [0^\\circ, 180^\\circ)$, the quantity $2\\theta$ spans $[0^\\circ, 360^\\circ)$, so the shifted argument spans this interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the argument",
+        "workingLatex": "2\\theta - 30^\\circ = 30^\\circ, 150^\\circ",
+        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$ within the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for 2θ",
+        "workingLatex": "2\\theta = 60^\\circ, 180^\\circ",
+        "explanation": "Adding $30^\\circ$ to each.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Halve to find theta",
+        "workingLatex": "\\theta = 30^\\circ, 90^\\circ",
+        "explanation": "Dividing by $2$ gives the solutions in the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ, 90^\\circ$"
+  }
+}

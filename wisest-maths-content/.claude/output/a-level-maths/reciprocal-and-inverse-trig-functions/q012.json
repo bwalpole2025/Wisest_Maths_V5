@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "arcsin",
+    "exact values",
+    "radians"
+  ],
+  "questionText": "Find the exact value of $\\arcsin\\left(\\dfrac{1}{2}\\right)$, giving your answer in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the inverse sine",
+        "workingLatex": "\\arcsin\\left(\\tfrac{1}{2}\\right) = \\theta \\;\\Leftrightarrow\\; \\sin\\theta = \\tfrac{1}{2}",
+        "explanation": "The inverse sine asks the question: which angle has a sine of one half? So we look for $\\theta$ with $\\sin\\theta = \\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the principal range of arcsin",
+        "workingLatex": "-\\frac{\\pi}{2} \\le \\theta \\le \\frac{\\pi}{2}",
+        "explanation": "The arcsine function only returns angles in this range, so that each input gives exactly one output. We must pick our answer from within this interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall which standard angle has sine one half",
+        "workingLatex": "\\sin\\frac{\\pi}{6} = \\frac{1}{2}",
+        "explanation": "From the special triangles, the angle $30^\\circ$, or $\\frac{\\pi}{6}$, has a sine of one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the angle lies in range",
+        "workingLatex": "-\\frac{\\pi}{2} \\le \\frac{\\pi}{6} \\le \\frac{\\pi}{2} \\;\\checkmark",
+        "explanation": "Since $\\frac{\\pi}{6}$ sits comfortably inside the principal range, it is the valid output of arcsine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Reject any other candidate",
+        "workingLatex": "\\sin\\frac{5\\pi}{6} = \\frac{1}{2}, \\text{ but } \\frac{5\\pi}{6} > \\frac{\\pi}{2}",
+        "explanation": "Although $\\frac{5\\pi}{6}$ also has sine one half, it falls outside the principal range, so arcsine does not return it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\arcsin\\left(\\tfrac{1}{2}\\right) = \\frac{\\pi}{6}",
+        "explanation": "The unique answer in the correct range is $\\frac{\\pi}{6}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\arcsin\\left(\\dfrac{1}{2}\\right) = \\dfrac{\\pi}{6}$"
+  }
+}

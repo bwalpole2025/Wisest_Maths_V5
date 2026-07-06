@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "cosine"
+  ],
+  "questionText": "Express $3\\cos\\theta - 4\\sin\\theta$ as $R\\cos(\\theta + \\alpha)$ and hence solve $3\\cos\\theta - 4\\sin\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{3^2 + 4^2} = 5",
+        "explanation": "The amplitude is $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{4}{3} \\;\\Rightarrow\\; \\alpha \\approx 53.13^\\circ",
+        "explanation": "For the cosine form, $\\tan\\alpha$ is the sine coefficient over the cosine coefficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the harmonic form",
+        "workingLatex": "3\\cos\\theta - 4\\sin\\theta = 5\\cos(\\theta + 53.13^\\circ)",
+        "explanation": "Combining gives the single-cosine form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the equation",
+        "workingLatex": "5\\cos(\\theta + 53.13^\\circ) = 2 \\;\\Rightarrow\\; \\cos(\\theta + 53.13^\\circ) = 0.4",
+        "explanation": "Substituting and dividing by $5$ gives a standard cosine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the shifted interval and solve",
+        "workingLatex": "\\theta + 53.13^\\circ = 66.42^\\circ, 293.58^\\circ",
+        "explanation": "Within the shifted interval $[53.13^\\circ, 413.13^\\circ)$, cosine $0.4$ occurs at $66.42^\\circ$ and $293.58^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift and round",
+        "workingLatex": "\\theta \\approx 13^\\circ, 240^\\circ",
+        "explanation": "Subtracting $53.13^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 13^\\circ, 240^\\circ$"
+  }
+}

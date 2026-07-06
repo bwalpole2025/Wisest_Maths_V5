@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "minimum",
+    "reciprocal"
+  ],
+  "questionText": "Find the minimum value of $\\dfrac{20}{2\\sin\\theta + \\sqrt5\\cos\\theta + 6}$, given that $2\\sin\\theta + \\sqrt5\\cos\\theta = 3\\sin(\\theta + \\alpha)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Confirm the amplitude",
+        "workingLatex": "R = \\sqrt{2^2 + (\\sqrt5)^2} = \\sqrt{9} = 3",
+        "explanation": "The amplitude of the oscillating part is $3$, as stated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound the denominator",
+        "workingLatex": "-3 + 6 \\le 3\\sin(\\theta + \\alpha) + 6 \\le 3 + 6",
+        "explanation": "The sine part ranges over $[-3,3]$, so the denominator ranges over $[3, 9]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the denominator range",
+        "workingLatex": "3 \\le \\text{denominator} \\le 9",
+        "explanation": "Both bounds are positive, so the fraction is always positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recognise where the fraction is smallest",
+        "workingLatex": "\\text{fraction min when denominator is largest}",
+        "explanation": "For a positive numerator, the fraction is smallest when its denominator is largest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the largest denominator",
+        "workingLatex": "\\frac{20}{9}",
+        "explanation": "Dividing the numerator by the largest denominator $9$ gives the minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the minimum",
+        "workingLatex": "\\text{min} = \\frac{20}{9}",
+        "explanation": "This is the least value the fraction can take.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum value $= \\dfrac{20}{9}$."
+  }
+}

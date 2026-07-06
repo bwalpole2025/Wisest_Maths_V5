@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.parametric-curves.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "trig",
+    "ellipse"
+  ],
+  "questionText": "A curve has parametric equations $x = 4\\cos\\theta$, $y = 2\\sin\\theta$. Find the Cartesian equation and describe the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the trig functions",
+        "workingLatex": "\\cos\\theta = \\frac{x}{4}, \\quad \\sin\\theta = \\frac{y}{2}",
+        "explanation": "Different coefficients on the two equations signal an ellipse rather than a circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\left(\\frac{x}{4}\\right)^2 + \\left(\\frac{y}{2}\\right)^2 = 1",
+        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ eliminates $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the squares",
+        "workingLatex": "\\frac{x^2}{16} + \\frac{y^2}{4} = 1",
+        "explanation": "Squaring gives denominators $16$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify the curve",
+        "workingLatex": "\\frac{x^2}{16} + \\frac{y^2}{4} = 1 \\text{ (ellipse)}",
+        "explanation": "This is the standard form of an ellipse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the semi-axes",
+        "workingLatex": "a = 4, \\quad b = 2",
+        "explanation": "The ellipse extends $4$ units horizontally and $2$ units vertically from the centre.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "\\frac{x^2}{16} + \\frac{y^2}{4} = 1",
+        "explanation": "An ellipse centred at the origin with semi-axes $4$ and $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{x^2}{16} + \\dfrac{y^2}{4} = 1$, an ellipse."
+  }
+}

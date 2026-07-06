@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "maximum",
+    "minimum"
+  ],
+  "questionText": "The expression $3\\sin\\theta + 4\\cos\\theta$ can be written as $5\\sin(\\theta + 53.13^\\circ)$. Write down its maximum and minimum values.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the range of sine",
+        "workingLatex": "-1 \\le \\sin(\\theta + 53.13^\\circ) \\le 1",
+        "explanation": "Whatever the angle, the sine function is bounded between $-1$ and $1$; this controls the whole expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply through by R",
+        "workingLatex": "-5 \\le 5\\sin(\\theta + 53.13^\\circ) \\le 5",
+        "explanation": "Multiplying the bounds by the positive amplitude $R = 5$ scales the range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the maximum",
+        "workingLatex": "\\text{max} = 5",
+        "explanation": "The largest value occurs when the sine equals $1$, giving $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify the minimum",
+        "workingLatex": "\\text{min} = -5",
+        "explanation": "The smallest value occurs when the sine equals $-1$, giving $-5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note when the maximum occurs",
+        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = 1 \\;\\Rightarrow\\; \\theta + 53.13^\\circ = 90^\\circ",
+        "explanation": "The maximum happens when the bracket equals $90^\\circ$, i.e. $\\theta \\approx 36.87^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the results",
+        "workingLatex": "\\text{max} = 5, \\quad \\text{min} = -5",
+        "explanation": "The amplitude $R$ directly gives the maximum and minimum of any harmonic expression.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum $= 5$, minimum $= -5$."
+  }
+}

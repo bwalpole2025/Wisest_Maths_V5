@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "arccos",
+    "exact values",
+    "radians"
+  ],
+  "questionText": "Find the exact value of $\\arccos\\left(\\dfrac{\\sqrt{3}}{2}\\right)$, giving your answer in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the inverse cosine",
+        "workingLatex": "\\arccos\\left(\\tfrac{\\sqrt{3}}{2}\\right) = \\theta \\;\\Leftrightarrow\\; \\cos\\theta = \\tfrac{\\sqrt{3}}{2}",
+        "explanation": "Inverse cosine asks which angle has a cosine of $\\frac{\\sqrt{3}}{2}$, so we search for the matching $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the principal range of arccos",
+        "workingLatex": "0 \\le \\theta \\le \\pi",
+        "explanation": "Arccosine returns angles only in this interval, ensuring a single, unambiguous output for each input.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall which standard angle has this cosine",
+        "workingLatex": "\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}",
+        "explanation": "From the $30$-$60$-$90$ triangle, the cosine of $30^\\circ$, or $\\frac{\\pi}{6}$, is $\\frac{\\sqrt{3}}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the angle lies in range",
+        "workingLatex": "0 \\le \\frac{\\pi}{6} \\le \\pi \\;\\checkmark",
+        "explanation": "The angle $\\frac{\\pi}{6}$ is within the arccosine range, so it is a valid output.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm it is the unique answer",
+        "workingLatex": "\\cos\\theta = \\tfrac{\\sqrt{3}}{2} \\text{ once on } [0,\\pi]",
+        "explanation": "Cosine is decreasing across $[0,\\pi]$, so it takes each value exactly once there, guaranteeing $\\frac{\\pi}{6}$ is the only answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\arccos\\left(\\tfrac{\\sqrt{3}}{2}\\right) = \\frac{\\pi}{6}",
+        "explanation": "This is the exact value in the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\arccos\\left(\\dfrac{\\sqrt{3}}{2}\\right) = \\dfrac{\\pi}{6}$"
+  }
+}

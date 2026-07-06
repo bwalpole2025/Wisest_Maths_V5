@@ -1,0 +1,78 @@
+{
+  "id": "al.y2.pure.rsin-form.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $2\\cos\\theta + 3\\sin\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder and find R",
+        "workingLatex": "3\\sin\\theta + 2\\cos\\theta, \\quad R = \\sqrt{3^2 + 2^2} = \\sqrt{13}",
+        "explanation": "Writing sine first, the amplitude is $\\sqrt{13}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{2}{3} \\;\\Rightarrow\\; \\alpha \\approx 33.69^\\circ",
+        "explanation": "The ratio of coefficients gives the phase angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the harmonic form",
+        "workingLatex": "3\\sin\\theta + 2\\cos\\theta = \\sqrt{13}\\sin(\\theta + 33.69^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation",
+        "workingLatex": "\\sqrt{13}\\sin(\\theta + 33.69^\\circ) = 1 \\;\\Rightarrow\\; \\sin(\\theta + 33.69^\\circ) = \\frac{1}{\\sqrt{13}}",
+        "explanation": "Dividing by $\\sqrt{13}$ gives sine equal to about $0.277$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the base angles",
+        "workingLatex": "\\theta + 33.69^\\circ = 16.10^\\circ, 163.90^\\circ, 376.10^\\circ",
+        "explanation": "The principal value is $16.10^\\circ$; its partner is $163.90^\\circ$; adding $360^\\circ$ gives $376.10^\\circ$, needed to cover the shifted interval $[33.69^\\circ, 393.69^\\circ)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Discard the out-of-range value",
+        "workingLatex": "16.10^\\circ < 33.69^\\circ \\text{ so reject}",
+        "explanation": "The first value is below the interval start, so it is discarded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = 163.90^\\circ - 33.69^\\circ, \\; 376.10^\\circ - 33.69^\\circ",
+        "explanation": "Subtracting the phase from each valid solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the solutions",
+        "workingLatex": "\\theta \\approx 130^\\circ, 342^\\circ",
+        "explanation": "Rounding gives the two solutions in the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 130^\\circ, 342^\\circ$"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "equations",
+    "factorising"
+  ],
+  "questionText": "Solve $\\sin 2\\theta = \\sin\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Replace the double angle",
+        "workingLatex": "2\\sin\\theta\\cos\\theta = \\sin\\theta",
+        "explanation": "Expanding $\\sin 2\\theta$ writes everything in terms of $\\theta$, which lets us factorise rather than divide.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Move everything to one side",
+        "workingLatex": "2\\sin\\theta\\cos\\theta - \\sin\\theta = 0",
+        "explanation": "Rearranging prepares for factorising; dividing by $\\sin\\theta$ here would lose solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor out sine",
+        "workingLatex": "\\sin\\theta(2\\cos\\theta - 1) = 0",
+        "explanation": "Taking out the common factor splits the equation into two independent cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the first factor",
+        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\theta = 0^\\circ, 180^\\circ",
+        "explanation": "Sine is zero at $0^\\circ$ and $180^\\circ$ in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the second factor",
+        "workingLatex": "2\\cos\\theta - 1 = 0 \\;\\Rightarrow\\; \\cos\\theta = \\tfrac{1}{2}",
+        "explanation": "Setting the bracket to zero gives cosine equal to one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find those angles",
+        "workingLatex": "\\theta = 60^\\circ, 300^\\circ",
+        "explanation": "Cosine one half occurs at $60^\\circ$ and $300^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect all solutions",
+        "workingLatex": "\\theta = 0^\\circ, 60^\\circ, 180^\\circ, 300^\\circ",
+        "explanation": "Combining both cases gives four solutions; factoring ensured the $\\sin\\theta = 0$ roots were kept.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 0^\\circ, 60^\\circ, 180^\\circ, 300^\\circ$"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "reverse",
+    "coefficients"
+  ],
+  "questionText": "It is given that $a\\sin\\theta + b\\cos\\theta = 13\\sin(\\theta + \\alpha)$ where $\\tan\\alpha = \\dfrac{5}{12}$ and $a, b > 0$. Find $a$ and $b$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the right-hand side",
+        "workingLatex": "13\\sin(\\theta + \\alpha) = 13\\cos\\alpha\\sin\\theta + 13\\sin\\alpha\\cos\\theta",
+        "explanation": "Expanding lets us read off $a$ and $b$ as the coefficients of $\\sin\\theta$ and $\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Match the coefficients",
+        "workingLatex": "a = 13\\cos\\alpha, \\quad b = 13\\sin\\alpha",
+        "explanation": "So we need $\\cos\\alpha$ and $\\sin\\alpha$ from the given tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Build the reference triangle",
+        "workingLatex": "\\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\text{hypotenuse} = \\sqrt{5^2 + 12^2} = 13",
+        "explanation": "A tangent of $\\frac{5}{12}$ gives a $5$-$12$-$13$ triangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Read off sine and cosine",
+        "workingLatex": "\\cos\\alpha = \\frac{12}{13}, \\quad \\sin\\alpha = \\frac{5}{13}",
+        "explanation": "From the triangle, cosine is adjacent over hypotenuse and sine is opposite over hypotenuse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute a",
+        "workingLatex": "a = 13\\cdot\\frac{12}{13} = 12",
+        "explanation": "The $13$s cancel, giving $a = 12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute b",
+        "workingLatex": "b = 13\\cdot\\frac{5}{13} = 5",
+        "explanation": "Similarly $b = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "a = 12, \\quad b = 5",
+        "explanation": "So the original expression was $12\\sin\\theta + 5\\cos\\theta$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a = 12, \\quad b = 5$"
+  }
+}

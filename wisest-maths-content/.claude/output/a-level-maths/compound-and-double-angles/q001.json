@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
+  "tags": [
+    "compound angles",
+    "sine",
+    "formula recall"
+  ],
+  "questionText": "Write down the compound angle formula for $\\sin(A + B)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the pair of sine addition formulae",
+        "workingLatex": "\\sin(A \\pm B) = \\sin A\\cos B \\pm \\cos A\\sin B",
+        "explanation": "Learning the plus and minus versions together helps, because they share the same terms and only the middle sign changes. This makes each one easy to recall correctly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Note the structure of the sine formula",
+        "workingLatex": "\\text{pattern: } \\sin\\cos + \\cos\\sin",
+        "explanation": "The sine formula mixes the functions: a sine times a cosine, added to a cosine times a sine. Unlike the cosine formula, the two functions are never multiplied by themselves.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Select the plus version",
+        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "The question asks for $A + B$, so we take the version with the plus sign in the middle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the sign convention",
+        "workingLatex": "+B \\;\\Rightarrow\\; + \\text{ in the formula}",
+        "explanation": "For sine the sign inside the bracket carries straight through to the sign in the expansion, which is a helpful consistency check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sanity check with a known value",
+        "workingLatex": "\\sin(90^\\circ + 0^\\circ) = \\sin 90^\\circ\\cos 0^\\circ + \\cos 90^\\circ\\sin 0^\\circ = 1",
+        "explanation": "Testing with $A = 90^\\circ, B = 0^\\circ$ gives $1$, which matches $\\sin 90^\\circ$, confirming the formula is written correctly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final formula",
+        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "This is the required compound angle formula for sine.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B$"
+  }
+}

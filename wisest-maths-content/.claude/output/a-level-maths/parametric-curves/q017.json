@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "exponential",
+    "logarithm"
+  ],
+  "questionText": "A curve has parametric equations $x = e^t$, $y = e^{2t} + 1$. Find the Cartesian equation and state the domain.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Relate the two exponentials",
+        "workingLatex": "e^{2t} = (e^t)^2",
+        "explanation": "Recognising that $e^{2t}$ is the square of $e^t$ lets us substitute $x$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute x",
+        "workingLatex": "y = (e^t)^2 + 1 = x^2 + 1",
+        "explanation": "Since $x = e^t$, we replace $e^{2t}$ with $x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = x^2 + 1",
+        "explanation": "This is a parabola, but only part of it is traced.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Determine the domain",
+        "workingLatex": "x = e^t > 0 \\text{ for all } t",
+        "explanation": "The exponential is always positive, so $x$ can only take positive values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer with domain",
+        "workingLatex": "y = x^2 + 1, \\; x > 0",
+        "explanation": "Only the right-hand branch of the parabola is part of the curve.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = x^2 + 1$ for $x > 0$."
+  }
+}

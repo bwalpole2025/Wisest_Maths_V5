@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "factorising"
+  ],
+  "questionText": "Prove that $\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose the difference-of-squares form of cos 2θ",
+        "workingLatex": "\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta",
+        "explanation": "This form is a difference of two squares, which factorises to reveal the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the numerator",
+        "workingLatex": "\\cos^2\\theta - \\sin^2\\theta = (\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)",
+        "explanation": "The difference of squares factorises into these two brackets, one matching the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the fraction with the factorised numerator",
+        "workingLatex": "\\frac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} = \\frac{(\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)}{\\cos\\theta + \\sin\\theta}",
+        "explanation": "Now the denominator appears as a factor of the numerator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel the common factor",
+        "workingLatex": "= \\cos\\theta - \\sin\\theta",
+        "explanation": "Cancelling the shared $(\\cos\\theta + \\sin\\theta)$ leaves the required expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude",
+        "workingLatex": "\\frac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta \\;\\blacksquare",
+        "explanation": "The left-hand side equals the right-hand side, completing the proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note the restriction",
+        "workingLatex": "\\cos\\theta + \\sin\\theta \\ne 0",
+        "explanation": "The cancellation requires the denominator to be nonzero, excluding angles where $\\tan\\theta = -1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta$"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "cotangent",
+    "tangent",
+    "double angle"
+  ],
+  "questionText": "Solve $\\tan\\theta + \\cot\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite both terms in sine and cosine",
+        "workingLatex": "\\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\cos\\theta}{\\sin\\theta} = 2",
+        "explanation": "Converting to basic functions allows the two fractions to be combined over a common denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Combine into a single fraction",
+        "workingLatex": "\\frac{\\sin^2\\theta + \\cos^2\\theta}{\\sin\\theta\\cos\\theta} = 2",
+        "explanation": "Adding over the common denominator produces the Pythagorean expression on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\frac{1}{\\sin\\theta\\cos\\theta} = 2",
+        "explanation": "Since $\\sin^2\\theta + \\cos^2\\theta = 1$, the numerator becomes $1$, greatly simplifying the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange for the product",
+        "workingLatex": "\\sin\\theta\\cos\\theta = \\frac{1}{2}",
+        "explanation": "Taking reciprocals gives the product of sine and cosine equal to one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the double-angle identity",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "The double-angle formula lets us fold the product into a single sine, which is easy to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute",
+        "workingLatex": "\\sin 2\\theta = 2\\times\\frac{1}{2} = 1",
+        "explanation": "Multiplying the product by $2$ gives $\\sin 2\\theta = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for the double angle",
+        "workingLatex": "2\\theta = 90^\\circ, 450^\\circ",
+        "explanation": "Since $\\theta$ ranges over $[0^\\circ,360^\\circ)$, the double angle $2\\theta$ ranges over $[0^\\circ,720^\\circ)$, where sine equals $1$ at $90^\\circ$ and $450^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Halve to find theta",
+        "workingLatex": "\\theta = 45^\\circ, 225^\\circ",
+        "explanation": "Dividing each value of $2\\theta$ by $2$ gives the solutions in the required interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 45^\\circ, 225^\\circ$"
+  }
+}

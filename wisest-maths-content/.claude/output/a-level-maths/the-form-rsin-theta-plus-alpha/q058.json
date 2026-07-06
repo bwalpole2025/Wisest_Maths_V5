@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "modelling",
+    "current"
+  ],
+  "questionText": "An alternating current is modelled by $I = 5\\sin(100t) + 12\\cos(100t)$ amps, where $t$ is in seconds. Find the peak current and the smallest positive $t$ at which the current first reaches its peak (in seconds, to 3 significant figures).",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in R-form",
+        "workingLatex": "5\\sin(100t) + 12\\cos(100t) = 13\\sin(100t + \\alpha)",
+        "explanation": "The amplitude $R = \\sqrt{25 + 144} = 13$ is the peak current.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the peak current",
+        "workingLatex": "I_{\\max} = 13 \\text{ A}",
+        "explanation": "The peak of any harmonic expression is its amplitude.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find alpha in radians",
+        "workingLatex": "\\tan\\alpha = \\frac{12}{5} \\;\\Rightarrow\\; \\alpha \\approx 1.176 \\text{ rad}",
+        "explanation": "The phase angle in radians is $\\arctan\\frac{12}{5}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the sine to its peak",
+        "workingLatex": "100t + 1.176 = \\frac{\\pi}{2}",
+        "explanation": "The current first peaks when the argument first equals $\\frac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for t",
+        "workingLatex": "100t = \\frac{\\pi}{2} - 1.176 \\approx 0.3948",
+        "explanation": "Subtracting the phase gives the value of $100t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Divide by 100",
+        "workingLatex": "t \\approx 0.00395 \\text{ s}",
+        "explanation": "Dividing by $100$ gives the smallest positive time, to 3 significant figures.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Peak current $13$ A, first at $t \\approx 0.00395$ s."
+  }
+}

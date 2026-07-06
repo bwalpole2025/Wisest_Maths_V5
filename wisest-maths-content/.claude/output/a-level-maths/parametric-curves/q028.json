@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "logarithm"
+  ],
+  "questionText": "A curve has parametric equations $x = \\ln t$, $y = t^2$ for $t > 0$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Make t the subject of the x-equation",
+        "workingLatex": "x = \\ln t \\;\\Rightarrow\\; t = e^x",
+        "explanation": "The inverse of the natural logarithm is the exponential, so $t = e^x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = (e^x)^2",
+        "explanation": "Replacing $t$ with $e^x$ removes the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the power",
+        "workingLatex": "y = e^{2x}",
+        "explanation": "Squaring $e^x$ gives $e^{2x}$ by the power law.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Consider the domain",
+        "workingLatex": "t > 0 \\;\\Rightarrow\\; x = \\ln t \\in \\mathbb{R}",
+        "explanation": "As $t$ ranges over all positive numbers, $\\ln t$ covers all real values, so there is no restriction on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "y = e^{2x}",
+        "explanation": "This exponential curve is the Cartesian form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = e^{2x}$"
+  }
+}

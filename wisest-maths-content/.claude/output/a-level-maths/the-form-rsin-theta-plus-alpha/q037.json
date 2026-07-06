@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.rsin-form.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "modelling",
+    "inequality"
+  ],
+  "questionText": "The depth of water in a harbour is $D(t) = 6\\sin(30t)^\\circ + 8\\cos(30t)^\\circ + 12$ metres, where $t$ is the time in hours after midnight. Using an R-form, find the maximum depth and the values of $t$ in $0 \\le t < 12$ for which $D \\ge 17$ m.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the oscillating part in R-form",
+        "workingLatex": "6\\sin x + 8\\cos x = 10\\sin(x + \\alpha), \\quad x = 30t",
+        "explanation": "Combining the two terms simplifies both the maximum and the inequality.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{6^2 + 8^2} = 10, \\quad \\tan\\alpha = \\frac{8}{6} \\;\\Rightarrow\\; \\alpha \\approx 53.13^\\circ",
+        "explanation": "The amplitude is $10$ and the phase is about $53.13^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the depth model",
+        "workingLatex": "D = 10\\sin(30t + 53.13^\\circ) + 12",
+        "explanation": "Substituting the R-form gives a single-sine model.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the maximum depth",
+        "workingLatex": "D_{\\max} = 10 + 12 = 22 \\text{ m}",
+        "explanation": "The maximum occurs when the sine equals $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the inequality",
+        "workingLatex": "10\\sin(30t + 53.13^\\circ) + 12 \\ge 17",
+        "explanation": "We want the times when the depth is at least $17$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "\\sin(30t + 53.13^\\circ) \\ge 0.5",
+        "explanation": "Subtracting $12$ and dividing by $10$ isolates the sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the boundary equation",
+        "workingLatex": "30t + 53.13^\\circ = 30^\\circ, 150^\\circ, 390^\\circ, \\ldots",
+        "explanation": "Sine equals $0.5$ at these angles; the sine is at or above $0.5$ between $30^\\circ$ and $150^\\circ$ in each cycle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Use the relevant cycle",
+        "workingLatex": "30t + 53.13^\\circ \\in [150^\\circ, 390^\\circ] \\text{ (first valid band with } t \\ge 0)",
+        "explanation": "Since $30t + 53.13^\\circ$ starts at $53.13^\\circ$, the first band where the sine is $\\ge 0.5$ runs from $150^\\circ$ up to $390^\\circ$ (i.e. $30^\\circ$ of the next cycle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for t",
+        "workingLatex": "30t \\in [96.87^\\circ, 336.87^\\circ] \\;\\Rightarrow\\; t \\in [3.23, 11.23]",
+        "explanation": "Subtracting the phase and dividing by $30$ gives the time window when the depth is at least $17$ m.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum depth $22$ m; $D \\ge 17$ m for approximately $3.23 \\le t \\le 11.23$ hours."
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "al.y2.pure.parametric-curves.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "parabola",
+    "shift"
+  ],
+  "questionText": "A curve has parametric equations $x = t - 3$, $y = (t - 3)^2$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Spot the common expression",
+        "workingLatex": "x = t - 3",
+        "explanation": "The bracket $(t - 3)$ appears in the $y$-equation, and it equals $x$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = (t - 3)^2 = x^2",
+        "explanation": "Since $x = t - 3$, replacing the bracket with $x$ is immediate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = x^2",
+        "explanation": "This is a parabola with vertex at the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Note that the whole parabola is traced",
+        "workingLatex": "t \\in \\mathbb{R} \\;\\Rightarrow\\; x \\in \\mathbb{R}",
+        "explanation": "As $t$ ranges over all reals, so does $x$, so there is no restriction.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = x^2$"
+  }
+}

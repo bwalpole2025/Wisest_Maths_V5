@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "turning points",
+    "graph"
+  ],
+  "questionText": "The curve $y = 8\\sin\\theta + 6\\cos\\theta$ has a maximum turning point in $0^\\circ \\le \\theta < 360^\\circ$. Find its coordinates to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in R-form",
+        "workingLatex": "8\\sin\\theta + 6\\cos\\theta = 10\\sin(\\theta + \\alpha)",
+        "explanation": "The amplitude $R = \\sqrt{64 + 36} = 10$ gives the maximum $y$-value directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{6}{8} = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
+        "explanation": "The phase angle comes from the ratio of coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the maximum y-value",
+        "workingLatex": "y_{\\max} = 10",
+        "explanation": "The maximum equals the amplitude $R$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the theta at the maximum",
+        "workingLatex": "\\sin(\\theta + 36.87^\\circ) = 1 \\;\\Rightarrow\\; \\theta + 36.87^\\circ = 90^\\circ",
+        "explanation": "The maximum of the sine occurs when its argument is $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for theta",
+        "workingLatex": "\\theta = 53.13^\\circ \\approx 53^\\circ",
+        "explanation": "Subtracting the phase gives the $\\theta$-coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the coordinates",
+        "workingLatex": "(53^\\circ, 10)",
+        "explanation": "The maximum turning point is at approximately $(53^\\circ, 10)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum turning point at $(53^\\circ, 10)$."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "Rcos",
+    "exact"
+  ],
+  "questionText": "Express $\\cos\\theta - \\sin\\theta$ in the form $R\\cos(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the target form",
+        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
+        "explanation": "For the cosine form, the expansion has a minus sign between the terms, matching the given expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 1, \\quad R\\sin\\alpha = 1",
+        "explanation": "Matching the $\\cos\\theta$ term gives $R\\cos\\alpha = 1$, and matching the $\\sin\\theta$ term (both sides have $-$) gives $R\\sin\\alpha = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R",
+        "workingLatex": "R^2 = 1^2 + 1^2 = 2 \\;\\Rightarrow\\; R = \\sqrt2",
+        "explanation": "The sum of squares gives $R = \\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{1}{1} = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
+        "explanation": "Equal components give $\\tan\\alpha = 1$, so $\\alpha = 45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the final form",
+        "workingLatex": "\\cos\\theta - \\sin\\theta = \\sqrt2\\cos(\\theta + 45^\\circ)",
+        "explanation": "Both values are exact, giving a clean harmonic form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check with a value",
+        "workingLatex": "\\theta = 0: \\text{ LHS} = 1, \\; \\sqrt2\\cos 45^\\circ = 1 \\;\\checkmark",
+        "explanation": "Testing $\\theta = 0$ gives $1$ on both sides, confirming the result.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos\\theta - \\sin\\theta = \\sqrt2\\cos(\\theta + 45^\\circ)$"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "identities",
+    "secant",
+    "tangent"
+  ],
+  "questionText": "Solve $\\sec^2\\theta = 3 + \\tan\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the Pythagorean identity for secant",
+        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
+        "explanation": "Replacing secant squared with $1 + \\tan^2\\theta$ turns the equation into one involving only tangent, which we can treat as a quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the equation",
+        "workingLatex": "1 + \\tan^2\\theta = 3 + \\tan\\theta",
+        "explanation": "After substitution every term is in tangent, setting up a standard quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to standard form",
+        "workingLatex": "\\tan^2\\theta - \\tan\\theta - 2 = 0",
+        "explanation": "Bringing all terms to one side gives a quadratic in $\\tan\\theta$, ready to factorise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the quadratic",
+        "workingLatex": "(\\tan\\theta - 2)(\\tan\\theta + 1) = 0",
+        "explanation": "The quadratic factorises neatly, since $-2$ and $+1$ multiply to $-2$ and add to $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the first factor",
+        "workingLatex": "\\tan\\theta = 2 \\;\\Rightarrow\\; \\theta = 63.4^\\circ, 243.4^\\circ",
+        "explanation": "The inverse tangent of $2$ is about $63.4^\\circ$, and adding the $180^\\circ$ period gives the second solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve the second factor",
+        "workingLatex": "\\tan\\theta = -1 \\;\\Rightarrow\\; \\theta = 135^\\circ, 315^\\circ",
+        "explanation": "Tangent is $-1$ at $135^\\circ$ and $315^\\circ$, the two solutions in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect all solutions",
+        "workingLatex": "\\theta = 63^\\circ, 135^\\circ, 243^\\circ, 315^\\circ",
+        "explanation": "Combining both factors and rounding to the nearest degree gives the full solution set.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the interval",
+        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
+        "explanation": "Each solution lies within the required range, so all are valid.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 63^\\circ, 135^\\circ, 243^\\circ, 315^\\circ$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "quadratic"
+  ],
+  "questionText": "A curve has parametric equations $x = t$, $y = t^2 - 4$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the simplest substitution",
+        "workingLatex": "x = t",
+        "explanation": "Here $x$ equals $t$ directly, so eliminating $t$ is immediate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State t in terms of x",
+        "workingLatex": "t = x",
+        "explanation": "Since $x = t$, the parameter is just $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = x^2 - 4",
+        "explanation": "Replacing $t$ with $x$ in $y = t^2 - 4$ gives the Cartesian form directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Describe the curve",
+        "workingLatex": "y = x^2 - 4",
+        "explanation": "This is a parabola with vertex at $(0, -4)$, opening upwards.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check a point",
+        "workingLatex": "t = 2: (2, 0), \\quad 2^2 - 4 = 0 \\;\\checkmark",
+        "explanation": "The point from $t = 2$ satisfies the Cartesian equation, confirming the conversion.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = x^2 - 4$"
+  }
+}

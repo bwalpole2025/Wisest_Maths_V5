@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "cosine"
+  ],
+  "questionText": "Express $5\\cos\\theta - 2\\sin\\theta$ as $R\\cos(\\theta + \\alpha)$ and hence solve $5\\cos\\theta - 2\\sin\\theta = 3$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the target form",
+        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
+        "explanation": "The cosine form matches the given expression with its minus sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 5, \\quad R\\sin\\alpha = 2",
+        "explanation": "Matching the cosine and sine terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{29}, \\quad \\tan\\alpha = \\frac{2}{5} \\;\\Rightarrow\\; \\alpha \\approx 21.80^\\circ",
+        "explanation": "The amplitude is $\\sqrt{29}$ and the phase about $21.80^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the harmonic form",
+        "workingLatex": "5\\cos\\theta - 2\\sin\\theta = \\sqrt{29}\\cos(\\theta + 21.80^\\circ)",
+        "explanation": "Combining gives the single-cosine form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the equation",
+        "workingLatex": "\\cos(\\theta + 21.80^\\circ) = \\frac{3}{\\sqrt{29}} \\approx 0.557",
+        "explanation": "Dividing by $\\sqrt{29}$ gives the cosine value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve within the shifted interval",
+        "workingLatex": "\\theta + 21.80^\\circ = 56.15^\\circ, 303.85^\\circ",
+        "explanation": "Within $[21.80^\\circ, 381.80^\\circ)$, cosine $0.557$ occurs at these two angles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract the shift and round",
+        "workingLatex": "\\theta \\approx 34^\\circ, 282^\\circ",
+        "explanation": "Subtracting the phase and rounding gives the solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 34^\\circ, 282^\\circ$"
+  }
+}

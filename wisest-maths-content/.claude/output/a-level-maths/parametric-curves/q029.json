@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.parametric-curves.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "intersection",
+    "line"
+  ],
+  "questionText": "A curve has parametric equations $x = t - 1$, $y = t^2 + t$. Find where it meets the line $y = 2x + 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute into the line equation",
+        "workingLatex": "t^2 + t = 2(t - 1) + 4",
+        "explanation": "Replacing $x$ and $y$ with their parametric forms gives an equation in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the right side",
+        "workingLatex": "t^2 + t = 2t + 2",
+        "explanation": "Multiplying out $2(t-1) + 4$ gives $2t + 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic",
+        "workingLatex": "t^2 - t - 2 = 0",
+        "explanation": "Collecting all terms on one side gives a quadratic in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise",
+        "workingLatex": "(t - 2)(t + 1) = 0 \\;\\Rightarrow\\; t = 2, -1",
+        "explanation": "The factors of $-2$ that add to $-1$ are $-2$ and $+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the point for t = 2",
+        "workingLatex": "(t - 1, t^2 + t) = (1, 6)",
+        "explanation": "Substituting $t = 2$ into both parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the point for t = -1",
+        "workingLatex": "(t - 1, t^2 + t) = (-2, 0)",
+        "explanation": "Substituting $t = -1$ into both equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the intersection points",
+        "workingLatex": "(1, 6) \\text{ and } (-2, 0)",
+        "explanation": "These are the two points where the curve meets the line.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(1, 6)$ and $(-2, 0)$"
+  }
+}

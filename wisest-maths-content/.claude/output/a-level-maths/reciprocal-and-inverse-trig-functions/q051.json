@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "secant",
+    "cosecant"
+  ],
+  "questionText": "Prove that $(\\tan\\theta + \\cot\\theta)^2 \\equiv \\sec^2\\theta + \\csc^2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = (\\tan\\theta + \\cot\\theta)^2",
+        "explanation": "We expand the square first, then simplify towards the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the square",
+        "workingLatex": "= \\tan^2\\theta + 2\\tan\\theta\\cot\\theta + \\cot^2\\theta",
+        "explanation": "Using $(a+b)^2 = a^2 + 2ab + b^2$ gives three terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the middle product",
+        "workingLatex": "\\tan\\theta\\cot\\theta = \\tan\\theta\\cdot\\frac{1}{\\tan\\theta} = 1",
+        "explanation": "Tangent and cotangent are reciprocals, so their product is $1$, making the middle term $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the expansion",
+        "workingLatex": "= \\tan^2\\theta + \\cot^2\\theta + 2",
+        "explanation": "Substituting the middle term gives this cleaner expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Split the constant to prepare two identities",
+        "workingLatex": "= (\\tan^2\\theta + 1) + (\\cot^2\\theta + 1)",
+        "explanation": "Writing $2$ as $1 + 1$ and pairing each with a squared term sets up the two Pythagorean identities.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the secant identity",
+        "workingLatex": "\\tan^2\\theta + 1 = \\sec^2\\theta",
+        "explanation": "The first bracket is exactly the identity for secant squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the cosecant identity",
+        "workingLatex": "\\cot^2\\theta + 1 = \\csc^2\\theta",
+        "explanation": "The second bracket is the identity for cosecant squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the proof",
+        "workingLatex": "= \\sec^2\\theta + \\csc^2\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "Combining both identities gives exactly the right-hand side, completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(\\tan\\theta + \\cot\\theta)^2 \\equiv \\sec^2\\theta + \\csc^2\\theta$"
+  }
+}

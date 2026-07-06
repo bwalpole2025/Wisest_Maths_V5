@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "linear"
+  ],
+  "questionText": "A curve has parametric equations $x = t + 1$, $y = 2t - 3$. Find the Cartesian equation of the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Decide which equation to rearrange",
+        "workingLatex": "x = t + 1",
+        "explanation": "To find a Cartesian equation we eliminate $t$. The simplest route is to make $t$ the subject of the easier equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Make t the subject",
+        "workingLatex": "t = x - 1",
+        "explanation": "Rearranging $x = t + 1$ isolates $t$ in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = 2(x - 1) - 3",
+        "explanation": "Replacing $t$ in $y = 2t - 3$ removes the parameter entirely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the bracket",
+        "workingLatex": "y = 2x - 2 - 3",
+        "explanation": "Multiplying out $2(x-1)$ gives $2x - 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "y = 2x - 5",
+        "explanation": "Combining the constants gives the final linear relationship.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the result",
+        "workingLatex": "y = 2x - 5 \\text{ (a straight line)}",
+        "explanation": "Both parametric equations were linear in $t$, so the curve is a straight line of gradient $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 2x - 5$"
+  }
+}

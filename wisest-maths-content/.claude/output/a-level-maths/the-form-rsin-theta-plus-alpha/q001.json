@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "Rsin",
+    "surds"
+  ],
+  "questionText": "Express $3\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving $\\alpha$ to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the target expanded form",
+        "workingLatex": "R\\sin(\\theta + \\alpha) = R\\cos\\alpha\\sin\\theta + R\\sin\\alpha\\cos\\theta",
+        "explanation": "Expanding the target with the addition formula lets us compare it term by term with the given expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients of sine",
+        "workingLatex": "R\\cos\\alpha = 3",
+        "explanation": "Matching the $\\sin\\theta$ terms links $R$ and $\\alpha$ to the coefficient $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Compare coefficients of cosine",
+        "workingLatex": "R\\sin\\alpha = 4",
+        "explanation": "Matching the $\\cos\\theta$ terms gives the second equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find R using the sum of squares",
+        "workingLatex": "R^2 = 3^2 + 4^2 = 25 \\;\\Rightarrow\\; R = 5",
+        "explanation": "Squaring and adding the two equations uses $\\cos^2\\alpha + \\sin^2\\alpha = 1$, leaving $R^2$ as the sum of the squared coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find alpha using the ratio",
+        "workingLatex": "\\tan\\alpha = \\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{4}{3}",
+        "explanation": "Dividing the two equations cancels $R$, leaving a tangent equation for $\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate alpha",
+        "workingLatex": "\\alpha = \\tan^{-1}\\frac{4}{3} \\approx 53^\\circ",
+        "explanation": "The inverse tangent gives $\\alpha$, which lies in the required range $0$ to $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final form",
+        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + 53^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$ gives the required harmonic form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + 53^\\circ)$"
+  }
+}

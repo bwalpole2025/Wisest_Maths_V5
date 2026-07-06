@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "minimum",
+    "constant"
+  ],
+  "questionText": "Find the minimum value of $3 + 4\\cos\\theta - 3\\sin\\theta$ and the value of $\\theta$ (to the nearest degree) at which it occurs.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the varying part in R-form",
+        "workingLatex": "4\\cos\\theta - 3\\sin\\theta = R\\cos(\\theta + \\alpha)",
+        "explanation": "Starting with cosine and a minus sign, the $R\\cos(\\theta + \\alpha)$ form fits.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{4^2 + 3^2} = 5, \\quad \\tan\\alpha = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
+        "explanation": "Amplitude $5$ and phase about $36.87^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the expression",
+        "workingLatex": "3 + 5\\cos(\\theta + 36.87^\\circ)",
+        "explanation": "The constant $3$ shifts the whole expression up.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the minimum value",
+        "workingLatex": "\\text{min} = 3 - 5 = -2",
+        "explanation": "The least value occurs when the cosine equals $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the theta",
+        "workingLatex": "\\cos(\\theta + 36.87^\\circ) = -1 \\;\\Rightarrow\\; \\theta + 36.87^\\circ = 180^\\circ",
+        "explanation": "Cosine is $-1$ when its argument is $180^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for theta",
+        "workingLatex": "\\theta = 143.13^\\circ \\approx 143^\\circ",
+        "explanation": "Subtracting the phase gives the location of the minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum $= -2$ at $\\theta \\approx 143^\\circ$."
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "exponential",
+    "hyperbola"
+  ],
+  "questionText": "A curve has parametric equations $x = e^t + e^{-t}$, $y = e^t - e^{-t}$. Show that $x^2 - y^2 = 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Square the x-equation",
+        "workingLatex": "x^2 = (e^t + e^{-t})^2 = e^{2t} + 2 + e^{-2t}",
+        "explanation": "The cross term is $2 \\cdot e^t \\cdot e^{-t} = 2$, since $e^t e^{-t} = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Square the y-equation",
+        "workingLatex": "y^2 = (e^t - e^{-t})^2 = e^{2t} - 2 + e^{-2t}",
+        "explanation": "The cross term is now $-2$ because of the minus sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract the squares",
+        "workingLatex": "x^2 - y^2 = (e^{2t} + 2 + e^{-2t}) - (e^{2t} - 2 + e^{-2t})",
+        "explanation": "Subtracting lines up the exponential terms to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel matching terms",
+        "workingLatex": "x^2 - y^2 = 2 - (-2) = 4",
+        "explanation": "The $e^{2t}$ and $e^{-2t}$ terms cancel, leaving only the constants.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret",
+        "workingLatex": "x^2 - y^2 = 4 \\text{ (hyperbola)}",
+        "explanation": "This is a hyperbola; note $x = e^t + e^{-t} \\ge 2$, so only the right branch is traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - y^2 = 4$ (right branch, $x \\ge 2$)."
+  }
+}

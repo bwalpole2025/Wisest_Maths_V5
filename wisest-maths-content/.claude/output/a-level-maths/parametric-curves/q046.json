@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "line segment",
+    "trig"
+  ],
+  "questionText": "A curve has parametric equations $x = 2\\sin\\theta + 1$, $y = 2\\sin\\theta - 1$. Find the Cartesian equation and state the restriction on $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Subtract the two equations",
+        "workingLatex": "x - y = (2\\sin\\theta + 1) - (2\\sin\\theta - 1)",
+        "explanation": "Both share the term $2\\sin\\theta$, so subtracting eliminates the parameter entirely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify",
+        "workingLatex": "x - y = 2",
+        "explanation": "The $2\\sin\\theta$ terms cancel, leaving a constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the line",
+        "workingLatex": "y = x - 2",
+        "explanation": "Rearranging gives the straight-line equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the restriction",
+        "workingLatex": "-1 \\le \\sin\\theta \\le 1 \\;\\Rightarrow\\; -1 \\le x \\le 3",
+        "explanation": "Since $x = 2\\sin\\theta + 1$, the sine bounds give $x$ between $-1$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "y = x - 2, \\; -1 \\le x \\le 3",
+        "explanation": "The curve is only the segment of the line between $x = -1$ and $x = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = x - 2$ for $-1 \\le x \\le 3$ (a line segment)."
+  }
+}

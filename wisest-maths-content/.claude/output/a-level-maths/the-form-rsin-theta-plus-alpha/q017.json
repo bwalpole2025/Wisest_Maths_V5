@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.rsin-form.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving",
+    "cosine"
+  ],
+  "questionText": "Solve $\\cos\\theta - \\sin\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$, using the form $R\\cos(\\theta + \\alpha)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in harmonic form",
+        "workingLatex": "\\cos\\theta - \\sin\\theta = \\sqrt2\\cos(\\theta + 45^\\circ)",
+        "explanation": "From $R = \\sqrt2$ and $\\alpha = 45^\\circ$, the expression becomes a single cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt2\\cos(\\theta + 45^\\circ) = 1",
+        "explanation": "Substituting turns the equation into a standard cosine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Isolate the cosine",
+        "workingLatex": "\\cos(\\theta + 45^\\circ) = \\frac{1}{\\sqrt2}",
+        "explanation": "Dividing by $\\sqrt2$ gives a recognisable exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the shifted interval",
+        "workingLatex": "45^\\circ \\le \\theta + 45^\\circ < 405^\\circ",
+        "explanation": "Adding the shift to the bounds gives the interval for the shifted angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta + 45^\\circ = 45^\\circ, 315^\\circ",
+        "explanation": "Cosine $\\frac{1}{\\sqrt2}$ occurs at $45^\\circ$ and $315^\\circ$ within the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = 0^\\circ, 270^\\circ",
+        "explanation": "Subtracting $45^\\circ$ from each gives the solutions for $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Verify one solution",
+        "workingLatex": "\\theta = 0: \\cos 0 - \\sin 0 = 1 \\;\\checkmark",
+        "explanation": "Substituting $\\theta = 0$ gives $1$, confirming the solution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 0^\\circ, 270^\\circ$"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "secant",
+    "tangent",
+    "conjugate"
+  ],
+  "questionText": "Solve $\\sec\\theta + \\tan\\theta = 3$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree. You must check each candidate.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the conjugate identity",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = 1",
+        "explanation": "The difference of squares of secant and tangent is always $1$, which lets us pair the given equation with a partner equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor the identity",
+        "workingLatex": "(\\sec\\theta - \\tan\\theta)(\\sec\\theta + \\tan\\theta) = 1",
+        "explanation": "Factorising the difference of squares links the sum we are given to the corresponding difference.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the given sum",
+        "workingLatex": "(\\sec\\theta - \\tan\\theta)\\times 3 = 1",
+        "explanation": "Replacing $\\sec\\theta + \\tan\\theta$ with $3$ turns the identity into an equation for the difference.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the difference",
+        "workingLatex": "\\sec\\theta - \\tan\\theta = \\frac{1}{3}",
+        "explanation": "Dividing by $3$ gives the value of the conjugate expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the sum and difference equations",
+        "workingLatex": "2\\sec\\theta = 3 + \\frac{1}{3} = \\frac{10}{3}",
+        "explanation": "Adding the two equations eliminates tangent, leaving an equation in secant alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for secant then cosine",
+        "workingLatex": "\\sec\\theta = \\frac{5}{3} \\;\\Rightarrow\\; \\cos\\theta = \\frac{3}{5}",
+        "explanation": "Halving gives secant, and its reciprocal gives cosine equal to $\\frac{3}{5}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the candidate angles",
+        "workingLatex": "\\theta \\approx 53.1^\\circ \\text{ or } 306.9^\\circ",
+        "explanation": "Positive cosine $\\frac{3}{5}$ gives one solution in quadrant I and one in quadrant IV.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the first candidate",
+        "workingLatex": "\\theta = 53.1^\\circ: \\; \\sec\\theta + \\tan\\theta = \\tfrac{5}{3} + \\tfrac{4}{3} = 3 \\;\\checkmark",
+        "explanation": "In quadrant I tangent is positive, so the sum is $3$, matching the equation. This candidate is valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the second candidate",
+        "workingLatex": "\\theta = 306.9^\\circ: \\; \\sec\\theta + \\tan\\theta = \\tfrac{5}{3} - \\tfrac{4}{3} = \\tfrac{1}{3} \\ne 3",
+        "explanation": "In quadrant IV tangent is negative, so the sum is only $\\frac{1}{3}$. Squaring-type manipulations introduced this false root, so we reject it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the solution",
+        "workingLatex": "\\theta \\approx 53^\\circ",
+        "explanation": "Only the first candidate satisfies the original equation, so it is the sole solution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 53^\\circ$"
+  }
+}

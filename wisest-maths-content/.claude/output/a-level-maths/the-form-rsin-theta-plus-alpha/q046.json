@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "extended interval"
+  ],
+  "questionText": "Solve $6\\cos\\theta + 8\\sin\\theta = 5$ for $0^\\circ \\le \\theta < 720^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder and find R",
+        "workingLatex": "8\\sin\\theta + 6\\cos\\theta, \\quad R = \\sqrt{8^2 + 6^2} = 10",
+        "explanation": "Writing sine first, the amplitude is $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{6}{8} = 0.75 \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
+        "explanation": "The ratio gives the phase angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the equation",
+        "workingLatex": "10\\sin(\\theta + 36.87^\\circ) = 5 \\;\\Rightarrow\\; \\sin(\\theta + 36.87^\\circ) = 0.5",
+        "explanation": "Substituting and dividing by $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the extended shifted interval",
+        "workingLatex": "36.87^\\circ \\le \\theta + 36.87^\\circ < 756.87^\\circ",
+        "explanation": "Because $\\theta$ goes up to $720^\\circ$, the shifted angle spans nearly two full revolutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "List all solutions of the sine equation",
+        "workingLatex": "\\theta + 36.87^\\circ = 150^\\circ, 390^\\circ, 510^\\circ, 750^\\circ",
+        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$ each cycle; within the interval the valid ones are $150^\\circ, 390^\\circ (=30^\\circ+360^\\circ), 510^\\circ (=150^\\circ+360^\\circ), 750^\\circ (=30^\\circ+720^\\circ)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta \\approx 113^\\circ, 353^\\circ, 473^\\circ, 713^\\circ",
+        "explanation": "Subtracting $36.87^\\circ$ from each and rounding gives four solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta \\approx 113^\\circ, 353^\\circ, 473^\\circ, 713^\\circ",
+        "explanation": "The wider interval yields twice as many solutions as the usual $0$ to $360^\\circ$ range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 113^\\circ, 353^\\circ, 473^\\circ, 713^\\circ$"
+  }
+}

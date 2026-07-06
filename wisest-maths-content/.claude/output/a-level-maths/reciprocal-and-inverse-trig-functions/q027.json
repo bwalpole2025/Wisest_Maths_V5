@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simplify",
+    "identities",
+    "cotangent"
+  ],
+  "questionText": "Show that $\\dfrac{\\cot\\theta}{\\csc\\theta}$ simplifies to $\\cos\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite cotangent in sine and cosine",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Expressing everything in sine and cosine is the reliable way to simplify a quotient of reciprocal functions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite cosecant in sine",
+        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "Cosecant becomes one over sine, so both parts of the fraction are now in basic form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the fraction",
+        "workingLatex": "\\frac{\\cot\\theta}{\\csc\\theta} = \\frac{\\;\\frac{\\cos\\theta}{\\sin\\theta}\\;}{\\;\\frac{1}{\\sin\\theta}\\;}",
+        "explanation": "The expression is now a fraction divided by a fraction, ready to be simplified by flipping the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide by multiplying by the reciprocal",
+        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta} \\times \\frac{\\sin\\theta}{1}",
+        "explanation": "Dividing by $\\frac{1}{\\sin\\theta}$ is the same as multiplying by $\\sin\\theta$, which will cancel the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel the sine factors",
+        "workingLatex": "= \\frac{\\cos\\theta \\cdot \\sin\\theta}{\\sin\\theta}",
+        "explanation": "The sine in the numerator and denominator cancel, since they are the same nonzero quantity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the simplified result",
+        "workingLatex": "= \\cos\\theta",
+        "explanation": "After cancelling, only cosine remains, which is exactly what we were asked to show.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\cot\\theta}{\\csc\\theta} = \\cos\\theta$"
+  }
+}

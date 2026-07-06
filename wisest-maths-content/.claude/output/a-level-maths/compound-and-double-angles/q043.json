@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "tangent"
+  ],
+  "questionText": "Prove that $\\sin 2\\theta \\equiv \\dfrac{2\\tan\\theta}{1 + \\tan^2\\theta}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the right-hand side",
+        "workingLatex": "\\text{RHS} = \\frac{2\\tan\\theta}{1 + \\tan^2\\theta}",
+        "explanation": "The denominator is a Pythagorean identity, so we work from the right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify the denominator",
+        "workingLatex": "1 + \\tan^2\\theta = \\sec^2\\theta",
+        "explanation": "The denominator becomes $\\sec^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write tangent in sine and cosine",
+        "workingLatex": "= \\frac{2\\cdot\\frac{\\sin\\theta}{\\cos\\theta}}{\\sec^2\\theta}",
+        "explanation": "Expressing tangent in basic functions prepares the cancellation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Replace secant squared and divide",
+        "workingLatex": "= 2\\cdot\\frac{\\sin\\theta}{\\cos\\theta}\\cdot\\cos^2\\theta",
+        "explanation": "Dividing by $\\sec^2\\theta$ is multiplying by $\\cos^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel one cosine",
+        "workingLatex": "= 2\\sin\\theta\\cos\\theta",
+        "explanation": "One cosine cancels, leaving the standard double angle expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Recognise the double angle",
+        "workingLatex": "= \\sin 2\\theta \\;\\blacksquare",
+        "explanation": "This equals $\\sin 2\\theta$, matching the left-hand side and completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 2\\theta \\equiv \\dfrac{2\\tan\\theta}{1 + \\tan^2\\theta}$"
+  }
+}

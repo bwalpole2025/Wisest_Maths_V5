@@ -1,0 +1,50 @@
+{
+  "id": "al.y2.pure.parametric-curves.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "ellipse"
+  ],
+  "questionText": "A curve has parametric equations $x = 5\\cos\\theta$, $y = 12\\sin\\theta$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the trig functions",
+        "workingLatex": "\\cos\\theta = \\frac{x}{5}, \\quad \\sin\\theta = \\frac{y}{12}",
+        "explanation": "Dividing by each coefficient isolates the trig functions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\left(\\frac{x}{5}\\right)^2 + \\left(\\frac{y}{12}\\right)^2 = 1",
+        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ removes $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify",
+        "workingLatex": "\\frac{x^2}{25} + \\frac{y^2}{144} = 1",
+        "explanation": "Squaring gives denominators $25$ and $144$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify the curve",
+        "workingLatex": "\\frac{x^2}{25} + \\frac{y^2}{144} = 1 \\text{ (ellipse)}",
+        "explanation": "An ellipse with semi-axes $5$ horizontally and $12$ vertically.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{x^2}{25} + \\dfrac{y^2}{144} = 1$"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "compound angles",
+    "given ratios",
+    "sine"
+  ],
+  "questionText": "Given that $\\sin A = \\dfrac{3}{5}$ with $A$ acute, and $\\cos B = \\dfrac{5}{13}$ with $B$ acute, find the exact value of $\\sin(A + B)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the compound angle formula",
+        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "We will need all four of $\\sin A, \\cos A, \\sin B, \\cos B$, so we find the two that are missing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find cos A",
+        "workingLatex": "\\cos A = \\sqrt{1 - \\tfrac{9}{25}} = \\frac{4}{5}",
+        "explanation": "Using the Pythagorean identity with acute $A$ gives a positive cosine of $\\frac{4}{5}$ (a $3$-$4$-$5$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find sin B",
+        "workingLatex": "\\sin B = \\sqrt{1 - \\tfrac{25}{169}} = \\frac{12}{13}",
+        "explanation": "Similarly, acute $B$ gives a positive sine of $\\frac{12}{13}$ (a $5$-$12$-$13$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute all values",
+        "workingLatex": "\\sin(A + B) = \\frac{3}{5}\\cdot\\frac{5}{13} + \\frac{4}{5}\\cdot\\frac{12}{13}",
+        "explanation": "Inserting the four values sets up the arithmetic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply out each product",
+        "workingLatex": "= \\frac{15}{65} + \\frac{48}{65}",
+        "explanation": "Both products share the denominator $65$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the fractions",
+        "workingLatex": "= \\frac{63}{65}",
+        "explanation": "Adding the numerators gives $\\frac{63}{65}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the value is valid",
+        "workingLatex": "\\left|\\frac{63}{65}\\right| \\le 1 \\;\\checkmark",
+        "explanation": "The value is within the valid range for sine, confirming it is reasonable.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin(A + B) = \\dfrac{63}{65}$"
+  }
+}

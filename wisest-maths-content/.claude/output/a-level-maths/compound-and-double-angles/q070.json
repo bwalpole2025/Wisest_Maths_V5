@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "compound angles",
+    "identities",
+    "proof",
+    "tangent"
+  ],
+  "questionText": "Prove that $\\dfrac{\\sin(A + B)}{\\sin(A - B)} \\equiv \\dfrac{\\tan A + \\tan B}{\\tan A - \\tan B}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the numerator",
+        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "We write out both compound angles, aiming to divide through by $\\cos A\\cos B$ to create tangents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the denominator",
+        "workingLatex": "\\sin(A - B) = \\sin A\\cos B - \\cos A\\sin B",
+        "explanation": "The difference version flips the middle sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the ratio",
+        "workingLatex": "\\frac{\\sin(A+B)}{\\sin(A-B)} = \\frac{\\sin A\\cos B + \\cos A\\sin B}{\\sin A\\cos B - \\cos A\\sin B}",
+        "explanation": "Placing the expansions over each other prepares for a common division.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide every term by cos A cos B",
+        "workingLatex": "= \\frac{\\frac{\\sin A\\cos B}{\\cos A\\cos B} + \\frac{\\cos A\\sin B}{\\cos A\\cos B}}{\\frac{\\sin A\\cos B}{\\cos A\\cos B} - \\frac{\\cos A\\sin B}{\\cos A\\cos B}}",
+        "explanation": "Dividing numerator and denominator by the same quantity $\\cos A\\cos B$ leaves the ratio unchanged but exposes tangents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify each fraction",
+        "workingLatex": "= \\frac{\\tan A + \\tan B}{\\tan A - \\tan B}",
+        "explanation": "Each term reduces: for example $\\frac{\\sin A\\cos B}{\\cos A\\cos B} = \\tan A$ and $\\frac{\\cos A\\sin B}{\\cos A\\cos B} = \\tan B$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude",
+        "workingLatex": "\\frac{\\sin(A + B)}{\\sin(A - B)} \\equiv \\frac{\\tan A + \\tan B}{\\tan A - \\tan B} \\;\\blacksquare",
+        "explanation": "The left-hand side equals the right-hand side, completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sin(A + B)}{\\sin(A - B)} \\equiv \\dfrac{\\tan A + \\tan B}{\\tan A - \\tan B}$"
+  }
+}

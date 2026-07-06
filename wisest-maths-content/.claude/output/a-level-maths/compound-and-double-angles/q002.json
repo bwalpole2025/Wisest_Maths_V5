@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
+  "tags": [
+    "compound angles",
+    "cosine",
+    "formula recall"
+  ],
+  "questionText": "Write down the compound angle formula for $\\cos(A - B)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the pair of cosine addition formulae",
+        "workingLatex": "\\cos(A \\pm B) = \\cos A\\cos B \\mp \\sin A\\sin B",
+        "explanation": "The cosine formulae keep like functions together: cosine times cosine, then sine times sine. Crucially, the sign flips compared with the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Note the sign reversal",
+        "workingLatex": "\\cos(A - B) \\;\\Rightarrow\\; + \\text{ between the terms}",
+        "explanation": "For cosine the sign inside the bracket is reversed in the expansion. So a minus inside becomes a plus between the two products.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the minus version",
+        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "Applying the sign reversal to $A - B$ gives a plus sign linking the two products.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Sanity check with a known value",
+        "workingLatex": "\\cos(90^\\circ - 0^\\circ) = \\cos 90^\\circ\\cos 0^\\circ + \\sin 90^\\circ\\sin 0^\\circ = 0",
+        "explanation": "Testing with $A = 90^\\circ, B = 0^\\circ$ gives $0$, matching $\\cos 90^\\circ$, which confirms the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cross-check the cofunction result",
+        "workingLatex": "\\cos(90^\\circ - B) = \\sin B",
+        "explanation": "Setting $A = 90^\\circ$ gives $\\cos(90^\\circ - B) = \\sin B$, a familiar identity, which reassures us the formula is right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final formula",
+        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "This is the required compound angle formula for cosine of a difference.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B$"
+  }
+}

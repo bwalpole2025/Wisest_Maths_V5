@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "secant"
+  ],
+  "questionText": "Prove that $\\sec\\theta - \\cos\\theta \\equiv \\sin\\theta\\tan\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = \\sec\\theta - \\cos\\theta",
+        "explanation": "Working from one side towards the other is the cleanest way to prove an identity; we choose the left-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite secant as a reciprocal",
+        "workingLatex": "= \\frac{1}{\\cos\\theta} - \\cos\\theta",
+        "explanation": "Converting secant into one over cosine puts both terms in cosine, ready to be combined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form a common denominator",
+        "workingLatex": "= \\frac{1 - \\cos^2\\theta}{\\cos\\theta}",
+        "explanation": "Combining over the common denominator $\\cos\\theta$ merges the two terms into a single fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 - \\cos^2\\theta = \\sin^2\\theta",
+        "explanation": "The numerator is exactly the Pythagorean identity rearranged, so it becomes $\\sin^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the numerator",
+        "workingLatex": "= \\frac{\\sin^2\\theta}{\\cos\\theta}",
+        "explanation": "The fraction now has $\\sin^2\\theta$ on top, which we will split to reveal a tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Split off a tangent",
+        "workingLatex": "= \\sin\\theta \\cdot \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Separating one factor of sine leaves $\\frac{\\sin\\theta}{\\cos\\theta}$, which is tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise the tangent and conclude",
+        "workingLatex": "= \\sin\\theta\\tan\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "This matches the right-hand side exactly, so the identity is proved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sec\\theta - \\cos\\theta \\equiv \\sin\\theta\\tan\\theta$"
+  }
+}

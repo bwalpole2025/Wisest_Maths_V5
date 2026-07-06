@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "modelling",
+    "spring"
+  ],
+  "questionText": "The displacement of an oscillating particle is $x = 3\\cos(2t) + 4\\sin(2t)$ (metres), where $t$ is in seconds. Find the amplitude of the motion and the smallest positive $t$ at which $x = 0$, in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder to sine-first",
+        "workingLatex": "x = 4\\sin(2t) + 3\\cos(2t)",
+        "explanation": "Writing the sine term first aligns with the $R\\sin$ template.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the amplitude",
+        "workingLatex": "R = \\sqrt{4^2 + 3^2} = 5",
+        "explanation": "The amplitude of the oscillation is $R = 5$ metres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the phase",
+        "workingLatex": "\\tan\\alpha = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 0.6435 \\text{ rad}",
+        "explanation": "The phase angle in radians is $\\arctan\\frac{3}{4} \\approx 0.6435$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the displacement",
+        "workingLatex": "x = 5\\sin(2t + 0.6435)",
+        "explanation": "The motion is a single sinusoid of amplitude $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set x = 0",
+        "workingLatex": "\\sin(2t + 0.6435) = 0 \\;\\Rightarrow\\; 2t + 0.6435 = \\pi",
+        "explanation": "The displacement is zero when the sine is zero; the first value giving positive $t$ is $\\pi$ (since $0$ would need negative $t$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for t",
+        "workingLatex": "2t = \\pi - 0.6435 \\approx 2.498 \\;\\Rightarrow\\; t \\approx 1.25 \\text{ s}",
+        "explanation": "Dividing by $2$ gives the smallest positive time at which the particle passes through the origin.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Amplitude $5$ m; first at $t \\approx 1.25$ s."
+  }
+}

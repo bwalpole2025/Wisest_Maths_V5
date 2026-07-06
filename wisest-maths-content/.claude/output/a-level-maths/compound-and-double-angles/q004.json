@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "double angle",
+    "cosine",
+    "formula recall"
+  ],
+  "questionText": "Write down the three equivalent forms of the double angle formula for $\\cos 2A$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start from the cosine addition formula",
+        "workingLatex": "\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "As with sine, the cosine double angle formula comes from setting the two angles equal in the addition formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set B equal to A",
+        "workingLatex": "\\cos 2A = \\cos^2 A - \\sin^2 A",
+        "explanation": "Putting $B = A$ gives the first form directly: cosine squared minus sine squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the Pythagorean identity to remove sine",
+        "workingLatex": "\\sin^2 A = 1 - \\cos^2 A",
+        "explanation": "Substituting for $\\sin^2 A$ will give a form purely in cosine, which is useful for integration and equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Derive the cosine-only form",
+        "workingLatex": "\\cos 2A = \\cos^2 A - (1 - \\cos^2 A) = 2\\cos^2 A - 1",
+        "explanation": "Simplifying gives the second form, written entirely in terms of cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the Pythagorean identity to remove cosine",
+        "workingLatex": "\\cos^2 A = 1 - \\sin^2 A \\;\\Rightarrow\\; \\cos 2A = 1 - 2\\sin^2 A",
+        "explanation": "Substituting the other way gives the third form, written entirely in terms of sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "List all three forms",
+        "workingLatex": "\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A",
+        "explanation": "Having all three forms lets you choose the one that best matches a given problem.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Sanity check with a known value",
+        "workingLatex": "\\cos 60^\\circ = 2\\cos^2 30^\\circ - 1 = 2\\cdot\\tfrac{3}{4} - 1 = \\tfrac{1}{2} \\;\\checkmark",
+        "explanation": "Using $A = 30^\\circ$ in the second form reproduces $\\cos 60^\\circ = \\frac{1}{2}$, confirming the formulae.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A$"
+  }
+}

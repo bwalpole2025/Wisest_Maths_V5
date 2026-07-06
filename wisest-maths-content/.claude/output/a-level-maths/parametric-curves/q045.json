@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "both quadratic"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^2 - 4t$. Show that $(x - y)^2 = 16x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Subtract the two equations",
+        "workingLatex": "x - y = t^2 - (t^2 - 4t)",
+        "explanation": "Both equations contain $t^2$, so subtracting eliminates it and isolates the linear term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify",
+        "workingLatex": "x - y = 4t",
+        "explanation": "The $t^2$ terms cancel, leaving $4t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Square both sides",
+        "workingLatex": "(x - y)^2 = 16t^2",
+        "explanation": "Squaring gives $16t^2$, which we can relate to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute for t squared",
+        "workingLatex": "t^2 = x",
+        "explanation": "The $x$-equation directly gives $t^2 = x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine",
+        "workingLatex": "(x - y)^2 = 16x",
+        "explanation": "Replacing $t^2$ with $x$ gives the required Cartesian relationship.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note the curve type",
+        "workingLatex": "(x - y)^2 = 16x \\text{ (a rotated parabola)}",
+        "explanation": "This is a parabola; the squared linear combination on the left is the signature of a tilted parabola.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x - y)^2 = 16x$"
+  }
+}

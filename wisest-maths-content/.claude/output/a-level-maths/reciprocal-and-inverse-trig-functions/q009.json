@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "reciprocal trig",
+    "cotangent",
+    "exact values",
+    "surds"
+  ],
+  "questionText": "Find the exact value of $\\cot 30^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the sine-cosine form of cotangent",
+        "workingLatex": "\\cot 30^\\circ = \\frac{\\cos 30^\\circ}{\\sin 30^\\circ}",
+        "explanation": "Writing cotangent as cosine over sine is convenient here because both exact values are simple to substitute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the exact value of cosine 30 degrees",
+        "workingLatex": "\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}",
+        "explanation": "This is a standard exact value from the $30$-$60$-$90$ triangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the exact value of sine 30 degrees",
+        "workingLatex": "\\sin 30^\\circ = \\frac{1}{2}",
+        "explanation": "This is the matching exact value from the same special triangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute both values",
+        "workingLatex": "\\cot 30^\\circ = \\frac{\\;\\frac{\\sqrt{3}}{2}\\;}{\\;\\frac{1}{2}\\;}",
+        "explanation": "Placing cosine over sine gives a fraction divided by a fraction, ready to simplify.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the compound fraction",
+        "workingLatex": "\\frac{\\sqrt{3}}{2} \\times \\frac{2}{1} = \\sqrt{3}",
+        "explanation": "Dividing by $\\frac{1}{2}$ is the same as multiplying by $2$, and the twos cancel to leave $\\sqrt{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\cot 30^\\circ = \\sqrt{3}",
+        "explanation": "This is the exact value; note it is already in simplest surd form with no denominator to rationalise.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cot 30^\\circ = \\sqrt{3}$"
+  }
+}

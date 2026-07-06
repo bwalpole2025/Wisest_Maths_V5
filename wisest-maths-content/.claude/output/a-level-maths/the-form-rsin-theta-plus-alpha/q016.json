@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "maximum",
+    "reciprocal"
+  ],
+  "questionText": "Find the maximum value of $\\dfrac{10}{5\\sin\\theta + 12\\cos\\theta + 15}$ and state the value it takes, given $5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta + \\alpha)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the denominator",
+        "workingLatex": "5\\sin\\theta + 12\\cos\\theta + 15 = 13\\sin(\\theta + \\alpha) + 15",
+        "explanation": "Using the harmonic form makes the denominator's range easy to determine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound the denominator",
+        "workingLatex": "-13 + 15 \\le 13\\sin(\\theta + \\alpha) + 15 \\le 13 + 15",
+        "explanation": "The sine ranges over $[-13,13]$, so the denominator ranges over $[2, 28]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the denominator range",
+        "workingLatex": "2 \\le \\text{denominator} \\le 28",
+        "explanation": "Both bounds are positive, so the fraction is always defined and positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recognise where the fraction is largest",
+        "workingLatex": "\\text{fraction max when denominator is smallest}",
+        "explanation": "For a positive numerator, a fraction is largest when its denominator is smallest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the smallest denominator",
+        "workingLatex": "\\text{min denominator} = 2",
+        "explanation": "The denominator's least value is $2$, attained when the sine equals $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the maximum",
+        "workingLatex": "\\frac{10}{2} = 5",
+        "explanation": "Dividing the numerator by the smallest denominator gives the maximum value $5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum value $= 5$."
+  }
+}

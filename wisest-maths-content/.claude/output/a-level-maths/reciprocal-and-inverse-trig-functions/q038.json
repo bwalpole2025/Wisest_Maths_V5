@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "secant",
+    "cosine",
+    "solving"
+  ],
+  "questionText": "Solve $2\\sec\\theta + 3 = 0$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the secant",
+        "workingLatex": "\\sec\\theta = -\\frac{3}{2}",
+        "explanation": "Rearranging the linear equation gives secant equal to $-\\frac{3}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Convert to cosine",
+        "workingLatex": "\\cos\\theta = -\\frac{2}{3}",
+        "explanation": "Cosine is the reciprocal of secant, so it equals $-\\frac{2}{3}$; note this is within the valid range for cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the reference angle",
+        "workingLatex": "\\cos^{-1}\\left(\\tfrac{2}{3}\\right) \\approx 48.19^\\circ",
+        "explanation": "Ignoring the sign, the acute angle with cosine $\\frac{2}{3}$ is about $48.19^\\circ$, our reference angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify the quadrants where cosine is negative",
+        "workingLatex": "\\cos\\theta < 0 \\text{ in quadrants II and III}",
+        "explanation": "Cosine is negative in the second and third quadrants, so the solutions lie there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the second-quadrant solution",
+        "workingLatex": "\\theta = 180^\\circ - 48.19^\\circ \\approx 131.8^\\circ",
+        "explanation": "Subtracting the reference angle from $180^\\circ$ gives the quadrant II solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the third-quadrant solution",
+        "workingLatex": "\\theta = 180^\\circ + 48.19^\\circ \\approx 228.2^\\circ",
+        "explanation": "Adding the reference angle to $180^\\circ$ gives the quadrant III solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions to the nearest degree",
+        "workingLatex": "\\theta \\approx 132^\\circ, 228^\\circ",
+        "explanation": "Rounding both values gives the two solutions in the required interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 132^\\circ, 228^\\circ$"
+  }
+}

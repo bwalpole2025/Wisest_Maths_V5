@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "quadratic"
+  ],
+  "questionText": "A curve has parametric equations $x = 2t + 3$, $y = 4t^2 - 1$. Find the Cartesian equation in the form $y = f(x)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Make t the subject",
+        "workingLatex": "x = 2t + 3 \\;\\Rightarrow\\; t = \\frac{x - 3}{2}",
+        "explanation": "The linear $x$-equation is rearranged for $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = 4\\left(\\frac{x-3}{2}\\right)^2 - 1",
+        "explanation": "Replacing $t$ removes the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Square the fraction",
+        "workingLatex": "y = 4\\cdot\\frac{(x-3)^2}{4} - 1",
+        "explanation": "Squaring gives $\\frac{(x-3)^2}{4}$, and the factor $4$ is ready to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel the four",
+        "workingLatex": "y = (x - 3)^2 - 1",
+        "explanation": "The $4$ cancels neatly with the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = (x - 3)^2 - 1",
+        "explanation": "This is a parabola with vertex at $(3, -1)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = (x - 3)^2 - 1$"
+  }
+}

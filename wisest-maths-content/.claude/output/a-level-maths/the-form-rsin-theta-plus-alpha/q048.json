@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Express $9\\sin\\theta - 40\\cos\\theta$ as $R\\sin(\\theta - \\alpha)$ and hence solve $9\\sin\\theta - 40\\cos\\theta = 20$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{9^2 + 40^2} = \\sqrt{1681} = 41",
+        "explanation": "The amplitude is $41$ (a $9$-$40$-$41$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{40}{9} \\;\\Rightarrow\\; \\alpha \\approx 77.32^\\circ",
+        "explanation": "The ratio gives the phase angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the harmonic form",
+        "workingLatex": "9\\sin\\theta - 40\\cos\\theta = 41\\sin(\\theta - 77.32^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation",
+        "workingLatex": "\\sin(\\theta - 77.32^\\circ) = \\frac{20}{41} \\approx 0.4878",
+        "explanation": "Dividing by $41$ gives the sine value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the shifted interval and solve",
+        "workingLatex": "\\theta - 77.32^\\circ = 29.20^\\circ, 150.80^\\circ",
+        "explanation": "Within $[-77.32^\\circ, 282.68^\\circ)$, the sine equation gives these two values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the shift and round",
+        "workingLatex": "\\theta \\approx 107^\\circ, 228^\\circ",
+        "explanation": "Adding $77.32^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 107^\\circ, 228^\\circ$"
+  }
+}

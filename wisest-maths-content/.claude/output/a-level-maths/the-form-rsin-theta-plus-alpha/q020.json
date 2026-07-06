@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $5\\sin\\theta - 12\\cos\\theta = 6.5$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree. Use $5\\sin\\theta - 12\\cos\\theta = 13\\sin(\\theta - 67.38^\\circ)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute the harmonic form",
+        "workingLatex": "13\\sin(\\theta - 67.38^\\circ) = 6.5",
+        "explanation": "Replacing the two-term expression gives a single sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta - 67.38^\\circ) = 0.5",
+        "explanation": "Dividing by $13$ gives sine equal to $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the shifted interval",
+        "workingLatex": "-67.38^\\circ \\le \\theta - 67.38^\\circ < 292.62^\\circ",
+        "explanation": "Subtracting the shift from the bounds gives the interval for the shifted angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta - 67.38^\\circ = 30^\\circ, 150^\\circ",
+        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$, both within the shifted interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the shift",
+        "workingLatex": "\\theta = 97.38^\\circ, 217.38^\\circ",
+        "explanation": "Adding $67.38^\\circ$ to each recovers $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Round the solutions",
+        "workingLatex": "\\theta \\approx 97^\\circ, 217^\\circ",
+        "explanation": "Rounding to the nearest degree gives the final answers.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 97^\\circ, 217^\\circ$"
+  }
+}

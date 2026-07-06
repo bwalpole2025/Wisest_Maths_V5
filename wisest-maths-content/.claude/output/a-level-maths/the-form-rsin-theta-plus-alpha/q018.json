@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $\\sin\\theta + \\sqrt3\\cos\\theta = \\sqrt3$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in harmonic form",
+        "workingLatex": "\\sin\\theta + \\sqrt3\\cos\\theta = 2\\sin(\\theta + 60^\\circ)",
+        "explanation": "From $R = 2$ and $\\alpha = 60^\\circ$, the expression becomes a single sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the equation",
+        "workingLatex": "2\\sin(\\theta + 60^\\circ) = \\sqrt3",
+        "explanation": "Substituting gives a standard sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta + 60^\\circ) = \\frac{\\sqrt3}{2}",
+        "explanation": "Dividing by $2$ gives a recognisable exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the shifted interval",
+        "workingLatex": "60^\\circ \\le \\theta + 60^\\circ < 420^\\circ",
+        "explanation": "Adding the shift to the bounds gives the interval for the shifted angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta + 60^\\circ = 60^\\circ, 120^\\circ, 420^\\circ",
+        "explanation": "Sine $\\frac{\\sqrt3}{2}$ occurs at $60^\\circ$ and $120^\\circ$; adding $360^\\circ$ to $60^\\circ$ gives $420^\\circ$, at the very edge, which we test.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Discard the out-of-range value",
+        "workingLatex": "420^\\circ \\not< 420^\\circ \\text{ so reject}",
+        "explanation": "The value $420^\\circ$ is not strictly less than the upper bound, so it is discarded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = 0^\\circ, 60^\\circ",
+        "explanation": "Subtracting $60^\\circ$ from the two valid solutions gives $\\theta = 0^\\circ$ and $60^\\circ$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 0^\\circ, 60^\\circ$"
+  }
+}

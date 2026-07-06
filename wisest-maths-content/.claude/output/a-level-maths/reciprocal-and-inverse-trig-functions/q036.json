@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "given ratio",
+    "cosecant",
+    "cotangent",
+    "obtuse"
+  ],
+  "questionText": "Given that $\\sin\\theta = \\dfrac{5}{13}$ and $\\theta$ is obtuse, find the exact values of $\\csc\\theta$ and $\\cot\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find cosecant directly",
+        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta} = \\frac{13}{5}",
+        "explanation": "Cosecant is simply the reciprocal of the given sine, so it is found immediately as $\\frac{13}{5}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set up the Pythagorean identity for cosine",
+        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta",
+        "explanation": "To find cotangent we need cosine, and this identity gives cosine from the known sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the sine value",
+        "workingLatex": "\\cos^2\\theta = 1 - \\left(\\tfrac{5}{13}\\right)^2 = 1 - \\frac{25}{169}",
+        "explanation": "Squaring $\\frac{5}{13}$ gives $\\frac{25}{169}$, which we subtract from $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to a single fraction",
+        "workingLatex": "\\cos^2\\theta = \\frac{169 - 25}{169} = \\frac{144}{169}",
+        "explanation": "Writing $1$ as $\\frac{169}{169}$ and subtracting gives $\\frac{144}{169}$, a perfect-square fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Take the square root and choose the sign",
+        "workingLatex": "\\theta \\text{ obtuse} \\;\\Rightarrow\\; \\cos\\theta = -\\frac{12}{13}",
+        "explanation": "The root of $\\frac{144}{169}$ is $\\frac{12}{13}$; since $\\theta$ is obtuse (quadrant II), cosine is negative, so we take the negative value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form cotangent from cosine and sine",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{-\\frac{12}{13}}{\\frac{5}{13}}",
+        "explanation": "Cotangent is cosine over sine; substituting both values sets up the division.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the compound fraction",
+        "workingLatex": "\\cot\\theta = -\\frac{12}{13}\\times\\frac{13}{5} = -\\frac{12}{5}",
+        "explanation": "The thirteens cancel, leaving $-\\frac{12}{5}$; the sign is negative, consistent with an obtuse angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the results",
+        "workingLatex": "\\csc\\theta = \\frac{13}{5}, \\quad \\cot\\theta = -\\frac{12}{5}",
+        "explanation": "These are the exact values; cosecant stays positive since sine is positive in quadrant II, while cotangent is negative.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\csc\\theta = \\dfrac{13}{5}, \\quad \\cot\\theta = -\\dfrac{12}{5}$"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "modelling",
+    "maximum"
+  ],
+  "questionText": "A big-wheel car's height above the ground is modelled by $h(t) = 8\\sin(30t)^\\circ + 15\\cos(30t)^\\circ + 20$ metres, where $t$ is in minutes. Using an R-form for $8\\sin x + 15\\cos x$, find the maximum height and the smallest positive $t$ at which it first occurs.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up the R-form for the varying part",
+        "workingLatex": "8\\sin x + 15\\cos x = R\\sin(x + \\alpha), \\quad x = 30t",
+        "explanation": "Combining the two oscillating terms into one sine reveals the amplitude and hence the maximum height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{8^2 + 15^2} = \\sqrt{289} = 17",
+        "explanation": "The amplitude is the root of the sum of squares (an $8$-$15$-$17$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{15}{8} \\;\\Rightarrow\\; \\alpha \\approx 61.93^\\circ",
+        "explanation": "The ratio gives the phase angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the height model",
+        "workingLatex": "h = 17\\sin(30t + 61.93^\\circ) + 20",
+        "explanation": "Substituting the R-form gives a single-sine model with a vertical shift of $20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the maximum height",
+        "workingLatex": "h_{\\max} = 17 + 20 = 37 \\text{ m}",
+        "explanation": "The maximum occurs when the sine equals $1$, adding the amplitude to the offset.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set the sine to its peak",
+        "workingLatex": "30t + 61.93^\\circ = 90^\\circ",
+        "explanation": "The first maximum occurs when the argument first equals $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for t",
+        "workingLatex": "30t = 28.07^\\circ \\;\\Rightarrow\\; t \\approx 0.94 \\text{ min}",
+        "explanation": "Dividing by $30$ gives the smallest positive time, about $0.94$ minutes.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum height $37$ m, first at $t \\approx 0.94$ minutes."
+  }
+}

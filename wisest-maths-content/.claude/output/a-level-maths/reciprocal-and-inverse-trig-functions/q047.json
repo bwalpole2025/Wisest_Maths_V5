@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "cosecant",
+    "cotangent"
+  ],
+  "questionText": "Prove that $\\dfrac{1}{\\csc\\theta - \\cot\\theta} \\equiv \\csc\\theta + \\cot\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = \\frac{1}{\\csc\\theta - \\cot\\theta}",
+        "explanation": "We work from the left, and the presence of $\\csc\\theta - \\cot\\theta$ suggests multiplying by its conjugate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the conjugate",
+        "workingLatex": "= \\frac{1}{\\csc\\theta - \\cot\\theta}\\times\\frac{\\csc\\theta + \\cot\\theta}{\\csc\\theta + \\cot\\theta}",
+        "explanation": "Multiplying by $\\frac{\\csc\\theta + \\cot\\theta}{\\csc\\theta + \\cot\\theta}$ equals multiplying by $1$, and it produces a difference of squares in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator",
+        "workingLatex": "(\\csc\\theta - \\cot\\theta)(\\csc\\theta + \\cot\\theta) = \\csc^2\\theta - \\cot^2\\theta",
+        "explanation": "The conjugate product gives a difference of squares, exactly the combination that a Pythagorean identity simplifies.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recall the relevant identity",
+        "workingLatex": "\\csc^2\\theta = 1 + \\cot^2\\theta",
+        "explanation": "This identity connects the two squared terms in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the denominator",
+        "workingLatex": "\\csc^2\\theta - \\cot^2\\theta = (1 + \\cot^2\\theta) - \\cot^2\\theta = 1",
+        "explanation": "Substituting shows the cotangent-squared terms cancel, leaving the denominator equal to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the fraction",
+        "workingLatex": "= \\frac{\\csc\\theta + \\cot\\theta}{1}",
+        "explanation": "With the denominator equal to $1$, only the numerator remains.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify",
+        "workingLatex": "= \\csc\\theta + \\cot\\theta",
+        "explanation": "Dividing by $1$ leaves the numerator unchanged.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the proof",
+        "workingLatex": "\\frac{1}{\\csc\\theta - \\cot\\theta} \\equiv \\csc\\theta + \\cot\\theta \\;\\blacksquare",
+        "explanation": "The left-hand side equals the right-hand side, completing the proof wherever the functions are defined.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1}{\\csc\\theta - \\cot\\theta} \\equiv \\csc\\theta + \\cot\\theta$"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "secant",
+    "solving"
+  ],
+  "questionText": "Solve $\\sec\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Convert secant to cosine",
+        "workingLatex": "\\sec\\theta = 2 \\;\\Rightarrow\\; \\frac{1}{\\cos\\theta} = 2",
+        "explanation": "Equations in secant are easiest to solve once rewritten in cosine, whose behaviour and values we know well.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange for cosine",
+        "workingLatex": "\\cos\\theta = \\frac{1}{2}",
+        "explanation": "Taking the reciprocal of both sides turns the secant equation into a standard cosine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the principal value",
+        "workingLatex": "\\theta = \\cos^{-1}\\left(\\tfrac{1}{2}\\right) = 60^\\circ",
+        "explanation": "The first solution comes from the inverse cosine of one half, which is the familiar $60^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify the quadrants where cosine is positive",
+        "workingLatex": "\\cos\\theta > 0 \\text{ in quadrants I and IV}",
+        "explanation": "Cosine is positive in the first and fourth quadrants, so there is a second solution in the fourth quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the second solution",
+        "workingLatex": "\\theta = 360^\\circ - 60^\\circ = 300^\\circ",
+        "explanation": "The fourth-quadrant solution is found by subtracting the acute angle from $360^\\circ$, giving $300^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check both lie in the interval",
+        "workingLatex": "60^\\circ, 300^\\circ \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
+        "explanation": "Both values fall inside the required range, so both are kept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta = 60^\\circ \\text{ or } \\theta = 300^\\circ",
+        "explanation": "These are the two solutions of the original secant equation in the given interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify one solution",
+        "workingLatex": "\\sec 60^\\circ = \\frac{1}{\\cos 60^\\circ} = \\frac{1}{1/2} = 2 \\;\\checkmark",
+        "explanation": "Substituting $60^\\circ$ back reproduces $\\sec\\theta = 2$, confirming the method.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 60^\\circ \\text{ or } 300^\\circ$"
+  }
+}

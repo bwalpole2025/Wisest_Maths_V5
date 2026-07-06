@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "Rcos",
+    "surds"
+  ],
+  "questionText": "Express $5\\cos\\theta + 12\\sin\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving $\\alpha$ to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder to match the sine-first form",
+        "workingLatex": "5\\cos\\theta + 12\\sin\\theta = 12\\sin\\theta + 5\\cos\\theta",
+        "explanation": "Writing the sine term first makes the comparison with $R\\sin(\\theta + \\alpha)$ cleaner.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the target form",
+        "workingLatex": "R\\sin(\\theta + \\alpha) = R\\cos\\alpha\\sin\\theta + R\\sin\\alpha\\cos\\theta",
+        "explanation": "The expansion sets up the coefficient comparison.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 12, \\quad R\\sin\\alpha = 5",
+        "explanation": "Matching the sine and cosine terms gives two equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find R",
+        "workingLatex": "R^2 = 12^2 + 5^2 = 169 \\;\\Rightarrow\\; R = 13",
+        "explanation": "The sum of squares gives $R = 13$ (a $5$-$12$-$13$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\alpha \\approx 23^\\circ",
+        "explanation": "The ratio gives the tangent of $\\alpha$, and the inverse tangent gives about $23^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final form",
+        "workingLatex": "5\\cos\\theta + 12\\sin\\theta = 13\\sin(\\theta + 23^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$ gives the required form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$5\\cos\\theta + 12\\sin\\theta = 13\\sin(\\theta + 23^\\circ)$"
+  }
+}

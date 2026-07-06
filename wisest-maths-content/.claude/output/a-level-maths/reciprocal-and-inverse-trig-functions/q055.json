@@ -1,0 +1,86 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "secant",
+    "tangent"
+  ],
+  "questionText": "Prove that $(\\sec\\theta - \\tan\\theta)^2 \\equiv \\dfrac{1 - \\sin\\theta}{1 + \\sin\\theta}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = (\\sec\\theta - \\tan\\theta)^2",
+        "explanation": "We convert to sine and cosine and then square, aiming for the fractional form on the right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite inside the bracket",
+        "workingLatex": "= \\left(\\frac{1}{\\cos\\theta} - \\frac{\\sin\\theta}{\\cos\\theta}\\right)^2",
+        "explanation": "Both secant and tangent share the denominator cosine, making the subtraction straightforward.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Combine the bracket into one fraction",
+        "workingLatex": "= \\left(\\frac{1 - \\sin\\theta}{\\cos\\theta}\\right)^2",
+        "explanation": "Subtracting the numerators over the common denominator gives a single fraction inside the square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Square the fraction",
+        "workingLatex": "= \\frac{(1 - \\sin\\theta)^2}{\\cos^2\\theta}",
+        "explanation": "Squaring applies to both numerator and denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Replace cosine squared using the identity",
+        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta",
+        "explanation": "Rewriting the denominator in terms of sine lets us factorise it against the numerator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise the denominator",
+        "workingLatex": "1 - \\sin^2\\theta = (1 - \\sin\\theta)(1 + \\sin\\theta)",
+        "explanation": "The denominator is a difference of squares, which factorises to reveal a common factor with the numerator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the whole fraction",
+        "workingLatex": "= \\frac{(1 - \\sin\\theta)^2}{(1 - \\sin\\theta)(1 + \\sin\\theta)}",
+        "explanation": "Now both numerator and denominator contain the factor $1 - \\sin\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Cancel the common factor",
+        "workingLatex": "= \\frac{1 - \\sin\\theta}{1 + \\sin\\theta}",
+        "explanation": "Cancelling one factor of $1 - \\sin\\theta$ from top and bottom leaves the target fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude the proof",
+        "workingLatex": "(\\sec\\theta - \\tan\\theta)^2 \\equiv \\frac{1 - \\sin\\theta}{1 + \\sin\\theta} \\;\\blacksquare",
+        "explanation": "The left-hand side equals the right-hand side, so the identity is proved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(\\sec\\theta - \\tan\\theta)^2 \\equiv \\dfrac{1 - \\sin\\theta}{1 + \\sin\\theta}$"
+  }
+}

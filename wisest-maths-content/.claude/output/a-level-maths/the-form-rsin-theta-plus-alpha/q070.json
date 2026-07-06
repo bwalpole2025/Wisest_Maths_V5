@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.rsin-form.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "modelling",
+    "inequality"
+  ],
+  "questionText": "A Ferris wheel car's height is $h = 12 - 5\\cos(6t)^\\circ - 12\\sin(6t)^\\circ$ metres, where $t$ is in seconds. Find the minimum height and the values of $t$ in $0 \\le t < 60$ for which $h \\le 6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Group the oscillating terms",
+        "workingLatex": "h = 12 - (5\\cos(6t)^\\circ + 12\\sin(6t)^\\circ)",
+        "explanation": "Factoring out the minus lets us combine the bracket into one sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the bracket in R-form",
+        "workingLatex": "12\\sin x + 5\\cos x = 13\\sin(x + \\alpha), \\quad x = 6t, \\; \\tan\\alpha = \\tfrac{5}{12}",
+        "explanation": "The amplitude is $13$ and $\\alpha \\approx 22.62^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the height model",
+        "workingLatex": "h = 12 - 13\\sin(6t + 22.62^\\circ)",
+        "explanation": "Substituting gives a single-sine model with a leading minus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the minimum height",
+        "workingLatex": "h_{\\min} = 12 - 13 = -1",
+        "explanation": "The height is least when the sine is at its maximum of $1$; here the model gives $-1$, so in practice the wheel would be offset, but mathematically the minimum of the expression is $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the inequality",
+        "workingLatex": "12 - 13\\sin(6t + 22.62^\\circ) \\le 6",
+        "explanation": "We want the times when the height is at most $6$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange",
+        "workingLatex": "\\sin(6t + 22.62^\\circ) \\ge \\frac{6}{13} \\approx 0.4615",
+        "explanation": "Subtracting $12$, dividing by $-13$ (which flips the inequality) isolates the sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the boundary",
+        "workingLatex": "6t + 22.62^\\circ = 27.49^\\circ, 152.51^\\circ",
+        "explanation": "The sine equals $0.4615$ at these angles; it is above between them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form the inequality band for the argument",
+        "workingLatex": "27.49^\\circ \\le 6t + 22.62^\\circ \\le 152.51^\\circ",
+        "explanation": "Within the first cycle the sine is at or above $0.4615$ across this band.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for t",
+        "workingLatex": "6t \\in [4.87^\\circ, 129.89^\\circ] \\;\\Rightarrow\\; t \\in [0.81, 21.6]",
+        "explanation": "Subtracting the phase and dividing by $6$ gives the first time window (in seconds) when the height is at most $6$ m.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum height $-1$ m; $h \\le 6$ for approximately $0.81 \\le t \\le 21.6$ s (repeating each $60$ s)."
+  }
+}

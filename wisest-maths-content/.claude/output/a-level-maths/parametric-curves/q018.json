@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "trig",
+    "range"
+  ],
+  "questionText": "A curve has parametric equations $x = 3\\cos\\theta$, $y = 2\\sin\\theta$ for $0 \\le \\theta \\le \\dfrac{\\pi}{2}$. Find the Cartesian equation and state the range of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the trig functions",
+        "workingLatex": "\\cos\\theta = \\frac{x}{3}, \\quad \\sin\\theta = \\frac{y}{2}",
+        "explanation": "Isolating prepares for the Pythagorean identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the identity",
+        "workingLatex": "\\frac{x^2}{9} + \\frac{y^2}{4} = 1",
+        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ gives the ellipse equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the range of x",
+        "workingLatex": "0 \\le \\theta \\le \\frac{\\pi}{2} \\;\\Rightarrow\\; \\cos\\theta \\in [0, 1] \\;\\Rightarrow\\; x \\in [0, 3]",
+        "explanation": "Over the first quadrant, cosine decreases from $1$ to $0$, so $x$ ranges from $3$ down to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the range of y",
+        "workingLatex": "\\sin\\theta \\in [0, 1] \\;\\Rightarrow\\; y \\in [0, 2]",
+        "explanation": "Over the same interval sine increases from $0$ to $1$, so $y$ ranges from $0$ to $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\frac{x^2}{9} + \\frac{y^2}{4} = 1, \\; 0 \\le x \\le 3, \\; 0 \\le y \\le 2",
+        "explanation": "Only the quarter of the ellipse in the first quadrant is traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{x^2}{9} + \\dfrac{y^2}{4} = 1$, with $0 \\le x \\le 3$ and $0 \\le y \\le 2$ (a quarter-ellipse)."
+  }
+}

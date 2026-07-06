@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof"
+  ],
+  "questionText": "Prove that $(\\sin\\theta + \\cos\\theta)^2 \\equiv 1 + \\sin 2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the square",
+        "workingLatex": "(\\sin\\theta + \\cos\\theta)^2 = \\sin^2\\theta + 2\\sin\\theta\\cos\\theta + \\cos^2\\theta",
+        "explanation": "Using $(a+b)^2$ gives three terms; two of them combine via the Pythagorean identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Group the squared terms",
+        "workingLatex": "= (\\sin^2\\theta + \\cos^2\\theta) + 2\\sin\\theta\\cos\\theta",
+        "explanation": "Grouping the two squares prepares to use the Pythagorean identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = 1",
+        "explanation": "The grouped squares equal $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recognise the double angle",
+        "workingLatex": "2\\sin\\theta\\cos\\theta = \\sin 2\\theta",
+        "explanation": "The remaining term is exactly $\\sin 2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine",
+        "workingLatex": "= 1 + \\sin 2\\theta \\;\\blacksquare",
+        "explanation": "Substituting both results gives the right-hand side, completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(\\sin\\theta + \\cos\\theta)^2 \\equiv 1 + \\sin 2\\theta$"
+  }
+}

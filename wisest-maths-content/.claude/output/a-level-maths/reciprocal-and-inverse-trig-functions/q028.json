@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "secant",
+    "quadratic",
+    "solving"
+  ],
+  "questionText": "Solve $\\sec^2\\theta = 4$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Take square roots of both sides",
+        "workingLatex": "\\sec\\theta = \\pm 2",
+        "explanation": "Since the equation involves secant squared, taking the square root introduces both a positive and a negative possibility, and both must be considered.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Convert to cosine",
+        "workingLatex": "\\frac{1}{\\cos\\theta} = \\pm 2 \\;\\Rightarrow\\; \\cos\\theta = \\pm\\frac{1}{2}",
+        "explanation": "Rewriting in cosine gives cosine equal to plus or minus one half, a set of standard values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve the positive case",
+        "workingLatex": "\\cos\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 60^\\circ, 300^\\circ",
+        "explanation": "Cosine is one half at $60^\\circ$ and at $300^\\circ$ (the fourth-quadrant partner), both positive-cosine solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the negative case",
+        "workingLatex": "\\cos\\theta = -\\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 120^\\circ, 240^\\circ",
+        "explanation": "Cosine is negative one half at $120^\\circ$ and $240^\\circ$, the two second- and third-quadrant solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Collect all solutions",
+        "workingLatex": "\\theta = 60^\\circ, 120^\\circ, 240^\\circ, 300^\\circ",
+        "explanation": "Combining both cases gives four solutions, evenly spaced, as expected from a squared equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check all lie in the interval",
+        "workingLatex": "\\text{all four} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
+        "explanation": "Every solution falls within the required range, so all are kept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Verify one solution",
+        "workingLatex": "\\sec^2 120^\\circ = \\left(\\tfrac{1}{-1/2}\\right)^2 = (-2)^2 = 4 \\;\\checkmark",
+        "explanation": "Substituting $120^\\circ$ back gives $4$, confirming the negative-case solutions are valid.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 60^\\circ, 120^\\circ, 240^\\circ, 300^\\circ$"
+  }
+}

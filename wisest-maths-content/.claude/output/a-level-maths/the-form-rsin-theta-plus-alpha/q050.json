@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "range",
+    "square"
+  ],
+  "questionText": "Find the maximum and minimum values of $(5\\sin\\theta + 12\\cos\\theta)^2 + 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the inner expression in R-form",
+        "workingLatex": "5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta + \\alpha)",
+        "explanation": "The amplitude is $13$, bounding the inner expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound the inner expression",
+        "workingLatex": "-13 \\le 13\\sin(\\theta + \\alpha) \\le 13",
+        "explanation": "The inner expression ranges from $-13$ to $13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Square the bounds",
+        "workingLatex": "0 \\le (13\\sin(\\theta + \\alpha))^2 \\le 169",
+        "explanation": "Squaring a value in $[-13,13]$ gives a value in $[0,169]$; zero occurs when the inner expression is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add the constant",
+        "workingLatex": "3 \\le (5\\sin\\theta + 12\\cos\\theta)^2 + 3 \\le 172",
+        "explanation": "Adding $3$ shifts the range up by $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State max and min",
+        "workingLatex": "\\text{max} = 172, \\quad \\text{min} = 3",
+        "explanation": "The maximum is $169 + 3$ and the minimum is $0 + 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum $= 172$, minimum $= 3$."
+  }
+}

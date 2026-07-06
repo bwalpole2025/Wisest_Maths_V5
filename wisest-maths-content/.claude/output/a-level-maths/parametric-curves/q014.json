@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "reciprocal"
+  ],
+  "questionText": "A curve has parametric equations $x = t + \\dfrac{1}{t}$, $y = t - \\dfrac{1}{t}$ for $t \\ne 0$. Show that $x^2 - y^2 = 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Square the x-equation",
+        "workingLatex": "x^2 = \\left(t + \\frac{1}{t}\\right)^2 = t^2 + 2 + \\frac{1}{t^2}",
+        "explanation": "Squaring a sum gives a middle term of $2 \\cdot t \\cdot \\frac{1}{t} = 2$, which is the key to the cancellation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Square the y-equation",
+        "workingLatex": "y^2 = \\left(t - \\frac{1}{t}\\right)^2 = t^2 - 2 + \\frac{1}{t^2}",
+        "explanation": "Squaring the difference gives a middle term of $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract the squares",
+        "workingLatex": "x^2 - y^2 = \\left(t^2 + 2 + \\frac{1}{t^2}\\right) - \\left(t^2 - 2 + \\frac{1}{t^2}\\right)",
+        "explanation": "Subtracting lines up the $t^2$ and $\\frac{1}{t^2}$ terms to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel matching terms",
+        "workingLatex": "x^2 - y^2 = 2 - (-2)",
+        "explanation": "The $t^2$ and $\\frac{1}{t^2}$ terms cancel, leaving only the constants.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "x^2 - y^2 = 4",
+        "explanation": "The constant difference is $2 + 2 = 4$, giving the required result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the curve",
+        "workingLatex": "x^2 - y^2 = 4 \\text{ (hyperbola)}",
+        "explanation": "This is a hyperbola centred at the origin.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - y^2 = 4$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "parabola"
+  ],
+  "questionText": "A curve has parametric equations $x = 3t^2$, $y = 6t$. Find the Cartesian equation and identify the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Make t the subject of the y-equation",
+        "workingLatex": "y = 6t \\;\\Rightarrow\\; t = \\frac{y}{6}",
+        "explanation": "The linear $y$-equation is easiest to rearrange for $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the x-equation",
+        "workingLatex": "x = 3\\left(\\frac{y}{6}\\right)^2",
+        "explanation": "Replacing $t$ removes the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify",
+        "workingLatex": "x = 3\\cdot\\frac{y^2}{36} = \\frac{y^2}{12}",
+        "explanation": "Squaring and simplifying gives $x$ in terms of $y^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange",
+        "workingLatex": "y^2 = 12x",
+        "explanation": "Multiplying through by $12$ gives the standard parabola form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify the curve",
+        "workingLatex": "y^2 = 12x \\text{ (parabola opening rightwards)}",
+        "explanation": "This is a parabola with vertex at the origin, symmetric about the $x$-axis.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y^2 = 12x$, a rightward-opening parabola."
+  }
+}

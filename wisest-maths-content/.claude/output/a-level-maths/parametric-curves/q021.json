@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "cubic"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find the Cartesian equation in the form $y^2 = f(x)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Consider squaring y and cubing x",
+        "workingLatex": "y^2 = (t^3)^2 = t^6, \\quad x^3 = (t^2)^3 = t^6",
+        "explanation": "To eliminate $t$ cleanly, we look for powers that produce the same power of $t$. Both $y^2$ and $x^3$ give $t^6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Equate the two",
+        "workingLatex": "y^2 = t^6 = x^3",
+        "explanation": "Since both equal $t^6$, they equal each other, eliminating the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y^2 = x^3",
+        "explanation": "This is a semicubical parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Note the domain",
+        "workingLatex": "x = t^2 \\ge 0",
+        "explanation": "Since $x$ is a square, it is never negative, so the curve lies in $x \\ge 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "y^2 = x^3, \\; x \\ge 0",
+        "explanation": "This is the required Cartesian equation with its domain.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y^2 = x^3$ for $x \\ge 0$."
+  }
+}

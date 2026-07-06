@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "equation",
+    "solving"
+  ],
+  "questionText": "Solve $\\arcsin(2x - 1) = \\dfrac{\\pi}{6}$ for $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Apply sine to both sides",
+        "workingLatex": "2x - 1 = \\sin\\frac{\\pi}{6}",
+        "explanation": "Taking the sine of both sides undoes the arcsine on the left, isolating the expression inside it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Evaluate the right-hand side",
+        "workingLatex": "\\sin\\frac{\\pi}{6} = \\frac{1}{2}",
+        "explanation": "The sine of $\\frac{\\pi}{6}$ is the standard exact value one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form a linear equation",
+        "workingLatex": "2x - 1 = \\frac{1}{2}",
+        "explanation": "We now have a simple linear equation in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Add one to both sides",
+        "workingLatex": "2x = \\frac{3}{2}",
+        "explanation": "Adding $1$ (as $\\frac{2}{2}$) to $\\frac{1}{2}$ gives $\\frac{3}{2}$ on the right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divide by two",
+        "workingLatex": "x = \\frac{3}{4}",
+        "explanation": "Dividing both sides by $2$ isolates $x$ as $\\frac{3}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check validity of the input",
+        "workingLatex": "2x - 1 = \\tfrac{1}{2}, \\quad -1 \\le \\tfrac{1}{2} \\le 1 \\;\\checkmark",
+        "explanation": "The argument $\\frac{1}{2}$ lies in the domain $[-1,1]$ of arcsine, so the solution is valid.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x = \\dfrac{3}{4}$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "no solutions"
+  ],
+  "questionText": "Explain why the equation $3\\sin\\theta + 4\\cos\\theta = 6$ has no solutions.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in R-form",
+        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + \\alpha)",
+        "explanation": "The amplitude is $R = \\sqrt{9 + 16} = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the range of the expression",
+        "workingLatex": "-5 \\le 5\\sin(\\theta + \\alpha) \\le 5",
+        "explanation": "The expression can never exceed its amplitude of $5$ in size.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Compare with the target value",
+        "workingLatex": "6 > 5",
+        "explanation": "The required value $6$ lies outside the achievable range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sin(\\theta + \\alpha) = \\frac{6}{5} = 1.2",
+        "explanation": "Dividing by $5$ would need the sine to equal $1.2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude",
+        "workingLatex": "\\sin(\\theta + \\alpha) = 1.2 \\text{ is impossible}",
+        "explanation": "Since sine can never exceed $1$, no angle satisfies the equation, so there are no solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "No solutions, because the maximum of $3\\sin\\theta + 4\\cos\\theta$ is $5 < 6$."
+  }
+}

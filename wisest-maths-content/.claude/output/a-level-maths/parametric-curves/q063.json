@@ -1,0 +1,51 @@
+{
+  "id": "al.y2.pure.parametric-curves.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "trig",
+    "arc"
+  ],
+  "questionText": "A curve has parametric equations $x = 3\\cos\\theta$, $y = 3\\sin\\theta$ for $0 \\le \\theta \\le \\pi$. Find the Cartesian equation and state which part of the circle is traced.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Eliminate the parameter",
+        "workingLatex": "\\left(\\frac{x}{3}\\right)^2 + \\left(\\frac{y}{3}\\right)^2 = 1 \\;\\Rightarrow\\; x^2 + y^2 = 9",
+        "explanation": "Using the Pythagorean identity gives a circle of radius $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the range of x",
+        "workingLatex": "0 \\le \\theta \\le \\pi \\;\\Rightarrow\\; \\cos\\theta \\in [-1, 1] \\;\\Rightarrow\\; x \\in [-3, 3]",
+        "explanation": "Over $[0,\\pi]$ cosine sweeps the full range, so $x$ covers $[-3, 3]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the range of y",
+        "workingLatex": "\\sin\\theta \\ge 0 \\text{ on } [0, \\pi] \\;\\Rightarrow\\; y \\ge 0",
+        "explanation": "Sine is non-negative on this interval, so only the upper half is reached.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Describe the traced part",
+        "workingLatex": "x^2 + y^2 = 9, \\; y \\ge 0",
+        "explanation": "Only the upper semicircle (from $(3,0)$ round to $(-3,0)$) is traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + y^2 = 9$ with $y \\ge 0$ (the upper semicircle)."
+  }
+}
