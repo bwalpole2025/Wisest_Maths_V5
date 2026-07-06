@@ -1,0 +1,10 @@
+{
+  "name": "wisest-maths-workspace",
+  "private": true,
+  "scripts": {
+    "predev": "npm --prefix wisest-maths-content install --no-audit --no-fund",
+    "dev": "npm --prefix wisest-maths-content run dev",
+    "build": "npm --prefix wisest-maths-content run build",
+    "start": "npm --prefix wisest-maths-content run start"
+  }
+}
