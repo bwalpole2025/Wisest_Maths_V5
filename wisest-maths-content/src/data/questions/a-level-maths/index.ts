@@ -492,6 +492,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/small-angle-approximations").then((m) => m.questions),
   },
   {
+    slug: "reciprocal-and-inverse-trig-functions",
+    id: "al.y2.pure.reciprocal-inverse-trig",
+    name: "Reciprocal and inverse trig functions",
+    blurb: "Using sec, cosec and cot with identities, exact values and equations, plus principal-value inverse trig functions and mixed reciprocal-inverse problems.",
+    gradient: "from-cyan-400 to-blue-500",
+    order: 53,
+    load: () => import("./year-2-pure/reciprocal-and-inverse-trig-functions").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",
