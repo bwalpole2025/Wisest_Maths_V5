@@ -15,18 +15,18 @@ if [ ! -x "$CLOUDFLARED" ]; then
 fi
 
 for _ in $(seq 1 60); do
-  if curl -sf --connect-timeout 1 http://127.0.0.1:3000/ >/dev/null 2>&1; then
+  if curl -sf --connect-timeout 1 http://127.0.0.1:4000/ >/dev/null 2>&1; then
     break
   fi
   sleep 1
 done
 
-if ! curl -sf --connect-timeout 1 http://127.0.0.1:3000/ >/dev/null 2>&1; then
-  echo "Error: Next.js dev server is not running on port 3000" >&2
+if ! curl -sf --connect-timeout 1 http://127.0.0.1:4000/ >/dev/null 2>&1; then
+  echo "Error: Next.js dev server is not running on port 4000" >&2
   exit 1
 fi
 
-"$CLOUDFLARED" tunnel --url http://127.0.0.1:3000 2>&1 | tee "$LOG_FILE" &
+"$CLOUDFLARED" tunnel --url http://127.0.0.1:4000 2>&1 | tee "$LOG_FILE" &
 TUNNEL_PID=$!
 
 for _ in $(seq 1 30); do
