@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "distance",
+    "constant speed"
+  ],
+  "questionText": "A particle has position $x = 4t$, $y = 3t$ (metres) at time $t$ seconds. Find the distance travelled between $t = 0$ and $t = 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 4, \\quad v_y = 3",
+        "explanation": "Both components are constant, so the motion is along a straight line at steady speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{4^2 + 3^2} = 5 \\text{ m/s}",
+        "explanation": "The speed is constant at $5$ m/s (a $3$-$4$-$5$ triangle).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use distance = speed × time",
+        "workingLatex": "\\text{distance} = 5 \\times (2 - 0)",
+        "explanation": "For constant speed, distance travelled is simply speed multiplied by the time elapsed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compute",
+        "workingLatex": "\\text{distance} = 10 \\text{ m}",
+        "explanation": "The particle travels $10$ m in the $2$ seconds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm with endpoints",
+        "workingLatex": "(0,0) \\to (8, 6): \\sqrt{8^2 + 6^2} = 10 \\;\\checkmark",
+        "explanation": "The straight-line distance between the start and end points is also $10$ m, confirming the result.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Distance $= 10$ m"
+  }
+}

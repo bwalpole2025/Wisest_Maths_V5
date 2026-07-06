@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "minimum height",
+    "optimisation"
+  ],
+  "questionText": "A particle has position $x = t$, $y = t^2 - 4t + 5$ (metres) at time $t$ seconds. Find the minimum height reached and the time at which it occurs.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the height",
+        "workingLatex": "\\frac{dy}{dt} = 2t - 4",
+        "explanation": "The minimum height is where the vertical rate of change is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the time",
+        "workingLatex": "2t - 4 = 0 \\;\\Rightarrow\\; t = 2",
+        "explanation": "Solving gives the candidate time for the minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Confirm it is a minimum",
+        "workingLatex": "\\frac{d^2y}{dt^2} = 2 > 0 \\;\\checkmark",
+        "explanation": "A positive second derivative confirms a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the minimum height",
+        "workingLatex": "y = 2^2 - 4(2) + 5 = 4 - 8 + 5 = 1",
+        "explanation": "Substituting $t = 2$ into the height equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\text{min height} = 1 \\text{ m at } t = 2 \\text{ s}",
+        "explanation": "The lowest the particle goes is $1$ m, at $t = 2$ s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum height $= 1$ m at $t = 2$ s."
+  }
+}

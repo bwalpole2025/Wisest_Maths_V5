@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "stationary point",
+    "horizontal tangent"
+  ],
+  "questionText": "A curve has parametric equations $x = t^3$, $y = t^2 - 4t$. Find the value of $t$ where the curve has a horizontal tangent.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Leftrightarrow\\; \\frac{dy}{dt} = 0",
+        "explanation": "A horizontal tangent has zero gradient, which for a parametric curve means the numerator $\\frac{dy}{dt}$ is zero (with $\\frac{dx}{dt} \\ne 0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\frac{dy}{dt} = 2t - 4",
+        "explanation": "Differentiating $y = t^2 - 4t$ gives $2t - 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the derivative to zero",
+        "workingLatex": "2t - 4 = 0 \\;\\Rightarrow\\; t = 2",
+        "explanation": "Solving gives the parameter value for the horizontal tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the x-derivative is nonzero",
+        "workingLatex": "\\frac{dx}{dt} = 3t^2 = 12 \\ne 0",
+        "explanation": "At $t = 2$ the horizontal rate of change is nonzero, so the gradient is genuinely zero (not undefined).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "t = 2",
+        "explanation": "The curve has a horizontal tangent at $t = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t = 2$"
+  }
+}

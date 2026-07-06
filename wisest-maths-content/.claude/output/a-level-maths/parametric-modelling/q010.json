@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "tangent line",
+    "specific point"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Find the equation of the tangent to the curve at the point where $t = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point",
+        "workingLatex": "t = 1: (1^2, 2\\cdot 1) = (1, 2)",
+        "explanation": "The tangent passes through the curve point at $t = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each equation",
+        "workingLatex": "\\frac{dx}{dt} = 2t, \\quad \\frac{dy}{dt} = 2",
+        "explanation": "These give the rates of change needed for the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t}",
+        "explanation": "Dividing the derivatives gives the gradient in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the gradient",
+        "workingLatex": "\\frac{dy}{dx}\\bigg|_{t=1} = 1",
+        "explanation": "At $t = 1$ the tangent gradient is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the point-gradient form",
+        "workingLatex": "y - 2 = 1(x - 1)",
+        "explanation": "Substituting the point $(1,2)$ and gradient $1$ into $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "y = x + 1",
+        "explanation": "Rearranging gives the tangent line equation.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = x + 1$"
+  }
+}

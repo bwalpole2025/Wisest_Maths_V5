@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "tangent",
+    "y-intercept"
+  ],
+  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2 + 1$. The tangent at $t = 3$ meets the $y$-axis at $Q$. Find the coordinates of $Q$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point of tangency",
+        "workingLatex": "t = 3: (6, 10)",
+        "explanation": "Substituting $t = 3$ into both equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2t}{2} = t = 3",
+        "explanation": "The parametric gradient is $t$, which is $3$ here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the tangent",
+        "workingLatex": "y - 10 = 3(x - 6)",
+        "explanation": "Using the point $(6, 10)$ and gradient $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set x = 0 for the y-axis",
+        "workingLatex": "y - 10 = 3(0 - 6) = -18",
+        "explanation": "The tangent meets the $y$-axis where $x = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for y",
+        "workingLatex": "y = 10 - 18 = -8",
+        "explanation": "Rearranging gives the $y$-intercept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the point",
+        "workingLatex": "Q = (0, -8)",
+        "explanation": "The tangent crosses the $y$-axis at $(0, -8)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$Q = (0, -8)$"
+  }
+}

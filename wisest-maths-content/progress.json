@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Parametric curves",
-  "currentSubtopicId": "al.y2.pure.parametric-curves",
+  "currentSubtopic": "Parametric modelling",
+  "currentSubtopicId": "al.y2.pure.parametric-modelling",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -62,13 +62,14 @@
     "al.y2.pure.reciprocal-inverse-trig",
     "al.y2.pure.compound-double-angles",
     "al.y2.pure.rsin-form",
-    "al.y2.pure.parametric-curves"
+    "al.y2.pure.parametric-curves",
+    "al.y2.pure.parametric-modelling"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 57,
-      "totalQuestionsGenerated": 3990
+      "completedSubtopics": 58,
+      "totalQuestionsGenerated": 4060
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

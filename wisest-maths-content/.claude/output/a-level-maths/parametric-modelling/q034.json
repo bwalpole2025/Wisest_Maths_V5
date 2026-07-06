@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "concavity",
+    "second derivative"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3 - t$. Determine whether the curve is concave up or concave down at $t = 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the first derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2 - 1}{2t}",
+        "explanation": "The gradient is the ratio of $\\frac{dy}{dt} = 3t^2 - 1$ to $\\frac{dx}{dt} = 2t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite for differentiation",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t}{2} - \\frac{1}{2t}",
+        "explanation": "Splitting the fraction makes it easier to differentiate with respect to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate with respect to t",
+        "workingLatex": "\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right) = \\frac{3}{2} + \\frac{1}{2t^2}",
+        "explanation": "Differentiating each term; the derivative of $-\\frac{1}{2}t^{-1}$ is $+\\frac{1}{2}t^{-2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide by dx/dt",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{\\frac{3}{2} + \\frac{1}{2t^2}}{2t}",
+        "explanation": "Dividing by $\\frac{dx}{dt} = 2t$ gives the second derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate at t = 2",
+        "workingLatex": "= \\frac{\\frac{3}{2} + \\frac{1}{8}}{4} = \\frac{\\frac{13}{8}}{4} = \\frac{13}{32}",
+        "explanation": "Substituting $t = 2$ gives a positive value $\\frac{13}{32}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret the sign",
+        "workingLatex": "\\frac{d^2y}{dx^2} > 0 \\;\\Rightarrow\\; \\text{concave up}",
+        "explanation": "A positive second derivative means the curve is concave up (bending upwards) at $t = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Concave up ($\\dfrac{d^2y}{dx^2} = \\dfrac{13}{32} > 0$)."
+  }
+}

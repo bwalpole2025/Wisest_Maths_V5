@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "time",
+    "height"
+  ],
+  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find the time(s) when the projectile is at ground level ($y = 0$).",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set the height to zero",
+        "workingLatex": "15t - 5t^2 = 0",
+        "explanation": "Ground level means $y = 0$, so we solve the vertical-position equation for $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factor out common terms",
+        "workingLatex": "5t(3 - t) = 0",
+        "explanation": "Taking out $5t$ splits the equation into two simple factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve each factor",
+        "workingLatex": "t = 0 \\text{ or } t = 3",
+        "explanation": "The two solutions are the launch time and the landing time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the solutions",
+        "workingLatex": "t = 0 \\text{ (launch)}, \\quad t = 3 \\text{ (landing)}",
+        "explanation": "At $t = 0$ the projectile is launched from the ground; at $t = 3$ it returns to the ground.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "t = 0 \\text{ s and } t = 3 \\text{ s}",
+        "explanation": "These are the times at ground level; the flight lasts $3$ seconds.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t = 0$ s and $t = 3$ s."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "instantaneously at rest"
+  ],
+  "questionText": "A particle has position $x = t^2 - 4t$, $y = t^3 - 12t$ (metres) at time $t$ seconds ($t \\ge 0$). Find the time at which the particle is instantaneously at rest.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the rest condition",
+        "workingLatex": "v_x = 0 \\text{ and } v_y = 0 \\text{ simultaneously}",
+        "explanation": "A particle is instantaneously at rest only when both velocity components are zero at the same time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 2t - 4, \\quad v_y = 3t^2 - 12",
+        "explanation": "Differentiating each position component.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve v_x = 0",
+        "workingLatex": "2t - 4 = 0 \\;\\Rightarrow\\; t = 2",
+        "explanation": "The horizontal velocity is zero at $t = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve v_y = 0",
+        "workingLatex": "3t^2 - 12 = 0 \\;\\Rightarrow\\; t = 2 \\;(t \\ge 0)",
+        "explanation": "The vertical velocity is zero at $t = 2$ (taking the non-negative root).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Confirm both hold together",
+        "workingLatex": "t = 2 \\text{ satisfies both}",
+        "explanation": "Both components vanish at the same time, so the particle is genuinely at rest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "t = 2 \\text{ s}",
+        "explanation": "The particle is instantaneously at rest at $t = 2$ s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t = 2$ s"
+  }
+}

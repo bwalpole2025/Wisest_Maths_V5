@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "collision",
+    "two particles"
+  ],
+  "questionText": "Particle A has position $x = t$, $y = t^2$ and particle B has position $x = 2t - 1$, $y = t$ (metres, $t$ in seconds). Show that the particles collide and find the point of collision.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Match the x-coordinates",
+        "workingLatex": "t = 2t - 1 \\;\\Rightarrow\\; t = 1",
+        "explanation": "For a collision the $x$-coordinates must be equal at the same time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Match the y-coordinates",
+        "workingLatex": "t^2 = t \\;\\Rightarrow\\; t^2 - t = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 1",
+        "explanation": "The $y$-coordinates are equal at $t = 0$ and $t = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the common time",
+        "workingLatex": "t = 1 \\text{ satisfies both conditions}",
+        "explanation": "Only $t = 1$ makes both the $x$- and $y$-coordinates match simultaneously.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the collision point",
+        "workingLatex": "A: (1, 1), \\quad B: (2(1) - 1, 1) = (1, 1)",
+        "explanation": "Both particles are at $(1, 1)$ at $t = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\text{collide at } (1, 1) \\text{ when } t = 1",
+        "explanation": "Since both coordinates agree at $t = 1$, the particles genuinely collide there.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "They collide at $(1, 1)$ when $t = 1$."
+  }
+}

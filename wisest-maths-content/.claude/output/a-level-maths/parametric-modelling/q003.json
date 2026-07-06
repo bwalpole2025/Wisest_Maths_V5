@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "maximum height",
+    "projectile"
+  ],
+  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find the maximum height reached.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the height as a quadratic in t",
+        "workingLatex": "y = 15t - 5t^2 = -5t^2 + 15t",
+        "explanation": "The height is a downward parabola in $t$, so its maximum is at the vertex.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to t",
+        "workingLatex": "\\frac{dy}{dt} = 15 - 10t",
+        "explanation": "The maximum height occurs where the vertical rate of change is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the derivative to zero",
+        "workingLatex": "15 - 10t = 0 \\;\\Rightarrow\\; t = 1.5",
+        "explanation": "Solving gives the time at which the projectile is highest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute back for the height",
+        "workingLatex": "y = 15(1.5) - 5(1.5)^2 = 22.5 - 11.25",
+        "explanation": "Putting $t = 1.5$ into the height equation gives the maximum value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "y = 11.25 \\text{ m}",
+        "explanation": "The maximum height is $11.25$ metres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm it is a maximum",
+        "workingLatex": "\\frac{d^2y}{dt^2} = -10 < 0 \\;\\checkmark",
+        "explanation": "The negative second derivative confirms this is a maximum, not a minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum height $= 11.25$ m (at $t = 1.5$ s)."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "parametric differentiation",
+    "trig"
+  ],
+  "questionText": "A curve has parametric equations $x = \\cos\\theta$, $y = \\sin\\theta$. Find $\\dfrac{dy}{dx}$ in terms of $\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to θ",
+        "workingLatex": "\\frac{dx}{d\\theta} = -\\sin\\theta",
+        "explanation": "The derivative of cosine is negative sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to θ",
+        "workingLatex": "\\frac{dy}{d\\theta} = \\cos\\theta",
+        "explanation": "The derivative of sine is cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the ratio",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\cos\\theta}{-\\sin\\theta}",
+        "explanation": "Dividing the two derivatives gives the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to a single function",
+        "workingLatex": "\\frac{dy}{dx} = -\\cot\\theta",
+        "explanation": "Cosine over sine is cotangent, so the gradient is $-\\cot\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sense-check with the geometry",
+        "workingLatex": "\\text{circle: tangent} \\perp \\text{radius}",
+        "explanation": "The curve is the unit circle; the gradient $-\\cot\\theta$ is indeed perpendicular to the radius at angle $\\theta$, a useful check.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = -\\cot\\theta$"
+  }
+}

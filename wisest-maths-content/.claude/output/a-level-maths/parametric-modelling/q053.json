@@ -1,0 +1,50 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "distance",
+    "constant speed"
+  ],
+  "questionText": "A particle has position $x = 6t$, $y = 8t$ (metres) at time $t$ seconds. Find the distance travelled in the first $5$ seconds.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 6, \\quad v_y = 8",
+        "explanation": "Both are constant, so the motion is straight-line at steady speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{6^2 + 8^2} = 10 \\text{ m/s}",
+        "explanation": "The constant speed is $10$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use distance = speed × time",
+        "workingLatex": "\\text{distance} = 10 \\times 5 = 50",
+        "explanation": "For constant speed, distance is speed times time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the answer",
+        "workingLatex": "50 \\text{ m}",
+        "explanation": "The particle travels $50$ m in the first $5$ seconds.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Distance $= 50$ m"
+  }
+}

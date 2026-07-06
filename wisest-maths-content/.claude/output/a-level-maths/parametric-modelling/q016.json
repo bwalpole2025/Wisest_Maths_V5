@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "velocity direction",
+    "horizontal"
+  ],
+  "questionText": "A particle has position $x = 4t$, $y = t^2 - 2t$ (metres) at time $t$ seconds. Find the time at which the particle is moving horizontally.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the horizontal-motion condition",
+        "workingLatex": "\\text{moving horizontally} \\;\\Leftrightarrow\\; v_y = 0",
+        "explanation": "Motion is horizontal exactly when the vertical velocity is zero (and the horizontal velocity is nonzero).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the vertical velocity",
+        "workingLatex": "v_y = \\frac{dy}{dt} = 2t - 2",
+        "explanation": "Differentiating the $y$-position gives the vertical velocity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set it to zero",
+        "workingLatex": "2t - 2 = 0 \\;\\Rightarrow\\; t = 1",
+        "explanation": "Solving gives the time at which vertical motion stops.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check horizontal velocity is nonzero",
+        "workingLatex": "v_x = \\frac{dx}{dt} = 4 \\ne 0",
+        "explanation": "The horizontal velocity is a constant $4$, so at $t = 1$ the particle is genuinely moving (horizontally).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "t = 1 \\text{ s}",
+        "explanation": "At $t = 1$ s the particle moves purely horizontally.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t = 1$ s"
+  }
+}

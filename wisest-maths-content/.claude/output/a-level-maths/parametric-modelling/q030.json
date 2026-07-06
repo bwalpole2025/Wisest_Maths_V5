@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "projectile",
+    "angle"
+  ],
+  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find the angle the velocity makes with the horizontal at $t = 1$, to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 20, \\quad v_y = 15 - 10t",
+        "explanation": "Differentiating each position component gives the velocity components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Evaluate at t = 1",
+        "workingLatex": "v_x = 20, \\quad v_y = 15 - 10 = 5",
+        "explanation": "Substituting $t = 1$ gives the components at that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Relate the angle to the components",
+        "workingLatex": "\\tan\\alpha = \\frac{v_y}{v_x} = \\frac{5}{20}",
+        "explanation": "The direction of motion makes an angle $\\alpha$ with the horizontal whose tangent is the ratio of vertical to horizontal velocity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify",
+        "workingLatex": "\\tan\\alpha = \\frac{1}{4}",
+        "explanation": "The ratio simplifies to $\\frac{1}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the angle",
+        "workingLatex": "\\alpha = \\tan^{-1}\\frac{1}{4} \\approx 14^\\circ",
+        "explanation": "The inverse tangent gives the angle above the horizontal.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\alpha \\approx 14^\\circ$ above the horizontal."
+  }
+}

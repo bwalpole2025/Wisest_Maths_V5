@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "speed",
+    "general"
+  ],
+  "questionText": "A particle has position $x = t^2$, $y = 2t$ (metres) at time $t$ seconds. Find an expression for its speed at time $t$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = \\frac{dx}{dt} = 2t, \\quad v_y = \\frac{dy}{dt} = 2",
+        "explanation": "Differentiating each position component gives the velocity components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{v_x^2 + v_y^2}",
+        "explanation": "Speed is the magnitude of the velocity vector.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the components",
+        "workingLatex": "\\text{speed} = \\sqrt{(2t)^2 + 2^2} = \\sqrt{4t^2 + 4}",
+        "explanation": "Squaring and adding the components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor out the constant",
+        "workingLatex": "= \\sqrt{4(t^2 + 1)}",
+        "explanation": "Taking out the common factor $4$ prepares to simplify the surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the surd",
+        "workingLatex": "= 2\\sqrt{t^2 + 1}",
+        "explanation": "The square root of $4$ comes outside, giving the tidy expression.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Speed $= 2\\sqrt{t^2 + 1}$ m/s"
+  }
+}

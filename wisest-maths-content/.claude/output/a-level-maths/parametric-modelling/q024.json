@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "tangent parallel",
+    "line"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find the value(s) of $t$ where the tangent is parallel to the line $y = 3x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the gradient of the line",
+        "workingLatex": "y = 3x \\;\\Rightarrow\\; \\text{gradient} = 3",
+        "explanation": "Parallel lines share the same gradient, so the tangent gradient must equal $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the parametric gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3t}{2}",
+        "explanation": "This is the gradient of the tangent in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the gradients equal",
+        "workingLatex": "\\frac{3t}{2} = 3",
+        "explanation": "For the tangent to be parallel to the line, its gradient equals $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for t",
+        "workingLatex": "3t = 6 \\;\\Rightarrow\\; t = 2",
+        "explanation": "Multiplying through and solving gives the parameter value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "t = 2",
+        "explanation": "At $t = 2$ the tangent is parallel to $y = 3x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t = 2$"
+  }
+}

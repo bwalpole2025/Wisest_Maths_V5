@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "closest approach",
+    "optimisation"
+  ],
+  "questionText": "A particle has position $x = t$, $y = t - 4$ (metres) at time $t$ seconds. Find the least distance of the particle from the origin.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the squared distance",
+        "workingLatex": "D^2 = x^2 + y^2 = t^2 + (t - 4)^2",
+        "explanation": "Minimising the squared distance is easier than the distance itself and gives the same minimising $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand",
+        "workingLatex": "D^2 = t^2 + t^2 - 8t + 16 = 2t^2 - 8t + 16",
+        "explanation": "Expanding the square and collecting terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate and set to zero",
+        "workingLatex": "\\frac{d(D^2)}{dt} = 4t - 8 = 0 \\;\\Rightarrow\\; t = 2",
+        "explanation": "The minimum of the squared distance occurs where its derivative is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Confirm a minimum",
+        "workingLatex": "\\frac{d^2(D^2)}{dt^2} = 4 > 0 \\;\\checkmark",
+        "explanation": "The positive second derivative confirms a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the squared distance",
+        "workingLatex": "D^2 = 2(4) - 8(2) + 16 = 8",
+        "explanation": "Substituting $t = 2$ gives the minimum squared distance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Take the square root",
+        "workingLatex": "D = \\sqrt{8} = 2\\sqrt2 \\text{ m}",
+        "explanation": "The least distance from the origin is $2\\sqrt2$ m.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Least distance $= 2\\sqrt2$ m (at $t = 2$)."
+  }
+}

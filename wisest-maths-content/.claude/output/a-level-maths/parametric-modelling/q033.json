@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "parametric modelling",
+    "tangent",
+    "parabola",
+    "general"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Show that the tangent at the point with parameter $p$ has equation $py = x + p^2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point with parameter p",
+        "workingLatex": "(p^2, 2p)",
+        "explanation": "Substituting $t = p$ into the parametric equations gives the general point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t} = \\frac{1}{p}",
+        "explanation": "The parametric gradient is $\\frac{1}{t}$, which is $\\frac{1}{p}$ at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the point-gradient form",
+        "workingLatex": "y - 2p = \\frac{1}{p}(x - p^2)",
+        "explanation": "Using the general point and gradient in $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply through by p",
+        "workingLatex": "p(y - 2p) = x - p^2",
+        "explanation": "Clearing the fraction by multiplying both sides by $p$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand",
+        "workingLatex": "py - 2p^2 = x - p^2",
+        "explanation": "Distributing $p$ on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange to the required form",
+        "workingLatex": "py = x + p^2",
+        "explanation": "Moving the $p^2$ terms across gives $py = x + p^2$, as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$py = x + p^2$"
+  }
+}

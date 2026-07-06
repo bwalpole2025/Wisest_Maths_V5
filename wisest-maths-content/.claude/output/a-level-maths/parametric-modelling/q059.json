@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "connected rates",
+    "chain rule"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. A point moves along the curve so that $\\dfrac{dx}{dt} = 4$ at the instant $t = 2$. Find $\\dfrac{dy}{dt}$ at that instant.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the curve gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3t}{2}",
+        "explanation": "This is the geometric gradient of the curve, independent of how fast the point moves.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Evaluate the gradient at t = 2",
+        "workingLatex": "\\frac{dy}{dx}\\bigg|_{t=2} = \\frac{3(2)}{2} = 3",
+        "explanation": "At $t = 2$ the curve gradient is $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Relate the rates via the chain rule",
+        "workingLatex": "\\frac{dy}{dt} = \\frac{dy}{dx}\\cdot\\frac{dx}{dt}",
+        "explanation": "The rate at which $y$ changes with time is the curve gradient times the rate at which $x$ changes with time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the known values",
+        "workingLatex": "\\frac{dy}{dt} = 3 \\times 4 = 12",
+        "explanation": "Multiplying the gradient by the given $\\frac{dx}{dt}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\frac{dy}{dt} = 12",
+        "explanation": "At $t = 2$, $y$ is increasing at $12$ units per unit time.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dt} = 12$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "normal",
+    "line"
+  ],
+  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2$. Find the equation of the normal to the curve at the point where $t = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point",
+        "workingLatex": "t = 1: (2, 1)",
+        "explanation": "The normal passes through the curve point at $t = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the tangent gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2t}{2} = t \\;\\Rightarrow\\; t = 1 \\text{ gives } 1",
+        "explanation": "The parametric gradient is $t$, which is $1$ at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{1} = -1",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the point-gradient form",
+        "workingLatex": "y - 1 = -1(x - 2)",
+        "explanation": "Using the point $(2, 1)$ and gradient $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "y = -x + 3",
+        "explanation": "Expanding and rearranging gives the normal line.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = -x + 3$"
+  }
+}

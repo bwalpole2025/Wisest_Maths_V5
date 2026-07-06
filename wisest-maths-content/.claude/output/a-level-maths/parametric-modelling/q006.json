@@ -1,0 +1,50 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "gradient",
+    "specific point"
+  ],
+  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2 - 1$. Find the gradient of the curve at the point where $t = 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each equation",
+        "workingLatex": "\\frac{dx}{dt} = 2, \\quad \\frac{dy}{dt} = 2t",
+        "explanation": "We need both rates of change to build the parametric gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2t}{2} = t",
+        "explanation": "Dividing the two derivatives gives a simple gradient equal to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the parameter value",
+        "workingLatex": "\\frac{dy}{dx}\\bigg|_{t=3} = 3",
+        "explanation": "At $t = 3$ the gradient is $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the answer",
+        "workingLatex": "\\text{gradient} = 3",
+        "explanation": "The tangent to the curve at this point has gradient $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Gradient $= 3$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "parametric differentiation",
+    "product"
+  ],
+  "questionText": "A curve has parametric equations $x = e^t$, $y = te^t$. Find $\\dfrac{dy}{dx}$ in terms of $t$, and hence in terms of $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x",
+        "workingLatex": "\\frac{dx}{dt} = e^t",
+        "explanation": "The derivative of $e^t$ is itself.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with the product rule",
+        "workingLatex": "\\frac{dy}{dt} = e^t + te^t = e^t(1 + t)",
+        "explanation": "For $y = te^t$, the product rule gives $1\\cdot e^t + t\\cdot e^t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{e^t(1 + t)}{e^t}",
+        "explanation": "Dividing the two derivatives.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel the exponential",
+        "workingLatex": "\\frac{dy}{dx} = 1 + t",
+        "explanation": "The $e^t$ terms cancel, leaving a simple linear gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Express in terms of x",
+        "workingLatex": "x = e^t \\;\\Rightarrow\\; t = \\ln x \\;\\Rightarrow\\; \\frac{dy}{dx} = 1 + \\ln x",
+        "explanation": "Since $t = \\ln x$, the gradient in terms of $x$ is $1 + \\ln x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 1 + t = 1 + \\ln x$"
+  }
+}

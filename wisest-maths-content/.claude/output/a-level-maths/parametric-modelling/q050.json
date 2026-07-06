@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "parametric modelling",
+    "second derivative",
+    "parabola"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Show that $\\dfrac{d^2y}{dx^2} = -\\dfrac{1}{2t^3}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the first derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t}",
+        "explanation": "The parametric gradient simplifies to $\\frac{1}{t}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the second derivative rule",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{\\frac{dx}{dt}}",
+        "explanation": "We differentiate the gradient with respect to $t$, then divide by $\\frac{dx}{dt}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the gradient",
+        "workingLatex": "\\frac{d}{dt}\\left(\\frac{1}{t}\\right) = -\\frac{1}{t^2}",
+        "explanation": "Writing $\\frac{1}{t} = t^{-1}$ and differentiating gives $-t^{-2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide by dx/dt",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{-\\frac{1}{t^2}}{2t}",
+        "explanation": "Dividing by $\\frac{dx}{dt} = 2t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "= -\\frac{1}{2t^3}",
+        "explanation": "Combining the powers of $t$ in the denominator gives the required result.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{d^2y}{dx^2} = -\\dfrac{1}{2t^3}$"
+  }
+}

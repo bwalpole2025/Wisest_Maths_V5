@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "gradient",
+    "trig"
+  ],
+  "questionText": "A curve has parametric equations $x = \\sin\\theta$, $y = \\sin 2\\theta$. Find the exact gradient at $\\theta = \\dfrac{\\pi}{6}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each equation",
+        "workingLatex": "\\frac{dx}{d\\theta} = \\cos\\theta, \\quad \\frac{dy}{d\\theta} = 2\\cos 2\\theta",
+        "explanation": "The chain rule gives the derivative of $\\sin 2\\theta$ as $2\\cos 2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\cos 2\\theta}{\\cos\\theta}",
+        "explanation": "Dividing the two derivatives.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate the trig values",
+        "workingLatex": "\\cos 2\\theta = \\cos\\frac{\\pi}{3} = \\frac{1}{2}, \\quad \\cos\\frac{\\pi}{6} = \\frac{\\sqrt3}{2}",
+        "explanation": "At $\\theta = \\frac{\\pi}{6}$, the doubled angle is $\\frac{\\pi}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\cdot\\frac{1}{2}}{\\frac{\\sqrt3}{2}} = \\frac{1}{\\frac{\\sqrt3}{2}}",
+        "explanation": "The numerator simplifies to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify and rationalise",
+        "workingLatex": "= \\frac{2}{\\sqrt3} = \\frac{2\\sqrt3}{3}",
+        "explanation": "Rationalising the denominator gives the exact gradient.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{2\\sqrt3}{3}$"
+  }
+}

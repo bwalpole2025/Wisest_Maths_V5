@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "gradient",
+    "coordinates"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Find the coordinates of the point where the gradient of the curve is $\\dfrac{1}{2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t}",
+        "explanation": "The parametric gradient simplifies to $\\frac{1}{t}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the gradient equal to the target",
+        "workingLatex": "\\frac{1}{t} = \\frac{1}{2}",
+        "explanation": "We want the point where the gradient is $\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for t",
+        "workingLatex": "t = 2",
+        "explanation": "Comparing the two reciprocals gives $t = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the coordinates",
+        "workingLatex": "x = 2^2 = 4, \\quad y = 2(2) = 4",
+        "explanation": "Substituting $t = 2$ into both equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "(4, 4)",
+        "explanation": "The curve has gradient $\\frac{1}{2}$ at the point $(4, 4)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(4, 4)$"
+  }
+}

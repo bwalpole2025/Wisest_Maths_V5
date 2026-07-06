@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "projectile",
+    "speed"
+  ],
+  "questionText": "A projectile has position $x = 15t$, $y = 20t - 5t^2$ (metres) at time $t$ seconds. Find its speed at $t = 1$ second.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 15, \\quad v_y = 20 - 10t",
+        "explanation": "Differentiating each position component; the horizontal velocity is constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Evaluate at t = 1",
+        "workingLatex": "v_x = 15, \\quad v_y = 20 - 10 = 10",
+        "explanation": "Substituting $t = 1$ gives the two velocity components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{15^2 + 10^2}",
+        "explanation": "Speed is the magnitude of the velocity vector.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compute",
+        "workingLatex": "= \\sqrt{225 + 100} = \\sqrt{325}",
+        "explanation": "Squaring and adding gives $325$ under the root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the surd",
+        "workingLatex": "= 5\\sqrt{13} \\approx 18.0 \\text{ m/s}",
+        "explanation": "Since $325 = 25 \\times 13$, the speed simplifies to $5\\sqrt{13}$, about $18.0$ m/s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Speed $= 5\\sqrt{13} \\approx 18.0$ m/s"
+  }
+}

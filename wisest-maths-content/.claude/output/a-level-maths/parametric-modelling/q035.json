@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "ferris wheel",
+    "velocity"
+  ],
+  "questionText": "A pod on a rotating wheel has position $x = 10\\cos\\left(\\frac{\\pi}{30}t\\right)$, $y = 10 + 10\\sin\\left(\\frac{\\pi}{30}t\\right)$ (metres), with $t$ in seconds. Find the speed of the pod, and show it is constant.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x",
+        "workingLatex": "v_x = \\frac{dx}{dt} = -10\\cdot\\frac{\\pi}{30}\\sin\\left(\\frac{\\pi}{30}t\\right)",
+        "explanation": "The chain rule brings out the factor $\\frac{\\pi}{30}$ from the inner function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y",
+        "workingLatex": "v_y = \\frac{dy}{dt} = 10\\cdot\\frac{\\pi}{30}\\cos\\left(\\frac{\\pi}{30}t\\right)",
+        "explanation": "The constant $10$ differentiates to zero, leaving the cosine term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{v_x^2 + v_y^2}",
+        "explanation": "Speed is the magnitude of the velocity vector.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute and factor",
+        "workingLatex": "= \\frac{10\\pi}{30}\\sqrt{\\sin^2\\left(\\tfrac{\\pi}{30}t\\right) + \\cos^2\\left(\\tfrac{\\pi}{30}t\\right)}",
+        "explanation": "Both components share the factor $\\frac{10\\pi}{30}$, and the squares combine under the root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^2 + \\cos^2 = 1 \\;\\Rightarrow\\; \\text{speed} = \\frac{10\\pi}{30} = \\frac{\\pi}{3}",
+        "explanation": "The identity makes the root equal to $1$, leaving a constant speed independent of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "\\text{speed} = \\frac{\\pi}{3} \\approx 1.05 \\text{ m/s (constant)}",
+        "explanation": "Since the answer contains no $t$, the speed is constant, as expected for uniform circular motion.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Speed $= \\dfrac{\\pi}{3} \\approx 1.05$ m/s, constant."
+  }
+}

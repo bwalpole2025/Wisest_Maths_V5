@@ -528,6 +528,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/parametric-curves").then((m) => m.questions),
   },
   {
+    slug: "parametric-modelling",
+    id: "al.y2.pure.parametric-modelling",
+    name: "Parametric modelling",
+    blurb: "Motion along parametric curves: position, velocity, speed and acceleration; parametric differentiation for tangents and normals; projectiles, intersections and optimisation in context.",
+    gradient: "from-purple-400 to-fuchsia-500",
+    order: 57,
+    load: () => import("./year-2-pure/parametric-modelling").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",

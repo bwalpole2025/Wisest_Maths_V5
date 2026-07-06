@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "acceleration",
+    "magnitude"
+  ],
+  "questionText": "A particle has position $x = t^2$, $y = t^3$ (metres) at time $t$ seconds. Find the magnitude of its acceleration at $t = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity",
+        "workingLatex": "v_x = 2t, \\quad v_y = 3t^2",
+        "explanation": "Differentiating the positions once.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the acceleration",
+        "workingLatex": "a_x = 2, \\quad a_y = 6t",
+        "explanation": "Differentiating the velocities gives the acceleration components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate at t = 1",
+        "workingLatex": "a_x = 2, \\quad a_y = 6",
+        "explanation": "Substituting $t = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the magnitude",
+        "workingLatex": "|a| = \\sqrt{2^2 + 6^2} = \\sqrt{40}",
+        "explanation": "Using Pythagoras on the components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "= 2\\sqrt{10} \\approx 6.3 \\text{ m/s}^2",
+        "explanation": "Since $40 = 4 \\times 10$, the magnitude is $2\\sqrt{10}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$|a| = 2\\sqrt{10} \\approx 6.3$ m/s²"
+  }
+}

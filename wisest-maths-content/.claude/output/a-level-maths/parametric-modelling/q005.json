@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "parametric differentiation",
+    "gradient"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find $\\dfrac{dy}{dx}$ in terms of $t$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the parametric chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt}",
+        "explanation": "For parametric curves the gradient is the ratio of the two rates of change with respect to $t$. This avoids having to find the Cartesian equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\frac{dx}{dt} = 2t",
+        "explanation": "Differentiating $x = t^2$ gives $2t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\frac{dy}{dt} = 3t^2",
+        "explanation": "Differentiating $y = t^3$ gives $3t^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the ratio",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t}",
+        "explanation": "Dividing the two derivatives gives the gradient in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t}{2}",
+        "explanation": "Cancelling one factor of $t$ (for $t \\ne 0$) gives the simplified gradient.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{3t}{2}$"
+  }
+}

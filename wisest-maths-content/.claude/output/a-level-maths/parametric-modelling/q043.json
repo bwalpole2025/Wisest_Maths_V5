@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "circular motion",
+    "acceleration"
+  ],
+  "questionText": "A particle moves so that $x = 2\\cos t$, $y = 2\\sin t$ (metres, $t$ in seconds). Show that its acceleration always points towards the origin and find its magnitude.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity",
+        "workingLatex": "v_x = -2\\sin t, \\quad v_y = 2\\cos t",
+        "explanation": "Differentiating the positions once gives the velocity components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the acceleration",
+        "workingLatex": "a_x = -2\\cos t, \\quad a_y = -2\\sin t",
+        "explanation": "Differentiating the velocities gives the acceleration components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Relate acceleration to position",
+        "workingLatex": "(a_x, a_y) = -( 2\\cos t, 2\\sin t) = -(x, y)",
+        "explanation": "The acceleration vector is exactly the negative of the position vector.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the direction",
+        "workingLatex": "\\mathbf{a} = -\\mathbf{r}",
+        "explanation": "Since the acceleration is the opposite of the position vector, it points from the particle straight back to the origin — this is centripetal acceleration.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the magnitude",
+        "workingLatex": "|\\mathbf{a}| = \\sqrt{(-2\\cos t)^2 + (-2\\sin t)^2} = \\sqrt{4(\\cos^2 t + \\sin^2 t)}",
+        "explanation": "Combining the components and factoring out $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "|\\mathbf{a}| = \\sqrt{4} = 2 \\text{ m/s}^2",
+        "explanation": "The Pythagorean identity makes the root equal to $1$, giving a constant magnitude of $2$ m/s².",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Acceleration $= -\\mathbf{r}$ (towards the origin), magnitude $2$ m/s²."
+  }
+}
