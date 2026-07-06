@@ -7,6 +7,8 @@ This repository contains two distinct things:
 
 ## Cursor Cloud specific instructions
 
+- **The dev server auto-starts.** `.cursor/environment.json` runs `npm install --prefix wisest-maths-content` on setup and launches the app in a background terminal via `cd wisest-maths-content && npm run dev -- --hostname 0.0.0.0 --port 3000`. This is what makes the app reachable from the user's browser (port 3000). Do not rely on ad-hoc tmux sessions for exposing the app — those do not persist across sessions. If you change the run command, update `.cursor/environment.json`, not just a terminal.
+- Binding to `--hostname 0.0.0.0` is required so the forwarded port is reachable outside the VM; `localhost`-only binding is not enough for the browser preview.
 - **All app work happens inside `wisest-maths-content/`.** Run `npm` commands from that directory, not the repo root.
 - Package manager is **npm** (there is a `package-lock.json`). Node 18+ works; the environment ships Node 22.
 - Dev server: `npm run dev` (Next.js on http://localhost:3000). Standard scripts are in `wisest-maths-content/package.json` (`dev`, `build`, `start`).
