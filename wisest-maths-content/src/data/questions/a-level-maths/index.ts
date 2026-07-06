@@ -510,6 +510,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/compound-and-double-angles").then((m) => m.questions),
   },
   {
+    slug: "the-form-rsin-theta-plus-alpha",
+    id: "al.y2.pure.rsin-form",
+    name: "The form Rsin(θ + α)",
+    blurb: "Writing a sin θ + b cos θ as a single R sin or R cos, finding R and α, using the form to solve equations, and applying it to maxima, minima and modelling.",
+    gradient: "from-blue-400 to-indigo-500",
+    order: 55,
+    load: () => import("./year-2-pure/the-form-rsin-theta-plus-alpha").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",
