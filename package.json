@@ -2,8 +2,7 @@
   "name": "wisest-maths-workspace",
   "private": true,
   "scripts": {
-    "predev": "npm --prefix wisest-maths-content install --no-audit --no-fund",
-    "dev": "npm --prefix wisest-maths-content run dev",
+    "dev": "bash scripts/run-app-dev.sh",
     "build": "npm --prefix wisest-maths-content run build",
     "start": "npm --prefix wisest-maths-content run start"
   }
