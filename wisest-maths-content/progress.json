@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Small angle approximations",
-  "currentSubtopicId": "al.y2.pure.small-angles",
+  "currentSubtopic": "Reciprocal and inverse trig functions",
+  "currentSubtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -58,13 +58,14 @@
     "al.y2.pure.binomial-rational",
     "al.y2.pure.radians",
     "al.y2.stats.conditional-probability",
-    "al.y2.pure.small-angles"
+    "al.y2.pure.small-angles",
+    "al.y2.pure.reciprocal-inverse-trig"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 53,
-      "totalQuestionsGenerated": 3710
+      "completedSubtopics": 54,
+      "totalQuestionsGenerated": 3780
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
