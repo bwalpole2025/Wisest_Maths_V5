@@ -58,6 +58,7 @@ import { questions as binomialExpansionRationalPowers } from "@/data/questions/a
 import { questions as radiansArcsAndSectors } from "@/data/questions/a-level-maths/year-2-pure/radians-arcs-and-sectors";
 import { questions as smallAngleApproximations } from "@/data/questions/a-level-maths/year-2-pure/small-angle-approximations";
 import { questions as reciprocalAndInverseTrigFunctions } from "@/data/questions/a-level-maths/year-2-pure/reciprocal-and-inverse-trig-functions";
+import { questions as compoundDoubleAngles } from "@/data/questions/a-level-maths/year-2-pure/compound-double-angles";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 
 export { slugForSubtopicId };
@@ -116,6 +117,7 @@ export const allQuestions: Question[] = [
   ...radiansArcsAndSectors,
   ...smallAngleApproximations,
   ...reciprocalAndInverseTrigFunctions,
+  ...compoundDoubleAngles,
   ...conditionalProbability,
 ];
 

@@ -501,6 +501,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/reciprocal-and-inverse-trig-functions").then((m) => m.questions),
   },
   {
+    slug: "compound-double-angles",
+    id: "al.y2.pure.compound-double-angles",
+    name: "Compound and double angle formulae",
+    blurb: "Using compound-angle identities for sin, cos and tan, plus double-angle forms for solving equations, exact values, simplification and proofs.",
+    gradient: "from-blue-400 to-indigo-500",
+    order: 54,
+    load: () => import("./year-2-pure/compound-double-angles").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",
