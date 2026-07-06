@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Small angle approximations",
-  "currentSubtopicId": "al.y2.pure.small-angles",
+  "currentTopic": "Year 2 Statistics",
+  "currentSubtopic": "The normal distribution",
+  "currentSubtopicId": "al.y2.stats.normal-distribution",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -58,13 +58,22 @@
     "al.y2.pure.binomial-rational",
     "al.y2.pure.radians",
     "al.y2.stats.conditional-probability",
-    "al.y2.pure.small-angles"
+    "al.y2.pure.small-angles",
+    "al.y2.pure.reciprocal-inverse-trig",
+    "al.y2.pure.compound-double-angles",
+    "al.y2.pure.rsin-form",
+    "al.y2.pure.parametric-curves",
+    "al.y2.pure.parametric-modelling",
+    "al.y2.pure.standard-derivatives",
+    "al.y2.pure.product-quotient-chain",
+    "al.y2.pure.implicit",
+    "al.y2.stats.normal-distribution"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 53,
-      "totalQuestionsGenerated": 3710
+      "completedSubtopics": 62,
+      "totalQuestionsGenerated": 4340
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

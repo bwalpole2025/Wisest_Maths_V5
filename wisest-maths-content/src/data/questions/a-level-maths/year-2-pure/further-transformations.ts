@@ -55,7 +55,41 @@ export const questions: Question[] = [
           "description": "State the new equation",
           "workingLatex": "y=x^2+3",
           "explanation": "This is the equation of the translated curve.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 3,
+            "yMin": -1,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -2.3,
+                  "y": 6
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "d": 3
+                },
+                "color": "accent",
+                "label": "y=x^2+3",
+                "labelAt": {
+                  "x": 2.2,
+                  "y": 10
+                }
+              }
+            ],
+            "alt": "The parabola y=x^2 dashed, and its image y=x^2+3 which is the same parabola lifted 3 units up.",
+            "caption": "y = x^2 + 3 is y = x^2 translated 3 units up."
+          }
         }
       ],
       "finalAnswer": "$y=x^2+3$"
@@ -115,7 +149,49 @@ export const questions: Question[] = [
           "description": "State the new equation",
           "workingLatex": "y=(x-2)^2",
           "explanation": "This is the equation of the translated curve.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -1,
+            "yMax": 9,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -2.3,
+                  "y": 6
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 2
+                },
+                "color": "accent",
+                "label": "y=(x-2)^2",
+                "labelAt": {
+                  "x": 4.2,
+                  "y": 7
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": 0,
+                "label": "(2,\\,0)",
+                "color": "accent"
+              }
+            ],
+            "alt": "The parabola y=x^2 dashed, and its image y=(x-2)^2 which is the same parabola slid 2 units right so its vertex sits at (2,0).",
+            "caption": "y = (x - 2)^2 is y = x^2 translated 2 units right."
+          }
         }
       ],
       "finalAnswer": "$y=(x-2)^2$"
@@ -175,7 +251,41 @@ export const questions: Question[] = [
           "description": "State the new equation",
           "workingLatex": "y=-x^3",
           "explanation": "This is the equation of the reflected curve.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2.2,
+            "xMax": 2.2,
+            "yMin": -8,
+            "yMax": 8,
+            "curves": [
+              {
+                "fn": {
+                  "base": "cubic"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^3",
+                "labelAt": {
+                  "x": 1.4,
+                  "y": 5.5
+                }
+              },
+              {
+                "fn": {
+                  "base": "cubic",
+                  "a": -1
+                },
+                "color": "accent",
+                "label": "y=-x^3",
+                "labelAt": {
+                  "x": -1.4,
+                  "y": 5.5
+                }
+              }
+            ],
+            "alt": "The cubic y=x^3 dashed, and its image y=-x^3 which is the same cubic flipped upside down through the x-axis.",
+            "caption": "y = -x^3 is y = x^3 reflected in the x-axis."
+          }
         }
       ],
       "finalAnswer": "$y=-x^3$"
@@ -235,7 +345,41 @@ export const questions: Question[] = [
           "description": "State the new equation",
           "workingLatex": "y=4x^2",
           "explanation": "This is the equation of the stretched curve.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 2,
+            "yMin": -1,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -1.85,
+                  "y": 4.5
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 4
+                },
+                "color": "accent",
+                "label": "y=4x^2",
+                "labelAt": {
+                  "x": 1.3,
+                  "y": 10
+                }
+              }
+            ],
+            "alt": "The parabola y=x^2 dashed, and its image y=4x^2 which is the same parabola stretched vertically so it rises four times as steeply.",
+            "caption": "y = 4x^2 is y = x^2 stretched vertically by scale factor 4."
+          }
         }
       ],
       "finalAnswer": "$y=4x^2$"
@@ -302,7 +446,110 @@ export const questions: Question[] = [
           "description": "State the new equation",
           "workingLatex": "y=-x^3-x",
           "explanation": "This is the fully simplified equation of the reflected curve.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2.2,
+            "xMax": 2.2,
+            "yMin": -11,
+            "yMax": 11,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -2,
+                    "y": -10
+                  },
+                  {
+                    "x": -1.5,
+                    "y": -4.875
+                  },
+                  {
+                    "x": -1,
+                    "y": -2
+                  },
+                  {
+                    "x": -0.5,
+                    "y": -0.625
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0.625
+                  },
+                  {
+                    "x": 1,
+                    "y": 2
+                  },
+                  {
+                    "x": 1.5,
+                    "y": 4.875
+                  },
+                  {
+                    "x": 2,
+                    "y": 10
+                  }
+                ],
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^3+x",
+                "labelAt": {
+                  "x": 1.3,
+                  "y": 8
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -2,
+                    "y": 10
+                  },
+                  {
+                    "x": -1.5,
+                    "y": 4.875
+                  },
+                  {
+                    "x": -1,
+                    "y": 2
+                  },
+                  {
+                    "x": -0.5,
+                    "y": 0.625
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 0.5,
+                    "y": -0.625
+                  },
+                  {
+                    "x": 1,
+                    "y": -2
+                  },
+                  {
+                    "x": 1.5,
+                    "y": -4.875
+                  },
+                  {
+                    "x": 2,
+                    "y": -10
+                  }
+                ],
+                "color": "accent",
+                "label": "y=-x^3-x",
+                "labelAt": {
+                  "x": -1.3,
+                  "y": 8
+                }
+              }
+            ],
+            "alt": "The curve y=x^3+x dashed rising left to right, and its image y=-x^3-x which is the same curve flipped left to right across the y-axis so it falls left to right.",
+            "caption": "y = -x^3 - x is y = x^3 + x reflected in the y-axis."
+          }
         }
       ],
       "finalAnswer": "$y=-x^3-x$"
@@ -722,7 +969,50 @@ export const questions: Question[] = [
           "description": "State the new equation",
           "workingLatex": "y=(x+1)^2+2",
           "explanation": "This is the equation of the translated curve.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -4,
+            "xMax": 3,
+            "yMin": -1,
+            "yMax": 10,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -2.4,
+                  "y": 6.5
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": -1,
+                  "d": 2
+                },
+                "color": "accent",
+                "label": "y=(x+1)^2+2",
+                "labelAt": {
+                  "x": 1.3,
+                  "y": 9
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -1,
+                "y": 2,
+                "label": "(-1,\\,2)",
+                "color": "accent"
+              }
+            ],
+            "alt": "The parabola y=x^2 dashed, and its image y=(x+1)^2+2 which is the same parabola slid 1 unit left and 2 units up so its vertex sits at (-1,2).",
+            "caption": "y = (x + 1)^2 + 2 is y = x^2 translated 1 left and 2 up."
+          }
         }
       ],
       "finalAnswer": "$y=(x+1)^2+2$"
@@ -782,7 +1072,38 @@ export const questions: Question[] = [
           "description": "State the minimum point",
           "workingLatex": "(3,5)",
           "explanation": "The lowest point of the curve is therefore at these coordinates.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 3,
+                  "d": 5
+                },
+                "color": "accent",
+                "label": "y=(x-3)^2+5",
+                "labelAt": {
+                  "x": 1.2,
+                  "y": 10
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 5,
+                "label": "(3,\\,5)",
+                "color": "accent"
+              }
+            ],
+            "alt": "A positive parabola y=(x-3)^2+5 with its lowest point, the minimum, at (3,5).",
+            "caption": "The minimum of y = (x - 3)^2 + 5 is at (3, 5)."
+          }
         }
       ],
       "finalAnswer": "$(3,5)$"
@@ -842,7 +1163,53 @@ export const questions: Question[] = [
           "description": "State both asymptotes",
           "workingLatex": "x=0 \\quad \\text{and} \\quad y=4",
           "explanation": "These are the equations of the two asymptotes of the translated curve.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -6,
+            "xMax": 6,
+            "yMin": -3,
+            "yMax": 10,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=\\frac{1}{x}",
+                "labelAt": {
+                  "x": 3.2,
+                  "y": 1.2
+                }
+              },
+              {
+                "fn": {
+                  "base": "recip",
+                  "d": 4
+                },
+                "color": "accent",
+                "label": "y=\\frac{1}{x}+4",
+                "labelAt": {
+                  "x": 3.2,
+                  "y": 5.6
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": 0,
+                "label": "x=0"
+              },
+              {
+                "dir": "h",
+                "at": 4,
+                "label": "y=4"
+              }
+            ],
+            "alt": "The reciprocal curve y=1/x (dashed) and its image y=1/x+4 lifted 4 units up, with vertical asymptote x=0 unchanged and horizontal asymptote raised to y=4.",
+            "caption": "A vertical shift moves the horizontal asymptote from y=0 up to y=4."
+          }
         }
       ],
       "finalAnswer": "$x=0$ and $y=4$"
@@ -902,7 +1269,49 @@ export const questions: Question[] = [
           "description": "State the final equation",
           "workingLatex": "y=x^2-5",
           "explanation": "The shape is unchanged; only the position has moved, so the vertex is now at $(0,-5)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 3,
+            "yMin": -6,
+            "yMax": 6,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -2.2,
+                  "y": 5
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "d": -5
+                },
+                "color": "accent",
+                "label": "y=x^2-5",
+                "labelAt": {
+                  "x": 2.2,
+                  "y": 1
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": -5,
+                "label": "(0,\\,-5)",
+                "color": "accent"
+              }
+            ],
+            "alt": "The parabola y=x^2 dashed, and its image y=x^2-5 which is the same parabola lowered 5 units so its vertex sits at (0,-5).",
+            "caption": "y = x^2 - 5 is y = x^2 translated 5 units down."
+          }
         }
       ],
       "finalAnswer": "$y=x^2-5$"
@@ -976,7 +1385,42 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "y=\\cos x+2, \\qquad 1 \\leqslant y \\leqslant 3",
           "explanation": "This gives both the equation of the shifted curve and the interval $1 \\leqslant y \\leqslant 3$ its outputs now cover.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -0.5,
+            "xMax": 7,
+            "yMin": -1.5,
+            "yMax": 3.5,
+            "curves": [
+              {
+                "fn": {
+                  "base": "cos"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=\\cos x",
+                "labelAt": {
+                  "x": 3.3,
+                  "y": -1.1
+                }
+              },
+              {
+                "fn": {
+                  "base": "cos",
+                  "d": 2
+                },
+                "color": "accent",
+                "label": "y=\\cos x+2",
+                "labelAt": {
+                  "x": 3.4,
+                  "y": 3.1
+                }
+              }
+            ],
+            "asymptotes": [],
+            "alt": "The cosine curve y=cos x (dashed, oscillating between -1 and 1) and its image y=cos x+2 raised 2 units, now oscillating between 1 and 3.",
+            "caption": "Raising cos x by 2 shifts its range to 1 <= y <= 3."
+          }
         }
       ],
       "finalAnswer": "$y=\\cos x+2, \\quad \\text{range } 1 \\leqslant y \\leqslant 3$"
@@ -1230,7 +1674,50 @@ export const questions: Question[] = [
           "description": "Classify the turning point",
           "workingLatex": "\\text{curve opens downwards} \\Rightarrow \\text{maximum}",
           "explanation": "Because the reflection made the parabola open downwards, its turning point $(0,\\ 7)$ is the highest point, a maximum.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3.5,
+            "xMax": 3.5,
+            "yMin": -4,
+            "yMax": 8,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -2.6,
+                  "y": 6.8
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": -1,
+                  "d": 7
+                },
+                "color": "accent",
+                "label": "y=-x^2+7",
+                "labelAt": {
+                  "x": 1.6,
+                  "y": 5.2
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 7,
+                "label": "(0,\\,7)",
+                "color": "accent"
+              }
+            ],
+            "caption": "Reflecting y=x^2 in the x-axis then translating 7 up gives a maximum at (0,7).",
+            "alt": "The parabola y=x^2 shown dashed and its image y=-x^2+7, a downward parabola with maximum turning point at (0,7)."
+          }
         }
       ],
       "finalAnswer": "$(0,\\ 7), \\ \\text{maximum}$"
@@ -1357,7 +1844,41 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "y=\\dfrac{1}{x-3}, \\qquad x=3",
           "explanation": "This gives both the equation of the shifted curve and its new vertical asymptote $x=3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 9,
+            "yMin": -6,
+            "yMax": 6,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip",
+                  "c": 3
+                },
+                "color": "accent",
+                "label": "y=\\frac{1}{x-3}",
+                "labelAt": {
+                  "x": 6.5,
+                  "y": 2.6
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": 3,
+                "label": "x=3"
+              },
+              {
+                "dir": "h",
+                "at": 0,
+                "label": "y=0"
+              }
+            ],
+            "alt": "The reciprocal curve y=1/(x-3), the graph of y=1/x shifted 3 units right, with vertical asymptote x=3 and horizontal asymptote y=0.",
+            "caption": "Shifting y=1/x three units right carries the vertical asymptote to x=3."
+          }
         }
       ],
       "finalAnswer": "$y=\\dfrac{1}{x-3}, \\quad \\text{asymptote } x=3$"
@@ -1438,7 +1959,50 @@ export const questions: Question[] = [
           "description": "State the final equation",
           "workingLatex": "y=2x^2+3",
           "explanation": "This single equation $y=2x^2+3$ captures both the vertical stretch and the upward shift.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2.5,
+            "xMax": 2.5,
+            "yMin": -1,
+            "yMax": 14,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -2.2,
+                  "y": 5.5
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 2,
+                  "d": 3
+                },
+                "color": "accent",
+                "label": "y=2x^2+3",
+                "labelAt": {
+                  "x": 1.2,
+                  "y": 11
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 3,
+                "label": "(0,\\,3)",
+                "color": "accent"
+              }
+            ],
+            "caption": "A vertical stretch of factor 2 then a shift 3 up gives y=2x^2+3.",
+            "alt": "The parabola y=x^2 shown dashed and its image y=2x^2+3, a narrower parabola whose vertex is lifted to (0,3)."
+          }
         }
       ],
       "finalAnswer": "$y=2x^2+3$"
@@ -1519,7 +2083,50 @@ export const questions: Question[] = [
           "description": "State the final equation",
           "workingLatex": "y=-(x-1)^2",
           "explanation": "This equation captures both the rightward shift and the reflection in the $x$-axis.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 4,
+            "yMin": -8,
+            "yMax": 2,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -1.5,
+                  "y": 1.4
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": -1,
+                  "c": 1
+                },
+                "color": "accent",
+                "label": "y=-(x-1)^2",
+                "labelAt": {
+                  "x": 2.7,
+                  "y": -3
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 1,
+                "y": 0,
+                "label": "(1,\\,0)",
+                "color": "accent"
+              }
+            ],
+            "caption": "Shifting y=x^2 right 1 then reflecting in the x-axis gives y=-(x-1)^2.",
+            "alt": "The parabola y=x^2 shown dashed and its image y=-(x-1)^2, a downward parabola with vertex at (1,0)."
+          }
         }
       ],
       "finalAnswer": "$y=-(x-1)^2$"
@@ -1706,7 +2313,50 @@ export const questions: Question[] = [
           "description": "Write both equations to compare",
           "workingLatex": "y=x^2 \\quad \\rightarrow \\quad y=(x+2)^2-3",
           "explanation": "Comparing $y=x^2$ with $y=(x+2)^2-3$ lets us read off how the input and output have changed.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -5,
+            "xMax": 2,
+            "yMin": -4,
+            "yMax": 8,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": 1.2,
+                  "y": 5.5
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": -2,
+                  "d": -3
+                },
+                "color": "accent",
+                "label": "y=(x+2)^2-3",
+                "labelAt": {
+                  "x": -4.4,
+                  "y": 5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -2,
+                "y": -3,
+                "label": "(-2,\\,-3)",
+                "color": "accent"
+              }
+            ],
+            "caption": "A single translation by (-2,-3) maps y=x^2 onto y=(x+2)^2-3.",
+            "alt": "The parabola y=x^2 shown dashed and y=(x+2)^2-3, the same parabola translated 2 left and 3 down to vertex (-2,-3)."
+          }
         },
         {
           "stepNumber": 2,
@@ -1850,7 +2500,50 @@ export const questions: Question[] = [
           "description": "State the new vertex",
           "workingLatex": "(1,\\ 0)",
           "explanation": "After both transformations the vertex of the new curve is at $(1,\\ 0)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1.5,
+            "xMax": 3.5,
+            "yMin": -1,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -1.3,
+                  "y": 3
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 3,
+                  "c": 1
+                },
+                "color": "accent",
+                "label": "y=3(x-1)^2",
+                "labelAt": {
+                  "x": 2.6,
+                  "y": 10
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 1,
+                "y": 0,
+                "label": "(1,\\,0)",
+                "color": "accent"
+              }
+            ],
+            "caption": "A stretch of factor 3 and a shift 1 right gives vertex (1,0).",
+            "alt": "The parabola y=x^2 shown dashed and its image y=3(x-1)^2, a narrower parabola with vertex at (1,0)."
+          }
         },
         {
           "stepNumber": 10,
@@ -1945,7 +2638,38 @@ export const questions: Question[] = [
           "description": "State the minimum point",
           "workingLatex": "(2,\\ 1)",
           "explanation": "Combining the two coordinates gives the location of the minimum after the translation.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 10,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 2,
+                  "d": 1
+                },
+                "color": "accent",
+                "label": "y=x^2-4x+5",
+                "labelAt": {
+                  "x": 3.9,
+                  "y": 7.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": 1,
+                "label": "(2,\\,1)",
+                "color": "accent"
+              }
+            ],
+            "caption": "Completing the square shows the minimum of y=x^2-4x+5 is (2,1).",
+            "alt": "The parabola y=x^2-4x+5, equal to (x-2)^2+1, with its minimum turning point at (2,1)."
+          }
         }
       ],
       "finalAnswer": "$y = x^{2} - 4x + 5$; minimum at $(2,\\ 1)$"
@@ -2005,7 +2729,51 @@ export const questions: Question[] = [
           "description": "State the vertex",
           "workingLatex": "(1,\\ 3)",
           "explanation": "The vertex is where the parabola turns, found directly from the vertex form.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 4,
+            "yMin": -1,
+            "yMax": 13,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -1.6,
+                  "y": 3
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 2,
+                  "c": 1,
+                  "d": 3
+                },
+                "color": "accent",
+                "label": "y=2(x-1)^2+3",
+                "labelAt": {
+                  "x": 2.7,
+                  "y": 10.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 1,
+                "y": 3,
+                "label": "(1,\\,3)",
+                "color": "accent"
+              }
+            ],
+            "caption": "Vertex (1,3) is the lowest point, so the range is y>=3.",
+            "alt": "The parabola y=x^2 shown dashed and its image y=2(x-1)^2+3, whose vertex is at (1,3) and whose outputs are never below 3."
+          }
         },
         {
           "stepNumber": 7,
@@ -2519,7 +3287,50 @@ export const questions: Question[] = [
           "description": "State the final results",
           "workingLatex": "y = 4x^{2} - 1; \\quad x = \\pm\\dfrac{1}{2}",
           "explanation": "This gives both the transformed equation and where it meets the $x$-axis.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1.5,
+            "xMax": 1.5,
+            "yMin": -2,
+            "yMax": 8,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 4,
+                  "d": -1
+                },
+                "color": "accent",
+                "label": "y=4x^2-1",
+                "labelAt": {
+                  "x": 1,
+                  "y": 5.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -0.5,
+                "y": 0,
+                "label": "(-0.5,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 0.5,
+                "y": 0,
+                "label": "(0.5,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 0,
+                "y": -1,
+                "label": "(0,\\,-1)",
+                "color": "accent"
+              }
+            ],
+            "caption": "y=4x^2-1 is narrower than y=x^2 and dropped 1, meeting the x-axis at x=+/-0.5.",
+            "alt": "The parabola y=4x^2-1 crossing the x-axis at (-0.5,0) and (0.5,0) with y-intercept at (0,-1)."
+          }
         }
       ],
       "finalAnswer": "$y = 4x^{2} - 1$; meets the $x$-axis at $x = \\dfrac{1}{2}$ and $x = -\\dfrac{1}{2}$"
@@ -2924,7 +3735,49 @@ export const questions: Question[] = [
           "description": "State the image",
           "workingLatex": "(1,\\ 9)",
           "explanation": "This is where the original point $(3,9)$ lands after the horizontal stretch.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 2,
+            "yMin": -1,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": 1.6,
+                  "y": 3
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 9
+                },
+                "color": "accent",
+                "label": "y=(3x)^2",
+                "labelAt": {
+                  "x": 1.2,
+                  "y": 10
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 1,
+                "y": 9,
+                "label": "(1,\\,9)",
+                "color": "accent"
+              }
+            ],
+            "caption": "y=(3x)^2 is y=x^2 stretched horizontally by factor 1/3.",
+            "alt": "The parabola y=x^2 shown dashed and its much narrower image y=(3x)^2; the point (3,9) maps to (1,9)."
+          }
         }
       ],
       "finalAnswer": "Horizontal stretch, scale factor $\\dfrac{1}{3}$; image $(1,\\ 9)$"
@@ -3005,7 +3858,50 @@ export const questions: Question[] = [
           "description": "State the final results",
           "workingLatex": "y = (x - 2)^{3} + 1; \\quad \\text{inflection } (2,\\ 1)",
           "explanation": "This gives both the transformed equation and the location of its point of inflection.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 5,
+            "yMin": -7,
+            "yMax": 9,
+            "curves": [
+              {
+                "fn": {
+                  "base": "cubic"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^3",
+                "labelAt": {
+                  "x": -0.6,
+                  "y": -4.5
+                }
+              },
+              {
+                "fn": {
+                  "base": "cubic",
+                  "c": 2,
+                  "d": 1
+                },
+                "color": "accent",
+                "label": "y=(x-2)^3+1",
+                "labelAt": {
+                  "x": 3.6,
+                  "y": 6
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": 1,
+                "label": "(2,\\,1)",
+                "color": "accent"
+              }
+            ],
+            "caption": "Translating y=x^3 right 2 and up 1 moves the inflection to (2,1).",
+            "alt": "The cubic y=x^3 shown dashed and its image y=(x-2)^3+1, with point of inflection at (2,1)."
+          }
         }
       ],
       "finalAnswer": "$y = (x - 2)^{3} + 1$; point of inflection $(2,\\ 1)$"
@@ -3086,7 +3982,53 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "y=\\dfrac{1}{x}+3",
           "explanation": "This is the required equation, with vertical asymptote $x=0$ and horizontal asymptote $y=3$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -6,
+            "xMax": 6,
+            "yMin": -4,
+            "yMax": 9,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=\\frac{1}{x}",
+                "labelAt": {
+                  "x": 3.2,
+                  "y": 0.8
+                }
+              },
+              {
+                "fn": {
+                  "base": "recip",
+                  "d": 3
+                },
+                "color": "accent",
+                "label": "y=\\frac{1}{x}+3",
+                "labelAt": {
+                  "x": 3.2,
+                  "y": 4.4
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": 0,
+                "label": "x=0"
+              },
+              {
+                "dir": "h",
+                "at": 3,
+                "label": "y=3"
+              }
+            ],
+            "alt": "The reciprocal curve y=1/x (dashed) and its image y=1/x+3 lifted 3 units up, keeping the vertical asymptote x=0 and raising the horizontal asymptote to y=3.",
+            "caption": "The vertical shift leaves x=0 fixed but lifts the horizontal asymptote to y=3."
+          }
         }
       ],
       "finalAnswer": "$y=\\dfrac{1}{x}+3$, with asymptotes $x=0$ and $y=3$."
@@ -3181,7 +4123,42 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "y=\\dfrac{1}{x-2}-1",
           "explanation": "This is the required equation, with vertical asymptote $x=2$ and horizontal asymptote $y=-1$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 7,
+            "yMin": -6,
+            "yMax": 4,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip",
+                  "c": 2,
+                  "d": -1
+                },
+                "color": "accent",
+                "label": "y=\\frac{1}{x-2}-1",
+                "labelAt": {
+                  "x": 5,
+                  "y": 0.4
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": 2,
+                "label": "x=2"
+              },
+              {
+                "dir": "h",
+                "at": -1,
+                "label": "y=-1"
+              }
+            ],
+            "alt": "The reciprocal curve y=1/(x-2)-1, the graph of y=1/x shifted 2 right and 1 down, with vertical asymptote x=2 and horizontal asymptote y=-1.",
+            "caption": "Moving 2 right and 1 down sends the asymptotes to x=2 and y=-1."
+          }
         }
       ],
       "finalAnswer": "$y=\\dfrac{1}{x-2}-1$, with asymptotes $x=2$ and $y=-1$."
@@ -3269,7 +4246,44 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "y=2^{x}+5,\\quad y=5,\\quad (0,6)",
           "explanation": "The transformed equation is $y=2^{x}+5$, with horizontal asymptote $y=5$ and $y$-intercept $(0,6)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -4,
+            "xMax": 3,
+            "yMin": 0,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "exp",
+                  "d": 5
+                },
+                "color": "accent",
+                "label": "y=2^x+5",
+                "labelAt": {
+                  "x": 1.2,
+                  "y": 10.5
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "h",
+                "at": 5,
+                "label": "y=5"
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 6,
+                "label": "(0,\\,6)",
+                "color": "ink"
+              }
+            ],
+            "alt": "An increasing exponential curve y=2^x+5 approaching the horizontal asymptote y=5 on the left and passing through the y-intercept (0,6).",
+            "caption": "Raising 2^x by 5 lifts the asymptote to y=5 and the y-intercept to (0,6)."
+          }
         }
       ],
       "finalAnswer": "$y=2^{x}+5$, with asymptote $y=5$ and $y$-intercept $(0,6)$."
@@ -3357,7 +4371,57 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "\\text{reflect } -1<x<1 \\text{ up};\\quad x=-1,\\; x=1",
           "explanation": "The graph of $y=|x^{2}-1|$ is $y=f(x)$ with the section between $x=-1$ and $x=1$ reflected above the axis, and it meets the $x$-axis at $x=-1$ and $x=1$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2.5,
+            "xMax": 2.5,
+            "yMin": -1.5,
+            "yMax": 4,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "d": -1
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2-1",
+                "labelAt": {
+                  "x": 1.7,
+                  "y": 2.6
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "d": -1,
+                  "outerAbs": true
+                },
+                "color": "accent",
+                "label": "y=|x^2-1|",
+                "labelAt": {
+                  "x": -1.9,
+                  "y": 3.3
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -1,
+                "y": 0,
+                "label": "(-1,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 1,
+                "y": 0,
+                "label": "(1,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "caption": "The dip of y = x^2 - 1 between x = -1 and x = 1 is reflected up to give y = |x^2 - 1|.",
+            "alt": "The dashed parabola y = x squared minus 1 and the solid graph y = the modulus of x squared minus 1, whose central dip is reflected above the x-axis, both meeting the x-axis at (-1,0) and (1,0)."
+          }
         }
       ],
       "finalAnswer": "Reflect the part between $x=-1$ and $x=1$ (where $f<0$) up above the $x$-axis; the graph meets the $x$-axis at $x=-1$ and $x=1$."
@@ -3438,7 +4502,60 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "\\text{V-shape},\\quad \\text{minimum } (3,0)",
           "explanation": "The graph of $y=|x-3|$ is a V-shape with its lowest point, the minimum, at $(3,0)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 7,
+            "yMin": -4,
+            "yMax": 5,
+            "curves": [
+              {
+                "fn": {
+                  "base": "line",
+                  "c": 3
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x-3",
+                "labelAt": {
+                  "x": 6,
+                  "y": 2.4
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": 4
+                  },
+                  {
+                    "x": 3,
+                    "y": 0
+                  },
+                  {
+                    "x": 7,
+                    "y": 4
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|x-3|",
+                "labelAt": {
+                  "x": -0.1,
+                  "y": 4.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 0,
+                "label": "(3,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "caption": "y = |x - 3| is a V whose minimum sits where y = x - 3 meets the x-axis.",
+            "alt": "The dashed line y = x minus 3 and the solid V-shaped graph y = the modulus of x minus 3, meeting at the minimum point (3,0)."
+          }
         }
       ],
       "finalAnswer": "A V-shape with minimum point $(3,0)$."
@@ -3533,7 +4650,65 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "x=-1,\\; x=3;\\quad \\text{local maximum } (1,4)",
           "explanation": "The graph meets the $x$-axis at $x=-1$ and $x=3$, and the reflected vertex forms a local maximum at $(1,4)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 5,
+            "yMin": -5,
+            "yMax": 6,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 1,
+                  "d": -4
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2-2x-3",
+                "labelAt": {
+                  "x": 3.5,
+                  "y": 4.6
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 1,
+                  "d": -4,
+                  "outerAbs": true
+                },
+                "color": "accent",
+                "label": "y=|x^2-2x-3|",
+                "labelAt": {
+                  "x": -2.7,
+                  "y": 5.2
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -1,
+                "y": 0,
+                "label": "(-1,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 3,
+                "y": 0,
+                "label": "(3,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 1,
+                "y": 4,
+                "label": "(1,\\,4)",
+                "color": "accent"
+              }
+            ],
+            "caption": "The dip of y = x^2 - 2x - 3 reflects up to a local maximum at (1,4).",
+            "alt": "The dashed parabola y = x squared minus 2x minus 3 and the solid graph of its modulus, whose dip is reflected up to a local maximum at (1,4), meeting the x-axis at (-1,0) and (3,0)."
+          }
         }
       ],
       "finalAnswer": "Roots $x=-1$ and $x=3$; the vertex $(1,-4)$ reflects to a local maximum at $(1,4)$."
@@ -3621,7 +4796,50 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "y=|x|-2,\\quad x=2,\\; x=-2",
           "explanation": "The equation is $y=|x|-2$, and it meets the $x$-axis at the points $(2,0)$ and $(-2,0)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -4,
+            "xMax": 4,
+            "yMin": -3,
+            "yMax": 3,
+            "curves": [
+              {
+                "fn": {
+                  "base": "line",
+                  "d": -2,
+                  "innerAbs": true
+                },
+                "color": "accent",
+                "label": "y=|x|-2",
+                "labelAt": {
+                  "x": 2.5,
+                  "y": 1.3
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -2,
+                "y": 0,
+                "label": "(-2,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 2,
+                "y": 0,
+                "label": "(2,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 0,
+                "y": -2,
+                "label": "(0,\\,-2)",
+                "color": "ink"
+              }
+            ],
+            "caption": "y = f(|x|) keeps the x >= 0 part of y = x - 2 and mirrors it in the y-axis.",
+            "alt": "The V-shaped graph y = the modulus of x, minus 2, symmetric about the y-axis with its vertex at (0,-2) and crossing the x-axis at (-2,0) and (2,0)."
+          }
         }
       ],
       "finalAnswer": "$y=|x|-2$; it meets the $x$-axis at $x=2$ and $x=-2$."
@@ -3832,7 +5050,50 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "3 \\text{ right},\\; \\text{stretch sf } 2,\\; 1 \\text{ up};\\quad \\text{vertex } (3,1)",
           "explanation": "The sequence is translation $3$ right, vertical stretch scale factor $2$, then translation $1$ up, giving the vertex $(3,1)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 6,
+            "yMin": -1,
+            "yMax": 13,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -0.9,
+                  "y": 6
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 2,
+                  "c": 3,
+                  "d": 1
+                },
+                "color": "accent",
+                "label": "y=2(x-3)^2+1",
+                "labelAt": {
+                  "x": 4.5,
+                  "y": 11.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 1,
+                "label": "(3,\\,1)",
+                "color": "accent"
+              }
+            ],
+            "alt": "The parabola y = x squared, dashed, and its narrower image y = 2 times (x minus 3) squared plus 1, with vertex at (3,1)."
+          }
         }
       ],
       "finalAnswer": "Translation $3$ right, then vertical stretch scale factor $2$, then translation $1$ up; vertex $(3,1)$."
@@ -3955,7 +5216,44 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "\\text{stretch sf } 3,\\; \\text{sf } \\tfrac{1}{2},\\; 1 \\text{ up};\\; -2\\le y\\le 4;\\; 180^{\\circ}",
           "explanation": "The transformations are a vertical stretch scale factor $3$, a horizontal stretch scale factor $\\tfrac{1}{2}$, and a translation $1$ up; the range is $-2\\le y\\le 4$ and the period is $180^{\\circ}$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -0.5,
+            "xMax": 7,
+            "yMin": -3,
+            "yMax": 5,
+            "curves": [
+              {
+                "fn": {
+                  "base": "sin"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=\\sin x",
+                "labelAt": {
+                  "x": 4.9,
+                  "y": -1.6
+                }
+              },
+              {
+                "fn": {
+                  "base": "sin",
+                  "a": 3,
+                  "b": 2,
+                  "d": 1
+                },
+                "color": "accent",
+                "label": "y=3\\sin(2x)+1",
+                "labelAt": {
+                  "x": 3.4,
+                  "y": 4.5
+                }
+              }
+            ],
+            "asymptotes": [],
+            "alt": "The sine curve y=sin x (dashed) and its image y=3sin(2x)+1, which has three times the amplitude, half the period and is centred on y=1, oscillating between -2 and 4.",
+            "caption": "Amplitude 3, period halved, and centre line lifted to y=1 give range -2 <= y <= 4."
+          }
         }
       ],
       "finalAnswer": "Vertical stretch scale factor $3$, horizontal stretch scale factor $\\dfrac{1}{2}$, translation $1$ up; range $-2\\le y\\le 4$; period $180^{\\circ}$."
@@ -4180,7 +5478,49 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "y=(x+3)^{2}+2;\\; 3 \\text{ left},\\; 2 \\text{ up};\\; \\text{vertex } (-3,2)",
           "explanation": "The completed-square form is $y=(x+3)^{2}+2$, giving a translation $3$ left and $2$ up, with vertex $(-3,2)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -7,
+            "xMax": 1,
+            "yMin": 0,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": 0.4,
+                  "y": 9
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": -3,
+                  "d": 2
+                },
+                "color": "accent",
+                "label": "y=x^2+6x+11",
+                "labelAt": {
+                  "x": -6.7,
+                  "y": 10.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -3,
+                "y": 2,
+                "label": "(-3,\\,2)",
+                "color": "accent"
+              }
+            ],
+            "alt": "The parabola y = x squared, dashed, and its image y = x squared plus 6x plus 11, translated 3 left and 2 up with vertex at (-3,2)."
+          }
         }
       ],
       "finalAnswer": "$y=(x+3)^{2}+2$; translation $3$ left and $2$ up; vertex $(-3,2)$."
@@ -4303,7 +5643,51 @@ export const questions: Question[] = [
           "description": "State the final answer",
           "workingLatex": "\\text{stretch sf } 2,\\; 1 \\text{ left},\\; 1 \\text{ down};\\; x=-1,\\; y=-1;\\; (0,1)",
           "explanation": "The transformations are a vertical stretch scale factor $2$ then a translation $1$ left and $1$ down; the asymptotes are $x=-1$ and $y=-1$, and the $y$-intercept is $(0,1)$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -7,
+            "xMax": 5,
+            "yMin": -6,
+            "yMax": 5,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip",
+                  "a": 2,
+                  "c": -1,
+                  "d": -1
+                },
+                "color": "accent",
+                "label": "y=\\frac{2}{x+1}-1",
+                "labelAt": {
+                  "x": 2,
+                  "y": 1.2
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": -1,
+                "label": "x=-1"
+              },
+              {
+                "dir": "h",
+                "at": -1,
+                "label": "y=-1"
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 1,
+                "label": "(0,\\,1)",
+                "color": "ink"
+              }
+            ],
+            "alt": "The rational curve y=2/(x+1)-1, obtained from y=1/x by a vertical stretch of 2 then shifts 1 left and 1 down, with vertical asymptote x=-1, horizontal asymptote y=-1 and y-intercept (0,1).",
+            "caption": "Stretch by 2 then move 1 left and 1 down: asymptotes x=-1, y=-1 and y-intercept (0,1)."
+          }
         }
       ],
       "finalAnswer": "Vertical stretch scale factor $2$, translation $1$ left and $1$ down; asymptotes $x=-1$ and $y=-1$; $y$-intercept $(0,1)$."
@@ -4644,7 +6028,50 @@ export const questions: Question[] = [
           "description": "State the point of contact.",
           "workingLatex": "(3,0)",
           "explanation": "The stretched-and-shifted parabola has its minimum on the $x$-axis at $x=3$, matching the transformations found.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": -1,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": 3.5,
+                  "y": 11
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 4,
+                  "c": 3
+                },
+                "color": "accent",
+                "label": "y=(2x-6)^2",
+                "labelAt": {
+                  "x": 4.4,
+                  "y": 9.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 0,
+                "label": "(3,\\,0)",
+                "color": "accent"
+              }
+            ],
+            "caption": "y = (2x - 6)^2 = 4(x - 3)^2 touches the x-axis at its vertex (3,0).",
+            "alt": "The parabola y = x squared, dashed, and the narrower image y = (2x minus 6) squared touching the x-axis at (3,0)."
+          }
         }
       ],
       "finalAnswer": "$y=f(2(x-3))$ is a horizontal stretch of scale factor $\\dfrac{1}{2}$ then a translation $3$ units right; the equation is $y=(2x-6)^2$, meeting the $x$-axis at $(3,0)$ (repeated root)."
@@ -4862,7 +6289,49 @@ export const questions: Question[] = [
           "description": "State the final description.",
           "workingLatex": "y=x^2 \\to y=(x-4)^2 : \\text{ translation } 4 \\text{ right}",
           "explanation": "The single visible transformation is a translation of $4$ units in the positive $x$-direction.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 7,
+            "yMin": -1,
+            "yMax": 10,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -1.6,
+                  "y": 6
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 4
+                },
+                "color": "accent",
+                "label": "y=(4-x)^2",
+                "labelAt": {
+                  "x": 5.5,
+                  "y": 6
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 4,
+                "y": 0,
+                "label": "(4,\\,0)",
+                "color": "accent"
+              }
+            ],
+            "caption": "(4 - x)^2 = (x - 4)^2, so y = x^2 is simply translated 4 units right.",
+            "alt": "The parabola y = x squared, dashed, and its identical image y = (4 minus x) squared translated 4 units right with vertex at (4,0)."
+          }
         }
       ],
       "finalAnswer": "$(4-x)^2=(x-4)^2$, so the single transformation is a translation of $4$ units right; the $y$-axis reflection is hidden because $y=x^2$ is symmetric about the $y$-axis."
@@ -5094,7 +6563,63 @@ export const questions: Question[] = [
           "description": "State the y-intercept.",
           "workingLatex": "(0,\\,2)",
           "explanation": "The curve crosses the $y$-axis at $(0,2)$, below its asymptote at $y=3$ as expected.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 2.5,
+            "yMin": -6,
+            "yMax": 5,
+            "curves": [
+              {
+                "fn": {
+                  "base": "exp"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=e^x",
+                "labelAt": {
+                  "x": 1.5,
+                  "y": 4.4
+                }
+              },
+              {
+                "fn": {
+                  "base": "exp",
+                  "a": -1,
+                  "d": 3
+                },
+                "color": "accent",
+                "label": "y=-e^x+3",
+                "labelAt": {
+                  "x": -1.6,
+                  "y": 2.4
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "h",
+                "at": 3,
+                "label": "y=3"
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 2,
+                "label": "(0,\\,2)",
+                "color": "ink"
+              },
+              {
+                "x": 1.0986,
+                "y": 0,
+                "label": "(\\ln 3,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "alt": "The exponential y=e^x (dashed) and its image y=-e^x+3, reflected in the x-axis and raised 3, approaching the horizontal asymptote y=3 from below with y-intercept (0,2) and x-intercept at (ln 3, 0).",
+            "caption": "Reflecting e^x and adding 3 gives asymptote y=3, y-intercept (0,2) and x-intercept (ln 3, 0)."
+          }
         }
       ],
       "finalAnswer": "$y=-e^x+3$; asymptote $y=3$; $x$-intercept $(\\ln 3,\\,0)$; $y$-intercept $(0,\\,2)$."
@@ -5305,7 +6830,51 @@ export const questions: Question[] = [
           "description": "Deduce the range.",
           "workingLatex": "y\\ge -4",
           "explanation": "Since the parabola opens upwards from its minimum at $-4$, all output values are at least $-4$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -4,
+            "xMax": 4,
+            "yMin": -5,
+            "yMax": 8,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": -2.6,
+                  "y": 6.6
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 0.5,
+                  "d": -4
+                },
+                "color": "accent",
+                "label": "y=\\frac{1}{2}x^2-4",
+                "labelAt": {
+                  "x": 2.6,
+                  "y": 3.4
+                }
+              }
+            ],
+            "asymptotes": [],
+            "points": [
+              {
+                "x": 0,
+                "y": -4,
+                "label": "(0,\\,-4)",
+                "color": "accent"
+              }
+            ],
+            "alt": "The parabola y=x^2 (dashed) and curve B y=(1/2)x^2-4, which is half as tall and shifted 4 units down, with minimum at (0,-4) so its range is y >= -4.",
+            "caption": "A half-height stretch then a drop of 4 puts the vertex at (0,-4), giving range y >= -4."
+          }
         },
         {
           "stepNumber": 13,
@@ -5537,7 +7106,59 @@ export const questions: Question[] = [
           "description": "Take the negative case.",
           "workingLatex": "x-2=-\\dfrac{4}{3} \\Rightarrow x=2-\\dfrac{4}{3}=\\dfrac{2}{3}",
           "explanation": "The negative case gives the other intersection at $x=\\dfrac{2}{3}$, symmetric about the vertex's $x=2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 6,
+            "yMin": -5,
+            "yMax": 6,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": 5
+                  },
+                  {
+                    "x": 2,
+                    "y": -4
+                  },
+                  {
+                    "x": 5,
+                    "y": 5
+                  }
+                ],
+                "color": "accent",
+                "label": "y=3|x-2|-4",
+                "labelAt": {
+                  "x": 4,
+                  "y": 5.2
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": -4,
+                "label": "(2,\\,-4)",
+                "color": "accent"
+              },
+              {
+                "x": 0.667,
+                "y": 0,
+                "label": "x=\\tfrac{2}{3}",
+                "color": "ink"
+              },
+              {
+                "x": 3.333,
+                "y": 0,
+                "label": "x=\\tfrac{10}{3}",
+                "color": "ink"
+              }
+            ],
+            "caption": "C is a V with vertex (2,-4); it crosses the x-axis at x = 2/3 and x = 10/3.",
+            "alt": "A V-shaped graph y = 3 times the modulus of x minus 2, minus 4, with vertex at (2,-4), crossing the x-axis at x = two thirds and x = ten thirds."
+          }
         }
       ],
       "finalAnswer": "Translation $2$ right, vertical stretch s.f. $3$, then translation $4$ down; vertex $(2,\\,-4)$; solutions $x=\\dfrac{10}{3}$ and $x=\\dfrac{2}{3}$."
@@ -5583,7 +7204,124 @@ export const questions: Question[] = [
           "description": "Describe the construction.",
           "workingLatex": "\\text{keep } x\\ge 0 \\text{ part of } f, \\text{ reflect it in the } y\\text{-axis}",
           "explanation": "We retain the right-hand branch of $f$ and mirror it across the $y$-axis to create the left-hand branch, discarding the original left part.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2.3,
+            "xMax": 2.3,
+            "yMin": -4.5,
+            "yMax": 5,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -2,
+                    "y": -4
+                  },
+                  {
+                    "x": -1.5,
+                    "y": -0.375
+                  },
+                  {
+                    "x": -1,
+                    "y": 1
+                  },
+                  {
+                    "x": -0.5,
+                    "y": 0.875
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 0.5,
+                    "y": -0.875
+                  },
+                  {
+                    "x": 1,
+                    "y": -1
+                  },
+                  {
+                    "x": 1.5,
+                    "y": 0.375
+                  },
+                  {
+                    "x": 2,
+                    "y": 4
+                  }
+                ],
+                "color": "ink",
+                "dashed": true,
+                "label": "y=f(x)",
+                "labelAt": {
+                  "x": -1.75,
+                  "y": -3.2
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -2,
+                    "y": 4
+                  },
+                  {
+                    "x": -1.5,
+                    "y": 0.375
+                  },
+                  {
+                    "x": -1,
+                    "y": -1
+                  },
+                  {
+                    "x": -0.5,
+                    "y": -0.875
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 0.5,
+                    "y": -0.875
+                  },
+                  {
+                    "x": 1,
+                    "y": -1
+                  },
+                  {
+                    "x": 1.5,
+                    "y": 0.375
+                  },
+                  {
+                    "x": 2,
+                    "y": 4
+                  }
+                ],
+                "color": "accent",
+                "label": "y=f(|x|)",
+                "labelAt": {
+                  "x": -2.1,
+                  "y": 4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -2,
+                "y": 4,
+                "label": "(-2,\\,4)",
+                "color": "accent"
+              },
+              {
+                "x": 2,
+                "y": 4,
+                "label": "(2,\\,4)",
+                "color": "accent"
+              }
+            ],
+            "caption": "y = f(|x|) keeps the x >= 0 part of f and mirrors it in the y-axis, making an even graph.",
+            "alt": "The dashed cubic y = x cubed minus 2x and the solid even graph y = f of the modulus of x, whose right-hand branch is mirrored into the left; both pass through (2,4) and the even graph also through (-2,4)."
+          }
         },
         {
           "stepNumber": 5,
@@ -5762,7 +7500,43 @@ export const questions: Question[] = [
           "description": "Summarise all three features.",
           "workingLatex": "\\text{amplitude } 4, \\text{ period } 720^{\\circ}, \\text{ range } -4\\le y\\le 4",
           "explanation": "The vertical stretch fixed the amplitude and range, while the horizontal stretch fixed the period.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -0.5,
+            "xMax": 13,
+            "yMin": -5,
+            "yMax": 5,
+            "curves": [
+              {
+                "fn": {
+                  "base": "cos"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=\\cos x",
+                "labelAt": {
+                  "x": 3.2,
+                  "y": 1.6
+                }
+              },
+              {
+                "fn": {
+                  "base": "cos",
+                  "a": 4,
+                  "b": 0.5
+                },
+                "color": "accent",
+                "label": "y=4\\cos(\\tfrac{1}{2}x)",
+                "labelAt": {
+                  "x": 8,
+                  "y": 4.4
+                }
+              }
+            ],
+            "asymptotes": [],
+            "alt": "The cosine curve y=cos x (dashed) and its image y=4cos((1/2)x), stretched to amplitude 4 with double the period, oscillating between -4 and 4.",
+            "caption": "Amplitude becomes 4 and the period doubles to 720 degrees; range is -4 <= y <= 4."
+          }
         }
       ],
       "finalAnswer": "Vertical stretch s.f. $4$ and horizontal stretch s.f. $2$; amplitude $4$; period $720^{\\circ}$; range $-4\\le y\\le 4$."
@@ -5987,7 +7761,70 @@ export const questions: Question[] = [
           "description": "State the maximum of the reflected curve.",
           "workingLatex": "\\text{vertex } (3,4)\\;\\longrightarrow\\;(3,-4), \\text{ now a maximum}",
           "explanation": "The reflection keeps the $x$-coordinate but negates the $y$-coordinate, so the former minimum $(3,4)$ becomes the maximum $(3,-4)$ of the downward parabola.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": -8,
+            "yMax": 13,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab"
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2",
+                "labelAt": {
+                  "x": 1.1,
+                  "y": 11
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 3,
+                  "d": 4
+                },
+                "color": "accent",
+                "label": "y=x^2-6x+13",
+                "labelAt": {
+                  "x": 4.6,
+                  "y": 10
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": -1,
+                  "c": 3,
+                  "d": -4
+                },
+                "color": "soft",
+                "label": "reflection",
+                "labelAt": {
+                  "x": 4.6,
+                  "y": -6
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 4,
+                "label": "(3,\\,4)",
+                "color": "accent"
+              },
+              {
+                "x": 3,
+                "y": -4,
+                "label": "(3,\\,-4)",
+                "color": "ink"
+              }
+            ],
+            "caption": "C has minimum (3,4); reflecting in the x-axis gives y = -(x - 3)^2 - 4 with maximum (3,-4).",
+            "alt": "The parabola y = x squared, dashed, the curve C y = x squared minus 6x plus 13 with minimum (3,4), and its reflection in the x-axis y = minus (x minus 3) squared minus 4 with maximum (3,-4)."
+          }
         }
       ],
       "finalAnswer": "(a) $y=(x-3)^2+4$: translation $3$ right and $4$ up. (b) Minimum $(3,4)$, range $y\\ge 4$. (c) Reflected curve $y=-(x-3)^2-4=-x^2+6x-13$, maximum $(3,-4)$."

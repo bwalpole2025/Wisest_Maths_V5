@@ -57,7 +57,16 @@ import { questions as recurrenceAndGeneralSequences } from "@/data/questions/a-l
 import { questions as binomialExpansionRationalPowers } from "@/data/questions/a-level-maths/year-2-pure/binomial-expansion-rational-powers";
 import { questions as radiansArcsAndSectors } from "@/data/questions/a-level-maths/year-2-pure/radians-arcs-and-sectors";
 import { questions as smallAngleApproximations } from "@/data/questions/a-level-maths/year-2-pure/small-angle-approximations";
+import { questions as reciprocalAndInverseTrig } from "@/data/questions/a-level-maths/year-2-pure/reciprocal-and-inverse-trig-functions";
+import { questions as compoundAndDoubleAngles } from "@/data/questions/a-level-maths/year-2-pure/compound-and-double-angles";
+import { questions as rSinThetaPlusAlpha } from "@/data/questions/a-level-maths/year-2-pure/the-form-rsin-theta-plus-alpha";
+import { questions as parametricCurves } from "@/data/questions/a-level-maths/year-2-pure/parametric-curves";
+import { questions as parametricModelling } from "@/data/questions/a-level-maths/year-2-pure/parametric-modelling";
+import { questions as standardDerivatives } from "@/data/questions/a-level-maths/year-2-pure/standard-derivatives";
+import { questions as productQuotientChain } from "@/data/questions/a-level-maths/year-2-pure/product-quotient-chain";
+import { questions as implicitDifferentiation } from "@/data/questions/a-level-maths/year-2-pure/implicit-differentiation";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
+import { questions as theNormalDistribution } from "@/data/questions/a-level-maths/year-2-stats/the-normal-distribution";
 
 export { slugForSubtopicId };
 
@@ -114,7 +123,16 @@ export const allQuestions: Question[] = [
   ...binomialExpansionRationalPowers,
   ...radiansArcsAndSectors,
   ...smallAngleApproximations,
+  ...reciprocalAndInverseTrig,
+  ...compoundAndDoubleAngles,
+  ...rSinThetaPlusAlpha,
+  ...parametricCurves,
+  ...parametricModelling,
+  ...standardDerivatives,
+  ...productQuotientChain,
+  ...implicitDifferentiation,
   ...conditionalProbability,
+  ...theNormalDistribution,
 ];
 
 export interface SubtopicSummary {

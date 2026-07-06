@@ -1043,6 +1043,224 @@ function ProbDistFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "probDist
   );
 }
 
+/* --------------------------------------------------- Cartesian function graph */
+
+/** The standard base curves the functionGraph kind can sample, before the
+ *  affine transform  y = a·g(b(x − c)) + d  is applied. */
+const BASE_FNS: Record<string, { g: (u: number) => number; domain?: (u: number) => boolean }> = {
+  line: { g: (u) => u },
+  parab: { g: (u) => u * u },
+  cubic: { g: (u) => u * u * u },
+  recip: { g: (u) => 1 / u, domain: (u) => Math.abs(u) > 1e-7 },
+  recipSq: { g: (u) => 1 / (u * u), domain: (u) => Math.abs(u) > 1e-7 },
+  sqrt: { g: (u) => Math.sqrt(u), domain: (u) => u >= 0 },
+  exp: { g: (u) => Math.exp(u) },
+  ln: { g: (u) => Math.log(u), domain: (u) => u > 1e-9 },
+  sin: { g: (u) => Math.sin(u) },
+  cos: { g: (u) => Math.cos(u) },
+};
+
+type FnCurve = Extract<DiagramSpec, { kind: "functionGraph" }>["curves"][number];
+
+/** Sample a curve spec into one or more polyline segments (breaking at domain
+ *  gaps and asymptote jumps so branches never join across a discontinuity). */
+function sampleCurve(curve: FnCurve, xMin: number, xMax: number, yMin: number, yMax: number): Array<Array<{ x: number; y: number }>> {
+  if (curve.points && curve.points.length) return [curve.points];
+  const fn = curve.fn;
+  if (!fn) return [];
+  const base = BASE_FNS[fn.base] ?? BASE_FNS.line;
+  const a = fn.a ?? 1, b = fn.b ?? 1, c = fn.c ?? 0, d = fn.d ?? 0;
+  const band = yMax - yMin;
+  const N = 600;
+  const segs: Array<Array<{ x: number; y: number }>> = [];
+  let cur: Array<{ x: number; y: number }> = [];
+  let prevY: number | null = null;
+  const flush = () => {
+    if (cur.length) segs.push(cur);
+    cur = [];
+    prevY = null;
+  };
+  for (let i = 0; i <= N; i++) {
+    const x = xMin + ((xMax - xMin) * i) / N;
+    const xin = fn.innerAbs ? Math.abs(x) : x;
+    const u = b * (xin - c);
+    if (base.domain && !base.domain(u)) {
+      flush();
+      continue;
+    }
+    let y = a * base.g(u) + d;
+    if (fn.outerAbs) y = Math.abs(y);
+    if (!isFinite(y)) {
+      flush();
+      continue;
+    }
+    // A jump larger than the whole viewport ⇒ we crossed an asymptote: start a new branch.
+    if (prevY !== null && Math.abs(y - prevY) > band * 1.5) flush();
+    cur.push({ x, y });
+    prevY = y;
+  }
+  flush();
+  return segs;
+}
+
+const FG_COLORS: Record<string, string> = { ink: CURVE, accent: ACCENT, soft: INK_SOFT };
+
+function FunctionGraphFigure({ spec }: { spec: Extract<DiagramSpec, { kind: "functionGraph" }> }) {
+  const { xMin, xMax, yMin, yMax } = spec;
+  const W = 470;
+  const PL = 40, PR = 26, PT = 24, PB = 34;
+  const H = 360;
+  const plotL = PL, plotR = W - PR, plotT = PT, plotB = H - PB;
+  const sx = (x: number) => plotL + ((x - xMin) / (xMax - xMin)) * (plotR - plotL);
+  const sy = (y: number) => plotB - ((y - yMin) / (yMax - yMin)) * (plotB - plotT);
+  const clampX = (x: number) => Math.max(xMin, Math.min(xMax, x));
+  const clampY = (y: number) => Math.max(yMin, Math.min(yMax, y));
+  const axisY = sy(clampY(0)); // screen y of the x-axis
+  const axisX = sx(clampX(0)); // screen x of the y-axis
+  const originVisible = xMin <= 0 && xMax >= 0 && yMin <= 0 && yMax >= 0;
+
+  const xTicks = spec.xTickStep
+    ? (() => { const o: number[] = []; for (let t = Math.ceil(xMin / spec.xTickStep) * spec.xTickStep; t <= xMax + 1e-9; t += spec.xTickStep) o.push(Number(t.toFixed(6))); return o; })()
+    : niceAxisTicks(xMin, xMax, 8);
+  const yTicks = spec.yTickStep
+    ? (() => { const o: number[] = []; for (let t = Math.ceil(yMin / spec.yTickStep) * spec.yTickStep; t <= yMax + 1e-9; t += spec.yTickStep) o.push(Number(t.toFixed(6))); return o; })()
+    : niceAxisTicks(yMin, yMax, 8);
+
+  const clipId = hashId(`fg${xMin}|${xMax}|${yMin}|${yMax}|${spec.curves.length}|${spec.alt ?? ""}`);
+
+  const pathFor = (pts: Array<{ x: number; y: number }>) => pts.map((p, i) => `${i === 0 ? "M" : "L"} ${sx(p.x).toFixed(2)} ${sy(p.y).toFixed(2)}`).join(" ");
+
+  return (
+    <svg viewBox={`0 0 ${W} ${H}`} style={{ width: "100%", height: "auto" }} role="img" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <clipPath id={clipId}>
+          <rect x={plotL} y={plotT} width={plotR - plotL} height={plotB - plotT} />
+        </clipPath>
+      </defs>
+
+      {/* faint square math grid */}
+      {xTicks.map((t) => (
+        <line key={`gx${t}`} x1={sx(t)} x2={sx(t)} y1={plotT} y2={plotB} stroke={Math.abs(t) < 1e-9 ? GRID_STRONG : GRID} strokeWidth={1} />
+      ))}
+      {yTicks.map((t) => (
+        <line key={`gy${t}`} x1={plotL} x2={plotR} y1={sy(t)} y2={sy(t)} stroke={Math.abs(t) < 1e-9 ? GRID_STRONG : GRID} strokeWidth={1} />
+      ))}
+
+      {/* dashed mirror line y = x (inverse functions) */}
+      {spec.mirrorLine && (() => {
+        const lo = Math.max(xMin, yMin), hi = Math.min(xMax, yMax);
+        if (hi <= lo) return null;
+        return (
+          <g>
+            <line x1={sx(lo)} y1={sy(lo)} x2={sx(hi)} y2={sy(hi)} stroke={INK_SOFT} strokeWidth={1.2} strokeDasharray="5 4" />
+            <TexLabel tex={"y=x"} x={sx(hi) - 6} y={sy(hi) - 10} align="right" size={12} color={INK_SOFT} w={60} />
+          </g>
+        );
+      })()}
+
+      {/* dashed asymptotes */}
+      {(spec.asymptotes ?? []).map((as, i) =>
+        as.dir === "v" ? (
+          <g key={`as${i}`}>
+            <line x1={sx(as.at)} x2={sx(as.at)} y1={plotT} y2={plotB} stroke={INK_SOFT} strokeWidth={1.2} strokeDasharray="5 4" />
+            {as.label && <TexLabel tex={as.label} x={sx(as.at)} y={plotT + 10} size={12} color={INK_SOFT} w={70} chip />}
+          </g>
+        ) : (
+          <g key={`as${i}`}>
+            <line x1={plotL} x2={plotR} y1={sy(as.at)} y2={sy(as.at)} stroke={INK_SOFT} strokeWidth={1.2} strokeDasharray="5 4" />
+            {as.label && <TexLabel tex={as.label} x={plotR - 6} y={sy(as.at) - 10} align="right" size={12} color={INK_SOFT} w={70} chip />}
+          </g>
+        )
+      )}
+
+      {/* y-axis */}
+      <line x1={axisX} x2={axisX} y1={plotT - 4} y2={plotB} stroke={INK} strokeWidth={1.4} />
+      <VArrow x={axisX} yTop={plotT - 4} />
+      <text x={axisX + 8} y={plotT + 6} fontFamily={ITALIC} fontStyle="italic" fontSize={14} fill={INK_SOFT}>{spec.yAxisLabel ?? "y"}</text>
+
+      {/* x-axis */}
+      <line x1={plotL} x2={plotR} y1={axisY} y2={axisY} stroke={INK} strokeWidth={1.4} />
+      <AxisArrows x1={plotL} x2={plotR} y={axisY} />
+      <text x={plotR + 2} y={axisY + (axisY > plotB - 16 ? -8 : 16)} fontFamily={ITALIC} fontStyle="italic" fontSize={14} fill={INK_SOFT}>{spec.xAxisLabel ?? "x"}</text>
+      {originVisible && <text x={axisX - 12} y={axisY + 15} fontFamily={SERIF} fontSize={12} fill={INK_SOFT}>O</text>}
+
+      {/* axis numerals (integers only, skipping 0 and the arrow-tip ends where the x/y letters sit) */}
+      {xTicks.filter((t) => Math.abs(t) > 1e-9 && Math.abs(t - Math.round(t)) < 1e-9 && sx(t) < plotR - 14).map((t) => (
+        <text key={`xn${t}`} x={sx(t)} y={Math.min(axisY + 15, plotB + 13)} textAnchor="middle" fontFamily={SERIF} fontSize={11.5} fill={INK_SOFT}>{fmtNum(t)}</text>
+      ))}
+      {yTicks.filter((t) => Math.abs(t) > 1e-9 && Math.abs(t - Math.round(t)) < 1e-9 && sy(t) > plotT + 12).map((t) => (
+        <text key={`yn${t}`} x={axisX - 7} y={sy(t) + 4} textAnchor="end" fontFamily={SERIF} fontSize={11.5} fill={INK_SOFT}>{fmtNum(t)}</text>
+      ))}
+
+      {/* the curves (clipped to the plot rectangle) */}
+      <g clipPath={`url(#${clipId})`}>
+        {spec.curves.map((curve, ci) => {
+          const col = FG_COLORS[curve.color ?? "ink"] ?? CURVE;
+          const segs = sampleCurve(curve, xMin, xMax, yMin, yMax);
+          return (
+            <g key={`c${ci}`}>
+              {segs.map((seg, si) => (
+                <path
+                  key={si}
+                  d={pathFor(seg)}
+                  fill="none"
+                  stroke={col}
+                  strokeWidth={curve.color === "accent" ? 2.4 : 2}
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                  strokeDasharray={curve.dashed ? "6 4" : undefined}
+                />
+              ))}
+            </g>
+          );
+        })}
+      </g>
+
+      {/* endpoint open/closed markers for restricted-domain polylines */}
+      {spec.curves.map((curve, ci) => {
+        if (!curve.points || curve.points.length === 0) return null;
+        const col = FG_COLORS[curve.color ?? "ink"] ?? CURVE;
+        const first = curve.points[0], last = curve.points[curve.points.length - 1];
+        return (
+          <g key={`ep${ci}`}>
+            {curve.openStart !== undefined && <circle cx={sx(first.x)} cy={sy(first.y)} r={4} stroke={col} strokeWidth={1.7} fill={curve.openStart ? "#ffffff" : col} />}
+            {curve.openEnd !== undefined && <circle cx={sx(last.x)} cy={sy(last.y)} r={4} stroke={col} strokeWidth={1.7} fill={curve.openEnd ? "#ffffff" : col} />}
+          </g>
+        );
+      })}
+
+      {/* curve labels */}
+      {spec.curves.map((curve, ci) => {
+        if (!curve.label) return null;
+        const col = FG_COLORS[curve.color ?? "ink"] ?? CURVE;
+        let ax: number, ay: number;
+        if (curve.labelAt) {
+          ax = sx(clampX(curve.labelAt.x));
+          ay = sy(clampY(curve.labelAt.y));
+        } else {
+          const segs = sampleCurve(curve, xMin, xMax, yMin, yMax);
+          const seg = segs[segs.length - 1] ?? [];
+          const p = seg[Math.floor(seg.length * 0.72)] ?? { x: (xMin + xMax) / 2, y: (yMin + yMax) / 2 };
+          ax = sx(clampX(p.x));
+          ay = sy(clampY(p.y)) - 12;
+        }
+        return <TexLabel key={`lab${ci}`} tex={curve.label} x={ax} y={ay} size={13.5} color={col} w={140} chip />;
+      })}
+
+      {/* marked points */}
+      {(spec.points ?? []).map((p, i) => {
+        const col = FG_COLORS[p.color ?? "ink"] ?? INK;
+        return (
+          <g key={`mp${i}`}>
+            <circle cx={sx(p.x)} cy={sy(p.y)} r={4} stroke={col} strokeWidth={1.8} fill={p.open ? "#ffffff" : col} />
+            {p.label && <TexLabel tex={p.label} x={sx(p.x)} y={sy(p.y) - 14} size={12.5} color={col} w={110} chip />}
+          </g>
+        );
+      })}
+    </svg>
+  );
+}
+
 /* ------------------------------------------------------------- mechanics */
 
 type MechSpec = Extract<DiagramSpec, { kind: "mechanics" }>;
@@ -1578,6 +1796,7 @@ export function Diagram({ spec, className }: { spec: DiagramSpec; className?: st
   else if (spec.kind === "venn3") body = <Venn3Figure spec={spec} />;
   else if (spec.kind === "probTree") body = <ProbTreeFigure spec={spec} />;
   else if (spec.kind === "probDist") body = <ProbDistFigure spec={spec} />;
+  else if (spec.kind === "functionGraph") body = <FunctionGraphFigure spec={spec} />;
   else if (spec.kind === "mechanics") body = <MechanicsFigure spec={spec} />;
   else {
     const rows = toRows(spec);

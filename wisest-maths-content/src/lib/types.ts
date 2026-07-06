@@ -300,6 +300,76 @@ export type Diagram =
       alt: string;
     }
   | {
+      /** General Cartesian function graph on labelled x–y axes: one or more curves,
+       *  marked points, asymptotes and an optional y = x mirror line. Used for
+       *  "functions and their graphs" and "(further) transformations". */
+      kind: "functionGraph";
+      /** Viewport in graph coordinates. */
+      xMin: number;
+      xMax: number;
+      yMin: number;
+      yMax: number;
+      curves: Array<{
+        /** Explicit polyline through these points — for lines, piecewise-defined
+         *  functions, modulus-of-linear (V shapes) and any bespoke curve. */
+        points?: Array<{ x: number; y: number }>;
+        /** OR a sampled standard curve  y = a·g(b(x − c)) + d  (the renderer does the maths). */
+        fn?: {
+          base:
+            | "line"
+            | "parab"
+            | "cubic"
+            | "recip"
+            | "recipSq"
+            | "sqrt"
+            | "exp"
+            | "ln"
+            | "sin"
+            | "cos";
+          a?: number;
+          b?: number;
+          c?: number;
+          d?: number;
+          /** Plot |f(x)| — reflect the part below the x-axis upward. */
+          outerAbs?: boolean;
+          /** Plot f(|x|) — mirror the x ≥ 0 part into x < 0. */
+          innerAbs?: boolean;
+        };
+        /** ink = given/original (near-black), accent = the answer/transformed (blue), soft = auxiliary. */
+        color?: "ink" | "accent" | "soft";
+        dashed?: boolean;
+        /** TeX label placed near the curve, e.g. "y=f(x)" or "y=|f(x)|". */
+        label?: string;
+        /** Graph-coordinate anchor for the label (defaults to a curve endpoint). */
+        labelAt?: { x: number; y: number };
+        /** Open circles at the polyline ends (restricted domain). */
+        openStart?: boolean;
+        openEnd?: boolean;
+      }>;
+      /** Marked points: intercepts, vertices, key/invariant coordinates. */
+      points?: Array<{
+        x: number;
+        y: number;
+        label?: string;
+        /** Hollow (excluded) rather than filled. */
+        open?: boolean;
+        color?: "ink" | "accent" | "soft";
+      }>;
+      /** Dashed asymptotes: vertical (x = at) or horizontal (y = at). */
+      asymptotes?: Array<{ dir: "v" | "h"; at: number; label?: string }>;
+      /** Draw the dashed mirror line y = x (inverse-function questions). */
+      mirrorLine?: boolean;
+      /** Defaults to "x". */
+      xAxisLabel?: string;
+      /** Defaults to "y". */
+      yAxisLabel?: string;
+      /** Optional integer tick spacing overrides (otherwise chosen automatically). */
+      xTickStep?: number;
+      yTickStep?: number;
+      caption?: string;
+      alt: string;
+    }
+  | {
       /** A pre-rendered figure (e.g. a Manim-generated SVG) served from public/. */
       kind: "image";
       /** Path under public/, e.g. "/mechanics/al.y1.mech.forces-newton.q003.svg". */

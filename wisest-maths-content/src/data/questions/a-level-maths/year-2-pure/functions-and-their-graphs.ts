@@ -235,7 +235,36 @@ export const questions: Question[] = [
           "description": "State the range",
           "workingLatex": "\\text{Range: } g(x)\\geq 0",
           "explanation": "The graph is the upper half of a sideways parabola starting at the origin, so outputs are all values $\\geq 0$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 9,
+            "yMin": -1,
+            "yMax": 4,
+            "curves": [
+              {
+                "fn": {
+                  "base": "sqrt"
+                },
+                "color": "accent",
+                "label": "y=\\sqrt{x}",
+                "labelAt": {
+                  "x": 6.2,
+                  "y": 3
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 0,
+                "label": "(0,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "alt": "The square root curve y equals root x starting at the origin (0,0) and rising gently to the right, with domain x at least 0 and range y at least 0.",
+            "caption": "y = sqrt(x): outputs start at 0 and increase, so the range is y >= 0."
+          }
         }
       ],
       "finalAnswer": "$\\text{Domain: } x\\geq 0,\\ \\text{Range: } g(x)\\geq 0$"
@@ -295,7 +324,41 @@ export const questions: Question[] = [
           "description": "State the restriction",
           "workingLatex": "\\text{Domain: all real } x,\\ x\\neq 2",
           "explanation": "Every other real number is fine, so the graph has a vertical asymptote at $x=2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 7,
+            "yMin": -6,
+            "yMax": 6,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip",
+                  "c": 2
+                },
+                "color": "accent",
+                "label": "y=\\frac{1}{x-2}",
+                "labelAt": {
+                  "x": 5.2,
+                  "y": 2
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": 2,
+                "label": "x=2"
+              },
+              {
+                "dir": "h",
+                "at": 0,
+                "label": "y=0"
+              }
+            ],
+            "alt": "A reciprocal curve y equals 1 over (x minus 2) in two branches, with a vertical asymptote at x equals 2 and a horizontal asymptote at y equals 0.",
+            "caption": "The curve is undefined at x = 2, shown by the vertical asymptote."
+          }
         }
       ],
       "finalAnswer": "$x\\neq 2$"
@@ -743,7 +806,64 @@ export const questions: Question[] = [
           "description": "Conclude",
           "workingLatex": "f \\text{ is one-to-one on } x\\geq 0",
           "explanation": "Restricting to $x\\geq 0$ removes the mirror-image left branch, leaving a one-to-one function.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 4,
+            "yMin": -5,
+            "yMax": 6,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": 0,
+                    "y": -4
+                  },
+                  {
+                    "x": 0.5,
+                    "y": -3.75
+                  },
+                  {
+                    "x": 1,
+                    "y": -3
+                  },
+                  {
+                    "x": 1.5,
+                    "y": -1.75
+                  },
+                  {
+                    "x": 2,
+                    "y": 0
+                  },
+                  {
+                    "x": 2.5,
+                    "y": 2.25
+                  },
+                  {
+                    "x": 3,
+                    "y": 5
+                  }
+                ],
+                "color": "accent",
+                "label": "y=x^2-4",
+                "labelAt": {
+                  "x": 3.1,
+                  "y": 4.6
+                },
+                "openStart": false
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": -4,
+                "label": "(0,\\,-4)",
+                "color": "ink"
+              }
+            ],
+            "alt": "The right half of the parabola y equals x squared minus 4 for x at least 0, starting at its minimum (0,-4) and rising steadily; because only the increasing half is shown, the function is one-to-one.",
+            "caption": "Restricting to x >= 0 keeps only the rising half, so f is one-to-one."
+          }
         }
       ],
       "finalAnswer": "$f(x)\\geq -4$; $f$ is one-to-one because it is strictly increasing for $x\\geq 0$"
@@ -803,7 +923,41 @@ export const questions: Question[] = [
           "description": "State the range",
           "workingLatex": "\\text{Range: } f(x)\\neq 0",
           "explanation": "The range is every real number except $0$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -6,
+            "xMax": 6,
+            "yMin": -8,
+            "yMax": 8,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip",
+                  "a": 3
+                },
+                "color": "accent",
+                "label": "y=\\frac{3}{x}",
+                "labelAt": {
+                  "x": 4,
+                  "y": 3
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": 0,
+                "label": "x=0"
+              },
+              {
+                "dir": "h",
+                "at": 0,
+                "label": "y=0"
+              }
+            ],
+            "alt": "The reciprocal curve y equals 3 over x drawn in two branches that approach the x-axis and y-axis but never touch them, so every output except 0 is achieved.",
+            "caption": "The curve nears y = 0 but never reaches it, so the range is f(x) != 0."
+          }
         }
       ],
       "finalAnswer": "$f(x)\\neq 0$"
@@ -887,7 +1041,24 @@ export const questions: Question[] = [
     "answerType": "description",
     "tags": ["modulus", "graphs", "domain and range"],
     "questionText": "Describe the graph of $y = |x|$, stating the coordinates of its vertex and its range.",
-    "questionDiagram": null,
+    "questionDiagram": {
+      "kind": "functionGraph",
+      "xMin": -5, "xMax": 5, "yMin": -1, "yMax": 5,
+      "curves": [
+        {
+          "points": [
+            { "x": -4, "y": 4 },
+            { "x": 0, "y": 0 },
+            { "x": 4, "y": 4 }
+          ],
+          "color": "ink",
+          "label": "y=|x|",
+          "labelAt": { "x": 3.4, "y": 4.5 }
+        }
+      ],
+      "caption": "The graph of y = |x|.",
+      "alt": "A V-shaped graph of y = |x| on labelled axes with a faint integer grid. The vertex sits at the origin (0, 0) and both arms rise with gradient one; the curve never goes below the x-axis."
+    },
     "workedSolution": {
       "steps": [
         {
@@ -937,7 +1108,47 @@ export const questions: Question[] = [
           "description": "State the description of the graph",
           "workingLatex": "\\text{V-shape}, \\ \\text{vertex } (0,0), \\ \\text{range } y \\ge 0",
           "explanation": "Collecting the features gives a full description of the graph and its behaviour.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -1,
+            "yMax": 5,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -4,
+                    "y": 4
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 4,
+                    "y": 4
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|x|",
+                "labelAt": {
+                  "x": 3.2,
+                  "y": 4.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 0,
+                "label": "(0,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "caption": "y = |x| is a V-shape with its vertex at the origin.",
+            "alt": "A V-shaped graph of y equals the absolute value of x, with vertex at the origin (0,0) and both arms rising with gradient one; the range is y greater than or equal to 0."
+          }
         }
       ],
       "finalAnswer": "$\\text{A V-shaped graph with vertex } (0,\\,0) \\text{ and range } y \\ge 0$"
@@ -997,7 +1208,71 @@ export const questions: Question[] = [
           "description": "State the solutions",
           "workingLatex": "x = 7 \\quad \\text{or} \\quad x = -7",
           "explanation": "Both values satisfy the original equation, so the full solution set is recorded.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -9,
+            "xMax": 9,
+            "yMin": -1,
+            "yMax": 9,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -8,
+                    "y": 8
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 8,
+                    "y": 8
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|x|",
+                "labelAt": {
+                  "x": 6.3,
+                  "y": 8.3
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -8,
+                    "y": 7
+                  },
+                  {
+                    "x": 8,
+                    "y": 7
+                  }
+                ],
+                "color": "soft",
+                "label": "y=7",
+                "labelAt": {
+                  "x": -6.5,
+                  "y": 7.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -7,
+                "y": 7,
+                "label": "(-7,\\,7)",
+                "color": "accent"
+              },
+              {
+                "x": 7,
+                "y": 7,
+                "label": "(7,\\,7)",
+                "color": "accent"
+              }
+            ],
+            "caption": "The solutions of |x| = 7 are where y = |x| meets the line y = 7.",
+            "alt": "The V-shaped graph y equals the absolute value of x crosses the horizontal line y equals 7 at the points (-7,7) and (7,7), giving the solutions x equals minus 7 and x equals 7."
+          }
         }
       ],
       "finalAnswer": "$x = 7 \\ \\text{or} \\ x = -7$"
@@ -1064,7 +1339,71 @@ export const questions: Question[] = [
           "description": "State the solutions",
           "workingLatex": "x = 8 \\quad \\text{or} \\quad x = -2",
           "explanation": "Both cases give valid answers, completing the solution.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -4,
+            "xMax": 10,
+            "yMin": -1,
+            "yMax": 7,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -3,
+                    "y": 6
+                  },
+                  {
+                    "x": 3,
+                    "y": 0
+                  },
+                  {
+                    "x": 9,
+                    "y": 6
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|x-3|",
+                "labelAt": {
+                  "x": 7.4,
+                  "y": 6.3
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -3,
+                    "y": 5
+                  },
+                  {
+                    "x": 9,
+                    "y": 5
+                  }
+                ],
+                "color": "soft",
+                "label": "y=5",
+                "labelAt": {
+                  "x": -2,
+                  "y": 5.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -2,
+                "y": 5,
+                "label": "(-2,\\,5)",
+                "color": "accent"
+              },
+              {
+                "x": 8,
+                "y": 5,
+                "label": "(8,\\,5)",
+                "color": "accent"
+              }
+            ],
+            "caption": "The solutions of |x - 3| = 5 are where y = |x - 3| meets y = 5.",
+            "alt": "The V-shaped graph y equals the absolute value of x minus 3 has vertex at (3,0) and meets the horizontal line y equals 5 at (-2,5) and (8,5), giving x equals minus 2 and x equals 8."
+          }
         }
       ],
       "finalAnswer": "$x = 8 \\ \\text{or} \\ x = -2$"
@@ -1147,8 +1486,25 @@ export const questions: Question[] = [
     "marks": 3,
     "answerType": "description",
     "tags": ["modulus", "graphs", "domain and range"],
-    "questionText": "The graph of $y = |x| + 2$. State the coordinates of the vertex and the range.",
-    "questionDiagram": null,
+    "questionText": "The diagram shows the graph of $y = |x| + 2$. State the coordinates of the vertex and the range.",
+    "questionDiagram": {
+      "kind": "functionGraph",
+      "xMin": -5, "xMax": 5, "yMin": -1, "yMax": 7,
+      "curves": [
+        {
+          "points": [
+            { "x": -4, "y": 6 },
+            { "x": 0, "y": 2 },
+            { "x": 4, "y": 6 }
+          ],
+          "color": "ink",
+          "label": "y=|x|+2",
+          "labelAt": { "x": 3.3, "y": 6.4 }
+        }
+      ],
+      "caption": "The graph of y = |x| + 2.",
+      "alt": "A V-shaped graph of y = |x| + 2 on labelled axes with a faint integer grid. The vertex sits at (0, 2) and both arms rise with gradient one; the lowest point of the graph is at height 2."
+    },
     "workedSolution": {
       "steps": [
         {
@@ -1198,7 +1554,47 @@ export const questions: Question[] = [
           "description": "State the results",
           "workingLatex": "\\text{Vertex } (0,\\,2), \\quad y \\ge 2",
           "explanation": "Collecting the features gives the vertex and the range of the transformed graph.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": 0,
+            "yMax": 7,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -4,
+                    "y": 6
+                  },
+                  {
+                    "x": 0,
+                    "y": 2
+                  },
+                  {
+                    "x": 4,
+                    "y": 6
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|x|+2",
+                "labelAt": {
+                  "x": 3,
+                  "y": 6.3
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 2,
+                "label": "(0,\\,2)",
+                "color": "ink"
+              }
+            ],
+            "caption": "y = |x| + 2 is y = |x| translated 2 units up, so the vertex rises to (0,2).",
+            "alt": "A V-shaped graph of y equals the absolute value of x plus 2, with vertex at (0,2) and range y greater than or equal to 2."
+          }
         }
       ],
       "finalAnswer": "$\\text{Vertex } (0,\\,2), \\ \\text{range } y \\ge 2$"
@@ -1214,8 +1610,25 @@ export const questions: Question[] = [
     "marks": 4,
     "answerType": "coordinates",
     "tags": ["modulus", "graphs"],
-    "questionText": "The graph of $y = |x - 4|$. State the coordinates of the vertex and where the graph meets the $y$-axis.",
-    "questionDiagram": null,
+    "questionText": "The diagram shows the graph of $y = |x - 4|$. State the coordinates of the vertex and where the graph meets the $y$-axis.",
+    "questionDiagram": {
+      "kind": "functionGraph",
+      "xMin": -1, "xMax": 9, "yMin": -1, "yMax": 6,
+      "curves": [
+        {
+          "points": [
+            { "x": 0, "y": 4 },
+            { "x": 4, "y": 0 },
+            { "x": 8, "y": 4 }
+          ],
+          "color": "ink",
+          "label": "y=|x-4|",
+          "labelAt": { "x": 6.6, "y": 4.5 }
+        }
+      ],
+      "caption": "The graph of y = |x - 4|.",
+      "alt": "A V-shaped graph of y = |x - 4| on labelled axes with a faint integer grid. The vertex sits on the x-axis at (4, 0), and the graph meets the y-axis at (0, 4)."
+    },
     "workedSolution": {
       "steps": [
         {
@@ -1264,8 +1677,28 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "State the results",
           "workingLatex": "\\text{Vertex } (4,\\,0), \\quad y\\text{-axis at } (0,\\,4)",
-          "explanation": "Collecting the key points fully answers the question.",
-          "diagram": null
+          "explanation": "Collecting the key points fully answers the question. The V-shape confirms the picture: its lowest point sits on the $x$-axis at $(4,0)$ and the left arm rises to cross the $y$-axis at $(0,4)$.",
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": -1,
+            "yMax": 6,
+            "curves": [
+              {
+                "fn": { "base": "line", "c": 4, "outerAbs": true },
+                "color": "accent",
+                "label": "y=|x-4|",
+                "labelAt": { "x": 6.9, "y": 3.7 }
+              }
+            ],
+            "points": [
+              { "x": 4, "y": 0, "label": "(4,\\,0)", "color": "ink" },
+              { "x": 0, "y": 4, "label": "(0,\\,4)", "color": "ink" }
+            ],
+            "caption": "y = |x - 4| is the graph of y = |x| translated 4 units to the right.",
+            "alt": "A V-shaped graph of y = |x - 4| with its vertex on the x-axis at (4, 0), rising to cross the y-axis at (0, 4)."
+          }
         }
       ],
       "finalAnswer": "$\\text{Vertex } (4,\\,0); \\ \\text{meets } y\\text{-axis at } (0,\\,4)$"
@@ -1846,7 +2279,51 @@ export const questions: Question[] = [
           "description": "State the range",
           "workingLatex": "3 \\le f(x) \\le 13",
           "explanation": "The range is the full set of outputs, running from the minimum to the maximum inclusive.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 14,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": 0,
+                    "y": 3
+                  },
+                  {
+                    "x": 5,
+                    "y": 13
+                  }
+                ],
+                "color": "accent",
+                "label": "y=2x+3",
+                "labelAt": {
+                  "x": 3.4,
+                  "y": 11
+                },
+                "openStart": false,
+                "openEnd": false
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 3,
+                "label": "(0,\\,3)",
+                "color": "ink"
+              },
+              {
+                "x": 5,
+                "y": 13,
+                "label": "(5,\\,13)",
+                "color": "ink"
+              }
+            ],
+            "alt": "The straight line segment y equals 2x plus 3 running from the closed endpoint (0,3) up to the closed endpoint (5,13), so the outputs fill the interval from 3 to 13.",
+            "caption": "On 0 <= x <= 5 the increasing line gives the range 3 <= f(x) <= 13."
+          }
         }
       ],
       "finalAnswer": "$3 \\le f(x) \\le 13$"
@@ -1941,7 +2418,63 @@ export const questions: Question[] = [
           "description": "State the range",
           "workingLatex": "-2 \\le g(x) \\le 7",
           "explanation": "This is the full set of outputs of $g$ on the given domain.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 4,
+            "yMin": -3,
+            "yMax": 8,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": -1
+                  },
+                  {
+                    "x": 0,
+                    "y": -2
+                  },
+                  {
+                    "x": 1,
+                    "y": -1
+                  },
+                  {
+                    "x": 2,
+                    "y": 2
+                  },
+                  {
+                    "x": 3,
+                    "y": 7
+                  }
+                ],
+                "color": "accent",
+                "label": "y=x^2-2",
+                "labelAt": {
+                  "x": 1.2,
+                  "y": 4.5
+                },
+                "openStart": false,
+                "openEnd": false
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": -2,
+                "label": "(0,\\,-2)",
+                "color": "ink"
+              },
+              {
+                "x": 3,
+                "y": 7,
+                "label": "(3,\\,7)",
+                "color": "ink"
+              }
+            ],
+            "alt": "The parabola segment y equals x squared minus 2 on the domain from x equals -1 to x equals 3, dipping to its minimum (0,-2) and rising to the endpoint (3,7), so the range runs from -2 to 7.",
+            "caption": "The vertex gives the minimum -2 and the right endpoint gives the maximum 7."
+          }
         }
       ],
       "finalAnswer": "$-2 \\le g(x) \\le 7$"
@@ -2191,7 +2724,50 @@ export const questions: Question[] = [
           "description": "Identify the least value and where it occurs",
           "workingLatex": "f_{\\min} = -\\dfrac{25}{4} \\ \\text{at} \\ x = \\dfrac{5}{2}",
           "explanation": "Setting the square to zero at $x=\\tfrac{5}{2}$ leaves only the constant $-\\tfrac{25}{4}$ as the minimum.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 6,
+            "yMin": -8,
+            "yMax": 8,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "c": 2.5,
+                  "d": -6.25
+                },
+                "color": "accent",
+                "label": "y=x^2-5x",
+                "labelAt": {
+                  "x": 5,
+                  "y": 5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 0,
+                "label": "(0,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 5,
+                "y": 0,
+                "label": "(5,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 2.5,
+                "y": -6.25,
+                "label": "(2.5,\\,-6.25)",
+                "color": "accent"
+              }
+            ],
+            "alt": "The upward parabola y equals x squared minus 5x crossing the x-axis at (0,0) and (5,0), with its lowest point (the vertex) at (2.5,-6.25).",
+            "caption": "The vertex (2.5, -6.25) is the least value of f(x)."
+          }
         },
         {
           "stepNumber": 10,
@@ -3029,7 +3605,40 @@ export const questions: Question[] = [
           "description": "State the range",
           "workingLatex": "f(x) \\geq 2",
           "explanation": "Because the parabola rises on both sides of the vertex, every output is at least $2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": 0,
+            "xMax": 6,
+            "yMin": 0,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "a": 1,
+                  "b": 1,
+                  "c": 3,
+                  "d": 2
+                },
+                "color": "accent",
+                "label": "y=x^2-6x+11",
+                "labelAt": {
+                  "x": 4.5,
+                  "y": 9.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 2,
+                "label": "(3,\\,2)",
+                "color": "ink"
+              }
+            ],
+            "caption": "Completing the square gives y = (x-3)^2 + 2, so the least value is 2 at x = 3.",
+            "alt": "An upward-opening parabola y equals x squared minus 6x plus 11 with its lowest point at (3,2); the curve rises on both sides, so the range is y greater than or equal to 2."
+          }
         }
       ],
       "finalAnswer": "$f(x) = (x - 3)^2 + 2$; least value $2$, so range $f(x) \\geq 2$"
@@ -3462,7 +4071,76 @@ export const questions: Question[] = [
           "description": "State the conclusion",
           "workingLatex": "f^{-1}(x) = \\sqrt{x - 4}, \\; x \\geq 4, \\; f^{-1}(x) \\geq 0",
           "explanation": "The inverse simply swaps the domain and range of the original function.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 10,
+            "yMin": -1,
+            "yMax": 10,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": 0,
+                    "y": 4
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 4.25
+                  },
+                  {
+                    "x": 1,
+                    "y": 5
+                  },
+                  {
+                    "x": 1.5,
+                    "y": 6.25
+                  },
+                  {
+                    "x": 2,
+                    "y": 8
+                  }
+                ],
+                "color": "ink",
+                "dashed": true,
+                "label": "y=f(x)",
+                "openStart": false,
+                "labelAt": {
+                  "x": 2.4,
+                  "y": 8.4
+                }
+              },
+              {
+                "fn": {
+                  "base": "sqrt",
+                  "c": 4
+                },
+                "color": "accent",
+                "label": "y=f^{-1}(x)",
+                "labelAt": {
+                  "x": 8.6,
+                  "y": 2.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 4,
+                "label": "(0,\\,4)",
+                "color": "ink"
+              },
+              {
+                "x": 4,
+                "y": 0,
+                "label": "(4,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "mirrorLine": true,
+            "caption": "f and its inverse are reflections of each other in the line y = x.",
+            "alt": "The restricted parabola f(x)=x^2+4 for x greater than or equal to 0 (dashed) starting at (0,4), and its inverse sqrt(x-4) starting at (4,0), each the mirror image of the other in the line y=x."
+          }
         }
       ],
       "finalAnswer": "$f^{-1}(x) = \\sqrt{x - 4}$; domain $x \\geq 4$; range $f^{-1}(x) \\geq 0$"
@@ -3550,7 +4228,53 @@ export const questions: Question[] = [
           "description": "State the conclusion",
           "workingLatex": "f^{-1}(x) = \\dfrac{x + 7}{2}, \\quad x = 7",
           "explanation": "The graphs of $f$ and $f^{-1}$ meet on the line $y = x$, exactly where $x = 7$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -8,
+            "xMax": 12,
+            "yMin": -12,
+            "yMax": 12,
+            "curves": [
+              {
+                "fn": {
+                  "base": "line",
+                  "a": 2,
+                  "d": -7
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=f(x)",
+                "labelAt": {
+                  "x": 9,
+                  "y": 11
+                }
+              },
+              {
+                "fn": {
+                  "base": "line",
+                  "a": 0.5,
+                  "d": 3.5
+                },
+                "color": "accent",
+                "label": "y=f^{-1}(x)",
+                "labelAt": {
+                  "x": 9.5,
+                  "y": 7.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 7,
+                "y": 7,
+                "label": "(7,\\,7)",
+                "color": "ink"
+              }
+            ],
+            "mirrorLine": true,
+            "caption": "f and f^{-1} meet on the line y = x, giving the solution x = 7.",
+            "alt": "The line f(x)=2x-7 (dashed) and its inverse (x+7)/2 cross each other on the line y=x at the point (7,7)."
+          }
         }
       ],
       "finalAnswer": "$f^{-1}(x) = \\dfrac{x + 7}{2}, \\; x = 7$"
@@ -3793,7 +4517,44 @@ export const questions: Question[] = [
           "description": "State the conclusion",
           "workingLatex": "f^{-1}(x) = f(x) \\;\\Rightarrow\\; f \\text{ is self-inverse}",
           "explanation": "Because applying $f$ twice returns the start, its graph is symmetric in the line $y = x$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -5,
+            "xMax": 7,
+            "yMin": -5,
+            "yMax": 7,
+            "curves": [
+              {
+                "fn": {
+                  "base": "recip",
+                  "a": 4,
+                  "c": 1,
+                  "d": 1
+                },
+                "color": "accent",
+                "label": "y=\\frac{x+3}{x-1}",
+                "labelAt": {
+                  "x": 4.5,
+                  "y": 4
+                }
+              }
+            ],
+            "asymptotes": [
+              {
+                "dir": "v",
+                "at": 1,
+                "label": "x=1"
+              },
+              {
+                "dir": "h",
+                "at": 1,
+                "label": "y=1"
+              }
+            ],
+            "mirrorLine": true,
+            "caption": "The curve is symmetric in y = x, which is exactly what self-inverse means.",
+            "alt": "A reciprocal curve y=(x+3)/(x-1) with vertical asymptote x=1 and horizontal asymptote y=1, symmetric in the dashed line y=x."
+          }
         }
       ],
       "finalAnswer": "$f^{-1}(x) = \\dfrac{x + 3}{x - 1}$, so $f$ is self-inverse"
@@ -3909,7 +4670,77 @@ export const questions: Question[] = [
           "description": "State the conclusion",
           "workingLatex": "f^{-1}(x) = 2 + \\sqrt{x - 3}, \\; x \\geq 3",
           "explanation": "The square root also demands $x - 3 \\geq 0$, agreeing with the domain we found.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 9,
+            "yMin": -1,
+            "yMax": 9,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": 2,
+                    "y": 3
+                  },
+                  {
+                    "x": 2.5,
+                    "y": 3.25
+                  },
+                  {
+                    "x": 3,
+                    "y": 4
+                  },
+                  {
+                    "x": 3.5,
+                    "y": 5.25
+                  },
+                  {
+                    "x": 4,
+                    "y": 7
+                  }
+                ],
+                "color": "ink",
+                "dashed": true,
+                "label": "y=f(x)",
+                "openStart": false,
+                "labelAt": {
+                  "x": 4,
+                  "y": 7.6
+                }
+              },
+              {
+                "fn": {
+                  "base": "sqrt",
+                  "c": 3,
+                  "d": 2
+                },
+                "color": "accent",
+                "label": "y=f^{-1}(x)",
+                "labelAt": {
+                  "x": 7.6,
+                  "y": 4.3
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": 3,
+                "label": "(2,\\,3)",
+                "color": "ink"
+              },
+              {
+                "x": 3,
+                "y": 2,
+                "label": "(3,\\,2)",
+                "color": "ink"
+              }
+            ],
+            "mirrorLine": true,
+            "caption": "f (from x >= 2) and f^{-1} (from x >= 3) are reflections in y = x.",
+            "alt": "The half-parabola f(x)=(x-2)^2+3 for x greater than or equal to 2 (dashed) starting at (2,3), and its inverse 2+sqrt(x-3) starting at (3,2), reflections of each other in the line y=x."
+          }
         }
       ],
       "finalAnswer": "$f^{-1}(x) = 2 + \\sqrt{x - 3}, \\; x \\geq 3$"
@@ -4187,7 +5018,63 @@ export const questions: Question[] = [
           "description": "State the range of f",
           "workingLatex": "0 \\leq f(x) \\leq 4",
           "explanation": "Because $f$ moves continuously from $4$ down to $0$, it hits every value in between.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 4,
+            "yMin": -1,
+            "yMax": 5,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": 0,
+                    "y": 4
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 3.75
+                  },
+                  {
+                    "x": 1,
+                    "y": 3
+                  },
+                  {
+                    "x": 1.5,
+                    "y": 1.75
+                  },
+                  {
+                    "x": 2,
+                    "y": 0
+                  }
+                ],
+                "color": "accent",
+                "label": "y=4-x^2",
+                "labelAt": {
+                  "x": 2.5,
+                  "y": 2.5
+                },
+                "openStart": false,
+                "openEnd": false
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 4,
+                "label": "(0,\\,4)",
+                "color": "ink"
+              },
+              {
+                "x": 2,
+                "y": 0,
+                "label": "(2,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "caption": "On 0 <= x <= 2 the curve falls from (0,4) to (2,0), so the range is 0 <= f(x) <= 4.",
+            "alt": "The segment of the downward parabola y equals 4 minus x squared for x between 0 and 2, decreasing from its maximum at (0,4) down to (2,0); the range is 0 to 4 inclusive."
+          }
         },
         {
           "stepNumber": 6,
@@ -4468,7 +5355,63 @@ export const questions: Question[] = [
           "description": "Conclude on continuity",
           "workingLatex": "f \\text{ is continuous at } x = 2",
           "explanation": "Because the left value, right value and $f(2)$ all equal $3$, the graph joins up smoothly.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 6,
+            "yMin": -1,
+            "yMax": 13,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": 0
+                  },
+                  {
+                    "x": 2,
+                    "y": 3
+                  }
+                ],
+                "color": "ink",
+                "label": "y=x+1",
+                "labelAt": {
+                  "x": -0.4,
+                  "y": 1.6
+                },
+                "openEnd": true
+              },
+              {
+                "points": [
+                  {
+                    "x": 2,
+                    "y": 3
+                  },
+                  {
+                    "x": 5,
+                    "y": 12
+                  }
+                ],
+                "color": "accent",
+                "label": "y=3x-3",
+                "labelAt": {
+                  "x": 3.7,
+                  "y": 9
+                },
+                "openStart": false
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": 3,
+                "label": "(2,\\,3)",
+                "color": "ink"
+              }
+            ],
+            "caption": "Both pieces reach the height 3 at x = 2, so the graph joins with no gap.",
+            "alt": "A piecewise graph: the line y equals x plus 1 for x less than 2 ends with a hollow circle at (2,3), and the steeper line y equals 3x minus 3 for x at least 2 begins with a filled circle at the same point (2,3), so the function is continuous at x equals 2."
+          }
         },
         {
           "stepNumber": 14,
@@ -4584,7 +5527,71 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|2x-1| \\; \\cap \\; y=x+4",
           "explanation": "The V-shaped graph $y=|2x-1|$ meets the straight line $y=x+4$ at exactly two points, matching our two solutions.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -4,
+            "xMax": 7,
+            "yMin": -1,
+            "yMax": 10,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -4,
+                    "y": 9
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  {
+                    "x": 5.5,
+                    "y": 10
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|2x-1|",
+                "labelAt": {
+                  "x": -3.1,
+                  "y": 7.6
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -4,
+                    "y": 0
+                  },
+                  {
+                    "x": 6,
+                    "y": 10
+                  }
+                ],
+                "color": "soft",
+                "label": "y=x+4",
+                "labelAt": {
+                  "x": 2.2,
+                  "y": 7.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 5,
+                "y": 9,
+                "label": "(5,\\,9)",
+                "color": "accent"
+              },
+              {
+                "x": -1,
+                "y": 3,
+                "label": "(-1,\\,3)",
+                "color": "accent"
+              }
+            ],
+            "caption": "The line meets the V at two points, giving x = -1 and x = 5.",
+            "alt": "The V-shaped graph of y = |2x-1| with vertex at (0.5, 0), and the straight line y = x + 4. They cross at (-1, 3) and (5, 9), the two solutions."
+          }
         },
         {
           "stepNumber": 14,
@@ -4700,7 +5707,75 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|x-2| \\; \\cap \\; y=|2x+1|",
           "explanation": "Two V-shaped graphs cross at exactly two points, agreeing with our two solutions.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -5,
+            "xMax": 5,
+            "yMin": -1,
+            "yMax": 7,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -5,
+                    "y": 7
+                  },
+                  {
+                    "x": 2,
+                    "y": 0
+                  },
+                  {
+                    "x": 5,
+                    "y": 3
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|x-2|",
+                "labelAt": {
+                  "x": 4,
+                  "y": 3.4
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -4,
+                    "y": 7
+                  },
+                  {
+                    "x": -0.5,
+                    "y": 0
+                  },
+                  {
+                    "x": 3,
+                    "y": 7
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|2x+1|",
+                "labelAt": {
+                  "x": 2.4,
+                  "y": 6.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -3,
+                "y": 5,
+                "label": "(-3,\\,5)",
+                "color": "ink"
+              },
+              {
+                "x": 0.3333,
+                "y": 1.6667,
+                "label": "\\left(\\frac{1}{3},\\,\\frac{5}{3}\\right)",
+                "color": "ink"
+              }
+            ],
+            "caption": "The two V-shapes cross twice, at x = -3 and x = 1/3.",
+            "alt": "Two V-shaped graphs: y = |x-2| with vertex (2, 0), and y = |2x+1| with vertex (-0.5, 0). They intersect at (-3, 5) and at (1/3, 5/3)."
+          }
         },
         {
           "stepNumber": 14,
@@ -4809,7 +5884,73 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|3x-2| \\text{ below } y=7",
           "explanation": "The V-shaped graph dips below the horizontal line $y=7$ precisely between the two crossing points.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 4,
+            "yMin": -1,
+            "yMax": 9,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -2.3333,
+                    "y": 9
+                  },
+                  {
+                    "x": 0.6667,
+                    "y": 0
+                  },
+                  {
+                    "x": 3.6667,
+                    "y": 9
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|3x-2|",
+                "labelAt": {
+                  "x": -1.5,
+                  "y": 6.8
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -3,
+                    "y": 7
+                  },
+                  {
+                    "x": 4,
+                    "y": 7
+                  }
+                ],
+                "color": "soft",
+                "label": "y=7",
+                "labelAt": {
+                  "x": 3.3,
+                  "y": 7.6
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -1.6667,
+                "y": 7,
+                "label": "\\left(-\\frac{5}{3},\\,7\\right)",
+                "color": "ink",
+                "open": true
+              },
+              {
+                "x": 3,
+                "y": 7,
+                "label": "(3,\\,7)",
+                "color": "ink",
+                "open": true
+              }
+            ],
+            "caption": "|3x-2| lies below y = 7 exactly on the open interval -5/3 < x < 3.",
+            "alt": "The V-shaped graph of y = |3x-2| and the horizontal line y = 7. The V dips below the line between the crossing points at x = -5/3 and x = 3, shown as hollow dots because the endpoints are excluded."
+          }
         },
         {
           "stepNumber": 13,
@@ -4918,7 +6059,73 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|x+1| \\text{ on or above } y=4",
           "explanation": "The V-shaped graph sits on or above the line $y=4$ everywhere outside the two crossing points.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -8,
+            "xMax": 6,
+            "yMin": -1,
+            "yMax": 8,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -8,
+                    "y": 7
+                  },
+                  {
+                    "x": -1,
+                    "y": 0
+                  },
+                  {
+                    "x": 6,
+                    "y": 7
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|x+1|",
+                "labelAt": {
+                  "x": 3.5,
+                  "y": 5.6
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -8,
+                    "y": 4
+                  },
+                  {
+                    "x": 6,
+                    "y": 4
+                  }
+                ],
+                "color": "soft",
+                "label": "y=4",
+                "labelAt": {
+                  "x": 4.6,
+                  "y": 4.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -5,
+                "y": 4,
+                "label": "(-5,\\,4)",
+                "color": "ink",
+                "open": false
+              },
+              {
+                "x": 3,
+                "y": 4,
+                "label": "(3,\\,4)",
+                "color": "ink",
+                "open": false
+              }
+            ],
+            "caption": "|x+1| is at least 4 outside the interval, i.e. x <= -5 or x >= 3.",
+            "alt": "The V-shaped graph of y = |x+1| with vertex (-1, 0) and the horizontal line y = 4. The graph sits on or above the line outside the crossing points (-5, 4) and (3, 4), which are filled dots because the endpoints are included."
+          }
         },
         {
           "stepNumber": 13,
@@ -5041,7 +6248,75 @@ export const questions: Question[] = [
           "description": "State the solution interval.",
           "workingLatex": "-3 \\leq x \\leq -1",
           "explanation": "These are all $x$ for which $|2x+3|$ does not exceed $|x|$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -5,
+            "xMax": 3,
+            "yMin": -1,
+            "yMax": 5,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -4,
+                    "y": 5
+                  },
+                  {
+                    "x": -1.5,
+                    "y": 0
+                  },
+                  {
+                    "x": 1,
+                    "y": 5
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|2x+3|",
+                "labelAt": {
+                  "x": 0.6,
+                  "y": 4.5
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -5,
+                    "y": 5
+                  },
+                  {
+                    "x": 0,
+                    "y": 0
+                  },
+                  {
+                    "x": 3,
+                    "y": 3
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|x|",
+                "labelAt": {
+                  "x": 2.1,
+                  "y": 3.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -3,
+                "y": 3,
+                "label": "(-3,\\,3)",
+                "color": "ink"
+              },
+              {
+                "x": -1,
+                "y": 1,
+                "label": "(-1,\\,1)",
+                "color": "ink"
+              }
+            ],
+            "caption": "|2x+3| <= |x| exactly where the blue V lies on or below y = |x|.",
+            "alt": "Two V-shaped graphs: y = |2x+3| with vertex (-1.5, 0) and y = |x| with vertex at the origin. The first lies on or below the second between (-3, 3) and (-1, 1)."
+          }
         }
       ],
       "finalAnswer": "$-3 \\leq x \\leq -1$"
@@ -5058,7 +6333,24 @@ export const questions: Question[] = [
     "answerType": "description",
     "tags": ["modulus", "graph transformations", "modulus graphs"],
     "questionText": "For the graph of $y = |x - 1| - 3$: state the coordinates of the vertex and the range, and solve $|x - 1| - 3 = 0$.",
-    "questionDiagram": null,
+    "questionDiagram": {
+      "kind": "functionGraph",
+      "xMin": -5, "xMax": 7, "yMin": -4, "yMax": 3,
+      "curves": [
+        {
+          "points": [
+            { "x": -4, "y": 2 },
+            { "x": 1, "y": -3 },
+            { "x": 6, "y": 2 }
+          ],
+          "color": "ink",
+          "label": "y=|x-1|-3",
+          "labelAt": { "x": 4.3, "y": 2.4 }
+        }
+      ],
+      "caption": "The graph of y = |x - 1| - 3.",
+      "alt": "A V-shaped graph of y = |x - 1| - 3 on labelled axes with a faint integer grid. The vertex sits below the x-axis at (1, -3), and the two arms cross the x-axis at x = -2 and x = 4."
+    },
     "workedSolution": {
       "steps": [
         {
@@ -5150,7 +6442,59 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "\\text{vertex } (1,-3), \\; \\text{roots } x=-2, 4",
           "explanation": "The V has its corner below the axis at $(1,-3)$ and cuts the $x$-axis symmetrically at $x=-2$ and $x=4$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -4,
+            "xMax": 6,
+            "yMin": -4,
+            "yMax": 3,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -3,
+                    "y": 1
+                  },
+                  {
+                    "x": 1,
+                    "y": -3
+                  },
+                  {
+                    "x": 5,
+                    "y": 1
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|x-1|-3",
+                "labelAt": {
+                  "x": 4.3,
+                  "y": 2
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 1,
+                "y": -3,
+                "label": "(1,\\,-3)",
+                "color": "ink"
+              },
+              {
+                "x": -2,
+                "y": 0,
+                "label": "(-2,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 4,
+                "y": 0,
+                "label": "(4,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "caption": "The V dips to (1,-3) and cuts the x-axis at x = -2 and x = 4.",
+            "alt": "A V-shaped graph of y=|x-1|-3 with its lowest point at (1,-3), crossing the x-axis at (-2,0) and (4,0)."
+          }
         },
         {
           "stepNumber": 14,
@@ -5174,7 +6518,24 @@ export const questions: Question[] = [
     "answerType": "description",
     "tags": ["modulus", "graph transformations", "modulus graphs"],
     "questionText": "For the graph of $y = |2x - 4|$: state the coordinates of the vertex, and solve $|2x - 4| = 6$.",
-    "questionDiagram": null,
+    "questionDiagram": {
+      "kind": "functionGraph",
+      "xMin": -2, "xMax": 6, "yMin": -1, "yMax": 7,
+      "curves": [
+        {
+          "points": [
+            { "x": -1, "y": 6 },
+            { "x": 2, "y": 0 },
+            { "x": 5, "y": 6 }
+          ],
+          "color": "ink",
+          "label": "y=|2x-4|",
+          "labelAt": { "x": 3.6, "y": 6.4 }
+        }
+      ],
+      "caption": "The graph of y = |2x - 4|.",
+      "alt": "A narrow V-shaped graph of y = |2x - 4| on labelled axes with a faint integer grid. The vertex sits on the x-axis at (2, 0) and both arms rise with gradient two."
+    },
     "workedSolution": {
       "steps": [
         {
@@ -5266,7 +6627,77 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|2x-4| \\; \\cap \\; y=6",
           "explanation": "The horizontal line $y=6$ cuts the V at two points symmetric about $x=2$, namely $x=-1$ and $x=5$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 7,
+            "yMin": -1,
+            "yMax": 9,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": 6
+                  },
+                  {
+                    "x": 2,
+                    "y": 0
+                  },
+                  {
+                    "x": 5,
+                    "y": 6
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|2x-4|",
+                "labelAt": {
+                  "x": 0.2,
+                  "y": 5.5
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": 6
+                  },
+                  {
+                    "x": 5,
+                    "y": 6
+                  }
+                ],
+                "color": "soft",
+                "label": "y=6",
+                "labelAt": {
+                  "x": 6,
+                  "y": 6.5
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 2,
+                "y": 0,
+                "label": "(2,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": -1,
+                "y": 6,
+                "label": "(-1,\\,6)",
+                "color": "ink"
+              },
+              {
+                "x": 5,
+                "y": 6,
+                "label": "(5,\\,6)",
+                "color": "ink"
+              }
+            ],
+            "caption": "The line y = 6 cuts the V at x = -1 and x = 5, symmetric about the vertex x = 2.",
+            "alt": "The V-shaped graph y=|2x-4| with vertex (2,0) meets the horizontal line y=6 at the two points (-1,6) and (5,6)."
+          }
         },
         {
           "stepNumber": 14,
@@ -5290,7 +6721,24 @@ export const questions: Question[] = [
     "answerType": "description",
     "tags": ["modulus", "graph transformations", "modulus graphs"],
     "questionText": "Describe the graph of $y = |x - 3| + 1$ as a sequence of transformations of $y = |x|$, and state the coordinates of its minimum point.",
-    "questionDiagram": null,
+    "questionDiagram": {
+      "kind": "functionGraph",
+      "xMin": -2, "xMax": 8, "yMin": -1, "yMax": 6,
+      "curves": [
+        {
+          "points": [
+            { "x": -1, "y": 5 },
+            { "x": 3, "y": 1 },
+            { "x": 7, "y": 5 }
+          ],
+          "color": "ink",
+          "label": "y=|x-3|+1",
+          "labelAt": { "x": 5.4, "y": 5.3 }
+        }
+      ],
+      "caption": "The graph of y = |x - 3| + 1.",
+      "alt": "A V-shaped graph of y = |x - 3| + 1 on labelled axes with a faint integer grid. The vertex — the minimum point — sits at (3, 1), moved three units right and one unit up from the graph of y = |x|."
+    },
     "workedSolution": {
       "steps": [
         {
@@ -5375,7 +6823,47 @@ export const questions: Question[] = [
           "description": "Describe the resulting shape.",
           "workingLatex": "\\text{V opening upward, vertex } (3,1)",
           "explanation": "The graph is a V opening upward with slopes $\\pm 1$, sitting entirely on or above the line $y=1$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -2,
+            "xMax": 8,
+            "yMin": 0,
+            "yMax": 6,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": 5
+                  },
+                  {
+                    "x": 3,
+                    "y": 1
+                  },
+                  {
+                    "x": 7,
+                    "y": 5
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|x-3|+1",
+                "labelAt": {
+                  "x": 6.2,
+                  "y": 4.7
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 3,
+                "y": 1,
+                "label": "(3,\\,1)",
+                "color": "ink"
+              }
+            ],
+            "caption": "y = |x| translated 3 right and 1 up, with minimum point (3,1).",
+            "alt": "An upward-opening V-shaped graph of y=|x-3|+1 with slopes plus and minus 1, sitting on or above y=1, with its minimum point at (3,1)."
+          }
         },
         {
           "stepNumber": 13,
@@ -5498,7 +6986,66 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|x-4| \\text{ above } y=2x",
           "explanation": "The V-shaped graph $y=|x-4|$ stays above the line $y=2x$ for all $x$ left of their single intersection at $x=\\tfrac{4}{3}$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -1,
+            "xMax": 8,
+            "yMin": -2,
+            "yMax": 9,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": 5
+                  },
+                  {
+                    "x": 4,
+                    "y": 0
+                  },
+                  {
+                    "x": 8,
+                    "y": 4
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|x-4|",
+                "labelAt": {
+                  "x": 6.6,
+                  "y": 3.4
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -1,
+                    "y": -2
+                  },
+                  {
+                    "x": 4.5,
+                    "y": 9
+                  }
+                ],
+                "color": "soft",
+                "label": "y=2x",
+                "labelAt": {
+                  "x": 3.4,
+                  "y": 8
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 1.3333,
+                "y": 2.6667,
+                "label": "\\left(\\frac{4}{3},\\,\\frac{8}{3}\\right)",
+                "color": "ink",
+                "open": true
+              }
+            ],
+            "caption": "|x-4| exceeds 2x for all x to the left of the single crossing at x = 4/3.",
+            "alt": "The V-shaped graph of y = |x-4| with vertex (4, 0) and the line y = 2x. They meet once at (4/3, 8/3), shown as a hollow dot; the V stays above the line for every x to the left of it."
+          }
         },
         {
           "stepNumber": 15,
@@ -5614,7 +7161,87 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|x^2-1| \\; \\cap \\; y=3",
           "explanation": "The line $y=3$ crosses the curve $y=|x^2-1|$ at the two symmetric points $x=\\pm 2$.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 3,
+            "yMin": -1.5,
+            "yMax": 5,
+            "curves": [
+              {
+                "fn": {
+                  "base": "parab",
+                  "d": -1
+                },
+                "color": "ink",
+                "dashed": true,
+                "label": "y=x^2-1",
+                "labelAt": {
+                  "x": -2.5,
+                  "y": 4.2
+                }
+              },
+              {
+                "fn": {
+                  "base": "parab",
+                  "d": -1,
+                  "outerAbs": true
+                },
+                "color": "accent",
+                "label": "y=|x^2-1|",
+                "labelAt": {
+                  "x": 2.2,
+                  "y": 4.4
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -3,
+                    "y": 3
+                  },
+                  {
+                    "x": 3,
+                    "y": 3
+                  }
+                ],
+                "color": "soft",
+                "label": "y=3",
+                "labelAt": {
+                  "x": 0.3,
+                  "y": 3.4
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": -2,
+                "y": 3,
+                "label": "(-2,\\,3)",
+                "color": "ink"
+              },
+              {
+                "x": 2,
+                "y": 3,
+                "label": "(2,\\,3)",
+                "color": "ink"
+              },
+              {
+                "x": -1,
+                "y": 0,
+                "label": "(-1,\\,0)",
+                "color": "ink"
+              },
+              {
+                "x": 1,
+                "y": 0,
+                "label": "(1,\\,0)",
+                "color": "ink"
+              }
+            ],
+            "caption": "y = 3 cuts y = |x^2-1| at the two symmetric points x = -2 and x = 2.",
+            "alt": "The curve y = |x^2-1|, formed by reflecting the dip of y = x^2-1 up so it touches the x-axis at (-1, 0) and (1, 0), together with the horizontal line y = 3 crossing it at (-2, 3) and (2, 3)."
+          }
         },
         {
           "stepNumber": 14,
@@ -6106,7 +7733,75 @@ export const questions: Question[] = [
           "description": "Describe the graphical picture.",
           "workingLatex": "y=|2x-1| \\; \\cap \\; y=|x|+1",
           "explanation": "The graphs meet at exactly two points, $x=0$ and $x=2$, matching our two solutions.",
-          "diagram": null
+          "diagram": {
+            "kind": "functionGraph",
+            "xMin": -3,
+            "xMax": 4,
+            "yMin": -1,
+            "yMax": 6,
+            "curves": [
+              {
+                "points": [
+                  {
+                    "x": -2.5,
+                    "y": 6
+                  },
+                  {
+                    "x": 0.5,
+                    "y": 0
+                  },
+                  {
+                    "x": 3.5,
+                    "y": 6
+                  }
+                ],
+                "color": "ink",
+                "label": "y=|2x-1|",
+                "labelAt": {
+                  "x": -2,
+                  "y": 5.4
+                }
+              },
+              {
+                "points": [
+                  {
+                    "x": -3,
+                    "y": 4
+                  },
+                  {
+                    "x": 0,
+                    "y": 1
+                  },
+                  {
+                    "x": 4,
+                    "y": 5
+                  }
+                ],
+                "color": "accent",
+                "label": "y=|x|+1",
+                "labelAt": {
+                  "x": 3,
+                  "y": 4.8
+                }
+              }
+            ],
+            "points": [
+              {
+                "x": 0,
+                "y": 1,
+                "label": "(0,\\,1)",
+                "color": "ink"
+              },
+              {
+                "x": 2,
+                "y": 3,
+                "label": "(2,\\,3)",
+                "color": "ink"
+              }
+            ],
+            "caption": "The graphs meet at x = 0 and x = 2, the two solutions.",
+            "alt": "Two graphs: the V-shaped y = |2x-1| with vertex (0.5, 0), and y = |x|+1 with vertex (0, 1). They intersect at (0, 1) and (2, 3)."
+          }
         },
         {
           "stepNumber": 16,
