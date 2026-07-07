@@ -9,9 +9,52 @@ from pathlib import Path
 TS_HEADER_FINAL = 'import { Question } from "@/lib/types";\n\nexport const questions: Question[] = '
 TS_HEADER_BATCH = 'import type { Question } from "@/lib/types";\n\n'
 
-_ARRAY_EXPORT_RE = re.compile(
-    r"export const (?:batch|questions): Question\[\] = (\[[\s\S]*\]);"
+_ARRAY_EXPORT_MARKER = re.compile(
+    r"export const (?:batch|questions): Question\[\]\s*="
 )
+
+
+def _extract_exported_array(text: str) -> str | None:
+    match = _ARRAY_EXPORT_MARKER.search(text)
+    if not match:
+        return None
+
+    i = match.end()
+    while i < len(text) and text[i].isspace():
+        i += 1
+    if i >= len(text) or text[i] != "[":
+        return None
+
+    start = i
+    depth = 0
+    in_string = False
+    escape = False
+
+    while i < len(text):
+        ch = text[i]
+
+        if in_string:
+            if escape:
+                escape = False
+            elif ch == "\\":
+                escape = True
+            elif ch == '"':
+                in_string = False
+            i += 1
+            continue
+
+        if ch == '"':
+            in_string = True
+        elif ch == "[":
+            depth += 1
+        elif ch == "]":
+            depth -= 1
+            if depth == 0:
+                return text[start : i + 1]
+
+        i += 1
+
+    return None
 
 
 def write_questions_ts(
@@ -48,8 +91,8 @@ def read_questions_file(path: Path | str) -> list:
     if path.suffix == ".json":
         return json.loads(text)
 
-    match = _ARRAY_EXPORT_RE.search(text)
-    if not match:
+    array_text = _extract_exported_array(text)
+    if not array_text:
         raise ValueError(f"Could not parse Question[] export in {path}")
 
-    return json.loads(match.group(1))
+    return json.loads(array_text)

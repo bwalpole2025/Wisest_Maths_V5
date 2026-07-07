@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Lock, ChevronRight, Eye, RotateCcw, Sparkles, Trophy } from "lucide-react";
 import type { Question } from "@/lib/types";
 import { MathText, MathBlock } from "@/components/math";
+import { QuestionText } from "@/components/question-text";
 import { Diagram } from "@/components/diagram";
 import { DifficultyBadge, Pill } from "@/components/ui";
 import { cn } from "@/lib/utils";
@@ -30,9 +31,9 @@ export function SolutionViewer({ question: q }: { question: Question }) {
           <Pill>{total} steps</Pill>
           <span className="ml-auto font-mono text-xs text-muted-foreground">{q.id}</span>
         </div>
-        <p className="mt-5 font-display text-xl font-medium leading-relaxed text-foreground sm:text-2xl">
-          <MathText text={q.questionText} />
-        </p>
+        <div className="mt-5 text-xl sm:text-2xl">
+          <QuestionText text={q.questionText} />
+        </div>
         <div className="mt-4 flex flex-wrap gap-1.5">
           {q.tags.map((t) => (
             <Pill key={t}>{t}</Pill>

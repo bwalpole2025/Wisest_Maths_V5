@@ -1,0 +1,24 @@
+---
+description: Fix unstyled Next.js app and avoid stale dev-server issues
+alwaysApply: true
+---
+
+# Next.js dev server — Wisest Maths
+
+The Next.js app lives in `wisest-maths-content/`. Always run dev commands from that directory.
+
+## Symptom: plain/unstyled HTML
+
+If the app shows default browser styling (Times font, blue links, no dark theme), Tailwind CSS is not loading. The HTML still renders but `layout.css` is missing or empty.
+
+## Fix (in order)
+
+1. Kill stale dev servers: `lsof -ti :3000 | xargs kill -9`
+2. Clear the build cache: `cd wisest-maths-content && rm -rf .next`
+3. Restart: `npm run dev` (or `npm run dev:clean` which does steps 2–3)
+
+## Prevention
+
+- Use `npm run dev:clean` after dependency upgrades, config changes, or when CSS stops loading.
+- Do not start multiple `next dev` processes — a stale server on port 3000 can serve HTML with broken CSS references.
+- Verify CSS compiled: `.next/static/css/app/layout.css` should be ~100KB after the first page load.

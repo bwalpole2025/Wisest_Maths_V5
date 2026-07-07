@@ -209,3 +209,45 @@
 .light .math-inline .katex {
   color: hsl(263 70% 46%);
 }
+
+/* ---- A-Level question text (exam-paper style) ---- */
+.question-text {
+  font-family: KaTeX_Main, "Latin Modern Roman", "Times New Roman", serif;
+  font-size: 1.05em;
+  line-height: 1.65;
+  color: hsl(var(--foreground) / 0.92);
+}
+
+.question-text .math-inline .katex {
+  color: inherit;
+  font-size: 1em;
+}
+
+.question-preamble {
+  margin: 0 0 0.75rem;
+}
+
+.question-parts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.question-part {
+  display: flex;
+  gap: 0.55rem;
+  align-items: baseline;
+}
+
+.question-part-label {
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.question-part-body {
+  flex: 1;
+  min-width: 0;
+}

@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Rates of change",
-  "currentSubtopicId": "al.y2.pure.connected-rates",
+  "currentSubtopic": "Vectors in three dimensions",
+  "currentSubtopicId": "al.y2.pure.vectors-3d",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -75,13 +75,26 @@
     "al.y2.mech.projectiles",
     "al.y2.mech.applications-forces",
     "al.y2.mech.further-kinematics",
-    "al.y2.pure.connected-rates"
+    "al.y2.pure.connected-rates",
+    "al.y2.pure.second-derivatives",
+    "al.y2.pure.parametric-differentiation",
+    "al.y2.stats.regression-correlation",
+    "al.y2.pure.roots-iteration",
+    "al.y2.pure.numerical-integration",
+    "al.y2.pure.newton-raphson",
+    "al.y2.pure.standard-integrals",
+    "al.y2.pure.integration-substitution",
+    "al.y2.pure.areas-applications",
+    "al.y2.pure.integration-partial-fractions",
+    "al.y2.pure.integration-by-parts",
+    "al.y2.pure.differential-equations",
+    "al.y2.pure.vectors-3d"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 70,
-      "totalQuestionsGenerated": 4900
+      "completedSubtopics": 82,
+      "totalQuestionsGenerated": 5740
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

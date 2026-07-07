@@ -4,8 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "dev:clean": "rm -rf .next && next dev",
+    "build": "npm run sync:questions && next build",
+    "start": "next start",
+    "sync:questions": "node ../scripts/sync_question_banks.mjs",
+    "check:questions": "node ../scripts/sync_question_banks.mjs --check"
   },
   "dependencies": {
     "next": "^15.1.6",

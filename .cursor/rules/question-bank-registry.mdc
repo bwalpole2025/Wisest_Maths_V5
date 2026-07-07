@@ -1,0 +1,61 @@
+---
+description: Keep question banks wired into the app — never register batch files before merging
+globs: wisest-maths-content/src/data/questions/**/*.ts
+alwaysApply: true
+---
+
+# Question bank registry
+
+The subtopic registry (`wisest-maths-content/src/data/questions/a-level-maths/index.ts`) is the **single source of truth** for which banks exist.
+
+Server-side stats and `/questions/[slug]` pages use **eager imports** generated into `eager-banks.ts`. A bank that exists only in `index.ts` but not in `eager-banks.ts` will show **0 questions** in the UI.
+
+## Symptom: `Module not found: Can't resolve './<slug>'`
+
+`index.ts` has a `load: () => import("./…/<slug>")` entry, but only batch files exist (e.g. `<slug>-q001-q018.ts`). Next.js cannot resolve the import.
+
+**Fix:** merge batches into the final file before (or immediately after) registering.
+
+## Batch → final file workflow (mandatory)
+
+During generation, save intermediate batches as:
+
+- `<slug>-q001-q018.ts` with `export const batch: Question[]`
+
+When all 70 questions are done:
+
+1. **Combine** into the final bank:
+   ```bash
+   node scripts/combine_questions_to_ts.mjs \
+     wisest-maths-content/src/data/questions/a-level-maths/<strand>/<slug>.ts \
+     wisest-maths-content/src/data/questions/a-level-maths/<strand>/<slug>-q001-q018.ts \
+     ...other batches...
+   ```
+2. **Delete** all `<slug>-q*.ts` batch files.
+3. **Register** in `index.ts` only if `<slug>.ts` exists with `export const questions: Question[]`.
+4. **Sync** from `wisest-maths-content`:
+   ```bash
+   npm run sync:questions
+   npm run check:questions
+   ```
+
+## When adding a new subtopic
+
+1. Create `wisest-maths-content/src/data/questions/a-level-maths/<strand>/<slug>.ts` with `export const questions: Question[]`.
+2. Add an entry to `SUBTOPICS` in `index.ts` (`slug`, `id`, `load`, metadata).
+3. Run `npm run sync:questions` and commit the generated `eager-banks.ts`.
+
+## Do not
+
+- Register a subtopic in `index.ts` while only batch files exist.
+- Leave batch files after merging into the final `<slug>.ts`.
+- Hand-edit `eager-banks.ts` — it is auto-generated.
+- Add manual imports to `src/lib/questions.ts` — it reads from `eager-banks.ts` only.
+
+## Verify
+
+```bash
+npm run check:questions
+```
+
+This fails if `index.ts` and `eager-banks.ts` are out of sync.

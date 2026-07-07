@@ -5,7 +5,7 @@ import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, SlidersHorizontal } from "lucide-react";
 import type { Question, Difficulty } from "@/lib/types";
-import { MathText } from "@/components/math";
+import { QuestionText } from "@/components/question-text";
 import { difficultyOutline } from "@/lib/difficulty";
 import { cn } from "@/lib/utils";
 
@@ -114,8 +114,8 @@ export function QuestionList({ questions }: { questions: Question[] }) {
 
                 {/* body */}
                 <div className="p-5 sm:p-6">
-                  <div className="text-[15px] leading-relaxed text-foreground/90 sm:text-base">
-                    <MathText text={q.questionText} />
+                  <div className="text-[15px] sm:text-base">
+                    <QuestionText text={q.questionText} />
                   </div>
                   <div className="mt-6 flex justify-end">
                     <Link

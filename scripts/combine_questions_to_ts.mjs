@@ -11,8 +11,49 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const ARRAY_EXPORT_RE =
-  /export const (?:batch|questions): Question\[\] = (\[[\s\S]*\]);/;
+function extractExportedArray(text) {
+  const marker = /export const (?:batch|questions): Question\[\]\s*=/.exec(text);
+  if (!marker) return null;
+
+  let i = marker.index + marker[0].length;
+  while (i < text.length && /\s/.test(text[i])) i += 1;
+  if (text[i] !== "[") return null;
+
+  const start = i;
+  let depth = 0;
+  let inString = false;
+  let escape = false;
+
+  for (; i < text.length; i += 1) {
+    const ch = text[i];
+
+    if (inString) {
+      if (escape) {
+        escape = false;
+      } else if (ch === "\\") {
+        escape = true;
+      } else if (ch === '"') {
+        inString = false;
+      }
+      continue;
+    }
+
+    if (ch === '"') {
+      inString = true;
+      continue;
+    }
+
+    if (ch === "[") depth += 1;
+    if (ch === "]") {
+      depth -= 1;
+      if (depth === 0) {
+        return text.slice(start, i + 1);
+      }
+    }
+  }
+
+  return null;
+}
 
 function readQuestionsFile(file) {
   const text = fs.readFileSync(file, "utf8").trim();
@@ -22,9 +63,9 @@ function readQuestionsFile(file) {
     return data;
   }
 
-  const match = ARRAY_EXPORT_RE.exec(text);
-  if (!match) throw new Error(`${file}: could not find Question[] export`);
-  return JSON.parse(match[1]);
+  const arrayText = extractExportedArray(text);
+  if (!arrayText) throw new Error(`${file}: could not find Question[] export`);
+  return JSON.parse(arrayText);
 }
 
 function main() {

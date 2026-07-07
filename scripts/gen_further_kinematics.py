@@ -804,24 +804,28 @@ for qid, ax_fn, ay_fn, t_find, question_type in [
     if qid == "q067":
         vx, vy = 2*t_find, 3*t_find
         rx, ry = t_find**2, 1.5*t_find**2
+        vx_latex, vy_latex = "t^2", "3t"
         target = math.sqrt(vx**2+vy**2)
         q_text = f"A particle has $\\mathbf{{a}} = 2t\\mathbf{{i}} + 3\\mathbf{{j}}$ m s$^{{-2}}$ with $\\mathbf{{v}} = \\mathbf{{0}}$ at $t = 0$. Find the speed when $t = {t_find}\\,\\text{{s}}$."
         final = f"Speed $= {fmt(target)}\\,\\text{{m s}}^{{-1}}$"
     elif qid == "q068":
         vx, vy = 4*t_find, t_find**2
         rx, ry = 2*t_find**2, t_find**3/3
+        vx_latex, vy_latex = "4t", "t^2"
         target = math.sqrt(rx**2+ry**2)
         q_text = f"A particle has $\\mathbf{{a}} = 4\\mathbf{{i}} + 2t\\mathbf{{j}}$ m s$^{{-2}}$ with $\\mathbf{{v}} = \\mathbf{{0}}$ and $\\mathbf{{r}} = \\mathbf{{0}}$ at $t = 0$. Find the distance from the origin when $t = {t_find}\\,\\text{{s}}$."
         final = f"$|\\mathbf{{r}}| = {fmt(target)}\\,\\text{{m}}$"
     elif qid == "q069":
         vx, vy = 1.5*t_find**2, 6*t_find
         rx, ry = 0.5*t_find**3, 3*t_find**2
+        vx_latex, vy_latex = "1.5t^2", "6t"
         target = math.sqrt(vx**2+vy**2)
         q_text = f"A particle has $\\mathbf{{a}} = 3t\\mathbf{{i}} + 6\\mathbf{{j}}$ m s$^{{-2}}$ with $\\mathbf{{v}} = \\mathbf{{0}}$ at $t = 0$. Find the speed when $t = {t_find}\\,\\text{{s}}$."
         final = f"Speed $= {fmt(target)}\\,\\text{{m s}}^{{-1}}$"
     else:
         vx, vy = 5*t_find, 2*t_find**2
         rx, ry = 2.5*t_find**2, (2/3)*t_find**3
+        vx_latex, vy_latex = "5t", "2t^2"
         target = math.sqrt(rx**2+ry**2)
         q_text = f"A particle has $\\mathbf{{a}} = 5\\mathbf{{i}} + 4t\\mathbf{{j}}$ m s$^{{-2}}$ with $\\mathbf{{v}} = \\mathbf{{0}}$ and $\\mathbf{{r}} = \\mathbf{{0}}$ at $t = 0$. Find the distance from the origin when $t = {t_find}\\,\\text{{s}}$."
         final = f"$|\\mathbf{{r}}| = {fmt(target)}\\,\\text{{m}}$"
@@ -833,7 +837,7 @@ for qid, ax_fn, ay_fn, t_find, question_type in [
              "\\mathbf{v} = \\int \\mathbf{a}\\,\\mathrm{d}t + \\mathbf{c}_1",
              "First integration with $\\mathbf{v}(0) = \\mathbf{0}$."),
         step(2, "Velocity components",
-             f"v_x = ...", f"v_y = ...",
+             f"v_x = {vx_latex},\\quad v_y = {vy_latex}",
              "Integrate each component and apply initial condition."),
         step(3, "Integrate $\\mathbf{v}$ to obtain $\\mathbf{r}$",
              "\\mathbf{r} = \\int \\mathbf{v}\\,\\mathrm{d}t + \\mathbf{c}_2",

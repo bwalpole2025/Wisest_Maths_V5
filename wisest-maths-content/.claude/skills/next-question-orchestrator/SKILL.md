@@ -60,7 +60,8 @@ When the user says:
 5. quality-reviewer-agent
 6. If passes → collect the question and add it to the TypeScript array
 7. Update progress.json
-8. At the end, output the complete TypeScript code block.
+8. Register in `index.ts` if new subtopic; run `npm run sync:questions` in `wisest-maths-content`
+9. At the end, output the complete TypeScript code block.
 
 ## Final Output Instruction
 Always end with a single, clean TypeScript code block containing all generated questions in this session. No extra text outside the code block.

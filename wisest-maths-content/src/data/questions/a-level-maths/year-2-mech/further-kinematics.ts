@@ -5729,9 +5729,9 @@ export const questions: Question[] =
         {
           "stepNumber": 2,
           "description": "Velocity components",
-          "workingLatex": "v_x = ...",
-          "explanation": "v_y = ...",
-          "diagram": "Integrate each component and apply initial condition."
+          "workingLatex": "v_x = t^2,\\quad v_y = 3t",
+          "explanation": "Integrate each component and apply initial condition.",
+          "diagram": null
         },
         {
           "stepNumber": 3,
@@ -5863,9 +5863,9 @@ export const questions: Question[] =
         {
           "stepNumber": 2,
           "description": "Velocity components",
-          "workingLatex": "v_x = ...",
-          "explanation": "v_y = ...",
-          "diagram": "Integrate each component and apply initial condition."
+          "workingLatex": "v_x = 4t,\\quad v_y = t^2",
+          "explanation": "Integrate each component and apply initial condition.",
+          "diagram": null
         },
         {
           "stepNumber": 3,
@@ -5997,9 +5997,9 @@ export const questions: Question[] =
         {
           "stepNumber": 2,
           "description": "Velocity components",
-          "workingLatex": "v_x = ...",
-          "explanation": "v_y = ...",
-          "diagram": "Integrate each component and apply initial condition."
+          "workingLatex": "v_x = 1.5t^2,\\quad v_y = 6t",
+          "explanation": "Integrate each component and apply initial condition.",
+          "diagram": null
         },
         {
           "stepNumber": 3,
@@ -6131,9 +6131,9 @@ export const questions: Question[] =
         {
           "stepNumber": 2,
           "description": "Velocity components",
-          "workingLatex": "v_x = ...",
-          "explanation": "v_y = ...",
-          "diagram": "Integrate each component and apply initial condition."
+          "workingLatex": "v_x = 5t,\\quad v_y = 2t^2",
+          "explanation": "Integrate each component and apply initial condition.",
+          "diagram": null
         },
         {
           "stepNumber": 3,

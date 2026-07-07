@@ -46,6 +46,8 @@ export const questions: Question[] = [
 - Intermediate batches (during generation): `export const batch: Question[]` in files like `<slug>-q001-q018.ts`.
 - Combine batches: `node scripts/combine_questions_to_ts.mjs <output.ts> <batch1.ts> ...`
 - Delete batch `.ts` files after merging into the final subtopic file.
+- Register the bank in `wisest-maths-content/src/data/questions/a-level-maths/index.ts` (`SUBTOPICS` entry with `load`).
+- Run `cd wisest-maths-content && npm run sync:questions` to regenerate `eager-banks.ts` so the UI sees the questions (commit the generated file).
 
 ## Full Subtopic Build Command
 
