@@ -37,6 +37,15 @@ import { Question } from "@/lib/types";
 export const questions: Question[] = [
   // full Question objects here
 ];
+```
+
+### File storage (mandatory)
+- All question banks must be saved as **`.ts` files** under `wisest-maths-content/src/data/questions/`.
+- Never save question data as `.json` batch files.
+- Final subtopic file: `export const questions: Question[]`.
+- Intermediate batches (during generation): `export const batch: Question[]` in files like `<slug>-q001-q018.ts`.
+- Combine batches: `node scripts/combine_questions_to_ts.mjs <output.ts> <batch1.ts> ...`
+- Delete batch `.ts` files after merging into the final subtopic file.
 
 ## Full Subtopic Build Command
 

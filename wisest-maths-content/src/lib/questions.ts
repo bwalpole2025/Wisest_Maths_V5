@@ -65,8 +65,16 @@ import { questions as parametricModelling } from "@/data/questions/a-level-maths
 import { questions as standardDerivatives } from "@/data/questions/a-level-maths/year-2-pure/standard-derivatives";
 import { questions as productQuotientChain } from "@/data/questions/a-level-maths/year-2-pure/product-quotient-chain";
 import { questions as implicitDifferentiation } from "@/data/questions/a-level-maths/year-2-pure/implicit-differentiation";
+import { questions as parametricDifferentiation } from "@/data/questions/a-level-maths/year-2-pure/parametric-differentiation";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 import { questions as theNormalDistribution } from "@/data/questions/a-level-maths/year-2-stats/the-normal-distribution";
+import { questions as normalApproximationToBinomial } from "@/data/questions/a-level-maths/year-2-stats/normal-approximation-to-binomial";
+import { questions as hypothesisTestingNormal } from "@/data/questions/a-level-maths/year-2-stats/hypothesis-testing-normal";
+import { questions as moments } from "@/data/questions/a-level-maths/year-2-mech/moments";
+import { questions as forcesAndFriction } from "@/data/questions/a-level-maths/year-2-mech/forces-and-friction";
+import { questions as projectiles } from "@/data/questions/a-level-maths/year-2-mech/projectiles";
+import { questions as applicationsOfForces } from "@/data/questions/a-level-maths/year-2-mech/applications-of-forces";
+import { questions as furtherKinematics } from "@/data/questions/a-level-maths/year-2-mech/further-kinematics";
 
 export { slugForSubtopicId };
 
@@ -131,8 +139,16 @@ export const allQuestions: Question[] = [
   ...standardDerivatives,
   ...productQuotientChain,
   ...implicitDifferentiation,
+  ...parametricDifferentiation,
   ...conditionalProbability,
   ...theNormalDistribution,
+  ...normalApproximationToBinomial,
+  ...hypothesisTestingNormal,
+  ...moments,
+  ...forcesAndFriction,
+  ...projectiles,
+  ...applicationsOfForces,
+  ...furtherKinematics,
 ];
 
 export interface SubtopicSummary {
