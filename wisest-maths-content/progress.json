@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 2 Mechanics",
-  "currentSubtopic": "Further kinematics",
-  "currentSubtopicId": "al.y2.mech.further-kinematics",
+  "currentTopic": "Year 2 Pure",
+  "currentSubtopic": "Rates of change",
+  "currentSubtopicId": "al.y2.pure.connected-rates",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -74,13 +74,14 @@
     "al.y2.mech.forces-friction",
     "al.y2.mech.projectiles",
     "al.y2.mech.applications-forces",
-    "al.y2.mech.further-kinematics"
+    "al.y2.mech.further-kinematics",
+    "al.y2.pure.connected-rates"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 69,
-      "totalQuestionsGenerated": 4830
+      "completedSubtopics": 70,
+      "totalQuestionsGenerated": 4900
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

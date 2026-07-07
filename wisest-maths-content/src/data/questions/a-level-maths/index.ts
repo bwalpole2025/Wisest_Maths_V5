@@ -573,6 +573,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/parametric-differentiation").then((m) => m.questions),
   },
   {
+    slug: "rates-of-change",
+    id: "al.y2.pure.connected-rates",
+    name: "Rates of change",
+    blurb: "Connected rates via the chain rule: ladders, spheres, cones and tanks; differentiating implicitly with respect to time; exponential growth and decay rates.",
+    gradient: "from-orange-400 to-amber-500",
+    order: 62,
+    load: () => import("./year-2-pure/rates-of-change").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",
