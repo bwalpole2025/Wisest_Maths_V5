@@ -49,6 +49,11 @@
     background: hsl(var(--primary) / 0.3);
   }
 
+  :focus-visible {
+    outline: 2px solid hsl(var(--ring));
+    outline-offset: 2px;
+  }
+
   /* Refined scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
@@ -184,8 +189,15 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .rise {
-    animation: none;
+  html {
+    scroll-behavior: auto;
+  }
+
+  .rise,
+  .gradient-text,
+  .animate-aurora,
+  .animate-pulse {
+    animation: none !important;
   }
 }
 

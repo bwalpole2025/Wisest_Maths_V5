@@ -22,8 +22,16 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <SiteBackground />
+          <a
+            href="#main-content"
+            className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-xl focus:bg-foreground focus:px-4 focus:py-2.5 focus:text-sm focus:font-semibold focus:text-background"
+          >
+            Skip to content
+          </a>
           <Navbar />
-          <main className="relative z-10">{children}</main>
+          <main id="main-content" tabIndex={-1} className="relative z-10 outline-none">
+            {children}
+          </main>
         </ThemeProvider>
       </body>
     </html>

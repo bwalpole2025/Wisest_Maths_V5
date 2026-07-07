@@ -1,16 +1,14 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { parseMathSegments, renderKatex } from "@/lib/katex-render";
 
-/** Renders a block of display math (e.g. workingLatex). Server-safe. */
+/** Client-safe math renderer for interactive components. */
 export function MathBlock({ tex, className }: { tex: string; className?: string }) {
   const html = renderKatex(tex, true);
   return <span className={cn("block", className)} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
-/**
- * Renders text that may contain inline `$...$` math segments, interleaving
- * prose and KaTeX. Also supports a lightweight `*emphasis*` for italics.
- */
 export function MathText({ text, className }: { text: string; className?: string }) {
   const nodes = parseMathSegments(text);
 

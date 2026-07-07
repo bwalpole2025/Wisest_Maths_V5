@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import { CheckCircle2, Sparkles } from "lucide-react";
-import { MathText, MathBlock } from "@/components/math";
+import { MathText, MathBlock } from "@/components/math-client";
 import { DifficultyBadge } from "@/components/ui";
 
 const steps = [
@@ -12,30 +12,31 @@ const steps = [
 ];
 
 export function HeroPreview() {
+  const reduceMotion = useReducedMotion();
+
   return (
     <div className="relative">
-      {/* floating chips */}
       <motion.div
         className="absolute -left-6 top-10 z-20 hidden sm:block"
-        animate={{ y: [0, -10, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+        animate={reduceMotion ? undefined : { y: [0, -10, 0] }}
+        transition={reduceMotion ? undefined : { duration: 5, repeat: Infinity, ease: "easeInOut" }}
       >
         <div className="glass flex items-center gap-2 rounded-2xl px-3 py-2 text-xs font-semibold">
-          <CheckCircle2 className="h-4 w-4 text-emerald-400" /> Answer verified
+          <CheckCircle2 className="h-4 w-4 text-emerald-400" aria-hidden /> Answer verified
         </div>
       </motion.div>
       <motion.div
         className="absolute -right-4 bottom-16 z-20 hidden sm:block"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: -2 }}
+        animate={reduceMotion ? undefined : { y: [0, 10, 0] }}
+        transition={reduceMotion ? undefined : { duration: 6, repeat: Infinity, ease: "easeInOut", delay: -2 }}
       >
         <div className="glass flex items-center gap-2 rounded-2xl px-3 py-2 text-xs font-semibold">
-          <Sparkles className="h-4 w-4 text-violet-300" /> KaTeX typeset
+          <Sparkles className="h-4 w-4 text-violet-300" aria-hidden /> KaTeX typeset
         </div>
       </motion.div>
 
       <motion.div
-        whileHover={{ rotateX: 0, rotateY: 0 }}
+        whileHover={reduceMotion ? undefined : { rotateX: 0, rotateY: 0 }}
         style={{ transformPerspective: 1200 }}
         className="glass card-glow relative rounded-4xl p-6 shadow-2xl"
       >
@@ -54,7 +55,7 @@ export function HeroPreview() {
               key={i}
               initial={false}
               animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.5 + i * 0.25, duration: 0.5 }}
+              transition={reduceMotion ? { duration: 0 } : { delay: 0.5 + i * 0.25, duration: 0.5 }}
               className="flex gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-3"
             >
               <span className="grid h-6 w-6 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-violet-500 to-sky-500 text-[11px] font-bold text-white">
@@ -73,7 +74,7 @@ export function HeroPreview() {
         <motion.div
           initial={false}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4, duration: 0.5 }}
+          transition={reduceMotion ? { duration: 0 } : { delay: 1.4, duration: 0.5 }}
           className="mt-5 rounded-2xl border border-emerald-400/20 bg-emerald-500/[0.07] p-3"
         >
           <div className="text-[11px] font-semibold uppercase tracking-widest text-emerald-300/80">Final answer</div>

@@ -1,16 +1,15 @@
 "use client";
 
-import { useMemo } from "react";
 import { cn } from "@/lib/utils";
 import { parseQuestionParts } from "@/lib/parse-question-parts";
-import { MathText } from "@/components/math";
+import { MathText } from "@/components/math-client";
 
 /**
  * Renders A-Level question text in KaTeX serif (exam-paper style) and splits
  * `(a)`, `(b)`, … parts into a vertical list when detected.
  */
 export function QuestionText({ text, className }: { text: string; className?: string }) {
-  const parsed = useMemo(() => parseQuestionParts(text), [text]);
+  const parsed = parseQuestionParts(text);
 
   if (!parsed) {
     return (
