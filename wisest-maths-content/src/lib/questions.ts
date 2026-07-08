@@ -94,6 +94,8 @@ import { questions as rootsPolynomials } from "@/data/questions/a-level-further-
 import { questions as induction } from "@/data/questions/a-level-further-maths/year-1-pure/induction";
 import { questions as matrices } from "@/data/questions/a-level-further-maths/year-1-pure/matrices";
 import { questions as linearTransformations } from "@/data/questions/a-level-further-maths/year-1-pure/linear-transformations";
+import { questions as series } from "@/data/questions/a-level-further-maths/year-1-pure/series";
+import { questions as vectorsLinesPlanes } from "@/data/questions/a-level-further-maths/year-1-pure/vectors-lines-planes";
 
 export { slugForSubtopicId };
 
@@ -187,6 +189,8 @@ export const allQuestions: Question[] = [
   ...induction,
   ...matrices,
   ...linearTransformations,
+  ...series,
+  ...vectorsLinesPlanes,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

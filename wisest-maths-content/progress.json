@@ -1,9 +1,9 @@
 {
   "currentLevel": "A-Level Further Maths",
   "currentTopic": "Further Maths Year 1: Pure (Core Pure 1)",
-  "currentSubtopic": "Linear transformations",
-  "currentSubtopicId": "fm.y1.pure.linear-transformations",
-  "questionsGenerated": 70,
+  "currentSubtopic": "Volumes of revolution",
+  "currentSubtopicId": "fm.y1.pure.volumes-revolution",
+  "questionsGenerated": 0,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
     "al.y1.pure.argument-notation",
@@ -94,7 +94,9 @@
     "fm.y1.pure.roots-polynomials",
     "fm.y1.pure.induction",
     "fm.y1.pure.matrices",
-    "fm.y1.pure.linear-transformations"
+    "fm.y1.pure.linear-transformations",
+    "fm.y1.pure.series",
+    "fm.y1.pure.vectors-lines-planes"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -104,8 +106,8 @@
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 6,
-      "totalQuestionsGenerated": 420
+      "completedSubtopics": 8,
+      "totalQuestionsGenerated": 560
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -113,5 +115,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-08"
+  "lastUpdated": "2026-07-08T10:20:00+01:00"
 }

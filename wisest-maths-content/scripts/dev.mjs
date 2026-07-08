@@ -23,7 +23,9 @@ if (isCorrupt) {
   rmSync(nextDir, { recursive: true, force: true });
 }
 
-const child = spawn("npx", ["next", "dev", "-H", "127.0.0.1", "-p", "3000"], {
+const port = process.env.PORT ?? "3001";
+
+const child = spawn("npx", ["next", "dev", "-H", "127.0.0.1", "-p", port], {
   cwd: root,
   stdio: "inherit",
 });

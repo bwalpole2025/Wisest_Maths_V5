@@ -65,6 +65,24 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 6,
     load: () => import("./year-1-pure/linear-transformations").then((m) => m.questions),
   },
+  {
+    slug: "series",
+    id: "fm.y1.pure.series",
+    name: "Series",
+    blurb: "Standard results for \u03a3r, \u03a3r\u00b2 and \u03a3r\u00b3; linear combinations, partial sums and proofs.",
+    gradient: "from-sky-400 to-indigo-500",
+    order: 7,
+    load: () => import("./year-1-pure/series").then((m) => m.questions),
+  },
+  {
+    slug: "vectors-lines-planes",
+    id: "fm.y1.pure.vectors-lines-planes",
+    name: "Vectors: lines and planes",
+    blurb: "Vector and Cartesian equations of lines and planes in 3D; intersections and conversions.",
+    gradient: "from-lime-400 to-green-500",
+    order: 8,
+    load: () => import("./year-1-pure/vectors-lines-planes").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>
