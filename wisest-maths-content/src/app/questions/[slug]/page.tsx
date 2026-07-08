@@ -1,11 +1,19 @@
-import Link from "next/link";
+import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
-import { subtopics, getSubtopicBySlug, getQuestionsBySubtopicSlug } from "@/lib/questions";
-import { QuestionList } from "@/components/question-list";
+import { getSubtopicBySlug, subtopics } from "@/lib/question-summaries";
+import { loadSubtopic } from "@/data/questions/registry";
+import { AppLink } from "@/components/app-link";
+import { QuestionListSkeleton } from "@/components/link-skeletons";
 import { Reveal } from "@/components/reveal";
 import { Footer } from "@/components/footer";
 import { cn } from "@/lib/utils";
+
+const QuestionList = dynamic(
+  () => import("@/components/question-list").then((m) => m.QuestionList),
+  { loading: () => <QuestionListSkeleton /> },
+);
 
 export function generateStaticParams() {
   return subtopics.map((s) => ({ slug: s.slug }));
@@ -14,16 +22,17 @@ export function generateStaticParams() {
 export default async function SubtopicPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const subtopic = getSubtopicBySlug(slug);
-  const questions = getQuestionsBySubtopicSlug(slug);
   if (!subtopic) notFound();
+
+  const questions = await loadSubtopic(slug);
 
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-36">
         <Reveal>
-          <Link href="/questions" className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+          <AppLink href="/questions" className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
             <ArrowLeft className="h-4 w-4" /> Question Bank
-          </Link>
+          </AppLink>
         </Reveal>
 
         <Reveal delay={0.05}>
@@ -51,7 +60,9 @@ export default async function SubtopicPage({ params }: { params: Promise<{ slug:
         </Reveal>
 
         <div className="mt-12">
-          <QuestionList questions={questions} />
+          <Suspense fallback={<QuestionListSkeleton />}>
+            <QuestionList questions={questions} />
+          </Suspense>
         </div>
       </section>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { FastLink } from "@/components/fast-link";
 import { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, SlidersHorizontal } from "lucide-react";
@@ -118,12 +118,12 @@ export function QuestionList({ questions }: { questions: Question[] }) {
                     <MathText text={q.questionText} />
                   </div>
                   <div className="mt-6 flex justify-end">
-                    <Link
+                    <FastLink
                       href={`/solve/${q.id}`}
                       className="app-btn-primary rounded-xl px-6 py-2.5"
                     >
                       Attempt
-                    </Link>
+                    </FastLink>
                   </div>
                 </div>
               </motion.div>

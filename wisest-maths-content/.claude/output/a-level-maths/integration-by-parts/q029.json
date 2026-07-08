@@ -1,0 +1,85 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q029",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "integration by parts",
+    "exponential",
+    "definite integral"
+  ],
+  "questionText": "Use integration by parts to evaluate $\\displaystyle\\int_{0}^{1} xe^{2x}\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the formula",
+        "workingLatex": "\\int_{a}^{b} u\\,dv = \\left[uv\\right]_{a}^{b} - \\int_{a}^{b} v\\,du",
+        "explanation": "The definite-integral version avoids introducing $+c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose u and dv",
+        "workingLatex": "u = x,\\quad dv = e^{2x}\\,dx",
+        "explanation": "Pick $u$ so that $du$ is simpler than $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find du and v",
+        "workingLatex": "du = dx,\\quad v = \\dfrac{1}{2}e^{2x}",
+        "explanation": "Differentiate and integrate the chosen parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply by parts",
+        "workingLatex": "\\left[\\dfrac{x}{2}e^{2x}\\right]_{0}^{1} - \\int_{0}^{1} \\dfrac{1}{2}e^{2x}\\,dx",
+        "explanation": "Apply by parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the boundary term",
+        "workingLatex": "\\dfrac{e^{2}}{2}",
+        "explanation": "Boundary at $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the remaining integral",
+        "workingLatex": "-\\dfrac{1}{4}\\left[e^{2x}\\right]_{0}^{1} = -\\dfrac{e^{2}-1}{4}",
+        "explanation": "Remaining exponential integral.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Combine and simplify",
+        "workingLatex": "\\dfrac{e^{2}+1}{4}",
+        "explanation": "Give the exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer",
+        "workingLatex": "\\int_{0}^{1} xe^{2x}\\,dx = \\dfrac{e^{2}+1}{4}",
+        "explanation": "Final definite integral value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int_{0}^{1} xe^{2x}\\,dx = \\dfrac{e^{2}+1}{4}$."
+  }
+}

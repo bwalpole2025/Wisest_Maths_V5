@@ -1,0 +1,114 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q059",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "modelling",
+    "differential equations",
+    "multi-step"
+  ],
+  "questionText": "A curve has gradient function $\\dfrac{dy}{dx} = x e^{-x}$. Given that the curve passes through $(0, 1)$, find $y$ in terms of $x$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Integrate the gradient",
+        "workingLatex": "y = \\int xe^{-x}\\,dx + c",
+        "explanation": "Position from velocity analogue.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "By parts: u = x",
+        "workingLatex": "u = x,\\; dv = e^{-x}dx \\Rightarrow -xe^{-x} - \\int (-e^{-x})dx",
+        "explanation": "Standard setup.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Remaining integral",
+        "workingLatex": "\\int e^{-x}dx = -e^{-x}",
+        "explanation": "Exponential.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Antiderivative",
+        "workingLatex": "y = -xe^{-x} - e^{-x} + c",
+        "explanation": "Combine terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor",
+        "workingLatex": "y = -e^{-x}(x+1) + c",
+        "explanation": "Optional factored form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Use (0, 1)",
+        "workingLatex": "1 = -e^{0}(1) + c \\Rightarrow c = 2",
+        "explanation": "Initial condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Particular solution",
+        "workingLatex": "y = -e^{-x}(x+1) + 2",
+        "explanation": "Curve equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check at x=0",
+        "workingLatex": "y = -1 + 2 = 1",
+        "explanation": "Passes through given point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "y = 2 - e^{-x}(x+1)",
+        "explanation": "Final model.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 2 - e^{-x}(x+1)$."
+  }
+}

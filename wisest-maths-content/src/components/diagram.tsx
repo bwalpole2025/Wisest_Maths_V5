@@ -1,4 +1,7 @@
-import katex from "katex";
+"use client";
+
+import { useEffect, useState } from "react";
+import { renderKatexAsync } from "@/lib/katex-client";
 import type { Diagram as DiagramSpec } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -100,9 +103,22 @@ function TexLabel({
   align?: "center" | "left" | "right";
   chip?: boolean;
 }) {
+  const [html, setHtml] = useState<string | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    const t = texify(tex);
+    renderKatexAsync(t, false).then((result) => {
+      if (alive) setHtml(result);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [tex]);
+
   if (!tex) return null;
   const t = texify(tex);
-  const html = katex.renderToString(t, { throwOnError: false, strict: false, output: "html", displayMode: false });
+  const rendered = html ?? t;
   const h = /frac/.test(t) ? size * 2.2 : size * 1.5;
   const left = align === "center" ? x - w / 2 : align === "left" ? x : x - w;
   const justify = align === "center" ? "center" : align === "left" ? "flex-start" : "flex-end";
@@ -113,7 +129,7 @@ function TexLabel({
       >
         <span
           style={chip ? { background: "rgba(255,255,255,0.88)", padding: "1px 5px", borderRadius: "4px" } : undefined}
-          dangerouslySetInnerHTML={{ __html: html }}
+          dangerouslySetInnerHTML={{ __html: rendered }}
         />
       </div>
     </foreignObject>
@@ -1289,15 +1305,27 @@ function MLabel({
   w?: number;
   chip?: boolean;
 }) {
+  const [html, setHtml] = useState<string | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    renderKatexAsync(tex, false).then((result) => {
+      if (alive) setHtml(result);
+    });
+    return () => {
+      alive = false;
+    };
+  }, [tex]);
+
   if (!tex) return null;
-  const html = katex.renderToString(tex, { throwOnError: false, strict: false, output: "html", displayMode: false });
+  const rendered = html ?? tex;
   const h = /frac|_|\^/.test(tex) ? size * 2 : size * 1.55;
   const left = align === "center" ? x - w / 2 : align === "left" ? x : x - w;
   const justify = align === "center" ? "center" : align === "left" ? "flex-start" : "flex-end";
   return (
     <foreignObject x={left} y={y - h / 2} width={w} height={h} style={{ overflow: "visible" }}>
       <div style={{ display: "flex", alignItems: "center", justifyContent: justify, width: `${w}px`, height: `${h}px`, fontSize: `${size}px`, lineHeight: 1, color }}>
-        <span style={chip ? { background: "rgba(255,255,255,0.9)", padding: "0 3px", borderRadius: 3 } : undefined} dangerouslySetInnerHTML={{ __html: html }} />
+        <span style={chip ? { background: "rgba(255,255,255,0.9)", padding: "0 3px", borderRadius: 3 } : undefined} dangerouslySetInnerHTML={{ __html: rendered }} />
       </div>
     </foreignObject>
   );

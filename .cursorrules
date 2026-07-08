@@ -1,0 +1,11 @@
+# Wisest Maths — Cursor Rules
+
+## Link Performance (<2s target, <800ms ideal)
+
+See full rule: `.cursor/rules/link-performance.mdc`
+
+- Server components: `AppLink` from `@/components/app-link`
+- Client components: `FastLink` from `@/components/fast-link`
+- Every route segment: `loading.tsx` with `@/components/link-skeletons`
+- Solve pages: `loadQuestionWithSiblings` — never `allQuestions` for nav
+- Verify: `npm run build && npm run start && npm run perf:links`

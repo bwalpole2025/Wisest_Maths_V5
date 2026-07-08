@@ -1,8 +1,8 @@
 {
-  "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Second derivatives and curve behaviour",
-  "currentSubtopicId": "al.y2.pure.second-derivatives",
+  "currentLevel": "A-Level Further Maths",
+  "currentTopic": "Further Maths Year 1: Pure (Core Pure 1)",
+  "currentSubtopic": "Linear transformations",
+  "currentSubtopicId": "fm.y1.pure.linear-transformations",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -74,18 +74,38 @@
     "al.y2.pure.newton-raphson",
     "al.y2.pure.numerical-integration",
     "al.y2.pure.standard-integrals",
-    "al.y2.pure.second-derivatives"
+    "al.y2.pure.second-derivatives",
+    "al.y2.pure.integration-substitution",
+    "al.y2.pure.integration-by-parts",
+    "al.y2.pure.integration-partial-fractions",
+    "al.y2.pure.areas-applications",
+    "al.y2.pure.differential-equations",
+    "al.y2.pure.vectors-3d",
+    "al.y2.stats.regression-correlation",
+    "al.y2.stats.normal-approximation",
+    "al.y2.stats.hypothesis-normal",
+    "al.y2.mech.moments",
+    "al.y2.mech.forces-friction",
+    "al.y2.mech.projectilescontinued",
+    "al.y2.mech.applications-forces",
+    "al.y2.mech.further-kinematics",
+    "fm.y1.pure.complex-arithmetic",
+    "fm.y1.pure.argand",
+    "fm.y1.pure.roots-polynomials",
+    "fm.y1.pure.induction",
+    "fm.y1.pure.matrices",
+    "fm.y1.pure.linear-transformations"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 69,
-      "totalQuestionsGenerated": 4830
+      "completedSubtopics": 83,
+      "totalQuestionsGenerated": 5810
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 0,
-      "totalQuestionsGenerated": 0
+      "completedSubtopics": 6,
+      "totalQuestionsGenerated": 420
     },
     "GCSE": {
       "totalSubtopics": 123,

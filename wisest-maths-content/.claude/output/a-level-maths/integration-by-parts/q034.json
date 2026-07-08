@@ -1,0 +1,84 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q034",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "inverse trigonometric"
+  ],
+  "questionText": "Use integration by parts to find $\\displaystyle\\int \\arcsin x\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the formula",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "Integration by parts reverses the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose u and dv",
+        "workingLatex": "u = \\arcsin x,\\quad dv = dx",
+        "explanation": "Use LIATE: Log, Inverse trig, Algebraic, Trig, Exponential — pick $u$ to simplify on differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find du and v",
+        "workingLatex": "du = \\dfrac{1}{\\sqrt{1-x^{2}}}\\,dx,\\quad v = x",
+        "explanation": "Differentiate $u$ and integrate $dv$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the formula",
+        "workingLatex": "x\\arcsin x - \\int \\dfrac{x}{\\sqrt{1-x^{2}}}\\,dx",
+        "explanation": "Substitute into $\\int u\\,dv = uv - \\int v\\,du$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the remaining integral",
+        "workingLatex": "x\\arcsin x + \\sqrt{1-x^{2}}",
+        "explanation": "The new integral should be simpler than the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify and add +c",
+        "workingLatex": "x\\arcsin x + \\sqrt{1-x^{2}} + c",
+        "explanation": "Combine terms and include the constant of integration.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "\\int \\arcsin x\\,dx = x\\arcsin x + \\sqrt{1-x^{2}} + c",
+        "explanation": "Present the antiderivative clearly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int \\arcsin x\\,dx = x\\arcsin x + \\sqrt{1-x^{2}} + c$."
+  }
+}

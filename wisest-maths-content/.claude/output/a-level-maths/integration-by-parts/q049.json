@@ -1,0 +1,115 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q049",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "cyclic",
+    "exponential",
+    "trigonometric",
+    "multi-step"
+  ],
+  "questionText": "Find $\\displaystyle\\int e^{x}\\sin x\\,dx$ using integration by parts twice.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Let I denote the integral",
+        "workingLatex": "I = \\int e^{x}\\sin x\\,dx",
+        "explanation": "Cyclic integrals are handled by letting the unknown integral appear again.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "First application: u = sin x",
+        "workingLatex": "u = \\sin x,\\; dv = e^{x}dx \\Rightarrow du = \\cos x\\,dx,\\; v = e^{x}",
+        "explanation": "Choose $u$ as the trig factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply by parts",
+        "workingLatex": "I = e^{x}\\sin x - \\int e^{x}\\cos x\\,dx",
+        "explanation": "First reduction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Second application on J = ∫eˣ cos x dx",
+        "workingLatex": "u = \\cos x,\\; dv = e^{x}dx \\Rightarrow J = e^{x}\\cos x + \\int e^{x}\\sin x\\,dx",
+        "explanation": "Parts on the cosine integral brings back $I$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute back",
+        "workingLatex": "I = e^{x}\\sin x - e^{x}\\cos x - I",
+        "explanation": "Replace $J$ in the expression for $I$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for I",
+        "workingLatex": "2I = e^{x}(\\sin x - \\cos x)",
+        "explanation": "Collect like terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide by 2",
+        "workingLatex": "I = \\dfrac{e^{x}}{2}(\\sin x - \\cos x) + c",
+        "explanation": "Standard cyclic result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check by differentiating",
+        "workingLatex": "\\dfrac{d}{dx}\\left[\\dfrac{e^{x}}{2}(\\sin x - \\cos x)\\right] = e^{x}\\sin x",
+        "explanation": "Confirms the antiderivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer",
+        "workingLatex": "\\int e^{x}\\sin x\\,dx = \\dfrac{e^{x}}{2}(\\sin x - \\cos x) + c",
+        "explanation": "Memorise this form for exam speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int e^{x}\\sin x\\,dx = \\dfrac{e^{x}}{2}(\\sin x - \\cos x) + c$."
+  }
+}

@@ -6,6 +6,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { SiteBackground } from "@/components/site-background";
 import { Navbar } from "@/components/navbar";
 import { NavigationProgress } from "@/components/navigation-progress";
+import { RoutePrefetcher } from "@/components/route-prefetcher";
+import { ServiceWorkerRegister } from "@/components/service-worker-register";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
@@ -23,6 +25,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${display.variable} ${serif.variable} ${mono.variable}`}>
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} forcedTheme="light">
+          <RoutePrefetcher />
+          <ServiceWorkerRegister />
           <NavigationProgress />
           <SiteBackground />
           <Navbar />

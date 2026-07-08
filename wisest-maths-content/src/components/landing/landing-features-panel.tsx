@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { FastLink } from "@/components/fast-link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { ArrowRight, BookOpen, Search, Sparkles, Target } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -147,7 +147,7 @@ export function LandingFeaturesPanel({ items }: { items: LandingSearchItem[] }) 
                   <ul className="divide-y divide-black/[0.05]">
                     {results.map((item) => (
                       <li key={item.slug}>
-                        <Link
+                        <FastLink
                           href={`/questions/${item.slug}`}
                           className="flex items-start gap-3 px-4 py-3 transition-colors hover:bg-landing-sky/40"
                         >
@@ -168,7 +168,7 @@ export function LandingFeaturesPanel({ items }: { items: LandingSearchItem[] }) 
                             </span>
                           </span>
                           <ArrowRight className="ml-auto mt-1 h-4 w-4 shrink-0 text-landing-navy/30" />
-                        </Link>
+                        </FastLink>
                       </li>
                     ))}
                   </ul>
@@ -190,13 +190,13 @@ export function LandingFeaturesPanel({ items }: { items: LandingSearchItem[] }) 
             <p className="mt-3 text-sm leading-[1.65] text-landing-navy/55">
               Browse the full A-Level Maths curriculum with worked solutions for every question.
             </p>
-            <Link
+            <FastLink
               href="/curriculum"
               className="pointer-events-auto group mt-6 inline-flex items-center gap-2 text-sm font-semibold text-landing-electric hover:text-landing-blue"
             >
               Open curriculum
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </Link>
+            </FastLink>
           </div>
         </div>
       )}

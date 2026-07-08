@@ -1,0 +1,70 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q035",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "logarithm"
+  ],
+  "questionText": "Use integration by parts to find $\\displaystyle\\int \\ln(2x)\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the formula",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "Integration by parts reverses the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose u and dv",
+        "workingLatex": "u = \\ln(2x),\\quad dv = dx",
+        "explanation": "Use LIATE: Log, Inverse trig, Algebraic, Trig, Exponential — pick $u$ to simplify on differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find du and v",
+        "workingLatex": "du = \\dfrac{1}{x}\\,dx,\\quad v = x",
+        "explanation": "Differentiate $u$ and integrate $dv$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the formula",
+        "workingLatex": "x\\ln(2x) - \\int x \\cdot \\dfrac{1}{x}\\,dx",
+        "explanation": "Substitute into $\\int u\\,dv = uv - \\int v\\,du$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the remaining integral",
+        "workingLatex": "x\\ln(2x) - x",
+        "explanation": "The new integral should be simpler than the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify and add +c",
+        "workingLatex": "x\\ln(2x) - x + c",
+        "explanation": "Combine terms and include the constant of integration.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "\\int \\ln(2x)\\,dx = x\\ln(2x) - x + c",
+        "explanation": "Present the antiderivative clearly.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int \\ln(2x)\\,dx = x\\ln(2x) - x + c$."
+  }
+}

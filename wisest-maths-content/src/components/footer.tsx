@@ -1,6 +1,6 @@
-import Link from "next/link";
+import { AppLink } from "@/components/app-link";
 import { Brand } from "@/components/brand";
-import { stats } from "@/lib/questions";
+import { stats } from "@/lib/question-summaries";
 
 export function Footer() {
   return (
@@ -17,18 +17,18 @@ export function Footer() {
             <span className="mb-1 text-xs font-semibold uppercase tracking-widest text-landing-navy/40">
               Explore
             </span>
-            <Link
+            <AppLink
               href="/dashboard"
               className="text-landing-navy/55 transition-colors hover:text-landing-navy"
             >
               Dashboard
-            </Link>
-            <Link
+            </AppLink>
+            <AppLink
               href="/questions"
               className="text-landing-navy/55 transition-colors hover:text-landing-navy"
             >
               Question Bank
-            </Link>
+            </AppLink>
           </div>
           <div className="flex flex-col gap-2">
             <span className="mb-1 text-xs font-semibold uppercase tracking-widest text-landing-navy/40">

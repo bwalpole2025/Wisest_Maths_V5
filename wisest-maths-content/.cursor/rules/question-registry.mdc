@@ -1,0 +1,29 @@
+---
+description: Prevent webpack runtime errors when adding A-Level question subtopics
+globs: wisest-maths-content/src/data/questions/**/*,wisest-maths-content/src/lib/questions.ts,wisest-maths-content/scripts/generate-*.mjs
+alwaysApply: false
+---
+
+# Question registry — avoid webpack `moduleId is not a function`
+
+## Root causes we have hit
+
+1. **Duplicate subtopic registration** — the same `subtopicId` or question ids registered twice in `index.ts` and imported twice in `questions.ts` (e.g. `connected-rates` + `rates-of-change`).
+2. **Corrupt `.next` cache** — deleting `.next` while `next dev` is running, or running `next build` concurrently with dev, leaves missing manifests (`routes-manifest.json`) and triggers `__webpack_modules__[moduleId] is not a function`.
+3. **Homepage importing the full bank** — landing/dashboard/curriculum must use `@/lib/question-summaries`, not `@/lib/questions`. Only `/solve/[id]` may eagerly import the full bank.
+
+## When adding a new subtopic
+
+1. Add **one** entry to `src/data/questions/a-level-maths/index.ts` (unique `slug` and `id`).
+2. Add **one** eager import + spread in `src/lib/questions.ts`.
+3. Run `npm run sync-summaries` to refresh `src/data/question-summaries.json`.
+4. Run `npm run validate-registry` — must pass before dev/build.
+5. Never create a second file/slug for the same `subtopicId`.
+
+## If the webpack error appears
+
+1. Stop the dev server.
+2. `rm -rf wisest-maths-content/.next`
+3. `npm run sync-summaries && npm run dev`
+
+Use `npm run dev` (not raw `next dev`) — it auto-clears corrupt `.next` folders.

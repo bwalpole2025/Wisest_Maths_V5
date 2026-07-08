@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "github-wiest-maths": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    },
+    "supabase-wiest-maths": {
+      "type": "http",
+      "url": "https://mcp.supabase.com/mcp"
+    },
+    "mobbin": {
+      "type": "http",
+      "url": "https://api.mobbin.com/mcp",
+      "headers": {}
+    }
+  }
+}

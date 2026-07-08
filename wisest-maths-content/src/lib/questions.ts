@@ -1,5 +1,5 @@
 import type { Question } from "@/lib/types";
-import { SUBTOPICS, subtopicBySlug, slugForSubtopicId } from "@/data/questions/a-level-maths";
+import { slugForSubtopicId } from "@/data/questions/registry";
 
 // Eager imports — used only in server components (landing, dashboard, subtopic
 // pages, solve pages) for build-time stats and summaries. Client components use
@@ -70,9 +70,30 @@ import { questions as ratesOfChange } from "@/data/questions/a-level-maths/year-
 import { questions as locatingRootsAndIteration } from "@/data/questions/a-level-maths/year-2-pure/locating-roots-and-iteration";
 import { questions as newtonRaphson } from "@/data/questions/a-level-maths/year-2-pure/newton-raphson";
 import { questions as numericalIntegration } from "@/data/questions/a-level-maths/year-2-pure/numerical-integration";
+import { questions as standardIntegrals } from "@/data/questions/a-level-maths/year-2-pure/standard-integrals";
 import { questions as secondDerivativesAndCurveBehaviour } from "@/data/questions/a-level-maths/year-2-pure/second-derivatives-and-curve-behaviour";
+import { questions as integrationBySubstitution } from "@/data/questions/a-level-maths/year-2-pure/integration-by-substitution";
+import { questions as integrationByParts } from "@/data/questions/a-level-maths/year-2-pure/integration-by-parts";
+import { questions as integrationWithPartialFractions } from "@/data/questions/a-level-maths/year-2-pure/integration-with-partial-fractions";
+import { questions as areasAndFurtherApplications } from "@/data/questions/a-level-maths/year-2-pure/areas-and-further-applications";
+import { questions as differentialEquations } from "@/data/questions/a-level-maths/year-2-pure/differential-equations";
+import { questions as vectorsInThreeDimensions } from "@/data/questions/a-level-maths/year-2-pure/vectors-in-three-dimensions";
+import { questions as regressionAndCorrelation } from "@/data/questions/a-level-maths/year-2-stats/regression-and-correlation";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 import { questions as theNormalDistribution } from "@/data/questions/a-level-maths/year-2-stats/the-normal-distribution";
+import { questions as normalApproximationToBinomial } from "@/data/questions/a-level-maths/year-2-stats/normal-approximation-to-binomial";
+import { questions as hypothesisTestingNormal } from "@/data/questions/a-level-maths/year-2-stats/hypothesis-testing-normal";
+import { questions as moments } from "@/data/questions/a-level-maths/year-2-mech/moments";
+import { questions as forcesAndFriction } from "@/data/questions/a-level-maths/year-2-mech/forces-and-friction";
+import { questions as projectiles } from "@/data/questions/a-level-maths/year-2-mech/projectiles";
+import { questions as applicationsOfForces } from "@/data/questions/a-level-maths/year-2-mech/applications-of-forces";
+import { questions as furtherKinematics } from "@/data/questions/a-level-maths/year-2-mech/further-kinematics";
+import { questions as complexArithmetic } from "@/data/questions/a-level-further-maths/year-1-pure/complex-arithmetic";
+import { questions as argand } from "@/data/questions/a-level-further-maths/year-1-pure/argand";
+import { questions as rootsPolynomials } from "@/data/questions/a-level-further-maths/year-1-pure/roots-polynomials";
+import { questions as induction } from "@/data/questions/a-level-further-maths/year-1-pure/induction";
+import { questions as matrices } from "@/data/questions/a-level-further-maths/year-1-pure/matrices";
+import { questions as linearTransformations } from "@/data/questions/a-level-further-maths/year-1-pure/linear-transformations";
 
 export { slugForSubtopicId };
 
@@ -142,63 +163,32 @@ export const allQuestions: Question[] = [
   ...locatingRootsAndIteration,
   ...newtonRaphson,
   ...numericalIntegration,
+  ...standardIntegrals,
   ...secondDerivativesAndCurveBehaviour,
+  ...integrationBySubstitution,
+  ...integrationByParts,
+  ...integrationWithPartialFractions,
+  ...areasAndFurtherApplications,
+  ...differentialEquations,
+  ...vectorsInThreeDimensions,
+  ...regressionAndCorrelation,
   ...conditionalProbability,
   ...theNormalDistribution,
+  ...normalApproximationToBinomial,
+  ...hypothesisTestingNormal,
+  ...moments,
+  ...forcesAndFriction,
+  ...projectiles,
+  ...applicationsOfForces,
+  ...furtherKinematics,
+  ...complexArithmetic,
+  ...argand,
+  ...rootsPolynomials,
+  ...induction,
+  ...matrices,
+  ...linearTransformations,
 ];
-
-export interface SubtopicSummary {
-  id: string;
-  name: string;
-  topic: string;
-  level: string;
-  count: number;
-  easy: number;
-  intermediate: number;
-  hard: number;
-  gradient: string;
-  blurb: string;
-  slug: string;
-  order: number;
-}
-
-/** Summaries built from the registry (metadata) + eager data (counts). */
-export const subtopics: SubtopicSummary[] = SUBTOPICS.map((entry) => {
-  const qs = allQuestions.filter((q) => q.subtopicId === entry.id);
-  return {
-    id: entry.id,
-    name: entry.name,
-    slug: entry.slug,
-    gradient: entry.gradient,
-    blurb: entry.blurb,
-    order: entry.order,
-    topic: qs[0]?.topic ?? "Year 1 Pure",
-    level: qs[0]?.level ?? "A-Level Maths",
-    count: qs.length,
-    easy: qs.filter((q) => q.difficulty === "Easy").length,
-    intermediate: qs.filter((q) => q.difficulty === "Intermediate").length,
-    hard: qs.filter((q) => q.difficulty === "Hard").length,
-  };
-}).sort((a, b) => a.order - b.order);
 
 export function getQuestionById(id: string): Question | undefined {
   return allQuestions.find((q) => q.id === id);
 }
-
-export function getSubtopicBySlug(slug: string): SubtopicSummary | undefined {
-  return subtopics.find((s) => s.slug === slug);
-}
-
-export function getQuestionsBySubtopicSlug(slug: string): Question[] {
-  const entry = subtopicBySlug(slug);
-  return entry ? allQuestions.filter((q) => q.subtopicId === entry.id) : [];
-}
-
-export const stats = {
-  total: allQuestions.length,
-  subtopics: subtopics.length,
-  easy: allQuestions.filter((q) => q.difficulty === "Easy").length,
-  intermediate: allQuestions.filter((q) => q.difficulty === "Intermediate").length,
-  hard: allQuestions.filter((q) => q.difficulty === "Hard").length,
-  steps: allQuestions.reduce((n, q) => n + q.workedSolution.steps.length, 0),
-};

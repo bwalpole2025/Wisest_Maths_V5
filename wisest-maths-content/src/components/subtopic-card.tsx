@@ -1,9 +1,9 @@
 "use client";
 
-import Link from "next/link";
+import { FastLink } from "@/components/fast-link";
 import type { CSSProperties } from "react";
 import { ArrowRight } from "lucide-react";
-import type { SubtopicSummary } from "@/lib/questions";
+import type { SubtopicSummary } from "@/lib/question-summaries";
 import { cn } from "@/lib/utils";
 
 export function SubtopicCard({ subtopic, index = 0 }: { subtopic: SubtopicSummary; index?: number }) {
@@ -13,7 +13,7 @@ export function SubtopicCard({ subtopic, index = 0 }: { subtopic: SubtopicSummar
       className="rise"
       style={{ "--rise-delay": `${(index % 4) * 0.06}s`, "--rise-y": "24px" } as CSSProperties}
     >
-      <Link href={`/questions/${s.slug}`} className="group block h-full">
+      <FastLink href={`/questions/${s.slug}`} className="group block h-full">
         <div className="card-glow glass relative flex h-full flex-col overflow-hidden rounded-3xl p-6 transition-transform duration-300 group-hover:-translate-y-1">
           <div
             className={cn(
@@ -56,7 +56,7 @@ export function SubtopicCard({ subtopic, index = 0 }: { subtopic: SubtopicSummar
             </span>
           </div>
         </div>
-      </Link>
+      </FastLink>
     </div>
   );
 }

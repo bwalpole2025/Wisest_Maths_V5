@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import { FastLink } from "@/components/fast-link";
 import { motion } from "framer-motion";
 import { Loader2, ArrowUpRight } from "lucide-react";
-import { loadSubtopic } from "@/data/questions/a-level-maths";
+import { loadSubtopic } from "@/data/questions/registry";
 import type { Question } from "@/lib/types";
 import { QuestionList } from "@/components/question-list";
 import { cn } from "@/lib/utils";
@@ -82,12 +82,12 @@ export function SubtopicBrowser({ tabs, initialSlug }: { tabs: SubtopicTab[]; in
           {loading ? "Loading questions…" : <>Browsing <b className="text-foreground">{activeTab?.name}</b></>}
         </p>
         {activeTab && (
-          <Link
+          <FastLink
             href={`/questions/${activeTab.slug}`}
             className="group inline-flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
           >
             Open full page <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-          </Link>
+          </FastLink>
         )}
       </div>
 

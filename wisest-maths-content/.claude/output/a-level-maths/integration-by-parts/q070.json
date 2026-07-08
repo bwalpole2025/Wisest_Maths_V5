@@ -1,0 +1,115 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q070",
+  "difficulty": "Hard",
+  "marks": 10,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "exponential",
+    "multi-part",
+    "numerical integration link",
+    "multi-step"
+  ],
+  "questionText": "(a) Use integration by parts to find $\\displaystyle\\int x^{2}e^{x}\\,dx$.\n(b) Find $\\displaystyle\\int_{0}^{2} x^{2}e^{x}\\,dx$.\n(c) State whether the trapezium rule with 4 strips would over- or under-estimate the integral in (b), giving a reason.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "(a) First parts u = x²",
+        "workingLatex": "x^{2}e^{x} - 2\\int xe^{x}dx",
+        "explanation": "Reduce power.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Second parts",
+        "workingLatex": "\\int xe^{x}dx = xe^{x} - e^{x}",
+        "explanation": "Standard.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "(a) Result",
+        "workingLatex": "x^{2}e^{x} - 2xe^{x} + 2e^{x} + c",
+        "explanation": "Antiderivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "(b) At x=2",
+        "workingLatex": "4e^{2} - 4e^{2} + 2e^{2} = 2e^{2}",
+        "explanation": "Upper limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "(b) At x=0",
+        "workingLatex": "0 - 0 + 2 = 2",
+        "explanation": "Lower limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "(b) Value",
+        "workingLatex": "2e^{2} - 2",
+        "explanation": "Definite integral.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "(c) Concavity",
+        "workingLatex": "f(x)=x^{2}e^{x} \\Rightarrow f''(x) = e^{x}(x^{2}+4x+2) > 0 \\text{ on } [0,2]",
+        "explanation": "Second derivative positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "(c) Trapezium rule",
+        "workingLatex": "\\text{Concave up } \\Rightarrow \\text{ chords lie above curve } \\Rightarrow \\text{ over-estimate}",
+        "explanation": "Standard numerical-integration reasoning.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer (a)",
+        "workingLatex": "x^{2}e^{x} - 2xe^{x} + 2e^{x} + c",
+        "explanation": "Part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Answer (b,c)",
+        "workingLatex": "(b) $2e^{2}-2$; (c) over-estimate (concave up)",
+        "explanation": "All parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\displaystyle\\int x^{2}e^{x}\\,dx = x^{2}e^{x} - 2xe^{x} + 2e^{x} + c$. (b) $2e^{2}-2$. (c) Over-estimate — $f''(x)>0$ on $[0,2]$ so the curve is concave up."
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q058",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "logarithm",
+    "multi-part",
+    "multi-step"
+  ],
+  "questionText": "(a) Show that $\\displaystyle\\int \\ln x\\,dx = x\\ln x - x + c$.\n(b) Hence find $\\displaystyle\\int_{1}^{e^{2}} \\ln x\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "(a) Choose u and dv",
+        "workingLatex": "u = \\ln x,\\; dv = dx",
+        "explanation": "Classic logarithm integral.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply by parts",
+        "workingLatex": "x\\ln x - \\int dx",
+        "explanation": "Remaining integral is $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Part (a) result",
+        "workingLatex": "x\\ln x - x + c",
+        "explanation": "Standard result proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "(b) Use limits 1 to e²",
+        "workingLatex": "\\int_{1}^{e^{2}} \\ln x\\,dx",
+        "explanation": "Evaluate the antiderivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "At x = e²",
+        "workingLatex": "e^{2}\\ln(e^{2}) - e^{2} = 2e^{2} - e^{2} = e^{2}",
+        "explanation": "Use $\\ln(e^{2})=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "At x = 1",
+        "workingLatex": "1\\ln 1 - 1 = -1",
+        "explanation": "Lower limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract",
+        "workingLatex": "e^{2} - (-1) = e^{2} + 1",
+        "explanation": "Definite value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpretation",
+        "workingLatex": "\\text{Area under } \\ln x \\text{ on } [1,e^{2}]",
+        "explanation": "Log curve area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "(a) $x\\ln x - x + c$; (b) $e^{2}+1$",
+        "explanation": "Both parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check magnitude",
+        "workingLatex": "e^{2}+1 \\approx 8.39",
+        "explanation": "Reasonable positive area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\displaystyle\\int \\ln x\\,dx = x\\ln x - x + c$. (b) $\\displaystyle\\int_{1}^{e^{2}} \\ln x\\,dx = e^{2}+1$."
+  }
+}

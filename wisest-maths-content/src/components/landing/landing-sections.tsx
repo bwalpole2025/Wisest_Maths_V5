@@ -1,6 +1,6 @@
-import Link from "next/link";
+import { AppLink } from "@/components/app-link";
 import { ArrowRight, CheckCircle2, Layers } from "lucide-react";
-import { subtopics, stats } from "@/lib/questions";
+import { subtopics, stats } from "@/lib/question-summaries";
 import { SubtopicCard } from "@/components/subtopic-card";
 import { Reveal } from "@/components/reveal";
 import { MathText } from "@/components/math";
@@ -92,13 +92,13 @@ export function LandingSections() {
                 {stats.subtopics} subtopics, fully solved
               </h2>
             </div>
-            <Link
+            <AppLink
               href="/questions"
               className="group inline-flex items-center gap-2 text-sm font-semibold text-landing-navy/55 transition-colors hover:text-landing-navy"
             >
               Browse everything
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
-            </Link>
+            </AppLink>
           </Reveal>
 
           <div className="grid gap-6 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
@@ -122,10 +122,10 @@ export function LandingSections() {
             />{" "}
             — only nicer.
           </p>
-          <Link href="/questions" className="landing-lime-btn mt-10 gap-2 sm:mt-12">
+          <AppLink href="/questions" className="landing-lime-btn mt-10 gap-2 sm:mt-12">
             Start solving now
             <ArrowRight className="h-4 w-4" />
-          </Link>
+          </AppLink>
         </Reveal>
       </section>
     </>
