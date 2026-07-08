@@ -89,13 +89,37 @@ import { questions as projectiles } from "@/data/questions/a-level-maths/year-2-
 import { questions as applicationsOfForces } from "@/data/questions/a-level-maths/year-2-mech/applications-of-forces";
 import { questions as furtherKinematics } from "@/data/questions/a-level-maths/year-2-mech/further-kinematics";
 import { questions as complexArithmetic } from "@/data/questions/a-level-further-maths/year-1-pure/complex-arithmetic";
+import { questions as complexQuadratics } from "@/data/questions/a-level-further-maths/year-1-pure/complex-quadratics";
 import { questions as argand } from "@/data/questions/a-level-further-maths/year-1-pure/argand";
+import { questions as argandLoci } from "@/data/questions/a-level-further-maths/year-1-pure/argand-loci";
 import { questions as rootsPolynomials } from "@/data/questions/a-level-further-maths/year-1-pure/roots-polynomials";
+import { questions as transformingRoots } from "@/data/questions/a-level-further-maths/year-1-pure/transforming-roots";
 import { questions as induction } from "@/data/questions/a-level-further-maths/year-1-pure/induction";
 import { questions as matrices } from "@/data/questions/a-level-further-maths/year-1-pure/matrices";
+import { questions as determinantsInverses } from "@/data/questions/a-level-further-maths/year-1-pure/determinants-inverses";
+import { questions as matrixSystems } from "@/data/questions/a-level-further-maths/year-1-pure/matrix-systems";
 import { questions as linearTransformations } from "@/data/questions/a-level-further-maths/year-1-pure/linear-transformations";
+import { questions as invariance } from "@/data/questions/a-level-further-maths/year-1-pure/invariance";
 import { questions as series } from "@/data/questions/a-level-further-maths/year-1-pure/series";
 import { questions as vectorsLinesPlanes } from "@/data/questions/a-level-further-maths/year-1-pure/vectors-lines-planes";
+import { questions as scalarProductMethods } from "@/data/questions/a-level-further-maths/year-1-pure/scalar-product-methods";
+import { questions as intersectionsDistances } from "@/data/questions/a-level-further-maths/year-1-pure/intersections-distances";
+import { questions as volumesRevolution } from "@/data/questions/a-level-further-maths/year-1-pure/volumes-revolution";
+import { questions as collisions1d } from "@/data/questions/a-level-further-maths/year-1-mech/collisions-1d";
+import { questions as elasticEnergy } from "@/data/questions/a-level-further-maths/year-1-mech/elastic-energy";
+import { questions as successiveCollisions } from "@/data/questions/a-level-further-maths/year-1-mech/successive-collisions";
+import { questions as discreteRandomVariablesFurther } from "@/data/questions/a-level-further-maths/year-1-stats/discrete-random-variables";
+import { questions as geometricNegbinomial } from "@/data/questions/a-level-further-maths/year-1-stats/geometric-negbinomial";
+import { questions as hypothesisTests } from "@/data/questions/a-level-further-maths/year-1-stats/hypothesis-tests";
+import { questions as qualityOfTests } from "@/data/questions/a-level-further-maths/year-1-stats/quality-of-tests";
+import { questions as centralLimit } from "@/data/questions/a-level-further-maths/year-1-stats/central-limit";
+import { questions as chiSquared } from "@/data/questions/a-level-further-maths/year-1-stats/chi-squared";
+import { questions as pgf } from "@/data/questions/a-level-further-maths/year-1-stats/pgf";
+import { questions as poisson } from "@/data/questions/a-level-further-maths/year-1-stats/poisson";
+import { questions as elasticStringsSprings } from "@/data/questions/a-level-further-maths/year-1-mech/elastic-strings-springs";
+import { questions as impulseVectors } from "@/data/questions/a-level-further-maths/year-1-mech/impulse-vectors";
+import { questions as momentumImpulse } from "@/data/questions/a-level-further-maths/year-1-mech/momentum-impulse";
+import { questions as workEnergyPower } from "@/data/questions/a-level-further-maths/year-1-mech/work-energy-power";
 
 export { slugForSubtopicId };
 
@@ -184,13 +208,37 @@ export const allQuestions: Question[] = [
   ...applicationsOfForces,
   ...furtherKinematics,
   ...complexArithmetic,
+  ...complexQuadratics,
   ...argand,
+  ...argandLoci,
   ...rootsPolynomials,
+  ...transformingRoots,
   ...induction,
   ...matrices,
+  ...determinantsInverses,
+  ...matrixSystems,
   ...linearTransformations,
+  ...invariance,
   ...series,
   ...vectorsLinesPlanes,
+  ...scalarProductMethods,
+  ...intersectionsDistances,
+  ...volumesRevolution,
+  ...momentumImpulse,
+  ...impulseVectors,
+  ...workEnergyPower,
+  ...elasticStringsSprings,
+  ...elasticEnergy,
+  ...collisions1d,
+  ...successiveCollisions,
+  ...discreteRandomVariablesFurther,
+  ...poisson,
+  ...geometricNegbinomial,
+  ...hypothesisTests,
+  ...qualityOfTests,
+  ...centralLimit,
+  ...chiSquared,
+  ...pgf,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

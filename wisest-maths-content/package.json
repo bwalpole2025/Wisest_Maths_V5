@@ -5,7 +5,7 @@
   "scripts": {
     "validate-registry": "node scripts/validate-question-registry.mjs",
     "sync-summaries": "npx tsx scripts/sync-question-summaries.mjs",
-    "predev": "node scripts/validate-question-registry.mjs",
+    "predev": "npm run sync-summaries && node scripts/validate-question-registry.mjs",
     "dev": "node scripts/dev.mjs",
     "prebuild": "node scripts/validate-question-registry.mjs",
     "build": "next build",

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Wisest Maths">
+  <rect width="512" height="512" fill="#2c9de4"/>
+  <g fill="#ffffff">
+    <polygon points="256,88 188,372 224,372 256,168"/>
+    <polygon points="256,88 324,372 288,372 256,168"/>
+    <rect x="148" y="360" width="96" height="28" rx="2"/>
+    <rect x="268" y="360" width="96" height="28" rx="2"/>
+  </g>
+</svg>

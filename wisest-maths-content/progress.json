@@ -1,9 +1,9 @@
 {
   "currentLevel": "A-Level Further Maths",
-  "currentTopic": "Further Maths Year 1: Pure (Core Pure 1)",
-  "currentSubtopic": "Volumes of revolution",
-  "currentSubtopicId": "fm.y1.pure.volumes-revolution",
-  "questionsGenerated": 0,
+  "currentTopic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+  "currentSubtopic": "Probability generating functions",
+  "currentSubtopicId": "fm.y1.stats.pgf",
+  "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
     "al.y1.pure.argument-notation",
@@ -90,13 +90,37 @@
     "al.y2.mech.applications-forces",
     "al.y2.mech.further-kinematics",
     "fm.y1.pure.complex-arithmetic",
+    "fm.y1.pure.complex-quadratics",
     "fm.y1.pure.argand",
+    "fm.y1.pure.argand-loci",
     "fm.y1.pure.roots-polynomials",
+    "fm.y1.pure.transforming-roots",
     "fm.y1.pure.induction",
     "fm.y1.pure.matrices",
+    "fm.y1.pure.determinants-inverses",
+    "fm.y1.pure.matrix-systems",
     "fm.y1.pure.linear-transformations",
+    "fm.y1.pure.invariance",
     "fm.y1.pure.series",
-    "fm.y1.pure.vectors-lines-planes"
+    "fm.y1.pure.vectors-lines-planes",
+    "fm.y1.pure.scalar-product",
+    "fm.y1.pure.vector-distances",
+    "fm.y1.pure.volumes-revolution",
+    "fm.y1.mech.momentum-impulse",
+    "fm.y1.mech.impulse-vectors",
+    "fm.y1.mech.work-energy-power",
+    "fm.y1.mech.elastic-strings-springs",
+    "fm.y1.mech.elastic-energy",
+    "fm.y1.mech.collisions-1d",
+    "fm.y1.mech.successive-collisions",
+    "fm.y1.stats.discrete-rv",
+    "fm.y1.stats.poisson",
+    "fm.y1.stats.geometric-negbinomial",
+    "fm.y1.stats.hypothesis-tests",
+    "fm.y1.stats.quality-of-tests",
+    "fm.y1.stats.central-limit",
+    "fm.y1.stats.chi-squared",
+    "fm.y1.stats.pgf"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -106,8 +130,8 @@
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 8,
-      "totalQuestionsGenerated": 560
+      "completedSubtopics": 31,
+      "totalQuestionsGenerated": 2170
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -115,5 +139,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-08T10:20:00+01:00"
+  "lastUpdated": "2026-07-08T17:55:00+01:00"
 }

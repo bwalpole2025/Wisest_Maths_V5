@@ -126,21 +126,21 @@
         "discrete-rv": "Discrete distributions",
         "poisson": "Discrete distributions",
         "geometric-negbinomial": "Discrete distributions",
-        "hypothesis-tests": "Hypothesis testing",
+        "hypothesis-tests": "Hypothesis testing (Poisson, geometric)",
         "central-limit": "Central limit theorem",
-        "chi-squared": "Chi-squared tests",
+        "chi-squared": "Chi-squared goodness of fit",
         "contingency-tables": "Chi-squared tests",
         "pgf": "Probability generating functions",
-        "quality-of-tests": "Hypothesis testing"
+        "quality-of-tests": "Quality of tests"
       },
       "mech": {
         "momentum-impulse": "Momentum and impulse",
-        "impulse-vectors": "Momentum and impulse",
+        "impulse-vectors": "Impulse and momentum in 2D",
         "work-energy-power": "Work, energy and power",
         "elastic-strings-springs": "Elastic strings and springs",
-        "elastic-energy": "Elastic strings and springs",
+        "elastic-energy": "Elastic energy",
         "collisions-1d": "Elastic collisions",
-        "successive-collisions": "Elastic collisions"
+        "successive-collisions": "Successive collisions"
       }
     },
     "y2": {
