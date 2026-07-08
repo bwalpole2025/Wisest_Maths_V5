@@ -5,61 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "proof",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "identities",
-    "proof",
-    "cotangent"
+    "compound angle",
+    "addition formulae",
+    "quadrant"
   ],
-  "questionText": "Prove that $\\dfrac{\\sin 2\\theta}{1 - \\cos 2\\theta} \\equiv \\cot\\theta$.",
+  "questionText": "Given that $\\sin A = \\tfrac{3}{5}$ where $A$ is acute, and $\\cos B = -\\tfrac{5}{13}$ where $B$ is obtuse, find the exact values of $\\sin(A+B)$, $\\cos(A-B)$ and $\\tan(A+B)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the numerator",
-        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "We rewrite both double angles in terms of $\\theta$, choosing forms that cancel.",
+        "description": "Find cos A using the quadrant",
+        "workingLatex": "A \\text{ acute} \\;\\Rightarrow\\; \\cos A = +\\sqrt{1-\\sin^2 A} = \\sqrt{1-\\tfrac{9}{25}} = \\tfrac{4}{5}",
+        "explanation": "An acute angle sits in the first quadrant, where cosine is positive, so we take the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Choose the useful form of the denominator",
-        "workingLatex": "1 - \\cos 2\\theta = 1 - (1 - 2\\sin^2\\theta) = 2\\sin^2\\theta",
-        "explanation": "Using the sine form makes the denominator collapse to $2\\sin^2\\theta$.",
+        "description": "Find sin B using the quadrant",
+        "workingLatex": "B \\text{ obtuse} \\;\\Rightarrow\\; \\sin B = +\\sqrt{1-\\cos^2 B} = \\sqrt{1-\\tfrac{25}{169}} = \\tfrac{12}{13}",
+        "explanation": "An obtuse angle lies in the second quadrant, where sine is positive, so $\\sin B$ takes the positive root even though $\\cos B$ is negative.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Form the fraction",
-        "workingLatex": "\\frac{\\sin 2\\theta}{1 - \\cos 2\\theta} = \\frac{2\\sin\\theta\\cos\\theta}{2\\sin^2\\theta}",
-        "explanation": "Substituting both parts gives a fraction ready to cancel.",
+        "description": "State the formula for sin(A+B)",
+        "workingLatex": "\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "The addition formula combines the four single-angle ratios we now have.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cancel common factors",
-        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Cancelling the $2$ and one sine leaves cosine over sine.",
+        "description": "Substitute to find sin(A+B)",
+        "workingLatex": "\\sin(A+B) = \\tfrac{3}{5}\\left(-\\tfrac{5}{13}\\right) + \\tfrac{4}{5}\\cdot\\tfrac{12}{13} = -\\tfrac{15}{65} + \\tfrac{48}{65} = \\tfrac{33}{65}",
+        "explanation": "Keeping the common denominator $65$ makes the addition of the two terms clean.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Recognise the result",
-        "workingLatex": "= \\cot\\theta \\;\\blacksquare",
-        "explanation": "Cosine over sine is cotangent, matching the right-hand side.",
+        "description": "State the formula for cos(A-B)",
+        "workingLatex": "\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "For a difference of angles the cosine formula carries a plus sign between the two products.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Note the contrast",
-        "workingLatex": "\\frac{\\sin 2\\theta}{1 + \\cos 2\\theta} = \\tan\\theta, \\quad \\frac{\\sin 2\\theta}{1 - \\cos 2\\theta} = \\cot\\theta",
-        "explanation": "Swapping the sign in the denominator swaps tangent for cotangent, a neat pairing worth remembering.",
+        "description": "Substitute to find cos(A-B)",
+        "workingLatex": "\\cos(A-B) = \\tfrac{4}{5}\\left(-\\tfrac{5}{13}\\right) + \\tfrac{3}{5}\\cdot\\tfrac{12}{13} = -\\tfrac{20}{65} + \\tfrac{36}{65} = \\tfrac{16}{65}",
+        "explanation": "Again the sixty-fifths combine directly to the exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find cos(A+B) ready for the tangent",
+        "workingLatex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B = -\\tfrac{20}{65} - \\tfrac{36}{65} = -\\tfrac{56}{65}",
+        "explanation": "To build $\\tan(A+B)$ by division we first need $\\cos(A+B)$, whose formula uses a minus sign for the sum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form tan(A+B)",
+        "workingLatex": "\\tan(A+B) = \\dfrac{\\sin(A+B)}{\\cos(A+B)} = \\dfrac{33/65}{-56/65} = -\\tfrac{33}{56}",
+        "explanation": "Dividing the sine and cosine of $A+B$, the $65$s cancel and the sign is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sanity check with the tan addition formula",
+        "workingLatex": "\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B} = \\dfrac{\\tfrac{3}{4}-\\tfrac{12}{5}}{1-\\tfrac{3}{4}\\left(-\\tfrac{12}{5}\\right)} = \\dfrac{-\\tfrac{33}{20}}{\\tfrac{56}{20}} = -\\tfrac{33}{56}",
+        "explanation": "Using $\\tan A=\\tfrac{3}{4}$ and $\\tan B=-\\tfrac{12}{5}$ in the compound tangent formula reproduces the same value, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sin(A+B) = \\tfrac{33}{65}, \\quad \\cos(A-B) = \\tfrac{16}{65}, \\quad \\tan(A+B) = -\\tfrac{33}{56}",
+        "explanation": "Collecting the three exact values completes the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\sin 2\\theta}{1 - \\cos 2\\theta} \\equiv \\cot\\theta$"
+    "finalAnswer": "$\\sin(A+B) = \\tfrac{33}{65}$, $\\cos(A-B) = \\tfrac{16}{65}$, $\\tan(A+B) = -\\tfrac{33}{56}$."
   }
 }

@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.stats.normal-distribution.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "coordinates",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "simultaneous equations",
+    "inverse normal"
+  ],
+  "questionText": "The masses, $X$ grams, of apples from an orchard are modelled by $X \\sim N(\\mu, \\sigma^2)$. A grower finds that $20\\%$ of the apples have a mass below $100$ g and $90\\%$ have a mass below $130$ g. Find $\\mu$ and $\\sigma$, giving your answers to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given probabilities",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 100) = 0.20, \\qquad P(X < 130) = 0.90",
+        "explanation": "The masses are normal with unknown mean $\\mu$ and standard deviation $\\sigma$. Both statements are already lower-tail proportions: $20\\%$ lie below $100$ g and $90\\%$ lie below $130$ g. Two conditions will let us find the two unknowns.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{100 - \\mu}{\\sigma}\\right) = 0.20",
+        "explanation": "Replacing $X$ by $Z = \\dfrac{X-\\mu}{\\sigma}$ converts the mass $100$ into the standardised value $\\dfrac{100-\\mu}{\\sigma}$, while the probability below it stays $0.20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.20) = -0.8416",
+        "explanation": "The standardised value with $20\\%$ of the area below it is negative, since it lies to the left of the mean; the inverse normal gives $z_1 = -0.8416$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{100 - \\mu}{\\sigma} = -0.8416",
+        "explanation": "Setting the standardised value of $100$ equal to $z_1$ produces the first linear equation connecting $\\mu$ and $\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Standardise the second condition",
+        "workingLatex": "P\\left(Z < \\dfrac{130 - \\mu}{\\sigma}\\right) = 0.90",
+        "explanation": "The second statement is already a lower-tail probability, so we simply standardise $130$ in the same way. No conversion of tails is needed here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the second z-value",
+        "workingLatex": "z_2 = \\Phi^{-1}(0.90) = 1.2816",
+        "explanation": "The value with $90\\%$ of the area below it is positive because it lies to the right of the mean; the inverse normal gives $z_2 = 1.2816$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{130 - \\mu}{\\sigma} = 1.2816",
+        "explanation": "Equating the standardised value of $130$ with $z_2$ gives the second equation, completing the simultaneous pair.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Clear the fractions",
+        "workingLatex": "100 - \\mu = -0.8416\\,\\sigma, \\qquad 130 - \\mu = 1.2816\\,\\sigma",
+        "explanation": "Multiplying through by $\\sigma$ writes both equations in the form ‘value minus mean equals $z$ times standard deviation’, which is convenient for elimination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "(130 - \\mu) - (100 - \\mu) = 1.2816\\,\\sigma - (-0.8416\\,\\sigma)",
+        "explanation": "Subtracting the equations cancels $-\\mu$ and leaves a single equation in $\\sigma$. The masses differ by $30$ g, matching a difference of $z$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify",
+        "workingLatex": "30 = 2.1232\\,\\sigma",
+        "explanation": "The left side is $130 - 100 = 30$; the right combines $1.2816 + 0.8416 = 2.1232$. A single division now yields $\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{30}{2.1232} = 14.13",
+        "explanation": "So $30$ g corresponds to about $2.12$ standard deviations, giving a standard deviation of roughly $14.1$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Substitute back for mu",
+        "workingLatex": "\\mu = 100 + 0.8416 \\times 14.13 = 111.9",
+        "explanation": "Rearranging the first equation gives $\\mu = 100 + 0.8416\\,\\sigma$. The mean sits above $100$ g, which is sensible because only $20\\%$ of apples fall below $100$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the answers to 3 s.f.",
+        "workingLatex": "\\mu \\approx 112, \\qquad \\sigma \\approx 14.1",
+        "explanation": "To three significant figures the fitted model is $X \\sim N(112,\\ 14.1^2)$ grams.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check against the data",
+        "workingLatex": "P(X < 100) \\approx 0.197, \\qquad P(X < 130) \\approx 0.899",
+        "explanation": "With $\\mu = 112$ and $\\sigma = 14.1$, about $20\\%$ of apples lie below $100$ g and about $90\\%$ below $130$ g, confirming the fit.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 112$ g and $\\sigma \\approx 14.1$ g, so $X \\sim N(112,\\ 14.1^2)$."
+  }
+}

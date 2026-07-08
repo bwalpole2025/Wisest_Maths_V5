@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "chain rule",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = x\\sqrt{4 - x^2}$ for $-2 \\le x \\le 2$. (a) Show that $\\dfrac{dy}{dx} = \\dfrac{4 - 2x^2}{\\sqrt{4 - x^2}}$. (b) Find the equation of the tangent to $C$ at the origin. (c) Find the exact coordinates of the stationary points of $C$ and determine their nature. (d) State the greatest and least values of $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the factors for the product rule",
+        "workingLatex": "u = x, \\qquad v = (4 - x^2)^{1/2}",
+        "explanation": "The function is a product of $x$ and a square root; the square root is a composite, so we will need the chain rule for $v$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set up the chain rule for the square root",
+        "workingLatex": "v = w^{1/2},\\quad w = 4 - x^2:\\qquad \\frac{dv}{dw} = \\tfrac{1}{2}w^{-1/2}, \\quad \\frac{dw}{dx} = -2x",
+        "explanation": "Writing the root as a power with inner function $w=4-x^2$ prepares the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the square root",
+        "workingLatex": "v' = \\tfrac{1}{2}(4 - x^2)^{-1/2}(-2x) = \\frac{-x}{\\sqrt{4 - x^2}}",
+        "explanation": "Multiplying the outer and inner derivatives and simplifying gives $v'$; also $u'=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = 1\\cdot\\sqrt{4 - x^2} + x\\cdot\\frac{-x}{\\sqrt{4 - x^2}} = \\sqrt{4 - x^2} - \\frac{x^2}{\\sqrt{4 - x^2}}",
+        "explanation": "Substituting into $u'v+uv'$ gives two terms, one of which is a fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine over a common denominator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{(4 - x^2) - x^2}{\\sqrt{4 - x^2}} = \\frac{4 - 2x^2}{\\sqrt{4 - x^2}}",
+        "explanation": "Writing the first term as $\\tfrac{4-x^2}{\\sqrt{4-x^2}}$ and combining gives the required single fraction, proving (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the gradient at the origin",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = \\frac{4 - 0}{\\sqrt{4}} = \\frac{4}{2} = 2",
+        "explanation": "The origin lies on $C$ since $y=0$ when $x=0$; substituting gives the slope there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the tangent at the origin",
+        "workingLatex": "y - 0 = 2(x - 0) \\;\\Rightarrow\\; y = 2x",
+        "explanation": "With gradient $2$ through $(0,0)$, the tangent is $y=2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\frac{4 - 2x^2}{\\sqrt{4 - x^2}} = 0 \\;\\Rightarrow\\; 4 - 2x^2 = 0",
+        "explanation": "A fraction is zero only when its numerator is zero; the denominator $\\sqrt{4-x^2}>0$ for $-2<x<2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "x^2 = 2 \\;\\Rightarrow\\; x = \\sqrt{2} \\ \\text{ or }\\ x = -\\sqrt{2}",
+        "explanation": "Both lie strictly inside the domain $-2<x<2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinates",
+        "workingLatex": "y(\\sqrt{2}) = \\sqrt{2}\\cdot\\sqrt{2} = 2, \\qquad y(-\\sqrt{2}) = -\\sqrt{2}\\cdot\\sqrt{2} = -2",
+        "explanation": "Since $\\sqrt{4-2}=\\sqrt2$, the stationary points are $(\\sqrt2,2)$ and $(-\\sqrt2,-2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the sign test",
+        "workingLatex": "\\operatorname{sign}\\!\\left(\\frac{dy}{dx}\\right) = \\operatorname{sign}(4 - 2x^2),\\quad \\sqrt{4 - x^2} > 0",
+        "explanation": "On $(-2,2)$ the denominator is positive, so the gradient's sign follows the numerator $4-2x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Classify the point at x = sqrt2",
+        "workingLatex": "4 - 2x^2:\\ \\ (+)\\ \\to\\ (-) \\ \\text{through } x=\\sqrt{2}",
+        "explanation": "The gradient turns from positive to negative, so $(\\sqrt2,2)$ is a local maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Classify the point at x = -sqrt2",
+        "workingLatex": "4 - 2x^2:\\ \\ (-)\\ \\to\\ (+) \\ \\text{through } x=-\\sqrt{2}",
+        "explanation": "The gradient turns from negative to positive, so $(-\\sqrt2,-2)$ is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the greatest and least values",
+        "workingLatex": "y(\\pm 2) = 0 \\;\\Rightarrow\\; \\text{greatest } y = 2,\\quad \\text{least } y = -2",
+        "explanation": "At the endpoints $x=\\pm2$ the curve returns to $0$, so the maximum $2$ is the greatest value and the minimum $-2$ is the least value over the whole domain.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\dfrac{4-2x^2}{\\sqrt{4-x^2}}$. (b) $y=2x$. (c) $(\\sqrt2,2)$ is a maximum and $(-\\sqrt2,-2)$ is a minimum. (d) Greatest value $2$, least value $-2$."
+  }
+}

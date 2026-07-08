@@ -4,47 +4,117 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "cartesian",
-    "quartic"
+    "intersection",
+    "quadratic in t",
+    "distance"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^4 + 1$. Find the Cartesian equation and state the domain.",
+  "questionText": "A curve $C$ has parametric equations $x = t^{2}$ and $y = 2t$, where $t$ is any real number. The line $l$ has equation $y = x - 3$. The curve meets the line at two points $A$ and $B$. Find the coordinates of $A$ and $B$, and hence find the exact distance $AB$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Relate the powers",
-        "workingLatex": "t^4 = (t^2)^2 = x^2",
-        "explanation": "Since $x = t^2$, the fourth power $t^4$ is $x^2$.",
+        "description": "Set up the intersection condition",
+        "workingLatex": "x = t^{2}, \\qquad y = 2t, \\qquad l:\\ y = x - 3",
+        "explanation": "A point lies on both the curve and the line only when its coordinates satisfy both equations. Because the curve's coordinates are written in terms of $t$, we substitute them into the line to get a single equation in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute",
-        "workingLatex": "y = x^2 + 1",
-        "explanation": "Replacing $t^4$ with $x^2$ eliminates the parameter.",
+        "description": "Substitute the parametric coordinates into the line",
+        "workingLatex": "2t = t^{2} - 3",
+        "explanation": "Replacing $x$ by $t^{2}$ and $y$ by $2t$ in $y = x - 3$ converts the geometric condition into an ordinary algebraic equation.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the domain",
-        "workingLatex": "x = t^2 \\ge 0",
-        "explanation": "A square is never negative, so $x \\ge 0$.",
+        "description": "Rearrange into a quadratic in t",
+        "workingLatex": "t^{2} - 2t - 3 = 0",
+        "explanation": "Collecting every term on one side produces a standard quadratic, whose roots are exactly the parameter values where the curve crosses the line.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the answer",
-        "workingLatex": "y = x^2 + 1, \\; x \\ge 0",
-        "explanation": "Only the right half of the parabola is traced.",
+        "description": "Factorise the quadratic",
+        "workingLatex": "(t - 3)(t + 1) = 0",
+        "explanation": "The quadratic factorises cleanly, which is faster than the formula and shows the two roots straight away.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Read off the parameter values",
+        "workingLatex": "t = 3 \\quad \\text{or} \\quad t = -1",
+        "explanation": "Setting each factor to zero gives the two values of $t$ that correspond to the intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the parameter values are permitted",
+        "workingLatex": "t \\in \\mathbb{R} \\Rightarrow \\text{both roots are valid}",
+        "explanation": "Here $t$ may be any real number, so neither root is ruled out; both give genuine points on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the coordinates for the first root",
+        "workingLatex": "t = 3:\\quad x = 3^{2} = 9, \\quad y = 2(3) = 6",
+        "explanation": "Substituting $t = 3$ back into the original parametric equations locates the actual position of the first intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Name the first point",
+        "workingLatex": "A = (9,\\, 6)",
+        "explanation": "Labelling it $A$ keeps the two intersection points clearly distinguished as we continue.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the coordinates for the second root",
+        "workingLatex": "t = -1:\\quad x = (-1)^{2} = 1, \\quad y = 2(-1) = -2",
+        "explanation": "Doing exactly the same with $t = -1$ gives the position of the second crossing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Name the second point",
+        "workingLatex": "B = (1,\\, -2)",
+        "explanation": "Recording it as $B$ completes the pair of intersection points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify both points lie on the line",
+        "workingLatex": "9 - 3 = 6\\ \\checkmark \\qquad 1 - 3 = -2\\ \\checkmark",
+        "explanation": "A quick substitution into $y = x - 3$ confirms both points satisfy the line and guards against an arithmetic slip.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set up the distance formula",
+        "workingLatex": "AB = \\sqrt{(9 - 1)^{2} + \\left(6 - (-2)\\right)^{2}}",
+        "explanation": "The distance between two points is the length of the straight segment joining them, which Pythagoras gives from the horizontal and vertical gaps.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Substitute the coordinate differences",
+        "workingLatex": "AB = \\sqrt{8^{2} + 8^{2}} = \\sqrt{64 + 64}",
+        "explanation": "Both the horizontal gap and the vertical gap are $8$, so the two squares are equal and the surd is easy to simplify.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Simplify the surd",
+        "workingLatex": "AB = \\sqrt{128} = \\sqrt{64 \\cdot 2} = 8\\sqrt{2}",
+        "explanation": "Taking out the largest square factor, $64$, leaves the exact distance $8\\sqrt{2}$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = x^2 + 1$ for $x \\ge 0$."
+    "finalAnswer": "The curve meets the line at $A = (9,\\, 6)$ and $B = (1,\\, -2)$, and the exact distance between them is $AB = 8\\sqrt{2}$."
   }
 }

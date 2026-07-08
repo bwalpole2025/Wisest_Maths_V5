@@ -4,54 +4,68 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "expression",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "tangent",
-    "trig"
+    "projectile",
+    "greatest height",
+    "parametric differentiation"
   ],
-  "questionText": "A curve has parametric equations $x = 3\\cos\\theta$, $y = 2\\sin\\theta$. Find the gradient of the curve at $\\theta = \\dfrac{\\pi}{4}$.",
+  "questionText": "A firework is launched so that, $t$ seconds after launch, its position in metres is modelled by $x = 6t$ and $y = 24t - 4t^{2}$. Find the greatest height the firework reaches, and how far it has travelled horizontally at that moment.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate each equation",
-        "workingLatex": "\\frac{dx}{d\\theta} = -3\\sin\\theta, \\quad \\frac{dy}{d\\theta} = 2\\cos\\theta",
-        "explanation": "Differentiating the trig positions with respect to $\\theta$.",
+        "description": "Differentiate the height with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 24 - 8t",
+        "explanation": "The vertical velocity $\\dot{y}$ tells us how fast the firework is rising, found by differentiating the height equation.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Form the gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\cos\\theta}{-3\\sin\\theta}",
-        "explanation": "Dividing the two derivatives.",
+        "description": "State the condition for greatest height",
+        "workingLatex": "\\dot{y} = 0",
+        "explanation": "At the top of the flight the firework is momentarily neither rising nor falling, so its vertical velocity is zero.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "\\frac{dy}{dx} = -\\frac{2}{3}\\cot\\theta",
-        "explanation": "Writing cosine over sine as cotangent tidies the gradient.",
+        "description": "Form the equation in t",
+        "workingLatex": "24 - 8t = 0",
+        "explanation": "Setting $\\dot{y}$ equal to zero gives an equation for the time at which the highest point occurs.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate at the given angle",
-        "workingLatex": "\\cot\\frac{\\pi}{4} = 1 \\;\\Rightarrow\\; \\frac{dy}{dx} = -\\frac{2}{3}",
-        "explanation": "Since $\\cot\\frac{\\pi}{4} = 1$, the gradient is $-\\frac{2}{3}$.",
+        "description": "Solve for t",
+        "workingLatex": "t = 3",
+        "explanation": "Rearranging gives the time, in seconds, at which the firework reaches its greatest height.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\frac{dy}{dx} = -\\frac{2}{3}",
-        "explanation": "This is the gradient at $\\theta = \\frac{\\pi}{4}$.",
+        "description": "Find the greatest height",
+        "workingLatex": "y = 24(3) - 4(3)^{2} = 72 - 36 = 36",
+        "explanation": "Substituting the time back into the height equation gives the actual greatest height reached.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the horizontal distance at that time",
+        "workingLatex": "x = 6(3) = 18",
+        "explanation": "Using the same time in the $x$-equation gives how far the firework has travelled horizontally by then.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the results",
+        "workingLatex": "y_{\\max} = 36, \\quad x = 18",
+        "explanation": "So the greatest height is $36$ m, reached when the firework has travelled $18$ m horizontally.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{dy}{dx} = -\\dfrac{2}{3}$"
+    "finalAnswer": "The greatest height is $36$ m, reached when the firework has travelled $18$ m horizontally (at $t = 3$ s)."
   }
 }

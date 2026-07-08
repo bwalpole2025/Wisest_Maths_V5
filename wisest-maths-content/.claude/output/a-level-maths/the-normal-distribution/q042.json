@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "expected number"
+  ],
+  "questionText": "The lifetimes, $X$ hours, of a certain brand of light bulb are modelled by $X \\sim N(1200, 80^2)$. (a) Find $P(X > 1300)$. (b) A carton contains $400$ of these bulbs. Estimate how many of them last more than $1300$ hours. Give probabilities to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the probability required",
+        "workingLatex": "X \\sim N(1200,\\ 80^2), \\qquad P(X > 1300)",
+        "explanation": "The lifetimes are normal with mean $\\mu = 1200$ and standard deviation $\\sigma = 80$ (remember the $80^2$ in $N(\\mu,\\sigma^2)$ is the variance, so $\\sigma = 80$). Part (a) asks for the chance a single bulb outlasts $1300$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the value 1300",
+        "workingLatex": "Z = \\dfrac{1300 - 1200}{80} = 1.25",
+        "explanation": "To use the standard normal we measure how many standard deviations $1300$ lies above the mean. Subtracting the mean and dividing by $\\sigma$ turns the lifetime into a $z$-value of $1.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X > 1300) = P(Z > 1.25)",
+        "explanation": "Because standardising preserves the inequality, the chance $X$ exceeds $1300$ is exactly the chance the standard normal $Z$ exceeds $1.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Convert the upper tail to a cumulative probability",
+        "workingLatex": "P(Z > 1.25) = 1 - \\Phi(1.25)",
+        "explanation": "The cumulative function $\\Phi(z)$ gives the area to the left of $z$. The area to the right is whatever is left over from the total of $1$, so we subtract $\\Phi(1.25)$ from $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the cumulative probability",
+        "workingLatex": "\\Phi(1.25) = 0.8944",
+        "explanation": "Reading the standard normal CDF at $z = 1.25$ (from a calculator) gives $0.8944$: about $89\\%$ of bulbs fail before $1300$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the required probability",
+        "workingLatex": "P(X > 1300) = 1 - 0.8944 = 0.1056",
+        "explanation": "Subtracting from $1$ leaves the upper-tail probability. So roughly $10.6\\%$ of bulbs last longer than $1300$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the expected number for part (b)",
+        "workingLatex": "E = 400 \\times P(X > 1300) = 400 \\times 0.1056",
+        "explanation": "Each of the $400$ bulbs independently has probability $0.1056$ of lasting past $1300$ hours, so the expected count is the number of bulbs multiplied by that probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the expected number",
+        "workingLatex": "E = 42.26",
+        "explanation": "Multiplying $400$ by $0.1056$ gives $42.26$, the average number of long-lasting bulbs we would expect in a carton of this size.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Round to a whole number of bulbs",
+        "workingLatex": "E \\approx 42",
+        "explanation": "Since we are counting whole bulbs, we round to $42$. This is a sensible estimate: only about one in ten bulbs is a long-lasting one.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X > 1300) = 0.1056$ (4 s.f.); about $42$ of the $400$ bulbs are expected to last more than $1300$ hours."
+  }
+}

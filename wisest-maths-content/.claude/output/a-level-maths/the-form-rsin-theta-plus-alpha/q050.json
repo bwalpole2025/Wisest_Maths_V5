@@ -4,54 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
+    "r form",
     "harmonic form",
-    "range",
-    "square"
+    "modelling",
+    "radians"
   ],
-  "questionText": "Find the maximum and minimum values of $(5\\sin\\theta + 12\\cos\\theta)^2 + 3$.",
+  "questionText": "A particle moves so that its displacement $x$ metres from a fixed point at time $t$ seconds ($t\\ge 0$) is $x(t)=\\sin t-\\sqrt{3}\\,\\cos t$. Express $x(t)$ in the form $R\\sin(t-\\alpha)$, where $R>0$ and $0<\\alpha<\\tfrac{\\pi}{2}$, and hence state the amplitude and find, in exact form, the first time $t>0$ at which $x=1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the inner expression in R-form",
-        "workingLatex": "5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta + \\alpha)",
-        "explanation": "The amplitude is $13$, bounding the inner expression.",
+        "description": "Choose the target form",
+        "workingLatex": "\\sin t-\\sqrt{3}\\,\\cos t\\equiv R\\sin(t-\\alpha)",
+        "explanation": "Since the model is a sine minus a cosine of the same angle $t$, the natural single-wave target is $R\\sin(t-\\alpha)$, whose expansion produces a subtraction. We set them identically equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Bound the inner expression",
-        "workingLatex": "-13 \\le 13\\sin(\\theta + \\alpha) \\le 13",
-        "explanation": "The inner expression ranges from $-13$ to $13$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(t-\\alpha)=R\\cos\\alpha\\,\\sin t-R\\sin\\alpha\\,\\cos t",
+        "explanation": "Applying $\\sin(t-\\alpha)=\\sin t\\cos\\alpha-\\cos t\\sin\\alpha$ and multiplying by $R$ gives a positive multiple of $\\sin t$ and a negative multiple of $\\cos t$, matching the signs of the model.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Square the bounds",
-        "workingLatex": "0 \\le (13\\sin(\\theta + \\alpha))^2 \\le 169",
-        "explanation": "Squaring a value in $[-13,13]$ gives a value in $[0,169]$; zero occurs when the inner expression is $0$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=1,\\qquad R\\sin\\alpha=\\sqrt{3}",
+        "explanation": "Matching the coefficient of $\\sin t$ gives $R\\cos\\alpha=1$ and matching the coefficient of $\\cos t$ gives $R\\sin\\alpha=\\sqrt{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Add the constant",
-        "workingLatex": "3 \\le (5\\sin\\theta + 12\\cos\\theta)^2 + 3 \\le 172",
-        "explanation": "Adding $3$ shifts the range up by $3$.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{1^2+(\\sqrt{3})^2}=\\sqrt{4}=2",
+        "explanation": "Squaring and adding removes $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=1+3=4$ and the positive amplitude is $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State max and min",
-        "workingLatex": "\\text{max} = 172, \\quad \\text{min} = 3",
-        "explanation": "The maximum is $169 + 3$ and the minimum is $0 + 3$.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{\\sqrt{3}}{1}=\\sqrt{3}\\Rightarrow \\alpha=\\dfrac{\\pi}{3}",
+        "explanation": "Dividing the equations cancels $R$ to give $\\tan\\alpha=\\sqrt{3}$, whose acute value is exactly $\\dfrac{\\pi}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the model in R-form",
+        "workingLatex": "x(t)=2\\sin\\left(t-\\dfrac{\\pi}{3}\\right)",
+        "explanation": "Putting the amplitude and phase together writes the displacement as a single sine wave, which reveals the amplitude and makes the equation $x=1$ simple to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the amplitude",
+        "workingLatex": "\\text{amplitude}=R=2\\ \\text{m}",
+        "explanation": "A single sine wave $R\\sin(\\cdots)$ moves at most $R$ from the centre, so the amplitude of the motion is $2$ metres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the equation x = 1",
+        "workingLatex": "2\\sin\\left(t-\\dfrac{\\pi}{3}\\right)=1\\Rightarrow \\sin\\left(t-\\dfrac{\\pi}{3}\\right)=\\dfrac{1}{2}",
+        "explanation": "Using the R-form turns $x=1$ into a basic sine equation; dividing by $2$ isolates the sine of the shifted angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the first shifted angle",
+        "workingLatex": "t-\\dfrac{\\pi}{3}=\\dfrac{\\pi}{6}",
+        "explanation": "For $t>0$ the shifted angle $t-\\tfrac{\\pi}{3}$ exceeds $-\\tfrac{\\pi}{3}$, and the smallest such angle with sine $\\tfrac{1}{2}$ is the principal value $\\tfrac{\\pi}{6}$, giving the earliest time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for t",
+        "workingLatex": "t=\\dfrac{\\pi}{6}+\\dfrac{\\pi}{3}=\\dfrac{\\pi}{6}+\\dfrac{2\\pi}{6}=\\dfrac{\\pi}{2}",
+        "explanation": "Adding $\\tfrac{\\pi}{3}$ to undo the shift gives the exact first time, $t=\\tfrac{\\pi}{2}$ seconds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the solution",
+        "workingLatex": "x\\left(\\tfrac{\\pi}{2}\\right)=\\sin\\tfrac{\\pi}{2}-\\sqrt{3}\\cos\\tfrac{\\pi}{2}=1-0=1",
+        "explanation": "Substituting $t=\\tfrac{\\pi}{2}$ back into the original expression gives $x=1$, confirming the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum $= 172$, minimum $= 3$."
+    "finalAnswer": "$x(t)=2\\sin\\left(t-\\tfrac{\\pi}{3}\\right)$. The amplitude is $2$ m, and the displacement first equals $1$ m at $t=\\tfrac{\\pi}{2}$ s."
   }
 }

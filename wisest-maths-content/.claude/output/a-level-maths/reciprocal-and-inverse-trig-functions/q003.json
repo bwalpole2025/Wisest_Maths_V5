@@ -6,59 +6,67 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 2,
-  "answerType": "expression",
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "cotangent",
-    "definition"
+    "cosec",
+    "exact values",
+    "degrees"
   ],
-  "questionText": "Write down two equivalent expressions for $\\cot\\theta$: one in terms of $\\tan\\theta$, and one in terms of $\\cos\\theta$ and $\\sin\\theta$.",
+  "questionText": "Find the exact value of $\\operatorname{cosec} 30^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the definition of cotangent as a reciprocal",
-        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta}",
-        "explanation": "Cotangent is the reciprocal of tangent, which is the most direct definition and the first expression the question asks for.",
+        "description": "Recall the definition of cosecant",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "Cosecant is the reciprocal of sine, so we evaluate it by first finding the relevant sine value.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the quotient form of tangent",
-        "workingLatex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}",
-        "explanation": "Tangent itself can be written as sine over cosine, and we will invert this to get the second required form.",
+        "description": "Apply the definition at 30 degrees",
+        "workingLatex": "\\operatorname{cosec} 30^\\circ = \\frac{1}{\\sin 30^\\circ}",
+        "explanation": "Substituting $\\theta=30^\\circ$ reduces the task to finding one over $\\sin 30^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Take the reciprocal of the quotient",
-        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{1}{\\;\\frac{\\sin\\theta}{\\cos\\theta}\\;}",
-        "explanation": "Substituting the quotient form into the reciprocal gives a fraction divided by a fraction, which we can now simplify.",
+        "description": "Recall the exact value of sin 30",
+        "workingLatex": "\\sin 30^\\circ = \\frac{1}{2}",
+        "explanation": "From the half-equilateral triangle, the side opposite $30^\\circ$ is half the hypotenuse, giving $\\sin 30^\\circ=\\tfrac12$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify the compound fraction",
-        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Dividing by $\\frac{\\sin\\theta}{\\cos\\theta}$ is the same as multiplying by its flip, so the cosine rises to the top and the sine drops to the bottom.",
+        "description": "Substitute the sine value",
+        "workingLatex": "\\operatorname{cosec} 30^\\circ = \\frac{1}{\\tfrac{1}{2}}",
+        "explanation": "Replacing $\\sin 30^\\circ$ by $\\tfrac12$ leaves one divided by a half.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State when cotangent is undefined",
-        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\cot\\theta \\text{ undefined}",
-        "explanation": "From the form $\\frac{\\cos\\theta}{\\sin\\theta}$ we see the denominator is sine, so cotangent is undefined wherever sine is zero, at $\\theta = \\pi n$.",
+        "description": "Simplify the reciprocal of a fraction",
+        "workingLatex": "\\frac{1}{\\tfrac{1}{2}} = 2",
+        "explanation": "Dividing by $\\tfrac12$ is the same as multiplying by $2$, so the reciprocal of a half is two.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State both equivalent expressions",
-        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "This presents both requested forms side by side, confirming they describe the same function.",
+        "description": "Sanity check the size",
+        "workingLatex": "|\\sin 30^\\circ| \\le 1 \\Rightarrow |\\operatorname{cosec} 30^\\circ| \\ge 1 \\; \\checkmark",
+        "explanation": "A sine never exceeds $1$ in size, so its reciprocal is at least $1$ in size. The answer $2$ fits this comfortably.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the exact value",
+        "workingLatex": "\\operatorname{cosec} 30^\\circ = 2",
+        "explanation": "This exact value is what the question requires, and notice it equals $\\sec 60^\\circ$ because $\\sin 30^\\circ=\\cos 60^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cot\\theta = \\dfrac{1}{\\tan\\theta} = \\dfrac{\\cos\\theta}{\\sin\\theta}$"
+    "finalAnswer": "$\\operatorname{cosec} 30^\\circ = 2$."
   }
 }

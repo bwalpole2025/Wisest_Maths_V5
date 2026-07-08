@@ -5,75 +5,116 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 7,
+  "answerType": "numeric",
   "tags": [
-    "equations",
-    "cotangent",
-    "tangent",
-    "double angle"
+    "solving equations",
+    "cot",
+    "quadratic"
   ],
-  "questionText": "Solve $\\tan\\theta + \\cot\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve $\\operatorname{cosec}^2 x - 3\\cot x - 5 = 0$ for $0 \\le x < 360^\\circ$. Give any non-exact answers to one decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite both terms in sine and cosine",
-        "workingLatex": "\\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\cos\\theta}{\\sin\\theta} = 2",
-        "explanation": "Converting to basic functions allows the two fractions to be combined over a common denominator.",
+        "description": "State the equation and note the domain",
+        "workingLatex": "\\operatorname{cosec}^2 x - 3\\cot x - 5 = 0, \\qquad 0 \\le x < 360^\\circ, \\;\\; \\sin x \\neq 0",
+        "explanation": "Here $\\operatorname{cosec}^2 x$ and $\\cot x$ appear together. Converting $\\operatorname{cosec}^2 x$ into $\\cot x$ will make the whole equation a quadratic in $\\cot x$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Combine into a single fraction",
-        "workingLatex": "\\frac{\\sin^2\\theta + \\cos^2\\theta}{\\sin\\theta\\cos\\theta} = 2",
-        "explanation": "Adding over the common denominator produces the Pythagorean expression on top.",
+        "description": "Choose the identity",
+        "workingLatex": "\\operatorname{cosec}^2 x \\equiv 1 + \\cot^2 x",
+        "explanation": "The identity $1 + \\cot^2 x \\equiv \\operatorname{cosec}^2 x$ lets us replace $\\operatorname{cosec}^2 x$ so that only $\\cot x$ remains.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\frac{1}{\\sin\\theta\\cos\\theta} = 2",
-        "explanation": "Since $\\sin^2\\theta + \\cos^2\\theta = 1$, the numerator becomes $1$, greatly simplifying the equation.",
+        "description": "Substitute",
+        "workingLatex": "1 + \\cot^2 x - 3\\cot x - 5 = 0",
+        "explanation": "After substituting, the equation involves only $\\cot x$, which is exactly the single ratio we want.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rearrange for the product",
-        "workingLatex": "\\sin\\theta\\cos\\theta = \\frac{1}{2}",
-        "explanation": "Taking reciprocals gives the product of sine and cosine equal to one half.",
+        "description": "Simplify to a quadratic",
+        "workingLatex": "\\cot^2 x - 3\\cot x - 4 = 0",
+        "explanation": "Combining the constants ($1 - 5 = -4$) gives a tidy quadratic in $\\cot x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Use the double-angle identity",
-        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "The double-angle formula lets us fold the product into a single sine, which is easy to solve.",
+        "description": "Introduce a substitution",
+        "workingLatex": "u^2 - 3u - 4 = 0, \\quad \\text{where } u = \\cot x",
+        "explanation": "Letting $u = \\cot x$ reveals a standard quadratic to factorise.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Substitute",
-        "workingLatex": "\\sin 2\\theta = 2\\times\\frac{1}{2} = 1",
-        "explanation": "Multiplying the product by $2$ gives $\\sin 2\\theta = 1$.",
+        "description": "Factorise",
+        "workingLatex": "(u - 4)(u + 1) = 0",
+        "explanation": "Two numbers with product $-4$ and sum $-3$ are $-4$ and $+1$, giving this factorisation.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Solve for the double angle",
-        "workingLatex": "2\\theta = 90^\\circ, 450^\\circ",
-        "explanation": "Since $\\theta$ ranges over $[0^\\circ,360^\\circ)$, the double angle $2\\theta$ ranges over $[0^\\circ,720^\\circ)$, where sine equals $1$ at $90^\\circ$ and $450^\\circ$.",
+        "description": "Read off the roots",
+        "workingLatex": "\\cot x = 4 \\quad \\text{or} \\quad \\cot x = -1",
+        "explanation": "The cotangent, like the tangent, can take any real value, so both roots are attainable; nothing is rejected here.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Halve to find theta",
-        "workingLatex": "\\theta = 45^\\circ, 225^\\circ",
-        "explanation": "Dividing each value of $2\\theta$ by $2$ gives the solutions in the required interval.",
+        "description": "Convert cot to tan",
+        "workingLatex": "\\cot x = 4 \\Rightarrow \\tan x = \\tfrac{1}{4}, \\qquad \\cot x = -1 \\Rightarrow \\tan x = -1",
+        "explanation": "Since $\\cot x = \\tfrac{1}{\\tan x}$, we invert each value to work with $\\tan x$, which is easier to solve on a calculator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve tan x = 1/4",
+        "workingLatex": "\\tan^{-1}\\left(\\tfrac{1}{4}\\right) = 14.0^\\circ \\;\\text{(base angle)}",
+        "explanation": "The base angle comes from the calculator. Tangent is positive in the first and third quadrants, so solutions are $180^\\circ$ apart.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "All angles for tan x = 1/4",
+        "workingLatex": "x = 14.0^\\circ \\quad \\text{or} \\quad x = 14.0^\\circ + 180^\\circ = 194.0^\\circ",
+        "explanation": "Adding the period $180^\\circ$ to the base angle gives the third-quadrant solution. Both lie in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Solve tan x = -1",
+        "workingLatex": "x = 180^\\circ - 45^\\circ = 135^\\circ, \\qquad x = 360^\\circ - 45^\\circ = 315^\\circ",
+        "explanation": "The reference angle is $45^\\circ$; tangent is negative in the second and fourth quadrants, giving the exact solutions $135^\\circ$ and $315^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Collect all solutions",
+        "workingLatex": "x = 14.0^\\circ,\\; 135^\\circ,\\; 194.0^\\circ,\\; 315^\\circ",
+        "explanation": "Combining the two cases gives four solutions across the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify a solution",
+        "workingLatex": "\\cot 135^\\circ = -1: \\;\\; \\operatorname{cosec}^2 135^\\circ = 1 + (-1)^2 = 2, \\;\\; 2 - 3(-1) - 5 = 2 + 3 - 5 = 0",
+        "explanation": "At $x = 135^\\circ$ the left-hand side evaluates to $0$, matching the equation and confirming the working.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "x = 14.0^\\circ,\\; 135^\\circ,\\; 194.0^\\circ,\\; 315^\\circ",
+        "explanation": "These four angles are the full solution set in $0 \\le x < 360^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 45^\\circ, 225^\\circ$"
+    "finalAnswer": "$x = 14.0^\\circ,\\ 135^\\circ,\\ 194.0^\\circ,\\ 315^\\circ$ (non-exact values to 1 d.p.)."
   }
 }

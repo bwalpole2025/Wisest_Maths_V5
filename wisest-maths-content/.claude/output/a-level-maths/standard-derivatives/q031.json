@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "trigonometry"
+  ],
+  "questionText": "The curve has equation $y = \\tan x$, where $x$ is in radians. Find an equation of the tangent to the curve at the point where $x = \\dfrac{\\pi}{4}$, giving your answer in exact form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "The tangent gradient is the derivative at the point (in radians)",
+        "workingLatex": "m = \\left.\\frac{dy}{dx}\\right|_{x=\\pi/4}",
+        "explanation": "We differentiate to find the gradient function, then evaluate at $x=\\tfrac{\\pi}{4}$. Trig derivatives need $x$ in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the standard derivative of tan x",
+        "workingLatex": "\\frac{d}{dx}(\\tan x) = \\sec^2 x",
+        "explanation": "The derivative of $\\tan x$ is the standard result $\\sec^2 x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = \\sec^2 x",
+        "explanation": "This gives the gradient at any $x$ where $\\tan x$ is defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate sec² at x = π/4",
+        "workingLatex": "\\sec^2\\tfrac{\\pi}{4} = \\frac{1}{\\cos^2\\tfrac{\\pi}{4}} = \\frac{1}{\\left(\\tfrac{\\sqrt{2}}{2}\\right)^2} = \\frac{1}{\\tfrac{1}{2}} = 2",
+        "explanation": "Since $\\sec x = \\tfrac{1}{\\cos x}$ and $\\cos\\tfrac{\\pi}{4}=\\tfrac{\\sqrt{2}}{2}$, squaring gives $\\sec^2\\tfrac{\\pi}{4}=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the gradient",
+        "workingLatex": "m = 2",
+        "explanation": "The tangent's gradient at this point is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate of the point of contact",
+        "workingLatex": "y = \\tan\\tfrac{\\pi}{4} = 1",
+        "explanation": "On the curve at $x=\\tfrac{\\pi}{4}$; since $\\tan\\tfrac{\\pi}{4}=1$, the point is $\\left(\\tfrac{\\pi}{4},\\ 1\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect the point and gradient",
+        "workingLatex": "\\left(\\tfrac{\\pi}{4},\\ 1\\right), \\qquad m = 2",
+        "explanation": "Ready to build the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Use the point–gradient form",
+        "workingLatex": "y - 1 = 2\\left(x - \\tfrac{\\pi}{4}\\right)",
+        "explanation": "Substitute the point and gradient into $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand the bracket",
+        "workingLatex": "y - 1 = 2x - \\tfrac{\\pi}{2}",
+        "explanation": "Multiplying $2$ through the bracket: $2 \\times \\tfrac{\\pi}{4} = \\tfrac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Rearrange to the tangent equation",
+        "workingLatex": "y = 2x - \\tfrac{\\pi}{2} + 1",
+        "explanation": "Adding $1$ to both sides gives the tangent in exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check it passes through the point",
+        "workingLatex": "x=\\tfrac{\\pi}{4}:\\ 2\\left(\\tfrac{\\pi}{4}\\right) - \\tfrac{\\pi}{2} + 1 = 1 \\ \\checkmark",
+        "explanation": "The line gives $y=1$ at $x=\\tfrac{\\pi}{4}$, confirming the tangent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 2x - \\dfrac{\\pi}{2} + 1$."
+  }
+}

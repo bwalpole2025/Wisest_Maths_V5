@@ -4,75 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "interval",
   "tags": [
+    "r form",
     "harmonic form",
-    "proof",
-    "derivation"
+    "range",
+    "radians"
   ],
-  "questionText": "Prove that for constants $a, b > 0$, $a\\sin\\theta + b\\cos\\theta \\equiv R\\sin(\\theta + \\alpha)$ where $R = \\sqrt{a^2 + b^2}$ and $\\tan\\alpha = \\dfrac{b}{a}$.",
+  "questionText": "The function $f$ is defined by $f(\\theta) = 6 + 5\\sin\\theta - 12\\cos\\theta$. By writing $5\\sin\\theta - 12\\cos\\theta$ in the form $R\\sin(\\theta-\\alpha)$ with $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$, find the range of $f$, and state the value of $\\theta$ in $0 \\le \\theta \\le 2\\pi$ at which $f$ takes its greatest value. Give the angle in radians to $3$ significant figures.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the proposed right-hand side",
-        "workingLatex": "R\\sin(\\theta + \\alpha) = R(\\sin\\theta\\cos\\alpha + \\cos\\theta\\sin\\alpha)",
-        "explanation": "We start from the target form and expand using the addition formula, aiming to match the left-hand side.",
+        "description": "Set up the identity",
+        "workingLatex": "5\\sin\\theta - 12\\cos\\theta \\equiv R\\sin(\\theta-\\alpha)",
+        "explanation": "Because the cosine term is subtracted, the tidy single-wave target is $R\\sin(\\theta-\\alpha)$; its expansion naturally gives a sine term minus a cosine term.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Distribute R",
-        "workingLatex": "= (R\\cos\\alpha)\\sin\\theta + (R\\sin\\alpha)\\cos\\theta",
-        "explanation": "Grouping the constants shows the coefficients that must match $a$ and $b$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta-\\alpha) = R\\cos\\alpha\\,\\sin\\theta - R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta-\\alpha)=\\sin\\theta\\cos\\alpha-\\cos\\theta\\sin\\alpha$ and distributing $R$ matches the sine-minus-cosine layout of the expression we are converting.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Require equality with the left-hand side",
-        "workingLatex": "R\\cos\\alpha = a, \\quad R\\sin\\alpha = b",
-        "explanation": "For the identity to hold for all $\\theta$, the coefficients of $\\sin\\theta$ and $\\cos\\theta$ must be equal on both sides.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 5, \\qquad R\\sin\\alpha = 12",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ and of $\\cos\\theta$ (the minus signs match on both sides) gives the two defining equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Square both equations",
-        "workingLatex": "R^2\\cos^2\\alpha = a^2, \\quad R^2\\sin^2\\alpha = b^2",
-        "explanation": "Squaring prepares to eliminate $\\alpha$ using the Pythagorean identity.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=5^2+12^2=169$, a perfect square, so the amplitude is exactly $R=13$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Add the squared equations",
-        "workingLatex": "R^2(\\cos^2\\alpha + \\sin^2\\alpha) = a^2 + b^2",
-        "explanation": "Adding groups the trig terms into a Pythagorean sum.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{12}{5} \\Rightarrow \\alpha = 1.18",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\dfrac{12}{5}$. Both coefficients are positive, so $\\alpha$ is acute; in radians $\\alpha=\\arctan\\dfrac{12}{5}=1.18$ to $3$ significant figures.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Simplify to find R",
-        "workingLatex": "R^2 = a^2 + b^2 \\;\\Rightarrow\\; R = \\sqrt{a^2 + b^2}",
-        "explanation": "Since $\\cos^2\\alpha + \\sin^2\\alpha = 1$, and $R > 0$, we take the positive root.",
+        "description": "Rewrite f in single-wave form",
+        "workingLatex": "f(\\theta) = 6 + 13\\sin(\\theta - 1.176)",
+        "explanation": "Keeping a little extra accuracy in the phase, the function is now a single sine wave of amplitude $13$ raised by the constant $6$, which makes its full range easy to read.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Divide the equations to find alpha",
-        "workingLatex": "\\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{b}{a} \\;\\Rightarrow\\; \\tan\\alpha = \\frac{b}{a}",
-        "explanation": "Dividing cancels $R$, leaving the tangent of the phase angle.",
+        "description": "Bound the sine term",
+        "workingLatex": "-1 \\le \\sin(\\theta - 1.176) \\le 1",
+        "explanation": "The sine can go no higher than $+1$ and no lower than $-1$, and both extremes are actually reached as $\\theta$ runs over a full revolution.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Conclude",
-        "workingLatex": "a\\sin\\theta + b\\cos\\theta \\equiv \\sqrt{a^2+b^2}\\,\\sin(\\theta + \\alpha) \\;\\blacksquare",
-        "explanation": "With $R$ and $\\alpha$ chosen this way, the expanded right-hand side equals the left, proving the identity.",
+        "description": "Deduce the range of f",
+        "workingLatex": "6 - 13 \\le f(\\theta) \\le 6 + 13 \\Rightarrow -7 \\le f(\\theta) \\le 19",
+        "explanation": "Multiplying the sine bounds by $13$ and adding $6$ scales and shifts them. So $f$ takes every value from $-7$ up to $19$, giving the range $[-7,\\,19]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Locate the greatest value",
+        "workingLatex": "\\sin(\\theta - 1.176) = 1 \\Rightarrow \\theta - 1.176 = \\dfrac{\\pi}{2}",
+        "explanation": "The greatest value $19$ occurs exactly when the sine hits $+1$, which happens when its angle equals $\\dfrac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for θ",
+        "workingLatex": "\\theta = \\dfrac{\\pi}{2} + 1.176 = 2.75",
+        "explanation": "Adding the phase $1.176$ to $\\dfrac{\\pi}{2}$ gives $\\theta=2.75$, which lies in $0 \\le \\theta \\le 2\\pi$, so this is where $f$ reaches its maximum of $19$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note where the least value occurs",
+        "workingLatex": "\\sin(\\theta - 1.176) = -1 \\Rightarrow \\theta = \\dfrac{3\\pi}{2} + 1.176 = 5.89",
+        "explanation": "For completeness, the least value $-7$ is reached when the sine equals $-1$, at $\\theta=5.89$; this confirms both ends of the range are attained inside the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$R = \\sqrt{a^2 + b^2}$ and $\\tan\\alpha = \\dfrac{b}{a}$."
+    "finalAnswer": "$f(\\theta) = 6 + 13\\sin(\\theta - 1.18)$, so the range of $f$ is $-7 \\le f(\\theta) \\le 19$. The greatest value $19$ occurs at $\\theta = 2.75$ radians (to $3$ s.f.)."
   }
 }

@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "independence",
+    "complement"
+  ],
+  "questionText": "The masses, $X$ g, of apples from an orchard are modelled by $X \\sim N(180, 25^2)$. An apple is graded 'premium' if its mass exceeds $220$ g. Six apples are selected at random and their masses may be assumed independent. Find the probability that at least one of the six apples is premium, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(180,\\ 25^2), \\qquad \\mu = 180,\\ \\sigma = 25",
+        "explanation": "Each apple's mass is normal with mean $180$ g and standard deviation $25$ g. We first find the chance one apple is premium, then combine six independent apples.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Define the premium probability for one apple",
+        "workingLatex": "p = P(X > 220)",
+        "explanation": "Let $p$ be the probability that a single apple exceeds $220$ g; this single-apple probability drives the whole calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise 220",
+        "workingLatex": "z = \\dfrac{220 - 180}{25} = \\dfrac{40}{25} = 1.6",
+        "explanation": "Converting $220$ to a $z$-score shows it lies $1.6$ standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the tail probability using Phi",
+        "workingLatex": "P(X > 220) = 1 - \\Phi(1.6)",
+        "explanation": "The chance of exceeding a value is one minus the cumulative area below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the standard-normal value",
+        "workingLatex": "\\Phi(1.6) = 0.9452",
+        "explanation": "The cumulative normal at $z = 1.6$ gives the fraction of apples lighter than $220$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the single-apple probability",
+        "workingLatex": "p = 1 - 0.9452 = 0.05480",
+        "explanation": "So about $5.5\\%$ of individual apples are premium.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State p for use across six apples",
+        "workingLatex": "p = 0.05480 \\text{ (same for each independent apple)}",
+        "explanation": "Because the apples are identically distributed and chosen independently, each has this same premium probability, and one apple's mass tells us nothing about another's.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Choose the complement method",
+        "workingLatex": "P(\\text{at least one}) = 1 - P(\\text{none are premium})",
+        "explanation": "'At least one premium' is easiest to reach through its opposite, 'none premium', which is a single event.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Probability one apple is NOT premium",
+        "workingLatex": "P(X \\le 220) = 1 - p = 0.9452",
+        "explanation": "The chance a single apple is not premium is the complement of $p$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Probability all six are NOT premium",
+        "workingLatex": "P(\\text{none}) = (1 - p)^6 = 0.9452^6",
+        "explanation": "By independence of the six continuous masses, the probability every apple misses the premium grade is $(1-p)$ multiplied by itself six times. This uses independence directly, not a binomial approximation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Evaluate the product",
+        "workingLatex": "0.9452^6 = 0.7131",
+        "explanation": "Raising $0.9452$ to the sixth power gives the probability that not one of the six apples is premium.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Apply the complement",
+        "workingLatex": "P(\\text{at least one}) = 1 - 0.7131",
+        "explanation": "Subtracting the 'none' probability from one gives the probability we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Compute the final probability",
+        "workingLatex": "P(\\text{at least one}) = 0.2869",
+        "explanation": "This is the probability that one or more of the six apples exceeds $220$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Round and interpret",
+        "workingLatex": "P(\\text{at least one}) \\approx 0.287",
+        "explanation": "So there is about a $29\\%$ chance of getting at least one premium apple in six, comfortably larger than the $5.5\\%$ for a single apple because six draws give more opportunities.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(\\text{at least one premium}) = 1 - 0.9452^6 \\approx 0.287$ (single-apple probability $p = 0.0548$)."
+  }
+}

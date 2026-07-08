@@ -5,75 +5,116 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 6,
   "answerType": "proof",
   "tags": [
-    "identities",
-    "proof",
-    "fractions",
-    "cosecant"
+    "identity proof",
+    "cot",
+    "cos"
   ],
-  "questionText": "Prove that $\\dfrac{\\sec\\theta + \\csc\\theta}{1 + \\tan\\theta} \\equiv \\csc\\theta$.",
+  "questionText": "Prove the identity $\\cot^2\\theta - \\cos^2\\theta \\equiv \\cot^2\\theta\\,\\cos^2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite the numerator in sine and cosine",
-        "workingLatex": "\\sec\\theta + \\csc\\theta = \\frac{1}{\\cos\\theta} + \\frac{1}{\\sin\\theta}",
-        "explanation": "Converting the reciprocal functions is the first step towards combining the fraction.",
+        "description": "Set out what must be proved",
+        "workingLatex": "\\text{Prove that }\\ \\cot^2\\theta - \\cos^2\\theta \\equiv \\cot^2\\theta\\,\\cos^2\\theta",
+        "explanation": "Both sides involve $\\cot^2\\theta$ and $\\cos^2\\theta$, so the plan is to simplify each side to a single fraction in $\\sin\\theta$ and $\\cos\\theta$ and check they agree.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Combine the numerator over a common denominator",
-        "workingLatex": "= \\frac{\\sin\\theta + \\cos\\theta}{\\sin\\theta\\cos\\theta}",
-        "explanation": "Adding the two fractions gives a single numerator $\\sin\\theta + \\cos\\theta$.",
+        "description": "Express cot squared in sine and cosine",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} \\ \\Rightarrow\\ \\cot^2\\theta = \\frac{\\cos^2\\theta}{\\sin^2\\theta}",
+        "explanation": "Cotangent is cosine over sine, so squaring gives $\\dfrac{\\cos^2\\theta}{\\sin^2\\theta}$; this converts everything to the two basic functions.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rewrite the denominator of the main fraction",
-        "workingLatex": "1 + \\tan\\theta = 1 + \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\cos\\theta + \\sin\\theta}{\\cos\\theta}",
-        "explanation": "Expressing the denominator over cosine reveals the same $\\sin\\theta + \\cos\\theta$ factor that appears in the numerator.",
+        "description": "Substitute into the left-hand side",
+        "workingLatex": "\\text{LHS} = \\frac{\\cos^2\\theta}{\\sin^2\\theta} - \\cos^2\\theta",
+        "explanation": "We work on the left-hand side first, replacing $\\cot^2\\theta$ with its sine-cosine form.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write the whole expression as a division",
-        "workingLatex": "\\frac{\\sec\\theta + \\csc\\theta}{1 + \\tan\\theta} = \\frac{\\;\\frac{\\sin\\theta + \\cos\\theta}{\\sin\\theta\\cos\\theta}\\;}{\\;\\frac{\\cos\\theta + \\sin\\theta}{\\cos\\theta}\\;}",
-        "explanation": "Substituting both rewritten parts sets up a division of two fractions.",
+        "description": "Factor out cos squared",
+        "workingLatex": "= \\cos^2\\theta\\left(\\frac{1}{\\sin^2\\theta} - 1\\right)",
+        "explanation": "Both terms contain $\\cos^2\\theta$, so taking it out as a common factor isolates a simpler bracket to work on.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Divide by multiplying by the reciprocal",
-        "workingLatex": "= \\frac{\\sin\\theta + \\cos\\theta}{\\sin\\theta\\cos\\theta}\\times\\frac{\\cos\\theta}{\\cos\\theta + \\sin\\theta}",
-        "explanation": "Dividing by a fraction means multiplying by its reciprocal.",
+        "description": "Combine the bracket over a common denominator",
+        "workingLatex": "= \\cos^2\\theta\\left(\\frac{1 - \\sin^2\\theta}{\\sin^2\\theta}\\right)",
+        "explanation": "Writing $1$ as $\\dfrac{\\sin^2\\theta}{\\sin^2\\theta}$ lets the bracket combine into a single fraction.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Cancel the common sum factor",
-        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta\\cos\\theta}",
-        "explanation": "Since $\\sin\\theta + \\cos\\theta = \\cos\\theta + \\sin\\theta$, that factor cancels top and bottom.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 - \\sin^2\\theta = \\cos^2\\theta",
+        "explanation": "Rearranging $\\sin^2\\theta+\\cos^2\\theta\\equiv1$ replaces $1-\\sin^2\\theta$ with $\\cos^2\\theta$, which is the crucial simplification.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Cancel the cosine",
-        "workingLatex": "= \\frac{1}{\\sin\\theta}",
-        "explanation": "The remaining cosine cancels, leaving one over sine.",
+        "description": "Substitute back into the bracket",
+        "workingLatex": "\\text{LHS} = \\cos^2\\theta \\cdot \\frac{\\cos^2\\theta}{\\sin^2\\theta}",
+        "explanation": "Replacing the numerator of the bracket turns the left-hand side into a clean product of squares.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Recognise the reciprocal and conclude",
-        "workingLatex": "= \\csc\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "One over sine is cosecant, matching the right-hand side and completing the proof.",
+        "description": "Simplify the left-hand side",
+        "workingLatex": "\\text{LHS} = \\frac{\\cos^4\\theta}{\\sin^2\\theta}",
+        "explanation": "Multiplying the two cosine factors gives $\\cos^4\\theta$ over $\\sin^2\\theta$, a single tidy fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Now simplify the right-hand side",
+        "workingLatex": "\\text{RHS} = \\cot^2\\theta\\,\\cos^2\\theta = \\frac{\\cos^2\\theta}{\\sin^2\\theta}\\cdot\\cos^2\\theta",
+        "explanation": "We treat the right-hand side independently, again writing $\\cot^2\\theta$ as $\\dfrac{\\cos^2\\theta}{\\sin^2\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify the right-hand side",
+        "workingLatex": "\\text{RHS} = \\frac{\\cos^4\\theta}{\\sin^2\\theta}",
+        "explanation": "Multiplying gives the same fraction $\\dfrac{\\cos^4\\theta}{\\sin^2\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Compare the two sides",
+        "workingLatex": "\\text{LHS} = \\frac{\\cos^4\\theta}{\\sin^2\\theta} = \\text{RHS}",
+        "explanation": "Both sides reduce to the identical expression, which establishes the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the validity condition",
+        "workingLatex": "\\sin\\theta \\neq 0",
+        "explanation": "Because $\\cot\\theta$ and the denominators require $\\sin\\theta\\neq0$, the identity holds for all $\\theta$ where it is defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Numerical check at 60 degrees",
+        "workingLatex": "\\cot^2 60^\\circ - \\cos^2 60^\\circ = \\tfrac{1}{3} - \\tfrac{1}{4} = \\tfrac{1}{12}, \\qquad \\cot^2 60^\\circ\\,\\cos^2 60^\\circ = \\tfrac{1}{3}\\cdot\\tfrac{1}{4} = \\tfrac{1}{12}",
+        "explanation": "With $\\cot^2 60^\\circ=\\tfrac13$ and $\\cos^2 60^\\circ=\\tfrac14$, both sides equal $\\tfrac{1}{12}$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Conclude the proof",
+        "workingLatex": "\\cot^2\\theta - \\cos^2\\theta \\equiv \\cot^2\\theta\\,\\cos^2\\theta \\quad \\blacksquare",
+        "explanation": "Each side simplifies to $\\dfrac{\\cos^4\\theta}{\\sin^2\\theta}$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\sec\\theta + \\csc\\theta}{1 + \\tan\\theta} \\equiv \\csc\\theta$"
+    "finalAnswer": "Both sides simplify to $\\dfrac{\\cos^4\\theta}{\\sin^2\\theta}$: the left via $\\cos^2\\theta\\big(\\tfrac{1}{\\sin^2\\theta}-1\\big)=\\cos^2\\theta\\cdot\\tfrac{\\cos^2\\theta}{\\sin^2\\theta}$, so $\\cot^2\\theta-\\cos^2\\theta\\equiv\\cot^2\\theta\\cos^2\\theta$."
   }
 }

@@ -5,59 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "simplify"
+    "compound angle",
+    "addition formulae",
+    "quadrant"
   ],
-  "questionText": "Show that $4\\sin\\theta\\cos\\theta\\cos 2\\theta$ simplifies to $\\sin 4\\theta$.",
+  "questionText": "Given that $\\sin A = \\tfrac{4}{5}$ where $A$ is acute, and $\\cos B = -\\tfrac{8}{17}$ where $B$ is obtuse, find the exact values of $\\sin(A+B)$, $\\cos(A+B)$ and $\\tan(A+B)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Group the first two factors",
-        "workingLatex": "4\\sin\\theta\\cos\\theta\\cos 2\\theta = 2(2\\sin\\theta\\cos\\theta)\\cos 2\\theta",
-        "explanation": "Splitting the $4$ as $2\\times 2$ lets us recognise a double angle inside.",
+        "description": "Find cos A using the quadrant",
+        "workingLatex": "A \\text{ acute} \\;\\Rightarrow\\; \\cos A = +\\sqrt{1-\\tfrac{16}{25}} = \\sqrt{\\tfrac{9}{25}} = \\tfrac{3}{5}",
+        "explanation": "Acute $A$ has a positive cosine, so we take the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the sine double angle formula",
-        "workingLatex": "2\\sin\\theta\\cos\\theta = \\sin 2\\theta",
-        "explanation": "The bracket is exactly $\\sin 2\\theta$.",
+        "description": "Find sin B using the quadrant",
+        "workingLatex": "B \\text{ obtuse} \\;\\Rightarrow\\; \\sin B = +\\sqrt{1-\\tfrac{64}{289}} = \\sqrt{\\tfrac{225}{289}} = \\tfrac{15}{17}",
+        "explanation": "For an obtuse $B$ (second quadrant) sine is positive while the given cosine is negative.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute",
-        "workingLatex": "= 2\\sin 2\\theta\\cos 2\\theta",
-        "explanation": "The expression is now $2\\sin 2\\theta\\cos 2\\theta$, again a double angle pattern.",
+        "description": "State the formula for sin(A+B)",
+        "workingLatex": "\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "The addition formula brings together the four single-angle ratios.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the double angle formula again",
-        "workingLatex": "2\\sin 2\\theta\\cos 2\\theta = \\sin(2\\cdot 2\\theta)",
-        "explanation": "With inner angle $2\\theta$, the pattern folds into a single sine of the doubled angle.",
+        "description": "Substitute to find sin(A+B)",
+        "workingLatex": "\\sin(A+B) = \\tfrac{4}{5}\\left(-\\tfrac{8}{17}\\right) + \\tfrac{3}{5}\\cdot\\tfrac{15}{17} = -\\tfrac{32}{85} + \\tfrac{45}{85} = \\tfrac{13}{85}",
+        "explanation": "The positive term is larger, giving a small positive sine over $85$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify the angle",
-        "workingLatex": "= \\sin 4\\theta",
-        "explanation": "Doubling $2\\theta$ gives $4\\theta$.",
+        "description": "State the formula for cos(A+B)",
+        "workingLatex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "The cosine addition formula subtracts the sine-sine product.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the result",
-        "workingLatex": "4\\sin\\theta\\cos\\theta\\cos 2\\theta = \\sin 4\\theta",
-        "explanation": "Two applications of the double angle formula reduce the product to a single sine term.",
+        "description": "Substitute to find cos(A+B)",
+        "workingLatex": "\\cos(A+B) = \\tfrac{3}{5}\\left(-\\tfrac{8}{17}\\right) - \\tfrac{4}{5}\\cdot\\tfrac{15}{17} = -\\tfrac{24}{85} - \\tfrac{60}{85} = -\\tfrac{84}{85}",
+        "explanation": "Both products are negative, so $\\cos(A+B)$ is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form tan(A+B)",
+        "workingLatex": "\\tan(A+B) = \\dfrac{\\sin(A+B)}{\\cos(A+B)} = \\dfrac{13/85}{-84/85} = -\\tfrac{13}{84}",
+        "explanation": "Dividing, the $85$s cancel; a positive over a negative gives a negative tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm with the Pythagorean identity",
+        "workingLatex": "\\sin^2(A+B)+\\cos^2(A+B) = \\tfrac{169}{7225}+\\tfrac{7056}{7225} = \\tfrac{7225}{7225} = 1",
+        "explanation": "The squared values sum to $1$, confirming the sine and cosine are consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the quadrant of A+B",
+        "workingLatex": "\\sin(A+B)>0,\\ \\cos(A+B)<0 \\;\\Rightarrow\\; A+B \\text{ lies in the second quadrant}",
+        "explanation": "A positive sine with a negative cosine places $A+B$ in the second quadrant, matching the negative tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sin(A+B) = \\tfrac{13}{85}, \\quad \\cos(A+B) = -\\tfrac{84}{85}, \\quad \\tan(A+B) = -\\tfrac{13}{84}",
+        "explanation": "Collecting the three exact values completes the solution.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 4\\theta$"
+    "finalAnswer": "$\\sin(A+B) = \\tfrac{13}{85}$, $\\cos(A+B) = -\\tfrac{84}{85}$, $\\tan(A+B) = -\\tfrac{13}{84}$."
   }
 }

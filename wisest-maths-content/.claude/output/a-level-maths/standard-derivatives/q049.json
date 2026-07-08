@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "written",
+  "tags": [
+    "increasing decreasing",
+    "trigonometric",
+    "interval"
+  ],
+  "questionText": "The curve $y = 2\\sin x + x$ is defined for $0 \\le x \\le 2\\pi$, with $x$ in radians. Determine the intervals on which the curve is increasing and the interval on which it is decreasing.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function and interval",
+        "workingLatex": "y = 2\\sin x + x, \\quad 0 \\le x \\le 2\\pi",
+        "explanation": "Increasing/decreasing is governed by the sign of the derivative; trig derivatives use $x$ in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = 2\\cos x + 1",
+        "explanation": "Using $\\frac{d}{dx}(\\sin x)=\\cos x$ (so $\\frac{d}{dx}(2\\sin x)=2\\cos x$) and $\\frac{d}{dx}(x)=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find where the gradient is zero",
+        "workingLatex": "2\\cos x + 1 = 0 \\iff \\cos x = -\\frac{1}{2}",
+        "explanation": "The gradient can only change sign where it is zero, so we solve this equation first.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve on the interval",
+        "workingLatex": "\\cos x = -\\frac{1}{2} \\iff x = \\frac{2\\pi}{3}, \\ \\frac{4\\pi}{3}",
+        "explanation": "On $[0,2\\pi]$ the cosine equals $-\\frac{1}{2}$ at these two values (in the second and third quadrants).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Condition for increasing",
+        "workingLatex": "\\text{increasing} \\iff 2\\cos x + 1 > 0 \\iff \\cos x > -\\frac{1}{2}",
+        "explanation": "Increasing means a positive gradient, i.e. $\\cos x$ lying above $-\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify where cosine exceeds the threshold",
+        "workingLatex": "\\cos x > -\\frac{1}{2} \\iff 0 \\le x < \\frac{2\\pi}{3} \\ \\text{ or } \\ \\frac{4\\pi}{3} < x \\le 2\\pi",
+        "explanation": "Cosine starts at $1$, drops below $-\\frac{1}{2}$ between the two solutions, then rises back above it, so it exceeds $-\\frac{1}{2}$ outside $\\left(\\frac{2\\pi}{3},\\frac{4\\pi}{3}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Condition for decreasing",
+        "workingLatex": "\\text{decreasing} \\iff \\cos x < -\\frac{1}{2}",
+        "explanation": "Decreasing means a negative gradient, i.e. $\\cos x$ below $-\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the decreasing interval",
+        "workingLatex": "\\cos x < -\\frac{1}{2} \\iff \\frac{2\\pi}{3} < x < \\frac{4\\pi}{3}",
+        "explanation": "Between the two solutions the cosine dips below $-\\frac{1}{2}$, so the curve decreases there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a test value",
+        "workingLatex": "x=\\pi:\\ 2\\cos\\pi + 1 = 2(-1)+1 = -1 < 0",
+        "explanation": "At $x=\\pi$ (inside the middle interval) the gradient is negative, confirming the curve is decreasing there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{increasing on } \\left[0,\\frac{2\\pi}{3}\\right) \\cup \\left(\\frac{4\\pi}{3},2\\pi\\right], \\quad \\text{decreasing on } \\left(\\frac{2\\pi}{3},\\frac{4\\pi}{3}\\right)",
+        "explanation": "So the curve rises, falls between the two turning points, then rises again.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Increasing on $\\left[0,\\dfrac{2\\pi}{3}\\right)$ and $\\left(\\dfrac{4\\pi}{3},2\\pi\\right]$; decreasing on $\\left(\\dfrac{2\\pi}{3},\\dfrac{4\\pi}{3}\\right)$."
+  }
+}

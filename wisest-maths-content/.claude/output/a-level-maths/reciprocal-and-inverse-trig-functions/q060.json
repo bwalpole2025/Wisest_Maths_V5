@@ -5,68 +5,116 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "proof",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "identities",
-    "proof",
-    "cosecant",
-    "cotangent"
+    "solving equations",
+    "sec",
+    "reject root"
   ],
-  "questionText": "Prove that $(1 + \\cot\\theta)^2 + (1 - \\cot\\theta)^2 \\equiv 2\\csc^2\\theta$.",
+  "questionText": "Solve $2\\tan^2 x + 7\\sec x + 2 = 0$ for $0 \\le x < 360^\\circ$, giving your answers to one decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = (1 + \\cot\\theta)^2 + (1 - \\cot\\theta)^2",
-        "explanation": "We expand both squares; the cross terms should cancel, which is the point of this structure.",
+        "description": "State the equation and interval",
+        "workingLatex": "2\\tan^2 x + 7\\sec x + 2 = 0, \\qquad 0 \\le x < 360^\\circ",
+        "explanation": "The equation mixes $\\tan^2 x$ and $\\sec x$. Converting $\\tan^2 x$ into $\\sec x$ will reduce it to a quadratic in $\\sec x$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Expand the first square",
-        "workingLatex": "(1 + \\cot\\theta)^2 = 1 + 2\\cot\\theta + \\cot^2\\theta",
-        "explanation": "The first bracket expands with a positive cross term $+2\\cot\\theta$.",
+        "description": "Recall the identity",
+        "workingLatex": "\\tan^2 x = \\sec^2 x - 1",
+        "explanation": "From $1 + \\tan^2 x \\equiv \\sec^2 x$ we replace $\\tan^2 x$, leaving everything in $\\sec x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand the second square",
-        "workingLatex": "(1 - \\cot\\theta)^2 = 1 - 2\\cot\\theta + \\cot^2\\theta",
-        "explanation": "The second bracket expands with a negative cross term $-2\\cot\\theta$.",
+        "description": "Substitute",
+        "workingLatex": "2\\left(\\sec^2 x - 1\\right) + 7\\sec x + 2 = 0",
+        "explanation": "The substitution turns the equation into one about the single ratio $\\sec x$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Add the two expansions",
-        "workingLatex": "= 1 + 2\\cot\\theta + \\cot^2\\theta + 1 - 2\\cot\\theta + \\cot^2\\theta",
-        "explanation": "Writing both out side by side shows the cross terms are equal and opposite.",
+        "description": "Expand",
+        "workingLatex": "2\\sec^2 x - 2 + 7\\sec x + 2 = 0",
+        "explanation": "Multiplying out the bracket exposes the constant terms so they can be combined.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Cancel the cross terms and collect",
-        "workingLatex": "= 2 + 2\\cot^2\\theta",
-        "explanation": "The $+2\\cot\\theta$ and $-2\\cot\\theta$ cancel, leaving a constant and a cotangent-squared term.",
+        "description": "Simplify",
+        "workingLatex": "2\\sec^2 x + 7\\sec x = 0",
+        "explanation": "The constants cancel ($-2 + 2 = 0$), leaving a quadratic with no constant term, which factorises very cleanly.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Factor out the common factor of two",
-        "workingLatex": "= 2(1 + \\cot^2\\theta)",
-        "explanation": "Taking out $2$ prepares the bracket to be replaced by a Pythagorean identity.",
+        "description": "Factorise",
+        "workingLatex": "\\sec x\\left(2\\sec x + 7\\right) = 0",
+        "explanation": "Since both terms share a factor of $\\sec x$, we take it out. The product is zero when either factor is zero.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Apply the identity and conclude",
-        "workingLatex": "= 2\\csc^2\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "Since $1 + \\cot^2\\theta = \\csc^2\\theta$, the expression becomes $2\\csc^2\\theta$, matching the right-hand side.",
+        "description": "Read off the roots",
+        "workingLatex": "\\sec x = 0 \\quad \\text{or} \\quad \\sec x = -\\tfrac{7}{2}",
+        "explanation": "Each factor set to zero gives a candidate value of $\\sec x$, which we must now test.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Reject the impossible root",
+        "workingLatex": "\\sec x = \\frac{1}{\\cos x} = 0 \\;\\; \\text{has no solution, since } |\\sec x| \\ge 1",
+        "explanation": "A reciprocal $\\tfrac{1}{\\cos x}$ can never equal $0$: that would need $\\cos x$ to be infinite. The secant always satisfies $|\\sec x| \\ge 1$, so $\\sec x = 0$ is rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Keep the valid root",
+        "workingLatex": "\\sec x = -\\tfrac{7}{2} \\;\\Rightarrow\\; \\cos x = -\\tfrac{2}{7}",
+        "explanation": "Inverting the surviving value gives $\\cos x = -\\tfrac{2}{7}$, and $\\left|-\\tfrac{2}{7}\\right| \\le 1$, so this root is attainable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the reference angle",
+        "workingLatex": "\\cos^{-1}\\left(\\tfrac{2}{7}\\right) = 73.4^\\circ \\;\\text{(acute reference angle)}",
+        "explanation": "Taking the acute angle from the size of the cosine gives the reference angle. Because $\\cos x$ is negative, solutions sit in the second and third quadrants.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find all angles with cos x = -2/7",
+        "workingLatex": "x = 180^\\circ - 73.4^\\circ = 106.6^\\circ, \\qquad x = 180^\\circ + 73.4^\\circ = 253.4^\\circ",
+        "explanation": "For a negative cosine the solutions are $180^\\circ \\mp$ the reference angle, placing them in the second and third quadrants. Both lie in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Collect the solutions",
+        "workingLatex": "x = 106.6^\\circ,\\; 253.4^\\circ",
+        "explanation": "Only the root $\\sec x = -\\tfrac72$ produced solutions; the rejected root gave none.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify a solution",
+        "workingLatex": "\\sec x = -\\tfrac{7}{2}: \\;\\; \\tan^2 x = \\sec^2 x - 1 = \\tfrac{49}{4} - 1 = \\tfrac{45}{4}; \\;\\; 2\\left(\\tfrac{45}{4}\\right) + 7\\left(-\\tfrac{7}{2}\\right) + 2 = \\tfrac{45}{2} - \\tfrac{49}{2} + 2 = 0",
+        "explanation": "Using the exact values behind $x \\approx 106.6^\\circ$, the left-hand side collapses to $0$, matching the equation and confirming the working.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "x = 106.6^\\circ,\\; 253.4^\\circ",
+        "explanation": "These are the only solutions in $0 \\le x < 360^\\circ$, to one decimal place.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(1 + \\cot\\theta)^2 + (1 - \\cot\\theta)^2 \\equiv 2\\csc^2\\theta$"
+    "finalAnswer": "$x = 106.6^\\circ,\\ 253.4^\\circ$ (to 1 d.p.). The root $\\sec x = 0$ is rejected because $|\\sec x| \\ge 1$."
   }
 }

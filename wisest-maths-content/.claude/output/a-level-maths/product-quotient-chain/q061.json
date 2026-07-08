@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "chain rule",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = x^2 e^{-x}$. (a) Show that $\\dfrac{dy}{dx} = x(2-x)e^{-x}$. (b) Find the equation of the tangent to $C$ at the point where $x = 1$. (c) Find the coordinates of the two stationary points of $C$ and determine their nature. (d) State the set of values of $x$ for which $C$ is increasing.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the factors for the product rule",
+        "workingLatex": "u = x^2, \\qquad v = e^{-x}",
+        "explanation": "The function is a product of $x^2$ and $e^{-x}$, so we use $\\tfrac{d}{dx}(uv)=u'v+uv'$. The second factor $e^{-x}$ is itself a composite, so the chain rule will be needed to differentiate it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 2x, \\qquad v' = -e^{-x}",
+        "explanation": "Differentiating $x^2$ gives $2x$. For $e^{-x}$ the chain rule with inner function $-x$ gives $e^{-x}\\times(-1)=-e^{-x}$: the exponential is unchanged but we multiply by the derivative of the exponent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = 2x e^{-x} - x^2 e^{-x}",
+        "explanation": "Substituting into $u'v+uv'$ keeps one factor differentiated and the other unchanged in each term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = x e^{-x}(2 - x) = x(2-x)e^{-x}",
+        "explanation": "Taking out the common factor $x e^{-x}$ gives the required form and makes it easy to set the gradient to zero later, since a product is zero exactly when one factor is zero. This proves the result in (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the gradient at x = 1",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = 1\\,(2-1)e^{-1} = e^{-1}",
+        "explanation": "Substituting $x=1$ into the factorised derivative gives the slope of the tangent at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate at x = 1",
+        "workingLatex": "y = 1^2 e^{-1} = e^{-1} \\quad\\Rightarrow\\quad (1,\\, e^{-1})",
+        "explanation": "The tangent touches the curve, so it passes through the point on $C$ with $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - e^{-1} = e^{-1}(x - 1) \\;\\Rightarrow\\; y = e^{-1}x = \\frac{x}{e}",
+        "explanation": "Using $y-y_1=m(x-x_1)$ and simplifying, the constant terms cancel, so the tangent is $y=\\tfrac{x}{e}$ — a line through the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the derivative to zero",
+        "workingLatex": "x(2-x)e^{-x} = 0",
+        "explanation": "Stationary points occur where the gradient is zero. Since $e^{-x}$ is never zero, only the other factors can vanish.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "x = 0 \\quad \\text{or} \\quad x = 2",
+        "explanation": "The factor $e^{-x}>0$ always, so we discard it and solve $x=0$ and $2-x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinates",
+        "workingLatex": "x=0:\\; y=0; \\qquad x=2:\\; y = 4e^{-2}",
+        "explanation": "Substituting each $x$ into $y=x^2e^{-x}$ gives the heights of the two stationary points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Compute the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = e^{-x}\\big(x^2 - 4x + 2\\big)",
+        "explanation": "Differentiating $(2x-x^2)e^{-x}$ with the product rule gives $(2-2x)e^{-x}-(2x-x^2)e^{-x}=e^{-x}(x^2-4x+2)$. The sign of this determines the nature of each stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Classify the point at x = 0",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=0} = e^{0}(0-0+2) = 2 > 0",
+        "explanation": "A positive second derivative means the curve is concave up, so $(0,0)$ is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Classify the point at x = 2",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=2} = e^{-2}(4-8+2) = -2e^{-2} < 0",
+        "explanation": "A negative second derivative means concave down, so $\\left(2,\\tfrac{4}{e^2}\\right)$ is a local maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State where C is increasing",
+        "workingLatex": "x(2-x) > 0 \\;\\Rightarrow\\; 0 < x < 2",
+        "explanation": "The curve increases where $\\tfrac{dy}{dx}>0$. Since $e^{-x}>0$ always, the sign is governed by $x(2-x)$, which is positive precisely between its roots $0$ and $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=x(2-x)e^{-x}$. (b) $y=\\dfrac{x}{e}$. (c) $(0,0)$ is a minimum and $\\left(2,\\dfrac{4}{e^2}\\right)$ is a maximum. (d) $C$ is increasing for $0<x<2$."
+  }
+}

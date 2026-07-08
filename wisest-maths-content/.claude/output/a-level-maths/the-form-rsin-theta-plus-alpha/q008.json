@@ -5,60 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 4,
-  "answerType": "value",
+  "marks": 3,
+  "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "maximum",
-    "minimum"
+    "radians"
   ],
-  "questionText": "The expression $3\\sin\\theta + 4\\cos\\theta$ can be written as $5\\sin(\\theta + 53.13^\\circ)$. Write down its maximum and minimum values.",
+  "questionText": "Express $\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0<\\alpha<\\dfrac{\\pi}{2}$. Give $\\alpha$ in radians.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the range of sine",
-        "workingLatex": "-1 \\le \\sin(\\theta + 53.13^\\circ) \\le 1",
-        "explanation": "Whatever the angle, the sine function is bounded between $-1$ and $1$; this controls the whole expression.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\sin\\theta + \\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "The method is the same whether we work in degrees or radians; only the final angle is expressed differently. We begin from the identity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Multiply through by R",
-        "workingLatex": "-5 \\le 5\\sin(\\theta + 53.13^\\circ) \\le 5",
-        "explanation": "Multiplying the bounds by the positive amplitude $R = 5$ scales the range.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "The compound-angle formula rewrites the target as a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, ready to compare with the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Identify the maximum",
-        "workingLatex": "\\text{max} = 5",
-        "explanation": "The largest value occurs when the sine equals $1$, giving $5$.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = 1",
+        "explanation": "Matching the amount of $\\sin\\theta$ and of $\\cos\\theta$ gives these two equations linking $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the minimum",
-        "workingLatex": "\\text{min} = -5",
-        "explanation": "The smallest value occurs when the sine equals $-1$, giving $-5$.",
+        "description": "Find R using R² = a² + b²",
+        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt{2}",
+        "explanation": "Squaring and adding removes $\\alpha$ because $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=2$, so the positive amplitude is $R=\\sqrt{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note when the maximum occurs",
-        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = 1 \\;\\Rightarrow\\; \\theta + 53.13^\\circ = 90^\\circ",
-        "explanation": "The maximum happens when the bracket equals $90^\\circ$, i.e. $\\theta \\approx 36.87^\\circ$.",
+        "description": "Find α in radians",
+        "workingLatex": "\\tan\\alpha = 1 \\Rightarrow \\alpha = \\dfrac{\\pi}{4}",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=1$. Since we want a value between $0$ and $\\tfrac{\\pi}{2}$, the acute answer in radians is $\\alpha=\\tfrac{\\pi}{4}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the results",
-        "workingLatex": "\\text{max} = 5, \\quad \\text{min} = -5",
-        "explanation": "The amplitude $R$ directly gives the maximum and minimum of any harmonic expression.",
+        "description": "State the R-form",
+        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin\\left(\\theta+\\dfrac{\\pi}{4}\\right)",
+        "explanation": "Combining the amplitude and phase gives the single-wave form with the angle expressed in radians, as requested.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check by expanding back",
+        "workingLatex": "\\sqrt{2}\\,\\sin\\left(\\theta+\\dfrac{\\pi}{4}\\right) = \\sqrt{2}\\left(\\dfrac{\\sqrt{2}}{2}\\sin\\theta + \\dfrac{\\sqrt{2}}{2}\\cos\\theta\\right) = \\sin\\theta + \\cos\\theta",
+        "explanation": "Expanding the result returns the original expression, confirming the conversion is correct.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum $= 5$, minimum $= -5$."
+    "finalAnswer": "$\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin\\left(\\theta+\\dfrac{\\pi}{4}\\right)$."
   }
 }

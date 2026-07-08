@@ -6,52 +6,160 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
   "marks": 6,
-  "answerType": "expression",
+  "answerType": "written",
   "tags": [
-    "parametric",
-    "cartesian",
-    "logarithm"
+    "trig identity",
+    "ellipse",
+    "sketch"
   ],
-  "questionText": "A curve has parametric equations $x = \\ln t$, $y = t^2$ for $t > 0$. Find the Cartesian equation.",
+  "questionText": "A curve has parametric equations $x = 2\\cos t$ and $y = 4\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve, identify its shape, and sketch it, marking the points where it meets the axes.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject of the x-equation",
-        "workingLatex": "x = \\ln t \\;\\Rightarrow\\; t = e^x",
-        "explanation": "The inverse of the natural logarithm is the exponential, so $t = e^x$.",
+        "description": "Plan",
+        "workingLatex": "x = 2\\cos t, \\qquad y = 4\\sin t",
+        "explanation": "To sketch the curve accurately it helps to first find its Cartesian equation, since the standard form reveals the shape and key points at a glance.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the y-equation",
-        "workingLatex": "y = (e^x)^2",
-        "explanation": "Replacing $t$ with $e^x$ removes the parameter.",
+        "description": "Make cos t the subject",
+        "workingLatex": "\\cos t = \\dfrac{x}{2}",
+        "explanation": "Dividing by $2$ isolates $\\cos t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the power",
-        "workingLatex": "y = e^{2x}",
-        "explanation": "Squaring $e^x$ gives $e^{2x}$ by the power law.",
+        "description": "Make sin t the subject",
+        "workingLatex": "\\sin t = \\dfrac{y}{4}",
+        "explanation": "Dividing by $4$ isolates $\\sin t$, so both trig functions are expressed through the coordinates.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Consider the domain",
-        "workingLatex": "t > 0 \\;\\Rightarrow\\; x = \\ln t \\in \\mathbb{R}",
-        "explanation": "As $t$ ranges over all positive numbers, $\\ln t$ covers all real values, so there is no restriction on $x$.",
+        "description": "Apply the identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1 \\;\\Rightarrow\\; \\left( \\dfrac{x}{2} \\right)^{2} + \\left( \\dfrac{y}{4} \\right)^{2} = 1",
+        "explanation": "Substituting into the Pythagorean identity removes $t$ in a single stroke.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "y = e^{2x}",
-        "explanation": "This exponential curve is the Cartesian form.",
+        "description": "Simplify to standard form",
+        "workingLatex": "\\dfrac{x^{2}}{4} + \\dfrac{y^{2}}{16} = 1",
+        "explanation": "Squaring the fractions gives the tidy standard form of an ellipse.",
         "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write denominators as squares",
+        "workingLatex": "\\dfrac{x^{2}}{2^{2}} + \\dfrac{y^{2}}{4^{2}} = 1",
+        "explanation": "Now $a = 2$ and $b = 4$ can be read directly. Because the larger number sits under $y$, the ellipse is taller than it is wide.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the axis crossings",
+        "workingLatex": "(\\pm 2,\\,0) \\quad \\text{and} \\quad (0,\\,\\pm 4)",
+        "explanation": "Setting $y = 0$ gives $x = \\pm 2$, and setting $x = 0$ gives $y = \\pm 4$. These four points are the ends of the semi-axes and pin down the sketch.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Sample intermediate points",
+        "workingLatex": "t = \\tfrac{\\pi}{4}: \\ \\left( 2\\cos\\tfrac{\\pi}{4},\\, 4\\sin\\tfrac{\\pi}{4} \\right) \\approx (1.41,\\, 2.83)",
+        "explanation": "Evaluating the parametric equations at a few extra angles gives points between the vertices, so the curved shape can be drawn smoothly rather than guessed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Draw the ellipse",
+        "workingLatex": "\\dfrac{x^{2}}{2^{2}} + \\dfrac{y^{2}}{4^{2}} = 1",
+        "explanation": "Joining the vertices $(\\pm 2,\\,0)$ and $(0,\\,\\pm 4)$ with the sampled points gives a smooth ellipse centred at the origin, taller than it is wide.",
+        "diagram": {
+          "kind": "functionGraph",
+          "xMin": -3,
+          "xMax": 3,
+          "yMin": -5,
+          "yMax": 5,
+          "curves": [
+            {
+              "points": [
+                {
+                  "x": 2,
+                  "y": 0
+                },
+                {
+                  "x": 1.41,
+                  "y": 2.83
+                },
+                {
+                  "x": 0,
+                  "y": 4
+                },
+                {
+                  "x": -1.41,
+                  "y": 2.83
+                },
+                {
+                  "x": -2,
+                  "y": 0
+                },
+                {
+                  "x": -1.41,
+                  "y": -2.83
+                },
+                {
+                  "x": 0,
+                  "y": -4
+                },
+                {
+                  "x": 1.41,
+                  "y": -2.83
+                },
+                {
+                  "x": 2,
+                  "y": 0
+                }
+              ],
+              "color": "accent",
+              "label": "\\dfrac{x^{2}}{4} + \\dfrac{y^{2}}{16} = 1"
+            }
+          ],
+          "points": [
+            {
+              "x": 2,
+              "y": 0,
+              "label": "(2,\\,0)",
+              "open": false
+            },
+            {
+              "x": -2,
+              "y": 0,
+              "label": "(-2,\\,0)",
+              "open": false
+            },
+            {
+              "x": 0,
+              "y": 4,
+              "label": "(0,\\,4)",
+              "open": false
+            },
+            {
+              "x": 0,
+              "y": -4,
+              "label": "(0,\\,-4)",
+              "open": false
+            }
+          ],
+          "xAxisLabel": "x",
+          "yAxisLabel": "y",
+          "caption": "Ellipse from x = 2 cos t, y = 4 sin t, centred at the origin.",
+          "alt": "An ellipse centred at the origin, taller than it is wide, passing through (2,0), (-2,0), (0,4) and (0,-4)."
+        }
       }
     ],
-    "finalAnswer": "$y = e^{2x}$"
+    "finalAnswer": "The Cartesian equation is $\\dfrac{x^{2}}{4} + \\dfrac{y^{2}}{16} = 1$, an ellipse centred at the origin with a horizontal semi-axis of $2$ and a vertical semi-axis of $4$. It meets the axes at $(\\pm 2,\\,0)$ and $(0,\\,\\pm 4)$ and is taller than it is wide."
   }
 }

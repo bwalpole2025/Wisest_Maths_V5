@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "chain rule",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = x^2 e^{3x}$. (a) Find $\\dfrac{dy}{dx}$, simplifying your answer. (b) Find the exact coordinates of the stationary points of $C$. (c) Determine the nature of each stationary point.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and label the factors",
+        "workingLatex": "u = x^2, \\qquad v = e^{3x}",
+        "explanation": "$y$ is the product of $x^2$ and $e^{3x}$, so the product rule $\\dfrac{d}{dx}(uv)=u'v+uv'$ applies. Because $e^{3x}$ is itself a composition, differentiating it will also need the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the first factor",
+        "workingLatex": "u' = 2x",
+        "explanation": "Differentiating $x^2$ by the power rule brings the power down and reduces it by one, giving $2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the second factor with the chain rule",
+        "workingLatex": "v = e^{3x},\\quad w = 3x,\\quad \\frac{dw}{dx}=3,\\quad v' = e^{w}\\cdot 3 = 3e^{3x}",
+        "explanation": "Set $w=3x$ so $v=e^{w}$. The chain rule gives $\\dfrac{dv}{dx}=e^{w}\\cdot\\dfrac{dw}{dx}=e^{3x}\\cdot 3$; the extra factor of $3$ comes from the inner function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = 2x e^{3x} + 3x^2 e^{3x}",
+        "explanation": "Substitute into $u'v+uv'$: the first term differentiates $x^2$ and keeps $e^{3x}$; the second keeps $x^2$ and uses $v'=3e^{3x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = x e^{3x}(3x + 2)",
+        "explanation": "Both terms share the common factor $x e^{3x}$. Taking it out makes the derivative easy to set to zero, since a product is zero only when one of its factors is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set the derivative equal to zero",
+        "workingLatex": "x e^{3x}(3x + 2) = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve $\\dfrac{dy}{dx}=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the fact that the exponential is never zero",
+        "workingLatex": "e^{3x} > 0 \\ \\text{for all } x",
+        "explanation": "An exponential is always positive, so the factor $e^{3x}$ can never make the product vanish. Only the other factors can.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for x",
+        "workingLatex": "x = 0 \\qquad \\text{or} \\qquad 3x + 2 = 0 \\ \\Rightarrow\\ x = -\\tfrac{2}{3}",
+        "explanation": "Setting each remaining factor to zero gives the two $x$-coordinates of the stationary points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinates",
+        "workingLatex": "x=0:\\ y = 0; \\qquad x=-\\tfrac{2}{3}:\\ y = \\left(-\\tfrac{2}{3}\\right)^2 e^{-2} = \\tfrac{4}{9}e^{-2}",
+        "explanation": "Substitute each $x$ back into $y=x^2 e^{3x}$. At $x=-\\tfrac23$ the exponent is $3x=-2$, so $y=\\tfrac49 e^{-2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the stationary points",
+        "workingLatex": "(0,\\,0) \\qquad \\text{and} \\qquad \\left(-\\tfrac{2}{3},\\ \\tfrac{4}{9}e^{-2}\\right)",
+        "explanation": "These are the two points at which the curve is momentarily flat.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Differentiate again for the second-derivative test",
+        "workingLatex": "\\frac{dy}{dx}=e^{3x}(3x^2+2x) \\ \\Rightarrow\\ \\frac{d^2y}{dx^2}=3e^{3x}(3x^2+2x)+e^{3x}(6x+2)=e^{3x}(9x^2+12x+2)",
+        "explanation": "Differentiate $\\dfrac{dy}{dx}$ as a product (again using the chain rule on $e^{3x}$). Expanding and collecting like terms gives $e^{3x}(9x^2+12x+2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Test the point x = 0",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=0}=e^{0}(0+0+2)=2>0",
+        "explanation": "A positive second derivative means the curve is concave up there, so $(0,0)$ is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Test the point x = -2/3",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=-2/3}=e^{-2}\\left(9\\cdot\\tfrac{4}{9}-8+2\\right)=e^{-2}(4-8+2)=-2e^{-2}<0",
+        "explanation": "A negative second derivative means the curve is concave down there, so $\\left(-\\tfrac23,\\tfrac49 e^{-2}\\right)$ is a local maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the nature of each point",
+        "workingLatex": "(0,0)\\ \\text{minimum}, \\qquad \\left(-\\tfrac{2}{3},\\tfrac{4}{9}e^{-2}\\right)\\ \\text{maximum}",
+        "explanation": "Combining the two tests: the origin is a local minimum and the other stationary point is a local maximum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=x e^{3x}(3x+2)$. (b) Stationary points at $(0,0)$ and $\\left(-\\tfrac{2}{3},\\tfrac{4}{9}e^{-2}\\right)$. (c) $(0,0)$ is a local minimum and $\\left(-\\tfrac{2}{3},\\tfrac{4}{9}e^{-2}\\right)$ is a local maximum."
+  }
+}

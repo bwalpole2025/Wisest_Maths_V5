@@ -5,60 +5,116 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "expression",
+  "marks": 6,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "rational"
+    "sec tan identity",
+    "hyperbola",
+    "translation"
   ],
-  "questionText": "A curve has parametric equations $x = \\dfrac{t}{t + 1}$, $y = \\dfrac{t - 1}{t + 1}$ for $t \\ne -1$. Show that $y = 2x - 1$ and state the excluded point.",
+  "questionText": "A curve $C$ is given by $x = 2 + 3\\sec t$ and $y = -1 + 4\\tan t$. Find a Cartesian equation of $C$, describe the curve fully (stating its centre and vertices), and state the values of $x$ that the curve can take.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite x by splitting the fraction",
-        "workingLatex": "x = \\frac{t}{t+1} = 1 - \\frac{1}{t+1}",
-        "explanation": "Writing $t = (t+1) - 1$ splits the fraction into a constant plus a simple reciprocal.",
+        "description": "Make sec t and tan t the subjects",
+        "workingLatex": "\\sec t = \\dfrac{x - 2}{3}, \\qquad \\tan t = \\dfrac{y + 1}{4}",
+        "explanation": "To eliminate $t$ we need an identity linking $\\sec t$ and $\\tan t$, so first isolate each of them from the parametric equations.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite y similarly",
-        "workingLatex": "y = \\frac{t - 1}{t+1} = 1 - \\frac{2}{t+1}",
-        "explanation": "Writing $t - 1 = (t+1) - 2$ splits $y$ the same way.",
+        "description": "Recall the relevant identity",
+        "workingLatex": "1 + \\tan^{2} t = \\sec^{2} t \\ \\Rightarrow\\ \\sec^{2} t - \\tan^{2} t = 1",
+        "explanation": "This Pythagorean-type identity holds for all valid $t$, and it involves exactly the two functions we have isolated, so it lets us remove the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Isolate the common reciprocal",
-        "workingLatex": "\\frac{1}{t+1} = 1 - x",
-        "explanation": "Rearranging the $x$-expression isolates $\\frac{1}{t+1}$.",
+        "description": "Substitute the isolated expressions",
+        "workingLatex": "\\left(\\dfrac{x - 2}{3}\\right)^{2} - \\left(\\dfrac{y + 1}{4}\\right)^{2} = 1",
+        "explanation": "Replacing $\\sec t$ and $\\tan t$ leaves an equation purely in $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute into y",
-        "workingLatex": "y = 1 - 2(1 - x)",
-        "explanation": "Since $\\frac{2}{t+1} = 2(1-x)$, substituting removes the parameter.",
+        "description": "Write in standard form",
+        "workingLatex": "\\dfrac{(x - 2)^{2}}{9} - \\dfrac{(y + 1)^{2}}{16} = 1",
+        "explanation": "Squaring the denominators produces the standard form of a hyperbola, from which the key features can be read off.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "y = 1 - 2 + 2x = 2x - 1",
-        "explanation": "Expanding gives the required linear equation.",
+        "description": "Identify the shape and centre",
+        "workingLatex": "\\text{Hyperbola, centre } (2,\\, -1)",
+        "explanation": "The pattern $\\tfrac{(x-h)^{2}}{a^{2}} - \\tfrac{(y-k)^{2}}{b^{2}} = 1$ is a hyperbola centred at $(h,k)$; here that is $(2,-1)$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find the excluded point",
-        "workingLatex": "x = 1 - \\frac{1}{t+1} \\ne 1",
-        "explanation": "Since $\\frac{1}{t+1}$ is never zero, $x$ can never equal $1$, so the point $(1, 1)$ is excluded.",
+        "description": "Read off a and b",
+        "workingLatex": "a^{2} = 9 \\Rightarrow a = 3, \\qquad b^{2} = 16 \\Rightarrow b = 4",
+        "explanation": "The denominators give the semi-axis lengths; $a = 3$ measures the horizontal reach from the centre to each vertex.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Locate the vertices from the parameter",
+        "workingLatex": "\\text{Vertices where } \\tan t = 0 \\Rightarrow y + 1 = 0 \\Rightarrow y = -1",
+        "explanation": "The vertices sit on the line of symmetry $y = -1$; this happens when $\\tan t = 0$, which we can use directly instead of any calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the corresponding sec t values",
+        "workingLatex": "\\tan t = 0 \\Rightarrow t = 0 \\text{ or } \\pi \\Rightarrow \\sec t = \\pm 1",
+        "explanation": "When $\\tan t = 0$, the angle is $0$ or $\\pi$, at which $\\sec t$ equals $+1$ or $-1$ respectively.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compute the vertex x-coordinates",
+        "workingLatex": "x = 2 + 3(\\pm 1) = 5 \\ \\text{or}\\ -1",
+        "explanation": "Substituting $\\sec t = \\pm 1$ into $x = 2 + 3\\sec t$ gives the two vertex positions either side of the centre.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the vertices",
+        "workingLatex": "(5,\\, -1) \\quad \\text{and} \\quad (-1,\\, -1)",
+        "explanation": "These are the points where the two branches turn back, each a horizontal distance $3$ from the centre.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify the vertices satisfy the Cartesian equation",
+        "workingLatex": "\\dfrac{(5 - 2)^{2}}{9} - 0 = 1\\ \\checkmark, \\qquad \\dfrac{(-1 - 2)^{2}}{9} - 0 = 1\\ \\checkmark",
+        "explanation": "Both vertices give $1$ on the left-hand side, confirming they lie on the hyperbola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use the range of sec to bound x",
+        "workingLatex": "|\\sec t| \\ge 1 \\Rightarrow \\left|\\dfrac{x - 2}{3}\\right| \\ge 1 \\Rightarrow |x - 2| \\ge 3",
+        "explanation": "Since $\\sec t$ is always at least $1$ in size, the corresponding $x$-values are pushed at least $3$ away from the centre line $x = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Translate into an interval for x",
+        "workingLatex": "x \\le -1 \\quad \\text{or} \\quad x \\ge 5",
+        "explanation": "The condition $|x - 2| \\ge 3$ splits into two pieces, exactly the two branches of the hyperbola; no point has an $x$-value strictly between $-1$ and $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Conclude the description",
+        "workingLatex": "\\dfrac{(x - 2)^{2}}{9} - \\dfrac{(y + 1)^{2}}{16} = 1",
+        "explanation": "The curve is a hyperbola centred at $(2,-1)$ with vertices $(5,-1)$ and $(-1,-1)$, and its two branches occupy $x \\le -1$ and $x \\ge 5$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = 2x - 1$, excluding the point $(1, 1)$."
+    "finalAnswer": "The Cartesian equation is $\\dfrac{(x - 2)^{2}}{9} - \\dfrac{(y + 1)^{2}}{16} = 1$, a hyperbola centred at $(2,\\, -1)$ with vertices $(5,\\, -1)$ and $(-1,\\, -1)$. Its branches occupy $x \\le -1$ and $x \\ge 5$."
   }
 }

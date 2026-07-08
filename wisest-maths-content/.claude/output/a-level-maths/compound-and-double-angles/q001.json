@@ -5,60 +5,74 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 2,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "written",
   "tags": [
-    "compound angles",
-    "sine",
-    "formula recall"
+    "compound angle",
+    "addition formulae",
+    "recall"
   ],
-  "questionText": "Write down the compound angle formula for $\\sin(A + B)$.",
+  "questionText": "Write down the six compound-angle (addition) formulae for $\\sin(A+B)$, $\\sin(A-B)$, $\\cos(A+B)$, $\\cos(A-B)$, $\\tan(A+B)$ and $\\tan(A-B)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the pair of sine addition formulae",
-        "workingLatex": "\\sin(A \\pm B) = \\sin A\\cos B \\pm \\cos A\\sin B",
-        "explanation": "Learning the plus and minus versions together helps, because they share the same terms and only the middle sign changes. This makes each one easy to recall correctly.",
+        "description": "State the sine addition formula",
+        "workingLatex": "\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "The sine of a sum mixes the two angles so that each term pairs a sine with a cosine. A helpful way to remember it is 'sine-cosine plus cosine-sine', and the sign in the middle matches the sign inside $(A+B)$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Note the structure of the sine formula",
-        "workingLatex": "\\text{pattern: } \\sin\\cos + \\cos\\sin",
-        "explanation": "The sine formula mixes the functions: a sine times a cosine, added to a cosine times a sine. Unlike the cosine formula, the two functions are never multiplied by themselves.",
+        "description": "State the sine subtraction formula",
+        "workingLatex": "\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B",
+        "explanation": "Replacing $B$ with $-B$ flips the sign of the second term because sine is an odd function, so the middle plus becomes a minus for the difference.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Select the plus version",
-        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
-        "explanation": "The question asks for $A + B$, so we take the version with the plus sign in the middle.",
+        "description": "State the cosine addition formula",
+        "workingLatex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "For cosine the two terms are 'cosine-cosine' and 'sine-sine', and crucially the middle sign is the opposite of the one inside the bracket, so $A+B$ gives a minus.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the sign convention",
-        "workingLatex": "+B \\;\\Rightarrow\\; + \\text{ in the formula}",
-        "explanation": "For sine the sign inside the bracket carries straight through to the sign in the expansion, which is a helpful consistency check.",
+        "description": "State the cosine subtraction formula",
+        "workingLatex": "\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "For the difference the cosine formula takes a plus, again the opposite sign to the $-$ inside $(A-B)$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Sanity check with a known value",
-        "workingLatex": "\\sin(90^\\circ + 0^\\circ) = \\sin 90^\\circ\\cos 0^\\circ + \\cos 90^\\circ\\sin 0^\\circ = 1",
-        "explanation": "Testing with $A = 90^\\circ, B = 0^\\circ$ gives $1$, which matches $\\sin 90^\\circ$, confirming the formula is written correctly.",
+        "description": "State the tangent addition formula",
+        "workingLatex": "\\tan(A+B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
+        "explanation": "The tangent formula comes from dividing the sine formula by the cosine formula; the numerator carries the sign of the bracket and the denominator carries the opposite sign.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final formula",
-        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
-        "explanation": "This is the required compound angle formula for sine.",
+        "description": "State the tangent subtraction formula",
+        "workingLatex": "\\tan(A-B) = \\dfrac{\\tan A - \\tan B}{1 + \\tan A\\tan B}",
+        "explanation": "For the difference the numerator takes a minus and the denominator a plus, mirroring the sign rule seen in the other formulae.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Summarise the sign pattern compactly",
+        "workingLatex": "\\sin(A\\pm B) = \\sin A\\cos B \\pm \\cos A\\sin B, \\qquad \\cos(A\\pm B) = \\cos A\\cos B \\mp \\sin A\\sin B",
+        "explanation": "Written compactly with $\\pm$ and $\\mp$, the pattern is easy to recall: sine keeps the same sign as the bracket, while cosine takes the opposite sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Sanity-check with a known value",
+        "workingLatex": "\\cos(A-A) = \\cos A\\cos A + \\sin A\\sin A = \\cos^2 A + \\sin^2 A = 1",
+        "explanation": "Setting $B=A$ in the cosine-difference formula should give $\\cos 0^\\circ = 1$, and it does, confirming the signs have been recalled correctly.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B$"
+    "finalAnswer": "$\\sin(A\\pm B)=\\sin A\\cos B\\pm\\cos A\\sin B$, $\\cos(A\\pm B)=\\cos A\\cos B\\mp\\sin A\\sin B$, and $\\tan(A\\pm B)=\\dfrac{\\tan A\\pm\\tan B}{1\\mp\\tan A\\tan B}$."
   }
 }

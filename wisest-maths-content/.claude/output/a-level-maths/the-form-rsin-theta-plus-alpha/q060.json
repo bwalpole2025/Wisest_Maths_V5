@@ -5,60 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "modelling",
+    "radians"
   ],
-  "questionText": "Express $8\\cos\\theta - 15\\sin\\theta$ as $R\\cos(\\theta + \\alpha)$ and hence solve $8\\cos\\theta - 15\\sin\\theta = 8.5$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionText": "The current in a circuit is modelled by $I(t) = 15\\sin(4t) - 8\\cos(4t)$ amperes, where $t$ is the time in seconds and all angles are in radians. (a) Express $I(t)$ in the form $R\\sin(4t - \\alpha)$, where $R > 0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. (b) State the peak current and the period. (c) Find the first time $t > 0$ at which the current reaches $10$ A, giving your answer in seconds to $4$ decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{8^2 + 15^2} = 17",
-        "explanation": "The amplitude is $17$ (an $8$-$15$-$17$ triangle).",
+        "description": "Choose the target form",
+        "workingLatex": "15\\sin(4t) - 8\\cos(4t) \\equiv R\\sin(4t - \\alpha)",
+        "explanation": "Because the cosine term is subtracted, the $R\\sin(4t-\\alpha)$ form is the natural choice: its expansion also subtracts a cosine term, which keeps $\\alpha$ acute.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{15}{8} \\;\\Rightarrow\\; \\alpha \\approx 61.93^\\circ",
-        "explanation": "For the cosine form, $\\tan\\alpha$ is the sine coefficient over the cosine coefficient.",
+        "description": "Expand with the subtraction formula",
+        "workingLatex": "R\\sin(4t - \\alpha) = R\\cos\\alpha\\,\\sin(4t) - R\\sin\\alpha\\,\\cos(4t)",
+        "explanation": "Using $\\sin(A-B)=\\sin A\\cos B - \\cos A\\sin B$ gives a multiple of $\\sin(4t)$ minus a multiple of $\\cos(4t)$, matching the model.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "8\\cos\\theta - 15\\sin\\theta = 17\\cos(\\theta + 61.93^\\circ)",
-        "explanation": "Combining gives the single-cosine form.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 15, \\qquad R\\sin\\alpha = 8",
+        "explanation": "Matching the $\\sin(4t)$ terms gives $R\\cos\\alpha=15$; matching the $\\cos(4t)$ terms, the minus signs cancel to give $R\\sin\\alpha=8$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set up the equation",
-        "workingLatex": "\\cos(\\theta + 61.93^\\circ) = \\frac{8.5}{17} = 0.5",
-        "explanation": "Dividing by $17$ gives cosine equal to $0.5$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{15^2 + 8^2} = \\sqrt{289} = 17",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2 = 225 + 64 = 289$, so the amplitude is $R = 17$ A.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve within the shifted interval",
-        "workingLatex": "\\theta + 61.93^\\circ = 60^\\circ, 300^\\circ, 420^\\circ",
-        "explanation": "Cosine $0.5$ occurs at $60^\\circ$ and $300^\\circ$; within $[61.93^\\circ, 421.93^\\circ)$ the valid values are $300^\\circ$ and $60^\\circ + 360^\\circ = 420^\\circ$.",
+        "description": "Find α in radians",
+        "workingLatex": "\\tan\\alpha = \\dfrac{8}{15} \\Rightarrow \\alpha = 0.4900^{c}",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{8}{15}$; both parts positive means $\\alpha$ is acute, and in radians $\\alpha = 0.4900$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift and round",
-        "workingLatex": "\\theta \\approx 238^\\circ, 358^\\circ",
-        "explanation": "Subtracting $61.93^\\circ$ from the valid values and rounding gives the solutions.",
+        "description": "State the R-form",
+        "workingLatex": "I(t) = 17\\sin(4t - 0.4900)",
+        "explanation": "The current is a single sine wave of amplitude $17$, from which the peak, period and level-crossings follow at once.",
+        "diagram": null
+      },
+      {
+        "description": "Check the R-form at t = 0",
+        "workingLatex": "17\\sin(0 - 0.4900) = 17\\times(-0.4706) = -8 = I(0)",
+        "explanation": "A quick check: at $t=0$ the original model gives $15\\sin 0 - 8\\cos 0 = -8$, and the R-form gives $17\\sin(-0.4900) = -8$ too. Agreement confirms $R$ and $\\alpha$ are correct before we use the form.",
+        "diagram": null,
+        "stepNumber": 7
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the peak current",
+        "workingLatex": "I_{\\max} = R = 17\\text{ A}",
+        "explanation": "Since $\\sin$ never exceeds $1$, the peak current is the amplitude $17$ A, read directly off the R-form with no calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the period",
+        "workingLatex": "\\text{period} = \\dfrac{2\\pi}{4} = \\dfrac{\\pi}{2} \\approx 1.5708\\text{ s}",
+        "explanation": "For a wave $\\sin(kt+\\ldots)$ the period is $\\tfrac{2\\pi}{k}$. With $k = 4$, one complete cycle takes $\\tfrac{\\pi}{2}$ seconds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set up the level equation",
+        "workingLatex": "17\\sin(4t - 0.4900) = 10 \\Rightarrow \\sin(4t - 0.4900) = \\dfrac{10}{17}",
+        "explanation": "For a current of $10$ A we set the model equal to $10$ and divide by the amplitude $17$, giving $\\sin(4t-0.4900)=\\tfrac{10}{17}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the base angle",
+        "workingLatex": "\\arcsin\\dfrac{10}{17} = 0.6288",
+        "explanation": "The principal value is $0.6288$ radians. As $t$ increases from $0$, the angle $4t-0.4900$ increases from $-0.4900$, so this first positive-sine solution is the first one it reaches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for the first time",
+        "workingLatex": "4t - 0.4900 = 0.6288 \\Rightarrow 4t = 1.1188 \\Rightarrow t = 0.2797\\text{ s}",
+        "explanation": "Adding the phase back and dividing by $4$ gives the first time the rising current reaches $10$ A.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm it is the earliest solution",
+        "workingLatex": "\\text{next solution: } 4t - 0.4900 = \\pi - 0.6288 = 2.5128 \\Rightarrow t = 0.7507\\text{ s}",
+        "explanation": "The second-quadrant solution gives a later time of $0.7507$ s, confirming that $t = 0.2797$ s is indeed the first time the current reaches $10$ A.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 238^\\circ, 358^\\circ$"
+    "finalAnswer": "(a) $I(t) = 17\\sin(4t - 0.4900)$ (radians). (b) The peak current is $17$ A and the period is $\\dfrac{\\pi}{2} \\approx 1.5708$ s. (c) The current first reaches $10$ A at $t = 0.2797$ s."
   }
 }

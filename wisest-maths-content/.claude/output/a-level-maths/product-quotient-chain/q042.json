@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "chain rule",
+    "reciprocal trig",
+    "proof"
+  ],
+  "questionText": "Show that $\\dfrac{d}{dx}(\\sec x) = \\sec x\\tan x$, by writing $\\sec x = (\\cos x)^{-1}$ and using the chain rule.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write sec x as a power",
+        "workingLatex": "\\sec x = \\frac{1}{\\cos x} = (\\cos x)^{-1}",
+        "explanation": "Writing $\\sec x$ as $(\\cos x)^{-1}$ turns it into 'something to a power', which is the ideal shape for the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the inside function",
+        "workingLatex": "u = \\cos x, \\qquad y = u^{-1}",
+        "explanation": "We let the inside be $u=\\cos x$, so the whole function becomes $y=u^{-1}$, a simple power of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = -u^{-2}",
+        "explanation": "Using the power rule on $u^{-1}$ brings the $-1$ down and reduces the power by one to give $-u^{-2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = -\\sin x",
+        "explanation": "The derivative of $\\cos x$ is $-\\sin x$, a standard result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx}",
+        "explanation": "The chain rule multiplies the rate of change of the outer function by the rate of change of the inner function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute both derivatives",
+        "workingLatex": "\\frac{dy}{dx} = (-u^{-2})(-\\sin x) = u^{-2}\\sin x",
+        "explanation": "Multiplying two negatives gives a positive, leaving $u^{-2}\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Replace u with cos x",
+        "workingLatex": "= \\frac{\\sin x}{\\cos^2 x}",
+        "explanation": "Substituting $u=\\cos x$ back in, and using $u^{-2}=\\dfrac{1}{\\cos^2 x}$, gives $\\dfrac{\\sin x}{\\cos^2 x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Split into two familiar factors",
+        "workingLatex": "\\frac{\\sin x}{\\cos^2 x} = \\frac{1}{\\cos x}\\cdot\\frac{\\sin x}{\\cos x}",
+        "explanation": "Separating one factor of $\\cos x$ lets us recognise two standard ratios.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Recognise sec and tan",
+        "workingLatex": "\\frac{1}{\\cos x} = \\sec x, \\qquad \\frac{\\sin x}{\\cos x} = \\tan x",
+        "explanation": "These are exactly the definitions of $\\sec x$ and $\\tan x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude",
+        "workingLatex": "\\frac{d}{dx}(\\sec x) = \\sec x\\tan x \\qquad \\blacksquare",
+        "explanation": "Combining the two factors gives the required derivative $\\sec x\\tan x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{d}{dx}(\\sec x)=\\dfrac{\\sin x}{\\cos^2 x}=\\sec x\\tan x$."
+  }
+}

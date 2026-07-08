@@ -4,61 +4,68 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "reciprocal"
+    "eliminating the parameter",
+    "algebraic substitution",
+    "straight line"
   ],
-  "questionText": "A curve has parametric equations $x = t + \\dfrac{1}{t}$, $y = t - \\dfrac{1}{t}$ for $t \\ne 0$. Show that $x^2 - y^2 = 4$.",
+  "questionText": "A curve is given parametrically by $x = 2t + 1$ and $y = 3t - 2$. Find a Cartesian equation of the curve, giving your answer in the form $y = f(x)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Square the x-equation",
-        "workingLatex": "x^2 = \\left(t + \\frac{1}{t}\\right)^2 = t^2 + 2 + \\frac{1}{t^2}",
-        "explanation": "Squaring a sum gives a middle term of $2 \\cdot t \\cdot \\frac{1}{t} = 2$, which is the key to the cancellation.",
+        "description": "Set out the goal",
+        "workingLatex": "x = 2t + 1, \\qquad y = 3t - 2",
+        "explanation": "Both coordinates are linear in $t$, so eliminating $t$ will produce a straight line. We start by making $t$ the subject of the $x$-equation.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Square the y-equation",
-        "workingLatex": "y^2 = \\left(t - \\frac{1}{t}\\right)^2 = t^2 - 2 + \\frac{1}{t^2}",
-        "explanation": "Squaring the difference gives a middle term of $-2$.",
+        "description": "Make t the subject of the x-equation",
+        "workingLatex": "x = 2t + 1 \\Rightarrow t = \\dfrac{x - 1}{2}",
+        "explanation": "Subtracting $1$ and then dividing by $2$ isolates $t$. This expression is what we substitute into the $y$-equation.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Subtract the squares",
-        "workingLatex": "x^2 - y^2 = \\left(t^2 + 2 + \\frac{1}{t^2}\\right) - \\left(t^2 - 2 + \\frac{1}{t^2}\\right)",
-        "explanation": "Subtracting lines up the $t^2$ and $\\frac{1}{t^2}$ terms to cancel.",
+        "description": "Write down the y-equation",
+        "workingLatex": "y = 3t - 2",
+        "explanation": "This equation still contains $t$, so it is the one we substitute into.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cancel matching terms",
-        "workingLatex": "x^2 - y^2 = 2 - (-2)",
-        "explanation": "The $t^2$ and $\\frac{1}{t^2}$ terms cancel, leaving only the constants.",
+        "description": "Substitute the expression for t",
+        "workingLatex": "y = 3 \\left( \\dfrac{x - 1}{2} \\right) - 2",
+        "explanation": "Putting $t = \\dfrac{x - 1}{2}$ into $y = 3t - 2$ removes the parameter, leaving only $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "x^2 - y^2 = 4",
-        "explanation": "The constant difference is $2 + 2 = 4$, giving the required result.",
+        "description": "Simplify the product",
+        "workingLatex": "y = \\dfrac{3(x - 1)}{2} - 2 = \\dfrac{3x - 3}{2} - 2",
+        "explanation": "Multiplying out the numerator tidies the fraction and prepares the terms for combining over one denominator.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Identify the curve",
-        "workingLatex": "x^2 - y^2 = 4 \\text{ (hyperbola)}",
-        "explanation": "This is a hyperbola centred at the origin.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "y = \\dfrac{3x - 3 - 4}{2} = \\dfrac{3x - 7}{2}",
+        "explanation": "Writing $-2$ as $-\\dfrac{4}{2}$ lets the two terms be added into a single fraction, giving the neat final form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = \\dfrac{3x - 7}{2}",
+        "explanation": "This is the Cartesian equation of the curve, a straight line of gradient $\\dfrac{3}{2}$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x^2 - y^2 = 4$"
+    "finalAnswer": "$y = \\dfrac{3x - 7}{2}$ — a straight line."
   }
 }

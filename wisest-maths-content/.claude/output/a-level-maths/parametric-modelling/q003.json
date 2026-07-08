@@ -5,60 +5,60 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "value",
+  "marks": 3,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "maximum height",
-    "projectile"
+    "parametric",
+    "find parameter",
+    "modelling"
   ],
-  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find the maximum height reached.",
+  "questionText": "A boat's position, $t$ hours after leaving harbour, is modelled by $x = 2t + 1$ and $y = t^{2} + t$ (in km). At one moment the boat's $x$-coordinate is $11$. Find the value of $t$ at that moment and the boat's full position.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recognise the height as a quadratic in t",
-        "workingLatex": "y = 15t - 5t^2 = -5t^2 + 15t",
-        "explanation": "The height is a downward parabola in $t$, so its maximum is at the vertex.",
+        "description": "Use the given x-coordinate",
+        "workingLatex": "2t + 1 = 11",
+        "explanation": "We are told $x = 11$, and $x$ is controlled only by the time $t$. Setting the formula for $x$ equal to $11$ turns the problem into an equation for $t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate with respect to t",
-        "workingLatex": "\\frac{dy}{dt} = 15 - 10t",
-        "explanation": "The maximum height occurs where the vertical rate of change is zero.",
+        "description": "Rearrange for the t-term",
+        "workingLatex": "2t = 11 - 1 = 10",
+        "explanation": "Subtracting $1$ from both sides isolates the term containing $t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the derivative to zero",
-        "workingLatex": "15 - 10t = 0 \\;\\Rightarrow\\; t = 1.5",
-        "explanation": "Solving gives the time at which the projectile is highest.",
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{10}{2} = 5",
+        "explanation": "Dividing by $2$ gives the time: the boat is at $x = 11$ when $t = 5$ hours.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute back for the height",
-        "workingLatex": "y = 15(1.5) - 5(1.5)^2 = 22.5 - 11.25",
-        "explanation": "Putting $t = 1.5$ into the height equation gives the maximum value.",
+        "description": "Substitute t = 5 into the y-coordinate",
+        "workingLatex": "y = (5)^{2} + 5",
+        "explanation": "Now that we know the time, we put $t = 5$ into the formula for $y$ to find the matching vertical position.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "y = 11.25 \\text{ m}",
-        "explanation": "The maximum height is $11.25$ metres.",
+        "description": "Work out y",
+        "workingLatex": "y = 25 + 5 = 30",
+        "explanation": "The arithmetic gives the $y$-coordinate as $30$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Confirm it is a maximum",
-        "workingLatex": "\\frac{d^2y}{dt^2} = -10 < 0 \\;\\checkmark",
-        "explanation": "The negative second derivative confirms this is a maximum, not a minimum.",
+        "description": "State the time and position",
+        "workingLatex": "t = 5, \\quad (x,\\,y) = (11,\\,30)",
+        "explanation": "So the boat reaches $x = 11$ after $5$ hours, at the point $(11,\\,30)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum height $= 11.25$ m (at $t = 1.5$ s)."
+    "finalAnswer": "The boat is at $x = 11$ when $t = 5$ hours, at the position $(11,\\,30)$ (km)."
   }
 }

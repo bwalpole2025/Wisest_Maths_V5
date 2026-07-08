@@ -4,76 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
+  "difficulty": "Intermediate",
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "exact",
-    "radians"
+    "modelling",
+    "maximum and minimum"
   ],
-  "questionText": "Solve $\\cos\\theta - \\sqrt3\\sin\\theta = 1$ for $0 \\le \\theta < 2\\pi$, giving exact answers in radians.",
+  "questionText": "The temperature $T$, in $^\\circ\\text{C}$, in a greenhouse $t$ hours after midnight is modelled by $T(t)=15+8\\sin(30t^\\circ)+6\\cos(30t^\\circ)$ for $0\\le t\\le 24$. Express $8\\sin(30t^\\circ)+6\\cos(30t^\\circ)$ in the form $R\\sin(30t^\\circ+\\alpha)$ with $R>0$ and $0^\\circ<\\alpha<90^\\circ$, and hence find the amplitude of the temperature variation, the maximum temperature, and the first time after midnight at which the maximum occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the cosine form",
-        "workingLatex": "\\cos\\theta - \\sqrt3\\sin\\theta = R\\cos(\\theta + \\alpha)",
-        "explanation": "The expression starts with cosine and has a minus, matching $R\\cos(\\theta + \\alpha)$.",
+        "description": "Set up the identity",
+        "workingLatex": "8\\sin(30t^\\circ)+6\\cos(30t^\\circ)\\equiv R\\sin(30t^\\circ+\\alpha)",
+        "explanation": "Combining the varying sine and cosine terms into one sine wave lets us read off how far the temperature swings about its average of $15^\\circ\\text{C}$. We set the two forms identically equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{1 + 3} = 2, \\quad \\tan\\alpha = \\frac{\\sqrt3}{1} \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{3}",
-        "explanation": "The amplitude is $2$ and the phase is $\\frac{\\pi}{3}$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(30t^\\circ+\\alpha)=R\\cos\\alpha\\,\\sin(30t^\\circ)+R\\sin\\alpha\\,\\cos(30t^\\circ)",
+        "explanation": "The addition formula applied to the angle $30t^\\circ$ produces a multiple of $\\sin(30t^\\circ)$ plus a multiple of $\\cos(30t^\\circ)$, matching the model.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "\\cos\\theta - \\sqrt3\\sin\\theta = 2\\cos\\left(\\theta + \\frac{\\pi}{3}\\right)",
-        "explanation": "Combining gives a single cosine.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=8,\\qquad R\\sin\\alpha=6",
+        "explanation": "Equating the amount of $\\sin(30t^\\circ)$ and of $\\cos(30t^\\circ)$ on each side gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set up the equation",
-        "workingLatex": "2\\cos\\left(\\theta + \\frac{\\pi}{3}\\right) = 1 \\;\\Rightarrow\\; \\cos\\left(\\theta + \\frac{\\pi}{3}\\right) = \\frac{1}{2}",
-        "explanation": "Dividing by $2$ gives a standard exact value.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{8^2+6^2}=\\sqrt{100}=10",
+        "explanation": "Squaring and adding eliminates $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=64+36=100$ and the positive amplitude is $R=10$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set the shifted interval",
-        "workingLatex": "\\frac{\\pi}{3} \\le \\theta + \\frac{\\pi}{3} < 2\\pi + \\frac{\\pi}{3}",
-        "explanation": "Adding the shift to the bounds.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{6}{8}=0.75\\Rightarrow \\alpha=36.87^\\circ",
+        "explanation": "Dividing the equations cancels $R$ to give $\\tan\\alpha=0.75$. Both coefficients are positive, so $\\alpha$ is acute and equals $\\arctan 0.75=36.87^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta + \\frac{\\pi}{3} = \\frac{5\\pi}{3}, \\; \\frac{7\\pi}{3}",
-        "explanation": "Cosine one half occurs at $\\frac{\\pi}{3}$ and $\\frac{5\\pi}{3}$ each cycle; within range these are $\\frac{5\\pi}{3}$ and $\\frac{\\pi}{3} + 2\\pi = \\frac{7\\pi}{3}$.",
+        "description": "State the model in R-form",
+        "workingLatex": "T(t)=15+10\\sin(30t^\\circ+36.87^\\circ)",
+        "explanation": "Writing the wave part as a single sine shows the temperature as a steady $15^\\circ\\text{C}$ plus a sine that adds or subtracts up to $10^\\circ\\text{C}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = \\frac{4\\pi}{3}, \\; 2\\pi",
-        "explanation": "Subtracting $\\frac{\\pi}{3}$; but $2\\pi$ is out of range, so it is rejected.",
+        "description": "State the amplitude",
+        "workingLatex": "\\text{amplitude}=R=10\\ ^\\circ\\text{C}",
+        "explanation": "The sine part reaches at most $10$ above and below the mean, so the temperature varies with an amplitude of $10^\\circ\\text{C}$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Include the boundary solution",
-        "workingLatex": "\\theta = 0, \\; \\frac{4\\pi}{3}",
-        "explanation": "The value $\\frac{\\pi}{3}$ for the shifted angle gives $\\theta = 0$, which is in range, so the solutions are $0$ and $\\frac{4\\pi}{3}$.",
+        "description": "Find the maximum temperature",
+        "workingLatex": "T_{\\max}=15+10=25\\ ^\\circ\\text{C}",
+        "explanation": "The greatest temperature occurs when the sine equals its top value of $1$, adding the full $10^\\circ\\text{C}$ to the mean of $15^\\circ\\text{C}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Condition for the maximum",
+        "workingLatex": "\\sin(30t^\\circ+36.87^\\circ)=1\\Rightarrow 30t^\\circ+36.87^\\circ=90^\\circ",
+        "explanation": "The sine first reaches $1$ when its input equals $90^\\circ$, so we set the bracket equal to $90^\\circ$ to find the earliest time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for t",
+        "workingLatex": "30t=90-36.87=53.13\\Rightarrow t=\\dfrac{53.13}{30}=1.771",
+        "explanation": "Subtracting the phase and dividing by $30$ gives the time in hours at which the bracket first reaches $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Interpret the time",
+        "workingLatex": "t\\approx 1.77\\ \\text{hours after midnight}",
+        "explanation": "So the greenhouse first reaches its maximum temperature of $25^\\circ\\text{C}$ about $1.77$ hours after midnight (roughly $01{:}46$).",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 0, \\dfrac{4\\pi}{3}$"
+    "finalAnswer": "$8\\sin(30t^\\circ)+6\\cos(30t^\\circ)=10\\sin(30t^\\circ+36.87^\\circ)$. The amplitude is $10^\\circ\\text{C}$, the maximum temperature is $25^\\circ\\text{C}$, and it first occurs at $t\\approx 1.77$ hours after midnight."
   }
 }

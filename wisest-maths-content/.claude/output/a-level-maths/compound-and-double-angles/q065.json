@@ -5,82 +5,123 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 9,
+  "marks": 6,
   "answerType": "proof",
   "tags": [
-    "double angle",
-    "identities",
+    "compound angle",
     "proof",
-    "tangent"
+    "identity"
   ],
-  "questionText": "Prove that $\\dfrac{1 - \\cos 2\\theta + \\sin 2\\theta}{1 + \\cos 2\\theta + \\sin 2\\theta} \\equiv \\tan\\theta$.",
+  "questionText": "Prove that $\\cos(A+B)\\cos(A-B) \\equiv \\cos^2 A - \\sin^2 B$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace the double angles in the numerator",
-        "workingLatex": "1 - \\cos 2\\theta = 2\\sin^2\\theta, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "Using $\\cos 2\\theta = 1 - 2\\sin^2\\theta$ for the numerator makes a sine-squared term, which pairs well with the sine double angle.",
+        "description": "State the plan",
+        "workingLatex": "\\text{Expand both cosine factors, spot a difference of two squares, then use Pythagoras.}",
+        "explanation": "The left-hand side is a product of two compound cosines. Expanding both reveals a $(X-Y)(X+Y)$ pattern, and Pythagoras finishes the job.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the numerator",
-        "workingLatex": "1 - \\cos 2\\theta + \\sin 2\\theta = 2\\sin^2\\theta + 2\\sin\\theta\\cos\\theta",
-        "explanation": "Substituting both pieces gives the full numerator.",
+        "description": "Expand cos(A+B)",
+        "workingLatex": "\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "Using $\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B$ expands the first factor.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Factor the numerator",
-        "workingLatex": "= 2\\sin\\theta(\\sin\\theta + \\cos\\theta)",
-        "explanation": "Taking out $2\\sin\\theta$ exposes the common bracket.",
+        "description": "Expand cos(A-B)",
+        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "For the difference the middle sign flips, giving a $+\\sin A\\sin B$. The two factors now differ only in that one sign.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Replace the double angles in the denominator",
-        "workingLatex": "1 + \\cos 2\\theta = 2\\cos^2\\theta, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "Using $\\cos 2\\theta = 2\\cos^2\\theta - 1$ for the denominator makes a cosine-squared term.",
+        "description": "Recognise a difference of squares",
+        "workingLatex": "\\cos(A+B)\\cos(A-B) = (\\cos A\\cos B - \\sin A\\sin B)(\\cos A\\cos B + \\sin A\\sin B)",
+        "explanation": "The two brackets have the form $(X - Y)(X + Y)$ with $X = \\cos A\\cos B$ and $Y = \\sin A\\sin B$, so their product is $X^2 - Y^2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Write the denominator",
-        "workingLatex": "1 + \\cos 2\\theta + \\sin 2\\theta = 2\\cos^2\\theta + 2\\sin\\theta\\cos\\theta",
-        "explanation": "Substituting both pieces gives the full denominator.",
+        "description": "Apply the difference of squares",
+        "workingLatex": "= \\cos^2 A\\cos^2 B - \\sin^2 A\\sin^2 B",
+        "explanation": "Squaring each part removes the cross terms, leaving just the two squared products.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Factor the denominator",
-        "workingLatex": "= 2\\cos\\theta(\\cos\\theta + \\sin\\theta)",
-        "explanation": "Taking out $2\\cos\\theta$ exposes the same bracket as the numerator.",
+        "description": "Replace cos squared B",
+        "workingLatex": "\\cos^2 B = 1 - \\sin^2 B",
+        "explanation": "To move towards the target $\\cos^2 A - \\sin^2 B$ we rewrite $\\cos^2 B$ with Pythagoras so the expression is built from $\\cos^2 A$ and $\\sin^2 B$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Form the ratio",
-        "workingLatex": "\\frac{2\\sin\\theta(\\sin\\theta + \\cos\\theta)}{2\\cos\\theta(\\cos\\theta + \\sin\\theta)}",
-        "explanation": "Placing the factored numerator over the factored denominator reveals the common factors.",
+        "description": "Replace sin squared A",
+        "workingLatex": "\\sin^2 A = 1 - \\cos^2 A",
+        "explanation": "Similarly, rewriting $\\sin^2 A$ in terms of $\\cos^2 A$ prepares the second term for cancellation.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Cancel common factors",
-        "workingLatex": "= \\frac{\\sin\\theta}{\\cos\\theta}",
-        "explanation": "The $2$ and the bracket $(\\sin\\theta + \\cos\\theta)$ cancel, leaving sine over cosine.",
+        "description": "Substitute both replacements",
+        "workingLatex": "= \\cos^2 A(1 - \\sin^2 B) - (1 - \\cos^2 A)\\sin^2 B",
+        "explanation": "Putting in both Pythagorean substitutions expresses everything through $\\cos^2 A$ and $\\sin^2 B$ only.",
         "diagram": null
       },
       {
         "stepNumber": 9,
+        "description": "Expand the first product",
+        "workingLatex": "\\cos^2 A(1 - \\sin^2 B) = \\cos^2 A - \\cos^2 A\\sin^2 B",
+        "explanation": "Distributing $\\cos^2 A$ gives the wanted $\\cos^2 A$ plus a mixed term that should later cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Expand the second product",
+        "workingLatex": "-(1 - \\cos^2 A)\\sin^2 B = -\\sin^2 B + \\cos^2 A\\sin^2 B",
+        "explanation": "Distributing the minus sign produces the wanted $-\\sin^2 B$ together with an equal and opposite mixed term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write out all four terms",
+        "workingLatex": "= \\cos^2 A - \\cos^2 A\\sin^2 B - \\sin^2 B + \\cos^2 A\\sin^2 B",
+        "explanation": "Collecting everything shows the two mixed $\\cos^2 A\\sin^2 B$ terms carry opposite signs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Cancel the mixed terms",
+        "workingLatex": "-\\cos^2 A\\sin^2 B + \\cos^2 A\\sin^2 B = 0",
+        "explanation": "These two terms are equal and opposite, so they cancel exactly, which is what makes the identity tidy.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the simplified result",
+        "workingLatex": "\\cos(A+B)\\cos(A-B) = \\cos^2 A - \\sin^2 B",
+        "explanation": "What remains is precisely the right-hand side of the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Numerical check with A = 50, B = 20",
+        "workingLatex": "\\cos 70^\\circ\\cos 30^\\circ \\approx (0.3420)(0.8660) = 0.2962, \\quad \\cos^2 50^\\circ - \\sin^2 20^\\circ \\approx 0.4132 - 0.1170 = 0.2962",
+        "explanation": "Both sides agree to four decimal places for these test angles, supporting the algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
         "description": "Conclude",
-        "workingLatex": "= \\tan\\theta \\;\\blacksquare",
-        "explanation": "This is tangent, matching the right-hand side and completing the proof.",
+        "workingLatex": "\\cos(A+B)\\cos(A-B) \\equiv \\cos^2 A - \\sin^2 B",
+        "explanation": "Every step was an exact identity valid for all $A$ and $B$, so the proof is complete.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{1 - \\cos 2\\theta + \\sin 2\\theta}{1 + \\cos 2\\theta + \\sin 2\\theta} \\equiv \\tan\\theta$"
+    "finalAnswer": "Expanding the product gives $\\cos^2 A\\cos^2 B - \\sin^2 A\\sin^2 B$; substituting $\\cos^2 B = 1-\\sin^2 B$ and $\\sin^2 A = 1-\\cos^2 A$ and cancelling the mixed terms yields $\\cos(A+B)\\cos(A-B) \\equiv \\cos^2 A - \\sin^2 B$."
   }
 }

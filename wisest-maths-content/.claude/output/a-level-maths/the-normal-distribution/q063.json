@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding sigma",
+    "inverse normal"
+  ],
+  "questionText": "The masses, $X$ g, of sugar dispensed into bags by a machine are modelled by $X \\sim N(250, \\sigma^2)$, where the standard deviation $\\sigma$ is unknown. It is found that $5\\%$ of bags contain more than $260$ g. Find $\\sigma$, and hence find the proportion of bags containing less than $245$ g. Give the proportion to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution with unknown sigma",
+        "workingLatex": "X \\sim N(250,\\ \\sigma^2), \\qquad \\mu = 250",
+        "explanation": "The mean is known to be $250$ but the standard deviation is not. We will use the single piece of tail information to pin down $\\sigma$, then answer the follow-up question.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Translate the 5% statement",
+        "workingLatex": "P(X > 260) = 0.05",
+        "explanation": "'Five percent contain more than $260$ g' says the upper tail beyond $260$ has probability $0.05$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Convert to a lower-tail probability",
+        "workingLatex": "P(X < 260) = 1 - 0.05 = 0.95",
+        "explanation": "The inverse normal works from the cumulative (lower-tail) probability, so we rewrite the upper-tail statement as an area of $0.95$ below $260$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the corresponding z-value",
+        "workingLatex": "z = \\Phi^{-1}(0.95) = 1.645",
+        "explanation": "The standardised value with $95\\%$ of the area below it is $1.645$; this is where $260$ must sit in $z$-units, whatever $\\sigma$ turns out to be.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the standardisation equation",
+        "workingLatex": "\\dfrac{260 - 250}{\\sigma} = 1.645",
+        "explanation": "Standardising $260$ gives $\\frac{260-\\mu}{\\sigma}$, and this must equal the $z$-value $1.645$ we just found, giving one equation in the one unknown $\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange for sigma",
+        "workingLatex": "\\sigma = \\dfrac{260 - 250}{1.645} = \\dfrac{10}{1.645}",
+        "explanation": "Multiplying both sides by $\\sigma$ and dividing by $1.645$ isolates the standard deviation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute sigma",
+        "workingLatex": "\\sigma = 6.079 \\approx 6.08 \\text{ g}",
+        "explanation": "Evaluating the fraction gives the standard deviation of the filling process to three significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the follow-up probability",
+        "workingLatex": "\\text{Find } P(X < 245) \\text{ with } \\sigma = 6.079",
+        "explanation": "Now that $\\sigma$ is known, we can answer the second part: the proportion of bags below $245$ g is $P(X < 245)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Standardise 245",
+        "workingLatex": "z = \\dfrac{245 - 250}{6.079} = -0.8224",
+        "explanation": "We convert $245$ into a $z$-score using the mean and the newly found standard deviation; it is negative because $245$ is below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Express the probability using Phi",
+        "workingLatex": "P(X < 245) = \\Phi(-0.8224) = 1 - \\Phi(0.8224)",
+        "explanation": "The area below a negative $z$ equals one minus the area below the matching positive $z$, by symmetry of the standard normal curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Evaluate the standard-normal value",
+        "workingLatex": "\\Phi(0.8224) = 0.7946",
+        "explanation": "The cumulative normal at $0.8224$ gives the fraction of the distribution below that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Compute the probability",
+        "workingLatex": "P(X < 245) = 1 - 0.7946 = 0.2054",
+        "explanation": "Subtracting from one gives the proportion of bags containing less than $245$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Round to 3 significant figures",
+        "workingLatex": "P(X < 245) \\approx 0.205",
+        "explanation": "This is the required proportion, about $20.5\\%$ of bags.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Sense check",
+        "workingLatex": "245 \\text{ is below the mean, so } P < 0.5",
+        "explanation": "Since $245$ is below the mean of $250$, we expect fewer than half of the bags to fall below it; $0.205 < 0.5$ agrees, confirming the answer is reasonable.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sigma \\approx 6.08$ g, and the proportion below $245$ g is $P(X < 245) \\approx 0.205$."
+  }
+}

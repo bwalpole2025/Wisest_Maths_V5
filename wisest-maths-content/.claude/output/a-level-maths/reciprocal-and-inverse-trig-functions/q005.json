@@ -6,59 +6,74 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "cosecant",
-    "exact values"
+    "cot",
+    "exact values",
+    "surd"
   ],
-  "questionText": "Find the exact value of $\\csc 30^\\circ$.",
+  "questionText": "Find the exact value of $\\cot 60^\\circ$, giving your answer as a surd with a rational denominator.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write cosecant as one over sine",
-        "workingLatex": "\\csc 30^\\circ = \\frac{1}{\\sin 30^\\circ}",
-        "explanation": "Converting cosecant into a sine expression lets us use the exact values we already know from the special triangles.",
+        "description": "Recall the definition of cotangent",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta}",
+        "explanation": "Cotangent is one over tangent, so we start from the tangent of the angle.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the exact value of sine 30 degrees",
-        "workingLatex": "\\sin 30^\\circ = \\frac{1}{2}",
-        "explanation": "This exact value comes from the $30$-$60$-$90$ triangle and is one of the standard results to memorise.",
+        "description": "Apply the definition at 60 degrees",
+        "workingLatex": "\\cot 60^\\circ = \\frac{1}{\\tan 60^\\circ}",
+        "explanation": "Substituting $\\theta=60^\\circ$ leaves us needing the exact value of $\\tan 60^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the value",
-        "workingLatex": "\\csc 30^\\circ = \\frac{1}{\\;\\frac{1}{2}\\;}",
-        "explanation": "Replacing sine with a half reduces the problem to a reciprocal of a simple fraction.",
+        "description": "Recall the exact value of tan 60",
+        "workingLatex": "\\tan 60^\\circ = \\sqrt{3}",
+        "explanation": "From the half-equilateral triangle, the side opposite $60^\\circ$ is $\\sqrt{3}$ times the adjacent side, so $\\tan 60^\\circ=\\sqrt{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate the reciprocal",
-        "workingLatex": "\\frac{1}{\\;\\frac{1}{2}\\;} = 2",
-        "explanation": "The reciprocal of one half is two, so the calculation resolves cleanly to a whole number.",
+        "description": "Substitute the tangent value",
+        "workingLatex": "\\cot 60^\\circ = \\frac{1}{\\sqrt{3}}",
+        "explanation": "The reciprocal of $\\sqrt{3}$ gives $\\tfrac{1}{\\sqrt{3}}$, but a surd in the denominator is not yet in the required form.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Check the answer is sensible",
-        "workingLatex": "|\\csc\\theta| \\ge 1 \\;\\checkmark",
-        "explanation": "Cosecant is always at least $1$ in magnitude, and $2$ meets this requirement, confirming the result is plausible.",
+        "description": "Rationalise the denominator",
+        "workingLatex": "\\frac{1}{\\sqrt{3}} = \\frac{1}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3}",
+        "explanation": "Multiplying top and bottom by $\\sqrt{3}$ clears the surd from the denominator, since $\\sqrt{3}\\times\\sqrt{3}=3$. This is the standard exact form.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\csc 30^\\circ = 2",
-        "explanation": "This is the exact answer, needing no decimal approximation.",
+        "description": "Confirm using the cos over sin form",
+        "workingLatex": "\\cot 60^\\circ = \\frac{\\cos 60^\\circ}{\\sin 60^\\circ} = \\frac{\\tfrac{1}{2}}{\\tfrac{\\sqrt{3}}{2}} = \\frac{1}{\\sqrt{3}} \\; \\checkmark",
+        "explanation": "The alternative definition confirms the result: the halves cancel to leave $\\tfrac{1}{\\sqrt{3}}$, matching our rationalised answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the approximate size",
+        "workingLatex": "\\frac{\\sqrt{3}}{3} \\approx 0.577",
+        "explanation": "Since $60^\\circ$ is larger than $45^\\circ$, its cotangent should be less than $1$; a value of about $0.58$ is reasonable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the exact value",
+        "workingLatex": "\\cot 60^\\circ = \\frac{\\sqrt{3}}{3}",
+        "explanation": "This is the exact value with a rational denominator, as requested.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\csc 30^\\circ = 2$"
+    "finalAnswer": "$\\cot 60^\\circ = \\dfrac{\\sqrt{3}}{3}$ (equivalently $\\tfrac{1}{\\sqrt{3}}$)."
   }
 }

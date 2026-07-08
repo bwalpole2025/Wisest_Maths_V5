@@ -5,74 +5,130 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 7,
+  "answerType": "written",
   "tags": [
-    "parametric",
-    "self-intersection",
-    "cartesian"
+    "show that",
+    "hyperbola",
+    "range"
   ],
-  "questionText": "A curve has parametric equations $x = t^2 - 2t$, $y = t^2 + 2t$. Show that the curve does not cross itself.",
+  "questionText": "A curve is defined by $x = t + \\dfrac{1}{t}$ and $y = t - \\dfrac{1}{t}$ for $t \\ne 0$. Show that its Cartesian equation is $x^{2} - y^{2} = 4$. Explain, without calculus, why no point of the curve has $-2 < x < 2$, and find the coordinates of the points where the curve crosses the $x$-axis.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the self-intersection condition",
-        "workingLatex": "x(t_1) = x(t_2), \\; y(t_1) = y(t_2), \\; t_1 \\ne t_2",
-        "explanation": "A curve crosses itself where two distinct parameter values give the same point; we test whether this is possible.",
+        "description": "Choose the combination to eliminate t",
+        "workingLatex": "\\text{Consider } x^{2} - y^{2}",
+        "explanation": "Because $x$ and $y$ differ only in the sign of the $\\tfrac{1}{t}$ term, the combination $x^{2} - y^{2}$ is likely to make the awkward pieces cancel.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set the x-values equal",
-        "workingLatex": "t_1^2 - 2t_1 = t_2^2 - 2t_2",
-        "explanation": "Equal $x$-coordinates give this equation.",
+        "description": "Expand x squared",
+        "workingLatex": "x^{2} = \\left(t + \\dfrac{1}{t}\\right)^{2} = t^{2} + 2 + \\dfrac{1}{t^{2}}",
+        "explanation": "Squaring the bracket, the cross term is $2 \\cdot t \\cdot \\tfrac{1}{t} = 2$, which is a constant.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Factor the x-condition",
-        "workingLatex": "(t_1 - t_2)(t_1 + t_2) - 2(t_1 - t_2) = 0 \\;\\Rightarrow\\; t_1 + t_2 = 2",
-        "explanation": "Factoring out $(t_1 - t_2)$ (nonzero) leaves $t_1 + t_2 = 2$.",
+        "description": "Expand y squared",
+        "workingLatex": "y^{2} = \\left(t - \\dfrac{1}{t}\\right)^{2} = t^{2} - 2 + \\dfrac{1}{t^{2}}",
+        "explanation": "The same expansion with a minus sign gives a cross term of $-2$; the $t^{2}$ and $\\tfrac{1}{t^{2}}$ pieces are identical to those in $x^{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the y-values equal",
-        "workingLatex": "t_1^2 + 2t_1 = t_2^2 + 2t_2",
-        "explanation": "Equal $y$-coordinates give this second equation.",
+        "description": "Subtract the expansions",
+        "workingLatex": "x^{2} - y^{2} = \\left(t^{2} + 2 + \\dfrac{1}{t^{2}}\\right) - \\left(t^{2} - 2 + \\dfrac{1}{t^{2}}\\right)",
+        "explanation": "Subtracting lines up the matching $t^{2}$ and $\\tfrac{1}{t^{2}}$ terms so they cancel, leaving only the constants.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Factor the y-condition",
-        "workingLatex": "(t_1 - t_2)(t_1 + t_2) + 2(t_1 - t_2) = 0 \\;\\Rightarrow\\; t_1 + t_2 = -2",
-        "explanation": "Factoring similarly leaves $t_1 + t_2 = -2$.",
+        "description": "Simplify to the Cartesian equation",
+        "workingLatex": "x^{2} - y^{2} = 2 - (-2) = 4",
+        "explanation": "Only the constant terms survive: $2 - (-2) = 4$, giving the required Cartesian equation $x^{2} - y^{2} = 4$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Compare the two conditions",
-        "workingLatex": "t_1 + t_2 = 2 \\text{ and } t_1 + t_2 = -2",
-        "explanation": "For a self-intersection both must hold simultaneously.",
+        "description": "Identify the shape",
+        "workingLatex": "\\dfrac{x^{2}}{4} - \\dfrac{y^{2}}{4} = 1",
+        "explanation": "Dividing by $4$ writes it in standard form: a hyperbola centred at the origin with $a = b = 2$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Reach a contradiction",
-        "workingLatex": "2 \\ne -2 \\;\\Rightarrow\\; \\text{no such } t_1, t_2",
-        "explanation": "The two requirements are inconsistent, so no pair of distinct parameters gives the same point.",
+        "description": "Study the range of x for positive t",
+        "workingLatex": "t > 0:\\quad \\left(\\sqrt{t} - \\dfrac{1}{\\sqrt{t}}\\right)^{2} \\ge 0",
+        "explanation": "A perfect square is never negative. Choosing this particular square is a calculus-free way to bound $t + \\tfrac{1}{t}$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Conclude",
-        "workingLatex": "\\text{the curve does not cross itself} \\;\\blacksquare",
-        "explanation": "Since the self-intersection conditions cannot both be satisfied, the curve has no self-crossing.",
+        "description": "Expand the square to bound x",
+        "workingLatex": "t - 2 + \\dfrac{1}{t} \\ge 0 \\Rightarrow t + \\dfrac{1}{t} \\ge 2 \\Rightarrow x \\ge 2",
+        "explanation": "Expanding gives $t + \\tfrac{1}{t} \\ge 2$ for every $t > 0$, so $x$ is at least $2$ on this half of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Handle negative t by symmetry",
+        "workingLatex": "t < 0:\\ \\text{let } t = -s,\\ s > 0 \\Rightarrow x = -\\left(s + \\dfrac{1}{s}\\right) \\le -2",
+        "explanation": "Replacing $t$ by $-s$ shows $x$ is the negative of a quantity that is at least $2$, so $x \\le -2$ when $t < 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine the two cases",
+        "workingLatex": "x \\ge 2 \\ \\text{or} \\ x \\le -2",
+        "explanation": "Together the two cases show every point has $|x| \\ge 2$, so no point has $-2 < x < 2$; the gap between the branches is exactly this strip.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set y = 0 for the x-axis crossings",
+        "workingLatex": "y = 0:\\quad t - \\dfrac{1}{t} = 0",
+        "explanation": "The curve crosses the $x$-axis where $y = 0$; using the parametric form of $y$ gives an equation for $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{1}{t} \\Rightarrow t^{2} = 1 \\Rightarrow t = \\pm 1",
+        "explanation": "Multiplying by $t$ (allowed since $t \\ne 0$) gives $t^{2} = 1$, so $t = 1$ or $t = -1$; both are valid parameters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Coordinates for t = 1",
+        "workingLatex": "t = 1:\\quad x = 1 + 1 = 2, \\quad y = 1 - 1 = 0 \\Rightarrow (2,\\, 0)",
+        "explanation": "Substituting $t = 1$ into both parametric equations gives the first crossing point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Coordinates for t = -1",
+        "workingLatex": "t = -1:\\quad x = -1 - 1 = -2, \\quad y = -1 + 1 = 0 \\Rightarrow (-2,\\, 0)",
+        "explanation": "Substituting $t = -1$ gives the second crossing point on the other branch.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Verify against the Cartesian equation",
+        "workingLatex": "2^{2} - 0^{2} = 4\\ \\checkmark, \\qquad (-2)^{2} - 0^{2} = 4\\ \\checkmark",
+        "explanation": "Both points satisfy $x^{2} - y^{2} = 4$, confirming they lie on the curve; they are in fact the two vertices of the hyperbola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the conclusions",
+        "workingLatex": "x^{2} - y^{2} = 4;\\ \\ x \\le -2 \\text{ or } x \\ge 2;\\ \\ \\text{crossings } (2,0),(-2,0)",
+        "explanation": "Gathering everything: the curve is the hyperbola $x^{2} - y^{2} = 4$, its two branches avoid the strip $-2 < x < 2$, and it meets the $x$-axis at its vertices $(2,0)$ and $(-2,0)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "The curve does not cross itself, since $t_1 + t_2 = 2$ and $t_1 + t_2 = -2$ cannot both hold."
+    "finalAnswer": "Eliminating $t$ gives $x^{2} - y^{2} = 4$, a hyperbola centred at the origin. Since $t + \\tfrac{1}{t} \\ge 2$ for $t > 0$ and $\\le -2$ for $t < 0$, no point has $-2 < x < 2$. The curve crosses the $x$-axis at its vertices $(2,\\, 0)$ and $(-2,\\, 0)$."
   }
 }

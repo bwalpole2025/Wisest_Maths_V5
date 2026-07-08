@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.implicit.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "show that",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y^2 = x^3 - 3x + 3$. (a) Show that $\\frac{dy}{dx} = \\frac{3(x^2 - 1)}{2y}$. (b) Find, in exact form, the coordinates of the four points on $C$ at which the tangent is horizontal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(y^2) = \\frac{d}{dx}(x^3 - 3x + 3)",
+        "explanation": "We differentiate the whole equation, treating $y$ as a function of $x$ on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the left-hand side",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "By the chain rule, $y^2$ differentiates to $2y$ times $\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the right-hand side",
+        "workingLatex": "\\frac{d}{dx}(x^3 - 3x + 3) = 3x^2 - 3",
+        "explanation": "Each term differentiates by the power rule: $x^3\\to3x^2$, $-3x\\to-3$, and the constant $\\to0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Equate the two sides",
+        "workingLatex": "2y\\frac{dy}{dx} = 3x^2 - 3",
+        "explanation": "Setting the differentiated sides equal gives an equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for dy/dx and factorise",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3x^2 - 3}{2y} = \\frac{3(x^2 - 1)}{2y}",
+        "explanation": "Dividing by $2y$ isolates the gradient; taking out the factor $3$ gives the required form. This proves part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set up the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; 3(x^2 - 1) = 0",
+        "explanation": "A horizontal tangent has gradient $0$, so the numerator must be zero while $y\\neq0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x",
+        "workingLatex": "x^2 - 1 = 0 \\;\\Rightarrow\\; x = \\pm 1",
+        "explanation": "The numerator vanishes at $x=1$ and $x=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the requirement on y",
+        "workingLatex": "\\text{need } y \\neq 0 \\text{ for a horizontal (not vertical) tangent}",
+        "explanation": "The gradient formula divides by $2y$, so we must confirm $y\\neq0$ at each candidate point; otherwise the tangent would be vertical.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find y-values when x = 1",
+        "workingLatex": "y^2 = 1^3 - 3(1) + 3 = 1",
+        "explanation": "Substituting $x=1$ into the curve gives $y^2=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the points at x = 1",
+        "workingLatex": "y = \\pm 1 \\;\\Rightarrow\\; (1, 1), \\; (1, -1)",
+        "explanation": "Both values are non-zero, so both give genuine horizontal tangents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find y-values when x = -1",
+        "workingLatex": "y^2 = (-1)^3 - 3(-1) + 3 = -1 + 3 + 3 = 5",
+        "explanation": "Substituting $x=-1$ into the curve gives $y^2=5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the points at x = -1",
+        "workingLatex": "y = \\pm\\sqrt{5} \\;\\Rightarrow\\; (-1, \\sqrt{5}), \\; (-1, -\\sqrt{5})",
+        "explanation": "These $y$-values are also non-zero, so both points have horizontal tangents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm the gradient is zero at each point",
+        "workingLatex": "\\text{at } x = \\pm 1: \\; 3(x^2 - 1) = 0 \\;\\Rightarrow\\; \\frac{dy}{dx} = 0",
+        "explanation": "The numerator is zero and $y\\neq0$ at all four points, confirming each tangent is horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the four points",
+        "workingLatex": "(1, 1), \\; (1, -1), \\; (-1, \\sqrt{5}), \\; (-1, -\\sqrt{5})",
+        "explanation": "These are the four points on $C$ where the tangent is horizontal. This answers part (b).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = \\frac{3(x^2 - 1)}{2y}$; (b) horizontal tangents at $(1, 1)$, $(1, -1)$, $(-1, \\sqrt{5})$ and $(-1, -\\sqrt{5})$."
+  }
+}

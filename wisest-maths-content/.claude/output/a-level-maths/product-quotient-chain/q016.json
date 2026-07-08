@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quotient rule",
+    "exponential",
+    "factorising"
+  ],
+  "questionText": "Given that $y = \\dfrac{e^x}{x}$, find $\\dfrac{dy}{dx}$, giving your answer as a single fraction in a fully factorised form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a quotient and state the rule",
+        "workingLatex": "\\frac{d}{dx}\\!\\left(\\frac{u}{v}\\right) = \\frac{u'v - uv'}{v^2}",
+        "explanation": "$y = \\dfrac{e^x}{x}$ is a function divided by a function, so the quotient rule applies.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the numerator and denominator",
+        "workingLatex": "u = e^x, \\qquad v = x",
+        "explanation": "The numerator $e^x$ is $u$ and the denominator $x$ is $v$; keeping this order correct is essential for the quotient rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = e^x, \\qquad v' = 1",
+        "explanation": "$e^x$ is its own derivative, and the derivative of $x$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{e^x\\cdot x - e^x\\cdot 1}{x^2}",
+        "explanation": "Substituting into $\\dfrac{u'v - uv'}{v^2}$ places $u'v$ then $-uv'$ on top and squares the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x e^x - e^x}{x^2}",
+        "explanation": "We write the two products more simply as $x e^x$ and $e^x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{e^x(x - 1)}{x^2}",
+        "explanation": "Both terms on top share a factor of $e^x$, so we take it outside a bracket to present a single factorised fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{e^x(x - 1)}{x^2}",
+        "explanation": "This is the fully factorised derivative of $y = \\dfrac{e^x}{x}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{e^x(x - 1)}{x^2}$."
+  }
+}

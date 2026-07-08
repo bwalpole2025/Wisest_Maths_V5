@@ -5,60 +5,67 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 2,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "tangent",
-    "formula recall"
+    "double angle",
+    "exact values",
+    "acute angle"
   ],
-  "questionText": "Write down the compound angle formula for $\\tan(A + B)$.",
+  "questionText": "Given that $\\cos\\theta = \\tfrac{4}{5}$ and that $\\theta$ is acute, find the exact value of $\\cos 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the tangent addition formula",
-        "workingLatex": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
-        "explanation": "The tangent formula is a fraction, with the sum of tangents on top and $1$ minus their product on the bottom.",
+        "description": "Choose the most efficient cosine form",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "Of the three forms of the cosine double-angle formula, this one uses only $\\cos\\theta$, which is exactly what we are given, so no extra work is needed.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Note where the formula comes from",
-        "workingLatex": "\\tan(A + B) = \\frac{\\sin(A + B)}{\\cos(A + B)}",
-        "explanation": "It is derived by dividing the sine addition formula by the cosine addition formula, then dividing top and bottom by $\\cos A\\cos B$.",
+        "description": "Substitute the value of cos theta",
+        "workingLatex": "= 2\\left(\\tfrac{4}{5}\\right)^2 - 1",
+        "explanation": "Insert $\\cos\\theta=\\tfrac{4}{5}$ into the chosen form.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Note the sign pattern",
-        "workingLatex": "+B: \\; \\text{top } +, \\text{ bottom } -",
-        "explanation": "For a plus inside the bracket, the numerator has a plus and the denominator has a minus. The denominator sign is always opposite to the numerator sign.",
+        "description": "Square the fraction",
+        "workingLatex": "= 2\\cdot\\tfrac{16}{25} - 1",
+        "explanation": "Squaring $\\tfrac{4}{5}$ gives $\\tfrac{16}{25}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Sanity check with a known value",
-        "workingLatex": "\\tan(45^\\circ + 0^\\circ) = \\frac{1 + 0}{1 - 0} = 1 \\;\\checkmark",
-        "explanation": "Testing with $A = 45^\\circ, B = 0^\\circ$ gives $1$, matching $\\tan 45^\\circ$.",
+        "description": "Carry out the multiplication",
+        "workingLatex": "= \\tfrac{32}{25} - 1",
+        "explanation": "Doubling $\\tfrac{16}{25}$ gives $\\tfrac{32}{25}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the restriction",
-        "workingLatex": "1 - \\tan A\\tan B \\ne 0",
-        "explanation": "The formula is undefined when the denominator is zero, which corresponds to $A + B$ being an odd multiple of $90^\\circ$.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\tfrac{32}{25} - \\tfrac{25}{25} = \\tfrac{7}{25}",
+        "explanation": "Writing $1$ as $\\tfrac{25}{25}$ lets us subtract to get $\\tfrac{7}{25}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final formula",
-        "workingLatex": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
-        "explanation": "This is the required compound angle formula for tangent.",
+        "description": "Check the value is sensible",
+        "workingLatex": "-1 < \\tfrac{7}{25} < 1",
+        "explanation": "The value sits within the cosine range and is positive, consistent with $2\\theta\\approx73.7^\\circ$ still being acute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "\\cos 2\\theta = \\tfrac{7}{25}",
+        "explanation": "This is the exact value requested.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\tan(A + B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}$"
+    "finalAnswer": "$\\cos 2\\theta = \\tfrac{7}{25}$."
   }
 }

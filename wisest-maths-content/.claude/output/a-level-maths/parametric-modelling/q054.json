@@ -5,53 +5,116 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "projectile",
-    "launch angle"
+    "trajectory",
+    "parametric differentiation",
+    "tangent"
   ],
-  "questionText": "A projectile is launched with position $x = 12t$, $y = 16t - 5t^2$ (metres). Find its initial speed and the angle of projection above the horizontal.",
+  "questionText": "A particle moves in a vertical plane so that, $t$ seconds after release, its position in metres is $x = 8t$ and $y = 24t - 5t^{2}$. (a) Find $\\frac{dy}{dx}$ in terms of $t$. (b) Find the equation of the tangent to the path at the instant $t = 3$. (c) This tangent meets the ground ($x$-axis) at the point $Q$; find $Q$. (d) Find the acute angle the tangent makes with the horizontal.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 12, \\quad v_y = 16 - 10t",
-        "explanation": "Differentiating each position component gives the velocities.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 8",
+        "explanation": "The gradient of the path uses both parametric derivatives, so we start with the rate of change of the horizontal position, which is a constant $8$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Evaluate at launch (t = 0)",
-        "workingLatex": "v_x = 12, \\quad v_y = 16",
-        "explanation": "The initial velocity is the velocity at $t = 0$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 24 - 10t",
+        "explanation": "Differentiating $y$ gives the rate of change of height, which we will combine with $\\dot{x}$ to get the slope of the path.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the initial speed",
-        "workingLatex": "\\text{speed} = \\sqrt{12^2 + 16^2} = \\sqrt{400} = 20",
-        "explanation": "Combining the components with Pythagoras gives $20$ m/s.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{24 - 10t}{8}",
+        "explanation": "The chain rule gives the path's gradient as the ratio of the vertical to the horizontal rate. This is valid because $\\dot{x} = 8 \\neq 0$ everywhere.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the angle",
-        "workingLatex": "\\tan\\alpha = \\frac{16}{12} = \\frac{4}{3}",
-        "explanation": "The angle of projection has tangent equal to the ratio of vertical to horizontal velocity.",
+        "description": "Simplify the gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{12 - 5t}{4}",
+        "explanation": "Dividing numerator and denominator by $2$ tidies the expression for the gradient at any time $t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Evaluate the angle",
-        "workingLatex": "\\alpha = \\tan^{-1}\\frac{4}{3} \\approx 53.1^\\circ",
-        "explanation": "The inverse tangent gives the launch angle.",
+        "description": "Find the x-coordinate at t = 3",
+        "workingLatex": "x = 8(3) = 24",
+        "explanation": "We need the point of tangency. Substituting $t = 3$ into $x$ gives its horizontal coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate at t = 3",
+        "workingLatex": "y = 24(3) - 5(3)^{2} = 72 - 45 = 27",
+        "explanation": "Substituting $t = 3$ into $y$ gives the height, so the particle is at the point $(24,\\,27)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the gradient at t = 3",
+        "workingLatex": "\\left.\\dfrac{dy}{dx}\\right|_{t=3} = \\dfrac{12 - 5(3)}{4} = -\\dfrac{3}{4}",
+        "explanation": "Putting $t = 3$ into the gradient formula gives the slope of the tangent there. The negative sign shows the particle is moving downhill at this instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the tangent equation",
+        "workingLatex": "y - 27 = -\\dfrac{3}{4}(x - 24)",
+        "explanation": "A straight line through the point of tangency with the gradient we found gives the tangent, using the point–gradient form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand the bracket",
+        "workingLatex": "y = -\\dfrac{3}{4}x + 18 + 27",
+        "explanation": "Multiplying out $-\\tfrac{3}{4} \\times (-24) = 18$ and moving the $27$ across prepares the line in the form $y = mx + c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify the tangent",
+        "workingLatex": "y = -\\dfrac{3}{4}x + 45",
+        "explanation": "This is the tidy equation of the tangent to the path at $t = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set y = 0 for the ground",
+        "workingLatex": "0 = -\\dfrac{3}{4}x + 45",
+        "explanation": "The tangent meets the ground where its height is zero, so we set $y = 0$ and solve for $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for Q",
+        "workingLatex": "\\dfrac{3}{4}x = 45 \\;\\Rightarrow\\; x = 60",
+        "explanation": "Solving gives $x = 60$, so the tangent crosses the ground at $Q(60,\\,0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Set up the angle with the horizontal",
+        "workingLatex": "\\tan\\theta = \\left|-\\dfrac{3}{4}\\right| = \\dfrac{3}{4}",
+        "explanation": "The acute angle a line makes with the horizontal has tangent equal to the magnitude of the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Solve for the angle",
+        "workingLatex": "\\theta = \\arctan\\!\\left(\\dfrac{3}{4}\\right) \\approx 36.9^{\\circ}",
+        "explanation": "Taking the inverse tangent gives the angle the tangent (the direction of travel) makes with the horizontal.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Initial speed $20$ m/s at $\\approx 53.1^\\circ$ above the horizontal."
+    "finalAnswer": "$\\frac{dy}{dx} = \\frac{12 - 5t}{4}$; the tangent at $t = 3$ is $y = -\\frac{3}{4}x + 45$; it meets the ground at $Q(60,\\,0)$; and it makes an angle of about $36.9^{\\circ}$ with the horizontal."
   }
 }

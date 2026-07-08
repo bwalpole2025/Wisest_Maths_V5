@@ -5,60 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "modelling",
-    "current"
+    "radians",
+    "exact values"
   ],
-  "questionText": "An alternating current is modelled by $I = 5\\sin(100t) + 12\\cos(100t)$ amps, where $t$ is in seconds. Find the peak current and the smallest positive $t$ at which the current first reaches its peak (in seconds, to 3 significant figures).",
+  "questionText": "A particle moves so that its displacement from a fixed point is $y = \\sin t + \\sqrt{3}\\cos t$ metres, where $t$ is the time in seconds (in radians) and $0 \\le t \\le 2\\pi$. (a) Express $y$ in the form $R\\sin(t + \\alpha)$, where $R > 0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$, giving $\\alpha$ exactly. (b) State the greatest displacement and the first time it occurs. (c) Solve $y = 1$ for $0 \\le t \\le 2\\pi$, giving your answers as exact multiples of $\\pi$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in R-form",
-        "workingLatex": "5\\sin(100t) + 12\\cos(100t) = 13\\sin(100t + \\alpha)",
-        "explanation": "The amplitude $R = \\sqrt{25 + 144} = 13$ is the peak current.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\sin t + \\sqrt{3}\\cos t \\equiv R\\sin(t + \\alpha)",
+        "explanation": "We combine the two terms into one sine wave so that the amplitude and the solutions can be found exactly. Setting them identically equal lets us expand and compare.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the peak current",
-        "workingLatex": "I_{\\max} = 13 \\text{ A}",
-        "explanation": "The peak of any harmonic expression is its amplitude.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(t + \\alpha) = R\\cos\\alpha\\,\\sin t + R\\sin\\alpha\\,\\cos t",
+        "explanation": "Expanding puts the right-hand side in the same shape as the left: a multiple of $\\sin t$ plus a multiple of $\\cos t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find alpha in radians",
-        "workingLatex": "\\tan\\alpha = \\frac{12}{5} \\;\\Rightarrow\\; \\alpha \\approx 1.176 \\text{ rad}",
-        "explanation": "The phase angle in radians is $\\arctan\\frac{12}{5}$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = \\sqrt{3}",
+        "explanation": "Matching the coefficient of $\\sin t$ gives $R\\cos\\alpha=1$ and matching the coefficient of $\\cos t$ gives $R\\sin\\alpha=\\sqrt{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the sine to its peak",
-        "workingLatex": "100t + 1.176 = \\frac{\\pi}{2}",
-        "explanation": "The current first peaks when the argument first equals $\\frac{\\pi}{2}$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{1^2 + (\\sqrt{3})^2} = \\sqrt{4} = 2",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2 = 1 + 3 = 4$, so the amplitude is exactly $R = 2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for t",
-        "workingLatex": "100t = \\frac{\\pi}{2} - 1.176 \\approx 0.3948",
-        "explanation": "Subtracting the phase gives the value of $100t$.",
+        "description": "Find α exactly",
+        "workingLatex": "\\tan\\alpha = \\dfrac{\\sqrt{3}}{1} = \\sqrt{3} \\Rightarrow \\alpha = \\dfrac{\\pi}{3}",
+        "explanation": "Dividing gives $\\tan\\alpha = \\sqrt{3}$. This is a standard exact value, so $\\alpha = \\tfrac{\\pi}{3}$, which is acute as required.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Divide by 100",
-        "workingLatex": "t \\approx 0.00395 \\text{ s}",
-        "explanation": "Dividing by $100$ gives the smallest positive time, to 3 significant figures.",
+        "description": "State the R-form",
+        "workingLatex": "y = 2\\sin\\left(t + \\dfrac{\\pi}{3}\\right)",
+        "explanation": "The displacement is a single sine wave of amplitude $2$, shifted left by $\\tfrac{\\pi}{3}$. Everything about the motion can now be read from this exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the greatest displacement",
+        "workingLatex": "y_{\\max} = R = 2\\text{ m}",
+        "explanation": "Since $\\sin$ cannot exceed $1$, the greatest displacement is the amplitude $2$ m. This is read straight off the R-form with no calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the time of greatest displacement",
+        "workingLatex": "t + \\dfrac{\\pi}{3} = \\dfrac{\\pi}{2} \\Rightarrow t = \\dfrac{\\pi}{6}\\text{ s}",
+        "explanation": "The sine peaks when its angle is $\\tfrac{\\pi}{2}$. Solving gives the first time the particle is at maximum displacement, $t = \\tfrac{\\pi}{6}$ s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set up the equation y = 1",
+        "workingLatex": "2\\sin\\left(t + \\dfrac{\\pi}{3}\\right) = 1 \\Rightarrow \\sin\\left(t + \\dfrac{\\pi}{3}\\right) = \\dfrac{1}{2}",
+        "explanation": "Setting $y=1$ and dividing by the amplitude $2$ gives $\\sin(t+\\tfrac{\\pi}{3})=\\tfrac{1}{2}$, a standard exact-value equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the base angle",
+        "workingLatex": "\\arcsin\\dfrac{1}{2} = \\dfrac{\\pi}{6}",
+        "explanation": "The principal solution is $\\tfrac{\\pi}{6}$. Sine is also positive in the second quadrant, giving $\\pi - \\tfrac{\\pi}{6} = \\tfrac{5\\pi}{6}$ as well.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Shift the search interval",
+        "workingLatex": "0 \\le t \\le 2\\pi \\Rightarrow \\dfrac{\\pi}{3} \\le t + \\dfrac{\\pi}{3} \\le \\dfrac{7\\pi}{3}",
+        "explanation": "Because we solve for the shifted angle $t+\\tfrac{\\pi}{3}$, we shift the endpoints too. This ensures every solution corresponds to a valid time in $[0, 2\\pi]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "List the shifted-angle solutions",
+        "workingLatex": "t + \\dfrac{\\pi}{3} = \\dfrac{5\\pi}{6},\\; \\dfrac{13\\pi}{6}",
+        "explanation": "In $[\\tfrac{\\pi}{3}, \\tfrac{7\\pi}{3}]$ the solutions of $\\sin=\\tfrac{1}{2}$ are $\\tfrac{5\\pi}{6}$ and $2\\pi + \\tfrac{\\pi}{6} = \\tfrac{13\\pi}{6}$. The base value $\\tfrac{\\pi}{6}$ is below the interval and is rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{5\\pi}{6} - \\dfrac{\\pi}{3} = \\dfrac{\\pi}{2}, \\qquad t = \\dfrac{13\\pi}{6} - \\dfrac{\\pi}{3} = \\dfrac{11\\pi}{6}",
+        "explanation": "Subtracting $\\tfrac{\\pi}{3}$ from each shifted angle gives the exact times. Both lie inside $[0, 2\\pi]$, so the displacement equals $1$ m at $t = \\tfrac{\\pi}{2}$ and $t = \\tfrac{11\\pi}{6}$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Peak current $13$ A, first at $t \\approx 0.00395$ s."
+    "finalAnswer": "(a) $y = 2\\sin\\left(t + \\dfrac{\\pi}{3}\\right)$. (b) The greatest displacement is $2$ m, first reached at $t = \\dfrac{\\pi}{6}$ s. (c) $y = 1$ at $t = \\dfrac{\\pi}{2}$ and $t = \\dfrac{11\\pi}{6}$."
   }
 }

@@ -1,0 +1,70 @@
+{
+  "id": "al.y2.pure.implicit.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "product rule"
+  ],
+  "questionText": "The curve $C$ has equation $xy = 4$. Find $\\frac{dy}{dx}$ in terms of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(xy) = \\frac{d}{dx}(4)",
+        "explanation": "The left side $xy$ is a product of two functions of $x$, so we differentiate both sides with respect to $x$. The constant $4$ will give $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the product rule to $xy$",
+        "workingLatex": "\\frac{d}{dx}(xy) = y + x\\frac{dy}{dx}",
+        "explanation": "The product rule gives $y$ (differentiate $x$ to get $1$, keep $y$) plus $x\\frac{dy}{dx}$ (keep $x$, differentiate $y$ to get $\\frac{dy}{dx}$). The $\\frac{dy}{dx}$ factor appears exactly where $y$ is differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the full differentiated equation",
+        "workingLatex": "y + x\\frac{dy}{dx} = 0",
+        "explanation": "The right-hand side $4$ is constant, so it differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Isolate the $\\frac{dy}{dx}$ term",
+        "workingLatex": "x\\frac{dy}{dx} = -y",
+        "explanation": "Move the $y$ to the other side so the $\\frac{dy}{dx}$ term stands alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make $\\frac{dy}{dx}$ the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{y}{x}",
+        "explanation": "Divide both sides by $x$ to isolate the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm with the explicit form",
+        "workingLatex": "y = \\frac{4}{x} \\;\\Rightarrow\\; \\frac{dy}{dx} = -\\frac{4}{x^2} = -\\frac{y}{x}",
+        "explanation": "As a check, $xy=4$ can be written $y=\\frac{4}{x}$; differentiating directly gives $-\\frac{4}{x^2}$, and since $y=\\frac{4}{x}$ this equals $-\\frac{y}{x}$, agreeing with the implicit result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{y}{x}",
+        "explanation": "The implicit method and the direct method give the same gradient, which is reassuring.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = -\\frac{y}{x}$"
+  }
+}

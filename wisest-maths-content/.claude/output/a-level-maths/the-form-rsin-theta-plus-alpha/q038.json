@@ -4,75 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "cosine form",
+    "solving equations"
   ],
-  "questionText": "Solve $2\\cos\\theta + 3\\sin\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionText": "Express $\\cos\\theta - \\sin\\theta$ in the form $R\\cos(\\theta+\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence solve $\\cos\\theta - \\sin\\theta = 1$ for $0 \\le \\theta \\le 2\\pi$, giving your answers exactly.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Reorder and find R",
-        "workingLatex": "3\\sin\\theta + 2\\cos\\theta, \\quad R = \\sqrt{3^2 + 2^2} = \\sqrt{13}",
-        "explanation": "Writing sine first, the amplitude is $\\sqrt{13}$.",
+        "description": "Set up the identity",
+        "workingLatex": "\\cos\\theta - \\sin\\theta \\equiv R\\cos(\\theta+\\alpha)",
+        "explanation": "A cosine with a sine subtracted matches the expansion of $R\\cos(\\theta+\\alpha)$, which is a cosine term minus a sine term, so this is the target form to compare against.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{2}{3} \\;\\Rightarrow\\; \\alpha \\approx 33.69^\\circ",
-        "explanation": "The ratio of coefficients gives the phase angle.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\cos(\\theta+\\alpha) = R\\cos\\alpha\\,\\cos\\theta - R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta+\\alpha)=\\cos\\theta\\cos\\alpha-\\sin\\theta\\sin\\alpha$ and distributing $R$ gives a cosine term minus a sine term, ready to compare with the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "3\\sin\\theta + 2\\cos\\theta = \\sqrt{13}\\sin(\\theta + 33.69^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = 1",
+        "explanation": "Matching the coefficient of $\\cos\\theta$ gives $R\\cos\\alpha=1$, and matching the coefficient of $\\sin\\theta$ (the minus signs cancel) gives $R\\sin\\alpha=1$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set up the equation",
-        "workingLatex": "\\sqrt{13}\\sin(\\theta + 33.69^\\circ) = 1 \\;\\Rightarrow\\; \\sin(\\theta + 33.69^\\circ) = \\frac{1}{\\sqrt{13}}",
-        "explanation": "Dividing by $\\sqrt{13}$ gives sine equal to about $0.277$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt{2}",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=2$, so the amplitude is $R=\\sqrt{2}$ in exact surd form.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the base angles",
-        "workingLatex": "\\theta + 33.69^\\circ = 16.10^\\circ, 163.90^\\circ, 376.10^\\circ",
-        "explanation": "The principal value is $16.10^\\circ$; its partner is $163.90^\\circ$; adding $360^\\circ$ gives $376.10^\\circ$, needed to cover the shifted interval $[33.69^\\circ, 393.69^\\circ)$.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{1} = 1 \\Rightarrow \\alpha = \\dfrac{\\pi}{4}",
+        "explanation": "Dividing the two equations gives $\\tan\\alpha=1$. Both coefficients are positive so $\\alpha$ is acute, and the acute angle with tangent $1$ is $\\dfrac{\\pi}{4}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Discard the out-of-range value",
-        "workingLatex": "16.10^\\circ < 33.69^\\circ \\text{ so reject}",
-        "explanation": "The first value is below the interval start, so it is discarded.",
+        "description": "State the R-form",
+        "workingLatex": "\\cos\\theta - \\sin\\theta = \\sqrt{2}\\,\\cos\\!\\left(\\theta + \\dfrac{\\pi}{4}\\right)",
+        "explanation": "Combining amplitude and phase gives a single cosine wave of amplitude $\\sqrt{2}$, so the expression ranges between $-\\sqrt{2}$ and $\\sqrt{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = 163.90^\\circ - 33.69^\\circ, \\; 376.10^\\circ - 33.69^\\circ",
-        "explanation": "Subtracting the phase from each valid solution.",
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{2}\\,\\cos\\!\\left(\\theta+\\dfrac{\\pi}{4}\\right) = 1 \\Rightarrow \\cos\\!\\left(\\theta+\\dfrac{\\pi}{4}\\right) = \\dfrac{1}{\\sqrt{2}}",
+        "explanation": "Substituting the single-wave form and dividing by $\\sqrt{2}$ turns the equation into a standard cosine equation with a familiar exact value.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "State the solutions",
-        "workingLatex": "\\theta \\approx 130^\\circ, 342^\\circ",
-        "explanation": "Rounding gives the two solutions in the required range.",
+        "description": "Shift the interval",
+        "workingLatex": "0 \\le \\theta \\le 2\\pi \\Rightarrow \\dfrac{\\pi}{4} \\le \\theta+\\dfrac{\\pi}{4} \\le \\dfrac{9\\pi}{4}",
+        "explanation": "Since we solve for $\\theta+\\dfrac{\\pi}{4}$, we add $\\dfrac{\\pi}{4}$ to both ends of the interval to be sure no solution is dropped at the boundaries.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta+\\dfrac{\\pi}{4} = \\dfrac{\\pi}{4},\\; \\dfrac{7\\pi}{4},\\; \\dfrac{9\\pi}{4}",
+        "explanation": "Cosine equals $\\dfrac{1}{\\sqrt{2}}$ at $\\pm\\dfrac{\\pi}{4}$ plus multiples of $2\\pi$. Inside the shifted interval these are $\\dfrac{\\pi}{4}$, then $2\\pi-\\dfrac{\\pi}{4}=\\dfrac{7\\pi}{4}$, and $\\dfrac{\\pi}{4}+2\\pi=\\dfrac{9\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 0,\\; \\dfrac{3\\pi}{2},\\; 2\\pi",
+        "explanation": "Subtracting $\\dfrac{\\pi}{4}$ from each shifted value undoes the shift. All three lie in $0 \\le \\theta \\le 2\\pi$, so all are valid solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the solutions",
+        "workingLatex": "\\cos\\tfrac{3\\pi}{2} - \\sin\\tfrac{3\\pi}{2} = 0 - (-1) = 1",
+        "explanation": "The value $\\dfrac{3\\pi}{2}$ gives $1$, and the endpoints $0$ and $2\\pi$ both give $\\cos-\\sin=1-0=1$, confirming all three solutions satisfy the equation.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 130^\\circ, 342^\\circ$"
+    "finalAnswer": "$\\cos\\theta - \\sin\\theta = \\sqrt{2}\\,\\cos\\!\\left(\\theta+\\dfrac{\\pi}{4}\\right)$, and the equation is satisfied by $\\theta = 0,\\; \\dfrac{3\\pi}{2},\\; 2\\pi$."
   }
 }

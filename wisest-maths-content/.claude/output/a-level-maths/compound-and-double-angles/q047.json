@@ -4,68 +4,89 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
     "double angle",
-    "equations",
-    "solving"
+    "trig equation",
+    "radians"
   ],
-  "questionText": "Solve $4\\sin\\theta\\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve $\\cos 2x + 3\\sin x = 2$ for $0 \\le x \\le 2\\pi$, giving all solutions in radians in terms of $\\pi$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recognise the double angle",
-        "workingLatex": "4\\sin\\theta\\cos\\theta = 2(2\\sin\\theta\\cos\\theta) = 2\\sin 2\\theta",
-        "explanation": "Rewriting using $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$ turns the product into a single sine.",
+        "description": "Substitute the sine-only double-angle form",
+        "workingLatex": "(1 - 2\\sin^2 x) + 3\\sin x = 2",
+        "explanation": "Because the other trig term is $\\sin x$, we use $\\cos 2x = 1 - 2\\sin^2 x$ so that the whole equation depends on $\\sin x$ alone.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite the equation",
-        "workingLatex": "2\\sin 2\\theta = 1 \\;\\Rightarrow\\; \\sin 2\\theta = \\tfrac{1}{2}",
-        "explanation": "Dividing by $2$ gives a standard sine equation in the doubled angle.",
+        "description": "Move everything to one side",
+        "workingLatex": "-2\\sin^2 x + 3\\sin x - 1 = 0",
+        "explanation": "Subtracting $2$ from both sides collects the equation into a quadratic in $\\sin x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the extended interval",
-        "workingLatex": "\\phi = 2\\theta, \\quad 0^\\circ \\le \\phi < 720^\\circ",
-        "explanation": "The doubled angle ranges up to $720^\\circ$, so we find all solutions there.",
+        "description": "Multiply through by -1",
+        "workingLatex": "2\\sin^2 x - 3\\sin x + 1 = 0",
+        "explanation": "Multiplying by $-1$ makes the leading coefficient positive, which is tidier to factorise.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the base solutions",
-        "workingLatex": "\\sin\\phi = \\tfrac{1}{2} \\;\\Rightarrow\\; \\phi = 30^\\circ, 150^\\circ",
-        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$ in the first revolution.",
+        "description": "Factorise the quadratic",
+        "workingLatex": "(2\\sin x - 1)(\\sin x - 1) = 0",
+        "explanation": "With $s = \\sin x$, the quadratic $2s^2 - 3s + 1$ factors into these brackets; expanding gives $2s^2 - 2s - s + 1 = 2s^2 - 3s + 1$, confirming it.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Add a full revolution",
-        "workingLatex": "\\phi = 390^\\circ, 510^\\circ",
-        "explanation": "Adding $360^\\circ$ gives the remaining solutions within $720^\\circ$.",
+        "description": "Split into two simpler equations",
+        "workingLatex": "\\sin x = \\tfrac{1}{2} \\quad\\text{or}\\quad \\sin x = 1",
+        "explanation": "Setting each factor to zero gives two standard sine equations.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Halve to find theta",
-        "workingLatex": "\\theta = 15^\\circ, 75^\\circ, 195^\\circ, 255^\\circ",
-        "explanation": "Dividing each $\\phi$ by $2$ gives the solutions for $\\theta$.",
+        "description": "Solve sin x = 1/2",
+        "workingLatex": "\\sin x = \\tfrac{1}{2} \\;\\Rightarrow\\; x = \\tfrac{\\pi}{6},\\ \\tfrac{5\\pi}{6}",
+        "explanation": "Sine is positive in the first and second quadrants; with acute angle $\\tfrac{\\pi}{6}$, the solutions are $\\tfrac{\\pi}{6}$ and $\\pi - \\tfrac{\\pi}{6} = \\tfrac{5\\pi}{6}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Confirm the interval",
-        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "All four solutions lie within the required range.",
+        "description": "Solve sin x = 1",
+        "workingLatex": "\\sin x = 1 \\;\\Rightarrow\\; x = \\tfrac{\\pi}{2}",
+        "explanation": "Sine reaches its maximum of $1$ only once in the interval, at $\\tfrac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify x = 5pi/6",
+        "workingLatex": "\\cos\\tfrac{5\\pi}{3} + 3\\sin\\tfrac{5\\pi}{6} = \\tfrac{1}{2} + 3\\cdot\\tfrac{1}{2} = 2",
+        "explanation": "Here $2x = \\tfrac{5\\pi}{3}$, so $\\cos 2x = \\tfrac{1}{2}$; adding $3\\sin\\tfrac{5\\pi}{6} = \\tfrac{3}{2}$ gives exactly $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Verify x = pi/2",
+        "workingLatex": "\\cos\\pi + 3\\sin\\tfrac{\\pi}{2} = -1 + 3 = 2",
+        "explanation": "With $2x = \\pi$, the left-hand side is $-1 + 3 = 2$, confirming $\\tfrac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Collect the full solution set",
+        "workingLatex": "x = \\tfrac{\\pi}{6},\\ \\tfrac{\\pi}{2},\\ \\tfrac{5\\pi}{6}",
+        "explanation": "Listing the roots of both factors in order gives every solution in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 15^\\circ, 75^\\circ, 195^\\circ, 255^\\circ$"
+    "finalAnswer": "$x = \\tfrac{\\pi}{6},\\ \\tfrac{\\pi}{2},\\ \\tfrac{5\\pi}{6}$."
   }
 }

@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "exponential"
+  ],
+  "questionText": "Find an equation of the tangent to the curve $y = e^x + x$ at the point where $x = 1$. Give your answer in an exact form involving $e$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise that the tangent's gradient is the value of the derivative",
+        "workingLatex": "m = \\left.\\frac{dy}{dx}\\right|_{x=1}",
+        "explanation": "The tangent touches the curve with the same steepness at the point of contact, so its gradient is the derivative of $y$ evaluated at that point. We differentiate first, then substitute $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standard derivatives needed",
+        "workingLatex": "\\frac{d}{dx}(e^x) = e^x, \\qquad \\frac{d}{dx}(x) = 1",
+        "explanation": "$e^x$ is the function that is its own derivative, and the derivative of $x$ is $1$ by the power rule. These are the two building blocks of this curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate term by term",
+        "workingLatex": "\\frac{dy}{dx} = e^x + 1",
+        "explanation": "Differentiation is linear, so we differentiate $e^x$ and $x$ separately and add the results.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the gradient at x = 1",
+        "workingLatex": "m = e^1 + 1 = e + 1",
+        "explanation": "Substituting $x=1$ into the derivative gives the exact gradient of the tangent at the point of contact.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate of the point of contact",
+        "workingLatex": "y = e^1 + 1 = e + 1",
+        "explanation": "The tangent meets the curve at $x=1$, so we substitute into the original equation $y=e^x+x$ to obtain the point $(1,\\ e+1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the point and gradient",
+        "workingLatex": "(1,\\ e+1), \\qquad m = e+1",
+        "explanation": "We now have everything the line needs: a point it passes through and its gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the point–gradient form of a straight line",
+        "workingLatex": "y - (e+1) = (e+1)(x - 1)",
+        "explanation": "Substituting the point $(1,\\ e+1)$ and gradient $e+1$ into $y - y_1 = m(x - x_1)$ builds the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the bracket",
+        "workingLatex": "y = (e+1)x - (e+1) + (e+1)",
+        "explanation": "Multiplying out $(e+1)(x-1)$ gives $(e+1)x-(e+1)$, and we add the $(e+1)$ from the left-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify",
+        "workingLatex": "y = (e+1)x",
+        "explanation": "The constant terms $-(e+1)$ and $+(e+1)$ cancel, leaving a tangent that passes through the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the tangent and check it passes through the point",
+        "workingLatex": "y = (e+1)x; \\quad x=1 \\Rightarrow (e+1)(1) = e+1 \\ \\checkmark",
+        "explanation": "The line $y=(e+1)x$ has the required gradient and passes through $(1,\\ e+1)$, confirming it is the tangent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = (e+1)x$."
+  }
+}

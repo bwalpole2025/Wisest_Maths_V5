@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.implicit.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "vertical tangent",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + 4y^2 = 4x$. Find the coordinates of the points on $C$ where the tangent is parallel to the $y$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(4y^2) = \\frac{d}{dx}(4x)",
+        "explanation": "We differentiate both sides with respect to $x$, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x + 8y\\frac{dy}{dx} = 4",
+        "explanation": "The chain rule turns $4y^2$ into $8y\\frac{dy}{dx}$; the $x$-terms use the power rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Isolate the dy/dx term",
+        "workingLatex": "8y\\frac{dy}{dx} = 4 - 2x",
+        "explanation": "Moving $2x$ to the right leaves the $\\frac{dy}{dx}$ term by itself.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject and simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{4 - 2x}{8y} = \\frac{2 - x}{4y}",
+        "explanation": "Dividing by $8y$ and cancelling the factor of $2$ gives the gradient as a fraction in $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the condition for a tangent parallel to the y-axis",
+        "workingLatex": "\\text{Tangent parallel to } y\\text{-axis} \\;\\Rightarrow\\; 4y = 0",
+        "explanation": "A tangent parallel to the $y$-axis is vertical, so the gradient is undefined. This happens where the denominator $4y$ is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for y",
+        "workingLatex": "y = 0",
+        "explanation": "The denominator vanishes only when $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute y = 0 into the curve equation",
+        "workingLatex": "x^2 + 4(0)^2 = 4x",
+        "explanation": "The points lie on $C$, so we put $y = 0$ into its equation to find the $x$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify and factorise",
+        "workingLatex": "x^2 - 4x = 0 \\;\\Rightarrow\\; x(x - 4) = 0",
+        "explanation": "Bringing $4x$ across and factoring out $x$ shows the two solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "x = 0 \\text{ or } x = 4",
+        "explanation": "Either factor being zero gives a solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the numerator is non-zero",
+        "workingLatex": "\\text{At } x=0:\\ 2 - x = 2; \\quad \\text{At } x=4:\\ 2 - x = -2; \\ \\text{both} \\neq 0",
+        "explanation": "The numerator $2 - x$ is non-zero at each point, so the gradient is genuinely undefined — a true vertical tangent, not $\\frac{0}{0}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the coordinates",
+        "workingLatex": "(0,\\, 0) \\quad\\text{and}\\quad (4,\\, 0)",
+        "explanation": "These are the two points on $C$ where the tangent is parallel to the $y$-axis.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent is parallel to the $y$-axis at $(0,\\, 0)$ and $(4,\\, 0)$."
+  }
+}

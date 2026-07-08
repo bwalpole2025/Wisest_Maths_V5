@@ -4,54 +4,124 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
   "tags": [
-    "parametric",
-    "circle",
-    "range"
+    "r sin form",
+    "max and min",
+    "bounded trig"
   ],
-  "questionText": "A curve has parametric equations $x = 5 + 3\\cos\\theta$, $y = -2 + 3\\sin\\theta$. State the greatest and least values of $y$ on the curve and the corresponding $x$-values.",
+  "questionText": "A curve is defined by $x = 3\\cos t$ and $y = 4\\sin t$ for $0 \\le t < 2\\pi$. Without using calculus, find the maximum value of $x + y$, the exact coordinates of the point on the curve where it occurs, and the value of $t$ (in radians, to 3 significant figures) at that point.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Identify the range of sine",
-        "workingLatex": "-1 \\le \\sin\\theta \\le 1",
-        "explanation": "The $y$-value depends on $\\sin\\theta$, which is bounded between $-1$ and $1$.",
+        "description": "Form the expression to be maximised",
+        "workingLatex": "x + y = 3\\cos t + 4\\sin t",
+        "explanation": "The quantity we want to bound is $x + y$; writing it in terms of $t$ turns the problem into maximising a single sinusoidal expression.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Scale and shift for y",
-        "workingLatex": "-2 - 3 \\le -2 + 3\\sin\\theta \\le -2 + 3",
-        "explanation": "Multiplying the sine bounds by $3$ and subtracting $2$ gives the range of $y$.",
+        "description": "Decide on the harmonic (R) form",
+        "workingLatex": "4\\sin t + 3\\cos t = R\\sin(t + \\alpha), \\quad R > 0",
+        "explanation": "Any combination $a\\sin t + b\\cos t$ can be rewritten as a single sine wave $R\\sin(t + \\alpha)$; because a sine wave never exceeds $R$, this instantly reveals the maximum without calculus.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State greatest and least y",
-        "workingLatex": "y_{\\max} = 1, \\quad y_{\\min} = -5",
-        "explanation": "The top of the circle has $y = 1$ and the bottom has $y = -5$.",
+        "description": "Expand the target form",
+        "workingLatex": "R\\sin(t + \\alpha) = R\\cos\\alpha\\,\\sin t + R\\sin\\alpha\\,\\cos t",
+        "explanation": "Using the addition formula lets us compare coefficients of $\\sin t$ and $\\cos t$ on both sides.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find x at these points",
-        "workingLatex": "\\sin\\theta = \\pm 1 \\;\\Rightarrow\\; \\cos\\theta = 0 \\;\\Rightarrow\\; x = 5",
-        "explanation": "When sine is at an extreme, cosine is zero, so $x = 5 + 0 = 5$ at both.",
+        "description": "Match the coefficients",
+        "workingLatex": "R\\cos\\alpha = 4, \\qquad R\\sin\\alpha = 3",
+        "explanation": "The coefficient of $\\sin t$ must match ($4$) and the coefficient of $\\cos t$ must match ($3$); these two equations determine $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the points",
-        "workingLatex": "(5, 1) \\text{ and } (5, -5)",
-        "explanation": "These are the top and bottom of the circle centre $(5, -2)$ radius $3$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{4^{2} + 3^{2}} = \\sqrt{25} = 5",
+        "explanation": "Squaring and adding the two equations uses $\\cos^{2}\\alpha + \\sin^{2}\\alpha = 1$ to give $R$; here it comes out as the exact value $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the phase angle",
+        "workingLatex": "\\tan\\alpha = \\dfrac{3}{4} \\Rightarrow \\alpha = \\arctan\\dfrac{3}{4} \\approx 0.6435",
+        "explanation": "Dividing the two matching equations removes $R$ and gives $\\tan\\alpha$; the angle is acute since both $R\\cos\\alpha$ and $R\\sin\\alpha$ are positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write x + y in harmonic form",
+        "workingLatex": "x + y = 5\\sin(t + \\alpha)",
+        "explanation": "The whole expression is now a single sine wave of amplitude $5$, which makes its extremes obvious.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Bound the expression",
+        "workingLatex": "-5 \\le 5\\sin(t + \\alpha) \\le 5 \\Rightarrow (x + y)_{\\max} = 5",
+        "explanation": "Because $\\sin$ never exceeds $1$, the greatest possible value of $x + y$ is the amplitude $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the parameter at the maximum",
+        "workingLatex": "\\sin(t + \\alpha) = 1 \\Rightarrow t + \\alpha = \\dfrac{\\pi}{2} \\Rightarrow t = \\dfrac{\\pi}{2} - \\alpha",
+        "explanation": "The peak of the sine wave is reached when its argument equals $\\tfrac{\\pi}{2}$; solving gives the value of $t$ where the maximum occurs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate t numerically",
+        "workingLatex": "t = \\dfrac{\\pi}{2} - 0.6435 \\approx 0.927",
+        "explanation": "Subtracting the phase angle from $\\tfrac{\\pi}{2}$ gives the parameter in radians to three significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find cos t and sin t at this parameter",
+        "workingLatex": "\\cos t = \\cos\\!\\left(\\dfrac{\\pi}{2} - \\alpha\\right) = \\sin\\alpha = \\dfrac{3}{5}, \\qquad \\sin t = \\sin\\!\\left(\\dfrac{\\pi}{2} - \\alpha\\right) = \\cos\\alpha = \\dfrac{4}{5}",
+        "explanation": "Using the complementary-angle identities and the values $\\sin\\alpha = \\tfrac{3}{5}$, $\\cos\\alpha = \\tfrac{4}{5}$ found from the matching equations gives exact values for $\\cos t$ and $\\sin t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Compute the exact x-coordinate",
+        "workingLatex": "x = 3\\cos t = 3 \\cdot \\dfrac{3}{5} = \\dfrac{9}{5}",
+        "explanation": "Substituting the exact $\\cos t$ into $x = 3\\cos t$ gives the $x$-coordinate as a neat fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Compute the exact y-coordinate",
+        "workingLatex": "y = 4\\sin t = 4 \\cdot \\dfrac{4}{5} = \\dfrac{16}{5}",
+        "explanation": "Substituting the exact $\\sin t$ into $y = 4\\sin t$ gives the matching $y$-coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check the sum equals the maximum",
+        "workingLatex": "x + y = \\dfrac{9}{5} + \\dfrac{16}{5} = \\dfrac{25}{5} = 5\\ \\checkmark",
+        "explanation": "Adding the coordinates recovers exactly $5$, confirming this point does deliver the maximum found earlier.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the point and parameter",
+        "workingLatex": "\\left(\\dfrac{9}{5},\\ \\dfrac{16}{5}\\right), \\quad t \\approx 0.927",
+        "explanation": "Collecting the results gives the exact location of the maximum and the value of $t$ where it occurs.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Greatest $y = 1$ at $(5,1)$; least $y = -5$ at $(5,-5)$."
+    "finalAnswer": "The maximum value of $x + y$ is $5$, occurring at the point $\\left(\\dfrac{9}{5},\\ \\dfrac{16}{5}\\right)$ when $t = \\dfrac{\\pi}{2} - \\arctan\\dfrac{3}{4} \\approx 0.927$ radians."
   }
 }

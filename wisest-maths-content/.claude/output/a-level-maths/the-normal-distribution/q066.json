@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "symmetric interval"
+  ],
+  "questionText": "The weights, $X$ kg, of adult male cats of a certain breed are modelled by $X \\sim N(4.5, 0.6^2)$. The central $80\\%$ of weights lie between $p$ kg and $q$ kg, symmetrically about the mean. Find $p$ and $q$, giving your answers to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(4.5,\\ 0.6^2), \\qquad \\mu = 4.5,\\ \\sigma = 0.6",
+        "explanation": "The weights are normal with mean $4.5$ kg and standard deviation $0.6$ kg. We want the two weights that enclose the middle $80\\%$ of cats symmetrically about the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Interpret 'central 80%' as a probability",
+        "workingLatex": "P(p < X < q) = 0.80",
+        "explanation": "The central $80\\%$ is the region under the bell curve, centred on the mean, that holds $80\\%$ of the area, so the interval probability is $0.80$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Split the remaining 20% between the tails",
+        "workingLatex": "\\text{each tail} = \\dfrac{1 - 0.80}{2} = 0.10",
+        "explanation": "The $20\\%$ not in the middle is shared equally between the two tails, giving $10\\%$ in each by symmetry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Lower cumulative probability",
+        "workingLatex": "P(X < p) = 0.10",
+        "explanation": "The lower boundary $p$ has exactly $10\\%$ of the distribution below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Upper cumulative probability",
+        "workingLatex": "P(X < q) = 1 - 0.10 = 0.90",
+        "explanation": "The upper boundary $q$ leaves $10\\%$ in the upper tail, so $90\\%$ lies below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "z-value for the lower limit",
+        "workingLatex": "z_p = \\Phi^{-1}(0.10) = -1.282",
+        "explanation": "The inverse normal for a cumulative probability of $0.10$ is negative, since the $10$th percentile lies to the left of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "z-value for the upper limit",
+        "workingLatex": "z_q = \\Phi^{-1}(0.90) = 1.282",
+        "explanation": "By symmetry the $90$th percentile is the mirror image, giving $z_q = +1.282$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Standardisation equation for p",
+        "workingLatex": "\\dfrac{p - 4.5}{0.6} = -1.282",
+        "explanation": "Standardising $p$ must reproduce the lower $z$-value, giving an equation we can solve for $p$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for p",
+        "workingLatex": "p = 4.5 + 0.6 \\times (-1.282) = 4.5 - 0.769 = 3.731",
+        "explanation": "Multiplying by $\\sigma = 0.6$ and adding the mean converts the $z$-value back to a weight in kilograms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Round p to 3 significant figures",
+        "workingLatex": "p \\approx 3.73 \\text{ kg}",
+        "explanation": "This is the weight below which only $10\\%$ of the cats fall.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Standardisation equation for q",
+        "workingLatex": "\\dfrac{q - 4.5}{0.6} = 1.282",
+        "explanation": "The upper boundary satisfies the mirror equation with $z = +1.282$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for q",
+        "workingLatex": "q = 4.5 + 0.6 \\times 1.282 = 4.5 + 0.769 = 5.269",
+        "explanation": "The same rearrangement gives the upper weight in kilograms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Round q to 3 significant figures",
+        "workingLatex": "q \\approx 5.27 \\text{ kg}",
+        "explanation": "This is the weight that only $10\\%$ of the cats exceed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check the symmetry",
+        "workingLatex": "\\dfrac{p + q}{2} = \\dfrac{3.731 + 5.269}{2} = 4.5",
+        "explanation": "The midpoint of the interval equals the mean $4.5$ kg, and each endpoint is $0.769$ kg from it, confirming the interval is correctly centred.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$p \\approx 3.73$ kg and $q \\approx 5.27$ kg (from $z = \\pm 1.282$, giving $4.5 \\pm 0.769$)."
+  }
+}

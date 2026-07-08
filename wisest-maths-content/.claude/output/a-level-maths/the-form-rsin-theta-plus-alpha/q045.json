@@ -4,61 +4,90 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 7,
+  "difficulty": "Intermediate",
+  "marks": 5,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "boundary"
+    "modelling",
+    "radians"
   ],
-  "questionText": "Solve $3\\sin\\theta - 4\\cos\\theta = -5$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "The displacement, in centimetres, of a particle at time $t$ seconds is modelled by $x(t)=3\\sin(2t)+4\\cos(2t)$ for $t\\ge 0$. Express $x(t)$ in the form $R\\sin(2t+\\alpha)$, where $R>0$ and $0<\\alpha<\\tfrac{\\pi}{2}$ (in radians), and hence state the amplitude of the motion and find the first time $t>0$ at which the displacement is greatest.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{3^2 + 4^2} = 5, \\quad \\tan\\alpha = \\frac{4}{3} \\;\\Rightarrow\\; \\alpha \\approx 53.13^\\circ",
-        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $5$ and phase about $53.13^\\circ$.",
+        "description": "Set up the identity",
+        "workingLatex": "3\\sin(2t)+4\\cos(2t)\\equiv R\\sin(2t+\\alpha)",
+        "explanation": "Writing the sum of a sine and cosine of the same angle $2t$ as one sine wave reveals the amplitude directly, since a single sine of amplitude $R$ swings between $-R$ and $R$. We set the two forms identically equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the harmonic form",
-        "workingLatex": "3\\sin\\theta - 4\\cos\\theta = 5\\sin(\\theta - 53.13^\\circ)",
-        "explanation": "Combining gives the single-sine form.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(2t+\\alpha)=R\\cos\\alpha\\,\\sin(2t)+R\\sin\\alpha\\,\\cos(2t)",
+        "explanation": "The addition formula applied to the angle $2t$ gives a multiple of $\\sin(2t)$ plus a multiple of $\\cos(2t)$, the same shape as the model.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the equation",
-        "workingLatex": "5\\sin(\\theta - 53.13^\\circ) = -5 \\;\\Rightarrow\\; \\sin(\\theta - 53.13^\\circ) = -1",
-        "explanation": "The right side equals the negative amplitude, so the sine must be at its minimum.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=3,\\qquad R\\sin\\alpha=4",
+        "explanation": "Matching the amount of $\\sin(2t)$ and the amount of $\\cos(2t)$ on each side gives these two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve for the bracket",
-        "workingLatex": "\\theta - 53.13^\\circ = -90^\\circ \\text{ or } 270^\\circ",
-        "explanation": "Sine equals $-1$ at $270^\\circ$ (and $-90^\\circ$); we pick the one giving $\\theta$ in range.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{3^2+4^2}=\\sqrt{25}=5",
+        "explanation": "Squaring and adding removes $\\alpha$ through $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=3^2+4^2=25$ and the positive amplitude is $R=5$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for theta",
-        "workingLatex": "\\theta = 270^\\circ + 53.13^\\circ = 323.13^\\circ",
-        "explanation": "Using $270^\\circ$ gives a single valid solution; $-90^\\circ$ would give $\\theta = -36.87^\\circ$, out of range.",
+        "description": "Find the acute angle α in radians",
+        "workingLatex": "\\tan\\alpha=\\dfrac{4}{3}\\Rightarrow \\alpha=0.9273\\ \\text{rad}",
+        "explanation": "Dividing the equations cancels $R$ to give $\\tan\\alpha=\\tfrac{4}{3}$. Both coefficients are positive, so $\\alpha$ is acute; in radians $\\alpha=\\arctan\\tfrac{4}{3}=0.9273$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the solution",
-        "workingLatex": "\\theta \\approx 323^\\circ",
-        "explanation": "Because the value equals the minimum, there is exactly one solution in the interval.",
+        "description": "State the model in R-form",
+        "workingLatex": "x(t)=5\\sin(2t+0.9273)",
+        "explanation": "Putting the amplitude and phase together writes the displacement as a single sine wave, which makes the largest and smallest displacements easy to identify.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the amplitude",
+        "workingLatex": "\\text{amplitude}=R=5\\ \\text{cm}",
+        "explanation": "A single sine wave of the form $R\\sin(\\cdots)$ reaches at most $R$ from the centre, so the amplitude of the motion is $5$ centimetres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Condition for greatest displacement",
+        "workingLatex": "x\\text{ greatest when }\\sin(2t+0.9273)=1",
+        "explanation": "The displacement is largest exactly when the sine reaches its top value of $1$, giving $x=5$. We now find the first time this happens.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the bracket",
+        "workingLatex": "2t+0.9273=\\dfrac{\\pi}{2}\\Rightarrow 2t=1.5708-0.9273=0.6435",
+        "explanation": "The sine first equals $1$ when its input is $\\tfrac{\\pi}{2}$. Subtracting the phase $0.9273$ isolates $2t$, and this is the earliest such input for $t>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the first time t",
+        "workingLatex": "t=\\dfrac{0.6435}{2}=0.3217\\ \\text{s}",
+        "explanation": "Halving gives the time. So the displacement first reaches its greatest value of $5$ cm at about $t=0.32$ seconds.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 323^\\circ$"
+    "finalAnswer": "$x(t)=5\\sin(2t+0.9273)$. The amplitude is $5$ cm, and the displacement is first greatest (equal to $5$ cm) at $t\\approx 0.32$ s."
   }
 }

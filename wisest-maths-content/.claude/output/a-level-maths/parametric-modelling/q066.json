@@ -6,59 +6,115 @@
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "value",
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
-    "vertical tangent",
-    "coordinates"
+    "trigonometric",
+    "tangent",
+    "parallel"
   ],
-  "questionText": "A curve has parametric equations $x = t^3 - 3t$, $y = t^2$. Find the coordinates of the points where the tangent is vertical.",
+  "questionText": "A tracking point moves along the path $x = 4\\cos t$, $y = 3\\sin t$, for $0 \\le t \\le \\pi$, with $x$ and $y$ in metres. (a) Find $\\dfrac{dy}{dx}$ in terms of $t$. (b) Find the value(s) of $t$ in the given interval for which the tangent to the path is parallel to the line $3x + 4y = 12$, rejecting any that are out of range. (c) Find the equation of the tangent at that point.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the vertical tangent condition",
-        "workingLatex": "\\frac{dx}{dt} = 0 \\text{ (with } \\tfrac{dy}{dt} \\ne 0)",
-        "explanation": "A vertical tangent requires the horizontal rate of change to vanish while the vertical one does not.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = -4\\sin t",
+        "explanation": "The horizontal velocity comes from differentiating $4\\cos t$, giving $-4\\sin t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate x",
-        "workingLatex": "\\frac{dx}{dt} = 3t^2 - 3",
-        "explanation": "Differentiating $x = t^3 - 3t$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 3\\cos t",
+        "explanation": "Differentiating $3\\sin t$ gives the vertical velocity $3\\cos t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Solve for t",
-        "workingLatex": "3t^2 - 3 = 0 \\;\\Rightarrow\\; t = \\pm 1",
-        "explanation": "Setting the derivative to zero gives two parameter values.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{3\\cos t}{-4\\sin t} = -\\dfrac{3\\cos t}{4\\sin t}",
+        "explanation": "Dividing the velocity components gives the slope of the path at parameter $t$, valid where $\\sin t \\neq 0$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check dy/dt is nonzero",
-        "workingLatex": "\\frac{dy}{dt} = 2t = \\pm 2 \\ne 0",
-        "explanation": "At both values the vertical rate is nonzero, so the tangents are genuinely vertical.",
+        "description": "Find the gradient of the given line",
+        "workingLatex": "3x + 4y = 12 \\;\\Rightarrow\\; y = -\\dfrac{3}{4}x + 3 \\;\\Rightarrow\\; m = -\\dfrac{3}{4}",
+        "explanation": "Two lines are parallel when their gradients match, so we rearrange the given line to read off its gradient $-\\tfrac{3}{4}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the coordinates",
-        "workingLatex": "t = 1: (-2, 1); \\quad t = -1: (2, 1)",
-        "explanation": "Substituting each value into the parametric equations.",
+        "description": "Set the path gradient equal to the line's gradient",
+        "workingLatex": "-\\dfrac{3\\cos t}{4\\sin t} = -\\dfrac{3}{4}",
+        "explanation": "For the tangent to be parallel to the line, the gradient of the path must equal $-\\tfrac{3}{4}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "(-2, 1) \\text{ and } (2, 1)",
-        "explanation": "These are the two points with vertical tangents.",
+        "description": "Cancel common factors",
+        "workingLatex": "\\dfrac{\\cos t}{\\sin t} = 1",
+        "explanation": "Removing the common factor $-\\tfrac{3}{4}$ from both sides leaves a simple ratio of $\\cos t$ to $\\sin t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite as a tangent equation",
+        "workingLatex": "\\cot t = 1 \\;\\Rightarrow\\; \\tan t = 1",
+        "explanation": "The ratio $\\tfrac{\\cos t}{\\sin t}$ is $\\cot t$; setting it to $1$ is the same as $\\tan t = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the general solutions",
+        "workingLatex": "t = \\dfrac{\\pi}{4}, \\; \\dfrac{5\\pi}{4}, \\; \\dots",
+        "explanation": "The solutions of $\\tan t = 1$ repeat every $\\pi$; the first two are $\\tfrac{\\pi}{4}$ and $\\tfrac{5\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Apply the interval and reject out-of-range solutions",
+        "workingLatex": "0 \\le t \\le \\pi \\;\\Rightarrow\\; t = \\dfrac{\\pi}{4} \\text{ valid}, \\; t = \\dfrac{5\\pi}{4} \\text{ rejected}",
+        "explanation": "Only $t = \\tfrac{\\pi}{4}$ lies in the modelled interval; $\\tfrac{5\\pi}{4}$ is outside $0 \\le t \\le \\pi$, so it is rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm the tangent is defined there",
+        "workingLatex": "\\sin\\tfrac{\\pi}{4} = \\tfrac{\\sqrt{2}}{2} \\neq 0 \\;\\Rightarrow\\; \\dot{x} \\neq 0",
+        "explanation": "The gradient formula needs $\\dot{x}\\neq 0$; since $\\sin\\tfrac{\\pi}{4}\\neq 0$ the tangent is well defined at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the x-coordinate",
+        "workingLatex": "x = 4\\cos\\tfrac{\\pi}{4} = 4\\cdot\\dfrac{\\sqrt{2}}{2} = 2\\sqrt{2}",
+        "explanation": "Substituting $t = \\tfrac{\\pi}{4}$ into $x = 4\\cos t$ gives the horizontal coordinate of the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = 3\\sin\\tfrac{\\pi}{4} = 3\\cdot\\dfrac{\\sqrt{2}}{2} = \\dfrac{3\\sqrt{2}}{2}",
+        "explanation": "Substituting the same time into $y = 3\\sin t$ gives the vertical coordinate, so the point is $\\left(2\\sqrt{2},\\,\\tfrac{3\\sqrt{2}}{2}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Write the tangent in point-gradient form",
+        "workingLatex": "y - \\dfrac{3\\sqrt{2}}{2} = -\\dfrac{3}{4}\\left(x - 2\\sqrt{2}\\right)",
+        "explanation": "Using the point and the known gradient $-\\tfrac{3}{4}$ builds the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Simplify the tangent equation",
+        "workingLatex": "y = -\\dfrac{3}{4}x + 3\\sqrt{2}",
+        "explanation": "Expanding gives $-\\tfrac{3}{4}\\times(-2\\sqrt{2}) = \\tfrac{3\\sqrt{2}}{2}$, which adds to the existing constant to give $3\\sqrt{2}$; the intercept differs from the given line's, confirming the tangent is parallel, not identical.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(-2, 1)$ and $(2, 1)$"
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = -\\dfrac{3\\cos t}{4\\sin t}$. (b) The tangent is parallel to $3x + 4y = 12$ at $t = \\dfrac{\\pi}{4}$ ($t = \\tfrac{5\\pi}{4}$ is rejected as out of range). (c) The tangent there is $y = -\\dfrac{3}{4}x + 3\\sqrt{2}$."
   }
 }

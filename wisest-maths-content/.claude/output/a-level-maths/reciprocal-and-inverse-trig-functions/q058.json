@@ -5,75 +5,109 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "inverse trig",
-    "proof",
-    "arcsin",
-    "arccos"
+    "solving equations",
+    "cosec",
+    "radians"
   ],
-  "questionText": "Prove that $\\arcsin x + \\arccos x = \\dfrac{\\pi}{2}$ for all $x$ with $-1 \\le x \\le 1$.",
+  "questionText": "Solve $\\cot^2 x = \\operatorname{cosec} x + 1$ for $0 \\le x \\le 2\\pi$, giving your answers in radians in terms of $\\pi$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Name the arcsine angle",
-        "workingLatex": "\\text{let } \\alpha = \\arcsin x, \\text{ so } \\sin\\alpha = x",
-        "explanation": "Naming the arcsine gives an angle $\\alpha$ whose sine is $x$, which is the key relationship to exploit.",
+        "description": "State the equation and note the domain",
+        "workingLatex": "\\cot^2 x = \\operatorname{cosec} x + 1, \\qquad 0 \\le x \\le 2\\pi, \\;\\; \\sin x \\neq 0",
+        "explanation": "The equation contains $\\cot^2 x$ and $\\operatorname{cosec} x$. Converting $\\cot^2 x$ into $\\operatorname{cosec} x$ makes it a quadratic in $\\operatorname{cosec} x$, and we work in radians.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the range of alpha",
-        "workingLatex": "-\\frac{\\pi}{2} \\le \\alpha \\le \\frac{\\pi}{2}",
-        "explanation": "Arcsine always returns an angle in this principal range, which we will need to check the final angle is valid.",
+        "description": "Choose the identity",
+        "workingLatex": "1 + \\cot^2 x \\equiv \\operatorname{cosec}^2 x \\;\\Rightarrow\\; \\cot^2 x = \\operatorname{cosec}^2 x - 1",
+        "explanation": "Replacing $\\cot^2 x$ with $\\operatorname{cosec}^2 x - 1$ leaves the single ratio $\\operatorname{cosec} x$ throughout.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Use the cofunction identity",
-        "workingLatex": "\\sin\\alpha = \\cos\\left(\\frac{\\pi}{2} - \\alpha\\right)",
-        "explanation": "The cofunction identity converts a sine into a cosine of the complementary angle, linking the problem to arccosine.",
+        "description": "Substitute",
+        "workingLatex": "\\operatorname{cosec}^2 x - 1 = \\operatorname{cosec} x + 1",
+        "explanation": "After substituting, every term is written with $\\operatorname{cosec} x$, ready to be rearranged into a quadratic.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute the value of sine",
-        "workingLatex": "\\cos\\left(\\frac{\\pi}{2} - \\alpha\\right) = x",
-        "explanation": "Since $\\sin\\alpha = x$, the complementary cosine also equals $x$.",
+        "description": "Rearrange to a quadratic equal to zero",
+        "workingLatex": "\\operatorname{cosec}^2 x - \\operatorname{cosec} x - 2 = 0",
+        "explanation": "Bringing all terms to one side ($-1 - 1 = -2$) gives a standard quadratic in $\\operatorname{cosec} x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Check the complementary angle lies in the arccos range",
-        "workingLatex": "-\\frac{\\pi}{2} \\le \\alpha \\le \\frac{\\pi}{2} \\;\\Rightarrow\\; 0 \\le \\frac{\\pi}{2} - \\alpha \\le \\pi",
-        "explanation": "Subtracting the bounds shows $\\frac{\\pi}{2} - \\alpha$ lies in $[0,\\pi]$, exactly the range where arccosine is defined and single-valued.",
+        "description": "Introduce a substitution",
+        "workingLatex": "u^2 - u - 2 = 0, \\quad \\text{where } u = \\operatorname{cosec} x",
+        "explanation": "Letting $u = \\operatorname{cosec} x$ exposes an ordinary quadratic to factorise.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Apply arccosine",
-        "workingLatex": "\\arccos x = \\frac{\\pi}{2} - \\alpha",
-        "explanation": "Because the complementary angle is in the valid range and has cosine $x$, it must be $\\arccos x$.",
+        "description": "Factorise",
+        "workingLatex": "(u - 2)(u + 1) = 0",
+        "explanation": "Two numbers with product $-2$ and sum $-1$ are $-2$ and $+1$, giving this factorisation.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Substitute back for alpha",
-        "workingLatex": "\\arccos x = \\frac{\\pi}{2} - \\arcsin x",
-        "explanation": "Replacing $\\alpha$ with its definition rewrites the relationship in terms of the two inverse functions.",
+        "description": "Read off the roots and check attainability",
+        "workingLatex": "u = 2 \\Rightarrow \\sin x = \\tfrac{1}{2}, \\qquad u = -1 \\Rightarrow \\sin x = -1",
+        "explanation": "Inverting each value gives $\\sin x = \\tfrac12$ and $\\sin x = -1$. Both satisfy $|\\sin x| \\le 1$ (equivalently $|\\operatorname{cosec} x| \\ge 1$), so both roots are valid.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Rearrange to conclude",
-        "workingLatex": "\\arcsin x + \\arccos x = \\frac{\\pi}{2} \\;\\blacksquare",
-        "explanation": "Adding $\\arcsin x$ to both sides gives the required identity, valid for all $x$ in $[-1,1]$.",
+        "description": "Find the base angle for sin x = 1/2",
+        "workingLatex": "\\sin^{-1}\\left(\\tfrac{1}{2}\\right) = \\frac{\\pi}{6}",
+        "explanation": "In radians, the angle in $[0,\\tfrac{\\pi}{2}]$ with sine $\\tfrac12$ is $\\tfrac{\\pi}{6}$, the reference angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "All angles for sin x = 1/2",
+        "workingLatex": "x = \\frac{\\pi}{6} \\quad \\text{or} \\quad x = \\pi - \\frac{\\pi}{6} = \\frac{5\\pi}{6}",
+        "explanation": "Sine is positive in the first and second quadrants, so the second solution is $\\pi - \\tfrac{\\pi}{6} = \\tfrac{5\\pi}{6}$. Both lie in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve sin x = -1",
+        "workingLatex": "\\sin x = -1 \\;\\Rightarrow\\; x = \\frac{3\\pi}{2}",
+        "explanation": "Sine reaches its minimum $-1$ at the single angle $\\tfrac{3\\pi}{2}$ within $0 \\le x \\le 2\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Collect all solutions",
+        "workingLatex": "x = \\frac{\\pi}{6},\\; \\frac{5\\pi}{6},\\; \\frac{3\\pi}{2}",
+        "explanation": "Combining both roots gives three solutions in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify a solution",
+        "workingLatex": "\\sin \\tfrac{3\\pi}{2} = -1: \\;\\; \\cot^2 \\tfrac{3\\pi}{2} = 0, \\;\\; \\operatorname{cosec} \\tfrac{3\\pi}{2} + 1 = -1 + 1 = 0",
+        "explanation": "At $x = \\tfrac{3\\pi}{2}$, where $\\cos x = 0$ so $\\cot x = 0$, both sides equal $0$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the final answer",
+        "workingLatex": "x = \\frac{\\pi}{6},\\; \\frac{5\\pi}{6},\\; \\frac{3\\pi}{2}",
+        "explanation": "These are all solutions in $0 \\le x \\le 2\\pi$, expressed exactly in terms of $\\pi$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\arcsin x + \\arccos x = \\dfrac{\\pi}{2}$"
+    "finalAnswer": "$x = \\dfrac{\\pi}{6},\\ \\dfrac{5\\pi}{6},\\ \\dfrac{3\\pi}{2}$."
   }
 }

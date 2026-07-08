@@ -6,59 +6,88 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "expression",
+  "answerType": "numeric",
   "tags": [
-    "simplify",
-    "identities",
-    "cotangent"
+    "reciprocal trig",
+    "cot",
+    "radians",
+    "solving equations"
   ],
-  "questionText": "Express $\\cot\\theta\\sec\\theta$ as a single reciprocal trigonometric function.",
+  "questionText": "Solve $\\cot x = \\sqrt{3}$ for $0 \\le x \\le 2\\pi$, giving your answers in radians in terms of $\\pi$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite cotangent in sine and cosine",
-        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Expressing in basic functions is the standard route to combining a product like this.",
+        "description": "Rewrite cot using its definition",
+        "workingLatex": "\\cot x = \\frac{1}{\\tan x}",
+        "explanation": "Cotangent is the reciprocal of tangent, so we convert the equation into a tangent equation whose standard radian angles are familiar.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite secant in cosine",
-        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
-        "explanation": "Secant becomes one over cosine, so both factors are in basic form.",
+        "description": "Form a tangent equation",
+        "workingLatex": "\\frac{1}{\\tan x} = \\sqrt{3} \\;\\Rightarrow\\; \\tan x = \\frac{1}{\\sqrt{3}}",
+        "explanation": "Taking reciprocals of both sides turns the problem into $\\tan x = \\tfrac{1}{\\sqrt3}$. Tangent can take any real value, so we do not need a range check here.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Multiply the two",
-        "workingLatex": "\\cot\\theta\\sec\\theta = \\frac{\\cos\\theta}{\\sin\\theta}\\cdot\\frac{1}{\\cos\\theta}",
-        "explanation": "Writing the product shows a cosine in the numerator and denominator, poised to cancel.",
+        "description": "Find the reference angle",
+        "workingLatex": "\\tan \\tfrac{\\pi}{6} = \\frac{1}{\\sqrt{3}} \\;\\Rightarrow\\; \\text{reference angle} = \\tfrac{\\pi}{6}",
+        "explanation": "The acute angle whose tangent is $\\tfrac{1}{\\sqrt3}$ is $\\tfrac{\\pi}{6}$, so that is our reference angle.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cancel the cosine",
-        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta\\cos\\theta} = \\frac{1}{\\sin\\theta}",
-        "explanation": "The cosine factors cancel, leaving one over sine.",
+        "description": "Decide which quadrants apply",
+        "workingLatex": "\\tan x > 0 \\text{ in quadrants I and III}",
+        "explanation": "The tangent value is positive, and tangent is positive in the first and third quadrants, so the solutions sit there.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Recognise the reciprocal function",
-        "workingLatex": "\\frac{1}{\\sin\\theta} = \\csc\\theta",
-        "explanation": "One over sine is by definition cosecant, giving a single reciprocal function.",
+        "description": "Write the first-quadrant solution",
+        "workingLatex": "x = \\tfrac{\\pi}{6}",
+        "explanation": "In the first quadrant the angle equals the reference angle directly.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the result",
-        "workingLatex": "\\cot\\theta\\sec\\theta = \\csc\\theta",
-        "explanation": "The product simplifies to $\\csc\\theta$, as required.",
+        "description": "Write the third-quadrant solution",
+        "workingLatex": "x = \\pi + \\tfrac{\\pi}{6} = \\tfrac{7\\pi}{6}",
+        "explanation": "In the third quadrant we add $\\pi$ to the reference angle, using the fact that tangent has period $\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm no further solutions in the interval",
+        "workingLatex": "\\tfrac{7\\pi}{6} + \\pi = \\tfrac{13\\pi}{6} > 2\\pi",
+        "explanation": "Adding another period $\\pi$ takes us past $2\\pi$, so there are no more solutions inside the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm both lie in the interval",
+        "workingLatex": "0 \\le \\tfrac{\\pi}{6}, \\; \\tfrac{7\\pi}{6} \\le 2\\pi",
+        "explanation": "Both radian values satisfy $0 \\le x \\le 2\\pi$, so both are kept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a solution in the original equation",
+        "workingLatex": "\\cot \\tfrac{\\pi}{6} = \\frac{1}{\\tan \\tfrac{\\pi}{6}} = \\frac{1}{\\tfrac{1}{\\sqrt{3}}} = \\sqrt{3}",
+        "explanation": "Substituting back returns $\\sqrt{3}$, confirming the answer; $\\tfrac{7\\pi}{6}$ has the same tangent, so it checks too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the full solution set",
+        "workingLatex": "x = \\tfrac{\\pi}{6}, \\; \\tfrac{7\\pi}{6}",
+        "explanation": "These two radian values form the complete set of solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cot\\theta\\sec\\theta = \\csc\\theta$"
+    "finalAnswer": "$x = \\dfrac{\\pi}{6}$ or $x = \\dfrac{7\\pi}{6}$."
   }
 }

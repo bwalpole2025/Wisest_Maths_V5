@@ -5,67 +5,123 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 7,
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "given ratio",
-    "repeated"
+    "reciprocal",
+    "radians"
   ],
-  "questionText": "Given that $\\cos\\theta = \\dfrac{2}{3}$, find the exact values of $\\cos 2\\theta$ and $\\cos 4\\theta$.",
+  "questionText": "Solve $\\tan x + \\cot x = 4$ for $0 < x < 2\\pi$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Use the cosine-only double angle form",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
-        "explanation": "This form uses the given cosine directly with no need for sine.",
+        "description": "Write both terms as sine over cosine",
+        "workingLatex": "\\tan x + \\cot x = \\dfrac{\\sin x}{\\cos x} + \\dfrac{\\cos x}{\\sin x}",
+        "explanation": "Rewriting $\\tan x$ and $\\cot x$ as ratios of sine and cosine lets us combine them over a common denominator and reveal a double-angle structure.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute",
-        "workingLatex": "\\cos 2\\theta = 2\\left(\\frac{2}{3}\\right)^2 - 1 = 2\\cdot\\frac{4}{9} - 1",
-        "explanation": "Squaring $\\frac{2}{3}$ gives $\\frac{4}{9}$.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\dfrac{\\sin^2 x + \\cos^2 x}{\\sin x\\cos x}",
+        "explanation": "Adding the two fractions gives a single fraction whose numerator is $\\sin^2 x + \\cos^2 x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate cos 2θ",
-        "workingLatex": "\\cos 2\\theta = \\frac{8}{9} - 1 = -\\frac{1}{9}",
-        "explanation": "Subtracting gives $-\\frac{1}{9}$.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "= \\dfrac{1}{\\sin x\\cos x}",
+        "explanation": "Since $\\sin^2 x + \\cos^2 x \\equiv 1$, the numerator simplifies to $1$, leaving a compact expression.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Treat cos 4θ as a double angle of 2θ",
-        "workingLatex": "\\cos 4\\theta = 2\\cos^2 2\\theta - 1",
-        "explanation": "Since $4\\theta = 2(2\\theta)$, we reapply the double angle formula using the value just found.",
+        "description": "Recognise the double-angle denominator",
+        "workingLatex": "\\sin x\\cos x = \\tfrac{1}{2}\\sin 2x",
+        "explanation": "The double-angle formula $\\sin 2x = 2\\sin x\\cos x$ rearranges to $\\sin x\\cos x = \\tfrac12\\sin 2x$, which turns the denominator into a single trig ratio.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute cos 2θ",
-        "workingLatex": "\\cos 4\\theta = 2\\left(-\\frac{1}{9}\\right)^2 - 1 = 2\\cdot\\frac{1}{81} - 1",
-        "explanation": "Squaring $-\\frac{1}{9}$ gives $\\frac{1}{81}$.",
+        "description": "Rewrite the left-hand side",
+        "workingLatex": "\\tan x + \\cot x = \\dfrac{1}{\\tfrac12\\sin 2x} = \\dfrac{2}{\\sin 2x}",
+        "explanation": "Substituting the double-angle form gives the neat identity $\\tan x + \\cot x = \\dfrac{2}{\\sin 2x}$, which is far easier to solve.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Evaluate cos 4θ",
-        "workingLatex": "\\cos 4\\theta = \\frac{2}{81} - 1 = -\\frac{79}{81}",
-        "explanation": "Subtracting from $1$ (as $\\frac{81}{81}$) gives $-\\frac{79}{81}$.",
+        "description": "Set up the simplified equation",
+        "workingLatex": "\\dfrac{2}{\\sin 2x} = 4",
+        "explanation": "Replacing the left side of the original equation with the identity gives a simple equation in $\\sin 2x$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the results",
-        "workingLatex": "\\cos 2\\theta = -\\frac{1}{9}, \\quad \\cos 4\\theta = -\\frac{79}{81}",
-        "explanation": "Both are exact, obtained by applying the double angle formula twice.",
+        "description": "Solve for sin 2x",
+        "workingLatex": "\\sin 2x = \\tfrac{2}{4} = \\tfrac{1}{2}",
+        "explanation": "Cross-multiplying and rearranging gives $\\sin 2x = \\tfrac12$, a standard value to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Widen the interval for the double angle",
+        "workingLatex": "0 < x < 2\\pi \\ \\Rightarrow \\ 0 < 2x < 4\\pi",
+        "explanation": "Because the unknown is $2x$, its range is doubled to $(0, 4\\pi)$. We must find every value of $2x$ across two full revolutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "First revolution solutions",
+        "workingLatex": "2x = \\tfrac{\\pi}{6}, \\ \\tfrac{5\\pi}{6}",
+        "explanation": "In $(0, 2\\pi)$, $\\sin\\theta = \\tfrac12$ at $\\theta = \\tfrac{\\pi}{6}$ (first quadrant) and $\\theta = \\tfrac{5\\pi}{6}$ (second quadrant).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Second revolution solutions",
+        "workingLatex": "2x = \\tfrac{\\pi}{6} + 2\\pi = \\tfrac{13\\pi}{6}, \\ \\tfrac{5\\pi}{6} + 2\\pi = \\tfrac{17\\pi}{6}",
+        "explanation": "Adding $2\\pi$ to each base solution gives the values that fall in the second revolution, still inside $(0, 4\\pi)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Divide by 2 to recover x",
+        "workingLatex": "x = \\tfrac{\\pi}{12}, \\ \\tfrac{5\\pi}{12}, \\ \\tfrac{13\\pi}{12}, \\ \\tfrac{17\\pi}{12}",
+        "explanation": "Halving each value of $2x$ returns the four solutions for $x$ in the original interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check the functions are defined",
+        "workingLatex": "x \\ne \\tfrac{\\pi}{2}, \\pi, \\tfrac{3\\pi}{2}",
+        "explanation": "For $\\tan x$ and $\\cot x$ to exist, $x$ must avoid multiples of $\\tfrac{\\pi}{2}$. None of our four solutions is such a multiple, so all are allowed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify x = pi/12",
+        "workingLatex": "\\tan 15^\\circ + \\cot 15^\\circ \\approx 0.2679 + 3.7321 = 4",
+        "explanation": "Evaluating at $x = \\tfrac{\\pi}{12}$ (that is $15^\\circ$) gives $4$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Verify x = 13pi/12",
+        "workingLatex": "\\sin 2x = \\sin\\tfrac{13\\pi}{6} = \\tfrac{1}{2}, \\qquad \\dfrac{2}{\\tfrac12} = 4",
+        "explanation": "At $x = \\tfrac{13\\pi}{12}$, $2x = \\tfrac{13\\pi}{6}$ has sine $\\tfrac12$, so $\\dfrac{2}{\\sin 2x} = 4$. The solutions check out.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the solution set",
+        "workingLatex": "x = \\tfrac{\\pi}{12}, \\ \\tfrac{5\\pi}{12}, \\ \\tfrac{13\\pi}{12}, \\ \\tfrac{17\\pi}{12}",
+        "explanation": "These four angles are all the solutions in $0 < x < 2\\pi$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos 2\\theta = -\\dfrac{1}{9}, \\quad \\cos 4\\theta = -\\dfrac{79}{81}$"
+    "finalAnswer": "$x = \\dfrac{\\pi}{12},\\ \\dfrac{5\\pi}{12},\\ \\dfrac{13\\pi}{12},\\ \\dfrac{17\\pi}{12}$."
   }
 }

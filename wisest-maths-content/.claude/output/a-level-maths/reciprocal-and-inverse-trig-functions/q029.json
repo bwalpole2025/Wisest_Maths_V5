@@ -5,75 +5,90 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "equations",
-    "identities",
-    "secant",
-    "tangent"
+    "given one ratio",
+    "quadrant",
+    "sec",
+    "cosec",
+    "cot"
   ],
-  "questionText": "Solve $\\sec^2\\theta = 3 + \\tan\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionText": "Given that $\\cos\\theta = -\\tfrac{4}{5}$ and that $\\theta$ lies in the third quadrant, find the exact values of $\\sec\\theta$, $\\operatorname{cosec}\\theta$ and $\\cot\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Use the Pythagorean identity for secant",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "Replacing secant squared with $1 + \\tan^2\\theta$ turns the equation into one involving only tangent, which we can treat as a quadratic.",
+        "description": "Note the signs in the third quadrant",
+        "workingLatex": "\\text{Q3:}\\quad \\sin\\theta < 0, \\quad \\cos\\theta < 0, \\quad \\tan\\theta > 0",
+        "explanation": "In the third quadrant both sine and cosine are negative, so tangent is positive. Recording this first tells us which square roots to take later.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the equation",
-        "workingLatex": "1 + \\tan^2\\theta = 3 + \\tan\\theta",
-        "explanation": "After substitution every term is in tangent, setting up a standard quadratic.",
+        "description": "Find sec from its definition",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta} = \\frac{1}{-\\tfrac{4}{5}} = -\\tfrac{5}{4}",
+        "explanation": "Secant is the reciprocal of cosine, so we flip the given fraction and keep the negative sign.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to standard form",
-        "workingLatex": "\\tan^2\\theta - \\tan\\theta - 2 = 0",
-        "explanation": "Bringing all terms to one side gives a quadratic in $\\tan\\theta$, ready to factorise.",
+        "description": "Use the Pythagorean identity to find sin squared",
+        "workingLatex": "\\sin^2\\theta = 1 - \\cos^2\\theta = 1 - \\tfrac{16}{25} = \\tfrac{9}{25}",
+        "explanation": "To reach cosecant and cotangent we need $\\sin\\theta$. Rearranging $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ and substituting the known cosine gives $\\sin^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise the quadratic",
-        "workingLatex": "(\\tan\\theta - 2)(\\tan\\theta + 1) = 0",
-        "explanation": "The quadratic factorises neatly, since $-2$ and $+1$ multiply to $-2$ and add to $-1$.",
+        "description": "Take the root with the correct sign",
+        "workingLatex": "\\sin\\theta = -\\sqrt{\\tfrac{9}{25}} = -\\tfrac{3}{5}",
+        "explanation": "Sine is negative in the third quadrant, so we take the negative square root. The quadrant is what fixes this sign.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\tan\\theta = 2 \\;\\Rightarrow\\; \\theta = 63.4^\\circ, 243.4^\\circ",
-        "explanation": "The inverse tangent of $2$ is about $63.4^\\circ$, and adding the $180^\\circ$ period gives the second solution.",
+        "description": "Find cosec from its definition",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta} = \\frac{1}{-\\tfrac{3}{5}} = -\\tfrac{5}{3}",
+        "explanation": "Cosecant is the reciprocal of sine, so flipping the fraction gives its value, which is negative like the sine.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "\\tan\\theta = -1 \\;\\Rightarrow\\; \\theta = 135^\\circ, 315^\\circ",
-        "explanation": "Tangent is $-1$ at $135^\\circ$ and $315^\\circ$, the two solutions in the interval.",
+        "description": "Find tan as sin over cos",
+        "workingLatex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{-\\tfrac{3}{5}}{-\\tfrac{4}{5}} = \\tfrac{3}{4}",
+        "explanation": "Tangent is sine over cosine; the fifths cancel and the two negatives divide to a positive, as expected in the third quadrant.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 63^\\circ, 135^\\circ, 243^\\circ, 315^\\circ",
-        "explanation": "Combining both factors and rounding to the nearest degree gives the full solution set.",
+        "description": "Find cot as the reciprocal of tan",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{1}{\\tfrac{3}{4}} = \\tfrac{4}{3}",
+        "explanation": "Cotangent is the reciprocal of tangent, so we flip the fraction; it is positive, matching the positive tangent.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Confirm the interval",
-        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "Each solution lies within the required range, so all are valid.",
+        "description": "Check with the identity 1 + tan^2 = sec^2",
+        "workingLatex": "1 + \\left(\\tfrac{3}{4}\\right)^2 = 1 + \\tfrac{9}{16} = \\tfrac{25}{16} = \\left(-\\tfrac{5}{4}\\right)^2",
+        "explanation": "Confirming $1 + \\tan^2\\theta = \\sec^2\\theta$: both sides give $\\tfrac{25}{16}$, so the tangent and secant agree.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check with the identity 1 + cot^2 = cosec^2",
+        "workingLatex": "1 + \\left(\\tfrac{4}{3}\\right)^2 = 1 + \\tfrac{16}{9} = \\tfrac{25}{9} = \\left(-\\tfrac{5}{3}\\right)^2",
+        "explanation": "Confirming $1 + \\cot^2\\theta = \\operatorname{cosec}^2\\theta$: both sides give $\\tfrac{25}{9}$, so all values are consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sec\\theta = -\\tfrac{5}{4}, \\quad \\operatorname{cosec}\\theta = -\\tfrac{5}{3}, \\quad \\cot\\theta = \\tfrac{4}{3}",
+        "explanation": "Collecting the three exact values gives the final answer, with the sign pattern of a third-quadrant angle.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 63^\\circ, 135^\\circ, 243^\\circ, 315^\\circ$"
+    "finalAnswer": "$\\sec\\theta = -\\tfrac{5}{4}$, $\\operatorname{cosec}\\theta = -\\tfrac{5}{3}$, $\\cot\\theta = \\tfrac{4}{3}$."
   }
 }

@@ -5,53 +5,96 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "no solutions"
+    "solving equations",
+    "radians"
   ],
-  "questionText": "Explain why the equation $3\\sin\\theta + 4\\cos\\theta = 6$ has no solutions.",
+  "questionText": "Express $\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence solve $\\sin\\theta + \\cos\\theta = 1$ for $0 \\le \\theta \\le 2\\pi$, giving your answers exactly.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in R-form",
-        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + \\alpha)",
-        "explanation": "The amplitude is $R = \\sqrt{9 + 16} = 5$.",
+        "description": "Set up the identity",
+        "workingLatex": "\\sin\\theta + \\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We want to fold the two separate waves into a single sine wave. Writing the expression as identically equal to $R\\sin(\\theta+\\alpha)$ lets us expand the right-hand side and then match it term by term with the left.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the range of the expression",
-        "workingLatex": "-5 \\le 5\\sin(\\theta + \\alpha) \\le 5",
-        "explanation": "The expression can never exceed its amplitude of $5$ in size.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Using $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ and pulling the constant $R$ through gives the right-hand side the same shape as the left: some amount of $\\sin\\theta$ plus some amount of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Compare with the target value",
-        "workingLatex": "6 > 5",
-        "explanation": "The required value $6$ lies outside the achievable range.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = 1",
+        "explanation": "For the two sides to agree for every value of $\\theta$, the amount of $\\sin\\theta$ on each side must match and the amount of $\\cos\\theta$ must match. That gives us two equations in $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rewrite the equation",
-        "workingLatex": "\\sin(\\theta + \\alpha) = \\frac{6}{5} = 1.2",
-        "explanation": "Dividing by $5$ would need the sine to equal $1.2$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt{2}",
+        "explanation": "Squaring and adding the two equations removes $\\alpha$ because $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=1^2+1^2$. We take the positive root since $R>0$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Conclude",
-        "workingLatex": "\\sin(\\theta + \\alpha) = 1.2 \\text{ is impossible}",
-        "explanation": "Since sine can never exceed $1$, no angle satisfies the equation, so there are no solutions.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{1} = 1 \\Rightarrow \\alpha = \\dfrac{\\pi}{4}",
+        "explanation": "Dividing $R\\sin\\alpha$ by $R\\cos\\alpha$ cancels $R$ and leaves $\\tan\\alpha=1$. Both coefficients are positive, so $\\alpha$ is acute, and the exact acute angle with tangent $1$ is $\\dfrac{\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the R-form",
+        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin\\!\\left(\\theta + \\dfrac{\\pi}{4}\\right)",
+        "explanation": "Combining the amplitude and phase gives the single-wave form. It shows at a glance that the expression oscillates between $-\\sqrt{2}$ and $\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{2}\\,\\sin\\!\\left(\\theta+\\dfrac{\\pi}{4}\\right) = 1 \\Rightarrow \\sin\\!\\left(\\theta+\\dfrac{\\pi}{4}\\right) = \\dfrac{1}{\\sqrt{2}}",
+        "explanation": "Replacing the two-term expression by the single wave turns the problem into a basic sine equation. Dividing both sides by $\\sqrt{2}$ isolates the sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0 \\le \\theta \\le 2\\pi \\Rightarrow \\dfrac{\\pi}{4} \\le \\theta+\\dfrac{\\pi}{4} \\le \\dfrac{9\\pi}{4}",
+        "explanation": "We are now solving for the shifted angle $\\theta+\\dfrac{\\pi}{4}$, so we add $\\dfrac{\\pi}{4}$ to both ends of the search interval. This guarantees we catch every solution and drop none at the edges.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta+\\dfrac{\\pi}{4} = \\dfrac{\\pi}{4},\\; \\dfrac{3\\pi}{4},\\; \\dfrac{9\\pi}{4}",
+        "explanation": "The principal value of $\\arcsin\\dfrac{1}{\\sqrt{2}}$ is $\\dfrac{\\pi}{4}$; sine is also positive in the second quadrant, giving $\\pi-\\dfrac{\\pi}{4}=\\dfrac{3\\pi}{4}$; adding $2\\pi$ to the principal value gives $\\dfrac{9\\pi}{4}$, which still lies inside the shifted interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 0,\\; \\dfrac{\\pi}{2},\\; 2\\pi",
+        "explanation": "Subtracting $\\dfrac{\\pi}{4}$ from each shifted value undoes the shift. All three results lie in $0 \\le \\theta \\le 2\\pi$, so all are kept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the solutions",
+        "workingLatex": "\\sin 0 + \\cos 0 = 1, \\quad \\sin\\tfrac{\\pi}{2} + \\cos\\tfrac{\\pi}{2} = 1, \\quad \\sin 2\\pi + \\cos 2\\pi = 1",
+        "explanation": "Substituting each answer back into the original equation returns $1$ every time, confirming the three values are genuine solutions and none has been introduced by mistake.",
         "diagram": null
       }
     ],
-    "finalAnswer": "No solutions, because the maximum of $3\\sin\\theta + 4\\cos\\theta$ is $5 < 6$."
+    "finalAnswer": "$\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin\\!\\left(\\theta+\\dfrac{\\pi}{4}\\right)$, and the equation is satisfied by $\\theta = 0,\\; \\dfrac{\\pi}{2},\\; 2\\pi$."
   }
 }

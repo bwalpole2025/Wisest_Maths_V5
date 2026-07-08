@@ -6,60 +6,66 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "inverse trig",
-    "arctan",
-    "exact values",
-    "radians"
+    "reciprocal trig",
+    "sec",
+    "asymptotes"
   ],
-  "questionText": "Find the exact value of $\\arctan\\left(\\sqrt{3}\\right)$, giving your answer in radians.",
+  "questionText": "Find, in degrees, the values of $x$ at which the graph of $y = \\sec x$ has vertical asymptotes.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Interpret the inverse tangent",
-        "workingLatex": "\\arctan\\left(\\sqrt{3}\\right) = \\theta \\;\\Leftrightarrow\\; \\tan\\theta = \\sqrt{3}",
-        "explanation": "We seek the angle whose tangent is $\\sqrt{3}$, taken from the principal range of arctangent.",
+        "description": "Recall the definition",
+        "workingLatex": "\\sec x = \\frac{1}{\\cos x}",
+        "explanation": "Secant is one over cosine, so it becomes undefined precisely where the denominator $\\cos x$ is zero.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the principal range of arctan",
-        "workingLatex": "-\\frac{\\pi}{2} < \\theta < \\frac{\\pi}{2}",
-        "explanation": "Arctangent gives angles strictly inside this interval, so the answer must be chosen from here.",
+        "description": "Set the denominator to zero",
+        "workingLatex": "\\cos x = 0",
+        "explanation": "A vertical asymptote appears where the function shoots off to infinity, which happens when we divide by zero — that is, where cosine equals zero.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall which standard angle has tangent root three",
-        "workingLatex": "\\tan\\frac{\\pi}{3} = \\sqrt{3}",
-        "explanation": "From the $30$-$60$-$90$ triangle, the tangent of $60^\\circ$, or $\\frac{\\pi}{3}$, is $\\sqrt{3}$.",
+        "description": "Solve over one revolution",
+        "workingLatex": "\\cos x = 0 \\;\\Rightarrow\\; x = 90^\\circ, \\ 270^\\circ \\quad (0^\\circ \\le x < 360^\\circ)",
+        "explanation": "Within one full revolution, cosine is zero at $90^\\circ$ and $270^\\circ$ — the top and bottom of the unit circle.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the angle lies in range",
-        "workingLatex": "-\\frac{\\pi}{2} < \\frac{\\pi}{3} < \\frac{\\pi}{2} \\;\\checkmark",
-        "explanation": "The angle $\\frac{\\pi}{3}$ sits inside the arctangent range, so it is the valid output.",
+        "description": "Spot the spacing",
+        "workingLatex": "270^\\circ - 90^\\circ = 180^\\circ",
+        "explanation": "These two solutions are $180^\\circ$ apart, so the zeros of cosine — and hence the asymptotes — are evenly spaced every $180^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note that the input is positive",
-        "workingLatex": "\\sqrt{3} > 0 \\;\\Rightarrow\\; \\theta > 0",
-        "explanation": "A positive tangent in the principal range corresponds to a positive angle, consistent with our answer.",
+        "description": "Write the general solution",
+        "workingLatex": "x = 90^\\circ + 180^\\circ k, \\quad k \\in \\mathbb{Z}",
+        "explanation": "Adding any whole number of $180^\\circ$ steps to $90^\\circ$ reaches every place where cosine vanishes, in both directions.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\arctan\\left(\\sqrt{3}\\right) = \\frac{\\pi}{3}",
-        "explanation": "This is the exact value in radians.",
+        "description": "Check a negative value of k",
+        "workingLatex": "k = -1: \\ x = 90^\\circ - 180^\\circ = -90^\\circ, \\quad \\cos(-90^\\circ) = 0 \\ \\checkmark",
+        "explanation": "Testing $k=-1$ gives $-90^\\circ$, where cosine is indeed zero, confirming the formula works for negative $k$ as well.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the asymptotes",
+        "workingLatex": "\\text{asymptotes at } x = 90^\\circ + 180^\\circ k",
+        "explanation": "The graph of $y=\\sec x$ has a vertical asymptote at each of these $x$-values, spaced $180^\\circ$ apart.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\arctan\\left(\\sqrt{3}\\right) = \\dfrac{\\pi}{3}$"
+    "finalAnswer": "$y=\\sec x$ has vertical asymptotes at $x = 90^\\circ + 180^\\circ k$ for integer $k$ (i.e. $\\ldots, -90^\\circ, 90^\\circ, 270^\\circ, \\ldots$), because these are exactly where $\\cos x = 0$."
   }
 }

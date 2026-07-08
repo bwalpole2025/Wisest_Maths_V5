@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "probability"
+  ],
+  "questionText": "The lengths, $X$ mm, of leaves on a plant are modelled by $X \\sim N(50, 4^2)$. Find $P(X < 58)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "X \\sim N(50,\\ 4^2), \\qquad P(X < 58) = \\ ?",
+        "explanation": "The lengths follow a normal distribution with mean $\\mu = 50$ and standard deviation $\\sigma = 4$, because the second number is the variance $4^2 = 16$. We want the chance that a leaf is shorter than $58$ mm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standardisation",
+        "workingLatex": "Z = \\dfrac{X - \\mu}{\\sigma} = \\dfrac{X - 50}{4}, \\qquad Z \\sim N(0,1)",
+        "explanation": "To use the standard normal we turn $X$ into a $z$-score by subtracting the mean and dividing by the standard deviation. A $z$-score simply counts how many standard deviations a value sits away from the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 58",
+        "workingLatex": "z = \\dfrac{58 - 50}{4} = \\dfrac{8}{4} = 2",
+        "explanation": "The length $58$ is $8$ mm above the mean, and $8$ is exactly two standard deviations of $4$. So $58$ mm corresponds to $z = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X < 58) = P(Z < 2) = \\Phi(2)",
+        "explanation": "Standardising keeps the order of values, so ‘$X$ below $58$’ is the same event as ‘$Z$ below $2$’. This lower-tail area is exactly the standard normal cumulative value $\\Phi(2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the standard normal probability",
+        "workingLatex": "\\Phi(2) = 0.9772",
+        "explanation": "Reading the standard normal cumulative distribution on a calculator (or from tables) at $z = 2$ gives $0.9772$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(X < 58) \\approx 0.9772",
+        "explanation": "So about $97.7\\%$ of leaves are shorter than $58$ mm. This is close to $1$, which is sensible because $58$ mm lies well to the right of the mean, so almost all leaves fall below it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X < 58) \\approx 0.9772$."
+  }
+}

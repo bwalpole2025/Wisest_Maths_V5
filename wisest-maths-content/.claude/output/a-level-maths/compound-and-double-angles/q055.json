@@ -5,81 +5,123 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "value",
+  "marks": 7,
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "equations",
-    "factorising"
+    "tan",
+    "factorise"
   ],
-  "questionText": "Solve $\\sin 4\\theta = \\cos 2\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve $2\\sin 2x = 3\\tan x$ for $0 \\le x < 360^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write sin 4θ as a double angle of 2θ",
-        "workingLatex": "\\sin 4\\theta = 2\\sin 2\\theta\\cos 2\\theta",
-        "explanation": "Treating $4\\theta$ as twice $2\\theta$ introduces a shared $\\cos 2\\theta$ factor with the right-hand side.",
+        "description": "Rewrite tan and expand sin 2x",
+        "workingLatex": "2\\left(2\\sin x\\cos x\\right) = 3\\cdot\\dfrac{\\sin x}{\\cos x}",
+        "explanation": "Writing $\\tan x = \\dfrac{\\sin x}{\\cos x}$ and expanding $\\sin 2x = 2\\sin x\\cos x$ expresses both sides in $\\sin x$ and $\\cos x$, which lets us combine them.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite the equation",
-        "workingLatex": "2\\sin 2\\theta\\cos 2\\theta = \\cos 2\\theta",
-        "explanation": "Both sides now contain $\\cos 2\\theta$, so we can factorise.",
+        "description": "Note the domain restriction",
+        "workingLatex": "\\cos x \\ne 0",
+        "explanation": "Because $\\tan x$ appears, $\\cos x$ cannot be zero (otherwise $\\tan x$ is undefined). We keep this in mind so we do not accept a spurious answer at $90^\\circ$ or $270^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Move to one side and factor",
-        "workingLatex": "\\cos 2\\theta(2\\sin 2\\theta - 1) = 0",
-        "explanation": "Factoring rather than dividing keeps the $\\cos 2\\theta = 0$ solutions.",
+        "description": "Multiply through by cos x",
+        "workingLatex": "4\\sin x\\cos^2 x = 3\\sin x",
+        "explanation": "Multiplying both sides by $\\cos x$ (allowed since $\\cos x \\ne 0$) clears the fraction and gives a polynomial-style equation.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the interval for the doubled angle",
-        "workingLatex": "0^\\circ \\le 2\\theta < 720^\\circ",
-        "explanation": "Both factors involve $2\\theta$, which ranges up to $720^\\circ$.",
+        "description": "Move everything to one side",
+        "workingLatex": "4\\sin x\\cos^2 x - 3\\sin x = 0",
+        "explanation": "Collecting the terms on one side prepares the equation for factoring rather than cancelling, so no solutions are lost.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cos 2\\theta = 0 \\;\\Rightarrow\\; 2\\theta = 90^\\circ, 270^\\circ, 450^\\circ, 630^\\circ",
-        "explanation": "Cosine is zero at these four values within $720^\\circ$.",
+        "description": "Factor out sin x",
+        "workingLatex": "\\sin x\\left(4\\cos^2 x - 3\\right) = 0",
+        "explanation": "Both terms share a factor of $\\sin x$. Factoring it out gives a product equal to zero, so we solve each factor separately.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Halve those",
-        "workingLatex": "\\theta = 45^\\circ, 135^\\circ, 225^\\circ, 315^\\circ",
-        "explanation": "Dividing each by $2$ gives four solutions.",
+        "description": "Solve sin x = 0",
+        "workingLatex": "\\sin x = 0 \\ \\Rightarrow \\ x = 0^\\circ,\\ 180^\\circ",
+        "explanation": "Sine is zero at $0^\\circ$ and $180^\\circ$ within the interval (note $360^\\circ$ is excluded). Both keep $\\cos x \\ne 0$, so both are allowed.",
         "diagram": null
       },
       {
         "stepNumber": 7,
         "description": "Solve the second factor",
-        "workingLatex": "\\sin 2\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; 2\\theta = 30^\\circ, 150^\\circ, 390^\\circ, 510^\\circ",
-        "explanation": "Sine one half at these four values within $720^\\circ$.",
+        "workingLatex": "4\\cos^2 x - 3 = 0 \\ \\Rightarrow \\ \\cos^2 x = \\tfrac{3}{4}",
+        "explanation": "Setting the bracket to zero and rearranging gives $\\cos^2 x = \\tfrac34$, a value between $0$ and $1$, so real angles exist.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Halve those",
-        "workingLatex": "\\theta = 15^\\circ, 75^\\circ, 195^\\circ, 255^\\circ",
-        "explanation": "Dividing each by $2$ gives four more solutions.",
+        "description": "Take square roots",
+        "workingLatex": "\\cos x = \\pm\\dfrac{\\sqrt{3}}{2}",
+        "explanation": "Taking the square root gives two possibilities. The $\\pm$ matters because both positive and negative cosines produce valid angles.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 15^\\circ, 45^\\circ, 75^\\circ, 135^\\circ, 195^\\circ, 225^\\circ, 255^\\circ, 315^\\circ",
-        "explanation": "Combining both factors gives eight solutions in the interval.",
+        "description": "Solve cos x = +root 3 over 2",
+        "workingLatex": "\\cos x = \\dfrac{\\sqrt{3}}{2} \\ \\Rightarrow \\ x = 30^\\circ,\\ 330^\\circ",
+        "explanation": "The reference angle is $30^\\circ$; cosine is positive in the first and fourth quadrants, giving $30^\\circ$ and $330^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve cos x = -root 3 over 2",
+        "workingLatex": "\\cos x = -\\dfrac{\\sqrt{3}}{2} \\ \\Rightarrow \\ x = 150^\\circ,\\ 210^\\circ",
+        "explanation": "With the same reference angle $30^\\circ$, cosine is negative in the second and third quadrants, giving $150^\\circ$ and $210^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Collect the candidate solutions",
+        "workingLatex": "x = 0^\\circ,\\ 30^\\circ,\\ 150^\\circ,\\ 180^\\circ,\\ 210^\\circ,\\ 330^\\circ",
+        "explanation": "None of these makes $\\cos x = 0$, so all six survive the domain restriction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify x = 30 degrees",
+        "workingLatex": "2\\sin 60^\\circ = 2\\cdot\\tfrac{\\sqrt3}{2} = \\sqrt3, \\qquad 3\\tan 30^\\circ = 3\\cdot\\tfrac{1}{\\sqrt3} = \\sqrt3",
+        "explanation": "Both sides equal $\\sqrt3$, confirming $x = 30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify x = 180 degrees",
+        "workingLatex": "2\\sin 360^\\circ = 0, \\qquad 3\\tan 180^\\circ = 0",
+        "explanation": "Both sides are zero, confirming the $\\sin x = 0$ solution at $x = 180^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Verify x = 210 degrees",
+        "workingLatex": "2\\sin 420^\\circ = 2\\sin 60^\\circ = \\sqrt3, \\qquad 3\\tan 210^\\circ = 3\\cdot\\tfrac{1}{\\sqrt3} = \\sqrt3",
+        "explanation": "Here $2x = 420^\\circ$ reduces to $60^\\circ$, and $\\tan 210^\\circ = \\tfrac{1}{\\sqrt3}$, so both sides equal $\\sqrt3$. The solutions check out.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the solution set",
+        "workingLatex": "x = 0^\\circ,\\ 30^\\circ,\\ 150^\\circ,\\ 180^\\circ,\\ 210^\\circ,\\ 330^\\circ",
+        "explanation": "These six angles are all the solutions in $0 \\le x < 360^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 15^\\circ, 45^\\circ, 75^\\circ, 135^\\circ, 195^\\circ, 225^\\circ, 255^\\circ, 315^\\circ$"
+    "finalAnswer": "$x = 0^\\circ,\\ 30^\\circ,\\ 150^\\circ,\\ 180^\\circ,\\ 210^\\circ,\\ 330^\\circ$."
   }
 }

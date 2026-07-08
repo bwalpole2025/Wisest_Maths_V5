@@ -1,64 +1,99 @@
 {
-  "id": "al.y2.pure.rsin-form.q032",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
-  "tags": [
-    "harmonic form",
-    "turning points",
-    "graph"
-  ],
-  "questionText": "The curve $y = 8\\sin\\theta + 6\\cos\\theta$ has a maximum turning point in $0^\\circ \\le \\theta < 360^\\circ$. Find its coordinates to the nearest degree.",
   "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q032",
+  "marks": 5,
+  "answerType": "solutions",
+  "tags": [
+    "r form",
+    "harmonic form",
+    "solving equations"
+  ],
+  "questionText": "Express $11\\sin\\theta + 6\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Hence solve $11\\sin\\theta + 6\\cos\\theta = 7$ for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in R-form",
-        "workingLatex": "8\\sin\\theta + 6\\cos\\theta = 10\\sin(\\theta + \\alpha)",
-        "explanation": "The amplitude $R = \\sqrt{64 + 36} = 10$ gives the maximum $y$-value directly.",
+        "description": "Set up the identity",
+        "workingLatex": "11\\sin\\theta + 6\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "Writing the two-term expression as a single sine of amplitude $R$ shifted by $\\alpha$ will turn the equation into a basic sine equation we can solve directly.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{6}{8} = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
-        "explanation": "The phase angle comes from the ratio of coefficients.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with the addition formula and taking $R$ through matches the shape of the left-hand side, a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the maximum y-value",
-        "workingLatex": "y_{\\max} = 10",
-        "explanation": "The maximum equals the amplitude $R$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 11, \\qquad R\\sin\\alpha = 6",
+        "explanation": "For the identity to hold for all $\\theta$, the $\\sin\\theta$ coefficients must match and the $\\cos\\theta$ coefficients must match, giving these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the theta at the maximum",
-        "workingLatex": "\\sin(\\theta + 36.87^\\circ) = 1 \\;\\Rightarrow\\; \\theta + 36.87^\\circ = 90^\\circ",
-        "explanation": "The maximum of the sine occurs when its argument is $90^\\circ$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{11^2 + 6^2} = \\sqrt{157}",
+        "explanation": "Squaring and adding eliminates $\\alpha$, so $R^2=121+36=157$. Since $157$ is prime it has no square factors, and $R=\\sqrt{157}$ stays exact.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for theta",
-        "workingLatex": "\\theta = 53.13^\\circ \\approx 53^\\circ",
-        "explanation": "Subtracting the phase gives the $\\theta$-coordinate.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{6}{11} \\Rightarrow \\alpha = 28.6^\\circ",
+        "explanation": "Dividing the equations cancels $R$ and gives $\\tan\\alpha=\\tfrac{6}{11}$. Both coefficients are positive, so $\\alpha=28.6^\\circ$ is acute.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the coordinates",
-        "workingLatex": "(53^\\circ, 10)",
-        "explanation": "The maximum turning point is at approximately $(53^\\circ, 10)$.",
+        "description": "State the R-form",
+        "workingLatex": "11\\sin\\theta + 6\\cos\\theta = \\sqrt{157}\\,\\sin(\\theta+28.6^\\circ)",
+        "explanation": "The expression is now a single sine wave of amplitude $\\sqrt{157}$ shifted left by $28.6^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{157}\\,\\sin(\\theta+28.6^\\circ) = 7 \\Rightarrow \\sin(\\theta+28.6^\\circ) = \\dfrac{7}{\\sqrt{157}} = 0.5587",
+        "explanation": "Substituting the R-form gives a single sine equal to a number, which we isolate by dividing through by $\\sqrt{157}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ \\le \\theta \\le 360^\\circ \\Rightarrow 28.6^\\circ \\le \\theta+28.6^\\circ \\le 388.6^\\circ",
+        "explanation": "The unknown inside the sine is $\\theta+28.6^\\circ$, so we add $28.6^\\circ$ to both ends before solving to avoid missing any solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\theta+28.6^\\circ = \\arcsin(0.5587) = 34.0^\\circ",
+        "explanation": "The calculator gives the principal value, the anchor from which the second-quadrant solution follows.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List all angles in the shifted range",
+        "workingLatex": "\\theta+28.6^\\circ = 34.0^\\circ,\\; 146.0^\\circ",
+        "explanation": "Sine is positive in the first and second quadrants, so alongside $34.0^\\circ$ we take $180^\\circ-34.0^\\circ=146.0^\\circ$. Adding $360^\\circ$ would exceed $388.6^\\circ$, so there are no further solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 34.0^\\circ-28.6^\\circ,\\; 146.0^\\circ-28.6^\\circ = 5.4^\\circ,\\; 117.4^\\circ",
+        "explanation": "Subtracting $28.6^\\circ$ from each shifted angle returns to $\\theta$. Both results lie in $0^\\circ$ to $360^\\circ$, so both are valid.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum turning point at $(53^\\circ, 10)$."
+    "finalAnswer": "$11\\sin\\theta + 6\\cos\\theta = \\sqrt{157}\\,\\sin(\\theta+28.6^\\circ)$, and the equation has solutions $\\theta = 5.4^\\circ$ and $\\theta = 117.4^\\circ$ (to $1$ d.p.)."
   }
 }

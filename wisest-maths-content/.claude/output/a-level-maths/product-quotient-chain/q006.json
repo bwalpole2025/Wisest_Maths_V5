@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "chain rule",
+    "trigonometry",
+    "substitution"
+  ],
+  "questionText": "For the curve $y = \\sin(3x^2)$: (a) write down a suitable substitution $u$ and find $\\dfrac{du}{dx}$; (b) write down $\\dfrac{dy}{du}$; (c) hence use the chain rule to find $\\dfrac{dy}{dx}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify why the chain rule is needed",
+        "workingLatex": "y = \\sin(3x^2)",
+        "explanation": "The sine is applied to the expression $3x^2$ rather than to $x$ alone. One function is nested inside another, which is exactly the signal to reach for the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the substitution (part a)",
+        "workingLatex": "u = 3x^2",
+        "explanation": "The natural choice for $u$ is the inner function — the thing inside the sine. This is the quantity that must be differentiated separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function (part a)",
+        "workingLatex": "\\frac{du}{dx} = 6x",
+        "explanation": "Differentiating $u=3x^2$ using the power rule brings the $2$ down and multiplies by the coefficient: $3\\times 2 = 6$, giving $6x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite $y$ in terms of $u$",
+        "workingLatex": "y = \\sin u",
+        "explanation": "With the substitution in place, the outer function is simply $y=\\sin u$, a standard function we can differentiate directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Differentiate the outer function (part b)",
+        "workingLatex": "\\frac{dy}{du} = \\cos u",
+        "explanation": "The derivative of $\\sin u$ with respect to $u$ is $\\cos u$, a standard result (with $u$ measured in radians).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the chain rule (part c)",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = \\cos u \\cdot 6x",
+        "explanation": "The chain rule multiplies the two rates of change: how $y$ varies with $u$ and how $u$ varies with $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute the inner function back in",
+        "workingLatex": "\\frac{dy}{dx} = 6x\\cos(3x^2)",
+        "explanation": "Replacing $u$ with $3x^2$ and writing the $6x$ factor at the front gives the tidy final derivative in terms of $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $u = 3x^2$, $\\dfrac{du}{dx} = 6x$. (b) $\\dfrac{dy}{du} = \\cos u$. (c) $\\dfrac{dy}{dx} = 6x\\cos(3x^2)$."
+  }
+}

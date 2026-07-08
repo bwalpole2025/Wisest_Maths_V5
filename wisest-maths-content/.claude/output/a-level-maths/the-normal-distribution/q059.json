@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.stats.normal-distribution.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "expected number",
+    "modelling"
+  ],
+  "questionText": "The times, $X$ hours, taken to fully charge a type of battery are modelled by $X \\sim N(\\mu, \\sigma^2)$. Records show that $12\\%$ of batteries charge in under $10$ hours and $70\\%$ charge in under $15$ hours. (a) Find $\\mu$ and $\\sigma$ to $3$ significant figures. (b) A charging station handles $200$ of these batteries in a day. Estimate how many charge in under $12$ hours.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 10) = 0.12, \\qquad P(X < 15) = 0.70",
+        "explanation": "Charging times are normal with unknown $\\mu$ and $\\sigma$. ‘$12\\%$ under $10$ hours’ gives $P(X<10)=0.12$ and ‘$70\\%$ under $15$ hours’ gives $P(X<15)=0.70$. Both are lower-tail proportions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{10 - \\mu}{\\sigma}\\right) = 0.12",
+        "explanation": "Standardising $10$ with $Z=\\dfrac{X-\\mu}{\\sigma}$ keeps the lower-tail area at $0.12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.12) = -1.1750",
+        "explanation": "With $12\\%$ of the area below it, this point lies to the left of the mean, so the standardised value is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{10 - \\mu}{\\sigma} = -1.1750",
+        "explanation": "Equating the standardised value of $10$ with $z_1$ gives the first equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Standardise the second condition and read z",
+        "workingLatex": "P\\left(Z < \\dfrac{15 - \\mu}{\\sigma}\\right) = 0.70 \\ \\Rightarrow\\ z_2 = \\Phi^{-1}(0.70) = 0.5244",
+        "explanation": "The second statement is already lower-tail, so we standardise $15$ and read $z_2$. Since $70\\%>50\\%$ the value is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{15 - \\mu}{\\sigma} = 0.5244",
+        "explanation": "Equating the standardised value of $15$ with $z_2$ gives the second simultaneous equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "15 - 10 = (0.5244 - (-1.1750))\\,\\sigma \\ \\Rightarrow\\ 5 = 1.6994\\,\\sigma",
+        "explanation": "Subtracting the two ‘value $-\\ \\mu = z\\sigma$’ forms removes $\\mu$; the $5$-hour gap spans about $1.70$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{5}{1.6994} = 2.942",
+        "explanation": "Dividing the time gap by the standardised gap gives a standard deviation of about $2.94$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 10 + 1.1750 \\times 2.942 = 13.46",
+        "explanation": "From the first equation $\\mu = 10 + 1.1750\\,\\sigma$. The mean charging time of about $13.5$ hours lies above $10$, consistent with only $12\\%$ charging faster than $10$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the parameters (part a)",
+        "workingLatex": "\\mu \\approx 13.5, \\qquad \\sigma \\approx 2.94",
+        "explanation": "To three significant figures the model is $X \\sim N(13.5,\\ 2.94^2)$ hours, answering part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up part (b): probability a battery charges in under 12 hours",
+        "workingLatex": "P(X < 12) = P\\left(Z < \\dfrac{12 - 13.5}{2.94}\\right)",
+        "explanation": "To estimate how many of the $200$ batteries charge in under $12$ hours we first find the single-battery probability, standardising $12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate the z-value",
+        "workingLatex": "z = \\dfrac{12 - 13.5}{2.94} = -0.510",
+        "explanation": "Since $12$ is a little below the mean of $13.5$, its standardised value is modestly negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the probability",
+        "workingLatex": "P(X < 12) = \\Phi(-0.510) = 0.3050",
+        "explanation": "The area to the left of a point just below the mean is a little under a half; here it is about $0.305$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Scale up to the 200 batteries",
+        "workingLatex": "\\text{Expected number} = 200 \\times 0.3050 = 61.0",
+        "explanation": "For $200$ batteries the expected number charging in under $12$ hours is the sample size times the single-battery probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the answer",
+        "workingLatex": "\\text{Expected number} \\approx 61 \\text{ batteries}",
+        "explanation": "So about $61$ of the $200$ batteries are expected to charge in under $12$ hours.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 13.5$ hours, $\\sigma \\approx 2.94$ hours. (b) about $61$ of the $200$ batteries."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "al.y2.pure.implicit.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "normal",
+    "coordinate geometry"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + xy + y^2 = 12$. Find the coordinates of all points on $C$ at which the normal passes through the origin $O$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "We differentiate the relation term by term, treating $y$ as a function of $x$. The constant gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power, product and chain rules",
+        "workingLatex": "2x + \\left(y + x\\frac{dy}{dx}\\right) + 2y\\frac{dy}{dx} = 0",
+        "explanation": "The power rule gives $2x$; the product rule gives $y + x\\frac{dy}{dx}$ for $xy$; the chain rule gives $2y\\frac{dy}{dx}$ for $y^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Collect and factor the dy/dx terms",
+        "workingLatex": "(x + 2y)\\frac{dy}{dx} = -(2x + y)",
+        "explanation": "Gathering the $\\frac{dy}{dx}$ terms on one side and everything else on the other isolates the factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the tangent gradient",
+        "workingLatex": "m_{\\text{tangent}} = \\frac{dy}{dx} = -\\frac{2x + y}{x + 2y}",
+        "explanation": "Dividing by $(x+2y)$ gives the gradient of the tangent at a general point on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{m_{\\text{tangent}}} = \\frac{x + 2y}{2x + y}",
+        "explanation": "The normal gradient is the negative reciprocal of the tangent gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the condition for the normal to pass through O",
+        "workingLatex": "m_{\\text{normal}} = \\frac{y - 0}{x - 0} = \\frac{y}{x}",
+        "explanation": "A line through the point $(x,y)$ and the origin has gradient $\\tfrac{y}{x}$. For the normal to pass through $O$, its gradient must equal this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the two expressions for the normal gradient equal",
+        "workingLatex": "\\frac{x + 2y}{2x + y} = \\frac{y}{x}",
+        "explanation": "Equating the normal gradient with the gradient of the line joining the point to the origin gives the key equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Cross-multiply",
+        "workingLatex": "x(x + 2y) = y(2x + y)",
+        "explanation": "Cross-multiplying clears the fractions so we can simplify.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand both sides",
+        "workingLatex": "x^2 + 2xy = 2xy + y^2",
+        "explanation": "Expanding the brackets prepares the equation for cancellation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify",
+        "workingLatex": "x^2 = y^2 \\;\\Rightarrow\\; y = \\pm x",
+        "explanation": "The $2xy$ terms cancel, leaving $x^2 = y^2$, so $y = x$ or $y = -x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Case y = x: substitute into the curve",
+        "workingLatex": "x^2 + x^2 + x^2 = 3x^2 = 12 \\;\\Rightarrow\\; x = \\pm 2",
+        "explanation": "Substituting $y=x$ into $x^2+xy+y^2=12$ gives $3x^2=12$, so $x = \\pm 2$ and $y = x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Record the points from case y = x",
+        "workingLatex": "(2, 2) \\quad \\text{and} \\quad (-2, -2)",
+        "explanation": "These are the points on the line $y=x$ that lie on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Case y = -x: substitute into the curve",
+        "workingLatex": "x^2 - x^2 + x^2 = x^2 = 12 \\;\\Rightarrow\\; x = \\pm 2\\sqrt{3}",
+        "explanation": "Substituting $y=-x$ gives $x^2=12$, so $x = \\pm 2\\sqrt{3}$ and $y = -x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Record the points from case y = -x",
+        "workingLatex": "\\left(2\\sqrt{3}, -2\\sqrt{3}\\right) \\quad \\text{and} \\quad \\left(-2\\sqrt{3}, 2\\sqrt{3}\\right)",
+        "explanation": "These are the points on the line $y=-x$ that lie on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Verify a representative point",
+        "workingLatex": "\\text{at }(2,2):\\ m_{\\text{normal}} = \\frac{2 + 4}{4 + 2} = 1, \\ \\text{normal } y = x \\text{ through } O",
+        "explanation": "At $(2,2)$ the normal has gradient $1$ and equation $y=x$, which passes through the origin, confirming the condition. Similarly the normal at $\\left(2\\sqrt3, -2\\sqrt3\\right)$ is $y=-x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State all the points",
+        "workingLatex": "(2, 2),\\ (-2, -2),\\ \\left(2\\sqrt{3}, -2\\sqrt{3}\\right),\\ \\left(-2\\sqrt{3}, 2\\sqrt{3}\\right)",
+        "explanation": "These four points on $C$ are exactly those whose normal passes through the origin.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The normal passes through $O$ at $(2, 2)$, $(-2, -2)$, $\\left(2\\sqrt{3}, -2\\sqrt{3}\\right)$ and $\\left(-2\\sqrt{3}, 2\\sqrt{3}\\right)$."
+  }
+}

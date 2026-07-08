@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "trigonometry",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^{x}\\cos x$. (a) Show that $\\dfrac{dy}{dx} = e^{x}(\\cos x - \\sin x)$. (b) Find the exact coordinates of the stationary points of $C$ for $0 \\le x \\le 2\\pi$. (Work in radians.)",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the two factors for the product rule",
+        "workingLatex": "u = e^{x}, \\qquad v = \\cos x",
+        "explanation": "The function is a product of $e^{x}$ and $\\cos x$, so the product rule $\\tfrac{d}{dx}(uv)=u'v+uv'$ applies.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = e^{x}, \\qquad v' = -\\sin x",
+        "explanation": "$e^{x}$ is its own derivative, and the derivative of $\\cos x$ is $-\\sin x$ — both standard results in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = e^{x}\\cos x + e^{x}(-\\sin x)",
+        "explanation": "Substituting into $u'v+uv'$ gives $e^{x}\\cos x$ from the first term and $-e^{x}\\sin x$ from the second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise to the required form",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}(\\cos x - \\sin x)",
+        "explanation": "Taking out the common factor $e^{x}$ gives the required expression and makes it easy to set the gradient to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the derivative to zero",
+        "workingLatex": "e^{x}(\\cos x - \\sin x) = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve $\\tfrac{dy}{dx}=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Eliminate the exponential factor",
+        "workingLatex": "e^{x} > 0 \\ \\text{always} \\ \\Rightarrow\\ \\cos x - \\sin x = 0",
+        "explanation": "Since $e^{x}$ is never zero, the stationary points come entirely from the trigonometric bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form a tangent equation",
+        "workingLatex": "\\cos x = \\sin x \\ \\Rightarrow\\ \\tan x = 1",
+        "explanation": "Dividing both sides by $\\cos x$ turns the equation into $\\tan x=1$, which is easy to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve over the interval",
+        "workingLatex": "x = \\frac{\\pi}{4} \\quad \\text{or} \\quad x = \\frac{5\\pi}{4} \\qquad (0 \\le x \\le 2\\pi)",
+        "explanation": "$\\tan x$ has period $\\pi$, and its reference angle for $1$ is $\\tfrac{\\pi}{4}$, giving these two solutions in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinate at the first solution",
+        "workingLatex": "x=\\frac{\\pi}{4}: \\ y = e^{\\pi/4}\\cos\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}\\,e^{\\pi/4}",
+        "explanation": "Substituting into $y=e^{x}\\cos x$ and using $\\cos\\tfrac{\\pi}{4}=\\tfrac{\\sqrt{2}}{2}$ gives the exact height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinate at the second solution",
+        "workingLatex": "x=\\frac{5\\pi}{4}: \\ y = e^{5\\pi/4}\\cos\\frac{5\\pi}{4} = -\\frac{\\sqrt{2}}{2}\\,e^{5\\pi/4}",
+        "explanation": "Here $\\cos\\tfrac{5\\pi}{4}=-\\tfrac{\\sqrt{2}}{2}$, so the height is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the stationary points",
+        "workingLatex": "\\left(\\frac{\\pi}{4}, \\ \\frac{\\sqrt{2}}{2}e^{\\pi/4}\\right) \\quad \\text{and} \\quad \\left(\\frac{5\\pi}{4}, \\ -\\frac{\\sqrt{2}}{2}e^{5\\pi/4}\\right)",
+        "explanation": "These are the two stationary points of $C$ on $0\\le x\\le 2\\pi$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) Shown: $\\dfrac{dy}{dx} = e^{x}(\\cos x - \\sin x)$. (b) Stationary points at $\\left(\\dfrac{\\pi}{4}, \\dfrac{\\sqrt{2}}{2}e^{\\pi/4}\\right)$ and $\\left(\\dfrac{5\\pi}{4}, -\\dfrac{\\sqrt{2}}{2}e^{5\\pi/4}\\right)$."
+  }
+}

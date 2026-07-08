@@ -5,60 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "solving equations",
+    "modelling"
   ],
-  "questionText": "Solve $\\sqrt3\\sin 2\\theta - \\cos 2\\theta = 1$ for $0^\\circ \\le \\theta < 180^\\circ$.",
+  "questionText": "The temperature of a chemical reaction over two days is modelled by $T(t) = 20 + 8\\sin(15t)^\\circ + 6\\cos(15t)^\\circ$ degrees Celsius, where $t$ is the time in hours and $0 \\le t \\le 48$. (a) Express $8\\sin(15t)^\\circ + 6\\cos(15t)^\\circ$ in the form $R\\sin(15t + \\alpha)^\\circ$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. (b) Hence find all the times at which the temperature is $25^\\circ$C, giving your answers in hours to $2$ decimal places, and state how many times per day this happens.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the varying part in R-form",
-        "workingLatex": "\\sqrt3\\sin 2\\theta - \\cos 2\\theta = 2\\sin(2\\theta - 30^\\circ)",
-        "explanation": "With coefficients $\\sqrt3$ and $1$, the amplitude is $2$ and $\\tan\\alpha = \\frac{1}{\\sqrt3}$, so $\\alpha = 30^\\circ$.",
+        "description": "Separate the constant from the waves",
+        "workingLatex": "T(t) = 20 + \\big(8\\sin(15t)^\\circ + 6\\cos(15t)^\\circ\\big)",
+        "explanation": "The $20$ is the mean temperature; the two wave terms carry the oscillation. We combine those two into one wave and keep the $20$ aside.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite the equation",
-        "workingLatex": "2\\sin(2\\theta - 30^\\circ) = 1 \\;\\Rightarrow\\; \\sin(2\\theta - 30^\\circ) = \\frac{1}{2}",
-        "explanation": "Substituting and dividing by $2$.",
+        "description": "Set up the identity to match",
+        "workingLatex": "8\\sin(15t)^\\circ + 6\\cos(15t)^\\circ \\equiv R\\sin(15t + \\alpha)",
+        "explanation": "Expressing the pair as a single sine $R\\sin(15t+\\alpha)$ lets us solve the level equation with one trig function instead of two.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the interval for the argument",
-        "workingLatex": "-30^\\circ \\le 2\\theta - 30^\\circ < 330^\\circ",
-        "explanation": "Since $\\theta \\in [0^\\circ, 180^\\circ)$, the quantity $2\\theta$ spans $[0^\\circ, 360^\\circ)$, so the shifted argument spans this interval.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(15t + \\alpha) = R\\cos\\alpha\\,\\sin(15t)^\\circ + R\\sin\\alpha\\,\\cos(15t)^\\circ",
+        "explanation": "The expansion gives a multiple of $\\sin(15t)$ plus a multiple of $\\cos(15t)$, ready to be compared with the original.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve for the argument",
-        "workingLatex": "2\\theta - 30^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$ within the interval.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 8, \\qquad R\\sin\\alpha = 6",
+        "explanation": "Matching the coefficient of $\\sin(15t)$ gives $R\\cos\\alpha=8$ and matching $\\cos(15t)$ gives $R\\sin\\alpha=6$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for 2θ",
-        "workingLatex": "2\\theta = 60^\\circ, 180^\\circ",
-        "explanation": "Adding $30^\\circ$ to each.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10",
+        "explanation": "Squaring and adding eliminates $\\alpha$, giving $R^2 = 64 + 36 = 100$, so $R = 10$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Halve to find theta",
-        "workingLatex": "\\theta = 30^\\circ, 90^\\circ",
-        "explanation": "Dividing by $2$ gives the solutions in the required range.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{6}{8} = \\dfrac{3}{4} \\Rightarrow \\alpha = 36.87^\\circ",
+        "explanation": "Dividing gives $\\tan\\alpha = \\tfrac{6}{8}$; both parts are positive, so $\\alpha$ is acute and equals $36.87^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the full model",
+        "workingLatex": "T(t) = 20 + 10\\sin(15t + 36.87^\\circ)",
+        "explanation": "The model is a single wave of amplitude $10$ about a mean of $20^\\circ$C, so it ranges between $10^\\circ$C and $30^\\circ$C.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the level equation",
+        "workingLatex": "20 + 10\\sin(15t + 36.87^\\circ) = 25 \\Rightarrow \\sin(15t + 36.87^\\circ) = 0.5",
+        "explanation": "For a temperature of $25^\\circ$C, subtract $20$ and divide by $10$ to reach the simple equation $\\sin(15t+36.87^\\circ)=0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\arcsin(0.5) = 30^\\circ",
+        "explanation": "The principal value is $30^\\circ$. Because sine is positive in two quadrants and the interval is very wide, we expect several solutions from repeated $360^\\circ$ cycles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Shift the search interval",
+        "workingLatex": "0 \\le t \\le 48 \\Rightarrow 36.87^\\circ \\le 15t + 36.87^\\circ \\le 756.87^\\circ",
+        "explanation": "Over two days the angle $15t$ sweeps through $720^\\circ$, so the shifted angle runs from $36.87^\\circ$ up to $756.87^\\circ$ — more than two full turns.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "List all shifted-angle solutions",
+        "workingLatex": "15t + 36.87^\\circ = 150^\\circ,\\; 390^\\circ,\\; 510^\\circ,\\; 750^\\circ",
+        "explanation": "Starting from $30^\\circ$ and $150^\\circ$ and adding $360^\\circ$ each cycle gives $30, 150, 390, 510, 750, \\ldots$. Keeping only those inside $[36.87^\\circ, 756.87^\\circ]$ leaves four values ($30^\\circ$ is just below the interval).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{150 - 36.87}{15},\\; \\dfrac{390 - 36.87}{15},\\; \\dfrac{510 - 36.87}{15},\\; \\dfrac{750 - 36.87}{15}",
+        "explanation": "Subtracting the phase and dividing by $15$ converts each shifted angle back to a time in hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Evaluate and interpret",
+        "workingLatex": "t = 7.54,\\; 23.54,\\; 31.54,\\; 47.54\\text{ hours}",
+        "explanation": "There are four times in the $48$-hour window. They fall into two per $24$-hour day (once as the temperature rises through $25^\\circ$C and once as it falls back), matching the period of $\\tfrac{360}{15}=24$ hours.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 90^\\circ$"
+    "finalAnswer": "(a) $8\\sin(15t)^\\circ + 6\\cos(15t)^\\circ = 10\\sin(15t + 36.87^\\circ)$. (b) The temperature is $25^\\circ$C at $t = 7.54$, $23.54$, $31.54$ and $47.54$ hours — that is twice each day."
   }
 }

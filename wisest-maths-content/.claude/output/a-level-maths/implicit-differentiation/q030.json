@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.implicit.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "trigonometry",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $\\sin x + \\cos y = 1$. Find an equation of the tangent to $C$ at the point $\\left(\\tfrac{\\pi}{6}, \\tfrac{\\pi}{3}\\right)$. (Work in radians.)",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(\\sin x) + \\frac{d}{dx}(\\cos y) = \\frac{d}{dx}(1)",
+        "explanation": "We differentiate the whole relation with respect to $x$, treating $y$ as a function of $x$. The constant $1$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the trig terms with the chain rule",
+        "workingLatex": "\\cos x - \\sin y\\frac{dy}{dx} = 0",
+        "explanation": "$\\sin x$ differentiates to $\\cos x$. For $\\cos y$ the chain rule gives $-\\sin y$ multiplied by $\\frac{dy}{dx}$, because $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\cos x}{\\sin y}",
+        "explanation": "Moving the $\\frac{dy}{dx}$ term to the right gives $\\sin y\\frac{dy}{dx}=\\cos x$; dividing by $\\sin y$ isolates the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "\\sin\\frac{\\pi}{6} + \\cos\\frac{\\pi}{3} = \\frac{1}{2} + \\frac{1}{2} = 1 \\;\\checkmark",
+        "explanation": "In radians, $\\sin\\frac{\\pi}{6}=\\frac{1}{2}$ and $\\cos\\frac{\\pi}{3}=\\frac{1}{2}$, confirming the point lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recall the exact values needed",
+        "workingLatex": "\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}, \\qquad \\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}",
+        "explanation": "The gradient formula needs $\\cos x$ at $x=\\frac{\\pi}{6}$ and $\\sin y$ at $y=\\frac{\\pi}{3}$; both are $\\frac{\\sqrt{3}}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the point to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(\\pi/6,\\,\\pi/3)} = \\frac{\\sqrt{3}/2}{\\sqrt{3}/2} = 1",
+        "explanation": "The numerator and denominator are equal, so the gradient of the tangent at this point is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the point-gradient form of a line",
+        "workingLatex": "y - \\frac{\\pi}{3} = 1\\left(x - \\frac{\\pi}{6}\\right)",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=1$ through $\\left(\\frac{\\pi}{6},\\frac{\\pi}{3}\\right)$ sets up the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify the right-hand side",
+        "workingLatex": "y = x - \\frac{\\pi}{6} + \\frac{\\pi}{3}",
+        "explanation": "Adding $\\frac{\\pi}{3}$ to both sides moves the constant across, leaving a sum of two multiples of $\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine the constant terms",
+        "workingLatex": "-\\frac{\\pi}{6} + \\frac{\\pi}{3} = -\\frac{\\pi}{6} + \\frac{2\\pi}{6} = \\frac{\\pi}{6}",
+        "explanation": "Writing $\\frac{\\pi}{3}$ as $\\frac{2\\pi}{6}$ gives a common denominator, and the constants combine to $\\frac{\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the tangent",
+        "workingLatex": "y = x + \\frac{\\pi}{6}",
+        "explanation": "Substituting the combined constant gives the tangent in a clean form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = 1\\text{ at }\\left(\\frac{\\pi}{6}, \\frac{\\pi}{3}\\right),\\qquad y = x + \\frac{\\pi}{6}",
+        "explanation": "So the gradient at $\\left(\\frac{\\pi}{6},\\frac{\\pi}{3}\\right)$ is $1$ and the tangent there is $y=x+\\frac{\\pi}{6}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $y = x + \\frac{\\pi}{6}$ (gradient $1$)."
+  }
+}

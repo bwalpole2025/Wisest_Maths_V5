@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "exponential",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + e^{y} = 2$. Find an equation of the tangent to $C$ at the point $(1, 0)$, giving your answer in the form $ax + by = c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(e^{y}) = \\frac{d}{dx}(2)",
+        "explanation": "We differentiate the whole relation with respect to $x$, treating $y$ as a function of $x$. The constant $2$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate x^2 and the constant",
+        "workingLatex": "2x + \\frac{d}{dx}(e^{y}) = 0",
+        "explanation": "The term $x^2$ gives $2x$ by the power rule; the right-hand side is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate e^y with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(e^{y}) = e^{y}\\frac{dy}{dx} \\quad\\Rightarrow\\quad 2x + e^{y}\\frac{dy}{dx} = 0",
+        "explanation": "Differentiating $e^{y}$ with respect to $x$ gives $e^{y}$ times $\\frac{dy}{dx}$, because the exponent $y$ is itself a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{e^{y}}",
+        "explanation": "Subtracting $2x$ and dividing by $e^{y}$ isolates the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "(1)^2 + e^{0} = 1 + 1 = 2 \\;\\checkmark",
+        "explanation": "Using $e^{0}=1$, we confirm $(1,0)$ satisfies $x^2 + e^{y} = 2$, so the point is genuinely on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the point to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,0)} = -\\frac{2(1)}{e^{0}} = -\\frac{2}{1} = -2",
+        "explanation": "Substituting $x=1$ and $y=0$ (so $e^{y}=1$) gives the gradient of the tangent at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the point-gradient form of a line",
+        "workingLatex": "y - 0 = -2(x - 1)",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=-2$ through $(1,0)$ sets up the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the bracket",
+        "workingLatex": "y = -2x + 2",
+        "explanation": "Expanding gives the tangent in gradient-intercept form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rearrange into the required form",
+        "workingLatex": "2x + y = 2",
+        "explanation": "Moving the $x$ term to the left gives the tangent as $2x+y=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -2\\text{ at }(1,0),\\qquad 2x + y = 2",
+        "explanation": "So the gradient at $(1,0)$ is $-2$ and the tangent there is $2x+y=2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $2x + y = 2$ (gradient $-2$)."
+  }
+}

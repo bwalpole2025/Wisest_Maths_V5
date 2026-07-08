@@ -1,0 +1,100 @@
+{
+  "id": "al.y2.stats.normal-distribution.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the standard deviation",
+    "quality control",
+    "tolerance"
+  ],
+  "questionText": "A machine fills cans of drink to a target volume of $330$ ml. The volume, $X$ ml, in a can is modelled by $X \\sim N(330,\\ \\sigma^2)$. To meet regulations, $99\\%$ of cans must be filled to within $5$ ml of the target, so that $P(325 < X < 335) = 0.99$. Find the largest value of $\\sigma$ for which the machine meets the regulation, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the tolerance requirement",
+        "workingLatex": "X \\sim N(330,\\ \\sigma^2), \\qquad P(325 < X < 335) = 0.99",
+        "explanation": "The volumes are normal, centred on the target $330$ ml. ‘Within $5$ ml of the target’ is the interval $325$ to $335$, and the regulation demands $99\\%$ of cans fall inside it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the excluded area using symmetry",
+        "workingLatex": "P(X > 335) = \\dfrac{1 - 0.99}{2} = 0.005",
+        "explanation": "The interval is symmetric about the mean, so the $1\\%$ lying outside it divides into two equal tails of $0.5\\%$ each.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Convert to a single lower-tail probability",
+        "workingLatex": "P(X < 335) = 0.99 + 0.005 = 0.995",
+        "explanation": "Below the upper edge $335$ lies the central $99\\%$ together with the lower $0.5\\%$ tail, giving $0.995$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the z-value for 0.995",
+        "workingLatex": "z = \\Phi^{-1}(0.995) = 2.5758",
+        "explanation": "The standard-normal value with $99.5\\%$ of the area below it is $2.5758$; the upper edge $335$ is this many standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the standardisation equation",
+        "workingLatex": "\\dfrac{335 - 330}{\\sigma} = 2.5758",
+        "explanation": "Standardising the upper edge $335$ gives its $z$-score; the half-width $5$ ml in standard deviations must equal $2.5758$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\dfrac{5}{\\sigma} = 2.5758",
+        "explanation": "The tolerance half-width is $5$ ml; as a multiple of $\\sigma$ it equals the required $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange for the standard deviation",
+        "workingLatex": "\\sigma = \\dfrac{5}{2.5758}",
+        "explanation": "Rearranging, one standard deviation is the half-width $5$ divided by $2.5758$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute the standard deviation",
+        "workingLatex": "\\sigma = 1.9411",
+        "explanation": "Dividing gives the standard deviation in millilitres for which exactly $99\\%$ of cans meet the tolerance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret 'largest value'",
+        "workingLatex": "\\sigma \\le 1.9411",
+        "explanation": "A tighter (smaller) standard deviation would place even more than $99\\%$ inside the tolerance, so the value found is the largest $\\sigma$ that still satisfies the regulation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "\\sigma_{\\max} \\approx 1.94 \\text{ ml}",
+        "explanation": "To three significant figures the machine's standard deviation must be at most $1.94$ ml to meet the regulation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the answer reproduces the requirement",
+        "workingLatex": "2\\Phi\\!\\left(\\dfrac{5}{1.94}\\right) - 1 = 2\\Phi(2.58) - 1 \\approx 0.99",
+        "explanation": "With $\\sigma=1.94$ each edge is about $2.58$ standard deviations from the mean, giving a central probability of about $0.99$, confirming the requirement.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sigma \\approx 1.94$ ml (the largest standard deviation meeting the regulation)."
+  }
+}

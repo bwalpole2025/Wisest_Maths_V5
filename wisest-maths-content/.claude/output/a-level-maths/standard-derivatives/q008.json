@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "standard derivatives",
+    "trigonometry",
+    "constant multiple"
+  ],
+  "questionText": "Find $\\dfrac{dy}{dx}$ given that $y = 3\\sin x - 4\\cos x$, where $x$ is in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the function and the goal",
+        "workingLatex": "y = 3\\sin x - 4\\cos x",
+        "explanation": "We need $\\frac{dy}{dx}$ for a difference of constant multiples of $\\sin x$ and $\\cos x$, with $x$ in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply linearity and pull out the constants",
+        "workingLatex": "\\frac{dy}{dx} = 3\\,\\frac{d}{dx}\\left(\\sin x\\right) - 4\\,\\frac{d}{dx}\\left(\\cos x\\right)",
+        "explanation": "Differentiation is linear, so each constant factor stays in front while we differentiate its trig function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the sine term",
+        "workingLatex": "3\\,\\frac{d}{dx}\\left(\\sin x\\right) = 3\\cos x",
+        "explanation": "Since the derivative of $\\sin x$ is $\\cos x$, the first term becomes $3\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the cosine term carefully",
+        "workingLatex": "-4\\,\\frac{d}{dx}\\left(\\cos x\\right) = -4(-\\sin x) = 4\\sin x",
+        "explanation": "The derivative of $\\cos x$ is $-\\sin x$. Multiplying by the $-4$ flips that sign again, so this term becomes $+4\\sin x$. Watch the two sign changes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the two derivatives",
+        "workingLatex": "\\frac{dy}{dx} = 3\\cos x + 4\\sin x",
+        "explanation": "Putting the terms together gives the gradient function; the double sign flip has turned the subtraction into an addition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note the radian assumption and state the answer",
+        "workingLatex": "\\frac{dy}{dx} = 3\\cos x + 4\\sin x \\quad (x \\text{ in radians})",
+        "explanation": "The trig derivative results assume radians, so we record that. This is the required gradient function.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 3\\cos x + 4\\sin x$ (with $x$ in radians)."
+  }
+}

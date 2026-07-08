@@ -5,53 +5,88 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "restricted line"
+    "eliminating the parameter",
+    "reciprocal",
+    "rearrangement"
   ],
-  "questionText": "A curve has parametric equations $x = 2 + t^2$, $y = 4 - t^2$. Find the Cartesian equation and state the restriction on $x$.",
+  "questionText": "A curve has parametric equations $x = t + 1$ and $y = \\dfrac{2}{t}$, where $t \\neq 0$. Find a Cartesian equation of the curve, and state the value of $x$ that must be excluded.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate t squared from the x-equation",
-        "workingLatex": "t^2 = x - 2",
-        "explanation": "Rearranging the $x$-equation gives $t^2$ in terms of $x$.",
+        "description": "Make t the subject of the x equation",
+        "workingLatex": "x = t + 1 \\implies t = x - 1",
+        "explanation": "The $x$ equation is linear, so one rearrangement gives $t$ in terms of $x$, ready to substitute into the reciprocal expression for $y$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the y-equation",
-        "workingLatex": "y = 4 - (x - 2)",
-        "explanation": "Replacing $t^2$ in the $y$-equation removes the parameter.",
+        "description": "Substitute into the y equation",
+        "workingLatex": "y = \\dfrac{2}{t} = \\dfrac{2}{x - 1}",
+        "explanation": "Replacing $t$ with $x - 1$ inside the reciprocal removes the parameter, leaving $y$ purely in terms of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "y = 6 - x",
-        "explanation": "Expanding gives a linear relationship, so the curve is part of a straight line.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = \\dfrac{2}{x - 1}",
+        "explanation": "This is the Cartesian equation of the curve, a reciprocal relation between $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the restriction",
-        "workingLatex": "t^2 \\ge 0 \\;\\Rightarrow\\; x - 2 \\ge 0 \\;\\Rightarrow\\; x \\ge 2",
-        "explanation": "Because $t^2$ cannot be negative, $x$ is at least $2$; the curve is only part of the line.",
+        "description": "Find the excluded value of x",
+        "workingLatex": "x - 1 \\neq 0 \\implies x \\neq 1",
+        "explanation": "Division by zero is undefined, so $x = 1$ cannot occur; it is the value that must be excluded.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "y = 6 - x, \\; x \\ge 2",
-        "explanation": "The curve is a ray (half-line) starting at $(2, 4)$.",
+        "description": "Link the exclusion to the parameter",
+        "workingLatex": "x = 1 \\iff t = 0 \\quad (\\text{excluded})",
+        "explanation": "The forbidden value $x = 1$ corresponds exactly to $t = 0$, which is already excluded in the parametric definition, so the two conditions agree.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the vertical asymptote",
+        "workingLatex": "\\text{vertical asymptote: } x = 1",
+        "explanation": "As $x$ approaches $1$ the denominator approaches zero and $|y|$ grows without limit, so the line $x = 1$ is a vertical asymptote.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Identify the horizontal asymptote",
+        "workingLatex": "x \\to \\pm\\infty \\Rightarrow y \\to 0",
+        "explanation": "For very large $|x|$ the fraction shrinks toward zero, so $y = 0$ is a horizontal asymptote of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check with a sample value of t",
+        "workingLatex": "t = 2 \\Rightarrow (3,\\,1); \\quad \\dfrac{2}{3 - 1} = 1 \\;\\checkmark",
+        "explanation": "At $t = 2$ the point is $(3,\\,1)$, and substituting $x = 3$ into the Cartesian equation returns $y = 1$, confirming consistency.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Describe the curve",
+        "workingLatex": "y = \\dfrac{2}{x - 1} \\text{ is } y = \\dfrac{2}{x} \\text{ shifted right by } 1",
+        "explanation": "Replacing $x$ with $x - 1$ translates the standard reciprocal curve one unit to the right, which is exactly this curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the final result",
+        "workingLatex": "y = \\dfrac{2}{x - 1}, \\qquad x \\neq 1",
+        "explanation": "This is the Cartesian equation together with the excluded value, as required.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = 6 - x$ for $x \\ge 2$ (a half-line from $(2,4)$)."
+    "finalAnswer": "$y = \\dfrac{2}{x - 1}$, with $x \\neq 1$ — the reciprocal curve $y = \\dfrac{2}{x}$ translated one unit to the right."
   }
 }

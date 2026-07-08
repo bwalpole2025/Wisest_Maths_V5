@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "ln",
+    "gradient"
+  ],
+  "questionText": "Given $y = \\ln x + x^2$, find $\\dfrac{dy}{dx}$ and evaluate the gradient at $x = 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up and use linearity",
+        "workingLatex": "y = \\ln x + x^2",
+        "explanation": "The function is a sum of a logarithm term and a power term; differentiate each separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the logarithm term",
+        "workingLatex": "\\frac{d}{dx}(\\ln x) = \\frac{1}{x}",
+        "explanation": "The standard result for the natural logarithm is that its derivative is $\\tfrac{1}{x}$ (valid for $x>0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the power term",
+        "workingLatex": "\\frac{d}{dx}(x^2) = 2x",
+        "explanation": "By the power rule, multiply by the index $2$ and reduce the power by one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{x} + 2x",
+        "explanation": "Adding the two derivatives gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=2} = \\frac{1}{2} + 2(2)",
+        "explanation": "Substitute $x=2$ into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= \\frac{1}{2} + 4 = \\frac{9}{2}",
+        "explanation": "Compute each part and add: $\\tfrac{1}{2}+4=\\tfrac{9}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{9}{2} = 4.5",
+        "explanation": "So the gradient of the curve at $x=2$ is $\\tfrac{9}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{1}{x} + 2x$, and at $x=2$ the gradient is $\\dfrac{9}{2}$ (that is, $4.5$)."
+  }
+}

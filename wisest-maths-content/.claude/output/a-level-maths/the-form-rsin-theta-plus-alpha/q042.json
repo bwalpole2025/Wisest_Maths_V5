@@ -4,68 +4,103 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 7,
+  "difficulty": "Intermediate",
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "reverse",
-    "coefficients"
+    "maximum and minimum"
   ],
-  "questionText": "It is given that $a\\sin\\theta + b\\cos\\theta = 13\\sin(\\theta + \\alpha)$ where $\\tan\\alpha = \\dfrac{5}{12}$ and $a, b > 0$. Find $a$ and $b$.",
+  "questionText": "The function $f$ is defined by $f(\\theta)=\\dfrac{12}{7+3\\sin\\theta+4\\cos\\theta}$ for $0^\\circ \\le \\theta \\le 360^\\circ$. By first writing $3\\sin\\theta+4\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$ with $R>0$ and $0^\\circ<\\alpha<90^\\circ$, find the greatest and least values of $f(\\theta)$ and the value of $\\theta$ at which each occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the right-hand side",
-        "workingLatex": "13\\sin(\\theta + \\alpha) = 13\\cos\\alpha\\sin\\theta + 13\\sin\\alpha\\cos\\theta",
-        "explanation": "Expanding lets us read off $a$ and $b$ as the coefficients of $\\sin\\theta$ and $\\cos\\theta$.",
+        "description": "Set up the identity for the denominator",
+        "workingLatex": "3\\sin\\theta+4\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "Rewriting the two-term part $3\\sin\\theta+4\\cos\\theta$ as a single sine wave will let us read its range off at a glance, because a single sine only ever ranges between $-R$ and $R$. We set it identically equal to $R\\sin(\\theta+\\alpha)$ so we can expand and compare.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Match the coefficients",
-        "workingLatex": "a = 13\\cos\\alpha, \\quad b = 13\\sin\\alpha",
-        "explanation": "So we need $\\cos\\alpha$ and $\\sin\\alpha$ from the given tangent.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Using $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ and pulling the constant $R$ through writes the right-hand side as a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, exactly the shape of the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Build the reference triangle",
-        "workingLatex": "\\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\text{hypotenuse} = \\sqrt{5^2 + 12^2} = 13",
-        "explanation": "A tangent of $\\frac{5}{12}$ gives a $5$-$12$-$13$ triangle.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=3,\\qquad R\\sin\\alpha=4",
+        "explanation": "The identity must hold for every $\\theta$, so the amount of $\\sin\\theta$ on each side must agree and likewise for $\\cos\\theta$. That matching gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Read off sine and cosine",
-        "workingLatex": "\\cos\\alpha = \\frac{12}{13}, \\quad \\sin\\alpha = \\frac{5}{13}",
-        "explanation": "From the triangle, cosine is adjacent over hypotenuse and sine is opposite over hypotenuse.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{3^2+4^2}=\\sqrt{25}=5",
+        "explanation": "Squaring and adding both equations uses $\\cos^2\\alpha+\\sin^2\\alpha=1$ to eliminate $\\alpha$, leaving $R^2=3^2+4^2$. We take the positive root because $R>0$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Compute a",
-        "workingLatex": "a = 13\\cdot\\frac{12}{13} = 12",
-        "explanation": "The $13$s cancel, giving $a = 12$.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{4}{3}\\Rightarrow \\alpha=53.13^\\circ",
+        "explanation": "Dividing the sine equation by the cosine equation cancels $R$ and gives $\\tan\\alpha=\\tfrac{4}{3}$. Both coefficients are positive, so $\\alpha$ is acute and equals $\\arctan\\tfrac{4}{3}=53.13^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Compute b",
-        "workingLatex": "b = 13\\cdot\\frac{5}{13} = 5",
-        "explanation": "Similarly $b = 5$.",
+        "description": "Rewrite f using the R-form",
+        "workingLatex": "f(\\theta)=\\dfrac{12}{7+5\\sin(\\theta+53.13^\\circ)}",
+        "explanation": "Substituting the single wave for the two-term part turns the denominator into $7+5\\sin(\\theta+53.13^\\circ)$. Because the wave part is bounded, the whole denominator is now easy to bound.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the answer",
-        "workingLatex": "a = 12, \\quad b = 5",
-        "explanation": "So the original expression was $12\\sin\\theta + 5\\cos\\theta$.",
+        "description": "Bound the sine term",
+        "workingLatex": "-1\\le \\sin(\\theta+53.13^\\circ)\\le 1",
+        "explanation": "A sine function never leaves the interval from $-1$ to $1$, whatever its input, so this is the full range of $\\sin(\\theta+53.13^\\circ)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Bound the denominator",
+        "workingLatex": "2\\le 7+5\\sin(\\theta+53.13^\\circ)\\le 12",
+        "explanation": "Multiplying the sine bounds by $5$ and adding $7$ shifts the range to between $2$ and $12$. Since the smallest possible denominator is $2>0$, the fraction is always positive and never undefined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Greatest value of f",
+        "workingLatex": "f_{\\max}=\\dfrac{12}{2}=6",
+        "explanation": "A positive fraction with a fixed numerator is largest when its denominator is smallest. The least denominator is $2$, so the greatest value of $f$ is $\\tfrac{12}{2}=6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Value of θ giving the greatest value",
+        "workingLatex": "\\sin(\\theta+53.13^\\circ)=-1\\Rightarrow \\theta+53.13^\\circ=270^\\circ\\Rightarrow \\theta=216.87^\\circ",
+        "explanation": "The denominator is smallest when the sine equals $-1$, which happens at $\\theta+53.13^\\circ=270^\\circ$. Subtracting $53.13^\\circ$ gives the angle in range where the maximum occurs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Least value of f",
+        "workingLatex": "f_{\\min}=\\dfrac{12}{12}=1",
+        "explanation": "By the same reasoning the fraction is smallest when the denominator is largest. The greatest denominator is $12$, so the least value of $f$ is $\\tfrac{12}{12}=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Value of θ giving the least value",
+        "workingLatex": "\\sin(\\theta+53.13^\\circ)=1\\Rightarrow \\theta+53.13^\\circ=90^\\circ\\Rightarrow \\theta=36.87^\\circ",
+        "explanation": "The denominator is largest when the sine equals $1$, at $\\theta+53.13^\\circ=90^\\circ$. Subtracting $53.13^\\circ$ gives the angle at which the minimum occurs.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$a = 12, \\quad b = 5$"
+    "finalAnswer": "$3\\sin\\theta+4\\cos\\theta=5\\sin(\\theta+53.13^\\circ)$, so $f(\\theta)=\\dfrac{12}{7+5\\sin(\\theta+53.13^\\circ)}$. The greatest value is $f=6$ at $\\theta=216.9^\\circ$, and the least value is $f=1$ at $\\theta=36.9^\\circ$ (angles to $1$ d.p.)."
   }
 }

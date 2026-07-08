@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "e^x",
+    "ln"
+  ],
+  "questionText": "Find the gradient of the curve $y = e^x + \\ln x$ at the point where $x = 1$. Give your answer exactly.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up and use linearity",
+        "workingLatex": "y = e^x + \\ln x",
+        "explanation": "Differentiate the exponential term and the logarithm term separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the exponential term",
+        "workingLatex": "\\frac{d}{dx}(e^x) = e^x",
+        "explanation": "$e^x$ is its own derivative, so this term is unchanged.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the logarithm term",
+        "workingLatex": "\\frac{d}{dx}(\\ln x) = \\frac{1}{x}",
+        "explanation": "The standard derivative of $\\ln x$ is $\\tfrac{1}{x}$ (for $x>0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = e^x + \\frac{1}{x}",
+        "explanation": "Adding the two derivatives gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = e^{1} + \\frac{1}{1}",
+        "explanation": "Substitute $x=1$ into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= e + 1",
+        "explanation": "Since $e^{1}=e$ and $\\tfrac{1}{1}=1$, the exact gradient is $e+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = e + 1 \\approx 3.718",
+        "explanation": "So the gradient at $x=1$ is the exact value $e+1$ (about $3.718$).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient at $x=1$ is $e+1$ (approximately $3.718$)."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "logarithm",
+    "stationary point",
+    "tangent area"
+  ],
+  "questionText": "The curve $C$ has equation $y = x^2 - 8\\ln x$, $x>0$.\n(a) Find $\\dfrac{dy}{dx}$.\n(b) Find the gradient of $C$ at $x=1$.\n(c) Find the exact coordinates of the stationary point and determine its nature.\n(d) The tangent to $C$ at $x=1$ meets the coordinate axes at two points. Find the area of the triangle formed by this tangent and the axes.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the standard results",
+        "workingLatex": "\\frac{d}{dx}(x^2) = 2x, \\quad \\frac{d}{dx}(8\\ln x) = \\frac{8}{x} \\quad (x>0)",
+        "explanation": "The power rule gives $2x$, and the standard result for $\\ln x$ scaled by $8$ gives $\\tfrac{8}{x}$, valid for $x>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate to find dy/dx (part a)",
+        "workingLatex": "\\frac{dy}{dx} = 2x - \\frac{8}{x}",
+        "explanation": "Subtracting the derivative of $8\\ln x$ from that of $x^2$ gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the gradient at x = 1 (part b)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = 2(1) - \\frac{8}{1} = 2 - 8 = -6",
+        "explanation": "Substituting $x=1$ gives a gradient of $-6$; this slope will be reused for the tangent in part (d).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the derivative to zero (part c)",
+        "workingLatex": "2x - \\frac{8}{x} = 0 \\;\\Rightarrow\\; 2x = \\frac{8}{x} \\;\\Rightarrow\\; x^2 = 4",
+        "explanation": "Stationary points need $\\dfrac{dy}{dx}=0$. Multiplying through by $x$ turns this into a simple quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x in the domain",
+        "workingLatex": "x = 2 \\quad (x>0)",
+        "explanation": "$x^2=4$ gives $x=\\pm 2$, but the domain is $x>0$, so only $x=2$ is valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = 2^2 - 8\\ln 2 = 4 - 8\\ln 2",
+        "explanation": "Substituting into the curve gives the exact height $4 - 8\\ln 2 \\approx -1.545$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate again",
+        "workingLatex": "\\frac{d^2y}{dx^2} = 2 + \\frac{8}{x^2}",
+        "explanation": "Differentiating $2x - 8x^{-1}$ gives $2 + 8x^{-2} = 2 + \\tfrac{8}{x^2}$, which is positive for every $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Classify the stationary point",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=2} = 2 + \\frac{8}{4} = 2 + 2 = 4 > 0 \\;(\\text{minimum})",
+        "explanation": "A positive second derivative confirms the point $(2,\\,4-8\\ln 2)$ is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the point of contact at x = 1 (part d)",
+        "workingLatex": "x=1:\\; y = 1^2 - 8\\ln 1 = 1 \\;\\Rightarrow\\; (1,\\,1)",
+        "explanation": "Since $\\ln 1 = 0$, the curve passes through $(1,1)$, and from part (b) the gradient there is $-6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the tangent line",
+        "workingLatex": "y - 1 = -6(x - 1) \\;\\Rightarrow\\; y = 7 - 6x",
+        "explanation": "Point-gradient form with $(1,1)$ and $m=-6$; expanding gives $y=7-6x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the x-intercept of the tangent",
+        "workingLatex": "y = 0:\\; 0 = 7 - 6x \\;\\Rightarrow\\; x = \\tfrac{7}{6} \\;\\Rightarrow\\; \\left(\\tfrac{7}{6},\\,0\\right)",
+        "explanation": "Setting $y=0$ locates where the tangent crosses the $x$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the y-intercept of the tangent",
+        "workingLatex": "x = 0:\\; y = 7 \\;\\Rightarrow\\; (0,\\,7)",
+        "explanation": "Setting $x=0$ gives the crossing of the $y$-axis. These two intercepts and the origin form a right-angled triangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the area of the triangle",
+        "workingLatex": "A = \\tfrac{1}{2} \\times \\tfrac{7}{6} \\times 7 = \\tfrac{49}{12}",
+        "explanation": "The legs of the right triangle are the intercept lengths $\\tfrac{7}{6}$ and $7$, so the area is $\\tfrac12\\times\\tfrac{7}{6}\\times 7 = \\tfrac{49}{12}\\approx 4.08$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Summarise",
+        "workingLatex": "\\min\\left(2, 4-8\\ln 2\\right);\\quad \\text{tangent } y=7-6x;\\quad A = \\tfrac{49}{12}",
+        "explanation": "All parts complete: the derivative, the gradient at $x=1$, the minimum, and the triangle area $\\tfrac{49}{12}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=2x-\\dfrac{8}{x}$. (b) Gradient $=-6$. (c) Minimum at $(2,\\;4-8\\ln 2)$. (d) The tangent $y=7-6x$ forms a triangle of area $\\dfrac{49}{12}$ with the axes."
+  }
+}

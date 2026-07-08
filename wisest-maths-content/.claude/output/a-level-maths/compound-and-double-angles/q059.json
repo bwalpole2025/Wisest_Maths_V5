@@ -5,74 +5,116 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "triple angle",
-    "identities",
-    "proof"
+    "double angle",
+    "quadratic",
+    "reject root"
   ],
-  "questionText": "Prove that $\\dfrac{\\sin 3\\theta}{\\sin\\theta} - \\dfrac{\\cos 3\\theta}{\\cos\\theta} \\equiv 2$.",
+  "questionText": "Solve $2\\cos 2x - 4\\sin x + 1 = 0$ for $0 \\le x \\le 2\\pi$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Use the triple angle formula for sine",
-        "workingLatex": "\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta",
-        "explanation": "The triple angle results let each fraction simplify to a polynomial in a single function.",
+        "description": "Choose the sine form of cos 2x",
+        "workingLatex": "\\cos 2x = 1 - 2\\sin^2 x",
+        "explanation": "Since the equation contains $\\sin x$, we replace $\\cos 2x$ with its sine version so everything is in terms of $\\sin x$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Simplify the first fraction",
-        "workingLatex": "\\frac{\\sin 3\\theta}{\\sin\\theta} = 3 - 4\\sin^2\\theta",
-        "explanation": "Dividing each term by $\\sin\\theta$ removes the denominator.",
+        "description": "Substitute into the equation",
+        "workingLatex": "2\\left(1 - 2\\sin^2 x\\right) - 4\\sin x + 1 = 0",
+        "explanation": "Substituting removes the double angle and leaves a single-ratio equation.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Use the triple angle formula for cosine",
-        "workingLatex": "\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta",
-        "explanation": "The matching cosine formula handles the second fraction.",
+        "description": "Expand the bracket",
+        "workingLatex": "2 - 4\\sin^2 x - 4\\sin x + 1 = 0",
+        "explanation": "Multiplying out the bracket lets us combine the constant terms next.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify the second fraction",
-        "workingLatex": "\\frac{\\cos 3\\theta}{\\cos\\theta} = 4\\cos^2\\theta - 3",
-        "explanation": "Dividing each term by $\\cos\\theta$ removes the denominator.",
+        "description": "Combine constants",
+        "workingLatex": "-4\\sin^2 x - 4\\sin x + 3 = 0",
+        "explanation": "Adding $2 + 1 = 3$ tidies the equation into a quadratic in $\\sin x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Subtract the two results",
-        "workingLatex": "(3 - 4\\sin^2\\theta) - (4\\cos^2\\theta - 3)",
-        "explanation": "Substituting both simplified fractions into the expression.",
+        "description": "Make the leading coefficient positive",
+        "workingLatex": "4\\sin^2 x + 4\\sin x - 3 = 0",
+        "explanation": "Multiplying through by $-1$ gives a positive $\\sin^2 x$ coefficient, ready for factoring.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Expand and group",
-        "workingLatex": "= 6 - 4\\sin^2\\theta - 4\\cos^2\\theta",
-        "explanation": "Combining the constants gives $6$, with the two squared terms sharing a factor of $-4$.",
+        "description": "Introduce a temporary variable",
+        "workingLatex": "4s^2 + 4s - 3 = 0, \\qquad s = \\sin x",
+        "explanation": "Writing $s = \\sin x$ highlights the quadratic and keeps the working clear.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "= 6 - 4(\\sin^2\\theta + \\cos^2\\theta) = 6 - 4",
-        "explanation": "The bracket equals $1$, so the subtraction becomes $6 - 4$.",
+        "description": "Factor the quadratic",
+        "workingLatex": "(2s - 1)(2s + 3) = 0",
+        "explanation": "These factors expand to $4s^2 + 4s - 3$, so the equation splits into two cases.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Conclude",
-        "workingLatex": "= 2 \\;\\blacksquare",
-        "explanation": "The expression simplifies to the constant $2$, as required.",
+        "description": "Read off the two roots",
+        "workingLatex": "s = \\tfrac{1}{2} \\quad \\text{or} \\quad s = -\\tfrac{3}{2}",
+        "explanation": "Setting each factor to zero gives the two possible values of $\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Reject the impossible root",
+        "workingLatex": "-1 \\le \\sin x \\le 1 \\ \\Rightarrow \\ s = -\\tfrac{3}{2} \\ \\text{is impossible}",
+        "explanation": "A sine can never be less than $-1$, so $\\sin x = -\\tfrac32$ has no solutions and is discarded. Only $\\sin x = \\tfrac12$ remains.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve sin x = 1/2 in radians",
+        "workingLatex": "\\sin x = \\tfrac{1}{2} \\ \\Rightarrow \\ x = \\tfrac{\\pi}{6},\\ \\tfrac{5\\pi}{6}",
+        "explanation": "The reference angle is $\\tfrac{\\pi}{6}$; sine is positive in the first and second quadrants, giving $\\tfrac{\\pi}{6}$ and $\\pi - \\tfrac{\\pi}{6} = \\tfrac{5\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm the interval",
+        "workingLatex": "0 \\le x \\le 2\\pi: \\quad x = \\tfrac{\\pi}{6},\\ \\tfrac{5\\pi}{6}",
+        "explanation": "Both values lie in the interval, and sine is negative elsewhere in $[0, 2\\pi]$, so there are no more solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify x = pi/6",
+        "workingLatex": "2\\cos\\tfrac{\\pi}{3} - 4\\sin\\tfrac{\\pi}{6} + 1 = 2\\left(\\tfrac12\\right) - 4\\left(\\tfrac12\\right) + 1 = 0",
+        "explanation": "With $2x = \\tfrac{\\pi}{3}$, $\\cos\\tfrac{\\pi}{3} = \\tfrac12$, so the left side is $1 - 2 + 1 = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify x = 5pi/6",
+        "workingLatex": "2\\cos\\tfrac{5\\pi}{3} - 4\\sin\\tfrac{5\\pi}{6} + 1 = 2\\left(\\tfrac12\\right) - 4\\left(\\tfrac12\\right) + 1 = 0",
+        "explanation": "With $2x = \\tfrac{5\\pi}{3}$, $\\cos\\tfrac{5\\pi}{3} = \\tfrac12$ and $\\sin\\tfrac{5\\pi}{6} = \\tfrac12$; the left side is again $0$. Both solutions are valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the solution set",
+        "workingLatex": "x = \\tfrac{\\pi}{6},\\ \\tfrac{5\\pi}{6}",
+        "explanation": "These are the only solutions in $0 \\le x \\le 2\\pi$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\sin 3\\theta}{\\sin\\theta} - \\dfrac{\\cos 3\\theta}{\\cos\\theta} \\equiv 2$"
+    "finalAnswer": "$x = \\dfrac{\\pi}{6}$ and $x = \\dfrac{5\\pi}{6}$ (the root $\\sin x = -\\tfrac32$ is rejected)."
   }
 }

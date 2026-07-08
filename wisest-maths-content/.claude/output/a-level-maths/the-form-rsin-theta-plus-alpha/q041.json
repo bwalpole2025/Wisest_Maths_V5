@@ -4,61 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "range",
-    "reciprocal"
+    "solving equations",
+    "radians"
   ],
-  "questionText": "Find the greatest and least values of $\\dfrac{1}{4 + \\sin\\theta + \\cos\\theta}$.",
+  "questionText": "Express $7\\sin\\theta - 24\\cos\\theta$ in the form $R\\sin(\\theta-\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence solve $7\\sin\\theta - 24\\cos\\theta = 15$ for $0 \\le \\theta \\le 2\\pi$, giving your answers in radians to $3$ significant figures.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the varying part in R-form",
-        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt2\\sin(\\theta + 45^\\circ)",
-        "explanation": "Combining the two terms gives amplitude $\\sqrt2$.",
+        "description": "Set up the identity",
+        "workingLatex": "7\\sin\\theta - 24\\cos\\theta \\equiv R\\sin(\\theta-\\alpha)",
+        "explanation": "The cosine term is subtracted, so the neat single-wave target is $R\\sin(\\theta-\\alpha)$. We expand and compare coefficients to pin down $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Bound the denominator",
-        "workingLatex": "4 - \\sqrt2 \\le 4 + \\sqrt2\\sin(\\theta + 45^\\circ) \\le 4 + \\sqrt2",
-        "explanation": "The sine part ranges over $[-\\sqrt2, \\sqrt2]$, shifting the denominator around $4$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta-\\alpha) = R\\cos\\alpha\\,\\sin\\theta - R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta-\\alpha)$ and distributing $R$ gives a sine term minus a cosine term, matching the layout of the expression being converted.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Note the denominator stays positive",
-        "workingLatex": "4 - \\sqrt2 \\approx 2.59 > 0",
-        "explanation": "Since the smallest denominator is positive, the fraction is always defined and positive.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 7, \\qquad R\\sin\\alpha = 24",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ and of $\\cos\\theta$ (both carry the minus) gives the two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Greatest value of the fraction",
-        "workingLatex": "\\frac{1}{4 - \\sqrt2}",
-        "explanation": "The fraction is greatest when the denominator is smallest.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{7^2 + 24^2} = \\sqrt{625} = 25",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=49+576=625$, a perfect square, so the amplitude is exactly $R=25$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Least value of the fraction",
-        "workingLatex": "\\frac{1}{4 + \\sqrt2}",
-        "explanation": "The fraction is least when the denominator is largest.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{24}{7} \\Rightarrow \\alpha = 1.287",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\dfrac{24}{7}$. Both coefficients are positive, so $\\alpha$ is acute; in radians $\\alpha=\\arctan\\dfrac{24}{7}=1.287$ to $4$ significant figures for accuracy.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the results",
-        "workingLatex": "\\text{greatest} = \\frac{1}{4 - \\sqrt2}, \\quad \\text{least} = \\frac{1}{4 + \\sqrt2}",
-        "explanation": "These exact fractions are the extreme values; rationalising is optional.",
+        "description": "State the R-form",
+        "workingLatex": "7\\sin\\theta - 24\\cos\\theta = 25\\sin(\\theta - 1.287)",
+        "explanation": "Combining amplitude and phase gives a single sine wave of amplitude $25$, so an equation equal to $15$ certainly has solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "25\\sin(\\theta-1.287) = 15 \\Rightarrow \\sin(\\theta-1.287) = 0.6",
+        "explanation": "Substituting the single-wave form and dividing by $25$ reduces the problem to a basic sine equation with value $0.6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0 \\le \\theta \\le 2\\pi \\Rightarrow -1.287 \\le \\theta - 1.287 \\le 4.996",
+        "explanation": "As we now solve for $\\theta-1.287$, we subtract $1.287$ from both ends of the interval. Note the lower end is negative, so we must look for solutions below zero too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta-1.287 = 0.6435,\\; \\pi - 0.6435 = 2.498",
+        "explanation": "The principal value $\\arcsin 0.6 = 0.6435$; sine is also positive in the second quadrant, giving $\\pi-0.6435=2.498$. Both lie in the shifted interval, and no further value obtained by adding or subtracting $2\\pi$ falls inside it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Add α to recover θ",
+        "workingLatex": "\\theta = 0.6435 + 1.287 = 1.93,\\quad \\theta = 2.498 + 1.287 = 3.79",
+        "explanation": "Adding the phase $1.287$ to each shifted angle undoes the shift. Both results lie in $0 \\le \\theta \\le 2\\pi$, so both are valid solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the solutions",
+        "workingLatex": "7\\sin(1.93) - 24\\cos(1.93) \\approx 15, \\quad 7\\sin(3.79) - 24\\cos(3.79) \\approx 15",
+        "explanation": "Substituting each answer back into the original expression returns approximately $15$, confirming both rounded solutions are correct and none is missing.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Greatest $= \\dfrac{1}{4 - \\sqrt2}$, least $= \\dfrac{1}{4 + \\sqrt2}$."
+    "finalAnswer": "$7\\sin\\theta - 24\\cos\\theta = 25\\sin(\\theta-1.287)$, and the equation has solutions $\\theta = 1.93$ and $\\theta = 3.79$ (radians, to $3$ s.f.)."
   }
 }

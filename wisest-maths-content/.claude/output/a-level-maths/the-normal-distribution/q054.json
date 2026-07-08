@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.stats.normal-distribution.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "expected number",
+    "modelling"
+  ],
+  "questionText": "The lifetimes, $X$ hours, of a brand of light bulb are modelled by $X \\sim N(\\mu, \\sigma^2)$. Testing shows that $10\\%$ of bulbs fail before $800$ hours and $75\\%$ fail before $1200$ hours. (a) Find $\\mu$ and $\\sigma$ to $3$ significant figures. (b) A shop sells a box of $500$ of these bulbs. Estimate how many will last more than $1000$ hours.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 800) = 0.10, \\qquad P(X < 1200) = 0.75",
+        "explanation": "Lifetimes are normal with unknown $\\mu$ and $\\sigma$. ‘$10\\%$ fail before $800$’ means $P(X<800)=0.10$ and ‘$75\\%$ fail before $1200$’ means $P(X<1200)=0.75$. Both are lower-tail proportions, ready to standardise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{800 - \\mu}{\\sigma}\\right) = 0.10",
+        "explanation": "Standardising the lifetime $800$ with $Z=\\dfrac{X-\\mu}{\\sigma}$ keeps the lower-tail area at $0.10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.10) = -1.2816",
+        "explanation": "A point with only $10\\%$ of the area below it lies well to the left of the mean, so the standardised value is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{800 - \\mu}{\\sigma} = -1.2816",
+        "explanation": "Equating the standardised value of $800$ with $z_1$ gives the first equation in the unknowns.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Standardise the second condition",
+        "workingLatex": "P\\left(Z < \\dfrac{1200 - \\mu}{\\sigma}\\right) = 0.75 \\ \\Rightarrow\\ z_2 = \\Phi^{-1}(0.75) = 0.6745",
+        "explanation": "The second statement is already lower-tail, so we standardise $1200$ and read off $z_2$. Because $75\\%>50\\%$, this $z$ is positive, sitting to the right of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{1200 - \\mu}{\\sigma} = 0.6745",
+        "explanation": "Equating the standardised value of $1200$ with $z_2$ gives the second simultaneous equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "1200 - 800 = (0.6745 - (-1.2816))\\,\\sigma \\ \\Rightarrow\\ 400 = 1.9561\\,\\sigma",
+        "explanation": "Writing both as ‘value $-\\ \\mu = z\\sigma$’ and subtracting removes $\\mu$; the $400$-hour gap corresponds to about $1.96$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{400}{1.9561} = 204.5",
+        "explanation": "Dividing the lifetime gap by the standardised gap gives a standard deviation of about $204$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 800 + 1.2816 \\times 204.5 = 1062",
+        "explanation": "From the first equation $\\mu = 800 + 1.2816\\,\\sigma$. The mean lifetime of about $1060$ hours sits above $800$, consistent with only $10\\%$ failing that early.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the parameters (part a)",
+        "workingLatex": "\\mu \\approx 1060, \\qquad \\sigma \\approx 204",
+        "explanation": "To three significant figures the fitted model is $X \\sim N(1060,\\ 204^2)$ hours, answering part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up part (b): probability a bulb lasts beyond 1000 hours",
+        "workingLatex": "P(X > 1000) = P\\left(Z > \\dfrac{1000 - 1060}{204}\\right)",
+        "explanation": "To estimate how many bulbs exceed $1000$ hours we first find the probability for a single bulb, standardising $1000$ with the parameters just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate the z-value",
+        "workingLatex": "z = \\dfrac{1000 - 1060}{204} = -0.294",
+        "explanation": "Since $1000$ is a little below the mean of $1060$, its standardised value is slightly negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the probability",
+        "workingLatex": "P(X > 1000) = P(Z > -0.294) = 1 - \\Phi(-0.294) = 0.6157",
+        "explanation": "The area to the right of a point just left of the mean is a bit more than a half, giving about $0.616$. By symmetry $P(Z>-0.294)=\\Phi(0.294)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Scale up to the box of 500",
+        "workingLatex": "\\text{Expected number} = 500 \\times 0.6157 = 307.8",
+        "explanation": "For $500$ independent bulbs the expected number lasting beyond $1000$ hours is the sample size multiplied by the single-bulb probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the answer",
+        "workingLatex": "\\text{Expected number} \\approx 308 \\text{ bulbs}",
+        "explanation": "Rounding to a whole number, about $308$ of the $500$ bulbs are expected to last more than $1000$ hours.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 1060$ hours, $\\sigma \\approx 204$ hours. (b) about $308$ of the $500$ bulbs."
+  }
+}

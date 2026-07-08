@@ -4,54 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
     "projectile",
-    "angle"
+    "greatest height",
+    "range"
   ],
-  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find the angle the velocity makes with the horizontal at $t = 1$, to the nearest degree.",
+  "questionText": "A firework is launched from ground level so that, $t$ seconds later, its position in metres is modelled by $x = 9t$ and $y = 20t - 5t^{2}$. Find the greatest height reached and the horizontal range (the distance from launch to where it lands).",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 20, \\quad v_y = 15 - 10t",
-        "explanation": "Differentiating each position component gives the velocity components.",
+        "description": "Differentiate the height with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 20 - 10t",
+        "explanation": "The vertical velocity $\\dot{y}$ shows how fast the firework rises; at the top it is momentarily zero.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Evaluate at t = 1",
-        "workingLatex": "v_x = 20, \\quad v_y = 15 - 10 = 5",
-        "explanation": "Substituting $t = 1$ gives the components at that instant.",
+        "description": "Set the vertical velocity to zero",
+        "workingLatex": "20 - 10t = 0",
+        "explanation": "The greatest height occurs the instant the upward motion stops, where $\\dot{y} = 0$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Relate the angle to the components",
-        "workingLatex": "\\tan\\alpha = \\frac{v_y}{v_x} = \\frac{5}{20}",
-        "explanation": "The direction of motion makes an angle $\\alpha$ with the horizontal whose tangent is the ratio of vertical to horizontal velocity.",
+        "description": "Solve for the time at the top",
+        "workingLatex": "t = \\dfrac{20}{10} = 2",
+        "explanation": "This is the time in seconds at which the firework reaches its highest point.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify",
-        "workingLatex": "\\tan\\alpha = \\frac{1}{4}",
-        "explanation": "The ratio simplifies to $\\frac{1}{4}$.",
+        "description": "Substitute into the height",
+        "workingLatex": "y = 20(2) - 5(2)^{2} = 40 - 20 = 20",
+        "explanation": "Putting the time back into $y$ gives the greatest height of $20$ m.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the angle",
-        "workingLatex": "\\alpha = \\tan^{-1}\\frac{1}{4} \\approx 14^\\circ",
-        "explanation": "The inverse tangent gives the angle above the horizontal.",
+        "description": "Set the height to zero for landing",
+        "workingLatex": "20t - 5t^{2} = 0",
+        "explanation": "The firework lands when its height returns to zero, so we solve $y = 0$ for the flight times.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise",
+        "workingLatex": "5t\\left(4 - t\\right) = 0",
+        "explanation": "Factoring out $5t$ exposes the two times at which the height is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Read off the times",
+        "workingLatex": "t = 0 \\quad \\text{or} \\quad t = 4",
+        "explanation": "$t = 0$ is the launch; the landing is at $t = 4$, so the flight lasts $4$ s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the range",
+        "workingLatex": "x = 9(4) = 36",
+        "explanation": "The horizontal range is the value of $x$ at landing, found by substituting $t = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the results",
+        "workingLatex": "y_{\\max} = 20,\\qquad \\text{range} = 36",
+        "explanation": "Collecting the answers gives the peak height and the total horizontal distance.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\alpha \\approx 14^\\circ$ above the horizontal."
+    "finalAnswer": "The greatest height is $20$ m (at $t = 2$ s), and the horizontal range is $36$ m (landing at $t = 4$ s)."
   }
 }

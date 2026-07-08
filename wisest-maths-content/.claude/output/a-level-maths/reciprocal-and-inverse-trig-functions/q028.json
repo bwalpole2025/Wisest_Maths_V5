@@ -5,68 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "equations",
-    "secant",
-    "quadratic",
-    "solving"
+    "given cot",
+    "pythagorean identity",
+    "cosec",
+    "quadrant"
   ],
-  "questionText": "Solve $\\sec^2\\theta = 4$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Given that $\\cot\\theta = -\\tfrac{5}{12}$ and that $\\theta$ lies in the second quadrant, use the identity $1 + \\cot^2\\theta \\equiv \\operatorname{cosec}^2\\theta$ to find the exact values of $\\operatorname{cosec}\\theta$ and $\\sin\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Take square roots of both sides",
-        "workingLatex": "\\sec\\theta = \\pm 2",
-        "explanation": "Since the equation involves secant squared, taking the square root introduces both a positive and a negative possibility, and both must be considered.",
+        "description": "Note the signs in the second quadrant",
+        "workingLatex": "\\text{Q2:}\\quad \\sin\\theta > 0, \\quad \\cos\\theta < 0, \\quad \\cot\\theta < 0",
+        "explanation": "In the second quadrant sine is positive and cosine is negative, so $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$ is negative. A negative $\\cot\\theta = -\\tfrac{5}{12}$ is consistent with this.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Convert to cosine",
-        "workingLatex": "\\frac{1}{\\cos\\theta} = \\pm 2 \\;\\Rightarrow\\; \\cos\\theta = \\pm\\frac{1}{2}",
-        "explanation": "Rewriting in cosine gives cosine equal to plus or minus one half, a set of standard values.",
+        "description": "State the identity linking cot and cosec",
+        "workingLatex": "\\operatorname{cosec}^2\\theta = 1 + \\cot^2\\theta",
+        "explanation": "This Pythagorean identity connects the given $\\cot\\theta$ directly to $\\operatorname{cosec}\\theta$, which is what we need.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Solve the positive case",
-        "workingLatex": "\\cos\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 60^\\circ, 300^\\circ",
-        "explanation": "Cosine is one half at $60^\\circ$ and at $300^\\circ$ (the fourth-quadrant partner), both positive-cosine solutions.",
+        "description": "Substitute the value of cot",
+        "workingLatex": "\\operatorname{cosec}^2\\theta = 1 + \\left(-\\tfrac{5}{12}\\right)^2 = 1 + \\tfrac{25}{144}",
+        "explanation": "Squaring the given cotangent removes its sign and gives a fraction we can add to $1$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve the negative case",
-        "workingLatex": "\\cos\\theta = -\\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 120^\\circ, 240^\\circ",
-        "explanation": "Cosine is negative one half at $120^\\circ$ and $240^\\circ$, the two second- and third-quadrant solutions.",
+        "description": "Simplify the right-hand side",
+        "workingLatex": "\\operatorname{cosec}^2\\theta = \\tfrac{144}{144} + \\tfrac{25}{144} = \\tfrac{169}{144}",
+        "explanation": "Writing $1$ as $\\tfrac{144}{144}$ lets us add the fractions to a single value that is a perfect square over a perfect square.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 60^\\circ, 120^\\circ, 240^\\circ, 300^\\circ",
-        "explanation": "Combining both cases gives four solutions, evenly spaced, as expected from a squared equation.",
+        "description": "Take the square root",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\pm\\sqrt{\\tfrac{169}{144}} = \\pm\\tfrac{13}{12}",
+        "explanation": "Both roots are possible after squaring, so we hold on to the $\\pm$ until the quadrant tells us the sign.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check all lie in the interval",
-        "workingLatex": "\\text{all four} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "Every solution falls within the required range, so all are kept.",
+        "description": "Choose the sign from the quadrant",
+        "workingLatex": "\\sin\\theta > 0 \\ \\Rightarrow\\ \\operatorname{cosec}\\theta > 0 \\ \\Rightarrow\\ \\operatorname{cosec}\\theta = \\tfrac{13}{12}",
+        "explanation": "Sine is positive in the second quadrant and cosecant is its reciprocal, so cosecant is positive too. This selects the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Verify one solution",
-        "workingLatex": "\\sec^2 120^\\circ = \\left(\\tfrac{1}{-1/2}\\right)^2 = (-2)^2 = 4 \\;\\checkmark",
-        "explanation": "Substituting $120^\\circ$ back gives $4$, confirming the negative-case solutions are valid.",
+        "description": "Find sin from cosec",
+        "workingLatex": "\\sin\\theta = \\frac{1}{\\operatorname{cosec}\\theta} = \\frac{1}{\\tfrac{13}{12}} = \\tfrac{12}{13}",
+        "explanation": "Sine is the reciprocal of cosecant, so we flip the fraction. It is positive, as expected in this quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find cos to prepare a check",
+        "workingLatex": "\\cos\\theta = \\cot\\theta\\cdot\\sin\\theta = \\left(-\\tfrac{5}{12}\\right)\\cdot\\tfrac{12}{13} = -\\tfrac{5}{13}",
+        "explanation": "Rearranging $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$ gives $\\cos\\theta = \\cot\\theta\\sin\\theta$. The result is negative, matching a second-quadrant cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Verify with sin^2 + cos^2 = 1",
+        "workingLatex": "\\left(\\tfrac{12}{13}\\right)^2 + \\left(-\\tfrac{5}{13}\\right)^2 = \\tfrac{144}{169} + \\tfrac{25}{169} = 1",
+        "explanation": "The squares of the sine and cosine add to $1$, confirming that our cosecant and sine are consistent with a genuine angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\tfrac{13}{12}, \\qquad \\sin\\theta = \\tfrac{12}{13}",
+        "explanation": "The identity gave the magnitudes and the quadrant fixed the signs, completing the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 60^\\circ, 120^\\circ, 240^\\circ, 300^\\circ$"
+    "finalAnswer": "$\\operatorname{cosec}\\theta = \\tfrac{13}{12}$ and $\\sin\\theta = \\tfrac{12}{13}$."
   }
 }

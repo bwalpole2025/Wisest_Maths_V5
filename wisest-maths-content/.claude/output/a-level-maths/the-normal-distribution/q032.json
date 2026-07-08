@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "quartile"
+  ],
+  "questionText": "Scores, $X$, on a standardised aptitude test in a large population are modelled by $X \\sim N(100, 15^2)$. Find the score that is exceeded by only $25\\%$ of the population (the upper quartile), giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the condition",
+        "workingLatex": "X \\sim N(100,\\ 15^2), \\qquad P(X > a) = 0.25",
+        "explanation": "Scores are normal with mean $\\mu = 100$ and standard deviation $\\sigma = 15$. The upper quartile $a$ is the score exceeded by the top $25\\%$, so $P(X > a) = 0.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Convert to a lower-tail probability",
+        "workingLatex": "P(X < a) = 1 - 0.25 = 0.75",
+        "explanation": "The inverse-normal reads areas to the left, so we rewrite: if $25\\%$ of scores exceed $a$, then $75\\%$ fall below it, giving $P(X < a) = 0.75$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the $z$-value for the 75th percentile",
+        "workingLatex": "z = \\Phi^{-1}(0.75) = 0.6745",
+        "explanation": "The standardised value with $75\\%$ of the area to its left is $z = 0.6745$. It is positive because the upper quartile sits above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the standardisation equation",
+        "workingLatex": "\\dfrac{a - 100}{15} = 0.6745",
+        "explanation": "Standardising the unknown score $a$ must reproduce this $z$-value, so we equate the two expressions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange the standardisation formula",
+        "workingLatex": "a = \\mu + \\sigma z",
+        "explanation": "Multiplying both sides by $\\sigma$ and adding $\\mu$ makes $a$ the subject — the general rule for turning a $z$-value back into a score.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the known values",
+        "workingLatex": "a = 100 + 15 \\times 0.6745",
+        "explanation": "Putting in the mean $100$, the standard deviation $15$ and the $z$-value $0.6745$ gives the score in the original units.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the value",
+        "workingLatex": "a = 100 + 10.12 = 110.12",
+        "explanation": "The arithmetic gives a score of about $110.12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "a \\approx 110",
+        "explanation": "Rounding gives the upper quartile — the score exceeded by only the top $25\\%$ of the population.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sanity check the result",
+        "workingLatex": "110 > 100 = \\mu",
+        "explanation": "The score lies above the mean of $100$, which is exactly right for an upper quartile: three quarters of the population score below it and only a quarter score above.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a \\approx 110$ (3 s.f.) — the upper quartile score, exceeded by $25\\%$ of the population."
+  }
+}

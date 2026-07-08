@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "stationary points",
+    "second derivative",
+    "trigonometry"
+  ],
+  "questionText": "The curve $y = x + 2\\cos x$ is defined for $0 \\le x \\le 2\\pi$, where $x$ is in radians. Find the exact coordinates of the stationary points and use the second derivative to classify each as a maximum or a minimum.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = 1 - 2\\sin x",
+        "explanation": "Using $\\dfrac{d}{dx}(x)=1$ and $\\dfrac{d}{dx}(\\cos x)=-\\sin x$ (with $x$ in radians), so the $2\\cos x$ term gives $-2\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the derivative to zero",
+        "workingLatex": "1 - 2\\sin x = 0 \\Rightarrow \\sin x = \\tfrac{1}{2}",
+        "explanation": "Stationary points occur where the gradient is zero, giving an equation for $\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for x in the interval",
+        "workingLatex": "x \\in [0, 2\\pi]:\\quad x = \\frac{\\pi}{6}, \\ \\frac{5\\pi}{6}",
+        "explanation": "The reference angle is $\\tfrac{\\pi}{6}$; sine is positive in the first and second quadrants, giving these two solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the y-coordinate at x = pi/6",
+        "workingLatex": "y = \\tfrac{\\pi}{6} + 2\\cos\\tfrac{\\pi}{6} = \\tfrac{\\pi}{6} + 2\\cdot\\tfrac{\\sqrt{3}}{2} = \\tfrac{\\pi}{6} + \\sqrt{3}",
+        "explanation": "Substituting into the curve with $\\cos\\tfrac{\\pi}{6}=\\tfrac{\\sqrt{3}}{2}$ gives the exact height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate at x = 5pi/6",
+        "workingLatex": "y = \\tfrac{5\\pi}{6} + 2\\cos\\tfrac{5\\pi}{6} = \\tfrac{5\\pi}{6} + 2\\left(-\\tfrac{\\sqrt{3}}{2}\\right) = \\tfrac{5\\pi}{6} - \\sqrt{3}",
+        "explanation": "Here $\\cos\\tfrac{5\\pi}{6}=-\\tfrac{\\sqrt{3}}{2}$, giving the exact height at the second stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Differentiate again for the second derivative",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = -2\\cos x",
+        "explanation": "Differentiating $1 - 2\\sin x$ uses $\\dfrac{d}{dx}(\\sin x)=\\cos x$; the constant differentiates to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Classify the point at x = pi/6",
+        "workingLatex": "x=\\tfrac{\\pi}{6}:\\ -2\\cos\\tfrac{\\pi}{6} = -2\\cdot\\tfrac{\\sqrt{3}}{2} = -\\sqrt{3} < 0 \\Rightarrow \\text{maximum}",
+        "explanation": "A negative second derivative means the curve bends downward, so this point is a local maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Classify the point at x = 5pi/6",
+        "workingLatex": "x=\\tfrac{5\\pi}{6}:\\ -2\\cos\\tfrac{5\\pi}{6} = -2\\left(-\\tfrac{\\sqrt{3}}{2}\\right) = \\sqrt{3} > 0 \\Rightarrow \\text{minimum}",
+        "explanation": "A positive second derivative means the curve bends upward, so this point is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the two stationary points",
+        "workingLatex": "\\text{max } \\left(\\tfrac{\\pi}{6},\\ \\tfrac{\\pi}{6}+\\sqrt{3}\\right), \\quad \\text{min } \\left(\\tfrac{5\\pi}{6},\\ \\tfrac{5\\pi}{6}-\\sqrt{3}\\right)",
+        "explanation": "Collecting the coordinates with their classifications gives the exact stationary points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Numerical value of the maximum",
+        "workingLatex": "\\left(\\tfrac{\\pi}{6},\\ \\tfrac{\\pi}{6}+\\sqrt{3}\\right) \\approx (0.524,\\ 2.256)",
+        "explanation": "Evaluating as decimals gives a sensible high point near the start of the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Numerical value of the minimum",
+        "workingLatex": "\\left(\\tfrac{5\\pi}{6},\\ \\tfrac{5\\pi}{6}-\\sqrt{3}\\right) \\approx (2.618,\\ 0.886)",
+        "explanation": "The minimum sits lower and to the right of the maximum, consistent with the shape.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the gradient is zero at x = pi/6",
+        "workingLatex": "1 - 2\\sin\\tfrac{\\pi}{6} = 1 - 2\\cdot\\tfrac{1}{2} = 0 \\;\\checkmark",
+        "explanation": "Substituting back confirms the derivative vanishes at the maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify the gradient is zero at x = 5pi/6",
+        "workingLatex": "1 - 2\\sin\\tfrac{5\\pi}{6} = 1 - 2\\cdot\\tfrac{1}{2} = 0 \\;\\checkmark",
+        "explanation": "Likewise the derivative vanishes at the minimum, confirming both stationary points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "\\text{Max at } \\left(\\tfrac{\\pi}{6},\\ \\tfrac{\\pi}{6}+\\sqrt{3}\\right); \\quad \\text{Min at } \\left(\\tfrac{5\\pi}{6},\\ \\tfrac{5\\pi}{6}-\\sqrt{3}\\right)",
+        "explanation": "This gives the exact coordinates and correct classification of each stationary point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum at $\\left(\\tfrac{\\pi}{6},\\ \\tfrac{\\pi}{6}+\\sqrt{3}\\right) \\approx (0.524,\\,2.256)$ and minimum at $\\left(\\tfrac{5\\pi}{6},\\ \\tfrac{5\\pi}{6}-\\sqrt{3}\\right) \\approx (2.618,\\,0.886)$."
+  }
+}

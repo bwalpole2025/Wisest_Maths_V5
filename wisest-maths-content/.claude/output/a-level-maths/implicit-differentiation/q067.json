@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.implicit.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "trigonometry",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $\\sin x + \\sin y = 1$, for $0 \\le x \\le \\pi$ and $0 \\le y \\le \\pi$. (a) Find $\\frac{dy}{dx}$ in terms of $x$ and $y$. (b) Find an equation of the tangent to $C$ at the point $\\left(\\frac{\\pi}{6}, \\frac{\\pi}{6}\\right)$. (c) Find the coordinates of the points on $C$ at which the tangent is horizontal. (d) Find the coordinates of the points on $C$ at which the tangent is vertical.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(\\sin x) + \\frac{d}{dx}(\\sin y) = \\frac{d}{dx}(1)",
+        "explanation": "We differentiate the whole equation, treating $y$ as a function of $x$; the constant $1$ gives $0$. All angles are in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the chain rule to sin y",
+        "workingLatex": "\\cos x + \\cos y\\,\\frac{dy}{dx} = 0",
+        "explanation": "The term $\\sin x$ differentiates to $\\cos x$; the term $\\sin y$ differentiates to $\\cos y$ times $\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{\\cos x}{\\cos y}",
+        "explanation": "Isolating the derivative gives the gradient in terms of $x$ and $y$. This answers part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the point lies on C",
+        "workingLatex": "\\sin\\tfrac{\\pi}{6} + \\sin\\tfrac{\\pi}{6} = \\tfrac{1}{2} + \\tfrac{1}{2} = 1",
+        "explanation": "Since $\\sin\\frac{\\pi}{6}=\\frac12$, the point $\\left(\\frac{\\pi}{6},\\frac{\\pi}{6}\\right)$ satisfies the equation and lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the gradient at the point",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(\\pi/6,\\,\\pi/6)} = -\\frac{\\cos(\\pi/6)}{\\cos(\\pi/6)} = -1",
+        "explanation": "The numerator and denominator are equal, so the tangent gradient is $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the tangent at the point",
+        "workingLatex": "y - \\tfrac{\\pi}{6} = -1\\left(x - \\tfrac{\\pi}{6}\\right) \\;\\Rightarrow\\; x + y = \\tfrac{\\pi}{3}",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=-1$ gives the tangent, which simplifies to $x+y=\\frac{\\pi}{3}$. This answers part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; \\cos x = 0",
+        "explanation": "A horizontal tangent has gradient $0$, so the numerator $\\cos x$ must be zero (with $\\cos y\\neq0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for x in the given range",
+        "workingLatex": "x = \\tfrac{\\pi}{2}",
+        "explanation": "In $0\\le x\\le\\pi$, the only solution of $\\cos x=0$ is $x=\\frac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the corresponding y",
+        "workingLatex": "\\sin\\tfrac{\\pi}{2} + \\sin y = 1 \\;\\Rightarrow\\; 1 + \\sin y = 1 \\;\\Rightarrow\\; \\sin y = 0",
+        "explanation": "Substituting $x=\\frac{\\pi}{2}$ (so $\\sin x=1$) into the curve forces $\\sin y=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the horizontal-tangent points",
+        "workingLatex": "\\sin y = 0 ;\\Rightarrow; y = 0 \\text{ or } y = \\pi ;\\Rightarrow; \\left(\\tfrac{\\pi}{2}, 0\\right),; \\left(\\tfrac{\\pi}{2}, \\pi\\right)",
+        "explanation": "In the closed range $0\\le y\\le\\pi$, $\\sin y=0$ has TWO solutions, $y=0$ and $y=\\pi$. At both, $\\cos y=\\pm1\\neq0$, so each gives a genuine horizontal tangent — the bottom and top of the curve. This answers part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the vertical tangent condition",
+        "workingLatex": "\\text{vertical tangent} \\;\\Rightarrow\\; \\cos y = 0",
+        "explanation": "A vertical tangent occurs where $\\frac{dy}{dx}$ is undefined, i.e. where the denominator $\\cos y$ is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for y in the given range",
+        "workingLatex": "y = \\tfrac{\\pi}{2}",
+        "explanation": "In $0\\le y\\le\\pi$, the only solution of $\\cos y=0$ is $y=\\frac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the corresponding x",
+        "workingLatex": "\\sin x + \\sin\\tfrac{\\pi}{2} = 1 ;\\Rightarrow; \\sin x = 0 ;\\Rightarrow; x = 0 \\text{ or } x = \\pi",
+        "explanation": "Substituting $y=\\frac{\\pi}{2}$ (so $\\sin y=1$) forces $\\sin x=0$. In the closed range $0\\le x\\le\\pi$ this has TWO solutions, $x=0$ and $x=\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the vertical-tangent points",
+        "workingLatex": "\\left(0, \\tfrac{\\pi}{2}\\right),; \\left(\\pi, \\tfrac{\\pi}{2}\\right)",
+        "explanation": "At both points $\\cos x=\\pm1\\neq0$ while $\\cos y=0$, so the tangent is vertical at each — the left and right extremes of the curve. This answers part (d).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = -\\frac{\\cos x}{\\cos y}$; (b) tangent $x + y = \\frac{\\pi}{3}$; (c) horizontal tangents at $\\left(\\frac{\\pi}{2}, 0\\right)$ and $\\left(\\frac{\\pi}{2}, \\pi\\right)$; (d) vertical tangents at $\\left(0, \\frac{\\pi}{2}\\right)$ and $\\left(\\pi, \\frac{\\pi}{2}\\right)$."
+  }
+}

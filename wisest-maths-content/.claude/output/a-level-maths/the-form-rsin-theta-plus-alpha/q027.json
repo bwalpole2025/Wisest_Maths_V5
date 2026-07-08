@@ -1,64 +1,99 @@
 {
-  "id": "al.y2.pure.rsin-form.q027",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 7,
+  "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q027",
+  "marks": 5,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "radians"
+    "maximum and minimum"
   ],
-  "questionText": "Solve $\\sin\\theta - \\cos\\theta = 1$ for $0 \\le \\theta < 2\\pi$, using the form $R\\sin(\\theta - \\alpha)$.",
-  "questionDiagram": null,
+  "questionText": "The function is defined by $f(\\theta) = 8\\sin\\theta + 5\\cos\\theta + 2$ for $0^\\circ \\le \\theta \\le 360^\\circ$. By first writing $8\\sin\\theta + 5\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$ with $R>0$ and $0^\\circ < \\alpha < 90^\\circ$, find the maximum and minimum values of $f(\\theta)$ and the value of $\\theta$ at which the maximum occurs. Give non-exact answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt2, \\quad \\tan\\alpha = 1 \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{4}",
-        "explanation": "Equal components give $R = \\sqrt2$ and phase $\\frac{\\pi}{4}$.",
+        "description": "Set up the identity",
+        "workingLatex": "8\\sin\\theta + 5\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We only need to rewrite the wave part; the constant $+2$ simply slides the whole graph up and can be added back at the end. Writing the wave as $R\\sin(\\theta+\\alpha)$ exposes its amplitude directly.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the harmonic form",
-        "workingLatex": "\\sin\\theta - \\cos\\theta = \\sqrt2\\sin\\left(\\theta - \\frac{\\pi}{4}\\right)",
-        "explanation": "The difference becomes a single sine with a phase shift.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with the compound-angle formula puts the target in the same $\\sin\\theta$-and-$\\cos\\theta$ form as the expression we are matching.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rewrite the equation",
-        "workingLatex": "\\sqrt2\\sin\\left(\\theta - \\frac{\\pi}{4}\\right) = 1 \\;\\Rightarrow\\; \\sin\\left(\\theta - \\frac{\\pi}{4}\\right) = \\frac{1}{\\sqrt2}",
-        "explanation": "Dividing by $\\sqrt2$ gives a recognisable exact value.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 8, \\qquad R\\sin\\alpha = 5",
+        "explanation": "Matching the $\\sin\\theta$ terms and then the $\\cos\\theta$ terms gives these two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the shifted interval",
-        "workingLatex": "-\\frac{\\pi}{4} \\le \\theta - \\frac{\\pi}{4} < \\frac{7\\pi}{4}",
-        "explanation": "Subtracting $\\frac{\\pi}{4}$ from the bounds.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{8^2 + 5^2} = \\sqrt{89}",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2=64+25=89$. The amplitude of the wave is therefore $\\sqrt{89}\\approx 9.434$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - \\frac{\\pi}{4} = \\frac{\\pi}{4}, \\frac{3\\pi}{4}",
-        "explanation": "Sine $\\frac{1}{\\sqrt2}$ occurs at $\\frac{\\pi}{4}$ and $\\frac{3\\pi}{4}$ within the interval.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{5}{8} \\Rightarrow \\alpha = 32.0^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{5}{8}$, and since both coefficients are positive the acute angle is $\\alpha=32.0^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Add the shift",
-        "workingLatex": "\\theta = \\frac{\\pi}{2}, \\pi",
-        "explanation": "Adding $\\frac{\\pi}{4}$ to each gives the solutions.",
+        "description": "Rewrite f in R-form",
+        "workingLatex": "f(\\theta) = \\sqrt{89}\\,\\sin(\\theta+32.0^\\circ) + 2",
+        "explanation": "Now the whole function is a single sine wave of amplitude $\\sqrt{89}$ lifted by $2$. Its high and low points are now easy to read off without any calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the range of sine",
+        "workingLatex": "-1 \\le \\sin(\\theta+32.0^\\circ) \\le 1",
+        "explanation": "A sine never exceeds $1$ or drops below $-1$. Multiplying by the positive amplitude $\\sqrt{89}$ and adding $2$ scales and shifts these bounds into the bounds for $f$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Maximum value",
+        "workingLatex": "f_{\\max} = \\sqrt{89} + 2 \\approx 11.4",
+        "explanation": "The largest value occurs when the sine hits its top value of $1$, giving $\\sqrt{89}\\times 1 + 2 = 2+\\sqrt{89}\\approx 11.4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Where the maximum occurs",
+        "workingLatex": "\\theta+32.0^\\circ = 90^\\circ \\Rightarrow \\theta = 58.0^\\circ",
+        "explanation": "The sine equals $1$ when its angle is $90^\\circ$. Setting $\\theta+32.0^\\circ=90^\\circ$ and solving gives $\\theta=58.0^\\circ$, which lies in the required interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Minimum value",
+        "workingLatex": "f_{\\min} = 2 - \\sqrt{89} \\approx -7.4",
+        "explanation": "The smallest value occurs when the sine reaches $-1$, giving $\\sqrt{89}\\times(-1)+2 = 2-\\sqrt{89}\\approx -7.4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the range",
+        "workingLatex": "-7.4 \\le f(\\theta) \\le 11.4",
+        "explanation": "Because $f$ is a single continuous wave, it takes every value between its minimum and maximum, so its outputs fill the interval $[2-\\sqrt{89},\\,2+\\sqrt{89}]$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = \\dfrac{\\pi}{2}, \\pi$"
+    "finalAnswer": "$f(\\theta)=\\sqrt{89}\\,\\sin(\\theta+32.0^\\circ)+2$; the maximum value is $2+\\sqrt{89}\\approx 11.4$ (at $\\theta=58.0^\\circ$) and the minimum value is $2-\\sqrt{89}\\approx -7.4$."
   }
 }

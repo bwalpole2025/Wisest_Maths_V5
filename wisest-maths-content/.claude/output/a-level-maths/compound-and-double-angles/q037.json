@@ -5,61 +5,95 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 6,
+  "marks": 5,
   "answerType": "proof",
   "tags": [
     "double angle",
-    "identities",
     "proof",
-    "secant"
+    "reciprocal trig"
   ],
-  "questionText": "Prove that $\\dfrac{\\sin 2\\theta}{\\sin\\theta} - \\dfrac{\\cos 2\\theta}{\\cos\\theta} \\equiv \\sec\\theta$.",
+  "questionText": "Prove the identity $\\cot\\theta - \\tan\\theta \\equiv 2\\cot 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Simplify the first fraction",
-        "workingLatex": "\\frac{\\sin 2\\theta}{\\sin\\theta} = \\frac{2\\sin\\theta\\cos\\theta}{\\sin\\theta} = 2\\cos\\theta",
-        "explanation": "Expanding $\\sin 2\\theta$ and cancelling the sine gives a clean $2\\cos\\theta$.",
+        "description": "State the LHS and the plan",
+        "workingLatex": "\\text{LHS} = \\cot\\theta - \\tan\\theta",
+        "explanation": "We work from the left-hand side. The plan is to write both terms in sine and cosine, combine them over one denominator, then recognise the double-angle expressions that appear.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Choose a helpful form for the second fraction",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
-        "explanation": "This form divides neatly by cosine, producing a secant term.",
+        "description": "Write in terms of sine and cosine",
+        "workingLatex": "\\cot\\theta - \\tan\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta} - \\dfrac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Since $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$ and $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$, converting lets us combine the two fractions.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the second fraction",
-        "workingLatex": "\\frac{\\cos 2\\theta}{\\cos\\theta} = \\frac{2\\cos^2\\theta - 1}{\\cos\\theta} = 2\\cos\\theta - \\frac{1}{\\cos\\theta}",
-        "explanation": "Splitting the fraction gives $2\\cos\\theta$ minus one over cosine.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\dfrac{\\cos\\theta\\cos\\theta - \\sin\\theta\\sin\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "The common denominator is $\\sin\\theta\\cos\\theta$; each numerator is scaled accordingly and the fractions subtract into one.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Subtract the two results",
-        "workingLatex": "2\\cos\\theta - \\left(2\\cos\\theta - \\frac{1}{\\cos\\theta}\\right)",
-        "explanation": "Substituting both simplified fractions into the original expression.",
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\dfrac{\\cos^2\\theta - \\sin^2\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "Writing the products as squares tidies the numerator and reveals a familiar double-angle pattern.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Cancel the common term",
-        "workingLatex": "= \\frac{1}{\\cos\\theta}",
-        "explanation": "The $2\\cos\\theta$ terms cancel, leaving one over cosine.",
+        "description": "Identify the numerator as cos 2theta",
+        "workingLatex": "\\cos^2\\theta - \\sin^2\\theta = \\cos 2\\theta",
+        "explanation": "This is exactly the cosine double-angle formula, so the numerator is $\\cos 2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Recognise the result",
-        "workingLatex": "= \\sec\\theta \\;\\blacksquare",
-        "explanation": "One over cosine is secant, matching the right-hand side and completing the proof.",
+        "description": "Rewrite the denominator with a double angle",
+        "workingLatex": "\\sin\\theta\\cos\\theta = \\tfrac{1}{2}\\sin 2\\theta",
+        "explanation": "Because $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$, halving both sides shows $\\sin\\theta\\cos\\theta = \\tfrac{1}{2}\\sin 2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute both double-angle forms",
+        "workingLatex": "\\dfrac{\\cos^2\\theta - \\sin^2\\theta}{\\sin\\theta\\cos\\theta} = \\dfrac{\\cos 2\\theta}{\\tfrac{1}{2}\\sin 2\\theta}",
+        "explanation": "Replacing the numerator and denominator turns the whole expression into a ratio of double-angle functions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify the compound fraction",
+        "workingLatex": "\\dfrac{\\cos 2\\theta}{\\tfrac{1}{2}\\sin 2\\theta} = \\dfrac{2\\cos 2\\theta}{\\sin 2\\theta}",
+        "explanation": "Dividing by $\\tfrac{1}{2}$ is the same as multiplying by $2$, which clears the fraction in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Recognise the cotangent",
+        "workingLatex": "\\dfrac{2\\cos 2\\theta}{\\sin 2\\theta} = 2\\cot 2\\theta",
+        "explanation": "Since $\\dfrac{\\cos 2\\theta}{\\sin 2\\theta} = \\cot 2\\theta$, the expression is $2\\cot 2\\theta$, the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\cot 30^\\circ - \\tan 30^\\circ = \\sqrt3 - \\dfrac{1}{\\sqrt3} = \\dfrac{2}{\\sqrt3} = 2\\cot 60^\\circ",
+        "explanation": "At $\\theta = 30^\\circ$ both sides equal $\\dfrac{2}{\\sqrt3}$, consistent with the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Conclude the proof",
+        "workingLatex": "\\cot\\theta - \\tan\\theta \\equiv 2\\cot 2\\theta \\quad \\blacksquare",
+        "explanation": "The LHS reduces to the RHS for all valid $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\sin 2\\theta}{\\sin\\theta} - \\dfrac{\\cos 2\\theta}{\\cos\\theta} \\equiv \\sec\\theta$"
+    "finalAnswer": "Combining $\\dfrac{\\cos\\theta}{\\sin\\theta} - \\dfrac{\\sin\\theta}{\\cos\\theta}$ gives $\\dfrac{\\cos 2\\theta}{\\tfrac{1}{2}\\sin 2\\theta} = \\dfrac{2\\cos 2\\theta}{\\sin 2\\theta} = 2\\cot 2\\theta$, so $\\cot\\theta - \\tan\\theta \\equiv 2\\cot 2\\theta$."
   }
 }

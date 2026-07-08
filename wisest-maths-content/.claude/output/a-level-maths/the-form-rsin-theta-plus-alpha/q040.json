@@ -4,68 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
+  "difficulty": "Intermediate",
+  "marks": 5,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "cosine"
+    "cosine form",
+    "greatest and least"
   ],
-  "questionText": "Express $5\\cos\\theta - 2\\sin\\theta$ as $R\\cos(\\theta + \\alpha)$ and hence solve $5\\cos\\theta - 2\\sin\\theta = 3$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionText": "Express $4\\cos\\theta + 3\\sin\\theta$ in the form $R\\cos(\\theta-\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence find the greatest and least values of $4\\cos\\theta + 3\\sin\\theta - 2$, and the value of $\\theta$ in $0 \\le \\theta \\le 2\\pi$ at which the greatest value occurs. Give the angle in radians to $3$ significant figures.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the target form",
-        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
-        "explanation": "The cosine form matches the given expression with its minus sign.",
+        "description": "Set up the identity",
+        "workingLatex": "4\\cos\\theta + 3\\sin\\theta \\equiv R\\cos(\\theta-\\alpha)",
+        "explanation": "A cosine plus a sine matches the expansion of $R\\cos(\\theta-\\alpha)$, which is a cosine term plus a sine term. Turning the pair into one wave makes the greatest and least values immediate.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 5, \\quad R\\sin\\alpha = 2",
-        "explanation": "Matching the cosine and sine terms.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\cos(\\theta-\\alpha) = R\\cos\\alpha\\,\\cos\\theta + R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta-\\alpha)=\\cos\\theta\\cos\\alpha+\\sin\\theta\\sin\\alpha$ and distributing $R$ gives a cosine term plus a sine term, ready to compare.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{29}, \\quad \\tan\\alpha = \\frac{2}{5} \\;\\Rightarrow\\; \\alpha \\approx 21.80^\\circ",
-        "explanation": "The amplitude is $\\sqrt{29}$ and the phase about $21.80^\\circ$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 4, \\qquad R\\sin\\alpha = 3",
+        "explanation": "Matching the coefficient of $\\cos\\theta$ gives $R\\cos\\alpha=4$, and matching the coefficient of $\\sin\\theta$ gives $R\\sin\\alpha=3$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write the harmonic form",
-        "workingLatex": "5\\cos\\theta - 2\\sin\\theta = \\sqrt{29}\\cos(\\theta + 21.80^\\circ)",
-        "explanation": "Combining gives the single-cosine form.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{4^2 + 3^2} = \\sqrt{25} = 5",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=16+9=25$, so the amplitude is exactly $R=5$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set up the equation",
-        "workingLatex": "\\cos(\\theta + 21.80^\\circ) = \\frac{3}{\\sqrt{29}} \\approx 0.557",
-        "explanation": "Dividing by $\\sqrt{29}$ gives the cosine value.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{3}{4} \\Rightarrow \\alpha = 0.644",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\dfrac{3}{4}$. Both coefficients are positive so $\\alpha$ is acute; in radians $\\alpha=\\arctan\\dfrac{3}{4}=0.644$ to $3$ significant figures.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve within the shifted interval",
-        "workingLatex": "\\theta + 21.80^\\circ = 56.15^\\circ, 303.85^\\circ",
-        "explanation": "Within $[21.80^\\circ, 381.80^\\circ)$, cosine $0.557$ occurs at these two angles.",
+        "description": "State the R-form",
+        "workingLatex": "4\\cos\\theta + 3\\sin\\theta = 5\\cos(\\theta - 0.6435)",
+        "explanation": "Keeping extra accuracy in the phase, the expression is one cosine wave of amplitude $5$, so on its own it swings between $-5$ and $5$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Subtract the shift and round",
-        "workingLatex": "\\theta \\approx 34^\\circ, 282^\\circ",
-        "explanation": "Subtracting the phase and rounding gives the solutions.",
+        "description": "Bound the cosine term",
+        "workingLatex": "-1 \\le \\cos(\\theta - 0.6435) \\le 1",
+        "explanation": "A cosine, whatever its argument, stays between $-1$ and $1$, and reaches both limits as $\\theta$ runs over a full revolution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the greatest value",
+        "workingLatex": "\\text{greatest} = 5(1) - 2 = 3",
+        "explanation": "Subtracting $2$ throughout, the expression is greatest when the cosine equals $+1$. Then $5(1)-2=3$, so the greatest value is $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find θ for the greatest value",
+        "workingLatex": "\\theta - 0.6435 = 0 \\Rightarrow \\theta = 0.6435 = 0.644",
+        "explanation": "A cosine equals $+1$ when its angle is $0$. So $\\theta-0.6435=0$ gives $\\theta=0.644$, which lies in $0 \\le \\theta \\le 2\\pi$ and is where the greatest value occurs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the least value",
+        "workingLatex": "\\text{least} = 5(-1) - 2 = -7",
+        "explanation": "The expression is least when the cosine equals $-1$. Then $5(-1)-2=-7$, so the least value is $-7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Note where the least value occurs",
+        "workingLatex": "\\theta - 0.6435 = \\pi \\Rightarrow \\theta = \\pi + 0.6435 = 3.79",
+        "explanation": "For completeness, the cosine equals $-1$ when its angle is $\\pi$, giving $\\theta=3.79$; this confirms the least value $-7$ is indeed attained inside the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 34^\\circ, 282^\\circ$"
+    "finalAnswer": "$4\\cos\\theta + 3\\sin\\theta = 5\\cos(\\theta-0.644)$. The greatest value is $3$ (at $\\theta = 0.644$ radians) and the least value is $-7$ (to $3$ s.f.)."
   }
 }

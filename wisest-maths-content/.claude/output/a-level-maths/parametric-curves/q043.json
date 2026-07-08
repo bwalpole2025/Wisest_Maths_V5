@@ -6,52 +6,87 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "value",
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "coordinates",
-    "trig"
+    "intersection",
+    "valid parameter",
+    "straight line"
   ],
-  "questionText": "A curve has parametric equations $x = 2\\cos\\theta$, $y = 2\\sin\\theta$. Find the coordinates of the points on the curve where $x = 1$.",
+  "questionText": "A curve is given parametrically by $x = t^{2}$ and $y = t + 1$, where $t \\ge 0$. The line $y = x - 5$ crosses the curve. Find the coordinates of the point of intersection.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Solve for the parameter",
-        "workingLatex": "2\\cos\\theta = 1 \\;\\Rightarrow\\; \\cos\\theta = \\frac{1}{2}",
-        "explanation": "Setting the $x$-equation equal to $1$ gives a cosine equation.",
+        "description": "Note the curve and the line",
+        "workingLatex": "\\text{Curve: } x = t^{2},\\ y = t + 1 \\qquad \\text{Line: } y = x - 5",
+        "explanation": "To find where they meet we force the curve's coordinates to satisfy the line, so we will substitute the parametric $x$ and $y$ into the line equation.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the angles",
-        "workingLatex": "\\theta = \\frac{\\pi}{3} \\text{ or } \\theta = -\\frac{\\pi}{3} \\;(=\\tfrac{5\\pi}{3})",
-        "explanation": "Cosine one half occurs at these angles, giving two points.",
+        "description": "Substitute into the line equation",
+        "workingLatex": "t + 1 = t^{2} - 5",
+        "explanation": "At any intersection the coordinates fit the line, so replacing $x$ with $t^{2}$ and $y$ with $t + 1$ gives one equation in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find y for the first angle",
-        "workingLatex": "y = 2\\sin\\frac{\\pi}{3} = 2\\cdot\\frac{\\sqrt3}{2} = \\sqrt3",
-        "explanation": "Substituting $\\theta = \\frac{\\pi}{3}$ gives a positive $y$.",
+        "description": "Rearrange into a quadratic",
+        "workingLatex": "t^{2} - t - 6 = 0",
+        "explanation": "Bringing everything to one side produces a tidy quadratic whose roots are the candidate parameter values.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find y for the second angle",
-        "workingLatex": "y = 2\\sin\\left(-\\frac{\\pi}{3}\\right) = -\\sqrt3",
-        "explanation": "Substituting the negative angle gives the negative $y$.",
+        "description": "Factorise",
+        "workingLatex": "(t - 3)(t + 2) = 0",
+        "explanation": "Two numbers multiplying to $-6$ and adding to $-1$ are $-3$ and $+2$, giving the factors.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the points",
-        "workingLatex": "(1, \\sqrt3) \\text{ and } (1, -\\sqrt3)",
-        "explanation": "The vertical line $x = 1$ cuts the circle of radius $2$ at these two points.",
+        "description": "Solve for the parameter",
+        "workingLatex": "t = 3 \\quad \\text{or} \\quad t = -2",
+        "explanation": "Each bracket set to zero gives a possible value of the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the domain restriction",
+        "workingLatex": "t \\ge 0 \\ \\Rightarrow\\ t = -2 \\ \\text{is rejected}",
+        "explanation": "The curve is only defined for $t \\ge 0$, so $t = -2$ does not correspond to any point on this curve and must be discarded. Only $t = 3$ survives.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "See why the discarded root is not on the curve",
+        "workingLatex": "t = -2:\\ \\ x = (-2)^{2} = 4,\\ \\ y = -2 + 1 = -1",
+        "explanation": "Although $(4,\\,-1)$ does satisfy the line, the parameter $-2$ lies outside $t \\ge 0$, so this point is simply not part of the curve we were given.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the coordinates at the valid value",
+        "workingLatex": "x = 3^{2} = 9, \\qquad y = 3 + 1 = 4",
+        "explanation": "Substituting the allowed value $t = 3$ into the parametric equations gives the genuine intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Verify the point lies on the line",
+        "workingLatex": "y = x - 5 \\ \\Rightarrow\\ 4 = 9 - 5 \\ \\checkmark",
+        "explanation": "Checking the point against $y = x - 5$ confirms it truly lies on both the curve and the line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the intersection point",
+        "workingLatex": "(9,\\, 4)",
+        "explanation": "This is the only intersection consistent with the allowed range of $t$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(1, \\sqrt3)$ and $(1, -\\sqrt3)$"
+    "finalAnswer": "The curve meets the line at $(9,\\,4)$, when $t = 3$. The other root $t = -2$ is rejected because it lies outside the range $t \\ge 0$."
   }
 }

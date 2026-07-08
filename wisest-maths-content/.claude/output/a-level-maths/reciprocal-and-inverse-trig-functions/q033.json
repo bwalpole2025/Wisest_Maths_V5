@@ -5,60 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 4,
+  "marks": 5,
   "answerType": "proof",
   "tags": [
     "identities",
-    "proof",
+    "sec",
+    "tan",
     "difference of squares"
   ],
-  "questionText": "Prove that $(\\sec\\theta - 1)(\\sec\\theta + 1) \\equiv \\tan^2\\theta$.",
+  "questionText": "Prove that $(\\sec\\theta + \\tan\\theta)(\\sec\\theta - \\tan\\theta) \\equiv 1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = (\\sec\\theta - 1)(\\sec\\theta + 1)",
-        "explanation": "The bracketed product is a difference of two squares, which is a strong hint about the first step.",
+        "description": "State the identity and plan",
+        "workingLatex": "\\text{Prove: } (\\sec\\theta + \\tan\\theta)(\\sec\\theta - \\tan\\theta) \\equiv 1 \\qquad \\text{Start with LHS}",
+        "explanation": "We start with the product on the left and expand it, aiming to reach the constant $1$ on the right.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Expand as a difference of squares",
-        "workingLatex": "= \\sec^2\\theta - 1",
-        "explanation": "Multiplying $(a-1)(a+1)$ gives $a^2 - 1$, so the product collapses to $\\sec^2\\theta - 1$.",
+        "description": "Recognise a difference of two squares",
+        "workingLatex": "(a+b)(a-b) = a^2 - b^2 \\quad\\text{with } a=\\sec\\theta,\\ b=\\tan\\theta",
+        "explanation": "The two brackets are a sum and a difference of the same pair, so they multiply as a difference of two squares and the cross terms will cancel.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall the relevant Pythagorean identity",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "We use the identity linking secant and tangent, which directly involves $\\sec^2\\theta - 1$.",
+        "description": "Expand the product in full",
+        "workingLatex": "(\\sec\\theta+\\tan\\theta)(\\sec\\theta-\\tan\\theta) = \\sec^2\\theta - \\sec\\theta\\tan\\theta + \\tan\\theta\\sec\\theta - \\tan^2\\theta",
+        "explanation": "Multiplying out all four terms shows the two middle terms $-\\sec\\theta\\tan\\theta$ and $+\\tan\\theta\\sec\\theta$ are equal and opposite.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rearrange the identity",
-        "workingLatex": "\\sec^2\\theta - 1 = \\tan^2\\theta",
-        "explanation": "Subtracting $1$ from both sides isolates $\\tan^2\\theta$, exactly the expression we have.",
+        "description": "Cancel the cross terms",
+        "workingLatex": "= \\sec^2\\theta - \\tan^2\\theta",
+        "explanation": "The middle terms cancel exactly, leaving the clean difference $\\sec^2\\theta-\\tan^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute into the working",
-        "workingLatex": "= \\tan^2\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "Replacing $\\sec^2\\theta - 1$ with $\\tan^2\\theta$ matches the right-hand side, completing the proof.",
+        "description": "Start from the fundamental identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1",
+        "explanation": "To handle $\\sec^2\\theta-\\tan^2\\theta$ we need a link between them, which comes from the fundamental Pythagorean identity.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Note the domain",
-        "workingLatex": "\\theta \\ne 90^\\circ + 180^\\circ n",
-        "explanation": "The identity holds wherever secant and tangent are defined, i.e. away from odd multiples of $90^\\circ$.",
+        "description": "Divide through by cos^2",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} + \\frac{\\cos^2\\theta}{\\cos^2\\theta} = \\frac{1}{\\cos^2\\theta}",
+        "explanation": "Dividing every term by $\\cos^2\\theta$ converts each piece into a reciprocal-function square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify to the standard identity",
+        "workingLatex": "\\tan^2\\theta + 1 = \\sec^2\\theta",
+        "explanation": "Since $\\dfrac{\\sin^2\\theta}{\\cos^2\\theta}=\\tan^2\\theta$ and $\\dfrac{1}{\\cos^2\\theta}=\\sec^2\\theta$, this is the standard identity $1+\\tan^2\\theta\\equiv\\sec^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rearrange to the needed form",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = 1",
+        "explanation": "Subtracting $\\tan^2\\theta$ from both sides isolates exactly the expression we reached after expanding, and it equals $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check at a convenient angle",
+        "workingLatex": "(\\sec 45^\\circ + \\tan 45^\\circ)(\\sec 45^\\circ - \\tan 45^\\circ) = (\\sqrt{2}+1)(\\sqrt{2}-1) = 2 - 1 = 1",
+        "explanation": "Testing at $45^\\circ$ gives $1$, matching the right-hand side and supporting the proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "(\\sec\\theta + \\tan\\theta)(\\sec\\theta - \\tan\\theta) \\equiv 1 \\qquad \\text{(LHS} \\equiv \\text{RHS, QED)}",
+        "explanation": "The product simplifies to $1$ using the difference of squares and the identity $1+\\tan^2\\theta\\equiv\\sec^2\\theta$, so the identity holds.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(\\sec\\theta - 1)(\\sec\\theta + 1) \\equiv \\tan^2\\theta$"
+    "finalAnswer": "Expanding gives $\\sec^2\\theta-\\tan^2\\theta$, and since $1+\\tan^2\\theta\\equiv\\sec^2\\theta$ we have $\\sec^2\\theta-\\tan^2\\theta=1$, so $(\\sec\\theta+\\tan\\theta)(\\sec\\theta-\\tan\\theta)\\equiv1$."
   }
 }

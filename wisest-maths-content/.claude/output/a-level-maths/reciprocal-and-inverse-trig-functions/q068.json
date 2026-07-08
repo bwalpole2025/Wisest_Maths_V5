@@ -5,68 +5,124 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 7,
   "answerType": "proof",
   "tags": [
-    "identities",
-    "proof",
-    "cosecant",
-    "cotangent"
+    "inverse trig",
+    "arcsin",
+    "arccos",
+    "proof"
   ],
-  "questionText": "Prove that $\\dfrac{\\csc\\theta}{\\cot\\theta + \\tan\\theta} \\equiv \\cos\\theta$.",
+  "questionText": "Prove that $\\arcsin x + \\arccos x = \\dfrac{\\pi}{2}$ for all $x \\in [-1, 1]$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite the denominator in sine and cosine",
-        "workingLatex": "\\cot\\theta + \\tan\\theta = \\frac{\\cos\\theta}{\\sin\\theta} + \\frac{\\sin\\theta}{\\cos\\theta}",
-        "explanation": "Converting to basic functions lets us combine the denominator into a single fraction.",
+        "description": "Set out what must be proved",
+        "workingLatex": "\\text{Prove that }\\ \\arcsin x + \\arccos x = \\tfrac{\\pi}{2}, \\quad x \\in [-1, 1]",
+        "explanation": "The plan is to prove it first for $x\\in[0,1]$ using a right triangle whose two acute angles are $\\arcsin x$ and $\\arccos x$, then extend to negative $x$ using the reflection properties of the inverse functions.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Combine over a common denominator",
-        "workingLatex": "= \\frac{\\cos^2\\theta + \\sin^2\\theta}{\\sin\\theta\\cos\\theta}",
-        "explanation": "Adding the fractions produces the Pythagorean expression on top.",
+        "description": "Introduce the angle for non-negative x",
+        "workingLatex": "\\text{Let } x \\in [0,1], \\quad \\alpha = \\arcsin x, \\quad \\sin\\alpha = x, \\quad \\alpha \\in \\left[0, \\tfrac{\\pi}{2}\\right]",
+        "explanation": "For non-negative $x$ the inverse sine gives an angle in the first quadrant, which can be drawn as an acute angle in a right triangle.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "= \\frac{1}{\\sin\\theta\\cos\\theta}",
-        "explanation": "Since $\\cos^2\\theta + \\sin^2\\theta = 1$, the denominator simplifies to $\\frac{1}{\\sin\\theta\\cos\\theta}$.",
+        "description": "Build a right triangle",
+        "workingLatex": "\\text{hypotenuse} = 1, \\quad \\text{opposite}(\\alpha) = x",
+        "explanation": "Choosing hypotenuse $1$ makes $\\sin\\alpha=\\dfrac{\\text{opposite}}{1}=x$ automatically, so the side opposite $\\alpha$ has length $x$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write the whole expression",
-        "workingLatex": "\\frac{\\csc\\theta}{\\cot\\theta + \\tan\\theta} = \\frac{\\csc\\theta}{\\;\\frac{1}{\\sin\\theta\\cos\\theta}\\;}",
-        "explanation": "Substituting the simplified denominator sets up a division by a fraction.",
+        "description": "Find the adjacent side",
+        "workingLatex": "\\text{adjacent}(\\alpha) = \\sqrt{1 - x^2}",
+        "explanation": "Pythagoras gives the remaining side; it is real because $x\\in[0,1]$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Divide by multiplying by the reciprocal",
-        "workingLatex": "= \\csc\\theta\\times\\sin\\theta\\cos\\theta",
-        "explanation": "Dividing by $\\frac{1}{\\sin\\theta\\cos\\theta}$ is multiplying by $\\sin\\theta\\cos\\theta$.",
+        "description": "Name the other acute angle",
+        "workingLatex": "\\gamma = \\tfrac{\\pi}{2} - \\alpha",
+        "explanation": "In any right triangle the two non-right angles add to $\\tfrac{\\pi}{2}$, because the three angles sum to $\\pi$ and one of them is the right angle. Call the second one $\\gamma$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rewrite cosecant",
-        "workingLatex": "= \\frac{1}{\\sin\\theta}\\times\\sin\\theta\\cos\\theta",
-        "explanation": "Replacing cosecant with one over sine exposes the cancellation.",
+        "description": "Relate gamma to the sides",
+        "workingLatex": "\\cos\\gamma = \\frac{\\text{adjacent}(\\gamma)}{\\text{hypotenuse}} = \\frac{x}{1} = x",
+        "explanation": "The side opposite $\\alpha$ is the side adjacent to $\\gamma$, so $\\cos\\gamma=\\dfrac{x}{1}=x$. This is the bridge to the inverse cosine.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Cancel the sine and conclude",
-        "workingLatex": "= \\cos\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "The sine terms cancel, leaving cosine, which matches the right-hand side and completes the proof.",
+        "description": "Identify gamma as arccos x",
+        "workingLatex": "\\gamma \\in \\left[0, \\tfrac{\\pi}{2}\\right] \\subseteq [0, \\pi], \\quad \\cos\\gamma = x \\ \\Rightarrow\\ \\gamma = \\arccos x",
+        "explanation": "Since $\\gamma$ lies inside the range $[0,\\pi]$ of $\\arccos$ and has cosine $x$, it must be exactly $\\arccos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add the two angles",
+        "workingLatex": "\\arcsin x + \\arccos x = \\alpha + \\gamma = \\alpha + \\left(\\tfrac{\\pi}{2} - \\alpha\\right) = \\tfrac{\\pi}{2}",
+        "explanation": "Adding the two acute angles, the $\\alpha$ terms cancel and the sum is $\\tfrac\\pi2$, proving the identity for $x\\in[0,1]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the endpoints",
+        "workingLatex": "x=0:\\ 0 + \\tfrac{\\pi}{2} = \\tfrac{\\pi}{2}; \\qquad x=1:\\ \\tfrac{\\pi}{2} + 0 = \\tfrac{\\pi}{2}",
+        "explanation": "The boundary values behave correctly, confirming the triangle argument covers the whole interval $[0,1]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Prepare to extend to negative x",
+        "workingLatex": "\\text{Now take } x \\in [0,1] \\text{ and consider the argument } -x",
+        "explanation": "To reach negative inputs we use the known symmetry (reflection) properties of the two inverse functions, which are standard graph features.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use the odd symmetry of arcsin",
+        "workingLatex": "\\arcsin(-x) = -\\arcsin x",
+        "explanation": "The graph of $\\arcsin$ has rotational symmetry about the origin, so it is an odd function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use the reflection property of arccos",
+        "workingLatex": "\\arccos(-x) = \\pi - \\arccos x",
+        "explanation": "The graph of $\\arccos$ is symmetric about the point $\\big(0,\\tfrac\\pi2\\big)$, giving this reflection relationship.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Add the two for the argument minus x",
+        "workingLatex": "\\arcsin(-x) + \\arccos(-x) = -\\arcsin x + \\pi - \\arccos x",
+        "explanation": "Substituting the two symmetry results sets up a sum that can be simplified using the positive-$x$ case already proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Simplify using the proved case",
+        "workingLatex": "= \\pi - (\\arcsin x + \\arccos x) = \\pi - \\tfrac{\\pi}{2} = \\tfrac{\\pi}{2}",
+        "explanation": "Since $\\arcsin x+\\arccos x=\\tfrac\\pi2$ for $x\\in[0,1]$, the bracket is $\\tfrac\\pi2$, and the sum for negative arguments is also $\\tfrac\\pi2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Conclude for the whole domain",
+        "workingLatex": "\\arcsin x + \\arccos x = \\tfrac{\\pi}{2} \\quad \\text{for all } x \\in [-1, 1] \\quad \\blacksquare",
+        "explanation": "The identity holds for non-negative $x$ by the triangle argument and for negative $x$ by symmetry, so it is true across the entire domain.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\csc\\theta}{\\cot\\theta + \\tan\\theta} \\equiv \\cos\\theta$"
+    "finalAnswer": "For $x\\in[0,1]$ the two acute angles of a right triangle with hypotenuse $1$ are $\\arcsin x$ and $\\arccos x$, which sum to $\\tfrac\\pi2$; the odd symmetry of $\\arcsin$ and $\\arccos(-x)=\\pi-\\arccos x$ extend this to $[-1,1]$. Hence $\\arcsin x+\\arccos x=\\tfrac\\pi2$."
   }
 }

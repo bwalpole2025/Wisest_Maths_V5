@@ -5,60 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 7,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "maximum minimum",
+    "reciprocal"
   ],
-  "questionText": "Solve $2\\sin\\theta - 5\\cos\\theta = 3$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionText": "As a receiving dish rotates, the signal strength registered on a meter is modelled by $S(\\theta) = \\dfrac{200}{25 + 9\\sin\\theta^\\circ + 12\\cos\\theta^\\circ}$, where $0^\\circ \\le \\theta \\le 360^\\circ$. (a) Express $9\\sin\\theta^\\circ + 12\\cos\\theta^\\circ$ in the form $R\\sin(\\theta + \\alpha)^\\circ$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. (b) Hence find the maximum and minimum values of $S$ and the values of $\\theta$ at which they occur. You must not use calculus.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{2^2 + 5^2} = \\sqrt{29}, \\quad \\tan\\alpha = \\frac{5}{2} \\;\\Rightarrow\\; \\alpha \\approx 68.20^\\circ",
-        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $\\sqrt{29}$ and phase about $68.20^\\circ$.",
+        "description": "Focus on the denominator's wave part",
+        "workingLatex": "S(\\theta) = \\dfrac{200}{25 + \\big(9\\sin\\theta^\\circ + 12\\cos\\theta^\\circ\\big)}",
+        "explanation": "The size of the fraction is controlled entirely by its denominator. The numerator $200$ is fixed, so the whole problem reduces to understanding the wave part $9\\sin\\theta+12\\cos\\theta$ in the denominator.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the harmonic form",
-        "workingLatex": "2\\sin\\theta - 5\\cos\\theta = \\sqrt{29}\\sin(\\theta - 68.20^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$.",
+        "description": "Set up the identity to match",
+        "workingLatex": "9\\sin\\theta^\\circ + 12\\cos\\theta^\\circ \\equiv R\\sin(\\theta + \\alpha)",
+        "explanation": "Writing the two terms as a single sine wave shows exactly how large and how small the denominator can become, which is what we need.",
         "diagram": null
       },
       {
-        "stepNumber": 3,
-        "description": "Set up the equation",
-        "workingLatex": "\\sin(\\theta - 68.20^\\circ) = \\frac{3}{\\sqrt{29}} \\approx 0.5571",
-        "explanation": "Dividing by $\\sqrt{29}$ gives the sine value.",
-        "diagram": null
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta + \\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Applying $\\sin(A+B)=\\sin A\\cos B + \\cos A\\sin B$ and pulling $R$ through gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, ready to compare with the wave part of the denominator.",
+        "diagram": null,
+        "stepNumber": 3
       },
       {
         "stepNumber": 4,
-        "description": "Solve within the shifted interval",
-        "workingLatex": "\\theta - 68.20^\\circ = 33.86^\\circ, 146.14^\\circ",
-        "explanation": "Within $[-68.20^\\circ, 291.80^\\circ)$, the sine equation gives these two values.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 9, \\qquad R\\sin\\alpha = 12",
+        "explanation": "For the identity to hold for all $\\theta$, the amount of $\\sin\\theta$ must match and the amount of $\\cos\\theta$ must match, giving these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Add the shift and round",
-        "workingLatex": "\\theta \\approx 102^\\circ, 214^\\circ",
-        "explanation": "Adding $68.20^\\circ$ and rounding gives the two solutions.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2 = 81 + 144 = 225$, so the wave has amplitude $R = 15$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Verify plausibility",
-        "workingLatex": "3 < \\sqrt{29} \\approx 5.39 \\;\\checkmark",
-        "explanation": "Since $3$ is within the amplitude, two solutions are expected, matching our answer.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{12}{9} = \\dfrac{4}{3} \\Rightarrow \\alpha = 53.13^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{12}{9}$, and both parts being positive makes $\\alpha$ acute, so $\\alpha = 53.13^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the denominator",
+        "workingLatex": "25 + 9\\sin\\theta^\\circ + 12\\cos\\theta^\\circ = 25 + 15\\sin(\\theta + 53.13^\\circ)",
+        "explanation": "The denominator is now a constant $25$ plus a single wave of amplitude $15$. This makes its largest and smallest possible values immediate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the range of the denominator",
+        "workingLatex": "-1 \\le \\sin(\\theta + 53.13^\\circ) \\le 1 \\Rightarrow 10 \\le 25 + 15\\sin(\\theta + 53.13^\\circ) \\le 40",
+        "explanation": "Since the sine lies between $-1$ and $1$, the denominator lies between $25-15=10$ and $25+15=40$. It is always positive, so $S$ is always defined and positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Link the fraction to the denominator",
+        "workingLatex": "S = \\dfrac{200}{\\text{denominator}}",
+        "explanation": "For a positive numerator, a fraction is largest when its denominator is smallest, and smallest when its denominator is largest. This is the key idea that lets us find the extremes with no calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the maximum of S",
+        "workingLatex": "S_{\\max} = \\dfrac{200}{10} = 20",
+        "explanation": "The smallest the denominator can be is $10$, so the largest $S$ can be is $\\tfrac{200}{10} = 20$. This is the maximum reading with no calculus needed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find where the maximum occurs",
+        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = -1 \\Rightarrow \\theta + 53.13^\\circ = 270^\\circ \\Rightarrow \\theta = 216.87^\\circ",
+        "explanation": "The denominator is smallest when the sine equals $-1$, i.e. when the angle is $270^\\circ$. Solving gives $\\theta = 216.87^\\circ$, which lies in the allowed range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the minimum of S",
+        "workingLatex": "S_{\\min} = \\dfrac{200}{40} = 5",
+        "explanation": "The largest the denominator can be is $40$, so the smallest $S$ can be is $\\tfrac{200}{40} = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find where the minimum occurs",
+        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = 1 \\Rightarrow \\theta + 53.13^\\circ = 90^\\circ \\Rightarrow \\theta = 36.87^\\circ",
+        "explanation": "The denominator is largest when the sine equals $1$, i.e. the angle is $90^\\circ$, giving $\\theta = 36.87^\\circ$. Both extreme angles are valid, so the results are complete.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 102^\\circ, 214^\\circ$"
+    "finalAnswer": "(a) $9\\sin\\theta^\\circ + 12\\cos\\theta^\\circ = 15\\sin(\\theta + 53.13^\\circ)$. (b) The maximum of $S$ is $20$, at $\\theta = 216.87^\\circ$; the minimum of $S$ is $5$, at $\\theta = 36.87^\\circ$."
   }
 }

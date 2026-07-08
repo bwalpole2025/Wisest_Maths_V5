@@ -1,0 +1,100 @@
+{
+  "id": "al.y2.stats.normal-distribution.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the standard deviation",
+    "quality control",
+    "tolerance"
+  ],
+  "questionText": "A lathe cuts metal rods whose lengths, $X$ mm, are modelled by $X \\sim N(50,\\ \\sigma^2)$, where the mean equals the target length $50$ mm. A rod is accepted only if its length is within $0.6$ mm of the target. The manufacturer requires at least $95\\%$ of rods to be accepted, so that $P(49.4 < X < 50.6) = 0.95$. Find the largest possible value of $\\sigma$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the tolerance requirement",
+        "workingLatex": "X \\sim N(50,\\ \\sigma^2), \\qquad P(49.4 < X < 50.6) = 0.95",
+        "explanation": "The rod lengths are normal, centred on the target $50$ mm, with a standard deviation the machine's setting controls. ‘Within $0.6$ mm of the target’ is the interval from $49.4$ to $50.6$, and at least $95\\%$ of rods must fall inside it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the excluded area using symmetry",
+        "workingLatex": "P(X < 49.4) = P(X > 50.6) = \\dfrac{1 - 0.95}{2} = 0.025",
+        "explanation": "The interval is symmetric about the mean, so the $5\\%$ lying outside it divides equally between the two tails, leaving $2.5\\%$ in each.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Convert to a single lower-tail probability",
+        "workingLatex": "P(X < 50.6) = 0.95 + 0.025 = 0.975",
+        "explanation": "Everything below the upper edge $50.6$ is the central $95\\%$ plus the lower $2.5\\%$ tail, giving $0.975$. Working with one edge is enough because of the symmetry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the z-value for 0.975",
+        "workingLatex": "z = \\Phi^{-1}(0.975) = 1.96",
+        "explanation": "The standard-normal value with $97.5\\%$ of the area below it is the familiar $1.96$; the upper edge $50.6$ sits $1.96$ standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the standardisation equation",
+        "workingLatex": "\\dfrac{50.6 - 50}{\\sigma} = 1.96",
+        "explanation": "Standardising the upper edge $50.6$ gives its $z$-score. The half-width $0.6$ mm, measured in standard deviations, must equal $1.96$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\dfrac{0.6}{\\sigma} = 1.96",
+        "explanation": "The tolerance half-width is $0.6$ mm; expressed as a multiple of $\\sigma$ it equals the required $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange for the standard deviation",
+        "workingLatex": "\\sigma = \\dfrac{0.6}{1.96}",
+        "explanation": "Rearranging, one standard deviation is the half-width $0.6$ divided by $1.96$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute the standard deviation",
+        "workingLatex": "\\sigma = 0.30612",
+        "explanation": "Dividing gives the standard deviation in millimetres for which exactly $95\\%$ of rods are accepted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret 'largest possible'",
+        "workingLatex": "\\sigma \\le 0.30612",
+        "explanation": "A smaller standard deviation clusters the lengths more tightly around the target, so more than $95\\%$ would pass; a larger one lets too many rods escape the tolerance. The value found is therefore the largest permissible $\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "\\sigma_{\\max} \\approx 0.306 \\text{ mm}",
+        "explanation": "To three significant figures the largest standard deviation that keeps $95\\%$ of rods within tolerance is $0.306$ mm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the answer reproduces the requirement",
+        "workingLatex": "P(49.4 < X < 50.6) = 2\\Phi\\!\\left(\\dfrac{0.6}{0.306}\\right) - 1 = 2\\Phi(1.96) - 1 \\approx 0.95",
+        "explanation": "With $\\sigma=0.306$ each edge is about $1.96$ standard deviations from the mean, so the central probability is $2\\Phi(1.96)-1\\approx0.95$, exactly as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sigma_{\\max} \\approx 0.306$ mm (the largest standard deviation for which $95\\%$ of rods are accepted)."
+  }
+}

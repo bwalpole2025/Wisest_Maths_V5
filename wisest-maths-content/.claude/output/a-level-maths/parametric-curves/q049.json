@@ -4,62 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "expression",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "cartesian",
-    "double angle",
-    "circle"
+    "intersection",
+    "rational parametrisation",
+    "straight line"
   ],
-  "questionText": "A curve has parametric equations $x = 1 - \\cos 2\\theta$, $y = \\sin 2\\theta$. Find the Cartesian equation and describe the curve.",
+  "questionText": "A curve has parametric equations $x = \\dfrac{2}{t}$ and $y = 2t$, where $t \\neq 0$. Find the coordinates of the points where the curve meets the line $y = x + 3$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite x using a double angle form",
-        "workingLatex": "x = 1 - \\cos 2\\theta = 2\\sin^2\\theta",
-        "explanation": "Using $\\cos 2\\theta = 1 - 2\\sin^2\\theta$ turns the $x$-equation into $2\\sin^2\\theta$.",
+        "description": "Substitute into the line equation",
+        "workingLatex": "2t = \\dfrac{2}{t} + 3",
+        "explanation": "At an intersection the coordinates obey the line, so we replace $x$ and $y$ in $y = x + 3$ by their parametric forms, giving one equation in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Isolate cos 2θ instead for the identity",
-        "workingLatex": "\\cos 2\\theta = 1 - x",
-        "explanation": "Rearranging the original $x$-equation gives $\\cos 2\\theta$ directly, which pairs with $\\sin 2\\theta = y$.",
+        "description": "Clear the fraction",
+        "workingLatex": "2t \\cdot t = 2 + 3t",
+        "explanation": "Multiplying every term by $t$ removes the denominator. This is allowed because $t \\neq 0$ for this curve.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the Pythagorean identity to the double angle",
-        "workingLatex": "\\cos^2 2\\theta + \\sin^2 2\\theta = 1",
-        "explanation": "The identity holds for any angle, including $2\\theta$.",
+        "description": "Form a quadratic in t",
+        "workingLatex": "2t^{2} - 3t - 2 = 0",
+        "explanation": "Rearranging into descending powers gives a standard quadratic in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute",
-        "workingLatex": "(1 - x)^2 + y^2 = 1",
-        "explanation": "Replacing $\\cos 2\\theta$ with $1 - x$ and $\\sin 2\\theta$ with $y$ eliminates the parameter.",
+        "description": "Factorise",
+        "workingLatex": "(2t + 1)(t - 2) = 0",
+        "explanation": "Splitting the middle term using factors of $2 \\times (-2) = -4$ that add to $-3$ (namely $-4$ and $+1$) leads to these brackets.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Rewrite in standard form",
-        "workingLatex": "(x - 1)^2 + y^2 = 1",
-        "explanation": "Since $(1 - x)^2 = (x - 1)^2$, this is the standard circle form.",
+        "description": "Solve for the parameter",
+        "workingLatex": "t = -\\dfrac{1}{2} \\quad \\text{or} \\quad t = 2",
+        "explanation": "Each bracket set to zero gives a parameter value. Both are non-zero, so both are allowed for this curve.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Describe the curve",
-        "workingLatex": "\\text{circle centre } (1, 0), \\text{ radius } 1",
-        "explanation": "The curve is a circle of radius $1$ centred at $(1, 0)$.",
+        "description": "Find the point at t = 2",
+        "workingLatex": "x = \\dfrac{2}{2} = 1, \\qquad y = 2(2) = 4",
+        "explanation": "Substituting $t = 2$ into the parametric equations gives the first intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the point at t = -1/2",
+        "workingLatex": "x = \\dfrac{2}{-\\tfrac{1}{2}} = -4, \\qquad y = 2\\left(-\\dfrac{1}{2}\\right) = -1",
+        "explanation": "Substituting $t = -\\tfrac{1}{2}$ gives the second point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify both points lie on the line",
+        "workingLatex": "4 = 1 + 3 \\ \\checkmark \\qquad -1 = -4 + 3 \\ \\checkmark",
+        "explanation": "Each point satisfies $y = x + 3$, confirming the working.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the intersection points",
+        "workingLatex": "(1,\\, 4) \\quad \\text{and} \\quad (-4,\\, -1)",
+        "explanation": "These are the two points where the curve crosses the line.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(x - 1)^2 + y^2 = 1$, a circle centre $(1,0)$ radius $1$."
+    "finalAnswer": "The curve meets the line at $(1,\\,4)$ (when $t = 2$) and $(-4,\\,-1)$ (when $t = -\\tfrac{1}{2}$)."
   }
 }

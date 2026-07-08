@@ -4,61 +4,68 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
+    "r form",
     "harmonic form",
-    "minimum",
-    "constant"
+    "radians"
   ],
-  "questionText": "Find the minimum value of $6\\sin\\theta + 8\\cos\\theta - 3$ and the value of $\\theta$ (to the nearest degree) at which it occurs, using $6\\sin\\theta + 8\\cos\\theta = 10\\sin(\\theta + 53.13^\\circ)$.",
+  "questionText": "Express $\\sin\\theta + \\sqrt{3}\\,\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$, giving $R$ and $\\alpha$ exactly.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite the expression",
-        "workingLatex": "6\\sin\\theta + 8\\cos\\theta - 3 = 10\\sin(\\theta + 53.13^\\circ) - 3",
-        "explanation": "The harmonic form makes the range of the whole expression clear.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\sin\\theta + \\sqrt{3}\\,\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We write the expression identically equal to $R\\sin(\\theta+\\alpha)$, working in radians so that $\\alpha$ is an exact multiple of $\\pi$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Bound the sine term",
-        "workingLatex": "-10 \\le 10\\sin(\\theta + 53.13^\\circ) \\le 10",
-        "explanation": "The amplitude $10$ scales the sine range to $[-10, 10]$.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta+\\alpha)$ gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, the same form as the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Subtract the constant",
-        "workingLatex": "-13 \\le \\text{expression} \\le 7",
-        "explanation": "Subtracting $3$ shifts the range down.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = \\sqrt{3}",
+        "explanation": "Here the coefficient of $\\sin\\theta$ is $1$ and the coefficient of $\\cos\\theta$ is $\\sqrt{3}$; note this is the reverse of the previous example, so $\\alpha$ will be larger.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the minimum",
-        "workingLatex": "\\text{min} = -13",
-        "explanation": "The least value occurs when the sine equals $-1$.",
+        "description": "Find R by squaring and adding",
+        "workingLatex": "R = \\sqrt{1^2 + (\\sqrt{3})^2} = \\sqrt{4} = 2",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=1+3=4$, so $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find theta for the minimum",
-        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = -1 \\;\\Rightarrow\\; \\theta + 53.13^\\circ = 270^\\circ",
-        "explanation": "The sine reaches $-1$ when its argument is $270^\\circ$.",
+        "description": "Divide the equations to isolate tanα",
+        "workingLatex": "\\tan\\alpha = \\dfrac{\\sqrt{3}}{1} = \\sqrt{3}",
+        "explanation": "Dividing $R\\sin\\alpha$ by $R\\cos\\alpha$ cancels $R$ and gives $\\tan\\alpha=\\sqrt{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for theta",
-        "workingLatex": "\\theta = 270^\\circ - 53.13^\\circ \\approx 217^\\circ",
-        "explanation": "Subtracting the phase shift gives $\\theta \\approx 217^\\circ$.",
+        "description": "Solve for the exact acute angle α",
+        "workingLatex": "\\alpha = \\dfrac{\\pi}{3}",
+        "explanation": "The acute angle whose tangent is $\\sqrt{3}$ is $\\dfrac{\\pi}{3}$ radians (that is, $60^\\circ$), which lies in the required range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the R-form",
+        "workingLatex": "\\sin\\theta + \\sqrt{3}\\,\\cos\\theta = 2\\sin\\!\\left(\\theta + \\dfrac{\\pi}{3}\\right)",
+        "explanation": "Combining $R=2$ and $\\alpha=\\dfrac{\\pi}{3}$ gives the single sine wave equivalent to the original expression.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Minimum $= -13$ at $\\theta \\approx 217^\\circ$."
+    "finalAnswer": "$\\sin\\theta + \\sqrt{3}\\,\\cos\\theta = 2\\sin\\!\\left(\\theta + \\dfrac{\\pi}{3}\\right)$, with $R=2$ and $\\alpha=\\dfrac{\\pi}{3}$."
   }
 }

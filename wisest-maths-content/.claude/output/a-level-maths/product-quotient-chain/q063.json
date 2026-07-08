@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "reciprocal trig",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^x \\sec x$ for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$. (a) Show that $\\dfrac{dy}{dx} = e^x \\sec x\\,(1 + \\tan x)$. (b) Find the equation of the tangent to $C$ at the point where $x = 0$. (c) Find the exact coordinates of the stationary point of $C$. (d) Determine the nature of this stationary point.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the factors for the product rule",
+        "workingLatex": "u = e^x, \\qquad v = \\sec x",
+        "explanation": "The function is a product, so we use $\\tfrac{d}{dx}(uv)=u'v+uv'$. Recall the reciprocal-trig result $\\tfrac{d}{dx}\\sec x=\\sec x\\tan x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = e^x, \\qquad v' = \\sec x \\tan x",
+        "explanation": "The exponential is its own derivative, and $\\sec x$ differentiates to $\\sec x\\tan x$ (a standard result from applying the quotient/chain rule to $1/\\cos x$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = e^x \\sec x + e^x \\sec x \\tan x",
+        "explanation": "Substituting into $u'v+uv'$ gives the two terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = e^x \\sec x\\,(1 + \\tan x)",
+        "explanation": "Both terms share the factor $e^x\\sec x$; taking it out gives the required form and isolates the part that can be zero. This proves (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the gradient at x = 0",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = e^{0}\\sec 0\\,(1 + \\tan 0) = 1\\cdot 1\\cdot 1 = 1",
+        "explanation": "Using $\\sec 0=1$ and $\\tan 0=0$, the slope of the tangent at the $y$-axis is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate at x = 0",
+        "workingLatex": "y = e^{0}\\sec 0 = 1 \\quad\\Rightarrow\\quad (0,\\,1)",
+        "explanation": "The curve crosses the $y$-axis at height $1$, which is where the tangent touches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - 1 = 1\\,(x - 0) \\;\\Rightarrow\\; y = x + 1",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with gradient $1$ through $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the derivative to zero",
+        "workingLatex": "e^x \\sec x\\,(1 + \\tan x) = 0",
+        "explanation": "Stationary points need a zero gradient, so we set the factorised derivative to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Eliminate the non-zero factors",
+        "workingLatex": "e^x > 0,\\ \\ \\sec x \\ne 0 \\;\\Rightarrow\\; 1 + \\tan x = 0",
+        "explanation": "On this interval $e^x$ is always positive and $\\sec x=\\tfrac{1}{\\cos x}$ can never be zero, so only $1+\\tan x$ can vanish.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for x in the interval",
+        "workingLatex": "\\tan x = -1 \\;\\Rightarrow\\; x = -\\frac{\\pi}{4}",
+        "explanation": "On $-\\tfrac{\\pi}{2}<x<\\tfrac{\\pi}{2}$ the only solution of $\\tan x=-1$ is $x=-\\tfrac{\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{-\\pi/4}\\sec\\!\\left(-\\tfrac{\\pi}{4}\\right) = \\sqrt{2}\\,e^{-\\pi/4}",
+        "explanation": "Since $\\sec\\!\\left(-\\tfrac{\\pi}{4}\\right)=\\tfrac{1}{\\cos(\\pi/4)}=\\sqrt2$, the stationary point is $\\left(-\\tfrac{\\pi}{4},\\,\\sqrt2\\,e^{-\\pi/4}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set up a sign test for the gradient",
+        "workingLatex": "e^x \\sec x > 0 \\ \\text{on the interval} \\;\\Rightarrow\\; \\operatorname{sign}\\!\\left(\\frac{dy}{dx}\\right) = \\operatorname{sign}(1 + \\tan x)",
+        "explanation": "Both $e^x>0$ and $\\sec x>0$ here (as $\\cos x>0$), so the sign of the gradient follows $1+\\tan x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Examine the sign either side of the point",
+        "workingLatex": "x < -\\tfrac{\\pi}{4}:\\ \\tan x < -1 \\Rightarrow (-); \\qquad x > -\\tfrac{\\pi}{4}:\\ \\tan x > -1 \\Rightarrow (+)",
+        "explanation": "Just left of $-\\tfrac{\\pi}{4}$ the gradient is negative and just right it is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the nature",
+        "workingLatex": "(-)\\ \\to\\ (+) \\;\\Rightarrow\\; \\text{minimum at } \\left(-\\tfrac{\\pi}{4},\\, \\sqrt{2}\\,e^{-\\pi/4}\\right)",
+        "explanation": "The gradient turns from negative to positive, so the stationary point is a local minimum with value $\\sqrt2\\,e^{-\\pi/4}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=e^x\\sec x\\,(1+\\tan x)$. (b) $y=x+1$. (c) $\\left(-\\dfrac{\\pi}{4},\\,\\sqrt{2}\\,e^{-\\pi/4}\\right)$. (d) A local minimum."
+  }
+}

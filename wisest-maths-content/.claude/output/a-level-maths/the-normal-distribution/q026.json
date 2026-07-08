@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "percentile"
+  ],
+  "questionText": "The marks, $X$, scored by candidates in an examination are modelled by $X \\sim N(58, 14^2)$. Find the mark below which $30\\%$ of candidates score (the $30$th percentile), giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the condition",
+        "workingLatex": "X \\sim N(58,\\ 14^2), \\qquad P(X < a) = 0.30",
+        "explanation": "Marks are normal with mean $\\mu = 58$ and standard deviation $\\sigma = 14$. The $30$th percentile is the mark $a$ with $30\\%$ of candidates below it, so $P(X < a) = 0.30$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recognise this as a lower-tail probability",
+        "workingLatex": "P(X < a) = 0.30",
+        "explanation": "Because the condition is already written as an area to the left of $a$, the inverse-normal function can be applied directly with no rearranging.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the $z$-value for the 30th percentile",
+        "workingLatex": "z = \\Phi^{-1}(0.30) = -0.5244",
+        "explanation": "The standardised value with $30\\%$ of the area to its left is $z = -0.5244$. It is negative because a mark below which only $30\\%$ fall must sit to the left of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the standardisation equation",
+        "workingLatex": "\\dfrac{a - 58}{14} = -0.5244",
+        "explanation": "Standardising the unknown mark $a$ should reproduce this $z$-value, so we set the standardised expression equal to it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange the standardisation formula",
+        "workingLatex": "a = \\mu + \\sigma z",
+        "explanation": "Multiplying both sides by $\\sigma$ and adding $\\mu$ makes $a$ the subject — the general rule for converting a $z$-value back into a mark.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the known values",
+        "workingLatex": "a = 58 + 14 \\times (-0.5244)",
+        "explanation": "Putting in the mean $58$, the standard deviation $14$ and the $z$-value $-0.5244$ gives the mark in the original units.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the value",
+        "workingLatex": "a = 58 - 7.342 = 50.66",
+        "explanation": "Carrying out the arithmetic gives a mark of about $50.66$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "a \\approx 50.7",
+        "explanation": "Rounding gives the $30$th percentile mark.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sanity check the result",
+        "workingLatex": "50.7 < 58 = \\mu",
+        "explanation": "The mark lies below the mean of $58$, which makes sense: if only $30\\%$ of candidates score below it — fewer than half — it must sit to the left of the average mark.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a \\approx 50.7$ (3 s.f.) — the mark below which $30\\%$ of candidates score."
+  }
+}

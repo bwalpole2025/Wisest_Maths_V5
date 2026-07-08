@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "chain rule",
+    "tangent and normal"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^{x}\\sin 2x$, where $x$ is measured in radians. (a) Find $\\dfrac{dy}{dx}$. (b) Find the equation of the tangent to $C$ at the origin. (c) Find the equation of the normal to $C$ at the origin. (d) Find the exact value of the gradient of $C$ at $x=\\dfrac{\\pi}{4}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and label the factors",
+        "workingLatex": "u = e^{x}, \\qquad v = \\sin 2x",
+        "explanation": "$y$ is the product of $e^{x}$ and $\\sin 2x$, so the product rule applies. The factor $\\sin 2x$ is a composition, so its derivative needs the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the first factor",
+        "workingLatex": "u' = e^{x}",
+        "explanation": "$e^{x}$ is its own derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the second factor with the chain rule",
+        "workingLatex": "v = \\sin 2x,\\quad w = 2x,\\quad \\frac{dw}{dx}=2,\\quad v' = \\cos(2x)\\cdot 2 = 2\\cos 2x",
+        "explanation": "With $w=2x$, $v=\\sin w$ and $v'=\\cos w\\cdot\\dfrac{dw}{dx}=\\cos 2x\\cdot 2$. The inner derivative supplies the factor $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}\\sin 2x + e^{x}\\cdot 2\\cos 2x",
+        "explanation": "Substitute into $u'v+uv'$: the first term keeps $\\sin 2x$, the second uses $v'=2\\cos 2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}\\left(\\sin 2x + 2\\cos 2x\\right)",
+        "explanation": "Both terms share $e^{x}$; factoring it out gives a tidy expression that is easy to evaluate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm the origin lies on C",
+        "workingLatex": "x=0:\\ y = e^{0}\\sin 0 = 0 \\ \\Rightarrow\\ (0,0) \\in C",
+        "explanation": "Before finding a tangent at the origin, we check the point is actually on the curve: at $x=0$, $y=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the gradient at the origin",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0}=e^{0}(\\sin 0 + 2\\cos 0)=1(0+2)=2",
+        "explanation": "Substituting $x=0$: $\\sin 0=0$ and $\\cos 0=1$, so the gradient of the tangent is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the equation of the tangent",
+        "workingLatex": "y - 0 = 2(x - 0) \\ \\Rightarrow\\ y = 2x",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $(0,0)$ and gradient $2$ gives the tangent line $y=2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the gradient of the normal",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{2}",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the equation of the normal",
+        "workingLatex": "y - 0 = -\\tfrac12(x - 0) \\ \\Rightarrow\\ y = -\\tfrac12 x",
+        "explanation": "Using the same point $(0,0)$ with gradient $-\\tfrac12$ gives the normal line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the tangent and normal",
+        "workingLatex": "\\text{Tangent: } y = 2x \\qquad \\text{Normal: } y = -\\tfrac12 x",
+        "explanation": "These two lines meet the curve at the origin at right angles to one another.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Prepare to evaluate the gradient at x = pi/4",
+        "workingLatex": "x=\\tfrac{\\pi}{4} \\ \\Rightarrow\\ 2x = \\tfrac{\\pi}{2}",
+        "explanation": "For part (d) we substitute $x=\\tfrac{\\pi}{4}$; the inner angle becomes $2x=\\tfrac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Evaluate the trigonometric values",
+        "workingLatex": "\\sin\\tfrac{\\pi}{2}=1, \\qquad \\cos\\tfrac{\\pi}{2}=0",
+        "explanation": "At $\\tfrac{\\pi}{2}$ radians the sine is $1$ and the cosine is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Compute the exact gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\pi/4}=e^{\\pi/4}\\left(1 + 2\\cdot 0\\right)=e^{\\pi/4}",
+        "explanation": "The bracket collapses to $1$, leaving the exact gradient $e^{\\pi/4}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=e^{x}(\\sin 2x + 2\\cos 2x)$. (b) Tangent: $y=2x$. (c) Normal: $y=-\\tfrac12 x$. (d) Gradient at $x=\\tfrac{\\pi}{4}$ is $e^{\\pi/4}$."
+  }
+}

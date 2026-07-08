@@ -5,53 +5,95 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
-    "tangent parallel",
-    "line"
+    "parametric differentiation",
+    "normal",
+    "path"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find the value(s) of $t$ where the tangent is parallel to the line $y = 3x$.",
+  "questionText": "A cyclist rides along a track whose position in metres after $t$ seconds is modelled by $x = 3t$ and $y = t^{2}$. Find the equation of the normal to the track at the instant $t = 2$, giving your answer in the form $ax + by + c = 0$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the gradient of the line",
-        "workingLatex": "y = 3x \\;\\Rightarrow\\; \\text{gradient} = 3",
-        "explanation": "Parallel lines share the same gradient, so the tangent gradient must equal $3$.",
+        "description": "Plan the normal",
+        "workingLatex": "\\text{normal} \\perp \\text{tangent} \\Rightarrow \\text{need } \\dfrac{dy}{dx} \\text{ and the point}",
+        "explanation": "The normal is perpendicular to the tangent, so first we find the tangent gradient, then flip and negate it, and use the point where $t = 2$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the parametric gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3t}{2}",
-        "explanation": "This is the gradient of the tangent in terms of $t$.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 3",
+        "explanation": "The horizontal velocity is constant here, which will be the denominator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the gradients equal",
-        "workingLatex": "\\frac{3t}{2} = 3",
-        "explanation": "For the tangent to be parallel to the line, its gradient equals $3$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2t",
+        "explanation": "The vertical velocity grows with time; it is the numerator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve for t",
-        "workingLatex": "3t = 6 \\;\\Rightarrow\\; t = 2",
-        "explanation": "Multiplying through and solving gives the parameter value.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2t}{3}",
+        "explanation": "Dividing the vertical rate by the horizontal rate gives the slope of the track as a function of $t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "t = 2",
-        "explanation": "At $t = 2$ the tangent is parallel to $y = 3x$.",
+        "description": "Find the point at t = 2",
+        "workingLatex": "x = 3(2) = 6, \\qquad y = 2^{2} = 4",
+        "explanation": "The normal passes through the cyclist's actual position, so substitute $t = 2$ to get the point $(6,\\,4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the tangent gradient",
+        "workingLatex": "\\left.\\dfrac{dy}{dx}\\right|_{t=2} = \\dfrac{2(2)}{3} = \\dfrac{4}{3}",
+        "explanation": "This is the slope of the track at that instant; the normal must be perpendicular to it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\dfrac{1}{\\,4/3\\,} = -\\dfrac{3}{4}",
+        "explanation": "Perpendicular gradients multiply to $-1$, so we take the negative reciprocal of $\\dfrac{4}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the normal in point-slope form",
+        "workingLatex": "y - 4 = -\\dfrac{3}{4}\\left(x - 6\\right)",
+        "explanation": "A straight line through $(6,\\,4)$ with gradient $-\\dfrac{3}{4}$ is written in point-slope form ready to tidy.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Clear the fraction",
+        "workingLatex": "4y - 16 = -3\\left(x - 6\\right) = -3x + 18",
+        "explanation": "Multiplying through by $4$ removes the fraction so we can collect terms neatly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Rearrange to the required form",
+        "workingLatex": "3x + 4y - 34 = 0",
+        "explanation": "Bringing every term to one side gives the requested $ax + by + c = 0$ form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the normal",
+        "workingLatex": "3x + 4y - 34 = 0",
+        "explanation": "This line has gradient $-\\dfrac{3}{4}$ and passes through $(6,\\,4)$, so it is the normal to the track at $t = 2$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$t = 2$"
+    "finalAnswer": "The normal to the track at $t = 2$ is $3x + 4y - 34 = 0$ (equivalently $y = -\\dfrac{3}{4}x + \\dfrac{17}{2}$)."
   }
 }

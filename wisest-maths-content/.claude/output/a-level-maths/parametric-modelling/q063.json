@@ -6,52 +6,115 @@
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "acceleration",
-    "magnitude"
+    "projectile",
+    "intersection",
+    "root selection"
   ],
-  "questionText": "A particle has position $x = t^2$, $y = t^3$ (metres) at time $t$ seconds. Find the magnitude of its acceleration at $t = 1$.",
+  "questionText": "A ball is launched from the origin so that, $t$ seconds after release, its position in metres is $x = 6t$ and $y = 8t - 5t^{2}$. The model applies only while $y \\ge 0$ (until the ball lands). A straight ramp is modelled by the line $y = -\\dfrac{2}{3}x + 4$. (a) Find the time at which the ball lands. (b) Find the value(s) of $t$ at which the ball's path meets the ramp, select the physically valid one, and give the point. (c) Find the speed and direction of motion of the ball at that point.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity",
-        "workingLatex": "v_x = 2t, \\quad v_y = 3t^2",
-        "explanation": "Differentiating the positions once.",
+        "description": "Set the height to zero to find landing",
+        "workingLatex": "8t - 5t^{2} = 0",
+        "explanation": "The ball lands when its height returns to zero, so we solve $y = 0$ to find how long the model is valid.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the acceleration",
-        "workingLatex": "a_x = 2, \\quad a_y = 6t",
-        "explanation": "Differentiating the velocities gives the acceleration components.",
+        "description": "Solve for the landing time",
+        "workingLatex": "t(8 - 5t) = 0 \\;\\Rightarrow\\; t = 0 \\text{ (launch)},\\; t = 1.6",
+        "explanation": "Factoring gives the launch instant $t=0$ and the landing time $t=1.6$. So the model is valid on $0 \\le t \\le 1.6$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate at t = 1",
-        "workingLatex": "a_x = 2, \\quad a_y = 6",
-        "explanation": "Substituting $t = 1$.",
+        "description": "Set the path equal to the ramp",
+        "workingLatex": "8t - 5t^{2} = -\\dfrac{2}{3}(6t) + 4",
+        "explanation": "The path meets the ramp where their $y$-values agree at the same horizontal position; substituting $x = 6t$ into the line equation gives one equation in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the magnitude",
-        "workingLatex": "|a| = \\sqrt{2^2 + 6^2} = \\sqrt{40}",
-        "explanation": "Using Pythagoras on the components.",
+        "description": "Simplify the right-hand side",
+        "workingLatex": "8t - 5t^{2} = -4t + 4",
+        "explanation": "Since $-\\tfrac{2}{3}\\times 6t = -4t$, the ramp side simplifies neatly, leaving a quadratic to solve.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "= 2\\sqrt{10} \\approx 6.3 \\text{ m/s}^2",
-        "explanation": "Since $40 = 4 \\times 10$, the magnitude is $2\\sqrt{10}$.",
+        "description": "Rearrange into a quadratic",
+        "workingLatex": "5t^{2} - 12t + 4 = 0",
+        "explanation": "Collecting all terms on one side gives a standard quadratic whose roots are the times the path crosses the ramp's line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise the quadratic",
+        "workingLatex": "(5t - 2)(t - 2) = 0",
+        "explanation": "The quadratic factorises, which is quicker than the formula and gives the two candidate crossing times directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "List the candidate roots",
+        "workingLatex": "t = \\dfrac{2}{5} = 0.4 \\quad\\text{or}\\quad t = 2",
+        "explanation": "Both are real solutions of the algebra, but only one can be a genuine crossing of the physical trajectory.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Reject the root outside the valid range",
+        "workingLatex": "0 \\le t \\le 1.6 \\;\\Rightarrow\\; t = 0.4 \\text{ valid}, \\; t = 2 \\text{ rejected}",
+        "explanation": "The ball has already landed by $t=1.6$, so at $t=2$ the model no longer describes the ball (it would be below ground). That root is rejected; the real crossing is at $t=0.4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the x-coordinate of the crossing",
+        "workingLatex": "x = 6(0.4) = 2.4",
+        "explanation": "Substituting the valid time into the horizontal position gives where the crossing happens.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinate of the crossing",
+        "workingLatex": "y = 8(0.4) - 5(0.4)^{2} = 3.2 - 0.8 = 2.4",
+        "explanation": "Substituting the same time into the height equation completes the coordinates of the point where the ball meets the ramp.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Horizontal velocity component",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 6",
+        "explanation": "For speed and direction we need the velocity components; the horizontal one is constant at $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Vertical velocity component at t = 0.4",
+        "workingLatex": "\\dot{y} = 8 - 10t = 8 - 10(0.4) = 4",
+        "explanation": "Differentiating the height and evaluating at $t=0.4$ gives the vertical velocity at the crossing; it is positive, so the ball is still rising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Compute the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^2 + \\dot{y}^2} = \\sqrt{6^{2} + 4^{2}} = \\sqrt{52} = 2\\sqrt{13}",
+        "explanation": "The speed is the magnitude of the velocity vector, combining both components with Pythagoras to give $2\\sqrt{13}\\approx 7.21$ metres per second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find the direction of motion",
+        "workingLatex": "\\theta = \\tan^{-1}\\!\\left(\\dfrac{\\dot{y}}{\\dot{x}}\\right) = \\tan^{-1}\\!\\left(\\dfrac{4}{6}\\right) = \\tan^{-1}\\tfrac{2}{3} \\approx 33.7^{\\circ}",
+        "explanation": "The direction is the angle the velocity makes with the horizontal, found from the ratio of the components; the ball is moving upward at about $33.7^{\\circ}$ above the horizontal.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$|a| = 2\\sqrt{10} \\approx 6.3$ m/s²"
+    "finalAnswer": "(a) The ball lands at $t = 1.6$ s. (b) The path meets the ramp at $t = 0.4$ s, at the point $(2.4,\\,2.4)$; the root $t = 2$ is rejected because the ball has already landed (outside $0 \\le t \\le 1.6$). (c) There the speed is $2\\sqrt{13} \\approx 7.21\\text{ m s}^{-1}$, directed about $33.7^{\\circ}$ above the horizontal."
   }
 }

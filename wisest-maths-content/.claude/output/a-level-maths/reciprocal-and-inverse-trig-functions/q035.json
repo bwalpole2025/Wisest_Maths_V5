@@ -5,74 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "proof",
   "tags": [
-    "given ratio",
-    "secant",
-    "quadrant"
+    "identities",
+    "cot",
+    "sec",
+    "cosec"
   ],
-  "questionText": "Given that $\\tan\\theta = \\dfrac{3}{4}$ and $\\theta$ is acute, find the exact values of $\\sec\\theta$ and $\\cos\\theta$.",
+  "questionText": "Prove that $\\cot\\theta\\,\\sec\\theta \\equiv \\operatorname{cosec}\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the appropriate identity",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "This identity connects tangent directly to secant, so it lets us find secant from the given tangent without first finding sine and cosine.",
+        "description": "State the identity and strategy",
+        "workingLatex": "\\text{Prove: } \\cot\\theta\\,\\sec\\theta \\equiv \\operatorname{cosec}\\theta \\qquad \\text{Start with LHS}",
+        "explanation": "We rewrite each reciprocal function on the left in terms of $\\sin\\theta$ and $\\cos\\theta$, then simplify to reach $\\operatorname{cosec}\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the given tangent",
-        "workingLatex": "\\sec^2\\theta = 1 + \\left(\\tfrac{3}{4}\\right)^2",
-        "explanation": "We insert the value $\\frac{3}{4}$ for tangent, ready to compute the square.",
+        "description": "Recall the definition of cot",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Cotangent is cosine over sine, which is the most convenient form for combining with another ratio.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate the square",
-        "workingLatex": "= 1 + \\frac{9}{16}",
-        "explanation": "Squaring $\\frac{3}{4}$ gives $\\frac{9}{16}$, which we add to $1$.",
+        "description": "Recall the definition of sec",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Secant is the reciprocal of cosine, so it contributes a $\\cos\\theta$ in the denominator that we expect to cancel.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Combine into a single fraction",
-        "workingLatex": "= \\frac{16}{16} + \\frac{9}{16} = \\frac{25}{16}",
-        "explanation": "Writing $1$ as $\\frac{16}{16}$ allows the fractions to be added, giving $\\frac{25}{16}$.",
+        "description": "Substitute into the LHS",
+        "workingLatex": "\\cot\\theta\\,\\sec\\theta = \\frac{\\cos\\theta}{\\sin\\theta}\\cdot \\frac{1}{\\cos\\theta}",
+        "explanation": "Replacing both functions writes the whole product using only sine and cosine.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Take the square root",
-        "workingLatex": "\\sec\\theta = \\pm\\frac{5}{4}",
-        "explanation": "Square-rooting $\\frac{25}{16}$ gives $\\frac{5}{4}$, with a sign still to be decided.",
+        "description": "Multiply the fractions",
+        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta\\,\\cos\\theta}",
+        "explanation": "Multiplying numerators and denominators gathers everything into a single fraction, ready to cancel.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Choose the sign using the quadrant",
-        "workingLatex": "\\theta \\text{ acute} \\;\\Rightarrow\\; \\sec\\theta > 0 \\;\\Rightarrow\\; \\sec\\theta = \\frac{5}{4}",
-        "explanation": "For an acute angle cosine is positive, so secant is positive too, selecting the positive root.",
+        "description": "Cancel the common cosine",
+        "workingLatex": "= \\frac{1}{\\sin\\theta} \\qquad (\\cos\\theta \\neq 0)",
+        "explanation": "The $\\cos\\theta$ appears in both numerator and denominator, so it cancels wherever $\\cos\\theta\\neq0$, leaving $\\dfrac{1}{\\sin\\theta}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Find cosine as the reciprocal",
-        "workingLatex": "\\cos\\theta = \\frac{1}{\\sec\\theta} = \\frac{4}{5}",
-        "explanation": "Cosine is the reciprocal of secant, so it is $\\frac{4}{5}$.",
+        "description": "Recognise cosec",
+        "workingLatex": "\\frac{1}{\\sin\\theta} = \\operatorname{cosec}\\theta",
+        "explanation": "By definition $\\operatorname{cosec}\\theta=\\dfrac{1}{\\sin\\theta}$, so the LHS has become the RHS.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "State the results",
-        "workingLatex": "\\sec\\theta = \\frac{5}{4}, \\quad \\cos\\theta = \\frac{4}{5}",
-        "explanation": "These are the exact values, consistent with the classic $3$-$4$-$5$ right triangle.",
+        "description": "State the intermediate result",
+        "workingLatex": "\\cot\\theta\\,\\sec\\theta = \\operatorname{cosec}\\theta",
+        "explanation": "The left-hand side now matches the right-hand side exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check at a convenient angle",
+        "workingLatex": "\\cot 30^\\circ\\,\\sec 30^\\circ = \\sqrt{3}\\cdot \\frac{2}{\\sqrt{3}} = 2, \\qquad \\operatorname{cosec}30^\\circ = 2",
+        "explanation": "At $30^\\circ$ both sides equal $2$, supporting the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "\\cot\\theta\\,\\sec\\theta \\equiv \\operatorname{cosec}\\theta \\qquad \\text{(LHS} \\equiv \\text{RHS, QED)}",
+        "explanation": "Using only the definitions of cotangent, secant and cosecant the identity is established.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec\\theta = \\dfrac{5}{4}, \\quad \\cos\\theta = \\dfrac{4}{5}$"
+    "finalAnswer": "$\\cot\\theta\\,\\sec\\theta=\\dfrac{\\cos\\theta}{\\sin\\theta}\\cdot\\dfrac{1}{\\cos\\theta}=\\dfrac{1}{\\sin\\theta}=\\operatorname{cosec}\\theta$, so $\\cot\\theta\\,\\sec\\theta\\equiv\\operatorname{cosec}\\theta$."
   }
 }

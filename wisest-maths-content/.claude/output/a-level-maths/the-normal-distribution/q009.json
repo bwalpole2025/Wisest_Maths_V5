@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "probability"
+  ],
+  "questionText": "The heights, $X$ cm, of a species of plant are modelled by $X \\sim N(170, 6^2)$. Find $P(X > 173)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "X \\sim N(170,\\ 6^2), \\qquad P(X > 173) = \\ ?",
+        "explanation": "The heights are normal with mean $\\mu = 170$ cm and standard deviation $\\sigma = 6$ cm. We want the probability that a plant is taller than $173$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standardisation",
+        "workingLatex": "Z = \\dfrac{X - 170}{6}, \\qquad Z \\sim N(0,1)",
+        "explanation": "We convert the height into a $z$-score by subtracting the mean and dividing by the standard deviation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 173",
+        "workingLatex": "z = \\dfrac{173 - 170}{6} = \\dfrac{3}{6} = 0.5",
+        "explanation": "The height $173$ is $3$ cm above the mean, which is half of one standard deviation of $6$. So $173$ cm corresponds to $z = 0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite as an upper-tail probability",
+        "workingLatex": "P(X > 173) = P(Z > 0.5) = 1 - \\Phi(0.5)",
+        "explanation": "We want the area to the right of $z = 0.5$, which is $1$ minus the left-hand cumulative area $\\Phi(0.5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "1 - \\Phi(0.5) = 1 - 0.6915 = 0.3085",
+        "explanation": "The cumulative value at $z = 0.5$ is $0.6915$, so the upper tail is $1 - 0.6915 = 0.3085$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(X > 173) \\approx 0.3085",
+        "explanation": "So about $30.9\\%$ of plants are taller than $173$ cm. Since $173$ cm is only half a standard deviation above the mean, a fairly large fraction still exceeds it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X > 173) \\approx 0.3085$."
+  }
+}

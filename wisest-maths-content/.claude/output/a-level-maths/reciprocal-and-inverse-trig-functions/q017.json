@@ -6,60 +6,66 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 2,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "inverse trig",
-    "arccos",
-    "exact values",
-    "radians"
+    "reciprocal trig",
+    "cosec",
+    "asymptotes"
   ],
-  "questionText": "Find the exact value of $\\arccos(0)$, giving your answer in radians.",
+  "questionText": "The graph of $y = \\operatorname{cosec} x$ has vertical asymptotes wherever the function is undefined. Find these values of $x$ in degrees.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Interpret the inverse cosine",
-        "workingLatex": "\\arccos(0) = \\theta \\;\\Leftrightarrow\\; \\cos\\theta = 0",
-        "explanation": "We need the angle whose cosine is zero, chosen from the arccosine range.",
+        "description": "Recall the definition",
+        "workingLatex": "\\operatorname{cosec} x = \\frac{1}{\\sin x}",
+        "explanation": "Cosecant is one over sine, so it is undefined exactly where the denominator $\\sin x$ equals zero.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the principal range of arccos",
-        "workingLatex": "0 \\le \\theta \\le \\pi",
-        "explanation": "Arccosine outputs angles in this interval, so the answer lies somewhere between $0$ and $\\pi$.",
+        "description": "Set the denominator to zero",
+        "workingLatex": "\\sin x = 0",
+        "explanation": "Dividing by zero has no meaning, so the function breaks — and the graph has a vertical asymptote — wherever sine is zero.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall where cosine is zero",
-        "workingLatex": "\\cos\\frac{\\pi}{2} = 0",
-        "explanation": "Cosine is zero at $90^\\circ$, which is $\\frac{\\pi}{2}$ radians.",
+        "description": "Solve over one revolution",
+        "workingLatex": "\\sin x = 0 \\;\\Rightarrow\\; x = 0^\\circ, \\ 180^\\circ, \\ 360^\\circ",
+        "explanation": "Over one revolution sine is zero at $0^\\circ$, $180^\\circ$ and $360^\\circ$ — where the unit-circle point sits on the horizontal axis.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the angle lies in range",
-        "workingLatex": "0 \\le \\frac{\\pi}{2} \\le \\pi \\;\\checkmark",
-        "explanation": "The angle $\\frac{\\pi}{2}$ is within the range, so it is the valid output.",
+        "description": "Spot the spacing",
+        "workingLatex": "180^\\circ - 0^\\circ = 180^\\circ",
+        "explanation": "Consecutive zeros of sine are $180^\\circ$ apart, so the asymptotes repeat every $180^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the final value",
-        "workingLatex": "\\arccos(0) = \\frac{\\pi}{2}",
-        "explanation": "This is the exact value in radians.",
+        "description": "Write the general solution",
+        "workingLatex": "x = 180^\\circ k, \\quad k \\in \\mathbb{Z}",
+        "explanation": "Every multiple of $180^\\circ$ is a zero of sine, so this single expression captures all of them.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Note the geometric meaning",
-        "workingLatex": "\\cos\\tfrac{\\pi}{2} = 0 \\text{ (quarter turn)}",
-        "explanation": "A quarter turn points straight up, where the horizontal cosine component vanishes, which is why the cosine there is zero.",
+        "description": "Check a value",
+        "workingLatex": "k = 2: \\ x = 360^\\circ, \\quad \\sin 360^\\circ = 0 \\ \\checkmark",
+        "explanation": "Testing $k=2$ gives $360^\\circ$, where sine is zero as expected, confirming the general formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the asymptotes",
+        "workingLatex": "\\text{asymptotes at } x = 180^\\circ k = \\ldots, -180^\\circ, 0^\\circ, 180^\\circ, \\ldots",
+        "explanation": "So $y=\\operatorname{cosec} x$ is undefined, with a vertical asymptote, at every integer multiple of $180^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\arccos(0) = \\dfrac{\\pi}{2}$"
+    "finalAnswer": "$y=\\operatorname{cosec} x$ is undefined at $x = 180^\\circ k$ for integer $k$ (i.e. $\\ldots, -180^\\circ, 0^\\circ, 180^\\circ, 360^\\circ, \\ldots$), the points where $\\sin x = 0$; the graph has a vertical asymptote at each."
   }
 }

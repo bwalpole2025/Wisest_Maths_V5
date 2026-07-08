@@ -5,60 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 7,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "exact"
+    "cosine form",
+    "modelling"
   ],
-  "questionText": "Solve $\\cos\\theta + \\sin\\theta = -1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "The horizontal displacement of a piston is $s(t) = 24\\cos(20t)^\\circ - 7\\sin(20t)^\\circ$ cm, where $t$ is the time in seconds. (a) Express $s(t)$ in the form $R\\cos(20t + \\alpha)^\\circ$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. (b) State the amplitude and the period of the motion. (c) Find the least displacement and the first time $t > 0$ at which it occurs. (d) Find the first two times $t > 0$ at which the piston passes through $s = 0$, giving your answers in seconds to $3$ decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in R-form",
-        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt2\\sin(\\theta + 45^\\circ)",
-        "explanation": "Equal unit coefficients give amplitude $\\sqrt2$ and phase $45^\\circ$.",
+        "description": "Choose the target form",
+        "workingLatex": "24\\cos(20t)^\\circ - 7\\sin(20t)^\\circ \\equiv R\\cos(20t + \\alpha)",
+        "explanation": "The expression leads with a cosine and subtracts a sine, which is exactly the shape produced by expanding $R\\cos(20t+\\alpha)$. Choosing this form keeps $\\alpha$ acute.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set up the equation",
-        "workingLatex": "\\sqrt2\\sin(\\theta + 45^\\circ) = -1 \\;\\Rightarrow\\; \\sin(\\theta + 45^\\circ) = -\\frac{1}{\\sqrt2}",
-        "explanation": "Dividing by $\\sqrt2$ gives a standard negative exact value.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\cos(20t + \\alpha) = R\\cos\\alpha\\,\\cos(20t)^\\circ - R\\sin\\alpha\\,\\sin(20t)^\\circ",
+        "explanation": "Using $\\cos(A+B)=\\cos A\\cos B - \\sin A\\sin B$ gives a multiple of $\\cos(20t)$ minus a multiple of $\\sin(20t)$, matching the original expression.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the shifted interval",
-        "workingLatex": "45^\\circ \\le \\theta + 45^\\circ < 405^\\circ",
-        "explanation": "Adding the shift to the bounds.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 24, \\qquad R\\sin\\alpha = 7",
+        "explanation": "Matching the $\\cos(20t)$ terms gives $R\\cos\\alpha=24$; matching the $\\sin(20t)$ terms, the two minus signs cancel to give $R\\sin\\alpha=7$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta + 45^\\circ = 225^\\circ, 315^\\circ",
-        "explanation": "A negative sine of $\\frac{1}{\\sqrt2}$ gives third- and fourth-quadrant angles $225^\\circ$ and $315^\\circ$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{24^2 + 7^2} = \\sqrt{625} = 25",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2 = 576 + 49 = 625$, so the amplitude is $R = 25$ cm.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = 180^\\circ, 270^\\circ",
-        "explanation": "Subtracting $45^\\circ$ from each gives the solutions.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{7}{24} \\Rightarrow \\alpha = 16.26^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{7}{24}$, and both parts being positive makes $\\alpha$ acute, so $\\alpha = 16.26^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Verify one solution",
-        "workingLatex": "\\theta = 180^\\circ: \\cos 180^\\circ + \\sin 180^\\circ = -1 + 0 = -1 \\;\\checkmark",
-        "explanation": "Substituting confirms the solution.",
+        "description": "State the R-form",
+        "workingLatex": "s(t) = 25\\cos(20t + 16.26^\\circ)",
+        "explanation": "The displacement is now a single cosine wave of amplitude $25$. Its size, timing and zeros are all easy to read off.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the amplitude",
+        "workingLatex": "\\text{amplitude} = R = 25\\text{ cm}",
+        "explanation": "The amplitude is the greatest distance the piston moves from the centre of its travel, which is exactly $R = 25$ cm.",
+        "diagram": null
+      },
+      {
+        "description": "State the period",
+        "workingLatex": "\\text{period} = \\dfrac{360^\\circ}{20} = 18\\text{ s}",
+        "explanation": "The angle grows by $20^\\circ$ for each second, so a full cycle of $360^\\circ$ takes $18$ seconds. The piston therefore repeats its motion every $18$ s.",
+        "diagram": null,
+        "stepNumber": 8
+      },
+      {
+        "stepNumber": 9,
+        "description": "Read off the least displacement",
+        "workingLatex": "s_{\\min} = -R = -25\\text{ cm}",
+        "explanation": "A cosine cannot fall below $-1$, so the least displacement is $-25$ cm. No calculus is needed; the minimum is the negative of the amplitude.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the time of least displacement",
+        "workingLatex": "20t + 16.26^\\circ = 180^\\circ \\Rightarrow 20t = 163.74^\\circ \\Rightarrow t = 8.187\\text{ s}",
+        "explanation": "A cosine reaches $-1$ when its angle is $180^\\circ$. Solving for $t$ gives the first time the piston is at $-25$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the zero-displacement equation",
+        "workingLatex": "25\\cos(20t + 16.26^\\circ) = 0 \\Rightarrow \\cos(20t + 16.26^\\circ) = 0",
+        "explanation": "The piston is at $s=0$ when the cosine is zero. Dividing by $25$ leaves the basic equation $\\cos(20t+16.26^\\circ)=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "List the first shifted-angle solutions",
+        "workingLatex": "20t + 16.26^\\circ = 90^\\circ,\\; 270^\\circ",
+        "explanation": "Cosine is zero at $90^\\circ$ and $270^\\circ$ (and every $180^\\circ$ after). For the first two positive times we take the two smallest angles above the starting value $16.26^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{90 - 16.26}{20} = 3.687\\text{ s}, \\qquad t = \\dfrac{270 - 16.26}{20} = 12.687\\text{ s}",
+        "explanation": "Subtracting the phase and dividing by $20$ gives the first two moments the piston passes through the origin, one on each side of the minimum.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 180^\\circ, 270^\\circ$"
+    "finalAnswer": "(a) $s(t) = 25\\cos(20t + 16.26^\\circ)$. (b) Amplitude $25$ cm and period $18$ s. (c) The least displacement is $-25$ cm, first at $t = 8.187$ s. (d) The piston is at $s = 0$ at $t = 3.687$ s and $t = 12.687$ s."
   }
 }

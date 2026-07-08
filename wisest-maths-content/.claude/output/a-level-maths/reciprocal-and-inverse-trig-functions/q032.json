@@ -5,67 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 5,
+  "marks": 4,
   "answerType": "proof",
   "tags": [
     "identities",
-    "proof",
-    "cosecant"
+    "sec",
+    "tan",
+    "pythagorean identity"
   ],
-  "questionText": "Prove that $\\csc\\theta - \\sin\\theta \\equiv \\cos\\theta\\cot\\theta$.",
+  "questionText": "Prove that $\\sec^2\\theta - 1 \\equiv \\tan^2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\csc\\theta - \\sin\\theta",
-        "explanation": "We work from the left-hand side towards the right, using the reciprocal definition.",
+        "description": "State the identity and choose a side to work on",
+        "workingLatex": "\\text{Prove: } \\sec^2\\theta - 1 \\equiv \\tan^2\\theta \\qquad \\text{Start with LHS} = \\sec^2\\theta - 1",
+        "explanation": "We prove an identity by transforming one side into the other. The left-hand side is the busier expression, so we start there and aim to reach $\\tan^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite cosecant as a reciprocal",
-        "workingLatex": "= \\frac{1}{\\sin\\theta} - \\sin\\theta",
-        "explanation": "Converting cosecant to one over sine puts both terms over sine.",
+        "description": "Recall the definition of secant",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Reciprocal functions are easiest to handle once written through $\\sin$ and $\\cos$, and $\\sec\\theta$ is by definition the reciprocal of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Form a common denominator",
-        "workingLatex": "= \\frac{1 - \\sin^2\\theta}{\\sin\\theta}",
-        "explanation": "Combining over $\\sin\\theta$ merges the terms into one fraction.",
+        "description": "Square the definition",
+        "workingLatex": "\\sec^2\\theta = \\frac{1}{\\cos^2\\theta}",
+        "explanation": "Squaring both sides turns $\\sec\\theta$ into the $\\sec^2\\theta$ that appears in the identity, giving us $\\dfrac{1}{\\cos^2\\theta}$ to substitute.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "1 - \\sin^2\\theta = \\cos^2\\theta",
-        "explanation": "The numerator rearranges the Pythagorean identity, becoming $\\cos^2\\theta$.",
+        "description": "Substitute into the LHS",
+        "workingLatex": "\\text{LHS} = \\frac{1}{\\cos^2\\theta} - 1",
+        "explanation": "Replacing $\\sec^2\\theta$ with $\\dfrac{1}{\\cos^2\\theta}$ leaves the whole side written purely in cosine, ready to combine.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute the numerator",
-        "workingLatex": "= \\frac{\\cos^2\\theta}{\\sin\\theta}",
-        "explanation": "The fraction now has cosine squared on top, ready to be split.",
+        "description": "Write over a common denominator",
+        "workingLatex": "\\frac{1}{\\cos^2\\theta} - 1 = \\frac{1 - \\cos^2\\theta}{\\cos^2\\theta}",
+        "explanation": "Writing the $1$ as $\\dfrac{\\cos^2\\theta}{\\cos^2\\theta}$ lets us subtract the two terms as a single fraction over $\\cos^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Split off a cotangent",
-        "workingLatex": "= \\cos\\theta \\cdot \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Separating one cosine leaves $\\frac{\\cos\\theta}{\\sin\\theta}$, which is cotangent.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1 \\implies 1 - \\cos^2\\theta \\equiv \\sin^2\\theta",
+        "explanation": "The numerator $1-\\cos^2\\theta$ is exactly what the Pythagorean identity rearranges to $\\sin^2\\theta$, the key step that introduces sine.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Recognise the cotangent and conclude",
-        "workingLatex": "= \\cos\\theta\\cot\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "This is precisely the right-hand side, so the identity holds.",
+        "description": "Substitute the numerator",
+        "workingLatex": "\\text{LHS} = \\frac{\\sin^2\\theta}{\\cos^2\\theta}",
+        "explanation": "Swapping the numerator for $\\sin^2\\theta$ gives a ratio of squares of sine and cosine, which is very close to a tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Recognise the tangent ratio",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} = \\left(\\frac{\\sin\\theta}{\\cos\\theta}\\right)^2 = \\tan^2\\theta",
+        "explanation": "Since $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$, squaring that ratio is $\\tan^2\\theta$, so the LHS has become the RHS.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check at a convenient angle",
+        "workingLatex": "\\sec^2 60^\\circ - 1 = 2^2 - 1 = 3, \\qquad \\tan^2 60^\\circ = (\\sqrt{3})^2 = 3",
+        "explanation": "A quick numerical test at $60^\\circ$ gives $3$ on both sides, which supports the algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "\\sec^2\\theta - 1 \\equiv \\tan^2\\theta \\qquad \\text{(LHS} \\equiv \\text{RHS, QED)}",
+        "explanation": "The left-hand side has been transformed into the right-hand side using only definitions and the Pythagorean identity, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\csc\\theta - \\sin\\theta \\equiv \\cos\\theta\\cot\\theta$"
+    "finalAnswer": "Starting from the left, $\\sec^2\\theta-1=\\dfrac{1}{\\cos^2\\theta}-1=\\dfrac{1-\\cos^2\\theta}{\\cos^2\\theta}=\\dfrac{\\sin^2\\theta}{\\cos^2\\theta}=\\tan^2\\theta$, so $\\sec^2\\theta-1\\equiv\\tan^2\\theta$ as required."
   }
 }

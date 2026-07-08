@@ -4,61 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "tangent",
-    "intersection"
+    "trig parametric",
+    "speed",
+    "exact"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. The tangent at $t = 3$ meets the curve again at a second point. Find the parameter value there.",
+  "questionText": "A particle moves along the curve $x = 2\\cos t$, $y = 5\\sin t$, where $t$ is in radians. Find the exact speed of the particle at the instant $t = \\dfrac{\\pi}{4}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Use the general tangent result",
-        "workingLatex": "py = x + p^2, \\quad p = 3 \\;\\Rightarrow\\; 3y = x + 9",
-        "explanation": "The tangent at parameter $p$ is $py = x + p^2$; at $p = 3$ this is $3y = x + 9$.",
+        "description": "State the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "The speed is the length of the velocity vector, so we combine the horizontal and vertical rates using Pythagoras.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the parametric point",
-        "workingLatex": "3(2t) = t^2 + 9",
-        "explanation": "Any point on the curve has coordinates $(t^2, 2t)$; substituting finds where the tangent meets the curve.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = -2\\sin t",
+        "explanation": "Differentiating $2\\cos t$ gives the horizontal velocity component.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to a quadratic",
-        "workingLatex": "t^2 - 6t + 9 = 0",
-        "explanation": "Bringing all terms to one side gives a quadratic in $t$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = 5\\cos t",
+        "explanation": "Differentiating $5\\sin t$ gives the vertical velocity component.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(t - 3)^2 = 0",
-        "explanation": "This is a perfect square with a repeated root at $t = 3$.",
+        "description": "Insert the exact trig values at t = pi/4",
+        "workingLatex": "\\sin\\tfrac{\\pi}{4} = \\cos\\tfrac{\\pi}{4} = \\dfrac{\\sqrt{2}}{2}",
+        "explanation": "At $t=\\tfrac{\\pi}{4}$ sine and cosine are equal, so we can keep everything exact.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Interpret the repeated root",
-        "workingLatex": "t = 3 \\text{ (double root)}",
-        "explanation": "The repeated root means the line touches the curve only at $t = 3$ — it is a genuine tangent and does not cross the parabola again.",
+        "description": "Evaluate the velocity components",
+        "workingLatex": "\\dot{x} = -2\\cdot\\dfrac{\\sqrt{2}}{2} = -\\sqrt{2}, \\qquad \\dot{y} = 5\\cdot\\dfrac{\\sqrt{2}}{2} = \\dfrac{5\\sqrt{2}}{2}",
+        "explanation": "Substituting the exact values gives the two components at this instant.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Conclude",
-        "workingLatex": "\\text{no second intersection point}",
-        "explanation": "For this parabola every tangent meets the curve exactly once, so there is no second point.",
+        "description": "Square each component",
+        "workingLatex": "\\dot{x}^{2} = 2, \\qquad \\dot{y}^{2} = \\left(\\dfrac{5\\sqrt{2}}{2}\\right)^{2} = \\dfrac{25\\cdot 2}{4} = \\dfrac{25}{2}",
+        "explanation": "Squaring removes the sign and the surds, leaving simple fractions to add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Add the squares",
+        "workingLatex": "\\dot{x}^{2} + \\dot{y}^{2} = 2 + \\dfrac{25}{2} = \\dfrac{4}{2} + \\dfrac{25}{2} = \\dfrac{29}{2}",
+        "explanation": "Writing $2$ as $\\tfrac{4}{2}$ lets us add the fractions to a single value under the root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Take the square root",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dfrac{29}{2}} = \\dfrac{\\sqrt{29}}{\\sqrt{2}}",
+        "explanation": "The speed is the square root of the summed squares; we now tidy the surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rationalise the denominator",
+        "workingLatex": "\\dfrac{\\sqrt{29}}{\\sqrt{2}}\\times\\dfrac{\\sqrt{2}}{\\sqrt{2}} = \\dfrac{\\sqrt{58}}{2}",
+        "explanation": "Multiplying top and bottom by $\\sqrt{2}$ clears the surd from the denominator, giving the tidy exact answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "The tangent touches only at $t = 3$ (repeated root); there is no second intersection."
+    "finalAnswer": "The exact speed at $t=\\dfrac{\\pi}{4}$ is $\\dfrac{\\sqrt{58}}{2}$ units per unit time."
   }
 }

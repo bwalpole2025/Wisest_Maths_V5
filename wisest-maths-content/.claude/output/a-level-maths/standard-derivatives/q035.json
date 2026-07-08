@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "stationary point",
+    "exponential"
+  ],
+  "questionText": "The curve $y = e^{x} - x$ has a single stationary point. Find its coordinates and determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the standard derivatives needed",
+        "workingLatex": "\\frac{d}{dx}\\left(e^{x}\\right) = e^{x}, \\qquad \\frac{d}{dx}(x) = 1",
+        "explanation": "The exponential $e^{x}$ is its own derivative, and the linear term $x$ differentiates to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} - 1",
+        "explanation": "Differentiating term by term using linearity gives the gradient function of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the derivative equal to zero",
+        "workingLatex": "e^{x} - 1 = 0",
+        "explanation": "At a stationary point the tangent is horizontal, so the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange",
+        "workingLatex": "e^{x} = 1",
+        "explanation": "Moving the constant to the other side isolates the exponential.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x",
+        "workingLatex": "x = \\ln 1 = 0",
+        "explanation": "Taking natural logs of both sides; since $\\ln 1 = 0$, the only solution is $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{0} - 0 = 1",
+        "explanation": "Substituting $x=0$ into the curve gives the height of the stationary point: the coordinates are $(0,\\,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate again for the second derivative",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = e^{x}",
+        "explanation": "The derivative of $e^{x}-1$ is $e^{x}$; the constant $-1$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the second derivative at x = 0",
+        "workingLatex": "\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{x=0} = e^{0} = 1 > 0",
+        "explanation": "The second derivative is positive at the stationary point, which tells us about the concavity there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Classify the stationary point",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} > 0 \\;\\Rightarrow\\; \\text{minimum}",
+        "explanation": "A positive second derivative means the curve is concave up, so the stationary point is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "(0,\\,1) \\;\\text{is a minimum}",
+        "explanation": "The curve $y=e^{x}-x$ has a single stationary point, a minimum at $(0,1)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The stationary point is $(0,\\,1)$, and it is a local minimum."
+  }
+}

@@ -5,60 +5,117 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 7,
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "minimum",
-    "constant"
+    "reciprocal",
+    "radians"
   ],
-  "questionText": "Find the minimum value of $3 + 4\\cos\\theta - 3\\sin\\theta$ and the value of $\\theta$ (to the nearest degree) at which it occurs.",
+  "questionText": "Given that $g(\\theta)=\\dfrac{1}{5+\\sin\\theta+\\sqrt{3}\\,\\cos\\theta}$ for $0\\le\\theta<2\\pi$, express $\\sin\\theta+\\sqrt{3}\\,\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$ with $R>0$ and $0<\\alpha<\\dfrac{\\pi}{2}$, and hence determine the maximum and minimum values of $g(\\theta)$ together with the exact value of $\\theta$ at which each occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the varying part in R-form",
-        "workingLatex": "4\\cos\\theta - 3\\sin\\theta = R\\cos(\\theta + \\alpha)",
-        "explanation": "Starting with cosine and a minus sign, the $R\\cos(\\theta + \\alpha)$ form fits.",
+        "description": "Set up the identity",
+        "workingLatex": "\\sin\\theta+\\sqrt{3}\\,\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "To understand how the denominator behaves we compress its two trigonometric terms into a single sine wave, so we begin by setting the expressions identically equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{4^2 + 3^2} = 5, \\quad \\tan\\alpha = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
-        "explanation": "Amplitude $5$ and phase about $36.87^\\circ$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "The compound-angle expansion rearranges the right-hand side into a $\\sin\\theta$ part and a $\\cos\\theta$ part so that it lines up with the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rewrite the expression",
-        "workingLatex": "3 + 5\\cos(\\theta + 36.87^\\circ)",
-        "explanation": "The constant $3$ shifts the whole expression up.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=1,\\qquad R\\sin\\alpha=\\sqrt{3}",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ and the coefficient of $\\cos\\theta$ on both sides produces these two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the minimum value",
-        "workingLatex": "\\text{min} = 3 - 5 = -2",
-        "explanation": "The least value occurs when the cosine equals $-1$.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{1^2+(\\sqrt{3})^2}=\\sqrt{4}=2",
+        "explanation": "Squaring and adding removes $\\alpha$ using $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=1+3=4$, and we keep the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the theta",
-        "workingLatex": "\\cos(\\theta + 36.87^\\circ) = -1 \\;\\Rightarrow\\; \\theta + 36.87^\\circ = 180^\\circ",
-        "explanation": "Cosine is $-1$ when its argument is $180^\\circ$.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{\\sqrt{3}}{1}=\\sqrt{3}\\Rightarrow\\alpha=\\dfrac{\\pi}{3}",
+        "explanation": "Dividing the two equations gives $\\tan\\alpha=\\sqrt{3}$; since both coefficients are positive $\\alpha$ is acute, and $\\arctan\\sqrt{3}=\\dfrac{\\pi}{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for theta",
-        "workingLatex": "\\theta = 143.13^\\circ \\approx 143^\\circ",
-        "explanation": "Subtracting the phase gives the location of the minimum.",
+        "description": "Rewrite g",
+        "workingLatex": "g(\\theta)=\\dfrac{1}{5+2\\sin\\!\\left(\\theta+\\frac{\\pi}{3}\\right)}",
+        "explanation": "With the two terms merged, the whole denominator is $5$ plus a single sine wave of amplitude $2$, so its behaviour is now easy to track.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound the sine term",
+        "workingLatex": "-1\\le\\sin\\!\\left(\\theta+\\frac{\\pi}{3}\\right)\\le 1",
+        "explanation": "The sine of any angle lies between $-1$ and $1$, and both extremes are actually reached as $\\theta$ runs over a full period.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the range of the denominator",
+        "workingLatex": "3\\le 5+2\\sin\\!\\left(\\theta+\\frac{\\pi}{3}\\right)\\le 7",
+        "explanation": "Scaling the sine bounds by $2$ and adding $5$ gives a denominator that varies between $5-2=3$ and $5+2=7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Apply reciprocal reasoning",
+        "workingLatex": "\\text{denominator} > 0 \\;\\Rightarrow\\; g \\text{ largest when denominator smallest}",
+        "explanation": "The denominator never reaches zero and stays positive, so the fraction is largest exactly when the denominator is smallest, and smallest when the denominator is largest. The turning values follow directly, without differentiating.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Maximum value of g",
+        "workingLatex": "g_{\\max}=\\dfrac{1}{3}",
+        "explanation": "Using the smallest denominator $3$ gives the largest value of $g$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Minimum value of g",
+        "workingLatex": "g_{\\min}=\\dfrac{1}{7}",
+        "explanation": "Using the largest denominator $7$ gives the smallest value of $g$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Locate θ for the maximum",
+        "workingLatex": "\\sin\\!\\left(\\theta+\\frac{\\pi}{3}\\right)=-1\\Rightarrow\\theta+\\frac{\\pi}{3}=\\frac{3\\pi}{2}\\Rightarrow\\theta=\\frac{7\\pi}{6}",
+        "explanation": "The denominator is least when the sine term is $-1$, i.e. when the inside angle is $\\dfrac{3\\pi}{2}$; subtracting $\\dfrac{\\pi}{3}$ gives $\\theta=\\dfrac{7\\pi}{6}$, which lies in $[0,2\\pi)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Locate θ for the minimum",
+        "workingLatex": "\\sin\\!\\left(\\theta+\\frac{\\pi}{3}\\right)=1\\Rightarrow\\theta+\\frac{\\pi}{3}=\\frac{\\pi}{2}\\Rightarrow\\theta=\\frac{\\pi}{6}",
+        "explanation": "The denominator is greatest when the sine term is $1$, i.e. when the inside angle is $\\dfrac{\\pi}{2}$; subtracting $\\dfrac{\\pi}{3}$ gives $\\theta=\\dfrac{\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the conclusion",
+        "workingLatex": "g_{\\max}=\\tfrac{1}{3}\\ \\text{at}\\ \\theta=\\tfrac{7\\pi}{6},\\qquad g_{\\min}=\\tfrac{1}{7}\\ \\text{at}\\ \\theta=\\tfrac{\\pi}{6}",
+        "explanation": "Both angles lie in the required interval $0\\le\\theta<2\\pi$, so we have the complete answer for the maximum and minimum of $g$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Minimum $= -2$ at $\\theta \\approx 143^\\circ$."
+    "finalAnswer": "$\\sin\\theta+\\sqrt{3}\\,\\cos\\theta=2\\sin\\!\\left(\\theta+\\dfrac{\\pi}{3}\\right)$. The maximum value is $g=\\dfrac{1}{3}$ at $\\theta=\\dfrac{7\\pi}{6}$, and the minimum value is $g=\\dfrac{1}{7}$ at $\\theta=\\dfrac{\\pi}{6}$."
   }
 }

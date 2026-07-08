@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quotient rule",
+    "rational function",
+    "differentiation"
+  ],
+  "questionText": "Given that $y = \\dfrac{x}{x+1}$, find $\\dfrac{dy}{dx}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a quotient and state the rule",
+        "workingLatex": "\\frac{d}{dx}\\!\\left(\\frac{u}{v}\\right) = \\frac{u'v - uv'}{v^2}",
+        "explanation": "$y = \\dfrac{x}{x+1}$ is one function divided by another, so we use the quotient rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the numerator and denominator",
+        "workingLatex": "u = x, \\qquad v = x + 1",
+        "explanation": "The numerator is $u$ and the denominator is $v$. Keeping this order matters, because the quotient rule is not symmetric.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = 1, \\qquad v' = 1",
+        "explanation": "Both $x$ and $x + 1$ differentiate to $1$ by the power rule, since the constant $+1$ disappears.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{(1)(x+1) - x(1)}{(x+1)^2}",
+        "explanation": "Substituting into $\\dfrac{u'v - uv'}{v^2}$ builds the numerator from the two products and squares the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x + 1 - x}{(x+1)^2}",
+        "explanation": "Expanding the top gives $x + 1 - x$, where the $x$ terms are about to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{(x+1)^2}",
+        "explanation": "The $+x$ and $-x$ cancel, leaving just $1$ on top — a pleasingly simple result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{(x+1)^2}",
+        "explanation": "This is the simplified derivative; note it is positive everywhere the function is defined, so the curve is always increasing.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{1}{(x+1)^2}$."
+  }
+}

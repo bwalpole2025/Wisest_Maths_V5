@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q016",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "e^x",
+    "gradient"
+  ],
+  "questionText": "Given $y = x^3 + e^x$, find $\\dfrac{dy}{dx}$ and hence the gradient of the curve at $x = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up and use linearity",
+        "workingLatex": "y = x^3 + e^x",
+        "explanation": "Differentiate the power term and the exponential term separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the power term",
+        "workingLatex": "\\frac{d}{dx}(x^3) = 3x^2",
+        "explanation": "By the power rule, multiply by the index $3$ and reduce the power by one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the exponential term",
+        "workingLatex": "\\frac{d}{dx}(e^x) = e^x",
+        "explanation": "$e^x$ is its own derivative, so this term is unchanged.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = 3x^2 + e^x",
+        "explanation": "Adding the two derivatives gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = 3(0)^2 + e^{0}",
+        "explanation": "Substitute $x=0$ into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 0 + 1 = 1",
+        "explanation": "The first term vanishes and $e^{0}=1$, leaving a gradient of $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = 1",
+        "explanation": "So the curve has gradient $1$ at $x=0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 3x^2 + e^x$, and at $x=0$ the gradient is $1$."
+  }
+}

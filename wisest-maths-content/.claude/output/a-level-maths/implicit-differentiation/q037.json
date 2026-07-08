@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "logarithm",
+    "chain rule"
+  ],
+  "questionText": "The curve $C$ has equation $\\ln(x + y) = x$. (a) Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$. (b) Hence find the gradient of $C$ at the point where it crosses the $y$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}\\big(\\ln(x + y)\\big) = \\frac{d}{dx}(x)",
+        "explanation": "We differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the logarithm with the chain rule",
+        "workingLatex": "\\frac{1}{x + y}\\cdot\\frac{d}{dx}(x + y) = 1",
+        "explanation": "The derivative of $\\ln u$ is $\\tfrac{1}{u}$ times the derivative of $u = x + y$. On the right, $\\frac{d}{dx}(x) = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inside bracket",
+        "workingLatex": "\\frac{d}{dx}(x + y) = 1 + \\frac{dy}{dx}",
+        "explanation": "The $x$ gives $1$ and the $y$ gives $\\frac{dy}{dx}$, since $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute back",
+        "workingLatex": "\\frac{1 + \\frac{dy}{dx}}{x + y} = 1",
+        "explanation": "Putting the derivative of the bracket into the chain-rule expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply both sides by (x + y)",
+        "workingLatex": "1 + \\frac{dy}{dx} = x + y",
+        "explanation": "Clearing the denominator removes the fraction and simplifies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = x + y - 1",
+        "explanation": "Subtracting $1$ from both sides isolates the gradient, which here is a neat expression in $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find where the curve crosses the y-axis",
+        "workingLatex": "\\ln(0 + y) = 0 \\;\\Rightarrow\\; \\ln y = 0 \\;\\Rightarrow\\; y = 1",
+        "explanation": "On the $y$-axis $x = 0$. Since $\\ln y = 0$ means $y = e^{0} = 1$, the curve crosses at $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the crossing point",
+        "workingLatex": "\\text{Crossing point } (0, 1)",
+        "explanation": "So the curve meets the $y$-axis at $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the gradient there",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(0,1)} = 0 + 1 - 1 = 0",
+        "explanation": "Substituting $x = 0$ and $y = 1$ gives a gradient of $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Interpret and state the results",
+        "workingLatex": "\\frac{dy}{dx} = x + y - 1, \\qquad \\text{gradient at } (0,1) = 0",
+        "explanation": "A gradient of $0$ means the tangent at $(0,1)$ is horizontal. So $\\frac{dy}{dx} = x + y - 1$ and the gradient at the $y$-axis crossing is $0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = x + y - 1$; at $(0,1)$ the gradient is $0$."
+  }
+}

@@ -5,61 +5,117 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 7,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving",
-    "cosine"
+    "modelling",
+    "temperature"
   ],
-  "questionText": "Solve $5\\cos\\theta + 12\\sin\\theta + 4 = 0$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionText": "The temperature in a greenhouse is modelled by $T(t) = 16 + 3\\sin(15t)^\\circ + 4\\cos(15t)^\\circ$ degrees Celsius, where $t$ is the time in hours after midnight and $0 \\le t \\le 24$. (a) Express $3\\sin(15t)^\\circ + 4\\cos(15t)^\\circ$ in the form $R\\sin(15t + \\alpha)^\\circ$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. (b) Find the maximum and minimum temperatures and the times at which they first occur. (c) Find the times at which the temperature is $18^\\circ$C, giving your answers in hours to $2$ decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Reorder and find R",
-        "workingLatex": "12\\sin\\theta + 5\\cos\\theta, \\quad R = \\sqrt{12^2 + 5^2} = 13",
-        "explanation": "Writing sine first, the amplitude is $13$.",
+        "description": "Separate the constant from the waves",
+        "workingLatex": "T(t) = 16 + \\big(3\\sin(15t)^\\circ + 4\\cos(15t)^\\circ\\big)",
+        "explanation": "The $16$ is just the mean temperature about which the greenhouse warms and cools. We combine the two wave terms into one sine wave first, then add the $16$ back.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\alpha \\approx 22.62^\\circ",
-        "explanation": "The ratio gives the phase angle.",
+        "description": "Set up the identity to match",
+        "workingLatex": "3\\sin(15t)^\\circ + 4\\cos(15t)^\\circ \\equiv R\\sin(15t + \\alpha)",
+        "explanation": "Writing the two terms as a single wave $R\\sin(15t+\\alpha)$ lets us expand and compare coefficients, with $15t$ acting as the angle.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rewrite the equation",
-        "workingLatex": "13\\sin(\\theta + 22.62^\\circ) + 4 = 0",
-        "explanation": "Substituting the harmonic form.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(15t + \\alpha) = R\\cos\\alpha\\,\\sin(15t)^\\circ + R\\sin\\alpha\\,\\cos(15t)^\\circ",
+        "explanation": "Applying $\\sin(A+B)=\\sin A\\cos B + \\cos A\\sin B$ gives a multiple of $\\sin(15t)$ plus a multiple of $\\cos(15t)$, matching the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Isolate the sine",
-        "workingLatex": "\\sin(\\theta + 22.62^\\circ) = -\\frac{4}{13} \\approx -0.3077",
-        "explanation": "Subtracting $4$ and dividing by $13$ gives a negative sine value.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 3, \\qquad R\\sin\\alpha = 4",
+        "explanation": "Matching the amount of $\\sin(15t)$ and the amount of $\\cos(15t)$ on each side gives these two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the base angles",
-        "workingLatex": "\\theta + 22.62^\\circ = 197.92^\\circ, 342.08^\\circ",
-        "explanation": "A negative sine gives third- and fourth-quadrant solutions; within the shifted interval these are the relevant values.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5",
+        "explanation": "Squaring and adding removes $\\alpha$ via $\\cos^2\\alpha + \\sin^2\\alpha = 1$, so $R^2 = 3^2 + 4^2 = 25$ and $R = 5$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta \\approx 175^\\circ, 319^\\circ",
-        "explanation": "Subtracting $22.62^\\circ$ and rounding gives the two solutions.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{4}{3} \\Rightarrow \\alpha = 53.13^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha = \\tfrac{4}{3}$, and since both parts are positive $\\alpha$ is acute, so $\\alpha = 53.13^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the full model",
+        "workingLatex": "T(t) = 16 + 5\\sin(15t + 53.13^\\circ)",
+        "explanation": "The temperature is now a single wave of amplitude $5$ sitting on a mean of $16^\\circ$C, so it swings between $11^\\circ$C and $21^\\circ$C.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the maximum temperature and its time",
+        "workingLatex": "T_{\\max} = 16 + 5 = 21^\\circ\\text{C at } 15t + 53.13^\\circ = 90^\\circ \\Rightarrow t = 2.46\\text{ h}",
+        "explanation": "The greatest value of $\\sin$ is $1$, giving $T_{\\max} = 21^\\circ$C. It first occurs when the angle is $90^\\circ$, which solves to $t \\approx 2.46$ h. No calculus is required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the minimum temperature and its time",
+        "workingLatex": "T_{\\min} = 16 - 5 = 11^\\circ\\text{C at } 15t + 53.13^\\circ = 270^\\circ \\Rightarrow t = 14.46\\text{ h}",
+        "explanation": "The least value of $\\sin$ is $-1$, giving $T_{\\min} = 11^\\circ$C when the angle is $270^\\circ$, which occurs at $t \\approx 14.46$ h in the afternoon.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set up the level equation",
+        "workingLatex": "16 + 5\\sin(15t + 53.13^\\circ) = 18 \\Rightarrow \\sin(15t + 53.13^\\circ) = 0.4",
+        "explanation": "For a temperature of $18^\\circ$C we set the model equal to $18$, subtract the mean and divide by the amplitude, reducing it to $\\sin(15t+53.13^\\circ)=0.4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the base angle",
+        "workingLatex": "\\arcsin(0.4) = 23.58^\\circ",
+        "explanation": "The principal value is $23.58^\\circ$. Sine is positive in the first and second quadrants, so we will also need $180^\\circ - 23.58^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Shift the search interval",
+        "workingLatex": "0 \\le t \\le 24 \\Rightarrow 53.13^\\circ \\le 15t + 53.13^\\circ \\le 413.13^\\circ",
+        "explanation": "Because we are solving for the shifted angle, we shift the endpoints too. This keeps every solution tied to a time inside the $24$-hour window.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "List all shifted-angle solutions",
+        "workingLatex": "15t + 53.13^\\circ = 156.42^\\circ,\\; 383.58^\\circ",
+        "explanation": "Within $[53.13^\\circ, 413.13^\\circ]$ the solutions are $180^\\circ - 23.58^\\circ = 156.42^\\circ$ and $360^\\circ + 23.58^\\circ = 383.58^\\circ$. The base $23.58^\\circ$ is below the interval and is discarded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{156.42 - 53.13}{15} = 6.89\\text{ h}, \\qquad t = \\dfrac{383.58 - 53.13}{15} = 22.03\\text{ h}",
+        "explanation": "Undoing the shift gives two times: once in the morning as the greenhouse warms past $18^\\circ$C, and once late in the evening as it cools back through $18^\\circ$C.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 175^\\circ, 319^\\circ$"
+    "finalAnswer": "(a) $3\\sin(15t)^\\circ + 4\\cos(15t)^\\circ = 5\\sin(15t + 53.13^\\circ)$. (b) Maximum $21^\\circ$C at $t = 2.46$ h; minimum $11^\\circ$C at $t = 14.46$ h. (c) The temperature is $18^\\circ$C at $t = 6.89$ h and $t = 22.03$ h."
   }
 }

@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu",
+    "inverse normal"
+  ],
+  "questionText": "The marks, $X$, scored by candidates in an examination are modelled by $X \\sim N(\\mu, 12^2)$, where the mean $\\mu$ is unknown. It is known that $90\\%$ of candidates score less than $75$ marks. Find $\\mu$, and hence find the proportion of candidates who score more than $60$ marks. Give the proportion to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution with unknown mean",
+        "workingLatex": "X \\sim N(\\mu,\\ 12^2), \\qquad \\sigma = 12",
+        "explanation": "The standard deviation is known to be $12$ but the mean is not. The percentile information will let us pin down $\\mu$, after which we can answer the follow-up.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Translate the percentile statement",
+        "workingLatex": "P(X < 75) = 0.90",
+        "explanation": "'Ninety percent score less than $75$' means the value $75$ is the $90$th percentile, so the area below it is $0.90$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the z-value for the 90th percentile",
+        "workingLatex": "z = \\Phi^{-1}(0.90) = 1.282",
+        "explanation": "The standardised value with $90\\%$ of the area beneath it is $1.282$; whatever the mean is, $75$ must standardise to this $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the standardisation equation",
+        "workingLatex": "\\dfrac{75 - \\mu}{12} = 1.282",
+        "explanation": "Standardising $75$ gives $\\frac{75-\\mu}{\\sigma}$, and this must equal $1.282$, giving one equation in the single unknown $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange for mu",
+        "workingLatex": "\\mu = 75 - 12 \\times 1.282",
+        "explanation": "Multiplying by $\\sigma = 12$ and moving terms across isolates the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute mu",
+        "workingLatex": "\\mu = 75 - 15.38 = 59.62",
+        "explanation": "Evaluating gives the mean mark of the examination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State mu to 3 significant figures",
+        "workingLatex": "\\mu \\approx 59.6 \\text{ marks}",
+        "explanation": "This is the average mark; note it is sensibly below $75$, since $75$ sits up in the top $10\\%$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the follow-up probability",
+        "workingLatex": "\\text{Find } P(X > 60) \\text{ with } \\mu = 59.62",
+        "explanation": "With the mean now known, the proportion scoring more than $60$ is $P(X > 60)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Standardise 60",
+        "workingLatex": "z = \\dfrac{60 - 59.62}{12} = 0.03155",
+        "explanation": "We convert $60$ into a $z$-score; it is only just above the mean, so the $z$-value is small and positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Express the probability using Phi",
+        "workingLatex": "P(X > 60) = 1 - \\Phi(0.03155)",
+        "explanation": "The probability of exceeding $60$ is one minus the cumulative area below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Evaluate the standard-normal value",
+        "workingLatex": "\\Phi(0.03155) = 0.5126",
+        "explanation": "Just above the mean the cumulative value is a little over one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Compute the probability",
+        "workingLatex": "P(X > 60) = 1 - 0.5126 = 0.4874",
+        "explanation": "Subtracting from one gives the proportion of candidates scoring above $60$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Round to 3 significant figures",
+        "workingLatex": "P(X > 60) \\approx 0.487",
+        "explanation": "So about $48.7\\%$ of candidates score more than $60$ marks.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Sense check",
+        "workingLatex": "60 \\text{ is just above } \\mu = 59.62 \\Rightarrow P(X > 60) \\text{ just below } 0.5",
+        "explanation": "Because $60$ is only fractionally above the mean, we expect just under half of candidates to beat it; $0.487$ is indeed a little below $0.5$, confirming the result.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 59.6$ marks, and the proportion scoring more than $60$ is $P(X > 60) \\approx 0.487$."
+  }
+}

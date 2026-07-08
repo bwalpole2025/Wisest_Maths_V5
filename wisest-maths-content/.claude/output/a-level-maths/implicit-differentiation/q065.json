@@ -1,0 +1,134 @@
+{
+  "id": "al.y2.pure.implicit.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "second derivative",
+    "maximum and minimum"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 - xy + y^2 = 3$. (a) Show that $\\frac{dy}{dx} = \\frac{y - 2x}{2y - x}$. (b) Find the coordinates of the two points on $C$ at which the tangent is horizontal. (c) By finding $\\frac{d^2y}{dx^2}$ at each of these points, determine whether each is a local maximum or a local minimum.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) - \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "We differentiate the whole equation, treating $y$ as a function of $x$; the constant $3$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the xy term with the product rule",
+        "workingLatex": "\\frac{d}{dx}(xy) = y + x\\frac{dy}{dx}",
+        "explanation": "The product $xy$ differentiates to $y$ (differentiate $x$, keep $y$) plus $x\\frac{dy}{dx}$ (keep $x$, differentiate $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Assemble using the power and chain rules",
+        "workingLatex": "2x - \\left(y + x\\frac{dy}{dx}\\right) + 2y\\frac{dy}{dx} = 0",
+        "explanation": "The $x^2$ term gives $2x$ and the $y^2$ term gives $2y\\frac{dy}{dx}$; the minus sign multiplies the whole product-rule result for $-xy$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the bracket",
+        "workingLatex": "2x - y - x\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Removing the bracket separates the terms that contain $\\frac{dy}{dx}$ from those that do not.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(2y - x)\\frac{dy}{dx} = y - 2x",
+        "explanation": "Grouping the $\\frac{dy}{dx}$ terms on one side and the rest on the other prepares us to isolate the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{y - 2x}{2y - x}",
+        "explanation": "Dividing by $(2y-x)$ gives the required expression, proving part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; y - 2x = 0 \\;\\Rightarrow\\; y = 2x",
+        "explanation": "A horizontal tangent has gradient $0$, so the numerator $y-2x$ must be zero (with $2y-x\\neq0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute y = 2x into the curve",
+        "workingLatex": "x^2 - x(2x) + (2x)^2 = 3",
+        "explanation": "The horizontal-tangent points also lie on $C$, so we substitute $y=2x$ into the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify and solve for x",
+        "workingLatex": "x^2 - 2x^2 + 4x^2 = 3x^2 = 3 \\;\\Rightarrow\\; x^2 = 1",
+        "explanation": "Combining terms gives $3x^2=3$, so $x^2=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the horizontal-tangent points",
+        "workingLatex": "x = \\pm 1 \\;\\Rightarrow\\; (1, 2), \\; (-1, -2)",
+        "explanation": "With $y=2x$, $x=1$ gives $(1,2)$ and $x=-1$ gives $(-1,-2)$. This answers part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Differentiate the collected equation again",
+        "workingLatex": "\\frac{d}{dx}\\left(2x - y - x\\frac{dy}{dx} + 2y\\frac{dy}{dx}\\right) = 0",
+        "explanation": "To find $\\frac{d^2y}{dx^2}$ we differentiate the whole equation from step 4 once more with respect to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Apply the product rule term by term",
+        "workingLatex": "2 - \\frac{dy}{dx} - \\left(\\frac{dy}{dx} + x\\frac{d^2y}{dx^2}\\right) + 2\\left(\\left(\\frac{dy}{dx}\\right)^2 + y\\frac{d^2y}{dx^2}\\right) = 0",
+        "explanation": "Each product such as $x\\frac{dy}{dx}$ and $y\\frac{dy}{dx}$ needs the product rule, introducing $\\frac{d^2y}{dx^2}$ and $\\left(\\frac{dy}{dx}\\right)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Substitute the horizontal-tangent condition dy/dx = 0",
+        "workingLatex": "2 - 0 - \\left(0 + x\\frac{d^2y}{dx^2}\\right) + 2\\left(0 + y\\frac{d^2y}{dx^2}\\right) = 0",
+        "explanation": "At the points we found the gradient is $0$, so every $\\frac{dy}{dx}$ term drops out, leaving only $\\frac{d^2y}{dx^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Solve for the second derivative",
+        "workingLatex": "2 + (2y - x)\\frac{d^2y}{dx^2} = 0 \\;\\Rightarrow\\; \\frac{d^2y}{dx^2} = -\\frac{2}{2y - x}",
+        "explanation": "Collecting the $\\frac{d^2y}{dx^2}$ terms and rearranging gives a clean formula valid at each horizontal-tangent point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Classify the point (1, 2)",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{(1,2)} = -\\frac{2}{2(2) - 1} = -\\frac{2}{3} < 0 \\;\\Rightarrow\\; \\text{maximum}",
+        "explanation": "A negative second derivative means the curve is concave down, so $(1,2)$ is a local maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "Classify the point (-1, -2)",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{(-1,-2)} = -\\frac{2}{2(-2) - (-1)} = -\\frac{2}{-3} = \\frac{2}{3} > 0 \\;\\Rightarrow\\; \\text{minimum}",
+        "explanation": "A positive second derivative means the curve is concave up, so $(-1,-2)$ is a local minimum. This answers part (c).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = \\frac{y - 2x}{2y - x}$; (b) horizontal tangents at $(1, 2)$ and $(-1, -2)$; (c) $\\frac{d^2y}{dx^2} = -\\frac{2}{2y - x}$, giving $-\\frac{2}{3} < 0$ at $(1, 2)$ (local maximum) and $\\frac{2}{3} > 0$ at $(-1, -2)$ (local minimum)."
+  }
+}

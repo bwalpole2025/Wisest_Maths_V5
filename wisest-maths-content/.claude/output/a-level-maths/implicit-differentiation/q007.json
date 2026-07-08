@@ -1,0 +1,70 @@
+{
+  "id": "al.y2.pure.implicit.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "product rule"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + xy = 6$. Find $\\frac{dy}{dx}$ in terms of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(xy) = \\frac{d}{dx}(6)",
+        "explanation": "We differentiate both sides with respect to $x$, treating $y$ as a function of $x$. The term $xy$ is a product and will need the product rule; the constant $6$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the $x^2$ term",
+        "workingLatex": "2x + \\frac{d}{dx}(xy) = 0",
+        "explanation": "The power rule gives $\\frac{d}{dx}(x^2)=2x$, and the constant $6$ becomes $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule to $xy$",
+        "workingLatex": "\\frac{d}{dx}(xy) = y + x\\frac{dy}{dx}",
+        "explanation": "The product rule gives $y$ (differentiate $x$, keep $y$) plus $x\\frac{dy}{dx}$ (keep $x$, differentiate $y$). The $\\frac{dy}{dx}$ factor comes from differentiating the $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x + y + x\\frac{dy}{dx} = 0",
+        "explanation": "Combining all the pieces gives one equation containing a single $\\frac{dy}{dx}$ term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Isolate the $\\frac{dy}{dx}$ term",
+        "workingLatex": "x\\frac{dy}{dx} = -(2x + y)",
+        "explanation": "Move both non-derivative terms, $2x$ and $y$, to the right-hand side so the $\\frac{dy}{dx}$ term stands alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make $\\frac{dy}{dx}$ the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x + y}{x}",
+        "explanation": "Divide both sides by $x$ to isolate the gradient. It depends on both $x$ and $y$, as expected for an implicit curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x + y}{x}",
+        "explanation": "This is the gradient at any point $(x,y)$ on the curve.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = -\\frac{2x + y}{x}$"
+  }
+}

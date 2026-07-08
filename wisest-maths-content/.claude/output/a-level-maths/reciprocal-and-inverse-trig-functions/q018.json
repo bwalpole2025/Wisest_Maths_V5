@@ -6,60 +6,66 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "statement",
+  "answerType": "written",
   "tags": [
-    "inverse trig",
-    "arcsin",
-    "domain",
-    "range"
+    "reciprocal trig",
+    "cot",
+    "symmetry"
   ],
-  "questionText": "State the domain and range of $y = \\arcsin x$.",
+  "questionText": "Show that $y = \\cot x$ is an odd function, and state what this tells you about the symmetry of its graph.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall what arcsine inverts",
-        "workingLatex": "y = \\arcsin x \\;\\Leftrightarrow\\; x = \\sin y",
-        "explanation": "Arcsine is the inverse of sine, so its inputs and outputs are the swapped versions of sine's outputs and inputs.",
+        "description": "Recall what odd means",
+        "workingLatex": "f \\text{ is odd} \\iff f(-x) = -f(x)",
+        "explanation": "A function is odd when replacing $x$ by $-x$ simply flips the sign of the output. Graphically this means rotational symmetry of order $2$ about the origin.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the range of sine",
-        "workingLatex": "-1 \\le \\sin y \\le 1",
-        "explanation": "Sine only ever produces values between $-1$ and $1$, so those are the only values arcsine can be given as inputs.",
+        "description": "Write cot of the negative angle",
+        "workingLatex": "\\cot(-x) = \\frac{\\cos(-x)}{\\sin(-x)}",
+        "explanation": "We test the odd condition by feeding in $-x$, using the definition of cotangent as cosine over sine.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Deduce the domain of arcsine",
-        "workingLatex": "\\text{domain: } -1 \\le x \\le 1",
-        "explanation": "Because the range of sine becomes the domain of its inverse, arcsine accepts inputs only from $-1$ to $1$.",
+        "description": "Use the parities of cos and sin",
+        "workingLatex": "\\cos(-x) = \\cos x, \\qquad \\sin(-x) = -\\sin x",
+        "explanation": "Cosine is even (a reflection in the $y$-axis leaves it unchanged) while sine is odd (it flips sign). These are standard facts from the unit circle.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recall the restricted domain of sine used for inversion",
-        "workingLatex": "-\\frac{\\pi}{2} \\le y \\le \\frac{\\pi}{2}",
-        "explanation": "To make sine invertible we restrict it to this interval, where it takes each value once. This restricted domain becomes the range of arcsine.",
+        "description": "Substitute the parities",
+        "workingLatex": "\\cot(-x) = \\frac{\\cos x}{-\\sin x}",
+        "explanation": "Putting the two parities in, the numerator is unchanged and the denominator gains a minus sign.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Deduce the range of arcsine",
-        "workingLatex": "\\text{range: } -\\frac{\\pi}{2} \\le y \\le \\frac{\\pi}{2}",
-        "explanation": "The outputs of arcsine are precisely the angles in the restricted sine domain, giving this range.",
+        "description": "Pull out the minus sign",
+        "workingLatex": "\\frac{\\cos x}{-\\sin x} = -\\frac{\\cos x}{\\sin x} = -\\cot x",
+        "explanation": "Pulling the minus sign out front turns the ratio back into $\\cot x$ with a negative sign attached.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State both together",
-        "workingLatex": "-1 \\le x \\le 1, \\quad -\\frac{\\pi}{2} \\le \\arcsin x \\le \\frac{\\pi}{2}",
-        "explanation": "This summarises the domain and range in one line, exactly as the question requires.",
+        "description": "Confirm the odd condition",
+        "workingLatex": "\\cot(-x) = -\\cot x",
+        "explanation": "We have shown exactly the odd condition $f(-x) = -f(x)$, so cotangent is an odd function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Interpret the graph",
+        "workingLatex": "\\text{graph has } 180^\\circ \\text{ rotational symmetry about the origin}",
+        "explanation": "Being odd means the curve looks the same after a half-turn about the origin: the branch on one side is the point-reflection of the branch on the other.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Domain: $-1 \\le x \\le 1$; Range: $-\\dfrac{\\pi}{2} \\le y \\le \\dfrac{\\pi}{2}$."
+    "finalAnswer": "$\\cot(-x) = \\dfrac{\\cos(-x)}{\\sin(-x)} = \\dfrac{\\cos x}{-\\sin x} = -\\cot x$, so $y=\\cot x$ is odd; its graph has rotational symmetry of order $2$ about the origin."
   }
 }

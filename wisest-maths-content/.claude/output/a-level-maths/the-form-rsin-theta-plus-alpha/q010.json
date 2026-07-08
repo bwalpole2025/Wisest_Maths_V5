@@ -5,53 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 5,
+  "marks": 3,
   "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "radians",
-    "exact"
+    "radians"
   ],
-  "questionText": "Express $\\cos\\theta + \\sin\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$, giving exact values in radians.",
+  "questionText": "Express $\\sqrt{3}\\,\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0<\\alpha<\\dfrac{\\pi}{2}$, giving $\\alpha$ in radians.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Reorder the expression",
-        "workingLatex": "\\cos\\theta + \\sin\\theta = \\sin\\theta + \\cos\\theta",
-        "explanation": "Writing the sine term first aligns with the $R\\sin(\\theta + \\alpha)$ template.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta + \\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We convert the expression into a single sine wave; because the interval is given in radians, the final $\\alpha$ will be stated in radians.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 1, \\quad R\\sin\\alpha = 1",
-        "explanation": "Both coefficients are $1$.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with the compound-angle formula gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, matching the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt2",
-        "explanation": "The sum of squares gives $R = \\sqrt2$.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = \\sqrt{3}, \\qquad R\\sin\\alpha = 1",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ gives $R\\cos\\alpha=\\sqrt{3}$ and the coefficient of $\\cos\\theta$ gives $R\\sin\\alpha=1$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find alpha in radians",
-        "workingLatex": "\\tan\\alpha = 1 \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{4}",
-        "explanation": "Equal components give $\\tan\\alpha = 1$, so $\\alpha = \\frac{\\pi}{4}$.",
+        "description": "Find R using R² = a² + b²",
+        "workingLatex": "R = \\sqrt{(\\sqrt{3})^2 + 1^2} = \\sqrt{4} = 2",
+        "explanation": "Squaring and adding eliminates $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=3+1=4$, so the positive amplitude is $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the final form",
-        "workingLatex": "\\cos\\theta + \\sin\\theta = \\sqrt2\\sin\\left(\\theta + \\frac{\\pi}{4}\\right)",
-        "explanation": "Combining the exact values gives the harmonic form in radians.",
+        "description": "Find α in radians",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{\\sqrt{3}} \\Rightarrow \\alpha = \\dfrac{\\pi}{6}",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{1}{\\sqrt{3}}$, a standard exact value. The acute angle with this tangent is $\\tfrac{\\pi}{6}$ radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the R-form",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta + \\cos\\theta = 2\\sin\\left(\\theta+\\dfrac{\\pi}{6}\\right)",
+        "explanation": "Combining $R=2$ and $\\alpha=\\tfrac{\\pi}{6}$ gives the single sine wave with its phase in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check by expanding back",
+        "workingLatex": "2\\sin\\left(\\theta+\\dfrac{\\pi}{6}\\right) = 2\\left(\\dfrac{\\sqrt{3}}{2}\\sin\\theta + \\dfrac{1}{2}\\cos\\theta\\right) = \\sqrt{3}\\,\\sin\\theta + \\cos\\theta",
+        "explanation": "Expanding the answer returns the original expression, confirming the amplitude and phase are correct.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos\\theta + \\sin\\theta = \\sqrt2\\sin\\left(\\theta + \\dfrac{\\pi}{4}\\right)$"
+    "finalAnswer": "$\\sqrt{3}\\,\\sin\\theta + \\cos\\theta = 2\\sin\\left(\\theta+\\dfrac{\\pi}{6}\\right)$."
   }
 }

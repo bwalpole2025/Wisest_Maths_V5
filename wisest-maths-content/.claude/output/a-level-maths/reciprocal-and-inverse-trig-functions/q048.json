@@ -4,104 +4,90 @@
   "topic": "Year 2 Pure",
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "written",
   "tags": [
-    "equations",
-    "cotangent",
-    "cosecant",
-    "quadratic"
+    "reciprocal trig",
+    "sec",
+    "range",
+    "no solution"
   ],
-  "questionText": "Solve $2\\cot^2\\theta = 3\\csc\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Explain why the equation $\\sec x = \\tfrac{1}{2}$ has no solutions for $0^\\circ \\le x < 360^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace cotangent squared using an identity",
-        "workingLatex": "\\cot^2\\theta = \\csc^2\\theta - 1",
-        "explanation": "The equation mixes cotangent and cosecant; converting cotangent squared into cosecant terms lets us work in a single function.",
+        "description": "Rewrite secant using its definition",
+        "workingLatex": "\\sec x = \\frac{1}{\\cos x}",
+        "explanation": "As usual we express secant as the reciprocal of cosine, so the equation can be tested against what cosine is able to do.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the equation",
-        "workingLatex": "2(\\csc^2\\theta - 1) = 3\\csc\\theta",
-        "explanation": "After substitution the whole equation is in cosecant.",
+        "description": "Form the cosine equation",
+        "workingLatex": "\\frac{1}{\\cos x} = \\tfrac{1}{2} \\;\\Rightarrow\\; \\cos x = 2",
+        "explanation": "Taking reciprocals of both sides gives $\\cos x = 2$; this is the value cosine would have to reach.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand the bracket",
-        "workingLatex": "2\\csc^2\\theta - 2 = 3\\csc\\theta",
-        "explanation": "Multiplying out prepares the equation for rearrangement into a quadratic.",
+        "description": "Recall the range of cosine",
+        "workingLatex": "-1 \\le \\cos x \\le 1",
+        "explanation": "Cosine is always between $-1$ and $1$ for every real angle $x$; this bound is the heart of the argument.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rearrange to standard form",
-        "workingLatex": "2\\csc^2\\theta - 3\\csc\\theta - 2 = 0",
-        "explanation": "Bringing all terms to one side gives a quadratic in $\\csc\\theta$.",
+        "description": "Compare the required value with the range",
+        "workingLatex": "\\cos x = 2 > 1",
+        "explanation": "The value $2$ lies outside the interval $[-1,1]$, so no angle can have a cosine of $2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Factorise the quadratic",
-        "workingLatex": "(2\\csc\\theta + 1)(\\csc\\theta - 2) = 0",
-        "explanation": "Factorising gives two linear factors; checking, the cross terms $-4\\csc\\theta + \\csc\\theta = -3\\csc\\theta$ confirm it.",
+        "description": "Conclude cos x = 2 is impossible",
+        "workingLatex": "\\cos x = 2 \\text{ has no real solution}",
+        "explanation": "Since cosine can never exceed $1$, the equation $\\cos x = 2$ has no solutions at all, in any interval.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Read off the two cases",
-        "workingLatex": "\\csc\\theta = -\\tfrac{1}{2} \\quad \\text{or} \\quad \\csc\\theta = 2",
-        "explanation": "Each factor gives a value of cosecant to examine.",
+        "description": "Look at it through the range of secant",
+        "workingLatex": "|\\cos x| \\le 1 \\;\\Rightarrow\\; \\left|\\frac{1}{\\cos x}\\right| \\ge 1 \\;\\Rightarrow\\; |\\sec x| \\ge 1",
+        "explanation": "Because cosine has magnitude at most $1$, its reciprocal has magnitude at least $1$. This gives the useful fact that $|\\sec x|$ is always $\\ge 1$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Reject the impossible case",
-        "workingLatex": "|\\csc\\theta| \\ge 1 \\;\\Rightarrow\\; \\csc\\theta = -\\tfrac{1}{2} \\text{ rejected}",
-        "explanation": "Cosecant can never lie strictly between $-1$ and $1$, so $-\\frac{1}{2}$ has no solutions and is discarded.",
+        "description": "State the range restriction on secant",
+        "workingLatex": "\\sec x \\le -1 \\;\\text{ or }\\; \\sec x \\ge 1",
+        "explanation": "Secant never takes any value strictly between $-1$ and $1$; its outputs sit outside that gap.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Convert the valid case to sine",
-        "workingLatex": "\\csc\\theta = 2 \\;\\Rightarrow\\; \\sin\\theta = \\tfrac{1}{2}",
-        "explanation": "The reciprocal of $2$ is one half, giving a standard sine equation.",
+        "description": "Compare the target with that restriction",
+        "workingLatex": "\\left|\\tfrac{1}{2}\\right| = \\tfrac{1}{2} < 1",
+        "explanation": "The target value $\\tfrac12$ has magnitude less than $1$, so it falls inside the forbidden gap and cannot be a secant value.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Find the principal solution",
-        "workingLatex": "\\theta = \\sin^{-1}\\left(\\tfrac{1}{2}\\right) = 30^\\circ",
-        "explanation": "The inverse sine of one half gives the first-quadrant solution $30^\\circ$.",
+        "description": "Note the interval does not matter",
+        "workingLatex": "\\text{no } x \\text{ works, so none in } 0^\\circ \\le x < 360^\\circ",
+        "explanation": "Since there is no solution for any $x$ at all, there is certainly none in the stated interval; restricting the interval cannot create a solution.",
         "diagram": null
       },
       {
         "stepNumber": 10,
-        "description": "Find the second solution",
-        "workingLatex": "\\theta = 180^\\circ - 30^\\circ = 150^\\circ",
-        "explanation": "Sine is also positive in quadrant II, giving $150^\\circ$ from $180^\\circ$ minus the reference angle.",
-        "diagram": null
-      },
-      {
-        "stepNumber": 11,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = 30^\\circ \\text{ or } 150^\\circ",
-        "explanation": "These are the only solutions in the interval, since the other factor was rejected.",
-        "diagram": null
-      },
-      {
-        "stepNumber": 12,
-        "description": "Check a solution",
-        "workingLatex": "2\\cot^2 30^\\circ = 2(\\sqrt3)^2 = 6, \\quad 3\\csc 30^\\circ = 3(2) = 6 \\;\\checkmark",
-        "explanation": "Substituting $30^\\circ$ makes both sides equal $6$, confirming the solution is correct.",
+        "description": "State the conclusion",
+        "workingLatex": "\\sec x = \\tfrac{1}{2} \\text{ has no solutions}",
+        "explanation": "Both viewpoints agree: because $|\\sec x| \\ge 1$ always, the equation $\\sec x = \\tfrac12$ has no solutions in the given interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ \\text{ or } 150^\\circ$"
+    "finalAnswer": "There are no solutions. Rearranging gives $\\cos x = 2$, which is impossible since $-1 \\le \\cos x \\le 1$. Equivalently $|\\sec x| \\ge 1$ for all $x$, so $\\sec x$ can never equal $\\tfrac12$."
   }
 }

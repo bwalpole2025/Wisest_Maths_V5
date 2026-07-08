@@ -5,68 +5,88 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "equations",
-    "secant",
-    "quadratic",
-    "solving"
+    "reciprocal trig",
+    "cot",
+    "solving equations"
   ],
-  "questionText": "Solve $\\sec^2\\theta - 3\\sec\\theta + 2 = 0$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve $\\cot x = -1$ for $0^\\circ \\le x < 360^\\circ$. List all solutions.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Treat as a quadratic in secant",
-        "workingLatex": "\\text{let } s = \\sec\\theta: \\quad s^2 - 3s + 2 = 0",
-        "explanation": "Substituting $s = \\sec\\theta$ reveals a standard quadratic, which is easier to factorise.",
+        "description": "Rewrite cot using its definition",
+        "workingLatex": "\\cot x = \\frac{1}{\\tan x}",
+        "explanation": "Cotangent is the reciprocal of tangent, so we convert to a tangent equation whose standard angles we know.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Factorise",
-        "workingLatex": "(s - 1)(s - 2) = 0",
-        "explanation": "The factors of $2$ that add to $3$ are $1$ and $2$, giving this factorisation.",
+        "description": "Form a tangent equation",
+        "workingLatex": "\\frac{1}{\\tan x} = -1 \\;\\Rightarrow\\; \\tan x = -1",
+        "explanation": "Taking reciprocals of both sides gives $\\tan x = -1$; the reciprocal of $-1$ is again $-1$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Read off the two secant values",
-        "workingLatex": "\\sec\\theta = 1 \\quad \\text{or} \\quad \\sec\\theta = 2",
-        "explanation": "Setting each factor to zero gives the possible secant values, both with magnitude at least $1$, so both are attainable.",
+        "description": "Find the reference angle",
+        "workingLatex": "\\tan 45^\\circ = 1 \\;\\Rightarrow\\; \\text{reference angle} = 45^\\circ",
+        "explanation": "Ignoring the sign, the acute angle whose tangent has size $1$ is $45^\\circ$, so that is the reference angle.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve the first case",
-        "workingLatex": "\\sec\\theta = 1 \\;\\Rightarrow\\; \\cos\\theta = 1 \\;\\Rightarrow\\; \\theta = 0^\\circ",
-        "explanation": "Cosine equals $1$ only at $0^\\circ$ in the interval, giving a single solution.",
+        "description": "Decide which quadrants apply",
+        "workingLatex": "\\tan x < 0 \\text{ in quadrants II and IV}",
+        "explanation": "The tangent value is negative, and tangent is negative in the second and fourth quadrants, so the solutions come from there.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the second case",
-        "workingLatex": "\\sec\\theta = 2 \\;\\Rightarrow\\; \\cos\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 60^\\circ, 300^\\circ",
-        "explanation": "Cosine equals one half at $60^\\circ$ and $300^\\circ$, giving two more solutions.",
+        "description": "Write the second-quadrant solution",
+        "workingLatex": "x = 180^\\circ - 45^\\circ = 135^\\circ",
+        "explanation": "In the second quadrant we subtract the reference angle from $180^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 0^\\circ, 60^\\circ, 300^\\circ",
-        "explanation": "Combining both cases gives three solutions in the interval.",
+        "description": "Write the fourth-quadrant solution",
+        "workingLatex": "x = 360^\\circ - 45^\\circ = 315^\\circ",
+        "explanation": "In the fourth quadrant we subtract the reference angle from $360^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Confirm the interval",
-        "workingLatex": "0^\\circ, 60^\\circ, 300^\\circ \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "All solutions lie in the required range and are retained.",
+        "description": "Note the period of tangent",
+        "workingLatex": "135^\\circ + 180^\\circ = 315^\\circ",
+        "explanation": "Tangent repeats every $180^\\circ$, and indeed the two solutions differ by exactly $180^\\circ$, which confirms we have found them all in one turn.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm both lie in the interval",
+        "workingLatex": "0^\\circ \\le 135^\\circ, \\; 315^\\circ < 360^\\circ",
+        "explanation": "Both angles satisfy $0^\\circ \\le x < 360^\\circ$, so both are valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a solution in the original equation",
+        "workingLatex": "\\cot 135^\\circ = \\frac{1}{\\tan 135^\\circ} = \\frac{1}{-1} = -1",
+        "explanation": "Substituting back returns $-1$, confirming the answer; $315^\\circ$ has the same tangent, so it checks too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the full solution set",
+        "workingLatex": "x = 135^\\circ, \\; 315^\\circ",
+        "explanation": "These two angles are the complete set of solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 0^\\circ, 60^\\circ, 300^\\circ$"
+    "finalAnswer": "$x = 135^\\circ$ or $x = 315^\\circ$."
   }
 }

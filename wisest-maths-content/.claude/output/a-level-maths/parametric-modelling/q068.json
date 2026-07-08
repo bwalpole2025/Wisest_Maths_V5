@@ -5,60 +5,109 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "expression",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "normal",
-    "meets axis"
+    "collision",
+    "two paths",
+    "root selection"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Find where the normal at $t = 2$ meets the $x$-axis.",
+  "questionText": "Two drones fly so that, at time $t$ seconds ($t \\ge 0$), their positions in metres are: drone A at $x = 3t$, $y = t^{2}$; drone B at $x = 2t + 2$, $y = 5t - 6$. (a) Determine whether the drones collide (same place at the same time); if so, find when and where. (b) Find the speed of each drone at that instant.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the point",
-        "workingLatex": "t = 2: (4, 4)",
-        "explanation": "Substituting $t = 2$ into both equations.",
+        "description": "Match the x-coordinates",
+        "workingLatex": "3t = 2t + 2",
+        "explanation": "A collision needs both drones at the same place at the same time, so first we require their $x$-coordinates to be equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the tangent gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{t} = \\frac{1}{2}",
-        "explanation": "The parametric gradient at $t = 2$ is $\\frac{1}{2}$.",
+        "description": "Solve for t from the x-equation",
+        "workingLatex": "3t - 2t = 2 \\;\\Rightarrow\\; t = 2",
+        "explanation": "The horizontal condition gives a single candidate time, $t = 2$, at which the drones share the same $x$-coordinate.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the normal gradient",
-        "workingLatex": "m_{\\text{normal}} = -2",
-        "explanation": "The negative reciprocal of $\\frac{1}{2}$ is $-2$.",
+        "description": "Match the y-coordinates",
+        "workingLatex": "t^{2} = 5t - 6",
+        "explanation": "For a genuine collision the $y$-coordinates must also agree at the same time, so we set the two heights equal.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write the normal equation",
-        "workingLatex": "y - 4 = -2(x - 4)",
-        "explanation": "Using the point $(4, 4)$ and the normal gradient.",
+        "description": "Rearrange into a quadratic",
+        "workingLatex": "t^{2} - 5t + 6 = 0",
+        "explanation": "Bringing all terms to one side produces a quadratic whose roots are the times when the heights match.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set y = 0",
-        "workingLatex": "-4 = -2(x - 4) \\;\\Rightarrow\\; 2 = x - 4 \\;\\Rightarrow\\; x = 6",
-        "explanation": "The normal meets the $x$-axis where $y = 0$.",
+        "description": "Factorise the quadratic",
+        "workingLatex": "(t - 2)(t - 3) = 0 \\;\\Rightarrow\\; t = 2 \\text{ or } t = 3",
+        "explanation": "The heights coincide at $t = 2$ and $t = 3$; we must see which of these also satisfies the horizontal condition.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the point",
-        "workingLatex": "(6, 0)",
-        "explanation": "The normal crosses the $x$-axis at $(6, 0)$.",
+        "description": "Select the common time and reject the other",
+        "workingLatex": "t = 2 \\text{ satisfies both}; \\quad t = 3:\\; x_A = 9,\\; x_B = 8 \\Rightarrow \\text{reject}",
+        "explanation": "Only $t = 2$ satisfies both the $x$- and $y$-conditions. At $t = 3$ the drones are at the same height but different horizontal positions ($9$ versus $8$), so that is not a collision and is rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find drone A's position at t = 2",
+        "workingLatex": "A:\\; \\left(3(2),\\, 2^{2}\\right) = \\left(6,\\, 4\\right)",
+        "explanation": "Substituting $t=2$ into drone A's equations gives its location at that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find drone B's position at t = 2",
+        "workingLatex": "B:\\; \\left(2(2)+2,\\, 5(2)-6\\right) = \\left(6,\\, 4\\right)",
+        "explanation": "Doing the same for drone B gives the identical point $(6,4)$, confirming a genuine collision there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Velocity of drone A",
+        "workingLatex": "\\dot{x}_A = 3, \\qquad \\dot{y}_A = 2t",
+        "explanation": "For the speeds we differentiate each drone's position; drone A has a constant horizontal velocity and a vertical velocity that grows with time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Speed of drone A at t = 2",
+        "workingLatex": "\\text{speed}_A = \\sqrt{3^{2} + (2\\cdot 2)^{2}} = \\sqrt{9 + 16} = 5",
+        "explanation": "Evaluating $\\dot{y}_A = 4$ at $t=2$ and combining with $\\dot{x}_A = 3$ by Pythagoras gives drone A's speed of $5$ metres per second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Velocity of drone B",
+        "workingLatex": "\\dot{x}_B = 2, \\qquad \\dot{y}_B = 5",
+        "explanation": "Drone B moves along straight-line equations, so both its velocity components are constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Speed of drone B",
+        "workingLatex": "\\text{speed}_B = \\sqrt{2^{2} + 5^{2}} = \\sqrt{29}",
+        "explanation": "Combining drone B's constant components gives its speed $\\sqrt{29}$ metres per second, unchanging throughout.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{Collision at } (6,\\,4),\\; t = 2;\\quad \\text{speed}_A = 5,\\; \\text{speed}_B = \\sqrt{29}",
+        "explanation": "The drones do collide, at $(6,4)$ when $t=2$; their differing speeds ($5$ and $\\sqrt{29}\\approx 5.39$) show they are not travelling together, they simply meet at that instant.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(6, 0)$"
+    "finalAnswer": "The drones collide at the point $(6,\\,4)$ when $t = 2$ s (the time $t=3$ is rejected because the heights match there but the horizontal positions do not). At that instant drone A has speed $5\\text{ m s}^{-1}$ and drone B has speed $\\sqrt{29} \\approx 5.39\\text{ m s}^{-1}$."
   }
 }

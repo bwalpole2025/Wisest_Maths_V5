@@ -4,54 +4,103 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "expression",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "rational"
+    "eliminating the parameter",
+    "completing the square",
+    "parabola"
   ],
-  "questionText": "A curve has parametric equations $x = \\dfrac{1}{t + 1}$, $y = \\dfrac{t}{t + 1}$ for $t \\ne -1$. Find the Cartesian equation and state any restriction.",
+  "questionText": "A curve is given by the parametric equations $x = t + 2$ and $y = t^{2} - 4t$, where $t \\in \\mathbb{R}$. Find a Cartesian equation of the curve in the form $y = (x - a)^{2} + b$, and state the minimum value of $y$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Add the two parametric expressions",
-        "workingLatex": "x + y = \\frac{1}{t+1} + \\frac{t}{t+1}",
-        "explanation": "The two fractions share a denominator, so adding them may simplify dramatically.",
+        "description": "Make t the subject of the x equation",
+        "workingLatex": "x = t + 2 \\implies t = x - 2",
+        "explanation": "The $x$ equation is linear in $t$, so a single rearrangement gives $t$ cleanly in terms of $x$, ready to substitute.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Combine the fractions",
-        "workingLatex": "x + y = \\frac{1 + t}{t + 1}",
-        "explanation": "The numerators add to $1 + t$, which matches the denominator.",
+        "description": "Substitute into the squared term",
+        "workingLatex": "t^{2} = (x - 2)^{2} = x^{2} - 4x + 4",
+        "explanation": "Dealing with $t^{2}$ first, we expand $(x-2)^{2}$ carefully so the substitution stays organised.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "x + y = 1",
-        "explanation": "Since $\\frac{t+1}{t+1} = 1$, the sum is constant, giving a straight line.",
+        "description": "Substitute into the linear term",
+        "workingLatex": "-4t = -4(x - 2) = -4x + 8",
+        "explanation": "Handling the $-4t$ term separately keeps the signs under control before we combine everything.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the excluded point",
-        "workingLatex": "x = \\frac{1}{t+1} \\ne 0 \\text{ for all } t",
-        "explanation": "The value $x = 0$ would require $\\frac{1}{t+1} = 0$, which is impossible, so $x = 0$ is never reached.",
+        "description": "Combine the two parts of y",
+        "workingLatex": "y = t^{2} - 4t = (x^{2} - 4x + 4) + (-4x + 8)",
+        "explanation": "Adding the expanded pieces reassembles $y$ entirely in terms of $x$, eliminating the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer with restriction",
-        "workingLatex": "x + y = 1, \\; x \\ne 0",
-        "explanation": "The curve is the line $x + y = 1$ with the single point $(0, 1)$ removed.",
+        "description": "Simplify to a quadratic in x",
+        "workingLatex": "y = x^{2} - 8x + 12",
+        "explanation": "Collecting like terms gives a tidy quadratic. It is correct as it stands, but not yet in the requested completed-square form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Complete the square on the x-terms",
+        "workingLatex": "x^{2} - 8x = (x - 4)^{2} - 16",
+        "explanation": "Half of $-8$ is $-4$, so $(x-4)^{2}$ reproduces $x^{2} - 8x$ but adds an extra $16$; we subtract $16$ to compensate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute back into y",
+        "workingLatex": "y = (x - 4)^{2} - 16 + 12",
+        "explanation": "Replacing $x^{2} - 8x$ with its completed-square form and keeping the constant $+12$ gives $y$ in nearly finished form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify to the required form",
+        "workingLatex": "y = (x - 4)^{2} - 4",
+        "explanation": "Combining $-16 + 12 = -4$ produces the form $y = (x - a)^{2} + b$ asked for, with $a = 4$ and $b = -4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Read off the vertex",
+        "workingLatex": "\\text{vertex at } (4,\\,-4)",
+        "explanation": "In completed-square form the vertex is at $x = 4$, $y = -4$, the lowest point of this upward parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Determine the minimum value of y",
+        "workingLatex": "(x - 4)^{2} \\geq 0 \\Rightarrow y = (x - 4)^{2} - 4 \\geq -4",
+        "explanation": "A square is never negative, so the smallest $y$ occurs when $(x-4)^{2} = 0$, giving the minimum $y = -4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify at the vertex using t",
+        "workingLatex": "x = 4 \\Rightarrow t = 2, \\quad y = 2^{2} - 4(2) = -4 \\;\\checkmark",
+        "explanation": "At $x = 4$ we have $t = 2$, and the original $y$ equation gives $-4$, confirming the minimum from the parametric form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the final result",
+        "workingLatex": "y = (x - 4)^{2} - 4, \\qquad y_{\\min} = -4",
+        "explanation": "This is the Cartesian equation in the requested form, with the minimum value of $y$ clearly identified.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x + y = 1$ (with $x \\ne 0$, so the point $(0,1)$ is excluded)."
+    "finalAnswer": "$y = (x - 4)^{2} - 4$, a parabola with vertex $(4,\\,-4)$; the minimum value of $y$ is $-4$."
   }
 }

@@ -5,53 +5,116 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "connected rates",
-    "chain rule"
+    "parametric differentiation",
+    "exponential",
+    "tangent"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. A point moves along the curve so that $\\dfrac{dx}{dt} = 4$ at the instant $t = 2$. Find $\\dfrac{dy}{dt}$ at that instant.",
+  "questionText": "A particle moves so that, at time $t$, its position is $x = e^{t}$ and $y = e^{-t}$. (a) Find $\\frac{dy}{dx}$ in terms of $t$. (b) Find the Cartesian equation of the path and identify it. (c) Find the point at which the tangent to the path is parallel to the line $x + 4y = 0$. (d) Find the equation of the tangent at that point.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the curve gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3t}{2}",
-        "explanation": "This is the geometric gradient of the curve, independent of how fast the point moves.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = e^{t}",
+        "explanation": "The exponential $e^{t}$ is its own derivative, so the horizontal rate of change is $e^{t}$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Evaluate the gradient at t = 2",
-        "workingLatex": "\\frac{dy}{dx}\\bigg|_{t=2} = \\frac{3(2)}{2} = 3",
-        "explanation": "At $t = 2$ the curve gradient is $3$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = -e^{-t}",
+        "explanation": "Differentiating $e^{-t}$ uses the chain rule, bringing down the factor $-1$, so $\\dot{y} = -e^{-t}$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Relate the rates via the chain rule",
-        "workingLatex": "\\frac{dy}{dt} = \\frac{dy}{dx}\\cdot\\frac{dx}{dt}",
-        "explanation": "The rate at which $y$ changes with time is the curve gradient times the rate at which $x$ changes with time.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{-e^{-t}}{e^{t}} = -e^{-2t}",
+        "explanation": "Dividing the vertical rate by the horizontal rate, and using the index law $e^{-t}/e^{t} = e^{-2t}$, gives the slope of the path.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute the known values",
-        "workingLatex": "\\frac{dy}{dt} = 3 \\times 4 = 12",
-        "explanation": "Multiplying the gradient by the given $\\frac{dx}{dt}$.",
+        "description": "Multiply the parametric equations",
+        "workingLatex": "xy = e^{t}\\cdot e^{-t} = e^{0} = 1",
+        "explanation": "To find the Cartesian equation, notice the product $xy$ eliminates $t$ neatly because the exponentials cancel.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\frac{dy}{dt} = 12",
-        "explanation": "At $t = 2$, $y$ is increasing at $12$ units per unit time.",
+        "description": "State and identify the path",
+        "workingLatex": "xy = 1",
+        "explanation": "The path is $xy = 1$, a rectangular hyperbola. Since $x = e^{t} > 0$, the particle stays on the branch in the first quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the gradient of the given line",
+        "workingLatex": "x + 4y = 0 \\;\\Rightarrow\\; y = -\\dfrac{1}{4}x",
+        "explanation": "Rearranging the line into the form $y = mx + c$ shows its gradient is $-\\tfrac{1}{4}$, which the tangent must match.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the path gradient equal to the line's",
+        "workingLatex": "-e^{-2t} = -\\dfrac{1}{4}",
+        "explanation": "Parallel lines have equal gradients, so the tangent is parallel to the given line where the path's gradient equals $-\\tfrac{1}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify the exponential equation",
+        "workingLatex": "e^{-2t} = \\dfrac{1}{4} \\;\\Rightarrow\\; e^{2t} = 4",
+        "explanation": "Removing the minus signs and taking reciprocals turns the equation into one we can solve with logarithms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for t",
+        "workingLatex": "2t = \\ln 4 \\;\\Rightarrow\\; t = \\ln 2",
+        "explanation": "Taking natural logs gives $2t = \\ln 4$, and since $\\ln 4 = 2\\ln 2$, this simplifies to $t = \\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the point",
+        "workingLatex": "x = e^{\\ln 2} = 2, \\quad y = e^{-\\ln 2} = \\dfrac{1}{2}",
+        "explanation": "Substituting $t = \\ln 2$ into the parametric equations gives the point $\\left(2,\\,\\tfrac{1}{2}\\right)$ where the tangent has the required slope.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write the tangent equation",
+        "workingLatex": "y - \\dfrac{1}{2} = -\\dfrac{1}{4}(x - 2)",
+        "explanation": "Using the point $\\left(2,\\,\\tfrac{1}{2}\\right)$ and gradient $-\\tfrac{1}{4}$ in point–gradient form gives the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Expand",
+        "workingLatex": "y = -\\dfrac{1}{4}x + \\dfrac{1}{2} + \\dfrac{1}{2}",
+        "explanation": "Multiplying out $-\\tfrac{1}{4}\\times(-2) = \\tfrac{1}{2}$ and adding the $\\tfrac{1}{2}$ from the point prepares the $y = mx + c$ form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Simplify the tangent",
+        "workingLatex": "y = -\\dfrac{1}{4}x + 1",
+        "explanation": "Combining the constants gives the tidy tangent equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Note where it crosses the x-axis",
+        "workingLatex": "0 = -\\dfrac{1}{4}x + 1 \\;\\Rightarrow\\; x = 4",
+        "explanation": "As a useful check on the line, setting $y = 0$ shows the tangent meets the $x$-axis at $(4,\\,0)$, consistent with a gradient of $-\\tfrac{1}{4}$ from $(0,\\,1)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{dy}{dt} = 12$"
+    "finalAnswer": "$\\frac{dy}{dx} = -e^{-2t}$; the Cartesian path is $xy = 1$ (a rectangular hyperbola). The tangent is parallel to $x + 4y = 0$ at the point $\\left(2,\\,\\frac{1}{2}\\right)$, where the tangent is $y = -\\frac{1}{4}x + 1$."
   }
 }

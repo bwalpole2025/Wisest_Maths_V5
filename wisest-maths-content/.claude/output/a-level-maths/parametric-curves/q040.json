@@ -5,53 +5,95 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "trig sum"
+    "eliminating the parameter",
+    "root",
+    "domain and range"
   ],
-  "questionText": "A curve has parametric equations $x = 4\\sin^2\\theta$, $y = 3\\cos^2\\theta$. Find the Cartesian equation.",
+  "questionText": "A curve has parametric equations $x = 1 + \\sqrt{t}$ and $y = t$, where $t \\geq 0$. Find a Cartesian equation of the curve, and state both the domain of $x$ and the range of $y$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the squared trig functions",
-        "workingLatex": "\\sin^2\\theta = \\frac{x}{4}, \\quad \\cos^2\\theta = \\frac{y}{3}",
-        "explanation": "Dividing by the coefficients isolates the squared trig terms.",
+        "description": "Isolate the square root",
+        "workingLatex": "x = 1 + \\sqrt{t} \\implies \\sqrt{t} = x - 1",
+        "explanation": "To eliminate $t$ we first get the root by itself. Subtracting $1$ leaves $\\sqrt{t}$ alone on one side.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = 1 \\;\\Rightarrow\\; \\frac{x}{4} + \\frac{y}{3} = 1",
-        "explanation": "Adding the two expressions and using the identity gives a linear equation.",
+        "description": "Use the sign of the root to fix the domain",
+        "workingLatex": "\\sqrt{t} \\geq 0 \\Rightarrow x - 1 \\geq 0",
+        "explanation": "A real square root is never negative, so the right side $x - 1$ must also be non-negative. This is what will pin down the domain.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Clear denominators",
-        "workingLatex": "3x + 4y = 12",
-        "explanation": "Multiplying through by $12$ gives a tidy linear form.",
+        "description": "Square to remove the root",
+        "workingLatex": "t = (x - 1)^{2}",
+        "explanation": "Squaring both sides undoes the square root and gives $t$ in terms of $x$, ready to substitute into $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the restriction on x",
-        "workingLatex": "0 \\le \\sin^2\\theta \\le 1 \\;\\Rightarrow\\; 0 \\le x \\le 4",
-        "explanation": "Since $\\sin^2\\theta$ lies in $[0,1]$, the $x$-values are restricted, so the curve is a line segment.",
+        "description": "Substitute into the y equation",
+        "workingLatex": "y = t = (x - 1)^{2}",
+        "explanation": "Since $y = t$, replacing $t$ gives $y$ directly in terms of $x$, eliminating the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "3x + 4y = 12, \\; 0 \\le x \\le 4",
-        "explanation": "The curve is the segment of the line joining $(0,3)$ to $(4,0)$.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = (x - 1)^{2}",
+        "explanation": "This is a parabola with vertex at $(1,\\,0)$, though the parametrisation only traces part of it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the domain",
+        "workingLatex": "x \\geq 1",
+        "explanation": "From step 2, $x - 1 \\geq 0$, so $x$ is never less than $1$: only the right-hand half of the parabola is traced.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound y using the square",
+        "workingLatex": "y = (x - 1)^{2} \\geq 0",
+        "explanation": "A squared quantity is never negative, so $y$ can never drop below $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Locate the smallest y",
+        "workingLatex": "x = 1 \\Rightarrow y = (1 - 1)^{2} = 0",
+        "explanation": "The minimum $y = 0$ occurs at the left end of the domain, $x = 1$, which is the vertex of the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the range",
+        "workingLatex": "y \\geq 0",
+        "explanation": "Starting from $0$ and increasing as $x$ grows, $y$ takes every value from $0$ upward, so the range is $y \\geq 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the endpoint from the parameter",
+        "workingLatex": "t = 0 \\Rightarrow (x, y) = (1,\\,0) \\;\\checkmark",
+        "explanation": "At $t = 0$ the parametric equations give $(1,\\,0)$, matching the corner of the domain and range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the final result",
+        "workingLatex": "y = (x - 1)^{2}, \\quad x \\geq 1, \\quad y \\geq 0",
+        "explanation": "The equation with its domain and range gives the complete description of the traced curve.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$3x + 4y = 12$ for $0 \\le x \\le 4$ (a line segment)."
+    "finalAnswer": "$y = (x - 1)^{2}$ with domain $x \\geq 1$ and range $y \\geq 0$ (the right-hand half of the parabola with vertex $(1,\\,0)$)."
   }
 }

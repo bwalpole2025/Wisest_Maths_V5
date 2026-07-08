@@ -5,67 +5,109 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "proof",
   "tags": [
-    "double angle",
-    "tangent",
-    "given ratio"
+    "triple angle",
+    "tan",
+    "proof"
   ],
-  "questionText": "Given that $\\tan\\theta = \\dfrac{3}{4}$ and $\\theta$ is acute, use the $t$-formulae to find the exact values of $\\sin 2\\theta$ and $\\cos 2\\theta$.",
+  "questionText": "Prove that $\\tan 3\\theta \\equiv \\dfrac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}$ by writing $3\\theta = 2\\theta+\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the t-formulae",
-        "workingLatex": "\\sin 2\\theta = \\frac{2t}{1 + t^2}, \\quad \\cos 2\\theta = \\frac{1 - t^2}{1 + t^2}, \\quad t = \\tan\\theta",
-        "explanation": "These express the double angles directly in terms of $\\tan\\theta$, avoiding the need to find sine and cosine separately.",
+        "description": "Set up the strategy",
+        "workingLatex": "\\tan 3\\theta = \\tan(2\\theta + \\theta), \\qquad \\text{let } t = \\tan\\theta",
+        "explanation": "Writing $3\\theta = 2\\theta+\\theta$ lets us use the tangent addition formula. Setting $t=\\tan\\theta$ keeps the algebra compact.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compute the common denominator",
-        "workingLatex": "1 + t^2 = 1 + \\frac{9}{16} = \\frac{25}{16}",
-        "explanation": "Both formulae share the denominator $1 + t^2$, so we evaluate it once.",
+        "description": "Apply the tangent addition formula",
+        "workingLatex": "\\tan(2\\theta + \\theta) = \\frac{\\tan 2\\theta + \\tan\\theta}{1 - \\tan 2\\theta\\tan\\theta}",
+        "explanation": "Using $\\tan(A+B) = \\dfrac{\\tan A + \\tan B}{1 - \\tan A\\tan B}$ with $A=2\\theta$, $B=\\theta$ turns the triple angle into an expression in $\\tan 2\\theta$ and $\\tan\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find sin 2θ numerator",
-        "workingLatex": "2t = 2\\cdot\\frac{3}{4} = \\frac{3}{2}",
-        "explanation": "The numerator of the sine formula is $2t$.",
+        "description": "Write tan 2theta in terms of t",
+        "workingLatex": "\\tan 2\\theta = \\frac{2\\tan\\theta}{1 - \\tan^2\\theta} = \\frac{2t}{1 - t^2}",
+        "explanation": "The double-angle formula for tangent lets us express everything through the single variable $t = \\tan\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate sin 2θ",
-        "workingLatex": "\\sin 2\\theta = \\frac{3/2}{25/16} = \\frac{3}{2}\\cdot\\frac{16}{25} = \\frac{24}{25}",
-        "explanation": "Dividing by $\\frac{25}{16}$ gives $\\frac{24}{25}$.",
+        "description": "Build the numerator",
+        "workingLatex": "\\tan 2\\theta + \\tan\\theta = \\frac{2t}{1 - t^2} + t",
+        "explanation": "The top of the fraction is the sum of $\\tan 2\\theta$ and $\\tan\\theta$; we combine these over a common denominator.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find cos 2θ numerator",
-        "workingLatex": "1 - t^2 = 1 - \\frac{9}{16} = \\frac{7}{16}",
-        "explanation": "The numerator of the cosine formula is $1 - t^2$.",
+        "description": "Combine the numerator",
+        "workingLatex": "\\frac{2t}{1 - t^2} + t = \\frac{2t + t(1 - t^2)}{1 - t^2} = \\frac{3t - t^3}{1 - t^2}",
+        "explanation": "Placing $t$ over the common denominator $1-t^2$ and expanding $2t + t - t^3$ gives $3t - t^3$ on top.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Evaluate cos 2θ",
-        "workingLatex": "\\cos 2\\theta = \\frac{7/16}{25/16} = \\frac{7}{25}",
-        "explanation": "The common denominator cancels, leaving $\\frac{7}{25}$.",
+        "description": "Build the denominator",
+        "workingLatex": "1 - \\tan 2\\theta\\tan\\theta = 1 - \\frac{2t}{1 - t^2}\\cdot t = 1 - \\frac{2t^2}{1 - t^2}",
+        "explanation": "The bottom of the fraction is $1$ minus the product $\\tan 2\\theta\\tan\\theta$; multiplying the two tangents gives $\\dfrac{2t^2}{1-t^2}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Check consistency",
-        "workingLatex": "\\left(\\tfrac{24}{25}\\right)^2 + \\left(\\tfrac{7}{25}\\right)^2 = 1 \\;\\checkmark",
-        "explanation": "The two answers satisfy the Pythagorean identity, confirming they are correct.",
+        "description": "Combine the denominator",
+        "workingLatex": "1 - \\frac{2t^2}{1 - t^2} = \\frac{(1 - t^2) - 2t^2}{1 - t^2} = \\frac{1 - 3t^2}{1 - t^2}",
+        "explanation": "Writing $1$ as $\\dfrac{1-t^2}{1-t^2}$ and subtracting collects the denominator into a single fraction with top $1-3t^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form the full quotient",
+        "workingLatex": "\\tan 3\\theta = \\frac{\\ \\dfrac{3t - t^3}{1 - t^2}\\ }{\\ \\dfrac{1 - 3t^2}{1 - t^2}\\ }",
+        "explanation": "The tangent of the triple angle is the combined numerator divided by the combined denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Cancel the common factor",
+        "workingLatex": "\\tan 3\\theta = \\frac{3t - t^3}{1 - t^2}\\times\\frac{1 - t^2}{1 - 3t^2} = \\frac{3t - t^3}{1 - 3t^2}",
+        "explanation": "Dividing by a fraction means multiplying by its reciprocal; the common factor $1-t^2$ then cancels neatly, top and bottom.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Restore tan theta",
+        "workingLatex": "\\tan 3\\theta = \\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}",
+        "explanation": "Replacing $t$ by $\\tan\\theta$ returns the identity in its required form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Numerical check at theta = 45 degrees",
+        "workingLatex": "t = \\tan 45^\\circ = 1: \\quad \\frac{3(1) - 1^3}{1 - 3(1)^2} = \\frac{2}{-2} = -1 = \\tan 135^\\circ",
+        "explanation": "At $\\theta = 45^\\circ$ the formula gives $-1$, which equals $\\tan 135^\\circ$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "t = \\tfrac{1}{\\sqrt{3}}, \\ t^2 = \\tfrac{1}{3}: \\quad 1 - 3t^2 = 0 \\ \\Rightarrow\\ \\tan 90^\\circ \\text{ undefined}",
+        "explanation": "At $\\theta = 30^\\circ$ the denominator vanishes, matching the fact that $\\tan 90^\\circ$ is undefined; the formula behaves correctly at this singular value too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude",
+        "workingLatex": "\\tan 3\\theta \\equiv \\frac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}",
+        "explanation": "Every manipulation was a valid equality wherever the tangents are defined, so the identity holds.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 2\\theta = \\dfrac{24}{25}, \\quad \\cos 2\\theta = \\dfrac{7}{25}$"
+    "finalAnswer": "Expanding $\\tan(2\\theta+\\theta)$ and substituting $\\tan 2\\theta = \\dfrac{2\\tan\\theta}{1-\\tan^2\\theta}$ gives, after the factor $1-\\tan^2\\theta$ cancels, $\\tan 3\\theta \\equiv \\dfrac{3\\tan\\theta - \\tan^3\\theta}{1 - 3\\tan^2\\theta}$."
   }
 }

@@ -4,54 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "second derivative",
-    "parabola"
+    "exponential",
+    "tangent",
+    "parallel"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Show that $\\dfrac{d^2y}{dx^2} = -\\dfrac{1}{2t^3}$.",
+  "questionText": "A particle moves along the path $x = 2e^{t}$ and $y = e^{2t}$, where distances are in metres and $t \\ge 0$. Find the coordinates of the point on the path where the tangent is parallel to the line $y = 4x - 1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the first derivative",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t}",
-        "explanation": "The parametric gradient simplifies to $\\frac{1}{t}$.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2e^{t}",
+        "explanation": "The exponential $e^{t}$ differentiates to itself, so the horizontal velocity keeps the same form.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the second derivative rule",
-        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{\\frac{dx}{dt}}",
-        "explanation": "We differentiate the gradient with respect to $t$, then divide by $\\frac{dx}{dt}$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2e^{2t}",
+        "explanation": "Using the chain rule on $e^{2t}$ brings down the factor of $2$ from the exponent.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Differentiate the gradient",
-        "workingLatex": "\\frac{d}{dt}\\left(\\frac{1}{t}\\right) = -\\frac{1}{t^2}",
-        "explanation": "Writing $\\frac{1}{t} = t^{-1}$ and differentiating gives $-t^{-2}$.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2e^{2t}}{2e^{t}} = e^{t}",
+        "explanation": "Dividing the two rates and using $e^{2t}/e^{t} = e^{t}$ gives a neat expression for the slope of the path at any time.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Divide by dx/dt",
-        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{-\\frac{1}{t^2}}{2t}",
-        "explanation": "Dividing by $\\frac{dx}{dt} = 2t$.",
+        "description": "Read off the required gradient",
+        "workingLatex": "\\text{gradient of } y = 4x - 1 \\;\\text{ is }\\; 4",
+        "explanation": "For the tangent to be parallel to the given line, its gradient must equal $4$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "= -\\frac{1}{2t^3}",
-        "explanation": "Combining the powers of $t$ in the denominator gives the required result.",
+        "description": "Set the gradient equal to 4",
+        "workingLatex": "e^{t} = 4",
+        "explanation": "This equation fixes the value of the parameter at which the path points in the required direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for t",
+        "workingLatex": "t = \\ln 4",
+        "explanation": "Taking natural logs undoes the exponential, giving the exact time. Since $\\ln 4 > 0$, it lies in the allowed range $t \\ge 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the x-coordinate",
+        "workingLatex": "x = 2e^{\\ln 4} = 2 \\cdot 4 = 8",
+        "explanation": "Because $e^{\\ln 4} = 4$, the exponential and logarithm cancel to give a clean value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{2\\ln 4} = e^{\\ln 16} = 16",
+        "explanation": "Using $2\\ln 4 = \\ln 4^{2} = \\ln 16$, the exponential cancels the logarithm to leave $16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the point",
+        "workingLatex": "(8,\\, 16)",
+        "explanation": "This is the point on the path where the tangent runs parallel to the line $y = 4x - 1$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{d^2y}{dx^2} = -\\dfrac{1}{2t^3}$"
+    "finalAnswer": "The tangent is parallel to $y = 4x - 1$ at the point $(8,\\, 16)$, which occurs at $t = \\ln 4$."
   }
 }

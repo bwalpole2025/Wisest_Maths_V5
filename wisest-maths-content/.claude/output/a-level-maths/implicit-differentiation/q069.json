@@ -1,0 +1,134 @@
+{
+  "id": "al.y2.pure.implicit.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "parallel tangents",
+    "product rule"
+  ],
+  "questionText": "The curve $C$ has equation $2x^2 + 2xy + y^2 = 5$. (a) Show that $\\frac{dy}{dx} = -\\frac{2x + y}{x + y}$. (b) Find an equation of the tangent to $C$ at the point $P(1, 1)$. (c) The tangent to $C$ at a second point $Q$ is parallel to the tangent at $P$; find the coordinates of $Q$ and show that $Q$ is the reflection of $P$ in the origin. (d) Find the exact distance between the two parallel tangents.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(2x^2) + \\frac{d}{dx}(2xy) + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "We differentiate the whole equation, treating $y$ as a function of $x$; the constant $5$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the 2x^2 term",
+        "workingLatex": "\\frac{d}{dx}(2x^2) = 4x",
+        "explanation": "The power rule sends $2x^2$ to $4x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the 2xy term with the product rule",
+        "workingLatex": "\\frac{d}{dx}(2xy) = 2y + 2x\\frac{dy}{dx}",
+        "explanation": "The term $2xy$ is a product: differentiate $2x$ to get $2y$ (keeping $y$), and keep $2x$ to get $2x\\frac{dy}{dx}$ (differentiating $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the y^2 term with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "The chain rule gives $2y$ times $\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "4x + 2y + 2x\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Collecting the differentiated terms produces one equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Divide by 2 and collect the dy/dx terms",
+        "workingLatex": "2x + y + (x + y)\\frac{dy}{dx} = 0",
+        "explanation": "Dividing throughout by $2$ simplifies the numbers and groups the $\\frac{dy}{dx}$ terms as $(x+y)\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x + y}{x + y}",
+        "explanation": "Isolating the derivative gives the required expression, proving part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check P on C and evaluate the gradient",
+        "workingLatex": "2 + 2 + 1 = 5, \\qquad \\left.\\frac{dy}{dx}\\right|_{(1,1)} = -\\frac{2 + 1}{1 + 1} = -\\frac{3}{2}",
+        "explanation": "The point $P(1,1)$ satisfies $2(1)+2(1)+1=5$, so it lies on $C$; the gradient there is $-\\frac32$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Form the tangent at P",
+        "workingLatex": "y - 1 = -\\tfrac{3}{2}(x - 1) \\;\\Rightarrow\\; 3x + 2y = 5",
+        "explanation": "Using gradient $-\\frac32$ through $(1,1)$ and clearing the fraction gives $3x+2y=5$. This answers part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set the gradient at Q equal to that at P",
+        "workingLatex": "-\\frac{2x + y}{x + y} = -\\frac{3}{2}",
+        "explanation": "Parallel tangents have equal gradients, so at $Q$ the derivative must also equal $-\\frac32$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Cross-multiply",
+        "workingLatex": "2(2x + y) = 3(x + y) \\;\\Rightarrow\\; 4x + 2y = 3x + 3y",
+        "explanation": "Clearing the fractions gives a linear equation linking $x$ and $y$ at $Q$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Simplify the relation",
+        "workingLatex": "x = y",
+        "explanation": "Cancelling common terms leaves $x=y$, so $Q$ lies on the line $y=x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Substitute y = x into the curve",
+        "workingLatex": "2x^2 + 2x^2 + x^2 = 5x^2 = 5 \\;\\Rightarrow\\; x^2 = 1",
+        "explanation": "Putting $y=x$ into $C$ gives $5x^2=5$, so $x^2=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Identify P and Q",
+        "workingLatex": "x = \\pm 1 \\;\\Rightarrow\\; (1, 1) = P \\text{ and } (-1, -1) = Q",
+        "explanation": "One solution is $P(1,1)$; the other is $Q(-1,-1)$, the required second point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Show Q is the reflection of P in the origin",
+        "workingLatex": "Q = (-1, -1) = -(1, 1) = -P",
+        "explanation": "Since $Q$ has both coordinates negated, it is the image of $P$ under reflection in the origin. This answers part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "Find the tangent at Q and the distance between the tangents",
+        "workingLatex": "\\text{at } Q: \\; 3x + 2y = -5; \\qquad d = \\frac{|{-5} - 5|}{\\sqrt{3^2 + 2^2}} = \\frac{10}{\\sqrt{13}} = \\frac{10\\sqrt{13}}{13}",
+        "explanation": "The tangent at $Q$ is $3x+2y=-5$ (same gradient as at $P$). Using the distance-between-parallel-lines formula with $3x+2y-5=0$ and $3x+2y+5=0$ and rationalising gives the exact distance. This answers part (d).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = -\\frac{2x + y}{x + y}$; (b) tangent at $P$: $3x + 2y = 5$; (c) $Q = (-1, -1) = -P$, the reflection of $P$ in the origin; (d) distance $= \\frac{10\\sqrt{13}}{13}$."
+  }
+}

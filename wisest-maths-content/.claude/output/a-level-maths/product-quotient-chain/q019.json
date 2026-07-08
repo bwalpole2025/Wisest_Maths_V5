@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "product rule",
+    "exponential",
+    "factorising"
+  ],
+  "questionText": "Given that $y = (x+1)e^x$, find $\\dfrac{dy}{dx}$, giving your answer in a fully factorised form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and state the rule",
+        "workingLatex": "\\frac{d}{dx}(uv) = u'v + uv'",
+        "explanation": "$y = (x+1)e^x$ is a product of $(x+1)$ and $e^x$, so we differentiate with the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the two factors",
+        "workingLatex": "u = x + 1, \\qquad v = e^x",
+        "explanation": "We set $u = x + 1$ and $v = e^x$ so each factor can be differentiated on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = e^x",
+        "explanation": "The derivative of $x + 1$ is $1$, and $e^x$ is its own derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = (1)e^x + (x+1)e^x",
+        "explanation": "Substituting into $u'v + uv'$ gives one term from differentiating the bracket and one from differentiating $e^x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Tidy the terms",
+        "workingLatex": "\\frac{dy}{dx} = e^x + (x+1)e^x",
+        "explanation": "The first term $(1)e^x$ is simply $e^x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise out the common term",
+        "workingLatex": "\\frac{dy}{dx} = e^x(1 + x + 1) = e^x(x + 2)",
+        "explanation": "Both terms share a factor of $e^x$; taking it out and collecting the constants $1 + 1 = 2$ inside the bracket gives $x + 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = (x + 2)e^x",
+        "explanation": "This is the fully factorised derivative of $y = (x+1)e^x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = (x + 2)e^x$."
+  }
+}

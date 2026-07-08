@@ -5,75 +5,96 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "proof",
   "tags": [
-    "given ratio",
-    "cosecant",
-    "cotangent",
-    "obtuse"
+    "identities",
+    "sec",
+    "tan",
+    "pythagorean identity"
   ],
-  "questionText": "Given that $\\sin\\theta = \\dfrac{5}{13}$ and $\\theta$ is obtuse, find the exact values of $\\csc\\theta$ and $\\cot\\theta$.",
+  "questionText": "Prove that $\\sec\\theta - \\cos\\theta \\equiv \\sin\\theta\\,\\tan\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find cosecant directly",
-        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta} = \\frac{13}{5}",
-        "explanation": "Cosecant is simply the reciprocal of the given sine, so it is found immediately as $\\frac{13}{5}$.",
+        "description": "State the identity and strategy",
+        "workingLatex": "\\text{Prove: } \\sec\\theta - \\cos\\theta \\equiv \\sin\\theta\\,\\tan\\theta \\qquad \\text{Start with LHS}",
+        "explanation": "The left side mixes a reciprocal function with a cosine, so we convert $\\sec\\theta$ to $\\dfrac{1}{\\cos\\theta}$ and combine.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set up the Pythagorean identity for cosine",
-        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta",
-        "explanation": "To find cotangent we need cosine, and this identity gives cosine from the known sine.",
+        "description": "Recall the definition of sec",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Writing secant as $\\dfrac{1}{\\cos\\theta}$ puts the whole left side in terms of cosine, and later sine.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the sine value",
-        "workingLatex": "\\cos^2\\theta = 1 - \\left(\\tfrac{5}{13}\\right)^2 = 1 - \\frac{25}{169}",
-        "explanation": "Squaring $\\frac{5}{13}$ gives $\\frac{25}{169}$, which we subtract from $1$.",
+        "description": "Substitute into the LHS",
+        "workingLatex": "\\sec\\theta - \\cos\\theta = \\frac{1}{\\cos\\theta} - \\cos\\theta",
+        "explanation": "Now the left side is a simple difference of two cosine terms that we can combine over one denominator.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify to a single fraction",
-        "workingLatex": "\\cos^2\\theta = \\frac{169 - 25}{169} = \\frac{144}{169}",
-        "explanation": "Writing $1$ as $\\frac{169}{169}$ and subtracting gives $\\frac{144}{169}$, a perfect-square fraction.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\frac{1 - \\cos^2\\theta}{\\cos\\theta}",
+        "explanation": "Writing $\\cos\\theta$ as $\\dfrac{\\cos^2\\theta}{\\cos\\theta}$ lets the two terms combine into a single fraction.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Take the square root and choose the sign",
-        "workingLatex": "\\theta \\text{ obtuse} \\;\\Rightarrow\\; \\cos\\theta = -\\frac{12}{13}",
-        "explanation": "The root of $\\frac{144}{169}$ is $\\frac{12}{13}$; since $\\theta$ is obtuse (quadrant II), cosine is negative, so we take the negative value.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 - \\cos^2\\theta \\equiv \\sin^2\\theta",
+        "explanation": "The numerator is exactly the rearrangement of $\\sin^2\\theta+\\cos^2\\theta\\equiv1$, which brings sine into the expression.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Form cotangent from cosine and sine",
-        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{-\\frac{12}{13}}{\\frac{5}{13}}",
-        "explanation": "Cotangent is cosine over sine; substituting both values sets up the division.",
+        "description": "Substitute the numerator",
+        "workingLatex": "= \\frac{\\sin^2\\theta}{\\cos\\theta}",
+        "explanation": "Replacing $1-\\cos^2\\theta$ with $\\sin^2\\theta$ gives a fraction we can split into a product.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Simplify the compound fraction",
-        "workingLatex": "\\cot\\theta = -\\frac{12}{13}\\times\\frac{13}{5} = -\\frac{12}{5}",
-        "explanation": "The thirteens cancel, leaving $-\\frac{12}{5}$; the sign is negative, consistent with an obtuse angle.",
+        "description": "Split into a product",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos\\theta} = \\sin\\theta\\cdot \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Peeling off one factor of $\\sin\\theta$ leaves $\\dfrac{\\sin\\theta}{\\cos\\theta}$, which is a tangent.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "State the results",
-        "workingLatex": "\\csc\\theta = \\frac{13}{5}, \\quad \\cot\\theta = -\\frac{12}{5}",
-        "explanation": "These are the exact values; cosecant stays positive since sine is positive in quadrant II, while cotangent is negative.",
+        "description": "Recall the definition of tan",
+        "workingLatex": "\\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta",
+        "explanation": "By definition $\\tan\\theta=\\dfrac{\\sin\\theta}{\\cos\\theta}$, so the remaining factor is $\\tan\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine to the RHS",
+        "workingLatex": "\\sin\\theta\\cdot \\frac{\\sin\\theta}{\\cos\\theta} = \\sin\\theta\\,\\tan\\theta",
+        "explanation": "The product is now exactly $\\sin\\theta\\,\\tan\\theta$, the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check at a convenient angle",
+        "workingLatex": "\\sec 60^\\circ - \\cos 60^\\circ = 2 - \\tfrac{1}{2} = \\tfrac{3}{2}, \\qquad \\sin 60^\\circ\\,\\tan 60^\\circ = \\frac{\\sqrt{3}}{2}\\cdot \\sqrt{3} = \\tfrac{3}{2}",
+        "explanation": "Both sides give $\\tfrac{3}{2}$ at $60^\\circ$, supporting the algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion",
+        "workingLatex": "\\sec\\theta - \\cos\\theta \\equiv \\sin\\theta\\,\\tan\\theta \\qquad \\text{(LHS} \\equiv \\text{RHS, QED)}",
+        "explanation": "The left side has been transformed into $\\sin\\theta\\,\\tan\\theta$ using the definition of secant, the Pythagorean identity and the definition of tangent.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\csc\\theta = \\dfrac{13}{5}, \\quad \\cot\\theta = -\\dfrac{12}{5}$"
+    "finalAnswer": "$\\sec\\theta-\\cos\\theta=\\dfrac{1}{\\cos\\theta}-\\cos\\theta=\\dfrac{1-\\cos^2\\theta}{\\cos\\theta}=\\dfrac{\\sin^2\\theta}{\\cos\\theta}=\\sin\\theta\\tan\\theta$, so $\\sec\\theta-\\cos\\theta\\equiv\\sin\\theta\\,\\tan\\theta$."
   }
 }

@@ -5,60 +5,74 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 2,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "proof",
   "tags": [
-    "compound angles",
-    "cosine",
-    "formula recall"
+    "double angle",
+    "derivation",
+    "proof"
   ],
-  "questionText": "Write down the compound angle formula for $\\cos(A - B)$.",
+  "questionText": "Starting from the addition formulae $\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B$ and $\\cos(A+B)=\\cos A\\cos B-\\sin A\\sin B$, show by setting $B=A$ that $\\sin 2A = 2\\sin A\\cos A$ and $\\cos 2A = \\cos^2 A - \\sin^2 A$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the pair of cosine addition formulae",
-        "workingLatex": "\\cos(A \\pm B) = \\cos A\\cos B \\mp \\sin A\\sin B",
-        "explanation": "The cosine formulae keep like functions together: cosine times cosine, then sine times sine. Crucially, the sign flips compared with the bracket.",
+        "description": "Write the sine addition formula",
+        "workingLatex": "\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "We begin with the addition formula for sine, which is our known starting result.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Note the sign reversal",
-        "workingLatex": "\\cos(A - B) \\;\\Rightarrow\\; + \\text{ between the terms}",
-        "explanation": "For cosine the sign inside the bracket is reversed in the expansion. So a minus inside becomes a plus between the two products.",
+        "description": "Set B equal to A",
+        "workingLatex": "\\sin(A+A) = \\sin A\\cos A + \\cos A\\sin A",
+        "explanation": "Because $2A = A+A$, a double angle is just a sum of two equal angles, so we replace every $B$ with $A$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the minus version",
-        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
-        "explanation": "Applying the sign reversal to $A - B$ gives a plus sign linking the two products.",
+        "description": "Simplify to the sine double angle",
+        "workingLatex": "\\sin 2A = 2\\sin A\\cos A",
+        "explanation": "The two terms on the right are identical, so they add to give twice $\\sin A\\cos A$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Sanity check with a known value",
-        "workingLatex": "\\cos(90^\\circ - 0^\\circ) = \\cos 90^\\circ\\cos 0^\\circ + \\sin 90^\\circ\\sin 0^\\circ = 0",
-        "explanation": "Testing with $A = 90^\\circ, B = 0^\\circ$ gives $0$, matching $\\cos 90^\\circ$, which confirms the formula.",
+        "description": "Write the cosine addition formula",
+        "workingLatex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "Now take the addition formula for cosine as the starting point for the second identity.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Cross-check the cofunction result",
-        "workingLatex": "\\cos(90^\\circ - B) = \\sin B",
-        "explanation": "Setting $A = 90^\\circ$ gives $\\cos(90^\\circ - B) = \\sin B$, a familiar identity, which reassures us the formula is right.",
+        "description": "Set B equal to A",
+        "workingLatex": "\\cos(A+A) = \\cos A\\cos A - \\sin A\\sin A",
+        "explanation": "Again set $B=A$ so that the sum $A+A$ becomes the double angle $2A$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final formula",
-        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
-        "explanation": "This is the required compound angle formula for cosine of a difference.",
+        "description": "Simplify to the cosine double angle",
+        "workingLatex": "\\cos 2A = \\cos^2 A - \\sin^2 A",
+        "explanation": "Writing $\\cos A\\cos A=\\cos^2 A$ and $\\sin A\\sin A=\\sin^2 A$ gives the standard form of $\\cos 2A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note the equivalent cosine forms",
+        "workingLatex": "\\cos 2A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A",
+        "explanation": "Using $\\sin^2 A+\\cos^2 A=1$ to replace one of the squares gives two further useful versions of the same identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the results",
+        "workingLatex": "\\sin 2A = 2\\sin A\\cos A, \\qquad \\cos 2A = \\cos^2 A - \\sin^2 A",
+        "explanation": "These are exactly the double-angle formulae, now shown to be the special case $B=A$ of the addition formulae, as required.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B$"
+    "finalAnswer": "By setting $B=A$ we obtain $\\sin 2A = 2\\sin A\\cos A$ and $\\cos 2A = \\cos^2 A - \\sin^2 A$ (equivalently $2\\cos^2 A-1$ or $1-2\\sin^2 A$)."
   }
 }

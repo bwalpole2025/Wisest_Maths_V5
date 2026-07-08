@@ -5,89 +5,130 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "proof",
+  "marks": 7,
+  "answerType": "numeric",
   "tags": [
-    "identities",
-    "proof",
-    "fractions",
-    "secant"
+    "solving equations",
+    "cosec",
+    "quadratic"
   ],
-  "questionText": "Prove that $\\dfrac{1}{\\sec\\theta - 1} + \\dfrac{1}{\\sec\\theta + 1} \\equiv 2\\cot\\theta\\csc\\theta$.",
+  "questionText": "Solve $2\\cot^2 x + 5\\operatorname{cosec} x = 10$ for $0 \\le x < 360^\\circ$, giving your answers to one decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\frac{1}{\\sec\\theta - 1} + \\frac{1}{\\sec\\theta + 1}",
-        "explanation": "We add the two fractions first, which requires a common denominator.",
+        "description": "State the equation and note the domain",
+        "workingLatex": "2\\cot^2 x + 5\\operatorname{cosec} x = 10, \\qquad 0 \\le x < 360^\\circ, \\;\\; \\sin x \\neq 0",
+        "explanation": "The equation involves $\\cot^2 x$ and $\\operatorname{cosec} x$, both undefined where $\\sin x = 0$. We keep the interval in mind and aim to reduce everything to $\\operatorname{cosec} x$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Use the common denominator",
-        "workingLatex": "= \\frac{(\\sec\\theta + 1) + (\\sec\\theta - 1)}{(\\sec\\theta - 1)(\\sec\\theta + 1)}",
-        "explanation": "The common denominator is the product of the two denominators; the numerator sums the cross terms.",
+        "description": "Choose the identity linking cot and cosec",
+        "workingLatex": "1 + \\cot^2 x \\equiv \\operatorname{cosec}^2 x \\;\\Rightarrow\\; \\cot^2 x = \\operatorname{cosec}^2 x - 1",
+        "explanation": "Because $\\cot^2 x$ appears, we swap it out using $1 + \\cot^2 x \\equiv \\operatorname{cosec}^2 x$. This is the correct Pythagorean identity for these two ratios and leaves only $\\operatorname{cosec} x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the numerator",
-        "workingLatex": "= \\frac{2\\sec\\theta}{(\\sec\\theta - 1)(\\sec\\theta + 1)}",
-        "explanation": "The $+1$ and $-1$ cancel in the numerator, leaving $2\\sec\\theta$.",
+        "description": "Substitute into the equation",
+        "workingLatex": "2\\left(\\operatorname{cosec}^2 x - 1\\right) + 5\\operatorname{cosec} x = 10",
+        "explanation": "Replacing $\\cot^2 x$ makes the equation depend on a single ratio, $\\operatorname{cosec} x$, which is what we need to form a quadratic.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Expand the denominator as a difference of squares",
-        "workingLatex": "(\\sec\\theta - 1)(\\sec\\theta + 1) = \\sec^2\\theta - 1",
-        "explanation": "The conjugate product gives a difference of squares.",
+        "description": "Expand and simplify",
+        "workingLatex": "2\\operatorname{cosec}^2 x - 2 + 5\\operatorname{cosec} x = 10",
+        "explanation": "Multiplying out the bracket prepares the expression so that all terms can be gathered onto one side.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\sec^2\\theta - 1 = \\tan^2\\theta",
-        "explanation": "This difference is exactly $\\tan^2\\theta$, a key simplification.",
+        "description": "Rearrange to a quadratic equal to zero",
+        "workingLatex": "2\\operatorname{cosec}^2 x + 5\\operatorname{cosec} x - 12 = 0",
+        "explanation": "Moving the $10$ across and combining constants ($-2 - 10 = -12$) gives a standard quadratic in $\\operatorname{cosec} x$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rewrite the fraction",
-        "workingLatex": "= \\frac{2\\sec\\theta}{\\tan^2\\theta}",
-        "explanation": "Substituting the denominator gives a single, cleaner fraction.",
+        "description": "Introduce a substitution",
+        "workingLatex": "2u^2 + 5u - 12 = 0, \\quad \\text{where } u = \\operatorname{cosec} x",
+        "explanation": "Letting $u = \\operatorname{cosec} x$ shows this is just a quadratic to be factorised, keeping the algebra tidy.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Convert to sine and cosine",
-        "workingLatex": "= \\frac{2\\cdot\\frac{1}{\\cos\\theta}}{\\frac{\\sin^2\\theta}{\\cos^2\\theta}}",
-        "explanation": "Writing secant and tangent in basic functions exposes how the cosines will combine.",
+        "description": "Factorise the quadratic",
+        "workingLatex": "(2u - 3)(u + 4) = 0",
+        "explanation": "Splitting the middle term ($5u = 8u - 3u$) leads to this factorisation. A quick expansion confirms it returns $2u^2 + 5u - 12$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Simplify the compound fraction",
-        "workingLatex": "= \\frac{2}{\\cos\\theta}\\times\\frac{\\cos^2\\theta}{\\sin^2\\theta} = \\frac{2\\cos\\theta}{\\sin^2\\theta}",
-        "explanation": "Multiplying by the reciprocal and cancelling one cosine leaves $\\frac{2\\cos\\theta}{\\sin^2\\theta}$.",
+        "description": "Read off the two roots",
+        "workingLatex": "u = \\tfrac{3}{2} \\quad \\text{or} \\quad u = -4",
+        "explanation": "Each factor set to zero gives one value of $\\operatorname{cosec} x$. These are the two cases to solve.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Split into reciprocal functions",
-        "workingLatex": "= 2\\cdot\\frac{\\cos\\theta}{\\sin\\theta}\\cdot\\frac{1}{\\sin\\theta} = 2\\cot\\theta\\csc\\theta",
-        "explanation": "Separating the factors reveals cotangent (cosine over sine) times cosecant (one over sine), which is the right-hand side.",
+        "description": "Convert to sine and check attainability",
+        "workingLatex": "\\operatorname{cosec} x = \\tfrac{3}{2} \\Rightarrow \\sin x = \\tfrac{2}{3}, \\qquad \\operatorname{cosec} x = -4 \\Rightarrow \\sin x = -\\tfrac{1}{4}",
+        "explanation": "Since $\\operatorname{cosec} x = \\tfrac{1}{\\sin x}$, we invert each value. Both $|\\tfrac23| \\le 1$ and $|-\\tfrac14| \\le 1$, so both are valid sines and neither root is rejected.",
         "diagram": null
       },
       {
         "stepNumber": 10,
-        "description": "Conclude the proof",
-        "workingLatex": "\\frac{1}{\\sec\\theta - 1} + \\frac{1}{\\sec\\theta + 1} \\equiv 2\\cot\\theta\\csc\\theta \\;\\blacksquare",
-        "explanation": "The transformed left-hand side matches the right-hand side exactly.",
+        "description": "Solve sin x = 2/3",
+        "workingLatex": "\\sin^{-1}\\left(\\tfrac{2}{3}\\right) = 41.8103^\\circ",
+        "explanation": "The calculator gives the acute base angle. Sine is positive in the first and second quadrants, so we build both solutions from this angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "All angles for sin x = 2/3",
+        "workingLatex": "x = 41.8^\\circ \\quad \\text{or} \\quad x = 180^\\circ - 41.8^\\circ = 138.2^\\circ",
+        "explanation": "The second-quadrant partner is $180^\\circ$ minus the base angle. Both values lie in the interval, rounded to one decimal place.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve sin x = -1/4",
+        "workingLatex": "\\sin^{-1}\\left(\\tfrac{1}{4}\\right) = 14.4775^\\circ \\;\\text{(acute reference angle)}",
+        "explanation": "We take the acute angle from the positive value $\\tfrac14$ first, then place the solutions in the quadrants where sine is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "All angles for sin x = -1/4",
+        "workingLatex": "x = 180^\\circ + 14.4775^\\circ = 194.5^\\circ, \\qquad x = 360^\\circ - 14.4775^\\circ = 345.5^\\circ",
+        "explanation": "Sine is negative in the third and fourth quadrants, giving $180^\\circ + \\text{ref}$ and $360^\\circ - \\text{ref}$. Both fall inside the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Collect all solutions",
+        "workingLatex": "x = 41.8^\\circ,\\; 138.2^\\circ,\\; 194.5^\\circ,\\; 345.5^\\circ",
+        "explanation": "Combining the results from both roots gives four solutions in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Verify a solution",
+        "workingLatex": "\\sin 41.8^\\circ \\approx \\tfrac{2}{3} \\Rightarrow \\cot^2 x = \\operatorname{cosec}^2 x - 1 = \\tfrac{9}{4} - 1 = \\tfrac{5}{4}; \\;\\; 2\\left(\\tfrac{5}{4}\\right) + 5\\left(\\tfrac{3}{2}\\right) = \\tfrac{5}{2} + \\tfrac{15}{2} = 10",
+        "explanation": "Using the exact values behind $x \\approx 41.8^\\circ$, the left-hand side evaluates to $10$, matching the right-hand side and confirming the working.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the final answer",
+        "workingLatex": "x = 41.8^\\circ,\\; 138.2^\\circ,\\; 194.5^\\circ,\\; 345.5^\\circ",
+        "explanation": "These are all solutions in $0 \\le x < 360^\\circ$, to one decimal place.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{1}{\\sec\\theta - 1} + \\dfrac{1}{\\sec\\theta + 1} \\equiv 2\\cot\\theta\\csc\\theta$"
+    "finalAnswer": "$x = 41.8^\\circ,\\ 138.2^\\circ,\\ 194.5^\\circ,\\ 345.5^\\circ$ (to 1 d.p.)."
   }
 }

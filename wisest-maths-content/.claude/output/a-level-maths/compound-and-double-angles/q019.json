@@ -4,61 +4,67 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "tangent",
-    "given ratios"
+    "double angle",
+    "exact values"
   ],
-  "questionText": "Given that $\\tan A = \\dfrac{1}{2}$ and $\\tan B = \\dfrac{1}{3}$, show that $\\tan(A + B) = 1$ and hence state $A + B$ for acute $A, B$.",
+  "questionText": "Show that $2\\cos^2 15^\\circ - 1 = \\dfrac{\\sqrt{3}}{2}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the tangent addition formula",
-        "workingLatex": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
-        "explanation": "Both tangents are given, so this formula can be applied directly.",
+        "description": "Write down the expression",
+        "workingLatex": "E = 2\\cos^2 15^\\circ - 1",
+        "explanation": "The form $2\\cos^2 A-1$ is one of the three equivalent versions of $\\cos 2A$, so recognising it is the key first move.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the given values",
-        "workingLatex": "= \\frac{\\frac{1}{2} + \\frac{1}{3}}{1 - \\frac{1}{2}\\cdot\\frac{1}{3}}",
-        "explanation": "Inserting $\\tan A = \\frac{1}{2}$ and $\\tan B = \\frac{1}{3}$ sets up the fraction.",
+        "description": "Recall the cosine double-angle formula",
+        "workingLatex": "\\cos 2A = 2\\cos^2 A - 1",
+        "explanation": "Reading this identity from right to left converts $2\\cos^2 A-1$ into a single cosine of the doubled angle.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the numerator",
-        "workingLatex": "\\frac{1}{2} + \\frac{1}{3} = \\frac{5}{6}",
-        "explanation": "Adding over the common denominator $6$ gives $\\frac{5}{6}$.",
+        "description": "Match the angle",
+        "workingLatex": "A = 15^\\circ",
+        "explanation": "The angle inside the cosine is $15^\\circ$, so $A=15^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify the denominator",
-        "workingLatex": "1 - \\frac{1}{6} = \\frac{5}{6}",
-        "explanation": "The product $\\frac{1}{6}$ subtracted from $1$ leaves $\\frac{5}{6}$.",
+        "description": "Apply the formula",
+        "workingLatex": "2\\cos^2 15^\\circ - 1 = \\cos(2\\times 15^\\circ) = \\cos 30^\\circ",
+        "explanation": "Substituting $A=15^\\circ$ and doubling gives $\\cos 30^\\circ$, a familiar exact-value angle.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Divide",
-        "workingLatex": "\\tan(A + B) = \\frac{5/6}{5/6} = 1",
-        "explanation": "The equal numerator and denominator give exactly $1$.",
+        "description": "State the exact value of cos 30",
+        "workingLatex": "\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}",
+        "explanation": "$\\cos 30^\\circ$ is a standard exact value from the $30^\\circ$-$60^\\circ$ triangle.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Interpret for acute angles",
-        "workingLatex": "A + B = 45^\\circ",
-        "explanation": "Since $A$ and $B$ are acute, their sum is between $0$ and $180^\\circ$; the angle with tangent $1$ in that range is $45^\\circ$.",
+        "description": "Conclude",
+        "workingLatex": "2\\cos^2 15^\\circ - 1 = \\frac{\\sqrt{3}}{2}",
+        "explanation": "Chaining the two results proves the required identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check numerically",
+        "workingLatex": "2\\cos^2 15^\\circ - 1 \\approx 0.866, \\quad \\frac{\\sqrt{3}}{2} \\approx 0.866",
+        "explanation": "Both sides evaluate to about $0.866$, confirming the exact result.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\tan(A + B) = 1$, so $A + B = 45^\\circ$."
+    "finalAnswer": "$2\\cos^2 15^\\circ - 1 = \\dfrac{\\sqrt{3}}{2}$."
   }
 }

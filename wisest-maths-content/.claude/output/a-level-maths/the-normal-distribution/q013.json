@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q013",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "lower tail"
+  ],
+  "questionText": "The masses, $X$ grams, of a type of component are modelled by $X \\sim N(64, 6^2)$. Find $P(X < 52)$, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(64,\\ 6^2), \\qquad \\mu = 64,\\ \\sigma = 6",
+        "explanation": "The masses are normal with mean $\\mu = 64$ g and standard deviation $\\sigma = 6$ g. The value $52$ lies well below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify what is required",
+        "workingLatex": "\\text{Require } P(X < 52)",
+        "explanation": "We want the chance a component is lighter than $52$ g. Since $52$ is below the mean, this lower-tail probability should be small.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 52",
+        "workingLatex": "Z = \\dfrac{X - \\mu}{\\sigma} = \\dfrac{52 - 64}{6} = -2",
+        "explanation": "The $z$-score measures how many standard deviations $52$ is from the mean. Here it is two standard deviations below, so $z = -2$; the minus sign shows it is on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X < 52) = P(Z < -2)",
+        "explanation": "Translating to the standard normal variable, the area below $52$ equals the area below $z = -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use symmetry of the curve",
+        "workingLatex": "P(Z < -2) = 1 - \\Phi(2) = 1 - 0.9772",
+        "explanation": "The bell curve is symmetric about $0$, so the left tail below $-2$ has exactly the same area as the right tail above $2$, which is $1 - \\Phi(2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 0.02275",
+        "explanation": "Completing the subtraction gives the probability. Only about $2.3\\%$ of components fall below $52$ g, matching how far $52$ sits into the tail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final answer",
+        "workingLatex": "P(X < 52) \\approx 0.02275",
+        "explanation": "To four significant figures this is the required probability, sensibly small because $52$ is two standard deviations below the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X < 52) \\approx 0.02275$."
+  }
+}

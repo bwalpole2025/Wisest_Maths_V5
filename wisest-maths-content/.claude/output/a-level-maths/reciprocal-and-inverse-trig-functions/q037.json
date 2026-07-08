@@ -5,68 +5,95 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "proof",
   "tags": [
-    "equations",
-    "cosecant",
-    "cotangent",
-    "quadratic"
+    "identities",
+    "cosec",
+    "combining fractions"
   ],
-  "questionText": "Solve $\\csc^2\\theta + \\cot\\theta = 3$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionText": "Prove that $\\dfrac{1}{1+\\cos\\theta} + \\dfrac{1}{1-\\cos\\theta} \\equiv 2\\operatorname{cosec}^2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace cosecant squared using the identity",
-        "workingLatex": "\\csc^2\\theta = 1 + \\cot^2\\theta",
-        "explanation": "Using this identity converts the equation into one purely in cotangent, which we can treat as a quadratic.",
+        "description": "State the identity and strategy",
+        "workingLatex": "\\text{Prove: } \\frac{1}{1+\\cos\\theta} + \\frac{1}{1-\\cos\\theta} \\equiv 2\\operatorname{cosec}^2\\theta \\qquad \\text{Start with LHS}",
+        "explanation": "The left side is a sum of two fractions, so we combine them over a common denominator and simplify towards $2\\operatorname{cosec}^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the equation",
-        "workingLatex": "1 + \\cot^2\\theta + \\cot\\theta = 3",
-        "explanation": "After substitution the equation is entirely in cotangent.",
+        "description": "Choose a common denominator",
+        "workingLatex": "\\text{common denominator} = (1+\\cos\\theta)(1-\\cos\\theta)",
+        "explanation": "The product of the two different denominators is the natural common denominator for adding the fractions.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to standard quadratic form",
-        "workingLatex": "\\cot^2\\theta + \\cot\\theta - 2 = 0",
-        "explanation": "Moving everything to one side gives a neat quadratic in $\\cot\\theta$.",
+        "description": "Combine over that denominator",
+        "workingLatex": "\\frac{1}{1+\\cos\\theta} + \\frac{1}{1-\\cos\\theta} = \\frac{(1-\\cos\\theta) + (1+\\cos\\theta)}{(1+\\cos\\theta)(1-\\cos\\theta)}",
+        "explanation": "Each numerator is multiplied by the other bracket, then the two results are added over the shared denominator.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(\\cot\\theta + 2)(\\cot\\theta - 1) = 0",
-        "explanation": "The numbers $+2$ and $-1$ multiply to $-2$ and add to $+1$, giving the factorisation.",
+        "description": "Simplify the numerator",
+        "workingLatex": "(1-\\cos\\theta) + (1+\\cos\\theta) = 2",
+        "explanation": "The $-\\cos\\theta$ and $+\\cos\\theta$ cancel, leaving a simple numerator of $2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cot\\theta = 1 \\;\\Rightarrow\\; \\tan\\theta = 1 \\;\\Rightarrow\\; \\theta = 45^\\circ, 225^\\circ",
-        "explanation": "Converting to tangent, $\\tan\\theta = 1$ gives $45^\\circ$ and, one period later, $225^\\circ$.",
+        "description": "Expand the denominator",
+        "workingLatex": "(1+\\cos\\theta)(1-\\cos\\theta) = 1 - \\cos^2\\theta",
+        "explanation": "The denominator is a difference of two squares, so it multiplies out to $1-\\cos^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "\\cot\\theta = -2 \\;\\Rightarrow\\; \\tan\\theta = -\\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 153.4^\\circ, 333.4^\\circ",
-        "explanation": "Here $\\tan\\theta = -\\frac{1}{2}$; the reference angle is $26.6^\\circ$, and negative tangent gives quadrant II and IV solutions.",
+        "description": "Assemble the single fraction",
+        "workingLatex": "= \\frac{2}{1 - \\cos^2\\theta}",
+        "explanation": "Putting the simplified numerator over the expanded denominator gives one tidy fraction.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect and round the solutions",
-        "workingLatex": "\\theta = 45^\\circ, 153^\\circ, 225^\\circ, 333^\\circ",
-        "explanation": "Combining both factors and rounding to the nearest degree gives four solutions in the interval.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 - \\cos^2\\theta \\equiv \\sin^2\\theta",
+        "explanation": "The denominator is exactly $\\sin^2\\theta$ by the rearranged Pythagorean identity, which introduces sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute the denominator",
+        "workingLatex": "= \\frac{2}{\\sin^2\\theta}",
+        "explanation": "Replacing $1-\\cos^2\\theta$ with $\\sin^2\\theta$ gives $\\dfrac{2}{\\sin^2\\theta}$, a multiple of a reciprocal square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Recognise cosec^2",
+        "workingLatex": "\\frac{2}{\\sin^2\\theta} = 2\\cdot \\frac{1}{\\sin^2\\theta} = 2\\operatorname{cosec}^2\\theta",
+        "explanation": "Since $\\dfrac{1}{\\sin^2\\theta}=\\operatorname{cosec}^2\\theta$, the fraction is $2\\operatorname{cosec}^2\\theta$, the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check at a convenient angle",
+        "workingLatex": "\\frac{1}{1+0} + \\frac{1}{1-0} = 2, \\qquad 2\\operatorname{cosec}^2 90^\\circ = 2\\cdot 1^2 = 2",
+        "explanation": "At $90^\\circ$, where $\\cos\\theta=0$ and $\\operatorname{cosec}\\theta=1$, both sides equal $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion",
+        "workingLatex": "\\frac{1}{1+\\cos\\theta} + \\frac{1}{1-\\cos\\theta} \\equiv 2\\operatorname{cosec}^2\\theta \\qquad \\text{(LHS} \\equiv \\text{RHS, QED)}",
+        "explanation": "Combining the fractions and using the Pythagorean identity turns the left side into $2\\operatorname{cosec}^2\\theta$, proving the identity.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 45^\\circ, 153^\\circ, 225^\\circ, 333^\\circ$"
+    "finalAnswer": "Combining gives $\\dfrac{2}{(1+\\cos\\theta)(1-\\cos\\theta)}=\\dfrac{2}{1-\\cos^2\\theta}=\\dfrac{2}{\\sin^2\\theta}=2\\operatorname{cosec}^2\\theta$, so the identity holds."
   }
 }

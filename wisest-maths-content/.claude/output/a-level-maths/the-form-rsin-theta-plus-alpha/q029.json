@@ -1,71 +1,92 @@
 {
-  "id": "al.y2.pure.rsin-form.q029",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 7,
+  "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q029",
+  "marks": 5,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "maximum and minimum"
   ],
-  "questionText": "Express $2\\sin\\theta + \\cos\\theta$ as $R\\sin(\\theta + \\alpha)$ and hence solve $2\\sin\\theta + \\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
-  "questionDiagram": null,
+  "questionText": "Express $9\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Hence write down the greatest and least values of $9\\sin\\theta + 4\\cos\\theta - 3$, and find the value of $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$ at which the least value occurs. Give non-exact answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{2^2 + 1^2} = \\sqrt5",
-        "explanation": "The amplitude is $\\sqrt5$.",
+        "description": "Set up the identity",
+        "workingLatex": "9\\sin\\theta + 4\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We rewrite only the wave part; the $-3$ shifts the whole graph down and is reinstated at the end. The $R\\sin(\\theta+\\alpha)$ form shows the amplitude at a glance.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{1}{2} \\;\\Rightarrow\\; \\alpha \\approx 26.57^\\circ",
-        "explanation": "The ratio of the cosine to the sine coefficient gives the phase angle.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with the addition formula and pulling $R$ through casts the target in the same shape as the given expression.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "2\\sin\\theta + \\cos\\theta = \\sqrt5\\sin(\\theta + 26.57^\\circ)",
-        "explanation": "Combining gives the single-sine form.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 9, \\qquad R\\sin\\alpha = 4",
+        "explanation": "Matching the $\\sin\\theta$ coefficients and then the $\\cos\\theta$ coefficients gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rewrite the equation",
-        "workingLatex": "\\sqrt5\\sin(\\theta + 26.57^\\circ) = 1 \\;\\Rightarrow\\; \\sin(\\theta + 26.57^\\circ) = \\frac{1}{\\sqrt5}",
-        "explanation": "Dividing by $\\sqrt5$ gives sine equal to about $0.447$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{9^2 + 4^2} = \\sqrt{97}",
+        "explanation": "Squaring and adding eliminates $\\alpha$, so $R^2=81+16=97$ and the amplitude is $\\sqrt{97}\\approx 9.849$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve within the shifted interval",
-        "workingLatex": "\\theta + 26.57^\\circ = 26.57^\\circ, 153.43^\\circ",
-        "explanation": "The principal value $26.57^\\circ$ and its partner $153.43^\\circ$ both lie in $[26.57^\\circ, 386.57^\\circ)$.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{4}{9} \\Rightarrow \\alpha = 24.0^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{4}{9}$; both coefficients are positive, so $\\alpha=24.0^\\circ$ is acute.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = 0^\\circ, 126.87^\\circ",
-        "explanation": "Subtracting $26.57^\\circ$ from each gives the solutions.",
+        "description": "State the R-form",
+        "workingLatex": "9\\sin\\theta + 4\\cos\\theta = \\sqrt{97}\\,\\sin(\\theta+24.0^\\circ)",
+        "explanation": "The wave part is now a single sine of amplitude $\\sqrt{97}$ shifted left by $24.0^\\circ$, which controls the whole expression's swing.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Round the solutions",
-        "workingLatex": "\\theta \\approx 0^\\circ, 127^\\circ",
-        "explanation": "Rounding to the nearest degree gives the final answers.",
+        "description": "Use the range of sine",
+        "workingLatex": "-\\sqrt{97} \\le \\sqrt{97}\\,\\sin(\\theta+24.0^\\circ) \\le \\sqrt{97}",
+        "explanation": "Because $\\sin$ lies between $-1$ and $1$, multiplying by the positive amplitude $\\sqrt{97}$ shows the wave itself ranges from $-\\sqrt{97}$ to $+\\sqrt{97}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Greatest value",
+        "workingLatex": "\\text{greatest} = \\sqrt{97} - 3 \\approx 6.8",
+        "explanation": "Subtracting $3$ lowers every value by $3$, so the greatest value is the top of the wave minus $3$: $\\sqrt{97}-3\\approx 6.8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Least value",
+        "workingLatex": "\\text{least} = -\\sqrt{97} - 3 \\approx -12.8",
+        "explanation": "Likewise the least value is the bottom of the wave minus $3$: $-\\sqrt{97}-3\\approx -12.8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Where the least value occurs",
+        "workingLatex": "\\theta+24.0^\\circ = 270^\\circ \\Rightarrow \\theta = 246.0^\\circ",
+        "explanation": "The wave reaches its bottom when the sine equals $-1$, i.e. when its angle is $270^\\circ$. Solving $\\theta+24.0^\\circ=270^\\circ$ gives $\\theta=246.0^\\circ$, which lies in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 0^\\circ, 127^\\circ$"
+    "finalAnswer": "$9\\sin\\theta + 4\\cos\\theta = \\sqrt{97}\\,\\sin(\\theta+24.0^\\circ)$; the greatest value of $9\\sin\\theta+4\\cos\\theta-3$ is $\\sqrt{97}-3\\approx 6.8$ and the least value is $-\\sqrt{97}-3\\approx -12.8$, the least occurring at $\\theta=246.0^\\circ$."
   }
 }

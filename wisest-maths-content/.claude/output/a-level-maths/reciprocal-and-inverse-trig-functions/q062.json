@@ -5,75 +5,117 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "proof",
   "tags": [
-    "given ratio",
-    "secant",
-    "cotangent",
-    "quadrant"
+    "identity proof",
+    "cosec",
+    "sec",
+    "tan"
   ],
-  "questionText": "Given that $\\csc\\theta = -2$ and $180^\\circ < \\theta < 270^\\circ$, find the exact values of $\\sec\\theta$ and $\\cot\\theta$.",
+  "questionText": "Prove the identity $\\dfrac{1 + \\sec\\theta}{\\sin\\theta + \\tan\\theta} \\equiv \\operatorname{cosec}\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find sine from cosecant",
-        "workingLatex": "\\sin\\theta = \\frac{1}{\\csc\\theta} = -\\frac{1}{2}",
-        "explanation": "Sine is the reciprocal of cosecant, so $\\sin\\theta = -\\frac{1}{2}$; the negative sign fits the third quadrant.",
+        "description": "Set out what must be proved",
+        "workingLatex": "\\text{Prove that }\\ \\frac{1 + \\sec\\theta}{\\sin\\theta + \\tan\\theta} \\equiv \\operatorname{cosec}\\theta",
+        "explanation": "The right-hand side is a single reciprocal function, so the plan is to write every function on the left in terms of $\\sin\\theta$ and $\\cos\\theta$, simplify, and watch the common factors cancel.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Identify the quadrant signs",
-        "workingLatex": "180^\\circ < \\theta < 270^\\circ \\;\\Rightarrow\\; \\sin < 0, \\cos < 0",
-        "explanation": "In the third quadrant both sine and cosine are negative, which will determine the sign of every value we compute.",
+        "description": "Recall the reciprocal definitions",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}, \\qquad \\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}, \\qquad \\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "Converting to sine and cosine is the most reliable way to simplify a mixed expression, because everything is then built from just two quantities.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Use the Pythagorean identity for cosine",
-        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\frac{1}{4}",
-        "explanation": "We find cosine from sine using the fundamental identity.",
+        "description": "Simplify the numerator",
+        "workingLatex": "1 + \\sec\\theta = 1 + \\frac{1}{\\cos\\theta} = \\frac{\\cos\\theta + 1}{\\cos\\theta}",
+        "explanation": "Writing $1$ as $\\dfrac{\\cos\\theta}{\\cos\\theta}$ lets the two terms combine over the common denominator $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify cosine squared",
-        "workingLatex": "\\cos^2\\theta = \\frac{3}{4}",
-        "explanation": "Subtracting gives $\\frac{3}{4}$ for cosine squared.",
+        "description": "Expand the denominator",
+        "workingLatex": "\\sin\\theta + \\tan\\theta = \\sin\\theta + \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Replacing $\\tan\\theta$ by $\\dfrac{\\sin\\theta}{\\cos\\theta}$ prepares the denominator for the same common-denominator treatment.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Take the root with the correct sign",
-        "workingLatex": "\\cos\\theta = -\\frac{\\sqrt{3}}{2}",
-        "explanation": "The root is $\\frac{\\sqrt3}{2}$, and the third quadrant forces the negative sign.",
+        "description": "Combine the denominator over a common denominator",
+        "workingLatex": "\\sin\\theta + \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\sin\\theta\\cos\\theta + \\sin\\theta}{\\cos\\theta}",
+        "explanation": "Both terms are placed over $\\cos\\theta$, ready to be factorised.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find secant",
-        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta} = -\\frac{2}{\\sqrt{3}} = -\\frac{2\\sqrt{3}}{3}",
-        "explanation": "Secant is the reciprocal of cosine; rationalising gives $-\\frac{2\\sqrt3}{3}$.",
+        "description": "Factorise the denominator",
+        "workingLatex": "\\frac{\\sin\\theta\\cos\\theta + \\sin\\theta}{\\cos\\theta} = \\frac{\\sin\\theta(\\cos\\theta + 1)}{\\cos\\theta}",
+        "explanation": "Taking out the common factor $\\sin\\theta$ reveals a $(\\cos\\theta+1)$ bracket that matches the numerator, which is the key to the cancellation.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Find cotangent",
-        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{-\\frac{\\sqrt3}{2}}{-\\frac{1}{2}} = \\sqrt{3}",
-        "explanation": "Cotangent is cosine over sine; the two negatives cancel, giving a positive $\\sqrt{3}$, consistent with the third quadrant where cotangent is positive.",
+        "description": "Assemble the whole fraction",
+        "workingLatex": "\\frac{1 + \\sec\\theta}{\\sin\\theta + \\tan\\theta} = \\frac{\\dfrac{\\cos\\theta + 1}{\\cos\\theta}}{\\dfrac{\\sin\\theta(\\cos\\theta + 1)}{\\cos\\theta}}",
+        "explanation": "Substituting the simplified numerator and denominator gives a fraction divided by a fraction.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "State the results",
-        "workingLatex": "\\sec\\theta = -\\frac{2\\sqrt{3}}{3}, \\quad \\cot\\theta = \\sqrt{3}",
-        "explanation": "These are the exact values, with signs matching the third-quadrant position.",
+        "description": "Divide by multiplying by the reciprocal",
+        "workingLatex": "= \\frac{\\cos\\theta + 1}{\\cos\\theta} \\times \\frac{\\cos\\theta}{\\sin\\theta(\\cos\\theta + 1)}",
+        "explanation": "Dividing by a fraction is the same as multiplying by its reciprocal, which lines up the matching factors for cancelling.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Cancel the cosine factors",
+        "workingLatex": "= \\frac{\\cos\\theta + 1}{\\sin\\theta(\\cos\\theta + 1)}",
+        "explanation": "The $\\cos\\theta$ in the denominator of the first fraction cancels the $\\cos\\theta$ in the numerator of the second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Cancel the common bracket",
+        "workingLatex": "= \\frac{1}{\\sin\\theta}",
+        "explanation": "The factor $(\\cos\\theta+1)$ appears top and bottom, so it cancels, leaving just $\\dfrac{1}{\\sin\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Recognise the result",
+        "workingLatex": "\\frac{1}{\\sin\\theta} = \\operatorname{cosec}\\theta = \\text{RHS}",
+        "explanation": "By definition $\\dfrac{1}{\\sin\\theta}$ is $\\operatorname{cosec}\\theta$, which is exactly the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the validity conditions",
+        "workingLatex": "\\sin\\theta \\neq 0, \\quad \\cos\\theta \\neq 0, \\quad \\cos\\theta \\neq -1",
+        "explanation": "The cancellations require these quantities to be non-zero, so the identity holds everywhere both sides are defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Numerical check at 60 degrees",
+        "workingLatex": "\\frac{1 + \\sec 60^\\circ}{\\sin 60^\\circ + \\tan 60^\\circ} = \\frac{1 + 2}{\\tfrac{\\sqrt3}{2} + \\sqrt3} = \\frac{3}{\\tfrac{3\\sqrt3}{2}} = \\frac{2}{\\sqrt3} = \\operatorname{cosec} 60^\\circ",
+        "explanation": "At $60^\\circ$ the left-hand side evaluates to $\\dfrac{2}{\\sqrt3}$, and $\\operatorname{cosec} 60^\\circ=\\dfrac{1}{\\sin 60^\\circ}=\\dfrac{2}{\\sqrt3}$ agrees, confirming the algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Conclude the proof",
+        "workingLatex": "\\frac{1 + \\sec\\theta}{\\sin\\theta + \\tan\\theta} \\equiv \\operatorname{cosec}\\theta \\quad \\blacksquare",
+        "explanation": "The left-hand side simplifies exactly to $\\operatorname{cosec}\\theta$ using only reciprocal definitions and factorising, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec\\theta = -\\dfrac{2\\sqrt{3}}{3}, \\quad \\cot\\theta = \\sqrt{3}$"
+    "finalAnswer": "Writing everything over $\\sin\\theta$ and $\\cos\\theta$ gives $\\dfrac{(\\cos\\theta+1)/\\cos\\theta}{\\sin\\theta(\\cos\\theta+1)/\\cos\\theta}=\\dfrac{1}{\\sin\\theta}=\\operatorname{cosec}\\theta$, as required."
   }
 }

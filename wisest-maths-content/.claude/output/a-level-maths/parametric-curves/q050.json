@@ -4,61 +4,103 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "expression",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "parametric",
   "tags": [
-    "parametric",
-    "cartesian",
-    "cubic"
+    "cartesian to parametric",
+    "straight line",
+    "axis intercepts"
   ],
-  "questionText": "A curve has parametric equations $x = 3t^2$, $y = 2t^3$. Show that $27y^2 = 4x^3$.",
+  "questionText": "A straight line has Cartesian equation $5x + 2y = 20$. (a) Write the line in parametric form using a parameter $t$, and state the range of $t$. (b) Hence find the values of $t$ at which the line meets the coordinate axes, and give the coordinates of those points.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Square the y-equation",
-        "workingLatex": "y^2 = (2t^3)^2 = 4t^6",
-        "explanation": "Squaring produces $t^6$, matching the power we can get from cubing $x$.",
+        "description": "Choose a parameter for x",
+        "workingLatex": "\\text{Let } x = 2t",
+        "explanation": "A line can be parametrised by letting $x$ be a simple function of $t$ and solving for $y$. Taking $x = 2t$ is a tidy choice that avoids fractions later.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Cube the x-equation",
-        "workingLatex": "x^3 = (3t^2)^3 = 27t^6",
-        "explanation": "Cubing also produces $t^6$, so the two can be linked.",
+        "description": "Substitute into the line equation",
+        "workingLatex": "5(2t) + 2y = 20",
+        "explanation": "Replacing $x$ by $2t$ turns the line equation into one connecting $y$ and $t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Express t^6 from the y-equation",
-        "workingLatex": "t^6 = \\frac{y^2}{4}",
-        "explanation": "Rearranging $y^2 = 4t^6$ isolates $t^6$.",
+        "description": "Simplify",
+        "workingLatex": "10t + 2y = 20",
+        "explanation": "Multiplying out the $5(2t)$ term prepares the equation for isolating $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute into the x-cubed equation",
-        "workingLatex": "x^3 = 27\\cdot\\frac{y^2}{4}",
-        "explanation": "Replacing $t^6$ removes the parameter.",
+        "description": "Make y the subject",
+        "workingLatex": "y = 10 - 5t",
+        "explanation": "Subtracting $10t$ and dividing by $2$ makes $y$ the subject, completing the parametric pair.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Rearrange",
-        "workingLatex": "4x^3 = 27y^2",
-        "explanation": "Multiplying both sides by $4$ gives the required form.",
+        "description": "State the parametric form and range",
+        "workingLatex": "x = 2t, \\quad y = 10 - 5t, \\quad t \\in \\mathbb{R}",
+        "explanation": "As $t$ ranges over all real numbers the point $(2t,\\,10 - 5t)$ sweeps the entire infinite line, so $t \\in \\mathbb{R}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the result",
-        "workingLatex": "27y^2 = 4x^3",
-        "explanation": "This is the Cartesian equation, a semicubical parabola.",
+        "description": "Set the condition to meet the x-axis",
+        "workingLatex": "y = 0 \\ \\Rightarrow\\ 10 - 5t = 0",
+        "explanation": "The line crosses the $x$-axis where its height is zero, so we set $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for t on the x-axis",
+        "workingLatex": "t = 2",
+        "explanation": "Solving the linear equation gives the parameter value at the $x$-axis crossing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the x-axis point",
+        "workingLatex": "x = 2(2) = 4 \\ \\Rightarrow\\ (4,\\, 0)",
+        "explanation": "Substituting $t = 2$ gives the $x$-coordinate, and the point sits on the $x$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set the condition to meet the y-axis",
+        "workingLatex": "x = 0 \\ \\Rightarrow\\ 2t = 0",
+        "explanation": "The line meets the $y$-axis where $x = 0$, so we set the $x$ expression to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for t on the y-axis",
+        "workingLatex": "t = 0",
+        "explanation": "This is the parameter value at the $y$-axis crossing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the y-axis point",
+        "workingLatex": "y = 10 - 5(0) = 10 \\ \\Rightarrow\\ (0,\\, 10)",
+        "explanation": "Substituting $t = 0$ gives the height, and the point sits on the $y$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the axis crossings",
+        "workingLatex": "(4,\\, 0) \\text{ at } t = 2, \\qquad (0,\\, 10) \\text{ at } t = 0",
+        "explanation": "These are the axis crossings together with the parameter values that produce them.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$27y^2 = 4x^3$"
+    "finalAnswer": "(a) $x = 2t,\\ y = 10 - 5t$ for $t \\in \\mathbb{R}$. (b) The line meets the $x$-axis at $(4,\\,0)$ when $t = 2$, and the $y$-axis at $(0,\\,10)$ when $t = 0$."
   }
 }

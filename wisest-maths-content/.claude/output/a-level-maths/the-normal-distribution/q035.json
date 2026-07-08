@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.stats.normal-distribution.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the standard deviation",
+    "inverse normal"
+  ],
+  "questionText": "The lifetime, $X$ hours, of an electronic component is modelled by $X \\sim N(1200,\\ \\sigma^2)$, where $\\sigma$ is unknown. It is known that $5\\%$ of components last longer than $1500$ hours. Find the value of $\\sigma$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and translate the information",
+        "workingLatex": "X \\sim N(1200,\\ \\sigma^2), \\qquad P(X > 1500) = 0.05",
+        "explanation": "The lifetimes are normal with mean $1200$ and unknown standard deviation. ‘$5\\%$ last longer than $1500$’ means the area beyond $1500$ in the upper tail is $0.05$, so $P(X>1500)=0.05$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Convert to a lower-tail probability",
+        "workingLatex": "P(X < 1500) = 1 - 0.05 = 0.95",
+        "explanation": "The inverse-normal function works from the lower tail, so we rewrite the statement: if $5\\%$ lie above $1500$, then $95\\%$ lie below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the z-value for 0.95",
+        "workingLatex": "z = \\Phi^{-1}(0.95) = 1.6449",
+        "explanation": "The standard-normal value with $95\\%$ of the area below it is $1.6449$; it is positive because $1500$ lies above the mean $1200$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the standardisation equation",
+        "workingLatex": "\\dfrac{1500 - 1200}{\\sigma} = 1.6449",
+        "explanation": "Standardising $1500$ gives its $z$-score. Here the mean is known and the standard deviation is unknown, so $\\sigma$ is what we solve for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\dfrac{300}{\\sigma} = 1.6449",
+        "explanation": "The value $1500$ is $300$ hours above the mean; writing that distance as a multiple of $\\sigma$ equals the $z$-score.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange for the standard deviation",
+        "workingLatex": "\\sigma = \\dfrac{300}{1.6449}",
+        "explanation": "Since $300$ hours equals $1.6449$ standard deviations, one standard deviation is $300$ divided by $1.6449$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the standard deviation",
+        "workingLatex": "\\sigma = 182.39",
+        "explanation": "Dividing gives the standard deviation in hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "\\sigma \\approx 182 \\text{ hours}",
+        "explanation": "Rounding to three significant figures gives $\\sigma\\approx182$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the result",
+        "workingLatex": "1500 = 1200 + 1.645\\,\\sigma",
+        "explanation": "The cut-off $1500$ sits about $1.645$ standard deviations above the mean, which is exactly the point beyond which $5\\%$ of any normal distribution lies.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the answer reproduces the given probability",
+        "workingLatex": "P(X > 1500) = 1 - \\Phi\\!\\left(\\dfrac{300}{182}\\right) = 1 - \\Phi(1.65) \\approx 0.05",
+        "explanation": "With $\\sigma=182$ the value $1500$ standardises to about $1.65$, whose upper-tail area is $0.05$, confirming the standard deviation.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sigma \\approx 182$ hours."
+  }
+}

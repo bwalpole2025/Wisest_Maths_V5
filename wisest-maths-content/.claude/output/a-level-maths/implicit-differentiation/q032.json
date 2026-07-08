@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "normal",
+    "circle"
+  ],
+  "questionText": "The circle $C$ has equation $x^2 + y^2 = 25$. Find an equation of the normal to $C$ at the point $(3, 4)$, giving your answer in the form $ax + by = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(25)",
+        "explanation": "Because $y$ depends on $x$, we differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$. The right-hand side is the constant $25$, so its derivative is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^2$ differentiates to $2x$. For $y^2$ the chain rule gives $2y$ multiplied by $\\frac{dy}{dx}$, because $y$ is itself a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{2y} = -\\frac{x}{y}",
+        "explanation": "Moving the $x$-term across and dividing by $2y$ isolates the gradient. This is the slope of the tangent at any point $(x,y)$ on the circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the tangent gradient at (3, 4)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(3,4)} = -\\frac{3}{4}",
+        "explanation": "The point $(3,4)$ lies on $C$ since $3^2 + 4^2 = 25$. Substituting gives the gradient of the tangent there as $-\\tfrac{3}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the gradient of the normal",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{-\\tfrac{3}{4}} = \\frac{4}{3}",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is $-1$ divided by the tangent gradient. This gives $\\tfrac{4}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the equation of the normal",
+        "workingLatex": "y - 4 = \\frac{4}{3}(x - 3)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ with the normal gradient $\\tfrac{4}{3}$ passing through $(3,4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Multiply through by 3",
+        "workingLatex": "3(y - 4) = 4(x - 3)",
+        "explanation": "Clearing the fraction makes the algebra tidy and moves us towards the required form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand both sides",
+        "workingLatex": "3y - 12 = 4x - 12",
+        "explanation": "Expanding each bracket. Notice the $-12$ appears on both sides.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify to the required form",
+        "workingLatex": "4x - 3y = 0",
+        "explanation": "The constants cancel, leaving a line through the origin. This makes sense: the normal to a circle always passes through the centre, which here is $(0,0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "\\text{Normal: } 4x - 3y = 0",
+        "explanation": "So the normal to $C$ at $(3,4)$ is $4x - 3y = 0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Normal: $4x - 3y = 0$."
+  }
+}

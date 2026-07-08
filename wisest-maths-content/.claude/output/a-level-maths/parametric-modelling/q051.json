@@ -6,59 +6,123 @@
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "value",
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "velocity",
-    "specific direction"
+    "projectile",
+    "parametric differentiation",
+    "speed",
+    "greatest height"
   ],
-  "questionText": "A particle has position $x = t^2 - 4t$, $y = t^2 + 2t$ (metres) at time $t$ seconds. Find the time at which the particle is moving parallel to the line $y = x$.",
+  "questionText": "A stone is thrown so that, $t$ seconds after release, its position in metres is modelled by $x = 24t$ and $y = 18t - 5t^{2}$ (with $g = 10$). The stone is released and lands at the same height. Find (a) the time of flight, (b) the horizontal range, (c) the greatest height reached, and (d) the speed of the stone at the instant it lands.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the condition",
-        "workingLatex": "\\frac{dy}{dx} = 1",
-        "explanation": "Moving parallel to $y = x$ means the direction of motion has gradient $1$.",
+        "description": "Find the horizontal velocity",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 24",
+        "explanation": "Differentiating the horizontal position with respect to time gives the horizontal velocity. Because $x$ is linear in $t$, this velocity is a constant $24$ m/s throughout the flight.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the velocity components",
-        "workingLatex": "\\frac{dx}{dt} = 2t - 4, \\quad \\frac{dy}{dt} = 2t + 2",
-        "explanation": "Differentiating each position component.",
+        "description": "Find the vertical velocity",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 18 - 10t",
+        "explanation": "The vertical velocity tells us how fast the stone is rising or falling. It starts at $+18$ m/s and decreases as time passes, which is exactly what gravity does to upward motion.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the gradient to 1",
-        "workingLatex": "\\frac{2t + 2}{2t - 4} = 1",
-        "explanation": "The direction gradient is the ratio of the velocity components.",
+        "description": "Set the height to zero for landing",
+        "workingLatex": "18t - 5t^{2} = 0",
+        "explanation": "The stone lands when it returns to its release height, i.e. when $y = 0$ again. Solving this equation gives the times at which the model has zero height.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cross-multiply",
-        "workingLatex": "2t + 2 = 2t - 4",
-        "explanation": "Clearing the fraction to solve for $t$.",
+        "description": "Factorise the time equation",
+        "workingLatex": "t(18 - 5t) = 0",
+        "explanation": "Taking out the common factor $t$ separates the two solutions cleanly: one is the moment of release and the other is the moment of landing.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Analyse the result",
-        "workingLatex": "2 = -4 \\text{ (impossible)}",
-        "explanation": "The $t$ terms cancel, leaving a false statement, so no time satisfies the condition.",
+        "description": "Solve and select the landing time",
+        "workingLatex": "t = 0 \\quad \\text{or} \\quad t = \\dfrac{18}{5} = 3.6",
+        "explanation": "The solution $t = 0$ is the launch instant, so we reject it. The physically meaningful landing time is $t = 3.6$ s, giving the time of flight.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Conclude",
-        "workingLatex": "\\text{never moves parallel to } y = x",
-        "explanation": "Since the velocity components differ by a constant, the direction is never exactly gradient $1$.",
+        "description": "Find the horizontal range",
+        "workingLatex": "x = 24 \\times 3.6 = 86.4",
+        "explanation": "The range is the horizontal distance covered up to landing, so we substitute the flight time into $x$. No differentiation is needed here because we only want position.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Condition for greatest height",
+        "workingLatex": "\\dot{y} = 18 - 10t = 0",
+        "explanation": "At the top of the arc the stone is momentarily neither rising nor falling, so its vertical velocity is zero. Setting $\\dot{y} = 0$ locates that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for the time at the top",
+        "workingLatex": "t = \\dfrac{18}{10} = 1.8",
+        "explanation": "This is the time at which the stone reaches its highest point. Notice it is exactly half the flight time, reflecting the symmetry of the path.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compute the greatest height",
+        "workingLatex": "y = 18(1.8) - 5(1.8)^{2} = 32.4 - 16.2 = 16.2",
+        "explanation": "Substituting the time of the top back into $y$ gives the actual height there, which is the largest value $y$ takes during the flight.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the greatest height",
+        "workingLatex": "y_{\\max} = 16.2",
+        "explanation": "So the model predicts a greatest height of $16.2$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Vertical velocity at landing",
+        "workingLatex": "\\dot{y} = 18 - 10(3.6) = -18",
+        "explanation": "To find the landing speed we first need the velocity components at $t = 3.6$. The vertical velocity is now $-18$ m/s: the same size as at launch but downward, again by symmetry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Horizontal velocity at landing",
+        "workingLatex": "\\dot{x} = 24",
+        "explanation": "The horizontal velocity never changes in this model, so it is still $24$ m/s at landing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Combine the components into speed",
+        "workingLatex": "v = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}} = \\sqrt{24^{2} + (-18)^{2}}",
+        "explanation": "Speed is the magnitude of the velocity, found by combining the horizontal and vertical parts with Pythagoras.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Simplify under the root",
+        "workingLatex": "v = \\sqrt{576 + 324} = \\sqrt{900}",
+        "explanation": "Squaring and adding the components gives a perfect square, which keeps the final speed exact and tidy.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the landing speed",
+        "workingLatex": "v = 30",
+        "explanation": "The stone lands at $30$ m/s. This equals the launch speed, a neat check that the motion is symmetric about the highest point.",
         "diagram": null
       }
     ],
-    "finalAnswer": "There is no such time; the particle never moves parallel to $y = x$."
+    "finalAnswer": "The time of flight is $3.6$ s, the horizontal range is $86.4$ m, the greatest height is $16.2$ m, and the stone lands at a speed of $30$ m/s."
   }
 }

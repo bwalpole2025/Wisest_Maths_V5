@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "stationary points",
+    "exponential"
+  ],
+  "questionText": "The curve $C$ has equation $y = (x - 1)e^{x}$. (a) Show that $\\dfrac{dy}{dx} = x e^{x}$. (b) Hence find the coordinates of the stationary point of $C$ and determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the two factors for the product rule",
+        "workingLatex": "u = x - 1, \\qquad v = e^{x}",
+        "explanation": "The function is a product of $(x-1)$ and $e^{x}$, so we use the product rule with these as $u$ and $v$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = e^{x}",
+        "explanation": "Differentiating $x-1$ gives $1$, and $e^{x}$ is its own derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = e^{x} + (x - 1)e^{x}",
+        "explanation": "Substituting into $u'v+uv'$ gives $e^{x}$ from the first piece and $(x-1)e^{x}$ from the second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify to the required form",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}\\big(1 + (x - 1)\\big) = x e^{x}",
+        "explanation": "Factoring out $e^{x}$ and simplifying the bracket $1+x-1=x$ gives the required result $x e^{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the derivative to zero",
+        "workingLatex": "x e^{x} = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve $\\tfrac{dy}{dx}=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x",
+        "workingLatex": "e^{x} > 0 \\ \\text{always} \\ \\Rightarrow\\ x = 0",
+        "explanation": "Since $e^{x}$ is never zero, the only solution comes from $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = (0 - 1)e^{0} = -1",
+        "explanation": "Substituting $x=0$ into $y=(x-1)e^{x}$ gives $(-1)(1)=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the stationary point",
+        "workingLatex": "(0, \\ -1)",
+        "explanation": "So the curve has one stationary point, at $(0,-1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}(x e^{x}) = e^{x} + x e^{x} = e^{x}(1 + x)",
+        "explanation": "We differentiate $\\tfrac{dy}{dx}=xe^{x}$ again with the product rule, ready for the second-derivative test.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate the second derivative and conclude",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=0} = e^{0}(1) = 1 > 0 \\ \\Rightarrow\\ \\text{minimum}",
+        "explanation": "At $x=0$ the second derivative is $1$, which is positive, so $(0,-1)$ is a local minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) Shown: $\\dfrac{dy}{dx} = x e^{x}$. (b) A minimum at $(0, -1)$."
+  }
+}

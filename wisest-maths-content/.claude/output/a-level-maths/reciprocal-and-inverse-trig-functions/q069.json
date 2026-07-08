@@ -5,82 +5,123 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "equations",
-    "cotangent",
-    "factorising",
-    "solving"
+    "inverse trig",
+    "arcsin",
+    "solve equation"
   ],
-  "questionText": "Solve $2\\cos\\theta = \\cot\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve the equation $\\arcsin(2x - 1) = \\dfrac{\\pi}{6}$, giving the exact value of $x$ and checking it lies in the valid domain.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite cotangent in sine and cosine",
-        "workingLatex": "2\\cos\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Expressing cotangent in basic functions lets us clear the fraction carefully without dividing away solutions.",
+        "description": "Understand the equation",
+        "workingLatex": "\\arcsin(2x - 1) = \\tfrac{\\pi}{6}",
+        "explanation": "The unknown $x$ sits inside an inverse sine. The strategy is to undo $\\arcsin$ by applying $\\sin$ to both sides, then solve the resulting linear equation, but first we check the equation can have a solution.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Multiply both sides by sine",
-        "workingLatex": "2\\cos\\theta\\sin\\theta = \\cos\\theta",
-        "explanation": "Multiplying by $\\sin\\theta$ removes the denominator; this is valid since cotangent requires $\\sin\\theta \\ne 0$.",
+        "description": "Domain of the inner expression",
+        "workingLatex": "-1 \\le 2x - 1 \\le 1",
+        "explanation": "The inverse sine only accepts inputs between $-1$ and $1$, so the expression $2x-1$ must lie in that range for the left-hand side to be defined.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Move everything to one side",
-        "workingLatex": "2\\cos\\theta\\sin\\theta - \\cos\\theta = 0",
-        "explanation": "Rearranging prepares the equation for factorising, rather than dividing by cosine (which could lose solutions).",
+        "description": "Solve the domain inequality",
+        "workingLatex": "0 \\le 2x \\le 2 \\ \\Rightarrow\\ 0 \\le x \\le 1",
+        "explanation": "Adding $1$ throughout and dividing by $2$ shows any valid solution must lie in $[0,1]$; we will confirm our answer against this.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factor out cosine",
-        "workingLatex": "\\cos\\theta(2\\sin\\theta - 1) = 0",
-        "explanation": "Taking out the common factor $\\cos\\theta$ splits the problem into two independent cases.",
+        "description": "Range check on the right-hand side",
+        "workingLatex": "\\tfrac{\\pi}{6} \\in \\left[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right]",
+        "explanation": "The output of $\\arcsin$ always lies in $\\left[-\\tfrac\\pi2,\\tfrac\\pi2\\right]$; since $\\tfrac\\pi6$ is inside this range, a solution is possible.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\theta = 90^\\circ, 270^\\circ",
-        "explanation": "Cosine is zero at $90^\\circ$ and $270^\\circ$; both keep sine nonzero, so cotangent is defined.",
+        "description": "Apply sine to both sides",
+        "workingLatex": "\\sin\\big(\\arcsin(2x - 1)\\big) = \\sin\\tfrac{\\pi}{6}",
+        "explanation": "Applying $\\sin$ is the inverse operation to $\\arcsin$, so it will free the unknown from inside the inverse function.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "2\\sin\\theta - 1 = 0 \\;\\Rightarrow\\; \\sin\\theta = \\tfrac{1}{2}",
-        "explanation": "Setting the bracket to zero gives sine equal to one half.",
+        "description": "Simplify the left-hand side",
+        "workingLatex": "\\sin\\big(\\arcsin(2x - 1)\\big) = 2x - 1",
+        "explanation": "Because $2x-1\\in[-1,1]$, the composition $\\sin(\\arcsin u)$ returns $u$ exactly, leaving $2x-1$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Find those angles",
-        "workingLatex": "\\theta = 30^\\circ, 150^\\circ",
-        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$ in the interval.",
+        "description": "Recall the special triangle value",
+        "workingLatex": "\\tfrac{\\pi}{6} = 30^\\circ",
+        "explanation": "The angle $\\tfrac\\pi6$ is $30^\\circ$, one of the standard angles whose sine is known exactly from half of an equilateral triangle.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 30^\\circ, 90^\\circ, 150^\\circ, 270^\\circ",
-        "explanation": "Combining both cases gives four solutions; factoring rather than dividing ensured the $\\cos\\theta = 0$ solutions were not lost.",
+        "description": "Evaluate sin of pi over six",
+        "workingLatex": "\\sin\\tfrac{\\pi}{6} = \\tfrac{1}{2}",
+        "explanation": "From the $30$-$60$-$90$ triangle, $\\sin 30^\\circ=\\tfrac12$, giving the exact right-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Verify a cosine-zero solution",
-        "workingLatex": "\\theta = 90^\\circ: 2\\cos 90^\\circ = 0, \\; \\cot 90^\\circ = 0 \\;\\checkmark",
-        "explanation": "At $90^\\circ$ both sides are $0$, confirming these easily-missed solutions are genuine.",
+        "description": "Form the linear equation",
+        "workingLatex": "2x - 1 = \\tfrac{1}{2}",
+        "explanation": "Equating the two simplified sides leaves a straightforward linear equation in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Add one to both sides",
+        "workingLatex": "2x = \\tfrac{3}{2}",
+        "explanation": "Adding $1$ (which is $\\tfrac22$) to $\\tfrac12$ gives $\\tfrac32$, isolating the $2x$ term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Divide by two",
+        "workingLatex": "x = \\tfrac{3}{4}",
+        "explanation": "Dividing both sides by $2$ gives the candidate solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check against the domain",
+        "workingLatex": "x = \\tfrac{3}{4} \\in [0, 1]",
+        "explanation": "The value lies in the allowed interval from Step 3, so it is a genuine solution rather than an extraneous one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Substitute back to verify",
+        "workingLatex": "2\\cdot\\tfrac{3}{4} - 1 = \\tfrac{1}{2}, \\qquad \\arcsin\\tfrac{1}{2} = \\tfrac{\\pi}{6}",
+        "explanation": "Feeding $x=\\tfrac34$ back in gives $\\arcsin\\tfrac12$, which is indeed $\\tfrac\\pi6$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Note uniqueness",
+        "workingLatex": "\\arcsin \\text{ is one-to-one} \\ \\Rightarrow\\ x = \\tfrac{3}{4} \\text{ is the only solution}",
+        "explanation": "Because $\\arcsin$ is a one-to-one function, applying $\\sin$ did not introduce extra solutions, so $x=\\tfrac34$ is unique.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the answer",
+        "workingLatex": "x = \\tfrac{3}{4}",
+        "explanation": "This is the exact and only solution of the equation.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 90^\\circ, 150^\\circ, 270^\\circ$"
+    "finalAnswer": "$x=\\tfrac34$, which lies in the required interval $[0,1]$ and satisfies $\\arcsin\\tfrac12=\\tfrac\\pi6$."
   }
 }

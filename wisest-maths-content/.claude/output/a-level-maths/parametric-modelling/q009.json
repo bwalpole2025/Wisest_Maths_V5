@@ -5,60 +5,60 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "stationary point",
-    "vertical tangent"
+    "gradient",
+    "parametric differentiation",
+    "modelling"
   ],
-  "questionText": "A curve has parametric equations $x = t^2 - 9$, $y = t^3$. Find the value of $t$ where the curve has a vertical tangent.",
+  "questionText": "The path of a moving point is modelled by $x = t^{2} + 1$ and $y = 2t^{3}$, for $t \\ge 0$. Find the gradient of the path, $\\dfrac{dy}{dx}$, at $t = 2$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the vertical tangent condition",
-        "workingLatex": "\\text{vertical tangent} \\;\\Leftrightarrow\\; \\frac{dx}{dt} = 0",
-        "explanation": "A vertical tangent has an undefined (infinite) gradient, which for a parametric curve means the denominator $\\frac{dx}{dt}$ is zero (with $\\frac{dy}{dt} \\ne 0$).",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t",
+        "explanation": "To find the gradient of the path we first need how each coordinate changes with $t$. Differentiating $x = t^{2} + 1$ gives $\\dot{x}$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate x with respect to t",
-        "workingLatex": "\\frac{dx}{dt} = 2t",
-        "explanation": "Differentiating $x = t^2 - 9$ gives $2t$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 6t^{2}",
+        "explanation": "Differentiating $y = 2t^{3}$ gives $\\dot{y}$, the rate of change of the vertical position.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the derivative to zero",
-        "workingLatex": "2t = 0 \\;\\Rightarrow\\; t = 0",
-        "explanation": "Solving gives the parameter value for the vertical tangent.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{6t^{2}}{2t}",
+        "explanation": "The gradient of the path is how $y$ changes with $x$. Dividing $\\dot{y}$ by $\\dot{x}$ cancels the shared $t$-change and leaves $\\dfrac{dy}{dx}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the y-derivative is nonzero",
-        "workingLatex": "\\frac{dy}{dt} = 3t^2 = 0 \\text{ at } t = 0",
-        "explanation": "Here both derivatives are zero at $t = 0$, so we must examine the behaviour more carefully rather than assuming a vertical tangent.",
+        "description": "Simplify the expression",
+        "workingLatex": "\\dfrac{dy}{dx} = 3t",
+        "explanation": "Cancelling $\\dfrac{6t^{2}}{2t}$ gives the tidy formula $3t$ for the gradient at any time $t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Analyse the gradient near t = 0",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3t}{2} \\to 0 \\text{ as } t \\to 0",
-        "explanation": "The gradient actually tends to $0$, so the tangent is horizontal at $t = 0$, not vertical. This is a cusp-like point where care is needed.",
+        "description": "Substitute t = 2",
+        "workingLatex": "\\dfrac{dy}{dx} = 3(2) = 6",
+        "explanation": "Putting $t = 2$ into the gradient formula gives its value at the required point.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Conclude",
-        "workingLatex": "\\text{no vertical tangent; } t = 0 \\text{ gives a horizontal tangent}",
-        "explanation": "Because $\\frac{dy}{dt}$ also vanishes, the naive condition fails; the limit shows the tangent is horizontal, so there is no vertical tangent on this curve.",
+        "description": "State the gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = 6",
+        "explanation": "So at $t = 2$ the path has gradient $6$: it is climbing steeply as it passes that point.",
         "diagram": null
       }
     ],
-    "finalAnswer": "There is no vertical tangent; at $t = 0$ the gradient tends to $0$ (horizontal)."
+    "finalAnswer": "At $t = 2$ the gradient of the path is $\\dfrac{dy}{dx} = 6$."
   }
 }

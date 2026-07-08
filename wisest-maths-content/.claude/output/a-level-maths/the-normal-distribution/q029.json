@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "between two values",
+    "expected number"
+  ],
+  "questionText": "A machine fills bags with sugar. The mass, $X$ grams, in a bag is modelled by $X \\sim N(1005, 8^2)$. In a random sample of $500$ bags, estimate how many contain between $1000$ g and $1015$ g of sugar.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the probability required",
+        "workingLatex": "X \\sim N(1005,\\ 8^2), \\qquad P(1000 < X < 1015)",
+        "explanation": "Bag masses are normal with mean $\\mu = 1005$ and standard deviation $\\sigma = 8$. We first find the probability a single bag lies in the band $1000$–$1015$ g, then scale to $500$ bags.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the lower boundary",
+        "workingLatex": "z_1 = \\dfrac{1000 - 1005}{8} = -0.625",
+        "explanation": "The lower mass $1000$ is below the mean, giving a negative $z$-value of $-0.625$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the upper boundary",
+        "workingLatex": "z_2 = \\dfrac{1015 - 1005}{8} = 1.25",
+        "explanation": "The upper mass $1015$ is above the mean, giving a positive $z$-value of $1.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite in terms of $Z$",
+        "workingLatex": "P(1000 < X < 1015) = P(-0.625 < Z < 1.25)",
+        "explanation": "Standardising both ends turns the mass band into a band for the standard normal variable $Z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Express as a difference of $\\Phi$ values",
+        "workingLatex": "= \\Phi(1.25) - \\Phi(-0.625)",
+        "explanation": "The band probability equals the cumulative area to the upper $z$ minus the cumulative area to the lower $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the two cumulative probabilities",
+        "workingLatex": "\\Phi(1.25) = 0.8944, \\qquad \\Phi(-0.625) = 0.2660",
+        "explanation": "The calculator's normal CDF gives the area to the left of each boundary.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to find the probability for one bag",
+        "workingLatex": "P(1000 < X < 1015) = 0.8944 - 0.2660 = 0.6284",
+        "explanation": "Removing the lower area leaves the probability that one bag's mass falls in the required band.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Scale up to the sample of 500",
+        "workingLatex": "500 \\times 0.6284 = 314.2",
+        "explanation": "With each bag independently having probability $0.6284$ of lying in the band, the expected number in a sample of $500$ is the sample size times that probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret as a whole number of bags",
+        "workingLatex": "314.2 \\approx 314",
+        "explanation": "Since we are counting bags we round to the nearest whole number: about $314$ bags are expected to contain between $1000$ g and $1015$ g.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "About $314$ bags (from $500 \\times 0.6284 = 314.2$)."
+  }
+}

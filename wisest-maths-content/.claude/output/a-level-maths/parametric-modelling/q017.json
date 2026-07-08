@@ -4,61 +4,61 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "stationary point",
-    "coordinates"
+    "parametric differentiation",
+    "gradient",
+    "direction"
   ],
-  "questionText": "A curve has parametric equations $x = t^3 - 3t$, $y = t^2$. Find the coordinates of the stationary point of the curve.",
+  "questionText": "An object moves so that its position is given by $x = 3t$ and $y = t^{2} + t$. Find the gradient of its path when $t = 2$, and state whether the object is moving uphill or downhill at that moment.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the stationary condition",
-        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Leftrightarrow\\; \\frac{dy}{dt} = 0 \\; (\\text{with } \\tfrac{dx}{dt} \\ne 0)",
-        "explanation": "A stationary point has zero gradient, which requires the numerator $\\frac{dy}{dt}$ to be zero.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 3",
+        "explanation": "Differentiating $x = 3t$ gives the horizontal rate of change, which is constant here.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate y",
-        "workingLatex": "\\frac{dy}{dt} = 2t",
-        "explanation": "Differentiating $y = t^2$ gives $2t$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2t + 1",
+        "explanation": "Differentiating $y = t^{2} + t$ gives the vertical rate of change of the object's position.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Solve for t",
-        "workingLatex": "2t = 0 \\;\\Rightarrow\\; t = 0",
-        "explanation": "The vertical rate of change is zero at $t = 0$.",
+        "description": "Write the gradient formula",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2t + 1}{3}",
+        "explanation": "Dividing the vertical rate by the horizontal rate gives the slope of the path at any time $t$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the x-derivative is nonzero",
-        "workingLatex": "\\frac{dx}{dt} = 3t^2 - 3 = -3 \\ne 0 \\text{ at } t = 0",
-        "explanation": "At $t = 0$ the horizontal rate of change is $-3$, so the gradient is genuinely zero, not undefined.",
+        "description": "Substitute t = 2",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{2(2) + 1}{3} = \\dfrac{5}{3}",
+        "explanation": "Putting in $t = 2$ gives the value of the gradient at that instant.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the coordinates",
-        "workingLatex": "x = 0^3 - 3(0) = 0, \\quad y = 0^2 = 0",
-        "explanation": "Substituting $t = 0$ into both equations gives the point.",
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{dy}{dx} > 0",
+        "explanation": "A positive gradient means the height increases as the object moves to the right, so the path slopes upward.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "(0, 0)",
-        "explanation": "The stationary point is at the origin.",
+        "description": "State the conclusion",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{5}{3} \\ \\text{(uphill)}",
+        "explanation": "So at $t = 2$ the gradient is $\\tfrac{5}{3}$ and the object is moving uphill.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(0, 0)$"
+    "finalAnswer": "At $t = 2$ the gradient of the path is $\\dfrac{5}{3}$, so the object is moving uphill."
   }
 }

@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "symmetric interval"
+  ],
+  "questionText": "The heights, $X$ cm, of adult women in a population are modelled by $X \\sim N(170, 8^2)$. The central $95\\%$ of heights lie between $a$ cm and $b$ cm, where the interval is symmetric about the mean. Find the values of $a$ and $b$, giving your answers to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(170,\\ 8^2), \\qquad \\mu = 170,\\ \\sigma = 8",
+        "explanation": "The heights are normal with mean $170$ and standard deviation $8$. We are looking for two heights that trap the middle $95\\%$ of the distribution symmetrically around the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Interpret 'central 95%' as an interval probability",
+        "workingLatex": "P(a < X < b) = 0.95",
+        "explanation": "The central $95\\%$ means $95\\%$ of the area under the bell curve lies between $a$ and $b$, so the probability of a height falling in that interval is $0.95$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Split the remaining 5% between the two tails",
+        "workingLatex": "\\text{each tail} = \\dfrac{1 - 0.95}{2} = 0.025",
+        "explanation": "If $95\\%$ is in the middle then $5\\%$ is left over, shared equally between the lower and upper tails by symmetry, giving $2.5\\%$ in each tail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the lower cumulative probability",
+        "workingLatex": "P(X < a) = 0.025",
+        "explanation": "The value $a$ has exactly the lower $2.5\\%$ of the distribution beneath it, so its cumulative probability is $0.025$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the upper cumulative probability",
+        "workingLatex": "P(X < b) = 1 - 0.025 = 0.975",
+        "explanation": "The value $b$ leaves $2.5\\%$ in the upper tail, so the area below it is $1 - 0.025 = 0.975$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the z-value for the lower limit",
+        "workingLatex": "z_a = \\Phi^{-1}(0.025) = -1.960",
+        "explanation": "The inverse normal returns the $z$-score with $2.5\\%$ of the area below it. It is negative because $a$ lies to the left of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the z-value for the upper limit",
+        "workingLatex": "z_b = \\Phi^{-1}(0.975) = 1.960",
+        "explanation": "By the symmetry of the standard normal, the upper limit's $z$-score is the mirror image of the lower one, so $z_b = +1.960$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the standardisation equation for a",
+        "workingLatex": "\\dfrac{a - 170}{8} = -1.960",
+        "explanation": "Standardising $a$ must give the $z$-value we found, so we set the standardised expression equal to $-1.960$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for a",
+        "workingLatex": "a = 170 + 8 \\times (-1.960) = 170 - 15.68 = 154.3",
+        "explanation": "Multiplying through by $\\sigma = 8$ and adding the mean undoes the standardisation, returning the height on the original centimetre scale.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Round a to 3 significant figures",
+        "workingLatex": "a \\approx 154 \\text{ cm}",
+        "explanation": "Rounding the lower boundary to three significant figures gives the height below which only $2.5\\%$ of women fall.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write the standardisation equation for b",
+        "workingLatex": "\\dfrac{b - 170}{8} = 1.960",
+        "explanation": "The upper boundary is handled the same way, setting its standardised value equal to $+1.960$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for b",
+        "workingLatex": "b = 170 + 8 \\times 1.960 = 170 + 15.68 = 185.7",
+        "explanation": "Again we multiply by $\\sigma$ and add the mean to recover the actual height that leaves $2.5\\%$ above it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Round b to 3 significant figures",
+        "workingLatex": "b \\approx 186 \\text{ cm}",
+        "explanation": "This is the upper boundary of the central $95\\%$ of heights.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check the symmetry about the mean",
+        "workingLatex": "\\dfrac{a + b}{2} = \\dfrac{154.3 + 185.7}{2} = 170",
+        "explanation": "The midpoint of the interval equals the mean $170$, and each endpoint is $15.68$ cm from it, confirming the interval is correctly centred and symmetric.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a \\approx 154$ cm and $b \\approx 186$ cm (from $z = \\pm 1.96$, giving $170 \\pm 15.68$)."
+  }
+}

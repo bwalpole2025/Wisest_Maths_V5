@@ -6,60 +6,66 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "value",
+  "answerType": "written",
   "tags": [
-    "inverse trig",
-    "arccos",
-    "exact values",
-    "radians"
+    "reciprocal trig",
+    "cot",
+    "period"
   ],
-  "questionText": "Find the exact value of $\\arccos\\left(\\dfrac{\\sqrt{3}}{2}\\right)$, giving your answer in radians.",
+  "questionText": "State the exact period of $y = \\cot x$, and explain why it is different from the period of $y = \\sec x$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Interpret the inverse cosine",
-        "workingLatex": "\\arccos\\left(\\tfrac{\\sqrt{3}}{2}\\right) = \\theta \\;\\Leftrightarrow\\; \\cos\\theta = \\tfrac{\\sqrt{3}}{2}",
-        "explanation": "Inverse cosine asks which angle has a cosine of $\\frac{\\sqrt{3}}{2}$, so we search for the matching $\\theta$.",
+        "description": "Recall the definition of cot",
+        "workingLatex": "\\cot x = \\frac{\\cos x}{\\sin x}",
+        "explanation": "Cotangent is cosine over sine (equivalently the reciprocal of tangent), so its repeating pattern comes from how $\\cos x$ and $\\sin x$ behave together.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the principal range of arccos",
-        "workingLatex": "0 \\le \\theta \\le \\pi",
-        "explanation": "Arccosine returns angles only in this interval, ensuring a single, unambiguous output for each input.",
+        "description": "Use the half-turn related-angle facts",
+        "workingLatex": "\\cos(x + 180^\\circ) = -\\cos x, \\qquad \\sin(x + 180^\\circ) = -\\sin x",
+        "explanation": "Moving $180^\\circ$ around the unit circle sends a point to the diametrically opposite point, which flips the sign of both cosine and sine. These are standard related-angle results.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall which standard angle has this cosine",
-        "workingLatex": "\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}",
-        "explanation": "From the $30$-$60$-$90$ triangle, the cosine of $30^\\circ$, or $\\frac{\\pi}{6}$, is $\\frac{\\sqrt{3}}{2}$.",
+        "description": "Form cot of the shifted angle",
+        "workingLatex": "\\cot(x + 180^\\circ) = \\frac{\\cos(x + 180^\\circ)}{\\sin(x + 180^\\circ)} = \\frac{-\\cos x}{-\\sin x}",
+        "explanation": "Building the ratio for the shifted angle, both the numerator and the denominator pick up a minus sign.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the angle lies in range",
-        "workingLatex": "0 \\le \\frac{\\pi}{6} \\le \\pi \\;\\checkmark",
-        "explanation": "The angle $\\frac{\\pi}{6}$ is within the arccosine range, so it is a valid output.",
+        "description": "Cancel the two minus signs",
+        "workingLatex": "\\frac{-\\cos x}{-\\sin x} = \\frac{\\cos x}{\\sin x} = \\cot x",
+        "explanation": "The two minus signs cancel, so a $180^\\circ$ shift leaves cotangent completely unchanged. This is why its period is only half that of sine and cosine.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Confirm it is the unique answer",
-        "workingLatex": "\\cos\\theta = \\tfrac{\\sqrt{3}}{2} \\text{ once on } [0,\\pi]",
-        "explanation": "Cosine is decreasing across $[0,\\pi]$, so it takes each value exactly once there, guaranteeing $\\frac{\\pi}{6}$ is the only answer.",
+        "description": "Contrast with secant",
+        "workingLatex": "\\sec(x + 180^\\circ) = \\frac{1}{\\cos(x + 180^\\circ)} = \\frac{1}{-\\cos x} = -\\sec x \\ne \\sec x",
+        "explanation": "For secant there is only one cosine, so the single minus sign survives and the value changes sign. Secant therefore does not repeat after $180^\\circ$; it needs the full $360^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\arccos\\left(\\tfrac{\\sqrt{3}}{2}\\right) = \\frac{\\pi}{6}",
-        "explanation": "This is the exact value in the required range.",
+        "description": "State the period in both units",
+        "workingLatex": "\\text{period of } \\cot x = 180^\\circ \\ \\text{(i.e. } \\pi \\text{ radians)}",
+        "explanation": "In radians $180^\\circ$ is $\\pi$, so the period of cotangent is $\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare the two periods",
+        "workingLatex": "180^\\circ \\ (\\cot) \\; < \\; 360^\\circ \\ (\\sec)",
+        "explanation": "Cotangent repeats twice as often as secant because the paired sign-changes in $\\dfrac{\\cos x}{\\sin x}$ cancel, whereas the lone cosine in $\\sec x$ does not.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\arccos\\left(\\dfrac{\\sqrt{3}}{2}\\right) = \\dfrac{\\pi}{6}$"
+    "finalAnswer": "$y=\\cot x$ has period $180^\\circ$ (that is $\\pi$ radians) — half the $360^\\circ$ period of $\\sec x$ — because the sign changes in $\\dfrac{\\cos x}{\\sin x}$ cancel after a $180^\\circ$ shift, while the single cosine in $\\sec x$ does not."
   }
 }

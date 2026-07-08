@@ -4,54 +4,67 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "projectile",
-    "speed"
+    "velocity components",
+    "parametric differentiation"
   ],
-  "questionText": "A projectile has position $x = 15t$, $y = 20t - 5t^2$ (metres) at time $t$ seconds. Find its speed at $t = 1$ second.",
+  "questionText": "A particle has position $x = 4t^{2} - t$ and $y = t^{3} + 2t$ metres at time $t$ seconds. Find the horizontal and vertical components of its velocity, $\\dot{x}$ and $\\dot{y}$, when $t = 1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 15, \\quad v_y = 20 - 10t",
-        "explanation": "Differentiating each position component; the horizontal velocity is constant.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 8t - 1",
+        "explanation": "The horizontal velocity $\\dot{x}$ is the derivative of $x = 4t^{2} - t$, showing how fast the particle moves sideways.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Evaluate at t = 1",
-        "workingLatex": "v_x = 15, \\quad v_y = 20 - 10 = 10",
-        "explanation": "Substituting $t = 1$ gives the two velocity components.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 3t^{2} + 2",
+        "explanation": "The vertical velocity $\\dot{y}$ is the derivative of $y = t^{3} + 2t$, showing how fast the height changes.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the speed formula",
-        "workingLatex": "\\text{speed} = \\sqrt{15^2 + 10^2}",
-        "explanation": "Speed is the magnitude of the velocity vector.",
+        "description": "Substitute t = 1 into the horizontal velocity",
+        "workingLatex": "\\dot{x} = 8(1) - 1",
+        "explanation": "Putting $t = 1$ into $\\dot{x}$ gives the sideways speed at that particular moment.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Compute",
-        "workingLatex": "= \\sqrt{225 + 100} = \\sqrt{325}",
-        "explanation": "Squaring and adding gives $325$ under the root.",
+        "description": "Evaluate the horizontal velocity",
+        "workingLatex": "\\dot{x} = 7",
+        "explanation": "Working out the arithmetic gives the horizontal component of the velocity.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify the surd",
-        "workingLatex": "= 5\\sqrt{13} \\approx 18.0 \\text{ m/s}",
-        "explanation": "Since $325 = 25 \\times 13$, the speed simplifies to $5\\sqrt{13}$, about $18.0$ m/s.",
+        "description": "Substitute t = 1 into the vertical velocity",
+        "workingLatex": "\\dot{y} = 3(1)^{2} + 2",
+        "explanation": "Putting $t = 1$ into $\\dot{y}$ gives the vertical speed at the same moment.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the vertical velocity",
+        "workingLatex": "\\dot{y} = 5",
+        "explanation": "Working out the arithmetic gives the vertical component of the velocity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the velocity components",
+        "workingLatex": "\\dot{x} = 7, \\quad \\dot{y} = 5",
+        "explanation": "So at $t = 1$ second the particle moves at $7$ m/s horizontally and $5$ m/s vertically.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Speed $= 5\\sqrt{13} \\approx 18.0$ m/s"
+    "finalAnswer": "When $t = 1$ s the velocity components are $\\dot{x} = 7$ m/s and $\\dot{y} = 5$ m/s."
   }
 }

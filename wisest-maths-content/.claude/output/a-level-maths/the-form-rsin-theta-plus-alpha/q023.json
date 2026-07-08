@@ -1,64 +1,99 @@
 {
-  "id": "al.y2.pure.rsin-form.q023",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
-  "tags": [
-    "harmonic form",
-    "equations",
-    "exact"
-  ],
-  "questionText": "Solve $\\sqrt2\\sin\\theta + \\sqrt2\\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
   "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q023",
+  "marks": 5,
+  "answerType": "solutions",
+  "tags": [
+    "r form",
+    "harmonic form",
+    "solving equations"
+  ],
+  "questionText": "Express $2\\sin\\theta + 5\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Hence solve $2\\sin\\theta + 5\\cos\\theta = 3$ for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{(\\sqrt2)^2 + (\\sqrt2)^2} = \\sqrt4 = 2",
-        "explanation": "The sum of squares is $2 + 2 = 4$, so $R = 2$.",
+        "description": "Set up the identity",
+        "workingLatex": "2\\sin\\theta + 5\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We want to fold the two separate waves into a single sine wave. Writing the expression identically equal to $R\\sin(\\theta+\\alpha)$ lets us expand the right-hand side and match it piece by piece with the left.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{\\sqrt2}{\\sqrt2} = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
-        "explanation": "Equal components give $\\alpha = 45^\\circ$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Using $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ and bringing $R$ through gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, exactly the shape of the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the equation in harmonic form",
-        "workingLatex": "2\\sin(\\theta + 45^\\circ) = 1 \\;\\Rightarrow\\; \\sin(\\theta + 45^\\circ) = \\tfrac{1}{2}",
-        "explanation": "Substituting and dividing by $2$ gives a standard sine equation.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 2, \\qquad R\\sin\\alpha = 5",
+        "explanation": "For the two sides to agree for every $\\theta$, the amount of $\\sin\\theta$ must match and the amount of $\\cos\\theta$ must match. That gives one equation from each term.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the shifted interval",
-        "workingLatex": "45^\\circ \\le \\theta + 45^\\circ < 405^\\circ",
-        "explanation": "Adding the shift to the bounds.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{2^2 + 5^2} = \\sqrt{29}",
+        "explanation": "Squaring and adding the two equations removes $\\alpha$ because $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2 = 2^2+5^2$. We take the positive root since $R>0$, and $\\sqrt{29}$ does not simplify so we keep it exact.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta + 45^\\circ = 150^\\circ, 390^\\circ",
-        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$; but $30^\\circ < 45^\\circ$ is out of range, so we use $150^\\circ$ and $30^\\circ + 360^\\circ = 390^\\circ$.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{5}{2} \\Rightarrow \\alpha = 68.2^\\circ",
+        "explanation": "Dividing $R\\sin\\alpha$ by $R\\cos\\alpha$ cancels $R$ and leaves $\\tan\\alpha=\\tfrac{5}{2}$. Both coefficients are positive, so $\\alpha$ is acute: $\\alpha=\\arctan\\tfrac{5}{2}=68.2^\\circ$ to $1$ d.p.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = 105^\\circ, 345^\\circ",
-        "explanation": "Subtracting $45^\\circ$ from each valid solution gives the answers.",
+        "description": "State the R-form",
+        "workingLatex": "2\\sin\\theta + 5\\cos\\theta = \\sqrt{29}\\,\\sin(\\theta + 68.2^\\circ)",
+        "explanation": "Combining the amplitude and the phase shift gives the single-wave form. It immediately shows the expression swings between $-\\sqrt{29}$ and $+\\sqrt{29}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{29}\\,\\sin(\\theta+68.2^\\circ) = 3 \\Rightarrow \\sin(\\theta+68.2^\\circ) = \\dfrac{3}{\\sqrt{29}} = 0.5571",
+        "explanation": "Replacing the two-term expression by the single wave turns the problem into a basic sine equation. Dividing both sides by $\\sqrt{29}$ isolates the sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ \\le \\theta \\le 360^\\circ \\Rightarrow 68.2^\\circ \\le \\theta+68.2^\\circ \\le 428.2^\\circ",
+        "explanation": "We are now solving for the combined angle $\\theta+68.2^\\circ$, so we add $68.2^\\circ$ to both ends of the range. Searching this shifted window makes sure no solution is lost at either end.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\theta+68.2^\\circ = \\arcsin(0.5571) = 33.9^\\circ",
+        "explanation": "The calculator gives the principal value. This is our anchor; every other solution is built from it using the symmetry of the sine curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List all angles in the shifted range",
+        "workingLatex": "\\theta+68.2^\\circ = 146.1^\\circ,\\; 393.9^\\circ",
+        "explanation": "Sine is also positive in the second quadrant, giving $180^\\circ-33.9^\\circ=146.1^\\circ$, and adding $360^\\circ$ to the base angle gives $393.9^\\circ$. The base value $33.9^\\circ$ itself is below $68.2^\\circ$, so it lies outside the shifted window and is discarded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 146.1^\\circ-68.2^\\circ,\\; 393.9^\\circ-68.2^\\circ = 77.9^\\circ,\\; 325.7^\\circ",
+        "explanation": "Undoing the shift by subtracting $68.2^\\circ$ returns each answer to the original variable. Both results lie in $0^\\circ$ to $360^\\circ$, so both are kept.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 105^\\circ, 345^\\circ$"
+    "finalAnswer": "$2\\sin\\theta + 5\\cos\\theta = \\sqrt{29}\\,\\sin(\\theta+68.2^\\circ)$, and the equation has solutions $\\theta = 77.9^\\circ$ and $\\theta = 325.7^\\circ$ (to $1$ d.p.)."
   }
 }

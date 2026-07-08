@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "chain rule",
+    "circle"
+  ],
+  "questionText": "The circle $C$ has equation $x^2 + y^2 = 25$. Find $\\frac{dy}{dx}$ in terms of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(25)",
+        "explanation": "The curve is given as a relation between $x$ and $y$, not in the form $y=f(x)$. We differentiate both sides with respect to $x$, treating $y$ as a function of $x$. The constant $25$ on the right will differentiate to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the $x^2$ term",
+        "workingLatex": "2x + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "The power rule turns $x^2$ into $2x$, and the constant $25$ becomes $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the $y^2$ term using the chain rule",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "This is the key new idea. Differentiating $y^2$ with respect to $x$ is a chain-rule step: bring the power down to get $2y$, then multiply by $\\frac{dy}{dx}$ because $y$ is itself a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Putting the two differentiated terms together gives an equation that now contains $\\frac{dy}{dx}$, which we can solve for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Isolate the $\\frac{dy}{dx}$ term",
+        "workingLatex": "2y\\frac{dy}{dx} = -2x",
+        "explanation": "Move the $2x$ to the other side so that the only term left on the left is the one containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make $\\frac{dy}{dx}$ the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{2y} = -\\frac{x}{y}",
+        "explanation": "Divide both sides by $2y$ and cancel the common factor of $2$. The gradient depends on both $x$ and $y$, which is typical for an implicit curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{x}{y}",
+        "explanation": "This gives the gradient at any point $(x,y)$ on the circle. For example, in the top-right of the circle where $x>0$ and $y>0$, the gradient is negative, which matches the shape.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = -\\frac{x}{y}$"
+  }
+}

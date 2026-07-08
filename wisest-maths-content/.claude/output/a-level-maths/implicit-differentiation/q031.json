@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "logarithm",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $x + \\ln y = 2$. Find an equation of the tangent to $C$ at the point $(1, e)$, giving your answer in the form $ax + by = c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x) + \\frac{d}{dx}(\\ln y) = \\frac{d}{dx}(2)",
+        "explanation": "We differentiate the whole relation with respect to $x$, treating $y$ as a function of $x$. The constant $2$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate x and the constant",
+        "workingLatex": "1 + \\frac{d}{dx}(\\ln y) = 0",
+        "explanation": "The term $x$ differentiates to $1$; the right-hand side is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate ln y with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(\\ln y) = \\frac{1}{y}\\frac{dy}{dx} \\quad\\Rightarrow\\quad 1 + \\frac{1}{y}\\frac{dy}{dx} = 0",
+        "explanation": "Differentiating $\\ln y$ with respect to $x$ gives $\\frac{1}{y}$ times $\\frac{dy}{dx}$, because $y$ is a function of $x$ (chain rule).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{1}{y}\\frac{dy}{dx} = -1 \\quad\\Rightarrow\\quad \\frac{dy}{dx} = -y",
+        "explanation": "Subtracting $1$ then multiplying both sides by $y$ isolates the gradient as $-y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "1 + \\ln e = 1 + 1 = 2 \\;\\checkmark",
+        "explanation": "Using $\\ln e = 1$, we confirm $(1,e)$ satisfies $x + \\ln y = 2$, so the point is genuinely on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the point to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,e)} = -e",
+        "explanation": "Substituting $y=e$ into $\\frac{dy}{dx}=-y$ gives the gradient of the tangent at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the point-gradient form of a line",
+        "workingLatex": "y - e = -e(x - 1)",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=-e$ through $(1,e)$ sets up the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the bracket",
+        "workingLatex": "y - e = -ex + e",
+        "explanation": "Distributing $-e$ across $(x-1)$ gives $-ex + e$ on the right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rearrange into the required form",
+        "workingLatex": "ex + y = 2e",
+        "explanation": "Adding $ex$ and $e$ to both sides gives $y = -ex + 2e$, which rearranges to $ex + y = 2e$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -e\\text{ at }(1,e),\\qquad ex + y = 2e",
+        "explanation": "So the gradient at $(1,e)$ is $-e$ and the tangent there is $ex + y = 2e$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $ex + y = 2e$ (gradient $-e$)."
+  }
+}

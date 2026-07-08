@@ -5,60 +5,88 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "inverse trig",
-    "equation",
-    "solving"
+    "reciprocal trig",
+    "cosec",
+    "solving equations"
   ],
-  "questionText": "Solve $\\arcsin(2x - 1) = \\dfrac{\\pi}{6}$ for $x$.",
+  "questionText": "Solve $\\operatorname{cosec} x = 2$ for $0^\\circ \\le x < 360^\\circ$, giving every solution in the interval.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Apply sine to both sides",
-        "workingLatex": "2x - 1 = \\sin\\frac{\\pi}{6}",
-        "explanation": "Taking the sine of both sides undoes the arcsine on the left, isolating the expression inside it.",
+        "description": "Rewrite cosec using its definition",
+        "workingLatex": "\\operatorname{cosec} x = \\frac{1}{\\sin x}",
+        "explanation": "Cosec is the reciprocal of sine, so we turn the equation into a sine equation where the standard angles are known.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Evaluate the right-hand side",
-        "workingLatex": "\\sin\\frac{\\pi}{6} = \\frac{1}{2}",
-        "explanation": "The sine of $\\frac{\\pi}{6}$ is the standard exact value one half.",
+        "description": "Form a sine equation",
+        "workingLatex": "\\frac{1}{\\sin x} = 2 \\;\\Rightarrow\\; \\sin x = \\frac{1}{2}",
+        "explanation": "Taking reciprocals of both sides gives $\\sin x = \\tfrac12$, a standard equation with well-known solutions.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Form a linear equation",
-        "workingLatex": "2x - 1 = \\frac{1}{2}",
-        "explanation": "We now have a simple linear equation in $x$.",
+        "description": "Check that solutions can exist",
+        "workingLatex": "\\left|\\tfrac{1}{2}\\right| \\le 1",
+        "explanation": "Sine only takes values in $[-1,1]$, and $\\tfrac12$ lies in that range, so real solutions exist.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Add one to both sides",
-        "workingLatex": "2x = \\frac{3}{2}",
-        "explanation": "Adding $1$ (as $\\frac{2}{2}$) to $\\frac{1}{2}$ gives $\\frac{3}{2}$ on the right.",
+        "description": "Find the reference angle",
+        "workingLatex": "\\sin 30^\\circ = \\tfrac{1}{2} \\;\\Rightarrow\\; \\text{reference angle} = 30^\\circ",
+        "explanation": "The acute angle whose sine is $\\tfrac12$ is $30^\\circ$, so that is our reference angle.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Divide by two",
-        "workingLatex": "x = \\frac{3}{4}",
-        "explanation": "Dividing both sides by $2$ isolates $x$ as $\\frac{3}{4}$.",
+        "description": "Decide which quadrants apply",
+        "workingLatex": "\\sin x > 0 \\text{ in quadrants I and II}",
+        "explanation": "The sine value is positive, and sine is positive in the first and second quadrants, so the solutions come from there.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check validity of the input",
-        "workingLatex": "2x - 1 = \\tfrac{1}{2}, \\quad -1 \\le \\tfrac{1}{2} \\le 1 \\;\\checkmark",
-        "explanation": "The argument $\\frac{1}{2}$ lies in the domain $[-1,1]$ of arcsine, so the solution is valid.",
+        "description": "Write the first-quadrant solution",
+        "workingLatex": "x = 30^\\circ",
+        "explanation": "In the first quadrant the angle is exactly the reference angle, giving $x = 30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the second-quadrant solution",
+        "workingLatex": "x = 180^\\circ - 30^\\circ = 150^\\circ",
+        "explanation": "In the second quadrant we subtract the reference angle from $180^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm both lie in the interval",
+        "workingLatex": "0^\\circ \\le 30^\\circ, \\; 150^\\circ < 360^\\circ",
+        "explanation": "Both angles satisfy $0^\\circ \\le x < 360^\\circ$, so both are valid solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a solution in the original equation",
+        "workingLatex": "\\operatorname{cosec} 30^\\circ = \\frac{1}{\\sin 30^\\circ} = \\frac{1}{\\tfrac12} = 2",
+        "explanation": "Substituting back gives $2$, confirming the answer; $150^\\circ$ works the same way because $\\sin 150^\\circ = \\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the full solution set",
+        "workingLatex": "x = 30^\\circ, \\; 150^\\circ",
+        "explanation": "These two angles are the complete set of solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x = \\dfrac{3}{4}$"
+    "finalAnswer": "$x = 30^\\circ$ or $x = 150^\\circ$."
   }
 }

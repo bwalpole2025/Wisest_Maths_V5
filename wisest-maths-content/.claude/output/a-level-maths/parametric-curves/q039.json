@@ -5,54 +5,88 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "circle",
-    "trig"
+    "eliminating the parameter",
+    "trig identity",
+    "hyperbola"
   ],
-  "questionText": "A curve has parametric equations $x = \\sin\\theta$, $y = 1 - \\cos\\theta$. Find the Cartesian equation and describe the curve.",
+  "questionText": "The parametric equations $x = 2\\sec\\theta$ and $y = 5\\tan\\theta$ define a curve. Find its Cartesian equation, and state the domain of the curve (the possible values of $x$).",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the trig functions",
-        "workingLatex": "\\sin\\theta = x, \\quad \\cos\\theta = 1 - y",
-        "explanation": "Rearranging the $y$-equation gives $\\cos\\theta = 1 - y$.",
+        "description": "Isolate sec and tan",
+        "workingLatex": "\\sec\\theta = \\dfrac{x}{2}, \\qquad \\tan\\theta = \\dfrac{y}{5}",
+        "explanation": "The identity linking $\\sec$ and $\\tan$ needs each on its own, so we divide through by the coefficients to isolate them.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "x^2 + (1 - y)^2 = 1",
-        "explanation": "Substituting into $\\sin^2\\theta + \\cos^2\\theta = 1$ removes $\\theta$.",
+        "description": "Recall the rearranged identity",
+        "workingLatex": "\\sec^{2}\\theta - \\tan^{2}\\theta = 1",
+        "explanation": "This is $1 + \\tan^{2}\\theta = \\sec^{2}\\theta$ rearranged. It holds for all valid $\\theta$, so it lets us eliminate the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rewrite the squared term",
-        "workingLatex": "(1 - y)^2 = (y - 1)^2",
-        "explanation": "Squaring is unaffected by the sign, so we may write it as $(y-1)^2$ for the standard form.",
+        "description": "Substitute the x and y expressions",
+        "workingLatex": "\\left( \\dfrac{x}{2} \\right)^{2} - \\left( \\dfrac{y}{5} \\right)^{2} = 1",
+        "explanation": "Putting $\\dfrac{x}{2}$ for $\\sec\\theta$ and $\\dfrac{y}{5}$ for $\\tan\\theta$ converts the identity into a relation in $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the Cartesian equation",
-        "workingLatex": "x^2 + (y - 1)^2 = 1",
-        "explanation": "This is a circle in standard form.",
+        "description": "Simplify the squares",
+        "workingLatex": "\\dfrac{x^{2}}{4} - \\dfrac{y^{2}}{25} = 1",
+        "explanation": "Squaring each fraction gives the standard form, with denominators $4$ and $25$ being the squares of $2$ and $5$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Describe the curve",
-        "workingLatex": "\\text{circle centre } (0, 1), \\text{ radius } 1",
-        "explanation": "The centre is $(0,1)$ and the radius is $1$.",
+        "description": "Identify the curve",
+        "workingLatex": "\\dfrac{x^{2}}{2^{2}} - \\dfrac{y^{2}}{5^{2}} = 1",
+        "explanation": "This is a hyperbola centred at the origin that opens to the left and right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Recall the range of sec",
+        "workingLatex": "\\sec\\theta = \\dfrac{1}{\\cos\\theta}, \\qquad -1 \\leq \\cos\\theta \\leq 1",
+        "explanation": "Because cosine is bounded between $-1$ and $1$, its reciprocal cannot lie strictly between them; this limits the values $x$ can take.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound sec in magnitude",
+        "workingLatex": "|\\sec\\theta| \\geq 1",
+        "explanation": "The reciprocal of a number with magnitude at most $1$ has magnitude at least $1$, so $|\\sec\\theta| \\geq 1$ always.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Translate the bound to x",
+        "workingLatex": "x = 2\\sec\\theta \\Rightarrow |x| \\geq 2",
+        "explanation": "Multiplying by $2$ shows that the magnitude of $x$ is never below $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the domain",
+        "workingLatex": "x \\leq -2 \\;\\text{ or }\\; x \\geq 2",
+        "explanation": "The requirement $|x| \\geq 2$ gives two intervals, matching the two branches of the hyperbola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the final result",
+        "workingLatex": "\\dfrac{x^{2}}{4} - \\dfrac{y^{2}}{25} = 1, \\qquad |x| \\geq 2",
+        "explanation": "The Cartesian equation together with its domain fully describes the curve.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x^2 + (y - 1)^2 = 1$, a circle centre $(0,1)$ radius $1$."
+    "finalAnswer": "$\\dfrac{x^{2}}{4} - \\dfrac{y^{2}}{25} = 1$; the domain is $x \\leq -2$ or $x \\geq 2$."
   }
 }

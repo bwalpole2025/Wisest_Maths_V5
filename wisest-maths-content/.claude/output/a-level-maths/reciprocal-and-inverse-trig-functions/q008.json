@@ -6,60 +6,74 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "cosecant",
+    "cot",
     "exact values",
-    "surds"
+    "radians"
   ],
-  "questionText": "Find the exact value of $\\csc 60^\\circ$, giving your answer with a rational denominator.",
+  "questionText": "Find the exact value of $\\cot\\dfrac{\\pi}{6}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write cosecant as one over sine",
-        "workingLatex": "\\csc 60^\\circ = \\frac{1}{\\sin 60^\\circ}",
-        "explanation": "Cosecant reciprocates sine, so we rewrite it in terms of sine to use the known exact value.",
+        "description": "Recall the definition of cotangent",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta}",
+        "explanation": "Cotangent is one over tangent, so we begin with the tangent of the angle.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the exact value of sine 60 degrees",
-        "workingLatex": "\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}",
-        "explanation": "This exact value is taken from the $30$-$60$-$90$ triangle and is a standard result.",
+        "description": "Convert the radian angle to degrees",
+        "workingLatex": "\\frac{\\pi}{6} \\text{ rad} = 30^\\circ",
+        "explanation": "A sixth of $\\pi$ radians is $30^\\circ$, a standard angle, so we can quote its tangent exactly.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute and invert",
-        "workingLatex": "\\csc 60^\\circ = \\frac{1}{\\;\\frac{\\sqrt{3}}{2}\\;} = \\frac{2}{\\sqrt{3}}",
-        "explanation": "Taking the reciprocal flips the fraction to $\\frac{2}{\\sqrt{3}}$, which still has a surd in the denominator.",
+        "description": "Apply the definition",
+        "workingLatex": "\\cot\\frac{\\pi}{6} = \\frac{1}{\\tan\\tfrac{\\pi}{6}}",
+        "explanation": "Substituting the angle leaves one over $\\tan\\tfrac{\\pi}{6}$ to simplify.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rationalise the denominator",
-        "workingLatex": "\\frac{2}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}",
-        "explanation": "Multiplying top and bottom by $\\sqrt{3}$ removes the root from the denominator, giving the rational denominator the question asks for.",
+        "description": "Recall the exact value of tan of pi over 6",
+        "workingLatex": "\\tan\\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}",
+        "explanation": "From the half-equilateral triangle, $\\tan 30^\\circ=\\tfrac{1}{\\sqrt{3}}$, and $\\tfrac{\\pi}{6}$ is exactly $30^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Check the size of the answer",
-        "workingLatex": "\\frac{2\\sqrt{3}}{3} \\approx 1.155 \\ge 1 \\;\\checkmark",
-        "explanation": "Cosecant must be at least $1$ in size, and the decimal value $1.155$ confirms this, so the answer is reasonable.",
+        "description": "Substitute the tangent value",
+        "workingLatex": "\\cot\\frac{\\pi}{6} = \\frac{1}{\\tfrac{1}{\\sqrt{3}}}",
+        "explanation": "We now have one divided by $\\tfrac{1}{\\sqrt{3}}$, the reciprocal of a reciprocal.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\csc 60^\\circ = \\frac{2\\sqrt{3}}{3}",
-        "explanation": "This is the exact value with a rationalised denominator, as required.",
+        "description": "Simplify the reciprocal of a reciprocal",
+        "workingLatex": "\\frac{1}{\\tfrac{1}{\\sqrt{3}}} = \\sqrt{3}",
+        "explanation": "Flipping $\\tfrac{1}{\\sqrt{3}}$ returns $\\sqrt{3}$: taking a reciprocal twice brings you back to the original number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm using the cos over sin form",
+        "workingLatex": "\\cot\\frac{\\pi}{6} = \\frac{\\cos\\tfrac{\\pi}{6}}{\\sin\\tfrac{\\pi}{6}} = \\frac{\\tfrac{\\sqrt{3}}{2}}{\\tfrac{1}{2}} = \\sqrt{3} \\; \\checkmark",
+        "explanation": "The alternative definition confirms the answer: the halves cancel to leave $\\sqrt{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the exact value",
+        "workingLatex": "\\cot\\frac{\\pi}{6} = \\sqrt{3}",
+        "explanation": "This is the required exact value, and it is greater than $1$ as expected for an angle below $45^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\csc 60^\\circ = \\dfrac{2\\sqrt{3}}{3}$"
+    "finalAnswer": "$\\cot\\dfrac{\\pi}{6} = \\sqrt{3}$."
   }
 }

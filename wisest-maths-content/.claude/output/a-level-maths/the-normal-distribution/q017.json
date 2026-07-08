@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q017",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standard normal",
+    "symmetry"
+  ],
+  "questionText": "The random variable $Z$ has the standard normal distribution, $Z \\sim N(0, 1)$. Find $P(Z < -0.8)$, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "Z \\sim N(0, 1)",
+        "explanation": "The curve is symmetric about $0$, and $\\Phi(z) = P(Z < z)$ is the area to its left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify what is required",
+        "workingLatex": "\\text{Require } P(Z < -0.8)",
+        "explanation": "We want the area to the left of $-0.8$. Because $-0.8$ is on the left of the centre, this lower-tail area must be below $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the symmetry rule",
+        "workingLatex": "P(Z < -0.8) = 1 - \\Phi(0.8)",
+        "explanation": "By symmetry the tail below $-0.8$ is the mirror image of the tail above $0.8$, and that right-hand tail equals $1 - \\Phi(0.8)$. This avoids needing negative $z$ tables.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Read the cumulative value",
+        "workingLatex": "\\Phi(0.8) = 0.7881",
+        "explanation": "The calculator or table gives the area to the left of $0.8$ as $0.7881$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract from 1",
+        "workingLatex": "P(Z < -0.8) = 1 - 0.7881 = 0.2119",
+        "explanation": "Taking that away from the total area of $1$ gives the mirror tail we wanted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final answer",
+        "workingLatex": "P(Z < -0.8) \\approx 0.2119",
+        "explanation": "To four significant figures this is the required probability, sensibly below $0.5$ as expected for a left tail.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(Z < -0.8) \\approx 0.2119$."
+  }
+}

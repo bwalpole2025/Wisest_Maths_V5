@@ -5,59 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "proof",
   "tags": [
     "double angle",
-    "given expression"
+    "proof",
+    "cotangent"
   ],
-  "questionText": "Given that $\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}$, find the exact value of $\\sin 2\\theta$.",
+  "questionText": "Prove the identity $\\dfrac{1 + \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\cot\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Square both sides",
-        "workingLatex": "(\\sin\\theta + \\cos\\theta)^2 = \\left(\\frac{1}{2}\\right)^2",
-        "explanation": "Squaring links the given sum to $\\sin 2\\theta$, because the cross term produces $2\\sin\\theta\\cos\\theta$.",
+        "description": "State the LHS and the plan",
+        "workingLatex": "\\text{LHS} = \\dfrac{1 + \\cos 2\\theta}{\\sin 2\\theta}",
+        "explanation": "We start from the left-hand side and aim for $\\cot\\theta$, rewriting the double angles as single-angle ratios so a factor cancels.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Expand the left side",
-        "workingLatex": "\\sin^2\\theta + 2\\sin\\theta\\cos\\theta + \\cos^2\\theta = \\frac{1}{4}",
-        "explanation": "The square expands into three terms.",
+        "description": "Choose a form of cos 2theta for the numerator",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "We pick the $2\\cos^2\\theta - 1$ version so that adding $1$ removes the constant and leaves a pure cosine term.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "1 + 2\\sin\\theta\\cos\\theta = \\frac{1}{4}",
-        "explanation": "The two squared terms sum to $1$.",
+        "description": "Simplify the numerator",
+        "workingLatex": "1 + \\cos 2\\theta = 1 + (2\\cos^2\\theta - 1) = 2\\cos^2\\theta",
+        "explanation": "The $+1$ and $-1$ cancel, so the numerator becomes $2\\cos^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recognise the double angle",
-        "workingLatex": "1 + \\sin 2\\theta = \\frac{1}{4}",
-        "explanation": "The cross term $2\\sin\\theta\\cos\\theta$ is $\\sin 2\\theta$.",
+        "description": "Expand the denominator",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "The sine double-angle formula puts the denominator into single-angle ratios and provides the factor $2\\cos\\theta$ shared with the numerator.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for sin 2θ",
-        "workingLatex": "\\sin 2\\theta = \\frac{1}{4} - 1 = -\\frac{3}{4}",
-        "explanation": "Subtracting $1$ gives $-\\frac{3}{4}$, a valid sine value.",
+        "description": "Rewrite the whole fraction",
+        "workingLatex": "\\dfrac{1 + \\cos 2\\theta}{\\sin 2\\theta} = \\dfrac{2\\cos^2\\theta}{2\\sin\\theta\\cos\\theta}",
+        "explanation": "The common factor $2\\cos\\theta$ is now visible in both numerator and denominator.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check plausibility",
-        "workingLatex": "\\left|-\\tfrac{3}{4}\\right| \\le 1 \\;\\checkmark",
-        "explanation": "The result lies within the valid sine range, so it is reasonable.",
+        "description": "Cancel the common factor",
+        "workingLatex": "\\dfrac{2\\cos^2\\theta}{2\\sin\\theta\\cos\\theta} = \\dfrac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Dividing top and bottom by $2\\cos\\theta$ leaves the ratio $\\dfrac{\\cos\\theta}{\\sin\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise the cotangent ratio",
+        "workingLatex": "\\dfrac{\\cos\\theta}{\\sin\\theta} = \\cot\\theta",
+        "explanation": "By definition $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$, which is exactly the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the RHS is reached",
+        "workingLatex": "\\dfrac{1 + \\cos 2\\theta}{\\sin 2\\theta} = \\cot\\theta",
+        "explanation": "The LHS has been reduced to $\\cot\\theta$, matching the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\dfrac{1 + \\cos 60^\\circ}{\\sin 60^\\circ} = \\dfrac{3/2}{\\sqrt3/2} = \\dfrac{3}{\\sqrt3} = \\sqrt3 = \\cot 30^\\circ",
+        "explanation": "At $\\theta = 30^\\circ$ both sides equal $\\sqrt3$, consistent with the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the proof",
+        "workingLatex": "\\dfrac{1 + \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\cot\\theta \\quad \\blacksquare",
+        "explanation": "The LHS equals the RHS for all valid $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 2\\theta = -\\dfrac{3}{4}$"
+    "finalAnswer": "Using $1 + \\cos 2\\theta = 2\\cos^2\\theta$ and $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$, the fraction reduces to $\\dfrac{\\cos\\theta}{\\sin\\theta} = \\cot\\theta$, hence $\\dfrac{1 + \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\cot\\theta$."
   }
 }

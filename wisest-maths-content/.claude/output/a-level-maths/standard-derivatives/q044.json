@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "stationary point",
+    "exponential",
+    "proof"
+  ],
+  "questionText": "Show that the curve $y = e^{x} + x$ has no stationary points.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State what must be shown",
+        "workingLatex": "\\text{stationary} \\iff \\frac{dy}{dx} = 0",
+        "explanation": "A stationary point exists only where the gradient is zero, so it is enough to show the derivative is never zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} + 1",
+        "explanation": "Using $\\frac{d}{dx}(e^{x})=e^{x}$ and $\\frac{d}{dx}(x)=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the range of the exponential",
+        "workingLatex": "e^{x} > 0 \\text{ for all real } x",
+        "explanation": "The exponential function is strictly positive everywhere; it never reaches zero or a negative value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Bound the derivative below",
+        "workingLatex": "e^{x} + 1 > 0 + 1 = 1",
+        "explanation": "Adding $1$ to a positive quantity gives something greater than $1$, so the gradient is always at least $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Deduce the gradient is never zero",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} + 1 \\ge 1 > 0",
+        "explanation": "Since the gradient is always strictly positive, it can never equal zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm by trying to solve the stationary condition",
+        "workingLatex": "e^{x} + 1 = 0 \\iff e^{x} = -1",
+        "explanation": "Setting the gradient to zero would force $e^{x}=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Show this is impossible",
+        "workingLatex": "e^{x} = -1 \\text{ has no solution since } e^{x} > 0",
+        "explanation": "An exponential can never be negative, so no value of $x$ satisfies the stationary condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude the derivative is never zero",
+        "workingLatex": "\\therefore \\frac{dy}{dx} \\neq 0 \\text{ for all } x",
+        "explanation": "As the derivative is positive for every $x$, the curve has no point where the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the result",
+        "workingLatex": "\\text{no stationary points} \\quad \\blacksquare",
+        "explanation": "Therefore $y=e^{x}+x$ has no stationary points; in fact it is strictly increasing everywhere.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Since $\\dfrac{dy}{dx}=e^{x}+1\\ge 1>0$ for all $x$, the gradient is never zero, so the curve has no stationary points."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "exponential",
+    "gradient"
+  ],
+  "questionText": "Find the gradient of the curve $y = 4e^{2x} - x$ at the point where $x = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up and use linearity",
+        "workingLatex": "y = 4e^{2x} - x",
+        "explanation": "Differentiate the exponential term and the linear term separately, then combine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the exponential term",
+        "workingLatex": "\\frac{d}{dx}(4e^{2x}) = 4 \\cdot 2 e^{2x} = 8e^{2x}",
+        "explanation": "The standard result $\\tfrac{d}{dx}(e^{kx}) = k e^{kx}$ with $k=2$ brings down a factor of $2$, and the constant $4$ multiplies through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the linear term",
+        "workingLatex": "\\frac{d}{dx}(-x) = -1",
+        "explanation": "The derivative of $x$ is $1$, so with the minus sign this term differentiates to $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = 8e^{2x} - 1",
+        "explanation": "Adding the two derivatives gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = 8e^{0} - 1",
+        "explanation": "Substitute $x=0$ to find the gradient there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 8(1) - 1 = 7",
+        "explanation": "Since $e^{0}=1$, we get $8-1=7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = 7",
+        "explanation": "So the gradient of the curve at $x=0$ is $7$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient at $x=0$ is $7$."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standard normal",
+    "symmetry"
+  ],
+  "questionText": "The random variable $Z$ has the standard normal distribution, $Z \\sim N(0,1)$. Find $P(Z > -1)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "Z \\sim N(0,1), \\qquad P(Z > -1) = \\ ?",
+        "explanation": "We want the area to the right of $z = -1$ under the standard normal curve. The value $-1$ lies one standard deviation to the left of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recognise the value is negative",
+        "workingLatex": "-1 < 0",
+        "explanation": "The area to the right of a negative value is large (more than half), and it is easiest to rewrite it in terms of a positive value using symmetry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the symmetry of the normal curve",
+        "workingLatex": "P(Z > -1) = P(Z < 1)",
+        "explanation": "The standard normal curve is symmetric about $0$, so the area to the right of $-1$ equals the mirror-image area to the left of $+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write it as a value of the CDF",
+        "workingLatex": "P(Z < 1) = \\Phi(1)",
+        "explanation": "The area to the left of $1$ is exactly the standard normal cumulative distribution function $\\Phi$ evaluated at $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "\\Phi(1) = 0.8413",
+        "explanation": "The cumulative value at $z = 1$ is $0.8413$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(Z > -1) \\approx 0.8413",
+        "explanation": "So about $84.1\\%$ of the standard normal distribution lies above $z = -1$. This is comfortably more than half, as expected for an area starting to the left of the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(Z > -1) \\approx 0.8413$."
+  }
+}

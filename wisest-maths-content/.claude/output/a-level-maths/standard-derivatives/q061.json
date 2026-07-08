@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "exponential",
+    "stationary point",
+    "tangent"
+  ],
+  "questionText": "A curve has equation $y = e^{2x} - 8x$.\n(a) Find $\\dfrac{dy}{dx}$.\n(b) Find the gradient of the curve at the point where $x=0$.\n(c) Find the exact coordinates of the stationary point and determine its nature.\n(d) Find where the tangent to the curve at $x=0$ meets the $x$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the standard results needed",
+        "workingLatex": "\\frac{d}{dx}(e^{2x}) = 2e^{2x}, \\quad \\frac{d}{dx}(8x) = 8",
+        "explanation": "The term $e^{2x}$ has the standard form $e^{kx}$ with $k=2$, so its derivative is $2e^{2x}$. The term $8x$ is linear, so its derivative is the constant $8$. Because differentiation is linear, we may treat each term separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate to find dy/dx (part a)",
+        "workingLatex": "\\frac{dy}{dx} = 2e^{2x} - 8",
+        "explanation": "Combining the two term derivatives gives the gradient function. This single expression tells us the slope of the curve at every value of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate the gradient at x = 0 (part b)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = 2e^{0} - 8 = 2 - 8 = -6",
+        "explanation": "Substituting $x=0$ into the gradient function gives the slope there. Since $e^{0}=1$, the gradient is $-6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret the gradient",
+        "workingLatex": "\\frac{dy}{dx} = -6 < 0 \\quad \\text{at } x=0",
+        "explanation": "A negative gradient means the curve is falling as it crosses $x=0$; this slope of $-6$ will also be the slope of the tangent we need in part (d).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the derivative to zero for stationary points (part c)",
+        "workingLatex": "2e^{2x} - 8 = 0 \\;\\Rightarrow\\; e^{2x} = 4",
+        "explanation": "Stationary points occur where the tangent is horizontal, i.e. where $\\dfrac{dy}{dx}=0$. Rearranging isolates the exponential term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x using logarithms",
+        "workingLatex": "2x = \\ln 4 \\;\\Rightarrow\\; x = \\tfrac{1}{2}\\ln 4 = \\ln 2",
+        "explanation": "Taking natural logs undoes the exponential. Using $\\ln 4 = 2\\ln 2$, the factor of $\\tfrac{1}{2}$ cancels to give the clean value $x=\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate of the stationary point",
+        "workingLatex": "y = e^{2\\ln 2} - 8\\ln 2 = e^{\\ln 4} - 8\\ln 2 = 4 - 8\\ln 2",
+        "explanation": "We substitute back into the original equation. Since $2\\ln 2 = \\ln 4$ and $e^{\\ln 4}=4$, the exact height is $4 - 8\\ln 2 \\approx -1.545$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Differentiate again for the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = 4e^{2x}",
+        "explanation": "Differentiating $2e^{2x}-8$ once more: the standard result gives $2\\cdot 2e^{2x}=4e^{2x}$, and the constant $-8$ vanishes. The sign of this tells us the nature of the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the second derivative at the stationary point",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=\\ln 2} = 4e^{2\\ln 2} = 4 \\times 4 = 16 > 0",
+        "explanation": "A positive second derivative means the curve is concave up there, so the stationary point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the stationary point",
+        "workingLatex": "\\text{Minimum at } \\left(\\ln 2,\\; 4 - 8\\ln 2\\right)",
+        "explanation": "Collecting the coordinates and their nature: the curve has a single minimum turning point at approximately $(0.693,\\,-1.545)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the point of contact for the tangent at x = 0 (part d)",
+        "workingLatex": "x=0:\\; y = e^{0} - 8(0) = 1 \\;\\Rightarrow\\; (0,\\,1)",
+        "explanation": "The tangent touches the curve at $x=0$, so we need the curve's height there. This gives the point $(0,1)$, and from part (b) the gradient is $-6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Write the tangent line",
+        "workingLatex": "y - 1 = -6(x - 0) \\;\\Rightarrow\\; y = 1 - 6x",
+        "explanation": "Using the point-gradient form $y-y_1 = m(x-x_1)$ with $(0,1)$ and $m=-6$ gives the equation of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find where the tangent meets the x-axis",
+        "workingLatex": "y = 0:\\; 0 = 1 - 6x \\;\\Rightarrow\\; x = \\tfrac{1}{6}",
+        "explanation": "The $x$-axis is the line $y=0$. Setting the tangent equal to zero and solving locates the crossing point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the intersection with the x-axis",
+        "workingLatex": "\\left(\\tfrac{1}{6},\\; 0\\right)",
+        "explanation": "So the tangent at $x=0$ cuts the $x$-axis at $\\left(\\tfrac{1}{6},0\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Summarise the results",
+        "workingLatex": "\\frac{dy}{dx} = 2e^{2x} - 8, \\quad m|_{0} = -6, \\quad \\min\\left(\\ln 2, 4-8\\ln 2\\right), \\quad \\left(\\tfrac{1}{6},0\\right)",
+        "explanation": "All four parts are now complete: the derivative, the gradient at $x=0$, the exact minimum, and the intercept of the tangent with the $x$-axis.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=2e^{2x}-8$. (b) Gradient $=-6$. (c) Minimum at $(\\ln 2,\\;4-8\\ln 2)$. (d) The tangent $y=1-6x$ meets the $x$-axis at $\\left(\\tfrac{1}{6},0\\right)$."
+  }
+}

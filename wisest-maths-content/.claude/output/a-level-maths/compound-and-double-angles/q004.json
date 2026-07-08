@@ -5,67 +5,67 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "expression",
+  "marks": 2,
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "cosine",
-    "formula recall"
+    "compound angle",
+    "subtraction formula",
+    "substitution"
   ],
-  "questionText": "Write down the three equivalent forms of the double angle formula for $\\cos 2A$.",
+  "questionText": "Given that $\\sin A = \\tfrac{3}{5}$, $\\cos A = \\tfrac{4}{5}$, $\\sin B = \\tfrac{5}{13}$ and $\\cos B = \\tfrac{12}{13}$, find the exact value of $\\cos(A-B)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start from the cosine addition formula",
-        "workingLatex": "\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B",
-        "explanation": "As with sine, the cosine double angle formula comes from setting the two angles equal in the addition formula.",
+        "description": "State the correct formula",
+        "workingLatex": "\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "For a difference of angles the cosine formula takes a plus sign between the two products, the opposite of the minus inside $(A-B)$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set B equal to A",
-        "workingLatex": "\\cos 2A = \\cos^2 A - \\sin^2 A",
-        "explanation": "Putting $B = A$ gives the first form directly: cosine squared minus sine squared.",
+        "description": "List the given ratios",
+        "workingLatex": "\\cos A = \\tfrac{4}{5}, \\quad \\cos B = \\tfrac{12}{13}, \\quad \\sin A = \\tfrac{3}{5}, \\quad \\sin B = \\tfrac{5}{13}",
+        "explanation": "All four ratios are provided, so we can substitute directly without any quadrant work.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Use the Pythagorean identity to remove sine",
-        "workingLatex": "\\sin^2 A = 1 - \\cos^2 A",
-        "explanation": "Substituting for $\\sin^2 A$ will give a form purely in cosine, which is useful for integration and equations.",
+        "description": "Substitute into the formula",
+        "workingLatex": "\\cos(A-B) = \\tfrac{4}{5}\\cdot\\tfrac{12}{13} + \\tfrac{3}{5}\\cdot\\tfrac{5}{13}",
+        "explanation": "Replace $\\cos A\\cos B$ and $\\sin A\\sin B$ with the products of the supplied values.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Derive the cosine-only form",
-        "workingLatex": "\\cos 2A = \\cos^2 A - (1 - \\cos^2 A) = 2\\cos^2 A - 1",
-        "explanation": "Simplifying gives the second form, written entirely in terms of cosine.",
+        "description": "Multiply the fractions",
+        "workingLatex": "= \\tfrac{48}{65} + \\tfrac{15}{65}",
+        "explanation": "Both products share the denominator $65$ once the numerators and denominators are multiplied.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Use the Pythagorean identity to remove cosine",
-        "workingLatex": "\\cos^2 A = 1 - \\sin^2 A \\;\\Rightarrow\\; \\cos 2A = 1 - 2\\sin^2 A",
-        "explanation": "Substituting the other way gives the third form, written entirely in terms of sine.",
+        "description": "Add over the common denominator",
+        "workingLatex": "= \\tfrac{63}{65}",
+        "explanation": "Adding the numerators gives $48+15=63$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "List all three forms",
-        "workingLatex": "\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A",
-        "explanation": "Having all three forms lets you choose the one that best matches a given problem.",
+        "description": "Check the value is sensible",
+        "workingLatex": "0 < \\tfrac{63}{65} < 1",
+        "explanation": "The value is close to $1$, which makes sense because $A$ and $B$ are similar in size, so their difference $A-B$ is a small angle with cosine near $1$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Sanity check with a known value",
-        "workingLatex": "\\cos 60^\\circ = 2\\cos^2 30^\\circ - 1 = 2\\cdot\\tfrac{3}{4} - 1 = \\tfrac{1}{2} \\;\\checkmark",
-        "explanation": "Using $A = 30^\\circ$ in the second form reproduces $\\cos 60^\\circ = \\frac{1}{2}$, confirming the formulae.",
+        "description": "State the answer",
+        "workingLatex": "\\cos(A-B) = \\tfrac{63}{65}",
+        "explanation": "This is the exact value requested.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos 2A = \\cos^2 A - \\sin^2 A = 2\\cos^2 A - 1 = 1 - 2\\sin^2 A$"
+    "finalAnswer": "$\\cos(A-B) = \\tfrac{63}{65}$."
   }
 }

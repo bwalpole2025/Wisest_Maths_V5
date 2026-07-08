@@ -4,55 +4,61 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "circle",
-    "translated"
+    "eliminating the parameter",
+    "algebraic substitution",
+    "quadratic"
   ],
-  "questionText": "A curve has parametric equations $x = 3 + 2\\cos\\theta$, $y = -1 + 2\\sin\\theta$. Find the Cartesian equation and state the centre and radius.",
+  "questionText": "A curve is defined by $x = 2t + 3$ and $y = t^{2}$. Find a Cartesian equation of the curve.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the trig functions",
-        "workingLatex": "\\cos\\theta = \\frac{x - 3}{2}, \\quad \\sin\\theta = \\frac{y + 1}{2}",
-        "explanation": "Subtracting the constant and dividing by $2$ isolates each trig function.",
+        "description": "Set out the goal",
+        "workingLatex": "x = 2t + 3, \\qquad y = t^{2}",
+        "explanation": "To eliminate $t$ we make it the subject of the simpler $x$-equation and then substitute into the $y$-equation.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\left(\\frac{x-3}{2}\\right)^2 + \\left(\\frac{y+1}{2}\\right)^2 = 1",
-        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ removes $\\theta$.",
+        "description": "Make t the subject of the x-equation",
+        "workingLatex": "x = 2t + 3 \\Rightarrow t = \\dfrac{x - 3}{2}",
+        "explanation": "Subtracting $3$ and dividing by $2$ isolates $t$, giving it in terms of $x$ ready to substitute.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "\\frac{(x-3)^2}{4} + \\frac{(y+1)^2}{4} = 1",
-        "explanation": "Squaring gives denominators of $4$.",
+        "description": "Write down the y-equation",
+        "workingLatex": "y = t^{2}",
+        "explanation": "This equation still contains $t$, so it is where the substitution happens.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Multiply through by 4",
-        "workingLatex": "(x-3)^2 + (y+1)^2 = 4",
-        "explanation": "Clearing the denominator gives the standard circle form.",
+        "description": "Substitute the expression for t",
+        "workingLatex": "y = \\left( \\dfrac{x - 3}{2} \\right)^{2}",
+        "explanation": "Replacing $t$ with $\\dfrac{x - 3}{2}$ removes the parameter, leaving $x$ and $y$ only.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Read off centre and radius",
-        "workingLatex": "\\text{centre } (3, -1), \\quad \\text{radius } 2",
-        "explanation": "The equation is a circle; the radius is $\\sqrt4 = 2$.",
+        "description": "Simplify the square",
+        "workingLatex": "y = \\dfrac{(x - 3)^{2}}{4}",
+        "explanation": "Squaring the fraction squares both the numerator and the denominator, giving the tidy final form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = \\dfrac{(x - 3)^{2}}{4}",
+        "explanation": "The curve is a parabola with its lowest point where $x = 3$, which is where the parameter $t = 0$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(x-3)^2 + (y+1)^2 = 4$; centre $(3,-1)$, radius $2$."
+    "finalAnswer": "$y = \\dfrac{(x - 3)^{2}}{4}$."
   }
 }

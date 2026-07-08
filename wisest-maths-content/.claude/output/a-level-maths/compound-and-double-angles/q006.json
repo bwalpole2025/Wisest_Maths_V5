@@ -5,68 +5,67 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 4,
-  "answerType": "value",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
+    "double angle",
     "exact values",
-    "surds",
-    "sine"
+    "acute angle"
   ],
-  "questionText": "Use the compound angle formula to find the exact value of $\\sin 75^\\circ$, writing $75^\\circ = 45^\\circ + 30^\\circ$.",
+  "questionText": "Given that $\\sin\\theta = \\tfrac{3}{5}$ and that $\\theta$ is acute, find the exact value of $\\sin 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Split the angle into known parts",
-        "workingLatex": "75^\\circ = 45^\\circ + 30^\\circ",
-        "explanation": "Writing $75^\\circ$ as a sum of two standard angles lets us use known exact values.",
+        "description": "State the sine double-angle formula",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "The formula needs both $\\sin\\theta$ and $\\cos\\theta$, so before substituting we must first find $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the sine addition formula",
-        "workingLatex": "\\sin 75^\\circ = \\sin 45^\\circ\\cos 30^\\circ + \\cos 45^\\circ\\sin 30^\\circ",
-        "explanation": "The sine addition formula mixes the functions, with a plus sign matching the plus inside the bracket.",
+        "description": "Find cos theta from the Pythagorean identity",
+        "workingLatex": "\\cos\\theta = \\sqrt{1 - \\sin^2\\theta} = \\sqrt{1 - \\tfrac{9}{25}}",
+        "explanation": "Rearranging $\\sin^2\\theta+\\cos^2\\theta=1$ gives the cosine; because $\\theta$ is acute the cosine is positive, so we take the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the exact values",
-        "workingLatex": "= \\frac{\\sqrt2}{2}\\cdot\\frac{\\sqrt3}{2} + \\frac{\\sqrt2}{2}\\cdot\\frac{1}{2}",
-        "explanation": "Inserting the standard exact values sets up the arithmetic.",
+        "description": "Simplify cos theta",
+        "workingLatex": "= \\sqrt{\\tfrac{16}{25}} = \\tfrac{4}{5}",
+        "explanation": "Since $1-\\tfrac{9}{25}=\\tfrac{16}{25}$ and its square root is exact, $\\cos\\theta=\\tfrac{4}{5}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Multiply out each product",
-        "workingLatex": "= \\frac{\\sqrt6}{4} + \\frac{\\sqrt2}{4}",
-        "explanation": "Each product simplifies to a surd over $4$.",
+        "description": "Substitute into the formula",
+        "workingLatex": "\\sin 2\\theta = 2\\cdot\\tfrac{3}{5}\\cdot\\tfrac{4}{5}",
+        "explanation": "Insert the given sine and the cosine just found into $2\\sin\\theta\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Combine over the common denominator",
-        "workingLatex": "= \\frac{\\sqrt6 + \\sqrt2}{4}",
-        "explanation": "The matching denominators let the numerators combine into a single expression.",
+        "description": "Multiply out",
+        "workingLatex": "= \\tfrac{24}{25}",
+        "explanation": "Multiplying the three factors gives $\\tfrac{2\\times3\\times4}{25}=\\tfrac{24}{25}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check against a related value",
-        "workingLatex": "\\sin 75^\\circ = \\cos 15^\\circ \\approx 0.966",
-        "explanation": "The value is close to $1$, as expected for an angle near $90^\\circ$, and equals $\\cos 15^\\circ$ by the cofunction relationship.",
+        "description": "Check the value is sensible",
+        "workingLatex": "0 < \\tfrac{24}{25} < 1",
+        "explanation": "The answer is positive and within the sine range; this fits because $\\theta\\approx36.9^\\circ$ makes $2\\theta\\approx73.7^\\circ$, where sine is positive.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the exact value",
-        "workingLatex": "\\sin 75^\\circ = \\frac{\\sqrt6 + \\sqrt2}{4}",
-        "explanation": "This is the exact value in simplest surd form.",
+        "description": "State the answer",
+        "workingLatex": "\\sin 2\\theta = \\tfrac{24}{25}",
+        "explanation": "This is the exact value requested.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 75^\\circ = \\dfrac{\\sqrt6 + \\sqrt2}{4}$"
+    "finalAnswer": "$\\sin 2\\theta = \\tfrac{24}{25}$."
   }
 }

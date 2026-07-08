@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "chain rule",
+    "exponential",
+    "gradient"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^{3x^2}$. (a) Find $\\dfrac{dy}{dx}$. (b) Hence find the exact gradient of $C$ at the point where $x = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite structure",
+        "workingLatex": "y = e^{3x^2}",
+        "explanation": "The exponent $3x^2$ is itself a function of $x$, so $y=e^{3x^2}$ is a composite function. That tells us to use the chain rule $\\dfrac{dy}{dx}=\\dfrac{dy}{du}\\cdot\\dfrac{du}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the inner substitution",
+        "workingLatex": "u = 3x^2",
+        "explanation": "We let $u$ be the inner function, the exponent $3x^2$. Naming it $u$ lets us peel the composite apart into two simple pieces.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the outer function in terms of u",
+        "workingLatex": "y = e^{u}",
+        "explanation": "With $u=3x^2$ the outer function is just $y=e^{u}$, one of the standard functions we can differentiate directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = e^{u}",
+        "explanation": "The exponential $e^{u}$ is its own derivative with respect to $u$, so $\\dfrac{dy}{du}=e^{u}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 6x",
+        "explanation": "Differentiating $u=3x^2$ by the power rule brings the $2$ down and reduces the power, giving $6x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = e^{u}\\cdot 6x",
+        "explanation": "The chain rule multiplies the two rates of change together: how fast $y$ changes with $u$, times how fast $u$ changes with $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute u back in terms of x",
+        "workingLatex": "\\frac{dy}{dx} = 6x\\,e^{3x^2}",
+        "explanation": "Replacing $u$ with $3x^2$ writes the derivative purely in terms of $x$. This is the answer to part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute x = 1 to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = 6(1)\\,e^{3(1)^2}",
+        "explanation": "The gradient at a point is simply the value of the derivative there, so we substitute $x=1$ into $\\dfrac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the exponent and coefficient",
+        "workingLatex": "= 6\\,e^{3}",
+        "explanation": "Since $3(1)^2=3$ and $6(1)=6$, the gradient collapses to the exact value $6e^{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Interpret the exact value",
+        "workingLatex": "6e^{3} \\approx 120.5",
+        "explanation": "Leaving the answer as $6e^{3}$ keeps it exact; numerically it is about $120.5$, a steep positive gradient at $x=1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = 6x\\,e^{3x^2}$. (b) The exact gradient at $x=1$ is $6e^{3}\\ (\\approx 120.5)$."
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "quality control",
+    "expected frequency"
+  ],
+  "questionText": "A machine manufactures ball bearings whose diameters, $X$ mm, are modelled by $X \\sim N(6.00, 0.02^2)$. A bearing is accepted if its diameter is within $0.03$ mm of the target $6.00$ mm, and is rejected otherwise. In a batch of $20000$ bearings, estimate the number that are rejected.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and batch size",
+        "workingLatex": "X \\sim N(6.00,\\ 0.02^2), \\qquad n = 20000",
+        "explanation": "Diameters are normal with mean $6.00$ mm and standard deviation $0.02$ mm. We will find the probability a bearing is rejected and then scale up to the $20000$ in the batch.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the acceptance interval",
+        "workingLatex": "\\text{accept if } 5.97 \\le X \\le 6.03",
+        "explanation": "'Within $0.03$ mm of $6.00$' means the diameter lies between $6.00 - 0.03 = 5.97$ and $6.00 + 0.03 = 6.03$; anything outside is rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Decide to find the acceptance probability first",
+        "workingLatex": "P(\\text{accept}) = P(5.97 \\le X \\le 6.03)",
+        "explanation": "It is cleanest to compute the central acceptance probability, then reject-probability is its complement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Standardise the lower limit",
+        "workingLatex": "z = \\dfrac{5.97 - 6.00}{0.02} = -1.5",
+        "explanation": "Converting the lower tolerance to a $z$-score places it $1.5$ standard deviations below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Standardise the upper limit",
+        "workingLatex": "z = \\dfrac{6.03 - 6.00}{0.02} = 1.5",
+        "explanation": "The upper tolerance sits symmetrically $1.5$ standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the acceptance probability in Phi form",
+        "workingLatex": "P(\\text{accept}) = \\Phi(1.5) - \\Phi(-1.5)",
+        "explanation": "The probability of landing between the two symmetric limits is the difference of the cumulative values at $+1.5$ and $-1.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use symmetry to simplify",
+        "workingLatex": "\\Phi(-1.5) = 1 - \\Phi(1.5) \\ \\Rightarrow\\ P(\\text{accept}) = 2\\Phi(1.5) - 1",
+        "explanation": "Because the interval is symmetric about the mean, the two-sided probability tidies up to $2\\Phi(1.5) - 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the standard-normal value",
+        "workingLatex": "\\Phi(1.5) = 0.9332",
+        "explanation": "The cumulative normal at $z = 1.5$ gives the area below that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compute the acceptance probability",
+        "workingLatex": "P(\\text{accept}) = 2 \\times 0.9332 - 1 = 0.8664",
+        "explanation": "So about $86.6\\%$ of bearings meet the tolerance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the rejection probability",
+        "workingLatex": "P(\\text{reject}) = 1 - 0.8664 = 0.1336",
+        "explanation": "Rejection is the complement of acceptance, so we subtract from one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Interpret the rejection probability",
+        "workingLatex": "p = 0.1336 \\text{ of bearings are rejected}",
+        "explanation": "For a large batch this probability acts as the long-run proportion rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set up the expected number rejected",
+        "workingLatex": "E(\\text{reject}) = n \\times p = 20000 \\times 0.1336",
+        "explanation": "The expected number of rejects is the batch size multiplied by the rejection probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Compute the expected number",
+        "workingLatex": "20000 \\times 0.1336 = 2672",
+        "explanation": "Multiplying gives the expected count of rejected bearings.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State and check the answer",
+        "workingLatex": "E(\\text{reject}) \\approx 2672 \\text{ bearings}",
+        "explanation": "About $2672$ bearings are expected to be rejected. As a check, the two symmetric tails each carry $1 - \\Phi(1.5) = 0.0668$, and $2 \\times 0.0668 \\times 20000 = 2672$, agreeing with our figure.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "About $2672$ bearings are rejected (from $P(\\text{reject}) = 1 - (2\\Phi(1.5) - 1) = 0.1336$ and $20000 \\times 0.1336 = 2672$)."
+  }
+}

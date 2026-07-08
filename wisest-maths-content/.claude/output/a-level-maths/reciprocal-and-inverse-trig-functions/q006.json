@@ -5,60 +5,68 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "value",
+  "marks": 2,
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "cotangent",
-    "exact values"
+    "sec",
+    "exact values",
+    "radians"
   ],
-  "questionText": "Find the exact value of $\\cot 45^\\circ$.",
+  "questionText": "Find the exact value of $\\sec\\dfrac{\\pi}{3}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write cotangent as one over tangent",
-        "workingLatex": "\\cot 45^\\circ = \\frac{1}{\\tan 45^\\circ}",
-        "explanation": "Cotangent is the reciprocal of tangent, so we begin by turning the problem into a tangent calculation whose exact value we know.",
+        "description": "Recall the definition of secant",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "As always, secant is handled by converting it to a cosine and evaluating that.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the exact value of tangent 45 degrees",
-        "workingLatex": "\\tan 45^\\circ = 1",
-        "explanation": "In the $45$-$45$-$90$ triangle the opposite and adjacent sides are equal, so their ratio is exactly $1$.",
+        "description": "Convert the radian angle to degrees",
+        "workingLatex": "\\frac{\\pi}{3} \\text{ rad} = 60^\\circ",
+        "explanation": "Since $\\pi$ radians is $180^\\circ$, a third of $\\pi$ is $60^\\circ$. Recognising this lets us reuse the familiar standard value.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the value",
-        "workingLatex": "\\cot 45^\\circ = \\frac{1}{1}",
-        "explanation": "Replacing tangent with $1$ leaves a very simple reciprocal to evaluate.",
+        "description": "Apply the definition",
+        "workingLatex": "\\sec\\frac{\\pi}{3} = \\frac{1}{\\cos\\tfrac{\\pi}{3}}",
+        "explanation": "Substituting the angle gives one over $\\cos\\tfrac{\\pi}{3}$, which we now evaluate.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate the reciprocal",
-        "workingLatex": "\\frac{1}{1} = 1",
-        "explanation": "The reciprocal of $1$ is itself $1$, so no further work is needed.",
+        "description": "Recall the exact value of cos of pi over 3",
+        "workingLatex": "\\cos\\frac{\\pi}{3} = \\frac{1}{2}",
+        "explanation": "Because $\\tfrac{\\pi}{3}$ is $60^\\circ$, its cosine is $\\tfrac12$, exactly as for $\\cos 60^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Confirm using the sine-cosine form",
-        "workingLatex": "\\cot 45^\\circ = \\frac{\\cos 45^\\circ}{\\sin 45^\\circ} = \\frac{\\frac{\\sqrt{2}}{2}}{\\frac{\\sqrt{2}}{2}} = 1",
-        "explanation": "Checking with the alternative definition, cosine over sine, gives the same answer, which reassures us the result is correct.",
+        "description": "Substitute and simplify",
+        "workingLatex": "\\sec\\frac{\\pi}{3} = \\frac{1}{\\tfrac{1}{2}} = 2",
+        "explanation": "Dividing by $\\tfrac12$ is multiplying by $2$, so the secant equals $2$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\cot 45^\\circ = 1",
-        "explanation": "This is the exact value requested.",
+        "description": "Sanity check the size",
+        "workingLatex": "\\left|\\cos\\tfrac{\\pi}{3}\\right| \\le 1 \\Rightarrow \\left|\\sec\\tfrac{\\pi}{3}\\right| \\ge 1 \\; \\checkmark",
+        "explanation": "A cosine never exceeds $1$ in size, so its reciprocal is at least $1$ in size; a value of $2$ is consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the exact value",
+        "workingLatex": "\\sec\\frac{\\pi}{3} = 2",
+        "explanation": "This is the required exact value, working in radians throughout.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cot 45^\\circ = 1$"
+    "finalAnswer": "$\\sec\\dfrac{\\pi}{3} = 2$."
   }
 }

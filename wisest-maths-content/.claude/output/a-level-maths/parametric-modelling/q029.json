@@ -4,53 +4,165 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
-    "second derivative"
+    "tangent",
+    "trajectory",
+    "sketch"
   ],
-  "questionText": "A curve has parametric equations $x = t^3$, $y = t^2$. Find $\\dfrac{d^2y}{dx^2}$ at $t = 1$.",
+  "questionText": "A bead slides along a wire whose shape is modelled by $x = 2t$ and $y = t^{2}$ (units in metres). Find the equation of the tangent to the wire at the point where $t = 3$, and show it on a sketch of the path.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the first derivative",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{2t}{3t^2} = \\frac{2}{3t}",
-        "explanation": "The parametric gradient is the ratio of the two rates of change, simplified.",
+        "description": "Find the point at t = 3",
+        "workingLatex": "x = 2(3) = 6, \\qquad y = 3^{2} = 9",
+        "explanation": "The tangent touches the wire at the bead's position, so we first find the point $(6,\\,9)$ where $t = 3$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the second derivative rule",
-        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{\\frac{dx}{dt}}",
-        "explanation": "The second derivative is found by differentiating the gradient with respect to $t$, then dividing by $\\frac{dx}{dt}$ again — not by differentiating twice with respect to $t$.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2",
+        "explanation": "The horizontal velocity is constant, the denominator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Differentiate the gradient with respect to t",
-        "workingLatex": "\\frac{d}{dt}\\left(\\frac{2}{3t}\\right) = -\\frac{2}{3t^2}",
-        "explanation": "Writing $\\frac{2}{3t} = \\frac{2}{3}t^{-1}$ and differentiating gives $-\\frac{2}{3}t^{-2}$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2t",
+        "explanation": "The vertical velocity increases with $t$, the numerator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Divide by dx/dt",
-        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{-\\frac{2}{3t^2}}{3t^2} = -\\frac{2}{9t^4}",
-        "explanation": "Dividing by $\\frac{dx}{dt} = 3t^2$ gives the second derivative in terms of $t$.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2t}{2} = t",
+        "explanation": "Dividing the rates and simplifying gives a strikingly simple slope: the gradient equals the parameter $t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Evaluate at t = 1",
-        "workingLatex": "\\frac{d^2y}{dx^2}\\bigg|_{t=1} = -\\frac{2}{9}",
-        "explanation": "Substituting $t = 1$ gives the value $-\\frac{2}{9}$.",
+        "description": "Evaluate the gradient at t = 3",
+        "workingLatex": "\\left.\\dfrac{dy}{dx}\\right|_{t=3} = 3",
+        "explanation": "So the tangent at this point has gradient $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the tangent in point-slope form",
+        "workingLatex": "y - 9 = 3\\left(x - 6\\right)",
+        "explanation": "A line through $(6,\\,9)$ with gradient $3$ is written directly in point-slope form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Expand the bracket",
+        "workingLatex": "y = 3x - 18 + 9",
+        "explanation": "Multiplying out and moving the constant prepares the equation for its final tidy form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify",
+        "workingLatex": "y = 3x - 9",
+        "explanation": "Combining the constants gives the tangent line in slope-intercept form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Show the tangent on a sketch",
+        "workingLatex": "y = 3x - 9 \\ \\text{touches the path at}\\ (6,\\,9)",
+        "explanation": "On the sketch the wire is the upward parabola and the straight line just grazes it at $(6,\\,9)$, matching gradient $3$ there.",
+        "diagram": {
+          "kind": "functionGraph",
+          "xMin": -9,
+          "xMax": 9,
+          "yMin": -4,
+          "yMax": 17,
+          "curves": [
+            {
+              "points": [
+                {
+                  "x": -8,
+                  "y": 16
+                },
+                {
+                  "x": -6,
+                  "y": 9
+                },
+                {
+                  "x": -4,
+                  "y": 4
+                },
+                {
+                  "x": -2,
+                  "y": 1
+                },
+                {
+                  "x": 0,
+                  "y": 0
+                },
+                {
+                  "x": 2,
+                  "y": 1
+                },
+                {
+                  "x": 4,
+                  "y": 4
+                },
+                {
+                  "x": 6,
+                  "y": 9
+                },
+                {
+                  "x": 8,
+                  "y": 16
+                }
+              ],
+              "color": "accent",
+              "label": "path"
+            },
+            {
+              "points": [
+                {
+                  "x": 2,
+                  "y": -3
+                },
+                {
+                  "x": 8,
+                  "y": 15
+                }
+              ],
+              "color": "accent",
+              "label": "tangent"
+            }
+          ],
+          "points": [
+            {
+              "x": 6,
+              "y": 9,
+              "label": "(6,\\,9)",
+              "open": false
+            }
+          ],
+          "xAxisLabel": "x",
+          "yAxisLabel": "y",
+          "caption": "The parabolic wire x = 2t, y = t^2 with the tangent at t = 3.",
+          "alt": "An upward parabola with the point (6, 9) marked and a straight tangent line y = 3x minus 9 touching the curve there."
+        }
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the tangent",
+        "workingLatex": "y = 3x - 9",
+        "explanation": "This line has gradient $3$ and passes through $(6,\\,9)$, so it is the required tangent to the wire.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{d^2y}{dx^2} = -\\dfrac{2}{9}$"
+    "finalAnswer": "The tangent to the wire at $t = 3$ is $y = 3x - 9$, touching the path at $(6,\\,9)$."
   }
 }

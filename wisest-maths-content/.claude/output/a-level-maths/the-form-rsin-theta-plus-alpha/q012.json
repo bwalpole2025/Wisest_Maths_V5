@@ -5,53 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 5,
+  "marks": 3,
   "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "Rcos",
-    "difference"
+    "cosine form"
   ],
-  "questionText": "Express $\\cos\\theta - \\sqrt3\\sin\\theta$ in the form $R\\cos(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionText": "Express $4\\cos\\theta + 3\\sin\\theta$ in the form $R\\cos(\\theta-\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Give $\\alpha$ to $1$ decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the target form",
-        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
-        "explanation": "The cosine form has a minus between the terms, matching the given expression.",
+        "description": "Set up the identity to match",
+        "workingLatex": "4\\cos\\theta + 3\\sin\\theta \\equiv R\\cos(\\theta-\\alpha)",
+        "explanation": "The target here is a cosine wave, so we write the expression identically equal to $R\\cos(\\theta-\\alpha)$. Expanding the right-hand side will let us compare it with the left term by term.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 1, \\quad R\\sin\\alpha = \\sqrt3",
-        "explanation": "Matching the cosine and sine terms gives two equations.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\cos(\\theta-\\alpha) = R\\cos\\alpha\\,\\cos\\theta + R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta-\\alpha)=\\cos\\theta\\cos\\alpha+\\sin\\theta\\sin\\alpha$ and carrying the constant $R$ through gives a multiple of $\\cos\\theta$ plus a multiple of $\\sin\\theta$, exactly the shape of the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{1^2 + (\\sqrt3)^2} = \\sqrt4 = 2",
-        "explanation": "The sum of squares gives $R = 2$.",
+        "description": "Compare coefficients of cosθ and sinθ",
+        "workingLatex": "R\\cos\\alpha = 4, \\qquad R\\sin\\alpha = 3",
+        "explanation": "For the two sides to agree for every $\\theta$, the amount of $\\cos\\theta$ must match and the amount of $\\sin\\theta$ must match, which gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{\\sqrt3}{1} = \\sqrt3 \\;\\Rightarrow\\; \\alpha = 60^\\circ",
-        "explanation": "The ratio gives $\\tan\\alpha = \\sqrt3$, so $\\alpha = 60^\\circ$.",
+        "description": "Find R by squaring and adding",
+        "workingLatex": "R = \\sqrt{4^2 + 3^2} = \\sqrt{25} = 5",
+        "explanation": "Squaring both equations and adding removes $\\alpha$, because $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=4^2+3^2$. We take the positive root since $R>0$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the final form",
-        "workingLatex": "\\cos\\theta - \\sqrt3\\sin\\theta = 2\\cos(\\theta + 60^\\circ)",
-        "explanation": "Combining the exact values gives the harmonic form.",
+        "description": "Divide the equations to isolate tanα",
+        "workingLatex": "\\dfrac{R\\sin\\alpha}{R\\cos\\alpha} = \\dfrac{3}{4} \\Rightarrow \\tan\\alpha = \\dfrac{3}{4}",
+        "explanation": "Dividing the sine equation by the cosine equation cancels $R$, and $\\dfrac{\\sin\\alpha}{\\cos\\alpha}=\\tan\\alpha$, so we are left with a simple equation for the angle alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for the acute angle α",
+        "workingLatex": "\\alpha = \\arctan\\dfrac{3}{4} = 36.9^\\circ",
+        "explanation": "Both matched values are positive, so $\\alpha$ lies in the first quadrant and is acute. Taking the inverse tangent gives $\\alpha=36.9^\\circ$ to $1$ decimal place.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the R-form",
+        "workingLatex": "4\\cos\\theta + 3\\sin\\theta = 5\\cos(\\theta - 36.9^\\circ)",
+        "explanation": "Combining the amplitude $R=5$ and the phase shift $\\alpha=36.9^\\circ$ gives the single cosine wave, which is the required form.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos\\theta - \\sqrt3\\sin\\theta = 2\\cos(\\theta + 60^\\circ)$"
+    "finalAnswer": "$4\\cos\\theta + 3\\sin\\theta = 5\\cos(\\theta - 36.9^\\circ)$, with $R=5$ and $\\alpha=36.9^\\circ$ (to $1$ d.p.)."
   }
 }

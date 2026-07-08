@@ -5,60 +5,96 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 7,
+  "marks": 5,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "double angle argument"
+    "maximum and minimum",
+    "radians"
   ],
-  "questionText": "Solve $5\\sin 2\\theta + 12\\cos 2\\theta = 6.5$ for $0^\\circ \\le \\theta < 180^\\circ$, giving answers to the nearest degree. Use $5\\sin x + 12\\cos x = 13\\sin(x + 67.38^\\circ)$.",
+  "questionText": "Express $3\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence find the maximum and minimum values of $3\\sin\\theta + 4\\cos\\theta + 7$, and the values of $\\theta$ in $0 \\le \\theta \\le 2\\pi$ at which each occurs. Give the angles in radians to $3$ significant figures.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Apply the R-form with x = 2θ",
-        "workingLatex": "13\\sin(2\\theta + 67.38^\\circ) = 6.5",
-        "explanation": "Treating the argument as $2\\theta$ turns the equation into a single sine equation.",
+        "description": "Set up the identity",
+        "workingLatex": "3\\sin\\theta + 4\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "Rewriting the two-term expression as one sine wave is the key move: once it is a single wave of amplitude $R$, its largest and smallest values are read straight off, with no calculus needed.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Isolate the sine",
-        "workingLatex": "\\sin(2\\theta + 67.38^\\circ) = 0.5",
-        "explanation": "Dividing by $13$ gives sine equal to $0.5$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta+\\alpha)$ and multiplying through by $R$ puts the right-hand side into the same $\\sin\\theta$-plus-$\\cos\\theta$ shape as the left, ready for comparison.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the interval for the argument",
-        "workingLatex": "67.38^\\circ \\le 2\\theta + 67.38^\\circ < 427.38^\\circ",
-        "explanation": "Since $\\theta \\in [0^\\circ, 180^\\circ)$, the quantity $2\\theta$ spans $[0^\\circ, 360^\\circ)$, so the shifted argument spans this interval.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 3, \\qquad R\\sin\\alpha = 4",
+        "explanation": "Matching the amount of $\\sin\\theta$ and the amount of $\\cos\\theta$ on each side yields the two defining equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve for the argument",
-        "workingLatex": "2\\theta + 67.38^\\circ = 150^\\circ, 390^\\circ",
-        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$; $30^\\circ$ is out of range, so we use $150^\\circ$ and $30^\\circ + 360^\\circ = 390^\\circ$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5",
+        "explanation": "Squaring and adding eliminates $\\alpha$ through $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=3^2+4^2$. The positive root gives the amplitude $R=5$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for 2θ",
-        "workingLatex": "2\\theta = 82.62^\\circ, 322.62^\\circ",
-        "explanation": "Subtracting the phase shift from each.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{4}{3} \\Rightarrow \\alpha = 0.927",
+        "explanation": "Dividing the two equations leaves $\\tan\\alpha=\\dfrac{4}{3}$. Both coefficients are positive so $\\alpha$ is acute, and in radians $\\alpha=\\arctan\\dfrac{4}{3}=0.927$ to $3$ significant figures.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Halve to find theta",
-        "workingLatex": "\\theta \\approx 41^\\circ, 161^\\circ",
-        "explanation": "Dividing by $2$ and rounding gives the two solutions in the required range.",
+        "description": "State the R-form of the whole expression",
+        "workingLatex": "3\\sin\\theta + 4\\cos\\theta + 7 = 5\\sin(\\theta + 0.927) + 7",
+        "explanation": "The constant $7$ simply rides along unchanged. The expression is now a single wave of amplitude $5$ lifted up by $7$, which makes its extreme values easy to see.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound the sine term",
+        "workingLatex": "-1 \\le \\sin(\\theta + 0.927) \\le 1",
+        "explanation": "Every sine, whatever its argument, stays between $-1$ and $1$. This single fact is what pins down the largest and smallest possible values of the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the maximum value",
+        "workingLatex": "\\text{max} = 5(1) + 7 = 12",
+        "explanation": "The expression is greatest when the sine reaches its ceiling of $+1$. Then $5(1)+7=12$, so the maximum value is $12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find θ for the maximum",
+        "workingLatex": "\\theta + 0.927 = \\dfrac{\\pi}{2} \\Rightarrow \\theta = \\dfrac{\\pi}{2} - 0.927 = 0.644",
+        "explanation": "A sine equals $+1$ when its angle is $\\dfrac{\\pi}{2}$. Solving $\\theta+0.927=\\dfrac{\\pi}{2}$ gives $\\theta=0.644$, which lies in the required interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the minimum value",
+        "workingLatex": "\\text{min} = 5(-1) + 7 = 2",
+        "explanation": "The expression is smallest when the sine drops to its floor of $-1$. Then $5(-1)+7=2$, so the minimum value is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find θ for the minimum",
+        "workingLatex": "\\theta + 0.927 = \\dfrac{3\\pi}{2} \\Rightarrow \\theta = \\dfrac{3\\pi}{2} - 0.927 = 3.79",
+        "explanation": "A sine equals $-1$ when its angle is $\\dfrac{3\\pi}{2}$. Solving $\\theta+0.927=\\dfrac{3\\pi}{2}$ gives $\\theta=3.79$, which also lies in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 41^\\circ, 161^\\circ$"
+    "finalAnswer": "$3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta+0.927)$. The maximum value is $12$ at $\\theta = 0.644$, and the minimum value is $2$ at $\\theta = 3.79$ (angles in radians to $3$ s.f.)."
   }
 }

@@ -5,61 +5,75 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "cotangent",
-    "exact values",
-    "surds"
+    "sec",
+    "quadrant",
+    "exact values"
   ],
-  "questionText": "Find the exact value of $\\cot 30^\\circ$.",
+  "questionText": "Find the exact value of $\\sec 120^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Use the sine-cosine form of cotangent",
-        "workingLatex": "\\cot 30^\\circ = \\frac{\\cos 30^\\circ}{\\sin 30^\\circ}",
-        "explanation": "Writing cotangent as cosine over sine is convenient here because both exact values are simple to substitute.",
+        "description": "Recall the definition of secant",
+        "workingLatex": "\\sec 120^\\circ = \\frac{1}{\\cos 120^\\circ}",
+        "explanation": "As before, we turn the secant into a cosine; the only new feature here is that $120^\\circ$ is not one of the acute standard angles.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the exact value of cosine 30 degrees",
-        "workingLatex": "\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}",
-        "explanation": "This is a standard exact value from the $30$-$60$-$90$ triangle.",
+        "description": "Identify the quadrant",
+        "workingLatex": "90^\\circ < 120^\\circ < 180^\\circ \\Rightarrow \\theta \\text{ in quadrant 2}",
+        "explanation": "Angles between $90^\\circ$ and $180^\\circ$ lie in the second quadrant, which tells us the sign of the cosine to expect.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall the exact value of sine 30 degrees",
-        "workingLatex": "\\sin 30^\\circ = \\frac{1}{2}",
-        "explanation": "This is the matching exact value from the same special triangle.",
+        "description": "Find the reference angle",
+        "workingLatex": "180^\\circ - 120^\\circ = 60^\\circ",
+        "explanation": "The reference angle is the acute angle to the horizontal axis. For a second-quadrant angle it is $180^\\circ$ minus the angle, giving $60^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute both values",
-        "workingLatex": "\\cot 30^\\circ = \\frac{\\;\\frac{\\sqrt{3}}{2}\\;}{\\;\\frac{1}{2}\\;}",
-        "explanation": "Placing cosine over sine gives a fraction divided by a fraction, ready to simplify.",
+        "description": "Determine the sign of cosine",
+        "workingLatex": "\\cos 120^\\circ = -\\cos 60^\\circ",
+        "explanation": "In the second quadrant cosine is negative (only sine is positive there), so the value carries a minus sign in front of the reference-angle cosine.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify the compound fraction",
-        "workingLatex": "\\frac{\\sqrt{3}}{2} \\times \\frac{2}{1} = \\sqrt{3}",
-        "explanation": "Dividing by $\\frac{1}{2}$ is the same as multiplying by $2$, and the twos cancel to leave $\\sqrt{3}$.",
+        "description": "Substitute the reference value",
+        "workingLatex": "\\cos 120^\\circ = -\\frac{1}{2}",
+        "explanation": "Since $\\cos 60^\\circ=\\tfrac12$, applying the negative sign gives $\\cos 120^\\circ=-\\tfrac12$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\cot 30^\\circ = \\sqrt{3}",
-        "explanation": "This is the exact value; note it is already in simplest surd form with no denominator to rationalise.",
+        "description": "Substitute into the secant definition",
+        "workingLatex": "\\sec 120^\\circ = \\frac{1}{-\\tfrac{1}{2}}",
+        "explanation": "Now we take one over the negative cosine value we found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify",
+        "workingLatex": "\\frac{1}{-\\tfrac{1}{2}} = -2",
+        "explanation": "Dividing by $-\\tfrac12$ multiplies by $-2$, so the reciprocal of $-\\tfrac12$ is $-2$; the sign is inherited from the cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the exact value",
+        "workingLatex": "\\sec 120^\\circ = -2",
+        "explanation": "The negative sign is essential: $\\sec 120^\\circ=-2$, not $2$, because $120^\\circ$ sits in the second quadrant.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cot 30^\\circ = \\sqrt{3}$"
+    "finalAnswer": "$\\sec 120^\\circ = -2$."
   }
 }

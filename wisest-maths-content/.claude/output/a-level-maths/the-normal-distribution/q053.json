@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.stats.normal-distribution.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "simultaneous equations",
+    "probability"
+  ],
+  "questionText": "The heights, $X$ cm, of adult males in a region are modelled by $X \\sim N(\\mu, \\sigma^2)$. It is found that $15\\%$ of men are shorter than $160$ cm and $10\\%$ are taller than $185$ cm. (a) Find $\\mu$ and $\\sigma$ to $3$ significant figures. (b) Using your values, find the proportion of men with height between $165$ cm and $180$ cm.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 160) = 0.15, \\qquad P(X > 185) = 0.10",
+        "explanation": "Heights are normal with unknown $\\mu$ and $\\sigma$. ‘$15\\%$ shorter than $160$’ gives $P(X<160)=0.15$ and ‘$10\\%$ taller than $185$’ gives $P(X>185)=0.10$. These two proportions fix the two parameters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{160 - \\mu}{\\sigma}\\right) = 0.15",
+        "explanation": "Standardising with $Z=\\dfrac{X-\\mu}{\\sigma}$ turns the height $160$ into $\\dfrac{160-\\mu}{\\sigma}$, keeping the lower-tail area at $0.15$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.15) = -1.0364",
+        "explanation": "With only $15\\%$ of the area below it, this standardised value lies left of the mean and is therefore negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{160 - \\mu}{\\sigma} = -1.0364",
+        "explanation": "Equating the standardised value of $160$ with $z_1$ gives the first equation linking $\\mu$ and $\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Convert and standardise the second condition",
+        "workingLatex": "P(X < 185) = 1 - 0.10 = 0.90 \\ \\Rightarrow\\ P\\left(Z < \\dfrac{185 - \\mu}{\\sigma}\\right) = 0.90",
+        "explanation": "Since $10\\%$ are taller than $185$, exactly $90\\%$ are shorter; converting to the lower tail lets us apply the inverse normal after standardising $185$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the second z-value",
+        "workingLatex": "z_2 = \\Phi^{-1}(0.90) = 1.2816",
+        "explanation": "The value with $90\\%$ of the area below it is positive; the inverse normal gives $z_2 = 1.2816$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{185 - \\mu}{\\sigma} = 1.2816",
+        "explanation": "Equating the standardised value of $185$ with $z_2$ completes the simultaneous pair.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Subtract the equations (cleared of fractions) to eliminate mu",
+        "workingLatex": "185 - 160 = (1.2816 - (-1.0364))\\,\\sigma \\ \\Rightarrow\\ 25 = 2.3180\\,\\sigma",
+        "explanation": "Writing each as ‘value $-\\ \\mu = z\\sigma$’ and subtracting removes $\\mu$. The $25$ cm gap in heights matches a gap of $2.318$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{25}{2.3180} = 10.79",
+        "explanation": "Dividing the height gap by the standardised gap gives the standard deviation, about $10.8$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 160 + 1.0364 \\times 10.79 = 171.2",
+        "explanation": "From the first equation $\\mu = 160 + 1.0364\\,\\sigma$. The mean height of about $171$ cm sits comfortably between the two quoted heights.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the parameters (part a)",
+        "workingLatex": "\\mu \\approx 171, \\qquad \\sigma \\approx 10.8",
+        "explanation": "To three significant figures the model is $X \\sim N(171,\\ 10.8^2)$ cm; these values answer part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set up part (b) and standardise both limits",
+        "workingLatex": "P(165 < X < 180) = P\\left(\\dfrac{165 - 171}{10.8} < Z < \\dfrac{180 - 171}{10.8}\\right)",
+        "explanation": "For part (b) we need the area between two heights, so we standardise each limit using the parameters just found. This converts the question into a standard-normal interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Evaluate the two z-values",
+        "workingLatex": "z = \\dfrac{165 - 171}{10.8} = -0.556, \\qquad z = \\dfrac{180 - 171}{10.8} = 0.833",
+        "explanation": "The lower height $165$ is just below the mean, giving a small negative $z$, while $180$ is above the mean, giving a positive $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Write the probability as a difference of Phi values",
+        "workingLatex": "P(165 < X < 180) = \\Phi(0.833) - \\Phi(-0.556) = 0.7977 - 0.2893",
+        "explanation": "The area between two points is the cumulative probability up to the upper limit minus that up to the lower limit; the calculator supplies each $\\Phi$ value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Compute the proportion",
+        "workingLatex": "P(165 < X < 180) = 0.5084 \\approx 0.508",
+        "explanation": "So about $50.8\\%$ of men have a height between $165$ cm and $180$ cm — roughly half the population, which is reasonable since this band straddles the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 171$ cm, $\\sigma \\approx 10.8$ cm. (b) $P(165 < X < 180) \\approx 0.508$."
+  }
+}

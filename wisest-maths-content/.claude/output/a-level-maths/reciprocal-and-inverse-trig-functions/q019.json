@@ -5,61 +5,67 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "statement",
+  "marks": 4,
+  "answerType": "written",
   "tags": [
     "inverse trig",
-    "arccos",
-    "domain",
-    "range"
+    "arcsin",
+    "domain and range"
   ],
-  "questionText": "State the domain and range of $y = \\arccos x$.",
+  "questionText": "State the domain and range of the inverse function $y = \\arcsin x$, and explain why the domain of $\\sin$ must be restricted before it can have an inverse.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall what arccosine inverts",
-        "workingLatex": "y = \\arccos x \\;\\Leftrightarrow\\; x = \\cos y",
-        "explanation": "Arccosine is the inverse of cosine, so its domain and range come from swapping cosine's range and restricted domain.",
+        "description": "State the one-to-one requirement",
+        "workingLatex": "\\text{inverse exists} \\iff \\text{function is one-to-one}",
+        "explanation": "A function can only be reversed if each output comes from exactly one input. Otherwise the reverse process would not know which input to return.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the range of cosine",
-        "workingLatex": "-1 \\le \\cos y \\le 1",
-        "explanation": "Cosine only outputs values between $-1$ and $1$, so those are the permitted inputs to arccosine.",
+        "description": "Show sine is many-to-one",
+        "workingLatex": "\\sin 30^\\circ = \\sin 150^\\circ = \\tfrac{1}{2}",
+        "explanation": "Over its full domain sine repeats values — for instance $\\tfrac12$ is produced by both $30^\\circ$ and $150^\\circ$ — so as it stands sine is not one-to-one and has no inverse.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Deduce the domain of arccosine",
-        "workingLatex": "\\text{domain: } -1 \\le x \\le 1",
-        "explanation": "The range of cosine becomes the domain of its inverse, so arccosine accepts inputs from $-1$ to $1$.",
+        "description": "Restrict the domain of sine",
+        "workingLatex": "-\\tfrac{\\pi}{2} \\le x \\le \\tfrac{\\pi}{2}",
+        "explanation": "We cut sine down to the interval from $-\\tfrac{\\pi}{2}$ to $\\tfrac{\\pi}{2}$ (that is $-90^\\circ$ to $90^\\circ$), where it increases steadily and so hits each value only once.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recall the restricted domain of cosine used for inversion",
-        "workingLatex": "0 \\le y \\le \\pi",
-        "explanation": "Cosine is made invertible by restricting it to $[0,\\pi]$, where it decreases through every value once. This becomes the range of arccosine.",
+        "description": "Note the values it covers",
+        "workingLatex": "\\sin\\!\\left(-\\tfrac{\\pi}{2}\\right) = -1, \\qquad \\sin\\!\\left(\\tfrac{\\pi}{2}\\right) = 1",
+        "explanation": "On this restricted piece sine climbs from $-1$ up to $1$, taking every value in between exactly once — perfect for defining an inverse.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Deduce the range of arccosine",
-        "workingLatex": "\\text{range: } 0 \\le y \\le \\pi",
-        "explanation": "The outputs of arccosine are exactly the angles in that restricted domain.",
+        "description": "Read off the domain of arcsin",
+        "workingLatex": "\\text{domain of } \\arcsin: \\ -1 \\le x \\le 1",
+        "explanation": "The inputs of the inverse are the outputs of sine, so $\\arcsin$ accepts exactly the numbers from $-1$ to $1$. Asking for $\\arcsin 2$ is meaningless — no angle has sine $2$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State both together",
-        "workingLatex": "-1 \\le x \\le 1, \\quad 0 \\le \\arccos x \\le \\pi",
-        "explanation": "This gives the domain and range in a single summary, as required. Note the range differs from arcsine's, being $[0,\\pi]$ rather than symmetric about zero.",
+        "description": "Read off the range of arcsin",
+        "workingLatex": "\\text{range of } \\arcsin: \\ -\\tfrac{\\pi}{2} \\le y \\le \\tfrac{\\pi}{2}",
+        "explanation": "The outputs of the inverse are the restricted inputs of sine, so $\\arcsin$ returns exactly one angle between $-\\tfrac{\\pi}{2}$ and $\\tfrac{\\pi}{2}$ — its principal value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\arcsin: [-1, 1] \\to \\left[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right]",
+        "explanation": "So $\\arcsin$ has domain $[-1,1]$ and range $[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}]$, a direct consequence of restricting sine to make it reversible.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Domain: $-1 \\le x \\le 1$; Range: $0 \\le y \\le \\pi$."
+    "finalAnswer": "$y=\\arcsin x$ has domain $-1 \\le x \\le 1$ and range $-\\tfrac{\\pi}{2} \\le y \\le \\tfrac{\\pi}{2}$. Sine must first be restricted to $[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}]$ so that it is one-to-one; otherwise repeated outputs would make the inverse ambiguous."
   }
 }

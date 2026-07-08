@@ -6,52 +6,73 @@
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
   "marks": 4,
-  "answerType": "expression",
+  "answerType": "coordinates",
   "tags": [
+    "r form",
     "harmonic form",
-    "Rsin",
-    "surds"
+    "maximum"
   ],
-  "questionText": "Express $2\\sin\\theta + 2\\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionText": "Express $3\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$ with $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Hence write down the maximum value of $3\\sin\\theta + 4\\cos\\theta$ and the value of $\\theta$ in the interval $0^\\circ\\le\\theta<360^\\circ$ at which it occurs. Give $\\alpha$ and $\\theta$ to $1$ decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the target form",
-        "workingLatex": "R\\sin(\\theta + \\alpha) = R\\cos\\alpha\\sin\\theta + R\\sin\\alpha\\cos\\theta",
-        "explanation": "The expansion prepares the coefficient comparison.",
+        "description": "Set up the identity to match",
+        "workingLatex": "3\\sin\\theta + 4\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "Writing the expression as a single sine wave makes its maximum obvious, because a sine wave has amplitude $R$. We start from the identity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 2, \\quad R\\sin\\alpha = 2",
-        "explanation": "Both coefficients are $2$, which will make $\\alpha$ a familiar angle.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, the same shape as the left-hand side, ready for comparison.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R",
-        "workingLatex": "R^2 = 2^2 + 2^2 = 8 \\;\\Rightarrow\\; R = 2\\sqrt2",
-        "explanation": "The sum of squares is $8$, whose root is $2\\sqrt2$.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 3, \\qquad R\\sin\\alpha = 4",
+        "explanation": "Matching the coefficients of $\\sin\\theta$ and $\\cos\\theta$ on both sides gives these two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{2}{2} = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
-        "explanation": "Equal components give $\\tan\\alpha = 1$, so $\\alpha = 45^\\circ$.",
+        "description": "Find R using R² = a² + b²",
+        "workingLatex": "R = \\sqrt{3^2 + 4^2} = \\sqrt{25} = 5",
+        "explanation": "Squaring and adding removes $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=9+16=25$, so the positive amplitude is $R=5$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the final form",
-        "workingLatex": "2\\sin\\theta + 2\\cos\\theta = 2\\sqrt2\\sin(\\theta + 45^\\circ)",
-        "explanation": "Combining the exact $R$ and $\\alpha$ gives the harmonic form.",
+        "description": "Find α using tanα = b/a",
+        "workingLatex": "\\tan\\alpha = \\dfrac{4}{3} \\Rightarrow \\alpha = 53.1^\\circ",
+        "explanation": "Dividing the two equations cancels $R$ and gives $\\tan\\alpha=\\tfrac{4}{3}$. Both coefficients are positive, so $\\alpha$ is acute and $\\alpha=53.1^\\circ$ to one decimal place.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the R-form",
+        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta+53.1^\\circ)",
+        "explanation": "The expression is now a single sine wave of amplitude $5$, so it varies smoothly between $-5$ and $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Read off the maximum value",
+        "workingLatex": "\\sin(\\theta+53.1^\\circ) \\le 1 \\Rightarrow 5\\sin(\\theta+53.1^\\circ) \\le 5",
+        "explanation": "Since $\\sin$ never exceeds $1$, the largest the expression can be is $5\\times 1=5$. No calculus is needed: the maximum of any $R\\sin(\\cdots)$ is simply $R$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find where the maximum occurs",
+        "workingLatex": "\\theta + 53.1^\\circ = 90^\\circ \\Rightarrow \\theta = 36.9^\\circ",
+        "explanation": "The maximum happens when the sine equals $1$, that is when its angle is $90^\\circ$. Solving $\\theta+53.1^\\circ=90^\\circ$ gives $\\theta=36.9^\\circ$, which lies in the required interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$2\\sin\\theta + 2\\cos\\theta = 2\\sqrt2\\sin(\\theta + 45^\\circ)$"
+    "finalAnswer": "$3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta+53.1^\\circ)$; the maximum value is $5$, occurring at $\\theta = 36.9^\\circ$."
   }
 }

@@ -5,53 +5,109 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "projectile",
-    "landing speed"
+    "cubic",
+    "intersection",
+    "root selection"
   ],
-  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find its speed at the moment it lands.",
+  "questionText": "A model boat's position in metres at time $t$ seconds, for $0 \\le t \\le 3$, is $x = t + 1$ and $y = t^{3} - 6t^{2} + 8t + 2$. Its starting height is $y = 2$. (a) Find, after launch, the time(s) at which the boat is again at height $y = 2$. (b) State which of these occur within the modelled interval and give the coordinates. (c) Find the gradient of the path at that point.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the landing time",
-        "workingLatex": "15t - 5t^2 = 0 \\;\\Rightarrow\\; t = 3",
-        "explanation": "The projectile lands when $y = 0$ again, at $t = 3$ s.",
+        "description": "Set the height equal to 2",
+        "workingLatex": "t^{3} - 6t^{2} + 8t + 2 = 2",
+        "explanation": "We want the times when the boat's height equals its starting value $2$, so we set the height expression equal to $2$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 20, \\quad v_y = 15 - 10t",
-        "explanation": "Differentiating each position component.",
+        "description": "Simplify to a cubic equal to zero",
+        "workingLatex": "t^{3} - 6t^{2} + 8t = 0",
+        "explanation": "Subtracting $2$ from both sides removes the constant and leaves a cubic whose roots are the required times.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate at landing",
-        "workingLatex": "v_x = 20, \\quad v_y = 15 - 30 = -15",
-        "explanation": "At $t = 3$ the vertical velocity is $-15$ (downward), as expected on landing.",
+        "description": "Factor out the common t",
+        "workingLatex": "t\\left(t^{2} - 6t + 8\\right) = 0",
+        "explanation": "Every term has a factor of $t$, so taking it out reveals one root immediately and leaves a quadratic.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the speed",
-        "workingLatex": "\\text{speed} = \\sqrt{20^2 + (-15)^2} = \\sqrt{625}",
-        "explanation": "Speed uses the magnitude of the velocity, so the sign of $v_y$ does not matter.",
+        "description": "Factorise the quadratic",
+        "workingLatex": "t(t - 2)(t - 4) = 0",
+        "explanation": "The quadratic $t^{2} - 6t + 8$ factorises into $(t-2)(t-4)$, giving all three roots of the cubic.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "= 25 \\text{ m/s}",
-        "explanation": "The landing speed is $25$ m/s.",
+        "description": "List all roots",
+        "workingLatex": "t = 0, \\quad t = 2, \\quad t = 4",
+        "explanation": "These are the three times at which the height is $2$; we now decide which are physically relevant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Exclude the launch instant",
+        "workingLatex": "t = 0 \\;\\text{is the start (excluded, we want \"after launch\")}",
+        "explanation": "The root $t=0$ is simply the boat's starting position, but the question asks for later times, so we set it aside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the modelled interval",
+        "workingLatex": "0 \\le t \\le 3 \\;\\Rightarrow\\; t = 2 \\text{ valid}, \\; t = 4 \\text{ rejected}",
+        "explanation": "The model only runs to $t = 3$, so $t=4$ lies outside it and is rejected; the only genuine later time is $t = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the x-coordinate at t = 2",
+        "workingLatex": "x = t + 1 = 2 + 1 = 3",
+        "explanation": "Substituting the valid time into the horizontal position gives the $x$-coordinate of that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the y-coordinate",
+        "workingLatex": "y = 2",
+        "explanation": "By construction the height there is $2$, so the point on the path is $(3,\\,2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 1",
+        "explanation": "For the gradient we need the horizontal velocity, which is constant at $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 3t^{2} - 12t + 8",
+        "explanation": "Differentiating the cubic height term by term gives the vertical velocity as a function of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{3t^{2} - 12t + 8}{1}",
+        "explanation": "Dividing the vertical rate by the horizontal rate gives the slope of the path; here the denominator is $1$, so the gradient is just $\\dot{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Evaluate the gradient at t = 2",
+        "workingLatex": "\\left.\\dfrac{dy}{dx}\\right|_{t=2} = 3(2)^{2} - 12(2) + 8 = 12 - 24 + 8 = -4",
+        "explanation": "Substituting $t=2$ gives the gradient $-4$; the negative value tells us the boat is heading downward as it moves to the right.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Landing speed $= 25$ m/s"
+    "finalAnswer": "After launch the boat is at height $2$ again at $t = 2$ (within range) and $t = 4$ (rejected, outside $0 \\le t \\le 3$); the launch root $t=0$ is excluded. The relevant point is $(3,\\,2)$, where the gradient of the path is $-4$."
   }
 }

@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "vertical tangent",
+    "ellipse"
+  ],
+  "questionText": "The ellipse $C$ has equation $\\dfrac{x^2}{9} + \\dfrac{y^2}{4} = 1$. Find the coordinates of the points on $C$ where the tangent is parallel to the $y$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the whole equation with respect to x",
+        "workingLatex": "\\frac{d}{dx}\\!\\left(\\frac{x^2}{9}\\right) + \\frac{d}{dx}\\!\\left(\\frac{y^2}{4}\\right) = \\frac{d}{dx}(1)",
+        "explanation": "We differentiate both sides with respect to $x$, treating $y$ as a function of $x$. The constant $1$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the x-term",
+        "workingLatex": "\\frac{d}{dx}\\!\\left(\\frac{x^2}{9}\\right) = \\frac{2x}{9}",
+        "explanation": "The factor $\\frac{1}{9}$ is a constant, so differentiating $x^2$ by the power rule gives $\\frac{2x}{9}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the y-term with the chain rule",
+        "workingLatex": "\\frac{d}{dx}\\!\\left(\\frac{y^2}{4}\\right) = \\frac{2y}{4}\\frac{dy}{dx} = \\frac{y}{2}\\frac{dy}{dx}",
+        "explanation": "Differentiating $y^2$ needs the chain rule, giving $2y\\frac{dy}{dx}$; dividing by $4$ and simplifying gives $\\frac{y}{2}\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "\\frac{2x}{9} + \\frac{y}{2}\\frac{dy}{dx} = 0",
+        "explanation": "Putting the two derivatives together gives an equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{9} \\cdot \\frac{2}{y} = -\\frac{4x}{9y}",
+        "explanation": "Rearranging and multiplying by $\\frac{2}{y}$ gives the gradient as a single fraction in $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the condition for a tangent parallel to the y-axis",
+        "workingLatex": "\\text{Vertical tangent} \\;\\Rightarrow\\; 9y = 0 \\;\\Rightarrow\\; y = 0",
+        "explanation": "A tangent parallel to the $y$-axis is vertical, so the gradient is undefined. This occurs where the denominator $9y$ is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute y = 0 into the ellipse equation",
+        "workingLatex": "\\frac{x^2}{9} + \\frac{0^2}{4} = 1",
+        "explanation": "The points lie on $C$, so we put $y = 0$ into its equation to find the $x$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for x",
+        "workingLatex": "\\frac{x^2}{9} = 1 \\;\\Rightarrow\\; x^2 = 9 \\;\\Rightarrow\\; x = \\pm 3",
+        "explanation": "Multiplying by $9$ and taking square roots gives the two $x$-coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the numerator is non-zero",
+        "workingLatex": "-4x = \\mp 12 \\neq 0",
+        "explanation": "The numerator $-4x$ is non-zero at both points, so the gradient is genuinely undefined — a true vertical tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the coordinates",
+        "workingLatex": "(3,\\, 0) \\quad\\text{and}\\quad (-3,\\, 0)",
+        "explanation": "These are the endpoints of the major axis, where the tangent is parallel to the $y$-axis.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent is parallel to the $y$-axis at $(3,\\, 0)$ and $(-3,\\, 0)$."
+  }
+}

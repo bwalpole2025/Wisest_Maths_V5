@@ -4,61 +4,89 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "velocity",
-    "direction"
+    "cartesian",
+    "greatest height",
+    "parabola"
   ],
-  "questionText": "A particle has position $x = t^2$, $y = t^3$ (metres) at time $t$ seconds. Find the time(s) at which the horizontal and vertical velocity components are equal.",
+  "questionText": "A jet of water from a fountain is modelled by $x = t + 1$ and $y = 6t - t^{2}$, where $x$ and $y$ are horizontal and vertical distances in metres and $t \\ge 0$. By converting the path to a Cartesian equation, identify the shape of the path, find the greatest height of the water, and find the horizontal distance between the two points where the water is at ground level $(y = 0)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 2t, \\quad v_y = 3t^2",
-        "explanation": "Differentiating each position component.",
+        "description": "Make t the subject of the x-equation",
+        "workingLatex": "x = t + 1 \\;\\Rightarrow\\; t = x - 1",
+        "explanation": "To get a single equation linking $x$ and $y$, we eliminate the parameter $t$. The $x$-equation is the easiest to rearrange, so we make $t$ the subject first.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set the components equal",
-        "workingLatex": "2t = 3t^2",
-        "explanation": "We want the times when the two velocity components have the same value.",
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = 6(x - 1) - (x - 1)^{2}",
+        "explanation": "Replacing every $t$ in the height equation with $x - 1$ removes the parameter, leaving a relationship purely between the horizontal and vertical positions.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Move to one side",
-        "workingLatex": "3t^2 - 2t = 0",
-        "explanation": "Rearranging prepares for factorising rather than dividing (which would lose $t = 0$).",
+        "description": "Expand the brackets",
+        "workingLatex": "y = 6x - 6 - (x^{2} - 2x + 1) = -x^{2} + 8x - 7",
+        "explanation": "Expanding and collecting like terms turns the expression into a standard quadratic in $x$, which is much easier to interpret.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "t(3t - 2) = 0",
-        "explanation": "Taking out the common factor $t$.",
+        "description": "Identify the shape of the path",
+        "workingLatex": "y = -x^{2} + 8x - 7",
+        "explanation": "Because $y$ is a quadratic in $x$ with a negative $x^{2}$ coefficient, the path is a parabola opening downwards. Its highest point is therefore the vertex.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve",
-        "workingLatex": "t = 0 \\text{ or } t = \\frac{2}{3}",
-        "explanation": "Each root is a time at which the components are equal.",
+        "description": "Complete the square to locate the vertex",
+        "workingLatex": "y = -\\left(x^{2} - 8x\\right) - 7 = -\\left((x - 4)^{2} - 16\\right) - 7",
+        "explanation": "Completing the square rewrites the quadratic so the turning point can be read off directly, without needing calculus.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "t = 0 \\text{ and } t = \\frac{2}{3} \\text{ s}",
-        "explanation": "At these times the velocity is directed at $45^\\circ$ (equal components), except $t = 0$ where the particle is momentarily at rest.",
+        "description": "Simplify to vertex form",
+        "workingLatex": "y = -(x - 4)^{2} + 9",
+        "explanation": "The term $-(x-4)^{2}$ is never positive, so $y$ is largest when it equals zero, at $x = 4$. That makes the maximum value of $y$ equal to $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the greatest height",
+        "workingLatex": "y_{\\max} = 9 \\quad \\text{at } x = 4",
+        "explanation": "The vertex $(4, 9)$ is the top of the arch, so the water reaches a greatest height of $9$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the height to zero for ground level",
+        "workingLatex": "-(x - 4)^{2} + 9 = 0",
+        "explanation": "The water is at ground level when $y = 0$. Using the completed-square form makes solving this quick.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the two ground-level positions",
+        "workingLatex": "(x - 4)^{2} = 9 \\;\\Rightarrow\\; x - 4 = \\pm 3 \\;\\Rightarrow\\; x = 1 \\text{ or } x = 7",
+        "explanation": "The square root gives two values because the parabola meets the ground on both sides of its peak.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the horizontal distance between them",
+        "workingLatex": "7 - 1 = 6",
+        "explanation": "Subtracting the two horizontal positions gives the width of the arch at ground level.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$t = 0$ and $t = \\dfrac{2}{3}$ s."
+    "finalAnswer": "The path is a downward parabola, $y = -(x - 4)^{2} + 9$. The greatest height of the water is $9$ m (at $x = 4$), and the two ground-level points are $6$ m apart."
   }
 }

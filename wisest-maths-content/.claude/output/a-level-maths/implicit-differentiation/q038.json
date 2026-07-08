@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "trigonometry",
+    "product rule"
+  ],
+  "questionText": "The curve $C$ has equation $x\\cos y = 1$. Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$, and evaluate it at the point $\\left(2, \\tfrac{\\pi}{3}\\right)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}\\left(x\\cos y\\right) = \\frac{d}{dx}(1)",
+        "explanation": "We differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$. The constant $1$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{d}{dx}\\left(x\\cos y\\right) = \\cos y\\cdot 1 + x\\cdot\\frac{d}{dx}(\\cos y)",
+        "explanation": "The left side is a product of $x$ and $\\cos y$: differentiate $x$ keeping $\\cos y$, then keep $x$ and differentiate $\\cos y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate cos y with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(\\cos y) = -\\sin y\\,\\frac{dy}{dx}",
+        "explanation": "The derivative of $\\cos y$ is $-\\sin y$, multiplied by $\\frac{dy}{dx}$ because $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "\\cos y - x\\sin y\\,\\frac{dy}{dx} = 0",
+        "explanation": "Combining the product-rule pieces gives one equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Isolate the dy/dx term",
+        "workingLatex": "x\\sin y\\,\\frac{dy}{dx} = \\cos y",
+        "explanation": "Moving the $\\frac{dy}{dx}$ term to one side and the rest to the other prepares us to divide.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\cos y}{x\\sin y}",
+        "explanation": "Dividing by $x\\sin y$ gives the gradient in terms of $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the point lies on the curve",
+        "workingLatex": "2\\cos\\frac{\\pi}{3} = 2\\cdot\\frac{1}{2} = 1 \\;\\checkmark",
+        "explanation": "Since $\\cos\\tfrac{\\pi}{3} = \\tfrac{1}{2}$, the point $\\left(2,\\tfrac{\\pi}{3}\\right)$ satisfies $x\\cos y = 1$, so it lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute the point's values",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\cos\\frac{\\pi}{3}}{2\\sin\\frac{\\pi}{3}} = \\frac{\\tfrac{1}{2}}{2\\cdot\\tfrac{\\sqrt{3}}{2}}",
+        "explanation": "Using $\\cos\\tfrac{\\pi}{3} = \\tfrac{1}{2}$ and $\\sin\\tfrac{\\pi}{3} = \\tfrac{\\sqrt{3}}{2}$ (angles in radians).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the fraction",
+        "workingLatex": "= \\frac{\\tfrac{1}{2}}{\\sqrt{3}} = \\frac{1}{2\\sqrt{3}} = \\frac{\\sqrt{3}}{6}",
+        "explanation": "The denominator simplifies to $\\sqrt{3}$; rationalising gives the exact gradient $\\tfrac{\\sqrt{3}}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\cos y}{x\\sin y}, \\qquad \\left.\\frac{dy}{dx}\\right|_{(2,\\frac{\\pi}{3})} = \\frac{\\sqrt{3}}{6}",
+        "explanation": "So the gradient function is $\\tfrac{\\cos y}{x\\sin y}$ and its value at $\\left(2,\\tfrac{\\pi}{3}\\right)$ is $\\tfrac{\\sqrt{3}}{6}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{\\cos y}{x\\sin y}$; at $\\left(2,\\tfrac{\\pi}{3}\\right)$ it equals $\\dfrac{\\sqrt{3}}{6}$."
+  }
+}

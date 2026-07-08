@@ -5,61 +5,60 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "coordinates",
   "tags": [
     "parametric",
-    "cartesian",
-    "trig",
-    "circle"
+    "y-axis intercept",
+    "substitution"
   ],
-  "questionText": "A curve has parametric equations $x = 3\\cos\\theta$, $y = 3\\sin\\theta$. Find the Cartesian equation and describe the curve.",
+  "questionText": "A curve is given by $x = t - 2$ and $y = 3t + 1$. Find the coordinates of the point where the curve crosses the $y$-axis.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make the trig functions the subjects",
-        "workingLatex": "\\cos\\theta = \\frac{x}{3}, \\quad \\sin\\theta = \\frac{y}{3}",
-        "explanation": "When the parameter is an angle, we eliminate it using a trig identity. First isolate $\\cos\\theta$ and $\\sin\\theta$.",
+        "description": "State the condition for the y-axis",
+        "workingLatex": "x = 0",
+        "explanation": "Every point on the $y$-axis has zero horizontal distance, so the curve meets it where the $x$-coordinate equals $0$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Choose the Pythagorean identity",
-        "workingLatex": "\\cos^2\\theta + \\sin^2\\theta = 1",
-        "explanation": "This identity lets us combine the two expressions and remove $\\theta$.",
+        "description": "Set the x-equation to zero",
+        "workingLatex": "t - 2 = 0",
+        "explanation": "Replacing $x$ with $0$ in $x = t - 2$ turns the condition into an equation for $t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute",
-        "workingLatex": "\\left(\\frac{x}{3}\\right)^2 + \\left(\\frac{y}{3}\\right)^2 = 1",
-        "explanation": "Inserting the expressions for cosine and sine gives an equation in $x$ and $y$.",
+        "description": "Solve for t",
+        "workingLatex": "t = 2",
+        "explanation": "Adding $2$ to both sides gives the value of $t$ at the crossing point.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify",
-        "workingLatex": "\\frac{x^2}{9} + \\frac{y^2}{9} = 1",
-        "explanation": "Squaring each fraction gives denominators of $9$.",
+        "description": "Substitute t into the y-equation",
+        "workingLatex": "y = 3(2) + 1",
+        "explanation": "With $t$ known, the $y$-equation gives the height at which the curve cuts the axis.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Multiply through by 9",
-        "workingLatex": "x^2 + y^2 = 9",
-        "explanation": "Clearing the denominator gives the standard circle equation.",
+        "description": "Evaluate y",
+        "workingLatex": "y = 6 + 1 = 7",
+        "explanation": "Working out the arithmetic gives the $y$-coordinate of the crossing point.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Describe the curve",
-        "workingLatex": "x^2 + y^2 = 9 \\text{ (circle, centre } O, \\text{ radius } 3)",
-        "explanation": "This is a circle centred at the origin with radius $3$.",
+        "description": "State the coordinates",
+        "workingLatex": "(0,\\, 7)",
+        "explanation": "Because the point is on the $y$-axis its $x$-coordinate is $0$, so the curve crosses at $(0,\\,7)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x^2 + y^2 = 9$, a circle centre $(0,0)$ radius $3$."
+    "finalAnswer": "The curve crosses the $y$-axis at $(0,\\, 7)$."
   }
 }

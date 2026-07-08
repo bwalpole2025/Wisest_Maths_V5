@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "percentile"
+  ],
+  "questionText": "The annual rainfall, $X$ mm, at a weather station is modelled by $X \\sim N(720, 60^2)$. The wettest $5\\%$ of years have annual rainfall exceeding a value $a$ mm. Find $a$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the condition",
+        "workingLatex": "X \\sim N(720,\\ 60^2), \\qquad P(X > a) = 0.05",
+        "explanation": "Rainfall is normal with mean $\\mu = 720$ and standard deviation $\\sigma = 60$. The wettest $5\\%$ of years exceed $a$, so $P(X > a) = 0.05$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Convert to a lower-tail probability",
+        "workingLatex": "P(X < a) = 1 - 0.05 = 0.95",
+        "explanation": "The inverse-normal reads from the area to the left, so we rewrite: if $5\\%$ of years are above $a$, then $95\\%$ are below it, giving $P(X < a) = 0.95$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the $z$-value for the 95th percentile",
+        "workingLatex": "z = \\Phi^{-1}(0.95) = 1.645",
+        "explanation": "The standardised value with $95\\%$ of the area to its left is $z = 1.645$. It is positive because a value only $5\\%$ of years exceed must lie well above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the standardisation equation",
+        "workingLatex": "\\dfrac{a - 720}{60} = 1.645",
+        "explanation": "Standardising the unknown rainfall $a$ must give this $z$-value, so we equate the two.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange the standardisation formula",
+        "workingLatex": "a = \\mu + \\sigma z",
+        "explanation": "Multiplying both sides by $\\sigma$ and adding $\\mu$ makes $a$ the subject — the general rule for turning a $z$-value back into a rainfall figure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the known values",
+        "workingLatex": "a = 720 + 60 \\times 1.645",
+        "explanation": "Putting in the mean $720$, the standard deviation $60$ and the $z$-value $1.645$ gives the rainfall in millimetres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the value",
+        "workingLatex": "a = 720 + 98.70 = 818.7",
+        "explanation": "The arithmetic gives a rainfall of about $818.7$ mm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "a \\approx 819 \\text{ mm}",
+        "explanation": "Rounding gives the rainfall exceeded in only the wettest $5\\%$ of years.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sanity check the result",
+        "workingLatex": "819 > 720 = \\mu",
+        "explanation": "The value sits well above the mean of $720$ mm, as it should: only an unusually wet year — the top $5\\%$ — exceeds it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a \\approx 819$ mm (3 s.f.) — the rainfall exceeded by the wettest $5\\%$ of years."
+  }
+}

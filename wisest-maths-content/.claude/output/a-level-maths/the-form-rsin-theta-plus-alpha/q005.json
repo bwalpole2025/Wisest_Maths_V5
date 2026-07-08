@@ -5,53 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "Rsin",
-    "difference"
+    "phase angle"
   ],
-  "questionText": "Express $\\sqrt{3}\\sin\\theta - \\cos\\theta$ in the form $R\\sin(\\theta - \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionText": "It is given that $5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta+\\alpha)$, where $0^\\circ<\\alpha<90^\\circ$. Find $\\alpha$, giving your answer to $1$ decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the target form",
-        "workingLatex": "R\\sin(\\theta - \\alpha) = R\\cos\\alpha\\sin\\theta - R\\sin\\alpha\\cos\\theta",
-        "explanation": "The minus form expands with a minus between the terms, matching the given difference.",
+        "description": "Write down the given identity",
+        "workingLatex": "5\\sin\\theta + 12\\cos\\theta \\equiv 13\\sin(\\theta+\\alpha)",
+        "explanation": "We are told the amplitude is already $13$, so only $\\alpha$ remains to be found. We begin from the stated identity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = \\sqrt3, \\quad R\\sin\\alpha = 1",
-        "explanation": "Matching the sine term gives $R\\cos\\alpha = \\sqrt3$; matching the cosine term (both sides negative) gives $R\\sin\\alpha = 1$.",
+        "description": "Expand the right-hand side",
+        "workingLatex": "13\\sin(\\theta+\\alpha) = 13\\cos\\alpha\\,\\sin\\theta + 13\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with the compound-angle formula puts the right-hand side in terms of $\\sin\\theta$ and $\\cos\\theta$ so it can be compared with the left.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R",
-        "workingLatex": "R^2 = (\\sqrt3)^2 + 1^2 = 4 \\;\\Rightarrow\\; R = 2",
-        "explanation": "The sum of squares gives $R = 2$.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "13\\cos\\alpha = 5, \\qquad 13\\sin\\alpha = 12",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ and of $\\cos\\theta$ gives these two equations, both containing the known amplitude $13$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{1}{\\sqrt3} \\;\\Rightarrow\\; \\alpha = 30^\\circ",
-        "explanation": "The ratio gives $\\tan\\alpha = \\frac{1}{\\sqrt3}$, so $\\alpha = 30^\\circ$.",
+        "description": "Divide to eliminate R",
+        "workingLatex": "\\dfrac{13\\sin\\alpha}{13\\cos\\alpha} = \\dfrac{12}{5} \\Rightarrow \\tan\\alpha = \\dfrac{12}{5}",
+        "explanation": "Dividing the second equation by the first cancels the common factor $13$, leaving $\\tan\\alpha=\\tfrac{12}{5}$, which isolates the angle.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the final form",
-        "workingLatex": "\\sqrt3\\sin\\theta - \\cos\\theta = 2\\sin(\\theta - 30^\\circ)",
-        "explanation": "Both values are exact, giving the required harmonic form.",
+        "description": "Solve for α",
+        "workingLatex": "\\alpha = \\arctan\\dfrac{12}{5} = 67.4^\\circ",
+        "explanation": "Taking the inverse tangent gives $\\alpha=67.38^\\circ$, which rounds to $67.4^\\circ$ to one decimal place.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm α is acute",
+        "workingLatex": "0^\\circ < 67.4^\\circ < 90^\\circ",
+        "explanation": "Both matched coefficients $5$ and $12$ are positive, so $\\alpha$ lies in the first quadrant and is indeed acute, matching the stated range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the completed identity",
+        "workingLatex": "5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta+67.4^\\circ)",
+        "explanation": "Placing the value of $\\alpha$ back into the identity confirms the full R-form and provides a clear final statement.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sqrt3\\sin\\theta - \\cos\\theta = 2\\sin(\\theta - 30^\\circ)$"
+    "finalAnswer": "$\\alpha = 67.4^\\circ$ (to $1$ d.p.)."
   }
 }

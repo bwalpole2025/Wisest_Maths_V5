@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "intercept"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\ln x + x^2$, $x > 0$. Find an equation of the tangent to $C$ at the point where $x = 1$, and hence find the coordinates of the point where this tangent crosses the $x$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up: the tangent's gradient is the derivative at the point",
+        "workingLatex": "m = \\left.\\frac{dy}{dx}\\right|_{x=1}",
+        "explanation": "A tangent shares the curve's gradient at the point of contact, so we differentiate and evaluate the derivative at $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standard derivatives",
+        "workingLatex": "\\frac{d}{dx}(\\ln x) = \\frac{1}{x}, \\qquad \\frac{d}{dx}(x^2) = 2x",
+        "explanation": "The derivative of $\\ln x$ is the standard result $\\tfrac{1}{x}$, and $x^2$ differentiates to $2x$ by the power rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate term by term",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{x} + 2x",
+        "explanation": "By linearity we differentiate each term separately and add the results.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the gradient at x = 1",
+        "workingLatex": "m = \\frac{1}{1} + 2(1) = 3",
+        "explanation": "Substituting $x=1$ into the derivative gives the gradient of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate of the point of contact",
+        "workingLatex": "y = \\ln 1 + 1^2 = 0 + 1 = 1",
+        "explanation": "On the curve at $x=1$; since $\\ln 1 = 0$, the point of contact is $(1,\\ 1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the point and gradient",
+        "workingLatex": "(1,\\ 1), \\qquad m = 3",
+        "explanation": "These are the ingredients for the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the point–gradient form",
+        "workingLatex": "y - 1 = 3(x - 1)",
+        "explanation": "Substitute the point $(1,1)$ and gradient $3$ into $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify to the tangent equation",
+        "workingLatex": "y = 3x - 2",
+        "explanation": "Expanding $3(x-1)=3x-3$ and adding $1$ gives $y = 3x - 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set y = 0 to find the x-axis crossing",
+        "workingLatex": "0 = 3x - 2",
+        "explanation": "A point on the $x$-axis has $y=0$, so we substitute this into the tangent equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for x",
+        "workingLatex": "3x = 2 \\Rightarrow x = \\frac{2}{3}",
+        "explanation": "Rearranging gives the $x$-coordinate where the tangent cuts the axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the results",
+        "workingLatex": "y = 3x - 2, \\qquad \\left(\\tfrac{2}{3},\\ 0\\right)",
+        "explanation": "The tangent is $y = 3x - 2$ and it crosses the $x$-axis at $\\left(\\tfrac{2}{3},\\ 0\\right)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $y = 3x - 2$; it crosses the $x$-axis at $\\left(\\dfrac{2}{3},\\ 0\\right)$."
+  }
+}

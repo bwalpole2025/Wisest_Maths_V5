@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "chain rule",
+    "parabola"
+  ],
+  "questionText": "The parabola $C$ has equation $y^2 = 4x$. Find $\\frac{dy}{dx}$ in terms of $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(y^2) = \\frac{d}{dx}(4x)",
+        "explanation": "Although $y$ is squared, we can still differentiate both sides with respect to $x$, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the left side using the chain rule",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "Bring the power down to $2y$, then multiply by $\\frac{dy}{dx}$ because $y$ is a function of $x$. This $\\frac{dy}{dx}$ factor is the heart of implicit differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the right side",
+        "workingLatex": "\\frac{d}{dx}(4x) = 4",
+        "explanation": "The term $4x$ is an ordinary function of $x$, so it differentiates straightforwardly to $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2y\\frac{dy}{dx} = 4",
+        "explanation": "Putting the two sides together gives an equation with a single $\\frac{dy}{dx}$ term, ready to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make $\\frac{dy}{dx}$ the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{4}{2y}",
+        "explanation": "Divide both sides by $2y$ to isolate the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the fraction",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{y}",
+        "explanation": "Cancel the common factor of $2$ in $\\frac{4}{2}$ to reach the simplest form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{y}",
+        "explanation": "The gradient depends only on $y$ here. It is steep near the $x$-axis (small $y$) and gentler higher up, which matches the shape of the parabola.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = \\frac{2}{y}$"
+  }
+}

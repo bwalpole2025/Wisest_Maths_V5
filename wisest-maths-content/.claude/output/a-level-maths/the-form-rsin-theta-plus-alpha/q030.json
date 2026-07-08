@@ -1,64 +1,99 @@
 {
-  "id": "al.y2.pure.rsin-form.q030",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
-  "tags": [
-    "harmonic form",
-    "minimum",
-    "reciprocal"
-  ],
-  "questionText": "Find the minimum value of $\\dfrac{20}{2\\sin\\theta + \\sqrt5\\cos\\theta + 6}$, given that $2\\sin\\theta + \\sqrt5\\cos\\theta = 3\\sin(\\theta + \\alpha)$.",
   "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q030",
+  "marks": 5,
+  "answerType": "solutions",
+  "tags": [
+    "r form",
+    "harmonic form",
+    "solving equations"
+  ],
+  "questionText": "Express $5\\sin\\theta + 3\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Hence solve $5\\sin\\theta + 3\\cos\\theta = -2$ for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Confirm the amplitude",
-        "workingLatex": "R = \\sqrt{2^2 + (\\sqrt5)^2} = \\sqrt{9} = 3",
-        "explanation": "The amplitude of the oscillating part is $3$, as stated.",
+        "description": "Set up the identity",
+        "workingLatex": "5\\sin\\theta + 3\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We fold the two waves into one sine of amplitude $R$ shifted by $\\alpha$, so that a basic sine equation replaces the two-term one, even though the right-hand side here is negative.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Bound the denominator",
-        "workingLatex": "-3 + 6 \\le 3\\sin(\\theta + \\alpha) + 6 \\le 3 + 6",
-        "explanation": "The sine part ranges over $[-3,3]$, so the denominator ranges over $[3, 9]$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "The compound-angle expansion, with $R$ brought through, matches the shape of the left-hand side term by term.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the denominator range",
-        "workingLatex": "3 \\le \\text{denominator} \\le 9",
-        "explanation": "Both bounds are positive, so the fraction is always positive.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 5, \\qquad R\\sin\\alpha = 3",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ and then of $\\cos\\theta$ gives these two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recognise where the fraction is smallest",
-        "workingLatex": "\\text{fraction min when denominator is largest}",
-        "explanation": "For a positive numerator, the fraction is smallest when its denominator is largest.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{5^2 + 3^2} = \\sqrt{34}",
+        "explanation": "Squaring and adding removes $\\alpha$, so $R^2=25+9=34$ and $R=\\sqrt{34}$, which is already in simplest surd form.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Use the largest denominator",
-        "workingLatex": "\\frac{20}{9}",
-        "explanation": "Dividing the numerator by the largest denominator $9$ gives the minimum.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{3}{5} \\Rightarrow \\alpha = 30.96^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{3}{5}$. Both coefficients are positive, so $\\alpha$ is acute; we keep $2$ decimal places here so the later subtraction stays accurate to $1$ d.p.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the minimum",
-        "workingLatex": "\\text{min} = \\frac{20}{9}",
-        "explanation": "This is the least value the fraction can take.",
+        "description": "State the R-form",
+        "workingLatex": "5\\sin\\theta + 3\\cos\\theta = \\sqrt{34}\\,\\sin(\\theta+30.96^\\circ)",
+        "explanation": "The expression is now a single sine wave of amplitude $\\sqrt{34}$ shifted left by $30.96^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{34}\\,\\sin(\\theta+30.96^\\circ) = -2 \\Rightarrow \\sin(\\theta+30.96^\\circ) = \\dfrac{-2}{\\sqrt{34}} = -0.3430",
+        "explanation": "Substituting the R-form gives a basic sine equation. Dividing by $\\sqrt{34}$ leaves a negative value, so the shifted angle must lie where sine is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ \\le \\theta \\le 360^\\circ \\Rightarrow 30.96^\\circ \\le \\theta+30.96^\\circ \\le 390.96^\\circ",
+        "explanation": "The unknown inside the sine is $\\theta+30.96^\\circ$, so both ends of the range rise by $30.96^\\circ$ before we solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\theta+30.96^\\circ = \\arcsin(-0.3430) = -20.06^\\circ",
+        "explanation": "The calculator returns a negative principal value, which sits below our window. It is not a final answer itself but the anchor from which the in-range solutions are built.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List all angles in the shifted range",
+        "workingLatex": "\\theta+30.96^\\circ = 200.06^\\circ,\\; 339.94^\\circ",
+        "explanation": "Sine is negative in the third and fourth quadrants: $180^\\circ-(-20.06^\\circ)=200.06^\\circ$ and $360^\\circ+(-20.06^\\circ)=339.94^\\circ$. Both lie inside $30.96^\\circ$ to $390.96^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 200.06^\\circ-30.96^\\circ,\\; 339.94^\\circ-30.96^\\circ = 169.1^\\circ,\\; 309.0^\\circ",
+        "explanation": "Subtracting $30.96^\\circ$ from each shifted angle returns to $\\theta$, and rounding to $1$ d.p. gives the two solutions, both inside $0^\\circ$ to $360^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Minimum value $= \\dfrac{20}{9}$."
+    "finalAnswer": "$5\\sin\\theta + 3\\cos\\theta = \\sqrt{34}\\,\\sin(\\theta+30.96^\\circ)$, and the equation has solutions $\\theta = 169.1^\\circ$ and $\\theta = 309.0^\\circ$ (to $1$ d.p.)."
   }
 }

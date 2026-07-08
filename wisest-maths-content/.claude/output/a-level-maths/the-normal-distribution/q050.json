@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.stats.normal-distribution.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "expected number"
+  ],
+  "questionText": "A machine dispenses coffee into cups. The volume dispensed, $X$ ml, is modelled by $X \\sim N(250, 5^2)$. A cup is rejected if its volume is below $245$ ml or above $258$ ml. (a) Find the probability that a randomly filled cup is accepted. (b) In a run of $500$ cups, estimate how many are rejected. Give probabilities to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the acceptance region",
+        "workingLatex": "X \\sim N(250,\\ 5^2), \\qquad \\text{accept if } 245 < X < 258",
+        "explanation": "The volume is normal with mean $\\mu = 250$ ml and standard deviation $\\sigma = 5$ ml. A cup is accepted only when its volume lies between $245$ ml and $258$ ml.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the lower limit",
+        "workingLatex": "z_1 = \\dfrac{245 - 250}{5} = -1",
+        "explanation": "The lower limit $245$ is one standard deviation below the mean, giving $z_1 = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the upper limit",
+        "workingLatex": "z_2 = \\dfrac{258 - 250}{5} = 1.6",
+        "explanation": "The upper limit $258$ is $1.6$ standard deviations above the mean, giving $z_2 = 1.6$. Note the interval is not symmetric about the mean here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the acceptance probability in terms of Z",
+        "workingLatex": "P(\\text{accept}) = P(-1 < Z < 1.6) = \\Phi(1.6) - \\Phi(-1)",
+        "explanation": "The acceptance probability is the area between the two standardised limits, found as $\\Phi(z_2) - \\Phi(z_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the two cumulative probabilities",
+        "workingLatex": "\\Phi(1.6) = 0.9452, \\qquad \\Phi(-1) = 0.1587",
+        "explanation": "Reading the standard normal CDF at each limit gives these areas; $\\Phi(-1)$ is small since it is the lower tail below $z = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the acceptance probability",
+        "workingLatex": "P(\\text{accept}) = 0.9452 - 0.1587 = 0.7865",
+        "explanation": "Subtracting gives the probability of a cup being accepted, about $0.7865$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the probability a cup is rejected",
+        "workingLatex": "P(\\text{reject}) = 1 - 0.7865 = 0.2135",
+        "explanation": "A cup is rejected whenever it is not accepted, so we subtract the acceptance probability from $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the expected number rejected in 500 cups",
+        "workingLatex": "E = 500 \\times 0.2135",
+        "explanation": "Each of the $500$ cups is rejected independently with probability $0.2135$, so the expected number rejected is the run size times that probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the expected number",
+        "workingLatex": "E = 106.7",
+        "explanation": "Multiplying $500$ by $0.2135$ gives $106.7$, the average number of cups we would expect to reject in a run of this size.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Round to a whole number of cups",
+        "workingLatex": "E \\approx 107",
+        "explanation": "Since we count whole cups, we round to about $107$ rejected. This is roughly one cup in five, which matches the rejection probability of $0.2135$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $P(\\text{accept}) = 0.7865$ (4 s.f.). (b) About $107$ of the $500$ cups are expected to be rejected."
+  }
+}

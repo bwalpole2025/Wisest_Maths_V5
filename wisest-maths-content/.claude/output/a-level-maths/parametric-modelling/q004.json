@@ -5,53 +5,67 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "range",
-    "projectile"
+    "velocity components",
+    "parametric differentiation",
+    "modelling"
   ],
-  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find the horizontal distance travelled before it lands.",
+  "questionText": "A point moves so that, at time $t$ seconds, its position in metres is $x = t^{3} - 2t$ and $y = 4t^{2} + 1$. Find the horizontal velocity $\\dot{x}$ and the vertical velocity $\\dot{y}$ at $t = 2$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the landing time",
-        "workingLatex": "15t - 5t^2 = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 3",
-        "explanation": "The projectile lands when $y = 0$ again, at $t = 3$ s (the nonzero solution).",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 3t^{2} - 2",
+        "explanation": "The horizontal velocity is how fast $x$ changes with time, so we differentiate the formula for $x$ with respect to $t$. The dot notation $\\dot{x}$ is just a compact way to write $\\dfrac{dx}{dt}$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Use the horizontal-position equation",
-        "workingLatex": "x = 20t",
-        "explanation": "Horizontal distance is given by the $x$-equation evaluated at the landing time.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 8t",
+        "explanation": "In the same way, the vertical velocity is the rate of change of $y$ with time, so we differentiate the formula for $y$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the landing time",
-        "workingLatex": "x = 20(3) = 60",
-        "explanation": "At $t = 3$ s the horizontal position is $60$ m.",
+        "description": "Substitute t = 2 into the horizontal velocity",
+        "workingLatex": "\\dot{x} = 3(2)^{2} - 2",
+        "explanation": "Putting $t = 2$ into $\\dot{x}$ gives the horizontal velocity at that particular instant.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Interpret",
-        "workingLatex": "\\text{range} = 60 \\text{ m}",
-        "explanation": "Since horizontal motion started at $x = 0$, the total horizontal distance (range) is $60$ m.",
+        "description": "Evaluate the horizontal velocity",
+        "workingLatex": "\\dot{x} = 12 - 2 = 10",
+        "explanation": "The arithmetic gives $\\dot{x} = 10$: the point is moving at $10$ m/s horizontally.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "60 \\text{ m}",
-        "explanation": "This is the horizontal range of the projectile.",
+        "description": "Substitute t = 2 into the vertical velocity",
+        "workingLatex": "\\dot{y} = 8(2)",
+        "explanation": "Using the same instant $t = 2$ in $\\dot{y}$ gives the vertical velocity there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the vertical velocity",
+        "workingLatex": "\\dot{y} = 16",
+        "explanation": "So the point is moving at $16$ m/s vertically at that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the velocity components",
+        "workingLatex": "\\dot{x} = 10, \\quad \\dot{y} = 16",
+        "explanation": "Together these give the two components of the point's velocity at $t = 2$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$60$ m"
+    "finalAnswer": "At $t = 2$ s the velocity components are $\\dot{x} = 10$ m/s and $\\dot{y} = 16$ m/s."
   }
 }

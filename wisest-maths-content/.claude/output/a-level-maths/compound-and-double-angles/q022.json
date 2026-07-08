@@ -4,69 +4,67 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
   "tags": [
-    "double angle",
-    "equations",
-    "quadratic",
-    "cosine"
+    "compound angle",
+    "expand"
   ],
-  "questionText": "Solve $\\cos 2\\theta + \\cos\\theta = 0$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Write $\\sin(A + B)$ in terms of $\\sin A$, $\\cos A$, $\\sin B$ and $\\cos B$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the cosine-only double angle form",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
-        "explanation": "Using the form in cosine only makes the equation a quadratic in $\\cos\\theta$.",
+        "description": "Identify the expression to expand",
+        "workingLatex": "\\sin(A + B)",
+        "explanation": "We are expanding a sine of a sum, so the sine compound-angle formula applies.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute",
-        "workingLatex": "2\\cos^2\\theta - 1 + \\cos\\theta = 0",
-        "explanation": "The equation is now entirely in cosine.",
+        "description": "State both signed versions",
+        "workingLatex": "\\sin(A \\pm B) = \\sin A\\cos B \\pm \\cos A\\sin B",
+        "explanation": "In the sine formula the sign on the right matches the sign inside the bracket, which is what the $\\pm$ symbol records.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write in standard quadratic form",
-        "workingLatex": "2\\cos^2\\theta + \\cos\\theta - 1 = 0",
-        "explanation": "Reordering gives a familiar quadratic shape.",
+        "description": "Select the plus-angle version",
+        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "For $A+B$ the inside sign is plus, so we take the plus sign on the right.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(2\\cos\\theta - 1)(\\cos\\theta + 1) = 0",
-        "explanation": "The factorisation checks out since the cross terms give $+\\cos\\theta$.",
+        "description": "Note the structure",
+        "workingLatex": "\\sin(A + B) = \\underbrace{\\sin A\\cos B}_{\\text{sin-cos}} + \\underbrace{\\cos A\\sin B}_{\\text{cos-sin}}",
+        "explanation": "The pattern is always mixed products, 'sin times cos' plus 'cos times sin', never $\\sin\\sin$ or $\\cos\\cos$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cos\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 60^\\circ, 300^\\circ",
-        "explanation": "Cosine one half gives solutions in quadrants I and IV.",
+        "description": "Verify with a known case",
+        "workingLatex": "\\sin(A + A) = \\sin A\\cos A + \\cos A\\sin A = 2\\sin A\\cos A",
+        "explanation": "As a check, set $B=A$; the two identical mixed products add together.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "\\cos\\theta = -1 \\;\\Rightarrow\\; \\theta = 180^\\circ",
-        "explanation": "Cosine equals $-1$ only at $180^\\circ$.",
+        "description": "Confirm against the double-angle formula",
+        "workingLatex": "2\\sin A\\cos A = \\sin 2A",
+        "explanation": "This reproduces the sine double-angle formula $\\sin 2A=2\\sin A\\cos A$, confirming the expansion is correct.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 60^\\circ, 180^\\circ, 300^\\circ",
-        "explanation": "Combining both cases gives three solutions in the interval.",
+        "description": "State the expansion",
+        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "This is the required expansion written entirely in terms of $\\sin A$, $\\cos A$, $\\sin B$ and $\\cos B$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 60^\\circ, 180^\\circ, 300^\\circ$"
+    "finalAnswer": "$\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B$."
   }
 }

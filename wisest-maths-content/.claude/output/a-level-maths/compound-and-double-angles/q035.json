@@ -5,60 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "proof",
   "tags": [
     "double angle",
-    "equations",
-    "solving"
+    "proof",
+    "factorising"
   ],
-  "questionText": "Solve $\\sin 2\\theta = \\dfrac{\\sqrt3}{2}$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Prove the identity $\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Substitute for the double angle variable",
-        "workingLatex": "\\text{let } \\phi = 2\\theta, \\quad 0^\\circ \\le \\phi < 720^\\circ",
-        "explanation": "Because $\\theta$ ranges over $[0,360^\\circ)$, the doubled angle $\\phi$ ranges over $[0,720^\\circ)$; we must find all solutions there.",
+        "description": "State the LHS and the plan",
+        "workingLatex": "\\text{LHS} = \\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta}",
+        "explanation": "We start from the left-hand side. The denominator is $\\cos\\theta + \\sin\\theta$, so the plan is to factorise $\\cos 2\\theta$ to produce that same factor and then cancel it.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the base solutions",
-        "workingLatex": "\\sin\\phi = \\tfrac{\\sqrt3}{2} \\;\\Rightarrow\\; \\phi = 60^\\circ, 120^\\circ",
-        "explanation": "In the first revolution, sine equals $\\frac{\\sqrt3}{2}$ at $60^\\circ$ and $120^\\circ$.",
+        "description": "Choose a form of cos 2theta",
+        "workingLatex": "\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta",
+        "explanation": "We use the $\\cos^2\\theta - \\sin^2\\theta$ version because it is a difference of two squares, which factorises neatly.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Add a full revolution for more solutions",
-        "workingLatex": "\\phi = 60^\\circ + 360^\\circ = 420^\\circ, \\quad 120^\\circ + 360^\\circ = 480^\\circ",
-        "explanation": "Since $\\phi$ extends to $720^\\circ$, we add $360^\\circ$ to each base solution.",
+        "description": "Recall the difference of two squares",
+        "workingLatex": "a^2 - b^2 = (a - b)(a + b)",
+        "explanation": "Any difference of two squares splits into these two brackets; here $a = \\cos\\theta$ and $b = \\sin\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "List all values of phi",
-        "workingLatex": "\\phi = 60^\\circ, 120^\\circ, 420^\\circ, 480^\\circ",
-        "explanation": "These are all the solutions of the doubled-angle equation in range.",
+        "description": "Factor the numerator",
+        "workingLatex": "\\cos^2\\theta - \\sin^2\\theta = (\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)",
+        "explanation": "Applying the rule produces the factor $(\\cos\\theta + \\sin\\theta)$, which is precisely the denominator we want to cancel.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Halve to find theta",
-        "workingLatex": "\\theta = 30^\\circ, 60^\\circ, 210^\\circ, 240^\\circ",
-        "explanation": "Dividing each $\\phi$ by $2$ gives the solutions for $\\theta$.",
+        "description": "Rewrite the fraction with the factored numerator",
+        "workingLatex": "\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} = \\dfrac{(\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)}{\\cos\\theta + \\sin\\theta}",
+        "explanation": "Substituting the factored numerator makes the shared factor $(\\cos\\theta + \\sin\\theta)$ visible top and bottom.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Confirm the interval",
-        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "Every value lies within the required range, so all are kept.",
+        "description": "Cancel the common factor",
+        "workingLatex": "\\dfrac{(\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)}{\\cos\\theta + \\sin\\theta} = \\cos\\theta - \\sin\\theta",
+        "explanation": "Dividing top and bottom by $(\\cos\\theta + \\sin\\theta)$, which is non-zero wherever the expression is defined, leaves just $\\cos\\theta - \\sin\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the simplified expression",
+        "workingLatex": "\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} = \\cos\\theta - \\sin\\theta",
+        "explanation": "The double angle has been eliminated and the LHS now equals $\\cos\\theta - \\sin\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the RHS is reached",
+        "workingLatex": "\\cos\\theta - \\sin\\theta = \\text{RHS}",
+        "explanation": "The simplified LHS is identical to the right-hand side we were asked to reach.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\dfrac{\\cos 60^\\circ}{\\cos 30^\\circ + \\sin 30^\\circ} = \\dfrac{1/2}{(\\sqrt3+1)/2} = \\dfrac{1}{\\sqrt3+1} = \\dfrac{\\sqrt3-1}{2} = \\cos 30^\\circ - \\sin 30^\\circ",
+        "explanation": "At $\\theta = 30^\\circ$ both sides equal $\\dfrac{\\sqrt3-1}{2}$, supporting the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the proof",
+        "workingLatex": "\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta \\quad \\blacksquare",
+        "explanation": "The LHS reduces to the RHS for all valid $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 60^\\circ, 210^\\circ, 240^\\circ$"
+    "finalAnswer": "Writing $\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta = (\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)$ and cancelling the common factor $(\\cos\\theta + \\sin\\theta)$ gives $\\cos\\theta - \\sin\\theta$, so $\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta$."
   }
 }

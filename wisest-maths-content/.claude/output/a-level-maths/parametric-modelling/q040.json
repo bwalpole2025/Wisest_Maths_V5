@@ -4,47 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
+    "exponential parametric",
     "speed",
-    "specific time"
+    "cartesian"
   ],
-  "questionText": "A particle has position $x = t^3 - 3t$, $y = 3t^2$ (metres) at time $t$ seconds. Find its speed at $t = 1$.",
+  "questionText": "A particle moves so that its position at time $t$ is $x = e^{t}$, $y = e^{-t}$. (a) Show that the path is part of the curve $xy = 1$. (b) Find the exact speed of the particle when $t = \\ln 2$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 3t^2 - 3, \\quad v_y = 6t",
-        "explanation": "Differentiating each position component gives the velocities.",
+        "description": "Multiply the two coordinates",
+        "workingLatex": "xy = e^{t}\\cdot e^{-t} = e^{t-t} = e^{0} = 1",
+        "explanation": "Multiplying $x$ and $y$ makes the exponents add to zero, so $xy=1$ for every value of $t$; the path lies on this rectangular hyperbola.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Evaluate at t = 1",
-        "workingLatex": "v_x = 3 - 3 = 0, \\quad v_y = 6",
-        "explanation": "At $t = 1$ the horizontal velocity is zero, so the particle moves purely vertically.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = e^{t}",
+        "explanation": "The exponential $e^{t}$ differentiates to itself, giving the horizontal velocity.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the speed",
-        "workingLatex": "\\text{speed} = \\sqrt{0^2 + 6^2} = 6",
-        "explanation": "With no horizontal component, the speed is just the vertical component.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = -e^{-t}",
+        "explanation": "By the chain rule $e^{-t}$ differentiates to $-e^{-t}$, giving the vertical velocity.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the answer",
-        "workingLatex": "\\text{speed} = 6 \\text{ m/s}",
-        "explanation": "The particle's speed at $t = 1$ is $6$ m/s (moving vertically).",
+        "description": "State the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "Speed is the magnitude of the velocity, found by combining the two components with Pythagoras.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the exponentials at t = ln 2",
+        "workingLatex": "e^{\\ln 2} = 2, \\qquad e^{-\\ln 2} = \\dfrac{1}{2}",
+        "explanation": "Because exponential and logarithm are inverse operations, these simplify to exact fractions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the velocity components",
+        "workingLatex": "\\dot{x} = 2, \\qquad \\dot{y} = -\\dfrac{1}{2}",
+        "explanation": "Substituting the values above gives the two components at this instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Square each component",
+        "workingLatex": "\\dot{x}^{2} = 4, \\qquad \\dot{y}^{2} = \\dfrac{1}{4}",
+        "explanation": "Squaring removes the sign and prepares the two terms for adding.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Add the squares",
+        "workingLatex": "\\dot{x}^{2} + \\dot{y}^{2} = 4 + \\dfrac{1}{4} = \\dfrac{16}{4} + \\dfrac{1}{4} = \\dfrac{17}{4}",
+        "explanation": "Writing $4$ as $\\tfrac{16}{4}$ lets us combine the terms into a single fraction under the root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Take the square root",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dfrac{17}{4}} = \\dfrac{\\sqrt{17}}{2}",
+        "explanation": "The square root of the denominator is $2$, giving the exact speed in tidy surd form.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Speed $= 6$ m/s"
+    "finalAnswer": "(a) Since $xy = e^{t}e^{-t} = 1$, the path lies on the hyperbola $xy=1$. (b) The exact speed at $t=\\ln 2$ is $\\dfrac{\\sqrt{17}}{2}$ units per unit time."
   }
 }

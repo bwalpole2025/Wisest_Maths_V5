@@ -5,61 +5,75 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "secant",
-    "radians",
+    "cot",
+    "quadrant",
     "exact values"
   ],
-  "questionText": "Find the exact value of $\\sec\\dfrac{\\pi}{3}$.",
+  "questionText": "Find the exact value of $\\cot 135^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Convert the radian angle to degrees if helpful",
-        "workingLatex": "\\frac{\\pi}{3} = 60^\\circ",
-        "explanation": "Recognising that $\\frac{\\pi}{3}$ radians equals $60^\\circ$ lets us use the exact values we know most comfortably.",
+        "description": "Recall the definition of cotangent",
+        "workingLatex": "\\cot 135^\\circ = \\frac{1}{\\tan 135^\\circ}",
+        "explanation": "Cotangent is one over tangent, so we first find $\\tan 135^\\circ$, taking care with its sign.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write secant as one over cosine",
-        "workingLatex": "\\sec\\frac{\\pi}{3} = \\frac{1}{\\cos\\frac{\\pi}{3}}",
-        "explanation": "Secant is one over cosine, so we set up the reciprocal of the cosine of this angle.",
+        "description": "Identify the quadrant",
+        "workingLatex": "90^\\circ < 135^\\circ < 180^\\circ \\Rightarrow \\theta \\text{ in quadrant 2}",
+        "explanation": "An angle between $90^\\circ$ and $180^\\circ$ is in the second quadrant, which fixes the sign of the tangent.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall the cosine value",
-        "workingLatex": "\\cos\\frac{\\pi}{3} = \\frac{1}{2}",
-        "explanation": "The cosine of $60^\\circ$, or $\\frac{\\pi}{3}$, is exactly one half.",
+        "description": "Find the reference angle",
+        "workingLatex": "180^\\circ - 135^\\circ = 45^\\circ",
+        "explanation": "The reference angle for a second-quadrant angle is $180^\\circ$ minus the angle, here giving the familiar $45^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute the value",
-        "workingLatex": "\\sec\\frac{\\pi}{3} = \\frac{1}{\\;\\frac{1}{2}\\;}",
-        "explanation": "The problem now reduces to the reciprocal of one half.",
+        "description": "Determine the sign of tangent",
+        "workingLatex": "\\tan 135^\\circ = -\\tan 45^\\circ",
+        "explanation": "In the second quadrant tangent is negative (sine positive, cosine negative give a negative ratio), so a minus sign appears in front.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Evaluate the reciprocal",
-        "workingLatex": "\\frac{1}{\\;\\frac{1}{2}\\;} = 2",
-        "explanation": "The reciprocal of a half is two.",
+        "description": "Substitute the reference value",
+        "workingLatex": "\\tan 135^\\circ = -1",
+        "explanation": "Because $\\tan 45^\\circ=1$, applying the negative sign gives $\\tan 135^\\circ=-1$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\sec\\frac{\\pi}{3} = 2",
-        "explanation": "This is the exact value; working in radians gives the same result as degrees, as expected.",
+        "description": "Substitute into the cotangent definition",
+        "workingLatex": "\\cot 135^\\circ = \\frac{1}{-1}",
+        "explanation": "We now take one over the tangent value just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify",
+        "workingLatex": "\\cot 135^\\circ = -1",
+        "explanation": "One divided by $-1$ is $-1$, so the cotangent keeps the negative sign of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the exact value",
+        "workingLatex": "\\cot 135^\\circ = -1",
+        "explanation": "The answer is $-1$; the negative sign reflects that $135^\\circ$ lies in the second quadrant.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec\\dfrac{\\pi}{3} = 2$"
+    "finalAnswer": "$\\cot 135^\\circ = -1$."
   }
 }

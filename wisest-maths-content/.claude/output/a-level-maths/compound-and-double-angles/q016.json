@@ -6,59 +6,65 @@
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "expression",
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "simplify",
-    "cosine"
+    "tangent"
   ],
-  "questionText": "Write $1 - 2\\sin^2 4\\theta$ as a single trigonometric term.",
+  "questionText": "Given that $\\tan\\theta = \\tfrac{1}{2}$ and $\\theta$ is acute, find the exact value of $\\tan 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the relevant form of the cosine double angle formula",
-        "workingLatex": "\\cos 2X = 1 - 2\\sin^2 X",
-        "explanation": "The expression exactly matches the sine form of the cosine double angle formula.",
+        "description": "State the tangent double-angle formula",
+        "workingLatex": "\\tan 2\\theta = \\frac{2\\tan\\theta}{1 - \\tan^2\\theta}",
+        "explanation": "For a double angle in tangent the formula is built only from $\\tan\\theta$, which is exactly the value we are given, so no other ratios are needed.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Identify the inner angle",
-        "workingLatex": "X = 4\\theta",
-        "explanation": "Comparing $1 - 2\\sin^2 4\\theta$ with $1 - 2\\sin^2 X$ gives $X = 4\\theta$.",
+        "description": "Substitute tan theta",
+        "workingLatex": "\\tan 2\\theta = \\frac{2\\cdot\\tfrac{1}{2}}{1 - \\left(\\tfrac{1}{2}\\right)^2}",
+        "explanation": "Putting $\\tan\\theta=\\frac{1}{2}$ into both the numerator and the denominator sets up the arithmetic.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the formula",
-        "workingLatex": "1 - 2\\sin^2 4\\theta = \\cos(2\\cdot 4\\theta)",
-        "explanation": "Substituting folds the expression into a single cosine of the doubled angle.",
+        "description": "Simplify numerator and squared term",
+        "workingLatex": "= \\frac{1}{1 - \\tfrac{1}{4}}",
+        "explanation": "The numerator $2\\times\\frac{1}{2}$ is $1$, and $\\left(\\frac{1}{2}\\right)^2=\\frac{1}{4}$ appears in the denominator.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify the angle",
-        "workingLatex": "= \\cos 8\\theta",
-        "explanation": "Doubling $4\\theta$ gives $8\\theta$.",
+        "description": "Simplify the denominator",
+        "workingLatex": "= \\frac{1}{\\tfrac{3}{4}}",
+        "explanation": "Combining $1-\\frac{1}{4}$ gives the single fraction $\\frac{3}{4}$ underneath.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Check with a value",
-        "workingLatex": "\\theta = 0: 1 - 0 = 1 = \\cos 0 \\;\\checkmark",
-        "explanation": "At $\\theta = 0$ both sides equal $1$, confirming the result.",
+        "description": "Divide by the fraction",
+        "workingLatex": "= 1 \\times \\frac{4}{3} = \\frac{4}{3}",
+        "explanation": "Dividing by $\\frac{3}{4}$ is the same as multiplying by its reciprocal $\\frac{4}{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
+        "description": "Check the size of the answer",
+        "workingLatex": "\\frac{4}{3} \\approx 1.333",
+        "explanation": "A decimal check gives about $1.333$; since $\\theta$ is acute and small, $2\\theta$ is still acute, so a positive tangent is expected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
         "description": "State the result",
-        "workingLatex": "1 - 2\\sin^2 4\\theta = \\cos 8\\theta",
-        "explanation": "The expression simplifies to a single cosine term.",
+        "workingLatex": "\\tan 2\\theta = \\tfrac{4}{3}",
+        "explanation": "This is the exact value of the required double-angle tangent.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos 8\\theta$"
+    "finalAnswer": "$\\tan 2\\theta = \\tfrac{4}{3}$."
   }
 }

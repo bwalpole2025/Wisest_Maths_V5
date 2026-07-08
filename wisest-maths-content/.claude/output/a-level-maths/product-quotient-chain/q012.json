@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "product rule",
+    "exponential",
+    "differentiation"
+  ],
+  "questionText": "Given that $y = x e^x$, find $\\dfrac{dy}{dx}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and state the rule",
+        "workingLatex": "\\frac{d}{dx}(uv) = u'v + uv'",
+        "explanation": "$y = x e^x$ is a product of the two functions $x$ and $e^x$. Because one factor is not simply a constant multiple of the other, we differentiate it with the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the two factors",
+        "workingLatex": "u = x, \\qquad v = e^x",
+        "explanation": "Naming the factors $u$ and $v$ lets us track each piece cleanly as we apply the rule. For a product the order does not matter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = e^x",
+        "explanation": "Differentiating $x$ gives $1$ by the power rule, and $e^x$ is its own derivative — a standard result worth remembering.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = (1)e^x + x e^x",
+        "explanation": "Substituting into $u'v + uv'$ keeps one factor differentiated and the other unchanged in each term, then adds the two contributions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Tidy the terms",
+        "workingLatex": "\\frac{dy}{dx} = e^x + x e^x",
+        "explanation": "The first term $(1)e^x$ is simply $e^x$, so we can write the derivative more neatly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise out the common term",
+        "workingLatex": "\\frac{dy}{dx} = e^x(1 + x)",
+        "explanation": "Both terms share a factor of $e^x$, so we take it outside a bracket. A factorised derivative is easier to read and to use later.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = (1 + x)e^x",
+        "explanation": "This is the fully simplified derivative of $y = x e^x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = (1 + x)e^x$."
+  }
+}

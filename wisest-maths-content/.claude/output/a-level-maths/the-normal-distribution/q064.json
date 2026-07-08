@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "independence",
+    "complement"
+  ],
+  "questionText": "The lifetimes, $X$ hours, of a certain brand of light bulb are modelled by $X \\sim N(1200, 100^2)$. A bulb is called 'long-life' if it lasts more than $1350$ hours. Five bulbs are chosen at random and their lifetimes may be assumed independent. Find the probability that at least one of the five bulbs is long-life, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(1200,\\ 100^2), \\qquad \\mu = 1200,\\ \\sigma = 100",
+        "explanation": "Each bulb's lifetime is normal with mean $1200$ hours and standard deviation $100$ hours. We first find the chance a single bulb is long-life, then combine five independent bulbs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Define the long-life probability for one bulb",
+        "workingLatex": "p = P(X > 1350)",
+        "explanation": "Let $p$ be the probability that one randomly chosen bulb lasts more than $1350$ hours; this is the building block for the five-bulb calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise 1350",
+        "workingLatex": "z = \\dfrac{1350 - 1200}{100} = 1.5",
+        "explanation": "Converting $1350$ to a $z$-score shows it lies $1.5$ standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the tail probability using Phi",
+        "workingLatex": "P(X > 1350) = 1 - \\Phi(1.5)",
+        "explanation": "The probability of exceeding a value is one minus the area below it, since the total area under the curve is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the standard-normal value",
+        "workingLatex": "\\Phi(1.5) = 0.9332",
+        "explanation": "The cumulative normal at $z = 1.5$ gives the fraction of bulbs lasting less than $1350$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the single-bulb probability",
+        "workingLatex": "p = 1 - 0.9332 = 0.06681",
+        "explanation": "Subtracting from one gives the probability that a single bulb is long-life, about $6.7\\%$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State p to be used for all five bulbs",
+        "workingLatex": "p = 0.06681 \\text{ (same for each independent bulb)}",
+        "explanation": "Because the bulbs are identically distributed and independent, each has this same probability $p$ of being long-life, and one bulb's outcome does not affect another's.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Choose the complement method",
+        "workingLatex": "P(\\text{at least one}) = 1 - P(\\text{none are long-life})",
+        "explanation": "'At least one' is awkward to count directly, but its opposite, 'none are long-life', is a single clean event, so we work with the complement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Probability one bulb is NOT long-life",
+        "workingLatex": "P(X \\le 1350) = 1 - p = 0.9332",
+        "explanation": "The chance a single bulb fails to be long-life is just the complement of $p$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Probability all five are NOT long-life",
+        "workingLatex": "P(\\text{none}) = (1 - p)^5 = 0.9332^5",
+        "explanation": "Since the five lifetimes are independent, the probability that every bulb fails to be long-life is the product of five equal factors, i.e. $(1-p)$ raised to the power $5$. (This uses independence of the continuous lifetimes directly, not any binomial approximation.)",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Evaluate the product",
+        "workingLatex": "0.9332^5 = 0.7077",
+        "explanation": "Raising $0.9332$ to the fifth power gives the probability that not a single one of the five bulbs is long-life.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Apply the complement",
+        "workingLatex": "P(\\text{at least one}) = 1 - 0.7077",
+        "explanation": "Subtracting the 'none' probability from one gives the probability of the event we actually want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Compute the final probability",
+        "workingLatex": "P(\\text{at least one}) = 0.2923",
+        "explanation": "This is the probability that one or more of the five bulbs lasts beyond $1350$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Round and interpret",
+        "workingLatex": "P(\\text{at least one}) \\approx 0.292",
+        "explanation": "So there is roughly a $29\\%$ chance that at least one of the five bulbs is long-life, which is plausibly larger than the $6.7\\%$ for a single bulb because five chances are better than one.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(\\text{at least one long-life}) = 1 - 0.9332^5 \\approx 0.292$ (with single-bulb probability $p = 0.0668$)."
+  }
+}

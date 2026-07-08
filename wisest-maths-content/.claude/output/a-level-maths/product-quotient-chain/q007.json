@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "chain rule",
+    "polynomial",
+    "differentiation"
+  ],
+  "questionText": "Find $\\dfrac{dy}{dx}$ given that $y = (3x-1)^6$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite structure",
+        "workingLatex": "y = (3x-1)^6",
+        "explanation": "A bracket $3x-1$ is raised to the sixth power, so a function is nested inside a power. That nesting is the cue to use the chain rule rather than expanding the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce the inner function as $u$",
+        "workingLatex": "u = 3x-1 \\quad \\Rightarrow \\quad y = u^6",
+        "explanation": "We name the inside of the bracket $u$, leaving a clean outer power $y=u^6$ to differentiate on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 3",
+        "explanation": "Differentiating $u=3x-1$ gives $3$, since the derivative of $3x$ is $3$ and the constant disappears.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = 6u^5",
+        "explanation": "The power rule on $y=u^6$ brings the $6$ down and reduces the exponent by one to give $6u^5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = 6u^5 \\cdot 3",
+        "explanation": "The chain rule multiplies the outer rate of change by the inner one, combining them into a single derivative in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the constant",
+        "workingLatex": "\\frac{dy}{dx} = 18u^5",
+        "explanation": "Multiplying the constants gives $6\\times 3 = 18$, so the derivative is $18u^5$, still in terms of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute the inner function back in",
+        "workingLatex": "\\frac{dy}{dx} = 18(3x-1)^5",
+        "explanation": "Replacing $u$ with $3x-1$ produces the final answer in terms of $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 18(3x-1)^5$."
+  }
+}

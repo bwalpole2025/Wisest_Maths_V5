@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.implicit.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "product rule",
+    "show that",
+    "horizontal tangent"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 y + y^2 = 10$. (a) Show that $\\dfrac{dy}{dx} = -\\dfrac{2xy}{x^2 + 2y}$. (b) Hence find the gradient of $C$ at the point $(3, 1)$, and the coordinates of the points on $C$ where the tangent is horizontal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Check that (3, 1) lies on C",
+        "workingLatex": "3^2\\cdot 1 + 1^2 = 9 + 1 = 10",
+        "explanation": "The coordinates satisfy $x^2 y + y^2 = 10$, so $(3,1)$ is on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}\\left(x^2 y\\right) + \\frac{d}{dx}\\left(y^2\\right) = 0",
+        "explanation": "The first term is a product of $x^2$ and $y$, so it needs the product rule. The constant gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate x^2 y with the product rule",
+        "workingLatex": "\\frac{d}{dx}\\left(x^2 y\\right) = 2xy + x^2\\frac{dy}{dx}",
+        "explanation": "The product rule gives $2x\\cdot y$ (differentiate $x^2$, keep $y$) plus $x^2\\frac{dy}{dx}$ (keep $x^2$, differentiate $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the y-squared term (chain rule)",
+        "workingLatex": "\\frac{d}{dx}\\left(y^2\\right) = 2y\\frac{dy}{dx}",
+        "explanation": "The chain rule turns $y^2$ into $2y$ times $\\frac{dy}{dx}$, because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2xy + x^2\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Combining the derivatives gives a single equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect and factor the dy/dx terms",
+        "workingLatex": "\\left(x^2 + 2y\\right)\\frac{dy}{dx} = -2xy",
+        "explanation": "Gathering the $\\frac{dy}{dx}$ terms and moving $2xy$ across isolates the factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Make dy/dx the subject (the required result)",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2xy}{x^2 + 2y}",
+        "explanation": "Dividing by $(x^2 + 2y)$ gives exactly the stated formula, proving part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute (3, 1) to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(3,1)} = -\\frac{2(3)(1)}{3^2 + 2(1)} = -\\frac{6}{11}",
+        "explanation": "Substituting the coordinates gives the gradient of $C$ at $(3,1)$, which is $-\\tfrac{6}{11}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set up the horizontal-tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; 2xy = 0 \\;\\Rightarrow\\; x = 0 \\ \\text{or} \\ y = 0",
+        "explanation": "A horizontal tangent needs the numerator zero, so either $x=0$ or $y=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Test the case y = 0",
+        "workingLatex": "y = 0:\\quad x^2(0) + 0^2 = 0 \\ne 10",
+        "explanation": "If $y=0$ the left side is $0$, which cannot equal $10$, so there is no point on $C$ with $y=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Test the case x = 0",
+        "workingLatex": "x = 0:\\quad 0 + y^2 = 10 \\;\\Rightarrow\\; y^2 = 10 \\;\\Rightarrow\\; y = \\pm\\sqrt{10}",
+        "explanation": "If $x=0$ the curve equation reduces to $y^2 = 10$, giving two valid points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Confirm the tangents are genuinely horizontal",
+        "workingLatex": "x^2 + 2y = 0 + 2\\left(\\pm\\sqrt{10}\\right) = \\pm 2\\sqrt{10} \\ne 0",
+        "explanation": "The denominator is nonzero at both points, so the gradient is truly $0$ and the tangents are horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the horizontal-tangent points",
+        "workingLatex": "\\left(0, \\sqrt{10}\\right) \\quad \\text{and} \\quad \\left(0, -\\sqrt{10}\\right)",
+        "explanation": "These are the two points on $C$ where the tangent is horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State all results",
+        "workingLatex": "\\text{gradient at }(3,1) = -\\frac{6}{11}; \\quad \\text{horizontal at } \\left(0, \\pm\\sqrt{10}\\right)",
+        "explanation": "The gradient at $(3,1)$ is $-\\tfrac{6}{11}$, and the tangent is horizontal at $\\left(0, \\pm\\sqrt{10}\\right)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Gradient at $(3,1)$ is $-\\dfrac{6}{11}$; the tangent is horizontal at $\\left(0, \\sqrt{10}\\right)$ and $\\left(0, -\\sqrt{10}\\right)$."
+  }
+}

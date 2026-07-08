@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.implicit.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "tangent",
+    "parallel lines"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + 4y^2 = 8$. (a) Find $\\frac{dy}{dx}$ in terms of $x$ and $y$. (b) Find the coordinates of the two points on $C$ at which the gradient of the tangent is $-\\frac{1}{2}$. (c) Find an equation of the tangent to $C$ at each of these points, and hence show that the two tangents are parallel. (d) Find the exact distance between these two tangents.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(4y^2) = \\frac{d}{dx}(8)",
+        "explanation": "We differentiate the whole equation, treating $y$ as a function of $x$; the constant $8$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x + 8y\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^2$ gives $2x$; the term $4y^2$ gives $8y\\frac{dy}{dx}$, where the chain rule supplies the factor $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{8y} = -\\frac{x}{4y}",
+        "explanation": "Isolating the derivative and cancelling gives $-\\frac{x}{4y}$. This answers part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the gradient equal to -1/2",
+        "workingLatex": "-\\frac{x}{4y} = -\\frac{1}{2}",
+        "explanation": "We want the points where the tangent gradient is $-\\frac12$, so we set the derivative equal to that value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange to a relation between x and y",
+        "workingLatex": "\\frac{x}{4y} = \\frac{1}{2} \\;\\Rightarrow\\; 2x = 4y \\;\\Rightarrow\\; x = 2y",
+        "explanation": "Cross-multiplying gives $2x=4y$, so $x=2y$: the required points lie on this line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute x = 2y into the curve",
+        "workingLatex": "(2y)^2 + 4y^2 = 8",
+        "explanation": "The points also lie on $C$, so we substitute $x=2y$ into the curve's equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify and solve for y",
+        "workingLatex": "4y^2 + 4y^2 = 8y^2 = 8 \\;\\Rightarrow\\; y^2 = 1",
+        "explanation": "Combining like terms gives $8y^2=8$, so $y^2=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the two points",
+        "workingLatex": "y = \\pm 1 \\;\\Rightarrow\\; (2, 1) \\text{ and } (-2, -1)",
+        "explanation": "Using $x=2y$: $y=1$ gives $(2,1)$ and $y=-1$ gives $(-2,-1)$. This answers part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Form the tangent at (2, 1)",
+        "workingLatex": "y - 1 = -\\tfrac{1}{2}(x - 2) \\;\\Rightarrow\\; x + 2y = 4",
+        "explanation": "Using gradient $-\\frac12$ through $(2,1)$ and clearing the fraction gives $x+2y=4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Form the tangent at (-2, -1)",
+        "workingLatex": "y + 1 = -\\tfrac{1}{2}(x + 2) \\;\\Rightarrow\\; x + 2y = -4",
+        "explanation": "Using gradient $-\\frac12$ through $(-2,-1)$ and clearing the fraction gives $x+2y=-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Show the tangents are parallel",
+        "workingLatex": "\\text{both have gradient } -\\tfrac{1}{2} \\;\\Rightarrow\\; \\text{parallel}",
+        "explanation": "The two tangents have the same gradient $-\\frac12$, so they are parallel. This completes part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Write the two lines in the same form",
+        "workingLatex": "x + 2y - 4 = 0 \\quad\\text{and}\\quad x + 2y + 4 = 0",
+        "explanation": "Writing both tangents as $x+2y+c=0$ lets us apply the distance-between-parallel-lines formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Apply the distance formula",
+        "workingLatex": "d = \\frac{|{-4} - 4|}{\\sqrt{1^2 + 2^2}} = \\frac{8}{\\sqrt{5}}",
+        "explanation": "For parallel lines $x+2y+c_1=0$ and $x+2y+c_2=0$, the distance is $\\dfrac{|c_1-c_2|}{\\sqrt{1^2+2^2}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Rationalise the denominator",
+        "workingLatex": "d = \\frac{8}{\\sqrt{5}} = \\frac{8\\sqrt{5}}{5}",
+        "explanation": "Multiplying top and bottom by $\\sqrt5$ gives the exact distance. This answers part (d).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = -\\frac{x}{4y}$; (b) $(2, 1)$ and $(-2, -1)$; (c) tangents $x + 2y = 4$ and $x + 2y = -4$, both of gradient $-\\frac12$, hence parallel; (d) distance $= \\frac{8\\sqrt{5}}{5}$."
+  }
+}

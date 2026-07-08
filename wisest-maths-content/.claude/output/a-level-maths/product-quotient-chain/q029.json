@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "chain rule",
+    "trigonometry",
+    "gradient"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\cos^3 x$, where $x$ is measured in radians. (a) Find $\\dfrac{dy}{dx}$. (b) Find the exact gradient of $C$ at the point where $x = \\dfrac{\\pi}{3}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the function to expose the composite",
+        "workingLatex": "y = \\cos^3 x = (\\cos x)^3",
+        "explanation": "Writing $\\cos^3 x$ as $(\\cos x)^3$ shows it is a cube of a function of $x$, a composite that needs the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the inner substitution",
+        "workingLatex": "u = \\cos x, \\qquad y = u^3",
+        "explanation": "Let $u=\\cos x$; then $y=u^3$ is a simple power of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = 3u^2",
+        "explanation": "Differentiating $u^3$ with respect to $u$ gives $3u^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = -\\sin x",
+        "explanation": "The derivative of $\\cos x$ (in radians) is $-\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = 3u^2\\cdot(-\\sin x) = -3\\cos^2 x\\,\\sin x",
+        "explanation": "Multiplying the two derivatives and substituting $u=\\cos x$ gives the gradient function for part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute x = pi/3",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\pi/3} = -3\\cos^2\\!\\left(\\tfrac{\\pi}{3}\\right)\\sin\\!\\left(\\tfrac{\\pi}{3}\\right)",
+        "explanation": "The gradient at the point is the derivative evaluated at $x=\\tfrac{\\pi}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Insert the exact trig values",
+        "workingLatex": "\\cos\\tfrac{\\pi}{3} = \\tfrac{1}{2}, \\qquad \\sin\\tfrac{\\pi}{3} = \\tfrac{\\sqrt{3}}{2}",
+        "explanation": "From the standard exact values, $\\cos\\tfrac{\\pi}{3}=\\tfrac{1}{2}$ and $\\sin\\tfrac{\\pi}{3}=\\tfrac{\\sqrt{3}}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute the values",
+        "workingLatex": "= -3\\left(\\tfrac{1}{2}\\right)^2\\left(\\tfrac{\\sqrt{3}}{2}\\right) = -3\\cdot\\tfrac{1}{4}\\cdot\\tfrac{\\sqrt{3}}{2}",
+        "explanation": "Squaring $\\tfrac{1}{2}$ gives $\\tfrac{1}{4}$; now multiply the three factors together.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify to the exact gradient",
+        "workingLatex": "= -\\frac{3\\sqrt{3}}{8}",
+        "explanation": "Multiplying $3\\cdot\\tfrac{1}{4}\\cdot\\tfrac{\\sqrt{3}}{2}$ gives $\\dfrac{3\\sqrt{3}}{8}$, and the sign is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the exact gradient",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{3\\sqrt{3}}{8} \\approx -0.650",
+        "explanation": "So the exact gradient at $x=\\tfrac{\\pi}{3}$ is $-\\dfrac{3\\sqrt{3}}{8}$, about $-0.650$ (the curve is falling there).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = -3\\cos^2 x\\,\\sin x$. (b) At $x=\\tfrac{\\pi}{3}$ the exact gradient is $-\\dfrac{3\\sqrt{3}}{8}\\ (\\approx -0.650)$."
+  }
+}

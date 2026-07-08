@@ -6,60 +6,73 @@
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
   "marks": 4,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "exact values",
-    "surds",
-    "cosine"
+    "compound angle",
+    "tangent",
+    "exact values"
   ],
-  "questionText": "Find the exact value of $\\cos 105^\\circ$, writing $105^\\circ = 60^\\circ + 45^\\circ$.",
+  "questionText": "Show that $\\tan\\dfrac{5\\pi}{12} = 2 + \\sqrt{3}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Split the angle",
-        "workingLatex": "105^\\circ = 60^\\circ + 45^\\circ",
-        "explanation": "Writing $105^\\circ$ as a sum of two standard angles lets us use known exact values.",
+        "description": "Split the angle into standard parts",
+        "workingLatex": "\\frac{5\\pi}{12} = \\frac{3\\pi}{12} + \\frac{2\\pi}{12} = \\frac{\\pi}{4} + \\frac{\\pi}{6}",
+        "explanation": "We split $\\frac{5\\pi}{12}$ into two angles with known tangents. Over a denominator of $12$, $\\frac{\\pi}{4}=\\frac{3\\pi}{12}$ and $\\frac{\\pi}{6}=\\frac{2\\pi}{12}$ sum to $\\frac{5\\pi}{12}$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the cosine addition formula",
-        "workingLatex": "\\cos 105^\\circ = \\cos 60^\\circ\\cos 45^\\circ - \\sin 60^\\circ\\sin 45^\\circ",
-        "explanation": "For cosine the plus inside the bracket gives a minus between the products.",
+        "description": "Apply the tangent addition formula",
+        "workingLatex": "\\tan\\left(\\frac{\\pi}{4} + \\frac{\\pi}{6}\\right) = \\frac{\\tan\\frac{\\pi}{4} + \\tan\\frac{\\pi}{6}}{1 - \\tan\\frac{\\pi}{4}\\tan\\frac{\\pi}{6}}",
+        "explanation": "Since the angle is a sum, we use $\\tan(A+B)=\\frac{\\tan A+\\tan B}{1-\\tan A\\tan B}$ with $A=\\frac{\\pi}{4}$ and $B=\\frac{\\pi}{6}$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the exact values",
-        "workingLatex": "= \\frac{1}{2}\\cdot\\frac{\\sqrt2}{2} - \\frac{\\sqrt3}{2}\\cdot\\frac{\\sqrt2}{2}",
-        "explanation": "Inserting the standard values prepares the arithmetic.",
+        "description": "Quote the standard tangents",
+        "workingLatex": "\\tan\\frac{\\pi}{4} = 1, \\quad \\tan\\frac{\\pi}{6} = \\frac{1}{\\sqrt{3}}",
+        "explanation": "These are the standard exact tangents of $45^\\circ$ and $30^\\circ$, ready to substitute.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Multiply out",
-        "workingLatex": "= \\frac{\\sqrt2}{4} - \\frac{\\sqrt6}{4}",
-        "explanation": "Each product simplifies to a surd over $4$.",
+        "description": "Substitute the tangents",
+        "workingLatex": "= \\frac{1 + \\frac{1}{\\sqrt{3}}}{1 - 1\\cdot\\frac{1}{\\sqrt{3}}} = \\frac{1 + \\frac{1}{\\sqrt{3}}}{1 - \\frac{1}{\\sqrt{3}}}",
+        "explanation": "Putting the values in gives a fraction that still contains the small fractions $\\frac{1}{\\sqrt{3}}$, which we will clear next.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Combine",
-        "workingLatex": "= \\frac{\\sqrt2 - \\sqrt6}{4}",
-        "explanation": "The numerators combine over the common denominator.",
+        "description": "Clear the inner fractions",
+        "workingLatex": "= \\frac{\\sqrt{3} + 1}{\\sqrt{3} - 1}",
+        "explanation": "Multiplying the numerator and denominator of the whole fraction by $\\sqrt{3}$ removes the $\\frac{1}{\\sqrt{3}}$ terms, leaving a neat surd fraction.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check the sign",
-        "workingLatex": "\\frac{\\sqrt2 - \\sqrt6}{4} \\approx -0.259 < 0",
-        "explanation": "The result is negative, as expected since $105^\\circ$ is obtuse and cosine is negative in the second quadrant.",
+        "description": "Rationalise the denominator",
+        "workingLatex": "= \\frac{(\\sqrt{3} + 1)(\\sqrt{3} + 1)}{(\\sqrt{3} - 1)(\\sqrt{3} + 1)} = \\frac{(\\sqrt{3}+1)^2}{3 - 1}",
+        "explanation": "To remove the surd from the denominator we multiply top and bottom by the conjugate $\\sqrt{3}+1$; the denominator becomes the difference of two squares $3-1=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Expand and simplify",
+        "workingLatex": "= \\frac{3 + 2\\sqrt{3} + 1}{2} = \\frac{4 + 2\\sqrt{3}}{2} = 2 + \\sqrt{3}",
+        "explanation": "Expanding $(\\sqrt{3}+1)^2=3+2\\sqrt{3}+1=4+2\\sqrt{3}$ and dividing by $2$ gives the simplified exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the size of the answer",
+        "workingLatex": "2 + \\sqrt{3} \\approx 2 + 1.732 = 3.732",
+        "explanation": "A decimal check gives about $3.732$, which is a plausible tangent for an angle close to $\\frac{\\pi}{2}$ where the tangent grows large.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos 105^\\circ = \\dfrac{\\sqrt2 - \\sqrt6}{4}$"
+    "finalAnswer": "$\\tan\\dfrac{5\\pi}{12} = 2 + \\sqrt{3}$."
   }
 }

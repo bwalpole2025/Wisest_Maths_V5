@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "chain rule",
+    "surds",
+    "differentiation"
+  ],
+  "questionText": "Find $\\dfrac{dy}{dx}$ for $y = \\sqrt{x^2+3}$, giving your answer as a single fraction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the root as a power",
+        "workingLatex": "y = \\sqrt{x^2+3} = (x^2+3)^{1/2}",
+        "explanation": "A square root is a power of $\\tfrac12$. Rewriting it this way exposes the inner expression $x^2+3$ sitting inside the half-power, so we can apply the power rule and chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce the inner function as $u$",
+        "workingLatex": "u = x^2+3 \\quad \\Rightarrow \\quad y = u^{1/2}",
+        "explanation": "We name the inside of the root $u$, leaving the clean outer function $y=u^{1/2}$ to differentiate on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 2x",
+        "explanation": "Differentiating $u=x^2+3$ gives $2x$ by the power rule, and the constant $3$ contributes nothing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = \\tfrac{1}{2}u^{-1/2}",
+        "explanation": "Applying the power rule to $y=u^{1/2}$ brings the $\\tfrac12$ down and reduces the exponent to $-\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = \\tfrac{1}{2}u^{-1/2}\\cdot 2x",
+        "explanation": "The chain rule multiplies the outer rate by the inner rate to combine them into one derivative with respect to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the constants",
+        "workingLatex": "\\frac{dy}{dx} = x\\,u^{-1/2}",
+        "explanation": "The factor $\\tfrac12\\times 2x$ simplifies to $x$, tidying the expression before we return to $x$ inside $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute back and write as a single fraction",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x}{(x^2+3)^{1/2}} = \\frac{x}{\\sqrt{x^2+3}}",
+        "explanation": "Replacing $u$ with $x^2+3$ and rewriting the negative power as a denominator gives the answer as a single tidy fraction.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{x}{\\sqrt{x^2+3}}$."
+  }
+}

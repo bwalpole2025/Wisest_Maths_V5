@@ -5,68 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "equations",
-    "quadratic",
-    "sine"
+    "compound angle",
+    "quadrant",
+    "sign reasoning"
   ],
-  "questionText": "Solve $\\cos 2\\theta + 3\\sin\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Given that $\\cos A = \\tfrac{4}{5}$ where $A$ is acute, and $\\sin B = \\tfrac{5}{13}$ where $B$ is obtuse, find the exact values of $\\sin(A+B)$ and $\\cos(A+B)$, and hence state the quadrant in which $A+B$ lies.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the sine form of the double angle",
-        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
-        "explanation": "The rest of the equation is in sine, so this form gives a quadratic in $\\sin\\theta$.",
+        "description": "Find sin A using the quadrant",
+        "workingLatex": "A \\text{ acute} \\;\\Rightarrow\\; \\sin A = +\\sqrt{1-\\tfrac{16}{25}} = \\sqrt{\\tfrac{9}{25}} = \\tfrac{3}{5}",
+        "explanation": "Acute $A$ lies in the first quadrant, so its sine is the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute",
-        "workingLatex": "1 - 2\\sin^2\\theta + 3\\sin\\theta = 2",
-        "explanation": "The equation is now entirely in sine.",
+        "description": "Find cos B using the quadrant",
+        "workingLatex": "B \\text{ obtuse} \\;\\Rightarrow\\; \\cos B = -\\sqrt{1-\\tfrac{25}{169}} = -\\sqrt{\\tfrac{144}{169}} = -\\tfrac{12}{13}",
+        "explanation": "An obtuse $B$ is in the second quadrant, where cosine is negative, so we take the negative root.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to standard form",
-        "workingLatex": "2\\sin^2\\theta - 3\\sin\\theta + 1 = 0",
-        "explanation": "Collecting terms and tidying signs gives a quadratic in $\\sin\\theta$.",
+        "description": "State the formula for sin(A+B)",
+        "workingLatex": "\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "The addition formula assembles the four ratios now known.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(2\\sin\\theta - 1)(\\sin\\theta - 1) = 0",
-        "explanation": "The factors of $1$ that give the middle term $-3\\sin\\theta$ are these.",
+        "description": "Substitute to find sin(A+B)",
+        "workingLatex": "\\sin(A+B) = \\tfrac{3}{5}\\left(-\\tfrac{12}{13}\\right) + \\tfrac{4}{5}\\cdot\\tfrac{5}{13} = -\\tfrac{36}{65} + \\tfrac{20}{65} = -\\tfrac{16}{65}",
+        "explanation": "The negative first term outweighs the positive second, leaving a negative sine.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\sin\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 30^\\circ, 150^\\circ",
-        "explanation": "Sine one half gives quadrant I and II solutions.",
+        "description": "State the formula for cos(A+B)",
+        "workingLatex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "The cosine addition formula subtracts the product of the sines.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "\\sin\\theta = 1 \\;\\Rightarrow\\; \\theta = 90^\\circ",
-        "explanation": "Sine equals $1$ only at $90^\\circ$.",
+        "description": "Substitute to find cos(A+B)",
+        "workingLatex": "\\cos(A+B) = \\tfrac{4}{5}\\left(-\\tfrac{12}{13}\\right) - \\tfrac{3}{5}\\cdot\\tfrac{5}{13} = -\\tfrac{48}{65} - \\tfrac{15}{65} = -\\tfrac{63}{65}",
+        "explanation": "Both products are negative, so $\\cos(A+B)$ is negative.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 30^\\circ, 90^\\circ, 150^\\circ",
-        "explanation": "Combining both cases gives three solutions in the interval.",
+        "description": "Confirm with the Pythagorean identity",
+        "workingLatex": "\\sin^2(A+B)+\\cos^2(A+B) = \\tfrac{256}{4225}+\\tfrac{3969}{4225} = \\tfrac{4225}{4225} = 1",
+        "explanation": "The two squared values sum to $1$, checking that the sine and cosine are consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find tan(A+B) as extra evidence",
+        "workingLatex": "\\tan(A+B) = \\dfrac{\\sin(A+B)}{\\cos(A+B)} = \\dfrac{-16/65}{-63/65} = \\tfrac{16}{63}",
+        "explanation": "Both parts are negative, so the tangent is positive, which will help pin down the quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Determine the quadrant of A+B",
+        "workingLatex": "\\sin(A+B)<0,\\ \\cos(A+B)<0 \\;\\Rightarrow\\; A+B \\text{ lies in the third quadrant}",
+        "explanation": "A negative sine together with a negative cosine (and a positive tangent) uniquely identifies the third quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sin(A+B) = -\\tfrac{16}{65}, \\quad \\cos(A+B) = -\\tfrac{63}{65}, \\quad A+B \\text{ in the third quadrant}",
+        "explanation": "Collecting the exact values and the quadrant completes the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 90^\\circ, 150^\\circ$"
+    "finalAnswer": "$\\sin(A+B) = -\\tfrac{16}{65}$, $\\cos(A+B) = -\\tfrac{63}{65}$; since both are negative, $A+B$ lies in the third quadrant."
   }
 }

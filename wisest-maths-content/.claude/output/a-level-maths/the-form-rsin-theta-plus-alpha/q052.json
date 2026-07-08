@@ -5,60 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "reverse",
-    "maximum"
+    "modelling",
+    "radians"
   ],
-  "questionText": "The expression $a\\sin\\theta + b\\cos\\theta$ (with $a, b > 0$) has a maximum value of $10$, which first occurs at $\\theta = 30^\\circ$. Find $a$ and $b$.",
+  "questionText": "The voltage in an alternating-current circuit is $V(t) = 8\\sin(50t) + 15\\cos(50t)$ volts, where $t$ is the time in seconds and all angles are in radians. (a) Express $V(t)$ in the form $R\\sin(50t + \\alpha)$, where $R > 0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. (b) Write down the peak voltage and find the first time $t > 0$ at which it is reached. (c) Find the first time $t > 0$ at which the voltage is $8.5$ V. Give your times in seconds to $4$ decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Relate the maximum to R",
-        "workingLatex": "a\\sin\\theta + b\\cos\\theta = R\\sin(\\theta + \\alpha), \\quad R = 10",
-        "explanation": "The maximum value of a harmonic expression equals its amplitude, so $R = 10$.",
+        "description": "Set up the identity to match",
+        "workingLatex": "8\\sin(50t) + 15\\cos(50t) \\equiv R\\sin(50t + \\alpha)",
+        "explanation": "We want the two terms combined into a single sine wave so the amplitude and timing are easy to read. Setting them identically equal to $R\\sin(50t+\\alpha)$ lets us expand and compare, with $50t$ acting as the angle throughout.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Use the location of the maximum",
-        "workingLatex": "\\text{max at } \\theta = 30^\\circ \\;\\Rightarrow\\; 30^\\circ + \\alpha = 90^\\circ",
-        "explanation": "The maximum of $\\sin(\\theta + \\alpha)$ occurs when its argument is $90^\\circ$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(50t + \\alpha) = R\\cos\\alpha\\,\\sin(50t) + R\\sin\\alpha\\,\\cos(50t)",
+        "explanation": "Applying $\\sin(A+B)=\\sin A\\cos B + \\cos A\\sin B$ and pulling $R$ through gives the right-hand side the same structure as the left: a multiple of $\\sin(50t)$ plus a multiple of $\\cos(50t)$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find alpha",
-        "workingLatex": "\\alpha = 60^\\circ",
-        "explanation": "Solving gives the phase angle $\\alpha = 60^\\circ$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 8, \\qquad R\\sin\\alpha = 15",
+        "explanation": "For the identity to hold for all $t$, the coefficient of $\\sin(50t)$ must match and the coefficient of $\\cos(50t)$ must match. This produces two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recover a",
-        "workingLatex": "a = R\\cos\\alpha = 10\\cos 60^\\circ = 10\\cdot\\frac{1}{2} = 5",
-        "explanation": "From the standard relations, $a = R\\cos\\alpha$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{8^2 + 15^2} = \\sqrt{289} = 17",
+        "explanation": "Squaring and adding eliminates $\\alpha$ through $\\cos^2\\alpha + \\sin^2\\alpha = 1$, leaving $R^2 = 8^2 + 15^2$. The positive root gives the amplitude $R = 17$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Recover b",
-        "workingLatex": "b = R\\sin\\alpha = 10\\sin 60^\\circ = 10\\cdot\\frac{\\sqrt3}{2} = 5\\sqrt3",
-        "explanation": "Similarly, $b = R\\sin\\alpha$.",
+        "description": "Find α in radians",
+        "workingLatex": "\\tan\\alpha = \\dfrac{15}{8} \\Rightarrow \\alpha = 1.0808^{c}",
+        "explanation": "Dividing the two equations gives $\\tan\\alpha = \\tfrac{15}{8}$. Both coefficients are positive so $\\alpha$ is acute; working in radians (to match the model) gives $\\alpha = 1.0808$ radians.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "a = 5, \\quad b = 5\\sqrt3",
-        "explanation": "Check: $\\sqrt{5^2 + (5\\sqrt3)^2} = \\sqrt{25 + 75} = 10$, consistent with the maximum.",
+        "description": "State the R-form",
+        "workingLatex": "V(t) = 17\\sin(50t + 1.0808)",
+        "explanation": "Combining the amplitude and phase writes the voltage as a single sine wave. This makes the peak value and its timing straightforward to extract.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the period",
+        "workingLatex": "\\text{period} = \\dfrac{2\\pi}{50} = \\dfrac{\\pi}{25} \\approx 0.1257\\text{ s}",
+        "explanation": "For a wave in the form $\\sin(kt+\\ldots)$ the period is $\\tfrac{2\\pi}{k}$. With $k = 50$ the voltage completes a full cycle every $\\tfrac{\\pi}{25}\\approx 0.1257$ seconds, which is why the peak in part (b) occurs so soon after $t=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write down the peak voltage",
+        "workingLatex": "V_{\\max} = R = 17\\text{ V}",
+        "explanation": "Since $\\sin$ never exceeds $1$, the largest value of the model is simply the amplitude $R = 17$. This is read directly off the R-form with no calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the time of the peak",
+        "workingLatex": "50t + 1.0808 = \\dfrac{\\pi}{2} \\Rightarrow 50t = 0.4900 \\Rightarrow t = 0.0098\\text{ s}",
+        "explanation": "A sine reaches its maximum of $1$ when its angle equals $\\tfrac{\\pi}{2}$. Solving for $t$ gives the first instant, after $t=0$, at which the voltage peaks.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set up the level equation",
+        "workingLatex": "17\\sin(50t + 1.0808) = 8.5 \\Rightarrow \\sin(50t + 1.0808) = 0.5",
+        "explanation": "For the voltage to be $8.5$ V we set the model equal to $8.5$ and divide by the amplitude $17$, reducing it to the simple equation $\\sin(50t+1.0808)=0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the base angle",
+        "workingLatex": "\\arcsin(0.5) = \\dfrac{\\pi}{6} = 0.5236",
+        "explanation": "The principal solution of $\\sin = 0.5$ is $\\tfrac{\\pi}{6}$. Sine is also positive in the second quadrant, so the other relevant value is $\\pi - \\tfrac{\\pi}{6} = \\tfrac{5\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Choose the first valid shifted angle",
+        "workingLatex": "50t + 1.0808 = 0.5236 \\;(\\text{rejected}), \\quad 50t + 1.0808 = \\dfrac{5\\pi}{6} = 2.6180",
+        "explanation": "The angle starts at $1.0808$ when $t=0$, so it can never equal $0.5236$ for $t>0$; that root gives a negative time and is rejected. The next solution, $\\tfrac{5\\pi}{6} = 2.6180$, is the first that the increasing angle actually reaches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for t",
+        "workingLatex": "50t = 2.6180 - 1.0808 = 1.5372 \\Rightarrow t = 0.0307\\text{ s}",
+        "explanation": "Subtracting the phase and dividing by $50$ gives the first time after $t=0$ at which the voltage falls to $8.5$ V, which happens just after the peak on the way down.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$a = 5, \\quad b = 5\\sqrt3$"
+    "finalAnswer": "(a) $V(t) = 17\\sin(50t + 1.0808)$ (radians). (b) The peak voltage is $17$ V, first reached at $t = 0.0098$ s. (c) The voltage is first $8.5$ V at $t = 0.0307$ s."
   }
 }

@@ -5,60 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "simplify",
-    "identities",
-    "cotangent"
+    "given sec",
+    "pythagorean identity",
+    "tan",
+    "quadrant"
   ],
-  "questionText": "Show that $\\dfrac{\\cot\\theta}{\\csc\\theta}$ simplifies to $\\cos\\theta$.",
+  "questionText": "Given that $\\sec\\theta = \\sqrt{10}$ and that $\\theta$ lies in the fourth quadrant, use the identity $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$ to find the exact value of $\\tan\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite cotangent in sine and cosine",
-        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Expressing everything in sine and cosine is the reliable way to simplify a quotient of reciprocal functions.",
+        "description": "Note the signs in the fourth quadrant",
+        "workingLatex": "\\text{Q4:}\\quad \\cos\\theta > 0, \\quad \\sin\\theta < 0, \\quad \\tan\\theta < 0",
+        "explanation": "In the fourth quadrant cosine is positive while sine is negative, so tangent is negative. This tells us in advance which sign $\\tan\\theta$ must take.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite cosecant in sine",
-        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}",
-        "explanation": "Cosecant becomes one over sine, so both parts of the fraction are now in basic form.",
+        "description": "Check the given secant is consistent",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta} > 0",
+        "explanation": "Because cosine is positive here, its reciprocal $\\sec\\theta$ should be positive, and $\\sqrt{10}$ is indeed positive, so the data is consistent.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute into the fraction",
-        "workingLatex": "\\frac{\\cot\\theta}{\\csc\\theta} = \\frac{\\;\\frac{\\cos\\theta}{\\sin\\theta}\\;}{\\;\\frac{1}{\\sin\\theta}\\;}",
-        "explanation": "The expression is now a fraction divided by a fraction, ready to be simplified by flipping the denominator.",
+        "description": "State the identity linking sec and tan",
+        "workingLatex": "1 + \\tan^2\\theta \\equiv \\sec^2\\theta",
+        "explanation": "This Pythagorean identity connects the quantity we know, $\\sec\\theta$, with the quantity we want, $\\tan\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Divide by multiplying by the reciprocal",
-        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta} \\times \\frac{\\sin\\theta}{1}",
-        "explanation": "Dividing by $\\frac{1}{\\sin\\theta}$ is the same as multiplying by $\\sin\\theta$, which will cancel the denominator.",
+        "description": "Rearrange to make tan squared the subject",
+        "workingLatex": "\\tan^2\\theta = \\sec^2\\theta - 1",
+        "explanation": "Subtracting $1$ from both sides isolates $\\tan^2\\theta$, ready for us to substitute the known secant.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Cancel the sine factors",
-        "workingLatex": "= \\frac{\\cos\\theta \\cdot \\sin\\theta}{\\sin\\theta}",
-        "explanation": "The sine in the numerator and denominator cancel, since they are the same nonzero quantity.",
+        "description": "Substitute the value of sec",
+        "workingLatex": "\\tan^2\\theta = \\left(\\sqrt{10}\\right)^2 - 1 = 10 - 1 = 9",
+        "explanation": "Squaring $\\sqrt{10}$ gives $10$, and subtracting $1$ leaves a clean perfect square, which will give an exact root.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the simplified result",
-        "workingLatex": "= \\cos\\theta",
-        "explanation": "After cancelling, only cosine remains, which is exactly what we were asked to show.",
+        "description": "Take the square root",
+        "workingLatex": "\\tan\\theta = \\pm\\sqrt{9} = \\pm 3",
+        "explanation": "The square root gives two possibilities, $+3$ and $-3$; the quadrant will decide which one is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Choose the sign from the quadrant",
+        "workingLatex": "\\tan\\theta < 0 \\ \\Rightarrow\\ \\tan\\theta = -3",
+        "explanation": "Tangent is negative in the fourth quadrant, so we discard $+3$ and keep the negative root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find cos and sin to verify",
+        "workingLatex": "\\cos\\theta = \\frac{1}{\\sqrt{10}} = \\tfrac{\\sqrt{10}}{10}, \\qquad \\sin\\theta = \\tan\\theta\\cos\\theta = -\\tfrac{3\\sqrt{10}}{10}",
+        "explanation": "Finding $\\cos\\theta$ from the secant and then $\\sin\\theta$ from $\\sin\\theta = \\tan\\theta\\cos\\theta$ lets us test our answer against the fundamental identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm with sin^2 + cos^2 = 1",
+        "workingLatex": "\\left(-\\tfrac{3\\sqrt{10}}{10}\\right)^2 + \\left(\\tfrac{\\sqrt{10}}{10}\\right)^2 = \\tfrac{90}{100} + \\tfrac{10}{100} = 1",
+        "explanation": "The two squares add to $1$, which confirms the value $\\tan\\theta = -3$ is consistent with a genuine angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the answer",
+        "workingLatex": "\\tan\\theta = -3",
+        "explanation": "The identity gave the size and the quadrant fixed the sign, so the exact value is $-3$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\cot\\theta}{\\csc\\theta} = \\cos\\theta$"
+    "finalAnswer": "$\\tan\\theta = -3$."
   }
 }

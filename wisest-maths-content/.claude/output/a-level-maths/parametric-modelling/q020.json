@@ -4,54 +4,68 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "acceleration",
-    "components"
+    "parametric",
+    "axis crossing",
+    "quadratic"
   ],
-  "questionText": "A particle has position $x = t^3$, $y = 2t^2$ (metres) at time $t$ seconds. Find the magnitude of its acceleration at $t = 1$.",
+  "questionText": "A point moves along a path given by $x = t^{2} - 4t + 3$ and $y = 2t + 1$. Find the values of $t$ at which the path meets the $y$-axis, and the coordinates of the points where it does so.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 3t^2, \\quad v_y = 4t",
-        "explanation": "Differentiating the positions once gives the velocities.",
+        "description": "State the condition for meeting the y-axis",
+        "workingLatex": "x = 0",
+        "explanation": "Every point on the $y$-axis has horizontal coordinate zero, so the path meets it exactly when $x = 0$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the acceleration components",
-        "workingLatex": "a_x = 6t, \\quad a_y = 4",
-        "explanation": "Differentiating the velocities gives the accelerations; the vertical acceleration is constant.",
+        "description": "Form the equation in t",
+        "workingLatex": "t^{2} - 4t + 3 = 0",
+        "explanation": "We set the $x$-equation equal to zero to find the times at which the point sits on the $y$-axis.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate at t = 1",
-        "workingLatex": "a_x = 6, \\quad a_y = 4",
-        "explanation": "Substituting $t = 1$ gives the acceleration components.",
+        "description": "Factorise the quadratic",
+        "workingLatex": "(t - 1)(t - 3) = 0",
+        "explanation": "The numbers $-1$ and $-3$ multiply to $+3$ and add to $-4$, so the quadratic factorises neatly.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the magnitude",
-        "workingLatex": "|a| = \\sqrt{6^2 + 4^2} = \\sqrt{36 + 16}",
-        "explanation": "The magnitude uses Pythagoras on the components.",
+        "description": "Solve for t",
+        "workingLatex": "t = 1 \\quad \\text{or} \\quad t = 3",
+        "explanation": "A product is zero only when one factor is zero, giving the two times when the path meets the axis.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "= \\sqrt{52} = 2\\sqrt{13} \\approx 7.2 \\text{ m/s}^2",
-        "explanation": "Since $52 = 4 \\times 13$, the magnitude is $2\\sqrt{13}$, about $7.2$ m/s².",
+        "description": "Find y when t = 1",
+        "workingLatex": "y = 2(1) + 1 = 3",
+        "explanation": "Substituting $t = 1$ into the $y$-equation gives the height of the first meeting point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y when t = 3",
+        "workingLatex": "y = 2(3) + 1 = 7",
+        "explanation": "Substituting $t = 3$ gives the height of the second meeting point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the points",
+        "workingLatex": "(0,\\,3) \\quad \\text{and} \\quad (0,\\,7)",
+        "explanation": "Both points lie on the $y$-axis so their $x$-coordinate is zero, giving the two crossing points.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$|a| = 2\\sqrt{13} \\approx 7.2$ m/s²"
+    "finalAnswer": "The path meets the $y$-axis at $t = 1$ and $t = 3$, at the points $(0,\\,3)$ and $(0,\\,7)$."
   }
 }

@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "chain rule",
+    "gradient"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{x}{\\sqrt{x^2+1}}$. (a) Show that $\\dfrac{dy}{dx}=\\dfrac{1}{(x^2+1)^{3/2}}$. (b) Hence explain why $C$ is increasing for all $x$. (c) Find the exact $x$-coordinates of the points on $C$ where the gradient is $\\dfrac{1}{8}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a quotient and label the parts",
+        "workingLatex": "u = x, \\qquad v = (x^2+1)^{1/2}",
+        "explanation": "Writing the surd as a power, $y=\\dfrac{u}{v}$ with $v=(x^2+1)^{1/2}$. The quotient rule applies, and $v$ is a composition needing the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the numerator",
+        "workingLatex": "u' = 1",
+        "explanation": "The derivative of $x$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the denominator with the chain rule",
+        "workingLatex": "v = (x^2+1)^{1/2},\\quad w = x^2+1,\\quad \\frac{dw}{dx}=2x,\\quad v' = \\tfrac12(x^2+1)^{-1/2}(2x) = \\frac{x}{\\sqrt{x^2+1}}",
+        "explanation": "With $w=x^2+1$, $v=w^{1/2}$ so $v'=\\tfrac12 w^{-1/2}\\cdot\\dfrac{dw}{dx}$. The factor $2x$ cancels the $\\tfrac12$, leaving $\\dfrac{x}{\\sqrt{x^2+1}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the quotient rule and the value of v squared",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}, \\qquad v^2 = x^2+1",
+        "explanation": "Note that squaring the surd removes it: $v^2=x^2+1$. This will keep the denominator simple.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the pieces",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1\\cdot\\sqrt{x^2+1} - x\\cdot\\dfrac{x}{\\sqrt{x^2+1}}}{x^2+1}",
+        "explanation": "Place $u'v-uv'$ over $v^2=x^2+1$. The numerator still contains a surd we must tidy.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine the numerator over a common surd",
+        "workingLatex": "\\text{numerator} = \\frac{(x^2+1) - x^2}{\\sqrt{x^2+1}} = \\frac{1}{\\sqrt{x^2+1}}",
+        "explanation": "Writing $\\sqrt{x^2+1}=\\dfrac{x^2+1}{\\sqrt{x^2+1}}$ lets us combine the two terms; the $x^2$ terms cancel, leaving $\\dfrac{1}{\\sqrt{x^2+1}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide by the denominator to finish",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{\\sqrt{x^2+1}}\\cdot\\frac{1}{x^2+1} = \\frac{1}{(x^2+1)^{3/2}}",
+        "explanation": "Dividing by $x^2+1$ means multiplying the surd power $\\tfrac12$ by adding $1$, giving $(x^2+1)^{3/2}$ in the denominator, as required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Explain why C is increasing",
+        "workingLatex": "(x^2+1)^{3/2} > 0 \\ \\text{for all } x \\ \\Rightarrow\\ \\frac{dy}{dx} > 0",
+        "explanation": "The denominator is a positive quantity raised to a power, so it is always positive; hence the gradient is positive for every $x$ and $C$ is increasing everywhere.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set the gradient equal to 1/8",
+        "workingLatex": "\\frac{1}{(x^2+1)^{3/2}} = \\frac{1}{8}",
+        "explanation": "For part (c) we want the points where the gradient equals $\\tfrac18$, so we set the derivative equal to that value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Take reciprocals",
+        "workingLatex": "(x^2+1)^{3/2} = 8",
+        "explanation": "Since both sides are reciprocals of each other, the equation simplifies to $(x^2+1)^{3/2}=8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Raise both sides to the power 2/3",
+        "workingLatex": "x^2+1 = 8^{2/3} = \\left(8^{1/3}\\right)^2 = 2^2 = 4",
+        "explanation": "Raising to the power $\\tfrac23$ undoes the power $\\tfrac32$. Here $8^{1/3}=2$, so $8^{2/3}=4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for x squared",
+        "workingLatex": "x^2 = 3",
+        "explanation": "Subtracting $1$ from both sides gives $x^2=3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for x",
+        "workingLatex": "x = \\pm\\sqrt{3}",
+        "explanation": "Taking square roots gives two symmetric solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the answer",
+        "workingLatex": "x = \\sqrt{3} \\quad \\text{and} \\quad x = -\\sqrt{3}",
+        "explanation": "So the gradient equals $\\tfrac18$ at the two points with $x=\\pm\\sqrt3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\dfrac{1}{(x^2+1)^{3/2}}$ (shown). (b) The denominator is always positive, so $\\dfrac{dy}{dx}>0$ for all $x$ and $C$ is increasing everywhere. (c) The gradient is $\\tfrac18$ at $x=\\pm\\sqrt3$."
+  }
+}

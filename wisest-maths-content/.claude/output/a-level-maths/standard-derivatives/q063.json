@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "exponential",
+    "two curves",
+    "equal gradient"
+  ],
+  "questionText": "Two curves are defined by $C_1:\\; y = 3e^{x}$ and $C_2:\\; y = e^{2x} + 2$.\n(a) Find $\\dfrac{dy}{dx}$ for each curve.\n(b) Find the exact value of $x$ at which the two curves have equal gradient, and state that common gradient.\n(c) Find the coordinates of the points where $C_1$ and $C_2$ intersect.\n(d) Find the gradient of each curve at the intersection point where $x=\\ln 2$, and hence explain what happens there.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate C1 (part a)",
+        "workingLatex": "C_1:\\; \\frac{dy}{dx} = 3e^{x}",
+        "explanation": "The derivative of $e^{x}$ is $e^{x}$, so the constant multiple $3e^{x}$ differentiates to $3e^{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate C2 (part a)",
+        "workingLatex": "C_2:\\; \\frac{dy}{dx} = 2e^{2x}",
+        "explanation": "Here $e^{2x}$ is the standard form $e^{kx}$ with $k=2$, giving $2e^{2x}$, and the constant $+2$ vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the two gradients equal (part b)",
+        "workingLatex": "3e^{x} = 2e^{2x}",
+        "explanation": "The curves have the same slope where their gradient functions are equal. This equation locates that $x$-value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify using a positive factor",
+        "workingLatex": "3 = 2e^{x} \\;\\Rightarrow\\; e^{x} = \\tfrac{3}{2}",
+        "explanation": "Dividing both sides by $e^{x}$ (which is always positive, so never zero) removes one exponential and leaves a simple equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x",
+        "workingLatex": "x = \\ln\\tfrac{3}{2}",
+        "explanation": "Taking natural logs gives the exact $x$-value where the gradients match, approximately $0.405$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the common gradient",
+        "workingLatex": "m = 3e^{x} = 3 \\cdot \\tfrac{3}{2} = \\tfrac{9}{2}",
+        "explanation": "Substituting $e^{x}=\\tfrac{3}{2}$ into either gradient function gives the shared slope $\\tfrac{9}{2}$. (Check: $2e^{2x}=2(\\tfrac{3}{2})^2=\\tfrac{9}{2}$.)",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the curves equal for intersections (part c)",
+        "workingLatex": "3e^{x} = e^{2x} + 2",
+        "explanation": "The curves meet where they have the same $y$-value, so we equate the two expressions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute to form a quadratic",
+        "workingLatex": "u^2 - 3u + 2 = 0 \\qquad (u = e^{x})",
+        "explanation": "Writing $u=e^{x}$ turns $e^{2x}-3e^{x}+2=0$ into a standard quadratic in $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Factorise the quadratic",
+        "workingLatex": "(u-1)(u-2) = 0 \\;\\Rightarrow\\; u = 1 \\text{ or } u = 2",
+        "explanation": "Factorising gives two positive roots, both acceptable since $e^{x}>0$ always.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Return to x",
+        "workingLatex": "e^{x} = 1 \\Rightarrow x = 0, \\qquad e^{x} = 2 \\Rightarrow x = \\ln 2",
+        "explanation": "Undoing the substitution gives the two $x$-values of intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the intersection coordinates",
+        "workingLatex": "(0,\\,3) \\quad \\text{and} \\quad (\\ln 2,\\,6)",
+        "explanation": "At $x=0$: $y=3e^{0}=3$. At $x=\\ln 2$: $y=3e^{\\ln 2}=6$ (and $C_2$ gives $e^{2\\ln 2}+2=4+2=6$, confirming the point).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find each gradient at x = ln 2 (part d)",
+        "workingLatex": "C_1':\\, 3e^{\\ln 2} = 6, \\qquad C_2':\\, 2e^{2\\ln 2} = 2 \\times 4 = 8",
+        "explanation": "Substituting $x=\\ln 2$ into each gradient function gives $6$ for $C_1$ and $8$ for $C_2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Interpret the gradients",
+        "workingLatex": "6 \\ne 8",
+        "explanation": "Because the gradients differ at $(\\ln 2, 6)$, the curves genuinely cross there (they meet at different angles) rather than touching.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Contrast with the equal-gradient point",
+        "workingLatex": "\\text{At } x=\\ln\\tfrac{3}{2}:\\; \\text{equal gradient } \\tfrac{9}{2}, \\text{ but } C_1, C_2 \\text{ at different heights}",
+        "explanation": "At $x=\\ln\\tfrac{3}{2}$ the curves have parallel tangents (equal gradient) yet are not at the same point, so those tangents are parallel but distinct lines.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Summarise",
+        "workingLatex": "\\text{Equal gradient at } \\ln\\tfrac{3}{2};\\; \\text{cross at } (0,3), (\\ln 2, 6)",
+        "explanation": "This distinguishes the two ideas: equal gradient (parallel tangents) versus intersection (equal $y$-value).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=3e^{x}$ and $\\dfrac{dy}{dx}=2e^{2x}$. (b) Equal gradients at $x=\\ln\\tfrac{3}{2}$, common gradient $\\tfrac{9}{2}$. (c) The curves meet at $(0,3)$ and $(\\ln 2,6)$. (d) At $(\\ln 2,6)$ the gradients are $6$ and $8$, so the curves cross there."
+  }
+}

@@ -6,59 +6,67 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 2,
-  "answerType": "expression",
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "cosecant",
-    "definition"
+    "sec",
+    "exact values",
+    "degrees"
   ],
-  "questionText": "Write down the definition of $\\csc\\theta$ in terms of $\\sin\\theta$, and state the values of $\\theta$ for which it is undefined.",
+  "questionText": "Find the exact value of $\\sec 60^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the reciprocal trig functions",
-        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}, \\quad \\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\cot\\theta = \\frac{1}{\\tan\\theta}",
-        "explanation": "Writing the family out first makes it clear that cosecant is the reciprocal of sine, so any statement about sine transfers directly to cosecant.",
+        "description": "Recall the definition of secant",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "There is no separate 'sec button' in the exact-value work; we always convert $\\sec$ back to a cosine and evaluate that instead.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Select the cosecant definition",
-        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}",
-        "explanation": "The name cosecant pairs with sine: the third letters match, co-S-ecant with S-ine, which is a reliable way to avoid mixing it up with secant.",
+        "description": "Apply the definition at 60 degrees",
+        "workingLatex": "\\sec 60^\\circ = \\frac{1}{\\cos 60^\\circ}",
+        "explanation": "Substituting $\\theta=60^\\circ$ turns the problem into finding one over $\\cos 60^\\circ$, a standard exact value.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find when the denominator is zero",
-        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\csc\\theta \\text{ undefined}",
-        "explanation": "Cosecant is one over sine, so it fails to exist exactly where sine is zero, because we cannot divide by zero.",
+        "description": "Recall the exact value of cos 60",
+        "workingLatex": "\\cos 60^\\circ = \\frac{1}{2}",
+        "explanation": "The angle $60^\\circ$ comes from the half of an equilateral triangle, one of the two standard triangles, giving $\\cos 60^\\circ=\\tfrac12$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the angles where sine is zero",
-        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\theta = 180^\\circ n = \\pi n",
-        "explanation": "Sine is zero at $0^\\circ$ and every $180^\\circ$ thereafter, so all the excluded angles are integer multiples of $\\pi$.",
+        "description": "Substitute the cosine value",
+        "workingLatex": "\\sec 60^\\circ = \\frac{1}{\\tfrac{1}{2}}",
+        "explanation": "Replacing $\\cos 60^\\circ$ by $\\tfrac12$ leaves a single division: one divided by a half.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the range restriction on cosecant",
-        "workingLatex": "|\\sin\\theta| \\le 1 \\;\\Rightarrow\\; |\\csc\\theta| \\ge 1",
-        "explanation": "As sine is bounded between $-1$ and $1$, its reciprocal is always at least $1$ in magnitude, so cosecant never takes a value strictly between $-1$ and $1$.",
+        "description": "Simplify the reciprocal of a fraction",
+        "workingLatex": "\\frac{1}{\\tfrac{1}{2}} = 1 \\times \\frac{2}{1} = 2",
+        "explanation": "Dividing by a fraction means multiplying by its reciprocal, so dividing by $\\tfrac12$ is the same as multiplying by $2$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final definition and restriction",
-        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}, \\quad \\theta \\ne \\pi n",
-        "explanation": "This is the complete answer, giving both the definition and the angles that must be excluded.",
+        "description": "Sanity check the size",
+        "workingLatex": "|\\cos 60^\\circ| \\le 1 \\Rightarrow |\\sec 60^\\circ| \\ge 1 \\; \\checkmark",
+        "explanation": "Since a cosine never exceeds $1$ in size, its reciprocal can never be smaller than $1$ in size. A value of $2$ is comfortably consistent with this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the exact value",
+        "workingLatex": "\\sec 60^\\circ = 2",
+        "explanation": "This is an exact result, not a rounded decimal, which is exactly what the question asks for.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\csc\\theta = \\dfrac{1}{\\sin\\theta}$, undefined when $\\theta = \\pi n$ (i.e. $\\sin\\theta = 0$)."
+    "finalAnswer": "$\\sec 60^\\circ = 2$."
   }
 }

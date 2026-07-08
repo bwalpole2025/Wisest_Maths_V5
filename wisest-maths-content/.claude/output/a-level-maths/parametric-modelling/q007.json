@@ -5,53 +5,67 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
+    "speed",
     "parametric differentiation",
-    "trig"
+    "modelling"
   ],
-  "questionText": "A curve has parametric equations $x = \\cos\\theta$, $y = \\sin\\theta$. Find $\\dfrac{dy}{dx}$ in terms of $\\theta$.",
+  "questionText": "A particle moves so that, at time $t$ seconds, its position in metres is $x = 5t$ and $y = t^{3}$. Find the speed of the particle at $t = 2$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate x with respect to θ",
-        "workingLatex": "\\frac{dx}{d\\theta} = -\\sin\\theta",
-        "explanation": "The derivative of cosine is negative sine.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 5",
+        "explanation": "The horizontal velocity is the rate of change of $x = 5t$, which is a constant $5$ m/s.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate y with respect to θ",
-        "workingLatex": "\\frac{dy}{d\\theta} = \\cos\\theta",
-        "explanation": "The derivative of sine is cosine.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 3t^{2}",
+        "explanation": "The vertical velocity is the rate of change of $y = t^{3}$, found by differentiating.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Form the ratio",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{\\cos\\theta}{-\\sin\\theta}",
-        "explanation": "Dividing the two derivatives gives the gradient.",
+        "description": "Evaluate the velocity components at t = 2",
+        "workingLatex": "\\dot{x} = 5, \\quad \\dot{y} = 3(2)^{2} = 12",
+        "explanation": "At $t = 2$ the horizontal velocity is $5$ and the vertical velocity is $12$. These are the two components of the motion.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify to a single function",
-        "workingLatex": "\\frac{dy}{dx} = -\\cot\\theta",
-        "explanation": "Cosine over sine is cotangent, so the gradient is $-\\cot\\theta$.",
+        "description": "Write the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "The speed is the size of the velocity; since the components are perpendicular, we combine them with Pythagoras' theorem.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Sense-check with the geometry",
-        "workingLatex": "\\text{circle: tangent} \\perp \\text{radius}",
-        "explanation": "The curve is the unit circle; the gradient $-\\cot\\theta$ is indeed perpendicular to the radius at angle $\\theta$, a useful check.",
+        "description": "Substitute the components",
+        "workingLatex": "\\text{speed} = \\sqrt{5^{2} + 12^{2}}",
+        "explanation": "Putting in $\\dot{x} = 5$ and $\\dot{y} = 12$ sets up the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify inside the root",
+        "workingLatex": "= \\sqrt{25 + 144} = \\sqrt{169}",
+        "explanation": "Squaring and adding gives $169$ under the square root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Take the square root",
+        "workingLatex": "= 13",
+        "explanation": "The square root of $169$ is $13$, so the particle's speed is $13$ m/s.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{dy}{dx} = -\\cot\\theta$"
+    "finalAnswer": "At $t = 2$ s the particle's speed is $13$ m/s."
   }
 }

@@ -5,67 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "equations",
-    "factorising"
+    "compound angle",
+    "addition formulae",
+    "exact values"
   ],
-  "questionText": "Solve $3\\sin 2\\theta = 2\\cos\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionText": "Given that $\\sin A = \\tfrac{8}{17}$ where $A$ is acute, and $\\cos B = -\\tfrac{3}{5}$ where $B$ is obtuse, find the exact values of $\\sin(A-B)$, $\\cos(A+B)$ and $\\tan(A-B)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the double angle",
-        "workingLatex": "3(2\\sin\\theta\\cos\\theta) = 2\\cos\\theta",
-        "explanation": "Writing $\\sin 2\\theta$ in terms of $\\theta$ lets us factorise instead of dividing by cosine.",
+        "description": "Find cos A using the quadrant",
+        "workingLatex": "A \\text{ acute} \\;\\Rightarrow\\; \\cos A = +\\sqrt{1-\\tfrac{64}{289}} = \\sqrt{\\tfrac{225}{289}} = \\tfrac{15}{17}",
+        "explanation": "An acute $A$ is a first-quadrant angle, so its cosine is the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Simplify and move to one side",
-        "workingLatex": "6\\sin\\theta\\cos\\theta - 2\\cos\\theta = 0",
-        "explanation": "Rearranging prepares for factorising; dividing by $\\cos\\theta$ would discard solutions.",
+        "description": "Find sin B using the quadrant",
+        "workingLatex": "B \\text{ obtuse} \\;\\Rightarrow\\; \\sin B = +\\sqrt{1-\\tfrac{9}{25}} = \\sqrt{\\tfrac{16}{25}} = \\tfrac{4}{5}",
+        "explanation": "For an obtuse $B$ (second quadrant) sine is positive while the given cosine is negative.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Factor out cosine",
-        "workingLatex": "2\\cos\\theta(3\\sin\\theta - 1) = 0",
-        "explanation": "Taking out the common factor $2\\cos\\theta$ splits the problem into two cases.",
+        "description": "State the formula for sin(A-B)",
+        "workingLatex": "\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B",
+        "explanation": "The difference formula subtracts the second product.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\theta = 90^\\circ, 270^\\circ",
-        "explanation": "Cosine is zero at $90^\\circ$ and $270^\\circ$.",
+        "description": "Substitute to find sin(A-B)",
+        "workingLatex": "\\sin(A-B) = \\tfrac{8}{17}\\left(-\\tfrac{3}{5}\\right) - \\tfrac{15}{17}\\cdot\\tfrac{4}{5} = -\\tfrac{24}{85} - \\tfrac{60}{85} = -\\tfrac{84}{85}",
+        "explanation": "Both terms are negative, so they add to a single negative fraction over $85$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the second factor",
-        "workingLatex": "\\sin\\theta = \\tfrac{1}{3}",
-        "explanation": "Setting the bracket to zero gives sine equal to one third.",
+        "description": "State the formula for cos(A+B)",
+        "workingLatex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "For a sum the cosine formula subtracts the sine-sine product.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find those angles",
-        "workingLatex": "\\theta \\approx 19.5^\\circ, 160.5^\\circ",
-        "explanation": "The reference angle is about $19.5^\\circ$; positive sine gives quadrant I and II solutions.",
+        "description": "Substitute to find cos(A+B)",
+        "workingLatex": "\\cos(A+B) = \\tfrac{15}{17}\\left(-\\tfrac{3}{5}\\right) - \\tfrac{8}{17}\\cdot\\tfrac{4}{5} = -\\tfrac{45}{85} - \\tfrac{32}{85} = -\\tfrac{77}{85}",
+        "explanation": "Again both products are negative and combine over $85$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta \\approx 20^\\circ, 90^\\circ, 161^\\circ, 270^\\circ",
-        "explanation": "Combining both cases and rounding gives four solutions in the interval.",
+        "description": "Find cos(A-B) ready for the tangent",
+        "workingLatex": "\\cos(A-B) = \\cos A\\cos B + \\sin A\\sin B = -\\tfrac{45}{85} + \\tfrac{32}{85} = -\\tfrac{13}{85}",
+        "explanation": "The tangent of $A-B$ needs $\\cos(A-B)$, whose difference formula carries a plus sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form tan(A-B)",
+        "workingLatex": "\\tan(A-B) = \\dfrac{\\sin(A-B)}{\\cos(A-B)} = \\dfrac{-84/85}{-13/85} = \\tfrac{84}{13}",
+        "explanation": "Dividing, the $85$s cancel and two negatives give a positive tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sanity check with the tan difference formula",
+        "workingLatex": "\\dfrac{\\tan A-\\tan B}{1+\\tan A\\tan B} = \\dfrac{\\tfrac{8}{15}-\\left(-\\tfrac{4}{3}\\right)}{1+\\tfrac{8}{15}\\left(-\\tfrac{4}{3}\\right)} = \\dfrac{\\tfrac{28}{15}}{\\tfrac{13}{45}} = \\tfrac{84}{13}",
+        "explanation": "With $\\tan A=\\tfrac{8}{15}$ and $\\tan B=-\\tfrac{4}{3}$ the compound formula gives the same $\\tfrac{84}{13}$, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sin(A-B) = -\\tfrac{84}{85}, \\quad \\cos(A+B) = -\\tfrac{77}{85}, \\quad \\tan(A-B) = \\tfrac{84}{13}",
+        "explanation": "Collecting the three exact values finishes the problem.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 20^\\circ, 90^\\circ, 161^\\circ, 270^\\circ$"
+    "finalAnswer": "$\\sin(A-B) = -\\tfrac{84}{85}$, $\\cos(A+B) = -\\tfrac{77}{85}$, $\\tan(A-B) = \\tfrac{84}{13}$."
   }
 }

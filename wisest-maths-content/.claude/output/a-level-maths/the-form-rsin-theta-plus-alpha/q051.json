@@ -5,60 +5,124 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
+  "marks": 7,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "modelling",
+    "tides"
   ],
-  "questionText": "Solve $\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionText": "The depth of water in a harbour is modelled by $D(t) = 15 + 5\\sin(30t)^\\circ + 12\\cos(30t)^\\circ$ metres, where $t$ is the time in hours after midnight and $0 \\le t \\le 24$. (a) Express $5\\sin(30t)^\\circ + 12\\cos(30t)^\\circ$ in the form $R\\sin(30t + \\alpha)^\\circ$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. (b) Hence find the maximum depth of water and the time after midnight at which it first occurs. (c) Find the times during the first $12$ hours at which the depth is exactly $20$ m, giving your answers in hours to $2$ decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in R-form",
-        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt2\\sin(\\theta + 45^\\circ)",
-        "explanation": "Equal unit coefficients give amplitude $\\sqrt2$ and phase $45^\\circ$.",
+        "description": "Separate the constant from the waves",
+        "workingLatex": "D(t) = 15 + \\big(5\\sin(30t)^\\circ + 12\\cos(30t)^\\circ\\big)",
+        "explanation": "The constant $15$ simply lifts the whole model up; it does not change the shape of the oscillation. So the sensible first move is to combine the two wave terms into a single sine wave and add the $15$ back at the end.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set up the equation",
-        "workingLatex": "\\sqrt2\\sin(\\theta + 45^\\circ) = \\frac{1}{2} \\;\\Rightarrow\\; \\sin(\\theta + 45^\\circ) = \\frac{1}{2\\sqrt2}",
-        "explanation": "Dividing by $\\sqrt2$ gives sine equal to about $0.3536$.",
+        "description": "Set up the identity to match",
+        "workingLatex": "5\\sin(30t)^\\circ + 12\\cos(30t)^\\circ \\equiv R\\sin(30t + \\alpha)",
+        "explanation": "We want the two terms written as one wave. Setting them identically equal to $R\\sin(30t+\\alpha)$ lets us expand the right-hand side and compare it term by term. Here $30t$ plays the role of the angle throughout.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the base angle",
-        "workingLatex": "\\sin^{-1}(0.3536) \\approx 20.70^\\circ",
-        "explanation": "The principal value of the inverse sine.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(30t + \\alpha) = R\\cos\\alpha\\,\\sin(30t)^\\circ + R\\sin\\alpha\\,\\cos(30t)^\\circ",
+        "explanation": "Using $\\sin(A+B)=\\sin A\\cos B + \\cos A\\sin B$ and pulling the constant $R$ through puts the right-hand side into the same shape as the left: a multiple of $\\sin(30t)$ plus a multiple of $\\cos(30t)$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "List solutions in the shifted interval",
-        "workingLatex": "\\theta + 45^\\circ = 159.30^\\circ, 380.70^\\circ",
-        "explanation": "Within $[45^\\circ, 405^\\circ)$, the values are the second-quadrant $159.30^\\circ$ and $20.70^\\circ + 360^\\circ = 380.70^\\circ$; the bare $20.70^\\circ$ is below the interval.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 5, \\qquad R\\sin\\alpha = 12",
+        "explanation": "For the two expressions to be equal for every value of $t$, the amount of $\\sin(30t)$ must match on both sides, and so must the amount of $\\cos(30t)$. That gives these two simultaneous equations.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = 114.30^\\circ, 335.70^\\circ",
-        "explanation": "Subtracting $45^\\circ$ from each valid value.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13",
+        "explanation": "Squaring and adding the two equations removes $\\alpha$ because $\\cos^2\\alpha + \\sin^2\\alpha = 1$, leaving $R^2 = 5^2 + 12^2$. We take the positive root since $R>0$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Round the solutions",
-        "workingLatex": "\\theta \\approx 114^\\circ, 336^\\circ",
-        "explanation": "Rounding to the nearest degree gives the final answers.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{12}{5} \\Rightarrow \\alpha = 67.38^\\circ",
+        "explanation": "Dividing the second equation by the first cancels $R$ and leaves $\\tan\\alpha = \\tfrac{12}{5}$. Both coefficients are positive, so $\\alpha$ is acute, giving $\\alpha = \\arctan\\tfrac{12}{5} = 67.38^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the full model",
+        "workingLatex": "D(t) = 15 + 13\\sin(30t + 67.38^\\circ)",
+        "explanation": "Putting the amplitude and phase together, then restoring the $+15$, gives the model as a single shifted wave sitting on a mean level of $15$ m. It immediately shows the depth swings $13$ m either side of $15$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the period for context",
+        "workingLatex": "\\text{period} = \\dfrac{360^\\circ}{30} = 12\\text{ hours}",
+        "explanation": "The angle increases by $30^\\circ$ for every hour, so a full $360^\\circ$ cycle takes $12$ hours. This tells us the tide repeats twice a day, which is why we only need to search the first $12$ hours in part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Read off the maximum depth",
+        "workingLatex": "\\sin(\\ldots)_{\\max} = 1 \\Rightarrow D_{\\max} = 15 + 13 = 28\\text{ m}",
+        "explanation": "A sine function can never exceed $1$, so the largest the wave can be is $+13$. No calculus is needed: the maximum of the model is simply the mean plus the amplitude.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the time of maximum depth",
+        "workingLatex": "30t + 67.38^\\circ = 90^\\circ \\Rightarrow 30t = 22.62^\\circ \\Rightarrow t = 0.75\\text{ h}",
+        "explanation": "The sine reaches its peak of $1$ when its angle is $90^\\circ$. Solving for $t$ gives the first moment of high tide, about $0.75$ h after midnight (roughly $00\\!:\\!45$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the level equation",
+        "workingLatex": "15 + 13\\sin(30t + 67.38^\\circ) = 20 \\Rightarrow \\sin(30t + 67.38^\\circ) = \\dfrac{5}{13}",
+        "explanation": "To find when the depth is $20$ m we set the model equal to $20$ and rearrange. Subtracting $15$ and dividing by $13$ turns it into a basic sine equation for the shifted angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the base angle",
+        "workingLatex": "\\arcsin\\dfrac{5}{13} = 22.62^\\circ",
+        "explanation": "The calculator gives the principal value $22.62^\\circ$. Because sine is positive in both the first and second quadrants, we will need more than just this one value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Shift the search interval",
+        "workingLatex": "0 \\le t \\le 12 \\Rightarrow 67.38^\\circ \\le 30t + 67.38^\\circ \\le 427.38^\\circ",
+        "explanation": "We are now solving for the shifted angle $30t+67.38^\\circ$, so we must shift the whole interval to match. This guarantees we do not miss any solutions or accidentally include ones outside the first $12$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "List all shifted-angle solutions",
+        "workingLatex": "30t + 67.38^\\circ = 157.38^\\circ,\\; 382.62^\\circ",
+        "explanation": "In the interval $[67.38^\\circ, 427.38^\\circ]$ the solutions of $\\sin = \\tfrac{5}{13}$ are $180^\\circ - 22.62^\\circ = 157.38^\\circ$ and $360^\\circ + 22.62^\\circ = 382.62^\\circ$. The base value $22.62^\\circ$ itself is below $67.38^\\circ$, so it is discarded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Solve for t and conclude",
+        "workingLatex": "t = \\dfrac{157.38 - 67.38}{30} = 3\\text{ h}, \\qquad t = \\dfrac{382.62 - 67.38}{30} = 10.51\\text{ h}",
+        "explanation": "Subtracting $67.38^\\circ$ and dividing by $30$ undoes the shift and returns the times. Both lie in the first $12$ hours, so the depth is $20$ m at $t = 3.00$ h and $t = 10.51$ h.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 114^\\circ, 336^\\circ$"
+    "finalAnswer": "(a) $5\\sin(30t)^\\circ + 12\\cos(30t)^\\circ = 13\\sin(30t + 67.38^\\circ)$. (b) The maximum depth is $28$ m, first reached at $t = 0.75$ h after midnight. (c) The depth is $20$ m at $t = 3.00$ h and $t = 10.51$ h."
   }
 }

@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "quartiles"
+  ],
+  "questionText": "The lifetimes, $X$ hours, of a type of rechargeable battery are modelled by $X \\sim N(30, 4^2)$. Find the lower quartile $Q_1$, the upper quartile $Q_3$, and the interquartile range, giving your answers to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and define the quartiles",
+        "workingLatex": "X \\sim N(30,\\ 4^2), \\quad P(X < Q_1) = 0.25, \\quad P(X < Q_3) = 0.75",
+        "explanation": "The lifetimes are normal with mean $\\mu = 30$ and standard deviation $\\sigma = 4$. The lower quartile has $25\\%$ of values below it and the upper quartile has $75\\%$ below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the z-value for the lower quartile",
+        "workingLatex": "z = \\Phi^{-1}(0.25) = -0.6745",
+        "explanation": "The standardised value with $25\\%$ of the area below it is negative, because it lies to the left of the mean: the inverse normal gives $z = -0.6745$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the z-value for the upper quartile",
+        "workingLatex": "z = \\Phi^{-1}(0.75) = 0.6745",
+        "explanation": "By the symmetry of the normal curve, the upper quartile sits the same distance above the mean as the lower quartile sits below it, so $z = +0.6745$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Un-standardise to find the lower quartile",
+        "workingLatex": "Q_1 = 30 + 4 \\times (-0.6745) = 30 - 2.698",
+        "explanation": "Reversing the standardisation, $Q_1 = \\mu + z\\sigma$. Multiplying $-0.6745$ by $\\sigma = 4$ and adding the mean converts the $z$-value back into hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compute the lower quartile",
+        "workingLatex": "Q_1 = 27.30",
+        "explanation": "This gives a lower quartile of $27.30$ hours: a quarter of the batteries last less than this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Un-standardise to find the upper quartile",
+        "workingLatex": "Q_3 = 30 + 4 \\times 0.6745 = 30 + 2.698 = 32.70",
+        "explanation": "Similarly $Q_3 = \\mu + z\\sigma$ with the positive $z$, giving an upper quartile of $32.70$ hours: three quarters of the batteries last less than this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the interquartile range",
+        "workingLatex": "\\text{IQR} = Q_3 - Q_1 = 32.70 - 27.30 = 5.396",
+        "explanation": "The interquartile range is the spread of the middle half of the data, found by subtracting the lower quartile from the upper quartile.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Note the symmetry shortcut",
+        "workingLatex": "\\text{IQR} = 2 \\times 0.6745 \\times 4 = 5.396",
+        "explanation": "Because the quartiles are symmetric about the mean, the IQR is simply $2z\\sigma$; this is a useful check that gives the same value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answers to 3 significant figures",
+        "workingLatex": "Q_1 = 27.3, \\quad Q_3 = 32.7, \\quad \\text{IQR} = 5.40",
+        "explanation": "Rounding to three significant figures gives the two quartiles and the interquartile range. The quartiles are evenly placed either side of the mean $30$, as expected for a symmetric distribution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$Q_1 = 27.3$ hours, $Q_3 = 32.7$ hours, and $\\text{IQR} = 5.40$ hours (3 s.f.)."
+  }
+}

@@ -4,69 +4,75 @@
   "topic": "Year 2 Pure",
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "proof",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "identities",
-    "cosecant",
-    "cotangent",
-    "pythagorean"
+    "inverse trig",
+    "exact values",
+    "negative inputs"
   ],
-  "questionText": "Prove that $1 + \\cot^2\\theta \\equiv \\csc^2\\theta$.",
+  "questionText": "Find the exact values, in radians, of $\\arcsin\\!\\left(-\\tfrac{1}{2}\\right)$, $\\arccos\\!\\left(-\\tfrac{1}{2}\\right)$ and $\\arctan\\sqrt{3}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start from the fundamental Pythagorean identity",
-        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1",
-        "explanation": "As before, this second reciprocal identity is derived from the core Pythagorean identity.",
+        "description": "State what arcsin asks for",
+        "workingLatex": "\\arcsin\\!\\left(-\\tfrac{1}{2}\\right) = \\theta \\iff \\sin\\theta = -\\tfrac{1}{2}, \\ -\\tfrac{\\pi}{2} \\le \\theta \\le \\tfrac{\\pi}{2}",
+        "explanation": "We need the angle in $[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}]$ with sine $-\\tfrac12$. A negative sine forces a negative angle, in the lower half of the range.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Decide what to divide by",
-        "workingLatex": "\\text{divide every term by } \\sin^2\\theta",
-        "explanation": "We want $\\csc^2\\theta = \\frac{1}{\\sin^2\\theta}$ on the right, so dividing by $\\sin^2\\theta$ will produce the cosecant and cotangent terms.",
+        "description": "Use the oddness of sine",
+        "workingLatex": "\\sin\\tfrac{\\pi}{6} = \\tfrac{1}{2} \\;\\Rightarrow\\; \\sin\\!\\left(-\\tfrac{\\pi}{6}\\right) = -\\tfrac{1}{2}",
+        "explanation": "Since sine is odd, the angle with sine $-\\tfrac12$ is just the negative of the angle with sine $\\tfrac12$. So the answer is $-\\tfrac{\\pi}{6}$, which lies in range.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Divide each term by sine squared",
-        "workingLatex": "\\frac{\\sin^2\\theta}{\\sin^2\\theta} + \\frac{\\cos^2\\theta}{\\sin^2\\theta} \\equiv \\frac{1}{\\sin^2\\theta}",
-        "explanation": "Dividing every term preserves the equality and sets up each fraction for rewriting.",
+        "description": "State the first value",
+        "workingLatex": "\\arcsin\\!\\left(-\\tfrac{1}{2}\\right) = -\\tfrac{\\pi}{6}",
+        "explanation": "This confirms the principal value; note it is negative, unlike an arccos result.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify the first term",
-        "workingLatex": "\\frac{\\sin^2\\theta}{\\sin^2\\theta} = 1",
-        "explanation": "This fraction is a quantity over itself, so it equals $1$.",
+        "description": "State what arccos asks for",
+        "workingLatex": "\\arccos\\!\\left(-\\tfrac{1}{2}\\right) = \\theta \\iff \\cos\\theta = -\\tfrac{1}{2}, \\ 0 \\le \\theta \\le \\pi",
+        "explanation": "We need the angle in $[0,\\pi]$ with cosine $-\\tfrac12$. A negative cosine puts the angle in the second quadrant, between $\\tfrac{\\pi}{2}$ and $\\pi$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Rewrite the second term as cotangent squared",
-        "workingLatex": "\\frac{\\cos^2\\theta}{\\sin^2\\theta} = \\cot^2\\theta",
-        "explanation": "Since $\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}$, squaring gives $\\cot^2\\theta$.",
+        "description": "Find it from the related acute angle",
+        "workingLatex": "\\cos\\tfrac{\\pi}{3} = \\tfrac{1}{2}, \\quad \\pi - \\tfrac{\\pi}{3} = \\tfrac{2\\pi}{3}, \\quad \\cos\\tfrac{2\\pi}{3} = -\\tfrac{1}{2}",
+        "explanation": "The acute angle with cosine $\\tfrac12$ is $\\tfrac{\\pi}{3}$; its second-quadrant partner $\\pi-\\tfrac{\\pi}{3}=\\tfrac{2\\pi}{3}$ has cosine $-\\tfrac12$ and lies in $[0,\\pi]$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rewrite the right-hand side as cosecant squared",
-        "workingLatex": "\\frac{1}{\\sin^2\\theta} = \\csc^2\\theta",
-        "explanation": "By definition $\\csc\\theta = \\frac{1}{\\sin\\theta}$, so its square is $\\frac{1}{\\sin^2\\theta}$.",
+        "description": "State the second value",
+        "workingLatex": "\\arccos\\!\\left(-\\tfrac{1}{2}\\right) = \\tfrac{2\\pi}{3}",
+        "explanation": "So the principal value is $\\tfrac{2\\pi}{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Assemble the identity",
-        "workingLatex": "1 + \\cot^2\\theta \\equiv \\csc^2\\theta \\;\\blacksquare",
-        "explanation": "Collecting the rewritten terms gives exactly the identity we were asked to prove.",
+        "description": "Find the arctan value",
+        "workingLatex": "\\tan\\tfrac{\\pi}{3} = \\sqrt{3} \\;\\Rightarrow\\; \\arctan\\sqrt{3} = \\tfrac{\\pi}{3}, \\quad -\\tfrac{\\pi}{2} < \\tfrac{\\pi}{3} < \\tfrac{\\pi}{2}",
+        "explanation": "From the $60^\\circ$ triangle $\\tan\\tfrac{\\pi}{3}=\\sqrt3$, and $\\tfrac{\\pi}{3}$ lies in the arctan range, so it is the required value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the three values",
+        "workingLatex": "\\arcsin\\!\\left(-\\tfrac{1}{2}\\right) = -\\tfrac{\\pi}{6}, \\quad \\arccos\\!\\left(-\\tfrac{1}{2}\\right) = \\tfrac{2\\pi}{3}, \\quad \\arctan\\sqrt{3} = \\tfrac{\\pi}{3}",
+        "explanation": "Collecting the three principal values completes the answer; note how the negative input gives a negative arcsin but a second-quadrant arccos.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$1 + \\cot^2\\theta \\equiv \\csc^2\\theta$, proved by dividing $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ through by $\\sin^2\\theta$."
+    "finalAnswer": "$\\arcsin\\!\\left(-\\tfrac{1}{2}\\right) = -\\tfrac{\\pi}{6}$, $\\arccos\\!\\left(-\\tfrac{1}{2}\\right) = \\tfrac{2\\pi}{3}$, $\\arctan\\sqrt{3} = \\tfrac{\\pi}{3}$."
   }
 }

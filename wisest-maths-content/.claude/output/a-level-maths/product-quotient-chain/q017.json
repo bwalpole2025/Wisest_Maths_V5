@@ -1,0 +1,78 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "logarithm",
+    "gradient"
+  ],
+  "questionText": "A curve has equation $y = x\\ln x$ for $x>0$. (a) Find $\\dfrac{dy}{dx}$. (b) Find the gradient of the curve at the point where $x=1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and state the rule",
+        "workingLatex": "\\frac{d}{dx}(uv) = u'v + uv'",
+        "explanation": "$y = x\\ln x$ is a product of $x$ and $\\ln x$, so we differentiate with the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the two factors",
+        "workingLatex": "u = x, \\qquad v = \\ln x",
+        "explanation": "We set $u = x$ and $v = \\ln x$ ready to substitute into the rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = \\frac{1}{x}",
+        "explanation": "The derivative of $x$ is $1$, and the derivative of $\\ln x$ is $\\dfrac{1}{x}$ — a standard result valid for $x>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = (1)\\ln x + x\\cdot\\frac{1}{x}",
+        "explanation": "Substituting into $u'v + uv'$ gives one term with $\\ln x$ and one term where $x$ multiplies $\\dfrac{1}{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\ln x + 1",
+        "explanation": "The product $x\\cdot\\dfrac{1}{x}$ equals $1$, giving the neat derivative for part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the given value of x",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = \\ln 1 + 1",
+        "explanation": "The gradient at a point is the derivative evaluated there, so we put $x = 1$ into $\\ln x + 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the logarithm",
+        "workingLatex": "= 0 + 1",
+        "explanation": "Since $\\ln 1 = 0$ (because $e^0 = 1$), the logarithm term disappears.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = 1",
+        "explanation": "The gradient of the curve at $x = 1$ is $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\ln x + 1$. (b) The gradient at $x = 1$ is $1$."
+  }
+}

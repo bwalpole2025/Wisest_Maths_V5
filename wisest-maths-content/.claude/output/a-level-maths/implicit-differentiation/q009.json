@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "trigonometry",
+    "chain rule"
+  ],
+  "questionText": "The curve $C$ has equation $\\sin y = x$, with $y$ in radians. Find $\\frac{dy}{dx}$ in terms of $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(\\sin y) = \\frac{d}{dx}(x)",
+        "explanation": "We differentiate both sides with respect to $x$, treating $y$ as a function of $x$. The term $\\sin y$ is a function of $y$, so it needs the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate $\\sin y$ using the chain rule",
+        "workingLatex": "\\frac{d}{dx}(\\sin y) = \\cos y\\frac{dy}{dx}",
+        "explanation": "The derivative of $\\sin y$ with respect to $y$ is $\\cos y$ (in radians), and the chain rule then multiplies by $\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the right side",
+        "workingLatex": "\\frac{d}{dx}(x) = 1",
+        "explanation": "The right-hand side $x$ differentiates simply to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "\\cos y\\frac{dy}{dx} = 1",
+        "explanation": "Putting the two sides together gives an equation with a single $\\frac{dy}{dx}$ term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make $\\frac{dy}{dx}$ the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{\\cos y}",
+        "explanation": "Divide both sides by $\\cos y$ to isolate the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write using the secant function",
+        "workingLatex": "\\frac{dy}{dx} = \\sec y",
+        "explanation": "Since $\\frac{1}{\\cos y}=\\sec y$, the answer can be written neatly as $\\sec y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{\\cos y} = \\sec y",
+        "explanation": "This matches the known derivative of the inverse sine function, since $\\sin y = x$ means $y=\\arcsin x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = \\frac{1}{\\cos y} = \\sec y$"
+  }
+}

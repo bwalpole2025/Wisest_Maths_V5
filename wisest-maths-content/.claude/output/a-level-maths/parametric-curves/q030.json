@@ -5,54 +5,81 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "marks": 5,
+  "answerType": "written",
   "tags": [
-    "parametric",
-    "cartesian",
-    "trig",
-    "shift"
+    "trig identity",
+    "ellipse",
+    "semi-axes"
   ],
-  "questionText": "A curve has parametric equations $x = 1 + \\tan\\theta$, $y = \\sec^2\\theta$. Find the Cartesian equation.",
+  "questionText": "A curve is given by $x = 7\\cos t$ and $y = 4\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve, and describe it, stating which axis is the major axis.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the tangent",
-        "workingLatex": "\\tan\\theta = x - 1",
-        "explanation": "Rearranging the $x$-equation expresses $\\tan\\theta$ in terms of $x$.",
+        "description": "Plan the elimination",
+        "workingLatex": "x = 7\\cos t, \\qquad y = 4\\sin t",
+        "explanation": "The coefficients $7$ and $4$ differ, so we expect an ellipse whose semi-axes are $7$ and $4$. We confirm this by eliminating $t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Choose the linking identity",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "This identity connects the $y$-variable $\\sec^2\\theta$ to $\\tan\\theta$.",
+        "description": "Make cos t the subject",
+        "workingLatex": "\\cos t = \\dfrac{x}{7}",
+        "explanation": "Dividing by $7$ isolates $\\cos t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute for y and tangent",
-        "workingLatex": "y = 1 + (x - 1)^2",
-        "explanation": "Replacing $\\sec^2\\theta$ with $y$ and $\\tan\\theta$ with $x - 1$ eliminates $\\theta$.",
+        "description": "Make sin t the subject",
+        "workingLatex": "\\sin t = \\dfrac{y}{4}",
+        "explanation": "Dividing by $4$ isolates $\\sin t$, so both are now written through the coordinates.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the Cartesian equation",
-        "workingLatex": "y = 1 + (x - 1)^2",
-        "explanation": "This is a parabola with vertex at $(1, 1)$.",
+        "description": "Apply the identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "This identity holds for all $t$, making it the tool that eliminates the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the range of y",
-        "workingLatex": "\\sec^2\\theta \\ge 1 \\;\\Rightarrow\\; y \\ge 1",
-        "explanation": "Since $\\sec^2\\theta$ is always at least $1$, the curve lies on or above $y = 1$, consistent with the vertex.",
+        "description": "Substitute",
+        "workingLatex": "\\left( \\dfrac{x}{7} \\right)^{2} + \\left( \\dfrac{y}{4} \\right)^{2} = 1",
+        "explanation": "Substituting produces an equation in $x$ and $y$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "\\dfrac{x^{2}}{49} + \\dfrac{y^{2}}{16} = 1",
+        "explanation": "Squaring the fractions gives the standard ellipse form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write denominators as squares",
+        "workingLatex": "\\dfrac{x^{2}}{7^{2}} + \\dfrac{y^{2}}{4^{2}} = 1",
+        "explanation": "This exposes the semi-axes: $7$ horizontally and $4$ vertically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare the semi-axes",
+        "workingLatex": "7 > 4",
+        "explanation": "Because the horizontal semi-axis $7$ is the longer of the two, the major axis lies along the $x$-axis and the minor axis along the $y$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the extent",
+        "workingLatex": "-7 \\le x \\le 7, \\qquad -4 \\le y \\le 4",
+        "explanation": "The curve reaches $\\pm 7$ horizontally and $\\pm 4$ vertically, confirming a horizontally-elongated ellipse centred at the origin.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = 1 + (x - 1)^2$ (with $y \\ge 1$)."
+    "finalAnswer": "The Cartesian equation is $\\dfrac{x^{2}}{49} + \\dfrac{y^{2}}{16} = 1$, an ellipse centred at the origin with semi-axes $7$ (horizontal) and $4$ (vertical). The major axis lies along the $x$-axis."
   }
 }

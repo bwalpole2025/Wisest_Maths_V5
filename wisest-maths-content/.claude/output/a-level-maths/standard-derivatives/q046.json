@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "numeric",
+  "tags": [
+    "find constant",
+    "exponential",
+    "gradient"
+  ],
+  "questionText": "The curve $y = a e^{3x} - 2x$, where $a$ is a constant, has gradient $7$ at the point where $x = 0$. Find the value of $a$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function",
+        "workingLatex": "y = a e^{3x} - 2x",
+        "explanation": "The gradient at a point is the value of the derivative there, so we differentiate first.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = 3a e^{3x} - 2",
+        "explanation": "Using the standard result $\\frac{d}{dx}(e^{3x})=3e^{3x}$ (i.e. $\\frac{d}{dx}(e^{kx})=ke^{kx}$ with $k=3$) and $\\frac{d}{dx}(2x)=2$; the constant $a$ carries through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate the gradient at x = 0",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = 3a e^{0} - 2",
+        "explanation": "Substitute $x=0$ into the derivative to obtain the gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify using the exponential value",
+        "workingLatex": "3a e^{0} - 2 = 3a - 2",
+        "explanation": "Since $e^{0}=1$, the exponential factor becomes $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set equal to the given gradient",
+        "workingLatex": "3a - 2 = 7",
+        "explanation": "We are told this gradient equals $7$, which gives a linear equation for $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add 2 to both sides",
+        "workingLatex": "3a = 9",
+        "explanation": "Isolating the term containing $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide by 3",
+        "workingLatex": "a = 3",
+        "explanation": "Solving the linear equation gives the constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check",
+        "workingLatex": "\\frac{dy}{dx} = 9 e^{3x} - 2, \\quad \\left.\\frac{dy}{dx}\\right|_{x=0} = 9 - 2 = 7",
+        "explanation": "With $a=3$ the derivative at $x=0$ is $9-2=7$, matching the condition, so the value is confirmed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the result",
+        "workingLatex": "a = 3",
+        "explanation": "So the constant giving gradient $7$ at $x=0$ is $a=3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a = 3$."
+  }
+}

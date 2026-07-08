@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "stationary points",
+    "second derivative",
+    "exponential"
+  ],
+  "questionText": "Find the exact coordinates of the stationary point of the curve $y = e^{x} - 3x$, and determine, with justification, whether it is a maximum or a minimum.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} - 3",
+        "explanation": "Using $\\dfrac{d}{dx}(e^{x})=e^{x}$ and $\\dfrac{d}{dx}(3x)=3$; linearity lets us differentiate each term separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the derivative to zero",
+        "workingLatex": "e^{x} - 3 = 0 \\Rightarrow e^{x} = 3",
+        "explanation": "Stationary points occur where the gradient is zero, giving an exponential equation for $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve the exponential equation",
+        "workingLatex": "x = \\ln 3",
+        "explanation": "Taking natural logarithms of both sides gives the exact $x$-coordinate; $e^{x}=3$ has exactly one solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{\\ln 3} - 3\\ln 3 = 3 - 3\\ln 3",
+        "explanation": "Since $e^{\\ln 3}=3$, substituting gives the exact height of the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the stationary point",
+        "workingLatex": "(\\ln 3,\\ 3 - 3\\ln 3)",
+        "explanation": "These are the exact coordinates of the single stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Differentiate again for the second derivative",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = e^{x}",
+        "explanation": "The derivative of $e^{x}-3$ is again $e^{x}$, since the constant $-3$ differentiates to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the second derivative",
+        "workingLatex": "x=\\ln 3:\\ \\frac{d^{2}y}{dx^{2}} = e^{\\ln 3} = 3 > 0 \\Rightarrow \\text{minimum}",
+        "explanation": "A positive second derivative means the curve is concave up here, so the point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm with a sign argument for x < ln 3",
+        "workingLatex": "x < \\ln 3:\\ e^{x} < 3 \\Rightarrow \\frac{dy}{dx} < 0 \\ (\\text{decreasing})",
+        "explanation": "To the left of the stationary point the exponential is below $3$, so the curve is falling.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm with a sign argument for x > ln 3",
+        "workingLatex": "x > \\ln 3:\\ e^{x} > 3 \\Rightarrow \\frac{dy}{dx} > 0 \\ (\\text{increasing})",
+        "explanation": "To the right the exponential exceeds $3$, so the curve rises; falling then rising confirms a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Numerical value of x",
+        "workingLatex": "\\ln 3 \\approx 1.099",
+        "explanation": "The stationary point occurs a little past $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Numerical value of y",
+        "workingLatex": "3 - 3\\ln 3 \\approx 3 - 3.296 = -0.296",
+        "explanation": "The minimum value is slightly below the $x$-axis, a sensible small negative number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify the gradient is zero",
+        "workingLatex": "e^{1.099} - 3 \\approx 3.000 - 3 = 0 \\;\\checkmark",
+        "explanation": "Substituting the numerical $x$ back into the derivative gives zero, confirming the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Note it is the global minimum",
+        "workingLatex": "\\text{only stationary point} \\Rightarrow \\text{global minimum value} = 3 - 3\\ln 3",
+        "explanation": "Because the curve falls then rises with a single turning point, this minimum is the lowest value overall.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "\\text{Minimum at } (\\ln 3,\\ 3 - 3\\ln 3)",
+        "explanation": "This gives the exact coordinates and the confirmed classification.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "There is a minimum at $(\\ln 3,\\ 3 - 3\\ln 3) \\approx (1.099,\\,-0.296)$, confirmed by $\\dfrac{d^{2}y}{dx^{2}}=3>0$."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "quotient rule",
+    "rational function",
+    "differentiation"
+  ],
+  "questionText": "Given that $y = \\dfrac{2x+1}{x-3}$, find $\\dfrac{dy}{dx}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a quotient and state the rule",
+        "workingLatex": "\\frac{d}{dx}\\!\\left(\\frac{u}{v}\\right) = \\frac{u'v - uv'}{v^2}",
+        "explanation": "$y = \\dfrac{2x+1}{x-3}$ is one linear expression divided by another, so we use the quotient rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the numerator and denominator",
+        "workingLatex": "u = 2x + 1, \\qquad v = x - 3",
+        "explanation": "The numerator is $u$ and the denominator is $v$. The order matters because the quotient rule has a subtraction on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = 2, \\qquad v' = 1",
+        "explanation": "Differentiating $2x + 1$ gives $2$, and differentiating $x - 3$ gives $1$; the constants disappear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2(x-3) - (2x+1)(1)}{(x-3)^2}",
+        "explanation": "Substituting into $\\dfrac{u'v - uv'}{v^2}$ builds the numerator as $u'v$ minus $uv'$, over the square of the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2x - 6 - 2x - 1}{(x-3)^2}",
+        "explanation": "We multiply out both brackets, being careful that the minus sign applies to all of $(2x+1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{-7}{(x-3)^2}",
+        "explanation": "The $2x$ and $-2x$ cancel, leaving $-6 - 1 = -7$ on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{7}{(x-3)^2}",
+        "explanation": "This is the simplified derivative; it is negative wherever the function is defined, so the curve is always decreasing.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = -\\dfrac{7}{(x-3)^2}$."
+  }
+}

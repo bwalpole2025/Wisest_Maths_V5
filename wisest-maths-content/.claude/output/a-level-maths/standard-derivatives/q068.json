@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "exponential base a",
+    "stationary point",
+    "second derivative"
+  ],
+  "questionText": "The curve $C$ has equation $y = 2^{x} + 2^{-x}$.\n(a) Find $\\dfrac{dy}{dx}$.\n(b) Find the exact gradient of $C$ at $x=1$.\n(c) Find the coordinates of the stationary point and use the second derivative to determine its nature.\n(d) Determine the intervals on which $C$ is increasing and decreasing.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the standard results",
+        "workingLatex": "\\frac{d}{dx}(2^{x}) = 2^{x}\\ln 2, \\quad \\frac{d}{dx}(2^{-x}) = -2^{-x}\\ln 2",
+        "explanation": "The standard result $\\dfrac{d}{dx}(a^{x})=a^{x}\\ln a$ gives $2^{x}\\ln 2$. For $2^{-x}$ this is the form $a^{kx}$ with $k=-1$, giving $-2^{-x}\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate to find dy/dx (part a)",
+        "workingLatex": "\\frac{dy}{dx} = 2^{x}\\ln 2 - 2^{-x}\\ln 2 = (\\ln 2)\\left(2^{x} - 2^{-x}\\right)",
+        "explanation": "Adding the term derivatives and factoring out $\\ln 2$ gives a tidy gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the gradient at x = 1 (part b)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = (\\ln 2)\\left(2 - \\tfrac{1}{2}\\right) = \\tfrac{3}{2}\\ln 2",
+        "explanation": "Substituting $x=1$: $2^{1}=2$ and $2^{-1}=\\tfrac12$, so the exact gradient is $\\tfrac{3}{2}\\ln 2\\approx 1.04$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the derivative to zero (part c)",
+        "workingLatex": "(\\ln 2)\\left(2^{x} - 2^{-x}\\right) = 0 \\;\\Rightarrow\\; 2^{x} = 2^{-x}",
+        "explanation": "Since $\\ln 2 \\ne 0$, the gradient is zero only when the bracket is zero, i.e. $2^{x}=2^{-x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x",
+        "workingLatex": "x = -x \\;\\Rightarrow\\; x = 0",
+        "explanation": "Equal powers of the same base require equal exponents, so $x=-x$, giving the single solution $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = 2^{0} + 2^{0} = 1 + 1 = 2 \\;\\Rightarrow\\; (0,\\,2)",
+        "explanation": "At $x=0$ both terms equal $1$, so the stationary point is $(0,2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate again",
+        "workingLatex": "\\frac{d^2y}{dx^2} = (\\ln 2)^2\\left(2^{x} + 2^{-x}\\right)",
+        "explanation": "Differentiating $(\\ln 2)(2^{x}-2^{-x})$: each term brings down another $\\ln 2$, and $-2^{-x}$ becomes $+2^{-x}$, giving $(\\ln 2)^2(2^{x}+2^{-x})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the second derivative",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=0} = (\\ln 2)^2(1+1) = 2(\\ln 2)^2 > 0",
+        "explanation": "This is positive, so the curve is concave up at $x=0$: the stationary point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the stationary point",
+        "workingLatex": "\\text{Minimum at } (0,\\,2)",
+        "explanation": "So the curve has a single minimum turning point at $(0,2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Consider the sign of the gradient (part d)",
+        "workingLatex": "\\text{sign of } \\frac{dy}{dx} = \\text{sign of } \\left(2^{x} - 2^{-x}\\right) \\quad (\\ln 2 > 0)",
+        "explanation": "Because $\\ln 2$ is positive, the sign of the gradient is controlled entirely by the bracket $2^{x}-2^{-x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find where the curve is increasing",
+        "workingLatex": "2^{x} > 2^{-x} \\iff x > -x \\iff x > 0",
+        "explanation": "The gradient is positive, so the curve increases, exactly when $x>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find where the curve is decreasing",
+        "workingLatex": "2^{x} < 2^{-x} \\iff x < 0",
+        "explanation": "By the same reasoning the gradient is negative, so the curve decreases, when $x<0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Note the symmetry",
+        "workingLatex": "y(-x) = 2^{-x} + 2^{x} = y(x)",
+        "explanation": "Replacing $x$ by $-x$ leaves the equation unchanged, so the curve is even (symmetric about the $y$-axis), consistent with a minimum sitting on that axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Summarise",
+        "workingLatex": "\\frac{dy}{dx} = (\\ln 2)(2^{x}-2^{-x}),\\; m|_{1}=\\tfrac{3}{2}\\ln 2,\\; \\min(0,2),\\; \\text{inc } x>0",
+        "explanation": "All parts complete: the derivative, the gradient at $x=1$, the minimum, and the increasing/decreasing intervals.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=(\\ln 2)\\left(2^{x}-2^{-x}\\right)$. (b) Gradient $=\\tfrac{3}{2}\\ln 2$. (c) Minimum at $(0,2)$. (d) Increasing for $x>0$, decreasing for $x<0$."
+  }
+}

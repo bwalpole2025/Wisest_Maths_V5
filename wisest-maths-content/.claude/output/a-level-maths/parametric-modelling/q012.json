@@ -5,53 +5,67 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "speed",
-    "Pythagoras"
+    "parametric",
+    "velocity",
+    "vertical motion"
   ],
-  "questionText": "A particle has position $x = t^2$, $y = 3t$ (metres) at time $t$ seconds. Find the speed of the particle at $t = 2$.",
+  "questionText": "A particle moves in a plane so that, $t$ seconds after release, its position in metres is given by $x = t^{2} - 6t + 5$ and $y = 2t^{2} + 1$. Find the value of $t$ at which the particle is moving parallel to the $y$-axis, and give its position at that instant.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 2t, \\quad v_y = 3",
-        "explanation": "Differentiating each position component gives the velocities; speed will combine them.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t - 6",
+        "explanation": "The horizontal velocity is the rate of change of $x$ with time, written $\\dot{x}$. Differentiating $x = t^{2} - 6t + 5$ tells us how fast the particle is moving left or right.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Evaluate at t = 2",
-        "workingLatex": "v_x = 4, \\quad v_y = 3",
-        "explanation": "At $t = 2$ the components are $4$ and $3$.",
+        "description": "State the condition for vertical motion",
+        "workingLatex": "\\dot{x} = 0",
+        "explanation": "Moving parallel to the $y$-axis means the particle has no sideways motion at that instant, so its horizontal velocity must be zero.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall speed as the magnitude of velocity",
-        "workingLatex": "\\text{speed} = \\sqrt{v_x^2 + v_y^2}",
-        "explanation": "Speed is the magnitude of the velocity vector, found by Pythagoras from the components.",
+        "description": "Form the equation in t",
+        "workingLatex": "2t - 6 = 0",
+        "explanation": "We set the expression for $\\dot{x}$ equal to zero, giving a simple equation to solve for the time.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute the components",
-        "workingLatex": "\\text{speed} = \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9}",
-        "explanation": "Squaring and adding the components.",
+        "description": "Solve for t",
+        "workingLatex": "t = 3",
+        "explanation": "Adding $6$ to both sides and dividing by $2$ gives the single time at which the particle moves straight up or down.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "\\text{speed} = \\sqrt{25} = 5 \\text{ m/s}",
-        "explanation": "The speed is $5$ m/s (a $3$-$4$-$5$ triangle).",
+        "description": "Find the horizontal position",
+        "workingLatex": "x = (3)^{2} - 6(3) + 5 = -4",
+        "explanation": "Putting $t = 3$ back into the $x$-equation gives the horizontal position at that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the height",
+        "workingLatex": "y = 2(3)^{2} + 1 = 19",
+        "explanation": "Using the same time in the $y$-equation gives the height. No differentiation is needed here because we only want where the particle is, not how fast.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the position",
+        "workingLatex": "(x,\\,y) = (-4,\\,19)",
+        "explanation": "So at $t = 3$ seconds the particle is momentarily moving parallel to the $y$-axis, at the point $(-4,\\,19)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Speed $= 5$ m/s"
+    "finalAnswer": "The particle moves parallel to the $y$-axis when $t = 3$ s, at the point $(-4,\\,19)$."
   }
 }

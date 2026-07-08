@@ -5,60 +5,109 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "written",
   "tags": [
-    "parametric modelling",
-    "circular motion",
-    "distance"
+    "tangent",
+    "show that",
+    "hyperbola"
   ],
-  "questionText": "A particle moves so that $x = 4\\cos\\theta$, $y = 4\\sin\\theta$ (metres), where $\\theta$ increases steadily from $0$ to $2\\pi$. Find the total distance travelled by the particle.",
+  "questionText": "A cutting tool moves along the path $x = 2t$, $y = \\dfrac{2}{t}$, for $t > 0$, with $x$ and $y$ in centimetres. The tangent to the path at any point, together with the coordinate axes, forms a triangle. Show that this triangle has a constant area, whatever the value of $t$, and state that area.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Identify the path",
-        "workingLatex": "x^2 + y^2 = 16",
-        "explanation": "Eliminating $\\theta$ shows the path is a circle of radius $4$ centred at the origin.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2",
+        "explanation": "The horizontal velocity is constant at $2$, which we need for the gradient of the path.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the rate of change of arc length",
-        "workingLatex": "\\frac{dx}{d\\theta} = -4\\sin\\theta, \\quad \\frac{dy}{d\\theta} = 4\\cos\\theta",
-        "explanation": "These give how position changes with the parameter $\\theta$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "y = 2t^{-1} \\;\\Rightarrow\\; \\dot{y} = \\dfrac{dy}{dt} = -\\dfrac{2}{t^{2}}",
+        "explanation": "Writing $y = 2t^{-1}$ and using the power rule gives $\\dot{y} = -2t^{-2} = -\\tfrac{2}{t^{2}}$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Compute the speed with respect to θ",
-        "workingLatex": "\\sqrt{(-4\\sin\\theta)^2 + (4\\cos\\theta)^2} = \\sqrt{16(\\sin^2\\theta + \\cos^2\\theta)} = 4",
-        "explanation": "The magnitude is constant at $4$, using the Pythagorean identity.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{-2/t^{2}}{2} = -\\dfrac{1}{t^{2}}",
+        "explanation": "Dividing the velocity components gives the slope of the path at parameter $t$ as $-\\tfrac{1}{t^{2}}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Integrate over the full turn",
-        "workingLatex": "\\text{distance} = \\int_0^{2\\pi} 4 \\, d\\theta",
-        "explanation": "Total arc length is the integral of the speed-with-respect-to-$\\theta$ over the range of $\\theta$.",
+        "description": "Write down the point of contact",
+        "workingLatex": "\\left(x,\\, y\\right) = \\left(2t,\\, \\dfrac{2}{t}\\right)",
+        "explanation": "The tangent touches the path at the point given by the parameter, recorded here for the line equation.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Evaluate",
-        "workingLatex": "= 4 \\times 2\\pi = 8\\pi",
-        "explanation": "The constant integrand times the interval length gives $8\\pi$.",
+        "description": "Write the tangent in point-gradient form",
+        "workingLatex": "y - \\dfrac{2}{t} = -\\dfrac{1}{t^{2}}\\left(x - 2t\\right)",
+        "explanation": "Combining the point and the gradient builds the tangent line at a general value of $t$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Confirm with the circumference",
-        "workingLatex": "2\\pi r = 2\\pi(4) = 8\\pi \\;\\checkmark",
-        "explanation": "The particle completes one full circle, so the distance equals the circumference $8\\pi$ m, confirming the result.",
+        "description": "Set y = 0 to find the x-intercept",
+        "workingLatex": "-\\dfrac{2}{t} = -\\dfrac{1}{t^{2}}\\left(x - 2t\\right)",
+        "explanation": "The triangle's base lies on the $x$-axis, so we find where the tangent crosses it by setting $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for the x-intercept",
+        "workingLatex": "2t = x - 2t \\;\\Rightarrow\\; x = 4t",
+        "explanation": "Multiplying both sides by $-t^{2}$ clears the fractions and gives the $x$-intercept at $x = 4t$, so the point is $(4t,\\,0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set x = 0 to find the y-intercept",
+        "workingLatex": "y - \\dfrac{2}{t} = -\\dfrac{1}{t^{2}}\\left(0 - 2t\\right) = \\dfrac{2}{t}",
+        "explanation": "The triangle's height lies on the $y$-axis, so we find where the tangent crosses it by setting $x = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the y-intercept",
+        "workingLatex": "y = \\dfrac{2}{t} + \\dfrac{2}{t} = \\dfrac{4}{t}",
+        "explanation": "Adding the terms gives the $y$-intercept at $y = \\tfrac{4}{t}$, so the point is $\\left(0,\\, \\tfrac{4}{t}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Identify the triangle's dimensions",
+        "workingLatex": "\\text{base} = 4t, \\qquad \\text{height} = \\dfrac{4}{t}",
+        "explanation": "The tangent and the two axes bound a right-angled triangle whose legs are the intercepts just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write the area formula",
+        "workingLatex": "\\text{Area} = \\dfrac{1}{2}\\times \\text{base} \\times \\text{height} = \\dfrac{1}{2}\\times 4t \\times \\dfrac{4}{t}",
+        "explanation": "The area of a right-angled triangle is half the product of its two perpendicular legs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Simplify the area",
+        "workingLatex": "= \\dfrac{1}{2}\\times \\dfrac{16t}{t} = \\dfrac{1}{2}\\times 16 = 8",
+        "explanation": "The factors of $t$ cancel, so the area evaluates to $8$ regardless of which $t$ we chose.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude constant area",
+        "workingLatex": "\\text{Area} = 8 \\text{ for all } t > 0",
+        "explanation": "Because the $t$ cancelled entirely, the triangle's area is the same $8$ at every point of the path, which is exactly what we were asked to show.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Total distance $= 8\\pi \\approx 25.1$ m (one full circle)."
+    "finalAnswer": "The tangent meets the axes at $(4t,\\,0)$ and $\\left(0,\\,\\tfrac{4}{t}\\right)$, giving a triangle of area $\\tfrac{1}{2}\\times 4t\\times\\tfrac{4}{t} = 8$. The $t$ cancels, so the area is constant at $8\\text{ cm}^{2}$ for every $t > 0$."
   }
 }

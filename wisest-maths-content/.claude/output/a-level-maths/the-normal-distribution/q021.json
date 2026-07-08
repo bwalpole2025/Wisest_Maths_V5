@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q021",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "upper tail"
+  ],
+  "questionText": "A test is marked out of $100$. The marks, $X$, are modelled by $X \\sim N(58, 6^2)$. Find the probability that a randomly chosen candidate scores more than $67$ marks, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(58,\\ 6^2), \\qquad \\mu = 58,\\ \\sigma = 6",
+        "explanation": "The marks are normal with mean $\\mu = 58$ and standard deviation $\\sigma = 6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify what is required",
+        "workingLatex": "\\text{Require } P(X > 67)",
+        "explanation": "‘Scores more than $67$’ means we need the upper-tail probability $P(X > 67)$, and since $67$ is above the mean it will be less than $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 67",
+        "workingLatex": "Z = \\dfrac{X - \\mu}{\\sigma} = \\dfrac{67 - 58}{6} = 1.5",
+        "explanation": "The $z$-score shows $67$ is one and a half standard deviations above the mean, so $z = 1.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X > 67) = P(Z > 1.5)",
+        "explanation": "Switching to the standard normal variable, the tail above $67$ becomes the tail above $z = 1.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the upper-tail rule",
+        "workingLatex": "P(Z > 1.5) = 1 - \\Phi(1.5) = 1 - 0.93319",
+        "explanation": "$\\Phi(1.5)$ is the area to the left of $1.5$; subtracting it from $1$ leaves the right-hand tail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 0.06681",
+        "explanation": "Carrying out the subtraction gives the probability that a candidate scores above $67$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final answer",
+        "workingLatex": "P(X > 67) \\approx 0.06681",
+        "explanation": "To four significant figures this is the required probability, about $6.7\\%$, which fits a value well into the upper tail.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X > 67) \\approx 0.06681$."
+  }
+}

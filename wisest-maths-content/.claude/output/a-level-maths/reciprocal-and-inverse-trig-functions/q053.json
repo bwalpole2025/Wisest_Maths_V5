@@ -5,68 +5,116 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "identities",
-    "proof",
-    "secant",
-    "tangent"
+    "solving equations",
+    "tan",
+    "quadratic"
   ],
-  "questionText": "Prove that $\\sec^4\\theta - \\tan^4\\theta \\equiv \\sec^2\\theta + \\tan^2\\theta$.",
+  "questionText": "Solve $\\sec^2 x = 3 + \\tan x$ for $0 \\le x < 360^\\circ$. Give any non-exact answers to one decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\sec^4\\theta - \\tan^4\\theta",
-        "explanation": "The fourth powers form a difference of two squares if we view them as $(\\sec^2\\theta)^2 - (\\tan^2\\theta)^2$.",
+        "description": "State the equation and interval",
+        "workingLatex": "\\sec^2 x = 3 + \\tan x, \\qquad 0 \\le x < 360^\\circ",
+        "explanation": "The equation contains $\\sec^2 x$ and $\\tan x$. Converting $\\sec^2 x$ into a $\\tan$ expression will collapse everything to a single ratio.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write as a difference of squares",
-        "workingLatex": "= (\\sec^2\\theta)^2 - (\\tan^2\\theta)^2",
-        "explanation": "Recognising the structure lets us factorise using $a^2 - b^2 = (a-b)(a+b)$.",
+        "description": "Recall the Pythagorean identity",
+        "workingLatex": "\\sec^2 x \\equiv 1 + \\tan^2 x",
+        "explanation": "The identity $1 + \\tan^2 x \\equiv \\sec^2 x$ lets us replace $\\sec^2 x$ directly, leaving an equation entirely in $\\tan x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Factorise",
-        "workingLatex": "= (\\sec^2\\theta - \\tan^2\\theta)(\\sec^2\\theta + \\tan^2\\theta)",
-        "explanation": "Applying the difference-of-squares factorisation gives two brackets.",
+        "description": "Substitute into the equation",
+        "workingLatex": "1 + \\tan^2 x = 3 + \\tan x",
+        "explanation": "After the substitution every term is written with $\\tan x$, ready to be rearranged into a quadratic.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recall the Pythagorean identity",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "This identity will simplify the first bracket dramatically.",
+        "description": "Rearrange to a quadratic equal to zero",
+        "workingLatex": "\\tan^2 x - \\tan x - 2 = 0",
+        "explanation": "Collecting terms on one side ($1 - 3 = -2$) gives a clean quadratic in $\\tan x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify the first bracket",
-        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = (1 + \\tan^2\\theta) - \\tan^2\\theta = 1",
-        "explanation": "The tangent-squared terms cancel, so the first bracket equals $1$.",
+        "description": "Introduce a substitution",
+        "workingLatex": "u^2 - u - 2 = 0, \\quad \\text{where } u = \\tan x",
+        "explanation": "Setting $u = \\tan x$ exposes the ordinary quadratic beneath the trigonometry.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Substitute back",
-        "workingLatex": "= 1\\cdot(\\sec^2\\theta + \\tan^2\\theta)",
-        "explanation": "With the first bracket equal to $1$, only the second bracket survives.",
+        "description": "Factorise",
+        "workingLatex": "(u - 2)(u + 1) = 0",
+        "explanation": "Two numbers with product $-2$ and sum $-1$ are $-2$ and $+1$, giving this factorisation.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Conclude the proof",
-        "workingLatex": "= \\sec^2\\theta + \\tan^2\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "This matches the right-hand side, completing the proof.",
+        "description": "Read off the roots",
+        "workingLatex": "\\tan x = 2 \\quad \\text{or} \\quad \\tan x = -1",
+        "explanation": "Each factor gives a value of $\\tan x$. Unlike $\\sec$ or $\\operatorname{cosec}$, the tangent can take any real value, so both roots are attainable with nothing to reject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve tan x = 2",
+        "workingLatex": "\\tan^{-1}(2) = 63.4^\\circ \\;\\text{(base angle)}",
+        "explanation": "The calculator gives the first-quadrant base angle. Tangent is positive in the first and third quadrants, so the solutions are a half-turn apart.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "All angles for tan x = 2",
+        "workingLatex": "x = 63.4^\\circ \\quad \\text{or} \\quad x = 63.4^\\circ + 180^\\circ = 243.4^\\circ",
+        "explanation": "Because $\\tan$ has period $180^\\circ$, adding $180^\\circ$ to the base angle gives the third-quadrant solution. Both lie in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve tan x = -1",
+        "workingLatex": "\\tan^{-1}(1) = 45^\\circ \\;\\text{(reference angle)}",
+        "explanation": "Taking the acute reference angle from the positive value $1$, we then place solutions where tangent is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "All angles for tan x = -1",
+        "workingLatex": "x = 180^\\circ - 45^\\circ = 135^\\circ, \\qquad x = 360^\\circ - 45^\\circ = 315^\\circ",
+        "explanation": "Tangent is negative in the second and fourth quadrants, giving $135^\\circ$ and $315^\\circ$; these are exact.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Collect all solutions",
+        "workingLatex": "x = 63.4^\\circ,\\; 135^\\circ,\\; 243.4^\\circ,\\; 315^\\circ",
+        "explanation": "Merging the two cases gives four solutions in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify a solution",
+        "workingLatex": "\\tan 135^\\circ = -1: \\quad \\sec^2 135^\\circ = 1 + (-1)^2 = 2, \\qquad 3 + \\tan 135^\\circ = 3 + (-1) = 2",
+        "explanation": "Substituting $x = 135^\\circ$ into the original equation gives $2$ on both sides, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "x = 63.4^\\circ,\\; 135^\\circ,\\; 243.4^\\circ,\\; 315^\\circ",
+        "explanation": "These four angles are the complete solution set for $0 \\le x < 360^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec^4\\theta - \\tan^4\\theta \\equiv \\sec^2\\theta + \\tan^2\\theta$"
+    "finalAnswer": "$x = 63.4^\\circ,\\ 135^\\circ,\\ 243.4^\\circ,\\ 315^\\circ$ (non-exact values to 1 d.p.)."
   }
 }

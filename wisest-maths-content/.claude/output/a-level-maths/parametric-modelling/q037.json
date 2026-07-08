@@ -4,54 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "gradient",
-    "trig"
+    "trig parametric",
+    "intersection",
+    "direction"
   ],
-  "questionText": "A curve has parametric equations $x = \\sin\\theta$, $y = \\sin 2\\theta$. Find the exact gradient at $\\theta = \\dfrac{\\pi}{6}$.",
+  "questionText": "A point moves on the circular path $x = 3\\cos t$, $y = 3\\sin t$ for $0 \\le t < 2\\pi$. (a) Find the values of $t$ and the exact coordinates where the path crosses the line $y = x$. (b) Find $\\dfrac{dy}{dx}$ at $t = \\dfrac{\\pi}{4}$ to describe the direction of motion there.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate each equation",
-        "workingLatex": "\\frac{dx}{d\\theta} = \\cos\\theta, \\quad \\frac{dy}{d\\theta} = 2\\cos 2\\theta",
-        "explanation": "The chain rule gives the derivative of $\\sin 2\\theta$ as $2\\cos 2\\theta$.",
+        "description": "Substitute the path into the line equation",
+        "workingLatex": "y = x \\;\\Rightarrow\\; 3\\sin t = 3\\cos t",
+        "explanation": "The path crosses the line wherever its $x$ and $y$ coordinates are equal, so we set the two parametric expressions equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Form the gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\cos 2\\theta}{\\cos\\theta}",
-        "explanation": "Dividing the two derivatives.",
+        "description": "Rearrange into a single trig ratio",
+        "workingLatex": "\\dfrac{\\sin t}{\\cos t} = 1 \\;\\Rightarrow\\; \\tan t = 1",
+        "explanation": "Dividing both sides by $3\\cos t$ turns the equation into a standard $\\tan t = 1$, which is easy to solve.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate the trig values",
-        "workingLatex": "\\cos 2\\theta = \\cos\\frac{\\pi}{3} = \\frac{1}{2}, \\quad \\cos\\frac{\\pi}{6} = \\frac{\\sqrt3}{2}",
-        "explanation": "At $\\theta = \\frac{\\pi}{6}$, the doubled angle is $\\frac{\\pi}{3}$.",
+        "description": "Solve for t in the interval",
+        "workingLatex": "t = \\dfrac{\\pi}{4}, \\quad t = \\dfrac{5\\pi}{4}",
+        "explanation": "The tangent function equals $1$ at these two angles within $0 \\le t < 2\\pi$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\cdot\\frac{1}{2}}{\\frac{\\sqrt3}{2}} = \\frac{1}{\\frac{\\sqrt3}{2}}",
-        "explanation": "The numerator simplifies to $1$.",
+        "description": "Find the first crossing point",
+        "workingLatex": "t=\\tfrac{\\pi}{4}:\\; \\left(3\\cdot\\tfrac{\\sqrt{2}}{2},\\; 3\\cdot\\tfrac{\\sqrt{2}}{2}\\right) = \\left(\\tfrac{3\\sqrt{2}}{2},\\, \\tfrac{3\\sqrt{2}}{2}\\right)",
+        "explanation": "Substituting $t=\\tfrac{\\pi}{4}$ into the position equations gives the point in the first quadrant.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify and rationalise",
-        "workingLatex": "= \\frac{2}{\\sqrt3} = \\frac{2\\sqrt3}{3}",
-        "explanation": "Rationalising the denominator gives the exact gradient.",
+        "description": "Find the second crossing point",
+        "workingLatex": "t=\\tfrac{5\\pi}{4}:\\; \\left(-\\tfrac{3\\sqrt{2}}{2},\\, -\\tfrac{3\\sqrt{2}}{2}\\right)",
+        "explanation": "Here both cosine and sine are $-\\tfrac{\\sqrt{2}}{2}$, giving the diametrically opposite crossing point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = -3\\sin t",
+        "explanation": "This is the horizontal velocity component, needed for the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = 3\\cos t",
+        "explanation": "This is the vertical velocity component.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{3\\cos t}{-3\\sin t} = -\\dfrac{\\cos t}{\\sin t} = -\\cot t",
+        "explanation": "Dividing the two rates and cancelling the $3$ gives a neat expression for the slope at any time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the gradient at t = pi/4",
+        "workingLatex": "\\dfrac{dy}{dx} = -\\cot\\tfrac{\\pi}{4} = -1",
+        "explanation": "Since $\\cot\\tfrac{\\pi}{4}=1$, the gradient is $-1$: the point is moving at right angles to the line $y=x$, which makes sense for a circle whose radius meets the line there.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{2\\sqrt3}{3}$"
+    "finalAnswer": "(a) The path meets $y=x$ at $t=\\dfrac{\\pi}{4}$, point $\\left(\\dfrac{3\\sqrt{2}}{2},\\dfrac{3\\sqrt{2}}{2}\\right)$, and $t=\\dfrac{5\\pi}{4}$, point $\\left(-\\dfrac{3\\sqrt{2}}{2},-\\dfrac{3\\sqrt{2}}{2}\\right)$. (b) At $t=\\dfrac{\\pi}{4}$, $\\dfrac{dy}{dx}=-1$, so the motion is perpendicular to the line $y=x$."
   }
 }

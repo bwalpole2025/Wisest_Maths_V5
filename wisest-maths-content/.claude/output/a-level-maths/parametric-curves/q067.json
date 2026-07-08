@@ -4,54 +4,131 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "cartesian",
-    "general parabola"
+    "parametric circle",
+    "axis intercepts",
+    "root selection"
   ],
-  "questionText": "A curve has parametric equations $x = at^2$, $y = 2at$ where $a$ is a positive constant. Find the Cartesian equation.",
+  "questionText": "A circle $C$ has parametric equations $x = 3 + 5\\cos t$ and $y = 4 + 5\\sin t$ for $0 \\le t < 2\\pi$. Show that $C$ is a circle and state its centre and radius. Then find the coordinates of the points where $C$ crosses the $x$-axis and where it crosses the $y$-axis.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject of the y-equation",
-        "workingLatex": "y = 2at \\;\\Rightarrow\\; t = \\frac{y}{2a}",
-        "explanation": "The linear $y$-equation is easiest to rearrange for $t$.",
+        "description": "Make the trig functions the subjects",
+        "workingLatex": "\\cos t = \\dfrac{x - 3}{5}, \\qquad \\sin t = \\dfrac{y - 4}{5}",
+        "explanation": "To reach a Cartesian equation we isolate $\\cos t$ and $\\sin t$, ready to feed into the Pythagorean identity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the x-equation",
-        "workingLatex": "x = a\\left(\\frac{y}{2a}\\right)^2",
-        "explanation": "Replacing $t$ removes the parameter.",
+        "description": "Recall the Pythagorean identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "This identity holds for all $t$, so it removes the parameter and leaves a relation between $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "x = a\\cdot\\frac{y^2}{4a^2} = \\frac{y^2}{4a}",
-        "explanation": "One factor of $a$ cancels, leaving $\\frac{y^2}{4a}$.",
+        "description": "Substitute the isolated expressions",
+        "workingLatex": "\\left(\\dfrac{x - 3}{5}\\right)^{2} + \\left(\\dfrac{y - 4}{5}\\right)^{2} = 1",
+        "explanation": "Replacing the trig functions produces an equation in $x$ and $y$ alone.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rearrange to standard form",
-        "workingLatex": "y^2 = 4ax",
-        "explanation": "Multiplying through by $4a$ gives the standard equation of a parabola.",
+        "description": "Clear the denominators",
+        "workingLatex": "(x - 3)^{2} + (y - 4)^{2} = 25",
+        "explanation": "Multiplying through by $25$ gives the familiar equation of a circle.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Interpret",
-        "workingLatex": "y^2 = 4ax \\text{ (standard parabola)}",
-        "explanation": "This is the standard parametrisation of a parabola used throughout A-Level; the parameter $t$ labels points on it.",
+        "description": "State centre and radius",
+        "workingLatex": "\\text{Circle, centre } (3,\\, 4), \\ \\text{radius } 5",
+        "explanation": "Comparing with $(x - a)^{2} + (y - b)^{2} = r^{2}$ shows the centre is $(3,4)$ and the radius is $\\sqrt{25} = 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set y = 0 for the x-axis crossings",
+        "workingLatex": "y = 0:\\quad 4 + 5\\sin t = 0 \\Rightarrow \\sin t = -\\dfrac{4}{5}",
+        "explanation": "The curve meets the $x$-axis where $y = 0$; using the parametric form of $y$ gives the required value of $\\sin t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find cos t from the identity",
+        "workingLatex": "\\cos^{2} t = 1 - \\left(-\\dfrac{4}{5}\\right)^{2} = 1 - \\dfrac{16}{25} = \\dfrac{9}{25} \\Rightarrow \\cos t = \\pm\\dfrac{3}{5}",
+        "explanation": "Knowing $\\sin t$ fixes $\\cos t$ up to sign through the identity; both signs are possible and each gives a different crossing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute the two x-values",
+        "workingLatex": "x = 3 + 5\\left(\\pm\\dfrac{3}{5}\\right) = 3 \\pm 3 = 6 \\ \\text{or}\\ 0",
+        "explanation": "Substituting each sign of $\\cos t$ into $x = 3 + 5\\cos t$ gives the two points where the circle meets the $x$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the x-axis intercepts",
+        "workingLatex": "(6,\\, 0) \\quad \\text{and} \\quad (0,\\, 0)",
+        "explanation": "Both values of $\\cos t$ are valid, so the circle cuts the $x$-axis twice, at these points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the intercepts on the circle",
+        "workingLatex": "(6 - 3)^{2} + (0 - 4)^{2} = 9 + 16 = 25\\ \\checkmark, \\quad (0 - 3)^{2} + (0 - 4)^{2} = 25\\ \\checkmark",
+        "explanation": "Both points satisfy the circle equation, confirming the working.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set x = 0 for the y-axis crossings",
+        "workingLatex": "x = 0:\\quad 3 + 5\\cos t = 0 \\Rightarrow \\cos t = -\\dfrac{3}{5}",
+        "explanation": "The curve meets the $y$-axis where $x = 0$; the parametric form of $x$ gives the needed value of $\\cos t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find sin t from the identity",
+        "workingLatex": "\\sin^{2} t = 1 - \\left(-\\dfrac{3}{5}\\right)^{2} = 1 - \\dfrac{9}{25} = \\dfrac{16}{25} \\Rightarrow \\sin t = \\pm\\dfrac{4}{5}",
+        "explanation": "With $\\cos t$ known, the identity gives $\\sin t$ up to sign, and both signs correspond to genuine crossings.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Compute the two y-values",
+        "workingLatex": "y = 4 + 5\\left(\\pm\\dfrac{4}{5}\\right) = 4 \\pm 4 = 8 \\ \\text{or}\\ 0",
+        "explanation": "Substituting each sign of $\\sin t$ into $y = 4 + 5\\sin t$ gives the two points on the $y$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the y-axis intercepts",
+        "workingLatex": "(0,\\, 8) \\quad \\text{and} \\quad (0,\\, 0)",
+        "explanation": "The circle cuts the $y$-axis at these two points; note the origin lies on both axes, so it appears in both lists.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Check the y-axis intercept",
+        "workingLatex": "(0 - 3)^{2} + (8 - 4)^{2} = 9 + 16 = 25\\ \\checkmark",
+        "explanation": "The point $(0,8)$ satisfies the circle equation, confirming the result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "Collect the conclusions",
+        "workingLatex": "\\text{Centre } (3,4),\\ r = 5;\\ \\ x\\text{-axis: } (0,0),(6,0);\\ \\ y\\text{-axis: } (0,0),(0,8)",
+        "explanation": "Gathering everything, the circle has centre $(3,4)$ and radius $5$, passes through the origin, and meets each axis at two points.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y^2 = 4ax$"
+    "finalAnswer": "$C$ is the circle $(x - 3)^{2} + (y - 4)^{2} = 25$, centre $(3,\\, 4)$, radius $5$. It crosses the $x$-axis at $(0,\\, 0)$ and $(6,\\, 0)$, and the $y$-axis at $(0,\\, 0)$ and $(0,\\, 8)$."
   }
 }

@@ -4,69 +4,103 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
   "tags": [
-    "double angle",
-    "equations",
-    "quadratic",
-    "cosine"
+    "compound angle",
+    "triple angle",
+    "proof"
   ],
-  "questionText": "Solve $\\cos 2\\theta = 3\\cos\\theta - 2$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Prove that $\\cos 3\\theta \\equiv 4\\cos^3\\theta - 3\\cos\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the cosine form",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
-        "explanation": "The right side is in cosine, so this form makes a quadratic in $\\cos\\theta$.",
+        "description": "Split the triple angle",
+        "workingLatex": "\\cos 3\\theta = \\cos(2\\theta + \\theta)",
+        "explanation": "We write $3\\theta$ as the compound angle $2\\theta + \\theta$ so the addition and double-angle formulae can be used.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute",
-        "workingLatex": "2\\cos^2\\theta - 1 = 3\\cos\\theta - 2",
-        "explanation": "The equation is now in cosine only.",
+        "description": "Apply the cosine addition formula",
+        "workingLatex": "\\cos(2\\theta + \\theta) = \\cos 2\\theta\\cos\\theta - \\sin 2\\theta\\sin\\theta",
+        "explanation": "Using $\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B$ with $A = 2\\theta$ and $B = \\theta$ expands the compound angle.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to standard form",
-        "workingLatex": "2\\cos^2\\theta - 3\\cos\\theta + 1 = 0",
-        "explanation": "Collecting all terms on one side gives a quadratic.",
+        "description": "Choose a cosine-only cos 2theta",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "Because the target answer is written purely in $\\cos\\theta$, we pick the version of $\\cos 2\\theta$ that contains only cosine.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(2\\cos\\theta - 1)(\\cos\\theta - 1) = 0",
-        "explanation": "The factors of $1$ giving $-3\\cos\\theta$ are these.",
+        "description": "Substitute the sine double angle",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "Replacing $\\sin 2\\theta$ prepares the second term for simplification.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cos\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 60^\\circ, 300^\\circ",
-        "explanation": "Cosine one half gives quadrant I and IV solutions.",
+        "description": "Substitute both double angles",
+        "workingLatex": "\\cos 3\\theta = (2\\cos^2\\theta - 1)\\cos\\theta - (2\\sin\\theta\\cos\\theta)\\sin\\theta",
+        "explanation": "Putting both expansions in place gives an expression in $\\sin\\theta$ and $\\cos\\theta$ only.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "\\cos\\theta = 1 \\;\\Rightarrow\\; \\theta = 0^\\circ",
-        "explanation": "Cosine equals $1$ only at $0^\\circ$ in the interval.",
+        "description": "Expand the brackets",
+        "workingLatex": "= 2\\cos^3\\theta - \\cos\\theta - 2\\sin^2\\theta\\cos\\theta",
+        "explanation": "Multiplying out each product isolates the $\\sin^2\\theta$ term that still needs converting.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 0^\\circ, 60^\\circ, 300^\\circ",
-        "explanation": "Combining both cases gives three solutions in the interval.",
+        "description": "Replace sine squared with cosine",
+        "workingLatex": "\\sin^2\\theta = 1 - \\cos^2\\theta",
+        "explanation": "The Pythagorean identity converts the sine term into cosine so the whole answer is in $\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute for sine squared",
+        "workingLatex": "= 2\\cos^3\\theta - \\cos\\theta - 2(1 - \\cos^2\\theta)\\cos\\theta",
+        "explanation": "Only cosines remain now; expanding the bracket will let us collect like terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand the remaining bracket",
+        "workingLatex": "= 2\\cos^3\\theta - \\cos\\theta - 2\\cos\\theta + 2\\cos^3\\theta",
+        "explanation": "Distributing $-2\\cos\\theta$ across $(1 - \\cos^2\\theta)$ gives $-2\\cos\\theta + 2\\cos^3\\theta$, leaving four terms to gather.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Collect like terms",
+        "workingLatex": "= 4\\cos^3\\theta - 3\\cos\\theta",
+        "explanation": "The cubic terms give $2\\cos^3\\theta + 2\\cos^3\\theta = 4\\cos^3\\theta$ and the linear terms give $-\\cos\\theta - 2\\cos\\theta = -3\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\cos 90^\\circ = 0, \\quad 4\\cos^3 30^\\circ - 3\\cos 30^\\circ = 4\\cdot\\tfrac{3\\sqrt3}{8} - 3\\cdot\\tfrac{\\sqrt3}{2} = 0",
+        "explanation": "At $\\theta = 30^\\circ$ the left side is $\\cos 90^\\circ = 0$ and the right side also equals $0$, supporting the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Conclude the proof",
+        "workingLatex": "\\cos 3\\theta \\equiv 4\\cos^3\\theta - 3\\cos\\theta \\quad \\blacksquare",
+        "explanation": "The LHS reduces to the RHS for all $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 0^\\circ, 60^\\circ, 300^\\circ$"
+    "finalAnswer": "Writing $\\cos 3\\theta = \\cos(2\\theta + \\theta)$ and expanding with the addition and double-angle formulae, then using $\\sin^2\\theta = 1 - \\cos^2\\theta$, gives $4\\cos^3\\theta - 3\\cos\\theta$, so $\\cos 3\\theta \\equiv 4\\cos^3\\theta - 3\\cos\\theta$."
   }
 }

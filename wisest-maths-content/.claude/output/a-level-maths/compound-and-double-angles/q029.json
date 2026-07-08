@@ -5,61 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "equations",
-    "sine",
-    "cosine"
+    "reciprocal ratios",
+    "quadrant"
   ],
-  "questionText": "Solve $\\sin 2\\theta = \\cos\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Given that $\\operatorname{cosec}\\theta = -\\tfrac{41}{40}$ and that $\\theta$ lies in the third quadrant, find the exact values of $\\sin 2\\theta$, $\\cos 2\\theta$ and $\\tan 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the double angle",
-        "workingLatex": "2\\sin\\theta\\cos\\theta = \\cos\\theta",
-        "explanation": "Writing $\\sin 2\\theta$ in terms of $\\theta$ lets us factorise.",
+        "description": "Convert cosec to sin",
+        "workingLatex": "\\sin\\theta = \\dfrac{1}{\\operatorname{cosec}\\theta} = \\dfrac{1}{-\\tfrac{41}{40}} = -\\tfrac{40}{41}",
+        "explanation": "Sine is the reciprocal of cosecant, so inverting the given value gives $\\sin\\theta=-\\tfrac{40}{41}$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Move to one side",
-        "workingLatex": "2\\sin\\theta\\cos\\theta - \\cos\\theta = 0",
-        "explanation": "Rearranging keeps all solutions; dividing by cosine would lose some.",
+        "description": "Find cos theta using the quadrant",
+        "workingLatex": "180^\\circ<\\theta<270^\\circ:\\quad \\cos\\theta = -\\sqrt{1-\\tfrac{1600}{1681}} = -\\sqrt{\\tfrac{81}{1681}} = -\\tfrac{9}{41}",
+        "explanation": "In the third quadrant cosine is negative, so we take the negative square root in $\\cos\\theta=\\pm\\sqrt{1-\\sin^2\\theta}$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Factor out cosine",
-        "workingLatex": "\\cos\\theta(2\\sin\\theta - 1) = 0",
-        "explanation": "The common factor $\\cos\\theta$ splits the equation into two cases.",
+        "description": "State the sine double-angle formula",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "The single-angle ratios feed straight into the double-angle formula.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\theta = 90^\\circ, 270^\\circ",
-        "explanation": "Cosine is zero at $90^\\circ$ and $270^\\circ$.",
+        "description": "Substitute to find sin 2theta",
+        "workingLatex": "\\sin 2\\theta = 2\\left(-\\tfrac{40}{41}\\right)\\left(-\\tfrac{9}{41}\\right) = \\tfrac{720}{1681}",
+        "explanation": "Two negative factors give a positive $\\sin 2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the second factor",
-        "workingLatex": "\\sin\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 30^\\circ, 150^\\circ",
-        "explanation": "Sine one half gives quadrant I and II solutions.",
+        "description": "Choose a cosine double-angle formula",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
+        "explanation": "Because $\\sin\\theta$ is known exactly, the $1-2\\sin^2\\theta$ form is the quickest to use.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 30^\\circ, 90^\\circ, 150^\\circ, 270^\\circ",
-        "explanation": "Combining both cases gives four solutions in the interval.",
+        "description": "Substitute to find cos 2theta",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\cdot\\tfrac{1600}{1681} = \\tfrac{1681-3200}{1681} = -\\tfrac{1519}{1681}",
+        "explanation": "Writing $1=\\tfrac{1681}{1681}$ makes the subtraction exact; the result is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form tan 2theta by division",
+        "workingLatex": "\\tan 2\\theta = \\dfrac{\\sin 2\\theta}{\\cos 2\\theta} = \\dfrac{720/1681}{-1519/1681} = -\\tfrac{720}{1519}",
+        "explanation": "The $1681$s cancel, and dividing a positive by a negative gives a negative tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check with the Pythagorean identity",
+        "workingLatex": "\\sin^2 2\\theta + \\cos^2 2\\theta = \\tfrac{518400}{2825761} + \\tfrac{2307361}{2825761} = \\tfrac{2825761}{2825761} = 1",
+        "explanation": "The squared values sum to $1$, confirming the pair is consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the quadrant of 2theta",
+        "workingLatex": "\\sin 2\\theta>0,\\ \\cos 2\\theta<0 \\;\\Rightarrow\\; 2\\theta \\text{ is a second-quadrant angle}",
+        "explanation": "A positive sine with a negative cosine places $2\\theta$ in the second quadrant, matching the negative tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sin 2\\theta = \\tfrac{720}{1681}, \\quad \\cos 2\\theta = -\\tfrac{1519}{1681}, \\quad \\tan 2\\theta = -\\tfrac{720}{1519}",
+        "explanation": "Collecting the exact values gives the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 90^\\circ, 150^\\circ, 270^\\circ$"
+    "finalAnswer": "$\\sin 2\\theta = \\tfrac{720}{1681}$, $\\cos 2\\theta = -\\tfrac{1519}{1681}$, $\\tan 2\\theta = -\\tfrac{720}{1519}$."
   }
 }

@@ -5,53 +5,95 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "collision",
-    "two particles"
+    "projectile",
+    "range",
+    "time of flight"
   ],
-  "questionText": "Particle A has position $x = 2t$, $y = t^2$ and particle B has position $x = 12 - t$, $y = 9$ (metres, $t$ in seconds). Determine whether the particles collide, and if so, when and where.",
+  "questionText": "A stone is launched from ground level so that, $t$ seconds later, its position in metres is modelled by $x = 40t$ and $y = 30t - 5t^{2}$. Find the time of flight, the horizontal range, and the speed of the stone at the moment it lands.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the collision condition",
-        "workingLatex": "x_A = x_B \\text{ and } y_A = y_B \\text{ at the same } t",
-        "explanation": "A collision requires both coordinates to match at the same instant, not just the paths to cross.",
+        "description": "Set the height to zero for landing",
+        "workingLatex": "30t - 5t^{2} = 0",
+        "explanation": "The stone is on the ground when its height $y$ is zero, so we solve $y = 0$ to find the launch and landing times.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Match the y-coordinates",
-        "workingLatex": "t^2 = 9 \\;\\Rightarrow\\; t = 3 \\; (t \\ge 0)",
-        "explanation": "Setting $y_A = y_B$ gives $t = 3$ (taking the physically sensible positive time).",
+        "description": "Factorise",
+        "workingLatex": "5t\\left(6 - t\\right) = 0",
+        "explanation": "Taking out the common factor $5t$ makes the two solutions easy to read off.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Check the x-coordinates at that time",
-        "workingLatex": "x_A = 2(3) = 6, \\quad x_B = 12 - 3 = 9",
-        "explanation": "At $t = 3$, particle A is at $x = 6$ and particle B is at $x = 9$.",
+        "description": "Read off the two times",
+        "workingLatex": "t = 0 \\quad \\text{or} \\quad t = 6",
+        "explanation": "The two roots are the moment of launch and the moment of landing.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Compare",
-        "workingLatex": "6 \\ne 9",
-        "explanation": "The $x$-coordinates differ at $t = 3$, so the particles are not at the same point.",
+        "description": "Choose the flight time",
+        "workingLatex": "t = 6",
+        "explanation": "$t = 0$ is the launch instant, so the stone lands at $t = 6$; the time of flight is $6$ s.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Conclude",
-        "workingLatex": "\\text{no collision}",
-        "explanation": "Since there is no time when both coordinates agree, the particles do not collide.",
+        "description": "Find the range",
+        "workingLatex": "x = 40(6) = 240",
+        "explanation": "The horizontal range is the value of $x$ when it lands, found by substituting the flight time into the horizontal equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Differentiate the horizontal position",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 40",
+        "explanation": "The horizontal velocity is a constant $40$ m/s, one component of the landing velocity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate the vertical position",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 30 - 10t",
+        "explanation": "The vertical velocity changes with time; we need its value at the landing instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the vertical velocity at landing",
+        "workingLatex": "\\dot{y} = 30 - 10(6) = -30",
+        "explanation": "The negative sign shows the stone is moving downward as it hits the ground, at $30$ m/s vertically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Apply the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}} = \\sqrt{40^{2} + (-30)^{2}}",
+        "explanation": "Speed is the magnitude of the velocity vector, combining the horizontal and vertical components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate the landing speed",
+        "workingLatex": "\\text{speed} = \\sqrt{1600 + 900} = \\sqrt{2500} = 50",
+        "explanation": "So the stone strikes the ground at $50$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the results",
+        "workingLatex": "\\text{flight} = 6\\ \\text{s},\\quad \\text{range} = 240\\ \\text{m},\\quad \\text{speed} = 50\\ \\text{m/s}",
+        "explanation": "These three values fully describe the stone's flight and its impact.",
         "diagram": null
       }
     ],
-    "finalAnswer": "The particles do not collide (at $t = 3$ they share $y$ but not $x$)."
+    "finalAnswer": "The time of flight is $6$ s, the horizontal range is $240$ m, and the stone lands at a speed of $50$ m/s."
   }
 }

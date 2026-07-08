@@ -1,0 +1,78 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "trigonometry",
+    "gradient"
+  ],
+  "questionText": "A curve has equation $y = x\\sin x$, where $x$ is in radians. (a) Find $\\dfrac{dy}{dx}$. (b) Find the gradient of the curve at $x = \\dfrac{\\pi}{2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and state the rule",
+        "workingLatex": "\\frac{d}{dx}(uv) = u'v + uv'",
+        "explanation": "$y = x\\sin x$ is a product of $x$ and $\\sin x$, so the product rule is the right tool.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the two factors",
+        "workingLatex": "u = x, \\qquad v = \\sin x",
+        "explanation": "We name the factors $u$ and $v$ so we can substitute them carefully into the rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = \\cos x",
+        "explanation": "The derivative of $x$ is $1$, and the derivative of $\\sin x$ is $\\cos x$ — a standard trigonometric derivative in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = (1)\\sin x + x\\cos x",
+        "explanation": "Substituting into $u'v + uv'$ gives one term with $\\sin x$ differentiated only through the first factor, and one with $\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\sin x + x\\cos x",
+        "explanation": "This tidies the answer for part (a); it is already in its simplest form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the given value of x",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\pi/2} = \\sin\\frac{\\pi}{2} + \\frac{\\pi}{2}\\cos\\frac{\\pi}{2}",
+        "explanation": "The gradient at a point is the value of the derivative there, so we put $x = \\dfrac{\\pi}{2}$ into the expression from part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the trigonometric values",
+        "workingLatex": "= 1 + \\frac{\\pi}{2}(0)",
+        "explanation": "In radians $\\sin\\dfrac{\\pi}{2} = 1$ and $\\cos\\dfrac{\\pi}{2} = 0$, so the second term vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = 1",
+        "explanation": "The gradient of the curve at $x = \\dfrac{\\pi}{2}$ is $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\sin x + x\\cos x$. (b) The gradient at $x = \\dfrac{\\pi}{2}$ is $1$."
+  }
+}

@@ -6,60 +6,74 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "secant",
+    "cosec",
     "exact values",
-    "surds"
+    "radians"
   ],
-  "questionText": "Find the exact value of $\\sec 45^\\circ$, giving your answer in the form $a\\sqrt{2}$.",
+  "questionText": "Find the exact value of $\\operatorname{cosec}\\dfrac{\\pi}{4}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write secant as one over cosine",
-        "workingLatex": "\\sec 45^\\circ = \\frac{1}{\\cos 45^\\circ}",
-        "explanation": "As always with secant, the first move is to rewrite it in terms of cosine so the standard exact values apply.",
+        "description": "Recall the definition of cosecant",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "Cosecant is the reciprocal of sine, so we first find the sine of the angle.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Recall the exact value of cosine 45 degrees",
-        "workingLatex": "\\cos 45^\\circ = \\frac{\\sqrt{2}}{2}",
-        "explanation": "This exact value comes from the isosceles right-angled triangle, and it is often equivalently written as $\\frac{1}{\\sqrt{2}}$.",
+        "description": "Convert the radian angle to degrees",
+        "workingLatex": "\\frac{\\pi}{4} \\text{ rad} = 45^\\circ",
+        "explanation": "A quarter of $\\pi$ radians is $45^\\circ$, one of the standard angles, so we can quote its sine exactly.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the value",
-        "workingLatex": "\\sec 45^\\circ = \\frac{1}{\\;\\frac{\\sqrt{2}}{2}\\;}",
-        "explanation": "Substituting gives a reciprocal of a surd fraction, which we will simplify to reach the required form.",
+        "description": "Apply the definition",
+        "workingLatex": "\\operatorname{cosec}\\frac{\\pi}{4} = \\frac{1}{\\sin\\tfrac{\\pi}{4}}",
+        "explanation": "Substituting the angle leaves one over $\\sin\\tfrac{\\pi}{4}$ to evaluate.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Invert the fraction",
-        "workingLatex": "\\sec 45^\\circ = \\frac{2}{\\sqrt{2}}",
-        "explanation": "Taking the reciprocal simply flips the fraction, turning $\\frac{\\sqrt{2}}{2}$ into $\\frac{2}{\\sqrt{2}}$.",
+        "description": "Recall the exact value of sin of pi over 4",
+        "workingLatex": "\\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}",
+        "explanation": "In the isosceles right-angled triangle the sine of $45^\\circ$ is $\\tfrac{1}{\\sqrt{2}}$, written in rationalised form as $\\tfrac{\\sqrt{2}}{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Rationalise the denominator",
-        "workingLatex": "\\frac{2}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{2\\sqrt{2}}{2}",
-        "explanation": "Multiplying top and bottom by $\\sqrt{2}$ clears the root from the denominator, which is the standard way to tidy a surd fraction.",
+        "description": "Substitute the sine value",
+        "workingLatex": "\\operatorname{cosec}\\frac{\\pi}{4} = \\frac{1}{\\tfrac{\\sqrt{2}}{2}}",
+        "explanation": "We now have one divided by $\\tfrac{\\sqrt{2}}{2}$, which we simplify by flipping the fraction.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Simplify to the required form",
-        "workingLatex": "\\frac{2\\sqrt{2}}{2} = \\sqrt{2}",
-        "explanation": "The twos cancel, leaving $\\sqrt{2}$, which is $1\\sqrt{2}$ in the requested form $a\\sqrt{2}$ with $a = 1$.",
+        "description": "Flip the fraction",
+        "workingLatex": "\\frac{1}{\\tfrac{\\sqrt{2}}{2}} = \\frac{2}{\\sqrt{2}}",
+        "explanation": "Dividing by $\\tfrac{\\sqrt{2}}{2}$ means multiplying by its reciprocal $\\tfrac{2}{\\sqrt{2}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rationalise the denominator",
+        "workingLatex": "\\frac{2}{\\sqrt{2}} = \\frac{2}{\\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{2\\sqrt{2}}{2} = \\sqrt{2}",
+        "explanation": "Multiplying top and bottom by $\\sqrt{2}$ clears the surd, and the twos cancel to leave the tidy exact value $\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the exact value",
+        "workingLatex": "\\operatorname{cosec}\\frac{\\pi}{4} = \\sqrt{2}",
+        "explanation": "This is the required exact value; note it matches $\\sec\\tfrac{\\pi}{4}$ because sine and cosine are equal at $45^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec 45^\\circ = \\sqrt{2}$"
+    "finalAnswer": "$\\operatorname{cosec}\\dfrac{\\pi}{4} = \\sqrt{2}$."
   }
 }

@@ -4,55 +4,96 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "expression",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "exponential",
+    "eliminating the parameter",
+    "trig identity",
     "hyperbola"
   ],
-  "questionText": "A curve has parametric equations $x = e^t + e^{-t}$, $y = e^t - e^{-t}$. Show that $x^2 - y^2 = 4$.",
+  "questionText": "A curve is defined by $x = 4\\sec t$ and $y = 3\\tan t$, for $0 \\le t < 2\\pi$ with $t \\neq \\dfrac{\\pi}{2}, \\dfrac{3\\pi}{2}$. Use the identity $1 + \\tan^{2} t = \\sec^{2} t$ to find a Cartesian equation of the curve, and describe the set of possible $x$-values.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Square the x-equation",
-        "workingLatex": "x^2 = (e^t + e^{-t})^2 = e^{2t} + 2 + e^{-2t}",
-        "explanation": "The cross term is $2 \\cdot e^t \\cdot e^{-t} = 2$, since $e^t e^{-t} = 1$.",
+        "description": "Make sec t and tan t the subjects",
+        "workingLatex": "\\sec t = \\dfrac{x}{4}, \\qquad \\tan t = \\dfrac{y}{3}",
+        "explanation": "To use the identity we need $\\sec t$ and $\\tan t$ by themselves. Dividing each equation by its coefficient isolates them, ready to substitute.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Square the y-equation",
-        "workingLatex": "y^2 = (e^t - e^{-t})^2 = e^{2t} - 2 + e^{-2t}",
-        "explanation": "The cross term is now $-2$ because of the minus sign.",
+        "description": "Write down the identity",
+        "workingLatex": "1 + \\tan^{2} t = \\sec^{2} t",
+        "explanation": "This identity holds for every valid $t$, so it is the bridge that lets us remove $t$ and keep only $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Subtract the squares",
-        "workingLatex": "x^2 - y^2 = (e^{2t} + 2 + e^{-2t}) - (e^{2t} - 2 + e^{-2t})",
-        "explanation": "Subtracting lines up the exponential terms to cancel.",
+        "description": "Rearrange the identity for substitution",
+        "workingLatex": "\\sec^{2} t - \\tan^{2} t = 1",
+        "explanation": "Moving $\\tan^{2} t$ to the other side gives a difference of squares equal to $1$, which matches the form we get after substituting.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cancel matching terms",
-        "workingLatex": "x^2 - y^2 = 2 - (-2) = 4",
-        "explanation": "The $e^{2t}$ and $e^{-2t}$ terms cancel, leaving only the constants.",
+        "description": "Substitute the x and y expressions",
+        "workingLatex": "\\left( \\dfrac{x}{4} \\right)^{2} - \\left( \\dfrac{y}{3} \\right)^{2} = 1",
+        "explanation": "Replacing $\\sec t$ and $\\tan t$ with $\\dfrac{x}{4}$ and $\\dfrac{y}{3}$ turns the identity into a relation between $x$ and $y$ alone.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Interpret",
-        "workingLatex": "x^2 - y^2 = 4 \\text{ (hyperbola)}",
-        "explanation": "This is a hyperbola; note $x = e^t + e^{-t} \\ge 2$, so only the right branch is traced.",
+        "description": "Simplify the squares",
+        "workingLatex": "\\dfrac{x^{2}}{16} - \\dfrac{y^{2}}{9} = 1",
+        "explanation": "Squaring the fractions gives the standard form. The denominators $16$ and $9$ are the squares of the coefficients $4$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the curve",
+        "workingLatex": "\\dfrac{x^{2}}{4^{2}} - \\dfrac{y^{2}}{3^{2}} = 1",
+        "explanation": "A difference of two squared terms equal to $1$ is the equation of a hyperbola centred at the origin, opening left and right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound sec t",
+        "workingLatex": "|\\sec t| = \\dfrac{1}{|\\cos t|} \\geq 1",
+        "explanation": "Since $|\\cos t| \\leq 1$, its reciprocal $|\\sec t|$ is always at least $1$. This controls how far $x$ can range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Translate the bound to x",
+        "workingLatex": "|x| = 4|\\sec t| \\geq 4",
+        "explanation": "Multiplying by $4$ shows the magnitude of $x$ is never less than $4$, so $x$ stays outside the strip between $-4$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the set of x-values",
+        "workingLatex": "x \\leq -4 \\;\\text{ or }\\; x \\geq 4",
+        "explanation": "The condition $|x| \\geq 4$ splits into two intervals, one for each side of the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Interpret the two branches",
+        "workingLatex": "\\text{right branch: } x \\geq 4, \\qquad \\text{left branch: } x \\leq -4",
+        "explanation": "The hyperbola has two separate branches; $\\sec t > 0$ gives the right branch and $\\sec t < 0$ gives the left branch.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the final result",
+        "workingLatex": "\\dfrac{x^{2}}{16} - \\dfrac{y^{2}}{9} = 1, \\qquad |x| \\geq 4",
+        "explanation": "This is the Cartesian equation with the allowed $x$-values, completing the description of the curve.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x^2 - y^2 = 4$ (right branch, $x \\ge 2$)."
+    "finalAnswer": "$\\dfrac{x^{2}}{16} - \\dfrac{y^{2}}{9} = 1$, a hyperbola centred at the origin; the possible $x$-values are $x \\leq -4$ or $x \\geq 4$."
   }
 }

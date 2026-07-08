@@ -5,60 +5,117 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "tangent",
-    "y-intercept"
+    "projectile",
+    "parametric differentiation",
+    "direction of motion",
+    "range"
   ],
-  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2 + 1$. The tangent at $t = 3$ meets the $y$-axis at $Q$. Find the coordinates of $Q$.",
+  "questionText": "A model rocket is fired so that, $t$ seconds after launch, its position in metres is $x = 24t$ and $y = 10t - 5t^{2}$ (with $g = 10$), launched and landing at the same level. Find (a) the greatest height reached, (b) the horizontal range, and (c) the speed and direction of motion at the instant it lands.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the point of tangency",
-        "workingLatex": "t = 3: (6, 10)",
-        "explanation": "Substituting $t = 3$ into both equations.",
+        "description": "Find the horizontal velocity",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 24",
+        "explanation": "Differentiating $x$ gives the horizontal velocity, which is constant at $24$ m/s because there is no horizontal acceleration in the model.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2t}{2} = t = 3",
-        "explanation": "The parametric gradient is $t$, which is $3$ here.",
+        "description": "Find the vertical velocity",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 10 - 10t",
+        "explanation": "The vertical velocity begins at $+10$ m/s and steadily decreases, describing the rocket slowing as it rises and then speeding up as it falls.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the tangent",
-        "workingLatex": "y - 10 = 3(x - 6)",
-        "explanation": "Using the point $(6, 10)$ and gradient $3$.",
+        "description": "Condition for greatest height",
+        "workingLatex": "\\dot{y} = 10 - 10t = 0 \\;\\Rightarrow\\; t = 1",
+        "explanation": "The highest point is where the upward motion momentarily stops, so we set the vertical velocity to zero. This happens at $t = 1$ s.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set x = 0 for the y-axis",
-        "workingLatex": "y - 10 = 3(0 - 6) = -18",
-        "explanation": "The tangent meets the $y$-axis where $x = 0$.",
+        "description": "Compute the greatest height",
+        "workingLatex": "y = 10(1) - 5(1)^{2} = 5",
+        "explanation": "Putting $t = 1$ back into $y$ gives the height at the top of the path, which is the greatest height of $5$ m.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for y",
-        "workingLatex": "y = 10 - 18 = -8",
-        "explanation": "Rearranging gives the $y$-intercept.",
+        "description": "Set the height to zero for landing",
+        "workingLatex": "10t - 5t^{2} = 0",
+        "explanation": "Landing occurs when the rocket is back at launch height, so $y = 0$. Solving locates the launch and landing times.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the point",
-        "workingLatex": "Q = (0, -8)",
-        "explanation": "The tangent crosses the $y$-axis at $(0, -8)$.",
+        "description": "Solve for the landing time",
+        "workingLatex": "5t(2 - t) = 0 \\;\\Rightarrow\\; t = 2",
+        "explanation": "Factoring gives $t = 0$ (launch) or $t = 2$ (landing). We take $t = 2$ s as the flight time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the horizontal range",
+        "workingLatex": "x = 24 \\times 2 = 48",
+        "explanation": "Substituting the landing time into $x$ gives the horizontal range of $48$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Vertical velocity at landing",
+        "workingLatex": "\\dot{y} = 10 - 10(2) = -10",
+        "explanation": "At landing the vertical velocity is $-10$ m/s: the same magnitude as at launch but directed downward.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Horizontal velocity at landing",
+        "workingLatex": "\\dot{x} = 24",
+        "explanation": "The horizontal velocity is unchanged at $24$ m/s, since the model has no horizontal force.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine into landing speed",
+        "workingLatex": "v = \\sqrt{24^{2} + (-10)^{2}} = \\sqrt{576 + 100} = \\sqrt{676}",
+        "explanation": "The speed is the magnitude of the velocity, so we combine the two components with Pythagoras.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the landing speed",
+        "workingLatex": "v = 26",
+        "explanation": "The perfect square gives a clean landing speed of $26$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set up the direction of motion",
+        "workingLatex": "\\tan\\theta = \\dfrac{|\\dot{y}|}{\\dot{x}} = \\dfrac{10}{24} = \\dfrac{5}{12}",
+        "explanation": "The direction is the angle the velocity makes with the horizontal. Because the rocket is descending, this angle is measured below the horizontal, using the ratio of vertical to horizontal speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for the angle",
+        "workingLatex": "\\theta = \\arctan\\!\\left(\\dfrac{5}{12}\\right) \\approx 22.6^{\\circ}",
+        "explanation": "Taking the inverse tangent gives the angle of descent at landing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the direction",
+        "workingLatex": "\\theta \\approx 22.6^{\\circ} \\text{ below the horizontal}",
+        "explanation": "So as it lands the rocket is moving at about $22.6^{\\circ}$ below the horizontal.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$Q = (0, -8)$"
+    "finalAnswer": "The greatest height is $5$ m, the horizontal range is $48$ m, and at landing the rocket moves at $26$ m/s directed about $22.6^{\\circ}$ below the horizontal."
   }
 }

@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "quotient rule",
+    "reciprocal trig",
+    "proof"
+  ],
+  "questionText": "Show that $\\dfrac{d}{dx}(\\tan x) = \\sec^2 x$, using the quotient rule together with the fact that $\\tan x = \\dfrac{\\sin x}{\\cos x}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write tan as a quotient",
+        "workingLatex": "\\tan x = \\frac{\\sin x}{\\cos x}",
+        "explanation": "The tangent function is defined as the ratio $\\dfrac{\\sin x}{\\cos x}$, so differentiating it is a job for the quotient rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the numerator and denominator",
+        "workingLatex": "u = \\sin x, \\qquad v = \\cos x",
+        "explanation": "We name the top $u$ and the bottom $v$ so we can drop them into the quotient rule $\\dfrac{d}{dx}\\!\\left(\\dfrac{u}{v}\\right)=\\dfrac{u'v-uv'}{v^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = \\cos x, \\qquad v' = -\\sin x",
+        "explanation": "Both are standard derivatives: $\\sin x$ differentiates to $\\cos x$, and $\\cos x$ differentiates to $-\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{d}{dx}(\\tan x) = \\frac{u'v - uv'}{v^2}",
+        "explanation": "The quotient rule keeps the denominator squared underneath and takes 'derivative of top times bottom minus top times derivative of bottom' on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the four pieces",
+        "workingLatex": "= \\frac{\\cos x\\,\\cos x - \\sin x\\,(-\\sin x)}{\\cos^2 x}",
+        "explanation": "Putting $u,u',v,v'$ into the formula. Notice the double negative coming from $v'=-\\sin x$ is about to turn into a plus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\frac{\\cos^2 x + \\sin^2 x}{\\cos^2 x}",
+        "explanation": "The two products give $\\cos^2 x$ and $+\\sin^2 x$, since subtracting a negative adds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\cos^2 x + \\sin^2 x = 1",
+        "explanation": "The identity $\\sin^2 x+\\cos^2 x=1$ collapses the entire numerator to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rewrite the fraction",
+        "workingLatex": "\\frac{d}{dx}(\\tan x) = \\frac{1}{\\cos^2 x}",
+        "explanation": "With the numerator equal to $1$, only $\\dfrac{1}{\\cos^2 x}$ remains.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Convert to secant",
+        "workingLatex": "\\frac{1}{\\cos^2 x} = \\sec^2 x",
+        "explanation": "Since $\\sec x=\\dfrac{1}{\\cos x}$, squaring gives $\\dfrac{1}{\\cos^2 x}=\\sec^2 x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude",
+        "workingLatex": "\\frac{d}{dx}(\\tan x) = \\sec^2 x \\qquad \\blacksquare",
+        "explanation": "This is exactly the required result, so the derivative of $\\tan x$ is $\\sec^2 x$, as claimed.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{d}{dx}(\\tan x) = \\sec^2 x$, obtained from $\\dfrac{\\cos^2 x+\\sin^2 x}{\\cos^2 x}=\\dfrac{1}{\\cos^2 x}$."
+  }
+}

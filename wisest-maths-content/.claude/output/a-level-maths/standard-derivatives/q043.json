@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "find constant",
+    "stationary point",
+    "trigonometric"
+  ],
+  "questionText": "The curve $y = a\\sin x + \\cos x$, where $a$ is a constant and $x$ is in radians, has a stationary point at $x = \\dfrac{\\pi}{4}$. Find the value of $a$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function",
+        "workingLatex": "y = a\\sin x + \\cos x",
+        "explanation": "A stationary point occurs where the gradient is zero, so we differentiate first. (Trig derivatives require $x$ in radians.)",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = a\\cos x - \\sin x",
+        "explanation": "Using $\\frac{d}{dx}(\\sin x)=\\cos x$ and $\\frac{d}{dx}(\\cos x)=-\\sin x$; the constant $a$ simply multiplies through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the stationary condition",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\pi/4} = 0",
+        "explanation": "We are told the gradient is zero at $x=\\frac{\\pi}{4}$, so we substitute that value into the derivative and set it equal to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the given x-value",
+        "workingLatex": "a\\cos\\frac{\\pi}{4} - \\sin\\frac{\\pi}{4} = 0",
+        "explanation": "Replacing $x$ by $\\frac{\\pi}{4}$ in the derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Insert exact values",
+        "workingLatex": "\\cos\\frac{\\pi}{4} = \\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}",
+        "explanation": "Both $\\sin\\frac{\\pi}{4}$ and $\\cos\\frac{\\pi}{4}$ equal $\\frac{\\sqrt{2}}{2}$ (equivalently $\\frac{1}{\\sqrt{2}}$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the equation",
+        "workingLatex": "a\\cdot\\frac{\\sqrt{2}}{2} - \\frac{\\sqrt{2}}{2} = 0",
+        "explanation": "Substituting those exact values into the stationary condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factor out the common value",
+        "workingLatex": "\\frac{\\sqrt{2}}{2}\\,(a - 1) = 0",
+        "explanation": "Both terms share the factor $\\frac{\\sqrt{2}}{2}$, which is non-zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for a",
+        "workingLatex": "a - 1 = 0 \\iff a = 1",
+        "explanation": "Since $\\frac{\\sqrt{2}}{2}\\neq 0$, the bracket must be zero, giving $a=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check",
+        "workingLatex": "\\frac{dy}{dx} = \\cos x - \\sin x, \\quad \\left.\\frac{dy}{dx}\\right|_{x=\\pi/4} = \\frac{\\sqrt{2}}{2}-\\frac{\\sqrt{2}}{2}=0",
+        "explanation": "With $a=1$ the derivative is $\\cos x-\\sin x$, which is indeed zero at $x=\\frac{\\pi}{4}$, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "a = 1",
+        "explanation": "So the constant that places a stationary point at $x=\\frac{\\pi}{4}$ is $a=1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a = 1$."
+  }
+}

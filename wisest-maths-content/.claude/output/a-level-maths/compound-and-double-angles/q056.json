@@ -5,60 +5,116 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "tangent",
-    "given ratios"
+    "compound angle",
+    "expand",
+    "tan"
   ],
-  "questionText": "Given that $\\tan A = 2$ and $\\tan B = 3$, find $\\tan(A - B)$ and hence the acute angle $B - A$.",
+  "questionText": "Solve $\\sin(x + 30^\\circ) = 2\\sin(x - 30^\\circ)$ for $0 \\le x < 360^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the tangent subtraction formula",
-        "workingLatex": "\\tan(A - B) = \\frac{\\tan A - \\tan B}{1 + \\tan A\\tan B}",
-        "explanation": "For a difference, the numerator subtracts and the denominator adds.",
+        "description": "Expand the left-hand side",
+        "workingLatex": "\\sin(x + 30^\\circ) = \\sin x\\cos 30^\\circ + \\cos x\\sin 30^\\circ",
+        "explanation": "The compound-angle formula $\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B$ turns the combined angle into single-angle ratios that we can work with.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the values",
-        "workingLatex": "= \\frac{2 - 3}{1 + 2\\cdot 3}",
-        "explanation": "Inserting $\\tan A = 2$ and $\\tan B = 3$.",
+        "description": "Insert exact values on the left",
+        "workingLatex": "\\sin(x + 30^\\circ) = \\tfrac{\\sqrt3}{2}\\sin x + \\tfrac{1}{2}\\cos x",
+        "explanation": "Substituting $\\cos 30^\\circ = \\tfrac{\\sqrt3}{2}$ and $\\sin 30^\\circ = \\tfrac12$ replaces the trig of $30^\\circ$ with exact numbers.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "= \\frac{-1}{7}",
-        "explanation": "The numerator is $-1$ and the denominator is $7$.",
+        "description": "Expand the right-hand side",
+        "workingLatex": "\\sin(x - 30^\\circ) = \\sin x\\cos 30^\\circ - \\cos x\\sin 30^\\circ = \\tfrac{\\sqrt3}{2}\\sin x - \\tfrac{1}{2}\\cos x",
+        "explanation": "The subtraction formula $\\sin(A-B) = \\sin A\\cos B - \\cos A\\sin B$ expands the second term the same way, with a minus sign in the middle.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Interpret the negative sign",
-        "workingLatex": "\\tan(A - B) = -\\tfrac{1}{7} \\;\\Rightarrow\\; A - B < 0",
-        "explanation": "A negative tangent here reflects that $A < B$, so $A - B$ is negative.",
+        "description": "Write out the full equation",
+        "workingLatex": "\\tfrac{\\sqrt3}{2}\\sin x + \\tfrac{1}{2}\\cos x = 2\\left(\\tfrac{\\sqrt3}{2}\\sin x - \\tfrac{1}{2}\\cos x\\right)",
+        "explanation": "Putting the two expansions back into the original equation gives one equation in $\\sin x$ and $\\cos x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Consider the positive difference",
-        "workingLatex": "\\tan(B - A) = \\frac{1}{7}",
-        "explanation": "Reversing the order flips the sign, giving a positive tangent for the acute angle $B - A$.",
+        "description": "Expand the right side",
+        "workingLatex": "\\tfrac{\\sqrt3}{2}\\sin x + \\tfrac{1}{2}\\cos x = \\sqrt3\\sin x - \\cos x",
+        "explanation": "Multiplying the bracket by $2$ clears it, leaving a linear equation in the two ratios.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find the acute angle",
-        "workingLatex": "B - A = \\tan^{-1}\\tfrac{1}{7} \\approx 8.1^\\circ",
-        "explanation": "The inverse tangent gives the small acute angle between the two directions.",
+        "description": "Gather sine and cosine terms",
+        "workingLatex": "\\tfrac{1}{2}\\cos x + \\cos x = \\sqrt3\\sin x - \\tfrac{\\sqrt3}{2}\\sin x",
+        "explanation": "Collecting all the $\\cos x$ terms on the left and all the $\\sin x$ terms on the right sets up a single ratio between them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify each side",
+        "workingLatex": "\\tfrac{3}{2}\\cos x = \\tfrac{\\sqrt3}{2}\\sin x",
+        "explanation": "Adding the like terms gives $\\tfrac32\\cos x$ on the left and $\\tfrac{\\sqrt3}{2}\\sin x$ on the right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Divide to form tan x",
+        "workingLatex": "\\tan x = \\dfrac{3/2}{\\sqrt3/2} = \\dfrac{3}{\\sqrt3} = \\sqrt3",
+        "explanation": "Dividing both sides by $\\cos x$ and by $\\tfrac{\\sqrt3}{2}$ turns the equation into $\\tan x = \\sqrt3$. (If $\\cos x$ were zero the left side would force $\\sin x = 0$ too, which is impossible, so dividing is safe.)",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the reference angle",
+        "workingLatex": "\\tan^{-1}\\sqrt3 = 60^\\circ",
+        "explanation": "The acute angle with tangent $\\sqrt3$ is $60^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Use the period of tan",
+        "workingLatex": "x = 60^\\circ \\quad \\text{and} \\quad x = 60^\\circ + 180^\\circ = 240^\\circ",
+        "explanation": "Tangent repeats every $180^\\circ$, so adding $180^\\circ$ to the first solution gives the second one inside the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify x = 60 degrees",
+        "workingLatex": "\\sin 90^\\circ = 1, \\qquad 2\\sin 30^\\circ = 2\\left(\\tfrac12\\right) = 1",
+        "explanation": "Substituting $x = 60^\\circ$ gives $\\sin 90^\\circ = 1$ on the left and $1$ on the right, so it is a genuine solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify x = 240 degrees",
+        "workingLatex": "\\sin 270^\\circ = -1, \\qquad 2\\sin 210^\\circ = 2\\left(-\\tfrac12\\right) = -1",
+        "explanation": "At $x = 240^\\circ$, both sides equal $-1$, confirming the second solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm the interval",
+        "workingLatex": "0 \\le x < 360^\\circ: \\quad x = 60^\\circ,\\ 240^\\circ",
+        "explanation": "Both angles lie in the required interval and there are no others, because the next tangent solution would be $420^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the solution set",
+        "workingLatex": "x = 60^\\circ,\\ 240^\\circ",
+        "explanation": "These are the two solutions of the equation.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\tan(A - B) = -\\dfrac{1}{7}$, and $B - A \\approx 8.1^\\circ$."
+    "finalAnswer": "$x = 60^\\circ$ and $x = 240^\\circ$."
   }
 }

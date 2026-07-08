@@ -4,69 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
+  "difficulty": "Intermediate",
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "radians",
-    "exact"
+    "maximum and minimum",
+    "radians"
   ],
-  "questionText": "Solve $\\cos\\theta + \\sqrt3\\sin\\theta = 1$ for $0 \\le \\theta < 2\\pi$, giving exact answers in radians.",
+  "questionText": "Express $8\\sin\\theta - 6\\cos\\theta$ in the form $R\\sin(\\theta-\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence find the maximum and minimum values of $8\\sin\\theta - 6\\cos\\theta + 5$, and the values of $\\theta$ in $0 \\le \\theta \\le 2\\pi$ at which each occurs. Give the angles in radians to $3$ significant figures.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Reorder and identify coefficients",
-        "workingLatex": "\\sqrt3\\sin\\theta + \\cos\\theta",
-        "explanation": "Writing sine first, the coefficients are $\\sqrt3$ and $1$.",
+        "description": "Set up the identity",
+        "workingLatex": "8\\sin\\theta - 6\\cos\\theta \\equiv R\\sin(\\theta-\\alpha)",
+        "explanation": "Because the cosine is subtracted, the tidy target is $R\\sin(\\theta-\\alpha)$. Once the expression is one wave of amplitude $R$, its extreme values follow directly, with no differentiation required.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{3 + 1} = 2, \\quad \\tan\\alpha = \\frac{1}{\\sqrt3} \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{6}",
-        "explanation": "The amplitude is $2$ and the phase is $\\frac{\\pi}{6}$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta-\\alpha) = R\\cos\\alpha\\,\\sin\\theta - R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta-\\alpha)=\\sin\\theta\\cos\\alpha-\\cos\\theta\\sin\\alpha$ and distributing $R$ gives a sine term minus a cosine term, matching the expression's layout.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "\\sqrt3\\sin\\theta + \\cos\\theta = 2\\sin\\left(\\theta + \\frac{\\pi}{6}\\right)",
-        "explanation": "Combining gives the single-sine form.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 8, \\qquad R\\sin\\alpha = 6",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ and of $\\cos\\theta$ (both sides carry the minus) gives the two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set up the equation",
-        "workingLatex": "2\\sin\\left(\\theta + \\frac{\\pi}{6}\\right) = 1 \\;\\Rightarrow\\; \\sin\\left(\\theta + \\frac{\\pi}{6}\\right) = \\frac{1}{2}",
-        "explanation": "Dividing by $2$ gives a standard exact value.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=64+36=100$, a perfect square, so the amplitude is exactly $R=10$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set the shifted interval",
-        "workingLatex": "\\frac{\\pi}{6} \\le \\theta + \\frac{\\pi}{6} < 2\\pi + \\frac{\\pi}{6}",
-        "explanation": "Adding the shift to the bounds.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{6}{8} = \\dfrac{3}{4} \\Rightarrow \\alpha = 0.644",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\dfrac{3}{4}$. Both coefficients are positive, so $\\alpha$ is acute; in radians $\\alpha=\\arctan\\dfrac{3}{4}=0.644$ to $3$ significant figures.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta + \\frac{\\pi}{6} = \\frac{5\\pi}{6}, \\; \\frac{13\\pi}{6}",
-        "explanation": "Sine one half occurs at $\\frac{\\pi}{6}$ and $\\frac{5\\pi}{6}$; the value $\\frac{\\pi}{6}$ is at the boundary giving $\\theta = 0$, and adding $2\\pi$ to it gives $\\frac{13\\pi}{6}$.",
+        "description": "State the R-form of the whole expression",
+        "workingLatex": "8\\sin\\theta - 6\\cos\\theta + 5 = 10\\sin(\\theta - 0.6435) + 5",
+        "explanation": "Keeping a little extra accuracy in the phase, the expression is a single wave of amplitude $10$ raised by $5$. Its largest and smallest values now come straight from the size of the wave.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Include the boundary solution and subtract the shift",
-        "workingLatex": "\\theta = 0, \\; \\frac{2\\pi}{3}",
-        "explanation": "From $\\frac{\\pi}{6} \\to \\theta = 0$, from $\\frac{5\\pi}{6} \\to \\theta = \\frac{2\\pi}{3}$; the value $\\frac{13\\pi}{6}$ gives $\\theta = 2\\pi$, which is out of range.",
+        "description": "Bound the sine term",
+        "workingLatex": "-1 \\le \\sin(\\theta - 0.6435) \\le 1",
+        "explanation": "Whatever the argument, a sine never leaves the band from $-1$ to $1$, and both limits are reached over a full turn of $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the maximum value",
+        "workingLatex": "\\text{max} = 10(1) + 5 = 15",
+        "explanation": "The expression is greatest when the sine reaches $+1$. Then $10(1)+5=15$, so the maximum value is $15$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find θ for the maximum",
+        "workingLatex": "\\theta - 0.6435 = \\dfrac{\\pi}{2} \\Rightarrow \\theta = \\dfrac{\\pi}{2} + 0.6435 = 2.21",
+        "explanation": "A sine equals $+1$ when its angle is $\\dfrac{\\pi}{2}$. Solving $\\theta-0.6435=\\dfrac{\\pi}{2}$ gives $\\theta=2.21$, which lies in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the minimum value",
+        "workingLatex": "\\text{min} = 10(-1) + 5 = -5",
+        "explanation": "The expression is smallest when the sine drops to $-1$. Then $10(-1)+5=-5$, so the minimum value is $-5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find θ for the minimum",
+        "workingLatex": "\\theta - 0.6435 = \\dfrac{3\\pi}{2} \\Rightarrow \\theta = \\dfrac{3\\pi}{2} + 0.6435 = 5.36",
+        "explanation": "A sine equals $-1$ when its angle is $\\dfrac{3\\pi}{2}$. Solving $\\theta-0.6435=\\dfrac{3\\pi}{2}$ gives $\\theta=5.36$, which also lies in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 0, \\dfrac{2\\pi}{3}$"
+    "finalAnswer": "$8\\sin\\theta - 6\\cos\\theta = 10\\sin(\\theta-0.644)$. The maximum value is $15$ at $\\theta = 2.21$, and the minimum value is $-5$ at $\\theta = 5.36$ (angles in radians to $3$ s.f.)."
   }
 }

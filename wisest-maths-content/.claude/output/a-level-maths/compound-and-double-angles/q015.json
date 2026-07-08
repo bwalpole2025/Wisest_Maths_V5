@@ -6,59 +6,65 @@
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "expression",
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "simplify",
-    "sine"
+    "exact values"
   ],
-  "questionText": "Write $2\\sin 3\\theta\\cos 3\\theta$ as a single trigonometric term.",
+  "questionText": "Given that $\\cos\\theta = \\tfrac{4}{5}$ and $\\theta$ is acute, find the exact values of $\\cos 2\\theta$ and $\\sin 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the double angle formula for sine",
-        "workingLatex": "\\sin 2X = 2\\sin X\\cos X",
-        "explanation": "The expression matches the right-hand side of the sine double angle formula, read in reverse.",
+        "description": "Find sin theta from the quadrant",
+        "workingLatex": "\\sin\\theta = \\sqrt{1 - \\cos^2\\theta} = \\sqrt{1 - \\tfrac{16}{25}} = \\sqrt{\\tfrac{9}{25}} = \\tfrac{3}{5}",
+        "explanation": "The sine double-angle formula needs $\\sin\\theta$ as well. Rearranging $\\sin^2\\theta+\\cos^2\\theta\\equiv1$ gives the sine, and because $\\theta$ is acute (first quadrant) the sine is positive, so we take the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Identify the inner angle",
-        "workingLatex": "X = 3\\theta",
-        "explanation": "Comparing $2\\sin 3\\theta\\cos 3\\theta$ with $2\\sin X\\cos X$ shows $X = 3\\theta$.",
+        "description": "Apply a cosine double-angle formula",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1 = 2\\cdot\\tfrac{16}{25} - 1",
+        "explanation": "The version $\\cos 2\\theta=2\\cos^2\\theta-1$ is chosen because we were given $\\cos\\theta$ directly, so no extra values are needed.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the formula",
-        "workingLatex": "2\\sin 3\\theta\\cos 3\\theta = \\sin(2\\cdot 3\\theta)",
-        "explanation": "Substituting $X = 3\\theta$ folds the product into a single sine of the doubled angle.",
+        "description": "Simplify cos 2theta",
+        "workingLatex": "\\cos 2\\theta = \\tfrac{32}{25} - \\tfrac{25}{25} = \\tfrac{7}{25}",
+        "explanation": "Writing $1$ as $\\frac{25}{25}$ makes the subtraction straightforward and gives the exact cosine of the double angle.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify the angle",
-        "workingLatex": "= \\sin 6\\theta",
-        "explanation": "Doubling $3\\theta$ gives $6\\theta$.",
+        "description": "Apply the sine double-angle formula",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta = 2\\cdot\\tfrac{3}{5}\\cdot\\tfrac{4}{5}",
+        "explanation": "$\\sin 2\\theta=2\\sin\\theta\\cos\\theta$ turns the double angle into a product of the single-angle ratios we now have.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Check with a value",
-        "workingLatex": "\\theta = 15^\\circ: 2\\sin 45^\\circ\\cos 45^\\circ = 1 = \\sin 90^\\circ \\;\\checkmark",
-        "explanation": "Testing $\\theta = 15^\\circ$ gives $1$ on both sides, confirming the simplification.",
+        "description": "Simplify sin 2theta",
+        "workingLatex": "\\sin 2\\theta = \\tfrac{24}{25}",
+        "explanation": "Multiplying the fractions gives a positive value, consistent with $\\theta$ being acute.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the result",
-        "workingLatex": "2\\sin 3\\theta\\cos 3\\theta = \\sin 6\\theta",
-        "explanation": "The product simplifies to a single sine term.",
+        "description": "Check with the Pythagorean identity",
+        "workingLatex": "\\sin^2 2\\theta + \\cos^2 2\\theta = \\tfrac{576}{625} + \\tfrac{49}{625} = \\tfrac{625}{625} = 1",
+        "explanation": "As a safeguard, $\\sin^2 2\\theta+\\cos^2 2\\theta$ should equal $1$; it does, confirming the pair is consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the results",
+        "workingLatex": "\\cos 2\\theta = \\tfrac{7}{25}, \\quad \\sin 2\\theta = \\tfrac{24}{25}",
+        "explanation": "Collecting the two exact values gives the final answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 6\\theta$"
+    "finalAnswer": "$\\cos 2\\theta = \\tfrac{7}{25}$ and $\\sin 2\\theta = \\tfrac{24}{25}$."
   }
 }

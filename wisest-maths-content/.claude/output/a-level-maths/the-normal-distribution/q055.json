@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.stats.normal-distribution.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "quality control",
+    "probability"
+  ],
+  "questionText": "A machine fills bottles with volume $X$ ml, modelled by $X \\sim N(\\mu, \\sigma^2)$. Quality records show that $2\\%$ of bottles contain less than $495$ ml and $10\\%$ contain more than $515$ ml. (a) Find $\\mu$ and $\\sigma$ to $3$ significant figures. (b) Bottles are rejected if they contain less than $498$ ml or more than $512$ ml. Find the percentage of bottles rejected.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 495) = 0.02, \\qquad P(X > 515) = 0.10",
+        "explanation": "The fill volume is normal with unknown $\\mu$ and $\\sigma$. ‘$2\\%$ below $495$’ gives $P(X<495)=0.02$ and ‘$10\\%$ above $515$’ gives $P(X>515)=0.10$. These fix the two parameters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{495 - \\mu}{\\sigma}\\right) = 0.02",
+        "explanation": "Standardising $495$ with $Z=\\dfrac{X-\\mu}{\\sigma}$ keeps the lower-tail area at $0.02$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.02) = -2.0537",
+        "explanation": "Only $2\\%$ of the area lies below this point, so it sits far into the left tail and the standardised value is a large negative number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{495 - \\mu}{\\sigma} = -2.0537",
+        "explanation": "Equating the standardised value of $495$ with $z_1$ gives the first equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Convert and standardise the second condition",
+        "workingLatex": "P(X < 515) = 1 - 0.10 = 0.90 \\ \\Rightarrow\\ z_2 = \\Phi^{-1}(0.90) = 1.2816",
+        "explanation": "Since $10\\%$ exceed $515$, exactly $90\\%$ fall below it; converting to the lower tail lets us read $z_2$ from the inverse normal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{515 - \\mu}{\\sigma} = 1.2816",
+        "explanation": "Equating the standardised value of $515$ with $z_2$ gives the second simultaneous equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "515 - 495 = (1.2816 - (-2.0537))\\,\\sigma \\ \\Rightarrow\\ 20 = 3.3353\\,\\sigma",
+        "explanation": "Subtracting the two ‘value $-\\ \\mu = z\\sigma$’ forms cancels $\\mu$; the $20$ ml gap spans about $3.34$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{20}{3.3353} = 5.996",
+        "explanation": "Dividing the volume gap by the standardised gap gives a standard deviation of about $6.00$ ml.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 495 + 2.0537 \\times 5.996 = 507.3",
+        "explanation": "From the first equation $\\mu = 495 + 2.0537\\,\\sigma$. The mean fill of about $507$ ml lies above $495$, consistent with only $2\\%$ falling that low.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the parameters (part a)",
+        "workingLatex": "\\mu \\approx 507, \\qquad \\sigma \\approx 6.00",
+        "explanation": "To three significant figures the model is $X \\sim N(507,\\ 6.00^2)$ ml, answering part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up part (b): the rejection probability",
+        "workingLatex": "P(\\text{reject}) = P(X < 498) + P(X > 512)",
+        "explanation": "A bottle is rejected in either tail, so the rejection probability is the sum of the two separate tail probabilities using the parameters just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Standardise the lower rejection limit",
+        "workingLatex": "z = \\dfrac{498 - 507}{6} = -1.5 \\ \\Rightarrow\\ P(X < 498) = \\Phi(-1.5) = 0.0668",
+        "explanation": "The lower cut-off $498$ is $1.5$ standard deviations below the mean, giving a lower-tail area of about $0.0668$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Standardise the upper rejection limit",
+        "workingLatex": "z = \\dfrac{512 - 507}{6} = 0.833 \\ \\Rightarrow\\ P(X > 512) = 1 - \\Phi(0.833) = 0.2023",
+        "explanation": "The upper cut-off $512$ is $0.83$ standard deviations above the mean, leaving an upper-tail area of about $0.2023$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Add the two tail probabilities",
+        "workingLatex": "P(\\text{reject}) = 0.0668 + 0.2023 = 0.2691",
+        "explanation": "Because the two rejection regions do not overlap, we simply add their probabilities to get the total chance of rejection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the percentage rejected",
+        "workingLatex": "P(\\text{reject}) \\approx 0.269 = 26.9\\%",
+        "explanation": "About $26.9\\%$ of bottles are rejected. This is high — most rejections come from the upper limit $512$, which sits below the mean, suggesting the machine is set to overfill relative to that limit.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 507$ ml, $\\sigma \\approx 6.00$ ml. (b) about $26.9\\%$ of bottles are rejected."
+  }
+}

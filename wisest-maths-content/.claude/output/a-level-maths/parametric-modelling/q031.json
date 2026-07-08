@@ -4,54 +4,96 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
-    "distance",
-    "constant speed"
+    "tangent",
+    "parallel line",
+    "parametric differentiation"
   ],
-  "questionText": "A particle has position $x = 4t$, $y = 3t$ (metres) at time $t$ seconds. Find the distance travelled between $t = 0$ and $t = 2$.",
+  "questionText": "A particle moves along a path whose position in metres is modelled by $x = t^{2}$ and $y = 2t^{3}$, for $t > 0$. Find the point on the path at which the tangent is parallel to the line $y = 6x - 1$, and give the equation of the tangent there.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 4, \\quad v_y = 3",
-        "explanation": "Both components are constant, so the motion is along a straight line at steady speed.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t",
+        "explanation": "The horizontal velocity is $2t$, forming the denominator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the speed",
-        "workingLatex": "\\text{speed} = \\sqrt{4^2 + 3^2} = 5 \\text{ m/s}",
-        "explanation": "The speed is constant at $5$ m/s (a $3$-$4$-$5$ triangle).",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 6t^{2}",
+        "explanation": "The vertical velocity is $6t^{2}$, the numerator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Use distance = speed × time",
-        "workingLatex": "\\text{distance} = 5 \\times (2 - 0)",
-        "explanation": "For constant speed, distance travelled is simply speed multiplied by the time elapsed.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{6t^{2}}{2t} = 3t \\quad (t \\neq 0)",
+        "explanation": "Dividing and simplifying gives a clean slope of $3t$; we note $t \\neq 0$ so the division is valid.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Compute",
-        "workingLatex": "\\text{distance} = 10 \\text{ m}",
-        "explanation": "The particle travels $10$ m in the $2$ seconds.",
+        "description": "Identify the target gradient",
+        "workingLatex": "y = 6x - 1 \\Rightarrow m = 6",
+        "explanation": "Parallel lines have equal gradients, and the given line has gradient $6$, so the tangent must also have gradient $6$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Confirm with endpoints",
-        "workingLatex": "(0,0) \\to (8, 6): \\sqrt{8^2 + 6^2} = 10 \\;\\checkmark",
-        "explanation": "The straight-line distance between the start and end points is also $10$ m, confirming the result.",
+        "description": "Set the path gradient equal to 6",
+        "workingLatex": "3t = 6",
+        "explanation": "We require the slope of the path to match the target gradient of the parallel line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for t",
+        "workingLatex": "t = 2",
+        "explanation": "This is the parameter value at which the path runs parallel to the given line, and it satisfies $t > 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the point",
+        "workingLatex": "x = 2^{2} = 4, \\qquad y = 2(2)^{3} = 16",
+        "explanation": "Substituting $t = 2$ gives the point $(4,\\,16)$ where the tangent has the required direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the tangent in point-slope form",
+        "workingLatex": "y - 16 = 6\\left(x - 4\\right)",
+        "explanation": "The tangent passes through $(4,\\,16)$ with gradient $6$, written in point-slope form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand the bracket",
+        "workingLatex": "y = 6x - 24 + 16",
+        "explanation": "Multiplying out and gathering the constant terms tidies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify",
+        "workingLatex": "y = 6x - 8",
+        "explanation": "This is the tangent, parallel to $y = 6x - 1$ but shifted to pass through $(4,\\,16)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the results",
+        "workingLatex": "\\left(4,\\,16\\right), \\qquad y = 6x - 8",
+        "explanation": "The point and the tangent equation together answer the question.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Distance $= 10$ m"
+    "finalAnswer": "The tangent is parallel to $y = 6x - 1$ at the point $(4,\\,16)$, where its equation is $y = 6x - 8$."
   }
 }

@@ -4,68 +4,90 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "extended interval"
+    "proof",
+    "solving equations"
   ],
-  "questionText": "Solve $6\\cos\\theta + 8\\sin\\theta = 5$ for $0^\\circ \\le \\theta < 720^\\circ$, giving answers to the nearest degree.",
+  "questionText": "(a) Prove that $\\sqrt{3}\\,\\sin\\theta+\\cos\\theta \\equiv 2\\sin(\\theta+30^\\circ)$. (b) Hence solve the equation $\\sqrt{3}\\,\\sin\\theta+\\cos\\theta=1$ for $0^\\circ \\le \\theta \\le 360^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Reorder and find R",
-        "workingLatex": "8\\sin\\theta + 6\\cos\\theta, \\quad R = \\sqrt{8^2 + 6^2} = 10",
-        "explanation": "Writing sine first, the amplitude is $10$.",
+        "description": "Set up the identity to prove",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta+\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "The expression is a sine plus a cosine of the same angle, so it fits the target $R\\sin(\\theta+\\alpha)$. We set them identically equal and determine $R$ and $\\alpha$ to establish the identity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{6}{8} = 0.75 \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
-        "explanation": "The ratio gives the phase angle.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ and multiplying by $R$ gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the equation",
-        "workingLatex": "10\\sin(\\theta + 36.87^\\circ) = 5 \\;\\Rightarrow\\; \\sin(\\theta + 36.87^\\circ) = 0.5",
-        "explanation": "Substituting and dividing by $10$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=\\sqrt{3},\\qquad R\\sin\\alpha=1",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ gives $R\\cos\\alpha=\\sqrt{3}$ and matching the coefficient of $\\cos\\theta$ gives $R\\sin\\alpha=1$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the extended shifted interval",
-        "workingLatex": "36.87^\\circ \\le \\theta + 36.87^\\circ < 756.87^\\circ",
-        "explanation": "Because $\\theta$ goes up to $720^\\circ$, the shifted angle spans nearly two full revolutions.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{(\\sqrt{3})^2+1^2}=\\sqrt{4}=2",
+        "explanation": "Squaring and adding removes $\\alpha$ using $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=3+1=4$ and the positive root is $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "List all solutions of the sine equation",
-        "workingLatex": "\\theta + 36.87^\\circ = 150^\\circ, 390^\\circ, 510^\\circ, 750^\\circ",
-        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$ each cycle; within the interval the valid ones are $150^\\circ, 390^\\circ (=30^\\circ+360^\\circ), 510^\\circ (=150^\\circ+360^\\circ), 750^\\circ (=30^\\circ+720^\\circ)$.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{1}{\\sqrt{3}}\\Rightarrow \\alpha=30^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{1}{\\sqrt{3}}$, whose acute solution is exactly $30^\\circ$. This confirms the stated identity.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta \\approx 113^\\circ, 353^\\circ, 473^\\circ, 713^\\circ",
-        "explanation": "Subtracting $36.87^\\circ$ from each and rounding gives four solutions.",
+        "description": "State the proven identity",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta+\\cos\\theta \\equiv 2\\sin(\\theta+30^\\circ)",
+        "explanation": "With $R=2$ and $\\alpha=30^\\circ$ the two forms are identical for all $\\theta$, which proves part (a) and gives us a simpler expression to solve with.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the solutions",
-        "workingLatex": "\\theta \\approx 113^\\circ, 353^\\circ, 473^\\circ, 713^\\circ",
-        "explanation": "The wider interval yields twice as many solutions as the usual $0$ to $360^\\circ$ range.",
+        "description": "Rewrite the equation",
+        "workingLatex": "2\\sin(\\theta+30^\\circ)=1\\Rightarrow \\sin(\\theta+30^\\circ)=\\dfrac{1}{2}",
+        "explanation": "Replacing the two-term expression by the single wave turns the equation into a basic sine equation; dividing by $2$ isolates the sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ\\le\\theta\\le360^\\circ\\Rightarrow 30^\\circ\\le\\theta+30^\\circ\\le390^\\circ",
+        "explanation": "Because we now solve for $\\theta+30^\\circ$, we shift the whole search interval up by $30^\\circ$ so that no solutions are lost at either end.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta+30^\\circ=30^\\circ,\\;150^\\circ,\\;390^\\circ",
+        "explanation": "The principal value is $\\arcsin\\tfrac{1}{2}=30^\\circ$; sine is also positive in the second quadrant giving $180^\\circ-30^\\circ=150^\\circ$; and adding $360^\\circ$ to $30^\\circ$ gives $390^\\circ$. All three lie in $[30^\\circ,390^\\circ]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Subtract 30° to find θ",
+        "workingLatex": "\\theta=0^\\circ,\\;120^\\circ,\\;360^\\circ",
+        "explanation": "Subtracting $30^\\circ$ from each value undoes the shift. All three results lie in $0^\\circ$ to $360^\\circ$, so they are all valid solutions.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 113^\\circ, 353^\\circ, 473^\\circ, 713^\\circ$"
+    "finalAnswer": "Part (a): $\\sqrt{3}\\,\\sin\\theta+\\cos\\theta \\equiv 2\\sin(\\theta+30^\\circ)$. Part (b): $\\theta=0^\\circ,\\ 120^\\circ,\\ 360^\\circ$."
   }
 }

@@ -1,0 +1,114 @@
+{
+  "id": "al.y2.pure.implicit.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "exponential",
+    "tangent",
+    "normal"
+  ],
+  "questionText": "The curve $C$ has equation $e^{x} + e^{y} = e^{2} + 1$. The point $P(2, 0)$ lies on $C$. Find an equation of the tangent to $C$ at $P$ and the coordinates of the point where this tangent meets the $y$-axis. Find also an equation of the normal to $C$ at $P$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Check that P(2, 0) lies on C",
+        "workingLatex": "e^{2} + e^{0} = e^{2} + 1",
+        "explanation": "Substituting $x=2,\\,y=0$ gives $e^2 + 1$, matching the right-hand side, so $P(2,0)$ is on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(e^{x}) + \\frac{d}{dx}(e^{y}) = \\frac{d}{dx}(e^{2} + 1)",
+        "explanation": "The right-hand side is a constant, so its derivative is $0$. We differentiate each exponential on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the chain rule to the y-term",
+        "workingLatex": "e^{x} + e^{y}\\frac{dy}{dx} = 0",
+        "explanation": "The derivative of $e^x$ is $e^x$. For $e^y$ the chain rule gives $e^y$ times $\\frac{dy}{dx}$, since $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{e^{x}}{e^{y}} = -e^{\\,x - y}",
+        "explanation": "Rearranging isolates the gradient, and dividing the exponentials combines them into $-e^{x-y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute P(2, 0) to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(2,0)} = -e^{\\,2 - 0} = -e^{2}",
+        "explanation": "Substituting the coordinates of $P$ gives the tangent gradient there, $-e^2 \\approx -7.389$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the tangent gradient",
+        "workingLatex": "m_{\\text{tangent}} = -e^{2}",
+        "explanation": "So the tangent at $P$ has gradient $-e^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - 0 = -e^{2}(x - 2)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ through $P(2,0)$ with gradient $-e^2$ gives the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Tidy the tangent equation",
+        "workingLatex": "y = -e^{2}x + 2e^{2}",
+        "explanation": "Expanding the bracket writes the tangent in the form $y = mx + c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find where the tangent meets the y-axis",
+        "workingLatex": "x = 0 \\;\\Rightarrow\\; y = -e^{2}(0) + 2e^{2} = 2e^{2}",
+        "explanation": "The $y$-axis is $x=0$; substituting gives the intercept, so the tangent meets the $y$-axis at $(0,\\,2e^2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{-e^{2}} = e^{-2}",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of $-e^2$, namely $e^{-2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Form the normal equation",
+        "workingLatex": "y - 0 = e^{-2}(x - 2)",
+        "explanation": "Using the same point $P(2,0)$ with gradient $e^{-2}$ gives the normal line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Tidy the normal equation",
+        "workingLatex": "y = e^{-2}(x - 2) \\;\\Rightarrow\\; x - e^{2}y = 2",
+        "explanation": "Multiplying through by $e^2$ clears the exponential from the coefficient of $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the results",
+        "workingLatex": "\\text{tangent: } y = -e^{2}(x - 2), \\quad (0, 2e^{2}); \\qquad \\text{normal: } y = e^{-2}(x - 2)",
+        "explanation": "The tangent is $y=-e^2(x-2)$, meeting the $y$-axis at $(0,2e^2)$, and the normal is $y=e^{-2}(x-2)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Gradient $=-e^{2}$; tangent $y = -e^{2}(x - 2)$, meeting the $y$-axis at $(0,\\, 2e^{2})$; normal $y = e^{-2}(x - 2)$."
+  }
+}

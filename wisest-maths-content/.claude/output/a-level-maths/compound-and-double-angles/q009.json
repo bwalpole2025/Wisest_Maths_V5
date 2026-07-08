@@ -5,60 +5,67 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "expression",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "tangent",
-    "formula recall"
+    "exact values",
+    "compound angle",
+    "surds"
   ],
-  "questionText": "Write down the double angle formula for $\\tan 2A$ and state when it is undefined.",
+  "questionText": "Show that $\\sin 75^\\circ = \\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$ by writing $75^\\circ = 45^\\circ + 30^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start from the tangent addition formula",
-        "workingLatex": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
-        "explanation": "The double angle formula follows by setting the two angles equal.",
+        "description": "Split the angle into known parts",
+        "workingLatex": "75^\\circ = 45^\\circ + 30^\\circ",
+        "explanation": "We rewrite $75^\\circ$ as a sum of two 'special' angles whose sine and cosine we know exactly from the standard triangles.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set B equal to A",
-        "workingLatex": "\\tan 2A = \\frac{\\tan A + \\tan A}{1 - \\tan A\\tan A}",
-        "explanation": "Putting $B = A$ turns the compound angle into $2A$.",
+        "description": "Apply the sine addition formula",
+        "workingLatex": "\\sin 75^\\circ = \\sin 45^\\circ\\cos 30^\\circ + \\cos 45^\\circ\\sin 30^\\circ",
+        "explanation": "Using $\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B$ with $A=45^\\circ$ and $B=30^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify numerator and denominator",
-        "workingLatex": "\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}",
-        "explanation": "The numerator doubles and the denominator becomes $1 - \\tan^2 A$.",
+        "description": "Insert the exact surd values",
+        "workingLatex": "= \\tfrac{\\sqrt{2}}{2}\\cdot\\tfrac{\\sqrt{3}}{2} + \\tfrac{\\sqrt{2}}{2}\\cdot\\tfrac{1}{2}",
+        "explanation": "Here $\\sin45^\\circ=\\cos45^\\circ=\\tfrac{\\sqrt2}{2}$, $\\cos30^\\circ=\\tfrac{\\sqrt3}{2}$ and $\\sin30^\\circ=\\tfrac12$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify when the denominator is zero",
-        "workingLatex": "1 - \\tan^2 A = 0 \\;\\Rightarrow\\; \\tan A = \\pm 1",
-        "explanation": "The formula fails when the denominator vanishes, which happens when $\\tan A = \\pm 1$.",
+        "description": "Multiply the surds",
+        "workingLatex": "= \\tfrac{\\sqrt{6}}{4} + \\tfrac{\\sqrt{2}}{4}",
+        "explanation": "Since $\\sqrt2\\cdot\\sqrt3=\\sqrt6$ and $\\sqrt2\\cdot1=\\sqrt2$, and each denominator is $2\\times2=4$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State those angles",
-        "workingLatex": "A = 45^\\circ + 90^\\circ n",
-        "explanation": "Tangent is $\\pm 1$ at $45^\\circ$ and every $90^\\circ$ after, so the formula is undefined there (and also where $\\tan A$ itself is undefined).",
+        "description": "Combine over one denominator",
+        "workingLatex": "= \\tfrac{\\sqrt{6}+\\sqrt{2}}{4}",
+        "explanation": "The two terms share the denominator $4$, so they combine into a single fraction.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final formula and restriction",
-        "workingLatex": "\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}, \\quad \\tan A \\ne \\pm 1",
-        "explanation": "This gives the double angle formula together with its restriction.",
+        "description": "Verify numerically",
+        "workingLatex": "\\tfrac{\\sqrt{6}+\\sqrt{2}}{4} \\approx \\tfrac{2.449+1.414}{4} \\approx 0.966",
+        "explanation": "A decimal check gives about $0.966$, which matches $\\sin75^\\circ\\approx0.9659$ on a calculator, confirming the exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\sin 75^\\circ = \\tfrac{\\sqrt{6}+\\sqrt{2}}{4}",
+        "explanation": "This proves the required exact value.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\tan 2A = \\dfrac{2\\tan A}{1 - \\tan^2 A}$, undefined when $\\tan A = \\pm 1$."
+    "finalAnswer": "$\\sin 75^\\circ = \\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$."
   }
 }

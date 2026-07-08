@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.implicit.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "folium",
+    "tangent",
+    "normal"
+  ],
+  "questionText": "The folium of Descartes $C$ has equation $x^3 + y^3 = 6xy$. The point $P(3, 3)$ lies on $C$. Find an equation of the tangent to $C$ at $P$, and an equation of the normal to $C$ at $P$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Check that P(3, 3) lies on C",
+        "workingLatex": "3^3 + 3^3 = 27 + 27 = 54, \\qquad 6(3)(3) = 54",
+        "explanation": "Before finding a tangent we confirm the point is actually on the curve. Both sides equal $54$, so $P(3,3)$ does lie on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^3) + \\frac{d}{dx}(y^3) = \\frac{d}{dx}(6xy)",
+        "explanation": "Since $y$ is a function of $x$, we differentiate the whole equation term by term with respect to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the cubic terms",
+        "workingLatex": "3x^2 + 3y^2\\frac{dy}{dx} = \\frac{d}{dx}(6xy)",
+        "explanation": "The term $x^3$ gives $3x^2$ by the power rule. Differentiating $y^3$ needs the chain rule: $3y^2$ multiplied by $\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate 6xy with the product rule",
+        "workingLatex": "\\frac{d}{dx}(6xy) = 6y + 6x\\frac{dy}{dx}",
+        "explanation": "The term $6xy$ is a product, so the product rule gives $6y$ (differentiate $x$, keep $y$) plus $6x\\frac{dy}{dx}$ (keep $x$, differentiate $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "3x^2 + 3y^2\\frac{dy}{dx} = 6y + 6x\\frac{dy}{dx}",
+        "explanation": "Putting the pieces together gives one equation containing $\\frac{dy}{dx}$, which we now solve for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the dy/dx terms on one side",
+        "workingLatex": "3y^2\\frac{dy}{dx} - 6x\\frac{dy}{dx} = 6y - 3x^2",
+        "explanation": "Move every term containing $\\frac{dy}{dx}$ to the left and everything else to the right, ready to factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factor out dy/dx",
+        "workingLatex": "(3y^2 - 6x)\\frac{dy}{dx} = 6y - 3x^2",
+        "explanation": "Factoring $\\frac{dy}{dx}$ out of the left-hand side isolates it as a single factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Make dy/dx the subject and simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{6y - 3x^2}{3y^2 - 6x} = \\frac{2y - x^2}{y^2 - 2x}",
+        "explanation": "Dividing by $(3y^2-6x)$ gives the gradient formula; cancelling the common factor of $3$ tidies it up.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute P(3, 3) to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(3,3)} = \\frac{2(3) - 3^2}{3^2 - 2(3)} = \\frac{6 - 9}{9 - 6} = \\frac{-3}{3} = -1",
+        "explanation": "Substituting the coordinates of $P$ gives the gradient of the tangent at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the tangent gradient",
+        "workingLatex": "m_{\\text{tangent}} = -1",
+        "explanation": "So the tangent to $C$ at $P$ has gradient $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - 3 = -1(x - 3) \\;\\Rightarrow\\; x + y = 6",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ through $P(3,3)$ with $m=-1$ gives the tangent, which rearranges to $x+y=6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{m_{\\text{tangent}}} = -\\frac{1}{-1} = 1",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of $-1$, which is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Form the normal equation",
+        "workingLatex": "y - 3 = 1(x - 3) \\;\\Rightarrow\\; y = x",
+        "explanation": "Using the same point with gradient $1$ gives the normal, which simplifies to the line $y = x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the results",
+        "workingLatex": "\\text{tangent: } x + y = 6, \\qquad \\text{normal: } y = x",
+        "explanation": "The tangent at $P(3,3)$ is $x+y=6$ and the normal there is $y=x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Gradient $=-1$; tangent $x + y = 6$; normal $y = x$."
+  }
+}

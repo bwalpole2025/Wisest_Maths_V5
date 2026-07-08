@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "horizontal tangent",
+    "ln"
+  ],
+  "questionText": "The curve $y = x^{2} - 4\\ln x$ is defined for $x > 0$. Find the exact coordinates of the point on the curve where the tangent is horizontal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the condition",
+        "workingLatex": "\\text{horizontal tangent} \\;\\Rightarrow\\; \\frac{dy}{dx} = 0",
+        "explanation": "A horizontal tangent has gradient zero, so we differentiate and set the derivative equal to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the standard derivatives needed",
+        "workingLatex": "\\frac{d}{dx}\\left(x^{2}\\right) = 2x, \\qquad \\frac{d}{dx}(\\ln x) = \\frac{1}{x}",
+        "explanation": "The power rule gives $2x$, and $\\ln x$ has the standard derivative $\\tfrac{1}{x}$ for $x>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = 2x - \\frac{4}{x}",
+        "explanation": "The constant multiple $4$ carries onto $\\tfrac{1}{x}$, giving $\\tfrac{4}{x}$, subtracted from $2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the derivative equal to zero",
+        "workingLatex": "2x - \\frac{4}{x} = 0",
+        "explanation": "This locates the point where the tangent is horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply through by x",
+        "workingLatex": "2x^{2} - 4 = 0",
+        "explanation": "Multiplying every term by $x$ (valid since $x>0$) clears the fraction and gives a simple quadratic in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x",
+        "workingLatex": "x^{2} = 2 \\;\\Rightarrow\\; x = \\pm\\sqrt{2}",
+        "explanation": "Dividing by $2$ and square-rooting gives two candidate values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Reject the invalid solution",
+        "workingLatex": "x = -\\sqrt{2}\\;\\text{rejected}, \\qquad x = \\sqrt{2}",
+        "explanation": "The curve is only defined for $x>0$ (because of $\\ln x$), so $x=-\\sqrt{2}$ is not allowed. Keep $x=\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify the logarithm at x = sqrt(2)",
+        "workingLatex": "\\ln\\sqrt{2} = \\ln 2^{1/2} = \\tfrac{1}{2}\\ln 2",
+        "explanation": "Using $\\sqrt{2}=2^{1/2}$ and the power law of logs brings the exponent to the front.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = (\\sqrt{2})^{2} - 4\\left(\\tfrac{1}{2}\\ln 2\\right) = 2 - 2\\ln 2",
+        "explanation": "Since $(\\sqrt{2})^{2}=2$ and $4\\cdot\\tfrac{1}{2}=2$, the exact height is $2-2\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "\\left(\\sqrt{2},\\; 2 - 2\\ln 2\\right)",
+        "explanation": "This is the exact point on $y=x^{2}-4\\ln x$ where the tangent is horizontal.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent is horizontal at $\\left(\\sqrt{2},\\; 2 - 2\\ln 2\\right)$."
+  }
+}

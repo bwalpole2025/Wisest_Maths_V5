@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "chain rule",
+    "exponential",
+    "differentiation"
+  ],
+  "questionText": "Given that $y = (e^{x}+1)^3$, find $\\dfrac{dy}{dx}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite structure",
+        "workingLatex": "y = (e^{x}+1)^3",
+        "explanation": "The expression $e^x+1$ is raised to the third power, so a function is nested inside a cube. This nesting means we differentiate with the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce the inner function as $u$",
+        "workingLatex": "u = e^{x}+1 \\quad \\Rightarrow \\quad y = u^3",
+        "explanation": "We let $u$ be the contents of the bracket, so the outer function becomes the simple cube $y=u^3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = e^{x}",
+        "explanation": "Differentiating $u=e^x+1$ gives $e^x$, because $e^x$ is its own derivative and the constant $1$ disappears.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = 3u^2",
+        "explanation": "The power rule on $y=u^3$ brings the $3$ down and lowers the exponent by one to give $3u^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = 3u^2 \\cdot e^{x}",
+        "explanation": "The chain rule multiplies the outer rate $3u^2$ by the inner rate $e^x$ to give the derivative with respect to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the inner function back in",
+        "workingLatex": "\\frac{dy}{dx} = 3(e^{x}+1)^2\\, e^{x}",
+        "explanation": "Replacing $u$ with $e^x+1$ returns the answer to the original variable $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write in tidy form",
+        "workingLatex": "\\frac{dy}{dx} = 3e^{x}(e^{x}+1)^2",
+        "explanation": "Placing the $3e^x$ factor in front of the squared bracket gives the cleanest way of writing the derivative.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 3e^{x}(e^{x}+1)^2$."
+  }
+}

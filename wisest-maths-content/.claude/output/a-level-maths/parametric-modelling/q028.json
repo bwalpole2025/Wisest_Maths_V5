@@ -5,60 +5,95 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "tangent",
+    "normal",
+    "parametric differentiation",
     "axis intercept"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. The tangent at $t = 2$ meets the $x$-axis at point $P$. Find the coordinates of $P$.",
+  "questionText": "A particle traces a path whose position in metres is modelled by $x = t^{2}$ and $y = 2t$. Find the equation of the normal to the path at the point where $t = 2$, and hence the coordinates of the point where this normal crosses the $x$-axis.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the point of tangency",
-        "workingLatex": "t = 2: (4, 4)",
-        "explanation": "The tangent touches the curve at this point.",
+        "description": "Plan the normal",
+        "workingLatex": "\\text{normal} \\perp \\text{tangent} \\Rightarrow \\text{need } \\dfrac{dy}{dx} \\text{ and the point}",
+        "explanation": "The normal is perpendicular to the path, so we first find the tangent gradient, negate its reciprocal, and use the point at $t = 2$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t} = \\frac{1}{2}",
-        "explanation": "The parametric gradient is $\\frac{1}{t}$, which is $\\frac{1}{2}$ at $t = 2$.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t",
+        "explanation": "The horizontal velocity is $2t$, the denominator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the tangent equation",
-        "workingLatex": "y - 4 = \\frac{1}{2}(x - 4)",
-        "explanation": "Using the point-gradient form with $(4, 4)$ and gradient $\\frac{1}{2}$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2",
+        "explanation": "The vertical velocity is a constant $2$, the numerator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set y = 0 for the x-axis",
-        "workingLatex": "0 - 4 = \\frac{1}{2}(x - 4)",
-        "explanation": "The tangent meets the $x$-axis where $y = 0$.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2}{2t} = \\dfrac{1}{t}",
+        "explanation": "Dividing the two rates and simplifying gives the slope of the path in terms of $t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for x",
-        "workingLatex": "-8 = x - 4 \\;\\Rightarrow\\; x = -4",
-        "explanation": "Multiplying by $2$ and rearranging gives the intercept.",
+        "description": "Find the point at t = 2",
+        "workingLatex": "x = 2^{2} = 4, \\qquad y = 2(2) = 4",
+        "explanation": "Substituting $t = 2$ gives the point $(4,\\,4)$ that the normal passes through.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the point",
-        "workingLatex": "P = (-4, 0)",
-        "explanation": "The tangent crosses the $x$-axis at $(-4, 0)$.",
+        "description": "Evaluate the tangent gradient",
+        "workingLatex": "\\left.\\dfrac{dy}{dx}\\right|_{t=2} = \\dfrac{1}{2}",
+        "explanation": "This is the slope of the path at that point; the normal is perpendicular to it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\dfrac{1}{\\,1/2\\,} = -2",
+        "explanation": "The negative reciprocal of $\\dfrac{1}{2}$ gives the gradient of the perpendicular normal line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the normal equation",
+        "workingLatex": "y - 4 = -2\\left(x - 4\\right) \\Rightarrow y = -2x + 12",
+        "explanation": "Using point-slope form through $(4,\\,4)$ and expanding gives the normal in slope-intercept form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set y = 0 for the x-axis",
+        "workingLatex": "0 = -2x + 12",
+        "explanation": "Any point on the $x$-axis has $y = 0$, so we substitute this to find where the normal crosses it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for x",
+        "workingLatex": "2x = 12 \\Rightarrow x = 6",
+        "explanation": "Rearranging gives the $x$-coordinate of the crossing point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the crossing point",
+        "workingLatex": "\\left(6,\\,0\\right)",
+        "explanation": "The normal meets the $x$-axis at $(6,\\,0)$, completing the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$P = (-4, 0)$"
+    "finalAnswer": "The normal at $t = 2$ is $y = -2x + 12$, and it crosses the $x$-axis at $(6,\\,0)$."
   }
 }

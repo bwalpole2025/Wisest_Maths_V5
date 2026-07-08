@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "stationary points",
+    "logarithm"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{\\ln x}{x}$ for $x>0$. (a) Find $\\dfrac{dy}{dx}$. (b) Hence find the exact coordinates of the stationary point of $C$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the quotient rule",
+        "workingLatex": "u = \\ln x, \\qquad v = x",
+        "explanation": "The curve is a quotient of $\\ln x$ and $x$, so we use the quotient rule with $u$ on top and $v$ underneath.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = \\frac{1}{x}, \\qquad v' = 1",
+        "explanation": "The derivative of $\\ln x$ is $\\dfrac{1}{x}$, and the derivative of $x$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}",
+        "explanation": "This gives derivative of top times bottom minus top times derivative of bottom, all over the bottom squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the pieces",
+        "workingLatex": "= \\frac{\\frac{1}{x}\\cdot x - \\ln x\\cdot 1}{x^2}",
+        "explanation": "Slotting $u,u',v,v'$ into the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\frac{1 - \\ln x}{x^2}",
+        "explanation": "Here $\\dfrac{1}{x}\\cdot x=1$, leaving $1-\\ln x$ on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1 - \\ln x}{x^2}",
+        "explanation": "This is the gradient function of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\frac{1 - \\ln x}{x^2} = 0",
+        "explanation": "Stationary points occur where the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "A zero fraction needs a zero numerator",
+        "workingLatex": "1 - \\ln x = 0",
+        "explanation": "A fraction is zero only when its numerator is zero; since $x^2>0$ can never be zero, we set the top to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "\\ln x = 1 \\;\\Rightarrow\\; x = e",
+        "explanation": "Undoing the natural logarithm gives $x=e$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\frac{\\ln e}{e} = \\frac{1}{e}",
+        "explanation": "Substituting $x=e$ and using $\\ln e=1$ gives the height $\\dfrac{1}{e}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the stationary point",
+        "workingLatex": "\\left(e, \\; \\frac{1}{e}\\right)",
+        "explanation": "So the single stationary point of $C$ is $\\left(e,\\dfrac{1}{e}\\right)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\dfrac{1-\\ln x}{x^2}$. (b) Stationary point at $\\left(e, \\dfrac{1}{e}\\right)$."
+  }
+}

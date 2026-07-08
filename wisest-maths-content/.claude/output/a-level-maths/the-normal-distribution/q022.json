@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q022",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "lower tail"
+  ],
+  "questionText": "The weights, $X$ kg, of parcels handled by a courier are modelled by $X \\sim N(20, 4^2)$. Find $P(X < 10)$, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(20,\\ 4^2), \\qquad \\mu = 20,\\ \\sigma = 4",
+        "explanation": "The weights are normal with mean $\\mu = 20$ kg and standard deviation $\\sigma = 4$ kg. The value $10$ is far below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify what is required",
+        "workingLatex": "\\text{Require } P(X < 10)",
+        "explanation": "We want the chance a parcel weighs under $10$ kg. As $10$ sits well into the left, this lower-tail probability should be very small.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 10",
+        "workingLatex": "Z = \\dfrac{X - \\mu}{\\sigma} = \\dfrac{10 - 20}{4} = -2.5",
+        "explanation": "The $z$-score shows $10$ is two and a half standard deviations below the mean, so $z = -2.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X < 10) = P(Z < -2.5)",
+        "explanation": "Moving to the standard normal variable, the area below $10$ equals the area below $z = -2.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use symmetry of the curve",
+        "workingLatex": "P(Z < -2.5) = 1 - \\Phi(2.5) = 1 - 0.99379",
+        "explanation": "By symmetry the far-left tail below $-2.5$ has the same area as the far-right tail above $2.5$, which is $1 - \\Phi(2.5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 0.006210",
+        "explanation": "Completing the subtraction gives a tiny probability, as expected for a value two and a half standard deviations out.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final answer",
+        "workingLatex": "P(X < 10) \\approx 0.006210",
+        "explanation": "To four significant figures this is the required probability, roughly $0.6\\%$, confirming that such light parcels are rare.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X < 10) \\approx 0.006210$."
+  }
+}

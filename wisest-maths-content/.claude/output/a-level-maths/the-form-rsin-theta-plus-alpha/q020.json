@@ -4,61 +4,83 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Intermediate",
-  "marks": 7,
+  "difficulty": "Easy",
+  "marks": 4,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "maximum",
+    "minimum"
   ],
-  "questionText": "Solve $5\\sin\\theta - 12\\cos\\theta = 6.5$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree. Use $5\\sin\\theta - 12\\cos\\theta = 13\\sin(\\theta - 67.38^\\circ)$.",
+  "questionText": "Express $5\\sin\\theta + 12\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$, giving $\\alpha$ to $1$ decimal place. Write down the maximum value and the least value of the expression, and find the smallest positive value of $\\theta$ at which the maximum occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Substitute the harmonic form",
-        "workingLatex": "13\\sin(\\theta - 67.38^\\circ) = 6.5",
-        "explanation": "Replacing the two-term expression gives a single sine equation.",
+        "description": "Set up the identity to match",
+        "workingLatex": "5\\sin\\theta + 12\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We combine the two terms into a single sine wave, which will make the maximum, the least value and their positions easy to read off.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Isolate the sine",
-        "workingLatex": "\\sin(\\theta - 67.38^\\circ) = 0.5",
-        "explanation": "Dividing by $13$ gives sine equal to $0.5$.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta+\\alpha)$ and carrying $R$ through gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, matching the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the shifted interval",
-        "workingLatex": "-67.38^\\circ \\le \\theta - 67.38^\\circ < 292.62^\\circ",
-        "explanation": "Subtracting the shift from the bounds gives the interval for the shifted angle.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 5, \\qquad R\\sin\\alpha = 12",
+        "explanation": "Matching the $\\sin\\theta$ terms gives $R\\cos\\alpha=5$ and matching the $\\cos\\theta$ terms gives $R\\sin\\alpha=12$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - 67.38^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$, both within the shifted interval.",
+        "description": "Find R by squaring and adding",
+        "workingLatex": "R = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13",
+        "explanation": "Squaring and adding eliminates $\\alpha$, leaving $R^2=5^2+12^2=169$, so the positive root is $R=13$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Add the shift",
-        "workingLatex": "\\theta = 97.38^\\circ, 217.38^\\circ",
-        "explanation": "Adding $67.38^\\circ$ to each recovers $\\theta$.",
+        "description": "Solve for the acute angle α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{12}{5} \\Rightarrow \\alpha = 67.4^\\circ",
+        "explanation": "Dividing the two equations gives $\\tan\\alpha=\\dfrac{12}{5}$; both coefficients are positive so $\\alpha$ is acute, giving $\\alpha=67.4^\\circ$ to $1$ decimal place.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Round the solutions",
-        "workingLatex": "\\theta \\approx 97^\\circ, 217^\\circ",
-        "explanation": "Rounding to the nearest degree gives the final answers.",
+        "description": "State the R-form",
+        "workingLatex": "5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta + 67.4^\\circ)",
+        "explanation": "Combining $R=13$ and $\\alpha=67.4^\\circ$ gives the single sine wave, from which the extreme values follow immediately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Read off the maximum and least values",
+        "workingLatex": "-13 \\le 13\\sin(\\theta+67.4^\\circ) \\le 13",
+        "explanation": "Since a sine is always between $-1$ and $1$, the expression lies between $-13$ and $13$. The maximum value is $13$ and the least value is $-13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the maximum condition",
+        "workingLatex": "\\text{max when } \\sin(\\theta+67.4^\\circ) = 1 \\Rightarrow \\theta + 67.4^\\circ = 90^\\circ",
+        "explanation": "The maximum $13$ is reached exactly when the sine equals $1$, and the first time that happens is when the angle inside equals $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the smallest positive θ",
+        "workingLatex": "\\theta = 90^\\circ - 67.4^\\circ = 22.6^\\circ",
+        "explanation": "Subtracting the phase shift $67.4^\\circ$ gives $\\theta=22.6^\\circ$, which is positive, so this is the smallest positive value of $\\theta$ at which the maximum occurs.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 97^\\circ, 217^\\circ$"
+    "finalAnswer": "$5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta + 67.4^\\circ)$; the maximum value is $13$ and the least value is $-13$, with the maximum first occurring at $\\theta = 22.6^\\circ$ (to $1$ d.p.)."
   }
 }

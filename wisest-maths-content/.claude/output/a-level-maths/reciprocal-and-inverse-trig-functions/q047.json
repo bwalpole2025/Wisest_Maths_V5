@@ -4,76 +4,89 @@
   "topic": "Year 2 Pure",
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "numeric",
   "tags": [
-    "identities",
-    "proof",
-    "cosecant",
-    "cotangent"
+    "reciprocal trig",
+    "cot",
+    "radians"
   ],
-  "questionText": "Prove that $\\dfrac{1}{\\csc\\theta - \\cot\\theta} \\equiv \\csc\\theta + \\cot\\theta$.",
+  "questionText": "Solve $\\cot x = 0$ for $0 \\le x \\le 2\\pi$, giving your answers in radians. Take care over where $\\cot x$ is defined.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\frac{1}{\\csc\\theta - \\cot\\theta}",
-        "explanation": "We work from the left, and the presence of $\\csc\\theta - \\cot\\theta$ suggests multiplying by its conjugate.",
+        "description": "Choose the right form of cot",
+        "workingLatex": "\\cot x = \\frac{1}{\\tan x} = \\frac{\\cos x}{\\sin x}",
+        "explanation": "Writing $\\cot x = \\tfrac{1}{\\tan x}$ would force $\\tan x$ to be infinite, which is awkward. The form $\\tfrac{\\cos x}{\\sin x}$ is much cleaner for setting the expression to zero.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Multiply top and bottom by the conjugate",
-        "workingLatex": "= \\frac{1}{\\csc\\theta - \\cot\\theta}\\times\\frac{\\csc\\theta + \\cot\\theta}{\\csc\\theta + \\cot\\theta}",
-        "explanation": "Multiplying by $\\frac{\\csc\\theta + \\cot\\theta}{\\csc\\theta + \\cot\\theta}$ equals multiplying by $1$, and it produces a difference of squares in the denominator.",
+        "description": "Set the fraction equal to zero",
+        "workingLatex": "\\frac{\\cos x}{\\sin x} = 0 \\;\\Rightarrow\\; \\cos x = 0",
+        "explanation": "A fraction is zero exactly when its numerator is zero, so $\\cot x = 0$ requires $\\cos x = 0$. This is the key idea: cot is zero where cosine, not sine, vanishes.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand the denominator",
-        "workingLatex": "(\\csc\\theta - \\cot\\theta)(\\csc\\theta + \\cot\\theta) = \\csc^2\\theta - \\cot^2\\theta",
-        "explanation": "The conjugate product gives a difference of squares, exactly the combination that a Pythagorean identity simplifies.",
+        "description": "Record the requirement on the denominator",
+        "workingLatex": "\\sin x \\neq 0",
+        "explanation": "For $\\cot x$ to be defined the denominator $\\sin x$ must be non-zero, so any candidate solution must also satisfy $\\sin x \\neq 0$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recall the relevant identity",
-        "workingLatex": "\\csc^2\\theta = 1 + \\cot^2\\theta",
-        "explanation": "This identity connects the two squared terms in the denominator.",
+        "description": "Locate where cosine is zero",
+        "workingLatex": "\\cos x = 0 \\text{ at } x = \\tfrac{\\pi}{2}, \\; \\tfrac{3\\pi}{2} \\text{ in } [0, 2\\pi]",
+        "explanation": "Cosine is zero at the top and bottom of the unit circle, which in the interval $[0,2\\pi]$ occurs at $\\tfrac{\\pi}{2}$ and $\\tfrac{3\\pi}{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify the denominator",
-        "workingLatex": "\\csc^2\\theta - \\cot^2\\theta = (1 + \\cot^2\\theta) - \\cot^2\\theta = 1",
-        "explanation": "Substituting shows the cotangent-squared terms cancel, leaving the denominator equal to $1$.",
+        "description": "Write the first solution",
+        "workingLatex": "x = \\tfrac{\\pi}{2}",
+        "explanation": "The first place cosine reaches zero in the interval is $\\tfrac{\\pi}{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rewrite the fraction",
-        "workingLatex": "= \\frac{\\csc\\theta + \\cot\\theta}{1}",
-        "explanation": "With the denominator equal to $1$, only the numerator remains.",
+        "description": "Write the second solution",
+        "workingLatex": "x = \\tfrac{3\\pi}{2}",
+        "explanation": "The second place cosine is zero in the interval is $\\tfrac{3\\pi}{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Simplify",
-        "workingLatex": "= \\csc\\theta + \\cot\\theta",
-        "explanation": "Dividing by $1$ leaves the numerator unchanged.",
+        "description": "Check the denominator is non-zero",
+        "workingLatex": "\\sin \\tfrac{\\pi}{2} = 1 \\neq 0, \\quad \\sin \\tfrac{3\\pi}{2} = -1 \\neq 0",
+        "explanation": "At both angles the sine is $\\pm 1$, so the denominator is non-zero and $\\cot x$ is genuinely defined there. Neither solution is rejected.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Conclude the proof",
-        "workingLatex": "\\frac{1}{\\csc\\theta - \\cot\\theta} \\equiv \\csc\\theta + \\cot\\theta \\;\\blacksquare",
-        "explanation": "The left-hand side equals the right-hand side, completing the proof wherever the functions are defined.",
+        "description": "Confirm both lie in the interval",
+        "workingLatex": "0 \\le \\tfrac{\\pi}{2}, \\; \\tfrac{3\\pi}{2} \\le 2\\pi",
+        "explanation": "Both radian values fall inside $0 \\le x \\le 2\\pi$, so both are kept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the solutions in the original equation",
+        "workingLatex": "\\cot \\tfrac{\\pi}{2} = \\frac{\\cos \\tfrac{\\pi}{2}}{\\sin \\tfrac{\\pi}{2}} = \\frac{0}{1} = 0, \\quad \\cot \\tfrac{3\\pi}{2} = \\frac{0}{-1} = 0",
+        "explanation": "Substituting back gives $0$ in both cases, confirming that these are the correct solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the full solution set",
+        "workingLatex": "x = \\tfrac{\\pi}{2}, \\; \\tfrac{3\\pi}{2}",
+        "explanation": "These two radian values are the complete set of solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{1}{\\csc\\theta - \\cot\\theta} \\equiv \\csc\\theta + \\cot\\theta$"
+    "finalAnswer": "$x = \\dfrac{\\pi}{2}$ or $x = \\dfrac{3\\pi}{2}$."
   }
 }

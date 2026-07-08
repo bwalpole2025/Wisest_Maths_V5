@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "product rule",
+    "trigonometry",
+    "factorising"
+  ],
+  "questionText": "Given that $y = x^2\\cos x$, where $x$ is in radians, find $\\dfrac{dy}{dx}$, giving your answer in a fully factorised form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and state the rule",
+        "workingLatex": "\\frac{d}{dx}(uv) = u'v + uv'",
+        "explanation": "$y = x^2\\cos x$ is a product of $x^2$ and $\\cos x$, so we differentiate with the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the two factors",
+        "workingLatex": "u = x^2, \\qquad v = \\cos x",
+        "explanation": "We set $u = x^2$ and $v = \\cos x$ so that each part can be differentiated separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 2x, \\qquad v' = -\\sin x",
+        "explanation": "The power rule gives $u' = 2x$, and the derivative of $\\cos x$ is $-\\sin x$. The minus sign is easy to forget, so we note it carefully.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = 2x\\cos x + x^2(-\\sin x)",
+        "explanation": "Substituting into $u'v + uv'$ gives a first term from differentiating $x^2$ and a second term from differentiating $\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Tidy the signs",
+        "workingLatex": "\\frac{dy}{dx} = 2x\\cos x - x^2\\sin x",
+        "explanation": "Writing $+ x^2(-\\sin x)$ as $- x^2\\sin x$ removes the awkward double sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = x(2\\cos x - x\\sin x)",
+        "explanation": "Both terms contain a factor of $x$, so we take it outside a bracket to present the answer in fully factorised form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = x(2\\cos x - x\\sin x)",
+        "explanation": "This is the fully factorised derivative of $y = x^2\\cos x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = x(2\\cos x - x\\sin x)$."
+  }
+}

@@ -5,53 +5,116 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "collision",
-    "two particles"
+    "tangent",
+    "root selection",
+    "parabola"
   ],
-  "questionText": "Particle A has position $x = t$, $y = t^2$ and particle B has position $x = 2t - 1$, $y = t$ (metres, $t$ in seconds). Show that the particles collide and find the point of collision.",
+  "questionText": "A particle moves for $0 \\le t \\le 3$ so that its position in metres is $x = t^{2}$ and $y = 2t$. (a) Show that the tangent to the path at parameter $t$ (with $t \\neq 0$) can be written $ty = x + t^{2}$. (b) Find the value(s) of $t$ for which this tangent passes through the point $(4,\\,5)$, and state the corresponding point of tangency on the path.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Match the x-coordinates",
-        "workingLatex": "t = 2t - 1 \\;\\Rightarrow\\; t = 1",
-        "explanation": "For a collision the $x$-coordinates must be equal at the same time.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t",
+        "explanation": "We start with the horizontal velocity $\\dot{x}$, which we need for the gradient of the path.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Match the y-coordinates",
-        "workingLatex": "t^2 = t \\;\\Rightarrow\\; t^2 - t = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 1",
-        "explanation": "The $y$-coordinates are equal at $t = 0$ and $t = 1$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2",
+        "explanation": "The vertical position changes at a constant rate, so $\\dot{y} = 2$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the common time",
-        "workingLatex": "t = 1 \\text{ satisfies both conditions}",
-        "explanation": "Only $t = 1$ makes both the $x$- and $y$-coordinates match simultaneously.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2}{2t} = \\dfrac{1}{t}",
+        "explanation": "Dividing the two velocity components gives the slope of the path at parameter $t$, valid whenever $t\\neq 0$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the collision point",
-        "workingLatex": "A: (1, 1), \\quad B: (2(1) - 1, 1) = (1, 1)",
-        "explanation": "Both particles are at $(1, 1)$ at $t = 1$.",
+        "description": "Write down the point of contact",
+        "workingLatex": "\\left(x,\\,y\\right) = \\left(t^{2},\\,2t\\right)",
+        "explanation": "The tangent touches the path at the point given by the parameter, so we record it in terms of $t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\text{collide at } (1, 1) \\text{ when } t = 1",
-        "explanation": "Since both coordinates agree at $t = 1$, the particles genuinely collide there.",
+        "description": "Use point-gradient form",
+        "workingLatex": "y - 2t = \\dfrac{1}{t}\\left(x - t^{2}\\right)",
+        "explanation": "Combining the point from step 4 with the gradient from step 3 in point-gradient form builds the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Multiply through by t",
+        "workingLatex": "ty - 2t^{2} = x - t^{2}",
+        "explanation": "Clearing the fraction by multiplying both sides by $t$ removes the awkward denominator and prepares for tidying.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange to the required form",
+        "workingLatex": "ty = x + t^{2}",
+        "explanation": "Moving the $-2t^{2}$ across and combining $-t^{2} + 2t^{2} = t^{2}$ gives the required compact form of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Impose that the tangent passes through (4, 5)",
+        "workingLatex": "t(5) = 4 + t^{2}",
+        "explanation": "If the point $(4,5)$ lies on the tangent, its coordinates must satisfy the tangent equation, so we substitute $x=4$, $y=5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rearrange into a quadratic in t",
+        "workingLatex": "t^{2} - 5t + 4 = 0",
+        "explanation": "Collecting everything on one side gives a quadratic whose roots are the parameter values whose tangents pass through the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Factorise the quadratic",
+        "workingLatex": "(t - 1)(t - 4) = 0",
+        "explanation": "The quadratic factorises cleanly, so the candidate parameter values are the roots of these factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "List the candidate roots",
+        "workingLatex": "t = 1 \\quad\\text{or}\\quad t = 4",
+        "explanation": "Both values are real, so each is a mathematical solution; we must now check them against the modelled interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Apply the domain and reject the invalid root",
+        "workingLatex": "0 \\le t \\le 3 \\;\\Rightarrow\\; t = 1 \\text{ valid}, \\; t = 4 \\text{ rejected}",
+        "explanation": "The particle only exists for $0 \\le t \\le 3$. The value $t=4$ lies outside this interval, so the motion has already ended there and that root is rejected; only $t=1$ is physical.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the point of tangency",
+        "workingLatex": "\\left(t^{2},\\,2t\\right) = \\left(1,\\,2\\right)",
+        "explanation": "Substituting the valid $t=1$ into the position equations gives the point on the path where the tangent touches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Verify the tangent passes through (4, 5)",
+        "workingLatex": "\\text{gradient} = \\tfrac{1}{1} = 1, \\quad y = x + 1, \\quad 5 = 4 + 1 \\;\\checkmark",
+        "explanation": "As a check, the tangent at $t=1$ has gradient $1$ and equation $y = x+1$, which indeed passes through $(4,5)$, confirming the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "They collide at $(1, 1)$ when $t = 1$."
+    "finalAnswer": "The tangent passes through $(4,5)$ when $t = 1$ (the root $t=4$ is rejected as it lies outside the modelled interval $0 \\le t \\le 3$). The point of tangency is $(1,\\,2)$."
   }
 }

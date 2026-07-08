@@ -5,61 +5,60 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "trig",
-    "ellipse"
+    "eliminating the parameter",
+    "linear",
+    "cartesian"
   ],
-  "questionText": "A curve has parametric equations $x = 4\\cos\\theta$, $y = 2\\sin\\theta$. Find the Cartesian equation and describe the curve.",
+  "questionText": "A curve has parametric equations $x = 2t$ and $y = 3t - 1$. Find a Cartesian equation of the curve in the form $y = mx + c$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the trig functions",
-        "workingLatex": "\\cos\\theta = \\frac{x}{4}, \\quad \\sin\\theta = \\frac{y}{2}",
-        "explanation": "Different coefficients on the two equations signal an ellipse rather than a circle.",
+        "description": "State the aim",
+        "workingLatex": "\\text{eliminate } t",
+        "explanation": "A Cartesian equation contains only $x$ and $y$, so the plan is to remove the parameter $t$ by making it the subject of one equation and substituting into the other.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\left(\\frac{x}{4}\\right)^2 + \\left(\\frac{y}{2}\\right)^2 = 1",
-        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ eliminates $\\theta$.",
+        "description": "Make t the subject of the x-equation",
+        "workingLatex": "x = 2t \\Rightarrow t = \\dfrac{x}{2}",
+        "explanation": "The $x$-equation is the simplest to rearrange; dividing by $2$ expresses $t$ in terms of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the squares",
-        "workingLatex": "\\frac{x^2}{16} + \\frac{y^2}{4} = 1",
-        "explanation": "Squaring gives denominators $16$ and $4$.",
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = 3\\left( \\dfrac{x}{2} \\right) - 1",
+        "explanation": "Replacing $t$ in $y = 3t - 1$ with $\\dfrac{x}{2}$ removes the parameter and leaves only $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the curve",
-        "workingLatex": "\\frac{x^2}{16} + \\frac{y^2}{4} = 1 \\text{ (ellipse)}",
-        "explanation": "This is the standard form of an ellipse.",
+        "description": "Simplify",
+        "workingLatex": "y = \\dfrac{3}{2}x - 1",
+        "explanation": "Multiplying out $3 \\times \\dfrac{x}{2}$ gives $\\dfrac{3}{2}x$, leaving a tidy linear expression.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the semi-axes",
-        "workingLatex": "a = 4, \\quad b = 2",
-        "explanation": "The ellipse extends $4$ units horizontally and $2$ units vertically from the centre.",
+        "description": "Read off gradient and intercept",
+        "workingLatex": "m = \\dfrac{3}{2}, \\quad c = -1",
+        "explanation": "Comparing with $y = mx + c$ shows the gradient and the $y$-intercept of the line.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "\\frac{x^2}{16} + \\frac{y^2}{4} = 1",
-        "explanation": "An ellipse centred at the origin with semi-axes $4$ and $2$.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = \\dfrac{3}{2}x - 1",
+        "explanation": "The curve is a straight line with gradient $\\dfrac{3}{2}$ passing through $(0,\\,-1)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{x^2}{16} + \\dfrac{y^2}{4} = 1$, an ellipse."
+    "finalAnswer": "$y = \\dfrac{3}{2}x - 1$ — a straight line with gradient $\\dfrac{3}{2}$ and $y$-intercept $-1$."
   }
 }

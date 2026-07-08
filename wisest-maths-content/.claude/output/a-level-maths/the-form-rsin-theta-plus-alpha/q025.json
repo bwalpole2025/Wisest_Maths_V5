@@ -1,57 +1,100 @@
 {
-  "id": "al.y2.pure.rsin-form.q025",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
-  "tags": [
-    "harmonic form",
-    "range",
-    "function"
-  ],
-  "questionText": "State the range of the function $f(\\theta) = 9\\sin\\theta - 12\\cos\\theta + 4$ for $\\theta \\in \\mathbb{R}$.",
   "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q025",
+  "marks": 6,
+  "answerType": "solutions",
+  "tags": [
+    "r form",
+    "harmonic form",
+    "cosine form",
+    "solving equations"
+  ],
+  "questionText": "Express $5\\cos\\theta + 2\\sin\\theta$ in the form $R\\cos(\\theta-\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Hence solve $5\\cos\\theta + 2\\sin\\theta = 4$ for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the amplitude",
-        "workingLatex": "R = \\sqrt{9^2 + 12^2} = \\sqrt{225} = 15",
-        "explanation": "The oscillating part has amplitude $15$ (a $9$-$12$-$15$ triangle).",
+        "description": "Set up the identity",
+        "workingLatex": "5\\cos\\theta + 2\\sin\\theta \\equiv R\\cos(\\theta-\\alpha)",
+        "explanation": "Here the natural target is a cosine wave because the expression leads with $\\cos\\theta$. Setting it identically equal to $R\\cos(\\theta-\\alpha)$ lets us expand and match coefficients.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the harmonic form",
-        "workingLatex": "f(\\theta) = 15\\sin(\\theta - \\alpha) + 4",
-        "explanation": "The exact phase angle is not needed for the range, only the amplitude and the constant.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\cos(\\theta-\\alpha) = R\\cos\\alpha\\,\\cos\\theta + R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta-\\alpha)=\\cos\\theta\\cos\\alpha+\\sin\\theta\\sin\\alpha$ and taking $R$ through gives a multiple of $\\cos\\theta$ plus a multiple of $\\sin\\theta$, matching the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Bound the sine term",
-        "workingLatex": "-15 \\le 15\\sin(\\theta - \\alpha) \\le 15",
-        "explanation": "The amplitude scales the sine range.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 5, \\qquad R\\sin\\alpha = 2",
+        "explanation": "The coefficient of $\\cos\\theta$ must match, giving $R\\cos\\alpha=5$, and the coefficient of $\\sin\\theta$ must match, giving $R\\sin\\alpha=2$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Add the constant",
-        "workingLatex": "-11 \\le f(\\theta) \\le 19",
-        "explanation": "Adding $4$ shifts the range up.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{5^2 + 2^2} = \\sqrt{29}",
+        "explanation": "Squaring and adding removes $\\alpha$ because $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=5^2+2^2=29$. The positive root $\\sqrt{29}$ is already in simplest surd form.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the range",
-        "workingLatex": "-11 \\le f(\\theta) \\le 19",
-        "explanation": "Since sine attains both $\\pm 1$, every value in this interval is achieved.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{2}{5} \\Rightarrow \\alpha = 21.8^\\circ",
+        "explanation": "Dividing the two equations cancels $R$ and gives $\\tan\\alpha=\\tfrac{2}{5}$. Both parts are positive, so $\\alpha$ is acute: $\\alpha=21.8^\\circ$ to $1$ d.p.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the R-form",
+        "workingLatex": "5\\cos\\theta + 2\\sin\\theta = \\sqrt{29}\\,\\cos(\\theta - 21.8^\\circ)",
+        "explanation": "This packages the expression as one cosine wave of amplitude $\\sqrt{29}$, shifted right by $21.8^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{29}\\,\\cos(\\theta-21.8^\\circ) = 4 \\Rightarrow \\cos(\\theta-21.8^\\circ) = \\dfrac{4}{\\sqrt{29}} = 0.7428",
+        "explanation": "Substituting the R-form turns the equation into a single cosine equal to a number, which we isolate by dividing through by $\\sqrt{29}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ \\le \\theta \\le 360^\\circ \\Rightarrow -21.8^\\circ \\le \\theta-21.8^\\circ \\le 338.2^\\circ",
+        "explanation": "The unknown inside is $\\theta-21.8^\\circ$, so we subtract $21.8^\\circ$ from both ends. The window now starts slightly below $0^\\circ$, which matters for catching every solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\theta-21.8^\\circ = \\arccos(0.7428) = 42.0^\\circ",
+        "explanation": "The calculator gives the principal cosine value. Because cosine is even, its negative is also a solution, and that symmetry generates the rest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List all angles in the shifted range",
+        "workingLatex": "\\theta-21.8^\\circ = 42.0^\\circ,\\; 318.0^\\circ",
+        "explanation": "Cosine is positive at $\\pm 42.0^\\circ$. The value $-42.0^\\circ$ is below $-21.8^\\circ$, so instead we add $360^\\circ$ to get $318.0^\\circ$, which lies in the window alongside $42.0^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Add α to recover θ",
+        "workingLatex": "\\theta = 42.0^\\circ+21.8^\\circ,\\; 318.0^\\circ+21.8^\\circ = 63.8^\\circ,\\; 339.8^\\circ",
+        "explanation": "Undoing the shift means adding $21.8^\\circ$ back to each angle. Both results lie within $0^\\circ$ to $360^\\circ$, so both are solutions.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$-11 \\le f(\\theta) \\le 19$"
+    "finalAnswer": "$5\\cos\\theta + 2\\sin\\theta = \\sqrt{29}\\,\\cos(\\theta-21.8^\\circ)$, and the equation has solutions $\\theta = 63.8^\\circ$ and $\\theta = 339.8^\\circ$ (to $1$ d.p.)."
   }
 }

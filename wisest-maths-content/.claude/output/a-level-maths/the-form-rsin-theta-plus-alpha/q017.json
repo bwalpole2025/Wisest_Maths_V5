@@ -4,69 +4,76 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving",
-    "cosine"
+    "radians",
+    "maximum"
   ],
-  "questionText": "Solve $\\cos\\theta - \\sin\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$, using the form $R\\cos(\\theta + \\alpha)$.",
+  "questionText": "Express $\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$, giving $R$ and $\\alpha$ exactly. Hence write down the maximum value of $\\sin\\theta + \\cos\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in harmonic form",
-        "workingLatex": "\\cos\\theta - \\sin\\theta = \\sqrt2\\cos(\\theta + 45^\\circ)",
-        "explanation": "From $R = \\sqrt2$ and $\\alpha = 45^\\circ$, the expression becomes a single cosine.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\sin\\theta + \\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We combine the two terms into a single sine wave by writing the expression identically equal to $R\\sin(\\theta+\\alpha)$. Everything here is measured in radians.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite the equation",
-        "workingLatex": "\\sqrt2\\cos(\\theta + 45^\\circ) = 1",
-        "explanation": "Substituting turns the equation into a standard cosine equation.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta+\\alpha)$ and pulling $R$ through gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, matching the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Isolate the cosine",
-        "workingLatex": "\\cos(\\theta + 45^\\circ) = \\frac{1}{\\sqrt2}",
-        "explanation": "Dividing by $\\sqrt2$ gives a recognisable exact value.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = 1",
+        "explanation": "The coefficient of $\\sin\\theta$ on the left is $1$ and of $\\cos\\theta$ is $1$, giving these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the shifted interval",
-        "workingLatex": "45^\\circ \\le \\theta + 45^\\circ < 405^\\circ",
-        "explanation": "Adding the shift to the bounds gives the interval for the shifted angle.",
+        "description": "Find R by squaring and adding",
+        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt{2}",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=1^2+1^2=2$. As $R>0$ we keep the exact surd $R=\\sqrt{2}$ rather than rounding.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta + 45^\\circ = 45^\\circ, 315^\\circ",
-        "explanation": "Cosine $\\frac{1}{\\sqrt2}$ occurs at $45^\\circ$ and $315^\\circ$ within the interval.",
+        "description": "Divide the equations to isolate tanα",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{1} = 1",
+        "explanation": "Dividing the two equations cancels $R$ and gives $\\tan\\alpha=1$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = 0^\\circ, 270^\\circ",
-        "explanation": "Subtracting $45^\\circ$ from each gives the solutions for $\\theta$.",
+        "description": "Solve for the exact acute angle α",
+        "workingLatex": "\\alpha = \\dfrac{\\pi}{4}",
+        "explanation": "The acute angle whose tangent is $1$ is $\\dfrac{\\pi}{4}$ radians (that is, $45^\\circ$), which lies in the required range $0<\\alpha<\\dfrac{\\pi}{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Verify one solution",
-        "workingLatex": "\\theta = 0: \\cos 0 - \\sin 0 = 1 \\;\\checkmark",
-        "explanation": "Substituting $\\theta = 0$ gives $1$, confirming the solution.",
+        "description": "State the R-form",
+        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin\\!\\left(\\theta + \\dfrac{\\pi}{4}\\right)",
+        "explanation": "Combining $R=\\sqrt{2}$ and $\\alpha=\\dfrac{\\pi}{4}$ gives the single sine wave equivalent to the original expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Read off the maximum value",
+        "workingLatex": "\\text{max} = R = \\sqrt{2}",
+        "explanation": "Since $\\sin$ never exceeds $1$, the expression $\\sqrt{2}\\,\\sin\\!\\left(\\theta+\\dfrac{\\pi}{4}\\right)$ is largest when the sine equals $1$, so its maximum value is simply $\\sqrt{2}$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 0^\\circ, 270^\\circ$"
+    "finalAnswer": "$\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin\\!\\left(\\theta + \\dfrac{\\pi}{4}\\right)$; the maximum value is $\\sqrt{2}$."
   }
 }

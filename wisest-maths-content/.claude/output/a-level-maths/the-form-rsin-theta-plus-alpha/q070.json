@@ -5,81 +5,131 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 9,
+  "marks": 7,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
     "modelling",
-    "inequality"
+    "maximum and minimum"
   ],
-  "questionText": "A Ferris wheel car's height is $h = 12 - 5\\cos(6t)^\\circ - 12\\sin(6t)^\\circ$ metres, where $t$ is in seconds. Find the minimum height and the values of $t$ in $0 \\le t < 60$ for which $h \\le 6$.",
+  "questionText": "The depth of water in a harbour is modelled by $D(t)=20+5\\sin(30t)^\\circ+12\\cos(30t)^\\circ$ metres, where $t$ is the time in hours after midnight and $0\\le t<12$. Express $5\\sin(30t)^\\circ+12\\cos(30t)^\\circ$ in the form $R\\sin\\bigl((30t+\\alpha)^\\circ\\bigr)$, and hence find: the maximum and minimum depths and when they first occur; the times when the depth is $25$ m; and the period of the model.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Group the oscillating terms",
-        "workingLatex": "h = 12 - (5\\cos(6t)^\\circ + 12\\sin(6t)^\\circ)",
-        "explanation": "Factoring out the minus lets us combine the bracket into one sine.",
+        "description": "Set up the identity for the oscillating part",
+        "workingLatex": "5\\sin(30t)^\\circ+12\\cos(30t)^\\circ \\equiv R\\sin\\bigl((30t+\\alpha)^\\circ\\bigr)",
+        "explanation": "The model adds a sine and a cosine of the same angle $30t^\\circ$, so we merge them into one wave to read off the amplitude and turning points directly.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the bracket in R-form",
-        "workingLatex": "12\\sin x + 5\\cos x = 13\\sin(x + \\alpha), \\quad x = 6t, \\; \\tan\\alpha = \\tfrac{5}{12}",
-        "explanation": "The amplitude is $13$ and $\\alpha \\approx 22.62^\\circ$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin\\bigl((30t+\\alpha)^\\circ\\bigr)=R\\cos\\alpha\\,\\sin(30t)^\\circ+R\\sin\\alpha\\,\\cos(30t)^\\circ",
+        "explanation": "Expanding the compound angle writes the single wave as a multiple of $\\sin(30t)^\\circ$ plus a multiple of $\\cos(30t)^\\circ$, matching the model.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the height model",
-        "workingLatex": "h = 12 - 13\\sin(6t + 22.62^\\circ)",
-        "explanation": "Substituting gives a single-sine model with a leading minus.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=5,\\qquad R\\sin\\alpha=12",
+        "explanation": "Matching the coefficients of $\\sin(30t)^\\circ$ and $\\cos(30t)^\\circ$ gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the minimum height",
-        "workingLatex": "h_{\\min} = 12 - 13 = -1",
-        "explanation": "The height is least when the sine is at its maximum of $1$; here the model gives $-1$, so in practice the wheel would be offset, but mathematically the minimum of the expression is $-1$.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{5^2+12^2}=\\sqrt{169}=13",
+        "explanation": "Squaring and adding eliminates $\\alpha$, giving $R^2=25+144=169$, so the amplitude of the oscillation is $13$ metres.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set up the inequality",
-        "workingLatex": "12 - 13\\sin(6t + 22.62^\\circ) \\le 6",
-        "explanation": "We want the times when the height is at most $6$ m.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{12}{5}\\Rightarrow\\alpha=67.38^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{12}{5}$; both coefficients are positive so $\\alpha$ is acute, giving $\\alpha=67.38^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rearrange",
-        "workingLatex": "\\sin(6t + 22.62^\\circ) \\ge \\frac{6}{13} \\approx 0.4615",
-        "explanation": "Subtracting $12$, dividing by $-13$ (which flips the inequality) isolates the sine.",
+        "description": "Rewrite the model",
+        "workingLatex": "D(t)=20+13\\sin\\bigl((30t+67.38)^\\circ\\bigr)",
+        "explanation": "Substituting the single wave shows the depth is a constant $20$ m plus a sine oscillation of amplitude $13$ m, which makes every feature of the model easy to read.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Solve the boundary",
-        "workingLatex": "6t + 22.62^\\circ = 27.49^\\circ, 152.51^\\circ",
-        "explanation": "The sine equals $0.4615$ at these angles; it is above between them.",
+        "description": "Maximum depth",
+        "workingLatex": "D_{\\max}=20+13=33",
+        "explanation": "The sine term is at most $1$, so the depth is greatest when it equals $1$, giving a maximum of $33$ metres.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Form the inequality band for the argument",
-        "workingLatex": "27.49^\\circ \\le 6t + 22.62^\\circ \\le 152.51^\\circ",
-        "explanation": "Within the first cycle the sine is at or above $0.4615$ across this band.",
+        "description": "First time of maximum",
+        "workingLatex": "30t+67.38=90\\Rightarrow t=\\dfrac{22.62}{30}=0.754",
+        "explanation": "The sine term first reaches $1$ when the inside angle is $90^\\circ$; solving for $t$ gives about $0.75$ hours after midnight (roughly $00{:}45$).",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Solve for t",
-        "workingLatex": "6t \\in [4.87^\\circ, 129.89^\\circ] \\;\\Rightarrow\\; t \\in [0.81, 21.6]",
-        "explanation": "Subtracting the phase and dividing by $6$ gives the first time window (in seconds) when the height is at most $6$ m.",
+        "description": "Minimum depth",
+        "workingLatex": "D_{\\min}=20-13=7",
+        "explanation": "The sine term is at least $-1$, so the depth is least when it equals $-1$, giving a minimum of $7$ metres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Time of minimum",
+        "workingLatex": "30t+67.38=270\\Rightarrow t=\\dfrac{202.62}{30}=6.754",
+        "explanation": "The sine term reaches $-1$ when the inside angle is $270^\\circ$; solving gives about $6.75$ hours after midnight.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set the depth equal to 25 m",
+        "workingLatex": "20+13\\sin\\bigl((30t+67.38)^\\circ\\bigr)=25\\Rightarrow\\sin\\bigl((30t+67.38)^\\circ\\bigr)=\\dfrac{5}{13}=0.3846",
+        "explanation": "Subtracting $20$ and dividing by $13$ turns the condition $D=25$ into a standard sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Shift the interval for the inside angle",
+        "workingLatex": "0\\le t<12\\Rightarrow 67.38^\\circ\\le(30t+67.38)^\\circ<427.38^\\circ",
+        "explanation": "Over the day $30t$ runs from $0^\\circ$ up to $360^\\circ$, so the inside angle runs from $67.38^\\circ$ to $427.38^\\circ$; we solve within this shifted range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for the inside angle",
+        "workingLatex": "(30t+67.38)^\\circ=157.38^\\circ,\\;382.62^\\circ",
+        "explanation": "The principal value $\\arcsin0.3846=22.62^\\circ$ is below $67.38^\\circ$ and is rejected; the second-quadrant value $180^\\circ-22.62^\\circ=157.38^\\circ$ and its full-turn partner $22.62^\\circ+360^\\circ=382.62^\\circ$ both lie in range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find the times",
+        "workingLatex": "30t=90\\Rightarrow t=3,\\qquad 30t=315.24\\Rightarrow t=10.508",
+        "explanation": "Subtracting $67.38^\\circ$ from each inside angle and dividing by $30$ gives the two times when the depth is $25$ metres: exactly $t=3$ hours and about $t=10.51$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Find the period",
+        "workingLatex": "T=\\dfrac{360^\\circ}{30}=12\\ \\text{hours}",
+        "explanation": "The angle inside the sine increases by $30^\\circ$ per hour, so a full $360^\\circ$ cycle takes $12$ hours; the tide pattern repeats once per this interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "Summarise the model",
+        "workingLatex": "D(t)=20+13\\sin\\bigl((30t+67.38)^\\circ\\bigr)",
+        "explanation": "Gathering the results: the depth swings between $7$ m and $33$ m, first peaks near $t=0.75$ h and bottoms near $t=6.75$ h, passes $25$ m at $t=3$ h and $t\\approx10.51$ h, and repeats every $12$ hours.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Minimum height $-1$ m; $h \\le 6$ for approximately $0.81 \\le t \\le 21.6$ s (repeating each $60$ s)."
+    "finalAnswer": "$5\\sin(30t)^\\circ+12\\cos(30t)^\\circ=13\\sin\\bigl((30t+67.38)^\\circ\\bigr)$, so $D(t)=20+13\\sin\\bigl((30t+67.38)^\\circ\\bigr)$. The maximum depth is $33$ m, first at $t\\approx0.75$ h; the minimum depth is $7$ m at $t\\approx6.75$ h; the depth is $25$ m at $t=3$ h and $t\\approx10.51$ h; and the period is $12$ hours."
   }
 }

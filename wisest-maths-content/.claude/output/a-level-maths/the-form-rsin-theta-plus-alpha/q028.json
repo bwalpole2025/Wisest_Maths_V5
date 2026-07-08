@@ -1,64 +1,100 @@
 {
-  "id": "al.y2.pure.rsin-form.q028",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
-  "tags": [
-    "harmonic form",
-    "maximum",
-    "square"
-  ],
-  "questionText": "Find the maximum value of $(3\\sin\\theta + 4\\cos\\theta)^2$ and state one value of $\\theta$ where it occurs.",
   "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q028",
+  "marks": 6,
+  "answerType": "solutions",
+  "tags": [
+    "r form",
+    "harmonic form",
+    "cosine form",
+    "solving equations"
+  ],
+  "questionText": "Express $7\\cos\\theta - 3\\sin\\theta$ in the form $R\\cos(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Hence solve $7\\cos\\theta - 3\\sin\\theta = 2$ for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the inner expression in R-form",
-        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + \\alpha), \\quad \\alpha \\approx 53.13^\\circ",
-        "explanation": "The amplitude is $5$, which bounds the inner expression.",
+        "description": "Set up the identity",
+        "workingLatex": "7\\cos\\theta - 3\\sin\\theta \\equiv R\\cos(\\theta+\\alpha)",
+        "explanation": "Leading with $\\cos\\theta$ and having a minus sign, the fitting target is $R\\cos(\\theta+\\alpha)$, whose expansion carries a minus in front of the sine term.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Bound the inner expression",
-        "workingLatex": "-5 \\le 5\\sin(\\theta + \\alpha) \\le 5",
-        "explanation": "The inner expression ranges between $-5$ and $5$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\cos(\\theta+\\alpha) = R\\cos\\alpha\\,\\cos\\theta - R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta+\\alpha)=\\cos\\theta\\cos\\alpha-\\sin\\theta\\sin\\alpha$ gives a positive $\\cos\\theta$ term and a negative $\\sin\\theta$ term, matching the pattern on the left.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Square the bounds",
-        "workingLatex": "0 \\le (5\\sin(\\theta + \\alpha))^2 \\le 25",
-        "explanation": "Squaring a quantity in $[-5,5]$ gives values in $[0,25]$; the largest square comes from the largest magnitude.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 7, \\qquad R\\sin\\alpha = 3",
+        "explanation": "Matching $\\cos\\theta$ gives $R\\cos\\alpha=7$. Matching $\\sin\\theta$ gives $-R\\sin\\alpha=-3$, so $R\\sin\\alpha=3$; the signs cancel and $\\alpha$ stays acute.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the maximum",
-        "workingLatex": "\\text{max} = 25",
-        "explanation": "The maximum of the square is $5^2 = 25$, occurring when the inner expression is $\\pm 5$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{7^2 + 3^2} = \\sqrt{58}",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2=49+9=58$. The positive root $\\sqrt{58}$ has no square factors, so it stays as a surd.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find a value of theta",
-        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = 1 \\;\\Rightarrow\\; \\theta \\approx 36.87^\\circ",
-        "explanation": "One place the maximum occurs is where the inner sine equals $1$.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{3}{7} \\Rightarrow \\alpha = 23.2^\\circ",
+        "explanation": "Dividing the two equations cancels $R$ and gives $\\tan\\alpha=\\tfrac{3}{7}$. Both matched coefficients are positive, so $\\alpha=23.2^\\circ$ is acute.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the result",
-        "workingLatex": "\\text{max} = 25 \\text{ at } \\theta \\approx 37^\\circ",
-        "explanation": "The maximum square value is $25$, attained near $37^\\circ$ (and also where the inner expression is $-5$).",
+        "description": "State the R-form",
+        "workingLatex": "7\\cos\\theta - 3\\sin\\theta = \\sqrt{58}\\,\\cos(\\theta + 23.2^\\circ)",
+        "explanation": "The expression is now one cosine wave of amplitude $\\sqrt{58}$, shifted left by $23.2^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{58}\\,\\cos(\\theta+23.2^\\circ) = 2 \\Rightarrow \\cos(\\theta+23.2^\\circ) = \\dfrac{2}{\\sqrt{58}} = 0.2626",
+        "explanation": "Substituting the R-form gives a single cosine equal to a number; dividing by $\\sqrt{58}$ isolates it ready to invert.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ \\le \\theta \\le 360^\\circ \\Rightarrow 23.2^\\circ \\le \\theta+23.2^\\circ \\le 383.2^\\circ",
+        "explanation": "Since the unknown inside the cosine is $\\theta+23.2^\\circ$, we add $23.2^\\circ$ to both ends of the interval before solving.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\theta+23.2^\\circ = \\arccos(0.2626) = 74.8^\\circ",
+        "explanation": "The calculator gives the principal cosine value. Since cosine is even, the negative of this angle is also a solution, which generates the second answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List all angles in the shifted range",
+        "workingLatex": "\\theta+23.2^\\circ = 74.8^\\circ,\\; 285.2^\\circ",
+        "explanation": "Cosine is positive at $\\pm 74.8^\\circ$. As $-74.8^\\circ$ is below $23.2^\\circ$, we add $360^\\circ$ to obtain $285.2^\\circ$, which lies in the window with $74.8^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 74.8^\\circ-23.2^\\circ,\\; 285.2^\\circ-23.2^\\circ = 51.6^\\circ,\\; 262.0^\\circ",
+        "explanation": "Subtracting $23.2^\\circ$ from each shifted angle returns to $\\theta$. Both values lie in $0^\\circ$ to $360^\\circ$, so both are accepted.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum $= 25$ (e.g. at $\\theta \\approx 37^\\circ$)."
+    "finalAnswer": "$7\\cos\\theta - 3\\sin\\theta = \\sqrt{58}\\,\\cos(\\theta+23.2^\\circ)$, and the equation has solutions $\\theta = 51.6^\\circ$ and $\\theta = 262.0^\\circ$ (to $1$ d.p.)."
   }
 }

@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "stationary point",
+    "trigonometry"
+  ],
+  "questionText": "The curve $y = 2\\sin x + x$ is defined for $0 \\le x \\le 2\\pi$, with $x$ in radians. Find the exact coordinates of the stationary points of the curve on this interval.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the standard derivatives needed",
+        "workingLatex": "\\frac{d}{dx}(\\sin x) = \\cos x, \\qquad \\frac{d}{dx}(x) = 1",
+        "explanation": "The derivative of $\\sin x$ is $\\cos x$ (with $x$ in radians), and $x$ differentiates to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = 2\\cos x + 1",
+        "explanation": "Differentiating term by term: the constant multiple $2$ carries through onto $\\cos x$, and $x$ gives $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the derivative equal to zero",
+        "workingLatex": "2\\cos x + 1 = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve this equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for cos x",
+        "workingLatex": "\\cos x = -\\frac{1}{2}",
+        "explanation": "Rearranging isolates $\\cos x$; we now find all angles in the interval with this cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the solutions in [0, 2pi]",
+        "workingLatex": "x = \\frac{2\\pi}{3}, \\quad x = \\frac{4\\pi}{3}",
+        "explanation": "Cosine is $-\\tfrac{1}{2}$ in the second and third quadrants. The related angle is $\\tfrac{\\pi}{3}$, giving $\\pi-\\tfrac{\\pi}{3}=\\tfrac{2\\pi}{3}$ and $\\pi+\\tfrac{\\pi}{3}=\\tfrac{4\\pi}{3}$. Both lie in $[0,2\\pi]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y at x = 2pi/3",
+        "workingLatex": "y = 2\\sin\\frac{2\\pi}{3} + \\frac{2\\pi}{3} = 2\\left(\\frac{\\sqrt{3}}{2}\\right) + \\frac{2\\pi}{3} = \\sqrt{3} + \\frac{2\\pi}{3}",
+        "explanation": "Substitute back into the curve. Since $\\sin\\tfrac{2\\pi}{3}=\\tfrac{\\sqrt{3}}{2}$, the $2$ cancels the denominator to give the exact height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y at x = 4pi/3",
+        "workingLatex": "y = 2\\sin\\frac{4\\pi}{3} + \\frac{4\\pi}{3} = 2\\left(-\\frac{\\sqrt{3}}{2}\\right) + \\frac{4\\pi}{3} = -\\sqrt{3} + \\frac{4\\pi}{3}",
+        "explanation": "Here $\\sin\\tfrac{4\\pi}{3}=-\\tfrac{\\sqrt{3}}{2}$, so the first term is negative, giving the second exact height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Collect the coordinates",
+        "workingLatex": "\\left(\\frac{2\\pi}{3},\\; \\sqrt{3} + \\frac{2\\pi}{3}\\right), \\quad \\left(\\frac{4\\pi}{3},\\; -\\sqrt{3} + \\frac{4\\pi}{3}\\right)",
+        "explanation": "Pairing each $x$ with its $y$ gives the two stationary points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the result",
+        "workingLatex": "\\text{Two stationary points on } [0,\\,2\\pi]",
+        "explanation": "These are the exact coordinates of both stationary points on the given interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The stationary points are $\\left(\\dfrac{2\\pi}{3},\\; \\sqrt{3} + \\dfrac{2\\pi}{3}\\right)$ and $\\left(\\dfrac{4\\pi}{3},\\; -\\sqrt{3} + \\dfrac{4\\pi}{3}\\right)$."
+  }
+}

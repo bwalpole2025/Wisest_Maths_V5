@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "gradient",
+    "logarithm"
+  ],
+  "questionText": "A curve has equation $y = e^x + 3x$. Find, in exact form, the coordinates of the point on the curve at which the gradient is equal to $5$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise that the gradient is given by the derivative",
+        "workingLatex": "\\text{gradient} = \\frac{dy}{dx}",
+        "explanation": "The gradient at any point of the curve is the value of $\\tfrac{dy}{dx}$ there, so we differentiate first, then impose the condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standard derivatives",
+        "workingLatex": "\\frac{d}{dx}(e^x) = e^x, \\qquad \\frac{d}{dx}(3x) = 3",
+        "explanation": "$e^x$ is its own derivative, and the constant multiple $3x$ differentiates to $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = e^x + 3",
+        "explanation": "Adding the derivatives of the two terms gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the gradient equal to 5",
+        "workingLatex": "e^x + 3 = 5",
+        "explanation": "We want the point where the gradient is $5$, so we set the derivative equal to $5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Isolate the exponential",
+        "workingLatex": "e^x = 2",
+        "explanation": "Subtracting $3$ from both sides leaves a simple exponential equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve by taking natural logarithms",
+        "workingLatex": "x = \\ln 2",
+        "explanation": "Since $\\ln$ is the inverse of $e^x$, taking $\\ln$ of both sides gives the exact $x$-coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{\\ln 2} + 3\\ln 2",
+        "explanation": "Substitute $x=\\ln 2$ into the original curve equation $y=e^x+3x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify using e^{ln 2} = 2",
+        "workingLatex": "y = 2 + 3\\ln 2",
+        "explanation": "Because $e$ and $\\ln$ are inverse operations, $e^{\\ln 2}=2$, leaving the exact $y$-coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the coordinates",
+        "workingLatex": "(\\ln 2,\\ 2 + 3\\ln 2)",
+        "explanation": "This is the required point in exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the gradient at this point",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\ln 2} = e^{\\ln 2} + 3 = 2 + 3 = 5 \\ \\checkmark",
+        "explanation": "The gradient is indeed $5$, confirming the point is correct.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(\\ln 2,\\ 2 + 3\\ln 2)$."
+  }
+}

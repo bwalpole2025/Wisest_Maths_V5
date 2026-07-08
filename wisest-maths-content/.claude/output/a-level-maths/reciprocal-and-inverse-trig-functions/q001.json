@@ -5,60 +5,67 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
-  "marks": 2,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "written",
   "tags": [
     "reciprocal trig",
-    "secant",
-    "definition"
+    "definitions",
+    "cot"
   ],
-  "questionText": "Write down the definition of $\\sec\\theta$ in terms of $\\cos\\theta$, and state the values of $\\theta$ for which it is undefined.",
+  "questionText": "Write down the definitions of the three reciprocal trigonometric functions $\\sec\\theta$, $\\operatorname{cosec}\\theta$ and $\\cot\\theta$ in terms of $\\cos\\theta$, $\\sin\\theta$ and $\\tan\\theta$. Give also the alternative form of $\\cot\\theta$ in terms of $\\sin\\theta$ and $\\cos\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the three reciprocal trig functions",
-        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\csc\\theta = \\frac{1}{\\sin\\theta}, \\quad \\cot\\theta = \\frac{1}{\\tan\\theta}",
-        "explanation": "Listing all three reciprocal functions together helps you see the pattern: each one is simply one divided by a standard trig function. This makes it easy to pick out the one you need.",
+        "description": "State the definition of secant",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Secant is the reciprocal of cosine. A helpful memory aid is that the third letter of $\\sec$ is the 'c' of $\\cos$, telling us which ratio it pairs with.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Identify which cofunction secant reciprocates",
-        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
-        "explanation": "A useful memory aid is that secant pairs with cosine, even though it starts with the same letters as sine. The third letters line up: se-C-ant with C-osine.",
+        "description": "State the definition of cosecant",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "Cosecant is the reciprocal of sine. The third letter of $\\operatorname{cosec}$ is the 's' of $\\sin$, so it pairs with the sine ratio.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Determine when the definition breaks down",
-        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\sec\\theta \\text{ undefined}",
-        "explanation": "Because secant is one over cosine, it has no value wherever the denominator cosine is zero. Division by zero is not allowed, so those angles must be excluded.",
+        "description": "State the definition of cotangent",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta}",
+        "explanation": "Cotangent is the reciprocal of tangent, matching the pattern of the other two: the 't' of $\\cot$ pairs it with $\\tan$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the angles where cosine is zero",
-        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\theta = 90^\\circ + 180^\\circ n = \\tfrac{\\pi}{2} + \\pi n",
-        "explanation": "Cosine crosses zero at $90^\\circ$ and then every $180^\\circ$ after that. Writing this with an integer $n$ captures all such angles in one compact statement.",
+        "description": "Rewrite cot using sine and cosine",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{1}{\\tfrac{\\sin\\theta}{\\cos\\theta}} = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Because $\\tan\\theta=\\tfrac{\\sin\\theta}{\\cos\\theta}$, taking its reciprocal simply flips the fraction. This gives the very useful second form $\\cot\\theta=\\tfrac{\\cos\\theta}{\\sin\\theta}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the size of secant near these angles",
-        "workingLatex": "|\\cos\\theta| \\le 1 \\;\\Rightarrow\\; |\\sec\\theta| \\ge 1",
-        "explanation": "Since cosine never exceeds $1$ in size, its reciprocal never drops below $1$ in size. This tells you secant always lives outside the band between $-1$ and $1$.",
+        "description": "Summarise the pairing",
+        "workingLatex": "\\sec\\theta \\leftrightarrow \\cos\\theta, \\quad \\operatorname{cosec}\\theta \\leftrightarrow \\sin\\theta, \\quad \\cot\\theta \\leftrightarrow \\tan\\theta",
+        "explanation": "Grouping the three reciprocal relationships together makes the structure clear: each new function is just one divided by an old one.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final definition and restriction",
-        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\theta \\ne \\tfrac{\\pi}{2} + \\pi n",
-        "explanation": "This gives the complete answer: the definition together with the excluded angles, which is exactly what the question asks for.",
+        "description": "Note where each is undefined",
+        "workingLatex": "\\cos\\theta = 0 \\Rightarrow \\sec\\theta \\text{ undefined}; \\quad \\sin\\theta = 0 \\Rightarrow \\operatorname{cosec}\\theta, \\ \\cot\\theta \\text{ undefined}",
+        "explanation": "A reciprocal is undefined wherever its denominator is zero. So $\\sec\\theta$ fails when $\\cos\\theta=0$, while $\\operatorname{cosec}\\theta$ and $\\cot\\theta$ fail when $\\sin\\theta=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the collected definitions",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}, \\quad \\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "These are the definitions to memorise; every later result about reciprocal trig functions is built directly from them.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec\\theta = \\dfrac{1}{\\cos\\theta}$, undefined when $\\theta = \\tfrac{\\pi}{2} + \\pi n$ (i.e. $\\cos\\theta = 0$)."
+    "finalAnswer": "$\\sec\\theta=\\dfrac{1}{\\cos\\theta}$, $\\operatorname{cosec}\\theta=\\dfrac{1}{\\sin\\theta}$, and $\\cot\\theta=\\dfrac{1}{\\tan\\theta}=\\dfrac{\\cos\\theta}{\\sin\\theta}$."
   }
 }

@@ -4,82 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "modelling",
-    "inequality"
+    "solving equations",
+    "radians"
   ],
-  "questionText": "The depth of water in a harbour is $D(t) = 6\\sin(30t)^\\circ + 8\\cos(30t)^\\circ + 12$ metres, where $t$ is the time in hours after midnight. Using an R-form, find the maximum depth and the values of $t$ in $0 \\le t < 12$ for which $D \\ge 17$ m.",
+  "questionText": "Express $\\sqrt{3}\\,\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence solve $\\sqrt{3}\\,\\sin\\theta + \\cos\\theta = 1$ for $0 \\le \\theta \\le 2\\pi$, giving your answers exactly.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the oscillating part in R-form",
-        "workingLatex": "6\\sin x + 8\\cos x = 10\\sin(x + \\alpha), \\quad x = 30t",
-        "explanation": "Combining the two terms simplifies both the maximum and the inequality.",
+        "description": "Set up the identity",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta + \\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "The expression is a positive sine plus a positive cosine, so the single-wave target $R\\sin(\\theta+\\alpha)$ fits perfectly. We expand and compare to find $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{6^2 + 8^2} = 10, \\quad \\tan\\alpha = \\frac{8}{6} \\;\\Rightarrow\\; \\alpha \\approx 53.13^\\circ",
-        "explanation": "The amplitude is $10$ and the phase is about $53.13^\\circ$.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta+\\alpha)$ and multiplying by $R$ produces a $\\sin\\theta$ term plus a $\\cos\\theta$ term, exactly the form of the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the depth model",
-        "workingLatex": "D = 10\\sin(30t + 53.13^\\circ) + 12",
-        "explanation": "Substituting the R-form gives a single-sine model.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = \\sqrt{3}, \\qquad R\\sin\\alpha = 1",
+        "explanation": "Equating the amount of $\\sin\\theta$ and of $\\cos\\theta$ on both sides gives the two equations that define $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the maximum depth",
-        "workingLatex": "D_{\\max} = 10 + 12 = 22 \\text{ m}",
-        "explanation": "The maximum occurs when the sine equals $1$.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{(\\sqrt{3})^2 + 1^2} = \\sqrt{4} = 2",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=3+1=4$. Taking the positive root gives the clean amplitude $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set up the inequality",
-        "workingLatex": "10\\sin(30t + 53.13^\\circ) + 12 \\ge 17",
-        "explanation": "We want the times when the depth is at least $17$ m.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{\\sqrt{3}} \\Rightarrow \\alpha = \\dfrac{\\pi}{6}",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\dfrac{1}{\\sqrt{3}}$. Both coefficients are positive, so $\\alpha$ is acute, and the exact acute angle with this tangent is $\\dfrac{\\pi}{6}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Simplify",
-        "workingLatex": "\\sin(30t + 53.13^\\circ) \\ge 0.5",
-        "explanation": "Subtracting $12$ and dividing by $10$ isolates the sine.",
+        "description": "State the R-form",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta + \\cos\\theta = 2\\sin\\!\\left(\\theta + \\dfrac{\\pi}{6}\\right)",
+        "explanation": "Combining amplitude and phase gives a single sine wave of amplitude $2$, so the expression varies between $-2$ and $2$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Solve the boundary equation",
-        "workingLatex": "30t + 53.13^\\circ = 30^\\circ, 150^\\circ, 390^\\circ, \\ldots",
-        "explanation": "Sine equals $0.5$ at these angles; the sine is at or above $0.5$ between $30^\\circ$ and $150^\\circ$ in each cycle.",
+        "description": "Rewrite the equation",
+        "workingLatex": "2\\sin\\!\\left(\\theta+\\dfrac{\\pi}{6}\\right) = 1 \\Rightarrow \\sin\\!\\left(\\theta+\\dfrac{\\pi}{6}\\right) = \\dfrac{1}{2}",
+        "explanation": "Replacing the two-term expression by the single wave and dividing by $2$ reduces the problem to a standard sine equation with a well-known value.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Use the relevant cycle",
-        "workingLatex": "30t + 53.13^\\circ \\in [150^\\circ, 390^\\circ] \\text{ (first valid band with } t \\ge 0)",
-        "explanation": "Since $30t + 53.13^\\circ$ starts at $53.13^\\circ$, the first band where the sine is $\\ge 0.5$ runs from $150^\\circ$ up to $390^\\circ$ (i.e. $30^\\circ$ of the next cycle).",
+        "description": "Shift the interval",
+        "workingLatex": "0 \\le \\theta \\le 2\\pi \\Rightarrow \\dfrac{\\pi}{6} \\le \\theta+\\dfrac{\\pi}{6} \\le \\dfrac{13\\pi}{6}",
+        "explanation": "As we are solving for $\\theta+\\dfrac{\\pi}{6}$, we add $\\dfrac{\\pi}{6}$ to both ends of the interval so that every solution is captured.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Solve for t",
-        "workingLatex": "30t \\in [96.87^\\circ, 336.87^\\circ] \\;\\Rightarrow\\; t \\in [3.23, 11.23]",
-        "explanation": "Subtracting the phase and dividing by $30$ gives the time window when the depth is at least $17$ m.",
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta+\\dfrac{\\pi}{6} = \\dfrac{\\pi}{6},\\; \\dfrac{5\\pi}{6},\\; \\dfrac{13\\pi}{6}",
+        "explanation": "The principal value $\\arcsin\\dfrac{1}{2}=\\dfrac{\\pi}{6}$; sine is also positive in the second quadrant giving $\\pi-\\dfrac{\\pi}{6}=\\dfrac{5\\pi}{6}$; adding $2\\pi$ to the principal value gives $\\dfrac{13\\pi}{6}$, still inside the shifted interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 0,\\; \\dfrac{2\\pi}{3},\\; 2\\pi",
+        "explanation": "Subtracting $\\dfrac{\\pi}{6}$ from each shifted value undoes the shift. All three lie in $0 \\le \\theta \\le 2\\pi$, so all are retained.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the solutions",
+        "workingLatex": "\\sqrt{3}\\sin\\tfrac{2\\pi}{3} + \\cos\\tfrac{2\\pi}{3} = \\sqrt{3}\\cdot\\tfrac{\\sqrt{3}}{2} - \\tfrac{1}{2} = 1",
+        "explanation": "Checking the non-trivial value $\\dfrac{2\\pi}{3}$ returns $1$, and the endpoints $0$ and $2\\pi$ both give $\\sqrt{3}(0)+1=1$, so all three solutions are confirmed.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum depth $22$ m; $D \\ge 17$ m for approximately $3.23 \\le t \\le 11.23$ hours."
+    "finalAnswer": "$\\sqrt{3}\\,\\sin\\theta + \\cos\\theta = 2\\sin\\!\\left(\\theta+\\dfrac{\\pi}{6}\\right)$, and the equation is satisfied by $\\theta = 0,\\; \\dfrac{2\\pi}{3},\\; 2\\pi$."
   }
 }

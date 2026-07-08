@@ -5,68 +5,109 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "proof",
   "tags": [
-    "compound angles",
-    "given ratios",
-    "quadrants",
-    "sine"
+    "double angle",
+    "proof",
+    "identity"
   ],
-  "questionText": "Given that $\\cos A = -\\dfrac{4}{5}$ with $A$ in the second quadrant, and $\\tan B = \\dfrac{5}{12}$ with $B$ in the third quadrant, find the exact value of $\\sin(A - B)$.",
+  "questionText": "Prove the identity $\\dfrac{\\cos 2\\theta}{1 + \\sin 2\\theta} \\equiv \\dfrac{\\cos\\theta - \\sin\\theta}{\\cos\\theta + \\sin\\theta}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the compound angle formula",
-        "workingLatex": "\\sin(A - B) = \\sin A\\cos B - \\cos A\\sin B",
-        "explanation": "We need $\\sin A$, $\\cos B$ and $\\sin B$; the quadrant data fixes every sign.",
+        "description": "State the plan",
+        "workingLatex": "\\text{Rewrite the numerator and denominator of the LHS separately, then factor and cancel.}",
+        "explanation": "The neatest route is to factorise the top and bottom of the left-hand side so a common factor cancels, leaving the right-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find sin A",
-        "workingLatex": "\\sin A = +\\sqrt{1 - \\tfrac{16}{25}} = \\frac{3}{5}",
-        "explanation": "In the second quadrant sine is positive, so $\\sin A = \\frac{3}{5}$.",
+        "description": "Rewrite the numerator with a double-angle form",
+        "workingLatex": "\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta",
+        "explanation": "Of the three versions of $\\cos 2\\theta$, the $\\cos^2\\theta - \\sin^2\\theta$ form is ideal because it factorises as a difference of two squares.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up B from its tangent",
-        "workingLatex": "\\tan B = \\frac{5}{12} \\;\\Rightarrow\\; \\text{ref triangle } 5,12,13",
-        "explanation": "A tangent of $\\frac{5}{12}$ corresponds to a $5$-$12$-$13$ triangle; the quadrant sets the signs.",
+        "description": "Factorise the numerator",
+        "workingLatex": "\\cos^2\\theta - \\sin^2\\theta = (\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)",
+        "explanation": "Treating it as $X^2 - Y^2 = (X-Y)(X+Y)$ produces the factor $(\\cos\\theta+\\sin\\theta)$ that we expect to cancel later.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Assign signs for the third quadrant",
-        "workingLatex": "\\sin B = -\\frac{5}{13}, \\quad \\cos B = -\\frac{12}{13}",
-        "explanation": "In the third quadrant both sine and cosine are negative, giving these values.",
+        "description": "Rewrite the denominator with the sine double-angle form",
+        "workingLatex": "1 + \\sin 2\\theta = 1 + 2\\sin\\theta\\cos\\theta",
+        "explanation": "Replacing $\\sin 2\\theta$ with $2\\sin\\theta\\cos\\theta$ exposes a cross term that hints at a perfect square.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute all values",
-        "workingLatex": "\\sin(A - B) = \\frac{3}{5}\\left(-\\frac{12}{13}\\right) - \\left(-\\frac{4}{5}\\right)\\left(-\\frac{5}{13}\\right)",
-        "explanation": "Inserting the four values, carefully tracking signs.",
+        "description": "Replace 1 using Pythagoras",
+        "workingLatex": "1 = \\sin^2\\theta + \\cos^2\\theta",
+        "explanation": "Writing the constant $1$ as $\\sin^2\\theta+\\cos^2\\theta$ is the key trick: it supplies the square terms needed to complete a perfect square.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Multiply out",
-        "workingLatex": "= -\\frac{36}{65} - \\frac{20}{65}",
-        "explanation": "The first product is negative; the second is a negative times a negative times the leading minus, giving another negative.",
+        "description": "Assemble the denominator",
+        "workingLatex": "1 + \\sin 2\\theta = \\sin^2\\theta + 2\\sin\\theta\\cos\\theta + \\cos^2\\theta",
+        "explanation": "Combining the pieces gives three terms in the pattern $y^2 + 2xy + x^2$, a perfect square waiting to be recognised.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Combine",
-        "workingLatex": "= -\\frac{56}{65}",
-        "explanation": "Adding the two terms gives $-\\frac{56}{65}$.",
+        "description": "Factorise the denominator",
+        "workingLatex": "\\sin^2\\theta + 2\\sin\\theta\\cos\\theta + \\cos^2\\theta = (\\cos\\theta + \\sin\\theta)^2",
+        "explanation": "The three terms factor as $(\\cos\\theta+\\sin\\theta)^2$, which shares the factor $(\\cos\\theta+\\sin\\theta)$ with the numerator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rewrite the whole fraction",
+        "workingLatex": "\\frac{\\cos 2\\theta}{1 + \\sin 2\\theta} = \\frac{(\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)}{(\\cos\\theta + \\sin\\theta)^2}",
+        "explanation": "With both parts factorised, the common factor $(\\cos\\theta+\\sin\\theta)$ is now clearly visible top and bottom.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Cancel the common factor",
+        "workingLatex": "= \\frac{\\cos\\theta - \\sin\\theta}{\\cos\\theta + \\sin\\theta}",
+        "explanation": "Dividing top and bottom by $(\\cos\\theta+\\sin\\theta)$ leaves exactly the right-hand side. This is valid wherever $\\cos\\theta+\\sin\\theta\\neq0$, which is required for the fraction to exist anyway.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Note the domain",
+        "workingLatex": "\\cos\\theta + \\sin\\theta \\neq 0 \\ \\Rightarrow\\ 1 + \\sin 2\\theta \\neq 0",
+        "explanation": "The cancellation and the original left-hand side both require $\\cos\\theta+\\sin\\theta\\neq0$, so the identity is stated on exactly the values where both sides are defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Numerical check at theta = 20 degrees",
+        "workingLatex": "\\frac{\\cos 40^\\circ}{1 + \\sin 40^\\circ} \\approx \\frac{0.7660}{1.6428} = 0.4663",
+        "explanation": "Testing $\\theta = 20^\\circ$ gives the left-hand side as about $0.4663$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Compare with the right-hand side",
+        "workingLatex": "\\frac{\\cos 20^\\circ - \\sin 20^\\circ}{\\cos 20^\\circ + \\sin 20^\\circ} \\approx \\frac{0.5977}{1.2817} = 0.4663",
+        "explanation": "The right-hand side gives the same value, confirming the identity for this angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude",
+        "workingLatex": "\\frac{\\cos 2\\theta}{1 + \\sin 2\\theta} \\equiv \\frac{\\cos\\theta - \\sin\\theta}{\\cos\\theta + \\sin\\theta}",
+        "explanation": "Since each step was an exact equality on the common domain, the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin(A - B) = -\\dfrac{56}{65}$"
+    "finalAnswer": "Factorising gives $\\dfrac{(\\cos\\theta-\\sin\\theta)(\\cos\\theta+\\sin\\theta)}{(\\cos\\theta+\\sin\\theta)^2}$; cancelling the common factor $(\\cos\\theta+\\sin\\theta)$ leaves $\\dfrac{\\cos\\theta - \\sin\\theta}{\\cos\\theta + \\sin\\theta}$, proving the identity (for $\\cos\\theta+\\sin\\theta\\neq0$)."
   }
 }

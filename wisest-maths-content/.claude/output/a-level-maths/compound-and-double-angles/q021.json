@@ -4,68 +4,67 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
   "tags": [
-    "double angle",
-    "equations",
-    "factorising"
+    "compound angle",
+    "expand"
   ],
-  "questionText": "Solve $\\sin 2\\theta = \\sin\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Write $\\cos(A - B)$ in terms of $\\sin A$, $\\cos A$, $\\sin B$ and $\\cos B$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace the double angle",
-        "workingLatex": "2\\sin\\theta\\cos\\theta = \\sin\\theta",
-        "explanation": "Expanding $\\sin 2\\theta$ writes everything in terms of $\\theta$, which lets us factorise rather than divide.",
+        "description": "Identify the expression to expand",
+        "workingLatex": "\\cos(A - B)",
+        "explanation": "We are expanding a cosine of a difference, so the cosine compound-angle formula is the tool to reach for.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Move everything to one side",
-        "workingLatex": "2\\sin\\theta\\cos\\theta - \\sin\\theta = 0",
-        "explanation": "Rearranging prepares for factorising; dividing by $\\sin\\theta$ here would lose solutions.",
+        "description": "State both signed versions",
+        "workingLatex": "\\cos(A \\pm B) = \\cos A\\cos B \\mp \\sin A\\sin B",
+        "explanation": "The combined formula shows the sign on the right is the opposite of the sign inside the bracket, which is what the $\\mp$ symbol records.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Factor out sine",
-        "workingLatex": "\\sin\\theta(2\\cos\\theta - 1) = 0",
-        "explanation": "Taking out the common factor splits the equation into two independent cases.",
+        "description": "Select the minus-angle version",
+        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "For $A-B$ the inside sign is minus, so the right-hand sign becomes plus.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve the first factor",
-        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\theta = 0^\\circ, 180^\\circ",
-        "explanation": "Sine is zero at $0^\\circ$ and $180^\\circ$ in the interval.",
+        "description": "Note the structure",
+        "workingLatex": "\\cos(A - B) = \\underbrace{\\cos A\\cos B}_{\\text{cos-cos}} + \\underbrace{\\sin A\\sin B}_{\\text{sin-sin}}",
+        "explanation": "The pattern is easy to remember: cosine of a combined angle is 'cos times cos' plus-or-minus 'sin times sin'.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the second factor",
-        "workingLatex": "2\\cos\\theta - 1 = 0 \\;\\Rightarrow\\; \\cos\\theta = \\tfrac{1}{2}",
-        "explanation": "Setting the bracket to zero gives cosine equal to one half.",
+        "description": "Verify with a known value",
+        "workingLatex": "\\cos(90^\\circ - B) = \\cos 90^\\circ\\cos B + \\sin 90^\\circ\\sin B = 0 + \\sin B = \\sin B",
+        "explanation": "As a check, set $A=90^\\circ$. Using $\\cos 90^\\circ=0$ and $\\sin 90^\\circ=1$ the formula gives $\\sin B$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find those angles",
-        "workingLatex": "\\theta = 60^\\circ, 300^\\circ",
-        "explanation": "Cosine one half occurs at $60^\\circ$ and $300^\\circ$.",
+        "description": "Confirm against the co-function identity",
+        "workingLatex": "\\cos(90^\\circ - B) = \\sin B",
+        "explanation": "This matches the familiar co-function relationship $\\cos(90^\\circ-B)=\\sin B$, confirming the plus sign is correct.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 0^\\circ, 60^\\circ, 180^\\circ, 300^\\circ",
-        "explanation": "Combining both cases gives four solutions; factoring ensured the $\\sin\\theta = 0$ roots were kept.",
+        "description": "State the expansion",
+        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "This is the required expansion written entirely in terms of $\\sin A$, $\\cos A$, $\\sin B$ and $\\cos B$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 0^\\circ, 60^\\circ, 180^\\circ, 300^\\circ$"
+    "finalAnswer": "$\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B$."
   }
 }

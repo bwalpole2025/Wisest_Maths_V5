@@ -4,54 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "minimum height",
-    "optimisation"
+    "greatest height",
+    "speed",
+    "horizontal motion"
   ],
-  "questionText": "A particle has position $x = t$, $y = t^2 - 4t + 5$ (metres) at time $t$ seconds. Find the minimum height reached and the time at which it occurs.",
+  "questionText": "A firework's position $t$ seconds after launch is modelled by $x = t^{2}$ and $y = 12t - t^{3}$, with distances in metres. Find the time at which the firework reaches its greatest height, the value of that height, and the speed of the firework at that instant.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate the height",
-        "workingLatex": "\\frac{dy}{dt} = 2t - 4",
-        "explanation": "The minimum height is where the vertical rate of change is zero.",
+        "description": "Differentiate the horizontal position",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t",
+        "explanation": "The horizontal velocity will be needed for the speed later, so we find it now.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the time",
-        "workingLatex": "2t - 4 = 0 \\;\\Rightarrow\\; t = 2",
-        "explanation": "Solving gives the candidate time for the minimum.",
+        "description": "Differentiate the height",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 12 - 3t^{2}",
+        "explanation": "The vertical velocity $\\dot{y}$ tells us how fast the firework is rising or falling. At the top of the flight it is momentarily zero.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Confirm it is a minimum",
-        "workingLatex": "\\frac{d^2y}{dt^2} = 2 > 0 \\;\\checkmark",
-        "explanation": "A positive second derivative confirms a minimum.",
+        "description": "Set the vertical velocity to zero",
+        "workingLatex": "12 - 3t^{2} = 0",
+        "explanation": "The greatest height is reached when the firework stops rising and is about to fall, so its vertical velocity is zero at that instant.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the minimum height",
-        "workingLatex": "y = 2^2 - 4(2) + 5 = 4 - 8 + 5 = 1",
-        "explanation": "Substituting $t = 2$ into the height equation.",
+        "description": "Solve for the time",
+        "workingLatex": "t^{2} = 4 \\;\\Rightarrow\\; t = 2 \\quad (\\text{reject } t = -2,\\ t \\ge 0)",
+        "explanation": "Only the positive root makes sense because $t$ measures time after launch. The negative solution is discarded as it lies before launch.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\text{min height} = 1 \\text{ m at } t = 2 \\text{ s}",
-        "explanation": "The lowest the particle goes is $1$ m, at $t = 2$ s.",
+        "description": "Find the greatest height",
+        "workingLatex": "y = 12(2) - (2)^{3} = 24 - 8 = 16",
+        "explanation": "Substituting the time back into the height equation gives the actual maximum height reached.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the velocity components at t = 2",
+        "workingLatex": "\\dot{x} = 2(2) = 4, \\qquad \\dot{y} = 12 - 3(2)^{2} = 0",
+        "explanation": "At the top the vertical velocity is zero, but the firework is still drifting sideways, so its horizontal velocity is not zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write down the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "Speed combines the two velocity components using Pythagoras, since the horizontal and vertical directions are perpendicular.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{4^{2} + 0^{2}} = \\sqrt{16} = 4",
+        "explanation": "With no vertical component, the speed at the top of the flight is just the horizontal speed, $4$ m s$^{-1}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Collect the results",
+        "workingLatex": "t = 2, \\quad y = 16, \\quad \\text{speed} = 4",
+        "explanation": "We now have the moment of greatest height, the height itself, and how fast the firework is moving there.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Minimum height $= 1$ m at $t = 2$ s."
+    "finalAnswer": "The firework reaches its greatest height at $t = 2$ s, rising to $16$ m, and its speed there is $4$ m s$^{-1}$ (purely horizontal)."
   }
 }

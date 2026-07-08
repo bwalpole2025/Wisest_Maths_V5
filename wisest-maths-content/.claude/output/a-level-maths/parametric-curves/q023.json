@@ -5,60 +5,81 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "quadratic"
+    "eliminating the parameter",
+    "trig identity",
+    "ellipse"
   ],
-  "questionText": "A curve has parametric equations $x = 1 + t$, $y = 1 - t^2$. Find the Cartesian equation and the coordinates of the highest point of the curve.",
+  "questionText": "A curve has parametric equations $x = 4\\cos t$ and $y = 3\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve and state the lengths of its semi-axes.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject",
-        "workingLatex": "t = x - 1",
-        "explanation": "The linear $x$-equation gives $t$ in terms of $x$.",
+        "description": "Decide on a strategy",
+        "workingLatex": "x = 4\\cos t, \\qquad y = 3\\sin t",
+        "explanation": "Both equations involve the parameter $t$ through a trig function. Because $\\cos t$ and $\\sin t$ are linked by a Pythagorean identity, the plan is to isolate each trig function and then combine them so that $t$ disappears.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the y-equation",
-        "workingLatex": "y = 1 - (x - 1)^2",
-        "explanation": "Replacing $t$ removes the parameter.",
+        "description": "Make cos t the subject",
+        "workingLatex": "\\cos t = \\dfrac{x}{4}",
+        "explanation": "Dividing the first equation by $4$ leaves $\\cos t$ alone. This is the form we can drop straight into an identity.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the Cartesian equation",
-        "workingLatex": "y = 1 - (x - 1)^2",
-        "explanation": "This is a downward parabola in completed-square form.",
+        "description": "Make sin t the subject",
+        "workingLatex": "\\sin t = \\dfrac{y}{3}",
+        "explanation": "Doing the same to the second equation isolates $\\sin t$. Now every trig function is expressed purely in terms of $x$ or $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the vertex",
-        "workingLatex": "\\text{vertex at } x - 1 = 0 \\;\\Rightarrow\\; x = 1",
-        "explanation": "The squared term is zero, and hence $y$ is greatest, when $x = 1$.",
+        "description": "Recall the Pythagorean identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "This identity is true for every value of $t$, so it is the bridge that removes the parameter entirely while keeping the relationship between $x$ and $y$ exact.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the maximum y",
-        "workingLatex": "y = 1 - 0 = 1",
-        "explanation": "At $x = 1$ the subtracted square is zero, so $y = 1$.",
+        "description": "Substitute the expressions",
+        "workingLatex": "\\left( \\dfrac{x}{4} \\right)^{2} + \\left( \\dfrac{y}{3} \\right)^{2} = 1",
+        "explanation": "Replacing $\\cos t$ with $\\dfrac{x}{4}$ and $\\sin t$ with $\\dfrac{y}{3}$ turns the identity into an equation containing only $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the highest point",
-        "workingLatex": "(1, 1)",
-        "explanation": "The parabola opens downward, so its vertex $(1,1)$ is the highest point.",
+        "description": "Square each fraction",
+        "workingLatex": "\\dfrac{x^{2}}{16} + \\dfrac{y^{2}}{9} = 1",
+        "explanation": "Squaring the numerators and denominators separately clears the brackets and gives the tidy standard form of the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the denominators as squares",
+        "workingLatex": "\\dfrac{x^{2}}{4^{2}} + \\dfrac{y^{2}}{3^{2}} = 1",
+        "explanation": "Rewriting $16$ as $4^{2}$ and $9$ as $3^{2}$ exposes the semi-axis lengths directly, because this now matches the template $\\dfrac{x^{2}}{a^{2}} + \\dfrac{y^{2}}{b^{2}} = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Identify the curve",
+        "workingLatex": "a = 4, \\qquad b = 3",
+        "explanation": "Matching to the standard form shows this is an ellipse centred at the origin, with $a = 4$ controlling the horizontal reach and $b = 3$ the vertical reach.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the extent in each direction",
+        "workingLatex": "-4 \\le x \\le 4, \\qquad -3 \\le y \\le 3",
+        "explanation": "Since $\\cos t$ and $\\sin t$ never leave $[-1,1]$, $x$ stays within $\\pm 4$ and $y$ within $\\pm 3$, confirming the semi-axes are $4$ horizontally and $3$ vertically.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = 1 - (x-1)^2$; highest point $(1, 1)$."
+    "finalAnswer": "The Cartesian equation is $\\dfrac{x^{2}}{16} + \\dfrac{y^{2}}{9} = 1$, an ellipse centred at the origin with a horizontal semi-axis of length $4$ and a vertical semi-axis of length $3$."
   }
 }

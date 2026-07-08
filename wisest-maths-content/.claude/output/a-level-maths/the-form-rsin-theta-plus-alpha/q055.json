@@ -8,50 +8,114 @@
   "marks": 7,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "range",
-    "values of k"
+    "modelling",
+    "ferris wheel"
   ],
-  "questionText": "Find the set of values of $k$ for which the equation $7\\sin\\theta + 24\\cos\\theta = k$ has at least one solution.",
+  "questionText": "A capsule on a large observation wheel has height $h(t) = 35 + 20\\sin(12t)^\\circ + 21\\cos(12t)^\\circ$ metres above the ground, where $t$ is the time in minutes after the capsule passes a marker and $0 \\le t \\le 30$. (a) Express $20\\sin(12t)^\\circ + 21\\cos(12t)^\\circ$ in the form $R\\sin(12t + \\alpha)^\\circ$, where $R > 0$ and $0^\\circ < \\alpha < 90^\\circ$. (b) Find the greatest and least heights of the capsule and the times at which they first occur. (c) Find the times during the ride at which the capsule is $50$ m above the ground, giving your answers in minutes to $2$ decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in R-form",
-        "workingLatex": "7\\sin\\theta + 24\\cos\\theta = 25\\sin(\\theta + \\alpha)",
-        "explanation": "The amplitude is $R = \\sqrt{49 + 576} = 25$.",
+        "description": "Separate the constant from the waves",
+        "workingLatex": "h(t) = 35 + \\big(20\\sin(12t)^\\circ + 21\\cos(12t)^\\circ\\big)",
+        "explanation": "The $35$ is the height of the centre of the wheel; the two wave terms describe the capsule rising and falling about that centre. We combine the waves first.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the range of the expression",
-        "workingLatex": "-25 \\le 25\\sin(\\theta + \\alpha) \\le 25",
-        "explanation": "The expression takes every value between $-25$ and $25$ as $\\theta$ varies.",
+        "description": "Set up the identity to match",
+        "workingLatex": "20\\sin(12t)^\\circ + 21\\cos(12t)^\\circ \\equiv R\\sin(12t + \\alpha)",
+        "explanation": "Writing the two terms as one wave lets us find the true amplitude of the capsule's motion by expanding and comparing coefficients.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Relate to k",
-        "workingLatex": "k = 25\\sin(\\theta + \\alpha)",
-        "explanation": "A solution exists precisely when $k$ is an achievable value of the expression.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(12t + \\alpha) = R\\cos\\alpha\\,\\sin(12t)^\\circ + R\\sin\\alpha\\,\\cos(12t)^\\circ",
+        "explanation": "Expanding $\\sin(12t+\\alpha)$ gives a multiple of $\\sin(12t)$ plus a multiple of $\\cos(12t)$, matching the shape of the original expression.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the condition",
-        "workingLatex": "-25 \\le k \\le 25",
-        "explanation": "Any $k$ in this closed interval is attained, since sine is continuous and reaches every value in $[-1,1]$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 20, \\qquad R\\sin\\alpha = 21",
+        "explanation": "Matching the coefficients of $\\sin(12t)$ and $\\cos(12t)$ produces these two equations, which we solve for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the boundary cases",
-        "workingLatex": "k = \\pm 25 \\text{ give exactly one solution each}",
-        "explanation": "At the extremes the sine touches $\\pm 1$ once per revolution, so those values still count as having a solution.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{20^2 + 21^2} = \\sqrt{841} = 29",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2 = 400 + 441 = 841$, so the amplitude of the motion is $R = 29$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{21}{20} \\Rightarrow \\alpha = 46.40^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha = \\tfrac{21}{20}$, and both parts being positive makes $\\alpha$ acute, so $\\alpha = 46.40^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the full model",
+        "workingLatex": "h(t) = 35 + 29\\sin(12t + 46.40^\\circ)",
+        "explanation": "The height is a single wave of amplitude $29$ about a centre of $35$ m, so the capsule ranges between $6$ m and $64$ m above the ground.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the greatest height and its time",
+        "workingLatex": "h_{\\max} = 35 + 29 = 64\\text{ m at } 12t + 46.40^\\circ = 90^\\circ \\Rightarrow t = 3.63\\text{ min}",
+        "explanation": "The top of the ride is the centre height plus the amplitude, $64$ m, reached when the sine equals $1$, i.e. when the angle is $90^\\circ$. This first happens at $t \\approx 3.63$ min.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the least height and its time",
+        "workingLatex": "h_{\\min} = 35 - 29 = 6\\text{ m at } 12t + 46.40^\\circ = 270^\\circ \\Rightarrow t = 18.63\\text{ min}",
+        "explanation": "The lowest point is the centre minus the amplitude, $6$ m, reached when the sine equals $-1$, i.e. the angle is $270^\\circ$, at $t \\approx 18.63$ min.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set up the level equation",
+        "workingLatex": "35 + 29\\sin(12t + 46.40^\\circ) = 50 \\Rightarrow \\sin(12t + 46.40^\\circ) = \\dfrac{15}{29}",
+        "explanation": "For a height of $50$ m we set the model equal to $50$, subtract $35$ and divide by $29$, giving $\\sin(12t+46.40^\\circ)=\\tfrac{15}{29}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the base angle",
+        "workingLatex": "\\arcsin\\dfrac{15}{29} = 31.15^\\circ",
+        "explanation": "The principal value is $31.15^\\circ$. Since sine is positive in the first and second quadrants, we will also use $180^\\circ - 31.15^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Shift the search interval",
+        "workingLatex": "0 \\le t \\le 30 \\Rightarrow 46.40^\\circ \\le 12t + 46.40^\\circ \\le 406.40^\\circ",
+        "explanation": "The ride lasts $30$ minutes, so the shifted angle runs from $46.40^\\circ$ to $406.40^\\circ$. We look for solutions only in this range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "List all shifted-angle solutions",
+        "workingLatex": "12t + 46.40^\\circ = 148.85^\\circ,\\; 391.15^\\circ",
+        "explanation": "In $[46.40^\\circ, 406.40^\\circ]$ the solutions are $180^\\circ - 31.15^\\circ = 148.85^\\circ$ and $360^\\circ + 31.15^\\circ = 391.15^\\circ$. The base $31.15^\\circ$ lies below the interval and is rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{148.85 - 46.40}{12} = 8.54\\text{ min}, \\qquad t = \\dfrac{391.15 - 46.40}{12} = 28.73\\text{ min}",
+        "explanation": "Undoing the shift gives the two moments the capsule passes $50$ m: once on the way up early in the ride and once on the way down near the end.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$-25 \\le k \\le 25$"
+    "finalAnswer": "(a) $20\\sin(12t)^\\circ + 21\\cos(12t)^\\circ = 29\\sin(12t + 46.40^\\circ)$. (b) Greatest height $64$ m at $t = 3.63$ min; least height $6$ m at $t = 18.63$ min. (c) The capsule is $50$ m up at $t = 8.54$ min and $t = 28.73$ min."
   }
 }

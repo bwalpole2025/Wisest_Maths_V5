@@ -6,52 +6,66 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Easy",
   "marks": 4,
-  "answerType": "expression",
+  "answerType": "coordinates",
   "tags": [
     "parametric",
-    "cartesian",
-    "reciprocal"
+    "x-axis intercept",
+    "quadratic"
   ],
-  "questionText": "A curve has parametric equations $x = t$, $y = \\dfrac{1}{t}$ for $t \\ne 0$. Find the Cartesian equation and state what type of curve it is.",
+  "questionText": "A curve has parametric equations $x = 3t$ and $y = t^{2} - 4$. Find the coordinates of the points where the curve crosses the $x$-axis.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Substitute directly",
-        "workingLatex": "t = x",
-        "explanation": "Since $x = t$, the parameter equals $x$, so substitution is immediate.",
+        "description": "State the condition for the x-axis",
+        "workingLatex": "y = 0",
+        "explanation": "The curve meets the $x$-axis wherever its height is zero, so we set the $y$-coordinate equal to $0$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Replace t in the y-equation",
-        "workingLatex": "y = \\frac{1}{x}",
-        "explanation": "Substituting $t = x$ into $y = \\frac{1}{t}$ gives the Cartesian equation.",
+        "description": "Set the y-equation to zero",
+        "workingLatex": "t^{2} - 4 = 0",
+        "explanation": "Putting $y = 0$ into $y = t^{2} - 4$ gives an equation for the parameter $t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Note the excluded value",
-        "workingLatex": "x \\ne 0",
-        "explanation": "The restriction $t \\ne 0$ carries over to $x \\ne 0$, since the reciprocal is undefined there.",
+        "description": "Rearrange",
+        "workingLatex": "t^{2} = 4",
+        "explanation": "Adding $4$ to both sides isolates the squared term, ready to take the square root.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the curve",
-        "workingLatex": "xy = 1 \\text{ (rectangular hyperbola)}",
-        "explanation": "The equation $y = \\frac{1}{x}$, or $xy = 1$, is a rectangular hyperbola with the axes as asymptotes.",
+        "description": "Solve for t",
+        "workingLatex": "t = \\pm 2",
+        "explanation": "A square equal to $4$ has two square roots, $+2$ and $-2$, so there are two values of $t$ and hence two crossing points.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "y = \\frac{1}{x}, \\; x \\ne 0",
-        "explanation": "This is the required Cartesian equation with its domain restriction.",
+        "description": "Find x for t = 2",
+        "workingLatex": "t = 2 \\Rightarrow x = 3(2) = 6",
+        "explanation": "Putting $t = 2$ into $x = 3t$ gives the horizontal position of the first crossing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find x for t = -2",
+        "workingLatex": "t = -2 \\Rightarrow x = 3(-2) = -6",
+        "explanation": "Putting $t = -2$ into $x = 3t$ gives the second crossing position.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State both points",
+        "workingLatex": "(6,\\, 0) \\quad \\text{and} \\quad (-6,\\, 0)",
+        "explanation": "Both points lie on the $x$-axis, so each has $y = 0$; the curve crosses at these two points.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = \\dfrac{1}{x}$ ($x \\ne 0$), a rectangular hyperbola."
+    "finalAnswer": "The curve crosses the $x$-axis at $(6,\\, 0)$ and $(-6,\\, 0)$."
   }
 }

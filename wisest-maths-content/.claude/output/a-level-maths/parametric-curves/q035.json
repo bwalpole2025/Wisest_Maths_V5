@@ -4,54 +4,89 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "expression",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "trig product"
+    "eliminating the parameter",
+    "root",
+    "domain"
   ],
-  "questionText": "A curve has parametric equations $x = \\cos\\theta$, $y = \\sin\\theta\\cos\\theta$. Show that $y^2 = x^2(1 - x^2)$.",
+  "questionText": "A curve has parametric equations $x = \\sqrt{t}$ and $y = 4t - 5$, where $t \\geq 0$. Find a Cartesian equation of the curve, and state the domain of $x$ and the range of $y$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Substitute x for cosine",
-        "workingLatex": "y = \\sin\\theta\\cos\\theta = x\\sin\\theta",
-        "explanation": "Since $x = \\cos\\theta$, one factor of $y$ becomes $x$; the sine factor remains.",
+        "description": "Rearrange the root equation for t",
+        "workingLatex": "x = \\sqrt{t} \\implies x^{2} = t",
+        "explanation": "Squaring both sides undoes the square root and gives $t$ in terms of $x$. Remember that $\\sqrt{t}$ denotes the non-negative root, a fact we will use for the domain.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Square both sides",
-        "workingLatex": "y^2 = x^2\\sin^2\\theta",
-        "explanation": "Squaring lets us convert the remaining sine using the Pythagorean identity.",
+        "description": "Substitute t into the y equation",
+        "workingLatex": "y = 4t - 5 = 4x^{2} - 5",
+        "explanation": "Replacing $t$ with $x^{2}$ removes the parameter and gives a relation between $x$ and $y$ only.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Replace sine squared",
-        "workingLatex": "\\sin^2\\theta = 1 - \\cos^2\\theta = 1 - x^2",
-        "explanation": "The Pythagorean identity expresses $\\sin^2\\theta$ in terms of $x$.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = 4x^{2} - 5",
+        "explanation": "This is an upward parabola, but the parametrisation only traces part of it, which we pin down next.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute",
-        "workingLatex": "y^2 = x^2(1 - x^2)",
-        "explanation": "Replacing $\\sin^2\\theta$ gives the required Cartesian relationship.",
+        "description": "Work out which x-values occur",
+        "workingLatex": "x = \\sqrt{t} \\geq 0 \\quad \\text{for all } t \\geq 0",
+        "explanation": "A real square root is never negative, so $x$ can never be negative no matter how large $t$ becomes.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the domain",
-        "workingLatex": "-1 \\le x \\le 1",
-        "explanation": "Since $x = \\cos\\theta$, the values lie in $[-1, 1]$; squaring was necessary because $y$ can be positive or negative.",
+        "description": "State the domain",
+        "workingLatex": "x \\geq 0",
+        "explanation": "Only non-negative $x$ appears, so the domain of the curve is $x \\geq 0$: just the right-hand half of the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the smallest value of y",
+        "workingLatex": "x = 0 \\Rightarrow y = 4(0)^{2} - 5 = -5",
+        "explanation": "On the interval $x \\geq 0$ the term $4x^{2}$ is smallest at $x = 0$, giving the lowest $y$-value of $-5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Note the behaviour as x grows",
+        "workingLatex": "x \\to \\infty \\Rightarrow y = 4x^{2} - 5 \\to \\infty",
+        "explanation": "As $x$ increases without bound, $4x^{2}$ dominates and $y$ grows without limit, so there is no upper bound.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the range",
+        "workingLatex": "y \\geq -5",
+        "explanation": "The values of $y$ start at $-5$ (achieved at $x = 0$) and increase from there, so the range is $y \\geq -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the endpoint from the parameter",
+        "workingLatex": "t = 0 \\Rightarrow (x, y) = (0,\\,-5) \\;\\checkmark",
+        "explanation": "At $t = 0$ the parametric equations give the point $(0,\\,-5)$, matching the corner of our domain and range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Present the final result",
+        "workingLatex": "y = 4x^{2} - 5, \\quad x \\geq 0, \\quad y \\geq -5",
+        "explanation": "The Cartesian equation together with the domain and range fully describes the traced curve.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y^2 = x^2(1 - x^2)$"
+    "finalAnswer": "$y = 4x^{2} - 5$ for $x \\geq 0$ (the right-hand half of the parabola); the range is $y \\geq -5$."
   }
 }

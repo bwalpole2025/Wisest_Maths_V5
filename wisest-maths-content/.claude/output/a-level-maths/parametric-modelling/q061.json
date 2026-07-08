@@ -6,46 +6,122 @@
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "expression",
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
+    "trigonometric",
     "tangent",
-    "general",
-    "intercept"
+    "chain rule"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Show that the tangent at parameter $p$ meets the $x$-axis at $(-p^2, 0)$.",
+  "questionText": "A fairground ride carriage moves so that, $t$ seconds after starting, its position in metres is modelled by $x = 2\\cos t$ and $y = \\sin 2t$, for $0 \\le t \\le \\pi$. (a) Find $\\dfrac{dy}{dx}$ in terms of $t$. (b) Find the equation of the tangent to the path at $t = \\dfrac{\\pi}{6}$. (c) Find the coordinates of the points where the carriage is momentarily moving horizontally. (d) Find the speed of the carriage at $t = \\dfrac{\\pi}{6}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the general tangent",
-        "workingLatex": "py = x + p^2",
-        "explanation": "The tangent to this parabola at parameter $p$ has this standard equation (derived earlier).",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = -2\\sin t",
+        "explanation": "The horizontal position is $x = 2\\cos t$, and the derivative of $\\cos t$ is $-\\sin t$. This $\\dot{x}$ measures how fast the carriage moves horizontally.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Set y = 0 for the x-axis",
-        "workingLatex": "p(0) = x + p^2",
-        "explanation": "The tangent meets the $x$-axis where $y = 0$.",
+        "description": "Differentiate y with respect to t using the chain rule",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2\\cos 2t",
+        "explanation": "Here $y = \\sin 2t$, so by the chain rule we differentiate the outer $\\sin$ to get $\\cos 2t$ and multiply by the derivative of the inside $2t$, which is $2$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Solve for x",
-        "workingLatex": "0 = x + p^2 \\;\\Rightarrow\\; x = -p^2",
-        "explanation": "Rearranging gives the $x$-coordinate of the intercept.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2\\cos 2t}{-2\\sin t} = -\\dfrac{\\cos 2t}{\\sin t}",
+        "explanation": "The gradient of the path is the vertical rate divided by the horizontal rate. Dividing $\\dot{y}$ by $\\dot{x}$ eliminates the parameter and tells us the direction the path points, valid wherever $\\dot{x}\\neq 0$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the point",
-        "workingLatex": "(-p^2, 0)",
-        "explanation": "The tangent crosses the $x$-axis at $(-p^2, 0)$, mirroring the point's own $x$-coordinate $p^2$.",
+        "description": "Find the coordinates at t = pi/6",
+        "workingLatex": "x = 2\\cos\\tfrac{\\pi}{6} = \\sqrt{3}, \\qquad y = \\sin\\tfrac{\\pi}{3} = \\dfrac{\\sqrt{3}}{2}",
+        "explanation": "To write down a tangent we need the point it touches. Substituting $t = \\tfrac{\\pi}{6}$ into the position equations gives that point on the path.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the gradient at t = pi/6",
+        "workingLatex": "\\left.\\dfrac{dy}{dx}\\right|_{t=\\pi/6} = -\\dfrac{\\cos\\tfrac{\\pi}{3}}{\\sin\\tfrac{\\pi}{6}} = -\\dfrac{1/2}{1/2} = -1",
+        "explanation": "Substituting the same $t$ into the gradient expression gives the slope of the tangent line at that point, which comes out neatly to $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the tangent line",
+        "workingLatex": "y - \\dfrac{\\sqrt{3}}{2} = -1\\left(x - \\sqrt{3}\\right)",
+        "explanation": "Using the point-gradient form with the point from step 4 and the slope from step 5 fixes the straight-line tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the tangent equation",
+        "workingLatex": "y = -x + \\dfrac{3\\sqrt{3}}{2}",
+        "explanation": "Expanding and collecting the constant terms, $\\tfrac{\\sqrt{3}}{2} + \\sqrt{3} = \\tfrac{3\\sqrt{3}}{2}$, gives the tidy equation of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the horizontal-motion condition",
+        "workingLatex": "\\dot{y} = 0 \\quad\\text{with}\\quad \\dot{x} \\neq 0",
+        "explanation": "The carriage moves horizontally when its vertical velocity vanishes but it is still moving sideways, so we set $\\dot{y}=0$ and keep $\\dot{x}\\neq 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve the vertical velocity equation",
+        "workingLatex": "2\\cos 2t = 0 \\;\\Rightarrow\\; \\cos 2t = 0",
+        "explanation": "Setting the vertical velocity to zero reduces to a cosine equation, whose solutions give the instants of momentarily horizontal motion.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List the solutions in range",
+        "workingLatex": "2t = \\dfrac{\\pi}{2},\\; \\dfrac{3\\pi}{2} \\;\\Rightarrow\\; t = \\dfrac{\\pi}{4},\\; \\dfrac{3\\pi}{4}",
+        "explanation": "Since $0 \\le t \\le \\pi$ we have $0 \\le 2t \\le 2\\pi$, so $\\cos 2t = 0$ at $2t = \\tfrac{\\pi}{2}$ and $\\tfrac{3\\pi}{2}$, giving two valid times.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Coordinates at t = pi/4",
+        "workingLatex": "x = 2\\cos\\tfrac{\\pi}{4} = \\sqrt{2}, \\qquad y = \\sin\\tfrac{\\pi}{2} = 1",
+        "explanation": "Substituting the first time back into the position equations locates the first point where the motion is horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Coordinates at t = 3pi/4",
+        "workingLatex": "x = 2\\cos\\tfrac{3\\pi}{4} = -\\sqrt{2}, \\qquad y = \\sin\\tfrac{3\\pi}{2} = -1",
+        "explanation": "Doing the same for the second time gives the other point of horizontal motion, on the opposite side of the path.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm the motion is genuinely horizontal",
+        "workingLatex": "\\dot{x} = -2\\sin\\tfrac{\\pi}{4} = -\\sqrt{2} \\neq 0",
+        "explanation": "Checking $\\dot{x}\\neq 0$ at these times confirms the carriage really is moving (sideways), not momentarily stationary, so the motion is truly horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Velocity components at t = pi/6",
+        "workingLatex": "\\dot{x} = -2\\sin\\tfrac{\\pi}{6} = -1, \\qquad \\dot{y} = 2\\cos\\tfrac{\\pi}{3} = 1",
+        "explanation": "Speed depends on both velocity components, so we evaluate $\\dot{x}$ and $\\dot{y}$ at $t=\\tfrac{\\pi}{6}$ before combining them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Compute the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^2 + \\dot{y}^2} = \\sqrt{(-1)^2 + 1^2} = \\sqrt{2}",
+        "explanation": "Speed is the magnitude of the velocity vector, found by combining the two components with Pythagoras, giving $\\sqrt{2}$ metres per second.",
         "diagram": null
       }
     ],
-    "finalAnswer": "The tangent meets the $x$-axis at $(-p^2, 0)$."
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = -\\dfrac{\\cos 2t}{\\sin t}$. (b) The tangent at $t=\\tfrac{\\pi}{6}$ is $y = -x + \\dfrac{3\\sqrt{3}}{2}$. (c) The carriage moves horizontally at $\\left(\\sqrt{2},\\,1\\right)$ and $\\left(-\\sqrt{2},\\,-1\\right)$. (d) The speed at $t=\\tfrac{\\pi}{6}$ is $\\sqrt{2}\\text{ m s}^{-1}$."
   }
 }

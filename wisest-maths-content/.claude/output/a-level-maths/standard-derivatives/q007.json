@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "standard derivatives",
+    "trigonometry",
+    "sum rule"
+  ],
+  "questionText": "Differentiate $y = \\sin x + \\cos x$ with respect to $x$, where $x$ is measured in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the function and the goal",
+        "workingLatex": "y = \\sin x + \\cos x",
+        "explanation": "We need $\\frac{dy}{dx}$ for a sum of the two basic trigonometric functions. The standard trig derivatives assume $x$ is in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Use linearity to differentiate term by term",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{d}{dx}\\left(\\sin x\\right) + \\frac{d}{dx}\\left(\\cos x\\right)",
+        "explanation": "Differentiation is linear, so we differentiate $\\sin x$ and $\\cos x$ separately and add the results.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the sine term",
+        "workingLatex": "\\frac{d}{dx}\\left(\\sin x\\right) = \\cos x",
+        "explanation": "The standard result is that the derivative of $\\sin x$ is $\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the cosine term",
+        "workingLatex": "\\frac{d}{dx}\\left(\\cos x\\right) = -\\sin x",
+        "explanation": "The standard result is that the derivative of $\\cos x$ is $-\\sin x$; note the minus sign that appears here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the two derivatives",
+        "workingLatex": "\\frac{dy}{dx} = \\cos x - \\sin x",
+        "explanation": "Adding the pieces gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note the radian assumption",
+        "workingLatex": "\\frac{dy}{dx} = \\cos x - \\sin x \\quad (x \\text{ in radians})",
+        "explanation": "These derivative formulas only hold when the angle is in radians, so we record that condition.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\cos x - \\sin x$ (with $x$ in radians)."
+  }
+}

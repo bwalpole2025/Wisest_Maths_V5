@@ -4,61 +4,103 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
+  "difficulty": "Intermediate",
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "maximum and minimum"
   ],
-  "questionText": "Express $9\\sin\\theta - 40\\cos\\theta$ as $R\\sin(\\theta - \\alpha)$ and hence solve $9\\sin\\theta - 40\\cos\\theta = 20$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionText": "The function $h$ is given by $h(\\theta)=\\dfrac{27}{14+12\\sin\\theta+5\\cos\\theta}$ for $0^\\circ \\le \\theta \\le 360^\\circ$. Express $12\\sin\\theta+5\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$, and hence determine the maximum and minimum values of $h(\\theta)$, stating the value of $\\theta$ in each case.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{9^2 + 40^2} = \\sqrt{1681} = 41",
-        "explanation": "The amplitude is $41$ (a $9$-$40$-$41$ triangle).",
+        "description": "Set up the identity for the denominator",
+        "workingLatex": "12\\sin\\theta+5\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "Rewriting the varying part $12\\sin\\theta+5\\cos\\theta$ as a single sine wave will let us bound the denominator, since a single sine only ranges from $-R$ to $R$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{40}{9} \\;\\Rightarrow\\; \\alpha \\approx 77.32^\\circ",
-        "explanation": "The ratio gives the phase angle.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with the addition formula and multiplying by $R$ gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, the same shape as the expression to convert.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "9\\sin\\theta - 40\\cos\\theta = 41\\sin(\\theta - 77.32^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=12,\\qquad R\\sin\\alpha=5",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ gives $R\\cos\\alpha=12$ and matching the coefficient of $\\cos\\theta$ gives $R\\sin\\alpha=5$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set up the equation",
-        "workingLatex": "\\sin(\\theta - 77.32^\\circ) = \\frac{20}{41} \\approx 0.4878",
-        "explanation": "Dividing by $41$ gives the sine value.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{12^2+5^2}=\\sqrt{169}=13",
+        "explanation": "Squaring and adding removes $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=144+25=169$ and the positive root is $R=13$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set the shifted interval and solve",
-        "workingLatex": "\\theta - 77.32^\\circ = 29.20^\\circ, 150.80^\\circ",
-        "explanation": "Within $[-77.32^\\circ, 282.68^\\circ)$, the sine equation gives these two values.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{5}{12}\\Rightarrow \\alpha=22.62^\\circ",
+        "explanation": "Dividing the equations cancels $R$ to give $\\tan\\alpha=\\tfrac{5}{12}$. Both coefficients are positive, so $\\alpha$ is acute and equals $\\arctan\\tfrac{5}{12}=22.62^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Add the shift and round",
-        "workingLatex": "\\theta \\approx 107^\\circ, 228^\\circ",
-        "explanation": "Adding $77.32^\\circ$ and rounding gives the two solutions.",
+        "description": "Rewrite h using the R-form",
+        "workingLatex": "h(\\theta)=\\dfrac{27}{14+13\\sin(\\theta+22.62^\\circ)}",
+        "explanation": "Substituting $13\\sin(\\theta+22.62^\\circ)$ for the two-term part gives a denominator built from a single bounded wave, which is now easy to bound.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound the sine term",
+        "workingLatex": "-1\\le \\sin(\\theta+22.62^\\circ)\\le 1",
+        "explanation": "A sine value always lies between $-1$ and $1$, so this is the full range of the wave inside the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Bound the denominator",
+        "workingLatex": "1\\le 14+13\\sin(\\theta+22.62^\\circ)\\le 27",
+        "explanation": "Scaling the sine bounds by $13$ and adding $14$ gives a denominator between $1$ and $27$. The least value is $1>0$, so the fraction is always positive and defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Maximum value of h",
+        "workingLatex": "h_{\\max}=\\dfrac{27}{1}=27",
+        "explanation": "With a fixed positive numerator, the fraction is largest when the denominator is smallest. The least denominator is $1$, giving $h_{\\max}=\\tfrac{27}{1}=27$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Value of θ for the maximum",
+        "workingLatex": "\\sin(\\theta+22.62^\\circ)=-1\\Rightarrow \\theta+22.62^\\circ=270^\\circ\\Rightarrow \\theta=247.38^\\circ",
+        "explanation": "The denominator is least when the sine equals $-1$, at $\\theta+22.62^\\circ=270^\\circ$. Subtracting $22.62^\\circ$ gives the angle where $h$ is greatest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Minimum value of h",
+        "workingLatex": "h_{\\min}=\\dfrac{27}{27}=1",
+        "explanation": "The fraction is smallest when the denominator is largest. The greatest denominator is $27$, giving $h_{\\min}=\\tfrac{27}{27}=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Value of θ for the minimum",
+        "workingLatex": "\\sin(\\theta+22.62^\\circ)=1\\Rightarrow \\theta+22.62^\\circ=90^\\circ\\Rightarrow \\theta=67.38^\\circ",
+        "explanation": "The denominator is largest when the sine equals $1$, at $\\theta+22.62^\\circ=90^\\circ$. Subtracting $22.62^\\circ$ gives the angle where $h$ is least.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 107^\\circ, 228^\\circ$"
+    "finalAnswer": "$12\\sin\\theta+5\\cos\\theta=13\\sin(\\theta+22.62^\\circ)$, so $h(\\theta)=\\dfrac{27}{14+13\\sin(\\theta+22.62^\\circ)}$. The maximum value is $h=27$ at $\\theta=247.4^\\circ$, and the minimum value is $h=1$ at $\\theta=67.4^\\circ$ (angles to $1$ d.p.)."
   }
 }

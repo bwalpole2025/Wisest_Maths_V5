@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "exponential",
+    "gradient"
+  ],
+  "questionText": "Find the gradient of the curve $y = e^{3x} - 4x$ at the point where $x = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up and use linearity",
+        "workingLatex": "y = e^{3x} - 4x",
+        "explanation": "Differentiate the exponential term and the linear term separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the exponential term",
+        "workingLatex": "\\frac{d}{dx}(e^{3x}) = 3e^{3x}",
+        "explanation": "The standard result $\\tfrac{d}{dx}(e^{kx})=ke^{kx}$ with $k=3$ brings down a factor of $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the linear term",
+        "workingLatex": "\\frac{d}{dx}(-4x) = -4",
+        "explanation": "The derivative of $x$ is $1$, so $-4x$ differentiates to $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = 3e^{3x} - 4",
+        "explanation": "Adding the two derivatives gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = 3e^{0} - 4",
+        "explanation": "Substitute $x=0$ into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 3(1) - 4 = -1",
+        "explanation": "Since $e^{0}=1$, we get $3-4=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = -1",
+        "explanation": "So the curve is falling at $x=0$, with gradient $-1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient at $x=0$ is $-1$."
+  }
+}

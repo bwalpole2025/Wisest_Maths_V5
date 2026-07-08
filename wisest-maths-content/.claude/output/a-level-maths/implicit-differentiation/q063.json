@@ -1,0 +1,127 @@
+{
+  "id": "al.y2.pure.implicit.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "exponential",
+    "tangent and normal"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + e^{y} = 5$. (a) Find $\\frac{dy}{dx}$ in terms of $x$ and $y$. (b) Find an equation of the tangent to $C$ at the point $(2, 0)$. (c) Find, in exact form, the coordinates of the point on $C$ at which the tangent is horizontal. (d) Explain why $C$ has no point at which the tangent is vertical, and find an equation of the normal to $C$ at $(2, 0)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(e^{y}) = \\frac{d}{dx}(5)",
+        "explanation": "We differentiate the whole equation, remembering that $y$ is a function of $x$. The constant $5$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the exponential term",
+        "workingLatex": "\\frac{d}{dx}(e^{y}) = e^{y}\\frac{dy}{dx}",
+        "explanation": "By the chain rule, $e^{y}$ differentiates to itself times $\\frac{dy}{dx}$, because the exponent $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x + e^{y}\\frac{dy}{dx} = 0",
+        "explanation": "The $x^2$ term gives $2x$, and combining with the exponential term produces one equation in $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{e^{y}}",
+        "explanation": "Dividing by $e^{y}$ isolates the gradient. This answers part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check (2, 0) lies on C",
+        "workingLatex": "2^2 + e^{0} = 4 + 1 = 5",
+        "explanation": "The point satisfies the equation, so it lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the gradient at (2, 0)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(2,0)} = -\\frac{2(2)}{e^{0}} = -4",
+        "explanation": "Substituting $x=2,\\,y=0$ and using $e^{0}=1$ gives the tangent gradient $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the tangent at (2, 0)",
+        "workingLatex": "y - 0 = -4(x - 2) \\;\\Rightarrow\\; y = -4x + 8",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=-4$ through $(2,0)$ gives the tangent. This answers part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; -\\frac{2x}{e^{y}} = 0 \\;\\Rightarrow\\; 2x = 0 \\;\\Rightarrow\\; x = 0",
+        "explanation": "A horizontal tangent needs gradient $0$. Since $e^{y}$ is never $0$, the fraction is zero only when its numerator $2x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find y when x = 0",
+        "workingLatex": "0 + e^{y} = 5 \\;\\Rightarrow\\; e^{y} = 5 \\;\\Rightarrow\\; y = \\ln 5",
+        "explanation": "Substituting $x=0$ into the curve gives $e^{y}=5$, so $y=\\ln 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the horizontal-tangent point",
+        "workingLatex": "(0, \\ln 5)",
+        "explanation": "This is the exact point at which the tangent is horizontal. This answers part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Consider when the tangent could be vertical",
+        "workingLatex": "\\text{vertical tangent} \\;\\Rightarrow\\; e^{y} = 0",
+        "explanation": "A vertical tangent occurs where $\\frac{dy}{dx}$ is undefined, i.e. where the denominator $e^{y}$ equals $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note the exponential is always positive",
+        "workingLatex": "e^{y} > 0 \\text{ for all } y",
+        "explanation": "The exponential function is strictly positive, so the denominator can never be zero and $\\frac{dy}{dx}$ is always defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Conclude there is no vertical tangent",
+        "workingLatex": "\\therefore\\; C \\text{ has no vertical tangent}",
+        "explanation": "Since $e^{y}$ never vanishes, the gradient is finite everywhere on $C$, so no tangent is vertical. This answers the first part of (d).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find the normal gradient at (2, 0)",
+        "workingLatex": "m_{n} = -\\frac{1}{-4} = \\frac{1}{4}",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Form the normal at (2, 0)",
+        "workingLatex": "y - 0 = \\tfrac{1}{4}(x - 2) \\;\\Rightarrow\\; x - 4y = 2",
+        "explanation": "Using gradient $\\frac14$ through $(2,0)$ and clearing the fraction gives $x-4y=2$. This completes part (d).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = -\\frac{2x}{e^{y}}$; (b) tangent $y = -4x + 8$; (c) horizontal tangent at $(0, \\ln 5)$; (d) since $e^{y} > 0$ the gradient is always finite, so $C$ has no vertical tangent; normal $x - 4y = 2$."
+  }
+}

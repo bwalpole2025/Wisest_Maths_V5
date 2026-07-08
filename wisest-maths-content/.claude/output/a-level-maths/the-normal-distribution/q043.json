@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.stats.normal-distribution.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "proportion"
+  ],
+  "questionText": "The reaction times, $X$ seconds, of drivers in a simulator are modelled by $X \\sim N(0.35, 0.04^2)$. (a) Find the probability that a randomly chosen driver has a reaction time between $0.30$ s and $0.42$ s. (b) Hence find the percentage of drivers whose reaction time lies in this range, and estimate how many of a sample of $300$ drivers this represents. Give the probability to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the probability required",
+        "workingLatex": "X \\sim N(0.35,\\ 0.04^2), \\qquad P(0.30 < X < 0.42)",
+        "explanation": "Reaction times are modelled as normal with mean $\\mu = 0.35$ s and standard deviation $\\sigma = 0.04$ s. We need the probability of landing in the interval from $0.30$ to $0.42$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the lower endpoint",
+        "workingLatex": "z_1 = \\dfrac{0.30 - 0.35}{0.04} = -1.25",
+        "explanation": "The lower limit $0.30$ is below the mean, so its $z$-value is negative. It sits $1.25$ standard deviations below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the upper endpoint",
+        "workingLatex": "z_2 = \\dfrac{0.42 - 0.35}{0.04} = 1.75",
+        "explanation": "The upper limit $0.42$ is above the mean, giving a positive $z$-value of $1.75$ standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(0.30 < X < 0.42) = P(-1.25 < Z < 1.75)",
+        "explanation": "Standardising both ends converts the reaction-time interval into an equivalent interval for the standard normal variable $Z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write as a difference of cumulative probabilities",
+        "workingLatex": "P(-1.25 < Z < 1.75) = \\Phi(1.75) - \\Phi(-1.25)",
+        "explanation": "The area between two $z$-values is the area up to the larger one minus the area up to the smaller one, which is exactly $\\Phi(z_2) - \\Phi(z_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the two cumulative probabilities",
+        "workingLatex": "\\Phi(1.75) = 0.9599, \\qquad \\Phi(-1.25) = 0.1056",
+        "explanation": "Reading the standard normal CDF at each $z$-value gives these two areas. Note $\\Phi(-1.25)$ is small because it is the little tail below $z = -1.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to find the probability",
+        "workingLatex": "P(0.30 < X < 0.42) = 0.9599 - 0.1056 = 0.8543",
+        "explanation": "The difference is the area of the central band, giving a probability of $0.8543$ that a driver's reaction time falls in the required range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Express the probability as a percentage",
+        "workingLatex": "0.8543 \\times 100\\% = 85.43\\%",
+        "explanation": "A probability of $0.8543$ means that in the long run about $85.43\\%$ of drivers have reaction times between $0.30$ s and $0.42$ s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Estimate the number in a sample of 300",
+        "workingLatex": "300 \\times 0.8543 = 256.3",
+        "explanation": "For a sample of $300$ drivers, multiplying the sample size by the probability gives the expected number falling in the range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Round to a whole number of drivers",
+        "workingLatex": "256.3 \\approx 256",
+        "explanation": "Since we are counting people, we round to $256$ drivers. This is a large majority of the sample, which fits with the wide interval covering most of the distribution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(0.30 < X < 0.42) = 0.8543$ (4 s.f.); this is $85.43\\%$ of drivers, about $256$ of the $300$ sampled."
+  }
+}

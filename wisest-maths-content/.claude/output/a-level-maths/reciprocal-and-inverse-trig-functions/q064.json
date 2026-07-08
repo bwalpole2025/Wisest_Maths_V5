@@ -5,60 +5,130 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "proof",
   "tags": [
-    "inverse trig",
-    "equation",
-    "arccos"
+    "identity proof",
+    "sec",
+    "cos"
   ],
-  "questionText": "Solve $2\\arccos x = \\dfrac{\\pi}{3}$ for $x$, giving your answer in exact form.",
+  "questionText": "Prove the identity $\\dfrac{\\sec\\theta - 1}{\\sec\\theta + 1} \\equiv \\dfrac{1 - \\cos\\theta}{1 + \\cos\\theta}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the inverse function",
-        "workingLatex": "\\arccos x = \\frac{\\pi}{6}",
-        "explanation": "Dividing both sides by $2$ leaves a single arccosine equal to a known angle.",
+        "description": "Set out what must be proved",
+        "workingLatex": "\\text{Prove that }\\ \\frac{\\sec\\theta - 1}{\\sec\\theta + 1} \\equiv \\frac{1 - \\cos\\theta}{1 + \\cos\\theta}",
+        "explanation": "The right-hand side is written purely in $\\cos\\theta$, so the natural strategy is to replace $\\sec\\theta$ with $\\dfrac{1}{\\cos\\theta}$ and simplify the resulting compound fraction.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply cosine to both sides",
-        "workingLatex": "x = \\cos\\frac{\\pi}{6}",
-        "explanation": "Taking the cosine of both sides undoes the arccosine, isolating $x$.",
+        "description": "Recall the reciprocal definition",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Secant is the reciprocal of cosine; substituting this is the only tool needed here.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate the cosine",
-        "workingLatex": "\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}",
-        "explanation": "This is the standard exact value for the cosine of $30^\\circ$.",
+        "description": "Substitute into the numerator",
+        "workingLatex": "\\sec\\theta - 1 = \\frac{1}{\\cos\\theta} - 1",
+        "explanation": "Substituting the reciprocal definition into the numerator is the first move toward a single fraction.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State x",
-        "workingLatex": "x = \\frac{\\sqrt{3}}{2}",
-        "explanation": "So the value of $x$ is $\\frac{\\sqrt3}{2}$.",
+        "description": "Give the numerator a common denominator",
+        "workingLatex": "\\frac{1}{\\cos\\theta} - 1 = \\frac{1}{\\cos\\theta} - \\frac{\\cos\\theta}{\\cos\\theta}",
+        "explanation": "Rewriting $1$ as $\\dfrac{\\cos\\theta}{\\cos\\theta}$ gives both terms the same denominator so they can be merged.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Check the domain and range",
-        "workingLatex": "-1 \\le \\tfrac{\\sqrt3}{2} \\le 1, \\quad \\tfrac{\\pi}{6} \\in [0,\\pi]",
-        "explanation": "The value lies in the domain of arccosine and the angle $\\frac{\\pi}{6}$ is in its range, so the solution is valid.",
+        "description": "Combine the numerator",
+        "workingLatex": "= \\frac{1 - \\cos\\theta}{\\cos\\theta}",
+        "explanation": "Subtracting over the common denominator produces the factor $1-\\cos\\theta$ that we are aiming for.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final answer",
-        "workingLatex": "x = \\frac{\\sqrt{3}}{2}",
-        "explanation": "This is the exact solution.",
+        "description": "Substitute into the denominator",
+        "workingLatex": "\\sec\\theta + 1 = \\frac{1}{\\cos\\theta} + 1",
+        "explanation": "The denominator of the original fraction is handled in exactly the same way.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Give the denominator a common denominator",
+        "workingLatex": "\\frac{1}{\\cos\\theta} + 1 = \\frac{1}{\\cos\\theta} + \\frac{\\cos\\theta}{\\cos\\theta}",
+        "explanation": "Again $1$ becomes $\\dfrac{\\cos\\theta}{\\cos\\theta}$ so the two terms share a denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Combine the denominator",
+        "workingLatex": "= \\frac{1 + \\cos\\theta}{\\cos\\theta}",
+        "explanation": "Adding over the common denominator gives $1+\\cos\\theta$ on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Assemble the compound fraction",
+        "workingLatex": "\\frac{\\sec\\theta - 1}{\\sec\\theta + 1} = \\frac{\\dfrac{1 - \\cos\\theta}{\\cos\\theta}}{\\dfrac{1 + \\cos\\theta}{\\cos\\theta}}",
+        "explanation": "Stacking the two simplified expressions gives a fraction divided by a fraction, both over $\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Divide by multiplying by the reciprocal",
+        "workingLatex": "= \\frac{1 - \\cos\\theta}{\\cos\\theta} \\times \\frac{\\cos\\theta}{1 + \\cos\\theta}",
+        "explanation": "Dividing by a fraction means multiplying by its reciprocal, which brings a $\\cos\\theta$ to both numerator and denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Show the shared factor",
+        "workingLatex": "= \\frac{(1 - \\cos\\theta)\\cos\\theta}{\\cos\\theta(1 + \\cos\\theta)}",
+        "explanation": "Multiplying the fractions displays the common $\\cos\\theta$ factor explicitly before cancelling.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Cancel the cosine factor",
+        "workingLatex": "= \\frac{1 - \\cos\\theta}{1 + \\cos\\theta}",
+        "explanation": "The common factor $\\cos\\theta$ cancels top and bottom, leaving an expression purely in cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Identify the right-hand side",
+        "workingLatex": "\\frac{1 - \\cos\\theta}{1 + \\cos\\theta} = \\text{RHS}",
+        "explanation": "This matches the right-hand side of the statement exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the validity conditions",
+        "workingLatex": "\\cos\\theta \\neq 0, \\quad \\cos\\theta \\neq -1",
+        "explanation": "Division by $\\cos\\theta$ and by $1+\\cos\\theta$ requires both to be non-zero, so the identity holds wherever it is defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Numerical check at 60 degrees",
+        "workingLatex": "\\frac{\\sec 60^\\circ - 1}{\\sec 60^\\circ + 1} = \\frac{2 - 1}{2 + 1} = \\frac{1}{3}, \\qquad \\frac{1 - \\cos 60^\\circ}{1 + \\cos 60^\\circ} = \\frac{1 - \\tfrac12}{1 + \\tfrac12} = \\frac{1}{3}",
+        "explanation": "Both sides give $\\dfrac13$ at $60^\\circ$, confirming the identity numerically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "Conclude the proof",
+        "workingLatex": "\\frac{\\sec\\theta - 1}{\\sec\\theta + 1} \\equiv \\frac{1 - \\cos\\theta}{1 + \\cos\\theta} \\quad \\blacksquare",
+        "explanation": "Replacing $\\sec\\theta$ by $\\dfrac{1}{\\cos\\theta}$ and cancelling turns the left-hand side into the right-hand side, proving the identity.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x = \\dfrac{\\sqrt{3}}{2}$"
+    "finalAnswer": "Replacing $\\sec\\theta$ with $\\dfrac{1}{\\cos\\theta}$ gives $\\dfrac{(1-\\cos\\theta)/\\cos\\theta}{(1+\\cos\\theta)/\\cos\\theta}=\\dfrac{1-\\cos\\theta}{1+\\cos\\theta}$, as required."
   }
 }

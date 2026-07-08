@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "chain rule",
+    "polynomial",
+    "differentiation"
+  ],
+  "questionText": "Differentiate $y = (x^2+1)^5$ with respect to $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite structure",
+        "workingLatex": "y = (x^2+1)^5",
+        "explanation": "Here a whole expression, $x^2+1$, is raised to the fifth power. Because one function ($x^2+1$) sits inside another (the fifth power), this is a composite and calls for the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce the inner function as $u$",
+        "workingLatex": "u = x^2+1 \\quad \\Rightarrow \\quad y = u^5",
+        "explanation": "Naming the inside $u$ separates the problem into a manageable outer power $y=u^5$ and an inner function $u=x^2+1$ that we can each differentiate on their own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 2x",
+        "explanation": "Differentiating $u=x^2+1$ gives $2x$ by the power rule, and the constant $1$ contributes nothing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = 5u^4",
+        "explanation": "For the outer power $y=u^5$ the power rule brings the $5$ down and lowers the exponent by one, giving $5u^4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = 5u^4 \\cdot 2x",
+        "explanation": "The chain rule multiplies the two rates of change together, linking how $y$ responds to $u$ with how $u$ responds to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the coefficient",
+        "workingLatex": "\\frac{dy}{dx} = 10x\\,u^4",
+        "explanation": "Multiplying $5\\times 2x$ gives $10x$, so the derivative is $10x\\,u^4$ while still written in terms of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute the inner function back in",
+        "workingLatex": "\\frac{dy}{dx} = 10x(x^2+1)^4",
+        "explanation": "Replacing $u$ with $x^2+1$ gives the derivative purely in terms of $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 10x(x^2+1)^4$."
+  }
+}

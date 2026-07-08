@@ -6,60 +6,66 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "value",
+  "answerType": "written",
   "tags": [
-    "inverse trig",
-    "arctan",
-    "exact values",
-    "radians"
+    "reciprocal trig",
+    "sec",
+    "range"
   ],
-  "questionText": "Find the exact value of $\\arctan(1)$, giving your answer in radians.",
+  "questionText": "State the range of the function $y = \\sec x$, and explain why no values of $y$ lie strictly between $-1$ and $1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Interpret the inverse tangent",
-        "workingLatex": "\\arctan(1) = \\theta \\;\\Leftrightarrow\\; \\tan\\theta = 1",
-        "explanation": "Inverse tangent asks which angle has a tangent of $1$, so we look for the angle $\\theta$ satisfying $\\tan\\theta = 1$.",
+        "description": "Recall the definition",
+        "workingLatex": "\\sec x = \\frac{1}{\\cos x}",
+        "explanation": "Secant is one divided by cosine, so its possible outputs are controlled entirely by the possible values of $\\cos x$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the principal range of arctan",
-        "workingLatex": "-\\frac{\\pi}{2} < \\theta < \\frac{\\pi}{2}",
-        "explanation": "Arctangent returns angles strictly between $-\\frac{\\pi}{2}$ and $\\frac{\\pi}{2}$, so we must choose our answer from this open interval.",
+        "description": "State the values cosine can take",
+        "workingLatex": "-1 \\le \\cos x \\le 1, \\quad \\cos x \\ne 0",
+        "explanation": "Cosine only ever takes values between $-1$ and $1$. We must also exclude $\\cos x = 0$, since dividing by zero is undefined (those points give the asymptotes).",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall which standard angle has tangent one",
-        "workingLatex": "\\tan\\frac{\\pi}{4} = 1",
-        "explanation": "In the $45$-$45$-$90$ triangle opposite equals adjacent, so the tangent of $45^\\circ$, or $\\frac{\\pi}{4}$, is exactly $1$.",
+        "description": "Reciprocate the positive part",
+        "workingLatex": "0 < \\cos x \\le 1 \\;\\Rightarrow\\; \\sec x = \\frac{1}{\\cos x} \\ge 1",
+        "explanation": "When cosine is positive but at most $1$, its reciprocal is at least $1$: dividing $1$ by a number no bigger than $1$ can never give an answer below $1$. So all positive secant values are $\\ge 1$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the angle lies in range",
-        "workingLatex": "-\\frac{\\pi}{2} < \\frac{\\pi}{4} < \\frac{\\pi}{2} \\;\\checkmark",
-        "explanation": "The angle $\\frac{\\pi}{4}$ lies inside the arctangent range, so it is the valid output.",
+        "description": "Reciprocate the negative part",
+        "workingLatex": "-1 \\le \\cos x < 0 \\;\\Rightarrow\\; \\sec x = \\frac{1}{\\cos x} \\le -1",
+        "explanation": "Similarly, when cosine is negative but no smaller than $-1$, its reciprocal is at most $-1$. So all negative secant values are $\\le -1$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the uniqueness",
-        "workingLatex": "\\tan\\theta \\text{ increasing on } \\left(-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right)",
-        "explanation": "Tangent rises steadily across this interval, hitting each value only once, so $\\frac{\\pi}{4}$ is the unique answer.",
+        "description": "Explain the gap around zero",
+        "workingLatex": "|\\cos x| \\le 1 \\;\\Rightarrow\\; |\\sec x| = \\frac{1}{|\\cos x|} \\ge 1",
+        "explanation": "Because $|\\cos x|$ never exceeds $1$, its reciprocal is never smaller than $1$ in size. That is exactly why secant can never land strictly between $-1$ and $1$ — there is a gap around $0$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\arctan(1) = \\frac{\\pi}{4}",
-        "explanation": "This is the exact value in radians.",
+        "description": "Combine the two pieces",
+        "workingLatex": "\\sec x \\le -1 \\quad \\text{or} \\quad \\sec x \\ge 1",
+        "explanation": "Putting the two pieces together, every secant value is either at most $-1$ or at least $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the range",
+        "workingLatex": "\\text{range: } \\{\\, y : y \\le -1 \\ \\text{or} \\ y \\ge 1 \\,\\}",
+        "explanation": "This describes all outputs of $y=\\sec x$: everything from $1$ upward together with everything from $-1$ downward.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\arctan(1) = \\dfrac{\\pi}{4}$"
+    "finalAnswer": "The range of $y=\\sec x$ is $y \\le -1$ or $y \\ge 1$; no output lies strictly between $-1$ and $1$ because $|\\sec x| = \\dfrac{1}{|\\cos x|} \\ge 1$."
   }
 }

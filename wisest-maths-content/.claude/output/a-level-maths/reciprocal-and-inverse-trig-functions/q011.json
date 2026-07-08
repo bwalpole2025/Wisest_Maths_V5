@@ -5,61 +5,60 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "value",
+  "marks": 2,
+  "answerType": "exact",
   "tags": [
     "reciprocal trig",
-    "cosecant",
-    "radians",
-    "exact values"
+    "sec",
+    "given ratio"
   ],
-  "questionText": "Find the exact value of $\\csc\\dfrac{\\pi}{6}$.",
+  "questionText": "Given that $\\cos\\theta = \\dfrac{3}{7}$, find the exact value of $\\sec\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Convert the radian angle to degrees",
-        "workingLatex": "\\frac{\\pi}{6} = 30^\\circ",
-        "explanation": "Recognising $\\frac{\\pi}{6}$ as $30^\\circ$ makes the standard exact values easy to apply.",
+        "description": "Recall the definition of secant",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Secant is the reciprocal of cosine, so once we know the cosine we simply invert it. No identities or quadrants are needed here.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write cosecant as one over sine",
-        "workingLatex": "\\csc\\frac{\\pi}{6} = \\frac{1}{\\sin\\frac{\\pi}{6}}",
-        "explanation": "Cosecant is the reciprocal of sine, so we set up one over the sine of the angle.",
+        "description": "Substitute the given cosine",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\tfrac{3}{7}}",
+        "explanation": "Replacing $\\cos\\theta$ by the given value $\\tfrac{3}{7}$ leaves one divided by that fraction.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall the sine value",
-        "workingLatex": "\\sin\\frac{\\pi}{6} = \\frac{1}{2}",
-        "explanation": "The sine of $30^\\circ$ is one half, a standard exact value.",
+        "description": "Flip the fraction",
+        "workingLatex": "\\frac{1}{\\tfrac{3}{7}} = \\frac{7}{3}",
+        "explanation": "The reciprocal of a fraction is found by swapping its numerator and denominator, so $\\tfrac{3}{7}$ inverts to $\\tfrac{7}{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute the value",
-        "workingLatex": "\\csc\\frac{\\pi}{6} = \\frac{1}{\\;\\frac{1}{2}\\;}",
-        "explanation": "The problem reduces to the reciprocal of one half.",
+        "description": "Check the sign",
+        "workingLatex": "\\cos\\theta > 0 \\Rightarrow \\sec\\theta > 0",
+        "explanation": "Since the given cosine is positive, its reciprocal is also positive, so no sign change occurs.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Evaluate the reciprocal",
-        "workingLatex": "\\frac{1}{\\;\\frac{1}{2}\\;} = 2",
-        "explanation": "The reciprocal of a half is two.",
+        "description": "Verify the reciprocal relationship",
+        "workingLatex": "\\cos\\theta \\times \\sec\\theta = \\frac{3}{7} \\times \\frac{7}{3} = 1 \\; \\checkmark",
+        "explanation": "A quick check: a number times its reciprocal must equal $1$, and here the product is indeed $1$, confirming the value.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\csc\\frac{\\pi}{6} = 2",
-        "explanation": "This is the exact value requested.",
+        "description": "State the exact value",
+        "workingLatex": "\\sec\\theta = \\frac{7}{3}",
+        "explanation": "The exact value of the secant is $\\tfrac{7}{3}$, obtained purely by inverting the given cosine.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\csc\\dfrac{\\pi}{6} = 2$"
+    "finalAnswer": "$\\sec\\theta = \\dfrac{7}{3}$."
   }
 }

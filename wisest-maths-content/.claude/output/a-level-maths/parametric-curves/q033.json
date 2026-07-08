@@ -6,52 +6,80 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "expression",
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "parabola"
+    "eliminating the parameter",
+    "reciprocal",
+    "rearrangement"
   ],
-  "questionText": "A curve has parametric equations $x = 3t^2$, $y = 6t$. Find the Cartesian equation and identify the curve.",
+  "questionText": "A curve has parametric equations $x = \\dfrac{1}{t}$ and $y = t + \\dfrac{1}{t}$, where $t \\neq 0$. Find a Cartesian equation of the curve in the form $y = f(x)$, and state the value of $x$ that must be excluded.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject of the y-equation",
-        "workingLatex": "y = 6t \\;\\Rightarrow\\; t = \\frac{y}{6}",
-        "explanation": "The linear $y$-equation is easiest to rearrange for $t$.",
+        "description": "Make t the subject of the x equation",
+        "workingLatex": "x = \\dfrac{1}{t} \\implies t = \\dfrac{1}{x}",
+        "explanation": "The parameter appears as a reciprocal in $x$. Taking the reciprocal of both sides isolates $t$ so we can feed it into $y$. This rearrangement is only valid when $x \\neq 0$, a point we return to later.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the x-equation",
-        "workingLatex": "x = 3\\left(\\frac{y}{6}\\right)^2",
-        "explanation": "Replacing $t$ removes the parameter.",
+        "description": "Notice the reciprocal term in y equals x",
+        "workingLatex": "\\dfrac{1}{t} = x",
+        "explanation": "The expression for $y$ already contains $\\dfrac{1}{t}$, and $\\dfrac{1}{t}$ is exactly $x$. Spotting this means one of the two pieces of $y$ is simply $x$ itself, which saves work.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "x = 3\\cdot\\frac{y^2}{36} = \\frac{y^2}{12}",
-        "explanation": "Squaring and simplifying gives $x$ in terms of $y^2$.",
+        "description": "Substitute t and 1/t into y",
+        "workingLatex": "y = t + \\dfrac{1}{t} = \\dfrac{1}{x} + x",
+        "explanation": "Replacing $t$ with $\\dfrac{1}{x}$ and $\\dfrac{1}{t}$ with $x$ removes the parameter completely, leaving a relation between $x$ and $y$ only.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rearrange",
-        "workingLatex": "y^2 = 12x",
-        "explanation": "Multiplying through by $12$ gives the standard parabola form.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "y = x + \\dfrac{1}{x} = \\dfrac{x^{2} + 1}{x}",
+        "explanation": "Writing the two terms as a single fraction over $x$ tidies the equation and makes the excluded value obvious. Either form is a correct Cartesian equation.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Identify the curve",
-        "workingLatex": "y^2 = 12x \\text{ (parabola opening rightwards)}",
-        "explanation": "This is a parabola with vertex at the origin, symmetric about the $x$-axis.",
+        "description": "Identify the excluded value of x",
+        "workingLatex": "x \\neq 0",
+        "explanation": "Because $x = \\dfrac{1}{t}$, and a reciprocal is never zero, $x = 0$ can never be reached; the fraction $\\dfrac{x^{2}+1}{x}$ is undefined there too. So $x = 0$ is excluded.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Test a convenient value of t",
+        "workingLatex": "t = 1 \\;\\Rightarrow\\; x = 1, \\quad y = 1 + 1 = 2",
+        "explanation": "Checking an easy parameter value guards against algebra slips. At $t = 1$ the curve passes through $(1,\\,2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the point fits the Cartesian equation",
+        "workingLatex": "\\dfrac{x^{2}+1}{x} = \\dfrac{1^{2}+1}{1} = 2 = y \\;\\checkmark",
+        "explanation": "Substituting $x = 1$ into the Cartesian equation returns $y = 2$, matching the parametric point, so the equation is consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Describe the shape",
+        "workingLatex": "y = x + \\dfrac{1}{x}, \\qquad x \\neq 0",
+        "explanation": "For large $|x|$ the curve behaves like the line $y = x$, but the $\\dfrac{1}{x}$ term makes it shoot away near $x = 0$. It has two branches, one for $x > 0$ and one for $x < 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the final Cartesian equation",
+        "workingLatex": "y = \\dfrac{x^{2}+1}{x}, \\qquad x \\neq 0",
+        "explanation": "This is the required Cartesian equation together with its domain restriction.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y^2 = 12x$, a rightward-opening parabola."
+    "finalAnswer": "$y = \\dfrac{x^{2}+1}{x}$ (equivalently $y = x + \\dfrac{1}{x}$), with $x \\neq 0$."
   }
 }

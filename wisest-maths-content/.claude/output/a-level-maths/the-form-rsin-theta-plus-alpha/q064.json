@@ -5,53 +5,117 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "rearranging",
+    "solving equations"
   ],
-  "questionText": "Solve $12\\sin\\theta - 5\\cos\\theta = 6.5$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionText": "Solve the equation $4\\sin\\theta=3-2\\cos\\theta$ for $0^\\circ\\le\\theta\\le 360^\\circ$, giving your answers to $1$ decimal place. Begin by writing the equation in the form $a\\sin\\theta+b\\cos\\theta=c$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{12^2 + 5^2} = 13, \\quad \\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\alpha \\approx 22.62^\\circ",
-        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $13$ and phase about $22.62^\\circ$.",
+        "description": "Rearrange into standard form",
+        "workingLatex": "4\\sin\\theta=3-2\\cos\\theta\\ \\Rightarrow\\ 4\\sin\\theta+2\\cos\\theta=3",
+        "explanation": "The $R$-form method needs a single expression $a\\sin\\theta+b\\cos\\theta$, so we first move the cosine term across to collect both trigonometric terms on the same side.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the harmonic form",
-        "workingLatex": "12\\sin\\theta - 5\\cos\\theta = 13\\sin(\\theta - 22.62^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$.",
+        "description": "Set up the identity",
+        "workingLatex": "4\\sin\\theta+2\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "Now that the left-hand side is a clean sum of a sine and cosine term, we can write it as a single sine wave in the usual way.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the equation",
-        "workingLatex": "13\\sin(\\theta - 22.62^\\circ) = 6.5 \\;\\Rightarrow\\; \\sin(\\theta - 22.62^\\circ) = 0.5",
-        "explanation": "Dividing by $13$ gives sine equal to $0.5$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding the compound angle puts the right-hand side in matching form: a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Solve within the shifted interval",
-        "workingLatex": "\\theta - 22.62^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine $0.5$ gives principal value $30^\\circ$ and partner $150^\\circ$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=4,\\qquad R\\sin\\alpha=2",
+        "explanation": "Matching the $\\sin\\theta$ and $\\cos\\theta$ coefficients on both sides gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Add the shift and round",
-        "workingLatex": "\\theta \\approx 53^\\circ, 173^\\circ",
-        "explanation": "Adding $22.62^\\circ$ and rounding gives the two solutions.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{4^2+2^2}=\\sqrt{20}=2\\sqrt{5}",
+        "explanation": "Squaring and adding eliminates $\\alpha$, giving $R^2=16+4=20$, and $\\sqrt{20}$ simplifies to $2\\sqrt{5}$, kept as an exact surd.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{2}{4}=\\dfrac{1}{2}\\Rightarrow\\alpha=26.57^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{1}{2}$; both coefficients are positive so $\\alpha$ is acute, and $\\arctan\\tfrac{1}{2}=26.57^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation in R-form",
+        "workingLatex": "2\\sqrt{5}\\,\\sin(\\theta+26.57^\\circ)=3",
+        "explanation": "Substituting the single-wave form turns the rearranged equation into a basic sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta+26.57^\\circ)=\\dfrac{3}{2\\sqrt{5}}=0.6708",
+        "explanation": "Dividing by $2\\sqrt{5}$ leaves a numerical value of sine; $\\tfrac{3}{2\\sqrt5}\\approx0.6708$, which is between $-1$ and $1$, so solutions exist.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ\\le\\theta\\le360^\\circ\\Rightarrow 26.57^\\circ\\le\\theta+26.57^\\circ\\le 386.57^\\circ",
+        "explanation": "As we are solving for $\\theta+26.57^\\circ$, the whole search interval is shifted up by $26.57^\\circ$ to catch every solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Take the principal value",
+        "workingLatex": "\\theta+26.57^\\circ=42.13^\\circ",
+        "explanation": "The principal solution is $\\arcsin0.6708=42.13^\\circ$, which sits inside the shifted interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Take the second-quadrant value",
+        "workingLatex": "\\theta+26.57^\\circ=180^\\circ-42.13^\\circ=137.87^\\circ",
+        "explanation": "Sine is positive in the second quadrant too, giving a second solution $137.87^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Reject the out-of-range candidate",
+        "workingLatex": "42.13^\\circ+360^\\circ=402.13^\\circ>386.57^\\circ\\ (\\text{reject})",
+        "explanation": "Adding a full turn takes the angle beyond the upper limit of the shifted interval, so it gives no valid solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for θ",
+        "workingLatex": "\\theta=42.13^\\circ-26.57^\\circ,\\;137.87^\\circ-26.57^\\circ=15.56^\\circ,\\;111.30^\\circ",
+        "explanation": "Subtracting $26.57^\\circ$ from each shifted angle undoes the substitution to give the values of $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Round and verify",
+        "workingLatex": "\\theta=15.6^\\circ,\\;111.3^\\circ",
+        "explanation": "Rounding to $1$ decimal place gives the final answers; checking $\\theta=15.6^\\circ$ gives $4\\sin15.6^\\circ+2\\cos15.6^\\circ\\approx3$, confirming the solution.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 53^\\circ, 173^\\circ$"
+    "finalAnswer": "Rearranged, the equation is $4\\sin\\theta+2\\cos\\theta=3$, i.e. $2\\sqrt{5}\\,\\sin(\\theta+26.57^\\circ)=3$. The solutions in $0^\\circ\\le\\theta\\le360^\\circ$ are $\\theta=15.6^\\circ$ and $\\theta=111.3^\\circ$ (to $1$ d.p.)."
   }
 }

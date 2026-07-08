@@ -5,61 +5,116 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "marks": 7,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "normal",
-    "parabola",
-    "general"
+    "parametric differentiation",
+    "speed",
+    "completing the square"
   ],
-  "questionText": "A curve has parametric equations $x = at^2$, $y = 2at$. Show that the normal at the point with parameter $p$ has equation $y + px = 2ap + ap^3$.",
+  "questionText": "A particle moves so that, for $t \\ge 0$, its position in metres is $x = t^{2}$ and $y = t^{2} - 6t$. (a) Find the velocity components and show that its speed $v$ satisfies $v^{2} = 8t^{2} - 24t + 36$. (b) By completing the square, find the least speed of the particle and the time at which it occurs. (c) Find the time and coordinates at which the particle is momentarily moving horizontally.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the point with parameter p",
-        "workingLatex": "(ap^2, 2ap)",
-        "explanation": "Substituting $t = p$ gives the general point on the parabola.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t",
+        "explanation": "The horizontal velocity is the rate of change of $x$. Differentiating $t^{2}$ gives $2t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the tangent gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2a}{2at} = \\frac{1}{t} = \\frac{1}{p}",
-        "explanation": "The parametric gradient is $\\frac{1}{p}$ at this point.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2t - 6",
+        "explanation": "The vertical velocity is the rate of change of $y$. Differentiating $t^{2} - 6t$ gives $2t - 6$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the normal gradient",
-        "workingLatex": "m_{\\text{normal}} = -p",
-        "explanation": "The normal gradient is the negative reciprocal of $\\frac{1}{p}$.",
+        "description": "Write speed squared",
+        "workingLatex": "v^{2} = \\dot{x}^{2} + \\dot{y}^{2} = (2t)^{2} + (2t - 6)^{2}",
+        "explanation": "Speed is the magnitude of the velocity, so its square is the sum of the squares of the two components. Working with $v^{2}$ avoids the awkward square root while we minimise.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the point-gradient form",
-        "workingLatex": "y - 2ap = -p(x - ap^2)",
-        "explanation": "Using the general point and the normal gradient.",
+        "description": "Expand the brackets",
+        "workingLatex": "v^{2} = 4t^{2} + (4t^{2} - 24t + 36)",
+        "explanation": "Expanding each squared term prepares us to collect like terms into a single quadratic in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Expand",
-        "workingLatex": "y - 2ap = -px + ap^3",
-        "explanation": "Distributing $-p$ over the bracket.",
+        "description": "Collect terms",
+        "workingLatex": "v^{2} = 8t^{2} - 24t + 36",
+        "explanation": "Adding the two expansions gives the required expression for $v^{2}$, which is a quadratic in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rearrange to the required form",
-        "workingLatex": "y + px = 2ap + ap^3",
-        "explanation": "Collecting terms gives the standard equation of the normal to a parabola.",
+        "description": "Factor out the leading coefficient",
+        "workingLatex": "v^{2} = 8\\left(t^{2} - 3t\\right) + 36",
+        "explanation": "To complete the square we first take the $8$ outside the terms containing $t$, leaving a simple quadratic inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Complete the square inside",
+        "workingLatex": "v^{2} = 8\\left[\\left(t - \\tfrac{3}{2}\\right)^{2} - \\tfrac{9}{4}\\right] + 36",
+        "explanation": "Half of $-3$ is $-\\tfrac{3}{2}$; squaring and subtracting keeps the expression equal while revealing the minimum point of the quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Multiply out the constant",
+        "workingLatex": "v^{2} = 8\\left(t - \\tfrac{3}{2}\\right)^{2} - 18 + 36",
+        "explanation": "Distributing the $8$ over the bracket turns $-\\tfrac{9}{4}$ into $-18$, ready to combine with the $36$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write in completed-square form",
+        "workingLatex": "v^{2} = 8\\left(t - \\tfrac{3}{2}\\right)^{2} + 18",
+        "explanation": "The squared term is never negative, so $v^{2}$ is smallest when that term is zero. This form makes the least value obvious.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Locate the minimum",
+        "workingLatex": "\\left(t - \\tfrac{3}{2}\\right)^{2} = 0 \\;\\Rightarrow\\; t = \\tfrac{3}{2}",
+        "explanation": "The bracket is zero only at $t = \\tfrac{3}{2}$, and this lies in the allowed range $t \\ge 0$, so it is where the speed is least.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the least speed squared",
+        "workingLatex": "v^{2}_{\\min} = 18",
+        "explanation": "With the squared term gone, the smallest value of $v^{2}$ is the constant $18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Take the square root",
+        "workingLatex": "v_{\\min} = \\sqrt{18} = 3\\sqrt{2}",
+        "explanation": "Since speed is positive, we take the positive root and simplify the surd to $3\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Condition for horizontal motion",
+        "workingLatex": "\\dot{y} = 2t - 6 = 0 \\;\\Rightarrow\\; t = 3",
+        "explanation": "The particle moves horizontally when its vertical velocity is zero. This happens at $t = 3$ s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find the coordinates there",
+        "workingLatex": "x = 3^{2} = 9, \\quad y = 3^{2} - 6(3) = -9",
+        "explanation": "Substituting $t = 3$ into both equations gives the point $(9,\\,-9)$ where the motion is momentarily horizontal.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y + px = 2ap + ap^3$"
+    "finalAnswer": "The velocity components are $\\dot{x} = 2t$ and $\\dot{y} = 2t - 6$, giving $v^{2} = 8t^{2} - 24t + 36 = 8\\left(t - \\tfrac{3}{2}\\right)^{2} + 18$. The least speed is $3\\sqrt{2} \\approx 4.24$ m/s at $t = 1.5$ s. The particle moves horizontally at $t = 3$ s, at the point $(9,\\,-9)$."
   }
 }

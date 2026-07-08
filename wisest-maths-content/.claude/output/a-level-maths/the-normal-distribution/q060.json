@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.stats.normal-distribution.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "probability",
+    "modelling"
+  ],
+  "questionText": "The lengths, $X$ cm, of cucumbers from a greenhouse are modelled by $X \\sim N(\\mu, \\sigma^2)$. It is found that $10\\%$ are shorter than $30$ cm and $20\\%$ are longer than $42$ cm. (a) Find $\\mu$ and $\\sigma$ to $3$ significant figures. (b) Cucumbers between $33$ cm and $40$ cm are graded ‘Class 1’. Find the proportion of cucumbers that are Class 1.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 30) = 0.10, \\qquad P(X > 42) = 0.20",
+        "explanation": "Lengths are normal with unknown $\\mu$ and $\\sigma$. ‘$10\\%$ shorter than $30$’ gives $P(X<30)=0.10$ and ‘$20\\%$ longer than $42$’ gives $P(X>42)=0.20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{30 - \\mu}{\\sigma}\\right) = 0.10",
+        "explanation": "Standardising $30$ with $Z=\\dfrac{X-\\mu}{\\sigma}$ keeps the lower-tail area at $0.10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.10) = -1.2816",
+        "explanation": "With $10\\%$ of the area below it, this point lies to the left of the mean, so the standardised value is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{30 - \\mu}{\\sigma} = -1.2816",
+        "explanation": "Equating the standardised value of $30$ with $z_1$ gives the first equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Convert and standardise the second condition",
+        "workingLatex": "P(X < 42) = 1 - 0.20 = 0.80 \\ \\Rightarrow\\ z_2 = \\Phi^{-1}(0.80) = 0.8416",
+        "explanation": "Since $20\\%$ exceed $42$, exactly $80\\%$ fall below it; converting to the lower tail lets us read $z_2 = 0.8416$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{42 - \\mu}{\\sigma} = 0.8416",
+        "explanation": "Equating the standardised value of $42$ with $z_2$ gives the second simultaneous equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "42 - 30 = (0.8416 - (-1.2816))\\,\\sigma \\ \\Rightarrow\\ 12 = 2.1232\\,\\sigma",
+        "explanation": "Subtracting the two ‘value $-\\ \\mu = z\\sigma$’ forms cancels $\\mu$; the $12$ cm gap spans about $2.12$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{12}{2.1232} = 5.652",
+        "explanation": "Dividing the length gap by the standardised gap gives a standard deviation of about $5.65$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 30 + 1.2816 \\times 5.652 = 37.24",
+        "explanation": "From the first equation $\\mu = 30 + 1.2816\\,\\sigma$. The mean length of about $37.2$ cm sits between the two quoted lengths, as expected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the parameters (part a)",
+        "workingLatex": "\\mu \\approx 37.2, \\qquad \\sigma \\approx 5.65",
+        "explanation": "To three significant figures the model is $X \\sim N(37.2,\\ 5.65^2)$ cm, answering part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up part (b) and standardise both limits",
+        "workingLatex": "P(33 < X < 40) = P\\left(\\dfrac{33 - 37.2}{5.65} < Z < \\dfrac{40 - 37.2}{5.65}\\right)",
+        "explanation": "Class 1 covers lengths between $33$ cm and $40$ cm, so we standardise each limit with the parameters just found to obtain a standard-normal interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate the two z-values",
+        "workingLatex": "z = \\dfrac{33 - 37.2}{5.65} = -0.743, \\qquad z = \\dfrac{40 - 37.2}{5.65} = 0.496",
+        "explanation": "The lower limit $33$ is below the mean, giving a negative $z$, while $40$ is above the mean, giving a positive $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Write the probability as a difference of Phi values",
+        "workingLatex": "P(33 < X < 40) = \\Phi(0.496) - \\Phi(-0.743) = 0.6899 - 0.2286",
+        "explanation": "The area between two points equals the cumulative probability up to the upper limit minus that up to the lower limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Compute the proportion",
+        "workingLatex": "P(33 < X < 40) = 0.4613 \\approx 0.461",
+        "explanation": "So about $0.461$ of the area lies in the Class 1 band.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Interpret the result",
+        "workingLatex": "P(\\text{Class 1}) \\approx 0.461 = 46.1\\%",
+        "explanation": "About $46.1\\%$ of cucumbers are graded Class 1. This is a little under half, which is reasonable since the band $33$–$40$ cm sits around the mean but is narrower than the full spread of lengths.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 37.2$ cm, $\\sigma \\approx 5.65$ cm. (b) about $0.461$ (i.e. $46.1\\%$) are Class 1."
+  }
+}

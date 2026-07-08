@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "tangent",
+    "circle"
+  ],
+  "questionText": "The circle $C$ has equation $x^2 + y^2 = 25$. Find an equation of the tangent to $C$ at the point $(3, 4)$, giving your answer in the form $ax + by = c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(25)",
+        "explanation": "Since $y$ is a function of $x$, we differentiate the whole relation with respect to $x$. The constant $25$ on the right has derivative $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power rule to x^2 and the chain rule to y^2",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^2$ gives $2x$. For $y^2$ the chain rule brings the power down to $2y$ and then multiplies by $\\frac{dy}{dx}$, because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{2y} = -\\frac{x}{y}",
+        "explanation": "Subtracting $2x$ and dividing by $2y$ isolates the gradient. For a circle centred at the origin the gradient is always $-\\frac{x}{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "3^2 + 4^2 = 9 + 16 = 25 \\;\\checkmark",
+        "explanation": "Before substituting we confirm that $(3,4)$ satisfies $x^2+y^2=25$, so the point really is on the circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the point to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(3,4)} = -\\frac{3}{4}",
+        "explanation": "Putting $x=3$ and $y=4$ into $-\\frac{x}{y}$ gives the gradient of the tangent at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Use the point-gradient form of a line",
+        "workingLatex": "y - 4 = -\\frac{3}{4}(x - 3)",
+        "explanation": "A line of gradient $m$ through $(x_1,y_1)$ is $y-y_1=m(x-x_1)$; here $m=-\\frac{3}{4}$ and the point is $(3,4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Clear the fraction",
+        "workingLatex": "4(y - 4) = -3(x - 3)",
+        "explanation": "Multiplying both sides by $4$ removes the fraction and makes the rearrangement tidier.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand both sides",
+        "workingLatex": "4y - 16 = -3x + 9",
+        "explanation": "Expanding the brackets prepares the equation to be collected into a clean linear form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rearrange into the required form",
+        "workingLatex": "3x + 4y = 25",
+        "explanation": "Collecting the $x$ and $y$ terms on the left gives the tangent as $3x+4y=25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{3}{4}\\text{ at }(3,4),\\qquad 3x + 4y = 25",
+        "explanation": "So the gradient at $(3,4)$ is $-\\frac{3}{4}$ and the tangent there is $3x+4y=25$. Notice it is perpendicular to the radius, as expected for a circle.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $3x + 4y = 25$ (gradient $-\\frac{3}{4}$)."
+  }
+}

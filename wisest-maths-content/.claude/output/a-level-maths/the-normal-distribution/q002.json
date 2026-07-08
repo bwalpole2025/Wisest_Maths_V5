@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "probability"
+  ],
+  "questionText": "The time, $X$ minutes, that customers wait to be served is modelled by $X \\sim N(40, 10^2)$. Find $P(X > 55)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "X \\sim N(40,\\ 10^2), \\qquad P(X > 55) = \\ ?",
+        "explanation": "The waiting time is normal with mean $\\mu = 40$ minutes and standard deviation $\\sigma = 10$ minutes. We want the probability that a customer waits longer than $55$ minutes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standardisation",
+        "workingLatex": "Z = \\dfrac{X - 40}{10}, \\qquad Z \\sim N(0,1)",
+        "explanation": "We convert the waiting time into a $z$-score by subtracting the mean and dividing by the standard deviation, so that we can use the single standard normal distribution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 55",
+        "workingLatex": "z = \\dfrac{55 - 40}{10} = \\dfrac{15}{10} = 1.5",
+        "explanation": "The time $55$ is $15$ minutes above the mean, which is $1.5$ standard deviations of $10$. So $55$ minutes corresponds to $z = 1.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite as an upper-tail probability",
+        "workingLatex": "P(X > 55) = P(Z > 1.5) = 1 - \\Phi(1.5)",
+        "explanation": "The calculator gives the area to the left, $\\Phi$, but we want the area to the right. Since the total area is $1$, the right-hand tail is $1$ minus the left-hand area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the standard normal probability",
+        "workingLatex": "1 - \\Phi(1.5) = 1 - 0.93319 = 0.06681",
+        "explanation": "The lower-tail value at $z = 1.5$ is $\\Phi(1.5) = 0.93319$, so subtracting from $1$ leaves the upper tail as $0.06681$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(X > 55) \\approx 0.06681",
+        "explanation": "So only about $6.7\\%$ of customers wait longer than $55$ minutes. The probability is small, which fits the fact that $55$ minutes is well above the average wait.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X > 55) \\approx 0.06681$."
+  }
+}

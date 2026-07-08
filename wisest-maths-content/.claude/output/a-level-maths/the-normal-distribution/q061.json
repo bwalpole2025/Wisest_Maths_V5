@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "expected frequency",
+    "standardising"
+  ],
+  "questionText": "A machine fills bottles with juice. The volume, $X$ ml, delivered is modelled by $X \\sim N(500, 6^2)$. A bottle is judged 'acceptable' if its volume is between $490$ ml and $512$ ml inclusive. A crate contains $240$ bottles. Estimate the number of bottles in the crate that are acceptable, giving your answer to the nearest whole bottle.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the crate size",
+        "workingLatex": "X \\sim N(500,\\ 6^2), \\qquad n = 240",
+        "explanation": "The volumes are normal with mean $\\mu = 500$ and standard deviation $\\sigma = 6$ (since the variance is $6^2 = 36$). We will first find the probability that a single bottle is acceptable, then scale it up to the $240$ bottles in the crate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write 'acceptable' as a probability",
+        "workingLatex": "P(\\text{acceptable}) = P(490 \\le X \\le 512)",
+        "explanation": "A bottle is acceptable exactly when its volume lands between $490$ and $512$, so the proportion of acceptable bottles is the probability that $X$ falls in that interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the lower limit",
+        "workingLatex": "Z = \\dfrac{490 - 500}{6} = \\dfrac{-10}{6} = -1.667",
+        "explanation": "To use the standard normal we convert each raw volume into a $z$-score, which counts how many standard deviations it lies from the mean. The lower limit $490$ is below the mean, so its $z$-value is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Standardise the upper limit",
+        "workingLatex": "Z = \\dfrac{512 - 500}{6} = \\dfrac{12}{6} = 2",
+        "explanation": "Standardising the upper limit in the same way places $512$ exactly two standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rewrite the probability in standardised form",
+        "workingLatex": "P(490 \\le X \\le 512) = P(-1.667 \\le Z \\le 2) = \\Phi(2) - \\Phi(-1.667)",
+        "explanation": "Because standardising preserves the interval, the probability equals the area under the standard normal curve between the two $z$-values, which is the larger cumulative value minus the smaller one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Use symmetry for the negative z-value",
+        "workingLatex": "\\Phi(-1.667) = 1 - \\Phi(1.667)",
+        "explanation": "Standard normal tables and calculators work with positive $z$. By the symmetry of the bell curve about zero, the area to the left of $-1.667$ equals the area to the right of $+1.667$, which is $1 - \\Phi(1.667)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the two standard-normal values",
+        "workingLatex": "\\Phi(2) = 0.9772, \\qquad \\Phi(1.667) = 0.9522",
+        "explanation": "These come from the normal cumulative function on a calculator: each is the fraction of the distribution lying below that $z$-value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute the values",
+        "workingLatex": "P = 0.9772 - (1 - 0.9522) = 0.9772 - 0.0478",
+        "explanation": "Replacing $\\Phi(-1.667)$ by $1 - 0.9522 = 0.0478$ turns the expression into a simple subtraction of two known numbers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compute the probability",
+        "workingLatex": "P(490 \\le X \\le 512) = 0.9295",
+        "explanation": "This is the probability that any one randomly chosen bottle is acceptable, i.e. about $93\\%$ of bottles pass.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Interpret the probability as a proportion",
+        "workingLatex": "p = 0.9295 \\text{ of all bottles are acceptable}",
+        "explanation": "For a large batch, a probability behaves like a long-run proportion, so we expect roughly this fraction of the crate to be acceptable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the expected number in the crate",
+        "workingLatex": "E(\\text{acceptable}) = n \\times p = 240 \\times 0.9295",
+        "explanation": "The expected number of successes in $n$ independent trials is $n$ multiplied by the probability of success on one trial, so we multiply the crate size by the acceptance probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Carry out the multiplication",
+        "workingLatex": "240 \\times 0.9295 = 223.1",
+        "explanation": "Multiplying gives the expected count on the original scale of whole bottles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Round to a whole number of bottles",
+        "workingLatex": "E(\\text{acceptable}) \\approx 223 \\text{ bottles}",
+        "explanation": "You cannot have a fractional bottle, so we round to the nearest whole bottle to give a sensible physical answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Sense check",
+        "workingLatex": "223 \\text{ out of } 240 \\approx 0.929",
+        "explanation": "Dividing the estimate back by $240$ recovers the acceptance probability of about $0.93$, confirming the arithmetic is consistent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "About $223$ bottles in the crate are expected to be acceptable (from $P(490 \\le X \\le 512) = 0.9295$ and $240 \\times 0.9295 = 223.1$)."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "symmetric interval"
+  ],
+  "questionText": "The temperature, $X\\ ^{\\circ}\\mathrm{C}$, inside a refrigerator is modelled by $X \\sim N(4, 0.6^2)$. Find the interval, symmetric about the mean, within which the temperature lies $99\\%$ of the time. Give the endpoints to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(4,\\ 0.6^2)",
+        "explanation": "The temperature is normal with mean $\\mu = 4\\ ^{\\circ}\\mathrm{C}$ and standard deviation $\\sigma = 0.6\\ ^{\\circ}\\mathrm{C}$. We want a central interval about $4$ holding $99\\%$ of readings.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the outer 1% between the two tails",
+        "workingLatex": "\\dfrac{1 - 0.99}{2} = 0.005",
+        "explanation": "The central $99\\%$ is symmetric, so the remaining $1\\%$ splits equally, leaving $0.005$ in each tail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the cumulative probability at the upper endpoint",
+        "workingLatex": "P(X < b) = 0.99 + 0.005 = 0.995",
+        "explanation": "Everything except the upper $0.5\\%$ tail lies below the upper endpoint, so the area to its left is $0.995$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Use the inverse normal to find the z-value",
+        "workingLatex": "z = \\Phi^{-1}(0.995) = 2.576",
+        "explanation": "The standardised value with $99.5\\%$ of the area below it is $2.576$, the standard $z$ for a central $99\\%$ interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the endpoints as mu plus or minus z sigma",
+        "workingLatex": "4 \\pm 2.576 \\times 0.6",
+        "explanation": "By symmetry the endpoints sit at $z = \\pm 2.576$, that is, the same distance $z\\sigma$ each side of the mean $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the half-width",
+        "workingLatex": "2.576 \\times 0.6 = 1.545",
+        "explanation": "Multiplying the $z$-value by $\\sigma = 0.6$ converts it back to degrees Celsius, giving a half-width of $1.545\\ ^{\\circ}\\mathrm{C}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the lower endpoint",
+        "workingLatex": "4 - 1.545 = 2.455",
+        "explanation": "Subtracting the half-width from the mean gives the lower boundary of the temperature interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the upper endpoint",
+        "workingLatex": "4 + 1.545 = 5.545",
+        "explanation": "Adding the half-width to the mean gives the upper boundary.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the interval to 3 significant figures",
+        "workingLatex": "2.45 < X < 5.55",
+        "explanation": "So $99\\%$ of the time the fridge temperature is between $2.45\\ ^{\\circ}\\mathrm{C}$ and $5.55\\ ^{\\circ}\\mathrm{C}$, a narrow band centred on $4\\ ^{\\circ}\\mathrm{C}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The temperature lies in $2.45\\ ^{\\circ}\\mathrm{C} < X < 5.55\\ ^{\\circ}\\mathrm{C}$ for $99\\%$ of the time (endpoints to 3 s.f.)."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "trigonometry",
+    "chain rule"
+  ],
+  "questionText": "The curve $C$ has equation $y + \\sin y = x$. Find $\\dfrac{dy}{dx}$ in terms of $y$, and hence find the gradient of $C$ at the origin.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(y) + \\frac{d}{dx}(\\sin y) = \\frac{d}{dx}(x)",
+        "explanation": "We differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the y term",
+        "workingLatex": "\\frac{d}{dx}(y) = \\frac{dy}{dx}",
+        "explanation": "Differentiating $y$ with respect to $x$ simply gives $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate sin y with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(\\sin y) = \\cos y\\,\\frac{dy}{dx}",
+        "explanation": "The derivative of $\\sin y$ is $\\cos y$, multiplied by $\\frac{dy}{dx}$ because $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "\\frac{dy}{dx} + \\cos y\\,\\frac{dy}{dx} = 1",
+        "explanation": "The right side $\\frac{d}{dx}(x) = 1$. Both terms on the left contain $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor out dy/dx",
+        "workingLatex": "(1 + \\cos y)\\frac{dy}{dx} = 1",
+        "explanation": "Taking the common factor $\\frac{dy}{dx}$ outside the bracket lets us solve for it directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{1 + \\cos y}",
+        "explanation": "Dividing by $(1 + \\cos y)$ gives the gradient in terms of $y$ only.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the origin lies on the curve",
+        "workingLatex": "0 + \\sin 0 = 0 = x \\;\\checkmark",
+        "explanation": "At the origin $x = 0$ and $y = 0$, and $0 + \\sin 0 = 0$, so $(0,0)$ lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate at the origin (y = 0)",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{1 + \\cos 0} = \\frac{1}{1 + 1}",
+        "explanation": "Substituting $y = 0$ and using $\\cos 0 = 1$ (radians).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify",
+        "workingLatex": "= \\frac{1}{2}",
+        "explanation": "So the gradient of $C$ at the origin is $\\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{1 + \\cos y}, \\qquad \\text{gradient at the origin} = \\frac{1}{2}",
+        "explanation": "So the gradient function is $\\tfrac{1}{1+\\cos y}$ and its value at the origin is $\\tfrac{1}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{1}{1+\\cos y}$; at the origin the gradient is $\\tfrac{1}{2}$."
+  }
+}

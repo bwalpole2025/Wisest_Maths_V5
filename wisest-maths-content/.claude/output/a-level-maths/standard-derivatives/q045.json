@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "written",
+  "tags": [
+    "increasing decreasing",
+    "logarithm",
+    "standard derivatives"
+  ],
+  "questionText": "A curve has equation $y = x - \\ln x$ for $x > 0$. Determine the values of $x$ for which the curve is increasing and the values for which it is decreasing.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function and domain",
+        "workingLatex": "y = x - \\ln x, \\quad x > 0",
+        "explanation": "The term $\\ln x$ is only defined for $x>0$, so we work on that domain; increasing/decreasing is decided by the sign of the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = 1 - \\frac{1}{x}",
+        "explanation": "Using $\\frac{d}{dx}(x)=1$ and the standard result $\\frac{d}{dx}(\\ln x)=\\frac{1}{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write as a single fraction",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x - 1}{x}",
+        "explanation": "Combining over a common denominator makes the sign of the gradient easy to read off.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Note the denominator is positive",
+        "workingLatex": "x > 0 \\Rightarrow \\frac{1}{x} > 0",
+        "explanation": "On the domain $x>0$ the denominator is positive, so the sign of the gradient is the sign of the numerator $x-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Condition for increasing",
+        "workingLatex": "\\frac{x-1}{x} > 0 \\iff x - 1 > 0",
+        "explanation": "With a positive denominator, the fraction is positive exactly when $x-1>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve the increasing case",
+        "workingLatex": "x - 1 > 0 \\iff x > 1",
+        "explanation": "So the curve is increasing for $x>1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Condition for decreasing",
+        "workingLatex": "\\frac{x-1}{x} < 0 \\iff x - 1 < 0",
+        "explanation": "Similarly the gradient is negative when the numerator is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve the decreasing case",
+        "workingLatex": "x - 1 < 0 \\text{ and } x > 0 \\iff 0 < x < 1",
+        "explanation": "Combining $x<1$ with the domain $x>0$ gives the interval $0<x<1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify the turning point",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\iff x = 1",
+        "explanation": "At $x=1$ the gradient is zero, separating the decreasing and increasing regions (a minimum).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{decreasing on } 0<x<1, \\quad \\text{increasing on } x>1",
+        "explanation": "So the curve falls on $0<x<1$ and rises for $x>1$, with a minimum turning point at $x=1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Decreasing for $0<x<1$ and increasing for $x>1$ (minimum at $x=1$)."
+  }
+}

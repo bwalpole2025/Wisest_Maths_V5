@@ -4,90 +4,89 @@
   "topic": "Year 2 Pure",
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "proof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "numeric",
   "tags": [
-    "identities",
-    "proof",
-    "secant",
-    "tangent"
+    "reciprocal trig",
+    "cosec",
+    "solving equations"
   ],
-  "questionText": "Prove that $\\sec\\theta + \\tan\\theta \\equiv \\dfrac{\\cos\\theta}{1 - \\sin\\theta}$.",
+  "questionText": "Solve $\\operatorname{cosec} x = -\\dfrac{2}{\\sqrt{3}}$ for $0^\\circ \\le x < 360^\\circ$, giving all solutions in degrees.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\sec\\theta + \\tan\\theta",
-        "explanation": "We begin with the left side and rewrite both terms in sine and cosine so they can be combined into one fraction.",
+        "description": "Rewrite cosec using its definition",
+        "workingLatex": "\\operatorname{cosec} x = \\frac{1}{\\sin x}",
+        "explanation": "Cosec is the reciprocal of sine, so we convert into a sine equation to use the standard exact values.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite in sine and cosine",
-        "workingLatex": "= \\frac{1}{\\cos\\theta} + \\frac{\\sin\\theta}{\\cos\\theta}",
-        "explanation": "Secant is one over cosine and tangent is sine over cosine, so both terms already share the denominator $\\cos\\theta$.",
+        "description": "Form a sine equation",
+        "workingLatex": "\\frac{1}{\\sin x} = -\\frac{2}{\\sqrt{3}} \\;\\Rightarrow\\; \\sin x = -\\frac{\\sqrt{3}}{2}",
+        "explanation": "Taking reciprocals of both sides flips $-\\tfrac{2}{\\sqrt3}$ to $-\\tfrac{\\sqrt3}{2}$, giving a standard sine value.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Combine over the common denominator",
-        "workingLatex": "= \\frac{1 + \\sin\\theta}{\\cos\\theta}",
-        "explanation": "Adding the two fractions gives a single fraction with numerator $1 + \\sin\\theta$.",
+        "description": "Check that solutions can exist",
+        "workingLatex": "\\left|-\\tfrac{\\sqrt{3}}{2}\\right| = \\tfrac{\\sqrt{3}}{2} \\approx 0.866 \\le 1",
+        "explanation": "The required sine has magnitude about $0.866$, which lies within $[-1,1]$, so solutions exist.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Decide on a strategy to reach the target",
-        "workingLatex": "\\text{target has } (1 - \\sin\\theta) \\text{ in the denominator}",
-        "explanation": "The right-hand side has $1 - \\sin\\theta$ below, so we aim to introduce that factor by multiplying cleverly by a form of $1$.",
+        "description": "Find the reference angle",
+        "workingLatex": "\\sin 60^\\circ = \\tfrac{\\sqrt{3}}{2} \\;\\Rightarrow\\; \\text{reference angle} = 60^\\circ",
+        "explanation": "Ignoring the sign, the acute angle whose sine is $\\tfrac{\\sqrt3}{2}$ is $60^\\circ$, so that is the reference angle.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Multiply top and bottom by the conjugate",
-        "workingLatex": "= \\frac{1 + \\sin\\theta}{\\cos\\theta}\\times\\frac{1 - \\sin\\theta}{1 - \\sin\\theta}",
-        "explanation": "Multiplying by $\\frac{1 - \\sin\\theta}{1 - \\sin\\theta}$, which equals $1$, is legitimate and will create a difference of squares on top.",
+        "description": "Decide which quadrants apply",
+        "workingLatex": "\\sin x < 0 \\text{ in quadrants III and IV}",
+        "explanation": "The sine value is negative, and sine is negative in the third and fourth quadrants, so the solutions live there.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Expand the numerator as a difference of squares",
-        "workingLatex": "(1 + \\sin\\theta)(1 - \\sin\\theta) = 1 - \\sin^2\\theta",
-        "explanation": "The product of a sum and difference collapses to $1 - \\sin^2\\theta$.",
+        "description": "Write the third-quadrant solution",
+        "workingLatex": "x = 180^\\circ + 60^\\circ = 240^\\circ",
+        "explanation": "In the third quadrant we add the reference angle to $180^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "1 - \\sin^2\\theta = \\cos^2\\theta",
-        "explanation": "The numerator is exactly $\\cos^2\\theta$ by the Pythagorean identity, which is the key simplification.",
+        "description": "Write the fourth-quadrant solution",
+        "workingLatex": "x = 360^\\circ - 60^\\circ = 300^\\circ",
+        "explanation": "In the fourth quadrant we subtract the reference angle from $360^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Write the fraction with the new numerator",
-        "workingLatex": "= \\frac{\\cos^2\\theta}{\\cos\\theta\\,(1 - \\sin\\theta)}",
-        "explanation": "Substituting shows a $\\cos^2\\theta$ over a product that includes a single $\\cos\\theta$, ready to cancel.",
+        "description": "Confirm both lie in the interval",
+        "workingLatex": "0^\\circ \\le 240^\\circ, \\; 300^\\circ < 360^\\circ",
+        "explanation": "Both angles satisfy $0^\\circ \\le x < 360^\\circ$, so both are kept.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Cancel one factor of cosine",
-        "workingLatex": "= \\frac{\\cos\\theta}{1 - \\sin\\theta}",
-        "explanation": "Cancelling one cosine from top and bottom leaves exactly the right-hand side.",
+        "description": "Check a solution in the original equation",
+        "workingLatex": "\\operatorname{cosec} 240^\\circ = \\frac{1}{\\sin 240^\\circ} = \\frac{1}{-\\tfrac{\\sqrt{3}}{2}} = -\\frac{2}{\\sqrt{3}}",
+        "explanation": "Substituting back reproduces $-\\tfrac{2}{\\sqrt3}$, confirming the answer; $300^\\circ$ checks the same way since $\\sin 300^\\circ = -\\tfrac{\\sqrt3}{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 10,
-        "description": "Conclude the proof",
-        "workingLatex": "\\sec\\theta + \\tan\\theta \\equiv \\frac{\\cos\\theta}{1 - \\sin\\theta} \\;\\blacksquare",
-        "explanation": "The left-hand side has been transformed into the right-hand side, completing the proof for all valid $\\theta$.",
+        "description": "State the full solution set",
+        "workingLatex": "x = 240^\\circ, \\; 300^\\circ",
+        "explanation": "These two angles are the complete set of solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec\\theta + \\tan\\theta \\equiv \\dfrac{\\cos\\theta}{1 - \\sin\\theta}$"
+    "finalAnswer": "$x = 240^\\circ$ or $x = 300^\\circ$."
   }
 }

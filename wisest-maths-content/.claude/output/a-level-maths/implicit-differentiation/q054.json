@@ -1,0 +1,114 @@
+{
+  "id": "al.y2.pure.implicit.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "trigonometric",
+    "tangent",
+    "normal"
+  ],
+  "questionText": "The curve $C$ has equation $\\cos x + \\sin y = 1$, where $x$ and $y$ are in radians. The point $P\\left(\\dfrac{\\pi}{3}, \\dfrac{\\pi}{6}\\right)$ lies on $C$. Find an equation of the tangent to $C$ at $P$ and an equation of the normal to $C$ at $P$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Check that P lies on C",
+        "workingLatex": "\\cos\\frac{\\pi}{3} + \\sin\\frac{\\pi}{6} = \\tfrac{1}{2} + \\tfrac{1}{2} = 1",
+        "explanation": "Substituting the coordinates gives $1$, matching the right-hand side, so $P$ is on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(\\cos x) + \\frac{d}{dx}(\\sin y) = \\frac{d}{dx}(1)",
+        "explanation": "The right-hand side is constant, giving $0$. We differentiate each trigonometric term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate cos x and sin y (chain rule)",
+        "workingLatex": "-\\sin x + \\cos y\\,\\frac{dy}{dx} = 0",
+        "explanation": "The derivative of $\\cos x$ is $-\\sin x$. For $\\sin y$ the chain rule gives $\\cos y$ times $\\frac{dy}{dx}$, because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\sin x}{\\cos y}",
+        "explanation": "Rearranging isolates the gradient as the ratio $\\sin x$ over $\\cos y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recall the exact trig values needed",
+        "workingLatex": "\\sin\\frac{\\pi}{3} = \\frac{\\sqrt{3}}{2}, \\qquad \\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}",
+        "explanation": "These standard exact values let us evaluate the gradient without a calculator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute P to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{P} = \\frac{\\sin(\\pi/3)}{\\cos(\\pi/6)} = \\frac{\\sqrt{3}/2}{\\sqrt{3}/2} = 1",
+        "explanation": "The two exact values are equal, so the gradient of the tangent at $P$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the tangent gradient",
+        "workingLatex": "m_{\\text{tangent}} = 1",
+        "explanation": "So the tangent to $C$ at $P$ has gradient $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - \\frac{\\pi}{6} = 1\\left(x - \\frac{\\pi}{3}\\right)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ through $P$ with gradient $1$ gives the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the tangent equation",
+        "workingLatex": "y = x - \\frac{\\pi}{3} + \\frac{\\pi}{6} = x - \\frac{\\pi}{6}",
+        "explanation": "Combining the constants $-\\tfrac{\\pi}{3}+\\tfrac{\\pi}{6} = -\\tfrac{\\pi}{6}$ tidies the tangent to $y = x - \\tfrac{\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{1} = -1",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of $1$, namely $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Form the normal equation",
+        "workingLatex": "y - \\frac{\\pi}{6} = -1\\left(x - \\frac{\\pi}{3}\\right)",
+        "explanation": "Using the same point $P$ with gradient $-1$ gives the normal line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Simplify the normal equation",
+        "workingLatex": "y = -x + \\frac{\\pi}{3} + \\frac{\\pi}{6} = -x + \\frac{\\pi}{2}",
+        "explanation": "Since $\\tfrac{\\pi}{3}+\\tfrac{\\pi}{6} = \\tfrac{\\pi}{2}$, the normal is $y = -x + \\tfrac{\\pi}{2}$, i.e. $x + y = \\tfrac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the results",
+        "workingLatex": "\\text{tangent: } y = x - \\frac{\\pi}{6}, \\qquad \\text{normal: } x + y = \\frac{\\pi}{2}",
+        "explanation": "The tangent at $P$ is $y = x - \\tfrac{\\pi}{6}$ and the normal there is $x + y = \\tfrac{\\pi}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Gradient $= 1$; tangent $y = x - \\dfrac{\\pi}{6}$; normal $x + y = \\dfrac{\\pi}{2}$."
+  }
+}

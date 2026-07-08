@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "chain rule",
+    "ellipse"
+  ],
+  "questionText": "The curve $C$ has equation $3x^2 + 2y^2 = 11$. Find $\\frac{dy}{dx}$ in terms of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(3x^2) + \\frac{d}{dx}(2y^2) = \\frac{d}{dx}(11)",
+        "explanation": "We differentiate both sides with respect to $x$, treating $y$ as a function of $x$. The constant $11$ will differentiate to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the $3x^2$ term",
+        "workingLatex": "6x + \\frac{d}{dx}(2y^2) = 0",
+        "explanation": "By the power rule $\\frac{d}{dx}(3x^2)=6x$, and the constant $11$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the $2y^2$ term using the chain rule",
+        "workingLatex": "\\frac{d}{dx}(2y^2) = 4y\\frac{dy}{dx}",
+        "explanation": "Differentiating $2y^2$ with respect to $x$ gives $4y$ from the power rule, then a $\\frac{dy}{dx}$ factor from the chain rule because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "6x + 4y\\frac{dy}{dx} = 0",
+        "explanation": "Combining the differentiated terms gives an equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Isolate the $\\frac{dy}{dx}$ term",
+        "workingLatex": "4y\\frac{dy}{dx} = -6x",
+        "explanation": "Move the $6x$ to the other side to leave the $\\frac{dy}{dx}$ term on its own.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make $\\frac{dy}{dx}$ the subject and simplify",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{6x}{4y} = -\\frac{3x}{2y}",
+        "explanation": "Divide by $4y$ and cancel the common factor of $2$ in $\\frac{6}{4}$ to reach the simplest form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{3x}{2y}",
+        "explanation": "This is the gradient at any point $(x,y)$ on this ellipse.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = -\\frac{3x}{2y}$"
+  }
+}

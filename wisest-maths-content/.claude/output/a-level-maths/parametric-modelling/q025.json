@@ -5,53 +5,88 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "minimum speed",
-    "optimisation"
+    "projectile",
+    "greatest height",
+    "speed"
   ],
-  "questionText": "A particle has position $x = t^2$, $y = 2t$ (metres) at time $t$ seconds ($t \\ge 0$). Find the minimum speed of the particle.",
+  "questionText": "A ball is thrown so that, $t$ seconds after release, its position in metres is modelled by $x = 8t$ and $y = 30t - 5t^{2}$. Find the greatest height reached, the horizontal distance travelled at that instant, and the speed of the ball at the top of its flight.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the speed expression",
-        "workingLatex": "\\text{speed} = \\sqrt{(2t)^2 + 2^2} = 2\\sqrt{t^2 + 1}",
-        "explanation": "The speed combines the velocity components $2t$ and $2$.",
+        "description": "Differentiate the height with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 30 - 10t",
+        "explanation": "The vertical velocity $\\dot{y}$ tells us how fast the ball is rising. At the very top it is momentarily neither rising nor falling.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Identify what makes the speed smallest",
-        "workingLatex": "\\text{minimise } t^2 + 1",
-        "explanation": "Since the square root is increasing, the speed is smallest when $t^2 + 1$ is smallest.",
+        "description": "Set the vertical velocity to zero",
+        "workingLatex": "30 - 10t = 0",
+        "explanation": "The greatest height happens exactly when $\\dot{y} = 0$ — the instant the upward motion stops before the ball begins to fall.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Minimise the inside",
-        "workingLatex": "t^2 + 1 \\ge 1, \\text{ least at } t = 0",
-        "explanation": "The term $t^2$ is smallest (zero) at $t = 0$, which is in the allowed range.",
+        "description": "Solve for the time",
+        "workingLatex": "t = \\dfrac{30}{10} = 3",
+        "explanation": "This is the time in seconds at which the ball is at the top of its path.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate the minimum speed",
-        "workingLatex": "\\text{speed} = 2\\sqrt{0 + 1} = 2",
-        "explanation": "Substituting $t = 0$ gives the minimum speed.",
+        "description": "Confirm this is a maximum",
+        "workingLatex": "\\dot{y} > 0 \\text{ for } t < 3, \\qquad \\dot{y} < 0 \\text{ for } t > 3",
+        "explanation": "The vertical velocity changes from positive to negative, so the ball rises then falls: $t = 3$ really is the highest point, not a lowest one.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\text{min speed} = 2 \\text{ m/s at } t = 0",
-        "explanation": "The particle is slowest at the start, moving at $2$ m/s.",
+        "description": "Substitute the time into the height",
+        "workingLatex": "y = 30(3) - 5(3)^{2} = 90 - 45 = 45",
+        "explanation": "Putting the time back into $y$ gives the actual height at that instant, which is the greatest height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the horizontal distance at that time",
+        "workingLatex": "x = 8(3) = 24",
+        "explanation": "The same time is used in the horizontal equation; there is no need to differentiate $x$ because we only want where the ball is.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate the horizontal position",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 8",
+        "explanation": "The horizontal velocity is constant at $8$ m/s and is needed for the speed at the top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Use the speed formula at the top",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}} = \\sqrt{8^{2} + 0^{2}}",
+        "explanation": "Speed is the length of the velocity vector. At the top $\\dot{y} = 0$, so only the horizontal component remains.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{64} = 8",
+        "explanation": "At the highest point the ball moves purely horizontally, so its speed there is just the horizontal velocity, $8$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "y_{\\max} = 45,\\quad x = 24,\\quad \\text{speed} = 8",
+        "explanation": "Collecting the three answers gives the full description of the ball at the top of its flight.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Minimum speed $= 2$ m/s (at $t = 0$)."
+    "finalAnswer": "The greatest height is $45$ m, reached after travelling $24$ m horizontally (at $t = 3$ s), where the ball's speed is $8$ m/s."
   }
 }

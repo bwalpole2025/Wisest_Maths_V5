@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the standard deviation",
+    "standardising"
+  ],
+  "questionText": "The masses, $X$ grams, of apples from an orchard are modelled by $X \\sim N(160,\\ \\sigma^2)$, where $\\sigma$ is unknown. It is found that $20\\%$ of the apples have a mass less than $145$ g. Find the value of $\\sigma$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and translate the information",
+        "workingLatex": "X \\sim N(160,\\ \\sigma^2), \\qquad P(X < 145) = 0.20",
+        "explanation": "The masses are normal with mean $160$ and unknown standard deviation. ‘$20\\%$ have a mass less than $145$ g’ gives the lower-tail probability $P(X<145)=0.20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the z-value for 0.20",
+        "workingLatex": "z = \\Phi^{-1}(0.20) = -0.8416",
+        "explanation": "The standard-normal value with $20\\%$ of the area below it is $-0.8416$, negative because $145$ lies below the mean $160$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the standardisation equation",
+        "workingLatex": "\\dfrac{145 - 160}{\\sigma} = -0.8416",
+        "explanation": "Standardising $145$ must give this $z$. The mean is known, so $\\sigma$ is the only unknown in the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\dfrac{-15}{\\sigma} = -0.8416",
+        "explanation": "The mass $145$ is $15$ g below the mean; as a multiple of $\\sigma$ this negative distance equals the negative $z$-score.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel the signs",
+        "workingLatex": "\\dfrac{15}{\\sigma} = 0.8416",
+        "explanation": "The negatives on both sides cancel, leaving a positive distance of $15$ g equal to $0.8416$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange for the standard deviation",
+        "workingLatex": "\\sigma = \\dfrac{15}{0.8416}",
+        "explanation": "If $15$ g equals $0.8416$ standard deviations, then one standard deviation is $15$ divided by $0.8416$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the standard deviation",
+        "workingLatex": "\\sigma = 17.82",
+        "explanation": "Dividing gives the standard deviation in grams.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "\\sigma \\approx 17.8 \\text{ g}",
+        "explanation": "To three significant figures the standard deviation of the apple masses is $17.8$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the answer reproduces the given probability",
+        "workingLatex": "P(X < 145) = \\Phi\\!\\left(\\dfrac{145 - 160}{17.8}\\right) = \\Phi(-0.843) \\approx 0.20",
+        "explanation": "Standardising $145$ with $\\sigma=17.8$ returns about $-0.843$, whose lower-tail area is $0.20$, confirming the answer.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sigma \\approx 17.8$ g."
+  }
+}

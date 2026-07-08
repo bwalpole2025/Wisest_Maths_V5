@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "stationary points",
+    "exponential"
+  ],
+  "questionText": "The curve $C$ has equation $y = x e^{x}$. (a) Find $\\dfrac{dy}{dx}$. (b) Find the exact coordinates of the stationary point of $C$ and determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the two factors for the product rule",
+        "workingLatex": "u = x, \\qquad v = e^{x}",
+        "explanation": "The function is a product of $x$ and $e^{x}$, so the product rule $\\tfrac{d}{dx}(uv)=u'v+uv'$ applies. We label the factors $u$ and $v$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = e^{x}",
+        "explanation": "Differentiating $x$ gives $1$ by the power rule, and $e^{x}$ is its own derivative — both are standard results.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = e^{x} + x e^{x}",
+        "explanation": "Substituting into $u'v+uv'$ keeps one factor differentiated and the other unchanged in each term, then adds the two pieces.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}(1 + x)",
+        "explanation": "Both terms share the common factor $e^{x}$. Taking it out makes the derivative easy to set to zero, because a product is zero only when one factor is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the derivative to zero",
+        "workingLatex": "e^{x}(1 + x) = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve $\\tfrac{dy}{dx}=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x",
+        "workingLatex": "e^{x} > 0 \\ \\text{always} \\ \\Rightarrow\\ 1 + x = 0 \\ \\Rightarrow\\ x = -1",
+        "explanation": "Since $e^{x}$ is never zero, only the bracket can vanish. This leaves a single stationary point at $x=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = (-1)e^{-1} = -\\frac{1}{e}",
+        "explanation": "Substituting $x=-1$ back into $y=xe^{x}$ gives the height of the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the stationary point",
+        "workingLatex": "\\left(-1, \\ -\\frac{1}{e}\\right)",
+        "explanation": "So the curve has one stationary point, at $\\left(-1,-\\tfrac{1}{e}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\left[e^{x}(1+x)\\right] = e^{x}(1+x) + e^{x} = e^{x}(2 + x)",
+        "explanation": "To classify the point we use the second-derivative test, differentiating $e^{x}(1+x)$ again with the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate the second derivative at the stationary point",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=-1} = e^{-1}(2 - 1) = \\frac{1}{e} > 0",
+        "explanation": "We test the sign of the second derivative at $x=-1$. A positive value means the curve is concave up there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Conclude the nature of the stationary point",
+        "workingLatex": "\\frac{d^2y}{dx^2} > 0 \\ \\Rightarrow\\ \\text{minimum}",
+        "explanation": "Because the second derivative is positive, the stationary point $\\left(-1,-\\tfrac{1}{e}\\right)$ is a local minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = e^{x}(1+x)$. (b) A minimum at $\\left(-1, -\\dfrac{1}{e}\\right)$."
+  }
+}

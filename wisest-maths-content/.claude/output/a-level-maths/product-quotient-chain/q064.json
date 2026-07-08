@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "stationary points",
+    "second derivative"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^x \\cos x$ for $0 \\le x \\le 2\\pi$. (a) Find $\\dfrac{dy}{dx}$. (b) Find the equation of the tangent to $C$ at the point where $x = \\dfrac{\\pi}{2}$. (c) Find the exact coordinates of the two stationary points of $C$ and use the second derivative to determine their nature. (d) Hence determine the set of values of $x$ for which $C$ is decreasing.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the factors for the product rule",
+        "workingLatex": "u = e^x, \\qquad v = \\cos x",
+        "explanation": "The function is a product of $e^x$ and $\\cos x$, so we use $\\tfrac{d}{dx}(uv)=u'v+uv'$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = e^x, \\qquad v' = -\\sin x",
+        "explanation": "The exponential is unchanged and $\\cos x$ differentiates to $-\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule and factorise",
+        "workingLatex": "\\frac{dy}{dx} = e^x \\cos x - e^x \\sin x = e^x(\\cos x - \\sin x)",
+        "explanation": "Taking out $e^x$ leaves the trigonometric part $\\cos x-\\sin x$, which controls where the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the gradient at x = pi/2",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\pi/2} = e^{\\pi/2}\\big(\\cos\\tfrac{\\pi}{2} - \\sin\\tfrac{\\pi}{2}\\big) = e^{\\pi/2}(0 - 1) = -e^{\\pi/2}",
+        "explanation": "Using $\\cos\\tfrac{\\pi}{2}=0$ and $\\sin\\tfrac{\\pi}{2}=1$ gives the slope of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate at x = pi/2",
+        "workingLatex": "y = e^{\\pi/2}\\cos\\tfrac{\\pi}{2} = 0 \\quad\\Rightarrow\\quad \\left(\\tfrac{\\pi}{2},\\,0\\right)",
+        "explanation": "The curve meets the $x$-axis here, and the tangent touches at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - 0 = -e^{\\pi/2}\\left(x - \\tfrac{\\pi}{2}\\right) \\;\\Rightarrow\\; y = -e^{\\pi/2}\\left(x - \\tfrac{\\pi}{2}\\right)",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with the gradient found above.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the derivative to zero",
+        "workingLatex": "e^x(\\cos x - \\sin x) = 0 \\;\\Rightarrow\\; \\cos x - \\sin x = 0",
+        "explanation": "Since $e^x$ is never zero, stationary points occur where $\\cos x=\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for x in the interval",
+        "workingLatex": "\\tan x = 1 \\;\\Rightarrow\\; x = \\frac{\\pi}{4}, \\ \\frac{5\\pi}{4}",
+        "explanation": "Dividing by $\\cos x$ gives $\\tan x=1$; within $0\\le x\\le 2\\pi$ this has two solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinates",
+        "workingLatex": "y\\!\\left(\\tfrac{\\pi}{4}\\right) = \\frac{e^{\\pi/4}}{\\sqrt{2}}, \\qquad y\\!\\left(\\tfrac{5\\pi}{4}\\right) = -\\frac{e^{5\\pi/4}}{\\sqrt{2}}",
+        "explanation": "Using $\\cos\\tfrac{\\pi}{4}=\\tfrac{1}{\\sqrt2}$ and $\\cos\\tfrac{5\\pi}{4}=-\\tfrac{1}{\\sqrt2}$ gives the two stationary heights.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Compute the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = e^x(\\cos x - \\sin x) + e^x(-\\sin x - \\cos x) = -2e^x \\sin x",
+        "explanation": "Differentiating $e^x(\\cos x-\\sin x)$ with the product rule and simplifying, the cosine terms cancel and the sine terms add, leaving $-2e^x\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Classify the point at x = pi/4",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=\\pi/4} = -2e^{\\pi/4}\\sin\\tfrac{\\pi}{4} < 0",
+        "explanation": "With $\\sin\\tfrac{\\pi}{4}>0$ the second derivative is negative, so $\\left(\\tfrac{\\pi}{4},\\tfrac{e^{\\pi/4}}{\\sqrt2}\\right)$ is a maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Classify the point at x = 5pi/4",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=5\\pi/4} = -2e^{5\\pi/4}\\sin\\tfrac{5\\pi}{4} > 0",
+        "explanation": "Here $\\sin\\tfrac{5\\pi}{4}<0$, so the second derivative is positive and $\\left(\\tfrac{5\\pi}{4},-\\tfrac{e^{5\\pi/4}}{\\sqrt2}\\right)$ is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Rewrite the gradient using a single cosine",
+        "workingLatex": "\\cos x - \\sin x = \\sqrt{2}\\,\\cos\\!\\left(x + \\tfrac{\\pi}{4}\\right)",
+        "explanation": "The harmonic form makes the sign of the gradient transparent, since $e^x>0$ means $\\tfrac{dy}{dx}<0$ exactly when $\\cos\\!\\left(x+\\tfrac{\\pi}{4}\\right)<0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State where C is decreasing",
+        "workingLatex": "\\cos\\!\\left(x + \\tfrac{\\pi}{4}\\right) < 0 \\;\\Rightarrow\\; \\frac{\\pi}{2} < x + \\frac{\\pi}{4} < \\frac{3\\pi}{2} \\;\\Rightarrow\\; \\frac{\\pi}{4} < x < \\frac{5\\pi}{4}",
+        "explanation": "Cosine is negative between $\\tfrac{\\pi}{2}$ and $\\tfrac{3\\pi}{2}$; subtracting $\\tfrac{\\pi}{4}$ gives the interval where $C$ is decreasing, which fits with a maximum at $\\tfrac{\\pi}{4}$ and a minimum at $\\tfrac{5\\pi}{4}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=e^x(\\cos x-\\sin x)$. (b) $y=-e^{\\pi/2}\\left(x-\\tfrac{\\pi}{2}\\right)$. (c) $\\left(\\tfrac{\\pi}{4},\\tfrac{e^{\\pi/4}}{\\sqrt2}\\right)$ is a maximum and $\\left(\\tfrac{5\\pi}{4},-\\tfrac{e^{5\\pi/4}}{\\sqrt2}\\right)$ is a minimum. (d) $C$ is decreasing for $\\tfrac{\\pi}{4}<x<\\tfrac{5\\pi}{4}$."
+  }
+}

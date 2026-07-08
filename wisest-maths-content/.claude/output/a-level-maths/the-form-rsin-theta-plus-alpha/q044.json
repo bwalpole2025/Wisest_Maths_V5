@@ -4,61 +4,90 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 7,
+  "difficulty": "Intermediate",
+  "marks": 6,
   "answerType": "proof",
   "tags": [
+    "r form",
     "harmonic form",
     "proof",
-    "minimum"
+    "maximum and minimum"
   ],
-  "questionText": "Prove that the least value of $a\\sin\\theta + b\\cos\\theta + c$ (with $a, b > 0$) is $c - \\sqrt{a^2 + b^2}$, and state the value of $\\sin(\\theta + \\alpha)$ where it occurs.",
+  "questionText": "(a) Prove that $5\\sin\\theta-12\\cos\\theta \\equiv 13\\sin(\\theta-\\alpha)$, where $R>0$ and $\\alpha$ is acute, stating the value of $\\alpha$ to $2$ decimal places. (b) Hence write down the maximum and minimum values of $5\\sin\\theta-12\\cos\\theta$ and find the value of $\\theta$ in the interval $0^\\circ \\le \\theta \\le 360^\\circ$ at which the maximum occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the varying part in R-form",
-        "workingLatex": "a\\sin\\theta + b\\cos\\theta = R\\sin(\\theta + \\alpha), \\quad R = \\sqrt{a^2 + b^2}",
-        "explanation": "The R-form collapses the two oscillating terms into one sine of amplitude $R$.",
+        "description": "Set up the identity to prove",
+        "workingLatex": "5\\sin\\theta-12\\cos\\theta \\equiv R\\sin(\\theta-\\alpha)",
+        "explanation": "Because the expression is $5\\sin\\theta$ minus a cosine term, the natural single-wave target is $R\\sin(\\theta-\\alpha)$, whose expansion produces a subtraction. We set them identically equal and work out $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite the whole expression",
-        "workingLatex": "a\\sin\\theta + b\\cos\\theta + c = R\\sin(\\theta + \\alpha) + c",
-        "explanation": "The constant $c$ simply shifts the whole thing vertically.",
+        "description": "Expand using the subtraction formula",
+        "workingLatex": "R\\sin(\\theta-\\alpha)=R\\cos\\alpha\\,\\sin\\theta-R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Applying $\\sin(\\theta-\\alpha)=\\sin\\theta\\cos\\alpha-\\cos\\theta\\sin\\alpha$ and multiplying by $R$ produces a positive multiple of $\\sin\\theta$ and a negative multiple of $\\cos\\theta$, matching the signs in the original.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the range of the sine",
-        "workingLatex": "-1 \\le \\sin(\\theta + \\alpha) \\le 1",
-        "explanation": "The sine is bounded between $-1$ and $1$ for every angle.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=5,\\qquad R\\sin\\alpha=12",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ gives $R\\cos\\alpha=5$, and matching the coefficient of $\\cos\\theta$ (both sides carry a minus sign) gives $R\\sin\\alpha=12$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Scale by R and shift by c",
-        "workingLatex": "c - R \\le R\\sin(\\theta + \\alpha) + c \\le c + R",
-        "explanation": "Multiplying by the positive $R$ and adding $c$ gives the range of the full expression.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{5^2+12^2}=\\sqrt{169}=13",
+        "explanation": "Squaring and adding eliminates $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=5^2+12^2=169$ and the positive root is $R=13$, as required.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Identify the least value",
-        "workingLatex": "\\text{least} = c - R = c - \\sqrt{a^2 + b^2}",
-        "explanation": "The minimum of the expression is its lower bound.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{12}{5}\\Rightarrow \\alpha=67.38^\\circ",
+        "explanation": "Dividing the two equations cancels $R$ to give $\\tan\\alpha=\\tfrac{12}{5}$. Both $5$ and $12$ are positive, so $\\alpha$ is acute and equals $\\arctan\\tfrac{12}{5}=67.38^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State when it occurs",
-        "workingLatex": "\\sin(\\theta + \\alpha) = -1",
-        "explanation": "The least value is attained exactly when the sine reaches its minimum of $-1$, completing the proof.",
+        "description": "Confirm the identity",
+        "workingLatex": "\\cos\\alpha=\\tfrac{5}{13},\\ \\sin\\alpha=\\tfrac{12}{13}\\Rightarrow 13\\cdot\\tfrac{5}{13}\\sin\\theta-13\\cdot\\tfrac{12}{13}\\cos\\theta=5\\sin\\theta-12\\cos\\theta",
+        "explanation": "Substituting the exact values $\\cos\\alpha=\\tfrac{5}{13}$ and $\\sin\\alpha=\\tfrac{12}{13}$ back into the expansion reproduces $5\\sin\\theta-12\\cos\\theta$ exactly, which completes the proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the proven identity",
+        "workingLatex": "5\\sin\\theta-12\\cos\\theta \\equiv 13\\sin(\\theta-67.38^\\circ)",
+        "explanation": "Combining the amplitude and phase gives the single-wave form. This immediately reveals how the expression behaves: it is $13$ times a sine, so it oscillates between $-13$ and $13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Read off the range",
+        "workingLatex": "-13\\le 13\\sin(\\theta-67.38^\\circ)\\le 13",
+        "explanation": "Since $\\sin$ of any angle lies between $-1$ and $1$, multiplying by $13$ shows the expression can be no larger than $13$ and no smaller than $-13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the maximum and minimum values",
+        "workingLatex": "\\text{maximum}=13,\\qquad \\text{minimum}=-13",
+        "explanation": "The extreme values are reached exactly when the sine hits $+1$ or $-1$, so the greatest value is $13$ and the least value is $-13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find θ where the maximum occurs",
+        "workingLatex": "\\sin(\\theta-67.38^\\circ)=1\\Rightarrow \\theta-67.38^\\circ=90^\\circ\\Rightarrow \\theta=157.38^\\circ",
+        "explanation": "The maximum happens when the sine equals $1$, at $\\theta-67.38^\\circ=90^\\circ$. Adding $67.38^\\circ$ gives $\\theta=157.38^\\circ$, which lies within $0^\\circ$ to $360^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Least value $= c - \\sqrt{a^2 + b^2}$, when $\\sin(\\theta + \\alpha) = -1$."
+    "finalAnswer": "$5\\sin\\theta-12\\cos\\theta \\equiv 13\\sin(\\theta-67.38^\\circ)$ with $\\alpha=67.38^\\circ$. The maximum value is $13$ and the minimum value is $-13$; the maximum occurs at $\\theta=157.4^\\circ$ (to $1$ d.p.)."
   }
 }

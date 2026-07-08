@@ -4,97 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "numeric",
   "tags": [
-    "equations",
-    "secant",
-    "tangent",
-    "quadratic"
+    "reciprocal trig",
+    "sec",
+    "inverse trig",
+    "solving equations"
   ],
-  "questionText": "Solve $3\\tan^2\\theta - \\sec\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionText": "Solve $\\sec x = 4$ for $0^\\circ \\le x < 360^\\circ$, giving your answers to one decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace tangent squared using an identity",
-        "workingLatex": "\\tan^2\\theta = \\sec^2\\theta - 1",
-        "explanation": "The equation mixes tangent and secant; converting tangent squared into secant terms gives a single-function equation.",
+        "description": "Rewrite secant using its definition",
+        "workingLatex": "\\sec x = \\frac{1}{\\cos x}",
+        "explanation": "Secant is the reciprocal of cosine, so we convert the equation into one for cosine.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the equation",
-        "workingLatex": "3(\\sec^2\\theta - 1) - \\sec\\theta = 1",
-        "explanation": "After substitution the equation is entirely in secant.",
+        "description": "Form a cosine equation",
+        "workingLatex": "\\frac{1}{\\cos x} = 4 \\;\\Rightarrow\\; \\cos x = \\frac{1}{4} = 0.25",
+        "explanation": "Taking reciprocals of both sides gives $\\cos x = 0.25$; this is not a standard exact angle, so we will use the inverse cosine.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand the bracket",
-        "workingLatex": "3\\sec^2\\theta - 3 - \\sec\\theta = 1",
-        "explanation": "Multiplying out prepares the equation for rearrangement.",
+        "description": "Check that solutions can exist",
+        "workingLatex": "\\left|0.25\\right| \\le 1",
+        "explanation": "The value $0.25$ lies within $[-1,1]$, so real solutions exist.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rearrange to standard quadratic form",
-        "workingLatex": "3\\sec^2\\theta - \\sec\\theta - 4 = 0",
-        "explanation": "Collecting all terms on one side gives a quadratic in $\\sec\\theta$.",
+        "description": "Find the principal value with arccos",
+        "workingLatex": "x = \\arccos(0.25) \\approx 75.5^\\circ",
+        "explanation": "The inverse cosine returns the principal value, an angle in $[0^\\circ,180^\\circ]$. Here $\\arccos(0.25) \\approx 75.5^\\circ$ to one decimal place.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Factorise",
-        "workingLatex": "(3\\sec\\theta - 4)(\\sec\\theta + 1) = 0",
-        "explanation": "Factorising gives two linear factors; the cross terms $3\\sec\\theta - 4\\sec\\theta = -\\sec\\theta$ confirm the split.",
+        "description": "Interpret the principal value",
+        "workingLatex": "75.5^\\circ \\in \\text{quadrant I}",
+        "explanation": "Since $75.5^\\circ$ is acute it lies in the first quadrant, giving our first solution and also serving as the reference angle.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Read off the two cases",
-        "workingLatex": "\\sec\\theta = \\tfrac{4}{3} \\quad \\text{or} \\quad \\sec\\theta = -1",
-        "explanation": "Each factor yields a secant value; both have magnitude at least $1$, so both are attainable.",
+        "description": "Decide which quadrants apply",
+        "workingLatex": "\\cos x > 0 \\text{ in quadrants I and IV}",
+        "explanation": "The cosine value is positive, and cosine is positive in the first and fourth quadrants, so there is a second solution in quadrant IV.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Solve the first case",
-        "workingLatex": "\\sec\\theta = \\tfrac{4}{3} \\;\\Rightarrow\\; \\cos\\theta = \\tfrac{3}{4}",
-        "explanation": "Taking reciprocals gives cosine equal to $\\frac{3}{4}$, which is positive.",
+        "description": "Write the first-quadrant solution",
+        "workingLatex": "x \\approx 75.5^\\circ",
+        "explanation": "The first-quadrant solution is the principal value itself.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Find the angles for the first case",
-        "workingLatex": "\\theta \\approx 41.4^\\circ, \\; 318.6^\\circ",
-        "explanation": "The reference angle is $\\cos^{-1}\\frac{3}{4} \\approx 41.4^\\circ$; positive cosine gives quadrant I and IV solutions.",
+        "description": "Write the fourth-quadrant solution",
+        "workingLatex": "x = 360^\\circ - 75.5^\\circ = 284.5^\\circ",
+        "explanation": "In the fourth quadrant we subtract the reference angle from $360^\\circ$, giving about $284.5^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Solve the second case",
-        "workingLatex": "\\sec\\theta = -1 \\;\\Rightarrow\\; \\cos\\theta = -1 \\;\\Rightarrow\\; \\theta = 180^\\circ",
-        "explanation": "Cosine equals $-1$ only at $180^\\circ$ in the interval.",
+        "description": "Confirm both lie in the interval",
+        "workingLatex": "0^\\circ \\le 75.5^\\circ, \\; 284.5^\\circ < 360^\\circ",
+        "explanation": "Both angles satisfy $0^\\circ \\le x < 360^\\circ$, so both are kept.",
         "diagram": null
       },
       {
         "stepNumber": 10,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta \\approx 41^\\circ, 180^\\circ, 319^\\circ",
-        "explanation": "Combining both cases and rounding gives three solutions in the interval.",
+        "description": "Check a solution in the original equation",
+        "workingLatex": "\\sec 75.5^\\circ = \\frac{1}{\\cos 75.5^\\circ} \\approx \\frac{1}{0.25} = 4",
+        "explanation": "Substituting back gives approximately $4$, confirming the answer; $284.5^\\circ$ checks the same way since it has the same cosine.",
         "diagram": null
       },
       {
         "stepNumber": 11,
-        "description": "Confirm the interval",
-        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "Every solution lies within the required range.",
+        "description": "State the full solution set",
+        "workingLatex": "x \\approx 75.5^\\circ, \\; 284.5^\\circ",
+        "explanation": "These two angles, to one decimal place, are the complete set of solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 41^\\circ, 180^\\circ, 319^\\circ$"
+    "finalAnswer": "$x \\approx 75.5^\\circ$ or $x \\approx 284.5^\\circ$."
   }
 }

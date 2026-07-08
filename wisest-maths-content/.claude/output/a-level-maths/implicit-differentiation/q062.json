@@ -1,0 +1,127 @@
+{
+  "id": "al.y2.pure.implicit.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "second derivative",
+    "concavity"
+  ],
+  "questionText": "The circle $C$ has equation $x^2 + y^2 = 25$. (a) Show that $\\frac{dy}{dx} = -\\frac{x}{y}$. (b) Show that $\\frac{d^2y}{dx^2} = -\\frac{25}{y^3}$. (c) Find the values of $\\frac{dy}{dx}$ and $\\frac{d^2y}{dx^2}$ at the point $(3, 4)$, and hence state whether $C$ is concave up or concave down there. (d) Find an equation of the tangent to $C$ at $(3, 4)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(25)",
+        "explanation": "Treating $y$ as a function of $x$, we differentiate the whole equation. The constant $25$ has derivative $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^2$ gives $2x$; the term $y^2$ gives $2y\\frac{dy}{dx}$ because the chain rule adds the factor $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{2y} = -\\frac{x}{y}",
+        "explanation": "Isolating the derivative gives $-\\frac{x}{y}$, which proves the required result for part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify before differentiating a second time",
+        "workingLatex": "x + y\\frac{dy}{dx} = 0",
+        "explanation": "Dividing $2x+2y\\frac{dy}{dx}=0$ by $2$ gives a tidier equation to differentiate again.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Differentiate again with respect to x",
+        "workingLatex": "1 + \\frac{dy}{dx}\\cdot\\frac{dy}{dx} + y\\frac{d^2y}{dx^2} = 0",
+        "explanation": "The term $x$ gives $1$. The term $y\\frac{dy}{dx}$ is a product: differentiating $y$ gives $\\frac{dy}{dx}$ (times the second factor $\\frac{dy}{dx}$), and keeping $y$ gives $y\\frac{d^2y}{dx^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the squared derivative neatly",
+        "workingLatex": "1 + \\left(\\frac{dy}{dx}\\right)^2 + y\\frac{d^2y}{dx^2} = 0",
+        "explanation": "The product $\\frac{dy}{dx}\\cdot\\frac{dy}{dx}$ is just $\\left(\\frac{dy}{dx}\\right)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = -\\frac{1 + \\left(\\frac{dy}{dx}\\right)^2}{y}",
+        "explanation": "Rearranging isolates $\\frac{d^2y}{dx^2}$ in terms of $y$ and the first derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute dy/dx = -x/y",
+        "workingLatex": "\\frac{d^2y}{dx^2} = -\\frac{1 + \\frac{x^2}{y^2}}{y} = -\\frac{y^2 + x^2}{y^3}",
+        "explanation": "Replacing $\\frac{dy}{dx}$ by $-\\frac{x}{y}$ and combining over a common denominator gives $-\\frac{x^2+y^2}{y^3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use the equation of the circle",
+        "workingLatex": "\\frac{d^2y}{dx^2} = -\\frac{25}{y^3}",
+        "explanation": "Since $x^2+y^2=25$ on $C$, the numerator becomes $25$. This proves the result for part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check (3, 4) lies on the circle",
+        "workingLatex": "3^2 + 4^2 = 9 + 16 = 25",
+        "explanation": "The point satisfies the equation, so it lies on $C$ and the derivatives apply there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Evaluate the first derivative",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(3,4)} = -\\frac{3}{4}",
+        "explanation": "Substituting $x=3,\\,y=4$ into $-\\frac{x}{y}$ gives the tangent gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate the second derivative",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{(3,4)} = -\\frac{25}{4^3} = -\\frac{25}{64}",
+        "explanation": "Substituting $y=4$ into $-\\frac{25}{y^3}$ gives $-\\frac{25}{64}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Decide the concavity",
+        "workingLatex": "\\frac{d^2y}{dx^2} = -\\frac{25}{64} < 0 \\;\\Rightarrow\\; \\text{concave down}",
+        "explanation": "A negative second derivative means the curve bends downwards at $(3,4)$, so $C$ is concave down there. This answers part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Form the tangent at (3, 4)",
+        "workingLatex": "y - 4 = -\\tfrac{3}{4}(x - 3) \\;\\Rightarrow\\; 3x + 4y = 25",
+        "explanation": "Using the gradient $-\\frac34$ through $(3,4)$ and clearing fractions gives the neat tangent $3x+4y=25$. This answers part (d).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the collected results",
+        "workingLatex": "\\frac{dy}{dx} = -\\tfrac{3}{4}, \\quad \\frac{d^2y}{dx^2} = -\\tfrac{25}{64}, \\quad 3x + 4y = 25",
+        "explanation": "Bringing the answers together completes the solution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = -\\frac{x}{y}$; (b) $\\frac{d^2y}{dx^2} = -\\frac{25}{y^3}$; (c) at $(3,4)$, $\\frac{dy}{dx} = -\\frac34$ and $\\frac{d^2y}{dx^2} = -\\frac{25}{64} < 0$, so $C$ is concave down; (d) tangent $3x + 4y = 25$."
+  }
+}

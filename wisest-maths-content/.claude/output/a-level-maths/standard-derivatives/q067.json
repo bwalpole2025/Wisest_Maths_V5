@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "stationary point",
+    "sign test"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\tan x - 2x$ for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$, where $x$ is in radians.\n(a) Find $\\dfrac{dy}{dx}$.\n(b) Find the equation of the tangent to $C$ at the origin.\n(c) Find the exact coordinates of the stationary points of $C$ and, using the sign of $\\dfrac{dy}{dx}$, determine the nature of each.\n(d) Find the coordinates of the points on $C$ where the gradient equals $2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the standard results (radians)",
+        "workingLatex": "\\frac{d}{dx}(\\tan x) = \\sec^2 x, \\quad \\frac{d}{dx}(2x) = 2",
+        "explanation": "For $x$ in radians the derivative of $\\tan x$ is the standard result $\\sec^2 x$, and $2x$ differentiates to $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate to find dy/dx (part a)",
+        "workingLatex": "\\frac{dy}{dx} = \\sec^2 x - 2",
+        "explanation": "Subtracting the two derivatives gives the gradient function of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the tangent at the origin (part b)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = \\sec^2 0 - 2 = 1 - 2 = -1; \\quad (0,0) \\Rightarrow y = -x",
+        "explanation": "At $x=0$, $\\sec^2 0 = 1$, so the gradient is $-1$. The curve passes through $(0,\\tan 0 - 0)=(0,0)$, so the tangent is $y=-x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the derivative to zero (part c)",
+        "workingLatex": "\\sec^2 x - 2 = 0 \\;\\Rightarrow\\; \\sec^2 x = 2 \\;\\Rightarrow\\; \\cos^2 x = \\tfrac{1}{2}",
+        "explanation": "Stationary points need $\\dfrac{dy}{dx}=0$. Since $\\sec^2 x = \\tfrac{1}{\\cos^2 x}$, the condition becomes $\\cos^2 x=\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x in the interval",
+        "workingLatex": "\\cos x = \\pm\\frac{1}{\\sqrt{2}} \\;\\Rightarrow\\; x = \\frac{\\pi}{4},\\; -\\frac{\\pi}{4}",
+        "explanation": "In $\\left(-\\tfrac{\\pi}{2},\\tfrac{\\pi}{2}\\right)$, $\\cos^2 x=\\tfrac12$ gives $x=\\tfrac{\\pi}{4}$ and $x=-\\tfrac{\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find y at x = pi/4",
+        "workingLatex": "y = \\tan\\frac{\\pi}{4} - 2\\cdot\\frac{\\pi}{4} = 1 - \\frac{\\pi}{2}",
+        "explanation": "Using $\\tan\\tfrac{\\pi}{4}=1$ gives the exact height $1-\\tfrac{\\pi}{2}\\approx -0.571$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find y at x = -pi/4",
+        "workingLatex": "y = \\tan\\left(-\\frac{\\pi}{4}\\right) + \\frac{\\pi}{2} = -1 + \\frac{\\pi}{2}",
+        "explanation": "Using $\\tan\\left(-\\tfrac{\\pi}{4}\\right)=-1$ gives $\\tfrac{\\pi}{2}-1\\approx 0.571$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Choose a classification method",
+        "workingLatex": "\\frac{d}{dx}(\\sec^2 x) \\text{ needs the chain rule; use the sign of } \\frac{dy}{dx}",
+        "explanation": "Differentiating $\\sec^2 x$ again would require the chain rule, so instead we classify each point by how the sign of $\\dfrac{dy}{dx}$ changes across it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sign test around x = pi/4",
+        "workingLatex": "x=0:\\; -1<0; \\quad x=\\tfrac{\\pi}{3}:\\; \\sec^2\\tfrac{\\pi}{3} - 2 = 4 - 2 = 2>0 \\;\\Rightarrow\\; \\text{min}",
+        "explanation": "Just left of $\\tfrac{\\pi}{4}$ the gradient is negative and just right it is positive, so the curve turns from falling to rising: a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Sign test around x = -pi/4",
+        "workingLatex": "x=-\\tfrac{\\pi}{3}:\\; 4 - 2 = 2>0; \\quad x=0:\\; -1<0 \\;\\Rightarrow\\; \\text{max}",
+        "explanation": "Just left of $-\\tfrac{\\pi}{4}$ the gradient is positive and just right it is negative, so the curve turns from rising to falling: a maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the stationary points",
+        "workingLatex": "\\text{Min }\\left(\\tfrac{\\pi}{4},\\, 1-\\tfrac{\\pi}{2}\\right), \\quad \\text{Max }\\left(-\\tfrac{\\pi}{4},\\, \\tfrac{\\pi}{2}-1\\right)",
+        "explanation": "Collecting the results: a minimum at $x=\\tfrac{\\pi}{4}$ and a maximum at $x=-\\tfrac{\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set the gradient equal to 2 (part d)",
+        "workingLatex": "\\sec^2 x - 2 = 2 \\;\\Rightarrow\\; \\sec^2 x = 4 \\;\\Rightarrow\\; \\cos^2 x = \\tfrac{1}{4}",
+        "explanation": "We want the points where the tangent has gradient $2$, so we set the gradient function equal to $2$ and simplify.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for x in the interval",
+        "workingLatex": "\\cos x = \\pm\\tfrac{1}{2} \\;\\Rightarrow\\; x = \\frac{\\pi}{3},\\; -\\frac{\\pi}{3}",
+        "explanation": "In $\\left(-\\tfrac{\\pi}{2},\\tfrac{\\pi}{2}\\right)$, $\\cos^2 x=\\tfrac14$ gives $x=\\pm\\tfrac{\\pi}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find the corresponding y-values",
+        "workingLatex": "x=\\tfrac{\\pi}{3}:\\; y=\\sqrt{3}-\\tfrac{2\\pi}{3}; \\qquad x=-\\tfrac{\\pi}{3}:\\; y=\\tfrac{2\\pi}{3}-\\sqrt{3}",
+        "explanation": "Using $\\tan\\tfrac{\\pi}{3}=\\sqrt{3}$ gives the exact heights, approximately $-0.362$ and $0.362$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Summarise",
+        "workingLatex": "\\text{Tangent } y=-x;\\; \\min\\left(\\tfrac{\\pi}{4},1-\\tfrac{\\pi}{2}\\right),\\, \\max\\left(-\\tfrac{\\pi}{4},\\tfrac{\\pi}{2}-1\\right);\\; \\text{grad }2 \\text{ at } x=\\pm\\tfrac{\\pi}{3}",
+        "explanation": "All parts complete: the tangent at the origin, both stationary points classified by sign, and the two points of gradient $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\sec^2 x-2$. (b) Tangent at the origin: $y=-x$. (c) Minimum at $\\left(\\tfrac{\\pi}{4},1-\\tfrac{\\pi}{2}\\right)$, maximum at $\\left(-\\tfrac{\\pi}{4},\\tfrac{\\pi}{2}-1\\right)$. (d) Gradient $=2$ at $\\left(\\tfrac{\\pi}{3},\\sqrt{3}-\\tfrac{2\\pi}{3}\\right)$ and $\\left(-\\tfrac{\\pi}{3},\\tfrac{2\\pi}{3}-\\sqrt{3}\\right)$."
+  }
+}

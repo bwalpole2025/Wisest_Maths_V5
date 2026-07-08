@@ -5,67 +5,116 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "equations",
-    "solving"
+    "double angle",
+    "quadratic",
+    "solve equation"
   ],
-  "questionText": "Solve $\\sin(\\theta + 30^\\circ) = \\cos\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve $2\\cos 2x + 4\\sin x = 3$ for $0 \\le x < 360^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the compound angle",
-        "workingLatex": "\\sin\\theta\\cos 30^\\circ + \\cos\\theta\\sin 30^\\circ = \\cos\\theta",
-        "explanation": "Expanding the left side lets us collect sine and cosine terms.",
+        "description": "Choose the right form of cos 2x",
+        "workingLatex": "\\cos 2x = 1 - 2\\sin^2 x",
+        "explanation": "The equation already contains a $\\sin x$ term, so the aim is to write everything in terms of $\\sin x$ alone. Of the three versions of the cosine double-angle formula, $\\cos 2x = 1 - 2\\sin^2 x$ is the one built from sines, so it will produce a single-variable equation.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the exact values",
-        "workingLatex": "\\frac{\\sqrt3}{2}\\sin\\theta + \\frac{1}{2}\\cos\\theta = \\cos\\theta",
-        "explanation": "Using $\\cos 30^\\circ = \\frac{\\sqrt3}{2}$ and $\\sin 30^\\circ = \\frac{1}{2}$.",
+        "description": "Substitute into the equation",
+        "workingLatex": "2\\left(1 - 2\\sin^2 x\\right) + 4\\sin x = 3",
+        "explanation": "Replacing $\\cos 2x$ by $1 - 2\\sin^2 x$ turns the mixed equation into one that only involves $\\sin x$, which is exactly what we need to make progress.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Collect the cosine terms",
-        "workingLatex": "\\frac{\\sqrt3}{2}\\sin\\theta = \\cos\\theta - \\frac{1}{2}\\cos\\theta = \\frac{1}{2}\\cos\\theta",
-        "explanation": "Moving the cosine terms together leaves a half cosine on the right.",
+        "description": "Expand the bracket",
+        "workingLatex": "2 - 4\\sin^2 x + 4\\sin x = 3",
+        "explanation": "Multiplying out the bracket removes the grouping so that we can gather all the terms together in the next step.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Divide to form a tangent",
-        "workingLatex": "\\frac{\\sin\\theta}{\\cos\\theta} = \\frac{1/2}{\\sqrt3/2} = \\frac{1}{\\sqrt3}",
-        "explanation": "Dividing both sides by $\\frac{\\sqrt3}{2}\\cos\\theta$ gives a tangent equation.",
+        "description": "Rearrange to equal zero",
+        "workingLatex": "-4\\sin^2 x + 4\\sin x - 1 = 0",
+        "explanation": "Bringing the $3$ across to the left makes the equation equal to zero, the standard set-up for a quadratic before we solve it.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Write the tangent equation",
-        "workingLatex": "\\tan\\theta = \\frac{1}{\\sqrt3}",
-        "explanation": "The ratio simplifies to $\\frac{1}{\\sqrt3}$, a standard value.",
+        "description": "Make the leading coefficient positive",
+        "workingLatex": "4\\sin^2 x - 4\\sin x + 1 = 0",
+        "explanation": "Multiplying every term by $-1$ gives a positive $\\sin^2 x$ coefficient, which makes the quadratic easier to recognise and factor.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for theta",
-        "workingLatex": "\\theta = 30^\\circ, 210^\\circ",
-        "explanation": "Tangent $\\frac{1}{\\sqrt3}$ occurs at $30^\\circ$ and one period later at $210^\\circ$.",
+        "description": "Factor the quadratic",
+        "workingLatex": "(2\\sin x - 1)^2 = 0",
+        "explanation": "The expression is a perfect square because $4\\sin^2 x - 4\\sin x + 1$ matches $(2\\sin x - 1)^2$. A repeated factor tells us there is really only one value of $\\sin x$ to find.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = 30^\\circ, 210^\\circ",
-        "explanation": "These are the two solutions in the interval.",
+        "description": "Solve for sin x",
+        "workingLatex": "2\\sin x - 1 = 0 \\ \\Rightarrow \\ \\sin x = \\tfrac{1}{2}",
+        "explanation": "Setting the repeated bracket to zero gives the single value $\\sin x = \\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the value is attainable",
+        "workingLatex": "-1 \\le \\tfrac{1}{2} \\le 1",
+        "explanation": "Since $\\sin x$ can only take values between $-1$ and $1$, we confirm $\\tfrac{1}{2}$ is possible before finding the angles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the principal angle",
+        "workingLatex": "x = \\sin^{-1}\\tfrac{1}{2} = 30^\\circ",
+        "explanation": "The inverse sine gives the first-quadrant angle whose sine is $\\tfrac{1}{2}$, which is $30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the second-quadrant solution",
+        "workingLatex": "x = 180^\\circ - 30^\\circ = 150^\\circ",
+        "explanation": "Sine is also positive in the second quadrant, and the symmetry rule $\\sin(180^\\circ - x) = \\sin x$ gives the partner angle $150^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm no further solutions",
+        "workingLatex": "0 \\le x < 360^\\circ:\\quad x = 30^\\circ,\\ 150^\\circ",
+        "explanation": "In the third and fourth quadrants sine is negative, so $\\sin x = \\tfrac12$ has no solutions there. These are the only two angles in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify x = 30 degrees",
+        "workingLatex": "2\\cos 60^\\circ + 4\\sin 30^\\circ = 2\\left(\\tfrac12\\right) + 4\\left(\\tfrac12\\right) = 1 + 2 = 3",
+        "explanation": "Substituting $x = 30^\\circ$ back into the original equation gives $3$, so this solution is genuine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify x = 150 degrees",
+        "workingLatex": "2\\cos 300^\\circ + 4\\sin 150^\\circ = 2\\left(\\tfrac12\\right) + 4\\left(\\tfrac12\\right) = 1 + 2 = 3",
+        "explanation": "Here $2x = 300^\\circ$ and $\\cos 300^\\circ = \\tfrac12$, while $\\sin 150^\\circ = \\tfrac12$, so the left side is again $3$. Both solutions check out.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the solution set",
+        "workingLatex": "x = 30^\\circ,\\ 150^\\circ",
+        "explanation": "These are the only values of $x$ in $0 \\le x < 360^\\circ$ that satisfy the equation.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 210^\\circ$"
+    "finalAnswer": "$x = 30^\\circ$ and $x = 150^\\circ$."
   }
 }

@@ -6,52 +6,59 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Easy",
   "marks": 4,
-  "answerType": "value",
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "intersection",
-    "axes"
+    "eliminating the parameter",
+    "trig identity",
+    "circle"
   ],
-  "questionText": "A curve has parametric equations $x = t^2 - 9$, $y = t + 1$. Find where the curve crosses the $y$-axis.",
+  "questionText": "A curve has parametric equations $x = 5\\cos t$ and $y = 5\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve and state its centre and radius.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the condition for the y-axis",
-        "workingLatex": "x = 0",
-        "explanation": "A curve meets the $y$-axis where the $x$-coordinate is zero.",
+        "description": "Make the trig functions the subjects",
+        "workingLatex": "\\cos t = \\dfrac{x}{5}, \\qquad \\sin t = \\dfrac{y}{5}",
+        "explanation": "Dividing each equation by $5$ isolates $\\cos t$ and $\\sin t$, ready to substitute into an identity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Solve for the parameter",
-        "workingLatex": "t^2 - 9 = 0 \\;\\Rightarrow\\; t = \\pm 3",
-        "explanation": "Setting $x = 0$ gives a quadratic with two solutions.",
+        "description": "Recall the Pythagorean identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "This identity holds for all $t$, so it is the bridge that removes the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find y when t = 3",
-        "workingLatex": "y = 3 + 1 = 4",
-        "explanation": "Substituting the first parameter value into the $y$-equation.",
+        "description": "Substitute the expressions",
+        "workingLatex": "\\left( \\dfrac{x}{5} \\right)^{2} + \\left( \\dfrac{y}{5} \\right)^{2} = 1",
+        "explanation": "Replacing $\\cos t$ and $\\sin t$ with the $x$ and $y$ expressions turns the identity into a relation between $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find y when t = -3",
-        "workingLatex": "y = -3 + 1 = -2",
-        "explanation": "Substituting the second parameter value.",
+        "description": "Expand the squares",
+        "workingLatex": "\\dfrac{x^{2}}{25} + \\dfrac{y^{2}}{25} = 1",
+        "explanation": "Squaring each fraction gives denominators of $25$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Write the points",
-        "workingLatex": "(0, 4) \\text{ and } (0, -2)",
-        "explanation": "Each parameter value gives a point on the $y$-axis.",
+        "description": "Clear the fractions",
+        "workingLatex": "x^{2} + y^{2} = 25",
+        "explanation": "Multiplying every term by $25$ clears the fractions and gives the standard circle form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State centre and radius",
+        "workingLatex": "x^{2} + y^{2} = 5^{2}",
+        "explanation": "Comparing with $x^{2} + y^{2} = r^{2}$ shows a circle centred at the origin $(0,\\,0)$ with radius $5$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(0, 4)$ and $(0, -2)$"
+    "finalAnswer": "$x^{2} + y^{2} = 25$ — a circle with centre $(0,\\, 0)$ and radius $5$."
   }
 }

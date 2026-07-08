@@ -5,67 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 4,
+  "marks": 3,
   "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "Rsin",
-    "surds"
+    "exact values"
   ],
-  "questionText": "Express $3\\sin\\theta + 4\\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving $\\alpha$ to the nearest degree.",
+  "questionText": "Express $\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Give $R$ as an exact surd and $\\alpha$ exactly.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the target expanded form",
-        "workingLatex": "R\\sin(\\theta + \\alpha) = R\\cos\\alpha\\sin\\theta + R\\sin\\alpha\\cos\\theta",
-        "explanation": "Expanding the target with the addition formula lets us compare it term by term with the given expression.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\sin\\theta + \\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We want the two-term expression written as a single sine wave. Setting it identically equal to $R\\sin(\\theta+\\alpha)$ lets us expand the right-hand side and then compare it, term by term, with the left.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients of sine",
-        "workingLatex": "R\\cos\\alpha = 3",
-        "explanation": "Matching the $\\sin\\theta$ terms links $R$ and $\\alpha$ to the coefficient $3$.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Using $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ and pulling the constant $R$ through puts the right-hand side in the same shape as the left: a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Compare coefficients of cosine",
-        "workingLatex": "R\\sin\\alpha = 4",
-        "explanation": "Matching the $\\cos\\theta$ terms gives the second equation.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = 1",
+        "explanation": "For the two sides to be equal for every value of $\\theta$, the amount of $\\sin\\theta$ must match and the amount of $\\cos\\theta$ must match. That gives two equations linking $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find R using the sum of squares",
-        "workingLatex": "R^2 = 3^2 + 4^2 = 25 \\;\\Rightarrow\\; R = 5",
-        "explanation": "Squaring and adding the two equations uses $\\cos^2\\alpha + \\sin^2\\alpha = 1$, leaving $R^2$ as the sum of the squared coefficients.",
+        "description": "Find R using R² = a² + b²",
+        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt{2}",
+        "explanation": "Squaring and adding the two equations removes $\\alpha$ because $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=1^2+1^2$. We take the positive root since $R>0$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find alpha using the ratio",
-        "workingLatex": "\\tan\\alpha = \\frac{R\\sin\\alpha}{R\\cos\\alpha} = \\frac{4}{3}",
-        "explanation": "Dividing the two equations cancels $R$, leaving a tangent equation for $\\alpha$.",
+        "description": "Find α using tanα = b/a",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{1} = 1 \\Rightarrow \\alpha = 45^\\circ",
+        "explanation": "Dividing the $\\sin$ equation by the $\\cos$ equation cancels $R$ and leaves $\\tan\\alpha=1$. Both coefficients are positive, so $\\alpha$ is acute and $\\alpha=45^\\circ$ exactly.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Evaluate alpha",
-        "workingLatex": "\\alpha = \\tan^{-1}\\frac{4}{3} \\approx 53^\\circ",
-        "explanation": "The inverse tangent gives $\\alpha$, which lies in the required range $0$ to $90^\\circ$.",
+        "description": "State the R-form",
+        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin(\\theta+45^\\circ)",
+        "explanation": "Putting the amplitude $R=\\sqrt{2}$ and phase $\\alpha=45^\\circ$ together gives the single-wave form, which immediately shows the expression oscillates between $-\\sqrt{2}$ and $\\sqrt{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the final form",
-        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + 53^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$ gives the required harmonic form.",
+        "description": "Check by expanding back",
+        "workingLatex": "\\sqrt{2}\\,\\sin(\\theta+45^\\circ) = \\sqrt{2}\\left(\\dfrac{\\sqrt{2}}{2}\\sin\\theta + \\dfrac{\\sqrt{2}}{2}\\cos\\theta\\right) = \\sin\\theta + \\cos\\theta",
+        "explanation": "Expanding the answer recovers the original expression exactly, which confirms that $R$ and $\\alpha$ have been chosen correctly.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + 53^\\circ)$"
+    "finalAnswer": "$\\sin\\theta + \\cos\\theta = \\sqrt{2}\\,\\sin(\\theta+45^\\circ)$."
   }
 }

@@ -4,75 +4,89 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "numeric",
   "tags": [
-    "compound angles",
-    "identities",
-    "proof"
+    "double angle",
+    "trig equation",
+    "tangent"
   ],
-  "questionText": "Prove that $\\sin(A + B)\\sin(A - B) \\equiv \\sin^2 A - \\sin^2 B$.",
+  "questionText": "Solve $\\tan 2x = 1$ for $0^\\circ \\le x < 360^\\circ$, giving all solutions in degrees.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand both compound angles",
-        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
-        "explanation": "We write out each bracket, noting the two differ only in a sign, which sets up a difference of squares.",
+        "description": "Work with the angle 2x and find its range",
+        "workingLatex": "0^\\circ \\le x < 360^\\circ \\;\\Rightarrow\\; 0^\\circ \\le 2x < 720^\\circ",
+        "explanation": "Because the equation involves $2x$, it is cleanest to solve for the angle $2x$ first. As $x$ runs over $0^\\circ \\le x < 360^\\circ$, the doubled angle $2x$ runs over $0^\\circ \\le 2x < 720^\\circ$ — twice as wide, so we should expect twice as many solutions.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the second bracket",
-        "workingLatex": "\\sin(A - B) = \\sin A\\cos B - \\cos A\\sin B",
-        "explanation": "The difference version flips the middle sign.",
+        "description": "Find the principal value",
+        "workingLatex": "\\tan 2x = 1 \\;\\Rightarrow\\; 2x = 45^\\circ",
+        "explanation": "The basic angle whose tangent is $1$ is $45^\\circ$, giving the first value of $2x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Multiply as a difference of squares",
-        "workingLatex": "\\sin(A+B)\\sin(A-B) = (\\sin A\\cos B)^2 - (\\cos A\\sin B)^2",
-        "explanation": "The product of $(x+y)(x-y)$ is $x^2 - y^2$, with $x = \\sin A\\cos B$ and $y = \\cos A\\sin B$.",
+        "description": "Write the general solution",
+        "workingLatex": "2x = 45^\\circ + 180^\\circ n, \\quad n \\in \\mathbb{Z}",
+        "explanation": "Tangent has period $180^\\circ$, so every solution is $45^\\circ$ plus a whole number of half-turns.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write out the squares",
-        "workingLatex": "= \\sin^2 A\\cos^2 B - \\cos^2 A\\sin^2 B",
-        "explanation": "Squaring each product gives these two terms.",
+        "description": "Choose n so that 2x lies in its range",
+        "workingLatex": "n = 0,\\,1,\\,2,\\,3 \\;\\Rightarrow\\; 2x = 45^\\circ,\\ 225^\\circ,\\ 405^\\circ,\\ 585^\\circ",
+        "explanation": "We need $2x$ in $[0^\\circ, 720^\\circ)$. Taking $n = 0,1,2,3$ keeps $2x$ inside; the next value, $765^\\circ$, is outside, so we stop.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Replace the cosine squares",
-        "workingLatex": "\\cos^2 B = 1 - \\sin^2 B, \\quad \\cos^2 A = 1 - \\sin^2 A",
-        "explanation": "Using the Pythagorean identity converts everything into sines.",
+        "description": "Confirm four values of 2x",
+        "workingLatex": "2x \\in \\{45^\\circ,\\ 225^\\circ,\\ 405^\\circ,\\ 585^\\circ\\}",
+        "explanation": "The doubled interval contains exactly four solutions for $2x$, matching the expectation from step 1.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Substitute",
-        "workingLatex": "= \\sin^2 A(1 - \\sin^2 B) - (1 - \\sin^2 A)\\sin^2 B",
-        "explanation": "Inserting both replacements.",
+        "description": "Halve each value to get x",
+        "workingLatex": "x = \\tfrac{45^\\circ}{2},\\ \\tfrac{225^\\circ}{2},\\ \\tfrac{405^\\circ}{2},\\ \\tfrac{585^\\circ}{2}",
+        "explanation": "Since we solved for $2x$, dividing each value by $2$ recovers the corresponding $x$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Expand",
-        "workingLatex": "= \\sin^2 A - \\sin^2 A\\sin^2 B - \\sin^2 B + \\sin^2 A\\sin^2 B",
-        "explanation": "Multiplying out both products.",
+        "description": "State the four solutions for x",
+        "workingLatex": "x = 22.5^\\circ,\\ 112.5^\\circ,\\ 202.5^\\circ,\\ 292.5^\\circ",
+        "explanation": "Each of these lies in $0^\\circ \\le x < 360^\\circ$, as required.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Cancel and conclude",
-        "workingLatex": "= \\sin^2 A - \\sin^2 B \\;\\blacksquare",
-        "explanation": "The mixed $\\sin^2 A\\sin^2 B$ terms cancel, leaving the required result.",
+        "description": "Verify x = 22.5 degrees",
+        "workingLatex": "\\tan(2\\cdot 22.5^\\circ) = \\tan 45^\\circ = 1",
+        "explanation": "Doubling gives $45^\\circ$, whose tangent is $1$, so this solution is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Verify x = 292.5 degrees",
+        "workingLatex": "\\tan 585^\\circ = \\tan(585^\\circ - 360^\\circ) = \\tan 225^\\circ = 1",
+        "explanation": "Doubling gives $585^\\circ$; subtracting a full turn leaves $225^\\circ$, whose tangent is also $1$, confirming the last value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Collect the full solution set",
+        "workingLatex": "x = 22.5^\\circ,\\ 112.5^\\circ,\\ 202.5^\\circ,\\ 292.5^\\circ",
+        "explanation": "These four values are every solution of $\\tan 2x = 1$ in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin(A + B)\\sin(A - B) \\equiv \\sin^2 A - \\sin^2 B$"
+    "finalAnswer": "$x = 22.5^\\circ,\\ 112.5^\\circ,\\ 202.5^\\circ,\\ 292.5^\\circ$."
   }
 }

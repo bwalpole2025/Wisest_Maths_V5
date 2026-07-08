@@ -5,61 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 7,
+  "answerType": "exact",
   "tags": [
+    "r form",
     "harmonic form",
-    "range",
-    "reciprocal",
-    "max min"
+    "squared",
+    "maximum and minimum"
   ],
-  "questionText": "Find the maximum and minimum values of $\\dfrac{1}{10 + 6\\sin\\theta - 8\\cos\\theta}$.",
+  "questionText": "The function $p$ is defined by $p(\\theta)=(2+\\sin\\theta+\\cos\\theta)^2$ for $0^\\circ\\le\\theta<360^\\circ$. Find the greatest and least values of $p(\\theta)$ in exact form, and the value of $\\theta$ at which each occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the varying part in R-form",
-        "workingLatex": "6\\sin\\theta - 8\\cos\\theta = 10\\sin(\\theta - \\alpha)",
-        "explanation": "The amplitude is $\\sqrt{36 + 64} = 10$.",
+        "description": "Work on the bracket first",
+        "workingLatex": "\\sin\\theta+\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "The bracket is what varies with $\\theta$, so we first compress its two trig terms into a single sine wave; the squaring can be handled afterwards.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Bound the denominator",
-        "workingLatex": "10 - 10 \\le 10 + 10\\sin(\\theta - \\alpha) \\le 10 + 10",
-        "explanation": "The sine part ranges over $[-10,10]$, so the denominator ranges over $[0, 20]$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "The compound-angle expansion writes the right-hand side as a $\\sin\\theta$ part plus a $\\cos\\theta$ part, ready for comparison.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Note the denominator reaches zero",
-        "workingLatex": "\\text{denominator} = 0 \\text{ is possible}",
-        "explanation": "When the sine equals $-1$, the denominator is $0$, so the fraction is undefined there and can grow without bound nearby.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=1,\\qquad R\\sin\\alpha=1",
+        "explanation": "Matching the coefficients of $\\sin\\theta$ and $\\cos\\theta$ gives two equations, both with the value $1$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Conclude about the maximum",
-        "workingLatex": "\\text{no finite maximum}",
-        "explanation": "As the denominator approaches $0$ from above, the fraction tends to $+\\infty$, so there is no finite maximum.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{1^2+1^2}=\\sqrt{2}",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2=2$ and the exact amplitude $\\sqrt{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the minimum",
-        "workingLatex": "\\text{min} = \\frac{1}{20}",
-        "explanation": "The smallest positive fraction comes from the largest denominator $20$, giving $\\frac{1}{20}$.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=1\\Rightarrow\\alpha=45^\\circ",
+        "explanation": "Dividing gives $\\tan\\alpha=1$, and with both coefficients positive the acute angle is $\\alpha=45^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the result",
-        "workingLatex": "\\text{min} = \\frac{1}{20}, \\quad \\text{no maximum}",
-        "explanation": "This example highlights why checking whether the denominator can vanish matters.",
+        "description": "Rewrite the bracket",
+        "workingLatex": "2+\\sin\\theta+\\cos\\theta=2+\\sqrt{2}\\,\\sin(\\theta+45^\\circ)",
+        "explanation": "Substituting the single wave shows the bracket is a constant $2$ plus a sine term of amplitude $\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound the sine term",
+        "workingLatex": "-1\\le\\sin(\\theta+45^\\circ)\\le 1",
+        "explanation": "The sine term ranges between $-1$ and $1$, both of which are attained over a full turn.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the range of the bracket",
+        "workingLatex": "2-\\sqrt{2}\\le 2+\\sqrt{2}\\,\\sin(\\theta+45^\\circ)\\le 2+\\sqrt{2}",
+        "explanation": "Scaling by $\\sqrt{2}$ and adding $2$ gives the bracket's range, from $2-\\sqrt{2}$ up to $2+\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the bracket stays positive",
+        "workingLatex": "2-\\sqrt{2}\\approx 0.59>0",
+        "explanation": "Since even the smallest value of the bracket is positive, the bracket never changes sign. That means squaring preserves the ordering: the largest bracket gives the largest square and the smallest bracket the smallest square, so no calculus is needed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Greatest value of p",
+        "workingLatex": "p_{\\max}=(2+\\sqrt{2})^2=4+4\\sqrt{2}+2=6+4\\sqrt{2}",
+        "explanation": "The largest square comes from the largest bracket $2+\\sqrt{2}$; expanding gives the exact value $6+4\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Least value of p",
+        "workingLatex": "p_{\\min}=(2-\\sqrt{2})^2=4-4\\sqrt{2}+2=6-4\\sqrt{2}",
+        "explanation": "The smallest square comes from the smallest (still positive) bracket $2-\\sqrt{2}$, giving the exact value $6-4\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Locate θ for the greatest value",
+        "workingLatex": "\\sin(\\theta+45^\\circ)=1\\Rightarrow\\theta+45^\\circ=90^\\circ\\Rightarrow\\theta=45^\\circ",
+        "explanation": "The bracket is largest when the sine term is $1$, at an inside angle of $90^\\circ$; subtracting $45^\\circ$ gives $\\theta=45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Locate θ for the least value",
+        "workingLatex": "\\sin(\\theta+45^\\circ)=-1\\Rightarrow\\theta+45^\\circ=270^\\circ\\Rightarrow\\theta=225^\\circ",
+        "explanation": "The bracket is smallest when the sine term is $-1$, at an inside angle of $270^\\circ$; subtracting $45^\\circ$ gives $\\theta=225^\\circ$, and both angles lie in range.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Minimum $= \\dfrac{1}{20}$; there is no finite maximum (denominator can reach $0$)."
+    "finalAnswer": "$\\sin\\theta+\\cos\\theta=\\sqrt{2}\\,\\sin(\\theta+45^\\circ)$, so $p(\\theta)=\\bigl(2+\\sqrt{2}\\,\\sin(\\theta+45^\\circ)\\bigr)^2$. Because the bracket stays positive, the greatest value is $(2+\\sqrt{2})^2=6+4\\sqrt{2}$ at $\\theta=45^\\circ$, and the least value is $(2-\\sqrt{2})^2=6-4\\sqrt{2}$ at $\\theta=225^\\circ$."
   }
 }

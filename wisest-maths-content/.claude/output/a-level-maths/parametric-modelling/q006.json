@@ -5,46 +5,67 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "gradient",
-    "specific point"
+    "speed",
+    "parametric differentiation",
+    "modelling"
   ],
-  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2 - 1$. Find the gradient of the curve at the point where $t = 3$.",
+  "questionText": "A small drone moves so that, at time $t$ seconds, its position in metres is $x = 3t + 2$ and $y = 2t^{2}$. Find the speed of the drone at $t = 1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate each equation",
-        "workingLatex": "\\frac{dx}{dt} = 2, \\quad \\frac{dy}{dt} = 2t",
-        "explanation": "We need both rates of change to build the parametric gradient.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 3",
+        "explanation": "The horizontal velocity is the rate of change of $x$. Since $x = 3t + 2$ is linear, this rate is constant at $3$ m/s.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Form the gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2t}{2} = t",
-        "explanation": "Dividing the two derivatives gives a simple gradient equal to $t$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 4t",
+        "explanation": "The vertical velocity is the rate of change of $y$, found by differentiating $y = 2t^{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the parameter value",
-        "workingLatex": "\\frac{dy}{dx}\\bigg|_{t=3} = 3",
-        "explanation": "At $t = 3$ the gradient is $3$.",
+        "description": "Evaluate the velocity components at t = 1",
+        "workingLatex": "\\dot{x} = 3, \\quad \\dot{y} = 4(1) = 4",
+        "explanation": "At $t = 1$ the horizontal velocity stays $3$ and the vertical velocity becomes $4$. These are the two components of the drone's motion at that instant.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the answer",
-        "workingLatex": "\\text{gradient} = 3",
-        "explanation": "The tangent to the curve at this point has gradient $3$.",
+        "description": "Write the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "Speed is the overall size of the velocity. Because $\\dot{x}$ and $\\dot{y}$ act at right angles, we combine them with Pythagoras' theorem.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the components",
+        "workingLatex": "\\text{speed} = \\sqrt{3^{2} + 4^{2}}",
+        "explanation": "Putting in $\\dot{x} = 3$ and $\\dot{y} = 4$ prepares the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify inside the root",
+        "workingLatex": "= \\sqrt{9 + 16} = \\sqrt{25}",
+        "explanation": "Squaring and adding gives $25$ under the square root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Take the square root",
+        "workingLatex": "= 5",
+        "explanation": "The square root of $25$ is $5$, so the drone's speed is $5$ m/s.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Gradient $= 3$"
+    "finalAnswer": "At $t = 1$ s the drone's speed is $5$ m/s."
   }
 }

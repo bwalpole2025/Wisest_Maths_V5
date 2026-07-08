@@ -1,0 +1,107 @@
+{
+  "id": "al.y2.stats.normal-distribution.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the mean",
+    "inverse normal",
+    "percentiles"
+  ],
+  "questionText": "The heights, $X$ cm, of adults in a large population are modelled by $X \\sim N(\\mu,\\ 6^2)$, where $\\mu$ is unknown. It is known that $30\\%$ of adults are shorter than $170$ cm. (a) Find the value of $\\mu$. (b) Hence find the height that is exceeded by only $10\\%$ of adults. Give each answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and translate part (a)",
+        "workingLatex": "X \\sim N(\\mu,\\ 6^2), \\qquad P(X < 170) = 0.30",
+        "explanation": "Heights are normal with standard deviation $6$ cm and unknown mean. ‘$30\\%$ are shorter than $170$’ gives $P(X<170)=0.30$, which is enough to find $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the z-value for 0.30",
+        "workingLatex": "z = \\Phi^{-1}(0.30) = -0.5244",
+        "explanation": "The standard-normal value with $30\\%$ of the area below it is $-0.5244$, negative because $170$ sits just below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the standardisation equation",
+        "workingLatex": "\\dfrac{170 - \\mu}{6} = -0.5244",
+        "explanation": "Standardising $170$ must give this $z$. With $\\sigma=6$ known, $\\mu$ is the only unknown.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Clear the fraction",
+        "workingLatex": "170 - \\mu = 6 \\times (-0.5244) = -3.146",
+        "explanation": "Multiplying both sides by $6$ removes the denominator and gives a linear equation in $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the mean",
+        "workingLatex": "\\mu = 170 + 3.146 = 173.146",
+        "explanation": "Rearranging gives the mean height; it lies above $170$ because fewer than half of adults are shorter than $170$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the mean to 3 significant figures",
+        "workingLatex": "\\mu \\approx 173 \\text{ cm}",
+        "explanation": "To three significant figures the mean height is $173$ cm. We keep the unrounded $173.146$ for part (b) so that rounding does not accumulate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Translate part (b)",
+        "workingLatex": "P(X > a) = 0.10",
+        "explanation": "The ‘height exceeded by only $10\\%$’ is the value $a$ with $10\\%$ of adults taller, so $P(X>a)=0.10$; this is the $90\\text{th}$ percentile.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Convert to a lower-tail probability",
+        "workingLatex": "P(X < a) = 1 - 0.10 = 0.90",
+        "explanation": "Rewriting for the inverse-normal: if $10\\%$ of adults are above $a$, then $90\\%$ are below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the z-value for 0.90",
+        "workingLatex": "z = \\Phi^{-1}(0.90) = 1.2816",
+        "explanation": "The standard-normal value with $90\\%$ below it is $1.2816$, positive because the $90\\text{th}$ percentile lies above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set up the standardisation for a",
+        "workingLatex": "\\dfrac{a - 173.146}{6} = 1.2816",
+        "explanation": "Standardising the unknown height $a$ with the mean we found gives its $z$-score; now $a$ is the unknown.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Solve for the height a",
+        "workingLatex": "a = 173.146 + 6 \\times 1.2816 = 180.84",
+        "explanation": "Multiplying by $6$ and adding the mean undoes the standardisation, giving the height in centimetres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the answer to 3 significant figures and check",
+        "workingLatex": "a \\approx 181 \\text{ cm}",
+        "explanation": "To three significant figures only $10\\%$ of adults exceed $181$ cm. As a check it lies above the mean $173$ cm, which is right for a top-$10\\%$ height.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 173$ cm. (b) The height exceeded by only $10\\%$ of adults is about $181$ cm."
+  }
+}

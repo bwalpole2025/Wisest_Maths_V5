@@ -4,54 +4,68 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "speed",
-    "general"
+    "projectile",
+    "time of flight",
+    "factorising"
   ],
-  "questionText": "A particle has position $x = t^2$, $y = 2t$ (metres) at time $t$ seconds. Find an expression for its speed at time $t$.",
+  "questionText": "A ball is kicked so that, $t$ seconds after the kick, its position in metres is modelled by $x = 7t$ and $y = 18t - 3t^{2}$, valid while $y \\ge 0$. Find how long the ball is in the air, and how far it travels horizontally before landing.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = \\frac{dx}{dt} = 2t, \\quad v_y = \\frac{dy}{dt} = 2",
-        "explanation": "Differentiating each position component gives the velocity components.",
+        "description": "State the landing condition",
+        "workingLatex": "y = 0",
+        "explanation": "The ball lands when it returns to ground level, which is where the height $y$ is zero again.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the speed formula",
-        "workingLatex": "\\text{speed} = \\sqrt{v_x^2 + v_y^2}",
-        "explanation": "Speed is the magnitude of the velocity vector.",
+        "description": "Form the equation in t",
+        "workingLatex": "18t - 3t^{2} = 0",
+        "explanation": "Setting the $y$-equation equal to zero gives the times at which the ball is on the ground.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the components",
-        "workingLatex": "\\text{speed} = \\sqrt{(2t)^2 + 2^2} = \\sqrt{4t^2 + 4}",
-        "explanation": "Squaring and adding the components.",
+        "description": "Factorise",
+        "workingLatex": "3t(6 - t) = 0",
+        "explanation": "Both terms share a factor of $3t$, so taking it out leaves a neat product that is easy to solve.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factor out the constant",
-        "workingLatex": "= \\sqrt{4(t^2 + 1)}",
-        "explanation": "Taking out the common factor $4$ prepares to simplify the surd.",
+        "description": "Solve for t",
+        "workingLatex": "t = 0 \\quad \\text{or} \\quad t = 6",
+        "explanation": "The product is zero when either factor is zero, giving two times when the ball is at ground level.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify the surd",
-        "workingLatex": "= 2\\sqrt{t^2 + 1}",
-        "explanation": "The square root of $4$ comes outside, giving the tidy expression.",
+        "description": "Interpret the solutions",
+        "workingLatex": "t = 6",
+        "explanation": "The time $t = 0$ is the moment of the kick, so the ball lands at the later time $t = 6$ seconds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the horizontal distance at landing",
+        "workingLatex": "x = 7(6) = 42",
+        "explanation": "Substituting the landing time into the $x$-equation gives how far the ball has travelled horizontally.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the results",
+        "workingLatex": "t = 6 \\ \\text{s}, \\quad x = 42 \\ \\text{m}",
+        "explanation": "So the ball is in the air for $6$ seconds and lands $42$ metres away from where it was kicked.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Speed $= 2\\sqrt{t^2 + 1}$ m/s"
+    "finalAnswer": "The ball is in the air for $6$ s and travels $42$ m horizontally before landing."
   }
 }

@@ -1,0 +1,135 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "unknown constants",
+    "simultaneous equations",
+    "stationary point"
+  ],
+  "questionText": "The curve $y = a\\,e^{x} + b\\,e^{-x}$ passes through the point $(0, 5)$ and has gradient $1$ at that point. (a) Find the values of the constants $a$ and $b$. (b) Find the exact coordinates of the stationary point of the resulting curve and classify it.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the point condition (0, 5)",
+        "workingLatex": "y = a e^{x} + b e^{-x}; \\quad (0,5):\\ a e^{0} + b e^{0} = a + b = 5",
+        "explanation": "Since $e^{0}=1$, substituting the point on the curve gives a first equation linking $a$ and $b$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = a e^{x} - b e^{-x}",
+        "explanation": "Using $\\dfrac{d}{dx}(e^{x})=e^{x}$ and the standard result $\\dfrac{d}{dx}(e^{-x})=-e^{-x}$ (that is $e^{kx}$ with $k=-1$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the gradient condition at x = 0",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = a - b = 1",
+        "explanation": "Substituting $x=0$ into the derivative and setting it equal to $1$ gives a second equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the simultaneous equations",
+        "workingLatex": "a + b = 5, \\quad a - b = 1",
+        "explanation": "These two linear equations can be solved together for the constants.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the simultaneous equations",
+        "workingLatex": "2a = 6 \\Rightarrow a = 3, \\quad b = 5 - 3 = 2",
+        "explanation": "Adding the equations eliminates $b$ to give $a=3$, and back-substituting gives $b=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the curve and its derivative",
+        "workingLatex": "y = 3e^{x} + 2e^{-x}, \\quad \\frac{dy}{dx} = 3e^{x} - 2e^{-x}",
+        "explanation": "Substituting the constants gives the specific curve whose stationary point we now find.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the derivative to zero",
+        "workingLatex": "3e^{x} - 2e^{-x} = 0 \\Rightarrow 3e^{x} = 2e^{-x}",
+        "explanation": "Stationary points occur where the gradient is zero, giving an equation in $e^{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Multiply through by e^{x}",
+        "workingLatex": "3e^{2x} = 2 \\Rightarrow e^{2x} = \\tfrac{2}{3}",
+        "explanation": "Multiplying by $e^{x}$ clears the negative exponent, since $e^{x}\\cdot e^{-x}=1$ and $e^{x}\\cdot e^{x}=e^{2x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "2x = \\ln\\tfrac{2}{3} \\Rightarrow x = \\tfrac{1}{2}\\ln\\tfrac{2}{3}",
+        "explanation": "Taking natural logarithms gives the exact $x$-coordinate (equivalently $x=-\\tfrac{1}{2}\\ln\\tfrac{3}{2}$, a small negative value).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Express the exponentials at this point",
+        "workingLatex": "e^{x} = \\left(\\tfrac{2}{3}\\right)^{1/2}, \\quad e^{-x} = \\left(\\tfrac{3}{2}\\right)^{1/2}",
+        "explanation": "From $e^{2x}=\\tfrac{2}{3}$ we get $e^{x}=\\sqrt{\\tfrac{2}{3}}$, and $e^{-x}$ is its reciprocal $\\sqrt{\\tfrac{3}{2}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Simplify the first term of y",
+        "workingLatex": "3\\left(\\tfrac{2}{3}\\right)^{1/2} = \\frac{3\\sqrt{2}}{\\sqrt{3}} = \\sqrt{3}\\cdot\\sqrt{2} = \\sqrt{6}",
+        "explanation": "Rationalising, $\\dfrac{3}{\\sqrt{3}}=\\sqrt{3}$, so the term collapses neatly to $\\sqrt{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Simplify the second term of y",
+        "workingLatex": "2\\left(\\tfrac{3}{2}\\right)^{1/2} = \\frac{2\\sqrt{3}}{\\sqrt{2}} = \\sqrt{2}\\cdot\\sqrt{3} = \\sqrt{6}",
+        "explanation": "Similarly $\\dfrac{2}{\\sqrt{2}}=\\sqrt{2}$, so this term is also exactly $\\sqrt{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\sqrt{6} + \\sqrt{6} = 2\\sqrt{6}",
+        "explanation": "Adding the two equal terms gives a very clean exact height for the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Classify using the second derivative",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = 3e^{x} + 2e^{-x} > 0 \\Rightarrow \\text{minimum}",
+        "explanation": "Both exponential terms are always positive, so the second derivative is positive everywhere; the point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Numerical check",
+        "workingLatex": "x \\approx -0.203, \\ y = 2\\sqrt{6} \\approx 4.899; \\quad 3e^{-0.203} - 2e^{0.203} \\approx 2.449 - 2.449 = 0 \\;\\checkmark",
+        "explanation": "The gradient is zero at $x\\approx-0.203$ and the height matches $2\\sqrt{6}$, confirming the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the final answer",
+        "workingLatex": "a = 3,\\ b = 2; \\quad \\text{minimum at } \\left(\\tfrac{1}{2}\\ln\\tfrac{2}{3},\\ 2\\sqrt{6}\\right)",
+        "explanation": "This gives the constants and the exact, classified stationary point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $a = 3$ and $b = 2$. (b) The curve $y = 3e^{x}+2e^{-x}$ has a minimum at $\\left(\\tfrac{1}{2}\\ln\\tfrac{2}{3},\\ 2\\sqrt{6}\\right) \\approx (-0.203,\\ 4.899)$."
+  }
+}

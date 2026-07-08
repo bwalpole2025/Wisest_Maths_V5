@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "chain rule",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = x e^{-2x}$. (a) Show that $\\dfrac{dy}{dx} = e^{-2x}(1 - 2x)$. (b) Find the exact coordinates of the stationary point of $C$ and determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the two factors for the product rule",
+        "workingLatex": "u = x, \\qquad v = e^{-2x}",
+        "explanation": "The function is a product of $x$ and $e^{-2x}$, so the product rule applies; the second factor will also need the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = -2 e^{-2x}",
+        "explanation": "Differentiating $x$ gives $1$. For $v=e^{-2x}$ the chain rule multiplies by the derivative of the inner $-2x$, giving $v'=-2e^{-2x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = e^{-2x} + x(-2 e^{-2x}) = e^{-2x} - 2x e^{-2x}",
+        "explanation": "Substituting into $u'v+uv'$ gives $e^{-2x}$ from the first term and $-2xe^{-2x}$ from the second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise to the required form",
+        "workingLatex": "\\frac{dy}{dx} = e^{-2x}(1 - 2x)",
+        "explanation": "Both terms share $e^{-2x}$; factoring it out gives the required result and isolates the linear bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the derivative to zero",
+        "workingLatex": "e^{-2x}(1 - 2x) = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve $\\tfrac{dy}{dx}=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x",
+        "workingLatex": "e^{-2x} > 0 \\ \\text{always} \\ \\Rightarrow\\ 1 - 2x = 0 \\ \\Rightarrow\\ x = \\frac{1}{2}",
+        "explanation": "Since $e^{-2x}$ is never zero, only the bracket can vanish, giving $x=\\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\frac{1}{2}e^{-2(1/2)} = \\frac{1}{2}e^{-1} = \\frac{1}{2e}",
+        "explanation": "Substituting $x=\\tfrac{1}{2}$ into $y=xe^{-2x}$ gives $\\tfrac{1}{2}e^{-1}=\\tfrac{1}{2e}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the stationary point",
+        "workingLatex": "\\left(\\frac{1}{2}, \\ \\frac{1}{2e}\\right)",
+        "explanation": "So the curve has one stationary point, at $\\left(\\tfrac{1}{2},\\tfrac{1}{2e}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\left[e^{-2x}(1 - 2x)\\right] = -2 e^{-2x}(1 - 2x) + e^{-2x}(-2) = e^{-2x}(4x - 4)",
+        "explanation": "We differentiate $\\tfrac{dy}{dx}=e^{-2x}(1-2x)$ again with the product and chain rules, then simplify the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate the second derivative and conclude",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=1/2} = e^{-1}(2 - 4) = -\\frac{2}{e} < 0 \\ \\Rightarrow\\ \\text{maximum}",
+        "explanation": "At $x=\\tfrac{1}{2}$ the second derivative is negative, so the curve is concave down and $\\left(\\tfrac{1}{2},\\tfrac{1}{2e}\\right)$ is a local maximum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) Shown: $\\dfrac{dy}{dx} = e^{-2x}(1 - 2x)$. (b) A maximum at $\\left(\\dfrac{1}{2}, \\dfrac{1}{2e}\\right)$."
+  }
+}

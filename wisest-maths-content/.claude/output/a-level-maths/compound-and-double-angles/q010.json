@@ -5,67 +5,67 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 4,
-  "answerType": "value",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "given ratio",
-    "sine"
+    "exact values",
+    "compound angle",
+    "surds"
   ],
-  "questionText": "Given that $\\sin A = \\dfrac{3}{5}$ and $A$ is acute, find the exact value of $\\sin 2A$.",
+  "questionText": "Show that $\\cos 15^\\circ = \\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$ by writing $15^\\circ = 45^\\circ - 30^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write down the double angle formula",
-        "workingLatex": "\\sin 2A = 2\\sin A\\cos A",
-        "explanation": "We need both sine and cosine of $A$; sine is given, so we must find cosine first.",
+        "description": "Split the angle into known parts",
+        "workingLatex": "15^\\circ = 45^\\circ - 30^\\circ",
+        "explanation": "We rewrite $15^\\circ$ as a difference of two special angles whose exact ratios we know.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Use the Pythagorean identity for cosine",
-        "workingLatex": "\\cos^2 A = 1 - \\sin^2 A = 1 - \\frac{9}{25}",
-        "explanation": "The identity gives cosine from the known sine.",
+        "description": "Apply the cosine subtraction formula",
+        "workingLatex": "\\cos 15^\\circ = \\cos 45^\\circ\\cos 30^\\circ + \\sin 45^\\circ\\sin 30^\\circ",
+        "explanation": "Using $\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B$; for a difference the sign between the products is a plus.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "\\cos^2 A = \\frac{16}{25}",
-        "explanation": "Subtracting gives a perfect-square fraction.",
+        "description": "Insert the exact surd values",
+        "workingLatex": "= \\tfrac{\\sqrt{2}}{2}\\cdot\\tfrac{\\sqrt{3}}{2} + \\tfrac{\\sqrt{2}}{2}\\cdot\\tfrac{1}{2}",
+        "explanation": "Here $\\cos45^\\circ=\\sin45^\\circ=\\tfrac{\\sqrt2}{2}$, $\\cos30^\\circ=\\tfrac{\\sqrt3}{2}$ and $\\sin30^\\circ=\\tfrac12$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Take the root with the correct sign",
-        "workingLatex": "A \\text{ acute} \\;\\Rightarrow\\; \\cos A = \\frac{4}{5}",
-        "explanation": "Since $A$ is acute, cosine is positive, so we take the positive root.",
+        "description": "Multiply the surds",
+        "workingLatex": "= \\tfrac{\\sqrt{6}}{4} + \\tfrac{\\sqrt{2}}{4}",
+        "explanation": "As before $\\sqrt2\\cdot\\sqrt3=\\sqrt6$, each term having denominator $4$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute into the double angle formula",
-        "workingLatex": "\\sin 2A = 2\\cdot\\frac{3}{5}\\cdot\\frac{4}{5}",
-        "explanation": "We now have both values needed for the formula.",
+        "description": "Combine over one denominator",
+        "workingLatex": "= \\tfrac{\\sqrt{6}+\\sqrt{2}}{4}",
+        "explanation": "The two terms share the denominator $4$, so they combine into one fraction.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Evaluate",
-        "workingLatex": "\\sin 2A = \\frac{24}{25}",
-        "explanation": "Multiplying the fractions and the factor of $2$ gives $\\frac{24}{25}$.",
+        "description": "Verify numerically",
+        "workingLatex": "\\tfrac{\\sqrt{6}+\\sqrt{2}}{4} \\approx 0.966",
+        "explanation": "This matches $\\cos15^\\circ\\approx0.9659$ on a calculator. Note also that $\\cos15^\\circ=\\sin75^\\circ$, since $15^\\circ$ and $75^\\circ$ are complementary.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Check the value is valid",
-        "workingLatex": "\\left|\\frac{24}{25}\\right| \\le 1 \\;\\checkmark",
-        "explanation": "The result lies between $-1$ and $1$, as any sine value must, confirming it is plausible.",
+        "description": "State the result",
+        "workingLatex": "\\cos 15^\\circ = \\tfrac{\\sqrt{6}+\\sqrt{2}}{4}",
+        "explanation": "This proves the required exact value.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 2A = \\dfrac{24}{25}$"
+    "finalAnswer": "$\\cos 15^\\circ = \\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$."
   }
 }

@@ -6,59 +6,108 @@
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "range of y",
-    "interval"
+    "parametric differentiation",
+    "trigonometric",
+    "speed"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3 - 3t$ for $-2 \\le t \\le 2$. Find the greatest and least values of $y$ on this interval.",
+  "questionText": "A point moves on an ellipse so that, at time $t$ seconds, its position in metres is $x = 3\\cos t$ and $y = 2\\sin t$. (a) Find the velocity components. (b) Show that its speed $v$ satisfies $v^{2} = 4 + 5\\sin^{2} t$. (c) Find the greatest and least speeds and the values of $t$ in $[0, 2\\pi)$ at which each occurs. (d) Find the speed when $t = \\frac{\\pi}{6}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate y",
-        "workingLatex": "\\frac{dy}{dt} = 3t^2 - 3",
-        "explanation": "Turning points of $y$ occur where its derivative with respect to $t$ is zero.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = -3\\sin t",
+        "explanation": "Differentiating $3\\cos t$ uses the standard derivative of cosine, giving $-3\\sin t$ for the horizontal velocity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the stationary values of t",
-        "workingLatex": "3t^2 - 3 = 0 \\;\\Rightarrow\\; t = \\pm 1",
-        "explanation": "Both lie inside the interval, so they are candidates.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2\\cos t",
+        "explanation": "Differentiating $2\\sin t$ gives $2\\cos t$, the vertical velocity of the moving point.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Evaluate y at the stationary points",
-        "workingLatex": "y(1) = 1 - 3 = -2, \\quad y(-1) = -1 + 3 = 2",
-        "explanation": "Substituting each stationary value into $y$.",
+        "description": "Write speed squared",
+        "workingLatex": "v^{2} = \\dot{x}^{2} + \\dot{y}^{2} = 9\\sin^{2} t + 4\\cos^{2} t",
+        "explanation": "The square of the speed is the sum of the squares of the components. Keeping it as $v^{2}$ lets us use trig identities before rooting.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate y at the endpoints",
-        "workingLatex": "y(2) = 8 - 6 = 2, \\quad y(-2) = -8 + 6 = -2",
-        "explanation": "We must also check the ends of the interval, as extremes can occur there.",
+        "description": "Replace cos-squared using the identity",
+        "workingLatex": "v^{2} = 9\\sin^{2} t + 4\\left(1 - \\sin^{2} t\\right)",
+        "explanation": "Using $\\cos^{2} t = 1 - \\sin^{2} t$ writes everything in terms of $\\sin^{2} t$, which is bounded and easy to analyse.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Compare all values",
-        "workingLatex": "y \\in \\{-2, 2\\}",
-        "explanation": "The values obtained are $-2$ and $2$; these are the extreme values.",
+        "description": "Simplify",
+        "workingLatex": "v^{2} = 4 + 5\\sin^{2} t",
+        "explanation": "Expanding and collecting gives the required form. The speed depends only on $\\sin^{2} t$, so its range follows directly.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "\\text{greatest } y = 2, \\quad \\text{least } y = -2",
-        "explanation": "The greatest value of $y$ is $2$ and the least is $-2$ on this interval.",
+        "description": "State the range of the sine-squared term",
+        "workingLatex": "0 \\le \\sin^{2} t \\le 1",
+        "explanation": "Since $\\sin t$ lies between $-1$ and $1$, its square lies between $0$ and $1$. This bounds $v^{2}$ without any calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Least speed squared",
+        "workingLatex": "v^{2}_{\\min} = 4 + 5(0) = 4",
+        "explanation": "The smallest $v^{2}$ occurs when $\\sin^{2} t = 0$, giving the least value $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Least speed and its times",
+        "workingLatex": "v_{\\min} = 2 \\quad \\text{at } t = 0,\\ \\pi",
+        "explanation": "Rooting gives a least speed of $2$ m/s, occurring where $\\sin t = 0$, i.e. at $t = 0$ and $t = \\pi$ (the ends of the major axis).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Greatest speed squared",
+        "workingLatex": "v^{2}_{\\max} = 4 + 5(1) = 9",
+        "explanation": "The largest $v^{2}$ occurs when $\\sin^{2} t = 1$, giving the greatest value $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Greatest speed and its times",
+        "workingLatex": "v_{\\max} = 3 \\quad \\text{at } t = \\tfrac{\\pi}{2},\\ \\tfrac{3\\pi}{2}",
+        "explanation": "Rooting gives a greatest speed of $3$ m/s, where $\\sin^{2} t = 1$, i.e. at $t = \\tfrac{\\pi}{2}$ and $t = \\tfrac{3\\pi}{2}$ (the ends of the minor axis).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Evaluate the sine at the given time",
+        "workingLatex": "\\sin\\tfrac{\\pi}{6} = \\tfrac{1}{2} \\;\\Rightarrow\\; \\sin^{2}\\tfrac{\\pi}{6} = \\tfrac{1}{4}",
+        "explanation": "For the speed at $t = \\tfrac{\\pi}{6}$ we need $\\sin^{2} t$ there, using the exact value $\\sin\\tfrac{\\pi}{6} = \\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Substitute into the speed formula",
+        "workingLatex": "v^{2} = 4 + 5\\left(\\tfrac{1}{4}\\right) = \\dfrac{21}{4}",
+        "explanation": "Putting $\\sin^{2} t = \\tfrac{1}{4}$ into $v^{2} = 4 + 5\\sin^{2} t$ gives $\\tfrac{21}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Take the square root",
+        "workingLatex": "v = \\sqrt{\\dfrac{21}{4}} = \\dfrac{\\sqrt{21}}{2} \\approx 2.29",
+        "explanation": "Rooting gives the speed at $t = \\tfrac{\\pi}{6}$, about $2.29$ m/s, which lies between the least and greatest speeds as expected.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Greatest $y = 2$, least $y = -2$."
+    "finalAnswer": "The velocity components are $\\dot{x} = -3\\sin t$ and $\\dot{y} = 2\\cos t$, giving $v^{2} = 4 + 5\\sin^{2} t$. The least speed is $2$ m/s (at $t = 0,\\ \\pi$) and the greatest is $3$ m/s (at $t = \\tfrac{\\pi}{2},\\ \\tfrac{3\\pi}{2}$). At $t = \\tfrac{\\pi}{6}$ the speed is $\\frac{\\sqrt{21}}{2} \\approx 2.29$ m/s."
   }
 }

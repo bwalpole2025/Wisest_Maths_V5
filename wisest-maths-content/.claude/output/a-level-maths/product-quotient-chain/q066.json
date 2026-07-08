@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "stationary points",
+    "asymptote"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{x^2}{x-1}$, $x \\ne 1$. (a) Show that $\\dfrac{dy}{dx} = \\dfrac{x(x-2)}{(x-1)^2}$. (b) Find the equation of the tangent to $C$ at the point where $x = 3$. (c) Find the coordinates of the stationary points of $C$ and determine their nature. (d) Hence show that $C$ has no points for which $0 < y < 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the parts for the quotient rule",
+        "workingLatex": "u = x^2, \\qquad v = x - 1",
+        "explanation": "The function is a single fraction, so we use $\\tfrac{d}{dx}\\!\\left(\\tfrac{u}{v}\\right)=\\tfrac{u'v-uv'}{v^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = 2x, \\qquad v' = 1",
+        "explanation": "Both come straight from the power rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2x(x-1) - x^2\\cdot 1}{(x-1)^2}",
+        "explanation": "Substituting into $\\tfrac{u'v-uv'}{v^2}$, keeping the order of the numerator exact.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2x^2 - 2x - x^2}{(x-1)^2} = \\frac{x^2 - 2x}{(x-1)^2} = \\frac{x(x-2)}{(x-1)^2}",
+        "explanation": "Collecting terms gives $x^2-2x$, which factorises as $x(x-2)$. This proves (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the gradient at x = 3",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=3} = \\frac{3(3-2)}{(3-1)^2} = \\frac{3}{4}",
+        "explanation": "Substituting $x=3$ into the factorised derivative gives the tangent's slope.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate at x = 3",
+        "workingLatex": "y = \\frac{3^2}{3-1} = \\frac{9}{2} \\quad\\Rightarrow\\quad \\left(3,\\,\\tfrac{9}{2}\\right)",
+        "explanation": "The tangent touches $C$ at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - \\tfrac{9}{2} = \\tfrac{3}{4}(x - 3) \\;\\Rightarrow\\; y = \\tfrac{3}{4}x + \\tfrac{9}{4}",
+        "explanation": "Using $y-y_1=m(x-x_1)$ and simplifying the constants.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\frac{x(x-2)}{(x-1)^2} = 0 \\;\\Rightarrow\\; x(x-2) = 0",
+        "explanation": "A fraction is zero only when its numerator is zero; the denominator $(x-1)^2$ is positive wherever the curve is defined, so it cannot make the gradient zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "x = 0 \\quad \\text{or} \\quad x = 2",
+        "explanation": "Both values are allowed since neither equals the excluded value $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinates",
+        "workingLatex": "y(0) = 0, \\qquad y(2) = \\frac{4}{1} = 4",
+        "explanation": "Substituting gives the stationary points $(0,0)$ and $(2,4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the sign test",
+        "workingLatex": "\\operatorname{sign}\\!\\left(\\frac{dy}{dx}\\right) = \\operatorname{sign}\\big(x(x-2)\\big),\\quad (x-1)^2 > 0",
+        "explanation": "Because the denominator is always positive (away from $x=1$), the sign of the gradient is controlled by $x(x-2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Classify the point at x = 0",
+        "workingLatex": "x(x-2):\\ \\ (+)\\ \\to\\ (-) \\ \\text{through } x=0",
+        "explanation": "For $x<0$ the product is positive and for $0<x<1$ it is negative, so the gradient turns from positive to negative: $(0,0)$ is a local maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Classify the point at x = 2",
+        "workingLatex": "x(x-2):\\ \\ (-)\\ \\to\\ (+) \\ \\text{through } x=2",
+        "explanation": "For $1<x<2$ the product is negative and for $x>2$ it is positive, so the gradient turns from negative to positive: $(2,4)$ is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Show the gap in the y-values",
+        "workingLatex": "y = k:\\ \\ x^2 = k(x-1) \\;\\Rightarrow\\; x^2 - kx + k = 0,\\quad \\Delta = k^2 - 4k = k(k-4)",
+        "explanation": "To reach a height $y=k$ we need a real $x$. The discriminant $k(k-4)$ is negative for $0<k<4$, so no real $x$ exists there. This matches the local maximum value $0$ (for the branch $x<1$) and the local minimum value $4$ (for the branch $x>1$): $C$ has no points with $0<y<4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\dfrac{x(x-2)}{(x-1)^2}$. (b) $y=\\tfrac{3}{4}x+\\tfrac{9}{4}$. (c) $(0,0)$ is a maximum and $(2,4)$ is a minimum. (d) Since $x^2-kx+k=0$ has no real root for $0<k<4$, $C$ has no points with $0<y<4$."
+  }
+}

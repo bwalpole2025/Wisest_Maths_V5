@@ -6,52 +6,129 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "value",
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "coordinates",
-    "extremes"
+    "double angle",
+    "intersection with line",
+    "domain and range"
   ],
-  "questionText": "A curve has parametric equations $x = 3 + t$, $y = 2 - t^2$. Find the coordinates of the highest point of the curve and state the Cartesian equation.",
+  "questionText": "A curve has parametric equations $x = \\cos 2t$ and $y = \\sin t$, for $0 \\le t < 2\\pi$. (a) Find a Cartesian equation of the curve in the form $x = f(y)$, and state the domain of $x$ and the range of $y$. (b) The line $x = 2y$ meets the curve. Find the exact coordinates of the point(s) of intersection, explaining why any spurious solution is rejected.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject",
-        "workingLatex": "t = x - 3",
-        "explanation": "Rearranging the linear $x$-equation gives $t$ in terms of $x$.",
+        "description": "Pick the right double-angle form",
+        "workingLatex": "y = \\sin t, \\qquad x = \\cos 2t",
+        "explanation": "Because $x$ is a double angle and $y = \\sin t$, choose the form of $\\cos 2t$ written in terms of $\\sin t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the y-equation",
-        "workingLatex": "y = 2 - (x - 3)^2",
-        "explanation": "Replacing $t$ gives the Cartesian equation.",
+        "description": "Write the identity",
+        "workingLatex": "\\cos 2t = 1 - 2\\sin^{2} t",
+        "explanation": "This version uses only $\\sin t$, which we already know equals $y$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recognise the maximum from the form",
-        "workingLatex": "y = 2 - (x - 3)^2 \\le 2",
-        "explanation": "A subtracted square is largest (zero) when the bracket is zero, so $y$ has a maximum of $2$.",
+        "description": "Substitute x and sin t",
+        "workingLatex": "x = 1 - 2\\sin^{2} t = 1 - 2y^{2}",
+        "explanation": "Replacing $\\cos 2t$ by $x$ and $\\sin t$ by $y$ eliminates $t$ and gives $x$ as a function of $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find where the maximum occurs",
-        "workingLatex": "x - 3 = 0 \\;\\Rightarrow\\; x = 3",
-        "explanation": "The vertex is at $x = 3$, where the squared term vanishes.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "x = 1 - 2y^{2}",
+        "explanation": "This is a parabola on its side, opening in the negative-$x$ direction with vertex at $(1, 0)$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the highest point",
-        "workingLatex": "(3, 2)",
-        "explanation": "This corresponds to $t = 0$; the downward parabola has its peak here.",
+        "description": "Domain of x",
+        "workingLatex": "x = \\cos 2t \\implies -1 \\le x \\le 1",
+        "explanation": "As a cosine, $\\cos 2t$ stays within $[-1, 1]$, so $x$ is confined to $-1 \\le x \\le 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Range of y",
+        "workingLatex": "y = \\sin t \\implies -1 \\le y \\le 1",
+        "explanation": "As a sine, $y$ ranges over $[-1, 1]$. These bounds matter when we check the solutions later.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the intersection",
+        "workingLatex": "x = 2y \\quad \\text{and} \\quad x = 1 - 2y^{2}",
+        "explanation": "At an intersection both equations hold, so we can equate the two expressions for $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Equate the expressions",
+        "workingLatex": "2y = 1 - 2y^{2}",
+        "explanation": "This single equation in $y$ locates the parameter values where the line meets the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Form a quadratic",
+        "workingLatex": "2y^{2} + 2y - 1 = 0",
+        "explanation": "Bringing all terms to one side gives a standard quadratic in $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Apply the quadratic formula",
+        "workingLatex": "y = \\dfrac{-2 \\pm \\sqrt{2^{2} - 4(2)(-1)}}{2(2)} = \\dfrac{-2 \\pm \\sqrt{12}}{4}",
+        "explanation": "The quadratic does not factorise neatly, so we use the formula with $a=2$, $b=2$, $c=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Simplify the surd",
+        "workingLatex": "y = \\dfrac{-2 \\pm 2\\sqrt{3}}{4} = \\dfrac{-1 \\pm \\sqrt{3}}{2}",
+        "explanation": "Since $\\sqrt{12} = 2\\sqrt{3}$, dividing top and bottom by $2$ tidies the two candidate values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate the candidates",
+        "workingLatex": "y \\approx 0.366 \\quad \\text{or} \\quad y \\approx -1.366",
+        "explanation": "Numerical values help us test them against the allowed range for $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Reject the out-of-range root",
+        "workingLatex": "y = \\dfrac{-1 - \\sqrt{3}}{2} \\approx -1.366 < -1 \\ \\Rightarrow \\ \\text{rejected}",
+        "explanation": "Because $y = \\sin t$ can never be less than $-1$, this value is impossible on the curve, so we discard it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Keep the valid root",
+        "workingLatex": "y = \\dfrac{-1 + \\sqrt{3}}{2}",
+        "explanation": "This value, about $0.366$, lies safely inside $[-1, 1]$, so it corresponds to a genuine point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Find the matching x",
+        "workingLatex": "x = 2y = 2 \\cdot \\dfrac{-1 + \\sqrt{3}}{2} = -1 + \\sqrt{3}",
+        "explanation": "Using the line $x = 2y$ gives the matching $x$-coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the intersection point",
+        "workingLatex": "\\left( \\sqrt{3} - 1,\\ \\dfrac{\\sqrt{3} - 1}{2} \\right)",
+        "explanation": "This single point, approximately $(0.73, 0.37)$, is the only place the line $x = 2y$ meets the curve.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Highest point $(3, 2)$; $y = 2 - (x - 3)^2$."
+    "finalAnswer": "(a) $x = 1 - 2y^{2}$, with domain $-1 \\le x \\le 1$ and range $-1 \\le y \\le 1$. (b) The only intersection is $\\left(\\sqrt{3}-1,\\ \\dfrac{\\sqrt{3}-1}{2}\\right)$; the root $y = \\dfrac{-1-\\sqrt{3}}{2} \\approx -1.37$ is rejected because $y = \\sin t$ must satisfy $-1 \\le y \\le 1$."
   }
 }

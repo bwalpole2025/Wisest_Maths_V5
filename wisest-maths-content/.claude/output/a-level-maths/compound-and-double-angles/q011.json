@@ -6,59 +6,73 @@
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
   "marks": 4,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "double angle",
-    "given ratio",
-    "cosine"
+    "exact values",
+    "tangent",
+    "surds"
   ],
-  "questionText": "Given that $\\cos A = \\dfrac{4}{5}$ and $A$ is acute, find the exact value of $\\cos 2A$.",
+  "questionText": "Show that $\\tan 75^\\circ = 2 + \\sqrt{3}$ by writing $75^\\circ = 45^\\circ + 30^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the most convenient form",
-        "workingLatex": "\\cos 2A = 2\\cos^2 A - 1",
-        "explanation": "Because we are given cosine, the cosine-only form of the double angle formula needs no extra work to find sine.",
+        "description": "Split the angle into known parts",
+        "workingLatex": "75^\\circ = 45^\\circ + 30^\\circ",
+        "explanation": "We express $75^\\circ$ as a sum of two special angles whose tangents we know exactly.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the given cosine",
-        "workingLatex": "\\cos 2A = 2\\left(\\frac{4}{5}\\right)^2 - 1",
-        "explanation": "Inserting $\\cos A = \\frac{4}{5}$ prepares the calculation.",
+        "description": "Apply the tangent addition formula",
+        "workingLatex": "\\tan 75^\\circ = \\dfrac{\\tan 45^\\circ + \\tan 30^\\circ}{1 - \\tan 45^\\circ\\tan 30^\\circ}",
+        "explanation": "Using $\\tan(A+B)=\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B}$ with $A=45^\\circ$ and $B=30^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Square the fraction",
-        "workingLatex": "= 2\\cdot\\frac{16}{25} - 1",
-        "explanation": "Squaring $\\frac{4}{5}$ gives $\\frac{16}{25}$.",
+        "description": "Insert the exact tangent values",
+        "workingLatex": "= \\dfrac{1 + \\tfrac{1}{\\sqrt{3}}}{1 - 1\\cdot\\tfrac{1}{\\sqrt{3}}}",
+        "explanation": "Here $\\tan45^\\circ=1$ and $\\tan30^\\circ=\\tfrac{1}{\\sqrt3}$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Multiply",
-        "workingLatex": "= \\frac{32}{25} - 1",
-        "explanation": "Doubling gives $\\frac{32}{25}$.",
+        "description": "Clear the inner fractions",
+        "workingLatex": "= \\dfrac{\\sqrt{3} + 1}{\\sqrt{3} - 1}",
+        "explanation": "Multiplying the top and bottom by $\\sqrt3$ removes the fractions inside, since $\\sqrt3\\cdot\\tfrac{1}{\\sqrt3}=1$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Subtract",
-        "workingLatex": "= \\frac{32}{25} - \\frac{25}{25} = \\frac{7}{25}",
-        "explanation": "Writing $1$ as $\\frac{25}{25}$ allows the subtraction, giving $\\frac{7}{25}$.",
+        "description": "Rationalise the denominator",
+        "workingLatex": "= \\dfrac{(\\sqrt{3}+1)(\\sqrt{3}+1)}{(\\sqrt{3}-1)(\\sqrt{3}+1)}",
+        "explanation": "Multiplying top and bottom by $\\sqrt3+1$ turns the denominator into a difference of squares, removing the surd there.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check the value is valid",
-        "workingLatex": "\\left|\\frac{7}{25}\\right| \\le 1 \\;\\checkmark",
-        "explanation": "The result is within the valid range for cosine, confirming it is reasonable.",
+        "description": "Expand top and bottom",
+        "workingLatex": "= \\dfrac{3 + 2\\sqrt{3} + 1}{3 - 1} = \\dfrac{4 + 2\\sqrt{3}}{2}",
+        "explanation": "The numerator expands to $3+2\\sqrt3+1=4+2\\sqrt3$, and the denominator is $(\\sqrt3)^2-1^2=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the fraction",
+        "workingLatex": "= 2 + \\sqrt{3}",
+        "explanation": "Dividing each term of the numerator by $2$ gives the simplified exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify numerically",
+        "workingLatex": "2 + \\sqrt{3} \\approx 3.732",
+        "explanation": "This matches $\\tan75^\\circ\\approx3.732$ on a calculator, confirming the result.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos 2A = \\dfrac{7}{25}$"
+    "finalAnswer": "$\\tan 75^\\circ = 2 + \\sqrt{3}$."
   }
 }

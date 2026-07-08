@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q012",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "upper tail"
+  ],
+  "questionText": "The heights, $X$ cm, of adult men in a population are modelled by $X \\sim N(170, 8^2)$. Find $P(X > 178)$, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(170,\\ 8^2), \\qquad \\mu = 170,\\ \\sigma = 8",
+        "explanation": "The heights are normal with mean $\\mu = 170$ and standard deviation $\\sigma = 8$ (remember the second number in $N(\\mu, \\sigma^2)$ is the variance, so $\\sigma = \\sqrt{64} = 8$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify what is required",
+        "workingLatex": "\\text{Require } P(X > 178)",
+        "explanation": "We want the chance a man is taller than $178$ cm. Because $178$ is above the mean, this is an upper-tail probability and should come out smaller than $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 178",
+        "workingLatex": "Z = \\dfrac{X - \\mu}{\\sigma} = \\dfrac{178 - 170}{8} = 1",
+        "explanation": "Standardising converts the height into a $z$-score: how many standard deviations it lies above the mean. Here $178$ is exactly one standard deviation above $170$, so $z = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X > 178) = P(Z > 1)",
+        "explanation": "Any statement about $X$ becomes the matching statement about the standard normal variable $Z \\sim N(0,1)$, so the tail above $178$ equals the tail above $z = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use the upper-tail rule",
+        "workingLatex": "P(Z > 1) = 1 - \\Phi(1) = 1 - 0.8413",
+        "explanation": "The table (or calculator) gives $\\Phi(1) = P(Z < 1)$, the area to the left. The area to the right is whatever is left over from the total area of $1$, so we subtract.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 0.1587",
+        "explanation": "Carrying out the subtraction gives the probability. About $16\\%$ of men are taller than $178$ cm, which is a sensible size for a one-standard-deviation tail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final answer",
+        "workingLatex": "P(X > 178) \\approx 0.1587",
+        "explanation": "Rounded to four significant figures this is the required probability, and being below $0.5$ it confirms the upper tail is the smaller part of the curve.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X > 178) \\approx 0.1587$."
+  }
+}

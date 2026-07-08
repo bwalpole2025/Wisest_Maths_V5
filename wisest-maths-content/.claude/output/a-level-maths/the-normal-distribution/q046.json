@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.stats.normal-distribution.q046",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "comparing distributions",
+    "standardising"
+  ],
+  "questionText": "Two machines cut metal rods. The lengths (in cm) of rods from machine $A$ are modelled by $A \\sim N(50, 0.4^2)$ and from machine $B$ by $B \\sim N(50, 0.6^2)$. A rod is accepted only if its length is between $49.2$ cm and $50.8$ cm. For each machine, find the probability that a rod is rejected, and state which machine is more reliable. Give probabilities to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State both distributions and the acceptance rule",
+        "workingLatex": "A \\sim N(50,\\ 0.4^2), \\quad B \\sim N(50,\\ 0.6^2), \\quad \\text{accept if } 49.2 < L < 50.8",
+        "explanation": "Both machines aim for a mean length of $50$ cm, but machine $B$ has the larger standard deviation ($0.6$ against $0.4$), so it is more variable. The acceptance limits are symmetric, sitting $0.8$ cm each side of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the limits for machine A",
+        "workingLatex": "z_A = \\dfrac{0.8}{0.4} = 2",
+        "explanation": "Because the limits are $0.8$ cm from the mean and symmetric, each endpoint standardises to $\\pm 2$ for machine $A$. I only need the distance $0.8$ divided by $\\sigma_A = 0.4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the acceptance probability for machine A",
+        "workingLatex": "P(\\text{accept } A) = P(-2 < Z < 2) = 2\\Phi(2) - 1",
+        "explanation": "For a symmetric interval $\\pm z$ about the mean, the central area is $2\\Phi(z) - 1$. Here $z = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the acceptance probability for A",
+        "workingLatex": "2(0.9772) - 1 = 0.9545",
+        "explanation": "Using $\\Phi(2) = 0.9772$, machine $A$ produces an acceptable rod about $95.45\\%$ of the time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the rejection probability for A",
+        "workingLatex": "P(\\text{reject } A) = 1 - 0.9545 = 0.04550",
+        "explanation": "Whatever is not accepted is rejected, so subtracting from $1$ gives machine $A$'s rejection probability of $0.04550$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Standardise the limits for machine B",
+        "workingLatex": "z_B = \\dfrac{0.8}{0.6} = 1.333",
+        "explanation": "For machine $B$ the same distance $0.8$ cm is divided by the larger $\\sigma_B = 0.6$, giving a smaller $z$ of $1.333$: the limits are fewer standard deviations away, so more rods fall outside them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the acceptance probability for machine B",
+        "workingLatex": "P(\\text{accept } B) = P(-1.333 < Z < 1.333) = 2\\Phi(1.333) - 1",
+        "explanation": "Again the interval is symmetric about the mean, so the central area is $2\\Phi(z) - 1$ with $z = 1.333$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the acceptance probability for B",
+        "workingLatex": "2(0.9088) - 1 = 0.8176",
+        "explanation": "Using $\\Phi(1.333) = 0.9088$, machine $B$ produces an acceptable rod about $81.76\\%$ of the time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the rejection probability for B",
+        "workingLatex": "P(\\text{reject } B) = 1 - 0.8176 = 0.1824",
+        "explanation": "Subtracting from $1$ gives machine $B$'s rejection probability of $0.1824$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Compare the two rejection rates",
+        "workingLatex": "0.04550 < 0.1824",
+        "explanation": "Machine $A$ rejects far fewer rods than machine $B$ (about $4.6\\%$ against $18.2\\%$), because its smaller standard deviation keeps lengths closer to the target.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{Machine } A \\text{ is more reliable}",
+        "explanation": "With a much lower rejection rate, machine $A$ is the more reliable of the two. Tighter variability directly means more rods land within the acceptance window.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(\\text{reject } A) = 0.04550$ and $P(\\text{reject } B) = 0.1824$ (4 s.f.); machine $A$ is more reliable because its smaller standard deviation gives a much lower rejection rate."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "al.y2.stats.normal-distribution.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "simultaneous equations"
+  ],
+  "questionText": "The times, $X$ minutes, taken by employees to complete a task are modelled by $X \\sim N(\\mu, \\sigma^2)$. It is found that $10\\%$ of employees take less than $50$ minutes and $5\\%$ take more than $80$ minutes. Find $\\mu$ and $\\sigma$, and hence find the probability that a randomly chosen employee takes more than $70$ minutes. Give probabilities to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution with two unknowns",
+        "workingLatex": "X \\sim N(\\mu,\\ \\sigma^2)",
+        "explanation": "Both the mean and the standard deviation are unknown, so we need two pieces of information to find them; the two percentage statements provide exactly two equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Translate the first statement",
+        "workingLatex": "P(X < 50) = 0.10",
+        "explanation": "'Ten percent take less than $50$' says the area below $50$ is $0.10$, i.e. $50$ is the $10$th percentile.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "z-value for the first statement",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.10) = -1.282",
+        "explanation": "The standardised value with $10\\%$ of the area below it is $-1.282$; it is negative because $50$ lies below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "First standardisation equation",
+        "workingLatex": "\\dfrac{50 - \\mu}{\\sigma} = -1.282",
+        "explanation": "Standardising $50$ must give $z_1$, producing the first equation linking $\\mu$ and $\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Translate the second statement",
+        "workingLatex": "P(X > 80) = 0.05 \\ \\Rightarrow\\ P(X < 80) = 0.95",
+        "explanation": "'Five percent take more than $80$' means $95\\%$ take less, so $80$ is the $95$th percentile.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "z-value for the second statement",
+        "workingLatex": "z_2 = \\Phi^{-1}(0.95) = 1.645",
+        "explanation": "The standardised value with $95\\%$ of the area below it is $1.645$, positive because $80$ lies above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Second standardisation equation",
+        "workingLatex": "\\dfrac{80 - \\mu}{\\sigma} = 1.645",
+        "explanation": "Standardising $80$ must give $z_2$, producing the second equation in the same two unknowns.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Clear the denominators",
+        "workingLatex": "50 - \\mu = -1.282\\,\\sigma, \\qquad 80 - \\mu = 1.645\\,\\sigma",
+        "explanation": "Multiplying each equation through by $\\sigma$ removes the fractions and puts both equations into a convenient linear form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "(80 - \\mu) - (50 - \\mu) = 1.645\\,\\sigma - (-1.282\\,\\sigma)",
+        "explanation": "Subtracting the first equation from the second cancels $\\mu$, leaving a single equation in $\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify both sides",
+        "workingLatex": "30 = 2.927\\,\\sigma",
+        "explanation": "The left side collapses to $80 - 50 = 30$, and the right side adds the two $z$-coefficients, $1.645 + 1.282 = 2.927$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{30}{2.927} = 10.25",
+        "explanation": "Dividing gives the standard deviation of the completion times.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State sigma to 3 significant figures",
+        "workingLatex": "\\sigma \\approx 10.3 \\text{ minutes}",
+        "explanation": "This is the spread of the times about the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Back-substitute to find mu",
+        "workingLatex": "\\mu = 50 + 1.282 \\times 10.25 = 50 + 13.14 = 63.14",
+        "explanation": "Using $50 - \\mu = -1.282\\sigma$ rearranged to $\\mu = 50 + 1.282\\sigma$ and inserting $\\sigma$ gives the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State mu to 3 significant figures",
+        "workingLatex": "\\mu \\approx 63.1 \\text{ minutes}",
+        "explanation": "The mean time lies between $50$ and $80$, as it must, consistent with the two percentiles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Set up the follow-up probability",
+        "workingLatex": "\\text{Find } P(X > 70) \\text{ with } \\mu = 63.14,\\ \\sigma = 10.25",
+        "explanation": "With both parameters known we can now answer the final part, the probability of taking more than $70$ minutes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "Standardise 70",
+        "workingLatex": "z = \\dfrac{70 - 63.14}{10.25} = 0.6694",
+        "explanation": "We convert $70$ into a $z$-score using the values just found; it is above the mean, so $z$ is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 17,
+        "description": "Express and evaluate the probability",
+        "workingLatex": "P(X > 70) = 1 - \\Phi(0.6694) = 1 - 0.7484 = 0.2516",
+        "explanation": "The probability of exceeding $70$ is one minus the cumulative area below it, giving $0.2516$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 18,
+        "description": "Round and interpret",
+        "workingLatex": "P(X > 70) \\approx 0.252",
+        "explanation": "So about $25\\%$ of employees take longer than $70$ minutes, which sits sensibly between the given $5\\%$ above $80$ and the majority below.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 63.1$ minutes and $\\sigma \\approx 10.3$ minutes, and $P(X > 70) \\approx 0.252$."
+  }
+}

@@ -4,54 +4,61 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "normal",
-    "line"
+    "projectile",
+    "parametric",
+    "position"
   ],
-  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2$. Find the equation of the normal to the curve at the point where $t = 1$.",
+  "questionText": "A stone is thrown so that, $t$ seconds after release, its position in metres is modelled by $x = 8t$ and $y = 20t - 5t^{2}$. Find the position of the stone when $t = 3$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the point",
-        "workingLatex": "t = 1: (2, 1)",
-        "explanation": "The normal passes through the curve point at $t = 1$.",
+        "description": "Decide on the method",
+        "workingLatex": "t = 3",
+        "explanation": "To find where the stone is, we simply substitute the given time into each position equation. No differentiation is needed because we want position, not velocity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the tangent gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2t}{2} = t \\;\\Rightarrow\\; t = 1 \\text{ gives } 1",
-        "explanation": "The parametric gradient is $t$, which is $1$ at this point.",
+        "description": "Substitute into the horizontal equation",
+        "workingLatex": "x = 8(3)",
+        "explanation": "Putting $t = 3$ into the $x$-equation gives the horizontal distance travelled.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the normal gradient",
-        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{1} = -1",
-        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal.",
+        "description": "Evaluate x",
+        "workingLatex": "x = 24",
+        "explanation": "The stone is $24$ metres from its launch point horizontally.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the point-gradient form",
-        "workingLatex": "y - 1 = -1(x - 2)",
-        "explanation": "Using the point $(2, 1)$ and gradient $-1$.",
+        "description": "Substitute into the vertical equation",
+        "workingLatex": "y = 20(3) - 5(3)^{2}",
+        "explanation": "Putting the same time into the $y$-equation gives the height of the stone.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "y = -x + 3",
-        "explanation": "Expanding and rearranging gives the normal line.",
+        "description": "Evaluate y",
+        "workingLatex": "y = 60 - 45 = 15",
+        "explanation": "Working out each term and subtracting gives the height at that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the position",
+        "workingLatex": "(x,\\,y) = (24,\\,15)",
+        "explanation": "So after $3$ seconds the stone is at the point $(24,\\,15)$, measured in metres from its starting point.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = -x + 3$"
+    "finalAnswer": "When $t = 3$ s the stone is at the point $(24,\\,15)$ metres."
   }
 }

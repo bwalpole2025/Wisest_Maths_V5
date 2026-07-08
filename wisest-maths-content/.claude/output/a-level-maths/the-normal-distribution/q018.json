@@ -1,0 +1,63 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q018",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "empirical rule"
+  ],
+  "questionText": "Exam marks, $X$, are modelled by $X \\sim N(60, 12^2)$. Using the $68$–$95$–$99.7$ rule, estimate the proportion of candidates scoring between $48$ and $72$ marks.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(60,\\ 12^2), \\qquad \\mu = 60,\\ \\sigma = 12",
+        "explanation": "The marks are normal with mean $\\mu = 60$ and standard deviation $\\sigma = 12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare the limits with the mean and sd",
+        "workingLatex": "48 = 60 - 12 = \\mu - \\sigma, \\qquad 72 = 60 + 12 = \\mu + \\sigma",
+        "explanation": "The two limits are exactly one standard deviation either side of the mean, so the interval is $\\mu \\pm \\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the relevant part of the rule",
+        "workingLatex": "P(\\mu - \\sigma < X < \\mu + \\sigma) \\approx 0.68",
+        "explanation": "The $68$–$95$–$99.7$ rule says about $68\\%$ of a normal distribution lies within one standard deviation of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the rule to this interval",
+        "workingLatex": "P(48 < X < 72) \\approx 0.68",
+        "explanation": "Because $48$ and $72$ are precisely $\\mu \\pm \\sigma$, the required probability is the $68\\%$ figure from the rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret in context",
+        "workingLatex": "\\approx 68\\%",
+        "explanation": "So roughly $68$ out of every $100$ candidates score between $48$ and $72$ marks.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final answer",
+        "workingLatex": "P(48 < X < 72) \\approx 0.68",
+        "explanation": "This is the estimated proportion, obtained directly from the empirical rule without any detailed standardising.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "About $0.68$ (approximately $68\\%$) of candidates score between $48$ and $72$ marks."
+  }
+}

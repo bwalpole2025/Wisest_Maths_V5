@@ -4,54 +4,61 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "velocity direction",
-    "horizontal"
+    "parametric differentiation",
+    "gradient",
+    "direction"
   ],
-  "questionText": "A particle has position $x = 4t$, $y = t^2 - 2t$ (metres) at time $t$ seconds. Find the time at which the particle is moving horizontally.",
+  "questionText": "A particle moves along a curved path given by $x = 2t$ and $y = t^{2} - 3t$. Find the gradient of the path when $t = 1$, and state whether the path is rising or falling there.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the horizontal-motion condition",
-        "workingLatex": "\\text{moving horizontally} \\;\\Leftrightarrow\\; v_y = 0",
-        "explanation": "Motion is horizontal exactly when the vertical velocity is zero (and the horizontal velocity is nonzero).",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2",
+        "explanation": "Differentiating $x = 2t$ gives the rate at which the horizontal position changes with time.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the vertical velocity",
-        "workingLatex": "v_y = \\frac{dy}{dt} = 2t - 2",
-        "explanation": "Differentiating the $y$-position gives the vertical velocity.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2t - 3",
+        "explanation": "Differentiating $y = t^{2} - 3t$ gives the rate at which the height changes with time.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set it to zero",
-        "workingLatex": "2t - 2 = 0 \\;\\Rightarrow\\; t = 1",
-        "explanation": "Solving gives the time at which vertical motion stops.",
+        "description": "Write the gradient formula",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2t - 3}{2}",
+        "explanation": "The gradient of the path is the vertical rate divided by the horizontal rate, which combines the two using the chain rule.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check horizontal velocity is nonzero",
-        "workingLatex": "v_x = \\frac{dx}{dt} = 4 \\ne 0",
-        "explanation": "The horizontal velocity is a constant $4$, so at $t = 1$ the particle is genuinely moving (horizontally).",
+        "description": "Substitute t = 1",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{2(1) - 3}{2} = -\\dfrac{1}{2}",
+        "explanation": "Putting in $t = 1$ gives the numerical value of the gradient at that point on the path.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "t = 1 \\text{ s}",
-        "explanation": "At $t = 1$ s the particle moves purely horizontally.",
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{dy}{dx} < 0",
+        "explanation": "A negative gradient means that as the particle moves to the right its height is decreasing, so the path slopes downward.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the conclusion",
+        "workingLatex": "\\dfrac{dy}{dx} = -\\dfrac{1}{2} \\ \\text{(falling)}",
+        "explanation": "So at $t = 1$ the gradient is $-\\tfrac{1}{2}$ and the path is falling there.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$t = 1$ s"
+    "finalAnswer": "At $t = 1$ the gradient of the path is $-\\dfrac{1}{2}$, so the path is falling there."
   }
 }

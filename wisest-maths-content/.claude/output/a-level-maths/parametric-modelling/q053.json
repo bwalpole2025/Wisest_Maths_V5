@@ -5,46 +5,116 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "distance",
-    "constant speed"
+    "projectile",
+    "parametric differentiation",
+    "greatest height"
   ],
-  "questionText": "A particle has position $x = 6t$, $y = 8t$ (metres) at time $t$ seconds. Find the distance travelled in the first $5$ seconds.",
+  "questionText": "A ball moves so that, $t$ seconds after release, its position in metres is $x = 19.6t$ and $y = 14.7t - 4.9t^{2}$ (with $g = 9.8$). (a) Find the two times at which the ball is at a height of $9.8$ m. (b) Find the horizontal distance between the two positions at those times. (c) Find the greatest height reached.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 6, \\quad v_y = 8",
-        "explanation": "Both are constant, so the motion is straight-line at steady speed.",
+        "description": "Set the height equal to 9.8",
+        "workingLatex": "14.7t - 4.9t^{2} = 9.8",
+        "explanation": "We want the moments when the vertical position equals $9.8$ m, so we equate $y$ to that height. A projectile passes any height below its peak twice, so we expect two answers.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the speed",
-        "workingLatex": "\\text{speed} = \\sqrt{6^2 + 8^2} = 10 \\text{ m/s}",
-        "explanation": "The constant speed is $10$ m/s.",
+        "description": "Rearrange into a quadratic",
+        "workingLatex": "4.9t^{2} - 14.7t + 9.8 = 0",
+        "explanation": "Bringing every term to one side gives a standard quadratic in $t$, which is the natural form for solving.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Use distance = speed × time",
-        "workingLatex": "\\text{distance} = 10 \\times 5 = 50",
-        "explanation": "For constant speed, distance is speed times time.",
+        "description": "Divide through by 4.9",
+        "workingLatex": "t^{2} - 3t + 2 = 0",
+        "explanation": "Dividing by the common factor $4.9$ clears the decimals and leaves a simple quadratic with integer coefficients.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "State the answer",
-        "workingLatex": "50 \\text{ m}",
-        "explanation": "The particle travels $50$ m in the first $5$ seconds.",
+        "description": "Factorise",
+        "workingLatex": "(t - 1)(t - 2) = 0",
+        "explanation": "The quadratic factorises neatly, so the two roots can be read straight off.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the two times",
+        "workingLatex": "t = 1 \\quad \\text{or} \\quad t = 2",
+        "explanation": "The ball is at $9.8$ m on the way up at $t = 1$ s and again on the way down at $t = 2$ s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm both times are during flight",
+        "workingLatex": "y = 0 \\;\\Rightarrow\\; 14.7t - 4.9t^{2} = 0 \\;\\Rightarrow\\; t = 3",
+        "explanation": "The ball lands at $t = 3$ s, so both $t = 1$ and $t = 2$ lie inside the flight and are valid within the model.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Horizontal position at the first time",
+        "workingLatex": "x_{1} = 19.6 \\times 1 = 19.6",
+        "explanation": "Substituting $t = 1$ into $x$ gives where the ball is horizontally at the first instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Horizontal position at the second time",
+        "workingLatex": "x_{2} = 19.6 \\times 2 = 39.2",
+        "explanation": "Substituting $t = 2$ into $x$ gives the horizontal position at the second instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Horizontal distance between them",
+        "workingLatex": "x_{2} - x_{1} = 39.2 - 19.6 = 19.6",
+        "explanation": "The horizontal gap is simply the difference of the two $x$-values, since both are measured along the same axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Differentiate the height",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 14.7 - 9.8t",
+        "explanation": "To find the greatest height we need the vertical velocity, so we differentiate $y$ with respect to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Condition for greatest height",
+        "workingLatex": "14.7 - 9.8t = 0 \\;\\Rightarrow\\; t = 1.5",
+        "explanation": "At the top the vertical velocity is zero, giving $t = 1.5$ s — exactly halfway between the two equal-height times, as symmetry demands.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Compute the greatest height",
+        "workingLatex": "y = 14.7(1.5) - 4.9(1.5)^{2} = 22.05 - 11.025",
+        "explanation": "Substituting the peak time into $y$ gives the height at the top of the arc.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Simplify",
+        "workingLatex": "y = 11.025",
+        "explanation": "Evaluating gives a greatest height of $11.025$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the results",
+        "workingLatex": "t = 1,\\ 2; \\quad \\Delta x = 19.6; \\quad y_{\\max} = 11.025",
+        "explanation": "Collecting the answers: the two times, the horizontal separation, and the greatest height.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Distance $= 50$ m"
+    "finalAnswer": "The ball is at $9.8$ m when $t = 1$ s and $t = 2$ s; the horizontal distance between those positions is $19.6$ m; and the greatest height reached is $11.025$ m."
   }
 }

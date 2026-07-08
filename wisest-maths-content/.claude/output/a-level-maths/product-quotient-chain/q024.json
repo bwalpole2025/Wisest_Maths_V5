@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "chain rule",
+    "stationary points",
+    "polynomial"
+  ],
+  "questionText": "A curve has equation $y = (2x^2 - 1)^4$. Find the coordinates of the stationary points of the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite and choose the chain rule",
+        "workingLatex": "y = (2x^2 - 1)^4",
+        "explanation": "A bracket raised to a power, where the bracket contains $x$, is a composite function. We differentiate it with the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the inner substitution",
+        "workingLatex": "u = 2x^2 - 1, \\qquad y = u^4",
+        "explanation": "Let $u$ be the inside of the bracket. Then $y=u^4$ is a simple power of $u$, ready for the power rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = 4u^{3}",
+        "explanation": "Differentiating $u^4$ with respect to $u$ brings the $4$ down and lowers the power to $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 4x",
+        "explanation": "Differentiating $u=2x^2-1$ gives $4x$; the constant $-1$ disappears.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = 4u^{3}\\cdot 4x = 16x\\,(2x^2 - 1)^{3}",
+        "explanation": "Multiplying the two derivatives and substituting $u=2x^2-1$ back gives the gradient function in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set the derivative equal to zero",
+        "workingLatex": "16x\\,(2x^2 - 1)^{3} = 0",
+        "explanation": "Stationary points occur where the gradient is zero. The derivative is already a product, so it is zero exactly when one of its factors is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the first factor",
+        "workingLatex": "16x = 0 \\;\\Rightarrow\\; x = 0",
+        "explanation": "The factor $16x$ vanishes only when $x=0$, giving one candidate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve the second factor",
+        "workingLatex": "2x^2 - 1 = 0 \\;\\Rightarrow\\; x^2 = \\tfrac{1}{2} \\;\\Rightarrow\\; x = \\pm\\frac{1}{\\sqrt{2}}",
+        "explanation": "The cubed bracket is zero when $2x^2-1=0$. Solving gives $x=\\pm\\dfrac{1}{\\sqrt{2}}=\\pm\\dfrac{\\sqrt{2}}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinate at x = 0",
+        "workingLatex": "y = (2(0)^2 - 1)^4 = (-1)^4 = 1",
+        "explanation": "Substituting $x=0$ into $y=(2x^2-1)^4$ gives $y=1$, so one stationary point is $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinates at x = \\pm 1/\\sqrt 2",
+        "workingLatex": "y = \\left(2\\cdot\\tfrac{1}{2} - 1\\right)^4 = 0^4 = 0",
+        "explanation": "At $x=\\pm\\dfrac{1}{\\sqrt{2}}$ the bracket $2x^2-1$ equals $0$, so $y=0$ for both.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the stationary points",
+        "workingLatex": "(0,\\,1), \\quad \\left(\\tfrac{1}{\\sqrt{2}},\\,0\\right), \\quad \\left(-\\tfrac{1}{\\sqrt{2}},\\,0\\right)",
+        "explanation": "Collecting the results, the curve has three stationary points: one at $(0,1)$ and two on the $x$-axis at $x=\\pm\\dfrac{1}{\\sqrt{2}}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Stationary points at $(0,1)$, $\\left(\\dfrac{1}{\\sqrt{2}},0\\right)$ and $\\left(-\\dfrac{1}{\\sqrt{2}},0\\right)$ (with $\\dfrac{dy}{dx}=16x(2x^2-1)^3$)."
+  }
+}

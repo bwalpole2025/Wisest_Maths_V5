@@ -1,0 +1,63 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q014",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standard normal"
+  ],
+  "questionText": "The random variable $Z$ has the standard normal distribution, $Z \\sim N(0, 1)$. Find $P(Z < 1.2)$, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "Z \\sim N(0, 1), \\qquad \\mu = 0,\\ \\sigma = 1",
+        "explanation": "The standard normal variable has mean $0$ and standard deviation $1$. Its cumulative area to the left of a value $z$ is written $\\Phi(z)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the probability using Phi",
+        "workingLatex": "P(Z < 1.2) = \\Phi(1.2)",
+        "explanation": "$P(Z < 1.2)$ is by definition the area under the curve to the left of $z = 1.2$, and that area is exactly what $\\Phi$ records.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Sense-check the position of 1.2",
+        "workingLatex": "1.2 > 0 \\ \\Rightarrow\\ \\Phi(1.2) > 0.5",
+        "explanation": "Because $1.2$ lies to the right of the centre $0$, more than half of the area is to its left, so we expect an answer comfortably above $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Read the value from the calculator or tables",
+        "workingLatex": "\\Phi(1.2) = 0.8849",
+        "explanation": "Using the normal cumulative function (or a standard normal table) gives the area to the left of $1.2$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the area",
+        "workingLatex": "P(Z < 1.2) = 0.8849",
+        "explanation": "This means about $88\\%$ of the standard normal distribution lies below $z = 1.2$, which agrees with our expectation of a value above $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final answer",
+        "workingLatex": "P(Z < 1.2) \\approx 0.8849",
+        "explanation": "Rounded to four significant figures this is the required probability.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(Z < 1.2) \\approx 0.8849$."
+  }
+}

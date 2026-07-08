@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "tangent",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{\\ln x}{x}$, $x > 0$. (a) Show that $\\dfrac{dy}{dx} = \\dfrac{1 - \\ln x}{x^2}$. (b) Find the coordinates of the stationary point of $C$ and determine its nature. (c) The tangent to $C$ at the point $P$ passes through the origin. Find the exact coordinates of $P$. (d) Find the equation of this tangent.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the parts for the quotient rule",
+        "workingLatex": "u = \\ln x, \\qquad v = x",
+        "explanation": "The function is a fraction, so we use $\\tfrac{d}{dx}\\!\\left(\\tfrac{u}{v}\\right)=\\tfrac{u'v-uv'}{v^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = \\frac{1}{x}, \\qquad v' = 1",
+        "explanation": "The derivative of $\\ln x$ is $\\tfrac1x$ and the derivative of $x$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the quotient rule and simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\frac{1}{x}\\cdot x - \\ln x\\cdot 1}{x^2} = \\frac{1 - \\ln x}{x^2}",
+        "explanation": "The term $\\tfrac1x\\cdot x$ simplifies to $1$, giving the required derivative and proving (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\frac{1 - \\ln x}{x^2} = 0 \\;\\Rightarrow\\; 1 - \\ln x = 0",
+        "explanation": "A fraction is zero only when its numerator is zero; $x^2>0$ for $x>0$, so it cannot make the gradient zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the stationary point",
+        "workingLatex": "\\ln x = 1 \\;\\Rightarrow\\; x = e, \\qquad y = \\frac{\\ln e}{e} = \\frac{1}{e}",
+        "explanation": "Solving $\\ln x=1$ gives $x=e$; substituting back gives the height $\\tfrac1e$, so the stationary point is $\\left(e,\\tfrac1e\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Determine its nature",
+        "workingLatex": "\\operatorname{sign}\\!\\left(\\frac{dy}{dx}\\right) = \\operatorname{sign}(1 - \\ln x):\\ \\ (+)\\ \\to\\ (-) \\ \\text{through } x=e",
+        "explanation": "Since $x^2>0$, the gradient follows $1-\\ln x$, which is positive for $x<e$ and negative for $x>e$. The gradient turns from positive to negative, so $\\left(e,\\tfrac1e\\right)$ is a maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the tangent-through-origin condition",
+        "workingLatex": "\\text{At } P=(a,f(a)):\\ \\ y = f(a) + f'(a)(x - a)",
+        "explanation": "The tangent at $P$ has the point-slope form using the gradient $f'(a)$ at $x=a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Impose that it passes through the origin",
+        "workingLatex": "0 = f(a) + f'(a)(0 - a) \\;\\Rightarrow\\; f(a) = a\\,f'(a)",
+        "explanation": "Substituting $(0,0)$ into the tangent equation gives the condition linking $f(a)$ and $f'(a)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute the function and its derivative",
+        "workingLatex": "\\frac{\\ln a}{a} = a\\cdot\\frac{1 - \\ln a}{a^2} = \\frac{1 - \\ln a}{a}",
+        "explanation": "Using $f(a)=\\tfrac{\\ln a}{a}$ and $f'(a)=\\tfrac{1-\\ln a}{a^2}$ turns the condition into an equation in $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for a",
+        "workingLatex": "\\ln a = 1 - \\ln a \\;\\Rightarrow\\; 2\\ln a = 1 \\;\\Rightarrow\\; \\ln a = \\tfrac{1}{2} \\;\\Rightarrow\\; a = \\sqrt{e}",
+        "explanation": "Multiplying through by $a$ removes the denominators; solving gives $\\ln a=\\tfrac12$, so $a=e^{1/2}=\\sqrt e$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the coordinates of P",
+        "workingLatex": "y = \\frac{\\ln\\sqrt{e}}{\\sqrt{e}} = \\frac{1/2}{\\sqrt{e}} = \\frac{1}{2\\sqrt{e}} \\;\\Rightarrow\\; P = \\left(\\sqrt{e},\\, \\frac{1}{2\\sqrt{e}}\\right)",
+        "explanation": "Since $\\ln\\sqrt e=\\tfrac12$, the height at $P$ is $\\tfrac{1}{2\\sqrt e}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the gradient at P",
+        "workingLatex": "f'(\\sqrt{e}) = \\frac{1 - \\ln\\sqrt{e}}{(\\sqrt{e})^2} = \\frac{1 - \\tfrac12}{e} = \\frac{1}{2e}",
+        "explanation": "Substituting $a=\\sqrt e$ into $f'(x)=\\tfrac{1-\\ln x}{x^2}$, and using $(\\sqrt e)^2=e$, gives the slope of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Write the tangent equation",
+        "workingLatex": "y = \\frac{1}{2e}\\,x = \\frac{x}{2e}",
+        "explanation": "The tangent passes through the origin with gradient $\\tfrac{1}{2e}$, so its equation is $y=\\tfrac{x}{2e}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check consistency at P",
+        "workingLatex": "x = \\sqrt{e}:\\ \\ y = \\frac{\\sqrt{e}}{2e} = \\frac{1}{2\\sqrt{e}} \\ \\checkmark",
+        "explanation": "Substituting $x=\\sqrt e$ into the tangent reproduces the $y$-coordinate of $P$, confirming the line is correct.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\dfrac{1-\\ln x}{x^2}$. (b) $\\left(e,\\tfrac{1}{e}\\right)$, a maximum. (c) $P=\\left(\\sqrt{e},\\,\\dfrac{1}{2\\sqrt{e}}\\right)$. (d) $y=\\dfrac{x}{2e}$."
+  }
+}

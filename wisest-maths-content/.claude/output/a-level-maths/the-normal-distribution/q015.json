@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q015",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standard normal",
+    "upper tail"
+  ],
+  "questionText": "The random variable $Z$ has the standard normal distribution, $Z \\sim N(0, 1)$. Find $P(Z > 0.5)$, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "Z \\sim N(0, 1)",
+        "explanation": "The variable is standard normal, centred at $0$ with standard deviation $1$, and $\\Phi(z) = P(Z < z)$ gives the area to the left of $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify what is required",
+        "workingLatex": "\\text{Require } P(Z > 0.5)",
+        "explanation": "We want the area to the right of $z = 0.5$. Since $0.5$ is to the right of centre, this upper tail must be less than $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the upper-tail rule",
+        "workingLatex": "P(Z > 0.5) = 1 - \\Phi(0.5)",
+        "explanation": "The whole area under the curve is $1$. Subtracting the area to the left of $0.5$ leaves the area to the right, which is what we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Read the cumulative value",
+        "workingLatex": "\\Phi(0.5) = 0.6915",
+        "explanation": "The calculator or table gives the area to the left of $0.5$ as $0.6915$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract from 1",
+        "workingLatex": "P(Z > 0.5) = 1 - 0.6915 = 0.3085",
+        "explanation": "Taking that area away from the total of $1$ gives the right-hand tail area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final answer",
+        "workingLatex": "P(Z > 0.5) \\approx 0.3085",
+        "explanation": "To four significant figures this is the required probability, and being under $0.5$ it confirms it is an upper tail.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(Z > 0.5) \\approx 0.3085$."
+  }
+}

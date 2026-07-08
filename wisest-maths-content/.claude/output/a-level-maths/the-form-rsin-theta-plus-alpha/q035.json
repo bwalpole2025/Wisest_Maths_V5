@@ -4,82 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "full method"
+    "cosine form",
+    "solving equations"
   ],
-  "questionText": "Express $8\\sin\\theta - 6\\cos\\theta$ in the form $R\\sin(\\theta - \\alpha)$ with $R > 0$ and $0 < \\alpha < 90^\\circ$, and hence solve $8\\sin\\theta - 6\\cos\\theta = 5$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionText": "Express $5\\cos\\theta - 2\\sin\\theta$ in the form $R\\cos(\\theta+\\alpha)$, where $R>0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. Hence solve $5\\cos\\theta - 2\\sin\\theta = 3$ for $0 \\le \\theta \\le 2\\pi$, giving your answers in radians to $3$ significant figures.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the target form",
-        "workingLatex": "R\\sin(\\theta - \\alpha) = R\\cos\\alpha\\sin\\theta - R\\sin\\alpha\\cos\\theta",
-        "explanation": "The minus form matches the given difference of terms.",
+        "description": "Set up the identity",
+        "workingLatex": "5\\cos\\theta - 2\\sin\\theta \\equiv R\\cos(\\theta+\\alpha)",
+        "explanation": "Because the expression leads with a cosine and the sine is subtracted, the natural single-wave target is $R\\cos(\\theta+\\alpha)$: its expansion produces exactly a cosine term minus a sine term.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 8, \\quad R\\sin\\alpha = 6",
-        "explanation": "Matching the sine and cosine coefficients.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\cos(\\theta+\\alpha) = R\\cos\\alpha\\,\\cos\\theta - R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta+\\alpha)=\\cos\\theta\\cos\\alpha-\\sin\\theta\\sin\\alpha$ and distributing $R$ gives a cosine term minus a sine term, matching the layout of the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{8^2 + 6^2} = 10",
-        "explanation": "The amplitude is $10$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 5, \\qquad R\\sin\\alpha = 2",
+        "explanation": "Matching the coefficient of $\\cos\\theta$ gives $R\\cos\\alpha=5$, and matching the coefficient of $\\sin\\theta$ (the minus signs cancel on both sides) gives $R\\sin\\alpha=2$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{6}{8} = 0.75 \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
-        "explanation": "The ratio gives the phase angle.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{5^2 + 2^2} = \\sqrt{29}",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=5^2+2^2=29$. Since $29$ is not a perfect square, we keep $R=\\sqrt{29}$ in exact surd form.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Write the harmonic form",
-        "workingLatex": "8\\sin\\theta - 6\\cos\\theta = 10\\sin(\\theta - 36.87^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{2}{5} \\Rightarrow \\alpha = 0.381",
+        "explanation": "Dividing the two equations gives $\\tan\\alpha=\\dfrac{2}{5}$. Both parts are positive, so $\\alpha$ is acute, and in radians $\\alpha=\\arctan\\dfrac{2}{5}=0.381$ to $3$ significant figures.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Set up the equation",
-        "workingLatex": "10\\sin(\\theta - 36.87^\\circ) = 5 \\;\\Rightarrow\\; \\sin(\\theta - 36.87^\\circ) = 0.5",
-        "explanation": "Dividing by $10$ gives a standard sine equation.",
+        "description": "State the R-form",
+        "workingLatex": "5\\cos\\theta - 2\\sin\\theta = \\sqrt{29}\\,\\cos(\\theta + 0.381)",
+        "explanation": "Putting amplitude and phase together gives the single cosine wave. It oscillates between $-\\sqrt{29}$ and $\\sqrt{29}$, so an equation equal to $3$ certainly has solutions.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Set the shifted interval",
-        "workingLatex": "-36.87^\\circ \\le \\theta - 36.87^\\circ < 323.13^\\circ",
-        "explanation": "Subtracting the shift from the bounds.",
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{29}\\,\\cos(\\theta+0.381) = 3 \\Rightarrow \\cos(\\theta+0.381) = \\dfrac{3}{\\sqrt{29}} = 0.5571",
+        "explanation": "Substituting the single-wave form turns the equation into a basic cosine equation. Dividing by $\\sqrt{29}$ isolates the cosine and gives a value we can invert.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - 36.87^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$, both within the interval.",
+        "description": "Shift the interval",
+        "workingLatex": "0 \\le \\theta \\le 2\\pi \\Rightarrow 0.381 \\le \\theta+0.381 \\le 6.664",
+        "explanation": "Since we now solve for $\\theta+0.381$, we add $0.381$ to both ends of the interval. Working in the shifted interval makes sure no valid solution is lost near either boundary.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Add the shift and round",
-        "workingLatex": "\\theta \\approx 67^\\circ, 187^\\circ",
-        "explanation": "Adding $36.87^\\circ$ and rounding gives the two solutions.",
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta+0.381 = 0.980,\\; 2\\pi - 0.980 = 5.303",
+        "explanation": "The principal value $\\arccos(0.5571)=0.980$. Cosine is also positive in the fourth quadrant, giving $2\\pi-0.980=5.303$; both lie inside the shifted interval, and adding a further $2\\pi$ would fall outside it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 0.980 - 0.381 = 0.599,\\quad \\theta = 5.303 - 0.381 = 4.92",
+        "explanation": "Subtracting the phase $0.381$ from each shifted angle undoes the shift. Both results lie in $0 \\le \\theta \\le 2\\pi$, so both are valid solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the solutions",
+        "workingLatex": "5\\cos(0.599) - 2\\sin(0.599) \\approx 3, \\quad 5\\cos(4.92) - 2\\sin(4.92) \\approx 3",
+        "explanation": "Substituting each answer back into the original expression returns approximately $3$, confirming the two rounded solutions are correct.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$8\\sin\\theta - 6\\cos\\theta = 10\\sin(\\theta - 36.87^\\circ)$; $\\theta \\approx 67^\\circ, 187^\\circ$."
+    "finalAnswer": "$5\\cos\\theta - 2\\sin\\theta = \\sqrt{29}\\,\\cos(\\theta+0.381)$, and the equation has solutions $\\theta = 0.599$ and $\\theta = 4.92$ (radians, to $3$ s.f.)."
   }
 }

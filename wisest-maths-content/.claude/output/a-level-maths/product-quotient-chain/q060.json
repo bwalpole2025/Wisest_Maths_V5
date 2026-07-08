@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "chain rule",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = (x-1)^2 e^{2x}$. (a) Show that $\\dfrac{dy}{dx}=2x(x-1)e^{2x}$. (b) Find the coordinates of the stationary points of $C$. (c) Determine the nature of each stationary point.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and label the factors",
+        "workingLatex": "u = (x-1)^2, \\qquad v = e^{2x}",
+        "explanation": "$y$ is a product of two composite functions, so the product rule applies and each factor needs the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the first factor with the chain rule",
+        "workingLatex": "u = (x-1)^2,\\quad w = x-1,\\quad \\frac{dw}{dx}=1,\\quad u' = 2(x-1)\\cdot 1 = 2(x-1)",
+        "explanation": "With $w=x-1$, $u=w^2$ so $u'=2w\\cdot\\dfrac{dw}{dx}=2(x-1)$; the inner derivative is just $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the second factor with the chain rule",
+        "workingLatex": "v = e^{2x},\\quad w = 2x,\\quad \\frac{dw}{dx}=2,\\quad v' = e^{2x}\\cdot 2 = 2e^{2x}",
+        "explanation": "With $w=2x$, $v=e^{w}$ so $v'=e^{2x}\\cdot 2$; the inner derivative supplies the factor $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = 2(x-1)e^{2x} + (x-1)^2\\cdot 2e^{2x}",
+        "explanation": "Substitute into $u'v+uv'$; both terms contain $e^{2x}$ and a power of $(x-1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise to reach the required form",
+        "workingLatex": "\\frac{dy}{dx} = 2(x-1)e^{2x}\\big[1 + (x-1)\\big] = 2(x-1)e^{2x}\\cdot x = 2x(x-1)e^{2x}",
+        "explanation": "The common factor is $2(x-1)e^{2x}$. Inside the bracket $1+(x-1)=x$, giving the clean product $2x(x-1)e^{2x}$, as required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set the derivative to zero",
+        "workingLatex": "2x(x-1)e^{2x} = 0",
+        "explanation": "Stationary points occur where the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Discard the exponential factor",
+        "workingLatex": "e^{2x} > 0 \\ \\text{for all } x",
+        "explanation": "The exponential is never zero, so only the factors $x$ and $(x-1)$ can make the product vanish.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for x",
+        "workingLatex": "x = 0 \\qquad \\text{or} \\qquad x - 1 = 0 \\ \\Rightarrow\\ x = 1",
+        "explanation": "Setting each remaining factor to zero gives the two stationary $x$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinates",
+        "workingLatex": "x=0:\\ y=(-1)^2 e^{0}=1; \\qquad x=1:\\ y=0^2 e^{2}=0",
+        "explanation": "Substitute each $x$ into $y=(x-1)^2 e^{2x}$: at $x=0$, $y=1$; at $x=1$ the squared bracket is zero, so $y=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the stationary points",
+        "workingLatex": "(0,\\,1) \\qquad \\text{and} \\qquad (1,\\,0)",
+        "explanation": "These are the two stationary points of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up a sign test",
+        "workingLatex": "\\text{sign of } \\frac{dy}{dx} = \\text{sign of } x(x-1), \\quad \\text{since } e^{2x} > 0",
+        "explanation": "Because $e^{2x}$ is always positive, the sign of the gradient is decided by the product $x(x-1)$, whose roots are $0$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Examine the gradient either side of x = 0",
+        "workingLatex": "x=-\\tfrac12:\\ (-)(-)=+\\ \\Rightarrow\\ \\tfrac{dy}{dx}>0; \\qquad x=\\tfrac12:\\ (+)(-)=-\\ \\Rightarrow\\ \\tfrac{dy}{dx}<0",
+        "explanation": "The gradient changes from positive to negative as $x$ increases through $0$, so $(0,1)$ is a local maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Examine the gradient either side of x = 1",
+        "workingLatex": "x=\\tfrac12:\\ (+)(-)=-\\ \\Rightarrow\\ \\tfrac{dy}{dx}<0; \\qquad x=\\tfrac32:\\ (+)(+)=+\\ \\Rightarrow\\ \\tfrac{dy}{dx}>0",
+        "explanation": "The gradient changes from negative to positive as $x$ increases through $1$, so $(1,0)$ is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the nature of each point",
+        "workingLatex": "(0,1)\\ \\text{maximum}, \\qquad (1,0)\\ \\text{minimum}",
+        "explanation": "The sign analysis classifies $(0,1)$ as a local maximum and $(1,0)$ as a local minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=2x(x-1)e^{2x}$ (shown). (b) Stationary points at $(0,1)$ and $(1,0)$. (c) $(0,1)$ is a local maximum and $(1,0)$ is a local minimum."
+  }
+}

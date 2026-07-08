@@ -4,54 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
-    "intersection",
-    "line"
+    "normal",
+    "tangent",
+    "parametric differentiation"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find the coordinates of the points where the curve meets the line $y = x$.",
+  "questionText": "A camera is mounted on a curved track modelled by $x = t^{2}$ and $y = 2t$, with distances in metres, and always points along the normal to the track. When $t = 2$, find the equation of the camera's line of sight (the normal to the path) and the point where this line crosses the $x$-axis.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Substitute into the line",
-        "workingLatex": "t^3 = t^2",
-        "explanation": "Replacing $x$ and $y$ with their parametric forms gives an equation in $t$.",
+        "description": "Differentiate both coordinates",
+        "workingLatex": "\\dot{x} = 2t, \\qquad \\dot{y} = 2",
+        "explanation": "The normal is perpendicular to the tangent, so we first need the gradient of the path, which comes from these two rates of change.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Move to one side",
-        "workingLatex": "t^3 - t^2 = 0",
-        "explanation": "Rearranging keeps the $t = 0$ solution.",
+        "description": "Find the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2}{2t} = \\dfrac{1}{t}",
+        "explanation": "Dividing the vertical rate by the horizontal rate gives the slope of the tangent at any point on the track.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Factorise",
-        "workingLatex": "t^2(t - 1) = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 1",
-        "explanation": "Taking out $t^2$ gives the roots.",
+        "description": "Find the point at t = 2",
+        "workingLatex": "x = 2^{2} = 4, \\qquad y = 2(2) = 4 \\;\\Rightarrow\\; (4,\\, 4)",
+        "explanation": "We need the actual location of the camera at this instant so the normal line can pass through it.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the points",
-        "workingLatex": "t = 0: (0, 0); \\quad t = 1: (1, 1)",
-        "explanation": "Substituting each root into the parametric equations.",
+        "description": "Evaluate the tangent gradient at t = 2",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{1}{2}",
+        "explanation": "This is the slope of the track itself at the camera's position.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "(0, 0) \\text{ and } (1, 1)",
-        "explanation": "These are the intersection points, both lying on $y = x$.",
+        "description": "Find the gradient of the normal",
+        "workingLatex": "m_{\\text{normal}} = -\\dfrac{1}{\\left(\\tfrac{1}{2}\\right)} = -2",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is the negative reciprocal of the tangent's gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the equation of the normal",
+        "workingLatex": "y - 4 = -2(x - 4)",
+        "explanation": "Using the point $(4, 4)$ and the normal gradient in the point-slope form gives the line of sight.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the equation",
+        "workingLatex": "y = -2x + 12",
+        "explanation": "Expanding and tidying gives the normal in a clean form ready to work with.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set y = 0 for the x-axis crossing",
+        "workingLatex": "0 = -2x + 12 \\;\\Rightarrow\\; x = 6",
+        "explanation": "The line crosses the $x$-axis where its height is zero, so we substitute $y = 0$ and solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the crossing point",
+        "workingLatex": "(6,\\, 0)",
+        "explanation": "This is where the camera's line of sight meets the $x$-axis.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(0, 0)$ and $(1, 1)$"
+    "finalAnswer": "The line of sight (normal) is $y = -2x + 12$, and it crosses the $x$-axis at $(6,\\, 0)$."
   }
 }

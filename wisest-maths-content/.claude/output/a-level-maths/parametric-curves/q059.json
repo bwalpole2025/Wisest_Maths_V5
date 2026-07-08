@@ -5,67 +5,123 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "ellipse",
-    "intersection"
+    "double angle",
+    "intersection with line",
+    "parameter values"
   ],
-  "questionText": "A curve has parametric equations $x = 2\\cos\\theta$, $y = 3\\sin\\theta$. Find the exact coordinates of the points where the curve meets the line $y = x$.",
+  "questionText": "A curve is defined by $x = \\sin t$ and $y = \\cos 2t$, for $0 \\le t < 2\\pi$. (a) Find a Cartesian equation of the curve in the form $y = f(x)$, and state the domain of $x$ and the range of $y$. (b) The line $y = x$ crosses the curve. Find the coordinates of the points of intersection and, for each, a value of $t$ that produces it.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Set the expressions equal",
-        "workingLatex": "3\\sin\\theta = 2\\cos\\theta",
-        "explanation": "The condition $y = x$ equates the two parametric expressions.",
+        "description": "Choose the identity",
+        "workingLatex": "x = \\sin t, \\qquad y = \\cos 2t",
+        "explanation": "With $x = \\sin t$, the natural choice is the form of $\\cos 2t$ written in terms of $\\sin t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Form a tangent equation",
-        "workingLatex": "\\tan\\theta = \\frac{2}{3}",
-        "explanation": "Dividing both sides by $3\\cos\\theta$ gives a tangent equation.",
+        "description": "State the double-angle form",
+        "workingLatex": "\\cos 2t = 1 - 2\\sin^{2} t",
+        "explanation": "This uses only $\\sin t$, which is our variable $x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Build the reference triangle",
-        "workingLatex": "\\tan\\theta = \\frac{2}{3} \\;\\Rightarrow\\; \\text{hypotenuse} = \\sqrt{13}",
-        "explanation": "A tangent of $\\frac{2}{3}$ gives a right triangle with sides $2$, $3$, hypotenuse $\\sqrt{13}$.",
+        "description": "Substitute sin t = x",
+        "workingLatex": "y = 1 - 2\\sin^{2} t = 1 - 2x^{2}",
+        "explanation": "Replacing $\\sin t$ by $x$ removes the parameter and gives $y$ as a function of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the first-quadrant point",
-        "workingLatex": "\\cos\\theta = \\frac{3}{\\sqrt{13}}, \\; \\sin\\theta = \\frac{2}{\\sqrt{13}}",
-        "explanation": "Using the triangle for the first solution where both are positive.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = 1 - 2x^{2}",
+        "explanation": "This is a downward-opening parabola with vertex at $(0, 1)$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Compute the coordinates",
-        "workingLatex": "x = 2\\cdot\\frac{3}{\\sqrt{13}} = \\frac{6}{\\sqrt{13}}, \\; y = 3\\cdot\\frac{2}{\\sqrt{13}} = \\frac{6}{\\sqrt{13}}",
-        "explanation": "Both coordinates equal $\\frac{6}{\\sqrt{13}}$, confirming the point lies on $y = x$.",
+        "description": "Domain of x",
+        "workingLatex": "x = \\sin t \\implies -1 \\le x \\le 1",
+        "explanation": "Sine is bounded, so only the part of the parabola with $-1 \\le x \\le 1$ is traced.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find the second point",
-        "workingLatex": "\\left(-\\frac{6}{\\sqrt{13}}, -\\frac{6}{\\sqrt{13}}\\right)",
-        "explanation": "The angle $\\theta + \\pi$ gives the diametrically opposite point, with both signs flipped.",
+        "description": "Range of y",
+        "workingLatex": "y = \\cos 2t \\implies -1 \\le y \\le 1",
+        "explanation": "Cosine is bounded too; equivalently, on $-1 \\le x \\le 1$ the parabola $y = 1 - 2x^{2}$ runs from $y = 1$ (at $x=0$) down to $y = -1$ (at $x = \\pm 1$).",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the answer",
-        "workingLatex": "\\left(\\pm\\frac{6\\sqrt{13}}{13}, \\pm\\frac{6\\sqrt{13}}{13}\\right)",
-        "explanation": "Rationalising, the two points are $\\left(\\frac{6\\sqrt{13}}{13}, \\frac{6\\sqrt{13}}{13}\\right)$ and its negative.",
+        "description": "Set up the intersection",
+        "workingLatex": "y = x \\quad \\text{and} \\quad y = 1 - 2x^{2}",
+        "explanation": "At a crossing point both equations hold, so equate the two expressions for $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Equate the expressions",
+        "workingLatex": "x = 1 - 2x^{2}",
+        "explanation": "Replacing $y$ by $x$ turns the problem into a single equation in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Form a quadratic",
+        "workingLatex": "2x^{2} + x - 1 = 0",
+        "explanation": "Rearranging into standard form prepares it for factorising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Factorise",
+        "workingLatex": "(2x - 1)(x + 1) = 0",
+        "explanation": "The quadratic factorises neatly, giving the two candidate $x$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Solve for x",
+        "workingLatex": "x = \\dfrac{1}{2} \\quad \\text{or} \\quad x = -1",
+        "explanation": "Both roots lie within $-1 \\le x \\le 1$, so both are valid points on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the matching points",
+        "workingLatex": "\\left( \\dfrac{1}{2},\\ \\dfrac{1}{2} \\right), \\qquad (-1,\\ -1)",
+        "explanation": "Since the points lie on $y = x$, the $y$-coordinate equals the $x$-coordinate in each case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find t for x = 1/2",
+        "workingLatex": "\\sin t = \\dfrac{1}{2} \\implies t = \\dfrac{\\pi}{6} \\ \\left(\\text{or } \\tfrac{5\\pi}{6}\\right)",
+        "explanation": "Solving $\\sin t = \\tfrac12$ in $[0, 2\\pi)$ gives $t = \\tfrac{\\pi}{6}$; a quick check gives $y = \\cos\\tfrac{\\pi}{3} = \\tfrac12$, which matches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find t for x = -1",
+        "workingLatex": "\\sin t = -1 \\implies t = \\dfrac{3\\pi}{2}",
+        "explanation": "Here $\\sin t = -1$ has the single solution $t = \\tfrac{3\\pi}{2}$, and $y = \\cos 3\\pi = -1$ confirms the point $(-1,-1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the results",
+        "workingLatex": "\\left( \\tfrac{1}{2}, \\tfrac{1}{2} \\right) \\ \\text{at} \\ t = \\tfrac{\\pi}{6}, \\qquad (-1, -1) \\ \\text{at} \\ t = \\tfrac{3\\pi}{2}",
+        "explanation": "Both intersection points are genuine and each is produced by a valid parameter value in the given interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\left(\\dfrac{6\\sqrt{13}}{13}, \\dfrac{6\\sqrt{13}}{13}\\right)$ and $\\left(-\\dfrac{6\\sqrt{13}}{13}, -\\dfrac{6\\sqrt{13}}{13}\\right)$"
+    "finalAnswer": "(a) $y = 1 - 2x^{2}$, domain $-1 \\le x \\le 1$, range $-1 \\le y \\le 1$. (b) The line $y = x$ meets the curve at $\\left(\\tfrac{1}{2},\\,\\tfrac{1}{2}\\right)$ (from $t = \\tfrac{\\pi}{6}$) and $(-1,\\,-1)$ (from $t = \\tfrac{3\\pi}{2}$)."
   }
 }

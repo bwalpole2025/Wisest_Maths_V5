@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "chain rule",
+    "exponential",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^{\\sin x}$. Find the equation of the tangent to $C$ at the point where $x = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite and set up the chain rule",
+        "workingLatex": "u = \\sin x, \\qquad y = e^{u}",
+        "explanation": "The exponent $\\sin x$ is a function of $x$, so $y=e^{\\sin x}$ is composite. Let $u=\\sin x$ and $y=e^{u}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = e^{u}",
+        "explanation": "The exponential $e^{u}$ is its own derivative with respect to $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = \\cos x",
+        "explanation": "The derivative of $\\sin x$ (radians) is $\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = e^{u}\\cos x = \\cos x\\,e^{\\sin x}",
+        "explanation": "Multiplying the derivatives and substituting $u=\\sin x$ back gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the gradient at x = 0",
+        "workingLatex": "m = \\cos(0)\\,e^{\\sin(0)} = 1\\cdot e^{0} = 1",
+        "explanation": "Substituting $x=0$: $\\cos 0=1$ and $\\sin 0=0$ so $e^{\\sin 0}=e^{0}=1$, giving gradient $m=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate at x = 0",
+        "workingLatex": "y = e^{\\sin(0)} = e^{0} = 1",
+        "explanation": "Substituting $x=0$ into the curve gives $y=1$, so the point of contact is $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the point-gradient form of the tangent",
+        "workingLatex": "y - 1 = 1\\,(x - 0)",
+        "explanation": "A line through $(0,1)$ with gradient $1$ has equation $y-y_1=m(x-x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify",
+        "workingLatex": "y = x + 1",
+        "explanation": "Expanding and tidying gives the tangent line $y=x+1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the tangent equation",
+        "workingLatex": "y = x + 1",
+        "explanation": "So the tangent to $C$ at $x=0$ is the straight line $y=x+1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx}=\\cos x\\,e^{\\sin x}$, and the tangent at $x=0$ is $y = x + 1$."
+  }
+}

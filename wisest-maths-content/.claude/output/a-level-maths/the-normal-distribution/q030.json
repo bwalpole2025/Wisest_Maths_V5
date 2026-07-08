@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "percentile"
+  ],
+  "questionText": "The finishing times, $X$ minutes, of runners in a marathon are modelled by $X \\sim N(240, 30^2)$. The fastest $20\\%$ of runners finish in under $t$ minutes. Find $t$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the condition",
+        "workingLatex": "X \\sim N(240,\\ 30^2), \\qquad P(X < t) = 0.20",
+        "explanation": "Finishing times are normal with mean $\\mu = 240$ and standard deviation $\\sigma = 30$. The fastest runners have the shortest times, so ‘the fastest $20\\%$ finish in under $t$’ means $P(X < t) = 0.20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recognise this as a lower-tail probability",
+        "workingLatex": "P(X < t) = 0.20",
+        "explanation": "The fastest times are the smallest, and they lie to the left of $t$, so the condition is already an area to the left and the inverse-normal applies directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the $z$-value for the 20th percentile",
+        "workingLatex": "z = \\Phi^{-1}(0.20) = -0.8416",
+        "explanation": "The standardised value with $20\\%$ of the area to its left is $z = -0.8416$. It is negative because $t$ lies below the mean — only the quickest fifth of runners finish sooner.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the standardisation equation",
+        "workingLatex": "\\dfrac{t - 240}{30} = -0.8416",
+        "explanation": "Standardising the unknown time $t$ must give this $z$-value, so the two are set equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange the standardisation formula",
+        "workingLatex": "t = \\mu + \\sigma z",
+        "explanation": "Multiplying both sides by $\\sigma$ and adding $\\mu$ makes $t$ the subject — the general rule for turning a $z$-value back into a finishing time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the known values",
+        "workingLatex": "t = 240 + 30 \\times (-0.8416)",
+        "explanation": "Putting in the mean $240$, the standard deviation $30$ and the $z$-value $-0.8416$ gives the time in minutes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the value",
+        "workingLatex": "t = 240 - 25.25 = 214.75",
+        "explanation": "The arithmetic gives a time of about $214.75$ minutes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "t \\approx 215 \\text{ minutes}",
+        "explanation": "Rounding gives the time under which the fastest $20\\%$ of runners finish.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sanity check the result",
+        "workingLatex": "215 < 240 = \\mu",
+        "explanation": "The time is below the mean of $240$ minutes, as expected: the fastest runners are quicker than average, so their cut-off time must sit to the left of the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t \\approx 215$ minutes (3 s.f.) — the time under which the fastest $20\\%$ finish."
+  }
+}

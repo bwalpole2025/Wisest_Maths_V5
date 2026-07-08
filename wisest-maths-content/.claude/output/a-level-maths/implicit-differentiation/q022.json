@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "product rule",
+    "gradient at a point"
+  ],
+  "questionText": "The curve $C$ has equation $xy = 6$. Verify that the point $(2, 3)$ lies on $C$, and hence find the gradient of $C$ at that point.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Verify the point lies on the curve",
+        "workingLatex": "(2)(3) = 6",
+        "explanation": "Substituting $x = 2$ and $y = 3$ into $xy$ gives $6$, which matches the right-hand side, so $(2, 3)$ lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(xy) = \\frac{d}{dx}(6)",
+        "explanation": "Differentiate each side with respect to $x$, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule to xy",
+        "workingLatex": "y + x\\frac{dy}{dx} = 0",
+        "explanation": "The product $xy$ gives $y$ (differentiate $x$, keep $y$) plus $x\\frac{dy}{dx}$ (keep $x$, differentiate $y$). The constant $6$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Isolate the dy/dx term",
+        "workingLatex": "x\\frac{dy}{dx} = -y",
+        "explanation": "Move $y$ to the right-hand side so the derivative term is alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{y}{x}",
+        "explanation": "Dividing by $x$ gives the gradient function of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the point (2, 3)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(2,3)} = -\\frac{3}{2}",
+        "explanation": "Substituting $x = 2$ and $y = 3$ into $-\\frac{y}{x}$ gives the gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{3}{2}",
+        "explanation": "So the gradient of $C$ at $(2, 3)$ is $-\\frac{3}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2, 3)$ lies on $C$; the gradient there is $\\dfrac{dy}{dx} = -\\dfrac{3}{2}$."
+  }
+}

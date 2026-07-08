@@ -4,90 +4,96 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Hard",
-  "marks": 8,
+  "difficulty": "Intermediate",
+  "marks": 5,
   "answerType": "proof",
   "tags": [
-    "triple angle",
-    "identities",
+    "double angle",
     "proof",
-    "sine"
+    "reciprocal trig"
   ],
-  "questionText": "Prove that $\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta$.",
+  "questionText": "Prove the identity $\\tan\\theta + \\cot\\theta \\equiv 2\\operatorname{cosec} 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Split the triple angle",
-        "workingLatex": "\\sin 3\\theta = \\sin(2\\theta + \\theta)",
-        "explanation": "Writing $3\\theta$ as $2\\theta + \\theta$ lets us use the addition formula combined with double angle formulae.",
+        "description": "State the LHS and the plan",
+        "workingLatex": "\\text{LHS} = \\tan\\theta + \\cot\\theta",
+        "explanation": "We work from the left-hand side. The plan is to write both terms in sine and cosine, combine them, use the Pythagorean identity, then bring in a double angle.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the sine addition formula",
-        "workingLatex": "= \\sin 2\\theta\\cos\\theta + \\cos 2\\theta\\sin\\theta",
-        "explanation": "Expanding with $A = 2\\theta$ and $B = \\theta$.",
+        "description": "Write in terms of sine and cosine",
+        "workingLatex": "\\tan\\theta + \\cot\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta} + \\dfrac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Using $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ and $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$ prepares the two fractions to be combined.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the double angle for sine",
-        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "Replacing $\\sin 2\\theta$ moves everything towards single angles.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\dfrac{\\sin\\theta\\sin\\theta + \\cos\\theta\\cos\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "The common denominator is $\\sin\\theta\\cos\\theta$; adding the scaled numerators gives a single fraction.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Choose the sine form for cos 2θ",
-        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
-        "explanation": "Since the target is in sine only, this form of the cosine double angle is the right choice.",
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\dfrac{\\sin^2\\theta + \\cos^2\\theta}{\\sin\\theta\\cos\\theta}",
+        "explanation": "Writing the products as squares shows the numerator is the Pythagorean sum.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute both double angles",
-        "workingLatex": "= (2\\sin\\theta\\cos\\theta)\\cos\\theta + (1 - 2\\sin^2\\theta)\\sin\\theta",
-        "explanation": "Inserting both expansions gives an expression in sine and cosine of $\\theta$.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = 1",
+        "explanation": "For every angle the squared sine and cosine add to $1$, so the numerator collapses to a constant.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Simplify the first term",
-        "workingLatex": "2\\sin\\theta\\cos^2\\theta + \\sin\\theta - 2\\sin^3\\theta",
-        "explanation": "Multiplying out gives a $\\cos^2\\theta$ term plus the two sine terms.",
+        "description": "Replace the numerator with 1",
+        "workingLatex": "\\dfrac{\\sin^2\\theta + \\cos^2\\theta}{\\sin\\theta\\cos\\theta} = \\dfrac{1}{\\sin\\theta\\cos\\theta}",
+        "explanation": "The whole expression is now a single reciprocal of $\\sin\\theta\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Replace cosine squared",
-        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta",
-        "explanation": "Using the Pythagorean identity converts the last cosine term into sine.",
+        "description": "Rewrite the denominator with a double angle",
+        "workingLatex": "\\sin\\theta\\cos\\theta = \\tfrac{1}{2}\\sin 2\\theta",
+        "explanation": "Halving $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$ gives $\\sin\\theta\\cos\\theta = \\tfrac{1}{2}\\sin 2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Substitute",
-        "workingLatex": "= 2\\sin\\theta(1 - \\sin^2\\theta) + \\sin\\theta - 2\\sin^3\\theta",
-        "explanation": "Now every term is in sine.",
+        "description": "Substitute and simplify",
+        "workingLatex": "\\dfrac{1}{\\sin\\theta\\cos\\theta} = \\dfrac{1}{\\tfrac{1}{2}\\sin 2\\theta} = \\dfrac{2}{\\sin 2\\theta}",
+        "explanation": "Dividing $1$ by $\\tfrac{1}{2}\\sin 2\\theta$ is the same as multiplying by $2$, giving $\\dfrac{2}{\\sin 2\\theta}$.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Expand the bracket",
-        "workingLatex": "= 2\\sin\\theta - 2\\sin^3\\theta + \\sin\\theta - 2\\sin^3\\theta",
-        "explanation": "Distributing $2\\sin\\theta$ over the bracket.",
+        "description": "Recognise the cosecant",
+        "workingLatex": "\\dfrac{2}{\\sin 2\\theta} = 2\\operatorname{cosec} 2\\theta",
+        "explanation": "Since $\\operatorname{cosec} 2\\theta = \\dfrac{1}{\\sin 2\\theta}$, the expression is $2\\operatorname{cosec} 2\\theta$, the right-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 10,
-        "description": "Collect like terms",
-        "workingLatex": "= 3\\sin\\theta - 4\\sin^3\\theta \\;\\blacksquare",
-        "explanation": "Combining the sine terms and the cubic terms gives exactly the right-hand side, completing the proof.",
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\tan 30^\\circ + \\cot 30^\\circ = \\dfrac{1}{\\sqrt3} + \\sqrt3 = \\dfrac{4}{\\sqrt3} = 2\\operatorname{cosec} 60^\\circ",
+        "explanation": "At $\\theta = 30^\\circ$ both sides equal $\\dfrac{4}{\\sqrt3}$, consistent with the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Conclude the proof",
+        "workingLatex": "\\tan\\theta + \\cot\\theta \\equiv 2\\operatorname{cosec} 2\\theta \\quad \\blacksquare",
+        "explanation": "The LHS reduces to the RHS for all valid $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta$"
+    "finalAnswer": "Combining $\\dfrac{\\sin\\theta}{\\cos\\theta} + \\dfrac{\\cos\\theta}{\\sin\\theta}$ gives $\\dfrac{1}{\\sin\\theta\\cos\\theta} = \\dfrac{2}{\\sin 2\\theta} = 2\\operatorname{cosec} 2\\theta$, so $\\tan\\theta + \\cot\\theta \\equiv 2\\operatorname{cosec} 2\\theta$."
   }
 }

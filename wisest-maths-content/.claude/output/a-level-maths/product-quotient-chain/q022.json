@@ -1,0 +1,78 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "rational function",
+    "gradient"
+  ],
+  "questionText": "A curve has equation $y = \\dfrac{x-1}{x+2}$. (a) Find $\\dfrac{dy}{dx}$. (b) Find the gradient of the curve at the point where $x=0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a quotient and state the rule",
+        "workingLatex": "\\frac{d}{dx}\\!\\left(\\frac{u}{v}\\right) = \\frac{u'v - uv'}{v^2}",
+        "explanation": "$y = \\dfrac{x-1}{x+2}$ is one linear expression divided by another, so we use the quotient rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the numerator and denominator",
+        "workingLatex": "u = x - 1, \\qquad v = x + 2",
+        "explanation": "The numerator is $u$ and the denominator is $v$. The subtraction on top of the rule means this order matters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = 1, \\qquad v' = 1",
+        "explanation": "Both $x - 1$ and $x + 2$ differentiate to $1$, since the constants disappear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{(1)(x+2) - (x-1)(1)}{(x+2)^2}",
+        "explanation": "Substituting into $\\dfrac{u'v - uv'}{v^2}$ builds the numerator as $u'v$ minus $uv'$, over the square of the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x + 2 - x + 1}{(x+2)^2}",
+        "explanation": "We multiply out, taking care that the minus sign turns $-(x-1)$ into $-x + 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3}{(x+2)^2}",
+        "explanation": "The $+x$ and $-x$ cancel, leaving $2 + 1 = 3$ on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute the given value of x",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = \\frac{3}{(0+2)^2} = \\frac{3}{4}",
+        "explanation": "The gradient at a point is the derivative evaluated there, so we put $x = 0$ into $\\dfrac{3}{(x+2)^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3}{4}",
+        "explanation": "The gradient of the curve at $x = 0$ is $\\dfrac{3}{4}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\dfrac{3}{(x+2)^2}$. (b) The gradient at $x = 0$ is $\\dfrac{3}{4}$."
+  }
+}

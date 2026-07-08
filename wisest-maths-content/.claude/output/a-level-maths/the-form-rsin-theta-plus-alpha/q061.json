@@ -5,60 +5,110 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 7,
+  "marks": 6,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "exact"
+    "reciprocal",
+    "maximum and minimum"
   ],
-  "questionText": "Solve $\\sqrt2\\sin\\theta - \\sqrt2\\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "The function $f$ is defined by $f(\\theta)=\\dfrac{20}{8+3\\sin\\theta+4\\cos\\theta}$ for $0^\\circ\\le\\theta<360^\\circ$. By first expressing $3\\sin\\theta+4\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$, find the greatest and least values of $f(\\theta)$ and the value of $\\theta$ at which each occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{(\\sqrt2)^2 + (\\sqrt2)^2} = 2, \\quad \\tan\\alpha = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
-        "explanation": "For $R\\sin(\\theta - \\alpha)$, equal magnitudes give amplitude $2$ and phase $45^\\circ$.",
+        "description": "Set up the identity to match",
+        "workingLatex": "3\\sin\\theta+4\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "The awkward part of $f$ is the two-term expression in the denominator. Writing it as a single sine wave $R\\sin(\\theta+\\alpha)$ lets us read off its exact range at a glance, so we set the two expressions identically equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the harmonic form",
-        "workingLatex": "\\sqrt2\\sin\\theta - \\sqrt2\\cos\\theta = 2\\sin(\\theta - 45^\\circ)",
-        "explanation": "Combining gives the single-sine form.",
+        "description": "Expand with the compound-angle formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta+\\alpha)$ and carrying the $R$ through gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, exactly the same shape as the left-hand side, so we can compare the two sides term by term.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the equation",
-        "workingLatex": "2\\sin(\\theta - 45^\\circ) = 1 \\;\\Rightarrow\\; \\sin(\\theta - 45^\\circ) = \\frac{1}{2}",
-        "explanation": "Dividing by $2$ gives a standard exact value.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=3,\\qquad R\\sin\\alpha=4",
+        "explanation": "For the identity to hold for every $\\theta$, the amount of $\\sin\\theta$ on each side must match and likewise for $\\cos\\theta$, which gives these two simultaneous equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the shifted interval",
-        "workingLatex": "-45^\\circ \\le \\theta - 45^\\circ < 315^\\circ",
-        "explanation": "Subtracting the shift from the bounds.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{3^2+4^2}=\\sqrt{25}=5",
+        "explanation": "Squaring and adding the two equations eliminates $\\alpha$ because $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=3^2+4^2$. We take the positive root since $R>0$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - 45^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$, both within the interval.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{4}{3}\\Rightarrow\\alpha=53.13^\\circ",
+        "explanation": "Dividing $R\\sin\\alpha$ by $R\\cos\\alpha$ cancels $R$ and leaves $\\tan\\alpha=\\tfrac{4}{3}$. Both coefficients are positive, so $\\alpha$ is acute and equals $\\arctan\\tfrac{4}{3}=53.13^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Add the shift",
-        "workingLatex": "\\theta = 75^\\circ, 195^\\circ",
-        "explanation": "Adding $45^\\circ$ to each gives the solutions.",
+        "description": "Rewrite f using the single wave",
+        "workingLatex": "f(\\theta)=\\dfrac{20}{8+5\\sin(\\theta+53.13^\\circ)}",
+        "explanation": "Replacing the two-term expression by the single wave puts all of the $\\theta$-dependence into one bounded sine term, which is what controls the size of the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound the sine term",
+        "workingLatex": "-1\\le\\sin(\\theta+53.13^\\circ)\\le 1",
+        "explanation": "A sine function can never rise above $1$ or fall below $-1$ whatever its input, so this is the complete range of the wave.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the range of the denominator",
+        "workingLatex": "3\\le 8+5\\sin(\\theta+53.13^\\circ)\\le 13",
+        "explanation": "Multiplying the sine bounds by $5$ and adding $8$ shifts and stretches them into the actual range of the denominator, which runs from $8-5=3$ up to $8+5=13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Apply reciprocal reasoning",
+        "workingLatex": "\\text{denominator} > 0 \\;\\Rightarrow\\; f \\text{ greatest when denominator least}",
+        "explanation": "Because the denominator stays positive throughout, a smaller positive denominator makes the fraction bigger and a larger denominator makes it smaller. So the extremes of $f$ come straight from the extremes of the denominator, with no calculus needed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Greatest value of f",
+        "workingLatex": "f_{\\max}=\\dfrac{20}{3}\\approx 6.67",
+        "explanation": "The fraction is largest when the denominator takes its smallest value $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Least value of f",
+        "workingLatex": "f_{\\min}=\\dfrac{20}{13}\\approx 1.54",
+        "explanation": "The fraction is smallest when the denominator takes its largest value $13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Locate θ for the greatest value",
+        "workingLatex": "\\sin(\\theta+53.13^\\circ)=-1\\Rightarrow\\theta+53.13^\\circ=270^\\circ\\Rightarrow\\theta=216.87^\\circ",
+        "explanation": "The denominator is smallest when the sine term reaches its minimum $-1$, which happens when the angle inside equals $270^\\circ$; subtracting $53.13^\\circ$ gives the required $\\theta$, which lies in range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Locate θ for the least value",
+        "workingLatex": "\\sin(\\theta+53.13^\\circ)=1\\Rightarrow\\theta+53.13^\\circ=90^\\circ\\Rightarrow\\theta=36.87^\\circ",
+        "explanation": "The denominator is largest when the sine term reaches its maximum $1$, at an inside angle of $90^\\circ$; subtracting $53.13^\\circ$ gives this $\\theta$, and both angles lie in $0^\\circ\\le\\theta<360^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 75^\\circ, 195^\\circ$"
+    "finalAnswer": "$3\\sin\\theta+4\\cos\\theta=5\\sin(\\theta+53.13^\\circ)$. The greatest value is $f=\\dfrac{20}{3}\\approx 6.67$, occurring at $\\theta=216.9^\\circ$, and the least value is $f=\\dfrac{20}{13}\\approx 1.54$, occurring at $\\theta=36.9^\\circ$."
   }
 }

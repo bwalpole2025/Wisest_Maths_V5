@@ -1,64 +1,99 @@
 {
-  "id": "al.y2.pure.rsin-form.q026",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
-  "tags": [
-    "harmonic form",
-    "equations",
-    "cosine"
-  ],
-  "questionText": "Express $3\\cos\\theta - 4\\sin\\theta$ as $R\\cos(\\theta + \\alpha)$ and hence solve $3\\cos\\theta - 4\\sin\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
   "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q026",
+  "marks": 6,
+  "answerType": "solutions",
+  "tags": [
+    "r form",
+    "harmonic form",
+    "solving equations"
+  ],
+  "questionText": "Express $6\\sin\\theta - 4\\cos\\theta$ in the form $R\\sin(\\theta-\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$, giving $R$ as an exact surd in simplest form. Hence solve $6\\sin\\theta - 4\\cos\\theta = 3$ for $0^\\circ \\le \\theta \\le 360^\\circ$, giving your answers to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{3^2 + 4^2} = 5",
-        "explanation": "The amplitude is $5$.",
+        "description": "Set up the identity",
+        "workingLatex": "6\\sin\\theta - 4\\cos\\theta \\equiv R\\sin(\\theta-\\alpha)",
+        "explanation": "The minus sign between the terms points us to the $R\\sin(\\theta-\\alpha)$ target, whose expansion naturally carries a minus in front of the cosine term.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{4}{3} \\;\\Rightarrow\\; \\alpha \\approx 53.13^\\circ",
-        "explanation": "For the cosine form, $\\tan\\alpha$ is the sine coefficient over the cosine coefficient.",
+        "description": "Expand with the addition formula",
+        "workingLatex": "R\\sin(\\theta-\\alpha) = R\\cos\\alpha\\,\\sin\\theta - R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta-\\alpha)=\\sin\\theta\\cos\\alpha-\\cos\\theta\\sin\\alpha$ produces a positive $\\sin\\theta$ term and a negative $\\cos\\theta$ term, matching the signs on the left.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "3\\cos\\theta - 4\\sin\\theta = 5\\cos(\\theta + 53.13^\\circ)",
-        "explanation": "Combining gives the single-cosine form.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 6, \\qquad R\\sin\\alpha = 4",
+        "explanation": "Matching $\\sin\\theta$ gives $R\\cos\\alpha=6$. Matching $\\cos\\theta$ gives $-R\\sin\\alpha=-4$, that is $R\\sin\\alpha=4$; the two minus signs cancel so $\\alpha$ stays acute.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rewrite the equation",
-        "workingLatex": "5\\cos(\\theta + 53.13^\\circ) = 2 \\;\\Rightarrow\\; \\cos(\\theta + 53.13^\\circ) = 0.4",
-        "explanation": "Substituting and dividing by $5$ gives a standard cosine equation.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{6^2 + 4^2} = \\sqrt{52} = 2\\sqrt{13}",
+        "explanation": "Squaring and adding removes $\\alpha$, giving $R^2=36+16=52$. Since $52=4\\times 13$, the surd simplifies to $2\\sqrt{13}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set the shifted interval and solve",
-        "workingLatex": "\\theta + 53.13^\\circ = 66.42^\\circ, 293.58^\\circ",
-        "explanation": "Within the shifted interval $[53.13^\\circ, 413.13^\\circ)$, cosine $0.4$ occurs at $66.42^\\circ$ and $293.58^\\circ$.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{4}{6} = \\dfrac{2}{3} \\Rightarrow \\alpha = 33.7^\\circ",
+        "explanation": "Dividing the equations cancels $R$ and leaves $\\tan\\alpha=\\tfrac{4}{6}=\\tfrac{2}{3}$. Both matched coefficients are positive, so $\\alpha$ is acute at $33.7^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift and round",
-        "workingLatex": "\\theta \\approx 13^\\circ, 240^\\circ",
-        "explanation": "Subtracting $53.13^\\circ$ and rounding gives the two solutions.",
+        "description": "State the R-form",
+        "workingLatex": "6\\sin\\theta - 4\\cos\\theta = 2\\sqrt{13}\\,\\sin(\\theta - 33.7^\\circ)",
+        "explanation": "The expression is now a single sine wave of amplitude $2\\sqrt{13}$ shifted right by $33.7^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rewrite the equation",
+        "workingLatex": "2\\sqrt{13}\\,\\sin(\\theta-33.7^\\circ) = 3 \\Rightarrow \\sin(\\theta-33.7^\\circ) = \\dfrac{3}{2\\sqrt{13}} = 0.4160",
+        "explanation": "Replacing the two terms by the single wave gives a basic sine equation. Dividing by $2\\sqrt{13}$ isolates the sine so we can invert it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ \\le \\theta \\le 360^\\circ \\Rightarrow -33.7^\\circ \\le \\theta-33.7^\\circ \\le 326.3^\\circ",
+        "explanation": "The unknown angle is $\\theta-33.7^\\circ$, so both ends of the range drop by $33.7^\\circ$. Working in this shifted window ensures no solution is overlooked.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\theta-33.7^\\circ = \\arcsin(0.4160) = 24.6^\\circ",
+        "explanation": "The calculator's principal value is the anchor solution, from which the second-quadrant partner follows.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List all angles in the shifted range",
+        "workingLatex": "\\theta-33.7^\\circ = 24.6^\\circ,\\; 155.4^\\circ",
+        "explanation": "Sine is positive in the first and second quadrants, so alongside $24.6^\\circ$ we take $180^\\circ-24.6^\\circ=155.4^\\circ$. Both lie inside $-33.7^\\circ$ to $326.3^\\circ$; no further copies fit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Add α to recover θ",
+        "workingLatex": "\\theta = 24.6^\\circ+33.7^\\circ,\\; 155.4^\\circ+33.7^\\circ = 58.3^\\circ,\\; 189.1^\\circ",
+        "explanation": "Adding $33.7^\\circ$ back to each shifted angle returns to $\\theta$. Both answers lie in $0^\\circ$ to $360^\\circ$, so both are kept.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 13^\\circ, 240^\\circ$"
+    "finalAnswer": "$6\\sin\\theta - 4\\cos\\theta = 2\\sqrt{13}\\,\\sin(\\theta-33.7^\\circ)$, and the equation has solutions $\\theta = 58.3^\\circ$ and $\\theta = 189.1^\\circ$ (to $1$ d.p.)."
   }
 }

@@ -1,0 +1,63 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q001",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
+  "tags": [
+    "standard derivatives",
+    "exponential"
+  ],
+  "questionText": "Differentiate $y = e^{x}$ with respect to $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the function and the goal",
+        "workingLatex": "y = e^{x}",
+        "explanation": "We want $\\frac{dy}{dx}$, the gradient function of $y=e^{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recognise this is a standard result, not the power rule",
+        "workingLatex": "y = e^{x} \\quad (\\text{variable in the exponent})",
+        "explanation": "The power rule applies to $x^{n}$, where the base is the variable. Here the variable $x$ sits in the exponent of a fixed base $e$, so we instead use the standard exponential result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the standard derivative of the exponential function",
+        "workingLatex": "\\frac{d}{dx}\\left(e^{x}\\right) = e^{x}",
+        "explanation": "The function $e^{x}$ is special: it is equal to its own derivative. This self-replicating property is exactly what defines the number $e$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the result",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}",
+        "explanation": "Differentiating $e^{x}$ simply returns $e^{x}$, so the gradient function is $e^{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Sanity-check the result",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = e^{0} = 1",
+        "explanation": "At $x=0$ the gradient is $1$, matching the familiar slope of $y=e^{x}$ where it crosses the $y$-axis. Since $e^{x}>0$ for all $x$, the curve is always increasing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}",
+        "explanation": "This is the required gradient function.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = e^{x}$."
+  }
+}

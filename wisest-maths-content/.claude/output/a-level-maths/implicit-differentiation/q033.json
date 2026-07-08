@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.implicit.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "product rule",
+    "normal"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + xy + y^2 = 3$. Find an equation of the normal to $C$ at the point $(1, 1)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(3)",
+        "explanation": "We differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$. The constant $3$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate x^2 and the constant",
+        "workingLatex": "2x + \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "The power rule gives $x^2 \\to 2x$, and the constant on the right gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate xy with the product rule",
+        "workingLatex": "\\frac{d}{dx}(xy) = y + x\\frac{dy}{dx}",
+        "explanation": "The term $xy$ is a product of two functions of $x$: differentiate $x$ keeping $y$ to get $y$, then keep $x$ and differentiate $y$ to get $x\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate y^2 with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "Bring down the power to get $2y$, then multiply by $\\frac{dy}{dx}$ because $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x + y + x\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Combining the three differentiated terms gives one equation that contains $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(x + 2y)\\frac{dy}{dx} = -(2x + y)",
+        "explanation": "Group the two $\\frac{dy}{dx}$ terms on one side and move everything else across, ready to divide.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x + y}{x + 2y}",
+        "explanation": "Dividing by $(x+2y)$ isolates the gradient, which depends on both $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the tangent gradient at (1, 1)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,1)} = -\\frac{2+1}{1+2} = -1",
+        "explanation": "The point $(1,1)$ lies on $C$ since $1 + 1 + 1 = 3$. Substituting gives the tangent gradient $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the gradient of the normal",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{-1} = 1",
+        "explanation": "The normal gradient is $-1$ divided by the tangent gradient. Since the tangent gradient is $-1$, the normal gradient is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Write the equation of the normal",
+        "workingLatex": "y - 1 = 1(x - 1)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ with gradient $1$ through $(1,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Simplify",
+        "workingLatex": "y = x \\quad\\Rightarrow\\quad x - y = 0",
+        "explanation": "Expanding and tidying gives the normal $y = x$, equivalently $x - y = 0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Normal: $x - y = 0$ (that is, $y = x$)."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "standard normal"
+  ],
+  "questionText": "The masses, $X$ grams, of apples are modelled by $X \\sim N(180, 20^2)$. (a) Write down the distribution of the standardised variable $Z = \\dfrac{X - \\mu}{\\sigma}$. (b) Find the standardised value ($z$-value) of an apple with mass $210$ g.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the given distribution",
+        "workingLatex": "X \\sim N(180,\\ 20^2), \\quad \\mu = 180, \\ \\sigma = 20",
+        "explanation": "The masses are normal with mean $\\mu = 180$ g and standard deviation $\\sigma = 20$ g, since the second parameter is the variance $20^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the effect of standardising (part a)",
+        "workingLatex": "Z = \\dfrac{X - \\mu}{\\sigma} \\ \\Rightarrow\\ Z \\sim N(0,1)",
+        "explanation": "Subtracting the mean and dividing by the standard deviation always turns a normal variable into the standard normal distribution, with mean $0$ and standard deviation $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the standardisation with the numbers in",
+        "workingLatex": "Z = \\dfrac{X - 180}{20}",
+        "explanation": "Putting $\\mu = 180$ and $\\sigma = 20$ into the formula gives the exact rule for converting an apple's mass into a $z$-score.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the mass 210 (part b)",
+        "workingLatex": "z = \\dfrac{210 - 180}{20}",
+        "explanation": "To standardise a particular mass we replace $X$ with $210$, measuring how far $210$ g sits from the mean in standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "z = \\dfrac{30}{20} = 1.5",
+        "explanation": "The mass $210$ is $30$ g above the mean, and $30$ is $1.5$ standard deviations of $20$, so the standardised value is $1.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State both answers",
+        "workingLatex": "Z \\sim N(0,1), \\qquad z = 1.5",
+        "explanation": "The standardised variable is the standard normal, and an apple of $210$ g corresponds to $z = 1.5$, meaning it is one and a half standard deviations heavier than the average apple.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $Z \\sim N(0,1)$. (b) The standardised value of $210$ g is $z = 1.5$."
+  }
+}

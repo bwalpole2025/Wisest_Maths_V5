@@ -5,67 +5,177 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "tangent",
-    "meets curve again"
+    "parametric differentiation",
+    "stationary",
+    "cartesian"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. The tangent at $t = 1$ meets the curve again. Find the parameter and coordinates of the second point.",
-  "questionDiagram": null,
+  "questionText": "A particle moves in the $x$-$y$ plane so that, for $t \\ge 0$, its position is $x = t + 1$ and $y = t^{2} - 2t$. (a) Show that the particle is never moving vertically, and find the time and coordinates at which it is momentarily moving horizontally. (b) Find the Cartesian equation of the path, identify it, and confirm the point from part (a) is its vertex. (c) Find the speed of the particle when $t = 3$. Sketch the path.",
+  "questionDiagram": {
+    "kind": "functionGraph",
+    "xMin": 0,
+    "xMax": 6,
+    "yMin": -2,
+    "yMax": 9,
+    "curves": [
+      {
+        "points": [
+          {
+            "x": 1,
+            "y": 0
+          },
+          {
+            "x": 1.5,
+            "y": -0.75
+          },
+          {
+            "x": 2,
+            "y": -1
+          },
+          {
+            "x": 2.5,
+            "y": -0.75
+          },
+          {
+            "x": 3,
+            "y": 0
+          },
+          {
+            "x": 3.5,
+            "y": 1.25
+          },
+          {
+            "x": 4,
+            "y": 3
+          },
+          {
+            "x": 4.5,
+            "y": 5.25
+          },
+          {
+            "x": 5,
+            "y": 8
+          }
+        ],
+        "color": "accent",
+        "label": "path"
+      }
+    ],
+    "points": [
+      {
+        "x": 2,
+        "y": -1,
+        "label": "(2,\\,-1)"
+      }
+    ],
+    "xAxisLabel": "x",
+    "yAxisLabel": "y",
+    "caption": "The parabolic path with its lowest point marked.",
+    "alt": "A parabola rising to the right from about (1,0), dipping to a lowest point at (2,-1), then climbing steeply through (3,0) up to (5,8)."
+  },
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the tangent at t = 1",
-        "workingLatex": "\\text{point } (1, 1), \\; \\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3}{2}",
-        "explanation": "The gradient at $t = 1$ is $\\frac{3}{2}$; the tangent passes through $(1, 1)$.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 1",
+        "explanation": "The horizontal velocity tells us how the $x$-coordinate changes. Here it is a constant $1$, meaning the particle always drifts to the right.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the tangent equation",
-        "workingLatex": "y - 1 = \\frac{3}{2}(x - 1)",
-        "explanation": "Using the point-gradient form.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2t - 2",
+        "explanation": "The vertical velocity shows how the height changes. It is zero at one instant and changes sign, which is the clue to the turning behaviour.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the parametric point",
-        "workingLatex": "s^3 - 1 = \\frac{3}{2}(s^2 - 1)",
-        "explanation": "A general curve point is $(s^2, s^3)$; substituting finds all intersections.",
+        "description": "Test for moving vertically",
+        "workingLatex": "\\dot{x} = 1 \\neq 0 \\quad \\text{for all } t",
+        "explanation": "Moving vertically would require the horizontal velocity to be zero. Since $\\dot{x}$ is always $1$, the particle never moves straight up or down.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Clear the fraction and rearrange",
-        "workingLatex": "2s^3 - 2 = 3s^2 - 3 \\;\\Rightarrow\\; 2s^3 - 3s^2 + 1 = 0",
-        "explanation": "Multiplying by $2$ and collecting terms gives a cubic.",
+        "description": "Condition for moving horizontally",
+        "workingLatex": "\\dot{y} = 2t - 2 = 0",
+        "explanation": "Moving horizontally means the height is momentarily unchanging, so we set the vertical velocity to zero.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Factor using the known root",
-        "workingLatex": "(s - 1)^2(2s + 1) = 0",
-        "explanation": "The tangent point $s = 1$ is a double root; factoring leaves the extra root.",
+        "description": "Solve for the time",
+        "workingLatex": "t = 1",
+        "explanation": "The particle moves horizontally only at $t = 1$ s, which lies in the allowed range $t \\ge 0$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find the second parameter",
-        "workingLatex": "2s + 1 = 0 \\;\\Rightarrow\\; s = -\\frac{1}{2}",
-        "explanation": "The remaining factor gives the second intersection parameter.",
+        "description": "Find the coordinates there",
+        "workingLatex": "x = 1 + 1 = 2, \\quad y = 1^{2} - 2(1) = -1",
+        "explanation": "Substituting $t = 1$ into both equations gives the point $(2,\\,-1)$ where the motion is momentarily horizontal.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Find the coordinates",
-        "workingLatex": "\\left(\\left(-\\tfrac{1}{2}\\right)^2, \\left(-\\tfrac{1}{2}\\right)^3\\right) = \\left(\\tfrac{1}{4}, -\\tfrac{1}{8}\\right)",
-        "explanation": "Substituting $s = -\\frac{1}{2}$ into the parametric equations.",
+        "description": "Eliminate t for the Cartesian form",
+        "workingLatex": "x = t + 1 \\;\\Rightarrow\\; t = x - 1",
+        "explanation": "To find the shape of the path we remove the parameter, rearranging the simpler equation for $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute into y",
+        "workingLatex": "y = (x - 1)^{2} - 2(x - 1)",
+        "explanation": "Replacing $t$ in $y$ with $x - 1$ expresses the height purely in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand and simplify",
+        "workingLatex": "y = x^{2} - 2x + 1 - 2x + 2 = x^{2} - 4x + 3",
+        "explanation": "Multiplying out and collecting terms gives $y = x^{2} - 4x + 3$, an upward-opening parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Confirm the vertex",
+        "workingLatex": "y(2) = 2^{2} - 4(2) + 3 = -1",
+        "explanation": "The Cartesian parabola has its minimum where $x = 2$, giving $y = -1$. This matches the horizontal-motion point $(2,\\,-1)$, confirming it is the vertex.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Velocity components at t = 3",
+        "workingLatex": "\\dot{x} = 1, \\quad \\dot{y} = 2(3) - 2 = 4",
+        "explanation": "The speed needs both velocity components, so we evaluate them at $t = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Write the speed formula",
+        "workingLatex": "v = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "Speed is the magnitude of the velocity vector, combining horizontal and vertical parts with Pythagoras.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Substitute the components",
+        "workingLatex": "v = \\sqrt{1^{2} + 4^{2}} = \\sqrt{17}",
+        "explanation": "Squaring and adding gives $17$ under the root, so the exact speed is $\\sqrt{17}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Give a decimal value",
+        "workingLatex": "v = \\sqrt{17} \\approx 4.12",
+        "explanation": "As a decimal the speed at $t = 3$ is about $4.12$ units per second.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Second point at $s = -\\dfrac{1}{2}$: $\\left(\\dfrac{1}{4}, -\\dfrac{1}{8}\\right)$."
+    "finalAnswer": "The particle never moves vertically (since $\\dot{x} = 1 \\neq 0$); it moves horizontally only at $t = 1$ s, at the point $(2,\\,-1)$. The Cartesian path is $y = x^{2} - 4x + 3$, an upward parabola whose vertex is exactly $(2,\\,-1)$. At $t = 3$ the speed is $\\sqrt{17} \\approx 4.12$."
   }
 }

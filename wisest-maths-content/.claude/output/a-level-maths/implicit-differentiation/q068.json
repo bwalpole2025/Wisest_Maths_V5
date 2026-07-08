@@ -1,0 +1,127 @@
+{
+  "id": "al.y2.pure.implicit.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "second derivative",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 - y^2 = 16$. (a) Show that $\\frac{dy}{dx} = \\frac{x}{y}$. (b) Show that $\\frac{d^2y}{dx^2} = -\\frac{16}{y^3}$. (c) Find an equation of the tangent to $C$ at the point $(5, 3)$, and determine whether $C$ is concave up or concave down there. (d) Find the coordinates of the points on $C$ at which the tangent is vertical.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) - \\frac{d}{dx}(y^2) = \\frac{d}{dx}(16)",
+        "explanation": "We differentiate the whole equation, treating $y$ as a function of $x$; the constant $16$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x - 2y\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^2$ gives $2x$; the term $y^2$ gives $2y\\frac{dy}{dx}$, and the minus sign carries through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2x}{2y} = \\frac{x}{y}",
+        "explanation": "Rearranging and cancelling gives $\\frac{x}{y}$, proving part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify before differentiating again",
+        "workingLatex": "x - y\\frac{dy}{dx} = 0",
+        "explanation": "Dividing $2x-2y\\frac{dy}{dx}=0$ by $2$ gives a tidier equation to differentiate a second time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Differentiate again with respect to x",
+        "workingLatex": "1 - \\left(\\frac{dy}{dx}\\cdot\\frac{dy}{dx} + y\\frac{d^2y}{dx^2}\\right) = 0",
+        "explanation": "The term $x$ gives $1$. The product $y\\frac{dy}{dx}$ needs the product rule: differentiate $y$ to get $\\frac{dy}{dx}$ (times the second factor $\\frac{dy}{dx}$), and keep $y$ to get $y\\frac{d^2y}{dx^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the squared derivative neatly",
+        "workingLatex": "1 - \\left(\\frac{dy}{dx}\\right)^2 - y\\frac{d^2y}{dx^2} = 0",
+        "explanation": "Expanding the bracket writes $\\frac{dy}{dx}\\cdot\\frac{dy}{dx}$ as $\\left(\\frac{dy}{dx}\\right)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{1 - \\left(\\frac{dy}{dx}\\right)^2}{y}",
+        "explanation": "Rearranging isolates $\\frac{d^2y}{dx^2}$ in terms of $y$ and the first derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute dy/dx = x/y",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{1 - \\frac{x^2}{y^2}}{y} = \\frac{y^2 - x^2}{y^3}",
+        "explanation": "Replacing $\\frac{dy}{dx}$ by $\\frac{x}{y}$ and combining over a common denominator gives $\\frac{y^2-x^2}{y^3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use the equation of the curve",
+        "workingLatex": "x^2 - y^2 = 16 \\;\\Rightarrow\\; y^2 - x^2 = -16 \\;\\Rightarrow\\; \\frac{d^2y}{dx^2} = -\\frac{16}{y^3}",
+        "explanation": "From the curve, $y^2-x^2=-16$, so the numerator becomes $-16$. This proves part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check (5, 3) lies on C",
+        "workingLatex": "5^2 - 3^2 = 25 - 9 = 16",
+        "explanation": "The point satisfies the equation, so it lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Evaluate the gradient at (5, 3)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(5,3)} = \\frac{5}{3}",
+        "explanation": "Substituting $x=5,\\,y=3$ into $\\frac{x}{y}$ gives the tangent gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Form the tangent at (5, 3)",
+        "workingLatex": "y - 3 = \\tfrac{5}{3}(x - 5) \\;\\Rightarrow\\; 5x - 3y = 16",
+        "explanation": "Using gradient $\\frac53$ through $(5,3)$ and clearing the fraction gives the neat tangent $5x-3y=16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Determine the concavity at (5, 3)",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{(5,3)} = -\\frac{16}{3^3} = -\\frac{16}{27} < 0 \\;\\Rightarrow\\; \\text{concave down}",
+        "explanation": "A negative second derivative means the curve bends downwards, so $C$ is concave down at $(5,3)$. This completes part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Set up the vertical tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x}{y} \\text{ is undefined when } y = 0",
+        "explanation": "A vertical tangent occurs where the gradient is undefined, i.e. where the denominator $y$ is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Find the vertical-tangent points",
+        "workingLatex": "y = 0 \\;\\Rightarrow\\; x^2 = 16 \\;\\Rightarrow\\; (4, 0), \\; (-4, 0)",
+        "explanation": "Setting $y=0$ in the curve gives $x^2=16$, so the tangent is vertical at $(4,0)$ and $(-4,0)$. This answers part (d).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = \\frac{x}{y}$; (b) $\\frac{d^2y}{dx^2} = -\\frac{16}{y^3}$; (c) tangent $5x - 3y = 16$, and $\\frac{d^2y}{dx^2} = -\\frac{16}{27} < 0$ so $C$ is concave down there; (d) vertical tangents at $(4, 0)$ and $(-4, 0)$."
+  }
+}

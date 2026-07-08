@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "chain rule",
+    "gradient at a point"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + y^2 = 10$. Find the value of $\\dfrac{dy}{dx}$ at the point $(1, 3)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(10)",
+        "explanation": "Differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power rule and chain rule",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^2$ gives $2x$, and $y^2$ gives $2y\\frac{dy}{dx}$ by the chain rule. The constant $10$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Isolate the dy/dx term",
+        "workingLatex": "2y\\frac{dy}{dx} = -2x",
+        "explanation": "Move the $2x$ term across to the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{x}{y}",
+        "explanation": "Dividing by $2y$ and cancelling the factor of $2$ leaves the gradient function $-\\frac{x}{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "1^2 + 3^2 = 1 + 9 = 10",
+        "explanation": "The point $(1, 3)$ satisfies $x^2 + y^2 = 10$, so it lies on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the point (1, 3)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,3)} = -\\frac{1}{3}",
+        "explanation": "Substituting $x = 1$ and $y = 3$ into $-\\frac{x}{y}$ gives the gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{1}{3}",
+        "explanation": "So the gradient of the curve at $(1, 3)$ is $-\\frac{1}{3}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = -\\dfrac{1}{3}$ at $(1, 3)$."
+  }
+}

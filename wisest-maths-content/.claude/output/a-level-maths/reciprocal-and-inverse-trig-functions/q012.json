@@ -5,61 +5,68 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "value",
+  "marks": 2,
+  "answerType": "written",
   "tags": [
-    "inverse trig",
-    "arcsin",
-    "exact values",
-    "radians"
+    "reciprocal trig",
+    "sec",
+    "cosec",
+    "period"
   ],
-  "questionText": "Find the exact value of $\\arcsin\\left(\\dfrac{1}{2}\\right)$, giving your answer in radians.",
+  "questionText": "State the exact period of $y = \\sec x$ and of $y = \\operatorname{cosec} x$, and explain briefly why they share this period.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Interpret the inverse sine",
-        "workingLatex": "\\arcsin\\left(\\tfrac{1}{2}\\right) = \\theta \\;\\Leftrightarrow\\; \\sin\\theta = \\tfrac{1}{2}",
-        "explanation": "The inverse sine asks the question: which angle has a sine of one half? So we look for $\\theta$ with $\\sin\\theta = \\frac{1}{2}$.",
+        "description": "Recall the reciprocal definitions",
+        "workingLatex": "\\sec x = \\frac{1}{\\cos x}, \\qquad \\operatorname{cosec} x = \\frac{1}{\\sin x}",
+        "explanation": "Secant and cosecant are built directly from cosine and sine by taking reciprocals, so their repeating behaviour is inherited from $\\cos x$ and $\\sin x$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the principal range of arcsin",
-        "workingLatex": "-\\frac{\\pi}{2} \\le \\theta \\le \\frac{\\pi}{2}",
-        "explanation": "The arcsine function only returns angles in this range, so that each input gives exactly one output. We must pick our answer from within this interval.",
+        "description": "Recall the period of the parent functions",
+        "workingLatex": "\\cos(x + 360^\\circ) = \\cos x, \\qquad \\sin(x + 360^\\circ) = \\sin x",
+        "explanation": "Both $\\cos x$ and $\\sin x$ repeat every $360^\\circ$ (that is $2\\pi$ radians); this is the smallest shift that returns every value, so their period is $360^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Recall which standard angle has sine one half",
-        "workingLatex": "\\sin\\frac{\\pi}{6} = \\frac{1}{2}",
-        "explanation": "From the special triangles, the angle $30^\\circ$, or $\\frac{\\pi}{6}$, has a sine of one half.",
+        "description": "Apply the shift to secant",
+        "workingLatex": "\\sec(x + 360^\\circ) = \\frac{1}{\\cos(x + 360^\\circ)} = \\frac{1}{\\cos x} = \\sec x",
+        "explanation": "Replacing $x$ with $x+360^\\circ$ leaves the cosine unchanged, so its reciprocal is unchanged too. Secant therefore repeats after $360^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the angle lies in range",
-        "workingLatex": "-\\frac{\\pi}{2} \\le \\frac{\\pi}{6} \\le \\frac{\\pi}{2} \\;\\checkmark",
-        "explanation": "Since $\\frac{\\pi}{6}$ sits comfortably inside the principal range, it is the valid output of arcsine.",
+        "description": "Apply the shift to cosecant",
+        "workingLatex": "\\operatorname{cosec}(x + 360^\\circ) = \\frac{1}{\\sin(x + 360^\\circ)} = \\frac{1}{\\sin x} = \\operatorname{cosec} x",
+        "explanation": "The same reasoning works for cosecant: since sine is unchanged by a $360^\\circ$ shift, so is its reciprocal.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Reject any other candidate",
-        "workingLatex": "\\sin\\frac{5\\pi}{6} = \\frac{1}{2}, \\text{ but } \\frac{5\\pi}{6} > \\frac{\\pi}{2}",
-        "explanation": "Although $\\frac{5\\pi}{6}$ also has sine one half, it falls outside the principal range, so arcsine does not return it.",
+        "description": "Check nothing smaller works",
+        "workingLatex": "\\cos 0^\\circ = 1, \\quad \\cos 180^\\circ = -1",
+        "explanation": "A shift of $180^\\circ$ does not return cosine to the same value — here it turns $1$ into $-1$ — so no interval shorter than $360^\\circ$ makes sec or cosec repeat. Hence $360^\\circ$ is genuinely the period.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final value",
-        "workingLatex": "\\arcsin\\left(\\tfrac{1}{2}\\right) = \\frac{\\pi}{6}",
-        "explanation": "The unique answer in the correct range is $\\frac{\\pi}{6}$.",
+        "description": "Give the period in both units",
+        "workingLatex": "\\text{period} = 360^\\circ \\ \\text{(i.e. } 2\\pi \\text{ radians)}",
+        "explanation": "Expressing the period in degrees and radians makes it usable in either convention.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the conclusion",
+        "workingLatex": "y = \\sec x \\text{ and } y = \\operatorname{cosec} x \\text{ both have period } 360^\\circ",
+        "explanation": "Both graphs are copies of one $360^\\circ$-wide block repeated forever, which is exactly what having period $360^\\circ$ means.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\arcsin\\left(\\dfrac{1}{2}\\right) = \\dfrac{\\pi}{6}$"
+    "finalAnswer": "Both $y=\\sec x$ and $y=\\operatorname{cosec} x$ have period $360^\\circ$ (that is $2\\pi$ radians), inherited from the $360^\\circ$ period of $\\cos x$ and $\\sin x$."
   }
 }

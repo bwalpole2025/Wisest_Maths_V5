@@ -5,60 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "Rcos",
-    "exact"
+    "amplitude"
   ],
-  "questionText": "Express $\\cos\\theta - \\sin\\theta$ in the form $R\\cos(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionText": "The expression $7\\sin\\theta + 24\\cos\\theta$ can be written as $R\\sin(\\theta+\\alpha)$ with $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Find the value of $R$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the target form",
-        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
-        "explanation": "For the cosine form, the expansion has a minus sign between the terms, matching the given expression.",
+        "description": "Set up the identity to match",
+        "workingLatex": "7\\sin\\theta + 24\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We only need the amplitude $R$, but it comes from the same matching process, so we start by writing the expression as a single sine wave.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 1, \\quad R\\sin\\alpha = 1",
-        "explanation": "Matching the $\\cos\\theta$ term gives $R\\cos\\alpha = 1$, and matching the $\\sin\\theta$ term (both sides have $-$) gives $R\\sin\\alpha = 1$.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding with the compound-angle formula gives a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, ready to compare with the original expression.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R",
-        "workingLatex": "R^2 = 1^2 + 1^2 = 2 \\;\\Rightarrow\\; R = \\sqrt2",
-        "explanation": "The sum of squares gives $R = \\sqrt2$.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 7, \\qquad R\\sin\\alpha = 24",
+        "explanation": "Matching the amount of $\\sin\\theta$ and the amount of $\\cos\\theta$ on each side gives these two equations relating $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{1}{1} = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
-        "explanation": "Equal components give $\\tan\\alpha = 1$, so $\\alpha = 45^\\circ$.",
+        "description": "Square each equation",
+        "workingLatex": "R^2\\cos^2\\alpha = 49, \\qquad R^2\\sin^2\\alpha = 576",
+        "explanation": "To isolate $R$ we square both equations, which prepares them to be added so that the angle can be eliminated.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the final form",
-        "workingLatex": "\\cos\\theta - \\sin\\theta = \\sqrt2\\cos(\\theta + 45^\\circ)",
-        "explanation": "Both values are exact, giving a clean harmonic form.",
+        "description": "Add the squared equations",
+        "workingLatex": "R^2\\cos^2\\alpha + R^2\\sin^2\\alpha = 49 + 576 = 625",
+        "explanation": "Adding the two results groups the $R^2$ terms together, and the right-hand side becomes a single number.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check with a value",
-        "workingLatex": "\\theta = 0: \\text{ LHS} = 1, \\; \\sqrt2\\cos 45^\\circ = 1 \\;\\checkmark",
-        "explanation": "Testing $\\theta = 0$ gives $1$ on both sides, confirming the result.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "R^2(\\cos^2\\alpha + \\sin^2\\alpha) = R^2 = 625",
+        "explanation": "Since $\\cos^2\\alpha+\\sin^2\\alpha=1$, the bracket disappears and we are left with $R^2=625$, so the angle has been removed completely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Take the positive square root",
+        "workingLatex": "R = \\sqrt{625} = 25",
+        "explanation": "Because the problem states $R>0$, we take the positive root, giving the amplitude $R=25$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos\\theta - \\sin\\theta = \\sqrt2\\cos(\\theta + 45^\\circ)$"
+    "finalAnswer": "$R = 25$."
   }
 }

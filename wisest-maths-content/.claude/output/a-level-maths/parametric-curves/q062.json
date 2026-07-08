@@ -4,54 +4,117 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
+  "difficulty": "Hard",
   "marks": 6,
-  "answerType": "value",
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "distance",
-    "coordinates"
+    "intersection",
+    "root selection",
+    "parameter range"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Find the distance between the points on the curve at $t = 1$ and $t = 4$.",
+  "questionText": "An arc $C$ is given by $x = t^{2}$ and $y = 4t$ for $0 \\le t \\le 4$. The line $l$ has equation $y = 2x - 6$. Find the coordinates of every point where $C$ meets $l$, making clear why any solution of the quadratic is rejected.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the first point",
-        "workingLatex": "t = 1: (1^2, 2\\cdot 1) = (1, 2)",
-        "explanation": "Substituting $t = 1$ into both parametric equations.",
+        "description": "Set up the intersection condition",
+        "workingLatex": "x = t^{2}, \\quad y = 4t, \\quad 0 \\le t \\le 4, \\qquad l:\\ y = 2x - 6",
+        "explanation": "Intersections occur where the curve's coordinates also satisfy the line. Substituting the parametric expressions gives one equation in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the second point",
-        "workingLatex": "t = 4: (4^2, 2\\cdot 4) = (16, 8)",
-        "explanation": "Substituting $t = 4$ gives the second point.",
+        "description": "Substitute the parametric coordinates into the line",
+        "workingLatex": "4t = 2t^{2} - 6",
+        "explanation": "Replacing $x$ by $t^{2}$ and $y$ by $4t$ in $y = 2x - 6$ turns the condition into an algebraic equation in $t$ alone.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the distance formula",
-        "workingLatex": "d = \\sqrt{(16 - 1)^2 + (8 - 2)^2}",
-        "explanation": "The distance between two points uses the differences in their coordinates.",
+        "description": "Move everything to one side",
+        "workingLatex": "2t^{2} - 4t - 6 = 0",
+        "explanation": "Bringing all terms to one side produces a quadratic set equal to zero, ready to be solved.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Compute the differences",
-        "workingLatex": "d = \\sqrt{15^2 + 6^2} = \\sqrt{225 + 36}",
-        "explanation": "The horizontal difference is $15$ and the vertical difference is $6$.",
+        "description": "Divide through by the common factor",
+        "workingLatex": "t^{2} - 2t - 3 = 0",
+        "explanation": "Every coefficient is even, so dividing by $2$ gives a simpler quadratic with the same roots.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "d = \\sqrt{261} = 3\\sqrt{29}",
-        "explanation": "Since $261 = 9 \\times 29$, the surd simplifies to $3\\sqrt{29}$.",
+        "description": "Factorise",
+        "workingLatex": "(t - 3)(t + 1) = 0",
+        "explanation": "The simplified quadratic factorises neatly, exposing the two candidate parameter values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Read off the candidate roots",
+        "workingLatex": "t = 3 \\quad \\text{or} \\quad t = -1",
+        "explanation": "Each factor gives one value of $t$. These are only candidates until we check them against the allowed range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recall the parameter restriction",
+        "workingLatex": "0 \\le t \\le 4",
+        "explanation": "The arc is defined only for $t$ between $0$ and $4$, so a root is meaningful only if it lies in this interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Test each root against the range",
+        "workingLatex": "t = 3 \\in [0,4]\\ \\checkmark, \\qquad t = -1 \\notin [0,4]\\ \\times",
+        "explanation": "Only $t = 3$ falls inside the permitted interval; $t = -1$ is outside it, so it cannot correspond to a point on this arc.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the range of x on the arc",
+        "workingLatex": "0 \\le t \\le 4 \\Rightarrow x = t^{2} \\in [0,\\, 16]",
+        "explanation": "As $t$ runs from $0$ to $4$, the value $x = t^{2}$ sweeps from $0$ to $16$; this describes exactly which part of the parabola is drawn.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the coordinates for the accepted root",
+        "workingLatex": "t = 3:\\quad x = 3^{2} = 9, \\quad y = 4(3) = 12",
+        "explanation": "Substituting the valid parameter $t = 3$ back into the parametric equations gives the actual intersection point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify the point lies on the line",
+        "workingLatex": "2(9) - 6 = 12\\ \\checkmark",
+        "explanation": "Checking $x = 9$ in $y = 2x - 6$ returns $12$, confirming the point really is on the line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Explain why the rejected root gives no point",
+        "workingLatex": "t = -1 \\Rightarrow (1,\\, -4), \\quad \\text{but } t = -1 \\notin [0,4]",
+        "explanation": "The rejected root would give the point $(1,\\,-4)$; although its $x$-value lies in $[0,16]$, the parameter $t = -1$ is not in the allowed interval, so this point is not part of the drawn arc.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the accepted point",
+        "workingLatex": "(9,\\, 12)",
+        "explanation": "Collecting the surviving result gives the single admissible intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Conclude",
+        "workingLatex": "\\text{One intersection: } (9,\\, 12)",
+        "explanation": "Because only one root satisfies the parameter restriction, the arc meets the line at exactly one point.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$d = 3\\sqrt{29}$"
+    "finalAnswer": "The arc meets the line at the single point $(9,\\, 12)$ (from $t = 3$). The other root $t = -1$ is rejected because it lies outside the parameter range $0 \\le t \\le 4$."
   }
 }

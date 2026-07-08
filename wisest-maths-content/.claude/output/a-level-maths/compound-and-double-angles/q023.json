@@ -6,60 +6,87 @@
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "proof",
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "identities",
-    "proof",
-    "tangent"
+    "quadrant",
+    "exact values"
   ],
-  "questionText": "Prove that $\\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta} \\equiv \\tan\\theta$.",
+  "questionText": "Given that $\\sin\\theta = -\\tfrac{8}{17}$ and that $\\theta$ lies in the third quadrant ($180^\\circ < \\theta < 270^\\circ$), find the exact values of $\\sin 2\\theta$, $\\cos 2\\theta$ and $\\tan 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the numerator",
-        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "We rewrite each double angle in terms of $\\theta$, choosing forms that will cancel.",
+        "description": "Identify the signs from the quadrant",
+        "workingLatex": "180^\\circ < \\theta < 270^\\circ \\;\\Rightarrow\\; \\sin\\theta<0,\\ \\cos\\theta<0",
+        "explanation": "In the third quadrant both sine and cosine are negative. The given $\\sin\\theta=-\\tfrac{8}{17}$ is indeed negative, and this tells us $\\cos\\theta$ must come out negative too.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Choose the useful form of the denominator",
-        "workingLatex": "1 + \\cos 2\\theta = 1 + (2\\cos^2\\theta - 1)",
-        "explanation": "Using the form $\\cos 2\\theta = 2\\cos^2\\theta - 1$ is deliberate: the $+1$ and $-1$ will cancel.",
+        "description": "Find cos theta from the Pythagorean identity",
+        "workingLatex": "\\cos\\theta = -\\sqrt{1-\\sin^2\\theta} = -\\sqrt{1-\\tfrac{64}{289}} = -\\sqrt{\\tfrac{225}{289}} = -\\tfrac{15}{17}",
+        "explanation": "Rearranging $\\sin^2\\theta+\\cos^2\\theta\\equiv1$ gives $\\cos\\theta=\\pm\\sqrt{1-\\sin^2\\theta}$; the third-quadrant rule forces us to take the negative root.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the denominator",
-        "workingLatex": "1 + \\cos 2\\theta = 2\\cos^2\\theta",
-        "explanation": "The constants cancel, leaving a clean $2\\cos^2\\theta$.",
+        "description": "State the sine double-angle formula",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "This formula rewrites the double angle using only the single-angle ratios we now know.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Form the fraction",
-        "workingLatex": "\\frac{\\sin 2\\theta}{1 + \\cos 2\\theta} = \\frac{2\\sin\\theta\\cos\\theta}{2\\cos^2\\theta}",
-        "explanation": "Substituting both rewritten parts gives a fraction ready to cancel.",
+        "description": "Substitute to find sin 2theta",
+        "workingLatex": "\\sin 2\\theta = 2\\left(-\\tfrac{8}{17}\\right)\\left(-\\tfrac{15}{17}\\right) = \\tfrac{240}{289}",
+        "explanation": "The product of two negative ratios is positive, so $\\sin 2\\theta$ comes out positive.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Cancel common factors",
-        "workingLatex": "= \\frac{\\sin\\theta}{\\cos\\theta}",
-        "explanation": "Cancelling the factor of $2$ and one cosine leaves sine over cosine.",
+        "description": "Choose a cosine double-angle formula",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
+        "explanation": "The $1-2\\sin^2\\theta$ version is efficient here because $\\sin\\theta$ is already known, so no extra work is needed.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Recognise the result",
-        "workingLatex": "= \\tan\\theta \\;\\blacksquare",
-        "explanation": "Sine over cosine is tangent, matching the right-hand side and completing the proof.",
+        "description": "Substitute to find cos 2theta",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\cdot\\tfrac{64}{289} = 1 - \\tfrac{128}{289} = \\tfrac{161}{289}",
+        "explanation": "A single subtraction gives the exact cosine of the double angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form tan 2theta by division",
+        "workingLatex": "\\tan 2\\theta = \\dfrac{\\sin 2\\theta}{\\cos 2\\theta} = \\dfrac{240/289}{161/289} = \\tfrac{240}{161}",
+        "explanation": "Dividing the exact values already found reuses our work; the $289$s cancel cleanly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check with the Pythagorean identity",
+        "workingLatex": "\\sin^2 2\\theta + \\cos^2 2\\theta = \\tfrac{57600}{83521} + \\tfrac{25921}{83521} = \\tfrac{83521}{83521} = 1",
+        "explanation": "As a safeguard the two squared values should add to $1$; they do, confirming the answers are consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the quadrant of 2theta",
+        "workingLatex": "\\sin 2\\theta>0,\\ \\cos 2\\theta>0 \\;\\Rightarrow\\; 2\\theta \\text{ is a first-quadrant angle}",
+        "explanation": "Both double-angle ratios are positive, which places $2\\theta$ (measured in standard position) in the first quadrant and gives a quick sign check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sin 2\\theta = \\tfrac{240}{289}, \\quad \\cos 2\\theta = \\tfrac{161}{289}, \\quad \\tan 2\\theta = \\tfrac{240}{161}",
+        "explanation": "Collecting the three exact values completes the solution.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta} \\equiv \\tan\\theta$"
+    "finalAnswer": "$\\sin 2\\theta = \\tfrac{240}{289}$, $\\cos 2\\theta = \\tfrac{161}{289}$, $\\tan 2\\theta = \\tfrac{240}{161}$."
   }
 }

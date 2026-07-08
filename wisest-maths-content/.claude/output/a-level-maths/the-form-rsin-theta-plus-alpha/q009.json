@@ -5,52 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 3,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "R value"
+    "phase angle"
   ],
-  "questionText": "Find the exact value of $R$ when $6\\sin\\theta - 8\\cos\\theta$ is written in the form $R\\sin(\\theta - \\alpha)$.",
+  "questionText": "Express $8\\sin\\theta + 6\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give $\\alpha$ to $1$ decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Identify the coefficients",
-        "workingLatex": "a = 6, \\quad b = 8",
-        "explanation": "The amplitude depends only on the sizes of the two coefficients, regardless of the signs.",
+        "description": "Set up the identity to match",
+        "workingLatex": "8\\sin\\theta + 6\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We combine the two terms into one sine wave by writing the expression as $R\\sin(\\theta+\\alpha)$ and comparing after expansion.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Use the amplitude formula",
-        "workingLatex": "R = \\sqrt{a^2 + b^2}",
-        "explanation": "For any expression $a\\sin\\theta \\pm b\\cos\\theta$, the amplitude is the root of the sum of the squared coefficients.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "The compound-angle expansion produces a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, matching the form of the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute",
-        "workingLatex": "R = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64}",
-        "explanation": "Squaring and adding the coefficients.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 8, \\qquad R\\sin\\alpha = 6",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ and of $\\cos\\theta$ gives these two equations for $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify",
-        "workingLatex": "R = \\sqrt{100} = 10",
-        "explanation": "The sum is $100$, a perfect square, so $R = 10$.",
+        "description": "Find R using R² = a² + b²",
+        "workingLatex": "R = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10",
+        "explanation": "Squaring and adding removes $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=64+36=100$, so the positive amplitude is $R=10$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the value",
-        "workingLatex": "R = 10",
-        "explanation": "This is the exact amplitude, a $6$-$8$-$10$ (i.e. $3$-$4$-$5$ scaled) triangle.",
+        "description": "Find α using tanα = b/a",
+        "workingLatex": "\\tan\\alpha = \\dfrac{6}{8} = \\dfrac{3}{4} \\Rightarrow \\alpha = 36.9^\\circ",
+        "explanation": "Dividing the two equations cancels $R$ and gives $\\tan\\alpha=\\tfrac{3}{4}$. Both coefficients are positive, so $\\alpha$ is acute and $\\alpha=36.9^\\circ$ to one decimal place.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the R-form",
+        "workingLatex": "8\\sin\\theta + 6\\cos\\theta = 10\\sin(\\theta+36.9^\\circ)",
+        "explanation": "Combining $R=10$ and $\\alpha=36.9^\\circ$ gives the single-wave form, which oscillates between $-10$ and $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Sanity-check the amplitude",
+        "workingLatex": "10\\cos 36.9^\\circ \\approx 8, \\qquad 10\\sin 36.9^\\circ \\approx 6",
+        "explanation": "Substituting the values back into $R\\cos\\alpha$ and $R\\sin\\alpha$ returns the original coefficients $8$ and $6$, confirming the answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$R = 10$"
+    "finalAnswer": "$8\\sin\\theta + 6\\cos\\theta = 10\\sin(\\theta+36.9^\\circ)$."
   }
 }

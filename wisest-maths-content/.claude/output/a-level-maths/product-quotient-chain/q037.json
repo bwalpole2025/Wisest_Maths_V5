@@ -1,0 +1,106 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "stationary points",
+    "logarithm"
+  ],
+  "questionText": "The curve $C$ has equation $y = x^{2}\\ln x$ for $x > 0$. (a) Show that $\\dfrac{dy}{dx} = x(2\\ln x + 1)$. (b) Find the exact coordinates of the stationary point of $C$ and determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the domain and identify the factors",
+        "workingLatex": "x > 0, \\qquad u = x^{2}, \\qquad v = \\ln x",
+        "explanation": "The function is a product of $x^{2}$ and $\\ln x$, so the product rule applies. The logarithm requires $x>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 2x, \\qquad v' = \\frac{1}{x}",
+        "explanation": "The power rule gives $u'=2x$, and the derivative of $\\ln x$ is $\\tfrac{1}{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = 2x\\ln x + x^{2}\\cdot\\frac{1}{x}",
+        "explanation": "Substituting into $u'v+uv'$ gives $2x\\ln x$ from the first piece and $x^{2}\\cdot\\tfrac{1}{x}$ from the second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify",
+        "workingLatex": "\\frac{dy}{dx} = 2x\\ln x + x",
+        "explanation": "The second term simplifies because $x^{2}\\cdot\\tfrac{1}{x}=x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise to the required form",
+        "workingLatex": "\\frac{dy}{dx} = x(2\\ln x + 1)",
+        "explanation": "Both terms share a factor of $x$; taking it out gives the required form and isolates the logarithmic bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set the derivative to zero",
+        "workingLatex": "x(2\\ln x + 1) = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve this equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x",
+        "workingLatex": "x > 0 \\ \\Rightarrow\\ 2\\ln x + 1 = 0 \\ \\Rightarrow\\ \\ln x = -\\frac{1}{2}",
+        "explanation": "The domain excludes $x=0$, so only the bracket can be zero. Rearranging gives $\\ln x=-\\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve the logarithmic equation",
+        "workingLatex": "x = e^{-1/2} = \\frac{1}{\\sqrt{e}}",
+        "explanation": "Undoing the logarithm gives $x=e^{-1/2}$, which is positive and so lies in the domain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\left(e^{-1/2}\\right)^{2}\\ln\\!\\left(e^{-1/2}\\right) = e^{-1}\\cdot\\left(-\\frac{1}{2}\\right) = -\\frac{1}{2e}",
+        "explanation": "Here $\\left(e^{-1/2}\\right)^{2}=e^{-1}$ and $\\ln\\!\\left(e^{-1/2}\\right)=-\\tfrac{1}{2}$, so the product is $-\\tfrac{1}{2e}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the stationary point",
+        "workingLatex": "\\left(e^{-1/2}, \\ -\\frac{1}{2e}\\right)",
+        "explanation": "So the curve has one stationary point, at $\\left(e^{-1/2},-\\tfrac{1}{2e}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\left(2x\\ln x + x\\right) = 2\\ln x + 2x\\cdot\\frac{1}{x} + 1 = 2\\ln x + 3",
+        "explanation": "Differentiating $2x\\ln x$ needs the product rule again, giving $2\\ln x+2$; adding the derivative of $x$ gives $2\\ln x+3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate the second derivative and conclude",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=e^{-1/2}} = 2\\left(-\\frac{1}{2}\\right) + 3 = 2 > 0 \\ \\Rightarrow\\ \\text{minimum}",
+        "explanation": "Using $\\ln\\!\\left(e^{-1/2}\\right)=-\\tfrac{1}{2}$ gives $2>0$, so the stationary point is a local minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) Shown: $\\dfrac{dy}{dx} = x(2\\ln x + 1)$. (b) A minimum at $\\left(e^{-1/2}, -\\dfrac{1}{2e}\\right)$."
+  }
+}

@@ -6,59 +6,109 @@
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "proof",
+  "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "proof",
-    "equivalent forms"
+    "modelling",
+    "radians"
   ],
-  "questionText": "Show that $3\\sin\\theta + 4\\cos\\theta$ can be written as both $5\\sin(\\theta + \\alpha)$ and $5\\cos(\\theta - \\beta)$, and find the relationship between $\\alpha$ and $\\beta$.",
+  "questionText": "A mass on a spring has displacement $x(t) = 7\\sin(2t) - 24\\cos(2t)$ cm from its rest position, where $t$ is the time in seconds and all angles are in radians. (a) Express $x(t)$ in the form $R\\sin(2t - \\alpha)$, where $R > 0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$. (b) State the amplitude and the period of the motion. (c) Find the maximum displacement and the first time $t > 0$ at which it occurs. (d) Find the first time $t > 0$ at which the displacement is $12.5$ cm. Give your times in seconds to $4$ decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the sine form",
-        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + \\alpha), \\quad \\tan\\alpha = \\frac{4}{3}",
-        "explanation": "The standard sine form has amplitude $5$ and $\\tan\\alpha = \\frac{4}{3}$.",
+        "description": "Choose the target form",
+        "workingLatex": "7\\sin(2t) - 24\\cos(2t) \\equiv R\\sin(2t - \\alpha)",
+        "explanation": "Because the cosine term is being subtracted, the natural single-wave form is $R\\sin(2t-\\alpha)$, whose expansion also has a subtracted cosine term. Matching like to like keeps $\\alpha$ acute.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Use the sine-cosine shift identity",
-        "workingLatex": "\\sin X = \\cos(X - 90^\\circ)",
-        "explanation": "A sine can always be rewritten as a cosine shifted by $90^\\circ$; this converts the form.",
+        "description": "Expand with the subtraction formula",
+        "workingLatex": "R\\sin(2t - \\alpha) = R\\cos\\alpha\\,\\sin(2t) - R\\sin\\alpha\\,\\cos(2t)",
+        "explanation": "Using $\\sin(A-B)=\\sin A\\cos B - \\cos A\\sin B$ and pulling $R$ through gives a multiple of $\\sin(2t)$ minus a multiple of $\\cos(2t)$, matching the structure of the original.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply with X = θ + α",
-        "workingLatex": "5\\sin(\\theta + \\alpha) = 5\\cos(\\theta + \\alpha - 90^\\circ)",
-        "explanation": "Substituting the shift gives a cosine form.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 7, \\qquad R\\sin\\alpha = 24",
+        "explanation": "Matching the $\\sin(2t)$ terms gives $R\\cos\\alpha = 7$; matching the $\\cos(2t)$ terms, the two minus signs cancel to give $R\\sin\\alpha = 24$. Both right-hand sides are positive, keeping $\\alpha$ acute.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rearrange to match the target",
-        "workingLatex": "5\\cos(\\theta + \\alpha - 90^\\circ) = 5\\cos(\\theta - (90^\\circ - \\alpha))",
-        "explanation": "Writing the phase as a subtraction matches the required $5\\cos(\\theta - \\beta)$ form.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{7^2 + 24^2} = \\sqrt{625} = 25",
+        "explanation": "Squaring and adding eliminates $\\alpha$ using $\\cos^2\\alpha + \\sin^2\\alpha = 1$, so $R^2 = 7^2 + 24^2 = 625$ and the positive root is $R = 25$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Identify beta",
-        "workingLatex": "\\beta = 90^\\circ - \\alpha",
-        "explanation": "Comparing gives the relationship: the cosine phase is the complement of the sine phase.",
+        "description": "Find α in radians",
+        "workingLatex": "\\tan\\alpha = \\dfrac{24}{7} \\Rightarrow \\alpha = 1.2870^{c}",
+        "explanation": "Dividing the equations gives $\\tan\\alpha = \\tfrac{24}{7}$. As both parts are positive, $\\alpha$ is acute, and in radians $\\alpha = \\arctan\\tfrac{24}{7} = 1.2870$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State numerical values",
-        "workingLatex": "\\alpha \\approx 53.13^\\circ, \\quad \\beta \\approx 36.87^\\circ",
-        "explanation": "The two phase angles are complementary, summing to $90^\\circ$.",
+        "description": "State the R-form",
+        "workingLatex": "x(t) = 25\\sin(2t - 1.2870)",
+        "explanation": "The displacement is now a single sine wave of amplitude $25$. This makes the size and timing of the motion easy to read off directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the amplitude",
+        "workingLatex": "\\text{amplitude} = R = 25\\text{ cm}",
+        "explanation": "The amplitude is the greatest distance from rest, which is exactly $R$. The mass therefore moves between $+25$ cm and $-25$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the period",
+        "workingLatex": "\\text{period} = \\dfrac{2\\pi}{2} = \\pi \\approx 3.1416\\text{ s}",
+        "explanation": "For a wave in the form $\\sin(kt+\\ldots)$ the period is $\\tfrac{2\\pi}{k}$. Here $k = 2$, so one complete oscillation takes $\\pi$ seconds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Read off the maximum displacement",
+        "workingLatex": "x_{\\max} = R = 25\\text{ cm}",
+        "explanation": "Since $\\sin$ cannot exceed $1$, the greatest displacement is the amplitude $25$ cm. The maximum is read straight from the R-form with no calculus needed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the time of maximum displacement",
+        "workingLatex": "2t - 1.2870 = \\dfrac{\\pi}{2} \\Rightarrow 2t = 2.8578 \\Rightarrow t = 1.4289\\text{ s}",
+        "explanation": "The sine peaks when its angle is $\\tfrac{\\pi}{2}$. Solving gives the first time after $t=0$ that the mass is fully extended to $+25$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the level equation",
+        "workingLatex": "25\\sin(2t - 1.2870) = 12.5 \\Rightarrow \\sin(2t - 1.2870) = 0.5",
+        "explanation": "For a displacement of $12.5$ cm we set the model equal to $12.5$ and divide by $25$, giving the simple equation $\\sin(2t-1.2870)=0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Identify the first solution",
+        "workingLatex": "2t - 1.2870 = \\dfrac{\\pi}{6} = 0.5236",
+        "explanation": "At $t=0$ the angle is $-1.2870$, so as $t$ increases the angle rises through zero. The first time $\\sin$ equals $0.5$ is at the principal value $\\tfrac{\\pi}{6}=0.5236$, reached on the way up.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for t",
+        "workingLatex": "2t = 0.5236 + 1.2870 = 1.8106 \\Rightarrow t = 0.9053\\text{ s}",
+        "explanation": "Adding the phase back and dividing by $2$ gives the first moment the mass passes through $12.5$ cm. This lies between leaving rest and reaching full extension, exactly as expected.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\beta = 90^\\circ - \\alpha$ (so $\\alpha \\approx 53.13^\\circ$, $\\beta \\approx 36.87^\\circ$)."
+    "finalAnswer": "(a) $x(t) = 25\\sin(2t - 1.2870)$ (radians). (b) Amplitude $25$ cm and period $\\pi \\approx 3.1416$ s. (c) The maximum displacement is $25$ cm, first reached at $t = 1.4289$ s. (d) The displacement is first $12.5$ cm at $t = 0.9053$ s."
   }
 }

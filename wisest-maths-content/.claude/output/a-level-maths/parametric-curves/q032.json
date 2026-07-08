@@ -5,46 +5,95 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "cartesian",
-    "ellipse"
+    "ellipse",
+    "axis intercepts",
+    "exact"
   ],
-  "questionText": "A curve has parametric equations $x = 2\\cos\\theta$, $y = \\sin\\theta$. Find the Cartesian equation.",
+  "questionText": "A curve has parametric equations $x = 2 + 4\\cos t$ and $y = 6\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve, and hence find, in exact form, the coordinates of the points where the curve crosses the coordinate axes.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the trig functions",
-        "workingLatex": "\\cos\\theta = \\frac{x}{2}, \\quad \\sin\\theta = y",
-        "explanation": "Isolating prepares for the Pythagorean identity; here $y$ is already $\\sin\\theta$.",
+        "description": "Plan",
+        "workingLatex": "x = 2 + 4\\cos t, \\qquad y = 6\\sin t",
+        "explanation": "Axis crossings are cleanest from the Cartesian equation, so first eliminate $t$, then set $y = 0$ and $x = 0$ in turn.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the identity",
-        "workingLatex": "\\left(\\frac{x}{2}\\right)^2 + y^2 = 1",
-        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ removes $\\theta$.",
+        "description": "Isolate cos t",
+        "workingLatex": "\\cos t = \\dfrac{x - 2}{4}",
+        "explanation": "Subtracting $2$ and dividing by $4$ isolates $\\cos t$, with $x - 2$ carrying the horizontal shift.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "\\frac{x^2}{4} + y^2 = 1",
-        "explanation": "Squaring the first fraction gives $\\frac{x^2}{4}$.",
+        "description": "Isolate sin t",
+        "workingLatex": "\\sin t = \\dfrac{y}{6}",
+        "explanation": "Dividing by $6$ isolates $\\sin t$; there is no vertical shift here.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the curve",
-        "workingLatex": "\\frac{x^2}{4} + y^2 = 1 \\text{ (ellipse)}",
-        "explanation": "An ellipse with semi-axes $2$ (horizontal) and $1$ (vertical).",
+        "description": "Apply the identity",
+        "workingLatex": "\\dfrac{(x - 2)^{2}}{16} + \\dfrac{y^{2}}{36} = 1",
+        "explanation": "Substituting into $\\cos^{2} t + \\sin^{2} t = 1$ and squaring gives the Cartesian equation, an ellipse centred at $(2,\\,0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Meet the x-axis: set y = 0",
+        "workingLatex": "\\dfrac{(x - 2)^{2}}{16} + \\dfrac{0^{2}}{36} = 1 \\;\\Rightarrow\\; (x - 2)^{2} = 16",
+        "explanation": "On the $x$-axis $y = 0$, so the second term vanishes and we can solve for $x$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x",
+        "workingLatex": "x - 2 = \\pm 4 \\;\\Rightarrow\\; x = 6 \\ \\text{or} \\ x = -2",
+        "explanation": "Taking both square roots and adding $2$ gives the two horizontal crossings.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the x-axis crossings",
+        "workingLatex": "(6,\\,0) \\quad \\text{and} \\quad (-2,\\,0)",
+        "explanation": "These are the ends of the horizontal semi-axis, a helpful check since the centre $x = 2$ sits exactly halfway between them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Meet the y-axis: set x = 0",
+        "workingLatex": "\\dfrac{(0 - 2)^{2}}{16} + \\dfrac{y^{2}}{36} = 1 \\;\\Rightarrow\\; \\dfrac{4}{16} + \\dfrac{y^{2}}{36} = 1",
+        "explanation": "On the $y$-axis $x = 0$, which leaves an equation to solve for $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rearrange for the y-term",
+        "workingLatex": "\\dfrac{y^{2}}{36} = 1 - \\dfrac{1}{4} = \\dfrac{3}{4}",
+        "explanation": "Simplifying $\\dfrac{4}{16}$ to $\\dfrac{1}{4}$ and subtracting from $1$ isolates the $y$-term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for y",
+        "workingLatex": "y^{2} = 36 \\times \\dfrac{3}{4} = 27 \\;\\Rightarrow\\; y = \\pm \\sqrt{27} = \\pm 3\\sqrt{3}",
+        "explanation": "Multiplying up gives $y^{2} = 27$; taking both roots and simplifying $\\sqrt{27} = 3\\sqrt{3}$ gives the exact $y$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the y-axis crossings",
+        "workingLatex": "\\left( 0,\\, 3\\sqrt{3} \\right) \\quad \\text{and} \\quad \\left( 0,\\, -3\\sqrt{3} \\right)",
+        "explanation": "Pairing each exact $y$-value with $x = 0$ completes the set of axis crossings.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{x^2}{4} + y^2 = 1$"
+    "finalAnswer": "The Cartesian equation is $\\dfrac{(x - 2)^{2}}{16} + \\dfrac{y^{2}}{36} = 1$. The curve crosses the $x$-axis at $(6,\\,0)$ and $(-2,\\,0)$, and the $y$-axis at $\\left( 0,\\, 3\\sqrt{3} \\right)$ and $\\left( 0,\\, -3\\sqrt{3} \\right)$."
   }
 }

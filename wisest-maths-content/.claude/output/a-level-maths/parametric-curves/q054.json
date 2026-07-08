@@ -4,54 +4,117 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
+  "difficulty": "Hard",
   "marks": 6,
-  "answerType": "expression",
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "double angle"
+    "eliminating the parameter",
+    "sec and tan identity",
+    "hyperbola"
   ],
-  "questionText": "A curve has parametric equations $x = \\cos 2\\theta$, $y = \\sin\\theta$. Find the Cartesian equation in the form $x = f(y)$.",
+  "questionText": "A curve is defined by $x = 3\\tan t$ and $y = 2\\sec t$, where $t$ is a parameter. (a) Use an appropriate identity to find a Cartesian equation of the curve. (b) Identify the curve and state the coordinates of its vertices and the equations of its asymptotes. (c) Explain why no point of the curve satisfies $-2 < y < 2$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the sine form of the double angle",
-        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
-        "explanation": "Since $y = \\sin\\theta$, this form lets us write $x$ directly in terms of $y$.",
+        "description": "Isolate tan t",
+        "workingLatex": "x = 3\\tan t \\implies \\tan t = \\dfrac{x}{3}",
+        "explanation": "We want an identity linking $\\tan t$ and $\\sec t$, so first make each the subject. Here $\\tan t = x/3$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute y for sine",
-        "workingLatex": "x = 1 - 2y^2",
-        "explanation": "Replacing $\\sin\\theta$ with $y$ eliminates the parameter.",
+        "description": "Isolate sec t",
+        "workingLatex": "y = 2\\sec t \\implies \\sec t = \\dfrac{y}{2}",
+        "explanation": "Likewise $\\sec t = y/2$ from the second equation.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the Cartesian equation",
-        "workingLatex": "x = 1 - 2y^2",
-        "explanation": "This is a parabola opening in the negative $x$-direction.",
+        "description": "Recall the relevant identity",
+        "workingLatex": "1 + \\tan^{2} t = \\sec^{2} t",
+        "explanation": "This Pythagorean-type identity connects exactly the two functions we have, so it will eliminate $t$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the range of y",
-        "workingLatex": "-1 \\le \\sin\\theta \\le 1 \\;\\Rightarrow\\; -1 \\le y \\le 1",
-        "explanation": "Since $y = \\sin\\theta$, the values are restricted to $[-1, 1]$.",
+        "description": "Substitute the expressions",
+        "workingLatex": "1 + \\left( \\dfrac{x}{3} \\right)^{2} = \\left( \\dfrac{y}{2} \\right)^{2}",
+        "explanation": "Replacing $\\tan t$ and $\\sec t$ by their $x$ and $y$ expressions removes the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer with domain",
-        "workingLatex": "x = 1 - 2y^2, \\; -1 \\le y \\le 1",
-        "explanation": "Only the arc of the sideways parabola between $y = -1$ and $y = 1$ is traced.",
+        "description": "Write with squared fractions",
+        "workingLatex": "1 + \\dfrac{x^{2}}{9} = \\dfrac{y^{2}}{4}",
+        "explanation": "Squaring the fractions tidies the equation and prepares it for standard form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange to standard form",
+        "workingLatex": "\\dfrac{y^{2}}{4} - \\dfrac{x^{2}}{9} = 1",
+        "explanation": "Moving the $x$-term across leaves the difference of two squared terms equal to $1$ — the signature of a hyperbola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Identify the curve",
+        "workingLatex": "\\dfrac{y^{2}}{2^{2}} - \\dfrac{x^{2}}{3^{2}} = 1",
+        "explanation": "This matches $\\dfrac{y^{2}}{b^{2}} - \\dfrac{x^{2}}{a^{2}} = 1$ with $b = 2$ and $a = 3$: a hyperbola centred at the origin that opens up and down, because the $y^{2}$ term is the positive one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Locate the vertices",
+        "workingLatex": "x = 0 \\implies \\dfrac{y^{2}}{4} = 1 \\implies y = \\pm 2",
+        "explanation": "The vertices lie on the axis of symmetry, found by setting $x=0$. They are the points of the two branches closest to the centre.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the vertices",
+        "workingLatex": "(0,\\ 2), \\qquad (0,\\ -2)",
+        "explanation": "These are the tips of the upper and lower branches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the asymptotes",
+        "workingLatex": "\\dfrac{y^{2}}{4} - \\dfrac{x^{2}}{9} = 0 \\implies y = \\pm\\dfrac{2}{3}x",
+        "explanation": "For large $x$ and $y$ the constant $1$ becomes negligible, so the curve hugs the lines obtained by replacing $1$ with $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the asymptotes",
+        "workingLatex": "y = \\dfrac{2}{3}x, \\qquad y = -\\dfrac{2}{3}x",
+        "explanation": "The two branches approach these straight lines but never touch them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Analyse the values of sec t",
+        "workingLatex": "\\sec t \\ge 1 \\ \\text{or} \\ \\sec t \\le -1",
+        "explanation": "Since $\\sec t = 1/\\cos t$ and $|\\cos t| \\le 1$, the secant can never lie strictly between $-1$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Translate to y",
+        "workingLatex": "y = 2\\sec t \\implies y \\ge 2 \\ \\text{or} \\ y \\le -2",
+        "explanation": "Multiplying the secant bounds by $2$ shows $y$ is always at least $2$ or at most $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Conclude about the gap",
+        "workingLatex": "-2 < y < 2 : \\ \\text{no points of the curve}",
+        "explanation": "So the strip $-2 < y < 2$ contains no part of the curve — consistent with the two separate branches of a hyperbola whose vertices sit at $y = \\pm 2$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x = 1 - 2y^2$ for $-1 \\le y \\le 1$."
+    "finalAnswer": "(a) $\\dfrac{y^{2}}{4} - \\dfrac{x^{2}}{9} = 1$. (b) A hyperbola centred at the origin opening vertically, with vertices $(0,\\,2)$ and $(0,\\,-2)$ and asymptotes $y = \\pm\\dfrac{2}{3}x$. (c) Because $y = 2\\sec t$ and $|\\sec t| \\ge 1$, we always have $y \\ge 2$ or $y \\le -2$, so no point lies in $-2 < y < 2$."
   }
 }

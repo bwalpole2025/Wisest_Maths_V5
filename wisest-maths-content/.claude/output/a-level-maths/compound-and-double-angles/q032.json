@@ -5,61 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 6,
+  "marks": 4,
   "answerType": "proof",
   "tags": [
     "double angle",
-    "identities",
     "proof",
-    "factorising"
+    "identity"
   ],
-  "questionText": "Prove that $\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta$.",
+  "questionText": "Prove the identity $\\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta} \\equiv \\tan\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the difference-of-squares form of cos 2θ",
-        "workingLatex": "\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta",
-        "explanation": "This form is a difference of two squares, which factorises to reveal the denominator.",
+        "description": "State the LHS and the plan",
+        "workingLatex": "\\text{LHS} = \\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta}",
+        "explanation": "We work from the left-hand side and aim to reach $\\tan\\theta$. The plan is to rewrite every double angle in terms of single-angle ratios so that a common factor cancels.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Factorise the numerator",
-        "workingLatex": "\\cos^2\\theta - \\sin^2\\theta = (\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)",
-        "explanation": "The difference of squares factorises into these two brackets, one matching the denominator.",
+        "description": "Expand the numerator",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "The numerator is a double angle, so $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$ turns it into the single-angle ratios we want to end up with.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the fraction with the factorised numerator",
-        "workingLatex": "\\frac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} = \\frac{(\\cos\\theta - \\sin\\theta)(\\cos\\theta + \\sin\\theta)}{\\cos\\theta + \\sin\\theta}",
-        "explanation": "Now the denominator appears as a factor of the numerator.",
+        "description": "Choose a form of cos 2theta for the denominator",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "There are three versions of $\\cos 2\\theta$. We pick $2\\cos^2\\theta - 1$ because adding $1$ to it removes the constant and leaves a single clean term.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cancel the common factor",
-        "workingLatex": "= \\cos\\theta - \\sin\\theta",
-        "explanation": "Cancelling the shared $(\\cos\\theta + \\sin\\theta)$ leaves the required expression.",
+        "description": "Simplify the denominator",
+        "workingLatex": "1 + \\cos 2\\theta = 1 + (2\\cos^2\\theta - 1) = 2\\cos^2\\theta",
+        "explanation": "The $+1$ and $-1$ cancel, so the denominator collapses to $2\\cos^2\\theta$, which shares factors with the numerator.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Conclude",
-        "workingLatex": "\\frac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta \\;\\blacksquare",
-        "explanation": "The left-hand side equals the right-hand side, completing the proof.",
+        "description": "Rewrite the whole fraction",
+        "workingLatex": "\\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta} = \\dfrac{2\\sin\\theta\\cos\\theta}{2\\cos^2\\theta}",
+        "explanation": "Placing the rewritten numerator over the rewritten denominator sets up the cancellation, since both contain the factor $2\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Note the restriction",
-        "workingLatex": "\\cos\\theta + \\sin\\theta \\ne 0",
-        "explanation": "The cancellation requires the denominator to be nonzero, excluding angles where $\\tan\\theta = -1$.",
+        "description": "Cancel the common factor",
+        "workingLatex": "\\dfrac{2\\sin\\theta\\cos\\theta}{2\\cos^2\\theta} = \\dfrac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Dividing top and bottom by $2\\cos\\theta$ removes the shared factor, leaving the simple ratio $\\dfrac{\\sin\\theta}{\\cos\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise the tangent ratio",
+        "workingLatex": "\\dfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta",
+        "explanation": "By definition $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$, so the simplified fraction is exactly the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the RHS is reached",
+        "workingLatex": "\\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta} = \\tan\\theta",
+        "explanation": "The LHS has been transformed step by step into $\\tan\\theta$, which is the RHS we were aiming for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\dfrac{\\sin 60^\\circ}{1 + \\cos 60^\\circ} = \\dfrac{\\sqrt3/2}{3/2} = \\dfrac{\\sqrt3}{3} = \\dfrac{1}{\\sqrt3} = \\tan 30^\\circ",
+        "explanation": "Testing a specific value guards against algebra slips: at $\\theta = 30^\\circ$ both sides equal $\\dfrac{1}{\\sqrt3}$, confirming the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the proof",
+        "workingLatex": "\\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta} \\equiv \\tan\\theta \\quad \\blacksquare",
+        "explanation": "Since the LHS reduces to the RHS for all valid $\\theta$, the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\cos 2\\theta}{\\cos\\theta + \\sin\\theta} \\equiv \\cos\\theta - \\sin\\theta$"
+    "finalAnswer": "Using $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$ and $1 + \\cos 2\\theta = 2\\cos^2\\theta$, the fraction simplifies to $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$, so $\\dfrac{\\sin 2\\theta}{1 + \\cos 2\\theta} \\equiv \\tan\\theta$ as required."
   }
 }

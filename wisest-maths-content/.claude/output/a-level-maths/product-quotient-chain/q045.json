@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "stationary points",
+    "exponential"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{x}{e^x}$. (a) Find $\\dfrac{dy}{dx}$. (b) Hence find the exact coordinates of the stationary point of $C$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the quotient rule",
+        "workingLatex": "u = x, \\qquad v = e^x",
+        "explanation": "The curve is a quotient of $x$ and $e^x$, so we use the quotient rule with $u$ on top and $v$ underneath.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = 1, \\qquad v' = e^x",
+        "explanation": "The derivative of $x$ is $1$, and $e^x$ is its own derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}",
+        "explanation": "Derivative of top times bottom minus top times derivative of bottom, all over the bottom squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the pieces",
+        "workingLatex": "= \\frac{1\\cdot e^x - x\\cdot e^x}{(e^x)^2}",
+        "explanation": "Placing $u,u',v,v'$ into the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor the numerator",
+        "workingLatex": "= \\frac{e^x(1 - x)}{e^{2x}}",
+        "explanation": "Both terms on top share a factor of $e^x$, and $(e^x)^2=e^{2x}$ underneath.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel a factor of e^x",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1 - x}{e^x}",
+        "explanation": "Dividing top and bottom by $e^x$ leaves the tidy gradient function $\\dfrac{1-x}{e^x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\frac{1 - x}{e^x} = 0",
+        "explanation": "Stationary points occur where the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "A zero fraction needs a zero numerator",
+        "workingLatex": "1 - x = 0",
+        "explanation": "Since $e^x$ is never zero, only the numerator can make the fraction vanish.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "x = 1",
+        "explanation": "Rearranging $1-x=0$ gives $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\frac{1}{e^1} = \\frac{1}{e}",
+        "explanation": "Substituting $x=1$ into $y=\\dfrac{x}{e^x}$ gives the height $\\dfrac{1}{e}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the stationary point",
+        "workingLatex": "\\left(1, \\; \\frac{1}{e}\\right)",
+        "explanation": "So the single stationary point of $C$ is $\\left(1,\\dfrac{1}{e}\\right)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\dfrac{1-x}{e^x}$. (b) Stationary point at $\\left(1, \\dfrac{1}{e}\\right)$."
+  }
+}

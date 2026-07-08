@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "chain rule",
+    "stationary points",
+    "exponential"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^{-x^2}$. (a) Find the coordinates of the stationary point of $C$. (b) Determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up the chain rule",
+        "workingLatex": "u = -x^2, \\qquad y = e^{u}",
+        "explanation": "The exponent $-x^2$ is a function of $x$, so $y=e^{-x^2}$ is composite. Let $u=-x^2$ and $y=e^{u}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate outer and inner",
+        "workingLatex": "\\frac{dy}{du} = e^{u}, \\qquad \\frac{du}{dx} = -2x",
+        "explanation": "The exponential is its own derivative, and differentiating $u=-x^2$ gives $-2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = e^{u}\\cdot(-2x) = -2x\\,e^{-x^2}",
+        "explanation": "Multiplying the two derivatives and substituting $u=-x^2$ back gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the derivative to zero",
+        "workingLatex": "-2x\\,e^{-x^2} = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve $-2x\\,e^{-x^2}=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use that the exponential is never zero",
+        "workingLatex": "e^{-x^2} > 0 \\;\\Rightarrow\\; -2x = 0 \\;\\Rightarrow\\; x = 0",
+        "explanation": "Since $e^{-x^2}$ is always positive it can never be zero, so only the factor $-2x$ can vanish, giving $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{-(0)^2} = e^{0} = 1",
+        "explanation": "Substituting $x=0$ into $y=e^{-x^2}$ gives $y=1$, so the stationary point is $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate again using the product rule",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}\\!\\left(-2x\\,e^{-x^2}\\right), \\quad a=-2x,\\; b=e^{-x^2}",
+        "explanation": "To classify the point we need the second derivative. The first derivative is a product $-2x$ times $e^{-x^2}$, so we use the product rule with $a=-2x$ and $b=e^{-x^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Differentiate each factor",
+        "workingLatex": "a' = -2, \\qquad b' = -2x\\,e^{-x^2}",
+        "explanation": "Differentiating $a=-2x$ gives $-2$; differentiating $b=e^{-x^2}$ repeats the earlier chain-rule result $-2x\\,e^{-x^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Assemble the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = a'b + ab' = -2e^{-x^2} + 4x^2 e^{-x^2} = (4x^2 - 2)e^{-x^2}",
+        "explanation": "Combining $a'b+ab'$ and factoring out $e^{-x^2}$ gives $(4x^2-2)e^{-x^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate the second derivative at x = 0",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=0} = (4(0)^2 - 2)e^{0} = -2 < 0",
+        "explanation": "At $x=0$ the second derivative is $-2$, which is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Classify the stationary point",
+        "workingLatex": "\\frac{d^2y}{dx^2} < 0 \\;\\Rightarrow\\; \\text{maximum at } (0,1)",
+        "explanation": "A negative second derivative means the curve is concave down, so $(0,1)$ is a maximum point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) The stationary point is $(0,1)$. (b) Since $\\dfrac{d^2y}{dx^2}=-2<0$ there, it is a maximum."
+  }
+}

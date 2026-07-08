@@ -4,69 +4,68 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
   "tags": [
     "double angle",
-    "given ratio",
-    "obtuse",
-    "quadrant"
+    "tangent",
+    "simplify"
   ],
-  "questionText": "Given that $\\cos\\theta = -\\dfrac{3}{5}$ and $\\theta$ is obtuse, find the exact values of $\\sin 2\\theta$ and $\\cos 2\\theta$.",
+  "questionText": "Write $\\dfrac{2\\tan 25^\\circ}{1 - \\tan^2 25^\\circ}$ as a single trigonometric ratio.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find sine using the identity",
-        "workingLatex": "\\sin^2\\theta = 1 - \\left(-\\tfrac{3}{5}\\right)^2 = \\frac{16}{25}",
-        "explanation": "We need sine for the $\\sin 2\\theta$ formula; the identity gives its square.",
+        "description": "Write down the expression",
+        "workingLatex": "E = \\frac{2\\tan 25^\\circ}{1 - \\tan^2 25^\\circ}",
+        "explanation": "Notice the fraction has $2\\tan$ of an angle on top and $1-\\tan^2$ of the same angle underneath, the signature of the tangent double-angle formula.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Choose the sign of sine",
-        "workingLatex": "\\theta \\text{ obtuse} \\;\\Rightarrow\\; \\sin\\theta = +\\frac{4}{5}",
-        "explanation": "In the second quadrant sine is positive, so we take the positive root.",
+        "description": "Recall the tangent double-angle formula",
+        "workingLatex": "\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}",
+        "explanation": "Used from right to left, this identity turns the whole fraction into a single tangent.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the sine double angle formula",
-        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta = 2\\cdot\\frac{4}{5}\\cdot\\left(-\\frac{3}{5}\\right)",
-        "explanation": "Substituting the sine and cosine values into the formula.",
+        "description": "Match the angle",
+        "workingLatex": "A = 25^\\circ",
+        "explanation": "Every tangent in the expression is of $25^\\circ$, so $A=25^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate sin 2θ",
-        "workingLatex": "\\sin 2\\theta = -\\frac{24}{25}",
-        "explanation": "The product is negative because cosine is negative, giving $-\\frac{24}{25}$.",
+        "description": "Apply the formula",
+        "workingLatex": "\\frac{2\\tan 25^\\circ}{1 - \\tan^2 25^\\circ} = \\tan(2\\times 25^\\circ)",
+        "explanation": "Substituting $A=25^\\circ$ replaces the fraction with the tangent of the doubled angle.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Apply the cosine double angle formula",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1 = 2\\cdot\\frac{9}{25} - 1",
-        "explanation": "The cosine-only form is convenient since cosine is given directly.",
+        "description": "Double the angle",
+        "workingLatex": "= \\tan 50^\\circ",
+        "explanation": "Doubling $25^\\circ$ gives $50^\\circ$, the single ratio required.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Evaluate cos 2θ",
-        "workingLatex": "\\cos 2\\theta = \\frac{18}{25} - 1 = -\\frac{7}{25}",
-        "explanation": "Simplifying gives $-\\frac{7}{25}$.",
+        "description": "Check numerically",
+        "workingLatex": "\\frac{2\\tan 25^\\circ}{1 - \\tan^2 25^\\circ} \\approx 1.192, \\quad \\tan 50^\\circ \\approx 1.192",
+        "explanation": "Both sides evaluate to about $1.192$, confirming the simplification.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Sanity check with the Pythagorean identity",
-        "workingLatex": "\\left(\\tfrac{24}{25}\\right)^2 + \\left(\\tfrac{7}{25}\\right)^2 = \\frac{576 + 49}{625} = 1 \\;\\checkmark",
-        "explanation": "Since $\\sin^2 2\\theta + \\cos^2 2\\theta = 1$, the two answers are mutually consistent.",
+        "description": "State the result",
+        "workingLatex": "\\frac{2\\tan 25^\\circ}{1 - \\tan^2 25^\\circ} = \\tan 50^\\circ",
+        "explanation": "The fraction has collapsed to a single tangent, as required.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 2\\theta = -\\dfrac{24}{25}, \\quad \\cos 2\\theta = -\\dfrac{7}{25}$"
+    "finalAnswer": "$\\dfrac{2\\tan 25^\\circ}{1 - \\tan^2 25^\\circ} = \\tan 50^\\circ$."
   }
 }

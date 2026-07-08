@@ -5,53 +5,123 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Hard",
-  "marks": 6,
-  "answerType": "expression",
+  "marks": 7,
+  "answerType": "written",
   "tags": [
-    "parametric",
-    "cartesian",
-    "reciprocal trig"
+    "show that",
+    "circle",
+    "excluded point"
   ],
-  "questionText": "A curve has parametric equations $x = \\cos\\theta$, $y = \\sec\\theta$. Find the Cartesian equation and state the restrictions on $x$ and $y$.",
+  "questionText": "A curve is defined by $x = \\dfrac{1 - t^{2}}{1 + t^{2}}$ and $y = \\dfrac{2t}{1 + t^{2}}$, where $t$ is any real number. Show that every point of the curve lies on the circle $x^{2} + y^{2} = 1$, and determine the one point of that circle which the curve never reaches.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Use the reciprocal relationship",
-        "workingLatex": "y = \\sec\\theta = \\frac{1}{\\cos\\theta}",
-        "explanation": "Secant is the reciprocal of cosine, which is exactly $x$.",
+        "description": "State the plan",
+        "workingLatex": "\\text{Compute } x^{2} + y^{2} \\text{ and show it simplifies to } 1",
+        "explanation": "To prove the point lies on the circle $x^{2} + y^{2} = 1$, the direct route is to add the squares of $x$ and $y$ and show the result is always $1$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute x",
-        "workingLatex": "y = \\frac{1}{x}",
-        "explanation": "Since $x = \\cos\\theta$, we replace $\\cos\\theta$ with $x$.",
+        "description": "Square x",
+        "workingLatex": "x^{2} = \\dfrac{(1 - t^{2})^{2}}{(1 + t^{2})^{2}}",
+        "explanation": "Squaring a fraction squares the top and the bottom separately; both share the denominator $(1 + t^{2})^{2}$, which will help when adding.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Restrict x from the cosine range",
-        "workingLatex": "-1 \\le \\cos\\theta \\le 1, \\; \\cos\\theta \\ne 0 \\;\\Rightarrow\\; -1 \\le x \\le 1, \\; x \\ne 0",
-        "explanation": "Cosine lies in $[-1, 1]$ but cannot be zero (or secant is undefined).",
+        "description": "Expand the numerator of x squared",
+        "workingLatex": "(1 - t^{2})^{2} = 1 - 2t^{2} + t^{4}",
+        "explanation": "Expanding now makes the later addition of numerators straightforward.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Deduce the restriction on y",
-        "workingLatex": "|y| = \\left|\\frac{1}{x}\\right| \\ge 1",
-        "explanation": "Since $|x| \\le 1$, its reciprocal has magnitude at least $1$, so $y \\le -1$ or $y \\ge 1$.",
+        "description": "Square y",
+        "workingLatex": "y^{2} = \\dfrac{(2t)^{2}}{(1 + t^{2})^{2}} = \\dfrac{4t^{2}}{(1 + t^{2})^{2}}",
+        "explanation": "Squaring $y$ gives the same denominator, so the two fractions can be combined directly.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "y = \\frac{1}{x}, \\; -1 \\le x \\le 1, \\; x \\ne 0",
-        "explanation": "Only the outer parts of the hyperbola $y = \\frac{1}{x}$ (where $|y| \\ge 1$) are traced.",
+        "description": "Add over the common denominator",
+        "workingLatex": "x^{2} + y^{2} = \\dfrac{1 - 2t^{2} + t^{4} + 4t^{2}}{(1 + t^{2})^{2}}",
+        "explanation": "Because the denominators match, we simply add the numerators over the shared denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "1 - 2t^{2} + t^{4} + 4t^{2} = 1 + 2t^{2} + t^{4}",
+        "explanation": "Combining the two $t^{2}$ terms, $-2t^{2} + 4t^{2} = 2t^{2}$, tidies the numerator into a recognisable form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise a perfect square",
+        "workingLatex": "1 + 2t^{2} + t^{4} = (1 + t^{2})^{2}",
+        "explanation": "The numerator is exactly the square of $1 + t^{2}$, which is precisely the denominator; this is what makes the ratio collapse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Cancel to complete the proof",
+        "workingLatex": "x^{2} + y^{2} = \\dfrac{(1 + t^{2})^{2}}{(1 + t^{2})^{2}} = 1",
+        "explanation": "The identical numerator and denominator cancel, so $x^{2} + y^{2} = 1$ for every real $t$, proving each point lies on the unit circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the result",
+        "workingLatex": "\\text{Unit circle, centre } (0,0), \\ \\text{radius } 1",
+        "explanation": "The relation $x^{2} + y^{2} = 1$ is the circle of radius $1$ centred at the origin; the curve is (part of) this circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Ask which circle point is unreachable",
+        "workingLatex": "\\text{Test whether } x = -1 \\text{ is attainable}",
+        "explanation": "A rational parametrisation like this typically misses one point of the circle; the natural candidate is where $x = -1$, so we test if any $t$ produces it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set x equal to minus one",
+        "workingLatex": "\\dfrac{1 - t^{2}}{1 + t^{2}} = -1 \\Rightarrow 1 - t^{2} = -\\left(1 + t^{2}\\right)",
+        "explanation": "To see whether $x = -1$ is ever reached, we solve the equation; multiplying up by the positive denominator is safe since $1 + t^{2} > 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Reach a contradiction",
+        "workingLatex": "1 - t^{2} = -1 - t^{2} \\Rightarrow 1 = -1",
+        "explanation": "The $-t^{2}$ terms cancel on both sides, leaving the impossible statement $1 = -1$; hence no finite $t$ gives $x = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the limiting y-value",
+        "workingLatex": "\\text{As } t \\to \\pm\\infty:\\ x \\to -1,\\ \\ y = \\dfrac{2t}{1 + t^{2}} \\to 0",
+        "explanation": "As $t$ grows without bound the point creeps towards $x = -1$ while $y$ tends to $0$, but it never actually arrives there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Identify the missing point",
+        "workingLatex": "\\text{Point never reached: } (-1,\\, 0)",
+        "explanation": "So the single point of the unit circle that the curve never touches is $(-1, 0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Confirm all other points are covered",
+        "workingLatex": "t = 0 \\Rightarrow (1,\\, 0);\\ \\ \\text{every other point is attained for some } t",
+        "explanation": "For instance $t = 0$ gives the opposite point $(1,0)$, and as $t$ runs through the reals the curve sweeps the rest of the circle, missing only $(-1,0)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = \\dfrac{1}{x}$ with $-1 \\le x \\le 1$, $x \\ne 0$ (so $|y| \\ge 1$)."
+    "finalAnswer": "Since $x^{2} + y^{2} = \\dfrac{(1 + t^{2})^{2}}{(1 + t^{2})^{2}} = 1$ for all real $t$, every point lies on the unit circle $x^{2} + y^{2} = 1$. The only point of that circle the curve never reaches is $(-1,\\, 0)$, approached as $t \\to \\pm\\infty$."
   }
 }

@@ -5,82 +5,116 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "proof",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "identities",
-    "proof",
-    "secant",
-    "tangent"
+    "solving equations",
+    "sec",
+    "radians"
   ],
-  "questionText": "Prove that $(\\sec\\theta - \\tan\\theta)^2 \\equiv \\dfrac{1 - \\sin\\theta}{1 + \\sin\\theta}$.",
+  "questionText": "Solve $2\\tan^2 x = 5\\sec x - 4$ for $0 \\le x \\le 2\\pi$, giving your answers in radians in terms of $\\pi$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = (\\sec\\theta - \\tan\\theta)^2",
-        "explanation": "We convert to sine and cosine and then square, aiming for the fractional form on the right.",
+        "description": "State the equation and interval",
+        "workingLatex": "2\\tan^2 x = 5\\sec x - 4, \\qquad 0 \\le x \\le 2\\pi",
+        "explanation": "The equation mixes $\\tan^2 x$ and $\\sec x$, so we convert the $\\tan^2 x$ term into $\\sec x$ using the Pythagorean identity and work in radians throughout.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite inside the bracket",
-        "workingLatex": "= \\left(\\frac{1}{\\cos\\theta} - \\frac{\\sin\\theta}{\\cos\\theta}\\right)^2",
-        "explanation": "Both secant and tangent share the denominator cosine, making the subtraction straightforward.",
+        "description": "Recall the identity",
+        "workingLatex": "1 + \\tan^2 x \\equiv \\sec^2 x \\;\\Rightarrow\\; \\tan^2 x = \\sec^2 x - 1",
+        "explanation": "Only $\\tan^2 x$ appears, so it can be replaced wholesale using $1 + \\tan^2 x \\equiv \\sec^2 x$, leaving an equation in $\\sec x$ alone.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Combine the bracket into one fraction",
-        "workingLatex": "= \\left(\\frac{1 - \\sin\\theta}{\\cos\\theta}\\right)^2",
-        "explanation": "Subtracting the numerators over the common denominator gives a single fraction inside the square.",
+        "description": "Substitute",
+        "workingLatex": "2\\left(\\sec^2 x - 1\\right) = 5\\sec x - 4",
+        "explanation": "Replacing $\\tan^2 x$ leaves a single ratio. From here it is ordinary algebra.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Square the fraction",
-        "workingLatex": "= \\frac{(1 - \\sin\\theta)^2}{\\cos^2\\theta}",
-        "explanation": "Squaring applies to both numerator and denominator.",
+        "description": "Expand",
+        "workingLatex": "2\\sec^2 x - 2 = 5\\sec x - 4",
+        "explanation": "Multiplying out the bracket prepares all terms to be gathered on one side.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Replace cosine squared using the identity",
-        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta",
-        "explanation": "Rewriting the denominator in terms of sine lets us factorise it against the numerator.",
+        "description": "Rearrange to a quadratic equal to zero",
+        "workingLatex": "2\\sec^2 x - 5\\sec x + 2 = 0",
+        "explanation": "Collecting terms ($-2 + 4 = 2$) gives a standard quadratic in $\\sec x$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Factorise the denominator",
-        "workingLatex": "1 - \\sin^2\\theta = (1 - \\sin\\theta)(1 + \\sin\\theta)",
-        "explanation": "The denominator is a difference of squares, which factorises to reveal a common factor with the numerator.",
+        "description": "Introduce a substitution",
+        "workingLatex": "2u^2 - 5u + 2 = 0, \\quad \\text{where } u = \\sec x",
+        "explanation": "Letting $u = \\sec x$ makes the quadratic easy to factorise.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Rewrite the whole fraction",
-        "workingLatex": "= \\frac{(1 - \\sin\\theta)^2}{(1 - \\sin\\theta)(1 + \\sin\\theta)}",
-        "explanation": "Now both numerator and denominator contain the factor $1 - \\sin\\theta$.",
+        "description": "Factorise",
+        "workingLatex": "(2u - 1)(u - 2) = 0",
+        "explanation": "The middle term splits as $-5u = -u - 4u$, giving these factors, which expand back correctly.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Cancel the common factor",
-        "workingLatex": "= \\frac{1 - \\sin\\theta}{1 + \\sin\\theta}",
-        "explanation": "Cancelling one factor of $1 - \\sin\\theta$ from top and bottom leaves the target fraction.",
+        "description": "Read off the roots",
+        "workingLatex": "u = \\tfrac{1}{2} \\quad \\text{or} \\quad u = 2",
+        "explanation": "These are the two candidate values of $\\sec x$; each must be checked against the range of $\\sec$.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Conclude the proof",
-        "workingLatex": "(\\sec\\theta - \\tan\\theta)^2 \\equiv \\frac{1 - \\sin\\theta}{1 + \\sin\\theta} \\;\\blacksquare",
-        "explanation": "The left-hand side equals the right-hand side, so the identity is proved.",
+        "description": "Reject the impossible root",
+        "workingLatex": "\\sec x = \\tfrac{1}{2} \\;\\Rightarrow\\; \\cos x = 2 \\;\\; (\\text{impossible, since } |\\cos x| \\le 1)",
+        "explanation": "As $\\sec x = \\tfrac{1}{\\cos x}$, this root needs $\\cos x = 2$, which cannot happen. Since $|\\sec x| \\ge 1$ always, we reject $\\sec x = \\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Keep the valid root",
+        "workingLatex": "\\sec x = 2 \\;\\Rightarrow\\; \\cos x = \\tfrac{1}{2}",
+        "explanation": "The other root gives $\\cos x = \\tfrac12$, which is attainable, so we solve this over $0 \\le x \\le 2\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the base angle in radians",
+        "workingLatex": "\\cos^{-1}\\left(\\tfrac{1}{2}\\right) = \\frac{\\pi}{3}",
+        "explanation": "In radians, the angle in $[0,\\pi]$ with cosine $\\tfrac12$ is $\\tfrac{\\pi}{3}$, the reference angle for the solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find all angles with cos x = 1/2",
+        "workingLatex": "x = \\frac{\\pi}{3} \\quad \\text{or} \\quad x = 2\\pi - \\frac{\\pi}{3} = \\frac{5\\pi}{3}",
+        "explanation": "Cosine is positive in the first and fourth quadrants, so the second solution is $2\\pi - \\tfrac{\\pi}{3} = \\tfrac{5\\pi}{3}$. Both lie in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify a solution",
+        "workingLatex": "\\sec \\tfrac{\\pi}{3} = 2: \\;\\; 2\\tan^2 \\tfrac{\\pi}{3} = 2(3) = 6, \\;\\; 5\\sec \\tfrac{\\pi}{3} - 4 = 5(2) - 4 = 6",
+        "explanation": "At $x = \\tfrac{\\pi}{3}$, where $\\tan^2 x = 3$, both sides equal $6$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "x = \\frac{\\pi}{3},\\; \\frac{5\\pi}{3}",
+        "explanation": "These are the only solutions in $0 \\le x \\le 2\\pi$; the rejected root gave none.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(\\sec\\theta - \\tan\\theta)^2 \\equiv \\dfrac{1 - \\sin\\theta}{1 + \\sin\\theta}$"
+    "finalAnswer": "$x = \\dfrac{\\pi}{3},\\ \\dfrac{5\\pi}{3}$. The root $\\sec x = \\tfrac12$ is rejected because it requires $\\cos x = 2$."
   }
 }

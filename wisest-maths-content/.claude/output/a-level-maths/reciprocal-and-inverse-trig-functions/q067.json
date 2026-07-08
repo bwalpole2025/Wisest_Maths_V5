@@ -5,75 +5,124 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "expression",
   "tags": [
-    "given ratio",
-    "secant",
-    "cosecant",
-    "surds"
+    "inverse trig",
+    "arcsin",
+    "expression",
+    "domain"
   ],
-  "questionText": "Given that $\\tan\\theta = -2$ and $90^\\circ < \\theta < 180^\\circ$, find the exact values of $\\sec\\theta$ and $\\csc\\theta$.",
+  "questionText": "Show that $\\tan(\\arcsin x) = \\dfrac{x}{\\sqrt{1 - x^2}}$, stating the values of $x$ for which the result is valid and explaining why the positive root is taken.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the identity linking tangent and secant",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "This identity gives secant directly from the given tangent.",
+        "description": "Introduce the inner angle",
+        "workingLatex": "\\text{Let } \\alpha = \\arcsin x, \\quad \\sin\\alpha = x, \\quad \\alpha \\in \\left[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right]",
+        "explanation": "Naming the inverse-sine output $\\alpha$ converts the composition $\\tan(\\arcsin x)$ into $\\tan\\alpha$, an ordinary trigonometric ratio to simplify.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the tangent",
-        "workingLatex": "\\sec^2\\theta = 1 + (-2)^2 = 1 + 4 = 5",
-        "explanation": "Squaring $-2$ gives $4$; adding $1$ yields $5$.",
+        "description": "State the goal",
+        "workingLatex": "\\text{Find } \\tan\\alpha \\text{ in terms of } x",
+        "explanation": "Since $\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}$ and we already know $\\sin\\alpha=x$, the only missing piece is $\\cos\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Take the square root",
-        "workingLatex": "\\sec\\theta = \\pm\\sqrt{5}",
-        "explanation": "Square-rooting gives $\\pm\\sqrt5$, with the sign still to be fixed.",
+        "description": "Fix the sign of cos alpha",
+        "workingLatex": "\\alpha \\in \\left[-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right] \\ \\Rightarrow\\ \\cos\\alpha \\ge 0",
+        "explanation": "Across the whole range of $\\arcsin$, the angle lies in the right half of the circle where cosine is never negative. This is why the positive root is the correct choice.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Choose the sign using the quadrant",
-        "workingLatex": "90^\\circ < \\theta < 180^\\circ \\;\\Rightarrow\\; \\cos < 0 \\;\\Rightarrow\\; \\sec\\theta = -\\sqrt{5}",
-        "explanation": "In the second quadrant cosine is negative, so secant is negative, selecting $-\\sqrt5$.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\cos^2\\alpha = 1 - \\sin^2\\alpha = 1 - x^2",
+        "explanation": "Rearranging $\\sin^2\\alpha+\\cos^2\\alpha\\equiv1$ and substituting $\\sin\\alpha=x$ gives $\\cos^2\\alpha$ in terms of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find cosine",
-        "workingLatex": "\\cos\\theta = \\frac{1}{\\sec\\theta} = -\\frac{1}{\\sqrt{5}}",
-        "explanation": "Cosine is the reciprocal of secant.",
+        "description": "Take the non-negative root",
+        "workingLatex": "\\cos\\alpha = +\\sqrt{1 - x^2}",
+        "explanation": "The sign result from Step 3 selects the positive square root, so $\\cos\\alpha=\\sqrt{1-x^2}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find sine using tangent times cosine",
-        "workingLatex": "\\sin\\theta = \\tan\\theta\\cos\\theta = (-2)\\left(-\\frac{1}{\\sqrt5}\\right) = \\frac{2}{\\sqrt{5}}",
-        "explanation": "Since $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$, multiplying tangent by cosine recovers sine; the result is positive, correct for quadrant II.",
+        "description": "Right-triangle picture",
+        "workingLatex": "\\text{For } 0 < x < 1:\\ \\text{opposite} = x, \\ \\text{hypotenuse} = 1, \\ \\text{adjacent} = \\sqrt{1 - x^2}",
+        "explanation": "For positive $x$ the angle sits in a right triangle with opposite side $x$ and hypotenuse $1$, so the adjacent side is $\\sqrt{1-x^2}$, matching the algebra.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Find cosecant",
-        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta} = \\frac{\\sqrt{5}}{2}",
-        "explanation": "Cosecant is the reciprocal of sine, giving $\\frac{\\sqrt5}{2}$.",
+        "description": "Write tan as sin over cos",
+        "workingLatex": "\\tan\\alpha = \\frac{\\sin\\alpha}{\\cos\\alpha}",
+        "explanation": "Tangent is defined as the ratio of sine to cosine, so we now assemble the two pieces.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "State the results",
-        "workingLatex": "\\sec\\theta = -\\sqrt{5}, \\quad \\csc\\theta = \\frac{\\sqrt{5}}{2}",
-        "explanation": "These are the exact values; secant is negative and cosecant positive, matching the second quadrant.",
+        "description": "Substitute the known values",
+        "workingLatex": "\\tan\\alpha = \\frac{x}{\\sqrt{1 - x^2}}",
+        "explanation": "Putting $\\sin\\alpha=x$ over $\\cos\\alpha=\\sqrt{1-x^2}$ gives the expression entirely in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the composition result",
+        "workingLatex": "\\tan(\\arcsin x) = \\frac{x}{\\sqrt{1 - x^2}}",
+        "explanation": "This is the required simplified form of the composition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Domain: where arcsin is defined",
+        "workingLatex": "-1 \\le x \\le 1",
+        "explanation": "The inner function $\\arcsin x$ only accepts inputs in $[-1,1]$, so the composition can only be considered there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Exclude the endpoints",
+        "workingLatex": "x = \\pm 1 \\ \\Rightarrow\\ \\sqrt{1 - x^2} = 0",
+        "explanation": "At $x=\\pm1$ the denominator is zero (and $\\tan\\!\\big(\\pm\\tfrac\\pi2\\big)$ is undefined), so these endpoints must be removed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the valid domain",
+        "workingLatex": "-1 < x < 1",
+        "explanation": "Combining both conditions, the result is valid on the open interval $-1<x<1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Sign sense-check",
+        "workingLatex": "x > 0 \\Rightarrow \\tan\\alpha > 0, \\qquad x < 0 \\Rightarrow \\tan\\alpha < 0",
+        "explanation": "The formula $\\dfrac{x}{\\sqrt{1-x^2}}$ has the same sign as $x$, matching that $\\arcsin x$ is positive for positive $x$ and negative for negative $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Numerical check",
+        "workingLatex": "x = \\tfrac{3}{5}: \\ \\frac{\\tfrac{3}{5}}{\\sqrt{1 - \\tfrac{9}{25}}} = \\frac{\\tfrac{3}{5}}{\\tfrac{4}{5}} = \\tfrac{3}{4}",
+        "explanation": "With $\\sin\\alpha=\\tfrac35$ the $3$-$4$-$5$ triangle gives $\\tan\\alpha=\\tfrac34$, exactly what the formula produces.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the final result with domain",
+        "workingLatex": "\\tan(\\arcsin x) = \\frac{x}{\\sqrt{1 - x^2}}, \\quad -1 < x < 1",
+        "explanation": "The simplified expression together with its domain is the complete answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec\\theta = -\\sqrt{5}, \\quad \\csc\\theta = \\dfrac{\\sqrt{5}}{2}$"
+    "finalAnswer": "$\\tan(\\arcsin x)=\\dfrac{x}{\\sqrt{1-x^2}}$, valid for $-1<x<1$; the positive root is taken because $\\cos\\alpha\\ge0$ across the whole range of $\\arcsin$."
   }
 }

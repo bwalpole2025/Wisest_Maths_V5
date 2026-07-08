@@ -4,76 +4,68 @@
   "topic": "Year 2 Pure",
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "proof",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
-    "identities",
-    "secant",
-    "tangent",
-    "pythagorean"
+    "inverse trig",
+    "exact values",
+    "radians"
   ],
-  "questionText": "Prove that $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$.",
+  "questionText": "Find the exact values, in radians, of $\\arcsin\\tfrac{1}{2}$, $\\arccos\\tfrac{1}{2}$ and $\\arctan 1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start from the fundamental Pythagorean identity",
-        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1",
-        "explanation": "The reciprocal identities all descend from the basic Pythagorean identity, so this is the natural starting point.",
+        "description": "State what arcsin asks for",
+        "workingLatex": "\\arcsin\\tfrac{1}{2} = \\theta \\iff \\sin\\theta = \\tfrac{1}{2}, \\ -\\tfrac{\\pi}{2} \\le \\theta \\le \\tfrac{\\pi}{2}",
+        "explanation": "Evaluating an inverse means asking: which angle in the allowed range has this sine? For arcsin the answer must lie between $-\\tfrac{\\pi}{2}$ and $\\tfrac{\\pi}{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Decide what to divide by",
-        "workingLatex": "\\text{divide every term by } \\cos^2\\theta",
-        "explanation": "Since we are aiming for $\\sec^2\\theta = \\frac{1}{\\cos^2\\theta}$ on the right, dividing through by $\\cos^2\\theta$ will manufacture the reciprocal terms we want.",
+        "description": "Identify the arcsin value",
+        "workingLatex": "\\sin\\tfrac{\\pi}{6} = \\tfrac{1}{2} \\;\\Rightarrow\\; \\arcsin\\tfrac{1}{2} = \\tfrac{\\pi}{6}",
+        "explanation": "From the standard $30^\\circ$ triangle, $\\sin\\tfrac{\\pi}{6} = \\tfrac12$, and $\\tfrac{\\pi}{6}$ sits inside the arcsin range, so it is the principal value.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Divide each term by cosine squared",
-        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} + \\frac{\\cos^2\\theta}{\\cos^2\\theta} \\equiv \\frac{1}{\\cos^2\\theta}",
-        "explanation": "Dividing every term keeps the equation balanced, and each fraction is now ready to be rewritten using a reciprocal or quotient identity.",
+        "description": "State what arccos asks for",
+        "workingLatex": "\\arccos\\tfrac{1}{2} = \\theta \\iff \\cos\\theta = \\tfrac{1}{2}, \\ 0 \\le \\theta \\le \\pi",
+        "explanation": "For arccos we want the angle between $0$ and $\\pi$ whose cosine is $\\tfrac12$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rewrite the first term as tangent squared",
-        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} = \\tan^2\\theta",
-        "explanation": "Since $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$, squaring gives $\\tan^2\\theta$, converting the first fraction.",
+        "description": "Identify the arccos value",
+        "workingLatex": "\\cos\\tfrac{\\pi}{3} = \\tfrac{1}{2} \\;\\Rightarrow\\; \\arccos\\tfrac{1}{2} = \\tfrac{\\pi}{3}",
+        "explanation": "The $60^\\circ$ angle has cosine $\\tfrac12$, and $\\tfrac{\\pi}{3}$ lies in $[0,\\pi]$, so it is the required value.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify the middle term",
-        "workingLatex": "\\frac{\\cos^2\\theta}{\\cos^2\\theta} = 1",
-        "explanation": "Any nonzero quantity divided by itself is $1$, so the middle term collapses to a constant.",
+        "description": "State what arctan asks for",
+        "workingLatex": "\\arctan 1 = \\theta \\iff \\tan\\theta = 1, \\ -\\tfrac{\\pi}{2} < \\theta < \\tfrac{\\pi}{2}",
+        "explanation": "For arctan we seek the angle strictly between $-\\tfrac{\\pi}{2}$ and $\\tfrac{\\pi}{2}$ whose tangent is $1$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rewrite the right-hand side as secant squared",
-        "workingLatex": "\\frac{1}{\\cos^2\\theta} = \\sec^2\\theta",
-        "explanation": "By definition $\\sec\\theta = \\frac{1}{\\cos\\theta}$, so its square is $\\frac{1}{\\cos^2\\theta}$, giving the target form.",
+        "description": "Identify the arctan value",
+        "workingLatex": "\\tan\\tfrac{\\pi}{4} = 1 \\;\\Rightarrow\\; \\arctan 1 = \\tfrac{\\pi}{4}",
+        "explanation": "In the $45^\\circ$ right triangle the two legs are equal, so $\\tan\\tfrac{\\pi}{4}=1$; this angle lies in the arctan range.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Assemble the identity",
-        "workingLatex": "\\tan^2\\theta + 1 \\equiv \\sec^2\\theta",
-        "explanation": "Collecting the rewritten terms produces exactly the required identity, completing the proof.",
-        "diagram": null
-      },
-      {
-        "stepNumber": 8,
-        "description": "State the conclusion",
-        "workingLatex": "1 + \\tan^2\\theta \\equiv \\sec^2\\theta \\;\\blacksquare",
-        "explanation": "The identity holds for all $\\theta$ where the functions are defined, which is what we set out to prove.",
+        "description": "State the three values",
+        "workingLatex": "\\arcsin\\tfrac{1}{2} = \\tfrac{\\pi}{6}, \\quad \\arccos\\tfrac{1}{2} = \\tfrac{\\pi}{3}, \\quad \\arctan 1 = \\tfrac{\\pi}{4}",
+        "explanation": "Collecting the principal values gives the three exact answers in radians.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$1 + \\tan^2\\theta \\equiv \\sec^2\\theta$, proved by dividing $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ through by $\\cos^2\\theta$."
+    "finalAnswer": "$\\arcsin\\tfrac{1}{2} = \\tfrac{\\pi}{6}$, $\\arccos\\tfrac{1}{2} = \\tfrac{\\pi}{3}$, $\\arctan 1 = \\tfrac{\\pi}{4}$."
   }
 }

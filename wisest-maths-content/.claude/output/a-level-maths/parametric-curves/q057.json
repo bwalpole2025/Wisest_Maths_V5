@@ -4,54 +4,117 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "difficulty": "Hard",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "restricted domain"
+    "double angle",
+    "domain and range",
+    "max and min"
   ],
-  "questionText": "A curve has parametric equations $x = 2t$, $y = t^2 + 3$ for $t \\ge 0$. Find the Cartesian equation and state the domain and range.",
+  "questionText": "A curve $C$ is defined parametrically by $x = 2\\cos t$ and $y = 1 + \\cos 2t$, for $0 \\le t < 2\\pi$. (a) Show that a Cartesian equation of $C$ is $y = \\dfrac{x^{2}}{2}$. (b) State the domain of $x$ and the range of $y$, and hence the maximum and minimum values of $y$. (c) Describe the curve fully.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject",
-        "workingLatex": "x = 2t \\;\\Rightarrow\\; t = \\frac{x}{2}",
-        "explanation": "The linear $x$-equation gives $t$ in terms of $x$.",
+        "description": "Make cos t the subject",
+        "workingLatex": "x = 2\\cos t \\implies \\cos t = \\dfrac{x}{2}",
+        "explanation": "We will feed $\\cos t$ into a double-angle identity, so isolate it first.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the y-equation",
-        "workingLatex": "y = \\left(\\frac{x}{2}\\right)^2 + 3 = \\frac{x^2}{4} + 3",
-        "explanation": "Replacing $t$ removes the parameter.",
+        "description": "Choose the double-angle form",
+        "workingLatex": "\\cos 2t = 2\\cos^{2} t - 1",
+        "explanation": "Since we know $\\cos t$, pick the form of $\\cos 2t$ written purely in terms of $\\cos t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the domain",
-        "workingLatex": "t \\ge 0 \\;\\Rightarrow\\; x = 2t \\ge 0",
-        "explanation": "Since $t$ is non-negative, so is $x$.",
+        "description": "Substitute into y",
+        "workingLatex": "y = 1 + \\cos 2t = 1 + \\left(2\\cos^{2} t - 1\\right)",
+        "explanation": "Replace $\\cos 2t$ inside the expression for $y$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the range",
-        "workingLatex": "t \\ge 0 \\;\\Rightarrow\\; y = t^2 + 3 \\ge 3",
-        "explanation": "The least value of $t^2$ is $0$, so $y$ is at least $3$.",
+        "description": "Simplify",
+        "workingLatex": "y = 2\\cos^{2} t",
+        "explanation": "The $+1$ and $-1$ cancel, leaving a clean multiple of $\\cos^{2} t$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "y = \\frac{x^2}{4} + 3, \\; x \\ge 0, \\; y \\ge 3",
-        "explanation": "Only the right half of the parabola (from the vertex $(0,3)$) is traced.",
+        "description": "Replace cos t with x/2",
+        "workingLatex": "y = 2\\left( \\dfrac{x}{2} \\right)^{2}",
+        "explanation": "Now substitute $\\cos t = x/2$ to bring in $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Reach the Cartesian equation",
+        "workingLatex": "y = 2 \\cdot \\dfrac{x^{2}}{4} = \\dfrac{x^{2}}{2}",
+        "explanation": "Simplifying confirms the required equation $y = x^{2}/2$, an upward parabola through the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Domain of x",
+        "workingLatex": "x = 2\\cos t \\implies -2 \\le x \\le 2",
+        "explanation": "Because $\\cos t \\in [-1, 1]$, doubling gives $x \\in [-2, 2]$; the curve is only this slice of the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Range of y from the parameter",
+        "workingLatex": "\\cos 2t \\in [-1, 1] \\implies y = 1 + \\cos 2t \\in [0, 2]",
+        "explanation": "Reading $y$ directly from $y = 1 + \\cos 2t$: adding $1$ to a value in $[-1,1]$ gives $y \\in [0, 2]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Cross-check with the Cartesian form",
+        "workingLatex": "y = \\dfrac{x^{2}}{2}, \\ x \\in [-2, 2] \\implies y \\in [0, 2]",
+        "explanation": "Substituting the endpoints $x = 0$ and $x = \\pm 2$ into $y = x^{2}/2$ gives $y = 0$ and $y = 2$, agreeing with the parameter analysis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Minimum value of y",
+        "workingLatex": "y_{\\min} = 0 \\ \\text{at} \\ x = 0",
+        "explanation": "The smallest $y$ occurs when $x^{2}$ is smallest, that is $x = 0$; this needs no calculus, just the fact that a square is never negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Maximum value of y",
+        "workingLatex": "y_{\\max} = 2 \\ \\text{at} \\ x = \\pm 2",
+        "explanation": "The largest $y$ occurs at the ends of the allowed $x$-range, where $x^{2}$ is greatest. Again this comes from the bounded cosine, not from differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Identify the vertex",
+        "workingLatex": "\\text{vertex } (0,\\ 0)",
+        "explanation": "The lowest point of the arc sits at the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Identify the endpoints",
+        "workingLatex": "(-2,\\ 2), \\qquad (2,\\ 2)",
+        "explanation": "At $x = \\pm 2$ the curve reaches its top corners.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Describe the curve",
+        "workingLatex": "y = \\dfrac{x^{2}}{2}, \\quad -2 \\le x \\le 2",
+        "explanation": "The curve is the arc of the parabola $y = x^{2}/2$ between $x = -2$ and $x = 2$: a symmetric cup rising from $(0,0)$ up to $(\\pm 2, 2)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = \\dfrac{x^2}{4} + 3$ for $x \\ge 0$ (range $y \\ge 3$)."
+    "finalAnswer": "(a) $y = \\dfrac{x^{2}}{2}$. (b) Domain $-2 \\le x \\le 2$, range $0 \\le y \\le 2$; minimum $y = 0$ at $x=0$, maximum $y = 2$ at $x = \\pm 2$. (c) It is the arc of the parabola $y = x^{2}/2$ for $-2 \\le x \\le 2$, with vertex $(0,0)$ and endpoints $(\\pm 2,\\,2)$."
   }
 }

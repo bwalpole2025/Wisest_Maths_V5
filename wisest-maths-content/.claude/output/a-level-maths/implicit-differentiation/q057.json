@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.implicit.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "exponential",
+    "product rule",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $x e^{y} + y e^{x} = 1$. The point $P(1, 0)$ lies on $C$. Find an equation of the tangent to $C$ at $P$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Check that P(1, 0) lies on C",
+        "workingLatex": "1\\cdot e^{0} + 0\\cdot e^{1} = 1 + 0 = 1",
+        "explanation": "Substituting $x=1,\\,y=0$ gives $1$, matching the right-hand side, so $P$ is on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}\\left(x e^{y}\\right) + \\frac{d}{dx}\\left(y e^{x}\\right) = 0",
+        "explanation": "Both terms are products, so each needs the product rule. The constant $1$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate x e^y (product and chain rule)",
+        "workingLatex": "\\frac{d}{dx}\\left(x e^{y}\\right) = e^{y} + x e^{y}\\frac{dy}{dx}",
+        "explanation": "The product rule gives $e^y$ (differentiate $x$) plus $x$ times the derivative of $e^y$; the chain rule makes that derivative $e^y\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate y e^x (product rule)",
+        "workingLatex": "\\frac{d}{dx}\\left(y e^{x}\\right) = e^{x}\\frac{dy}{dx} + y e^{x}",
+        "explanation": "The product rule gives $e^x\\frac{dy}{dx}$ (differentiate $y$) plus $y e^x$ (keep $y$, differentiate $e^x$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "e^{y} + x e^{y}\\frac{dy}{dx} + e^{x}\\frac{dy}{dx} + y e^{x} = 0",
+        "explanation": "Combining the two differentiated products gives a single equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect and factor the dy/dx terms",
+        "workingLatex": "\\left(x e^{y} + e^{x}\\right)\\frac{dy}{dx} = -\\left(e^{y} + y e^{x}\\right)",
+        "explanation": "Gathering the $\\frac{dy}{dx}$ terms on the left and the rest on the right isolates the factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{e^{y} + y e^{x}}{x e^{y} + e^{x}}",
+        "explanation": "Dividing by $(x e^{y} + e^{x})$ gives the gradient formula in terms of $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the numerator at P(1, 0)",
+        "workingLatex": "e^{0} + 0\\cdot e^{1} = 1 + 0 = 1",
+        "explanation": "Substituting $x=1,\\,y=0$ into the numerator gives $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the denominator at P(1, 0)",
+        "workingLatex": "1\\cdot e^{0} + e^{1} = 1 + e",
+        "explanation": "Substituting into the denominator gives $1 + e$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Compute the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,0)} = -\\frac{1}{1 + e}",
+        "explanation": "Dividing the numerator by the denominator gives the tangent gradient at $P$, about $-0.269$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the tangent gradient",
+        "workingLatex": "m = -\\frac{1}{1 + e}",
+        "explanation": "So the tangent to $C$ at $P$ has this exact gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - 0 = -\\frac{1}{1 + e}(x - 1)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ through $P(1,0)$ gives the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Tidy the tangent equation",
+        "workingLatex": "(1 + e)\\,y = -(x - 1) \\;\\Rightarrow\\; x + (1 + e)\\,y = 1",
+        "explanation": "Multiplying through by $(1+e)$ clears the fraction and gives a clean linear form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the result",
+        "workingLatex": "x + (1 + e)\\,y = 1",
+        "explanation": "This is an equation of the tangent to $C$ at $P(1,0)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Gradient $= -\\dfrac{1}{1 + e}$; tangent $x + (1 + e)\\,y = 1$."
+  }
+}

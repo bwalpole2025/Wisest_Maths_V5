@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "tangent",
+    "exponential"
+  ],
+  "questionText": "The curve $C$ has equation $y = (x + 1)e^{x}$. Find an equation of the tangent to $C$ at the point where $x = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the two factors for the product rule",
+        "workingLatex": "u = x + 1, \\qquad v = e^{x}",
+        "explanation": "The function is a product of $(x+1)$ and $e^{x}$, so we differentiate using the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = e^{x}",
+        "explanation": "Differentiating $x+1$ gives $1$, and $e^{x}$ is its own derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = e^{x} + (x + 1)e^{x}",
+        "explanation": "Substituting into $u'v+uv'$ gives $e^{x}$ from the first term and $(x+1)e^{x}$ from the second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}(x + 2)",
+        "explanation": "Taking out the common factor $e^{x}$ and simplifying $1+(x+1)=x+2$ gives a tidy derivative to evaluate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the gradient at x = 0",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = e^{0}(0 + 2) = 2",
+        "explanation": "The gradient of the tangent equals the value of the derivative at the point of contact, here $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the gradient",
+        "workingLatex": "m = 2",
+        "explanation": "So the tangent line has gradient $m=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate of the point of contact",
+        "workingLatex": "y = (0 + 1)e^{0} = 1",
+        "explanation": "Substituting $x=0$ into $y=(x+1)e^{x}$ gives the height of the point where the tangent touches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the point of contact",
+        "workingLatex": "(0, \\ 1)",
+        "explanation": "The tangent touches the curve at $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write the tangent line formula",
+        "workingLatex": "y - y_{1} = m(x - x_{1})",
+        "explanation": "A straight line through $(x_{1},y_{1})$ with gradient $m$ has this equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Substitute the known values",
+        "workingLatex": "y - 1 = 2(x - 0)",
+        "explanation": "Substituting $m=2$ and the point $(0,1)$ gives the tangent in point-gradient form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Simplify to the final equation",
+        "workingLatex": "y = 2x + 1",
+        "explanation": "Expanding and rearranging gives the tangent line in the form $y=mx+c$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent to $C$ at $x=0$ is $y = 2x + 1$."
+  }
+}

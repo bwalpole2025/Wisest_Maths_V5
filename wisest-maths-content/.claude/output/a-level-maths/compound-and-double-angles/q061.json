@@ -8,51 +8,113 @@
   "marks": 6,
   "answerType": "proof",
   "tags": [
-    "double angle",
-    "identities",
+    "triple angle",
     "proof",
-    "difference of squares"
+    "double angle"
   ],
-  "questionText": "Prove that $\\cos^4\\theta - \\sin^4\\theta \\equiv \\cos 2\\theta$.",
+  "questionText": "Prove the triple-angle identity $\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta$ by writing $3\\theta$ as $2\\theta+\\theta$ and using the compound- and double-angle formulae.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recognise a difference of squares",
-        "workingLatex": "\\cos^4\\theta - \\sin^4\\theta = (\\cos^2\\theta)^2 - (\\sin^2\\theta)^2",
-        "explanation": "The fourth powers are squares of squares, so a difference-of-squares factorisation applies.",
+        "description": "Split the triple angle",
+        "workingLatex": "\\sin 3\\theta = \\sin(2\\theta + \\theta)",
+        "explanation": "There is no direct formula for a triple angle, but $3\\theta$ can be written as the sum $2\\theta+\\theta$. This turns the problem into a compound angle, which we do have a formula for.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Factorise",
-        "workingLatex": "= (\\cos^2\\theta - \\sin^2\\theta)(\\cos^2\\theta + \\sin^2\\theta)",
-        "explanation": "Applying $a^2 - b^2 = (a-b)(a+b)$ gives two brackets.",
+        "description": "Apply the sine addition formula",
+        "workingLatex": "\\sin(2\\theta + \\theta) = \\sin 2\\theta\\cos\\theta + \\cos 2\\theta\\sin\\theta",
+        "explanation": "Using $\\sin(A+B) = \\sin A\\cos B + \\cos A\\sin B$ with $A=2\\theta$ and $B=\\theta$ breaks the double angle apart, leaving expressions we can replace with double-angle formulae.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the second bracket",
-        "workingLatex": "\\cos^2\\theta + \\sin^2\\theta = 1",
-        "explanation": "The second bracket is the Pythagorean identity, equal to $1$.",
+        "description": "Choose the double-angle forms",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta, \\qquad \\cos 2\\theta = 1 - 2\\sin^2\\theta",
+        "explanation": "We want the final answer purely in terms of $\\sin\\theta$, so for the cosine we deliberately pick the version $1-2\\sin^2\\theta$ rather than one containing $\\cos^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute",
-        "workingLatex": "= \\cos^2\\theta - \\sin^2\\theta",
-        "explanation": "Multiplying by $1$ leaves only the first bracket.",
+        "description": "Substitute the double-angle expressions",
+        "workingLatex": "\\sin 3\\theta = (2\\sin\\theta\\cos\\theta)\\cos\\theta + (1 - 2\\sin^2\\theta)\\sin\\theta",
+        "explanation": "Replacing $\\sin 2\\theta$ and $\\cos 2\\theta$ gives a single expression in $\\sin\\theta$ and $\\cos\\theta$; only the first term still carries a $\\cos^2\\theta$ to deal with.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Recognise the double angle",
-        "workingLatex": "= \\cos 2\\theta \\;\\blacksquare",
-        "explanation": "This is the first form of $\\cos 2\\theta$, completing the proof.",
+        "description": "Simplify each product",
+        "workingLatex": "\\sin 3\\theta = 2\\sin\\theta\\cos^2\\theta + \\sin\\theta - 2\\sin^3\\theta",
+        "explanation": "Multiplying out both brackets tidies the expression. The middle term $\\sin\\theta$ and the $-2\\sin^3\\theta$ are already in terms of sine; only $2\\sin\\theta\\cos^2\\theta$ still contains a cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Eliminate the cosine with Pythagoras",
+        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta",
+        "explanation": "To reach an identity purely in $\\sin\\theta$ we replace $\\cos^2\\theta$ using $\\sin^2\\theta+\\cos^2\\theta\\equiv1$. This is the key move that removes the last cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute for cos squared",
+        "workingLatex": "\\sin 3\\theta = 2\\sin\\theta(1 - \\sin^2\\theta) + \\sin\\theta - 2\\sin^3\\theta",
+        "explanation": "Swapping $\\cos^2\\theta$ for $1-\\sin^2\\theta$ leaves every term written in $\\sin\\theta$, so the rest is pure algebra.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the bracket",
+        "workingLatex": "\\sin 3\\theta = 2\\sin\\theta - 2\\sin^3\\theta + \\sin\\theta - 2\\sin^3\\theta",
+        "explanation": "Distributing the $2\\sin\\theta$ over the bracket produces two sine terms and two cube terms, ready to be collected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Collect the sine terms",
+        "workingLatex": "2\\sin\\theta + \\sin\\theta = 3\\sin\\theta",
+        "explanation": "Adding the two first-power terms gives the $3\\sin\\theta$ that appears in the target identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Collect the cubed terms",
+        "workingLatex": "-2\\sin^3\\theta - 2\\sin^3\\theta = -4\\sin^3\\theta",
+        "explanation": "Adding the two cube terms gives $-4\\sin^3\\theta$, the second part of the required right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Assemble the result",
+        "workingLatex": "\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta",
+        "explanation": "Putting the collected terms together reproduces exactly the right-hand side of the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\text{LHS} = \\sin 90^\\circ = 1, \\quad \\text{RHS} = 3\\cdot\\tfrac{1}{2} - 4\\cdot\\left(\\tfrac{1}{2}\\right)^3 = \\tfrac{3}{2} - \\tfrac{1}{2} = 1",
+        "explanation": "Testing a convenient value guards against slips. With $\\theta = 30^\\circ$ both sides equal $1$, which supports the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Numerical check at theta = 45 degrees",
+        "workingLatex": "\\text{LHS} = \\sin 135^\\circ = \\tfrac{\\sqrt{2}}{2}, \\quad \\text{RHS} = 3\\cdot\\tfrac{\\sqrt{2}}{2} - 4\\cdot\\left(\\tfrac{\\sqrt{2}}{2}\\right)^3 = \\tfrac{3\\sqrt{2}}{2} - \\sqrt{2} = \\tfrac{\\sqrt{2}}{2}",
+        "explanation": "A second test at $\\theta = 45^\\circ$ also balances, since $\\left(\\tfrac{\\sqrt{2}}{2}\\right)^3 = \\tfrac{\\sqrt{2}}{4}$ and $4\\cdot\\tfrac{\\sqrt{2}}{4}=\\sqrt{2}$. Two agreeing checks give strong confidence.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Conclude",
+        "workingLatex": "\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta",
+        "explanation": "Every step was an exact algebraic equality holding for all $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos^4\\theta - \\sin^4\\theta \\equiv \\cos 2\\theta$"
+    "finalAnswer": "The chain $\\sin 3\\theta = \\sin(2\\theta+\\theta) = \\sin 2\\theta\\cos\\theta + \\cos 2\\theta\\sin\\theta$, followed by the double-angle substitutions and $\\cos^2\\theta = 1-\\sin^2\\theta$, gives $\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta$."
   }
 }

@@ -4,61 +4,61 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "horizontal tangent",
-    "coordinates"
+    "parametric",
+    "position",
+    "solve for t"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3 - 3t$. Find the coordinates of the points where the curve has a horizontal tangent.",
+  "questionText": "A cyclist's position on a track is modelled by $x = 2t + 1$ and $y = t^{2}$, where $x$ and $y$ are in metres and $t$ is in seconds. Find the time at which the cyclist is at the point where $x = 9$, and the value of $y$ there.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the condition",
-        "workingLatex": "\\frac{dy}{dt} = 0",
-        "explanation": "A horizontal tangent requires the vertical rate of change to be zero.",
+        "description": "Use the given x-value",
+        "workingLatex": "2t + 1 = 9",
+        "explanation": "We are told the horizontal position is $9$, so we set the $x$-equation equal to $9$ to find the time.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate y",
-        "workingLatex": "\\frac{dy}{dt} = 3t^2 - 3",
-        "explanation": "Differentiating $y = t^3 - 3t$ gives $3t^2 - 3$.",
+        "description": "Rearrange the equation",
+        "workingLatex": "2t = 8",
+        "explanation": "Subtracting $1$ from both sides isolates the term containing $t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
         "description": "Solve for t",
-        "workingLatex": "3t^2 - 3 = 0 \\;\\Rightarrow\\; t = \\pm 1",
-        "explanation": "Setting the derivative to zero gives two parameter values.",
+        "workingLatex": "t = 4",
+        "explanation": "Dividing by $2$ gives the time at which the cyclist reaches that horizontal position.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the point for t = 1",
-        "workingLatex": "x = 1, \\; y = 1 - 3 = -2 \\;\\Rightarrow\\; (1, -2)",
-        "explanation": "Substituting $t = 1$ into both equations.",
+        "description": "Substitute into the y-equation",
+        "workingLatex": "y = (4)^{2}",
+        "explanation": "Using the time we just found in the $y$-equation gives the height at that point.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the point for t = -1",
-        "workingLatex": "x = 1, \\; y = -1 + 3 = 2 \\;\\Rightarrow\\; (1, 2)",
-        "explanation": "Substituting $t = -1$; note the same $x$ but different $y$.",
+        "description": "Evaluate y",
+        "workingLatex": "y = 16",
+        "explanation": "Squaring gives the value of $y$ at that moment.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "(1, -2) \\text{ and } (1, 2)",
-        "explanation": "These are the two points with horizontal tangents.",
+        "description": "State the result",
+        "workingLatex": "t = 4, \\quad (x,\\,y) = (9,\\,16)",
+        "explanation": "So the cyclist is at $x = 9$ when $t = 4$ seconds, at the point $(9,\\,16)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(1, -2)$ and $(1, 2)$"
+    "finalAnswer": "The cyclist is at $x = 9$ when $t = 4$ s, where $y = 16$ (the point $(9,\\,16)$)."
   }
 }

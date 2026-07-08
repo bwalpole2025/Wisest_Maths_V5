@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.stats.normal-distribution.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "simultaneous equations",
+    "probability"
+  ],
+  "questionText": "The reaction times, $X$ seconds, of drivers in a test are modelled by $X \\sim N(\\mu, \\sigma^2)$. It is found that $25\\%$ of drivers react in under $0.20$ s and $80\\%$ react in under $0.30$ s. (a) Find $\\mu$ and $\\sigma$ to $3$ significant figures. (b) Find the probability that a randomly chosen driver takes more than $0.28$ s to react.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 0.20) = 0.25, \\qquad P(X < 0.30) = 0.80",
+        "explanation": "Reaction times are normal with unknown $\\mu$ and $\\sigma$. ‘$25\\%$ under $0.20$ s’ gives $P(X<0.20)=0.25$ and ‘$80\\%$ under $0.30$ s’ gives $P(X<0.30)=0.80$. Both are lower-tail proportions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{0.20 - \\mu}{\\sigma}\\right) = 0.25",
+        "explanation": "Standardising $0.20$ with $Z=\\dfrac{X-\\mu}{\\sigma}$ preserves the lower-tail area of $0.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.25) = -0.6745",
+        "explanation": "The lower quartile of the standard normal is negative because a quarter of the area lies below it, to the left of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{0.20 - \\mu}{\\sigma} = -0.6745",
+        "explanation": "Equating the standardised value of $0.20$ with $z_1$ gives the first equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Standardise the second condition and read z",
+        "workingLatex": "P\\left(Z < \\dfrac{0.30 - \\mu}{\\sigma}\\right) = 0.80 \\ \\Rightarrow\\ z_2 = \\Phi^{-1}(0.80) = 0.8416",
+        "explanation": "The second statement is already lower-tail, so we standardise $0.30$ and read $z_2$ directly. As $80\\%>50\\%$ the value is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{0.30 - \\mu}{\\sigma} = 0.8416",
+        "explanation": "Equating the standardised value of $0.30$ with $z_2$ gives the second simultaneous equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "0.30 - 0.20 = (0.8416 - (-0.6745))\\,\\sigma \\ \\Rightarrow\\ 0.10 = 1.5161\\,\\sigma",
+        "explanation": "Subtracting the two ‘value $-\\ \\mu = z\\sigma$’ forms removes $\\mu$; the $0.10$ s gap spans about $1.52$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{0.10}{1.5161} = 0.06596",
+        "explanation": "Dividing the time gap by the standardised gap gives a standard deviation of about $0.0660$ s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 0.20 + 0.6745 \\times 0.06596 = 0.2445",
+        "explanation": "From the first equation $\\mu = 0.20 + 0.6745\\,\\sigma$. The mean reaction time of about $0.244$ s lies above $0.20$, consistent with a quarter of drivers being faster than $0.20$ s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the parameters (part a)",
+        "workingLatex": "\\mu \\approx 0.244, \\qquad \\sigma \\approx 0.0660",
+        "explanation": "To three significant figures the model is $X \\sim N(0.244,\\ 0.0660^2)$ seconds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up part (b) and standardise 0.28 s",
+        "workingLatex": "P(X > 0.28) = P\\left(Z > \\dfrac{0.28 - 0.244}{0.066}\\right)",
+        "explanation": "For part (b) we need an upper-tail probability, so we standardise $0.28$ using the parameters just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate the z-value",
+        "workingLatex": "z = \\dfrac{0.28 - 0.244}{0.066} = 0.545",
+        "explanation": "Since $0.28$ is a little above the mean of $0.244$, its standardised value is modestly positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the probability",
+        "workingLatex": "P(X > 0.28) = P(Z > 0.545) = 1 - \\Phi(0.545) = 0.2927",
+        "explanation": "The area to the right of a point just above the mean is a little under a half; here it is about $0.293$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the answer",
+        "workingLatex": "P(X > 0.28) \\approx 0.293",
+        "explanation": "So roughly $29.3\\%$ of drivers take longer than $0.28$ s to react, which is plausible for a time a little above the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 0.244$ s, $\\sigma \\approx 0.0660$ s. (b) $P(X > 0.28) \\approx 0.293$."
+  }
+}

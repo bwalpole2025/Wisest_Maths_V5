@@ -1,0 +1,86 @@
+{
+  "id": "al.y2.stats.normal-distribution.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the mean",
+    "quartiles",
+    "inverse normal"
+  ],
+  "questionText": "In an examination the marks, $X$, are modelled by a normal distribution $X \\sim N(\\mu,\\ 12^2)$ with unknown mean $\\mu$. The lower quartile of the marks is $55$, so that $25\\%$ of candidates score below $55$. Find the value of $\\mu$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and translate the information",
+        "workingLatex": "X \\sim N(\\mu,\\ 12^2), \\qquad P(X < 55) = 0.25",
+        "explanation": "The marks are normal with standard deviation $12$ and unknown mean. The lower quartile is the mark below which a quarter of candidates lie, so $P(X<55)=0.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Locate 55 relative to the mean",
+        "workingLatex": "0.25 < 0.5 \\ \\Rightarrow\\ 55 < \\mu",
+        "explanation": "A quarter of the area lies below $55$, which is less than half, so $55$ sits to the left of the mean. We therefore expect the mean $\\mu$ to be larger than $55$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the z-value for the lower quartile",
+        "workingLatex": "z = \\Phi^{-1}(0.25) = -0.6745",
+        "explanation": "The standard-normal value with $25\\%$ of the area beneath it is $-0.6745$, negative because the lower quartile sits below the centre of the distribution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the standardisation equation",
+        "workingLatex": "\\dfrac{55 - \\mu}{12} = -0.6745",
+        "explanation": "Standardising the mark $55$ must give the $z$ we found. Substituting $\\sigma=12$ leaves $\\mu$ as the only unknown in the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Clear the fraction",
+        "workingLatex": "55 - \\mu = 12 \\times (-0.6745) = -8.094",
+        "explanation": "Multiplying both sides by $12$ removes the denominator and gives a linear equation in $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange for the mean",
+        "workingLatex": "\\mu = 55 + 8.094",
+        "explanation": "Isolating $\\mu$ shows the mean is the quartile mark $55$ shifted upward by $8.094$, because the lower quartile lies below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the mean",
+        "workingLatex": "\\mu = 63.094",
+        "explanation": "Adding the two numbers gives the mean mark.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "\\mu \\approx 63.1 \\text{ marks}",
+        "explanation": "To three significant figures the mean mark is $63.1$, comfortably above the lower quartile of $55$ as expected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the answer reproduces the given probability",
+        "workingLatex": "\\Phi\\!\\left(\\dfrac{55 - 63.1}{12}\\right) = \\Phi(-0.675) \\approx 0.25",
+        "explanation": "Standardising $55$ with the found mean returns about $-0.675$, whose lower-tail area is $0.25$, confirming that $55$ really is the lower quartile.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 63.1$ marks."
+  }
+}

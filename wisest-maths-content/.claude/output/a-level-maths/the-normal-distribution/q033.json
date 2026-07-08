@@ -1,0 +1,93 @@
+{
+  "id": "al.y2.stats.normal-distribution.q033",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the mean",
+    "standardising",
+    "inverse normal"
+  ],
+  "questionText": "A machine fills bags with sugar. The mass, $X$ grams, of sugar in a bag is modelled by $X \\sim N(\\mu,\\ 2.5^2)$, where $\\mu$ is unknown. It is found that $10\\%$ of bags contain less than $48$ g. Find the value of $\\mu$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and translate the information",
+        "workingLatex": "X \\sim N(\\mu,\\ 2.5^2), \\qquad P(X < 48) = 0.10",
+        "explanation": "The masses are normal with an unknown mean $\\mu$ and a known standard deviation $2.5$. The phrase ‘$10\\%$ contain less than $48$ g’ tells us the proportion of the distribution below $48$ is $0.10$, so $P(X<48)=0.10$. This single fact is enough to pin down $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Locate 48 relative to the mean",
+        "workingLatex": "P(X < 48) = 0.10 < 0.5 \\ \\Rightarrow\\ 48 < \\mu",
+        "explanation": "Because only $10\\%$ of the area lies below $48$, that value must sit to the left of the mean, where less than half the distribution falls. We therefore expect $\\mu>48$, which is a useful sanity check for the end.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the z-value for the 10th percentile",
+        "workingLatex": "z = \\Phi^{-1}(0.10) = -1.2816",
+        "explanation": "Standardising turns any normal value into a value of $Z\\sim N(0,1)$. The $z$ with $10\\%$ of the standard-normal area below it is $-1.2816$; it is negative because it lies to the left of the standard-normal mean $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the standardisation relationship",
+        "workingLatex": "Z = \\dfrac{X - \\mu}{\\sigma}",
+        "explanation": "Standardising measures how many standard deviations a value lies from the mean. The particular mass $48$ corresponds to the $z$-score we just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the equation for the unknown mean",
+        "workingLatex": "\\dfrac{48 - \\mu}{2.5} = -1.2816",
+        "explanation": "Replacing $X$ by $48$ and $\\sigma$ by $2.5$ turns the abstract standardisation into an equation whose only unknown is $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Clear the fraction",
+        "workingLatex": "48 - \\mu = 2.5 \\times (-1.2816) = -3.204",
+        "explanation": "Multiplying both sides by $2.5$ removes the denominator and leaves a simple linear equation in $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange for the mean",
+        "workingLatex": "\\mu = 48 + 3.204",
+        "explanation": "Rearranging gives $\\mu = 48 - 2.5z$; since $z$ is negative this adds to $48$, pushing the mean above the value $48$ exactly as we predicted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute the mean",
+        "workingLatex": "\\mu = 51.204",
+        "explanation": "Carrying out the addition gives the mean mass in grams.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "\\mu \\approx 51.2 \\text{ g}",
+        "explanation": "Rounding to three significant figures gives the required mean. It lies above $48$ g, matching the earlier deduction that fewer than half the bags weigh less than $48$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the answer reproduces the given probability",
+        "workingLatex": "P(X < 48) = \\Phi\\!\\left(\\dfrac{48 - 51.2}{2.5}\\right) = \\Phi(-1.28) \\approx 0.10",
+        "explanation": "Standardising $48$ with the found mean returns $z\\approx-1.28$, whose lower-tail probability is about $0.10$. This confirms the mean reproduces the stated $10\\%$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 51.2$ g."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "comparing distributions"
+  ],
+  "questionText": "In an examination, a candidate scores $72$ on Paper 1, where the marks are modelled by $N(65, 10^2)$, and $68$ on Paper 2, where the marks are modelled by $N(60, 6^2)$. By standardising each score, determine on which paper the candidate performed better relative to the other candidates. Give probabilities to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Explain the strategy for comparing the papers",
+        "workingLatex": "z = \\dfrac{x - \\mu}{\\sigma}",
+        "explanation": "The two papers have different means and standard deviations, so the raw marks cannot be compared directly. Standardising each mark measures how many standard deviations above the mean it is, giving a fair comparison of relative performance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the Paper 1 score",
+        "workingLatex": "z_1 = \\dfrac{72 - 65}{10} = 0.7",
+        "explanation": "On Paper 1 the candidate scored $72$ against a mean of $65$ with $\\sigma = 10$, which is $0.7$ standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the Paper 2 score",
+        "workingLatex": "z_2 = \\dfrac{68 - 60}{6} = 1.333",
+        "explanation": "On Paper 2 the candidate scored $68$ against a mean of $60$ with $\\sigma = 6$, which is $1.333$ standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compare the two z-values",
+        "workingLatex": "z_2 = 1.333 > z_1 = 0.7",
+        "explanation": "Both marks are above their respective means, but the Paper 2 mark stands more standard deviations clear of its mean, which already suggests a stronger relative performance there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the percentile for Paper 1",
+        "workingLatex": "\\Phi(0.7) = 0.7580",
+        "explanation": "The proportion of candidates scoring below the Paper 1 mark is $\\Phi(0.7) = 0.7580$, so this mark beats about $75.8\\%$ of candidates on that paper.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the percentile for Paper 2",
+        "workingLatex": "\\Phi(1.333) = 0.9088",
+        "explanation": "The proportion below the Paper 2 mark is $\\Phi(1.333) = 0.9088$, so this mark beats about $90.9\\%$ of candidates on that paper.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Interpret the proportions scoring higher",
+        "workingLatex": "1 - 0.9088 = 0.0912, \\qquad 1 - 0.7580 = 0.2420",
+        "explanation": "Only about $9.1\\%$ of candidates beat the candidate on Paper 2, compared with about $24.2\\%$ on Paper 1: fewer people outperformed the candidate on Paper 2.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State which paper is the stronger performance",
+        "workingLatex": "z_2 > z_1 \\ \\Rightarrow\\ \\text{Paper 2 is the stronger result}",
+        "explanation": "Because the standardised score is higher on Paper 2, and the candidate sits at a higher percentile there, Paper 2 is the better performance relative to the other candidates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude",
+        "workingLatex": "\\text{Better relative performance: Paper 2}",
+        "explanation": "The larger raw mark was on Paper 1, but relative to the group the candidate did better on Paper 2. Standardising makes this comparison possible and reliable.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$z_1 = 0.7$ (percentile $0.7580$) and $z_2 = 1.333$ (percentile $0.9088$); the candidate performed better relative to others on Paper 2."
+  }
+}

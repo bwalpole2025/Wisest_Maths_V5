@@ -8,49 +8,64 @@
   "marks": 4,
   "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "Rcos"
+    "cosine form"
   ],
-  "questionText": "Express $7\\cos\\theta - 24\\sin\\theta$ in the form $R\\cos(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving $\\alpha$ to the nearest degree.",
+  "questionText": "Express $\\cos\\theta - \\sin\\theta$ in the form $R\\cos(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$. Give exact values.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the target form",
-        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
-        "explanation": "The cosine form has a minus between the terms, matching the given expression.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\cos\\theta - \\sin\\theta \\equiv R\\cos(\\theta+\\alpha)",
+        "explanation": "Because the expression is written in terms of $\\cos\\theta$ first, the natural single-wave target is the cosine form $R\\cos(\\theta+\\alpha)$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 7, \\quad R\\sin\\alpha = 24",
-        "explanation": "Matching the cosine term gives $7$; matching the sine term (both negative) gives $24$.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\cos(\\theta+\\alpha) = R\\cos\\alpha\\,\\cos\\theta - R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta+\\alpha)=\\cos\\theta\\cos\\alpha-\\sin\\theta\\sin\\alpha$ gives a multiple of $\\cos\\theta$ minus a multiple of $\\sin\\theta$, matching the layout of the original.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find R",
-        "workingLatex": "R^2 = 7^2 + 24^2 = 625 \\;\\Rightarrow\\; R = 25",
-        "explanation": "The sum of squares is $625$ (a $7$-$24$-$25$ triangle), so $R = 25$.",
+        "description": "Compare coefficients of cosθ and sinθ",
+        "workingLatex": "R\\cos\\alpha = 1, \\qquad R\\sin\\alpha = 1",
+        "explanation": "The coefficient of $\\cos\\theta$ gives $R\\cos\\alpha=1$; the coefficient of $\\sin\\theta$ is $-1$ on both sides, so $-R\\sin\\alpha=-1$, that is $R\\sin\\alpha=1$. The minus signs already agree.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{24}{7} \\;\\Rightarrow\\; \\alpha \\approx 74^\\circ",
-        "explanation": "The ratio gives the tangent of $\\alpha$; the inverse tangent is about $74^\\circ$.",
+        "description": "Find R using R² = a² + b²",
+        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt{2}",
+        "explanation": "Squaring and adding the two equations eliminates $\\alpha$ through $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=2$, so the positive amplitude is $R=\\sqrt{2}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the final form",
-        "workingLatex": "7\\cos\\theta - 24\\sin\\theta = 25\\cos(\\theta + 74^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$ gives the required form.",
+        "description": "Find α using tanα = b/a",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{1} = 1 \\Rightarrow \\alpha = 45^\\circ",
+        "explanation": "Dividing $R\\sin\\alpha$ by $R\\cos\\alpha$ cancels $R$ and gives $\\tan\\alpha=1$. Both values are positive, so $\\alpha$ is acute and equals $45^\\circ$ exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the R-form",
+        "workingLatex": "\\cos\\theta - \\sin\\theta = \\sqrt{2}\\,\\cos(\\theta+45^\\circ)",
+        "explanation": "Combining $R=\\sqrt{2}$ and $\\alpha=45^\\circ$ gives the single cosine wave, which ranges between $-\\sqrt{2}$ and $\\sqrt{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check by expanding back",
+        "workingLatex": "\\sqrt{2}\\,\\cos(\\theta+45^\\circ) = \\sqrt{2}\\left(\\dfrac{\\sqrt{2}}{2}\\cos\\theta - \\dfrac{\\sqrt{2}}{2}\\sin\\theta\\right) = \\cos\\theta - \\sin\\theta",
+        "explanation": "Expanding the answer recovers the original expression exactly, confirming that the cosine form and its sign are correct.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$7\\cos\\theta - 24\\sin\\theta = 25\\cos(\\theta + 74^\\circ)$"
+    "finalAnswer": "$\\cos\\theta - \\sin\\theta = \\sqrt{2}\\,\\cos(\\theta+45^\\circ)$."
   }
 }

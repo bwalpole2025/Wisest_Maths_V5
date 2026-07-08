@@ -1,0 +1,106 @@
+{
+  "id": "al.y2.pure.implicit.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "product rule",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $2x^2 - xy + y^2 = 16$. Find an equation of the tangent to $C$ at the point $(2, 4)$, giving your answer in the form $ax + by = c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(2x^2) - \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(16)",
+        "explanation": "We differentiate the whole relation with respect to $x$. The middle term $xy$ is a product, so it will need the product rule; the constant $16$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the power terms",
+        "workingLatex": "\\frac{d}{dx}(2x^2) = 4x, \\qquad \\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "The term $2x^2$ gives $4x$ by the power rule. The term $y^2$ gives $2y\\frac{dy}{dx}$, where the $\\frac{dy}{dx}$ comes from the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the xy term with the product rule",
+        "workingLatex": "\\frac{d}{dx}(xy) = y + x\\frac{dy}{dx}",
+        "explanation": "For the product $xy$: differentiate $x$ to $1$ (times $y$) and add $x$ times $\\frac{dy}{dx}$ (differentiating $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "4x - \\left(y + x\\frac{dy}{dx}\\right) + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Because the $xy$ term is subtracted, the whole product-rule result is subtracted, so we keep it in brackets to handle the sign carefully.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Remove the brackets",
+        "workingLatex": "4x - y - x\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Distributing the minus sign across the bracket gives $-y$ and $-x\\frac{dy}{dx}$, ready for collecting terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(2y - x)\\frac{dy}{dx} = y - 4x",
+        "explanation": "Grouping the two $\\frac{dy}{dx}$ terms gives $(2y-x)\\frac{dy}{dx}$; moving $4x - y$ to the right leaves $y-4x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{y - 4x}{2y - x}",
+        "explanation": "Dividing by $(2y-x)$ isolates the gradient, which depends on both $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "2(2)^2 - (2)(4) + (4)^2 = 8 - 8 + 16 = 16 \\;\\checkmark",
+        "explanation": "We confirm $(2,4)$ satisfies $2x^2 - xy + y^2 = 16$, so the point is genuinely on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute the point to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(2,4)} = \\frac{4 - 4(2)}{2(4) - 2} = \\frac{4 - 8}{8 - 2} = \\frac{-4}{6} = -\\frac{2}{3}",
+        "explanation": "Substituting $x=2$ and $y=4$ into the gradient formula gives the tangent's gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Use the point-gradient form of a line",
+        "workingLatex": "y - 4 = -\\frac{2}{3}(x - 2)",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=-\\frac{2}{3}$ through $(2,4)$ sets up the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Clear the fraction and expand",
+        "workingLatex": "3(y - 4) = -2(x - 2) \\;\\Rightarrow\\; 3y - 12 = -2x + 4",
+        "explanation": "Multiplying by $3$ removes the fraction, and expanding both sides gives a form ready to rearrange.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Rearrange and state the result",
+        "workingLatex": "2x + 3y = 16 \\qquad\\left(\\frac{dy}{dx} = -\\frac{2}{3}\\text{ at }(2,4)\\right)",
+        "explanation": "Collecting terms gives the tangent $2x+3y=16$, with gradient $-\\frac{2}{3}$ at $(2,4)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $2x + 3y = 16$ (gradient $-\\frac{2}{3}$)."
+  }
+}

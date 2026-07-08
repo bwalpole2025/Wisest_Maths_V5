@@ -1,0 +1,106 @@
+{
+  "id": "al.y2.pure.implicit.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "tangent",
+    "normal"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + 4y^2 = 8$. Find equations of both the tangent and the normal to $C$ at the point $(2, 1)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(4y^2) = \\frac{d}{dx}(8)",
+        "explanation": "We differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$. The constant $8$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x + 8y\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^2$ gives $2x$. For $4y^2$ the chain rule gives $8y$ multiplied by $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x}{8y} = -\\frac{x}{4y}",
+        "explanation": "Dividing through by $8y$ isolates the gradient of the tangent at any point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Confirm the point lies on the curve",
+        "workingLatex": "2^2 + 4(1)^2 = 4 + 4 = 8 \\;\\checkmark",
+        "explanation": "Checking that $(2,1)$ satisfies the equation confirms it is a genuine point on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the tangent gradient at (2, 1)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(2,1)} = -\\frac{2}{4(1)} = -\\frac{1}{2}",
+        "explanation": "Substituting the point gives the tangent gradient $-\\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the equation of the tangent",
+        "workingLatex": "y - 1 = -\\frac{1}{2}(x - 2)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ with the tangent gradient $-\\tfrac{1}{2}$ through $(2,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the tangent",
+        "workingLatex": "2(y - 1) = -(x - 2) \\;\\Rightarrow\\; x + 2y = 4",
+        "explanation": "Clearing the fraction and rearranging gives the tangent in a clean form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the gradient of the normal",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{-\\tfrac{1}{2}} = 2",
+        "explanation": "The normal is perpendicular to the tangent, so its gradient is $-1$ divided by the tangent gradient, giving $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write the equation of the normal",
+        "workingLatex": "y - 1 = 2(x - 2)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ with the normal gradient $2$ through $(2,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Expand the bracket",
+        "workingLatex": "y - 1 = 2x - 4",
+        "explanation": "Multiplying out the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Simplify the normal",
+        "workingLatex": "2x - y = 3",
+        "explanation": "Rearranging into a clean form gives the normal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State both results",
+        "workingLatex": "\\text{Tangent: } x + 2y = 4, \\qquad \\text{Normal: } 2x - y = 3",
+        "explanation": "So at $(2,1)$ the tangent is $x + 2y = 4$ and the normal is $2x - y = 3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent $x + 2y = 4$; normal $2x - y = 3$."
+  }
+}

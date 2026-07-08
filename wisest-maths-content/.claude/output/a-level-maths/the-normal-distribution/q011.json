@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.stats.normal-distribution.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "symmetry"
+  ],
+  "questionText": "The marks, $X$, scored by students in a test are modelled by $X \\sim N(60, 10^2)$. Find $P(X < 48)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "X \\sim N(60,\\ 10^2), \\qquad P(X < 48) = \\ ?",
+        "explanation": "The marks are normal with mean $\\mu = 60$ and standard deviation $\\sigma = 10$. We want the probability that a student scores less than $48$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standardisation",
+        "workingLatex": "Z = \\dfrac{X - 60}{10}, \\qquad Z \\sim N(0,1)",
+        "explanation": "We convert a mark into a $z$-score by subtracting the mean and dividing by the standard deviation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 48",
+        "workingLatex": "z = \\dfrac{48 - 60}{10} = \\dfrac{-12}{10} = -1.2",
+        "explanation": "The mark $48$ is $12$ below the mean, which is $1.2$ standard deviations of $10$. It is negative because $48$ lies to the left of the mean, giving $z = -1.2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X < 48) = P(Z < -1.2) = \\Phi(-1.2)",
+        "explanation": "Being below $48$ is the same event as $Z$ being below $-1.2$, a left-tail area written $\\Phi(-1.2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use symmetry to switch to a positive value",
+        "workingLatex": "\\Phi(-1.2) = 1 - \\Phi(1.2)",
+        "explanation": "By symmetry about $0$, the area to the left of $-1.2$ equals the area to the right of $+1.2$, which is $1 - \\Phi(1.2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "1 - \\Phi(1.2) = 1 - 0.8849 = 0.1151",
+        "explanation": "The cumulative value at $z = 1.2$ is $\\Phi(1.2) = 0.8849$, so the tail is $1 - 0.8849 = 0.1151$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "P(X < 48) \\approx 0.1151",
+        "explanation": "So about $11.5\\%$ of students score less than $48$. This is a fairly small fraction, since $48$ is more than one standard deviation below the mean mark.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X < 48) \\approx 0.1151$."
+  }
+}

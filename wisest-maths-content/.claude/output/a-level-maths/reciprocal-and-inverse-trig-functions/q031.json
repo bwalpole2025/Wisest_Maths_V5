@@ -6,66 +6,95 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "proof",
+  "answerType": "exact",
   "tags": [
-    "identities",
-    "proof",
-    "secant"
+    "pythagorean identity",
+    "sec",
+    "cosec",
+    "recognise identity"
   ],
-  "questionText": "Prove that $\\sec\\theta - \\cos\\theta \\equiv \\sin\\theta\\tan\\theta$.",
+  "questionText": "Given that $\\tan\\theta = \\tfrac{2}{3}$ and that $\\theta$ is acute, work out the exact values of $\\sec^2\\theta - \\tan^2\\theta$ and $\\operatorname{cosec}^2\\theta - \\cot^2\\theta$, and explain why each result does not depend on the value of $\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\sec\\theta - \\cos\\theta",
-        "explanation": "Working from one side towards the other is the cleanest way to prove an identity; we choose the left-hand side.",
+        "description": "Recall the identity for sec squared",
+        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
+        "explanation": "The Pythagorean identity $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$ lets us turn the known $\\tan\\theta$ into $\\sec^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite secant as a reciprocal",
-        "workingLatex": "= \\frac{1}{\\cos\\theta} - \\cos\\theta",
-        "explanation": "Converting secant into one over cosine puts both terms in cosine, ready to be combined.",
+        "description": "Compute tan squared",
+        "workingLatex": "\\tan^2\\theta = \\left(\\tfrac{2}{3}\\right)^2 = \\tfrac{4}{9}",
+        "explanation": "Squaring the given tangent gives the value we will substitute into the identity.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Form a common denominator",
-        "workingLatex": "= \\frac{1 - \\cos^2\\theta}{\\cos\\theta}",
-        "explanation": "Combining over the common denominator $\\cos\\theta$ merges the two terms into a single fraction.",
+        "description": "Find sec squared",
+        "workingLatex": "\\sec^2\\theta = 1 + \\tfrac{4}{9} = \\tfrac{13}{9}",
+        "explanation": "Adding $1$ to $\\tan^2\\theta$ gives $\\sec^2\\theta$ as a single fraction.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "1 - \\cos^2\\theta = \\sin^2\\theta",
-        "explanation": "The numerator is exactly the Pythagorean identity rearranged, so it becomes $\\sin^2\\theta$.",
+        "description": "Evaluate sec squared minus tan squared",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = \\tfrac{13}{9} - \\tfrac{4}{9} = \\tfrac{9}{9} = 1",
+        "explanation": "Subtracting the two fractions leaves exactly $1$. The $\\tfrac{4}{9}$ we added to make $\\sec^2\\theta$ is removed again by the subtraction.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute the numerator",
-        "workingLatex": "= \\frac{\\sin^2\\theta}{\\cos\\theta}",
-        "explanation": "The fraction now has $\\sin^2\\theta$ on top, which we will split to reveal a tangent.",
+        "description": "Recognise this as the identity rearranged",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta \\equiv 1",
+        "explanation": "This is just $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$ rearranged, so the answer is $1$ for every valid $\\theta$, not only this one. The specific value of $\\tan\\theta$ never mattered.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Split off a tangent",
-        "workingLatex": "= \\sin\\theta \\cdot \\frac{\\sin\\theta}{\\cos\\theta}",
-        "explanation": "Separating one factor of sine leaves $\\frac{\\sin\\theta}{\\cos\\theta}$, which is tangent.",
+        "description": "Find cot for the second expression",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{1}{\\tfrac{2}{3}} = \\tfrac{3}{2}",
+        "explanation": "Cotangent is the reciprocal of tangent, giving the value we need for the cosecant identity.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Recognise the tangent and conclude",
-        "workingLatex": "= \\sin\\theta\\tan\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "This matches the right-hand side exactly, so the identity is proved.",
+        "description": "Compute cot squared",
+        "workingLatex": "\\cot^2\\theta = \\left(\\tfrac{3}{2}\\right)^2 = \\tfrac{9}{4}",
+        "explanation": "Squaring the cotangent prepares it for the identity $1 + \\cot^2\\theta \\equiv \\operatorname{cosec}^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find cosec squared",
+        "workingLatex": "\\operatorname{cosec}^2\\theta = 1 + \\cot^2\\theta = 1 + \\tfrac{9}{4} = \\tfrac{13}{4}",
+        "explanation": "Adding $1$ to $\\cot^2\\theta$ gives $\\operatorname{cosec}^2\\theta$ as a single fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate cosec squared minus cot squared",
+        "workingLatex": "\\operatorname{cosec}^2\\theta - \\cot^2\\theta = \\tfrac{13}{4} - \\tfrac{9}{4} = \\tfrac{4}{4} = 1",
+        "explanation": "Once again the difference is exactly $1$, because subtracting $\\cot^2\\theta$ undoes the $\\cot^2\\theta$ that was added to build $\\operatorname{cosec}^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recognise the second identity",
+        "workingLatex": "\\operatorname{cosec}^2\\theta - \\cot^2\\theta \\equiv 1",
+        "explanation": "This is $1 + \\cot^2\\theta \\equiv \\operatorname{cosec}^2\\theta$ rearranged, so it also equals $1$ for every valid $\\theta$, independent of the particular angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the results",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = 1, \\qquad \\operatorname{cosec}^2\\theta - \\cot^2\\theta = 1",
+        "explanation": "Both expressions equal $1$, and because each is simply a Pythagorean identity written in a different order, the value of $\\theta$ used to check it makes no difference.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sec\\theta - \\cos\\theta \\equiv \\sin\\theta\\tan\\theta$"
+    "finalAnswer": "$\\sec^2\\theta - \\tan^2\\theta = 1$ and $\\operatorname{cosec}^2\\theta - \\cot^2\\theta = 1$. Each is a Pythagorean identity ($1+\\tan^2\\theta\\equiv\\sec^2\\theta$ and $1+\\cot^2\\theta\\equiv\\operatorname{cosec}^2\\theta$) rearranged, so the result is $1$ for every valid $\\theta$, regardless of its value."
   }
 }

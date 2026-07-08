@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "vertical tangent",
+    "circle"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + y^2 - 6x - 2y + 1 = 0$. Find the coordinates of the points on $C$ where the tangent is parallel to the $y$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the equation term by term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) - \\frac{d}{dx}(6x) - \\frac{d}{dx}(2y) + \\frac{d}{dx}(1) = 0",
+        "explanation": "We differentiate the whole relation with respect to $x$, treating $y$ as a function of $x$. The constant $1$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} - 6 - 2\\frac{dy}{dx} = 0",
+        "explanation": "The $y$-terms carry a factor of $\\frac{dy}{dx}$ from the chain rule: $y^2 \\to 2y\\frac{dy}{dx}$ and $2y \\to 2\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(2y - 2)\\frac{dy}{dx} = 6 - 2x",
+        "explanation": "Grouping the $\\frac{dy}{dx}$ terms on the left lets us isolate the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject and simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{6 - 2x}{2y - 2} = \\frac{3 - x}{y - 1}",
+        "explanation": "Dividing by $(2y - 2)$ and cancelling the common factor of $2$ gives the gradient as a fraction in $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the condition for a tangent parallel to the y-axis",
+        "workingLatex": "\\text{Tangent vertical} \\;\\Rightarrow\\; y - 1 = 0 \\;\\Rightarrow\\; y = 1",
+        "explanation": "A tangent parallel to the $y$-axis is vertical, so its gradient is undefined. This happens where the denominator of $\\frac{dy}{dx}$ is zero while the numerator is not.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute y = 1 into the equation of C",
+        "workingLatex": "x^2 + 1^2 - 6x - 2(1) + 1 = 0",
+        "explanation": "The points lie on $C$, so we put $y = 1$ into the curve equation to find the matching $x$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify",
+        "workingLatex": "x^2 - 6x = 0",
+        "explanation": "The constants $1 - 2 + 1 = 0$ cancel, leaving a simple quadratic with no constant term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factorise and solve for x",
+        "workingLatex": "x(x - 6) = 0 \\;\\Rightarrow\\; x = 0 \\text{ or } x = 6",
+        "explanation": "Factoring out $x$ shows the two solutions directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the numerator is non-zero",
+        "workingLatex": "3 - x = 3 \\text{ or } -3, \\text{ both } \\neq 0",
+        "explanation": "We confirm the numerator $3 - x$ is non-zero at each point, so the gradient is genuinely undefined (a true vertical tangent) rather than the indeterminate form $\\frac{0}{0}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the coordinates",
+        "workingLatex": "(0,\\, 1) \\quad\\text{and}\\quad (6,\\, 1)",
+        "explanation": "These are the two points on $C$ where the tangent is parallel to the $y$-axis — the left and right extremes of the circle.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent is parallel to the $y$-axis at $(0,\\, 1)$ and $(6,\\, 1)$."
+  }
+}

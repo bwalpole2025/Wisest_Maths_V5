@@ -4,68 +4,67 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
   "tags": [
-    "compound angles",
-    "given ratios",
-    "sine"
+    "double angle",
+    "simplify"
   ],
-  "questionText": "Given that $\\sin A = \\dfrac{3}{5}$ with $A$ acute, and $\\cos B = \\dfrac{5}{13}$ with $B$ acute, find the exact value of $\\sin(A + B)$.",
+  "questionText": "Write $2\\sin 20^\\circ\\cos 20^\\circ$ as a single trigonometric ratio of the form $\\sin k^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write the compound angle formula",
-        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
-        "explanation": "We will need all four of $\\sin A, \\cos A, \\sin B, \\cos B$, so we find the two that are missing.",
+        "description": "Write down the expression",
+        "workingLatex": "E = 2\\sin 20^\\circ\\cos 20^\\circ",
+        "explanation": "First look at the shape: a $2$ multiplying a sine and a cosine of the same angle. That is exactly the right-hand side of a double-angle formula.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find cos A",
-        "workingLatex": "\\cos A = \\sqrt{1 - \\tfrac{9}{25}} = \\frac{4}{5}",
-        "explanation": "Using the Pythagorean identity with acute $A$ gives a positive cosine of $\\frac{4}{5}$ (a $3$-$4$-$5$ triangle).",
+        "description": "Recall the sine double-angle formula",
+        "workingLatex": "\\sin 2A = 2\\sin A\\cos A",
+        "explanation": "Reading $\\sin 2A=2\\sin A\\cos A$ from right to left lets us collapse a product into a single sine.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find sin B",
-        "workingLatex": "\\sin B = \\sqrt{1 - \\tfrac{25}{169}} = \\frac{12}{13}",
-        "explanation": "Similarly, acute $B$ gives a positive sine of $\\frac{12}{13}$ (a $5$-$12$-$13$ triangle).",
+        "description": "Match the angle",
+        "workingLatex": "A = 20^\\circ",
+        "explanation": "Here the repeated angle is $20^\\circ$, so we identify $A=20^\\circ$ in the formula.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute all values",
-        "workingLatex": "\\sin(A + B) = \\frac{3}{5}\\cdot\\frac{5}{13} + \\frac{4}{5}\\cdot\\frac{12}{13}",
-        "explanation": "Inserting the four values sets up the arithmetic.",
+        "description": "Apply the formula",
+        "workingLatex": "2\\sin 20^\\circ\\cos 20^\\circ = \\sin(2\\times 20^\\circ)",
+        "explanation": "Substituting $A=20^\\circ$ replaces the whole product with the sine of the doubled angle.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Multiply out each product",
-        "workingLatex": "= \\frac{15}{65} + \\frac{48}{65}",
-        "explanation": "Both products share the denominator $65$.",
+        "description": "Double the angle",
+        "workingLatex": "= \\sin 40^\\circ",
+        "explanation": "Doubling $20^\\circ$ gives $40^\\circ$, the single ratio we were asked for.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Add the fractions",
-        "workingLatex": "= \\frac{63}{65}",
-        "explanation": "Adding the numerators gives $\\frac{63}{65}$.",
+        "description": "Check numerically",
+        "workingLatex": "2\\sin 20^\\circ\\cos 20^\\circ \\approx 0.643, \\quad \\sin 40^\\circ \\approx 0.643",
+        "explanation": "Both sides evaluate to about $0.643$, confirming the simplification.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Check the value is valid",
-        "workingLatex": "\\left|\\frac{63}{65}\\right| \\le 1 \\;\\checkmark",
-        "explanation": "The value is within the valid range for sine, confirming it is reasonable.",
+        "description": "State the result",
+        "workingLatex": "2\\sin 20^\\circ\\cos 20^\\circ = \\sin 40^\\circ",
+        "explanation": "The product has collapsed to a single sine, as required.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin(A + B) = \\dfrac{63}{65}$"
+    "finalAnswer": "$2\\sin 20^\\circ\\cos 20^\\circ = \\sin 40^\\circ$."
   }
 }

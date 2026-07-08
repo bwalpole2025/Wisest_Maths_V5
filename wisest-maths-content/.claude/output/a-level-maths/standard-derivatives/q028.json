@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "exponential"
+  ],
+  "questionText": "Find an equation of the tangent to the curve $y = 2^x$ at the point where $x = 1$. Give your answer in exact form, leaving the gradient in terms of $\\ln 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "The tangent gradient is the derivative at the point",
+        "workingLatex": "m = \\left.\\frac{dy}{dx}\\right|_{x=1}",
+        "explanation": "We differentiate to get the gradient function, then evaluate it at $x=1$ to find the tangent's gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standard derivative of a^x",
+        "workingLatex": "\\frac{d}{dx}\\left(a^x\\right) = a^x \\ln a",
+        "explanation": "The standard result for an exponential with base $a$ brings in a factor of $\\ln a$. Here the base is $a=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = 2^x \\ln 2",
+        "explanation": "Applying the rule with $a=2$ gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the gradient at x = 1",
+        "workingLatex": "m = 2^1 \\ln 2 = 2\\ln 2",
+        "explanation": "Substituting $x=1$; since $2^1=2$, the exact gradient is $2\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate of the point of contact",
+        "workingLatex": "y = 2^1 = 2",
+        "explanation": "On the curve at $x=1$, giving the point $(1,\\ 2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the point and gradient",
+        "workingLatex": "(1,\\ 2), \\qquad m = 2\\ln 2",
+        "explanation": "We are ready to form the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the point–gradient form",
+        "workingLatex": "y - 2 = 2\\ln 2\\,(x - 1)",
+        "explanation": "Substitute the point and gradient into $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the bracket",
+        "workingLatex": "y = 2\\ln 2 \\cdot x - 2\\ln 2 + 2",
+        "explanation": "Multiplying $2\\ln 2$ through $(x-1)$ and adding the $2$ from the left-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write the tangent tidily",
+        "workingLatex": "y = (2\\ln 2)\\,x + 2 - 2\\ln 2",
+        "explanation": "Grouping the constant terms gives the tangent in a clean exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check it passes through (1, 2)",
+        "workingLatex": "x=1:\\ (2\\ln 2)(1) + 2 - 2\\ln 2 = 2 \\ \\checkmark",
+        "explanation": "The line gives $y=2$ at $x=1$, confirming it is the tangent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = (2\\ln 2)\\,x + 2 - 2\\ln 2$ (equivalently $y = 2\\ln 2\\,(x - 1) + 2$)."
+  }
+}

@@ -5,68 +5,117 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "interval",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving",
-    "full method"
+    "reciprocal",
+    "range"
   ],
-  "questionText": "Express $2\\sin\\theta - \\sqrt5\\cos\\theta$ as $R\\sin(\\theta - \\alpha)$ and hence solve $2\\sin\\theta - \\sqrt5\\cos\\theta = 1.5$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionText": "The function $h$ is given by $h(\\theta)=\\dfrac{30}{12+6\\sin\\theta-8\\cos\\theta}$ for $0^\\circ\\le\\theta<360^\\circ$. Express $6\\sin\\theta-8\\cos\\theta$ in the form $R\\sin(\\theta-\\alpha)$ with $R>0$ and $0^\\circ<\\alpha<90^\\circ$, and hence find the range of $h$, stating the value of $\\theta$ at which the greatest and least values occur.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{2^2 + (\\sqrt5)^2} = \\sqrt{4 + 5} = 3",
-        "explanation": "The sum of squares is $9$, so $R = 3$ exactly.",
+        "description": "Choose the target form",
+        "workingLatex": "6\\sin\\theta-8\\cos\\theta \\equiv R\\sin(\\theta-\\alpha)",
+        "explanation": "The cosine term is subtracted, so we match against $R\\sin(\\theta-\\alpha)$; compressing the denominator's varying part to one wave reveals its range.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{\\sqrt5}{2} \\;\\Rightarrow\\; \\alpha \\approx 48.19^\\circ",
-        "explanation": "The ratio gives the phase angle.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta-\\alpha)=R\\cos\\alpha\\,\\sin\\theta-R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding the compound angle gives a $\\sin\\theta$ term minus a $\\cos\\theta$ term to compare against the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "2\\sin\\theta - \\sqrt5\\cos\\theta = 3\\sin(\\theta - 48.19^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=6,\\qquad R\\sin\\alpha=8",
+        "explanation": "Matching the coefficients of $\\sin\\theta$ and $\\cos\\theta$ gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set up the equation",
-        "workingLatex": "3\\sin(\\theta - 48.19^\\circ) = 1.5 \\;\\Rightarrow\\; \\sin(\\theta - 48.19^\\circ) = 0.5",
-        "explanation": "Dividing by $3$ gives a standard value.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{6^2+8^2}=\\sqrt{100}=10",
+        "explanation": "Squaring and adding eliminates $\\alpha$, giving $R^2=36+64=100$ and $R=10$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set the shifted interval",
-        "workingLatex": "-48.19^\\circ \\le \\theta - 48.19^\\circ < 311.81^\\circ",
-        "explanation": "Subtracting the shift from the bounds.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{8}{6}=\\dfrac{4}{3}\\Rightarrow\\alpha=53.13^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{4}{3}$; with both coefficients positive $\\alpha$ is acute and equals $53.13^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - 48.19^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine $0.5$ gives $30^\\circ$ and $150^\\circ$, both within the interval.",
+        "description": "Rewrite h",
+        "workingLatex": "h(\\theta)=\\dfrac{30}{12+10\\sin(\\theta-53.13^\\circ)}",
+        "explanation": "With the two terms merged, the denominator is $12$ plus a single sine wave of amplitude $10$, so its range is easy to find.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Add the shift and round",
-        "workingLatex": "\\theta \\approx 78^\\circ, 198^\\circ",
-        "explanation": "Adding $48.19^\\circ$ and rounding gives the two solutions.",
+        "description": "Bound the sine term",
+        "workingLatex": "-1\\le\\sin(\\theta-53.13^\\circ)\\le 1",
+        "explanation": "The sine term lies between $-1$ and $1$, and both extremes are reached over a full turn.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the range of the denominator",
+        "workingLatex": "2\\le 12+10\\sin(\\theta-53.13^\\circ)\\le 22",
+        "explanation": "Scaling by $10$ and adding $12$ gives a denominator that varies between $12-10=2$ and $12+10=22$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Apply reciprocal reasoning",
+        "workingLatex": "\\text{denominator} > 0 \\;\\Rightarrow\\; h \\text{ greatest when denominator least}",
+        "explanation": "The denominator stays positive, so the fraction is largest when the denominator is smallest and smallest when the denominator is largest. The extreme values follow at once, with no calculus.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Greatest value of h",
+        "workingLatex": "h_{\\max}=\\dfrac{30}{2}=15",
+        "explanation": "The smallest denominator $2$ gives the greatest value of $h$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Least value of h",
+        "workingLatex": "h_{\\min}=\\dfrac{30}{22}=\\dfrac{15}{11}",
+        "explanation": "The largest denominator $22$ gives the least value of $h$, which simplifies to $\\dfrac{15}{11}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Locate θ for the greatest value",
+        "workingLatex": "\\sin(\\theta-53.13^\\circ)=-1\\Rightarrow\\theta-53.13^\\circ=270^\\circ\\Rightarrow\\theta=323.13^\\circ",
+        "explanation": "The denominator is least when the sine term is $-1$, at an inside angle of $270^\\circ$; adding $53.13^\\circ$ gives $\\theta=323.13^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Locate θ for the least value",
+        "workingLatex": "\\sin(\\theta-53.13^\\circ)=1\\Rightarrow\\theta-53.13^\\circ=90^\\circ\\Rightarrow\\theta=143.13^\\circ",
+        "explanation": "The denominator is greatest when the sine term is $1$, at an inside angle of $90^\\circ$; adding $53.13^\\circ$ gives $\\theta=143.13^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the range",
+        "workingLatex": "\\dfrac{15}{11}\\le h\\le 15",
+        "explanation": "Collecting the least and greatest values gives the full range of $h$; both are attained at the angles just found, which lie in $0^\\circ\\le\\theta<360^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$2\\sin\\theta - \\sqrt5\\cos\\theta = 3\\sin(\\theta - 48.19^\\circ)$; $\\theta \\approx 78^\\circ, 198^\\circ$."
+    "finalAnswer": "$6\\sin\\theta-8\\cos\\theta=10\\sin(\\theta-53.13^\\circ)$, so $h(\\theta)=\\dfrac{30}{12+10\\sin(\\theta-53.13^\\circ)}$. The range is $\\dfrac{15}{11}\\le h\\le 15$: the greatest value $15$ occurs at $\\theta=323.1^\\circ$ and the least value $\\dfrac{15}{11}\\approx1.36$ occurs at $\\theta=143.1^\\circ$."
   }
 }

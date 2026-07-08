@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "stationary point",
+    "second derivative",
+    "logarithm"
+  ],
+  "questionText": "The curve $y = x^{2} - \\ln x$, for $x > 0$, has one stationary point. Find its exact coordinates and use the second derivative to classify it.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function and domain",
+        "workingLatex": "y = x^{2} - \\ln x, \\quad x > 0",
+        "explanation": "The logarithm restricts us to $x>0$. Stationary points occur where the first derivative is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = 2x - \\frac{1}{x}",
+        "explanation": "Using the power rule on $x^{2}$ and the standard result $\\frac{d}{dx}(\\ln x)=\\frac{1}{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the gradient to zero",
+        "workingLatex": "2x - \\frac{1}{x} = 0",
+        "explanation": "At a stationary point the gradient vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Clear the fraction",
+        "workingLatex": "2x = \\frac{1}{x} \\iff 2x^{2} = 1",
+        "explanation": "Multiplying through by $x$ (valid since $x>0$) removes the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x",
+        "workingLatex": "x^{2} = \\frac{1}{2} \\iff x = \\frac{1}{\\sqrt{2}}",
+        "explanation": "Taking the positive square root only, because the domain is $x>0$; equivalently $x=\\frac{\\sqrt{2}}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\left(\\frac{1}{\\sqrt{2}}\\right)^{2} - \\ln\\frac{1}{\\sqrt{2}} = \\frac{1}{2} - \\ln\\frac{1}{\\sqrt{2}}",
+        "explanation": "Substituting $x=\\frac{1}{\\sqrt{2}}$ into the curve; note $\\left(\\frac{1}{\\sqrt{2}}\\right)^{2}=\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the logarithm",
+        "workingLatex": "\\ln\\frac{1}{\\sqrt{2}} = -\\frac{1}{2}\\ln 2 \\ \\Rightarrow\\ y = \\frac{1}{2} + \\frac{1}{2}\\ln 2",
+        "explanation": "Since $\\frac{1}{\\sqrt{2}}=2^{-1/2}$, its logarithm is $-\\frac{1}{2}\\ln 2$; subtracting a negative adds it back.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Differentiate again",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = 2 + \\frac{1}{x^{2}}",
+        "explanation": "Writing the derivative as $2x - x^{-1}$ and differentiating gives $2 - (-1)x^{-2} = 2 + \\frac{1}{x^{2}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the second derivative",
+        "workingLatex": "\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{x=1/\\sqrt{2}} = 2 + \\frac{1}{1/2} = 2 + 2 = 4",
+        "explanation": "At the stationary point $x^{2}=\\frac{1}{2}$, so $\\frac{1}{x^{2}}=2$, giving a value of $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Classify the point",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = 4 > 0 \\Rightarrow \\text{minimum}",
+        "explanation": "A positive second derivative means the curve is concave up there, so the stationary point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{minimum at } \\left(\\frac{1}{\\sqrt{2}},\\ \\frac{1}{2} + \\frac{1}{2}\\ln 2\\right)",
+        "explanation": "So the curve has a single minimum turning point at these exact coordinates.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum at $\\left(\\dfrac{1}{\\sqrt{2}},\\ \\dfrac{1}{2}+\\dfrac{1}{2}\\ln 2\\right)$, since $\\dfrac{d^{2}y}{dx^{2}}=4>0$."
+  }
+}

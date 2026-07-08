@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "percentiles"
+  ],
+  "questionText": "The heights, $X$ cm, of adult women in a population are modelled by $X \\sim N(168, 7^2)$. (a) Find the $90$th percentile of the heights. (b) Find the interquartile range of the heights. Give your answers to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(168,\\ 7^2)",
+        "explanation": "Heights are normal with mean $\\mu = 168$ cm and standard deviation $\\sigma = 7$ cm. Part (a) asks for the $90$th percentile and part (b) for the interquartile range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set up the 90th percentile condition",
+        "workingLatex": "P(X < p_{90}) = 0.90",
+        "explanation": "The $90$th percentile is the height below which $90\\%$ of women fall, so the cumulative probability up to it is $0.90$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the corresponding z-value",
+        "workingLatex": "z = \\Phi^{-1}(0.90) = 1.282",
+        "explanation": "The standardised value with $90\\%$ of the area below it is $1.282$; it is positive because the $90$th percentile lies above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Un-standardise to find the percentile",
+        "workingLatex": "p_{90} = 168 + 7 \\times 1.282 = 168 + 8.974",
+        "explanation": "Reversing the standardisation with $p_{90} = \\mu + z\\sigma$ turns the $z$-value back into centimetres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the 90th percentile",
+        "workingLatex": "p_{90} = 176.97 \\approx 177",
+        "explanation": "So $90\\%$ of women are shorter than about $177$ cm; equivalently, the tallest $10\\%$ are above this height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the z-values for the quartiles",
+        "workingLatex": "\\Phi^{-1}(0.25) = -0.6745, \\qquad \\Phi^{-1}(0.75) = 0.6745",
+        "explanation": "For part (b), the lower and upper quartiles standardise to $\\mp 0.6745$, symmetric about the mean because the normal curve is symmetric.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Express the interquartile range using the quartiles",
+        "workingLatex": "\\text{IQR} = Q_3 - Q_1 = (\\mu + 0.6745\\sigma) - (\\mu - 0.6745\\sigma)",
+        "explanation": "Subtracting the lower quartile from the upper quartile, the mean cancels, leaving twice the distance from the mean to a quartile.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify the interquartile range",
+        "workingLatex": "\\text{IQR} = 2 \\times 0.6745 \\times 7",
+        "explanation": "The IQR is therefore $2z\\sigma$ with $z = 0.6745$ and $\\sigma = 7$; the mean $168$ plays no part in the spread.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compute the interquartile range",
+        "workingLatex": "\\text{IQR} = 9.443 \\approx 9.44",
+        "explanation": "This gives an interquartile range of about $9.44$ cm, describing the spread of the middle half of women's heights.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) The $90$th percentile is about $177$ cm. (b) The interquartile range is about $9.44$ cm (3 s.f.)."
+  }
+}

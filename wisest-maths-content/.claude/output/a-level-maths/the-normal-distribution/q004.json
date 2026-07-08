@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standard normal",
+    "probability"
+  ],
+  "questionText": "The random variable $Z$ has the standard normal distribution, $Z \\sim N(0,1)$. Find $P(Z < 1.2)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "Z \\sim N(0,1), \\qquad P(Z < 1.2) = \\ ?",
+        "explanation": "Here $Z$ is already the standard normal variable, with mean $0$ and standard deviation $1$. We want the probability that $Z$ is less than $1.2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Note that no standardising is needed",
+        "workingLatex": "\\text{mean} = 0, \\quad \\text{standard deviation} = 1",
+        "explanation": "Because $Z$ is already standardised, we do not have to convert anything; we can read the cumulative probability directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the probability as a value of the CDF",
+        "workingLatex": "P(Z < 1.2) = \\Phi(1.2)",
+        "explanation": "The probability that $Z$ lies below a value is exactly the standard normal cumulative distribution function $\\Phi$ evaluated at that value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Reason about the size of the answer",
+        "workingLatex": "1.2 > 0 \\ \\Rightarrow\\ \\Phi(1.2) > 0.5",
+        "explanation": "Since $1.2$ lies to the right of the mean $0$, more than half of the bell-shaped area lies to its left, so we expect an answer bigger than $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the standard normal probability",
+        "workingLatex": "\\Phi(1.2) = 0.8849",
+        "explanation": "Reading the standard normal cumulative distribution at $z = 1.2$ gives $0.8849$ to $4$ significant figures, which is indeed above $0.5$ as predicted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(Z < 1.2) \\approx 0.8849",
+        "explanation": "So about $88.5\\%$ of the standard normal distribution lies below $z = 1.2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(Z < 1.2) \\approx 0.8849$."
+  }
+}

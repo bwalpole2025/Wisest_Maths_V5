@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "trigonometry",
+    "stationary point",
+    "parallel tangents"
+  ],
+  "questionText": "The curve $C$ has equation $y = x + 2\\cos x$ for $0 \\le x \\le 2\\pi$, where $x$ is in radians.\n(a) Find $\\dfrac{dy}{dx}$.\n(b) Find the gradient of $C$ at $x=0$.\n(c) Find the coordinates of the stationary points on $C$ and determine the nature of each.\n(d) Find another value of $x$ in the interval at which the tangent to $C$ is parallel to the tangent at $x=0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the standard results (radians)",
+        "workingLatex": "\\frac{d}{dx}(x) = 1, \\quad \\frac{d}{dx}(2\\cos x) = -2\\sin x",
+        "explanation": "The derivative of $\\cos x$ is $-\\sin x$ provided $x$ is in radians, so $2\\cos x$ differentiates to $-2\\sin x$. The linear term $x$ differentiates to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate to find dy/dx (part a)",
+        "workingLatex": "\\frac{dy}{dx} = 1 - 2\\sin x",
+        "explanation": "Adding the term derivatives gives the gradient function of the curve for all $x$ in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate the gradient at x = 0 (part b)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = 1 - 2\\sin 0 = 1",
+        "explanation": "Substituting $x=0$ and using $\\sin 0 = 0$ gives a gradient of $1$ at the start of the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the derivative to zero (part c)",
+        "workingLatex": "1 - 2\\sin x = 0 \\;\\Rightarrow\\; \\sin x = \\tfrac{1}{2}",
+        "explanation": "Stationary points occur where the tangent is horizontal. Rearranging gives a simple trigonometric equation to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x in the interval",
+        "workingLatex": "x = \\frac{\\pi}{6} \\quad \\text{or} \\quad x = \\frac{5\\pi}{6} \\qquad (0 \\le x \\le 2\\pi)",
+        "explanation": "In $[0,2\\pi]$ the equation $\\sin x = \\tfrac{1}{2}$ has the two solutions $\\tfrac{\\pi}{6}$ and $\\tfrac{5\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate at x = pi/6",
+        "workingLatex": "y = \\frac{\\pi}{6} + 2\\cos\\frac{\\pi}{6} = \\frac{\\pi}{6} + 2\\cdot\\frac{\\sqrt{3}}{2} = \\frac{\\pi}{6} + \\sqrt{3}",
+        "explanation": "Substituting back into the curve; using $\\cos\\tfrac{\\pi}{6}=\\tfrac{\\sqrt{3}}{2}$ gives the exact height $\\tfrac{\\pi}{6}+\\sqrt{3}\\approx 2.256$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate at x = 5pi/6",
+        "workingLatex": "y = \\frac{5\\pi}{6} + 2\\cos\\frac{5\\pi}{6} = \\frac{5\\pi}{6} - \\sqrt{3}",
+        "explanation": "Here $\\cos\\tfrac{5\\pi}{6}=-\\tfrac{\\sqrt{3}}{2}$, so the height is $\\tfrac{5\\pi}{6}-\\sqrt{3}\\approx 0.886$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Differentiate again",
+        "workingLatex": "\\frac{d^2y}{dx^2} = -2\\cos x",
+        "explanation": "Differentiating $1 - 2\\sin x$: the constant vanishes and $-2\\sin x$ becomes $-2\\cos x$. Its sign classifies each stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Classify the point at x = pi/6",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=\\pi/6} = -2\\cos\\frac{\\pi}{6} = -\\sqrt{3} < 0",
+        "explanation": "A negative second derivative means the curve is concave down, so this stationary point is a maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Classify the point at x = 5pi/6",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=5\\pi/6} = -2\\cos\\frac{5\\pi}{6} = \\sqrt{3} > 0",
+        "explanation": "A positive second derivative means concave up, so this stationary point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the stationary points",
+        "workingLatex": "\\text{Max } \\left(\\tfrac{\\pi}{6},\\, \\tfrac{\\pi}{6}+\\sqrt{3}\\right), \\quad \\text{Min } \\left(\\tfrac{5\\pi}{6},\\, \\tfrac{5\\pi}{6}-\\sqrt{3}\\right)",
+        "explanation": "Collecting the results: a maximum at $x=\\tfrac{\\pi}{6}$ and a minimum at $x=\\tfrac{5\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set the gradient equal to the gradient at x = 0 (part d)",
+        "workingLatex": "1 - 2\\sin x = 1 \\;\\Rightarrow\\; \\sin x = 0",
+        "explanation": "Tangents are parallel when their gradients are equal. The gradient at $x=0$ was $1$, so we solve where the gradient function again equals $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for x in the interval",
+        "workingLatex": "x = 0,\\; \\pi,\\; 2\\pi",
+        "explanation": "In $[0,2\\pi]$, $\\sin x = 0$ at these three values. Apart from the given $x=0$ (and the endpoint $2\\pi$), the interesting new value is $x=\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find the point at x = pi",
+        "workingLatex": "y = \\pi + 2\\cos\\pi = \\pi - 2",
+        "explanation": "At $x=\\pi$, $\\cos\\pi = -1$, so the curve passes through $(\\pi,\\,\\pi-2)$, where the tangent again has gradient $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{Tangent at } x=\\pi \\text{ (gradient } 1) \\parallel \\text{ tangent at } x=0",
+        "explanation": "So the tangent at $x=\\pi$ is parallel to the tangent at $x=0$, both having gradient $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=1-2\\sin x$. (b) Gradient $=1$. (c) Maximum at $\\left(\\tfrac{\\pi}{6},\\tfrac{\\pi}{6}+\\sqrt{3}\\right)$, minimum at $\\left(\\tfrac{5\\pi}{6},\\tfrac{5\\pi}{6}-\\sqrt{3}\\right)$. (d) The tangent at $x=\\pi$ (gradient $1$) is parallel to the tangent at $x=0$."
+  }
+}

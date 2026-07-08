@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "chain rule",
+    "logarithm",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\ln(x^2 + 3)$. Find the equation of the tangent to $C$ at the point where $x = 1$, giving your answer in the form $y = mx + c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite and choose the chain rule",
+        "workingLatex": "y = \\ln(x^2 + 3)",
+        "explanation": "We are taking $\\ln$ of a function of $x$, so $y$ is a composite. Differentiate with the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the inner substitution",
+        "workingLatex": "u = x^2 + 3, \\qquad y = \\ln u",
+        "explanation": "Let $u$ be the argument of the logarithm. Then $y=\\ln u$ is a standard function of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = \\frac{1}{u}",
+        "explanation": "The derivative of $\\ln u$ with respect to $u$ is $\\dfrac{1}{u}$, a standard result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 2x",
+        "explanation": "Differentiating $u=x^2+3$ gives $2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{u}\\cdot 2x = \\frac{2x}{x^2 + 3}",
+        "explanation": "Multiplying the derivatives and substituting $u=x^2+3$ back gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the gradient at x = 1",
+        "workingLatex": "m = \\frac{2(1)}{(1)^2 + 3} = \\frac{2}{4} = \\frac{1}{2}",
+        "explanation": "Substituting $x=1$ into the derivative gives the gradient of the tangent, $m=\\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate at x = 1",
+        "workingLatex": "y = \\ln((1)^2 + 3) = \\ln 4",
+        "explanation": "Substituting $x=1$ into the curve gives the point of contact $(1,\\ln 4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the point-gradient form of the tangent",
+        "workingLatex": "y - \\ln 4 = \\tfrac{1}{2}(x - 1)",
+        "explanation": "A straight line through $(1,\\ln 4)$ with gradient $\\tfrac{1}{2}$ has equation $y-y_1=m(x-x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand the bracket",
+        "workingLatex": "y = \\tfrac{1}{2}x - \\tfrac{1}{2} + \\ln 4",
+        "explanation": "Multiplying out $\\tfrac{1}{2}(x-1)$ and moving $\\ln 4$ across rearranges the line towards $y=mx+c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the tangent equation",
+        "workingLatex": "y = \\tfrac{1}{2}x + \\left(\\ln 4 - \\tfrac{1}{2}\\right)",
+        "explanation": "In the form $y=mx+c$ the gradient is $\\tfrac{1}{2}$ and the exact intercept is $c=\\ln 4-\\tfrac{1}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx}=\\dfrac{2x}{x^2+3}$, and the tangent at $x=1$ is $y = \\tfrac{1}{2}x + \\left(\\ln 4 - \\tfrac{1}{2}\\right)$."
+  }
+}

@@ -4,68 +4,83 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Intermediate",
-  "marks": 8,
+  "difficulty": "Easy",
+  "marks": 4,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "modelling",
+    "cosine form",
     "maximum"
   ],
-  "questionText": "A big-wheel car's height above the ground is modelled by $h(t) = 8\\sin(30t)^\\circ + 15\\cos(30t)^\\circ + 20$ metres, where $t$ is in minutes. Using an R-form for $8\\sin x + 15\\cos x$, find the maximum height and the smallest positive $t$ at which it first occurs.",
+  "questionText": "Express $12\\cos\\theta + 5\\sin\\theta$ in the form $R\\cos(\\theta-\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$, giving $\\alpha$ to $1$ decimal place. Hence write down the maximum value of the expression and the smallest positive value of $\\theta$ at which it occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Set up the R-form for the varying part",
-        "workingLatex": "8\\sin x + 15\\cos x = R\\sin(x + \\alpha), \\quad x = 30t",
-        "explanation": "Combining the two oscillating terms into one sine reveals the amplitude and hence the maximum height.",
+        "description": "Set up the identity to match",
+        "workingLatex": "12\\cos\\theta + 5\\sin\\theta \\equiv R\\cos(\\theta-\\alpha)",
+        "explanation": "The target is a cosine wave, so we write the expression identically equal to $R\\cos(\\theta-\\alpha)$ and expand to compare.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{8^2 + 15^2} = \\sqrt{289} = 17",
-        "explanation": "The amplitude is the root of the sum of squares (an $8$-$15$-$17$ triangle).",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\cos(\\theta-\\alpha) = R\\cos\\alpha\\,\\cos\\theta + R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta-\\alpha)=\\cos\\theta\\cos\\alpha+\\sin\\theta\\sin\\alpha$ gives a multiple of $\\cos\\theta$ plus a multiple of $\\sin\\theta$, the same shape as the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{15}{8} \\;\\Rightarrow\\; \\alpha \\approx 61.93^\\circ",
-        "explanation": "The ratio gives the phase angle.",
+        "description": "Compare coefficients of cosθ and sinθ",
+        "workingLatex": "R\\cos\\alpha = 12, \\qquad R\\sin\\alpha = 5",
+        "explanation": "Matching the $\\cos\\theta$ terms gives $R\\cos\\alpha=12$ and matching the $\\sin\\theta$ terms gives $R\\sin\\alpha=5$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write the height model",
-        "workingLatex": "h = 17\\sin(30t + 61.93^\\circ) + 20",
-        "explanation": "Substituting the R-form gives a single-sine model with a vertical shift of $20$.",
+        "description": "Find R by squaring and adding",
+        "workingLatex": "R = \\sqrt{12^2 + 5^2} = \\sqrt{169} = 13",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=12^2+5^2=169$, so $R=13$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the maximum height",
-        "workingLatex": "h_{\\max} = 17 + 20 = 37 \\text{ m}",
-        "explanation": "The maximum occurs when the sine equals $1$, adding the amplitude to the offset.",
+        "description": "Solve for the acute angle α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{5}{12} \\Rightarrow \\alpha = 22.6^\\circ",
+        "explanation": "Dividing the two equations gives $\\tan\\alpha=\\dfrac{5}{12}$; both matched values are positive so $\\alpha$ is acute, giving $\\alpha=22.6^\\circ$ to $1$ decimal place.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Set the sine to its peak",
-        "workingLatex": "30t + 61.93^\\circ = 90^\\circ",
-        "explanation": "The first maximum occurs when the argument first equals $90^\\circ$.",
+        "description": "State the R-form",
+        "workingLatex": "12\\cos\\theta + 5\\sin\\theta = 13\\cos(\\theta - 22.6^\\circ)",
+        "explanation": "Combining $R=13$ and $\\alpha=22.6^\\circ$ gives the single cosine wave equivalent to the original expression.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Solve for t",
-        "workingLatex": "30t = 28.07^\\circ \\;\\Rightarrow\\; t \\approx 0.94 \\text{ min}",
-        "explanation": "Dividing by $30$ gives the smallest positive time, about $0.94$ minutes.",
+        "description": "Read off the maximum value",
+        "workingLatex": "-13 \\le 13\\cos(\\theta-22.6^\\circ) \\le 13 \\Rightarrow \\text{max} = 13",
+        "explanation": "A cosine is always between $-1$ and $1$, so the expression lies between $-13$ and $13$; its maximum value is $13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the maximum condition",
+        "workingLatex": "\\text{max when } \\cos(\\theta-22.6^\\circ) = 1 \\Rightarrow \\theta - 22.6^\\circ = 0^\\circ",
+        "explanation": "A cosine reaches its greatest value $1$ when its angle is $0^\\circ$, so the maximum of the expression occurs when $\\theta-22.6^\\circ=0^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for the smallest positive θ",
+        "workingLatex": "\\theta = 22.6^\\circ",
+        "explanation": "Adding the phase shift gives $\\theta=22.6^\\circ$, which is positive, so this is the smallest positive angle at which the maximum $13$ occurs.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum height $37$ m, first at $t \\approx 0.94$ minutes."
+    "finalAnswer": "$12\\cos\\theta + 5\\sin\\theta = 13\\cos(\\theta - 22.6^\\circ)$; the maximum value is $13$, occurring first at $\\theta = 22.6^\\circ$ (to $1$ d.p.)."
   }
 }

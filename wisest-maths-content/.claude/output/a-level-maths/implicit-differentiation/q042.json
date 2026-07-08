@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.implicit.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "product rule",
+    "horizontal tangent"
+  ],
+  "questionText": "A curve $C$ has equation $x^2 + xy + y^2 = 3$. Find the coordinates of the points on $C$ at which the tangent is horizontal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "We differentiate the whole relation with respect to $x$, treating $y$ as a function of $x$. The constant $3$ on the right gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the xy term with the product rule",
+        "workingLatex": "\\frac{d}{dx}(xy) = y + x\\frac{dy}{dx}",
+        "explanation": "The term $xy$ is a product of two functions of $x$, so the product rule gives $y$ (differentiate $x$, keep $y$) plus $x\\frac{dy}{dx}$ (keep $x$, differentiate $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x + y + x\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "The power rule gives $2x$ from $x^2$ and the chain rule gives $2y\\frac{dy}{dx}$ from $y^2$; together with the product-rule result we have the full differentiated equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(x + 2y)\\frac{dy}{dx} = -(2x + y)",
+        "explanation": "Grouping the two $\\frac{dy}{dx}$ terms on one side and everything else on the other prepares us to make $\\frac{dy}{dx}$ the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x + y}{x + 2y}",
+        "explanation": "Dividing by $(x + 2y)$ isolates the gradient. It depends on both $x$ and $y$, which is typical for an implicit curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the horizontal-tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; 2x + y = 0 \\;\\Rightarrow\\; y = -2x",
+        "explanation": "A horizontal tangent has gradient $0$, so the numerator must be zero. This gives a linear relation between $x$ and $y$ that the stationary points obey.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute y = -2x into the curve equation",
+        "workingLatex": "x^2 + x(-2x) + (-2x)^2 = 3",
+        "explanation": "The points must also lie on $C$. Replacing $y$ by $-2x$ turns the curve equation into one in $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify",
+        "workingLatex": "x^2 - 2x^2 + 4x^2 = 3x^2 = 3",
+        "explanation": "Collecting the $x^2$ terms gives $3x^2 = 3$, a simple equation to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "x^2 = 1 \\;\\Rightarrow\\; x = \\pm 1",
+        "explanation": "Taking square roots gives the two $x$-coordinates of the stationary points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinates and check the denominator",
+        "workingLatex": "x = 1 \\Rightarrow y = -2; \\quad x = -1 \\Rightarrow y = 2",
+        "explanation": "Using $y = -2x$ gives each $y$. The denominator $x + 2y$ equals $-3$ and $3$ respectively — both non-zero, so the gradient really is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the coordinates",
+        "workingLatex": "(1,\\, -2) \\quad\\text{and}\\quad (-1,\\, 2)",
+        "explanation": "These are the two points on $C$ where the tangent is horizontal.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent is horizontal at $(1,\\, -2)$ and $(-1,\\, 2)$."
+  }
+}

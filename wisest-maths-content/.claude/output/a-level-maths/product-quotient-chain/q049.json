@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "gradient",
+    "trigonometry"
+  ],
+  "questionText": "A curve has equation $y = \\dfrac{\\sin x}{x}$ for $x>0$, where $x$ is measured in radians. (a) Find $\\dfrac{dy}{dx}$. (b) Find the exact gradient of the curve at the point where $x=\\pi$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the quotient rule",
+        "workingLatex": "y = \\frac{\\sin x}{x}, \\qquad u = \\sin x, \\; v = x",
+        "explanation": "The curve is a quotient of $\\sin x$ and $x$, so we use the quotient rule with $u$ on top and $v$ underneath.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = \\cos x, \\qquad v' = 1",
+        "explanation": "The derivative of $\\sin x$ is $\\cos x$, and the derivative of $x$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}",
+        "explanation": "Derivative of top times bottom minus top times derivative of bottom, all over the bottom squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the pieces",
+        "workingLatex": "= \\frac{\\cos x\\cdot x - \\sin x\\cdot 1}{x^2}",
+        "explanation": "Placing $u,u',v,v'$ into the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x\\cos x - \\sin x}{x^2}",
+        "explanation": "This is the gradient function of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute x = pi",
+        "workingLatex": "\\frac{dy}{dx}\\bigg|_{x=\\pi} = \\frac{\\pi\\cos\\pi - \\sin\\pi}{\\pi^2}",
+        "explanation": "To find the gradient at $x=\\pi$ we put $x=\\pi$ into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the trig values",
+        "workingLatex": "\\cos\\pi = -1, \\qquad \\sin\\pi = 0",
+        "explanation": "Working in radians, $\\cos\\pi=-1$ and $\\sin\\pi=0$ are standard exact values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute these values",
+        "workingLatex": "= \\frac{\\pi(-1) - 0}{\\pi^2}",
+        "explanation": "Replacing the trig terms with their exact values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\frac{-\\pi}{\\pi^2}",
+        "explanation": "The numerator is just $-\\pi$ since the $\\sin\\pi$ term vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Cancel to get the gradient",
+        "workingLatex": "\\frac{dy}{dx}\\bigg|_{x=\\pi} = -\\frac{1}{\\pi}",
+        "explanation": "Cancelling one factor of $\\pi$ gives the exact gradient $-\\dfrac{1}{\\pi}$, so the curve is falling there.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\dfrac{x\\cos x - \\sin x}{x^2}$. (b) The gradient at $x=\\pi$ is $-\\dfrac{1}{\\pi}$."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.stats.normal-distribution.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding the mean",
+    "inverse normal"
+  ],
+  "questionText": "The time, $X$ minutes, taken by a worker to assemble a product is modelled by $X \\sim N(\\mu,\\ 8^2)$, where $\\mu$ is unknown. Records show that $15\\%$ of workers take longer than $40$ minutes. Find the value of $\\mu$, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and translate the information",
+        "workingLatex": "X \\sim N(\\mu,\\ 8^2), \\qquad P(X > 40) = 0.15",
+        "explanation": "Assembly times are normal with standard deviation $8$ minutes and unknown mean. ‘$15\\%$ take longer than $40$’ gives the upper-tail probability $P(X>40)=0.15$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Locate 40 relative to the mean",
+        "workingLatex": "0.15 < 0.5 \\ \\Rightarrow\\ 40 > \\mu",
+        "explanation": "Only $15\\%$ of workers take longer than $40$ minutes, so more than half take less; the value $40$ therefore lies to the right of the mean, and we expect $\\mu<40$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Convert to a lower-tail probability",
+        "workingLatex": "P(X < 40) = 1 - 0.15 = 0.85",
+        "explanation": "The inverse-normal works from the lower tail, so we rewrite the statement: if $15\\%$ exceed $40$, then $85\\%$ fall below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the z-value for 0.85",
+        "workingLatex": "z = \\Phi^{-1}(0.85) = 1.0364",
+        "explanation": "The standard-normal value with $85\\%$ of the area below it is $1.0364$, positive because $40$ lies above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set up the standardisation equation",
+        "workingLatex": "\\dfrac{40 - \\mu}{8} = 1.0364",
+        "explanation": "Standardising $40$ gives this $z$; substituting $\\sigma=8$ leaves $\\mu$ as the only unknown.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Clear the fraction",
+        "workingLatex": "40 - \\mu = 8 \\times 1.0364 = 8.291",
+        "explanation": "Multiplying both sides by $8$ removes the denominator and gives a linear equation in $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rearrange for the mean",
+        "workingLatex": "\\mu = 40 - 8.291",
+        "explanation": "Isolating $\\mu$ shows the mean is $40$ minus $8.291$; we subtract because $40$ lies above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute the mean",
+        "workingLatex": "\\mu = 31.709",
+        "explanation": "Carrying out the subtraction gives the mean assembly time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "\\mu \\approx 31.7 \\text{ minutes}",
+        "explanation": "To three significant figures the mean time is $31.7$ minutes, which is below $40$ as we predicted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the answer reproduces the given probability",
+        "workingLatex": "P(X > 40) = 1 - \\Phi\\!\\left(\\dfrac{40 - 31.7}{8}\\right) = 1 - \\Phi(1.04) \\approx 0.15",
+        "explanation": "Standardising $40$ with this mean gives about $1.04$, whose upper-tail area is $0.15$, confirming the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 31.7$ minutes."
+  }
+}

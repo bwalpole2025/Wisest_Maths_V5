@@ -5,67 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 4,
-  "answerType": "expression",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "simplify",
-    "reciprocal trig",
-    "identities"
+    "given one ratio",
+    "quadrant",
+    "tan",
+    "sec"
   ],
-  "questionText": "Simplify $\\sec\\theta \\cos\\theta + \\csc\\theta \\sin\\theta$.",
+  "questionText": "Given that $\\tan\\theta = \\tfrac{4}{3}$ and that $\\theta$ lies in the third quadrant, find the exact values of $\\sec\\theta$, $\\cos\\theta$, $\\sin\\theta$, $\\operatorname{cosec}\\theta$ and $\\cot\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite secant as a reciprocal",
-        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
-        "explanation": "Converting the reciprocal functions back to sine and cosine is the standard first move when simplifying expressions like this.",
+        "description": "Note the signs in the third quadrant",
+        "workingLatex": "\\text{Q3:}\\quad \\sin\\theta < 0, \\quad \\cos\\theta < 0, \\quad \\tan\\theta > 0",
+        "explanation": "In the third quadrant both sine and cosine are negative, so tangent is positive. A positive $\\tan\\theta = \\tfrac{4}{3}$ is consistent with this, and the signs will guide our square-root choices.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite cosecant as a reciprocal",
-        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}",
-        "explanation": "Similarly, cosecant becomes one over sine, so every term is now expressed in the basic functions.",
+        "description": "Find cot as the reciprocal of tan",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{1}{\\tfrac{4}{3}} = \\tfrac{3}{4}",
+        "explanation": "Cotangent is the reciprocal of tangent, so we simply flip the given fraction. It is positive, matching the positive tangent.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute into the first product",
-        "workingLatex": "\\sec\\theta\\cos\\theta = \\frac{1}{\\cos\\theta}\\cdot\\cos\\theta",
-        "explanation": "Substituting shows the cosine multiplying its own reciprocal, which is set up to cancel.",
+        "description": "Use the identity sec^2 = 1 + tan^2",
+        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta = 1 + \\tfrac{16}{9} = \\tfrac{25}{9}",
+        "explanation": "Knowing $\\tan\\theta$, the identity $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$ gives $\\sec\\theta$ directly, which then unlocks $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cancel the first product",
-        "workingLatex": "\\frac{\\cos\\theta}{\\cos\\theta} = 1",
-        "explanation": "A function times its reciprocal is $1$, so the first product simplifies to a constant.",
+        "description": "Take the square root",
+        "workingLatex": "\\sec\\theta = \\pm\\sqrt{\\tfrac{25}{9}} = \\pm\\tfrac{5}{3}",
+        "explanation": "Squaring lost the sign, so both a positive and a negative root are possible until we use the quadrant to decide.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute and cancel the second product",
-        "workingLatex": "\\csc\\theta\\sin\\theta = \\frac{1}{\\sin\\theta}\\cdot\\sin\\theta = 1",
-        "explanation": "The same reasoning applies to the second product, which also collapses to $1$.",
+        "description": "Choose the sign from the quadrant",
+        "workingLatex": "\\cos\\theta < 0 \\ \\Rightarrow\\ \\sec\\theta < 0 \\ \\Rightarrow\\ \\sec\\theta = -\\tfrac{5}{3}",
+        "explanation": "Since cosine is negative in the third quadrant and secant is its reciprocal, secant is also negative. This selects the negative root.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Add the results",
-        "workingLatex": "1 + 1 = 2",
-        "explanation": "Combining the two simplified products gives a constant value of $2$.",
+        "description": "Find cos from sec",
+        "workingLatex": "\\cos\\theta = \\frac{1}{\\sec\\theta} = \\frac{1}{-\\tfrac{5}{3}} = -\\tfrac{3}{5}",
+        "explanation": "Cosine is the reciprocal of secant, so we flip the fraction. The negative sign is exactly what we expected in this quadrant.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the simplified expression",
-        "workingLatex": "\\sec\\theta\\cos\\theta + \\csc\\theta\\sin\\theta = 2",
-        "explanation": "The whole expression simplifies to the constant $2$, valid wherever the functions are defined.",
+        "description": "Find sin using tan = sin over cos",
+        "workingLatex": "\\sin\\theta = \\tan\\theta \\cdot \\cos\\theta = \\tfrac{4}{3} \\cdot \\left(-\\tfrac{3}{5}\\right) = -\\tfrac{4}{5}",
+        "explanation": "Rearranging $\\tan\\theta = \\dfrac{\\sin\\theta}{\\cos\\theta}$ gives $\\sin\\theta = \\tan\\theta\\cos\\theta$. Multiplying gives a negative value, as required in the third quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find cosec from its definition",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta} = \\frac{1}{-\\tfrac{4}{5}} = -\\tfrac{5}{4}",
+        "explanation": "Cosecant is the reciprocal of sine, so flipping the fraction gives its value, which is negative like the sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check that sin and cos satisfy the Pythagorean identity",
+        "workingLatex": "\\left(-\\tfrac{4}{5}\\right)^2 + \\left(-\\tfrac{3}{5}\\right)^2 = \\tfrac{16}{25} + \\tfrac{9}{25} = \\tfrac{25}{25} = 1",
+        "explanation": "A reliable check: $\\sin^2\\theta + \\cos^2\\theta$ should equal $1$, and it does, confirming our sine and cosine are a valid pair.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sec\\theta = -\\tfrac{5}{3},\\ \\cos\\theta = -\\tfrac{3}{5},\\ \\sin\\theta = -\\tfrac{4}{5},\\ \\operatorname{cosec}\\theta = -\\tfrac{5}{4},\\ \\cot\\theta = \\tfrac{3}{4}",
+        "explanation": "Collecting every value gives the complete answer, with the sign pattern of a third-quadrant angle throughout.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$2$"
+    "finalAnswer": "$\\sec\\theta = -\\tfrac{5}{3}$, $\\cos\\theta = -\\tfrac{3}{5}$, $\\sin\\theta = -\\tfrac{4}{5}$, $\\operatorname{cosec}\\theta = -\\tfrac{5}{4}$, $\\cot\\theta = \\tfrac{3}{4}$."
   }
 }

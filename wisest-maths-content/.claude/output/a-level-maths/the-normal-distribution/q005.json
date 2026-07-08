@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standard normal",
+    "symmetry"
+  ],
+  "questionText": "The random variable $Z$ has the standard normal distribution, $Z \\sim N(0,1)$. Find $P(Z < -0.8)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "Z \\sim N(0,1), \\qquad P(Z < -0.8) = \\ ?",
+        "explanation": "We want the area to the left of $z = -0.8$ under the standard normal curve. The value is negative, so it lies to the left of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recognise that the value is negative",
+        "workingLatex": "-0.8 < 0",
+        "explanation": "Tables and many quick references give areas for positive $z$ only, so it helps to turn this left-tail area into one involving a positive value using the symmetry of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the symmetry of the normal curve",
+        "workingLatex": "P(Z < -0.8) = P(Z > 0.8)",
+        "explanation": "The standard normal curve is symmetric about $0$, so the area to the left of $-0.8$ equals the mirror-image area to the right of $+0.8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the right tail using the CDF",
+        "workingLatex": "P(Z > 0.8) = 1 - \\Phi(0.8)",
+        "explanation": "The area to the right of $0.8$ is the whole area, $1$, minus the area to the left, $\\Phi(0.8)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "1 - \\Phi(0.8) = 1 - 0.7881 = 0.2119",
+        "explanation": "The cumulative value at $z = 0.8$ is $0.7881$, so the tail is $1 - 0.7881 = 0.2119$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(Z < -0.8) \\approx 0.2119",
+        "explanation": "So about $21.2\\%$ of the standard normal distribution lies below $z = -0.8$. Being less than $0.5$ is sensible, since $-0.8$ is to the left of the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(Z < -0.8) \\approx 0.2119$."
+  }
+}

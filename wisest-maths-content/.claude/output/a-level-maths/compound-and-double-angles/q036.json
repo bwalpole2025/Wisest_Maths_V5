@@ -5,61 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "proof",
   "tags": [
     "double angle",
-    "equations",
-    "cosine",
-    "solving"
+    "proof",
+    "expanding"
   ],
-  "questionText": "Solve $\\cos 2\\theta = \\dfrac{1}{2}$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Prove the identity $(\\cos A + \\sin A)^2 \\equiv 1 + \\sin 2A$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Substitute for the double angle variable",
-        "workingLatex": "\\text{let } \\phi = 2\\theta, \\quad 0^\\circ \\le \\phi < 720^\\circ",
-        "explanation": "Doubling widens the interval to $[0,720^\\circ)$, so we search there.",
+        "description": "State the LHS and the plan",
+        "workingLatex": "\\text{LHS} = (\\cos A + \\sin A)^2",
+        "explanation": "We work from the left-hand side. The plan is to expand the square, then apply the Pythagorean identity and the sine double-angle formula.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the base solutions",
-        "workingLatex": "\\cos\\phi = \\tfrac{1}{2} \\;\\Rightarrow\\; \\phi = 60^\\circ, 300^\\circ",
-        "explanation": "Cosine one half occurs at $60^\\circ$ and $300^\\circ$ in the first revolution.",
+        "description": "Expand the square",
+        "workingLatex": "(\\cos A + \\sin A)^2 = \\cos^2 A + 2\\sin A\\cos A + \\sin^2 A",
+        "explanation": "Using $(x + y)^2 = x^2 + 2xy + y^2$ with $x = \\cos A$ and $y = \\sin A$ produces three terms.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Add a full revolution",
-        "workingLatex": "\\phi = 420^\\circ, 660^\\circ",
-        "explanation": "Adding $360^\\circ$ to each gives the remaining solutions within $720^\\circ$.",
+        "description": "Group the squared terms",
+        "workingLatex": "= (\\cos^2 A + \\sin^2 A) + 2\\sin A\\cos A",
+        "explanation": "Reordering so the squared terms sit together prepares the expression for the Pythagorean identity.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "List all values of phi",
-        "workingLatex": "\\phi = 60^\\circ, 300^\\circ, 420^\\circ, 660^\\circ",
-        "explanation": "These are all the doubled-angle solutions in range.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\cos^2 A + \\sin^2 A = 1",
+        "explanation": "For every angle $A$ the squared sine and cosine sum to $1$, so the bracket is simply $1$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Halve to find theta",
-        "workingLatex": "\\theta = 30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ",
-        "explanation": "Dividing each by $2$ gives the solutions for $\\theta$.",
+        "description": "Substitute the value of the bracket",
+        "workingLatex": "= 1 + 2\\sin A\\cos A",
+        "explanation": "Replacing the bracket with $1$ leaves the constant plus the product term.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Confirm the interval",
-        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "All four solutions lie within the required range.",
+        "description": "Recognise the sine double angle",
+        "workingLatex": "2\\sin A\\cos A = \\sin 2A",
+        "explanation": "The double-angle formula read from right to left turns $2\\sin A\\cos A$ into $\\sin 2A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute the double angle",
+        "workingLatex": "= 1 + \\sin 2A",
+        "explanation": "Replacing the product term gives $1 + \\sin 2A$, exactly the target expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the RHS is reached",
+        "workingLatex": "(\\cos A + \\sin A)^2 = 1 + \\sin 2A",
+        "explanation": "The expanded LHS has become the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Numerical check at A = 30 degrees",
+        "workingLatex": "(\\cos 30^\\circ + \\sin 30^\\circ)^2 = \\left(\\dfrac{\\sqrt3+1}{2}\\right)^2 = \\dfrac{2+\\sqrt3}{2}, \\quad 1 + \\sin 60^\\circ = \\dfrac{2+\\sqrt3}{2}",
+        "explanation": "At $A = 30^\\circ$ both sides equal $\\dfrac{2+\\sqrt3}{2}$, supporting the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the proof",
+        "workingLatex": "(\\cos A + \\sin A)^2 \\equiv 1 + \\sin 2A \\quad \\blacksquare",
+        "explanation": "The LHS equals the RHS for all angles $A$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ$"
+    "finalAnswer": "Expanding gives $\\cos^2 A + 2\\sin A\\cos A + \\sin^2 A$; the Pythagorean identity turns $\\cos^2 A + \\sin^2 A$ into $1$ and the double-angle formula turns $2\\sin A\\cos A$ into $\\sin 2A$, so $(\\cos A + \\sin A)^2 \\equiv 1 + \\sin 2A$."
   }
 }

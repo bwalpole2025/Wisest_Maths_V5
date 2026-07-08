@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "exponential",
+    "chain rule"
+  ],
+  "questionText": "A curve has equation $e^{y} + x = 3$. Find $\\frac{dy}{dx}$ in terms of $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(e^y) + \\frac{d}{dx}(x) = \\frac{d}{dx}(3)",
+        "explanation": "We differentiate both sides with respect to $x$, treating $y$ as a function of $x$. The term $e^y$ is a function of $y$, so it needs the chain rule; the constant $3$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate $e^y$ using the chain rule",
+        "workingLatex": "\\frac{d}{dx}(e^y) = e^y\\frac{dy}{dx}",
+        "explanation": "The derivative of $e^{\\text{(something)}}$ is $e^{\\text{(something)}}$ multiplied by the derivative of that something. Here the something is $y$, so we get $e^y$ times $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the remaining terms",
+        "workingLatex": "e^y\\frac{dy}{dx} + 1 = 0",
+        "explanation": "The term $x$ differentiates to $1$, and the constant $3$ gives $0$, producing the full differentiated equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Isolate the $\\frac{dy}{dx}$ term",
+        "workingLatex": "e^y\\frac{dy}{dx} = -1",
+        "explanation": "Move the $1$ to the other side so the $\\frac{dy}{dx}$ term stands alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make $\\frac{dy}{dx}$ the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{1}{e^y}",
+        "explanation": "Divide both sides by $e^y$ to isolate the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write with a negative exponent",
+        "workingLatex": "\\frac{dy}{dx} = -e^{-y}",
+        "explanation": "Since $\\frac{1}{e^y}=e^{-y}$, the answer can be written more compactly as $-e^{-y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -e^{-y}",
+        "explanation": "Because $e^{-y}$ is always positive, the gradient is always negative, so the curve is decreasing everywhere.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = -e^{-y}$"
+  }
+}

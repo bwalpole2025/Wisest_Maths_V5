@@ -5,60 +5,81 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "hyperbola",
-    "intersection"
+    "trig identity",
+    "circle",
+    "centre and radius"
   ],
-  "questionText": "A curve has parametric equations $x = 4t$, $y = \\dfrac{4}{t}$ for $t \\ne 0$. Find the coordinates of the points on the curve where $y = x$.",
+  "questionText": "A curve has parametric equations $x = 4 + 2\\cos t$ and $y = 2\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve, and hence state its centre and radius.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Set the parametric expressions equal",
-        "workingLatex": "4t = \\frac{4}{t}",
-        "explanation": "The condition $y = x$ means the two parametric expressions are equal.",
+        "description": "Set up",
+        "workingLatex": "x = 4 + 2\\cos t, \\qquad y = 2\\sin t",
+        "explanation": "The coefficients of $\\cos t$ and $\\sin t$ are both $2$, so we anticipate a circle. Only the $x$-equation carries a shift, so the centre is off the $y$-axis but on the $x$-axis.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Clear the fraction",
-        "workingLatex": "4t^2 = 4",
-        "explanation": "Multiplying both sides by $t$ (valid since $t \\ne 0$) removes the denominator.",
+        "description": "Isolate cos t",
+        "workingLatex": "\\cos t = \\dfrac{x - 4}{2}",
+        "explanation": "Subtracting $4$ and dividing by $2$ isolates $\\cos t$; the $x - 4$ records the horizontal shift.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Solve for t",
-        "workingLatex": "t^2 = 1 \\;\\Rightarrow\\; t = \\pm 1",
-        "explanation": "Dividing by $4$ and square-rooting gives two parameter values.",
+        "description": "Isolate sin t",
+        "workingLatex": "\\sin t = \\dfrac{y}{2}",
+        "explanation": "Dividing the second equation by $2$ isolates $\\sin t$. There is no shift here, so the centre stays at $y = 0$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the point for t = 1",
-        "workingLatex": "(4, 4)",
-        "explanation": "Substituting $t = 1$ gives $x = 4$ and $y = 4$.",
+        "description": "Apply the identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "Substituting into this identity removes $t$ and links $x$ and $y$ directly.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the point for t = -1",
-        "workingLatex": "(-4, -4)",
-        "explanation": "Substituting $t = -1$ gives $x = -4$ and $y = -4$.",
+        "description": "Substitute",
+        "workingLatex": "\\left( \\dfrac{x - 4}{2} \\right)^{2} + \\left( \\dfrac{y}{2} \\right)^{2} = 1",
+        "explanation": "Both trig functions are replaced, leaving an equation in $x$ and $y$ only.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "(4, 4) \\text{ and } (-4, -4)",
-        "explanation": "These are the points where the hyperbola meets the line $y = x$.",
+        "description": "Square the fractions",
+        "workingLatex": "\\dfrac{(x - 4)^{2}}{4} + \\dfrac{y^{2}}{4} = 1",
+        "explanation": "The shared denominator $4$ signals that this will collapse to a circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Clear the denominator",
+        "workingLatex": "(x - 4)^{2} + y^{2} = 4",
+        "explanation": "Multiplying through by $4$ produces the standard circle equation with equal squared terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare with the template",
+        "workingLatex": "(x - p)^{2} + (y - q)^{2} = r^{2}",
+        "explanation": "Matching to this form lets us read the centre and radius directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Read off centre and radius",
+        "workingLatex": "p = 4, \\quad q = 0, \\quad r^{2} = 4 \\;\\Rightarrow\\; r = 2",
+        "explanation": "So the circle is centred at $(4,\\,0)$ with radius $\\sqrt{4} = 2$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(4, 4)$ and $(-4, -4)$"
+    "finalAnswer": "The Cartesian equation is $(x - 4)^{2} + y^{2} = 4$, a circle with centre $(4,\\,0)$ and radius $2$."
   }
 }

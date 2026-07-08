@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "chain rule",
+    "exponential",
+    "differentiation"
+  ],
+  "questionText": "Differentiate $y = e^{x^2}$ with respect to $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the composite structure",
+        "workingLatex": "y = e^{x^2}",
+        "explanation": "The exponent here is not just $x$ but the expression $x^2$. So $x^2$ is fed into the exponential function, making this a composite that needs the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce the inner function as $u$",
+        "workingLatex": "u = x^2 \\quad \\Rightarrow \\quad y = e^{u}",
+        "explanation": "We let $u$ stand for the exponent $x^2$. The outer function is then the standard exponential $y=e^u$, whose derivative we know exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 2x",
+        "explanation": "Differentiating $u=x^2$ with respect to $x$ gives $2x$ by the power rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = e^{u}",
+        "explanation": "The exponential function is special: it is its own derivative, so $\\tfrac{d}{du}e^u = e^u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = e^{u}\\cdot 2x",
+        "explanation": "The chain rule multiplies the derivative of the exponential by the derivative of its exponent, joining the two rates of change.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the inner function back in",
+        "workingLatex": "\\frac{dy}{dx} = e^{x^2}\\cdot 2x",
+        "explanation": "Replacing $u$ with $x^2$ returns the answer to the original variable $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write in tidy form",
+        "workingLatex": "\\frac{dy}{dx} = 2x\\,e^{x^2}",
+        "explanation": "It is neat to place the $2x$ factor in front of the exponential, giving the standard way of writing the derivative.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 2x\\,e^{x^2}$."
+  }
+}

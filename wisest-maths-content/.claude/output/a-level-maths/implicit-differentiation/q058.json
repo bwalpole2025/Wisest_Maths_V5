@@ -1,0 +1,114 @@
+{
+  "id": "al.y2.pure.implicit.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "trigonometric",
+    "product rule",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $x \\sin y = 1$, where $y$ is in radians. The point $P\\left(2, \\dfrac{\\pi}{6}\\right)$ lies on $C$. Find an equation of the tangent to $C$ at $P$ and an equation of the normal to $C$ at $P$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Check that P lies on C",
+        "workingLatex": "2\\sin\\frac{\\pi}{6} = 2\\times \\tfrac{1}{2} = 1",
+        "explanation": "Substituting $x=2,\\,y=\\tfrac{\\pi}{6}$ gives $1$, matching the right-hand side, so $P$ is on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}\\left(x \\sin y\\right) = \\frac{d}{dx}(1)",
+        "explanation": "The left side is a product of $x$ and $\\sin y$, so it needs the product rule. The constant differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product and chain rules",
+        "workingLatex": "\\sin y + x\\cos y\\,\\frac{dy}{dx} = 0",
+        "explanation": "The product rule gives $\\sin y$ (differentiate $x$) plus $x$ times the derivative of $\\sin y$; the chain rule makes that $\\cos y\\,\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{\\sin y}{x\\cos y}",
+        "explanation": "Rearranging isolates the gradient as $-\\sin y$ over $x\\cos y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recall the exact trig values needed",
+        "workingLatex": "\\sin\\frac{\\pi}{6} = \\frac{1}{2}, \\qquad \\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}",
+        "explanation": "These standard exact values let us evaluate the gradient exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute P to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{P} = -\\frac{1/2}{2\\times \\tfrac{\\sqrt{3}}{2}} = -\\frac{1/2}{\\sqrt{3}}",
+        "explanation": "Substituting $x=2$, $\\sin y = \\tfrac12$ and $\\cos y = \\tfrac{\\sqrt3}{2}$ into the gradient formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the gradient",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{1}{2\\sqrt{3}} = -\\frac{\\sqrt{3}}{6}",
+        "explanation": "Rationalising the denominator gives the exact gradient $-\\tfrac{\\sqrt3}{6}$, about $-0.289$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the tangent gradient",
+        "workingLatex": "m_{\\text{tangent}} = -\\frac{\\sqrt{3}}{6}",
+        "explanation": "So the tangent to $C$ at $P$ has gradient $-\\tfrac{\\sqrt3}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - \\frac{\\pi}{6} = -\\frac{\\sqrt{3}}{6}(x - 2)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ through $P\\left(2, \\tfrac{\\pi}{6}\\right)$ gives the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Tidy the tangent equation",
+        "workingLatex": "y = -\\frac{\\sqrt{3}}{6}x + \\frac{\\sqrt{3}}{3} + \\frac{\\pi}{6}",
+        "explanation": "Expanding the bracket, with $-\\tfrac{\\sqrt3}{6}\\times(-2) = \\tfrac{\\sqrt3}{3}$, writes the tangent in the form $y = mx + c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{-\\sqrt{3}/6} = \\frac{6}{\\sqrt{3}} = 2\\sqrt{3}",
+        "explanation": "The normal gradient is the negative reciprocal of $-\\tfrac{\\sqrt3}{6}$; rationalising gives $2\\sqrt3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Form the normal equation",
+        "workingLatex": "y - \\frac{\\pi}{6} = 2\\sqrt{3}\\,(x - 2)",
+        "explanation": "Using the same point $P$ with gradient $2\\sqrt3$ gives the normal line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the results",
+        "workingLatex": "\\text{tangent: } y - \\frac{\\pi}{6} = -\\frac{\\sqrt{3}}{6}(x - 2), \\qquad \\text{normal: } y - \\frac{\\pi}{6} = 2\\sqrt{3}\\,(x - 2)",
+        "explanation": "These are equations of the tangent and normal to $C$ at $P$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Gradient $= -\\dfrac{\\sqrt{3}}{6}$; tangent $y - \\dfrac{\\pi}{6} = -\\dfrac{\\sqrt{3}}{6}(x - 2)$; normal $y - \\dfrac{\\pi}{6} = 2\\sqrt{3}\\,(x - 2)$."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "numeric",
+  "tags": [
+    "find constant",
+    "stationary point",
+    "exponential"
+  ],
+  "questionText": "The curve $y = e^{x} - a x$, where $a$ is a constant, has a stationary point at $x = \\ln 5$. Find the value of $a$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function",
+        "workingLatex": "y = e^{x} - a x",
+        "explanation": "A stationary point occurs where the gradient is zero, so we differentiate and then use the given $x$-value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} - a",
+        "explanation": "Using $\\frac{d}{dx}(e^{x})=e^{x}$ and $\\frac{d}{dx}(ax)=a$ (a constant multiple of $x$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the stationary condition",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\ln 5} = 0",
+        "explanation": "The gradient is zero at the stationary point $x=\\ln 5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the given x-value",
+        "workingLatex": "e^{\\ln 5} - a = 0",
+        "explanation": "Replacing $x$ by $\\ln 5$ in the derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the exponential",
+        "workingLatex": "e^{\\ln 5} = 5",
+        "explanation": "The exponential and natural logarithm are inverse functions, so $e^{\\ln 5}=5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the equation",
+        "workingLatex": "5 - a = 0",
+        "explanation": "Substituting that value into the stationary condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for a",
+        "workingLatex": "a = 5",
+        "explanation": "Rearranging gives the constant directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} - 5 = 0 \\iff e^{x} = 5 \\iff x = \\ln 5",
+        "explanation": "With $a=5$ the gradient is zero exactly at $x=\\ln 5$, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the result",
+        "workingLatex": "a = 5",
+        "explanation": "So the constant placing a stationary point at $x=\\ln 5$ is $a=5$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a = 5$."
+  }
+}

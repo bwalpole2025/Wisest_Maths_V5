@@ -4,69 +4,97 @@
   "topic": "Year 2 Pure",
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "numeric",
   "tags": [
-    "equations",
-    "cosecant",
-    "sine",
-    "solving"
+    "reciprocal trig",
+    "cosec",
+    "inverse trig",
+    "radians"
   ],
-  "questionText": "Solve $\\csc\\theta = 2\\sin\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve $\\operatorname{cosec} x = 3$ for $0 \\le x \\le 2\\pi$, giving your answers in radians to three decimal places.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite cosecant in sine",
-        "workingLatex": "\\frac{1}{\\sin\\theta} = 2\\sin\\theta",
-        "explanation": "Converting cosecant to one over sine puts the whole equation in a single function.",
+        "description": "Rewrite cosec using its definition",
+        "workingLatex": "\\operatorname{cosec} x = \\frac{1}{\\sin x}",
+        "explanation": "Cosec is the reciprocal of sine, so we convert the equation into one for sine.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Clear the denominator",
-        "workingLatex": "1 = 2\\sin^2\\theta",
-        "explanation": "Multiplying both sides by $\\sin\\theta$ removes the fraction (valid since $\\sin\\theta \\ne 0$ for cosecant to exist).",
+        "description": "Form a sine equation",
+        "workingLatex": "\\frac{1}{\\sin x} = 3 \\;\\Rightarrow\\; \\sin x = \\frac{1}{3}",
+        "explanation": "Taking reciprocals of both sides gives $\\sin x = \\tfrac13$; this is not a standard exact angle, so we will use the inverse sine.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange for sine squared",
-        "workingLatex": "\\sin^2\\theta = \\frac{1}{2}",
-        "explanation": "Dividing by $2$ isolates $\\sin^2\\theta$.",
+        "description": "Check that solutions can exist",
+        "workingLatex": "\\left|\\tfrac{1}{3}\\right| \\le 1",
+        "explanation": "The value $\\tfrac13$ lies within $[-1,1]$, so real solutions exist.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Take square roots",
-        "workingLatex": "\\sin\\theta = \\pm\\frac{1}{\\sqrt{2}} = \\pm\\frac{\\sqrt{2}}{2}",
-        "explanation": "Square-rooting introduces both signs, giving the recognisable exact value for $45^\\circ$.",
+        "description": "Find the principal value with arcsin",
+        "workingLatex": "x = \\arcsin\\!\\left(\\tfrac{1}{3}\\right) \\approx 0.340",
+        "explanation": "The inverse sine returns the principal value, an angle in $[-\\tfrac{\\pi}{2},\\tfrac{\\pi}{2}]$. Here $\\arcsin(\\tfrac13) \\approx 0.340$ radians to three decimal places.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the positive case",
-        "workingLatex": "\\sin\\theta = \\tfrac{\\sqrt2}{2} \\;\\Rightarrow\\; \\theta = 45^\\circ, 135^\\circ",
-        "explanation": "Positive sine gives solutions in quadrants I and II.",
+        "description": "Interpret the principal value",
+        "workingLatex": "0.340 \\in \\text{quadrant I}",
+        "explanation": "Since $0.340$ radians is a positive acute angle, it lies in the first quadrant, giving our first solution and the reference angle.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the negative case",
-        "workingLatex": "\\sin\\theta = -\\tfrac{\\sqrt2}{2} \\;\\Rightarrow\\; \\theta = 225^\\circ, 315^\\circ",
-        "explanation": "Negative sine gives solutions in quadrants III and IV.",
+        "description": "Decide which quadrants apply",
+        "workingLatex": "\\sin x > 0 \\text{ in quadrants I and II}",
+        "explanation": "The sine value is positive, and sine is positive in the first and second quadrants, so there is a second solution in quadrant II.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State all solutions",
-        "workingLatex": "\\theta = 45^\\circ, 135^\\circ, 225^\\circ, 315^\\circ",
-        "explanation": "Combining both cases gives four evenly spaced solutions, all with nonzero sine so cosecant is defined.",
+        "description": "Write the first-quadrant solution",
+        "workingLatex": "x \\approx 0.340",
+        "explanation": "The first-quadrant solution is the principal value itself.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the second-quadrant solution",
+        "workingLatex": "x = \\pi - 0.340 \\approx 2.802",
+        "explanation": "In the second quadrant we subtract the reference angle from $\\pi$, giving about $2.802$ radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm both lie in the interval",
+        "workingLatex": "0 \\le 0.340, \\; 2.802 \\le 2\\pi",
+        "explanation": "Both radian values satisfy $0 \\le x \\le 2\\pi$ (note $2\\pi \\approx 6.283$), so both are kept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check a solution in the original equation",
+        "workingLatex": "\\operatorname{cosec}(0.340) = \\frac{1}{\\sin(0.340)} \\approx \\frac{1}{0.333} \\approx 3",
+        "explanation": "Substituting back gives approximately $3$, confirming the answer; $2.802$ checks the same way since it has the same sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the full solution set",
+        "workingLatex": "x \\approx 0.340, \\; 2.802",
+        "explanation": "These two radian values, to three decimal places, are the complete set of solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 45^\\circ, 135^\\circ, 225^\\circ, 315^\\circ$"
+    "finalAnswer": "$x \\approx 0.340$ or $x \\approx 2.802$ (radians)."
   }
 }

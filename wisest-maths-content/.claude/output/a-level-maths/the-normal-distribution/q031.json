@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "between two values",
+    "symmetry"
+  ],
+  "questionText": "The diameters, $X$ mm, of machined components are modelled by $X \\sim N(25, 0.4^2)$. A component is usable if its diameter lies between $24.5$ mm and $25.5$ mm. Find the probability that a randomly chosen component is usable, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the probability required",
+        "workingLatex": "X \\sim N(25,\\ 0.4^2), \\qquad P(24.5 < X < 25.5)",
+        "explanation": "Diameters are normal with mean $\\mu = 25$ and standard deviation $\\sigma = 0.4$. A component is usable when its diameter is between $24.5$ mm and $25.5$ mm, so we need $P(24.5 < X < 25.5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the lower boundary",
+        "workingLatex": "z_1 = \\dfrac{24.5 - 25}{0.4} = -1.25",
+        "explanation": "The lower limit $24.5$ is below the mean, giving a negative $z$-value of $-1.25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the upper boundary",
+        "workingLatex": "z_2 = \\dfrac{25.5 - 25}{0.4} = 1.25",
+        "explanation": "The upper limit $25.5$ is above the mean by the same amount, giving $z = 1.25$. The two limits are symmetric about the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite using the symmetry of the limits",
+        "workingLatex": "P(24.5 < X < 25.5) = P(-1.25 < Z < 1.25)",
+        "explanation": "Because the limits are equally far either side of the mean, the band is symmetric, which lets us use a shortcut for the area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Express the symmetric band using $\\Phi$",
+        "workingLatex": "P(-1.25 < Z < 1.25) = \\Phi(1.25) - \\Phi(-1.25)",
+        "explanation": "The band area is the cumulative area up to $1.25$ minus the cumulative area up to $-1.25$; the two lower and upper tails outside it are equal by symmetry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the upper cumulative probability",
+        "workingLatex": "\\Phi(1.25) = 0.8944",
+        "explanation": "About $89.44\\%$ of components have a diameter below $25.5$ mm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use symmetry for the lower cumulative probability",
+        "workingLatex": "\\Phi(-1.25) = 1 - 0.8944 = 0.1056",
+        "explanation": "By the symmetry of the standard normal curve, the area to the left of $-1.25$ equals the area to the right of $1.25$, which is $1 - \\Phi(1.25)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Subtract to find the probability",
+        "workingLatex": "0.8944 - 0.1056 = 0.7888",
+        "explanation": "Removing the equal tails leaves the central area — the probability that a component is usable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "P(24.5 < X < 25.5) \\approx 0.789",
+        "explanation": "Rounding gives the probability that a randomly chosen component is usable. This is close to the $\\approx 0.789$ expected within $1.25$ standard deviations of the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(24.5 < X < 25.5) \\approx 0.789$ (3 s.f.)."
+  }
+}

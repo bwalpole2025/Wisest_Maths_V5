@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "triangle area",
+    "exponential"
+  ],
+  "questionText": "The tangent to the curve $y = e^{2x}$ at the point where $x = 1$ crosses the $x$-axis at $A$ and the $y$-axis at $B$. Find the exact coordinates of $A$ and $B$, and hence the exact area of triangle $OAB$, where $O$ is the origin.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate using the standard result for e^{kx}",
+        "workingLatex": "\\frac{dy}{dx} = 2e^{2x}",
+        "explanation": "The standard result $\\dfrac{d}{dx}(e^{kx}) = k\\,e^{kx}$ with $k=2$ gives the gradient of the curve at any point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the gradient of the tangent at x = 1",
+        "workingLatex": "m = \\left.\\frac{dy}{dx}\\right|_{x=1} = 2e^{2}",
+        "explanation": "Substituting $x=1$ into the derivative gives the exact gradient of the tangent at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the point of contact",
+        "workingLatex": "y = e^{2(1)} = e^{2} \\quad\\Rightarrow\\quad (1,\\, e^{2})",
+        "explanation": "The tangent touches the curve, so we evaluate $y=e^{2x}$ at $x=1$ to get the point it passes through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the tangent in point-gradient form",
+        "workingLatex": "y - e^{2} = 2e^{2}(x - 1)",
+        "explanation": "Substituting the point $(1,e^{2})$ and gradient $2e^{2}$ into $y-y_1=m(x-x_1)$ gives the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand and simplify",
+        "workingLatex": "y = 2e^{2}x - 2e^{2} + e^{2} = 2e^{2}x - e^{2}",
+        "explanation": "Multiplying out the bracket and collecting the constant terms $-2e^{2}+e^{2}=-e^{2}$ tidies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factorise the tangent equation",
+        "workingLatex": "y = e^{2}(2x - 1)",
+        "explanation": "Taking out the common factor $e^{2}$ makes the axis intercepts very quick to read off.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find A, the x-axis intercept",
+        "workingLatex": "y = 0:\\quad e^{2}(2x - 1) = 0 \\Rightarrow x = \\tfrac{1}{2} \\quad\\Rightarrow\\quad A\\left(\\tfrac{1}{2},\\, 0\\right)",
+        "explanation": "On the $x$-axis $y=0$. Since $e^{2}\\ne 0$, the bracket must be zero, giving $x=\\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find B, the y-axis intercept",
+        "workingLatex": "x = 0:\\quad y = e^{2}(2(0) - 1) = -e^{2} \\quad\\Rightarrow\\quad B(0,\\, -e^{2})",
+        "explanation": "On the $y$-axis $x=0$; substituting gives $y=-e^{2}$, so the line crosses below the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Identify the lengths of the two legs",
+        "workingLatex": "\\text{base } OA = \\tfrac{1}{2}, \\quad \\text{height } OB = |-e^{2}| = e^{2}",
+        "explanation": "The triangle $OAB$ is right-angled at the origin, so its legs are the distances from $O$ along each axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Compute the area of the triangle",
+        "workingLatex": "\\text{Area} = \\tfrac{1}{2}\\times \\tfrac{1}{2}\\times e^{2} = \\frac{e^{2}}{4}",
+        "explanation": "For a right-angled triangle the area is $\\tfrac{1}{2}\\times\\text{base}\\times\\text{height}$, using the two axis lengths.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify the tangent passes through the point of contact",
+        "workingLatex": "2e^{2}(1) - e^{2} = e^{2} \\;\\checkmark",
+        "explanation": "Substituting $x=1$ back into the tangent gives $y=e^{2}$, matching the point $(1,e^{2})$ as it should.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Numerical check of the gradient",
+        "workingLatex": "m = 2e^{2} \\approx 14.78",
+        "explanation": "A positive, steep gradient is consistent with the fast growth of $e^{2x}$ near $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Numerical check of the area",
+        "workingLatex": "\\text{Area} = \\frac{e^{2}}{4} \\approx 1.847",
+        "explanation": "Evaluating the exact answer as a decimal gives a sensible, small positive area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final results",
+        "workingLatex": "A\\left(\\tfrac{1}{2},0\\right),\\ B(0,-e^{2}),\\ \\text{Area} = \\dfrac{e^{2}}{4}",
+        "explanation": "Collecting the intercepts and the area gives the complete answer in exact form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$A\\left(\\tfrac{1}{2},\\,0\\right)$, $B\\left(0,\\,-e^{2}\\right)$, and the area of triangle $OAB$ is $\\dfrac{e^{2}}{4} \\approx 1.847$ square units."
+  }
+}

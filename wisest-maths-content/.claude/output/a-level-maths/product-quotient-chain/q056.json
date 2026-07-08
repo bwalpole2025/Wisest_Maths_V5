@@ -1,0 +1,113 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "chain rule",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{\\sin 2x}{x}$, $x\\ne 0$, where $x$ is measured in radians. (a) Find $\\dfrac{dy}{dx}$. (b) Find the exact gradient of $C$ at $x=\\dfrac{\\pi}{4}$. (c) Show that the $x$-coordinates of the stationary points of $C$ satisfy $\\tan 2x = 2x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a quotient and label the parts",
+        "workingLatex": "u = \\sin 2x, \\qquad v = x",
+        "explanation": "$y$ is a quotient, so the quotient rule $\\dfrac{d}{dx}\\!\\left(\\dfrac{u}{v}\\right)=\\dfrac{u'v-uv'}{v^2}$ applies. The numerator $\\sin 2x$ is a composition, so it also needs the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the numerator with the chain rule",
+        "workingLatex": "u = \\sin 2x,\\quad w = 2x,\\quad \\frac{dw}{dx}=2,\\quad u' = \\cos(2x)\\cdot 2 = 2\\cos 2x",
+        "explanation": "With $w=2x$, $u=\\sin w$ and $u'=\\cos w\\cdot\\dfrac{dw}{dx}=\\cos 2x\\cdot 2$. The inner derivative gives the factor $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the denominator",
+        "workingLatex": "v' = 1",
+        "explanation": "The derivative of $x$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}",
+        "explanation": "We substitute our four pieces into this standard formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute and simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\cos 2x\\cdot x - \\sin 2x\\cdot 1}{x^2} = \\frac{2x\\cos 2x - \\sin 2x}{x^2}",
+        "explanation": "Placing $u'v-uv'$ over $v^2=x^2$ gives the derivative in a single tidy fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Prepare to evaluate at x = pi/4",
+        "workingLatex": "x=\\tfrac{\\pi}{4} \\ \\Rightarrow\\ 2x = \\tfrac{\\pi}{2}",
+        "explanation": "For part (b) substitute $x=\\tfrac{\\pi}{4}$; the inner angle becomes $2x=\\tfrac{\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the trigonometric values",
+        "workingLatex": "\\cos\\tfrac{\\pi}{2}=0, \\qquad \\sin\\tfrac{\\pi}{2}=1",
+        "explanation": "At $\\tfrac{\\pi}{2}$ radians the cosine is $0$ and the sine is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compute the exact gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\pi/4} = \\frac{2\\cdot\\tfrac{\\pi}{4}\\cdot 0 - 1}{\\left(\\tfrac{\\pi}{4}\\right)^2} = \\frac{-1}{\\pi^2/16} = -\\frac{16}{\\pi^2}",
+        "explanation": "The first term of the numerator vanishes, and dividing by $\\tfrac{\\pi^2}{16}$ is the same as multiplying by $\\tfrac{16}{\\pi^2}$, giving $-\\tfrac{16}{\\pi^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set the derivative to zero for stationary points",
+        "workingLatex": "\\frac{dy}{dx}=0 \\ \\Rightarrow\\ \\frac{2x\\cos 2x - \\sin 2x}{x^2} = 0",
+        "explanation": "Stationary points occur where the gradient is zero. A fraction is zero only when its numerator is zero (and here $x\\ne 0$, so the denominator is fine).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set the numerator to zero",
+        "workingLatex": "2x\\cos 2x - \\sin 2x = 0",
+        "explanation": "Since $x^2\\ne 0$, the whole fraction is zero exactly when the numerator is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Rearrange the equation",
+        "workingLatex": "2x\\cos 2x = \\sin 2x",
+        "explanation": "Move the sine term to the other side to prepare for dividing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Divide through by cos 2x",
+        "workingLatex": "2x = \\frac{\\sin 2x}{\\cos 2x} = \\tan 2x",
+        "explanation": "Dividing both sides by $\\cos 2x$ turns the right-hand side into $\\tan 2x$ (valid where $\\cos 2x\\ne 0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the required result",
+        "workingLatex": "\\tan 2x = 2x",
+        "explanation": "So the $x$-coordinates of the stationary points satisfy $\\tan 2x = 2x$, as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\dfrac{2x\\cos 2x - \\sin 2x}{x^2}$. (b) Gradient at $x=\\tfrac{\\pi}{4}$ is $-\\dfrac{16}{\\pi^2}$. (c) Setting the numerator to zero and dividing by $\\cos 2x$ gives $\\tan 2x = 2x$ (shown)."
+  }
+}

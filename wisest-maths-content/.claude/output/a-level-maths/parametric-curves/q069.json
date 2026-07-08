@@ -6,59 +6,129 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "expression",
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "cartesian",
-    "elimination"
+    "double angle",
+    "intersection",
+    "root selection"
   ],
-  "questionText": "A curve has parametric equations $x = t^2 + t$, $y = t^2 - t$. Find the Cartesian equation in terms of $x$ and $y$.",
+  "questionText": "A curve $C$ is given by $x = 2\\sin t$ and $y = \\cos 2t$ for $0 \\le t \\le \\pi$. Show that a Cartesian equation of $C$ is $y = 1 - \\tfrac{1}{2}x^{2}$ and state the range of $x$. Hence find the coordinates of the point where $C$ meets the line $y = x - 1$, rejecting any invalid solution.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Subtract the equations",
-        "workingLatex": "x - y = (t^2 + t) - (t^2 - t) = 2t",
-        "explanation": "Subtracting eliminates $t^2$ and isolates the linear term.",
+        "description": "Choose a double-angle identity",
+        "workingLatex": "\\cos 2t = 1 - 2\\sin^{2} t",
+        "explanation": "The parameter appears as $\\sin t$ in $x$ and as $\\cos 2t$ in $y$. Writing $\\cos 2t$ in terms of $\\sin t$ lets both equations share the same building block.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Add the equations",
-        "workingLatex": "x + y = (t^2 + t) + (t^2 - t) = 2t^2",
-        "explanation": "Adding eliminates the linear term and isolates $2t^2$.",
+        "description": "Isolate sin t from the x-equation",
+        "workingLatex": "x = 2\\sin t \\Rightarrow \\sin t = \\dfrac{x}{2}",
+        "explanation": "Rearranging $x = 2\\sin t$ expresses $\\sin t$ in terms of $x$, ready to substitute into the identity.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Express t from the difference",
-        "workingLatex": "t = \\frac{x - y}{2}",
-        "explanation": "Rearranging the subtraction result gives $t$.",
+        "description": "Substitute into the identity",
+        "workingLatex": "y = 1 - 2\\left(\\dfrac{x}{2}\\right)^{2}",
+        "explanation": "Replacing $\\sin t$ by $\\tfrac{x}{2}$ in $y = 1 - 2\\sin^{2} t$ removes the parameter entirely.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute into the sum",
-        "workingLatex": "x + y = 2\\left(\\frac{x - y}{2}\\right)^2",
-        "explanation": "Replacing $t^2$ using $2t^2 = x + y$ and $t = \\frac{x-y}{2}$ removes the parameter.",
+        "description": "Simplify to the Cartesian equation",
+        "workingLatex": "y = 1 - 2 \\cdot \\dfrac{x^{2}}{4} = 1 - \\dfrac{1}{2}x^{2}",
+        "explanation": "Squaring and simplifying gives the required equation of a downward parabola.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "x + y = 2\\cdot\\frac{(x - y)^2}{4} = \\frac{(x - y)^2}{2}",
-        "explanation": "Squaring and simplifying the fraction.",
+        "description": "Find the range of sin t on the interval",
+        "workingLatex": "0 \\le t \\le \\pi \\Rightarrow 0 \\le \\sin t \\le 1",
+        "explanation": "Over $0 \\le t \\le \\pi$ the sine is never negative, rising from $0$ up to $1$ and back to $0$, so $\\sin t$ stays in $[0,1]$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
+        "description": "Translate into the range of x",
+        "workingLatex": "x = 2\\sin t \\Rightarrow 0 \\le x \\le 2",
+        "explanation": "Multiplying the bound on $\\sin t$ by $2$ shows $x$ runs only from $0$ to $2$; the curve is just the right-hand half of the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the curve with its domain",
+        "workingLatex": "y = 1 - \\dfrac{1}{2}x^{2}, \\quad 0 \\le x \\le 2",
+        "explanation": "Recording the domain alongside the equation is essential, because it decides which intersection points are genuinely on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the intersection with the line",
+        "workingLatex": "1 - \\dfrac{1}{2}x^{2} = x - 1",
+        "explanation": "At an intersection the curve's $y$ equals the line's $y$, so we equate the two expressions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
         "description": "Clear the fraction",
-        "workingLatex": "2(x + y) = (x - y)^2",
-        "explanation": "Multiplying through by $2$ gives a clean Cartesian equation, a rotated parabola.",
+        "workingLatex": "2 - x^{2} = 2x - 2",
+        "explanation": "Multiplying every term by $2$ removes the fraction and makes the equation easier to rearrange.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Rearrange into a quadratic",
+        "workingLatex": "x^{2} + 2x - 4 = 0",
+        "explanation": "Collecting all terms on one side gives a quadratic whose roots are the possible $x$-coordinates of intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Apply the quadratic formula",
+        "workingLatex": "x = \\dfrac{-2 \\pm \\sqrt{2^{2} - 4(1)(-4)}}{2} = \\dfrac{-2 \\pm \\sqrt{20}}{2}",
+        "explanation": "The quadratic does not factorise over the integers, so the formula is the reliable route; the discriminant is $4 + 16 = 20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Simplify the surd",
+        "workingLatex": "x = \\dfrac{-2 \\pm 2\\sqrt{5}}{2} = -1 \\pm \\sqrt{5}",
+        "explanation": "Since $\\sqrt{20} = 2\\sqrt{5}$, both terms share a factor of $2$ that cancels, giving two neat exact roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Estimate the roots numerically",
+        "workingLatex": "x = -1 + \\sqrt{5} \\approx 1.236, \\qquad x = -1 - \\sqrt{5} \\approx -3.236",
+        "explanation": "Approximate values make it easy to check each root against the domain $0 \\le x \\le 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Reject the out-of-range root",
+        "workingLatex": "x = \\sqrt{5} - 1 \\in [0,2]\\ \\checkmark, \\qquad x = -1 - \\sqrt{5} \\notin [0,2]\\ \\times",
+        "explanation": "Only $x = \\sqrt{5} - 1$ lies within the allowed range $0 \\le x \\le 2$. The other root $x = -1 - \\sqrt{5} \\approx -3.236$ is well outside it — in fact $x = 2\\sin t$ can never be less than $-2$, so no value of $t$ puts a point of $C$ there, and we discard it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = x - 1 = \\left(\\sqrt{5} - 1\\right) - 1 = \\sqrt{5} - 2",
+        "explanation": "The quickest way to get $y$ is to use the line equation with the accepted $x$-value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "State the intersection point",
+        "workingLatex": "\\left(\\sqrt{5} - 1,\\ \\sqrt{5} - 2\\right)",
+        "explanation": "Combining the valid coordinates gives the single point where the curve meets the line.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(x - y)^2 = 2(x + y)$"
+    "finalAnswer": "The Cartesian equation is $y = 1 - \\tfrac{1}{2}x^{2}$ with $0 \\le x \\le 2$. The curve meets the line $y = x - 1$ at the single point $\\left(\\sqrt{5} - 1,\\ \\sqrt{5} - 2\\right)$; the root $x = -1 - \\sqrt{5}$ is rejected because it lies outside $0 \\le x \\le 2$."
   }
 }

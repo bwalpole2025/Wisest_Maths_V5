@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.implicit.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "given gradient",
+    "circle"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + y^2 - 4x = 0$. Find the coordinates of the points on $C$ where the gradient of the tangent is $1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the equation with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(y^2) - \\frac{d}{dx}(4x) = 0",
+        "explanation": "We differentiate the whole relation with respect to $x$, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} - 4 = 0",
+        "explanation": "The $y^2$ term gives $2y\\frac{dy}{dx}$ by the chain rule; the others use the power rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject and simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{4 - 2x}{2y} = \\frac{2 - x}{y}",
+        "explanation": "Isolating $\\frac{dy}{dx}$ and cancelling the factor of $2$ gives the gradient as a fraction in $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the gradient equal to 1",
+        "workingLatex": "\\frac{2 - x}{y} = 1 \\;\\Rightarrow\\; 2 - x = y",
+        "explanation": "We want the tangent gradient to be $1$, so we equate the expression to $1$ and clear the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange into a relation for x",
+        "workingLatex": "x = 2 - y",
+        "explanation": "Writing $x$ in terms of $y$ makes it easy to substitute into the curve equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute into the equation of C",
+        "workingLatex": "(2 - y)^2 + y^2 - 4(2 - y) = 0",
+        "explanation": "The required points also lie on $C$, so we replace $x$ by $2 - y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Expand the brackets",
+        "workingLatex": "4 - 4y + y^2 + y^2 - 8 + 4y = 0",
+        "explanation": "Expanding $(2 - y)^2$ and $-4(2 - y)$ carefully keeps track of every term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify and solve for y",
+        "workingLatex": "2y^2 - 4 = 0 \\;\\Rightarrow\\; y^2 = 2 \\;\\Rightarrow\\; y = \\pm\\sqrt{2}",
+        "explanation": "The $-4y$ and $+4y$ cancel and the constants give $-4$, leaving $2y^2 = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the x-coordinates",
+        "workingLatex": "y = \\sqrt{2} \\Rightarrow x = 2 - \\sqrt{2}; \\quad y = -\\sqrt{2} \\Rightarrow x = 2 + \\sqrt{2}",
+        "explanation": "Using $x = 2 - y$ gives the paired $x$-value for each $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Verify the gradient at each point",
+        "workingLatex": "\\frac{2 - x}{y} = \\frac{\\pm\\sqrt{2}}{\\pm\\sqrt{2}} = 1 \\quad (y \\neq 0)",
+        "explanation": "Both points give $\\frac{2-x}{y} = 1$, and since $y \\neq 0$ the gradient is well defined — so both are valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the coordinates",
+        "workingLatex": "(2 - \\sqrt{2},\\; \\sqrt{2}) \\quad\\text{and}\\quad (2 + \\sqrt{2},\\; -\\sqrt{2})",
+        "explanation": "These are the two points on $C$ where the tangent has gradient $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient is $1$ at $(2 - \\sqrt{2},\\, \\sqrt{2})$ and $(2 + \\sqrt{2},\\, -\\sqrt{2})$."
+  }
+}

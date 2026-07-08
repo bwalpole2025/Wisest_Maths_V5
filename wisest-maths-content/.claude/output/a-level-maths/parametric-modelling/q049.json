@@ -4,61 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "cycloid",
-    "speed"
+    "trigonometric",
+    "chain rule",
+    "tangent"
   ],
-  "questionText": "A point on a rolling wheel has position $x = t - \\sin t$, $y = 1 - \\cos t$ (metres, $t$ in seconds). Find its speed at $t = \\pi$.",
+  "questionText": "A point moves around an elliptical track modelled by $x = 4\\cos t$ and $y = 3\\sin t$, where distances are in metres and $t$ is in radians. Find the gradient of the path and the equation of the tangent to the track at the instant $t = \\dfrac{\\pi}{3}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity components",
-        "workingLatex": "v_x = 1 - \\cos t, \\quad v_y = \\sin t",
-        "explanation": "Differentiating each position component; the derivative of $t - \\sin t$ is $1 - \\cos t$.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = -4\\sin t",
+        "explanation": "The horizontal velocity comes from differentiating $4\\cos t$, using the standard derivative of cosine.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the speed",
-        "workingLatex": "\\text{speed} = \\sqrt{(1 - \\cos t)^2 + \\sin^2 t}",
-        "explanation": "Speed is the magnitude of the velocity vector.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 3\\cos t",
+        "explanation": "The vertical velocity comes from differentiating $3\\sin t$, using the standard derivative of sine.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand the square",
-        "workingLatex": "= \\sqrt{1 - 2\\cos t + \\cos^2 t + \\sin^2 t}",
-        "explanation": "Expanding $(1 - \\cos t)^2$ and keeping the $\\sin^2 t$ term.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{3\\cos t}{-4\\sin t}",
+        "explanation": "The chain rule gives the slope of the track as the ratio of the vertical to the horizontal velocity.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "= \\sqrt{2 - 2\\cos t}",
-        "explanation": "Since $\\cos^2 t + \\sin^2 t = 1$, the expression simplifies to $2 - 2\\cos t$.",
+        "description": "Substitute the exact trig values at t = pi/3",
+        "workingLatex": "\\sin\\tfrac{\\pi}{3} = \\dfrac{\\sqrt{3}}{2}, \\qquad \\cos\\tfrac{\\pi}{3} = \\dfrac{1}{2}",
+        "explanation": "Using exact surd values keeps the answer precise rather than rounding, which is expected at this level.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute t = π",
-        "workingLatex": "= \\sqrt{2 - 2\\cos\\pi} = \\sqrt{2 - 2(-1)}",
-        "explanation": "At $t = \\pi$, cosine is $-1$.",
+        "description": "Evaluate the gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{3 \\cdot \\tfrac{1}{2}}{-4 \\cdot \\tfrac{\\sqrt{3}}{2}} = \\dfrac{\\tfrac{3}{2}}{-2\\sqrt{3}} = -\\dfrac{\\sqrt{3}}{4}",
+        "explanation": "Simplifying and rationalising the denominator gives the exact gradient of the tangent at this instant.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Simplify",
-        "workingLatex": "= \\sqrt{4} = 2 \\text{ m/s}",
-        "explanation": "The speed at $t = \\pi$ is $2$ m/s (the fastest point of a cycloid, at the top of the wheel).",
+        "description": "Find the x-coordinate at t = pi/3",
+        "workingLatex": "x = 4\\cos\\tfrac{\\pi}{3} = 4 \\cdot \\dfrac{1}{2} = 2",
+        "explanation": "We need the point of contact so the tangent line can pass through it; this gives its horizontal position.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate at t = pi/3",
+        "workingLatex": "y = 3\\sin\\tfrac{\\pi}{3} = 3 \\cdot \\dfrac{\\sqrt{3}}{2} = \\dfrac{3\\sqrt{3}}{2}",
+        "explanation": "This gives the vertical position of the point where the tangent touches the track.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the tangent equation",
+        "workingLatex": "y - \\dfrac{3\\sqrt{3}}{2} = -\\dfrac{\\sqrt{3}}{4}\\left(x - 2\\right)",
+        "explanation": "Combining the point of contact and the gradient in point-slope form gives the equation of the tangent to the track.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Tidy into slope-intercept form",
+        "workingLatex": "y = -\\dfrac{\\sqrt{3}}{4}x + \\dfrac{\\sqrt{3}}{2} + \\dfrac{3\\sqrt{3}}{2} = -\\dfrac{\\sqrt{3}}{4}x + 2\\sqrt{3}",
+        "explanation": "Expanding the bracket and combining the constant terms gives the tangent in a clean form, showing its gradient and where it meets the $y$-axis.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Speed $= 2$ m/s"
+    "finalAnswer": "The gradient at $t = \\dfrac{\\pi}{3}$ is $-\\dfrac{\\sqrt{3}}{4}$, and the tangent to the track is $y = -\\dfrac{\\sqrt{3}}{4}x + 2\\sqrt{3}$."
   }
 }

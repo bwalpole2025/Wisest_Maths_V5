@@ -4,54 +4,191 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "value",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "coordinates",
-    "trig"
+    "eliminating the parameter",
+    "double angle",
+    "domain and range"
   ],
-  "questionText": "A curve has parametric equations $x = 1 + 2\\cos\\theta$, $y = 3 + 2\\sin\\theta$. Find the coordinates of the points where the curve crosses the line $y = 3$.",
+  "questionText": "A curve $C$ is defined by the parametric equations $x = \\cos t$ and $y = \\cos 2t$, for $0 \\le t < 2\\pi$. (a) Find a Cartesian equation of $C$ in the form $y = f(x)$. (b) State the domain of $x$ and the range of $y$. (c) Find the coordinates of the points where $C$ meets the coordinate axes, and hence sketch $C$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Set y equal to 3",
-        "workingLatex": "3 + 2\\sin\\theta = 3 \\;\\Rightarrow\\; \\sin\\theta = 0",
-        "explanation": "The line $y = 3$ passes through the centre's height, so we solve the $y$-equation for the parameter.",
+        "description": "Decide how to remove the parameter",
+        "workingLatex": "x = \\cos t, \\qquad y = \\cos 2t",
+        "explanation": "We have two equations linking $x$, $y$ and $t$. To find a Cartesian equation we must eliminate $t$. Since $y$ involves $\\cos 2t$ and $x$ involves $\\cos t$, a double-angle identity will connect them directly.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the angles",
-        "workingLatex": "\\theta = 0 \\text{ or } \\theta = \\pi",
-        "explanation": "Sine is zero at these angles within one revolution.",
+        "description": "Write cos t in terms of x",
+        "workingLatex": "\\cos t = x",
+        "explanation": "The first equation already gives $\\cos t$ by itself, so $\\cos t = x$. This is the quantity we will substitute in a moment.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find x for θ = 0",
-        "workingLatex": "x = 1 + 2\\cos 0 = 1 + 2 = 3",
-        "explanation": "At $\\theta = 0$, cosine is $1$, giving $x = 3$.",
+        "description": "Recall the double-angle identity for cosine",
+        "workingLatex": "\\cos 2t = 2\\cos^{2} t - 1",
+        "explanation": "Of the three forms of $\\cos 2t$, the version written purely in terms of $\\cos t$ is the useful one here because $x = \\cos t$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find x for θ = π",
-        "workingLatex": "x = 1 + 2\\cos\\pi = 1 - 2 = -1",
-        "explanation": "At $\\theta = \\pi$, cosine is $-1$, giving $x = -1$.",
+        "description": "Substitute cos t = x",
+        "workingLatex": "y = 2(\\cos t)^{2} - 1 = 2x^{2} - 1",
+        "explanation": "Replacing $\\cos t$ by $x$ turns the identity into a relation between $x$ and $y$ only, which is exactly the Cartesian equation.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the points",
-        "workingLatex": "(3, 3) \\text{ and } (-1, 3)",
-        "explanation": "These are the ends of the horizontal diameter of the circle centre $(1,3)$ radius $2$.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = 2x^{2} - 1",
+        "explanation": "This is $C$ written without the parameter. It is the equation of an upward-opening parabola, but the parameter will restrict which part of it we actually use.",
         "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the domain from x = cos t",
+        "workingLatex": "-1 \\le \\cos t \\le 1 \\implies -1 \\le x \\le 1",
+        "explanation": "As $t$ varies, $\\cos t$ can only take values between $-1$ and $1$. Since $x = \\cos t$, the curve exists only for $-1 \\le x \\le 1$; the rest of the parabola is never reached.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the range of y",
+        "workingLatex": "y = 2x^{2} - 1, \\quad x^{2} \\in [0, 1] \\implies -1 \\le y \\le 1",
+        "explanation": "On $-1 \\le x \\le 1$ the smallest value of $x^{2}$ is $0$ (at $x=0$), giving $y=-1$, and the largest is $1$ (at $x=\\pm 1$), giving $y=1$. This also matches the fact that $y = \\cos 2t$ is itself bounded between $-1$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Meet the y-axis",
+        "workingLatex": "x = 0 \\implies y = 2(0)^{2} - 1 = -1",
+        "explanation": "The $y$-axis is the line $x=0$. Substituting gives the single crossing point at the bottom of the arc.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the y-axis point",
+        "workingLatex": "(0,\\ -1)",
+        "explanation": "This is the vertex of the parabola arc and the lowest point of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Meet the x-axis",
+        "workingLatex": "y = 0 \\implies 2x^{2} - 1 = 0",
+        "explanation": "The $x$-axis is $y=0$. Setting the Cartesian equation to zero locates where the curve crosses it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Solve for x",
+        "workingLatex": "x^{2} = \\dfrac{1}{2} \\implies x = \\pm \\dfrac{1}{\\sqrt{2}}",
+        "explanation": "Both roots satisfy $-1 \\le x \\le 1$, so both are genuine crossing points on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the x-axis points",
+        "workingLatex": "\\left( \\dfrac{1}{\\sqrt{2}},\\ 0 \\right), \\qquad \\left( -\\dfrac{1}{\\sqrt{2}},\\ 0 \\right)",
+        "explanation": "These are the two points where the arc cuts the horizontal axis, placed symmetrically about the $y$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Identify the endpoints",
+        "workingLatex": "x = \\pm 1 \\implies y = 2(1) - 1 = 1 \\implies (\\pm 1,\\ 1)",
+        "explanation": "At the extreme values $x = \\pm 1$ the curve reaches its highest points $(\\pm 1,\\ 1)$. As $t$ runs from $0$ to $2\\pi$, the point moves from $(1,1)$ across to $(-1,1)$ and back, tracing the arc twice.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Describe and sketch the curve",
+        "workingLatex": "y = 2x^{2} - 1, \\quad -1 \\le x \\le 1",
+        "explanation": "The curve is the section of the parabola $y = 2x^{2}-1$ between $x=-1$ and $x=1$: a cup-shaped arc with vertex $(0,-1)$, rising to the endpoints $(\\pm 1, 1)$ and cutting the $x$-axis at $x = \\pm \\tfrac{1}{\\sqrt{2}}$.",
+        "diagram": {
+          "kind": "functionGraph",
+          "xMin": -1.5,
+          "xMax": 1.5,
+          "yMin": -1.5,
+          "yMax": 1.5,
+          "curves": [
+            {
+              "points": [
+                {
+                  "x": 1,
+                  "y": 1
+                },
+                {
+                  "x": 0.866,
+                  "y": 0.5
+                },
+                {
+                  "x": 0.707,
+                  "y": 0
+                },
+                {
+                  "x": 0.5,
+                  "y": -0.5
+                },
+                {
+                  "x": 0,
+                  "y": -1
+                },
+                {
+                  "x": -0.5,
+                  "y": -0.5
+                },
+                {
+                  "x": -0.707,
+                  "y": 0
+                },
+                {
+                  "x": -0.866,
+                  "y": 0.5
+                },
+                {
+                  "x": -1,
+                  "y": 1
+                }
+              ],
+              "color": "accent",
+              "label": "y = 2x^2 - 1"
+            }
+          ],
+          "points": [
+            {
+              "x": 0,
+              "y": -1,
+              "label": "(0,\\,-1)",
+              "open": false
+            },
+            {
+              "x": 1,
+              "y": 1,
+              "label": "(1,\\,1)",
+              "open": false
+            },
+            {
+              "x": -1,
+              "y": 1,
+              "label": "(-1,\\,1)",
+              "open": false
+            }
+          ],
+          "xAxisLabel": "x",
+          "yAxisLabel": "y",
+          "caption": "Arc of the parabola y = 2x^2 - 1 for -1 <= x <= 1",
+          "alt": "An upward parabola arc with vertex at (0, -1) rising to endpoints (-1, 1) and (1, 1), crossing the x-axis near x = plus or minus 0.71."
+        }
       }
     ],
-    "finalAnswer": "$(3, 3)$ and $(-1, 3)$"
+    "finalAnswer": "(a) $y = 2x^{2} - 1$. (b) Domain $-1 \\le x \\le 1$, range $-1 \\le y \\le 1$. (c) $C$ meets the $y$-axis at $(0,\\,-1)$ and the $x$-axis at $\\left(\\pm\\tfrac{1}{\\sqrt{2}},\\,0\\right)$; it is the arc of the parabola $y = 2x^{2}-1$ for $-1\\le x\\le 1$, with vertex $(0,-1)$ and endpoints $(\\pm 1,\\,1)$."
   }
 }

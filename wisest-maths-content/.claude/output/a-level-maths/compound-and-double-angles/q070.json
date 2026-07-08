@@ -5,61 +5,130 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "marks": 7,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "identities",
-    "proof",
-    "tangent"
+    "exact values",
+    "triple angle",
+    "double angle"
   ],
-  "questionText": "Prove that $\\dfrac{\\sin(A + B)}{\\sin(A - B)} \\equiv \\dfrac{\\tan A + \\tan B}{\\tan A - \\tan B}$.",
+  "questionText": "Let $\\theta = 36^\\circ$. By using the fact that $3\\theta + 2\\theta = 180^\\circ$, together with the triple- and double-angle formulae for cosine, show that $\\cos 36^\\circ = \\dfrac{1+\\sqrt{5}}{4}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the numerator",
-        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
-        "explanation": "We write out both compound angles, aiming to divide through by $\\cos A\\cos B$ to create tangents.",
+        "description": "Set up the angle relationship",
+        "workingLatex": "\\theta = 36^\\circ, \\qquad 3\\theta + 2\\theta = 108^\\circ + 72^\\circ = 180^\\circ",
+        "explanation": "Because five copies of $36^\\circ$ make $180^\\circ$, we can relate the triple angle $3\\theta$ to the double angle $2\\theta$, which is the engine of the whole derivation.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Expand the denominator",
-        "workingLatex": "\\sin(A - B) = \\sin A\\cos B - \\cos A\\sin B",
-        "explanation": "The difference version flips the middle sign.",
+        "description": "Rewrite the triple angle",
+        "workingLatex": "3\\theta = 180^\\circ - 2\\theta",
+        "explanation": "Rearranging $3\\theta + 2\\theta = 180^\\circ$ expresses $3\\theta$ as a supplement of $2\\theta$, which we can feed into the cosine of a supplement.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the ratio",
-        "workingLatex": "\\frac{\\sin(A+B)}{\\sin(A-B)} = \\frac{\\sin A\\cos B + \\cos A\\sin B}{\\sin A\\cos B - \\cos A\\sin B}",
-        "explanation": "Placing the expansions over each other prepares for a common division.",
+        "description": "Use the supplementary-angle property",
+        "workingLatex": "\\cos 3\\theta = \\cos(180^\\circ - 2\\theta) = -\\cos 2\\theta",
+        "explanation": "Cosine of a supplement flips sign, so $\\cos 3\\theta = -\\cos 2\\theta$. This single equation links the triple and double angles of $\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Divide every term by cos A cos B",
-        "workingLatex": "= \\frac{\\frac{\\sin A\\cos B}{\\cos A\\cos B} + \\frac{\\cos A\\sin B}{\\cos A\\cos B}}{\\frac{\\sin A\\cos B}{\\cos A\\cos B} - \\frac{\\cos A\\sin B}{\\cos A\\cos B}}",
-        "explanation": "Dividing numerator and denominator by the same quantity $\\cos A\\cos B$ leaves the ratio unchanged but exposes tangents.",
+        "description": "State the triple-angle formula",
+        "workingLatex": "\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta",
+        "explanation": "This identity follows from the compound-angle formulae (expanding $\\cos(2\\theta+\\theta)$) and lets us write $\\cos 3\\theta$ in terms of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify each fraction",
-        "workingLatex": "= \\frac{\\tan A + \\tan B}{\\tan A - \\tan B}",
-        "explanation": "Each term reduces: for example $\\frac{\\sin A\\cos B}{\\cos A\\cos B} = \\tan A$ and $\\frac{\\cos A\\sin B}{\\cos A\\cos B} = \\tan B$.",
+        "description": "State the double-angle formula",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "Choosing the all-cosine form of $\\cos 2\\theta$ keeps the whole equation in a single variable, $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Conclude",
-        "workingLatex": "\\frac{\\sin(A + B)}{\\sin(A - B)} \\equiv \\frac{\\tan A + \\tan B}{\\tan A - \\tan B} \\;\\blacksquare",
-        "explanation": "The left-hand side equals the right-hand side, completing the proof.",
+        "description": "Introduce a shorthand",
+        "workingLatex": "\\text{Let } c = \\cos 36^\\circ",
+        "explanation": "Naming $\\cos 36^\\circ$ as $c$ turns the trigonometric equation into an ordinary polynomial equation in $c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute into the relationship",
+        "workingLatex": "4c^3 - 3c = -(2c^2 - 1)",
+        "explanation": "Replacing $\\cos 3\\theta$ and $\\cos 2\\theta$ with their formulae in $\\cos 3\\theta = -\\cos 2\\theta$ produces a cubic equation for $c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the right-hand side",
+        "workingLatex": "4c^3 - 3c = -2c^2 + 1",
+        "explanation": "Distributing the minus sign prepares the equation for collecting all terms on one side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Form the cubic",
+        "workingLatex": "4c^3 + 2c^2 - 3c - 1 = 0",
+        "explanation": "Bringing every term to the left gives a cubic whose roots include $\\cos 36^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find an obvious root",
+        "workingLatex": "c = -1: \\quad 4(-1)^3 + 2(-1)^2 - 3(-1) - 1 = -4 + 2 + 3 - 1 = 0",
+        "explanation": "Testing $c=-1$ gives zero, so $(c+1)$ is a factor. This root corresponds to $\\cos 180^\\circ$, an unwanted solution we will discard.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Factorise the cubic",
+        "workingLatex": "4c^3 + 2c^2 - 3c - 1 = (c + 1)(4c^2 - 2c - 1) = 0",
+        "explanation": "Dividing out the known factor $(c+1)$ leaves a quadratic that contains the value we actually want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Discard the unwanted root",
+        "workingLatex": "\\cos 36^\\circ \\neq -1 \\ \\Rightarrow\\ 4c^2 - 2c - 1 = 0",
+        "explanation": "Since $\\cos 36^\\circ$ is clearly not $-1$, the relevant solutions come from the quadratic factor.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve the quadratic",
+        "workingLatex": "c = \\frac{2 \\pm \\sqrt{(-2)^2 - 4(4)(-1)}}{2(4)} = \\frac{2 \\pm \\sqrt{20}}{8}",
+        "explanation": "The quadratic formula gives the two exact roots; the discriminant is $4 + 16 = 20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Simplify the surd",
+        "workingLatex": "\\sqrt{20} = 2\\sqrt{5} \\ \\Rightarrow\\ c = \\frac{2 \\pm 2\\sqrt{5}}{8} = \\frac{1 \\pm \\sqrt{5}}{4}",
+        "explanation": "Simplifying $\\sqrt{20}=2\\sqrt{5}$ and cancelling a factor of $2$ gives the two candidate exact values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Choose the correct sign",
+        "workingLatex": "\\frac{1 - \\sqrt{5}}{4} < 0, \\quad \\cos 36^\\circ > 0 \\ \\Rightarrow\\ \\cos 36^\\circ = \\frac{1 + \\sqrt{5}}{4}",
+        "explanation": "Since $36^\\circ$ is acute, its cosine is positive, so we reject the negative root and keep $\\dfrac{1+\\sqrt{5}}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 16,
+        "description": "Numerical check",
+        "workingLatex": "\\frac{1 + \\sqrt{5}}{4} \\approx \\frac{1 + 2.2361}{4} = 0.8090, \\qquad \\cos 36^\\circ \\approx 0.8090",
+        "explanation": "The exact value evaluates to about $0.8090$, exactly matching a calculator value of $\\cos 36^\\circ$, so the result is confirmed.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\sin(A + B)}{\\sin(A - B)} \\equiv \\dfrac{\\tan A + \\tan B}{\\tan A - \\tan B}$"
+    "finalAnswer": "Using $\\cos 3\\theta = -\\cos 2\\theta$ with $\\theta=36^\\circ$ leads to $4c^2 - 2c - 1 = 0$ where $c=\\cos 36^\\circ$; taking the positive root gives $\\cos 36^\\circ = \\dfrac{1+\\sqrt{5}}{4} \\approx 0.809$."
   }
 }

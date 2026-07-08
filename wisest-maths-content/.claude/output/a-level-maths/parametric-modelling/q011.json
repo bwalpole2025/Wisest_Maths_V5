@@ -5,53 +5,67 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "velocity",
-    "components"
+    "stationary",
+    "parametric differentiation",
+    "modelling"
   ],
-  "questionText": "A particle has position $x = t^2$, $y = 3t$ (metres) at time $t$ seconds. Find the horizontal and vertical velocity components at $t = 2$.",
+  "questionText": "A ball is thrown so that, $t$ seconds after release, its position in metres is modelled by $x = 4t$ and $y = 20t - 5t^{2}$. Find the time at which the ball is momentarily moving horizontally, and its position at that moment.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall that velocity is the rate of change of position",
-        "workingLatex": "v_x = \\frac{dx}{dt}, \\quad v_y = \\frac{dy}{dt}",
-        "explanation": "In a motion model, differentiating each position component with respect to time gives the corresponding velocity component.",
+        "description": "Identify the condition for horizontal motion",
+        "workingLatex": "\\text{moving horizontally} \\Rightarrow \\dot{y} = 0",
+        "explanation": "Moving horizontally means the ball is, for an instant, neither rising nor falling. That happens exactly when the vertical velocity $\\dot{y}$ is zero.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate the x-equation",
-        "workingLatex": "v_x = \\frac{dx}{dt} = 2t",
-        "explanation": "The horizontal velocity is the derivative of $x = t^2$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 20 - 10t",
+        "explanation": "Differentiating $y = 20t - 5t^{2}$ gives the vertical velocity as a function of time.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Differentiate the y-equation",
-        "workingLatex": "v_y = \\frac{dy}{dt} = 3",
-        "explanation": "The vertical velocity is the derivative of $y = 3t$, which is constant.",
+        "description": "Set the vertical velocity to zero",
+        "workingLatex": "20 - 10t = 0",
+        "explanation": "Applying the condition $\\dot{y} = 0$ turns the problem into a simple equation for the time.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Evaluate at t = 2",
-        "workingLatex": "v_x = 2(2) = 4, \\quad v_y = 3",
-        "explanation": "Substituting $t = 2$ gives the two velocity components.",
+        "description": "Solve for t",
+        "workingLatex": "10t = 20 \\Rightarrow t = 2",
+        "explanation": "Rearranging gives $t = 2$: the ball is moving horizontally $2$ seconds after release.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "v_x = 4 \\text{ m/s}, \\quad v_y = 3 \\text{ m/s}",
-        "explanation": "These are the horizontal and vertical velocities at $t = 2$ s.",
+        "description": "Find the horizontal position",
+        "workingLatex": "x = 4(2) = 8",
+        "explanation": "Substituting $t = 2$ into $x$ gives how far the ball has travelled horizontally by then.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the vertical position",
+        "workingLatex": "y = 20(2) - 5(2)^{2} = 40 - 20 = 20",
+        "explanation": "Substituting $t = 2$ into $y$ gives the height at that instant, which is the top of the ball's path.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the time and position",
+        "workingLatex": "t = 2, \\quad (x,\\,y) = (8,\\,20)",
+        "explanation": "So the ball is moving horizontally after $2$ seconds, at the point $(8,\\,20)$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$v_x = 4$ m/s, $v_y = 3$ m/s."
+    "finalAnswer": "The ball is moving horizontally when $t = 2$ s, at the position $(8,\\,20)$ (metres)."
   }
 }

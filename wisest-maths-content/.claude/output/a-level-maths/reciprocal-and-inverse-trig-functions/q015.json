@@ -6,60 +6,66 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Easy",
   "marks": 3,
-  "answerType": "value",
+  "answerType": "written",
   "tags": [
-    "inverse trig",
-    "arcsin",
-    "negative",
-    "radians"
+    "reciprocal trig",
+    "cot",
+    "range"
   ],
-  "questionText": "Find the exact value of $\\arcsin\\left(-\\dfrac{1}{2}\\right)$, giving your answer in radians.",
+  "questionText": "State the range of the function $y = \\cot x$, and explain why every real number is a possible value.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Interpret the inverse sine",
-        "workingLatex": "\\arcsin\\left(-\\tfrac{1}{2}\\right) = \\theta \\;\\Leftrightarrow\\; \\sin\\theta = -\\tfrac{1}{2}",
-        "explanation": "We need the angle whose sine is $-\\frac{1}{2}$, chosen from the principal range of arcsine.",
+        "description": "Recall the definition",
+        "workingLatex": "\\cot x = \\frac{\\cos x}{\\sin x}",
+        "explanation": "Cotangent is the ratio of cosine to sine, so its outputs depend on how these two vary relative to each other.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State the principal range of arcsin",
-        "workingLatex": "-\\frac{\\pi}{2} \\le \\theta \\le \\frac{\\pi}{2}",
-        "explanation": "Arcsine outputs angles in this range, which includes negative angles, so a negative answer is possible here.",
+        "description": "Find where cot is zero",
+        "workingLatex": "\\cot x = 0 \\iff \\cos x = 0 \\quad (\\text{e.g. } x = 90^\\circ)",
+        "explanation": "A fraction is zero exactly when its numerator is zero, so cotangent hits $0$ whenever $\\cos x = 0$ (with $\\sin x \\ne 0$). So $0$ is in the range.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Use the odd symmetry of arcsine",
-        "workingLatex": "\\arcsin(-x) = -\\arcsin(x)",
-        "explanation": "Arcsine is an odd function, so a negative input simply flips the sign of the output. This lets us reuse the positive case.",
+        "description": "Show large positive values occur",
+        "workingLatex": "\\sin x \\to 0^+, \\ \\cos x \\to 1 \\;\\Rightarrow\\; \\cot x = \\frac{\\cos x}{\\sin x} \\to +\\infty",
+        "explanation": "As $x$ approaches $0^\\circ$ from above, sine is a tiny positive number and cosine is near $1$; dividing by something tiny makes cotangent grow without bound. So arbitrarily large positive values occur.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recall the positive case",
-        "workingLatex": "\\arcsin\\left(\\tfrac{1}{2}\\right) = \\frac{\\pi}{6}",
-        "explanation": "We already know the angle with sine one half is $\\frac{\\pi}{6}$.",
+        "description": "Show large negative values occur",
+        "workingLatex": "\\sin x \\to 0^+, \\ \\cos x \\to -1 \\;\\Rightarrow\\; \\cot x \\to -\\infty",
+        "explanation": "Approaching $180^\\circ$ from below, sine is tiny and positive while cosine is near $-1$, so the ratio is large and negative. Arbitrarily large negative values occur too.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Apply the sign flip",
-        "workingLatex": "\\arcsin\\left(-\\tfrac{1}{2}\\right) = -\\frac{\\pi}{6}",
-        "explanation": "Flipping the sign gives $-\\frac{\\pi}{6}$, which indeed lies in the principal range.",
+        "description": "Note continuity between asymptotes",
+        "workingLatex": "\\cot x \\text{ is continuous on } 0^\\circ < x < 180^\\circ",
+        "explanation": "Between two consecutive asymptotes cotangent moves smoothly and without breaks from $+\\infty$ down to $-\\infty$, so it must pass through every value on the way.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Verify by checking the sine",
-        "workingLatex": "\\sin\\left(-\\tfrac{\\pi}{6}\\right) = -\\tfrac{1}{2} \\;\\checkmark",
-        "explanation": "Substituting back confirms the sine of $-\\frac{\\pi}{6}$ is $-\\frac{1}{2}$, so our answer is correct.",
+        "description": "Conclude every value is attained",
+        "workingLatex": "+\\infty \\;\\longrightarrow\\; -\\infty \\;\\Rightarrow\\; \\text{every } y \\in \\mathbb{R} \\text{ is attained}",
+        "explanation": "Sweeping continuously from very large positive to very large negative, the graph cannot skip any height, so it takes every real value on a single branch.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the range",
+        "workingLatex": "\\text{range: } y \\in \\mathbb{R} \\quad (\\text{all real numbers})",
+        "explanation": "Unlike sec and cosec, cotangent has no gap: its range is the whole set of real numbers.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\arcsin\\left(-\\dfrac{1}{2}\\right) = -\\dfrac{\\pi}{6}$"
+    "finalAnswer": "The range of $y=\\cot x$ is all real numbers, $y \\in \\mathbb{R}$; on each branch it runs continuously from $+\\infty$ to $-\\infty$, so no value is missed."
   }
 }

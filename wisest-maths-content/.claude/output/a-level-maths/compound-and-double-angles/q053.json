@@ -5,68 +5,116 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "equations",
     "quadratic",
-    "cosine"
+    "reject root"
   ],
-  "questionText": "Solve $3\\cos 2\\theta - \\cos\\theta + 2 = 0$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionText": "Solve $\\cos 2x + 5\\cos x + 3 = 0$ for $0 \\le x < 360^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the cosine form",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
-        "explanation": "The equation is otherwise in cosine, so this form gives a quadratic in $\\cos\\theta$.",
+        "description": "Choose the cosine form of cos 2x",
+        "workingLatex": "\\cos 2x = 2\\cos^2 x - 1",
+        "explanation": "The equation contains $\\cos x$, so we want everything in terms of cosine. The version $\\cos 2x = 2\\cos^2 x - 1$ is written purely in cosines, which is ideal here.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute",
-        "workingLatex": "3(2\\cos^2\\theta - 1) - \\cos\\theta + 2 = 0",
-        "explanation": "Replacing $\\cos 2\\theta$ puts everything in cosine.",
+        "description": "Substitute into the equation",
+        "workingLatex": "\\left(2\\cos^2 x - 1\\right) + 5\\cos x + 3 = 0",
+        "explanation": "Replacing $\\cos 2x$ leaves an equation in $\\cos x$ only, which we can treat as a quadratic.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand and simplify",
-        "workingLatex": "6\\cos^2\\theta - \\cos\\theta - 1 = 0",
-        "explanation": "Multiplying out and combining $-3 + 2 = -1$ gives a quadratic.",
+        "description": "Simplify to a quadratic",
+        "workingLatex": "2\\cos^2 x + 5\\cos x + 2 = 0",
+        "explanation": "Combining the constants $-1 + 3 = 2$ gives a clean quadratic in $\\cos x$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(3\\cos\\theta + 1)(2\\cos\\theta - 1) = 0",
-        "explanation": "The factorisation checks out via the cross terms $-3\\cos\\theta + 2\\cos\\theta = -\\cos\\theta$.",
+        "description": "Introduce a temporary variable",
+        "workingLatex": "2c^2 + 5c + 2 = 0, \\qquad c = \\cos x",
+        "explanation": "Letting $c = \\cos x$ makes the quadratic structure obvious and keeps the algebra uncluttered.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\cos\\theta = -\\tfrac{1}{3} \\;\\Rightarrow\\; \\theta \\approx 109.5^\\circ, 250.5^\\circ",
-        "explanation": "The reference angle is about $70.5^\\circ$; negative cosine gives quadrant II and III solutions.",
+        "description": "Factor the quadratic",
+        "workingLatex": "(2c + 1)(c + 2) = 0",
+        "explanation": "These factors expand back to $2c^2 + 5c + 2$, so the equation breaks into two simple cases.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "\\cos\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 60^\\circ, 300^\\circ",
-        "explanation": "Cosine one half gives quadrant I and IV solutions.",
+        "description": "Read off the two roots",
+        "workingLatex": "c = -\\tfrac{1}{2} \\quad \\text{or} \\quad c = -2",
+        "explanation": "Setting each factor to zero gives the two possible values for $\\cos x$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta \\approx 60^\\circ, 110^\\circ, 250^\\circ, 300^\\circ",
-        "explanation": "Combining both cases and rounding gives four solutions in the interval.",
+        "description": "Reject the impossible root",
+        "workingLatex": "-1 \\le \\cos x \\le 1 \\ \\Rightarrow \\ c = -2 \\ \\text{is impossible}",
+        "explanation": "A cosine can never be less than $-1$, so $\\cos x = -2$ has no solutions and is discarded. Only $\\cos x = -\\tfrac12$ can give angles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Keep the valid root",
+        "workingLatex": "\\cos x = -\\tfrac{1}{2}",
+        "explanation": "We continue with the one attainable value of the cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the reference angle",
+        "workingLatex": "\\cos^{-1}\\tfrac{1}{2} = 60^\\circ",
+        "explanation": "The acute angle whose cosine has size $\\tfrac12$ is $60^\\circ$; this reference angle locates the solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Second-quadrant solution",
+        "workingLatex": "x = 180^\\circ - 60^\\circ = 120^\\circ",
+        "explanation": "Cosine is negative in the second and third quadrants. The second-quadrant angle is $180^\\circ - 60^\\circ = 120^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Third-quadrant solution",
+        "workingLatex": "x = 180^\\circ + 60^\\circ = 240^\\circ",
+        "explanation": "The third-quadrant angle is $180^\\circ + 60^\\circ = 240^\\circ$, giving the second solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify x = 120 degrees",
+        "workingLatex": "\\cos 240^\\circ + 5\\cos 120^\\circ + 3 = -\\tfrac12 + 5\\left(-\\tfrac12\\right) + 3 = 0",
+        "explanation": "With $2x = 240^\\circ$, we get $\\cos 240^\\circ = -\\tfrac12$ and $\\cos 120^\\circ = -\\tfrac12$; the terms cancel to zero, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify x = 240 degrees",
+        "workingLatex": "\\cos 480^\\circ + 5\\cos 240^\\circ + 3 = -\\tfrac12 + 5\\left(-\\tfrac12\\right) + 3 = 0",
+        "explanation": "Here $2x = 480^\\circ$ and $\\cos 480^\\circ = \\cos 120^\\circ = -\\tfrac12$, so the left side is again zero. Both solutions are valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the solution set",
+        "workingLatex": "x = 120^\\circ,\\ 240^\\circ",
+        "explanation": "These are the only values of $x$ in $0 \\le x < 360^\\circ$ satisfying the equation.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 60^\\circ, 110^\\circ, 250^\\circ, 300^\\circ$"
+    "finalAnswer": "$x = 120^\\circ$ and $x = 240^\\circ$ (the root $\\cos x = -2$ is rejected)."
   }
 }

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "chain rule",
+    "gradient at a point"
+  ],
+  "questionText": "The curve $C$ has equation $y^2 = 4x$. Find the value of $\\dfrac{dy}{dx}$ at the point $(1, 2)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(y^2) = \\frac{d}{dx}(4x)",
+        "explanation": "Differentiate each side with respect to $x$, remembering that $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the chain rule on the left",
+        "workingLatex": "2y\\frac{dy}{dx} = \\frac{d}{dx}(4x)",
+        "explanation": "By the chain rule, $y^2$ differentiates to $2y\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the right-hand side",
+        "workingLatex": "2y\\frac{dy}{dx} = 4",
+        "explanation": "The term $4x$ differentiates to $4$ by the power rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{4}{2y} = \\frac{2}{y}",
+        "explanation": "Dividing both sides by $2y$ and simplifying gives the gradient function $\\frac{2}{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "2^2 = 4 = 4(1)",
+        "explanation": "The point $(1, 2)$ satisfies $y^2 = 4x$, so it lies on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the point (1, 2)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,2)} = \\frac{2}{2} = 1",
+        "explanation": "Substituting $y = 2$ into $\\frac{2}{y}$ gives the gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = 1",
+        "explanation": "So the gradient of the curve at $(1, 2)$ is $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 1$ at $(1, 2)$."
+  }
+}

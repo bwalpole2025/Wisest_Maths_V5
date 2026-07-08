@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "stationary points",
+    "logarithm"
+  ],
+  "questionText": "The curve $C$ has equation $y = x \\ln x$ for $x > 0$. (a) Find $\\dfrac{dy}{dx}$. (b) Find the exact coordinates of the stationary point of $C$ and determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the domain and identify the factors",
+        "workingLatex": "x > 0, \\qquad u = x, \\qquad v = \\ln x",
+        "explanation": "The function is a product of $x$ and $\\ln x$, so the product rule applies. Note $\\ln x$ requires $x>0$, which we keep in mind throughout.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = \\frac{1}{x}",
+        "explanation": "Differentiating $x$ gives $1$, and the derivative of $\\ln x$ is $\\tfrac{1}{x}$ — both standard results.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = u'v + uv' = \\ln x + x \\cdot \\frac{1}{x}",
+        "explanation": "Substituting into $u'v+uv'$ gives $\\ln x$ from the first piece and $x\\cdot\\tfrac{1}{x}$ from the second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify",
+        "workingLatex": "\\frac{dy}{dx} = \\ln x + 1",
+        "explanation": "The product $x\\cdot\\tfrac{1}{x}$ simplifies to $1$, leaving a clean derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\ln x + 1 = 0",
+        "explanation": "Stationary points occur where the gradient is zero, so we solve $\\tfrac{dy}{dx}=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x",
+        "workingLatex": "\\ln x = -1 \\ \\Rightarrow\\ x = e^{-1} = \\frac{1}{e}",
+        "explanation": "Rearranging gives $\\ln x=-1$; undoing the logarithm gives $x=e^{-1}$, which is positive and so lies in the domain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\frac{1}{e}\\ln\\!\\left(\\frac{1}{e}\\right) = \\frac{1}{e}(-1) = -\\frac{1}{e}",
+        "explanation": "Substituting $x=\\tfrac{1}{e}$ into $y=x\\ln x$ and using $\\ln(e^{-1})=-1$ gives the height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the stationary point",
+        "workingLatex": "\\left(\\frac{1}{e}, \\ -\\frac{1}{e}\\right)",
+        "explanation": "So the curve has a single stationary point at $\\left(\\tfrac{1}{e},-\\tfrac{1}{e}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{d}{dx}(\\ln x + 1) = \\frac{1}{x}",
+        "explanation": "Differentiating $\\ln x+1$ again gives $\\tfrac{1}{x}$, ready for the second-derivative test.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate the second derivative at the stationary point",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=1/e} = \\frac{1}{1/e} = e > 0",
+        "explanation": "Substituting $x=\\tfrac{1}{e}$ gives $e$, which is positive, so the curve is concave up there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Conclude the nature of the stationary point",
+        "workingLatex": "\\frac{d^2y}{dx^2} > 0 \\ \\Rightarrow\\ \\text{minimum}",
+        "explanation": "A positive second derivative means the stationary point $\\left(\\tfrac{1}{e},-\\tfrac{1}{e}\\right)$ is a local minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\ln x + 1$. (b) A minimum at $\\left(\\dfrac{1}{e}, -\\dfrac{1}{e}\\right)$."
+  }
+}

@@ -5,74 +5,116 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "compound angles",
-    "identities",
-    "proof"
+    "double angle",
+    "quadratic",
+    "solve equation"
   ],
-  "questionText": "Prove that $\\cos(A + B)\\cos(A - B) \\equiv \\cos^2 A - \\sin^2 B$.",
+  "questionText": "Solve $4\\cos 2x = 3 - 7\\sin x$ for $0 \\le x < 360^\\circ$, giving your answers to one decimal place where appropriate.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand both compound angles",
-        "workingLatex": "\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B",
-        "explanation": "The two brackets differ only in a sign, setting up a difference of squares.",
+        "description": "Choose the sine form of cos 2x",
+        "workingLatex": "\\cos 2x = 1 - 2\\sin^2 x",
+        "explanation": "Because the right-hand side involves $\\sin x$, we convert $\\cos 2x$ into sines using $\\cos 2x = 1 - 2\\sin^2 x$ so the whole equation is in one ratio.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the second bracket",
-        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
-        "explanation": "The difference version flips the middle sign to a plus.",
+        "description": "Substitute into the equation",
+        "workingLatex": "4\\left(1 - 2\\sin^2 x\\right) = 3 - 7\\sin x",
+        "explanation": "Replacing $\\cos 2x$ leaves an equation entirely in $\\sin x$, ready to be turned into a quadratic.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Multiply as a difference of squares",
-        "workingLatex": "\\cos(A+B)\\cos(A-B) = (\\cos A\\cos B)^2 - (\\sin A\\sin B)^2",
-        "explanation": "Using $(x-y)(x+y) = x^2 - y^2$ with $x = \\cos A\\cos B$ and $y = \\sin A\\sin B$.",
+        "description": "Expand the left-hand side",
+        "workingLatex": "4 - 8\\sin^2 x = 3 - 7\\sin x",
+        "explanation": "Multiplying out the bracket clears the grouping so we can gather every term on one side.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write out the squares",
-        "workingLatex": "= \\cos^2 A\\cos^2 B - \\sin^2 A\\sin^2 B",
-        "explanation": "Squaring each product gives these two terms.",
+        "description": "Collect all terms on one side",
+        "workingLatex": "-8\\sin^2 x + 7\\sin x + 1 = 0",
+        "explanation": "Moving the right-hand terms across gives a quadratic in $\\sin x$ set equal to zero.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Replace using the Pythagorean identity",
-        "workingLatex": "\\cos^2 B = 1 - \\sin^2 B, \\quad \\sin^2 A = 1 - \\cos^2 A",
-        "explanation": "We convert two of the factors to express everything via $\\cos^2 A$ and $\\sin^2 B$.",
+        "description": "Make the leading coefficient positive",
+        "workingLatex": "8\\sin^2 x - 7\\sin x - 1 = 0",
+        "explanation": "Multiplying through by $-1$ gives a tidy quadratic with a positive $\\sin^2 x$ term, which is easier to factor.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Substitute",
-        "workingLatex": "= \\cos^2 A(1 - \\sin^2 B) - (1 - \\cos^2 A)\\sin^2 B",
-        "explanation": "Inserting both replacements.",
+        "description": "Factor the quadratic",
+        "workingLatex": "(8\\sin x + 1)(\\sin x - 1) = 0",
+        "explanation": "The factors multiply out to $8\\sin^2 x - 7\\sin x - 1$, so the equation splits into two simple linear pieces.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Expand",
-        "workingLatex": "= \\cos^2 A - \\cos^2 A\\sin^2 B - \\sin^2 B + \\cos^2 A\\sin^2 B",
-        "explanation": "Multiplying out both products.",
+        "description": "Read off the two possible values",
+        "workingLatex": "\\sin x = -\\tfrac{1}{8} \\quad \\text{or} \\quad \\sin x = 1",
+        "explanation": "Setting each factor to zero gives the two candidate values for $\\sin x$. Both lie within $[-1,1]$, so neither is rejected.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Cancel and conclude",
-        "workingLatex": "= \\cos^2 A - \\sin^2 B \\;\\blacksquare",
-        "explanation": "The mixed terms cancel, leaving the required result.",
+        "description": "Solve sin x = 1",
+        "workingLatex": "\\sin x = 1 \\ \\Rightarrow \\ x = 90^\\circ",
+        "explanation": "Sine reaches its maximum of $1$ only once in the interval, at $x = 90^\\circ$, so this branch gives a single solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the reference angle for sin x = -1/8",
+        "workingLatex": "\\sin^{-1}\\!\\left(\\tfrac{1}{8}\\right) = 7.18^\\circ",
+        "explanation": "For the negative value we first find the acute reference angle from $\\tfrac18$; this tells us how far each solution sits from the horizontal axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Third-quadrant solution",
+        "workingLatex": "x = 180^\\circ + 7.18^\\circ = 187.18^\\circ",
+        "explanation": "Since $\\sin x$ is negative, the solutions are in the third and fourth quadrants. Adding the reference angle to $180^\\circ$ gives the third-quadrant angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Fourth-quadrant solution",
+        "workingLatex": "x = 360^\\circ - 7.18^\\circ = 352.82^\\circ",
+        "explanation": "Subtracting the reference angle from $360^\\circ$ gives the fourth-quadrant angle, completing the negative-sine branch.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify x = 90 degrees",
+        "workingLatex": "4\\cos 180^\\circ = -4, \\qquad 3 - 7\\sin 90^\\circ = 3 - 7 = -4",
+        "explanation": "Both sides equal $-4$, so $x = 90^\\circ$ genuinely satisfies the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify a negative-sine solution",
+        "workingLatex": "\\sin x = -\\tfrac18 \\ \\Rightarrow\\ 4\\cos 2x = 4\\left(1 - \\tfrac{2}{64}\\right) = \\tfrac{31}{8}, \\quad 3 - 7\\left(-\\tfrac18\\right) = \\tfrac{31}{8}",
+        "explanation": "Using $\\sin x = -\\tfrac18$ gives $\\cos 2x = \\tfrac{31}{32}$, so both sides equal $\\tfrac{31}{8} = 3.875$. This confirms both $187.2^\\circ$ and $352.8^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the solution set",
+        "workingLatex": "x = 90^\\circ,\\ 187.2^\\circ,\\ 352.8^\\circ",
+        "explanation": "Rounding the decimal answers to one decimal place gives the three solutions in the interval.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos(A + B)\\cos(A - B) \\equiv \\cos^2 A - \\sin^2 B$"
+    "finalAnswer": "$x = 90^\\circ$, $x = 187.2^\\circ$ and $x = 352.8^\\circ$ (to 1 d.p.)."
   }
 }

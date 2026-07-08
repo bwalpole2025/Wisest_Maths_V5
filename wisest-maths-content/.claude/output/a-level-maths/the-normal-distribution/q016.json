@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q016",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standard normal",
+    "symmetry"
+  ],
+  "questionText": "The random variable $Z$ has the standard normal distribution, $Z \\sim N(0, 1)$. Find $P(-1 < Z < 1)$, giving your answer to $4$ significant figures.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "Z \\sim N(0, 1)",
+        "explanation": "The standard normal curve is symmetric about $0$, and $\\Phi(z) = P(Z < z)$ is the area to the left of $z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the interval as a difference of areas",
+        "workingLatex": "P(-1 < Z < 1) = \\Phi(1) - \\Phi(-1)",
+        "explanation": "The area of a central strip is the area to the left of the upper end minus the area to the left of the lower end.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use symmetry to rewrite Phi(-1)",
+        "workingLatex": "\\Phi(-1) = 1 - \\Phi(1)",
+        "explanation": "By symmetry the area to the left of $-1$ equals the area to the right of $1$, which is $1 - \\Phi(1)$. This lets us use a single table value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine into one expression",
+        "workingLatex": "P(-1 < Z < 1) = \\Phi(1) - (1 - \\Phi(1)) = 2\\Phi(1) - 1",
+        "explanation": "Substituting removes the negative $z$ so everything is expressed through $\\Phi(1)$, giving the neat formula $2\\Phi(1) - 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the value of Phi(1)",
+        "workingLatex": "= 2(0.8413) - 1 = 0.6827",
+        "explanation": "With $\\Phi(1) = 0.8413$ the arithmetic gives the central area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final answer",
+        "workingLatex": "P(-1 < Z < 1) \\approx 0.6827",
+        "explanation": "About $68\\%$ of the distribution lies within one standard deviation of the mean, which is exactly the first part of the $68$–$95$–$99.7$ rule.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(-1 < Z < 1) \\approx 0.6827$."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "exponential",
+    "tangent",
+    "through origin"
+  ],
+  "questionText": "A curve has equation $y = e^{x}$.\n(a) Write down $\\dfrac{dy}{dx}$ and hence the gradient of the curve at the point where $x=a$.\n(b) Find the equation of the tangent to the curve at the point where $x=a$, in terms of $a$.\n(c) Show that there is exactly one tangent to the curve that passes through the origin, and find its equation.\n(d) Find the equation of the tangent to the curve that is parallel to the line $y = e^{3}x$, and the point where this tangent meets the $x$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate and state the gradient at x = a (part a)",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}; \\quad \\text{gradient at } x=a \\text{ is } e^{a}",
+        "explanation": "The derivative of $e^{x}$ is itself, so the gradient at any point $x=a$ is $e^{a}$ — the same as the height there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the point of contact",
+        "workingLatex": "\\text{At } x=a:\\; (a,\\, e^{a})",
+        "explanation": "The tangent touches the curve at $x=a$, where the height is $e^{a}$, giving the point $(a,\\,e^{a})$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the general tangent (part b)",
+        "workingLatex": "y - e^{a} = e^{a}(x - a)",
+        "explanation": "Using point-gradient form with point $(a,\\,e^{a})$ and gradient $e^{a}$ gives the tangent in terms of $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Impose passing through the origin (part c)",
+        "workingLatex": "0 - e^{a} = e^{a}(0 - a) \\;\\Rightarrow\\; -e^{a} = -a e^{a}",
+        "explanation": "A tangent through the origin must satisfy the equation when $(x,y)=(0,0)$; substituting gives a condition on $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for a",
+        "workingLatex": "1 = a \\;\\Rightarrow\\; a = 1",
+        "explanation": "Dividing both sides by $-e^{a}$ (never zero, since $e^{a}>0$) leaves $1=a$, the only solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the tangent at a = 1",
+        "workingLatex": "(1,\\, e); \\quad y - e = e(x - 1)",
+        "explanation": "The point of contact is $(1,\\,e)$ with gradient $e$, giving this tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the tangent",
+        "workingLatex": "y = ex - e + e = ex",
+        "explanation": "Expanding, the $-e$ and $+e$ cancel, leaving the clean line $y=ex$ with no constant term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify it passes through the origin",
+        "workingLatex": "y = ex:\\; x=0 \\Rightarrow y=0; \\quad \\text{gradient } e = e^{1} \\;\\checkmark",
+        "explanation": "The line $y=ex$ has zero constant term, so it passes through $(0,0)$, and its gradient $e$ matches $e^{a}$ at $a=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Confirm uniqueness",
+        "workingLatex": "a = 1 \\text{ is the only solution } \\Rightarrow \\text{exactly one such tangent}",
+        "explanation": "Since the condition gave a single value $a=1$, there is exactly one tangent to the curve through the origin, as required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set the gradient parallel to y = e^3 x (part d)",
+        "workingLatex": "e^{a} = e^{3} \\;\\Rightarrow\\; a = 3",
+        "explanation": "Parallel lines share a gradient. The line $y=e^{3}x$ has gradient $e^{3}$, so we need $e^{a}=e^{3}$, giving $a=3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write the tangent at a = 3",
+        "workingLatex": "(3,\\, e^{3}); \\quad y - e^{3} = e^{3}(x - 3)",
+        "explanation": "The point of contact is $(3,\\,e^{3})$ with gradient $e^{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Simplify the tangent",
+        "workingLatex": "y = e^{3}x - 3e^{3} + e^{3} = e^{3}(x - 2)",
+        "explanation": "Expanding gives $y=e^{3}x - 2e^{3}$, which factors neatly as $e^{3}(x-2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find where it meets the x-axis",
+        "workingLatex": "y = 0:\\; e^{3}(x-2) = 0 \\;\\Rightarrow\\; x = 2 \\;\\Rightarrow\\; (2,\\,0)",
+        "explanation": "Since $e^{3}\\ne 0$, the tangent crosses the $x$-axis where $x-2=0$, at $(2,0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Summarise",
+        "workingLatex": "\\text{Through origin: } y = ex \\text{ at } (1,e); \\quad \\parallel y=e^{3}x: \\; y=e^{3}(x-2),\\; (2,0)",
+        "explanation": "All parts complete: the general tangent, the unique tangent through the origin, and the tangent parallel to $y=e^{3}x$ with its $x$-axis crossing.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=e^{x}$, gradient $e^{a}$. (b) $y-e^{a}=e^{a}(x-a)$. (c) The only tangent through the origin is $y=ex$ (contact at $(1,e)$). (d) The tangent parallel to $y=e^{3}x$ is $y=e^{3}(x-2)$, meeting the $x$-axis at $(2,0)$."
+  }
+}

@@ -4,47 +4,124 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "cartesian",
-    "cubic"
+    "bounded trig",
+    "max and min",
+    "ellipse"
   ],
-  "questionText": "A curve has parametric equations $x = 2t$, $y = 8t^3$. Find the Cartesian equation.",
+  "questionText": "A curve is given by $x = 3 + 2\\cos t$ and $y = 1 + 5\\sin t$ for $0 \\le t < 2\\pi$. Without using calculus, find the greatest and least values of $y$ and the value of $t$ at which each occurs, state the coordinates of the highest and lowest points of the curve, and find its Cartesian equation.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject",
-        "workingLatex": "t = \\frac{x}{2}",
-        "explanation": "The linear $x$-equation gives $t$ in terms of $x$.",
+        "description": "Isolate the part of y that varies",
+        "workingLatex": "y = 1 + 5\\sin t",
+        "explanation": "Only the $\\sin t$ term changes as $t$ varies, so the size of $y$ is controlled entirely by how large or small $\\sin t$ can be.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the y-equation",
-        "workingLatex": "y = 8\\left(\\frac{x}{2}\\right)^3",
-        "explanation": "Replacing $t$ removes the parameter.",
+        "description": "Recall the range of sine",
+        "workingLatex": "-1 \\le \\sin t \\le 1",
+        "explanation": "For every real $t$, the sine function is squeezed between $-1$ and $1$; this is the key fact that bounds $y$ without any differentiation.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Cube the fraction",
-        "workingLatex": "y = 8\\cdot\\frac{x^3}{8}",
-        "explanation": "Cubing $\\frac{x}{2}$ gives $\\frac{x^3}{8}$, and the factor $8$ is ready to cancel.",
+        "description": "Scale the inequality by 5",
+        "workingLatex": "-5 \\le 5\\sin t \\le 5",
+        "explanation": "Multiplying all three parts by the positive number $5$ preserves the direction of the inequalities.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify",
-        "workingLatex": "y = x^3",
-        "explanation": "The $8$ cancels, leaving the cubic.",
+        "description": "Shift by adding 1",
+        "workingLatex": "-4 \\le 1 + 5\\sin t \\le 6 \\Rightarrow -4 \\le y \\le 6",
+        "explanation": "Adding $1$ throughout gives the exact range of $y$; the endpoints are the least and greatest possible values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find where the maximum of y occurs",
+        "workingLatex": "y_{\\max} = 6 \\ \\text{when}\\ \\sin t = 1 \\Rightarrow t = \\dfrac{\\pi}{2}",
+        "explanation": "The top of the range is reached when $\\sin t$ hits its maximum of $1$, which happens at $t = \\tfrac{\\pi}{2}$ in the interval $[0, 2\\pi)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find where the minimum of y occurs",
+        "workingLatex": "y_{\\min} = -4 \\ \\text{when}\\ \\sin t = -1 \\Rightarrow t = \\dfrac{3\\pi}{2}",
+        "explanation": "The bottom of the range is reached when $\\sin t = -1$, which occurs at $t = \\tfrac{3\\pi}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find x at the maximum",
+        "workingLatex": "t = \\dfrac{\\pi}{2}:\\quad x = 3 + 2\\cos\\dfrac{\\pi}{2} = 3 + 0 = 3",
+        "explanation": "To locate the highest point fully we need its $x$-coordinate; at $t = \\tfrac{\\pi}{2}$ the cosine is zero, so $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the highest point",
+        "workingLatex": "\\text{Highest point} = (3,\\, 6)",
+        "explanation": "Combining $x = 3$ with $y = 6$ pins down the top of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find x at the minimum",
+        "workingLatex": "t = \\dfrac{3\\pi}{2}:\\quad x = 3 + 2\\cos\\dfrac{3\\pi}{2} = 3 + 0 = 3",
+        "explanation": "At $t = \\tfrac{3\\pi}{2}$ the cosine is again zero, so the lowest point sits directly below the highest one.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the lowest point",
+        "workingLatex": "\\text{Lowest point} = (3,\\, -4)",
+        "explanation": "Pairing $x = 3$ with $y = -4$ gives the bottom of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Make the trig functions the subjects",
+        "workingLatex": "\\cos t = \\dfrac{x - 3}{2}, \\qquad \\sin t = \\dfrac{y - 1}{5}",
+        "explanation": "To find the Cartesian equation we rearrange each parametric equation so a single trig function is isolated, ready to substitute into an identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use the Pythagorean identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "This identity holds for all $t$, so it is the bridge that removes the parameter completely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Substitute the rearranged expressions",
+        "workingLatex": "\\left(\\dfrac{x - 3}{2}\\right)^{2} + \\left(\\dfrac{y - 1}{5}\\right)^{2} = 1",
+        "explanation": "Replacing $\\cos t$ and $\\sin t$ leaves an equation in $x$ and $y$ only.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Write in standard ellipse form",
+        "workingLatex": "\\dfrac{(x - 3)^{2}}{4} + \\dfrac{(y - 1)^{2}}{25} = 1",
+        "explanation": "Squaring the denominators gives the standard form, from which the shape can be read directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Interpret the result",
+        "workingLatex": "\\text{Ellipse, centre } (3,\\,1),\\ \\text{semi-axes } 2 \\text{ and } 5",
+        "explanation": "This is an ellipse centred at $(3,1)$, stretching $2$ horizontally and $5$ vertically; the highest and lowest points are just the centre shifted $5$ up and $5$ down, matching our earlier answers.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = x^3$"
+    "finalAnswer": "Greatest $y = 6$ at $t = \\tfrac{\\pi}{2}$ and least $y = -4$ at $t = \\tfrac{3\\pi}{2}$. The highest point is $(3,\\, 6)$ and the lowest is $(3,\\, -4)$. The Cartesian equation is $\\dfrac{(x-3)^{2}}{4} + \\dfrac{(y-1)^{2}}{25} = 1$, an ellipse centred at $(3,\\,1)$."
   }
 }

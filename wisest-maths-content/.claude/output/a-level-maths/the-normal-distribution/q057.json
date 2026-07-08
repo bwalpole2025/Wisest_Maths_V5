@@ -1,0 +1,114 @@
+{
+  "id": "al.y2.stats.normal-distribution.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 5,
+  "answerType": "coordinates",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "simultaneous equations",
+    "inverse normal"
+  ],
+  "questionText": "The daily numbers of items, $X$, sold by an online store are modelled by $X \\sim N(\\mu, \\sigma^2)$. On $30\\%$ of days more than $500$ items are sold, and on $5\\%$ of days more than $650$ items are sold. Find $\\mu$ and $\\sigma$, giving your answers to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X > 500) = 0.30, \\qquad P(X > 650) = 0.05",
+        "explanation": "Daily sales are normal with unknown $\\mu$ and $\\sigma$. Both facts are upper-tail: sales exceed $500$ on $30\\%$ of days and exceed $650$ on $5\\%$ of days. We will convert both to lower-tail form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Convert the first condition to a lower tail",
+        "workingLatex": "P(X < 500) = 1 - 0.30 = 0.70",
+        "explanation": "The inverse normal reads from the lower tail, so ‘$30\\%$ above $500$’ becomes ‘$70\\%$ below $500$’.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise and find the first z-value",
+        "workingLatex": "P\\left(Z < \\dfrac{500 - \\mu}{\\sigma}\\right) = 0.70 \\ \\Rightarrow\\ z_1 = \\Phi^{-1}(0.70) = 0.5244",
+        "explanation": "Standardising $500$ and applying the inverse normal to $0.70$ gives a positive $z$, since $70\\%>50\\%$ places the point to the right of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{500 - \\mu}{\\sigma} = 0.5244",
+        "explanation": "Equating the standardised value of $500$ with $z_1$ gives the first equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Convert the second condition to a lower tail",
+        "workingLatex": "P(X < 650) = 1 - 0.05 = 0.95",
+        "explanation": "Similarly ‘$5\\%$ above $650$’ means ‘$95\\%$ below $650$’, ready for the inverse normal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Standardise and find the second z-value",
+        "workingLatex": "P\\left(Z < \\dfrac{650 - \\mu}{\\sigma}\\right) = 0.95 \\ \\Rightarrow\\ z_2 = \\Phi^{-1}(0.95) = 1.6449",
+        "explanation": "Standardising $650$ and taking $\\Phi^{-1}(0.95)$ gives $z_2 = 1.6449$, well to the right of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{650 - \\mu}{\\sigma} = 1.6449",
+        "explanation": "Equating the standardised value of $650$ with $z_2$ gives the second simultaneous equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Clear the fractions",
+        "workingLatex": "500 - \\mu = 0.5244\\,\\sigma, \\qquad 650 - \\mu = 1.6449\\,\\sigma",
+        "explanation": "Multiplying each equation by $\\sigma$ puts them into ‘value minus mean equals $z$ times standard deviation’ form for elimination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "(650 - \\mu) - (500 - \\mu) = (1.6449 - 0.5244)\\,\\sigma \\ \\Rightarrow\\ 150 = 1.1205\\,\\sigma",
+        "explanation": "Subtracting cancels $-\\mu$; the $150$-item gap corresponds to about $1.12$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{150}{1.1205} = 133.9",
+        "explanation": "Dividing the sales gap by the standardised gap gives a standard deviation of about $134$ items.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 500 - 0.5244 \\times 133.9 = 429.8",
+        "explanation": "From the first equation $\\mu = 500 - 0.5244\\,\\sigma$. The mean of about $430$ items lies below $500$, consistent with sales exceeding $500$ on only $30\\%$ of days.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the parameters to 3 s.f.",
+        "workingLatex": "\\mu \\approx 430, \\qquad \\sigma \\approx 134",
+        "explanation": "To three significant figures the model is $X \\sim N(430,\\ 134^2)$ items per day.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Check against the original information",
+        "workingLatex": "P(X > 500) \\approx 0.301, \\qquad P(X > 650) \\approx 0.050",
+        "explanation": "With $\\mu = 430$ and $\\sigma = 134$, about $30\\%$ of days exceed $500$ items and about $5\\%$ exceed $650$, confirming the fit.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 430$ items and $\\sigma \\approx 134$ items, so $X \\sim N(430,\\ 134^2)$."
+  }
+}

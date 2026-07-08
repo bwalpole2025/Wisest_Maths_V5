@@ -4,61 +4,90 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
+  "difficulty": "Intermediate",
+  "marks": 5,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "modelling",
-    "spring"
+    "proof",
+    "maximum and minimum"
   ],
-  "questionText": "The displacement of an oscillating particle is $x = 3\\cos(2t) + 4\\sin(2t)$ (metres), where $t$ is in seconds. Find the amplitude of the motion and the smallest positive $t$ at which $x = 0$, in radians.",
+  "questionText": "(a) Show that $7\\cos\\theta-24\\sin\\theta$ can be written as $R\\cos(\\theta+\\alpha)$, where $R>0$ and $0^\\circ<\\alpha<90^\\circ$, giving $\\alpha$ to $2$ decimal places. (b) Hence state the minimum value of $7\\cos\\theta-24\\sin\\theta$ and find the value of $\\theta$ in $0^\\circ \\le \\theta \\le 360^\\circ$ at which this minimum occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Reorder to sine-first",
-        "workingLatex": "x = 4\\sin(2t) + 3\\cos(2t)",
-        "explanation": "Writing the sine term first aligns with the $R\\sin$ template.",
+        "description": "Choose the correct target form",
+        "workingLatex": "7\\cos\\theta-24\\sin\\theta \\equiv R\\cos(\\theta+\\alpha)",
+        "explanation": "Because the expression leads with a cosine and subtracts a sine, the matching target is $R\\cos(\\theta+\\alpha)$, whose expansion naturally gives a cosine minus a sine. We set the two identically equal.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the amplitude",
-        "workingLatex": "R = \\sqrt{4^2 + 3^2} = 5",
-        "explanation": "The amplitude of the oscillation is $R = 5$ metres.",
+        "description": "Expand the target",
+        "workingLatex": "R\\cos(\\theta+\\alpha)=R\\cos\\alpha\\,\\cos\\theta-R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta+\\alpha)=\\cos\\theta\\cos\\alpha-\\sin\\theta\\sin\\alpha$ and multiplying by $R$ produces a positive multiple of $\\cos\\theta$ and a negative multiple of $\\sin\\theta$, matching the original signs.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the phase",
-        "workingLatex": "\\tan\\alpha = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 0.6435 \\text{ rad}",
-        "explanation": "The phase angle in radians is $\\arctan\\frac{3}{4} \\approx 0.6435$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=7,\\qquad R\\sin\\alpha=24",
+        "explanation": "Matching the coefficient of $\\cos\\theta$ gives $R\\cos\\alpha=7$, and matching the coefficient of $\\sin\\theta$ (both carry a minus sign) gives $R\\sin\\alpha=24$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write the displacement",
-        "workingLatex": "x = 5\\sin(2t + 0.6435)",
-        "explanation": "The motion is a single sinusoid of amplitude $5$.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{7^2+24^2}=\\sqrt{625}=25",
+        "explanation": "Squaring and adding eliminates $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=49+576=625$ and the positive root is $R=25$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set x = 0",
-        "workingLatex": "\\sin(2t + 0.6435) = 0 \\;\\Rightarrow\\; 2t + 0.6435 = \\pi",
-        "explanation": "The displacement is zero when the sine is zero; the first value giving positive $t$ is $\\pi$ (since $0$ would need negative $t$).",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{24}{7}\\Rightarrow \\alpha=73.74^\\circ",
+        "explanation": "Dividing the equations cancels $R$ to give $\\tan\\alpha=\\tfrac{24}{7}$. Both values are positive, so $\\alpha$ is acute and equals $\\arctan\\tfrac{24}{7}=73.74^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for t",
-        "workingLatex": "2t = \\pi - 0.6435 \\approx 2.498 \\;\\Rightarrow\\; t \\approx 1.25 \\text{ s}",
-        "explanation": "Dividing by $2$ gives the smallest positive time at which the particle passes through the origin.",
+        "description": "State the identity",
+        "workingLatex": "7\\cos\\theta-24\\sin\\theta \\equiv 25\\cos(\\theta+73.74^\\circ)",
+        "explanation": "Combining the amplitude and phase gives the single-wave form, which shows the expression is $25$ times a cosine and so oscillates between $-25$ and $25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Read off the range",
+        "workingLatex": "-25\\le 25\\cos(\\theta+73.74^\\circ)\\le 25",
+        "explanation": "Since $\\cos$ of any angle lies between $-1$ and $1$, multiplying by $25$ shows the expression ranges from $-25$ to $25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the minimum value",
+        "workingLatex": "\\text{minimum}=-25",
+        "explanation": "The least value is reached when the cosine equals $-1$, giving a minimum of $-25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find θ where the minimum occurs",
+        "workingLatex": "\\cos(\\theta+73.74^\\circ)=-1\\Rightarrow \\theta+73.74^\\circ=180^\\circ\\Rightarrow \\theta=106.26^\\circ",
+        "explanation": "The cosine equals $-1$ when its input is $180^\\circ$. Subtracting $73.74^\\circ$ gives $\\theta=106.26^\\circ$, which lies within $0^\\circ$ to $360^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the maximum for completeness",
+        "workingLatex": "\\text{maximum}=25\\ \\text{at}\\ \\theta+73.74^\\circ=360^\\circ\\Rightarrow \\theta=286.26^\\circ",
+        "explanation": "By the same idea the greatest value $25$ occurs when the cosine is $1$; in range this is at $\\theta+73.74^\\circ=360^\\circ$, giving $\\theta=286.26^\\circ$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Amplitude $5$ m; first at $t \\approx 1.25$ s."
+    "finalAnswer": "$7\\cos\\theta-24\\sin\\theta \\equiv 25\\cos(\\theta+73.74^\\circ)$ with $\\alpha=73.74^\\circ$. The minimum value is $-25$, occurring at $\\theta=106.26^\\circ$ (to $2$ d.p.)."
   }
 }

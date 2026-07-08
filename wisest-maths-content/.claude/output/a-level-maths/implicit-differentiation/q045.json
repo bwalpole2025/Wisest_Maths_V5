@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "given gradient",
+    "circle"
+  ],
+  "questionText": "The circle $C$ has equation $x^2 + y^2 = 25$. Find the coordinates of the points on $C$ at which the gradient of the tangent is $-\\dfrac{3}{4}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the equation with respect to x",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Differentiating $x^2$ gives $2x$, and $y^2$ gives $2y\\frac{dy}{dx}$ by the chain rule. The constant $25$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{x}{y}",
+        "explanation": "Rearranging gives the gradient at any point on the circle as $-\\frac{x}{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the gradient equal to the required value",
+        "workingLatex": "-\\frac{x}{y} = -\\frac{3}{4} \\;\\Rightarrow\\; \\frac{x}{y} = \\frac{3}{4}",
+        "explanation": "We want points where the tangent gradient is $-\\frac{3}{4}$, so we equate our expression to it. The minus signs cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange into a linear relation",
+        "workingLatex": "4x = 3y \\;\\Rightarrow\\; y = \\frac{4x}{3}",
+        "explanation": "Cross-multiplying removes the fractions, giving a straight-line relation the required points must satisfy.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute into the equation of the circle",
+        "workingLatex": "x^2 + \\left(\\frac{4x}{3}\\right)^2 = 25",
+        "explanation": "The points also lie on $C$, so we replace $y$ by $\\frac{4x}{3}$ to get an equation in $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "x^2 + \\frac{16x^2}{9} = 25 \\;\\Rightarrow\\; \\frac{25x^2}{9} = 25",
+        "explanation": "Adding $x^2 = \\frac{9x^2}{9}$ to $\\frac{16x^2}{9}$ gives $\\frac{25x^2}{9}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x",
+        "workingLatex": "x^2 = 9 \\;\\Rightarrow\\; x = \\pm 3",
+        "explanation": "Multiplying both sides by $\\frac{9}{25}$ gives $x^2 = 9$, so $x = \\pm 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the y-coordinates",
+        "workingLatex": "x = 3 \\Rightarrow y = 4; \\quad x = -3 \\Rightarrow y = -4",
+        "explanation": "Substituting each $x$ into $y = \\frac{4x}{3}$ gives the paired $y$-values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check the gradient at each point",
+        "workingLatex": "\\text{At } (3,4):\\ -\\frac{3}{4}; \\quad \\text{At } (-3,-4):\\ -\\frac{-3}{-4} = -\\frac{3}{4}",
+        "explanation": "Both points give a gradient of $-\\frac{3}{4}$, confirming they are the ones required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the coordinates",
+        "workingLatex": "(3,\\, 4) \\quad\\text{and}\\quad (-3,\\, -4)",
+        "explanation": "These are the two diametrically opposite points on $C$ where the tangent has gradient $-\\frac{3}{4}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient is $-\\dfrac{3}{4}$ at $(3,\\, 4)$ and $(-3,\\, -4)$."
+  }
+}

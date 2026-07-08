@@ -1,0 +1,127 @@
+{
+  "id": "al.y2.pure.implicit.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "logarithm",
+    "tangent and normal"
+  ],
+  "questionText": "The curve $C$ has equation $x + \\ln y = x^2$, where $y > 0$. (a) Show that $\\frac{dy}{dx} = y(2x - 1)$. (b) Find an equation of the tangent to $C$ at the point $(1, 1)$. (c) Find, in exact form, the coordinates of the point on $C$ at which the tangent is horizontal. (d) Find an equation of the normal to $C$ at $(1, 1)$, and explain why $C$ has no point with a vertical tangent.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x) + \\frac{d}{dx}(\\ln y) = \\frac{d}{dx}(x^2)",
+        "explanation": "We differentiate the whole equation, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the ln y term with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(\\ln y) = \\frac{1}{y}\\frac{dy}{dx}",
+        "explanation": "By the chain rule, $\\ln y$ differentiates to $\\frac{1}{y}$ times $\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "1 + \\frac{1}{y}\\frac{dy}{dx} = 2x",
+        "explanation": "The term $x$ gives $1$ and $x^2$ gives $2x$, producing one equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Isolate the derivative term",
+        "workingLatex": "\\frac{1}{y}\\frac{dy}{dx} = 2x - 1",
+        "explanation": "Subtracting $1$ from both sides leaves the $\\frac{dy}{dx}$ term alone on the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = y(2x - 1)",
+        "explanation": "Multiplying both sides by $y$ gives the required expression, proving part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check (1, 1) lies on C",
+        "workingLatex": "1 + \\ln 1 = 1 + 0 = 1 = 1^2",
+        "explanation": "Since $\\ln 1 = 0$, the point $(1,1)$ satisfies the equation and lies on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the gradient at (1, 1)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,1)} = 1\\,(2(1) - 1) = 1",
+        "explanation": "Substituting $x=1,\\,y=1$ into $y(2x-1)$ gives the tangent gradient $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Form the tangent at (1, 1)",
+        "workingLatex": "y - 1 = 1(x - 1) \\;\\Rightarrow\\; y = x",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=1$ through $(1,1)$ gives the tangent $y=x$. This answers part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Set up the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; y(2x - 1) = 0",
+        "explanation": "A horizontal tangent has gradient $0$, so the product $y(2x-1)$ must be zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Use y > 0 to solve",
+        "workingLatex": "y > 0 \\;\\Rightarrow\\; 2x - 1 = 0 \\;\\Rightarrow\\; x = \\tfrac{1}{2}",
+        "explanation": "Since $y>0$ everywhere on $C$, the only way the product is zero is $2x-1=0$, giving $x=\\frac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Substitute x = 1/2 into the curve",
+        "workingLatex": "\\tfrac{1}{2} + \\ln y = \\left(\\tfrac{1}{2}\\right)^2 = \\tfrac{1}{4}",
+        "explanation": "The horizontal-tangent point lies on $C$, so we substitute $x=\\frac12$ into the equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for y",
+        "workingLatex": "\\ln y = \\tfrac{1}{4} - \\tfrac{1}{2} = -\\tfrac{1}{4} \\;\\Rightarrow\\; y = e^{-1/4}",
+        "explanation": "Rearranging gives $\\ln y = -\\frac14$, so $y = e^{-1/4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the horizontal-tangent point",
+        "workingLatex": "\\left(\\tfrac{1}{2}, \\; e^{-1/4}\\right)",
+        "explanation": "This is the exact point at which the tangent is horizontal. This answers part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find the normal at (1, 1)",
+        "workingLatex": "m_{n} = -\\frac{1}{1} = -1, \\qquad y - 1 = -1(x - 1) \\;\\Rightarrow\\; x + y = 2",
+        "explanation": "The normal gradient is the negative reciprocal of $1$, namely $-1$; the line through $(1,1)$ is $x+y=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Explain why there is no vertical tangent",
+        "workingLatex": "\\frac{dy}{dx} = y(2x - 1) \\text{ is finite for every point on } C",
+        "explanation": "The gradient is a product of finite quantities and is defined for all points on $C$, so it is never infinite; hence $C$ has no vertical tangent. This completes part (d).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = y(2x - 1)$; (b) tangent $y = x$; (c) horizontal tangent at $\\left(\\frac{1}{2}, e^{-1/4}\\right)$; (d) normal $x + y = 2$; since $\\frac{dy}{dx} = y(2x - 1)$ is finite everywhere on $C$, there is no vertical tangent."
+  }
+}

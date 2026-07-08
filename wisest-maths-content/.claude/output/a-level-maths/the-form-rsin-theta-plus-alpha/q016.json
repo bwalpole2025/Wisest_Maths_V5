@@ -4,61 +4,69 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "value",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "maximum",
-    "reciprocal"
+    "cosine form",
+    "sign variant"
   ],
-  "questionText": "Find the maximum value of $\\dfrac{10}{5\\sin\\theta + 12\\cos\\theta + 15}$ and state the value it takes, given $5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta + \\alpha)$.",
+  "questionText": "Express $4\\cos\\theta - 3\\sin\\theta$ in the form $R\\cos(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Give $\\alpha$ to $1$ decimal place.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Rewrite the denominator",
-        "workingLatex": "5\\sin\\theta + 12\\cos\\theta + 15 = 13\\sin(\\theta + \\alpha) + 15",
-        "explanation": "Using the harmonic form makes the denominator's range easy to determine.",
+        "description": "Set up the identity to match",
+        "workingLatex": "4\\cos\\theta - 3\\sin\\theta \\equiv R\\cos(\\theta+\\alpha)",
+        "explanation": "The expression is a cosine term minus a sine term, so the matching target is $R\\cos(\\theta+\\alpha)$, whose expansion also has a minus sign before the sine term.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Bound the denominator",
-        "workingLatex": "-13 + 15 \\le 13\\sin(\\theta + \\alpha) + 15 \\le 13 + 15",
-        "explanation": "The sine ranges over $[-13,13]$, so the denominator ranges over $[2, 28]$.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\cos(\\theta+\\alpha) = R\\cos\\alpha\\,\\cos\\theta - R\\sin\\alpha\\,\\sin\\theta",
+        "explanation": "Using $\\cos(\\theta+\\alpha)=\\cos\\theta\\cos\\alpha-\\sin\\theta\\sin\\alpha$ gives a multiple of $\\cos\\theta$ minus a multiple of $\\sin\\theta$, exactly matching the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the denominator range",
-        "workingLatex": "2 \\le \\text{denominator} \\le 28",
-        "explanation": "Both bounds are positive, so the fraction is always defined and positive.",
+        "description": "Compare coefficients of cosθ and sinθ",
+        "workingLatex": "R\\cos\\alpha = 4, \\qquad R\\sin\\alpha = 3",
+        "explanation": "Matching the $\\cos\\theta$ terms gives $R\\cos\\alpha=4$; matching the $\\sin\\theta$ terms, the minus signs align so $R\\sin\\alpha=3$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recognise where the fraction is largest",
-        "workingLatex": "\\text{fraction max when denominator is smallest}",
-        "explanation": "For a positive numerator, a fraction is largest when its denominator is smallest.",
+        "description": "Find R by squaring and adding",
+        "workingLatex": "R = \\sqrt{4^2 + 3^2} = \\sqrt{25} = 5",
+        "explanation": "Squaring and adding removes $\\alpha$ through $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=4^2+3^2=25$, so $R=5$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Use the smallest denominator",
-        "workingLatex": "\\text{min denominator} = 2",
-        "explanation": "The denominator's least value is $2$, attained when the sine equals $-1$.",
+        "description": "Divide the equations to isolate tanα",
+        "workingLatex": "\\tan\\alpha = \\dfrac{3}{4}",
+        "explanation": "Dividing the sine equation by the cosine equation cancels $R$ and gives $\\tan\\alpha=\\dfrac{3}{4}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Compute the maximum",
-        "workingLatex": "\\frac{10}{2} = 5",
-        "explanation": "Dividing the numerator by the smallest denominator gives the maximum value $5$.",
+        "description": "Solve for the acute angle α",
+        "workingLatex": "\\alpha = \\arctan\\dfrac{3}{4} = 36.9^\\circ",
+        "explanation": "Both matched values are positive, so $\\alpha$ is acute; the inverse tangent gives $\\alpha=36.9^\\circ$ to $1$ decimal place.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the R-form",
+        "workingLatex": "4\\cos\\theta - 3\\sin\\theta = 5\\cos(\\theta + 36.9^\\circ)",
+        "explanation": "Combining $R=5$ with $\\alpha=36.9^\\circ$ inside a $\\theta+\\alpha$ bracket gives the required single cosine wave.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum value $= 5$."
+    "finalAnswer": "$4\\cos\\theta - 3\\sin\\theta = 5\\cos(\\theta + 36.9^\\circ)$, with $R=5$ and $\\alpha=36.9^\\circ$ (to $1$ d.p.)."
   }
 }

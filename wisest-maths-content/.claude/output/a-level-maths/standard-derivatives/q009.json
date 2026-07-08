@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "standard derivatives",
+    "logarithm",
+    "difference"
+  ],
+  "questionText": "Differentiate $y = 2\\ln x - x^{2}$ with respect to $x$, stating any restriction on $x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the function and the goal",
+        "workingLatex": "y = 2\\ln x - x^{2}, \\quad x > 0",
+        "explanation": "We need $\\frac{dy}{dx}$. Because $\\ln x$ requires $x>0$, the whole function is only defined for $x>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Use linearity to differentiate term by term",
+        "workingLatex": "\\frac{dy}{dx} = 2\\,\\frac{d}{dx}\\left(\\ln x\\right) - \\frac{d}{dx}\\left(x^{2}\\right)",
+        "explanation": "Differentiation is linear, so we handle each term separately and keep the constant $2$ out in front of the log term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the logarithm term",
+        "workingLatex": "2\\,\\frac{d}{dx}\\left(\\ln x\\right) = 2 \\cdot \\frac{1}{x} = \\frac{2}{x}",
+        "explanation": "The derivative of $\\ln x$ is $\\tfrac{1}{x}$, and multiplying by the constant $2$ gives $\\tfrac{2}{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the power term",
+        "workingLatex": "\\frac{d}{dx}\\left(x^{2}\\right) = 2x",
+        "explanation": "For $x^{2}$ the power rule gives $2x$; this term is subtracted.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine the two derivatives",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{x} - 2x",
+        "explanation": "Putting the pieces together gives the full gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the derivative with its restriction",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{x} - 2x, \\quad x > 0",
+        "explanation": "The derivative keeps the domain of the original function, so we retain $x>0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{2}{x} - 2x$, valid for $x>0$."
+  }
+}

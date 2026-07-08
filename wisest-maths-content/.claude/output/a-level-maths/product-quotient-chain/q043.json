@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "proof",
+  "tags": [
+    "quotient rule",
+    "reciprocal trig",
+    "proof"
+  ],
+  "questionText": "Show that $\\dfrac{d}{dx}(\\cot x) = -\\operatorname{cosec}^2 x$, using the quotient rule together with $\\cot x = \\dfrac{\\cos x}{\\sin x}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write cot as a quotient",
+        "workingLatex": "\\cot x = \\frac{\\cos x}{\\sin x}",
+        "explanation": "Cotangent is the ratio $\\dfrac{\\cos x}{\\sin x}$, so the quotient rule is the natural tool.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the numerator and denominator",
+        "workingLatex": "u = \\cos x, \\qquad v = \\sin x",
+        "explanation": "We set $u=\\cos x$ on top and $v=\\sin x$ underneath, ready for the quotient rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = -\\sin x, \\qquad v' = \\cos x",
+        "explanation": "Standard derivatives: $\\cos x\\to-\\sin x$ and $\\sin x\\to\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{d}{dx}(\\cot x) = \\frac{u'v - uv'}{v^2}",
+        "explanation": "Derivative of top times bottom minus top times derivative of bottom, all over the bottom squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the pieces",
+        "workingLatex": "= \\frac{(-\\sin x)(\\sin x) - (\\cos x)(\\cos x)}{\\sin^2 x}",
+        "explanation": "Placing each part into the formula; both products in the numerator turn out negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\frac{-\\sin^2 x - \\cos^2 x}{\\sin^2 x}",
+        "explanation": "Multiplying out gives $-\\sin^2 x$ and $-\\cos^2 x$ on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factor out the minus sign",
+        "workingLatex": "= \\frac{-(\\sin^2 x + \\cos^2 x)}{\\sin^2 x}",
+        "explanation": "Taking out $-1$ reveals the Pythagorean combination inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Apply the identity",
+        "workingLatex": "\\sin^2 x + \\cos^2 x = 1",
+        "explanation": "The bracket equals $1$, so the numerator becomes $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rewrite the fraction",
+        "workingLatex": "\\frac{d}{dx}(\\cot x) = -\\frac{1}{\\sin^2 x}",
+        "explanation": "Only $-\\dfrac{1}{\\sin^2 x}$ is left after the numerator collapses.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Convert to cosec",
+        "workingLatex": "-\\frac{1}{\\sin^2 x} = -\\operatorname{cosec}^2 x \\qquad \\blacksquare",
+        "explanation": "Since $\\operatorname{cosec} x=\\dfrac{1}{\\sin x}$, squaring gives $-\\operatorname{cosec}^2 x$, exactly as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{d}{dx}(\\cot x) = -\\dfrac{1}{\\sin^2 x} = -\\operatorname{cosec}^2 x$."
+  }
+}

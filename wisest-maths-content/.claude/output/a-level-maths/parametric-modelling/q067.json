@@ -6,52 +6,115 @@
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Hard",
   "marks": 7,
-  "answerType": "expression",
+  "answerType": "written",
   "tags": [
-    "parametric modelling",
-    "parametric differentiation",
-    "product"
+    "circular motion",
+    "show that",
+    "speed"
   ],
-  "questionText": "A curve has parametric equations $x = e^t$, $y = te^t$. Find $\\dfrac{dy}{dx}$ in terms of $t$, and hence in terms of $x$.",
+  "questionText": "A point moves so that, for $t \\ge 0$, its position in metres is $x = 5\\cos 2t$ and $y = 5\\sin 2t$. (a) Show that the point moves with constant speed, and state that speed. (b) Show that the velocity of the point is always perpendicular to its position vector. (c) Find the direction of motion at $t = \\dfrac{\\pi}{8}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate x",
-        "workingLatex": "\\frac{dx}{dt} = e^t",
-        "explanation": "The derivative of $e^t$ is itself.",
+        "description": "Differentiate x with respect to t using the chain rule",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = -10\\sin 2t",
+        "explanation": "Differentiating $5\\cos 2t$ by the chain rule gives $-5\\sin 2t$ times the derivative of $2t$, namely $2$, so $\\dot{x} = -10\\sin 2t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate y with the product rule",
-        "workingLatex": "\\frac{dy}{dt} = e^t + te^t = e^t(1 + t)",
-        "explanation": "For $y = te^t$, the product rule gives $1\\cdot e^t + t\\cdot e^t$.",
+        "description": "Differentiate y with respect to t using the chain rule",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 10\\cos 2t",
+        "explanation": "Similarly $5\\sin 2t$ differentiates to $5\\cos 2t \\times 2 = 10\\cos 2t$, the vertical velocity.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Form the gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{e^t(1 + t)}{e^t}",
-        "explanation": "Dividing the two derivatives.",
+        "description": "Write the speed as a magnitude",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "The speed is the magnitude of the velocity vector, so we combine both components under a square root.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Cancel the exponential",
-        "workingLatex": "\\frac{dy}{dx} = 1 + t",
-        "explanation": "The $e^t$ terms cancel, leaving a simple linear gradient.",
+        "description": "Substitute the components",
+        "workingLatex": "= \\sqrt{(-10\\sin 2t)^{2} + (10\\cos 2t)^{2}} = \\sqrt{100\\sin^{2}2t + 100\\cos^{2}2t}",
+        "explanation": "Squaring each component removes the sign and produces terms involving $\\sin^{2}$ and $\\cos^{2}$, which we can simplify with an identity.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Express in terms of x",
-        "workingLatex": "x = e^t \\;\\Rightarrow\\; t = \\ln x \\;\\Rightarrow\\; \\frac{dy}{dx} = 1 + \\ln x",
-        "explanation": "Since $t = \\ln x$, the gradient in terms of $x$ is $1 + \\ln x$.",
+        "description": "Factor out the constant",
+        "workingLatex": "= \\sqrt{100\\left(\\sin^{2}2t + \\cos^{2}2t\\right)}",
+        "explanation": "Both terms share the factor $100$; taking it out isolates the Pythagorean identity inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^{2}2t + \\cos^{2}2t = 1 \\;\\Rightarrow\\; \\text{speed} = \\sqrt{100} = 10",
+        "explanation": "Since $\\sin^{2}\\theta + \\cos^{2}\\theta = 1$ for any angle, the bracket is $1$ and the speed simplifies to $\\sqrt{100} = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude constant speed",
+        "workingLatex": "\\text{speed} = 10 \\text{ (independent of } t\\text{)}",
+        "explanation": "The result contains no $t$, so the speed is the same at every instant: the point moves at a constant $10$ metres per second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the position vector",
+        "workingLatex": "\\mathbf{r} = \\left(5\\cos 2t,\\; 5\\sin 2t\\right)",
+        "explanation": "To test perpendicularity we need the position vector, which is just the coordinates written as a vector.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write the velocity vector",
+        "workingLatex": "\\mathbf{v} = \\left(-10\\sin 2t,\\; 10\\cos 2t\\right)",
+        "explanation": "The velocity vector is formed from the two derivatives found earlier.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Compute the dot product",
+        "workingLatex": "\\mathbf{r}\\cdot\\mathbf{v} = 5\\cos 2t\\,(-10\\sin 2t) + 5\\sin 2t\\,(10\\cos 2t)",
+        "explanation": "Two vectors are perpendicular exactly when their dot product is zero, so we form the dot product of position and velocity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Simplify the dot product",
+        "workingLatex": "= -50\\sin 2t\\cos 2t + 50\\sin 2t\\cos 2t = 0",
+        "explanation": "The two terms are equal and opposite, so they cancel exactly, leaving zero for every value of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Conclude perpendicularity",
+        "workingLatex": "\\mathbf{r}\\cdot\\mathbf{v} = 0 \\;\\Rightarrow\\; \\mathbf{v} \\perp \\mathbf{r} \\text{ for all } t",
+        "explanation": "A zero dot product at all times means the velocity is always at right angles to the position vector, which is exactly the behaviour of motion in a circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Velocity components at t = pi/8",
+        "workingLatex": "\\dot{x} = -10\\sin\\tfrac{\\pi}{4} = -5\\sqrt{2}, \\qquad \\dot{y} = 10\\cos\\tfrac{\\pi}{4} = 5\\sqrt{2}",
+        "explanation": "At $t = \\tfrac{\\pi}{8}$ we have $2t = \\tfrac{\\pi}{4}$; substituting gives both velocity components for the direction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Determine the direction of motion",
+        "workingLatex": "\\mathbf{v} = \\left(-5\\sqrt{2},\\; 5\\sqrt{2}\\right) \\;\\Rightarrow\\; \\theta = 135^{\\circ}",
+        "explanation": "The velocity has a negative $x$-part and an equal positive $y$-part, placing it in the second quadrant along the $135^{\\circ}$ direction (up and to the left) from the positive $x$-axis.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{dy}{dx} = 1 + t = 1 + \\ln x$"
+    "finalAnswer": "(a) The speed is $\\sqrt{100(\\sin^{2}2t + \\cos^{2}2t)} = 10\\text{ m s}^{-1}$, independent of $t$, so it is constant. (b) $\\mathbf{r}\\cdot\\mathbf{v} = 0$ for all $t$, so the velocity is always perpendicular to the position vector. (c) At $t = \\tfrac{\\pi}{8}$ the velocity is $\\left(-5\\sqrt{2},\\,5\\sqrt{2}\\right)$, a direction of $135^{\\circ}$ from the positive $x$-axis."
   }
 }

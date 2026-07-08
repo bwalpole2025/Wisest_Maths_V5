@@ -5,75 +5,117 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 7,
+  "answerType": "proof",
   "tags": [
-    "equations",
-    "cotangent",
-    "cosecant",
-    "quadratic"
+    "identity proof",
+    "tan",
+    "cot",
+    "sec cosec"
   ],
-  "questionText": "Solve $\\cot^2\\theta - \\csc\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Prove the identity $(\\tan\\theta + \\cot\\theta)^2 \\equiv \\sec^2\\theta + \\operatorname{cosec}^2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace cotangent squared using an identity",
-        "workingLatex": "\\cot^2\\theta = \\csc^2\\theta - 1",
-        "explanation": "Converting cotangent squared into cosecant terms produces an equation in one function.",
+        "description": "Set out what must be proved",
+        "workingLatex": "\\text{Prove that }\\ (\\tan\\theta + \\cot\\theta)^2 \\equiv \\sec^2\\theta + \\operatorname{cosec}^2\\theta",
+        "explanation": "Expanding the square will produce $\\tan^2\\theta$ and $\\cot^2\\theta$ terms; the plan is to pair each with a $+1$ so the two Pythagorean identities can finish the job.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the equation",
-        "workingLatex": "\\csc^2\\theta - 1 - \\csc\\theta = 1",
-        "explanation": "The equation is now entirely in cosecant.",
+        "description": "Expand the square",
+        "workingLatex": "(\\tan\\theta + \\cot\\theta)^2 = \\tan^2\\theta + 2\\tan\\theta\\cot\\theta + \\cot^2\\theta",
+        "explanation": "Using $(a+b)^2=a^2+2ab+b^2$ with $a=\\tan\\theta$ and $b=\\cot\\theta$ writes the square out in full.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to standard quadratic form",
-        "workingLatex": "\\csc^2\\theta - \\csc\\theta - 2 = 0",
-        "explanation": "Collecting terms gives a quadratic in $\\csc\\theta$.",
+        "description": "Simplify the middle term",
+        "workingLatex": "\\tan\\theta\\cot\\theta = \\tan\\theta \\cdot \\frac{1}{\\tan\\theta} = 1",
+        "explanation": "Cotangent is the reciprocal of tangent, so their product is $1$; this is what makes the cross term so simple.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(\\csc\\theta - 2)(\\csc\\theta + 1) = 0",
-        "explanation": "The factors of $-2$ that add to $-1$ are $-2$ and $+1$.",
+        "description": "Substitute the middle term",
+        "workingLatex": "= \\tan^2\\theta + 2 + \\cot^2\\theta",
+        "explanation": "The cross term $2\\tan\\theta\\cot\\theta$ becomes $2\\times1=2$, leaving a tidy three-term expression.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first case",
-        "workingLatex": "\\csc\\theta = 2 \\;\\Rightarrow\\; \\sin\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 30^\\circ, 150^\\circ",
-        "explanation": "Cosecant $2$ gives sine one half, with solutions in quadrants I and II.",
+        "description": "Split the constant to make two pairs",
+        "workingLatex": "= (\\tan^2\\theta + 1) + (\\cot^2\\theta + 1)",
+        "explanation": "Writing $2$ as $1+1$ and regrouping deliberately builds the exact left-hand sides of the two Pythagorean identities.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second case",
-        "workingLatex": "\\csc\\theta = -1 \\;\\Rightarrow\\; \\sin\\theta = -1 \\;\\Rightarrow\\; \\theta = 270^\\circ",
-        "explanation": "Cosecant $-1$ gives sine $-1$, which occurs only at $270^\\circ$; note this is allowed since $|{-1}| \\ge 1$.",
+        "description": "Recall the first Pythagorean identity",
+        "workingLatex": "1 + \\tan^2\\theta \\equiv \\sec^2\\theta",
+        "explanation": "Dividing $\\sin^2\\theta+\\cos^2\\theta\\equiv1$ by $\\cos^2\\theta$ gives this link between tangent and secant.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect all solutions",
-        "workingLatex": "\\theta = 30^\\circ, 150^\\circ, 270^\\circ",
-        "explanation": "Combining both cases gives three solutions in the interval.",
+        "description": "Recall the second Pythagorean identity",
+        "workingLatex": "1 + \\cot^2\\theta \\equiv \\operatorname{cosec}^2\\theta",
+        "explanation": "Dividing the same fundamental identity by $\\sin^2\\theta$ instead gives the matching link between cotangent and cosecant.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Verify the tricky solution",
-        "workingLatex": "\\theta = 270^\\circ: \\cot^2\\theta - \\csc\\theta = 0 - (-1) = 1 \\;\\checkmark",
-        "explanation": "At $270^\\circ$, cotangent is $0$ and cosecant is $-1$, so the left side is $1$, confirming the solution.",
+        "description": "Substitute the first pair",
+        "workingLatex": "\\tan^2\\theta + 1 = \\sec^2\\theta",
+        "explanation": "The first bracket is exactly $1+\\tan^2\\theta$, which the identity replaces with $\\sec^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute the second pair",
+        "workingLatex": "\\cot^2\\theta + 1 = \\operatorname{cosec}^2\\theta",
+        "explanation": "Likewise the second bracket is $1+\\cot^2\\theta$, which becomes $\\operatorname{cosec}^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Combine the results",
+        "workingLatex": "(\\tan\\theta + \\cot\\theta)^2 = \\sec^2\\theta + \\operatorname{cosec}^2\\theta",
+        "explanation": "Adding the two replaced brackets gives precisely the right-hand side of the statement.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Identify the right-hand side",
+        "workingLatex": "\\sec^2\\theta + \\operatorname{cosec}^2\\theta = \\text{RHS}",
+        "explanation": "The transformed left-hand side matches the target expression exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the validity condition",
+        "workingLatex": "\\sin\\theta \\neq 0, \\quad \\cos\\theta \\neq 0",
+        "explanation": "Tangent, cotangent, secant and cosecant all require non-zero sine and cosine, so the identity holds wherever every function is defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Numerical check at 45 degrees",
+        "workingLatex": "(\\tan 45^\\circ + \\cot 45^\\circ)^2 = (1 + 1)^2 = 4, \\qquad \\sec^2 45^\\circ + \\operatorname{cosec}^2 45^\\circ = 2 + 2 = 4",
+        "explanation": "At $45^\\circ$ both sides equal $4$, a quick confirmation that the identity balances.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Conclude the proof",
+        "workingLatex": "(\\tan\\theta + \\cot\\theta)^2 \\equiv \\sec^2\\theta + \\operatorname{cosec}^2\\theta \\quad \\blacksquare",
+        "explanation": "Expanding and applying the two Pythagorean identities turns the left-hand side into the right-hand side, completing the proof.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ, 150^\\circ, 270^\\circ$"
+    "finalAnswer": "Expanding gives $\\tan^2\\theta+2+\\cot^2\\theta=(1+\\tan^2\\theta)+(1+\\cot^2\\theta)=\\sec^2\\theta+\\operatorname{cosec}^2\\theta$, as required."
   }
 }

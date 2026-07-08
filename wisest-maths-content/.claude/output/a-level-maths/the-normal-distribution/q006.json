@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "probability"
+  ],
+  "questionText": "The diameter, $X$ mm, of pebbles on a beach is modelled by $X \\sim N(30, 5^2)$. Find $P(X > 35)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "X \\sim N(30,\\ 5^2), \\qquad P(X > 35) = \\ ?",
+        "explanation": "The diameters are normal with mean $\\mu = 30$ mm and standard deviation $\\sigma = 5$ mm. We want the probability that a pebble is wider than $35$ mm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standardisation",
+        "workingLatex": "Z = \\dfrac{X - 30}{5}, \\qquad Z \\sim N(0,1)",
+        "explanation": "We change the diameter into a $z$-score by subtracting the mean and dividing by the standard deviation, so we can use the standard normal distribution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 35",
+        "workingLatex": "z = \\dfrac{35 - 30}{5} = \\dfrac{5}{5} = 1",
+        "explanation": "The diameter $35$ is $5$ mm above the mean, which is exactly one standard deviation. So $35$ mm corresponds to $z = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite as an upper-tail probability",
+        "workingLatex": "P(X > 35) = P(Z > 1) = 1 - \\Phi(1)",
+        "explanation": "We want the area to the right of $z = 1$, which is $1$ minus the left-hand cumulative area $\\Phi(1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "1 - \\Phi(1) = 1 - 0.8413 = 0.1587",
+        "explanation": "The cumulative value at $z = 1$ is $0.8413$, so the upper tail is $1 - 0.8413 = 0.1587$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(X > 35) \\approx 0.1587",
+        "explanation": "So about $15.9\\%$ of pebbles are wider than $35$ mm. This matches the well-known fact that roughly $16\\%$ of a normal distribution lies more than one standard deviation above the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X > 35) \\approx 0.1587$."
+  }
+}

@@ -4,61 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "ferris wheel",
-    "velocity"
+    "exponential parametric",
+    "gradient",
+    "speed"
   ],
-  "questionText": "A pod on a rotating wheel has position $x = 10\\cos\\left(\\frac{\\pi}{30}t\\right)$, $y = 10 + 10\\sin\\left(\\frac{\\pi}{30}t\\right)$ (metres), with $t$ in seconds. Find the speed of the pod, and show it is constant.",
+  "questionText": "A point moves so that its position at time $t$ is given by $x = e^{t}$ and $y = e^{2t}$. (a) Show that $\\dfrac{dy}{dx} = 2e^{t}$ and find its value when $t = \\ln 2$. (b) Find the exact speed of the point when $t = 0$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate x",
-        "workingLatex": "v_x = \\frac{dx}{dt} = -10\\cdot\\frac{\\pi}{30}\\sin\\left(\\frac{\\pi}{30}t\\right)",
-        "explanation": "The chain rule brings out the factor $\\frac{\\pi}{30}$ from the inner function.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = e^{t}",
+        "explanation": "The exponential $e^{t}$ differentiates to itself, giving the horizontal velocity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate y",
-        "workingLatex": "v_y = \\frac{dy}{dt} = 10\\cdot\\frac{\\pi}{30}\\cos\\left(\\frac{\\pi}{30}t\\right)",
-        "explanation": "The constant $10$ differentiates to zero, leaving the cosine term.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2e^{2t}",
+        "explanation": "By the chain rule the derivative of $e^{2t}$ is $2e^{2t}$: multiply by the derivative of the exponent $2t$, which is $2$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the speed",
-        "workingLatex": "\\text{speed} = \\sqrt{v_x^2 + v_y^2}",
-        "explanation": "Speed is the magnitude of the velocity vector.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2e^{2t}}{e^{t}}",
+        "explanation": "Dividing the vertical rate by the horizontal rate gives the slope of the path in terms of $t$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute and factor",
-        "workingLatex": "= \\frac{10\\pi}{30}\\sqrt{\\sin^2\\left(\\tfrac{\\pi}{30}t\\right) + \\cos^2\\left(\\tfrac{\\pi}{30}t\\right)}",
-        "explanation": "Both components share the factor $\\frac{10\\pi}{30}$, and the squares combine under the root.",
+        "description": "Simplify using index laws",
+        "workingLatex": "\\dfrac{2e^{2t}}{e^{t}} = 2e^{2t-t} = 2e^{t}",
+        "explanation": "Subtracting the powers when dividing gives the required simplified form $2e^{t}$, as stated.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\sin^2 + \\cos^2 = 1 \\;\\Rightarrow\\; \\text{speed} = \\frac{10\\pi}{30} = \\frac{\\pi}{3}",
-        "explanation": "The identity makes the root equal to $1$, leaving a constant speed independent of $t$.",
+        "description": "Evaluate the gradient at t = ln 2",
+        "workingLatex": "\\dfrac{dy}{dx} = 2e^{\\ln 2} = 2\\times 2 = 4",
+        "explanation": "Since $e^{\\ln 2}=2$, the exponential and logarithm cancel, giving a gradient of $4$ at that instant.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the result",
-        "workingLatex": "\\text{speed} = \\frac{\\pi}{3} \\approx 1.05 \\text{ m/s (constant)}",
-        "explanation": "Since the answer contains no $t$, the speed is constant, as expected for uniform circular motion.",
+        "description": "State the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "Speed combines the horizontal and vertical velocity components using Pythagoras, since together they form the total velocity of the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the velocity components at t = 0",
+        "workingLatex": "\\dot{x} = e^{0} = 1, \\qquad \\dot{y} = 2e^{0} = 2",
+        "explanation": "At $t=0$ both exponentials equal $1$, so the components are simply $1$ and $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute into the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{1^{2} + 2^{2}} = \\sqrt{1 + 4}",
+        "explanation": "Squaring and adding the two components gives the quantity under the square root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the surd",
+        "workingLatex": "\\text{speed} = \\sqrt{5}",
+        "explanation": "This leaves the exact speed as a single surd, which is neater than a rounded decimal.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Speed $= \\dfrac{\\pi}{3} \\approx 1.05$ m/s, constant."
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = 2e^{t}$, which equals $4$ when $t=\\ln 2$. (b) The speed at $t=0$ is $\\sqrt{5}$ units per unit time."
   }
 }

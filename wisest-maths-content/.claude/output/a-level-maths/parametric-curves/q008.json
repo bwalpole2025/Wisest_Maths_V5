@@ -5,53 +5,60 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Easy",
-  "marks": 4,
-  "answerType": "value",
+  "marks": 3,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "coordinates",
-    "trig"
+    "eliminating the parameter",
+    "parabola",
+    "cartesian"
   ],
-  "questionText": "A curve is defined by $x = 2 + 3\\cos\\theta$, $y = 1 + 3\\sin\\theta$. Find the coordinates of the point where $\\theta = \\dfrac{\\pi}{2}$.",
+  "questionText": "A curve has parametric equations $x = t + 1$ and $y = t^{2}$. Find a Cartesian equation of the curve.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the exact trig values",
-        "workingLatex": "\\cos\\frac{\\pi}{2} = 0, \\quad \\sin\\frac{\\pi}{2} = 1",
-        "explanation": "We need these standard values to substitute the given angle.",
+        "description": "State the aim",
+        "workingLatex": "\\text{eliminate } t",
+        "explanation": "A Cartesian equation uses only $x$ and $y$, so we remove $t$ by making it the subject of one equation and substituting into the other.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the x-coordinate",
-        "workingLatex": "x = 2 + 3(0) = 2",
-        "explanation": "Substituting $\\cos\\frac{\\pi}{2} = 0$ into the $x$-equation.",
+        "description": "Make t the subject of the x-equation",
+        "workingLatex": "x = t + 1 \\Rightarrow t = x - 1",
+        "explanation": "Subtracting $1$ from both sides makes $t$ the subject, expressed in terms of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the y-coordinate",
-        "workingLatex": "y = 1 + 3(1) = 4",
-        "explanation": "Substituting $\\sin\\frac{\\pi}{2} = 1$ into the $y$-equation.",
+        "description": "Look at the y-equation",
+        "workingLatex": "y = t^{2}",
+        "explanation": "The $y$-equation depends on $t^{2}$, so we substitute our expression for $t$ into it.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write the point",
-        "workingLatex": "(2, 4)",
-        "explanation": "The two coordinates give the point on the curve.",
+        "description": "Substitute for t",
+        "workingLatex": "y = (x - 1)^{2}",
+        "explanation": "Replacing $t$ with $x - 1$ removes the parameter, giving $y$ directly in terms of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Note the geometry",
-        "workingLatex": "\\text{circle centre } (2,1), \\text{ radius } 3",
-        "explanation": "The curve is a circle centred at $(2,1)$; the point $(2,4)$ is the topmost point, consistent with $\\theta = \\frac{\\pi}{2}$.",
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = (x - 1)^{2}",
+        "explanation": "This is the Cartesian equation of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Describe the curve",
+        "workingLatex": "\\text{parabola, vertex } (1,\\, 0)",
+        "explanation": "The equation $y = (x - 1)^{2}$ is a parabola with its lowest point (vertex) at $(1,\\,0)$, opening upwards.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(2, 4)$"
+    "finalAnswer": "$y = (x - 1)^{2}$ — a parabola with vertex $(1,\\, 0)$."
   }
 }

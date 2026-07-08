@@ -6,52 +6,66 @@
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
   "marks": 4,
-  "answerType": "value",
+  "answerType": "coordinates",
   "tags": [
+    "r form",
     "harmonic form",
-    "maximum",
-    "value of theta"
+    "maximum"
   ],
-  "questionText": "Given that $\\sin\\theta + \\sqrt3\\cos\\theta = 2\\sin(\\theta + 60^\\circ)$, find the value of $\\theta$ in $0^\\circ \\le \\theta < 360^\\circ$ at which the maximum occurs.",
+  "questionText": "Given that $5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta+\\alpha)$ where $\\alpha = 67.4^\\circ$ (to $1$ d.p.), find the maximum value of $5\\sin\\theta + 12\\cos\\theta$ and the value of $\\theta$ in $0^\\circ\\le\\theta<360^\\circ$ at which this maximum occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the maximum condition",
-        "workingLatex": "\\text{max when } \\sin(\\theta + 60^\\circ) = 1",
-        "explanation": "The expression is largest when the sine reaches its peak value of $1$.",
+        "description": "Recall the given R-form",
+        "workingLatex": "5\\sin\\theta + 12\\cos\\theta = 13\\sin(\\theta+67.4^\\circ)",
+        "explanation": "The expression has already been written as a single sine wave, so its behaviour is easy to read off. We work directly from this form.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Solve for the bracket",
-        "workingLatex": "\\theta + 60^\\circ = 90^\\circ",
-        "explanation": "Sine equals $1$ when its argument is $90^\\circ$ (within one revolution).",
+        "description": "State the range of the sine factor",
+        "workingLatex": "-1 \\le \\sin(\\theta+67.4^\\circ) \\le 1",
+        "explanation": "A sine function can never be larger than $1$ or smaller than $-1$, no matter what its angle is. This fact alone controls the size of the whole expression.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Isolate theta",
-        "workingLatex": "\\theta = 90^\\circ - 60^\\circ = 30^\\circ",
-        "explanation": "Subtracting the phase shift gives $\\theta = 30^\\circ$.",
+        "description": "Scale by the amplitude",
+        "workingLatex": "-13 \\le 13\\sin(\\theta+67.4^\\circ) \\le 13",
+        "explanation": "Multiplying the bounds by the positive amplitude $13$ shows the expression stays between $-13$ and $13$. No calculus is needed; the amplitude gives the extreme values directly.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the interval",
-        "workingLatex": "30^\\circ \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "The value lies in the required range, so it is valid.",
+        "description": "Identify the maximum value",
+        "workingLatex": "\\text{maximum} = 13",
+        "explanation": "The greatest value the expression can reach is $13$, achieved exactly when the sine factor equals its largest value, $1$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\theta = 30^\\circ, \\quad \\text{max value} = 2",
-        "explanation": "At $\\theta = 30^\\circ$ the expression reaches its maximum of $R = 2$.",
+        "description": "Set the sine factor equal to 1",
+        "workingLatex": "\\sin(\\theta+67.4^\\circ) = 1 \\Rightarrow \\theta + 67.4^\\circ = 90^\\circ",
+        "explanation": "The sine of an angle equals $1$ when that angle is $90^\\circ$. Setting the shifted angle to $90^\\circ$ locates the maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for θ",
+        "workingLatex": "\\theta = 90^\\circ - 67.4^\\circ = 22.6^\\circ",
+        "explanation": "Subtracting the phase shift $67.4^\\circ$ undoes it and gives the value of $\\theta$ where the maximum occurs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm θ lies in the interval",
+        "workingLatex": "0^\\circ \\le 22.6^\\circ < 360^\\circ",
+        "explanation": "The solution $22.6^\\circ$ lies inside the required interval, so it is the value of $\\theta$ at which the expression reaches its maximum.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ$ (maximum value $2$)."
+    "finalAnswer": "The maximum value is $13$, occurring at $\\theta = 22.6^\\circ$."
   }
 }

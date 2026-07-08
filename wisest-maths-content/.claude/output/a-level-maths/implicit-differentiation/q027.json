@@ -1,0 +1,106 @@
+{
+  "id": "al.y2.pure.implicit.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "product rule",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 y + x y^2 = 6$. Find an equation of the tangent to $C$ at the point $(1, 2)$, giving your answer in the form $ax + by = c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2 y) + \\frac{d}{dx}(x y^2) = \\frac{d}{dx}(6)",
+        "explanation": "Each product term on the left contains both $x$ and $y$, so it needs the product rule. The constant $6$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate x^2 y with the product rule",
+        "workingLatex": "\\frac{d}{dx}(x^2 y) = 2xy + x^2\\frac{dy}{dx}",
+        "explanation": "Treating $x^2$ and $y$ as the two factors: differentiate $x^2$ to $2x$ (times $y$) and add $x^2$ times $\\frac{dy}{dx}$ (differentiating $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate x y^2 with the product rule",
+        "workingLatex": "\\frac{d}{dx}(x y^2) = y^2 + 2xy\\frac{dy}{dx}",
+        "explanation": "Differentiate $x$ to $1$ (times $y^2$) and add $x$ times $\\frac{d}{dx}(y^2)=2y\\frac{dy}{dx}$, giving the $2xy\\frac{dy}{dx}$ term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2xy + x^2\\frac{dy}{dx} + y^2 + 2xy\\frac{dy}{dx} = 0",
+        "explanation": "Putting the two differentiated products together gives an equation containing $\\frac{dy}{dx}$, ready to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(x^2 + 2xy)\\frac{dy}{dx} = -(2xy + y^2)",
+        "explanation": "Grouping the two $\\frac{dy}{dx}$ terms on one side and moving the rest to the other prepares us to make $\\frac{dy}{dx}$ the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2xy + y^2}{x^2 + 2xy}",
+        "explanation": "Dividing by $(x^2+2xy)$ isolates the gradient, which depends on both $x$ and $y$ as expected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the point lies on the curve",
+        "workingLatex": "(1)^2(2) + (1)(2)^2 = 2 + 4 = 6 \\;\\checkmark",
+        "explanation": "We confirm $(1,2)$ satisfies $x^2 y + x y^2 = 6$, so the point is genuinely on $C$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute the point to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,2)} = -\\frac{2(1)(2) + 2^2}{1^2 + 2(1)(2)} = -\\frac{4 + 4}{1 + 4} = -\\frac{8}{5}",
+        "explanation": "Substituting $x=1$ and $y=2$ into the gradient formula gives the tangent's gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use the point-gradient form of a line",
+        "workingLatex": "y - 2 = -\\frac{8}{5}(x - 1)",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=-\\frac{8}{5}$ through $(1,2)$ sets up the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Clear the fraction and expand",
+        "workingLatex": "5(y - 2) = -8(x - 1) \\;\\Rightarrow\\; 5y - 10 = -8x + 8",
+        "explanation": "Multiplying by $5$ removes the fraction, and expanding both sides gives a form ready to rearrange.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Rearrange into the required form",
+        "workingLatex": "8x + 5y = 18",
+        "explanation": "Collecting the $x$ and $y$ terms on the left gives the tangent as $8x+5y=18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{8}{5}\\text{ at }(1,2),\\qquad 8x + 5y = 18",
+        "explanation": "So the gradient at $(1,2)$ is $-\\frac{8}{5}$ and the tangent there is $8x+5y=18$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $8x + 5y = 18$ (gradient $-\\frac{8}{5}$)."
+  }
+}

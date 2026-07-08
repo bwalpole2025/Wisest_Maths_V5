@@ -4,68 +4,75 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Intermediate",
-  "marks": 6,
+  "difficulty": "Easy",
+  "marks": 4,
   "answerType": "value",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "maximum"
   ],
-  "questionText": "Solve $\\sqrt3\\sin\\theta - \\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Express $8\\sin\\theta + 6\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$. Hence write down the maximum value of $8\\sin\\theta + 6\\cos\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Write in harmonic form",
-        "workingLatex": "\\sqrt3\\sin\\theta - \\cos\\theta = 2\\sin(\\theta - 30^\\circ)",
-        "explanation": "From $R = 2$ and $\\tan\\alpha = \\frac{1}{\\sqrt3}$, the expression becomes a single sine, which is far easier to solve.",
+        "description": "Set up the identity to match",
+        "workingLatex": "8\\sin\\theta + 6\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We want the two-term expression written as a single sine wave. Setting it identically equal to $R\\sin(\\theta+\\alpha)$ lets us expand the right-hand side and match coefficients.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite the equation",
-        "workingLatex": "2\\sin(\\theta - 30^\\circ) = 1",
-        "explanation": "Substituting the harmonic form turns the equation into a standard sine equation.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Using $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ puts the right-hand side in the same form as the left: a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Isolate the sine",
-        "workingLatex": "\\sin(\\theta - 30^\\circ) = \\frac{1}{2}",
-        "explanation": "Dividing by $2$ gives a recognisable value.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = 8, \\qquad R\\sin\\alpha = 6",
+        "explanation": "Matching the amount of $\\sin\\theta$ on each side gives $R\\cos\\alpha=8$, and matching the amount of $\\cos\\theta$ gives $R\\sin\\alpha=6$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the shifted interval",
-        "workingLatex": "-30^\\circ \\le \\theta - 30^\\circ < 330^\\circ",
-        "explanation": "Subtracting $30^\\circ$ from the bounds gives the interval for the shifted angle.",
+        "description": "Find R by squaring and adding",
+        "workingLatex": "R = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10",
+        "explanation": "Squaring and adding the two equations eliminates $\\alpha$ through $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=8^2+6^2=100$. The positive root gives $R=10$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - 30^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$ in this interval.",
+        "description": "Divide the equations to isolate tanα",
+        "workingLatex": "\\tan\\alpha = \\dfrac{R\\sin\\alpha}{R\\cos\\alpha} = \\dfrac{6}{8} = \\dfrac{3}{4}",
+        "explanation": "Dividing the two equations cancels $R$ and leaves $\\tan\\alpha=\\dfrac{6}{8}$, which simplifies to $\\dfrac{3}{4}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Add the shift back",
-        "workingLatex": "\\theta = 60^\\circ, 180^\\circ",
-        "explanation": "Adding $30^\\circ$ to each solution recovers $\\theta$.",
+        "description": "Solve for the acute angle α",
+        "workingLatex": "\\alpha = \\arctan\\dfrac{3}{4} = 36.9^\\circ",
+        "explanation": "Both $8$ and $6$ are positive, so $\\alpha$ is acute. The inverse tangent gives $\\alpha=36.9^\\circ$ to $1$ decimal place.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = 60^\\circ, 180^\\circ",
-        "explanation": "Both lie in the required range.",
+        "description": "State the R-form",
+        "workingLatex": "8\\sin\\theta + 6\\cos\\theta = 10\\sin(\\theta + 36.9^\\circ)",
+        "explanation": "Putting the amplitude and phase together gives the single sine wave equivalent to the original expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Read off the maximum value",
+        "workingLatex": "-10 \\le 10\\sin(\\theta+36.9^\\circ) \\le 10 \\Rightarrow \\text{max} = 10",
+        "explanation": "Since $\\sin$ of any angle never exceeds $1$, the expression $10\\sin(\\theta+36.9^\\circ)$ is greatest when the sine equals $1$. Its maximum value is therefore simply $R=10$, with no calculus needed.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 60^\\circ, 180^\\circ$"
+    "finalAnswer": "$8\\sin\\theta + 6\\cos\\theta = 10\\sin(\\theta + 36.9^\\circ)$, so the maximum value of the expression is $10$."
   }
 }

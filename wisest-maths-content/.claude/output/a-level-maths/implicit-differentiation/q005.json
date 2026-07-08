@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "chain rule",
+    "hyperbola"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 - y^2 = 9$. Find $\\frac{dy}{dx}$ in terms of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) - \\frac{d}{dx}(y^2) = \\frac{d}{dx}(9)",
+        "explanation": "We differentiate both sides with respect to $x$, treating $y$ as a function of $x$. The minus sign in front of $y^2$ carries through, and the constant $9$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the $x^2$ term",
+        "workingLatex": "2x - \\frac{d}{dx}(y^2) = 0",
+        "explanation": "The power rule gives $\\frac{d}{dx}(x^2)=2x$, and the constant $9$ becomes $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the $y^2$ term using the chain rule",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "Differentiating $y^2$ with respect to $x$ gives $2y$ times $\\frac{dy}{dx}$, the extra factor appearing because $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x - 2y\\frac{dy}{dx} = 0",
+        "explanation": "Substituting the derivative of $y^2$ back in, and keeping the minus sign, gives an equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Isolate the $\\frac{dy}{dx}$ term",
+        "workingLatex": "2y\\frac{dy}{dx} = 2x",
+        "explanation": "Add $2y\\frac{dy}{dx}$ to both sides so the $\\frac{dy}{dx}$ term becomes positive and stands alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make $\\frac{dy}{dx}$ the subject",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2x}{2y} = \\frac{x}{y}",
+        "explanation": "Divide both sides by $2y$ and cancel the factor of $2$. Because both squared terms have coefficient $1$, the gradient is simply $\\frac{x}{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x}{y}",
+        "explanation": "This is the gradient at any point $(x,y)$ on the hyperbola.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\frac{dy}{dx} = \\frac{x}{y}$"
+  }
+}

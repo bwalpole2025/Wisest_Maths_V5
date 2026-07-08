@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "standard derivatives",
+    "constant multiple",
+    "exponential"
+  ],
+  "questionText": "Find $\\dfrac{dy}{dx}$ given that $y = 6e^{2x}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the function and the goal",
+        "workingLatex": "y = 6e^{2x}",
+        "explanation": "We need $\\frac{dy}{dx}$ for a constant multiple of the linear exponential $e^{2x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Pull the constant out using the constant-multiple rule",
+        "workingLatex": "\\frac{dy}{dx} = 6\\,\\frac{d}{dx}\\left(e^{2x}\\right)",
+        "explanation": "The factor $6$ stays out in front while we differentiate $e^{2x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the standard derivative of $e^{kx}$",
+        "workingLatex": "\\frac{d}{dx}\\left(e^{kx}\\right) = k\\,e^{kx}, \\quad k = 2",
+        "explanation": "Differentiating $e^{kx}$ reproduces $e^{kx}$ and brings out the constant $k$. Here $k=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the exponential",
+        "workingLatex": "\\frac{d}{dx}\\left(e^{2x}\\right) = 2e^{2x}",
+        "explanation": "Substituting $k=2$ gives $2e^{2x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply by the constant",
+        "workingLatex": "\\frac{dy}{dx} = 6 \\cdot 2e^{2x} = 12e^{2x}",
+        "explanation": "Multiplying the derivative $2e^{2x}$ by the constant $6$ gives $12e^{2x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = 12e^{2x}",
+        "explanation": "This is the required gradient function; it is positive for all $x$, so the curve is always increasing.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 12e^{2x}$."
+  }
+}

@@ -6,67 +6,95 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "equations",
-    "cotangent",
-    "negative",
-    "solving"
+    "given cosec",
+    "pythagorean identity",
+    "cot",
+    "surds"
   ],
-  "questionText": "Solve $\\cot\\theta = -1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Given that $\\operatorname{cosec}\\theta = -3$ and that $\\theta$ lies in the fourth quadrant, find the exact values of $\\cot\\theta$, $\\tan\\theta$ and $\\sec\\theta$, giving your answers in surd form where appropriate.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Convert cotangent to tangent",
-        "workingLatex": "\\cot\\theta = -1 \\;\\Rightarrow\\; \\tan\\theta = -1",
-        "explanation": "Since cotangent is the reciprocal of tangent, and the reciprocal of $-1$ is $-1$, the equation becomes $\\tan\\theta = -1$.",
+        "description": "Note the signs in the fourth quadrant",
+        "workingLatex": "\\text{Q4:}\\quad \\cos\\theta > 0, \\quad \\sin\\theta < 0, \\quad \\tan\\theta < 0",
+        "explanation": "In the fourth quadrant cosine is positive and sine is negative. Since $\\operatorname{cosec}\\theta$ is the reciprocal of sine, a negative value $-3$ is consistent with this.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the reference angle",
-        "workingLatex": "\\tan^{-1}(1) = 45^\\circ",
-        "explanation": "Ignoring the sign for a moment, the acute angle with tangent $1$ is $45^\\circ$, which serves as the reference angle.",
+        "description": "Find sin from cosec",
+        "workingLatex": "\\sin\\theta = \\frac{1}{\\operatorname{cosec}\\theta} = \\frac{1}{-3} = -\\tfrac{1}{3}",
+        "explanation": "Sine is the reciprocal of cosecant, so flipping the value gives $\\sin\\theta$ directly, and it is negative as expected.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Identify the quadrants where tangent is negative",
-        "workingLatex": "\\tan\\theta < 0 \\text{ in quadrants II and IV}",
-        "explanation": "Tangent is negative in the second and fourth quadrants, so the solutions lie there.",
+        "description": "State the identity linking cot and cosec",
+        "workingLatex": "\\cot^2\\theta = \\operatorname{cosec}^2\\theta - 1",
+        "explanation": "Rearranging $1 + \\cot^2\\theta \\equiv \\operatorname{cosec}^2\\theta$ isolates $\\cot^2\\theta$, letting us use the given cosecant.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the second-quadrant solution",
-        "workingLatex": "\\theta = 180^\\circ - 45^\\circ = 135^\\circ",
-        "explanation": "Subtracting the reference angle from $180^\\circ$ gives the quadrant II solution.",
+        "description": "Substitute the value of cosec",
+        "workingLatex": "\\cot^2\\theta = (-3)^2 - 1 = 9 - 1 = 8",
+        "explanation": "Squaring $-3$ gives $9$, and subtracting $1$ leaves $8$; this is not a perfect square, so a surd will appear.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the fourth-quadrant solution",
-        "workingLatex": "\\theta = 360^\\circ - 45^\\circ = 315^\\circ",
-        "explanation": "Subtracting the reference angle from $360^\\circ$ gives the quadrant IV solution.",
+        "description": "Take the square root and simplify the surd",
+        "workingLatex": "\\cot\\theta = \\pm\\sqrt{8} = \\pm 2\\sqrt{2}",
+        "explanation": "Since $8 = 4 \\times 2$, the root simplifies to $2\\sqrt{2}$. The $\\pm$ stays until the quadrant fixes the sign.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = 135^\\circ \\text{ or } \\theta = 315^\\circ",
-        "explanation": "These are the two solutions in the required interval.",
+        "description": "Choose the sign from the quadrant",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{(+)}{(-)} < 0 \\ \\Rightarrow\\ \\cot\\theta = -2\\sqrt{2}",
+        "explanation": "In the fourth quadrant cosine is positive and sine is negative, so their ratio $\\cot\\theta$ is negative. This selects the negative root.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Verify one solution",
-        "workingLatex": "\\cot 135^\\circ = \\frac{\\cos 135^\\circ}{\\sin 135^\\circ} = \\frac{-\\frac{\\sqrt2}{2}}{\\frac{\\sqrt2}{2}} = -1 \\;\\checkmark",
-        "explanation": "Substituting $135^\\circ$ back confirms cotangent is $-1$, validating the answer.",
+        "description": "Find tan as the reciprocal of cot",
+        "workingLatex": "\\tan\\theta = \\frac{1}{\\cot\\theta} = \\frac{1}{-2\\sqrt{2}} = -\\tfrac{\\sqrt{2}}{4}",
+        "explanation": "Tangent is the reciprocal of cotangent; rationalising $\\dfrac{1}{2\\sqrt{2}}$ by multiplying top and bottom by $\\sqrt{2}$ gives $\\dfrac{\\sqrt{2}}{4}$, with the negative sign carried through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find cos using cot = cos over sin",
+        "workingLatex": "\\cos\\theta = \\cot\\theta\\cdot\\sin\\theta = \\left(-2\\sqrt{2}\\right)\\left(-\\tfrac{1}{3}\\right) = \\tfrac{2\\sqrt{2}}{3}",
+        "explanation": "Rearranging $\\cot\\theta = \\dfrac{\\cos\\theta}{\\sin\\theta}$ gives $\\cos\\theta = \\cot\\theta\\sin\\theta$. The two negatives multiply to a positive, matching a fourth-quadrant cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find sec from cos",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta} = \\frac{3}{2\\sqrt{2}} = \\tfrac{3\\sqrt{2}}{4}",
+        "explanation": "Secant is the reciprocal of cosine; rationalising the denominator gives $\\dfrac{3\\sqrt{2}}{4}$, which is positive as expected here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Verify with sin^2 + cos^2 = 1",
+        "workingLatex": "\\left(-\\tfrac{1}{3}\\right)^2 + \\left(\\tfrac{2\\sqrt{2}}{3}\\right)^2 = \\tfrac{1}{9} + \\tfrac{8}{9} = 1",
+        "explanation": "The squares of sine and cosine add to $1$, confirming that all of our values fit together consistently.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the results",
+        "workingLatex": "\\cot\\theta = -2\\sqrt{2}, \\quad \\tan\\theta = -\\tfrac{\\sqrt{2}}{4}, \\quad \\sec\\theta = \\tfrac{3\\sqrt{2}}{4}",
+        "explanation": "Collecting the exact surd values completes the answer, with signs matching a fourth-quadrant angle.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 135^\\circ \\text{ or } 315^\\circ$"
+    "finalAnswer": "$\\cot\\theta = -2\\sqrt{2}$, $\\tan\\theta = -\\tfrac{\\sqrt{2}}{4}$ and $\\sec\\theta = \\tfrac{3\\sqrt{2}}{4}$."
   }
 }

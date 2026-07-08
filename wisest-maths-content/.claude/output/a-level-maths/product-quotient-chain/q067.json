@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "product rule",
+    "reciprocal trig",
+    "second derivative"
+  ],
+  "questionText": "The curve $C$ has equation $y = x\\tan x$ for $-\\dfrac{\\pi}{2} < x < \\dfrac{\\pi}{2}$. (a) Find $\\dfrac{dy}{dx}$. (b) Find the equation of the tangent to $C$ at the point where $x = \\dfrac{\\pi}{4}$. (c) Show that $C$ has a stationary point at the origin and use the second derivative to determine its nature. (d) Hence explain why $x\\tan x \\ge 0$ throughout the interval.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the factors for the product rule",
+        "workingLatex": "u = x, \\qquad v = \\tan x",
+        "explanation": "The function is a product, so we use $\\tfrac{d}{dx}(uv)=u'v+uv'$. Recall $\\tfrac{d}{dx}\\tan x=\\sec^2 x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each factor",
+        "workingLatex": "u' = 1, \\qquad v' = \\sec^2 x",
+        "explanation": "The derivative of $\\tan x$ is $\\sec^2 x$, a standard reciprocal-trig result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = \\tan x + x\\sec^2 x",
+        "explanation": "Substituting into $u'v+uv'$ gives the derivative; this answers (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the gradient at x = pi/4",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\pi/4} = \\tan\\tfrac{\\pi}{4} + \\tfrac{\\pi}{4}\\sec^2\\tfrac{\\pi}{4} = 1 + \\tfrac{\\pi}{4}(2) = 1 + \\frac{\\pi}{2}",
+        "explanation": "Using $\\tan\\tfrac{\\pi}{4}=1$ and $\\sec^2\\tfrac{\\pi}{4}=2$ gives the slope.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate at x = pi/4",
+        "workingLatex": "y = \\tfrac{\\pi}{4}\\tan\\tfrac{\\pi}{4} = \\frac{\\pi}{4} \\quad\\Rightarrow\\quad \\left(\\tfrac{\\pi}{4},\\,\\tfrac{\\pi}{4}\\right)",
+        "explanation": "The tangent touches $C$ at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - \\frac{\\pi}{4} = \\left(1 + \\frac{\\pi}{2}\\right)\\!\\left(x - \\frac{\\pi}{4}\\right)",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with the gradient from step 4.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the origin is stationary",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = \\tan 0 + 0\\cdot\\sec^2 0 = 0",
+        "explanation": "Both terms vanish at $x=0$, and $y=0\\cdot\\tan 0=0$, so the origin lies on $C$ and the gradient there is zero: it is a stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Differentiate sec-squared for the second derivative",
+        "workingLatex": "\\frac{d}{dx}\\big(\\sec^2 x\\big) = 2\\sec x\\,(\\sec x\\tan x) = 2\\sec^2 x\\tan x",
+        "explanation": "Treating $\\sec^2 x$ as $(\\sec x)^2$ and using the chain rule with $\\tfrac{d}{dx}\\sec x=\\sec x\\tan x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compute the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\sec^2 x + \\big(\\sec^2 x + x\\cdot 2\\sec^2 x\\tan x\\big)",
+        "explanation": "Differentiate $\\tan x+x\\sec^2 x$: the first term gives $\\sec^2 x$, and the product $x\\sec^2 x$ gives $\\sec^2 x + 2x\\sec^2 x\\tan x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify the second derivative",
+        "workingLatex": "\\frac{d^2y}{dx^2} = 2\\sec^2 x\\,(1 + x\\tan x)",
+        "explanation": "Collecting terms and factoring out $2\\sec^2 x$ gives a compact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Classify the stationary point",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=0} = 2\\sec^2 0\\,(1 + 0) = 2 > 0",
+        "explanation": "A positive second derivative means the curve is concave up at the origin, so $(0,0)$ is a local minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Show the curve increases for positive x",
+        "workingLatex": "0 < x < \\tfrac{\\pi}{2}:\\ \\tan x > 0 \\ \\text{and}\\ x\\sec^2 x > 0 \\;\\Rightarrow\\; \\frac{dy}{dx} > 0",
+        "explanation": "On the right of the origin both terms of the gradient are positive, so $C$ rises away from the minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Use the symmetry of the function",
+        "workingLatex": "(-x)\\tan(-x) = (-x)(-\\tan x) = x\\tan x",
+        "explanation": "The function is even, so its graph is symmetric about the $y$-axis; therefore it falls towards the origin as $x$ increases through negative values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Deduce the inequality",
+        "workingLatex": "y_{\\min} = 0 \\;\\Rightarrow\\; x\\tan x \\ge 0 \\ \\text{ for } -\\tfrac{\\pi}{2} < x < \\tfrac{\\pi}{2}",
+        "explanation": "The origin is the lowest point of the curve, with value $0$, and the curve rises on both sides, so $x\\tan x$ never drops below $0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\tan x + x\\sec^2 x$. (b) $y-\\tfrac{\\pi}{4}=\\left(1+\\tfrac{\\pi}{2}\\right)\\!\\left(x-\\tfrac{\\pi}{4}\\right)$. (c) $(0,0)$ is a minimum since $\\tfrac{d^2y}{dx^2}=2>0$ there. (d) The minimum value of $y$ is $0$, so $x\\tan x\\ge 0$ throughout the interval."
+  }
+}

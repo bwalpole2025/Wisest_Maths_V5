@@ -4,54 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "projectile",
-    "maximum height"
+    "trig parametric",
+    "chain rule",
+    "gradient"
   ],
-  "questionText": "A projectile has position $x = 30t$, $y = 25t - 5t^2$ (metres) at time $t$ seconds. Find the maximum height and the horizontal distance travelled when it is reached.",
+  "questionText": "A point moves along the path $x = 2\\sin t$, $y = \\cos 2t$. Show that $\\dfrac{dy}{dx} = -2\\sin t$, and hence find the gradient of the path and the coordinates of the point when $t = \\dfrac{\\pi}{6}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Differentiate the height",
-        "workingLatex": "\\frac{dy}{dt} = 25 - 10t",
-        "explanation": "The maximum height is where the vertical velocity is zero.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2\\cos t",
+        "explanation": "Differentiating $2\\sin t$ gives the horizontal velocity component.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the time of maximum height",
-        "workingLatex": "25 - 10t = 0 \\;\\Rightarrow\\; t = 2.5",
-        "explanation": "Solving gives the time at the peak.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = -2\\sin 2t",
+        "explanation": "By the chain rule, $\\cos 2t$ differentiates to $-\\sin 2t$ times the derivative of $2t$, giving $-2\\sin 2t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the maximum height",
-        "workingLatex": "y = 25(2.5) - 5(2.5)^2 = 62.5 - 31.25 = 31.25",
-        "explanation": "Substituting the time into the height equation.",
+        "description": "Form the gradient in terms of t",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{-2\\sin 2t}{2\\cos t}",
+        "explanation": "Dividing the vertical rate by the horizontal rate gives the slope of the path, which we now simplify.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the horizontal distance at that time",
-        "workingLatex": "x = 30(2.5) = 75",
-        "explanation": "Substituting the time into the horizontal-position equation.",
+        "description": "Expand using the double-angle identity",
+        "workingLatex": "\\sin 2t = 2\\sin t\\cos t",
+        "explanation": "Rewriting $\\sin 2t$ in terms of $\\sin t$ and $\\cos t$ lets a common factor of $\\cos t$ cancel with the denominator.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\text{max height} = 31.25 \\text{ m at } x = 75 \\text{ m}",
-        "explanation": "The projectile is highest $75$ m downrange, at a height of $31.25$ m.",
+        "description": "Substitute and simplify",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{-2(2\\sin t\\cos t)}{2\\cos t} = \\dfrac{-4\\sin t\\cos t}{2\\cos t} = -2\\sin t",
+        "explanation": "Cancelling the shared $\\cos t$ leaves the required tidy expression $-2\\sin t$ for the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the gradient at t = pi/6",
+        "workingLatex": "\\dfrac{dy}{dx} = -2\\sin\\tfrac{\\pi}{6} = -2\\cdot\\dfrac{1}{2} = -1",
+        "explanation": "Substituting the exact value $\\sin\\tfrac{\\pi}{6}=\\tfrac12$ gives a gradient of $-1$ at that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the x-coordinate",
+        "workingLatex": "x = 2\\sin\\tfrac{\\pi}{6} = 2\\cdot\\dfrac{1}{2} = 1",
+        "explanation": "Putting $t=\\tfrac{\\pi}{6}$ into the horizontal position equation gives $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = \\cos\\left(2\\cdot\\tfrac{\\pi}{6}\\right) = \\cos\\tfrac{\\pi}{3} = \\dfrac{1}{2}",
+        "explanation": "Putting $t=\\tfrac{\\pi}{6}$ into the vertical position equation gives $y=\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the result",
+        "workingLatex": "\\text{point } \\left(1,\\tfrac{1}{2}\\right), \\quad \\dfrac{dy}{dx} = -1",
+        "explanation": "So at this moment the point is at $\\left(1,\\tfrac12\\right)$ and the path is sloping downwards with gradient $-1$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Maximum height $31.25$ m, reached at $x = 75$ m."
+    "finalAnswer": "$\\dfrac{dy}{dx} = -2\\sin t$; at $t = \\dfrac{\\pi}{6}$ the gradient is $-1$ and the point is $\\left(1,\\dfrac{1}{2}\\right)$."
   }
 }

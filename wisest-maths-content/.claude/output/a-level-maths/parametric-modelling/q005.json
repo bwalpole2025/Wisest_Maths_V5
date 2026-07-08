@@ -5,53 +5,67 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
+    "velocity components",
     "parametric differentiation",
-    "gradient"
+    "modelling"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find $\\dfrac{dy}{dx}$ in terms of $t$.",
+  "questionText": "An object moves so that, at time $t$ seconds, its position in metres is $x = 5t^{2}$ and $y = t^{3}$. Find $\\dfrac{dx}{dt}$ and $\\dfrac{dy}{dt}$ when $t = 3$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the parametric chain rule",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt}",
-        "explanation": "For parametric curves the gradient is the ratio of the two rates of change with respect to $t$. This avoids having to find the Cartesian equation.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dfrac{dx}{dt} = 10t",
+        "explanation": "The rate of change of the horizontal position is found by differentiating $x = 5t^{2}$ with respect to $t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate x with respect to t",
-        "workingLatex": "\\frac{dx}{dt} = 2t",
-        "explanation": "Differentiating $x = t^2$ gives $2t$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dfrac{dy}{dt} = 3t^{2}",
+        "explanation": "Similarly, differentiating $y = t^{3}$ gives the rate of change of the vertical position.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Differentiate y with respect to t",
-        "workingLatex": "\\frac{dy}{dt} = 3t^2",
-        "explanation": "Differentiating $y = t^3$ gives $3t^2$.",
+        "description": "Substitute t = 3 into dx/dt",
+        "workingLatex": "\\dfrac{dx}{dt} = 10(3)",
+        "explanation": "Putting $t = 3$ into the derivative gives the horizontal rate of change at that moment.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Form the ratio",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t}",
-        "explanation": "Dividing the two derivatives gives the gradient in terms of $t$.",
+        "description": "Evaluate dx/dt",
+        "workingLatex": "\\dfrac{dx}{dt} = 30",
+        "explanation": "The arithmetic gives $\\dfrac{dx}{dt} = 30$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{3t}{2}",
-        "explanation": "Cancelling one factor of $t$ (for $t \\ne 0$) gives the simplified gradient.",
+        "description": "Substitute t = 3 into dy/dt",
+        "workingLatex": "\\dfrac{dy}{dt} = 3(3)^{2}",
+        "explanation": "Using the same instant $t = 3$ in the other derivative gives the vertical rate of change.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate dy/dt",
+        "workingLatex": "\\dfrac{dy}{dt} = 3 \\times 9 = 27",
+        "explanation": "Square first, then multiply: $3^{2} = 9$ and $3 \\times 9 = 27$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State both rates",
+        "workingLatex": "\\dfrac{dx}{dt} = 30, \\quad \\dfrac{dy}{dt} = 27",
+        "explanation": "These are the two velocity components of the object at $t = 3$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{3t}{2}$"
+    "finalAnswer": "At $t = 3$ s, $\\dfrac{dx}{dt} = 30$ and $\\dfrac{dy}{dt} = 27$ (m/s)."
   }
 }

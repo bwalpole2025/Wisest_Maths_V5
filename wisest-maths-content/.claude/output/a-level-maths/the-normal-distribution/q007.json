@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.stats.normal-distribution.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "symmetry"
+  ],
+  "questionText": "The lifetime, $X$ hours, of a type of battery is modelled by $X \\sim N(60, 8^2)$. Find $P(X < 44)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "X \\sim N(60,\\ 8^2), \\qquad P(X < 44) = \\ ?",
+        "explanation": "The lifetimes are normal with mean $\\mu = 60$ hours and standard deviation $\\sigma = 8$ hours. We want the probability that a battery lasts less than $44$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standardisation",
+        "workingLatex": "Z = \\dfrac{X - 60}{8}, \\qquad Z \\sim N(0,1)",
+        "explanation": "We convert the lifetime into a $z$-score by subtracting the mean and dividing by the standard deviation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 44",
+        "workingLatex": "z = \\dfrac{44 - 60}{8} = \\dfrac{-16}{8} = -2",
+        "explanation": "The lifetime $44$ is $16$ hours below the mean, which is two standard deviations of $8$. The result is negative because $44$ lies to the left of the mean, giving $z = -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X < 44) = P(Z < -2) = \\Phi(-2)",
+        "explanation": "Being below $44$ is the same event as $Z$ being below $-2$, a left-tail area written $\\Phi(-2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use symmetry to switch to a positive value",
+        "workingLatex": "\\Phi(-2) = 1 - \\Phi(2)",
+        "explanation": "By the symmetry of the curve about $0$, the area to the left of $-2$ equals the area to the right of $+2$, which is $1 - \\Phi(2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "1 - \\Phi(2) = 1 - 0.97725 = 0.02275",
+        "explanation": "The cumulative value at $z = 2$ is $\\Phi(2) = 0.97725$, so the tail is $1 - 0.97725 = 0.02275$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "P(X < 44) \\approx 0.02275",
+        "explanation": "So only about $2.3\\%$ of batteries last less than $44$ hours. This is a small probability, which is sensible because $44$ hours is two standard deviations below the mean.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X < 44) \\approx 0.02275$."
+  }
+}

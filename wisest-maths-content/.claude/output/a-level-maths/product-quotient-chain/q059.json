@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "chain rule",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{\\ln(x^2+1)}{x}$, $x\\ne 0$. (a) Find $\\dfrac{dy}{dx}$, giving your answer as a single fraction. (b) Find the exact gradient of $C$ at $x=1$. (c) Find the equation of the tangent to $C$ at the point where $x=1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a quotient and label the parts",
+        "workingLatex": "u = \\ln(x^2+1), \\qquad v = x",
+        "explanation": "$y$ is a quotient, so the quotient rule applies. The numerator $\\ln(x^2+1)$ is a composition, so it needs the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the numerator with the chain rule",
+        "workingLatex": "u = \\ln(x^2+1),\\quad w = x^2+1,\\quad \\frac{du}{dw}=\\frac{1}{w},\\quad \\frac{dw}{dx}=2x,\\quad u' = \\frac{2x}{x^2+1}",
+        "explanation": "For $\\ln w$ the derivative is $\\dfrac{1}{w}\\cdot\\dfrac{dw}{dx}$. With $w=x^2+1$ and $\\dfrac{dw}{dx}=2x$, this gives $\\dfrac{2x}{x^2+1}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the denominator",
+        "workingLatex": "v' = 1",
+        "explanation": "The derivative of $x$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}",
+        "explanation": "We substitute the four pieces into this standard formula, with $v^2=x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the pieces",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\dfrac{2x}{x^2+1}\\cdot x - \\ln(x^2+1)\\cdot 1}{x^2}",
+        "explanation": "Placing $u'v-uv'$ over $x^2$ gives this expression, which still contains a fraction inside a fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{\\dfrac{2x^2}{x^2+1} - \\ln(x^2+1)}{x^2}",
+        "explanation": "Multiplying $\\dfrac{2x}{x^2+1}$ by $x$ gives $\\dfrac{2x^2}{x^2+1}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write as a single fraction",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2x^2 - (x^2+1)\\ln(x^2+1)}{x^2(x^2+1)}",
+        "explanation": "Multiplying top and bottom by $(x^2+1)$ clears the inner fraction and gives a single tidy fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute x = 1",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = \\frac{2(1) - (1+1)\\ln 2}{1\\cdot(1+1)} = \\frac{2 - 2\\ln 2}{2}",
+        "explanation": "At $x=1$: $x^2=1$ and $x^2+1=2$, and $\\ln(x^2+1)=\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=1} = 1 - \\ln 2",
+        "explanation": "Dividing $2-2\\ln 2$ by $2$ gives the exact gradient $1-\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the point of contact",
+        "workingLatex": "y = \\frac{\\ln(1+1)}{1} = \\ln 2 \\ \\Rightarrow\\ (1,\\ \\ln 2)",
+        "explanation": "Substituting $x=1$ into $y=\\dfrac{\\ln(x^2+1)}{x}$ gives $y=\\ln 2$, so the tangent touches at $(1,\\ln 2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write the tangent in point-gradient form",
+        "workingLatex": "y - \\ln 2 = (1 - \\ln 2)(x - 1)",
+        "explanation": "Use $y-y_1=m(x-x_1)$ with the point $(1,\\ln 2)$ and gradient $1-\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Expand the bracket",
+        "workingLatex": "y = (1 - \\ln 2)x - (1 - \\ln 2) + \\ln 2",
+        "explanation": "Multiply out $(1-\\ln 2)(x-1)$ and add $\\ln 2$ from moving it across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Simplify the constant term",
+        "workingLatex": "y = (1 - \\ln 2)x + 2\\ln 2 - 1",
+        "explanation": "The constants combine: $-(1-\\ln 2)+\\ln 2 = -1+\\ln 2+\\ln 2 = 2\\ln 2 - 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the gradient and tangent",
+        "workingLatex": "\\text{Gradient } = 1 - \\ln 2, \\qquad \\text{Tangent: } y = (1 - \\ln 2)x + 2\\ln 2 - 1",
+        "explanation": "These are the exact gradient at $x=1$ and the equation of the tangent there.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=\\dfrac{2x^2 - (x^2+1)\\ln(x^2+1)}{x^2(x^2+1)}$. (b) Gradient at $x=1$ is $1-\\ln 2$. (c) Tangent: $y=(1-\\ln 2)x + 2\\ln 2 - 1$."
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.implicit.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "normal",
+    "chain rule"
+  ],
+  "questionText": "The curve $C$ has equation $x^3 + y^3 = 28$. Find an equation of the normal to $C$ at the point $(1, 3)$, giving your answer in the form $y = mx + c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Confirm the point lies on the curve",
+        "workingLatex": "1^3 + 3^3 = 1 + 27 = 28 \\;\\checkmark",
+        "explanation": "Checking that $(1,3)$ satisfies the equation confirms it is a genuine point on $C$, so the normal there is well defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^3) + \\frac{d}{dx}(y^3) = \\frac{d}{dx}(28)",
+        "explanation": "Differentiate the whole equation with respect to $x$, treating $y$ as a function of $x$. The constant $28$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the power and chain rules",
+        "workingLatex": "3x^2 + 3y^2\\frac{dy}{dx} = 0",
+        "explanation": "The term $x^3$ gives $3x^2$. For $y^3$ the chain rule gives $3y^2$ multiplied by $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{3x^2}{3y^2} = -\\frac{x^2}{y^2}",
+        "explanation": "Dividing through by $3y^2$ isolates the gradient of the tangent at any point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the tangent gradient at (1, 3)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(1,3)} = -\\frac{1^2}{3^2} = -\\frac{1}{9}",
+        "explanation": "Substituting the point gives the tangent gradient $-\\tfrac{1}{9}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the gradient of the normal",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{1}{-\\tfrac{1}{9}} = 9",
+        "explanation": "The normal gradient is $-1$ divided by the tangent gradient; the reciprocal of $-\\tfrac{1}{9}$ with a sign change is $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the equation of the normal",
+        "workingLatex": "y - 3 = 9(x - 1)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ with the normal gradient $9$ through $(1,3)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the bracket",
+        "workingLatex": "y - 3 = 9x - 9",
+        "explanation": "Multiplying out the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rearrange into y = mx + c form",
+        "workingLatex": "y = 9x - 6",
+        "explanation": "Adding $3$ to both sides gives the normal in the required form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "\\text{Normal: } y = 9x - 6",
+        "explanation": "So the normal to $C$ at $(1,3)$ is $y = 9x - 6$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Normal: $y = 9x - 6$."
+  }
+}

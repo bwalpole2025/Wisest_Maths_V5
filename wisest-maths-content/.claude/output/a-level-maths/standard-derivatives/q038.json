@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "stationary point",
+    "exponential"
+  ],
+  "questionText": "The curve $y = e^{x} + e^{-x}$ has one stationary point. Find its coordinates and determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the standard derivatives needed",
+        "workingLatex": "\\frac{d}{dx}\\left(e^{x}\\right) = e^{x}, \\qquad \\frac{d}{dx}\\left(e^{-x}\\right) = -e^{-x}",
+        "explanation": "The result $\\tfrac{d}{dx}(e^{kx})=k\\,e^{kx}$ gives $e^{x}$ for $k=1$ and $-e^{-x}$ for $k=-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} - e^{-x}",
+        "explanation": "Adding the two derivatives gives the gradient function of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the derivative equal to zero",
+        "workingLatex": "e^{x} - e^{-x} = 0",
+        "explanation": "Stationary points occur where the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange",
+        "workingLatex": "e^{x} = e^{-x}",
+        "explanation": "Moving one term across sets the two exponentials equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply through by e^x",
+        "workingLatex": "e^{2x} = 1",
+        "explanation": "Multiplying both sides by $e^{x}$ uses $e^{x}\\cdot e^{x}=e^{2x}$ and $e^{x}\\cdot e^{-x}=1$, clearing the negative exponent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for x",
+        "workingLatex": "2x = \\ln 1 = 0 \\;\\Rightarrow\\; x = 0",
+        "explanation": "Taking natural logs; since $\\ln 1 = 0$, the only solution is $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{0} + e^{-0} = 1 + 1 = 2",
+        "explanation": "Substituting $x=0$ into the curve gives the height; the stationary point is $(0,\\,2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the second derivative",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = e^{x} + e^{-x}",
+        "explanation": "Differentiating $e^{x}-e^{-x}$ again: $e^{x}$ stays, and $-e^{-x}$ differentiates to $+e^{-x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Evaluate the second derivative at x = 0",
+        "workingLatex": "\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{x=0} = 1 + 1 = 2 > 0",
+        "explanation": "The second derivative is positive at the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Classify and state the result",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} > 0 \\;\\Rightarrow\\; (0,\\,2) \\text{ is a minimum}",
+        "explanation": "A positive second derivative means concave up, so $(0,2)$ is a local minimum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The stationary point is $(0,\\,2)$, and it is a local minimum."
+  }
+}

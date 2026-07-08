@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "percentile"
+  ],
+  "questionText": "The time, $X$ minutes, that customers wait to be served at a help desk is modelled by $X \\sim N(8, 2.5^2)$. Find the waiting time that is exceeded by $15\\%$ of customers, giving your answer to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the condition",
+        "workingLatex": "X \\sim N(8,\\ 2.5^2), \\qquad P(X > a) = 0.15",
+        "explanation": "Waiting times are normal with mean $\\mu = 8$ and standard deviation $\\sigma = 2.5$. ‘Exceeded by $15\\%$ of customers’ means $15\\%$ of waits are longer than the value $a$, so $P(X > a) = 0.15$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Convert to a lower-tail probability",
+        "workingLatex": "P(X < a) = 1 - 0.15 = 0.85",
+        "explanation": "Inverse-normal works from the area to the left, so we rewrite the condition: if $15\\%$ wait longer than $a$, then $85\\%$ wait less than $a$, giving $P(X < a) = 0.85$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the $z$-value for the 85th percentile",
+        "workingLatex": "z = \\Phi^{-1}(0.85) = 1.036",
+        "explanation": "The standardised value with $85\\%$ of the area to its left is $z = 1.036$. It is positive because $a$ sits above the mean — only the shorter, more common waits fall below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the standardisation equation",
+        "workingLatex": "\\dfrac{a - 8}{2.5} = 1.036",
+        "explanation": "Standardising the unknown time $a$ must give the $z$-value we just found. Setting the two equal ties the actual waiting time to the known percentile.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange the standardisation formula",
+        "workingLatex": "a = \\mu + \\sigma z",
+        "explanation": "Multiplying both sides by $\\sigma$ and adding $\\mu$ makes $a$ the subject. This is the general rule for turning a $z$-value back into an $x$-value in the original units.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute the known values",
+        "workingLatex": "a = 8 + 2.5 \\times 1.036",
+        "explanation": "Putting in the mean $8$, the standard deviation $2.5$ and the $z$-value $1.036$ gives an expression for the waiting time in minutes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the value",
+        "workingLatex": "a = 8 + 2.590 = 10.59",
+        "explanation": "Carrying out the arithmetic gives a waiting time of about $10.59$ minutes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer to 3 significant figures",
+        "workingLatex": "a \\approx 10.6 \\text{ minutes}",
+        "explanation": "Rounding gives the waiting time exceeded by $15\\%$ of customers.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Sanity check the result",
+        "workingLatex": "10.6 > 8 = \\mu",
+        "explanation": "The answer lies above the mean of $8$ minutes, which is exactly what we expect: only a minority ($15\\%$) of customers wait longer than a time that is already above average.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a \\approx 10.6$ minutes (3 s.f.) — the waiting time exceeded by $15\\%$ of customers."
+  }
+}

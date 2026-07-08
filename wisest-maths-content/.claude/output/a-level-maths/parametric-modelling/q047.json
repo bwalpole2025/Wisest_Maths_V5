@@ -4,54 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "projectile",
-    "range"
+    "intersection",
+    "two paths",
+    "modelling"
   ],
-  "questionText": "A projectile has position $x = 40t$, $y = 30t - 5t^2$ (metres) at time $t$ seconds. Find the total time of flight and the horizontal range.",
+  "questionText": "On a map (units in km), a winding river is modelled by $x = t^{2}$, $y = t$, and a straight footpath is modelled by $x = s$, $y = 6 - s$. Find the coordinates of the points where the footpath crosses the river.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Set the height to zero",
-        "workingLatex": "30t - 5t^2 = 0",
-        "explanation": "The projectile lands when it returns to ground level, $y = 0$.",
+        "description": "State the crossing condition",
+        "workingLatex": "t^{2} = s \\qquad \\text{and} \\qquad t = 6 - s",
+        "explanation": "A crossing point lies on both paths, so its $x$-coordinates must match and its $y$-coordinates must match. Because we only care where the paths cross (not whether an object is there at the same instant), we use different parameters $t$ and $s$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Factorise",
-        "workingLatex": "5t(6 - t) = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 6",
-        "explanation": "The nonzero solution gives the landing time.",
+        "description": "Substitute to eliminate s",
+        "workingLatex": "t = 6 - t^{2}",
+        "explanation": "The first equation gives $s = t^{2}$, and putting this into the second removes $s$, leaving a single equation in $t$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the time of flight",
-        "workingLatex": "T = 6 \\text{ s}",
-        "explanation": "The flight lasts $6$ seconds.",
+        "description": "Rearrange into a quadratic",
+        "workingLatex": "t^{2} + t - 6 = 0",
+        "explanation": "Collecting all terms on one side gives a standard quadratic we can factorise.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the range",
-        "workingLatex": "x = 40(6) = 240",
-        "explanation": "Substituting the landing time into the horizontal-position equation.",
+        "description": "Solve for t",
+        "workingLatex": "(t + 3)(t - 2) = 0 \\;\\Rightarrow\\; t = -3 \\text{ or } t = 2",
+        "explanation": "Both values are allowed here, and each gives one crossing point of the two paths.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "\\text{range} = 240 \\text{ m}",
-        "explanation": "The projectile travels $240$ m horizontally before landing.",
+        "description": "Find the point at t = 2",
+        "workingLatex": "x = 2^{2} = 4, \\qquad y = 2 \\;\\Rightarrow\\; (4,\\, 2)",
+        "explanation": "Substituting $t = 2$ into the river's equations gives the first crossing point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check it lies on the footpath",
+        "workingLatex": "s = t^{2} = 4: \\quad x = 4,\\ y = 6 - 4 = 2 \\;\\checkmark",
+        "explanation": "Confirming the point also satisfies the footpath's equations verifies it is a genuine crossing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the point at t = -3",
+        "workingLatex": "x = (-3)^{2} = 9, \\qquad y = -3 \\;\\Rightarrow\\; (9,\\, -3)",
+        "explanation": "Substituting $t = -3$ gives the second crossing point of the two paths.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check it lies on the footpath",
+        "workingLatex": "s = t^{2} = 9: \\quad x = 9,\\ y = 6 - 9 = -3 \\;\\checkmark",
+        "explanation": "This point too satisfies the footpath equations, so it is a valid crossing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the crossing points",
+        "workingLatex": "(4,\\, 2) \\quad \\text{and} \\quad (9,\\, -3)",
+        "explanation": "Both points lie on the river and on the footpath, so these are the two places on the map where the footpath crosses the river.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Time of flight $6$ s; range $240$ m."
+    "finalAnswer": "The footpath crosses the river at $(4,\\, 2)$ and $(9,\\, -3)$."
   }
 }

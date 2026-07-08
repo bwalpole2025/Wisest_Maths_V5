@@ -4,61 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "coordinates",
   "tags": [
-    "parametric modelling",
-    "circular motion",
-    "acceleration"
+    "tangent",
+    "parallel",
+    "parametric differentiation"
   ],
-  "questionText": "A particle moves so that $x = 2\\cos t$, $y = 2\\sin t$ (metres, $t$ in seconds). Show that its acceleration always points towards the origin and find its magnitude.",
+  "questionText": "The tip of a robotic arm moves along the path $x = t^{2} - t$ and $y = t^{2} + t$, where $x$ and $y$ are in centimetres. Find the coordinates of the point on the path where the tangent is parallel to the line $y = 3x + 2$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the velocity",
-        "workingLatex": "v_x = -2\\sin t, \\quad v_y = 2\\cos t",
-        "explanation": "Differentiating the positions once gives the velocity components.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t - 1",
+        "explanation": "The gradient of the path needs both velocity components, so we start with how the horizontal position changes with the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the acceleration",
-        "workingLatex": "a_x = -2\\cos t, \\quad a_y = -2\\sin t",
-        "explanation": "Differentiating the velocities gives the acceleration components.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 2t + 1",
+        "explanation": "Similarly, this tells us how the vertical position changes as $t$ increases.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Relate acceleration to position",
-        "workingLatex": "(a_x, a_y) = -( 2\\cos t, 2\\sin t) = -(x, y)",
-        "explanation": "The acceleration vector is exactly the negative of the position vector.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{2t + 1}{2t - 1}",
+        "explanation": "The chain rule gives the path gradient as the ratio of the two rates. This expression tells us the direction of the tangent at any instant $t$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Interpret the direction",
-        "workingLatex": "\\mathbf{a} = -\\mathbf{r}",
-        "explanation": "Since the acceleration is the opposite of the position vector, it points from the particle straight back to the origin — this is centripetal acceleration.",
+        "description": "Read off the required gradient",
+        "workingLatex": "\\text{gradient of } y = 3x + 2 \\;\\text{ is }\\; 3",
+        "explanation": "Two lines are parallel when they share the same gradient, so we need the tangent's gradient to equal $3$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the magnitude",
-        "workingLatex": "|\\mathbf{a}| = \\sqrt{(-2\\cos t)^2 + (-2\\sin t)^2} = \\sqrt{4(\\cos^2 t + \\sin^2 t)}",
-        "explanation": "Combining the components and factoring out $4$.",
+        "description": "Set the path gradient equal to 3",
+        "workingLatex": "\\dfrac{2t + 1}{2t - 1} = 3",
+        "explanation": "This equation pins down the exact value of $t$ at which the path points in the same direction as the given line.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Simplify",
-        "workingLatex": "|\\mathbf{a}| = \\sqrt{4} = 2 \\text{ m/s}^2",
-        "explanation": "The Pythagorean identity makes the root equal to $1$, giving a constant magnitude of $2$ m/s².",
+        "description": "Solve for t",
+        "workingLatex": "2t + 1 = 3(2t - 1) = 6t - 3 \\;\\Rightarrow\\; 4 = 4t \\;\\Rightarrow\\; t = 1",
+        "explanation": "Clearing the fraction gives a simple linear equation, and solving it locates the moment on the path we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the gradient is defined here",
+        "workingLatex": "\\dot{x} = 2(1) - 1 = 1 \\neq 0",
+        "explanation": "The gradient formula is only valid where $\\dot{x} \\neq 0$. Since the horizontal velocity is non-zero at $t = 1$, the tangent genuinely exists and our value is valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the x-coordinate",
+        "workingLatex": "x = 1^{2} - 1 = 0",
+        "explanation": "Substituting $t = 1$ back into the horizontal equation gives the point's position across.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = 1^{2} + 1 = 2",
+        "explanation": "The same value of $t$ gives the vertical position, completing the coordinates.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Acceleration $= -\\mathbf{r}$ (towards the origin), magnitude $2$ m/s²."
+    "finalAnswer": "The tangent is parallel to $y = 3x + 2$ at the point $(0,\\, 2)$, which occurs at $t = 1$."
   }
 }

@@ -5,67 +5,67 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 4,
-  "answerType": "value",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "exact values",
-    "surds"
+    "compound angle",
+    "addition formulae",
+    "substitution"
   ],
-  "questionText": "Use the compound angle formula to find the exact value of $\\cos 75^\\circ$, writing $75^\\circ = 45^\\circ + 30^\\circ$.",
+  "questionText": "Given that $\\sin A = \\tfrac{8}{17}$, $\\cos A = \\tfrac{15}{17}$, $\\sin B = \\tfrac{4}{5}$ and $\\cos B = \\tfrac{3}{5}$, find the exact value of $\\cos(A+B)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Split the angle into known parts",
-        "workingLatex": "75^\\circ = 45^\\circ + 30^\\circ",
-        "explanation": "Breaking $75^\\circ$ into two standard angles lets us use exact values we already know.",
+        "description": "State the correct formula",
+        "workingLatex": "\\cos(A+B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "For a sum of angles the cosine formula uses a minus sign between the products, the opposite of the plus inside $(A+B)$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the cosine addition formula",
-        "workingLatex": "\\cos 75^\\circ = \\cos 45^\\circ\\cos 30^\\circ - \\sin 45^\\circ\\sin 30^\\circ",
-        "explanation": "Using $\\cos(A + B)$ with $A = 45^\\circ$ and $B = 30^\\circ$ sets up the calculation with the minus sign for the plus inside.",
+        "description": "List the given ratios",
+        "workingLatex": "\\cos A = \\tfrac{15}{17}, \\quad \\cos B = \\tfrac{3}{5}, \\quad \\sin A = \\tfrac{8}{17}, \\quad \\sin B = \\tfrac{4}{5}",
+        "explanation": "Every ratio the formula needs is supplied, so the answer follows by direct substitution.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the exact values",
-        "workingLatex": "= \\frac{\\sqrt2}{2}\\cdot\\frac{\\sqrt3}{2} - \\frac{\\sqrt2}{2}\\cdot\\frac{1}{2}",
-        "explanation": "Inserting the standard exact values for each function prepares the arithmetic.",
+        "description": "Substitute into the formula",
+        "workingLatex": "\\cos(A+B) = \\tfrac{15}{17}\\cdot\\tfrac{3}{5} - \\tfrac{8}{17}\\cdot\\tfrac{4}{5}",
+        "explanation": "Replace $\\cos A\\cos B$ and $\\sin A\\sin B$ with the products of the given values.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Multiply out each product",
-        "workingLatex": "= \\frac{\\sqrt6}{4} - \\frac{\\sqrt2}{4}",
-        "explanation": "Multiplying the surds gives $\\frac{\\sqrt6}{4}$ and $\\frac{\\sqrt2}{4}$, both over a denominator of $4$.",
+        "description": "Multiply the fractions",
+        "workingLatex": "= \\tfrac{45}{85} - \\tfrac{32}{85}",
+        "explanation": "Both products share the denominator $17\\times5=85$ after multiplying out.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Combine over the common denominator",
-        "workingLatex": "= \\frac{\\sqrt6 - \\sqrt2}{4}",
-        "explanation": "With matching denominators, the numerators combine into a single surd expression.",
+        "description": "Subtract over the common denominator",
+        "workingLatex": "= \\tfrac{13}{85}",
+        "explanation": "Subtracting the numerators gives $45-32=13$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check the value is reasonable",
-        "workingLatex": "\\frac{\\sqrt6 - \\sqrt2}{4} \\approx 0.259",
-        "explanation": "The decimal $0.259$ is small and positive, exactly what we expect for the cosine of an angle close to $90^\\circ$.",
+        "description": "Check the value is sensible",
+        "workingLatex": "0 < \\tfrac{13}{85} < 1",
+        "explanation": "The result lies in the valid range for cosine; a small positive value is expected since $A+B$ is close to a right angle.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the exact value",
-        "workingLatex": "\\cos 75^\\circ = \\frac{\\sqrt6 - \\sqrt2}{4}",
-        "explanation": "This is the exact value in simplest surd form.",
+        "description": "State the answer",
+        "workingLatex": "\\cos(A+B) = \\tfrac{13}{85}",
+        "explanation": "This is the exact value requested.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos 75^\\circ = \\dfrac{\\sqrt6 - \\sqrt2}{4}$"
+    "finalAnswer": "$\\cos(A+B) = \\tfrac{13}{85}$."
   }
 }

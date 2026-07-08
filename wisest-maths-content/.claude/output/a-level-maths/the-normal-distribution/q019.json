@@ -1,0 +1,63 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q019",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "empirical rule"
+  ],
+  "questionText": "The weights, $X$ grams, of bags of sugar are modelled by $X \\sim N(500, 10^2)$. Using the $68$–$95$–$99.7$ rule, estimate the percentage of bags weighing between $480$ g and $520$ g.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(500,\\ 10^2), \\qquad \\mu = 500,\\ \\sigma = 10",
+        "explanation": "The weights are normal with mean $\\mu = 500$ g and standard deviation $\\sigma = 10$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare the limits with the mean and sd",
+        "workingLatex": "480 = 500 - 20 = \\mu - 2\\sigma, \\qquad 520 = 500 + 20 = \\mu + 2\\sigma",
+        "explanation": "Each limit is two standard deviations from the mean, so the interval is $\\mu \\pm 2\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the relevant part of the rule",
+        "workingLatex": "P(\\mu - 2\\sigma < X < \\mu + 2\\sigma) \\approx 0.95",
+        "explanation": "The $68$–$95$–$99.7$ rule says about $95\\%$ of a normal distribution lies within two standard deviations of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the rule to this interval",
+        "workingLatex": "P(480 < X < 520) \\approx 0.95",
+        "explanation": "Since $480$ and $520$ are exactly $\\mu \\pm 2\\sigma$, the required probability is the $95\\%$ figure.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Convert to a percentage",
+        "workingLatex": "\\approx 95\\%",
+        "explanation": "So about $95\\%$ of the bags weigh between $480$ g and $520$ g.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final answer",
+        "workingLatex": "P(480 < X < 520) \\approx 0.95 \\ \\Rightarrow\\ 95\\%",
+        "explanation": "This is the estimated percentage, read straight from the empirical rule.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "About $95\\%$ of the bags weigh between $480$ g and $520$ g."
+  }
+}

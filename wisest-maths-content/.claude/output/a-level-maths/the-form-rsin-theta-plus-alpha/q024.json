@@ -1,71 +1,99 @@
 {
-  "id": "al.y2.pure.rsin-form.q024",
   "level": "A-Level Maths",
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Intermediate",
-  "marks": 8,
-  "answerType": "value",
-  "tags": [
-    "harmonic form",
-    "equations",
-    "solving"
-  ],
-  "questionText": "Express $6\\sin\\theta - 8\\cos\\theta$ as $R\\sin(\\theta - \\alpha)$ and hence solve $6\\sin\\theta - 8\\cos\\theta = 5$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
   "questionDiagram": null,
+  "id": "al.y2.pure.rsin-form.q024",
+  "marks": 5,
+  "answerType": "solutions",
+  "tags": [
+    "r form",
+    "harmonic form",
+    "solving equations"
+  ],
+  "questionText": "Given that $3\\sin\\theta + 7\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)$ with $R>0$ and $0^\\circ < \\alpha < 90^\\circ$, find $R$ and $\\alpha$, and hence solve $3\\sin\\theta + 7\\cos\\theta = 5$ for $0^\\circ \\le \\theta \\le 360^\\circ$. Give each solution to $1$ decimal place.",
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R",
-        "workingLatex": "R = \\sqrt{6^2 + 8^2} = 10",
-        "explanation": "The amplitude is $10$.",
+        "description": "Set up the identity",
+        "workingLatex": "3\\sin\\theta + 7\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "The plan is to rewrite the sum of two waves as one wave of amplitude $R$ shifted by $\\alpha$. Setting the two expressions identically equal lets us compare them after expanding.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{8}{6} = \\frac{4}{3} \\;\\Rightarrow\\; \\alpha \\approx 53.13^\\circ",
-        "explanation": "The ratio of the cosine to the sine coefficient gives the phase angle.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Expanding $\\sin(\\theta+\\alpha)$ with the compound-angle formula and pulling $R$ through puts the right-hand side into the same $\\sin\\theta$-plus-$\\cos\\theta$ form as the left.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "6\\sin\\theta - 8\\cos\\theta = 10\\sin(\\theta - 53.13^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$ gives the single-sine form.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 3, \\qquad R\\sin\\alpha = 7",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ on each side gives the first equation, and matching the coefficient of $\\cos\\theta$ gives the second. These two equations pin down $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rewrite the equation",
-        "workingLatex": "10\\sin(\\theta - 53.13^\\circ) = 5 \\;\\Rightarrow\\; \\sin(\\theta - 53.13^\\circ) = 0.5",
-        "explanation": "Substituting and dividing by $10$ gives a standard sine equation.",
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{3^2 + 7^2} = \\sqrt{58}",
+        "explanation": "Squaring and adding eliminates $\\alpha$ via $\\cos^2\\alpha+\\sin^2\\alpha=1$, so $R^2=3^2+7^2=58$. Taking the positive root gives $R=\\sqrt{58}$, which has no square factors so we leave it as a surd.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set the shifted interval",
-        "workingLatex": "-53.13^\\circ \\le \\theta - 53.13^\\circ < 306.87^\\circ",
-        "explanation": "Subtracting the shift from the bounds.",
+        "description": "Find α",
+        "workingLatex": "\\tan\\alpha = \\dfrac{7}{3} \\Rightarrow \\alpha = 66.8^\\circ",
+        "explanation": "Dividing the sine equation by the cosine equation cancels $R$ and leaves $\\tan\\alpha=\\tfrac{7}{3}$. Because both $3$ and $7$ are positive, the acute angle is $\\alpha=66.8^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - 53.13^\\circ = 30^\\circ, 150^\\circ",
-        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$, both within the interval.",
+        "description": "State the R-form",
+        "workingLatex": "3\\sin\\theta + 7\\cos\\theta = \\sqrt{58}\\,\\sin(\\theta + 66.8^\\circ)",
+        "explanation": "This is the required single-wave form. It tells us at a glance that the expression oscillates between $-\\sqrt{58}$ and $+\\sqrt{58}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Add the shift and round",
-        "workingLatex": "\\theta \\approx 83^\\circ, 203^\\circ",
-        "explanation": "Adding $53.13^\\circ$ and rounding gives the two solutions.",
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{58}\\,\\sin(\\theta+66.8^\\circ) = 5 \\Rightarrow \\sin(\\theta+66.8^\\circ) = \\dfrac{5}{\\sqrt{58}} = 0.6565",
+        "explanation": "Substituting the R-form reduces the equation to a single sine equal to a number. Dividing by $\\sqrt{58}$ leaves the sine on its own, ready to invert.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ \\le \\theta \\le 360^\\circ \\Rightarrow 66.8^\\circ \\le \\theta+66.8^\\circ \\le 426.8^\\circ",
+        "explanation": "Since the unknown inside the sine is $\\theta+66.8^\\circ$, we shift the search interval up by $66.8^\\circ$. This guarantees we catch every solution of the shifted angle before converting back.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the base angle",
+        "workingLatex": "\\theta+66.8^\\circ = \\arcsin(0.6565) = 41.0^\\circ",
+        "explanation": "The principal value from the calculator is the starting point. The sine curve's symmetry then generates the remaining solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "List all angles in the shifted range",
+        "workingLatex": "\\theta+66.8^\\circ = 139.0^\\circ,\\; 401.0^\\circ",
+        "explanation": "The second-quadrant partner is $180^\\circ-41.0^\\circ=139.0^\\circ$, and adding $360^\\circ$ to $41.0^\\circ$ gives $401.0^\\circ$. The base value $41.0^\\circ$ is smaller than $66.8^\\circ$, so it falls outside the shifted window.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Subtract α to recover θ",
+        "workingLatex": "\\theta = 139.0^\\circ-66.8^\\circ,\\; 401.0^\\circ-66.8^\\circ = 72.2^\\circ,\\; 334.2^\\circ",
+        "explanation": "Subtracting $66.8^\\circ$ from each shifted angle returns to $\\theta$. Both values sit inside $0^\\circ$ to $360^\\circ$, so both are valid solutions.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 83^\\circ, 203^\\circ$"
+    "finalAnswer": "$R=\\sqrt{58}$, $\\alpha=66.8^\\circ$, so $3\\sin\\theta+7\\cos\\theta=\\sqrt{58}\\,\\sin(\\theta+66.8^\\circ)$; the solutions are $\\theta = 72.2^\\circ$ and $\\theta = 334.2^\\circ$ (to $1$ d.p.)."
   }
 }

@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "logarithm",
+    "increasing decreasing",
+    "tangent"
+  ],
+  "questionText": "The curve $C$ has equation $y = x - \\ln x$, $x>0$.\n(a) Find $\\dfrac{dy}{dx}$.\n(b) Determine the intervals on which $C$ is increasing and decreasing.\n(c) Find the coordinates of the stationary point and determine its nature.\n(d) Show that the tangent to $C$ at $x=e$ passes through the origin.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the standard results",
+        "workingLatex": "\\frac{d}{dx}(x) = 1, \\quad \\frac{d}{dx}(\\ln x) = \\frac{1}{x} \\quad (x>0)",
+        "explanation": "The derivative of $x$ is $1$, and the standard result for $\\ln x$ is $\\tfrac{1}{x}$, valid only for $x>0$ (the domain of the curve).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate to find dy/dx (part a)",
+        "workingLatex": "\\frac{dy}{dx} = 1 - \\frac{1}{x}",
+        "explanation": "Subtracting the derivative of $\\ln x$ from that of $x$ gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find where the curve is increasing (part b)",
+        "workingLatex": "1 - \\frac{1}{x} > 0 \\;\\Rightarrow\\; \\frac{1}{x} < 1 \\;\\Rightarrow\\; x > 1",
+        "explanation": "A curve is increasing where its gradient is positive. Since $x>0$, multiplying through keeps the inequality direction, giving $x>1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find where the curve is decreasing",
+        "workingLatex": "1 - \\frac{1}{x} < 0 \\;\\Rightarrow\\; 0 < x < 1",
+        "explanation": "Where the gradient is negative the curve falls. Combined with the domain $x>0$, this gives $0<x<1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the stationary point (part c)",
+        "workingLatex": "1 - \\frac{1}{x} = 0 \\;\\Rightarrow\\; x = 1",
+        "explanation": "The turning point sits between the decreasing and increasing regions, where the gradient is zero: this gives $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = 1 - \\ln 1 = 1 \\;\\Rightarrow\\; (1,\\,1)",
+        "explanation": "Since $\\ln 1 = 0$, the height there is $1$, so the stationary point is $(1,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate again",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{1}{x^2}",
+        "explanation": "Writing $-\\tfrac{1}{x}=-x^{-1}$ and differentiating gives $+x^{-2}=\\tfrac{1}{x^2}$. This is always positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Classify the stationary point",
+        "workingLatex": "\\left.\\frac{d^2y}{dx^2}\\right|_{x=1} = 1 > 0 \\;(\\text{minimum})",
+        "explanation": "A positive second derivative confirms a minimum, consistent with the curve decreasing then increasing across $x=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find the point of contact at x = e (part d)",
+        "workingLatex": "x=e:\\; y = e - \\ln e = e - 1 \\;\\Rightarrow\\; (e,\\, e-1)",
+        "explanation": "Since $\\ln e = 1$, the curve passes through $(e,\\,e-1)$ at $x=e$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the gradient at x = e",
+        "workingLatex": "m = 1 - \\frac{1}{e} = \\frac{e-1}{e}",
+        "explanation": "Substituting $x=e$ into the gradient function gives the slope of the tangent there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Write the tangent line",
+        "workingLatex": "y - (e-1) = \\frac{e-1}{e}(x - e)",
+        "explanation": "Using point-gradient form with the point $(e,\\,e-1)$ and gradient $\\tfrac{e-1}{e}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Expand and simplify",
+        "workingLatex": "y = \\frac{e-1}{e}x - (e-1) + (e-1) = \\frac{e-1}{e}x",
+        "explanation": "Expanding the bracket gives $-\\tfrac{e-1}{e}\\cdot e = -(e-1)$, which cancels the $+(e-1)$, leaving a line with no constant term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Show it passes through the origin",
+        "workingLatex": "y = \\frac{e-1}{e}x \\;\\Rightarrow\\; x=0 \\text{ gives } y=0",
+        "explanation": "The tangent has zero constant term, so setting $x=0$ gives $y=0$: it passes through the origin, as required.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Summarise",
+        "workingLatex": "\\text{Min }(1,1);\\; \\text{inc } x>1,\\; \\text{dec } 0<x<1;\\; \\text{tangent } y=\\tfrac{e-1}{e}x",
+        "explanation": "All parts complete: derivative, monotonic intervals, the minimum, and the tangent at $x=e$ through the origin.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx}=1-\\dfrac{1}{x}$. (b) Increasing for $x>1$, decreasing for $0<x<1$. (c) Minimum at $(1,1)$. (d) The tangent at $x=e$ is $y=\\dfrac{e-1}{e}\\,x$, which passes through the origin."
+  }
+}

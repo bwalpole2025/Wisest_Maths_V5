@@ -5,54 +5,88 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "expression",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "double angle",
-    "cosine"
+    "trig identity",
+    "circle",
+    "centre and radius"
   ],
-  "questionText": "A curve has parametric equations $x = \\cos\\theta$, $y = \\cos 2\\theta$ for $0 \\le \\theta \\le \\pi$. Find the Cartesian equation and the range of $x$.",
+  "questionText": "A curve is given parametrically by $x = -2 + 3\\cos t$ and $y = 5 + 3\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve, and hence write down its centre and radius.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the cosine double angle form",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
-        "explanation": "Since $x = \\cos\\theta$, this form writes $y$ directly in terms of $x$.",
+        "description": "Set up the elimination",
+        "workingLatex": "x = -2 + 3\\cos t, \\qquad y = 5 + 3\\sin t",
+        "explanation": "Each equation is a shifted trig expression. To eliminate $t$ we first strip away the constant shift and the coefficient so that $\\cos t$ and $\\sin t$ stand alone.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute x",
-        "workingLatex": "y = 2\\cos^2\\theta - 1 = 2x^2 - 1",
-        "explanation": "Replacing $\\cos\\theta$ with $x$ eliminates $\\theta$.",
+        "description": "Isolate cos t",
+        "workingLatex": "x + 2 = 3\\cos t \\;\\Rightarrow\\; \\cos t = \\dfrac{x + 2}{3}",
+        "explanation": "Moving the $-2$ across and dividing by $3$ leaves $\\cos t$ by itself. The bracket $x + 2$ carries the horizontal shift.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the Cartesian equation",
-        "workingLatex": "y = 2x^2 - 1",
-        "explanation": "This is an upward parabola.",
+        "description": "Isolate sin t",
+        "workingLatex": "y - 5 = 3\\sin t \\;\\Rightarrow\\; \\sin t = \\dfrac{y - 5}{3}",
+        "explanation": "Treating the second equation the same way isolates $\\sin t$, with $y - 5$ carrying the vertical shift.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the range of x",
-        "workingLatex": "0 \\le \\theta \\le \\pi \\;\\Rightarrow\\; \\cos\\theta \\in [-1, 1] \\;\\Rightarrow\\; x \\in [-1, 1]",
-        "explanation": "Over $[0, \\pi]$ cosine covers the full range from $1$ down to $-1$.",
+        "description": "State the identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "This identity holds for all $t$, so substituting into it eliminates the parameter and leaves a pure relationship in $x$ and $y$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "y = 2x^2 - 1, \\; -1 \\le x \\le 1",
-        "explanation": "The whole arc of the parabola between $x = -1$ and $x = 1$ is traced.",
+        "description": "Substitute",
+        "workingLatex": "\\left( \\dfrac{x + 2}{3} \\right)^{2} + \\left( \\dfrac{y - 5}{3} \\right)^{2} = 1",
+        "explanation": "Putting the expressions for $\\cos t$ and $\\sin t$ into the identity gives an equation entirely in $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Square the fractions",
+        "workingLatex": "\\dfrac{(x + 2)^{2}}{9} + \\dfrac{(y - 5)^{2}}{9} = 1",
+        "explanation": "Squaring each bracket and its denominator gives a common denominator of $9$, which hints that both axes have the same length.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Multiply through by 9",
+        "workingLatex": "(x + 2)^{2} + (y - 5)^{2} = 9",
+        "explanation": "Clearing the denominator produces the classic circle equation. Equal coefficients on the squared terms is exactly what makes this a circle rather than an ellipse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare with the circle template",
+        "workingLatex": "(x - p)^{2} + (y - q)^{2} = r^{2}",
+        "explanation": "Matching our equation to this standard form lets us read off the centre $(p,\\,q)$ and the radius $r$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Read off the centre",
+        "workingLatex": "x + 2 = x - (-2) \\;\\Rightarrow\\; p = -2, \\quad q = 5",
+        "explanation": "Because $x + 2$ is $x - (-2)$ and $y - 5$ is already in the right form, the centre is $(-2,\\,5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Read off the radius",
+        "workingLatex": "r^{2} = 9 \\;\\Rightarrow\\; r = 3",
+        "explanation": "The right-hand side is $r^{2}$, so taking the positive square root gives a radius of $3$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = 2x^2 - 1$ for $-1 \\le x \\le 1$."
+    "finalAnswer": "The Cartesian equation is $(x + 2)^{2} + (y - 5)^{2} = 9$, a circle with centre $(-2,\\,5)$ and radius $3$."
   }
 }

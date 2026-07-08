@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "questionDiagram": null,
+  "id": "al.y2.stats.normal-distribution.q020",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "symmetry",
+    "median"
+  ],
+  "questionText": "The random variable $X$ is modelled by $X \\sim N(25, 3^2)$. (a) Write down the median and the mode of $X$. (b) Find $P(X > 25)$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(25,\\ 3^2), \\qquad \\mu = 25,\\ \\sigma = 3",
+        "explanation": "The variable is normal with mean $\\mu = 25$ and standard deviation $\\sigma = 3$. The curve is a symmetric bell centred on the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the key property of the normal curve",
+        "workingLatex": "\\text{mean} = \\text{median} = \\text{mode} = \\mu",
+        "explanation": "Because the normal curve is symmetric and single-peaked, its centre of balance (mean), its middle value (median) and its highest point (mode) all coincide at $\\mu$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write down the median",
+        "workingLatex": "\\text{median} = 25",
+        "explanation": "Half the area lies on each side of the mean, so the median — the value with $50\\%$ below it — is exactly $25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write down the mode",
+        "workingLatex": "\\text{mode} = 25",
+        "explanation": "The peak of the bell sits directly above the mean, so the most likely region is around $25$ and the mode is $25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use symmetry for the probability",
+        "workingLatex": "P(X > 25) = P(X > \\mu)",
+        "explanation": "The value $25$ is the mean itself, and the curve is symmetric about the mean, so the area to its right equals the area to its left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the probability",
+        "workingLatex": "P(X > 25) = 0.5",
+        "explanation": "Since the two halves are equal and together make $1$, each half is exactly $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final answers",
+        "workingLatex": "\\text{median} = \\text{mode} = 25, \\qquad P(X > 25) = 0.5",
+        "explanation": "These follow purely from the symmetry of the normal distribution, with no standardising needed.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) median $= 25$ and mode $= 25$. (b) $P(X > 25) = 0.5$."
+  }
+}

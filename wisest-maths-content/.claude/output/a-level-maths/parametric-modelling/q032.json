@@ -4,54 +4,96 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
+  "difficulty": "Intermediate",
   "marks": 6,
-  "answerType": "value",
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
-    "displacement",
-    "coordinates"
+    "normal",
+    "trigonometric",
+    "chain rule"
   ],
-  "questionText": "A particle has position $x = t^2$, $y = 2t$ (metres) at time $t$ seconds. Find the magnitude of the displacement between $t = 1$ and $t = 3$.",
+  "questionText": "A point on a rotating wheel of radius $6$ m, centred at the origin $O$, has position modelled by $x = 6\\cos t$ and $y = 6\\sin t$. Find the equation of the normal to the point's path at the instant $t = \\dfrac{\\pi}{6}$, and show that this normal passes through the centre $O$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the position at t = 1",
-        "workingLatex": "(1, 2)",
-        "explanation": "Substituting $t = 1$ into both position equations.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = -6\\sin t",
+        "explanation": "Differentiating $6\\cos t$ gives $-6\\sin t$, the horizontal velocity of the point on the wheel.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the position at t = 3",
-        "workingLatex": "(9, 6)",
-        "explanation": "Substituting $t = 3$ gives the later position.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 6\\cos t",
+        "explanation": "Differentiating $6\\sin t$ gives $6\\cos t$, the vertical velocity.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the displacement",
-        "workingLatex": "\\text{displacement} = \\sqrt{(9 - 1)^2 + (6 - 2)^2}",
-        "explanation": "Displacement is the straight-line distance between the two positions, regardless of the path taken.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{6\\cos t}{-6\\sin t} = -\\cot t",
+        "explanation": "Dividing the two rates and cancelling the $6$ leaves $-\\cot t$, the slope of the circular path.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Compute the differences",
-        "workingLatex": "= \\sqrt{8^2 + 4^2} = \\sqrt{64 + 16}",
-        "explanation": "The changes are $8$ horizontally and $4$ vertically.",
+        "description": "Evaluate the tangent gradient at t = pi/6",
+        "workingLatex": "\\left.\\dfrac{dy}{dx}\\right|_{t=\\pi/6} = -\\cot\\dfrac{\\pi}{6} = -\\sqrt{3}",
+        "explanation": "Since $\\cot\\dfrac{\\pi}{6} = \\dfrac{\\cos(\\pi/6)}{\\sin(\\pi/6)} = \\dfrac{\\sqrt{3}/2}{1/2} = \\sqrt{3}$, the tangent gradient is $-\\sqrt{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Simplify",
-        "workingLatex": "= \\sqrt{80} = 4\\sqrt{5} \\approx 8.9 \\text{ m}",
-        "explanation": "Since $80 = 16 \\times 5$, the displacement is $4\\sqrt{5}$ m.",
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\dfrac{1}{-\\sqrt{3}} = \\dfrac{1}{\\sqrt{3}}",
+        "explanation": "The normal is perpendicular to the tangent, so we take the negative reciprocal of $-\\sqrt{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the point at t = pi/6",
+        "workingLatex": "x = 6\\cos\\dfrac{\\pi}{6} = 3\\sqrt{3}, \\qquad y = 6\\sin\\dfrac{\\pi}{6} = 3",
+        "explanation": "Substituting $t = \\dfrac{\\pi}{6}$ into the position gives the point $\\left(3\\sqrt{3},\\,3\\right)$ that the normal passes through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the normal in point-slope form",
+        "workingLatex": "y - 3 = \\dfrac{1}{\\sqrt{3}}\\left(x - 3\\sqrt{3}\\right)",
+        "explanation": "The normal passes through $\\left(3\\sqrt{3},\\,3\\right)$ with gradient $\\dfrac{1}{\\sqrt{3}}$, written in point-slope form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the constant term",
+        "workingLatex": "\\dfrac{1}{\\sqrt{3}}\\left(3\\sqrt{3}\\right) = 3",
+        "explanation": "The product simplifies neatly because $\\dfrac{3\\sqrt{3}}{\\sqrt{3}} = 3$, which will make the constants cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify the normal",
+        "workingLatex": "y = \\dfrac{1}{\\sqrt{3}}x - 3 + 3 = \\dfrac{1}{\\sqrt{3}}x",
+        "explanation": "The $-3$ and $+3$ cancel, leaving a line with zero constant term: $y = \\dfrac{1}{\\sqrt{3}}x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the origin",
+        "workingLatex": "x = 0 \\Rightarrow y = \\dfrac{1}{\\sqrt{3}}(0) = 0",
+        "explanation": "Substituting $x = 0$ gives $y = 0$, so the point $(0,\\,0)$ lies on the normal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Conclude and state the normal",
+        "workingLatex": "y = \\dfrac{1}{\\sqrt{3}}x \\ \\Leftrightarrow\\ x - \\sqrt{3}\\,y = 0",
+        "explanation": "Because the line has no constant term it passes through the origin, the centre $O$ — expected, since for a circle every normal points along a radius.",
         "diagram": null
       }
     ],
-    "finalAnswer": "Displacement $= 4\\sqrt{5} \\approx 8.9$ m"
+    "finalAnswer": "The normal at $t = \\dfrac{\\pi}{6}$ is $y = \\dfrac{1}{\\sqrt{3}}x$ (equivalently $x - \\sqrt{3}\\,y = 0$); since its constant term is zero it passes through the centre $O(0,\\,0)$."
   }
 }

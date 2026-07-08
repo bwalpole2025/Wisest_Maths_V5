@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "intercept"
+  ],
+  "questionText": "Find an equation of the tangent to the curve $y = e^x$ at the point where $x = 2$. Hence find, in exact form, the coordinates of the point where this tangent crosses the $y$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "The tangent gradient is the derivative at the point",
+        "workingLatex": "m = \\left.\\frac{dy}{dx}\\right|_{x=2}",
+        "explanation": "We differentiate to get the gradient function, then evaluate at $x=2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the standard derivative",
+        "workingLatex": "\\frac{d}{dx}(e^x) = e^x",
+        "explanation": "$e^x$ is its own derivative — a defining property of the exponential function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = e^x",
+        "explanation": "The gradient at any point equals the height $e^x$ there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the gradient at x = 2",
+        "workingLatex": "m = e^2",
+        "explanation": "Substituting $x=2$ gives the exact gradient of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate of the point of contact",
+        "workingLatex": "y = e^2",
+        "explanation": "On the curve at $x=2$, so the point of contact is $(2,\\ e^2)$. Here the height and gradient happen to be equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the point and gradient",
+        "workingLatex": "(2,\\ e^2), \\qquad m = e^2",
+        "explanation": "Ready to form the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Use the point–gradient form",
+        "workingLatex": "y - e^2 = e^2(x - 2)",
+        "explanation": "Substitute into $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Expand the bracket",
+        "workingLatex": "y = e^2 x - 2e^2 + e^2",
+        "explanation": "Multiplying $e^2$ through $(x-2)$, then adding the $e^2$ from the left-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify and factor",
+        "workingLatex": "y = e^2 x - e^2 = e^2(x - 1)",
+        "explanation": "Combining $-2e^2+e^2=-e^2$ gives a neat factored form of the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-axis crossing by setting x = 0",
+        "workingLatex": "y = e^2(0 - 1) = -e^2",
+        "explanation": "A point on the $y$-axis has $x=0$; substituting gives the exact $y$-intercept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the results",
+        "workingLatex": "y = e^2(x - 1), \\qquad (0,\\ -e^2)",
+        "explanation": "The tangent is $y = e^2(x-1)$ and it crosses the $y$-axis at $(0,\\ -e^2)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Tangent: $y = e^2(x - 1)$; it crosses the $y$-axis at $(0,\\ -e^2)$."
+  }
+}

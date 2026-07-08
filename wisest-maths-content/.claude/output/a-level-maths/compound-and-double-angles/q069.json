@@ -5,68 +5,116 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
-    "exact values",
-    "tangent",
-    "surds"
+    "double angle",
+    "quadrant",
+    "exact values"
   ],
-  "questionText": "Find the exact value of $\\tan 105^\\circ$, writing $105^\\circ = 60^\\circ + 45^\\circ$. Give your answer in the form $-(a + b\\sqrt{3})$.",
+  "questionText": "Given that $\\cos 2\\theta = -\\tfrac{7}{25}$ and that $\\tfrac{\\pi}{2} < \\theta < \\pi$, find the exact values of $\\sin\\theta$, $\\cos\\theta$ and $\\tan\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Apply the tangent addition formula",
-        "workingLatex": "\\tan 105^\\circ = \\frac{\\tan 60^\\circ + \\tan 45^\\circ}{1 - \\tan 60^\\circ\\tan 45^\\circ}",
-        "explanation": "Using $A = 60^\\circ$ and $B = 45^\\circ$ sets up the calculation.",
+        "description": "Plan the reverse approach",
+        "workingLatex": "\\cos 2\\theta = -\\tfrac{7}{25}, \\qquad \\tfrac{\\pi}{2} < \\theta < \\pi",
+        "explanation": "We are given the double angle and must recover the single-angle ratios. The two forms of $\\cos 2\\theta$ in terms of $\\sin\\theta$ and of $\\cos\\theta$ let us solve for each ratio, and the quadrant fixes the signs.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute the exact values",
-        "workingLatex": "= \\frac{\\sqrt3 + 1}{1 - \\sqrt3\\cdot 1}",
-        "explanation": "We use $\\tan 60^\\circ = \\sqrt3$ and $\\tan 45^\\circ = 1$.",
+        "description": "Use the sine form of cos 2theta",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta \\ \\Rightarrow\\ \\sin^2\\theta = \\frac{1 - \\cos 2\\theta}{2}",
+        "explanation": "Rearranging the version $\\cos 2\\theta = 1 - 2\\sin^2\\theta$ makes $\\sin^2\\theta$ the subject, ready for the given value.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify the denominator",
-        "workingLatex": "= \\frac{\\sqrt3 + 1}{1 - \\sqrt3}",
-        "explanation": "The denominator is $1 - \\sqrt3$, which is negative.",
+        "description": "Substitute the given value",
+        "workingLatex": "\\sin^2\\theta = \\frac{1 - \\left(-\\tfrac{7}{25}\\right)}{2} = \\frac{\\tfrac{32}{25}}{2} = \\frac{16}{25}",
+        "explanation": "Putting in $\\cos 2\\theta = -\\tfrac{7}{25}$ and simplifying gives $\\sin^2\\theta$ as an exact fraction.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Rationalise using the conjugate",
-        "workingLatex": "= \\frac{(\\sqrt3 + 1)(1 + \\sqrt3)}{(1 - \\sqrt3)(1 + \\sqrt3)}",
-        "explanation": "Multiplying by $\\frac{1 + \\sqrt3}{1 + \\sqrt3}$ clears the surd from the denominator.",
+        "description": "Take the square root",
+        "workingLatex": "\\sin\\theta = \\pm\\tfrac{4}{5}",
+        "explanation": "Square rooting gives two possibilities; the quadrant will tell us which sign to keep.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Expand the numerator",
-        "workingLatex": "(\\sqrt3 + 1)(1 + \\sqrt3) = \\sqrt3 + 3 + 1 + \\sqrt3 = 4 + 2\\sqrt3",
-        "explanation": "Expanding the product gives $4 + 2\\sqrt3$.",
+        "description": "Fix the sign of sine",
+        "workingLatex": "\\tfrac{\\pi}{2} < \\theta < \\pi \\ \\Rightarrow\\ \\sin\\theta > 0 \\ \\Rightarrow\\ \\sin\\theta = \\tfrac{4}{5}",
+        "explanation": "In the second quadrant sine is positive, so we take the positive root $\\tfrac{4}{5}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Expand the denominator",
-        "workingLatex": "(1 - \\sqrt3)(1 + \\sqrt3) = 1 - 3 = -2",
-        "explanation": "The conjugate product is $-2$.",
+        "description": "Use the cosine form of cos 2theta",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1 \\ \\Rightarrow\\ \\cos^2\\theta = \\frac{1 + \\cos 2\\theta}{2}",
+        "explanation": "The version $\\cos 2\\theta = 2\\cos^2\\theta - 1$ rearranges to give $\\cos^2\\theta$, letting us find the cosine directly.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Simplify",
-        "workingLatex": "= \\frac{4 + 2\\sqrt3}{-2} = -(2 + \\sqrt3)",
-        "explanation": "Dividing by $-2$ gives the exact value in the required form.",
+        "description": "Substitute the given value",
+        "workingLatex": "\\cos^2\\theta = \\frac{1 + \\left(-\\tfrac{7}{25}\\right)}{2} = \\frac{\\tfrac{18}{25}}{2} = \\frac{9}{25}",
+        "explanation": "Substituting the same $\\cos 2\\theta = -\\tfrac{7}{25}$ gives $\\cos^2\\theta$ exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Take the square root",
+        "workingLatex": "\\cos\\theta = \\pm\\tfrac{3}{5}",
+        "explanation": "Again there are two candidate signs, to be resolved by the quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Fix the sign of cosine",
+        "workingLatex": "\\tfrac{\\pi}{2} < \\theta < \\pi \\ \\Rightarrow\\ \\cos\\theta < 0 \\ \\Rightarrow\\ \\cos\\theta = -\\tfrac{3}{5}",
+        "explanation": "In the second quadrant cosine is negative, so the correct value is $-\\tfrac{3}{5}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Form the tangent",
+        "workingLatex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\tfrac{4}{5}}{-\\tfrac{3}{5}} = -\\tfrac{4}{3}",
+        "explanation": "Dividing the sine by the cosine gives the tangent; the fifths cancel, leaving a negative value as expected in the second quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check with Pythagoras",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = \\tfrac{16}{25} + \\tfrac{9}{25} = \\tfrac{25}{25} = 1",
+        "explanation": "The two ratios satisfy the Pythagorean identity, a good consistency check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check against the given double angle",
+        "workingLatex": "\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta = \\tfrac{9}{25} - \\tfrac{16}{25} = -\\tfrac{7}{25}",
+        "explanation": "Recomputing $\\cos 2\\theta$ from our values returns the given $-\\tfrac{7}{25}$, confirming everything is consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Confirm theta lies in the stated range",
+        "workingLatex": "\\sin\\theta = \\tfrac{4}{5},\\ \\cos\\theta = -\\tfrac{3}{5} \\ \\Rightarrow\\ \\theta \\approx 126.9^\\circ",
+        "explanation": "These signs place $\\theta$ at roughly $126.9^\\circ$, which indeed lies between $90^\\circ$ and $180^\\circ$, matching the given interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the results",
+        "workingLatex": "\\sin\\theta = \\tfrac{4}{5}, \\quad \\cos\\theta = -\\tfrac{3}{5}, \\quad \\tan\\theta = -\\tfrac{4}{3}",
+        "explanation": "Collecting the three exact values gives the final answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\tan 105^\\circ = -(2 + \\sqrt3)$"
+    "finalAnswer": "$\\sin\\theta = \\tfrac{4}{5}$, $\\cos\\theta = -\\tfrac{3}{5}$, $\\tan\\theta = -\\tfrac{4}{3}$ (taking $\\sin\\theta>0$, $\\cos\\theta<0$ because $\\theta$ is in the second quadrant)."
   }
 }

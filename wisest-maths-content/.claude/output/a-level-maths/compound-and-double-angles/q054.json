@@ -5,82 +5,116 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Hard",
-  "marks": 9,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
     "double angle",
-    "tangent",
-    "equations",
-    "factorising"
+    "factorise",
+    "solve equation"
   ],
-  "questionText": "Solve $\\tan 2\\theta = 3\\tan\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Solve $5\\sin 2x = 4\\cos x$ for $0 \\le x < 360^\\circ$, giving your answers to one decimal place where appropriate.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the double angle",
-        "workingLatex": "\\frac{2\\tan\\theta}{1 - \\tan^2\\theta} = 3\\tan\\theta",
-        "explanation": "Using the tangent double angle formula gives an equation in $\\tan\\theta$ alone.",
+        "description": "Apply the sine double-angle formula",
+        "workingLatex": "\\sin 2x = 2\\sin x\\cos x",
+        "explanation": "The term $\\sin 2x$ hides a factor of $\\cos x$ that also appears on the right. Expanding it with $\\sin 2x = 2\\sin x\\cos x$ exposes that common factor.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Let t stand for tangent",
-        "workingLatex": "\\frac{2t}{1 - t^2} = 3t, \\quad t = \\tan\\theta",
-        "explanation": "A substitution keeps the algebra clean.",
+        "description": "Substitute into the equation",
+        "workingLatex": "5\\left(2\\sin x\\cos x\\right) = 4\\cos x",
+        "explanation": "Rewriting $\\sin 2x$ turns the equation into one where $\\cos x$ appears on both sides.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Multiply through by the denominator",
-        "workingLatex": "2t = 3t(1 - t^2)",
-        "explanation": "Clearing the denominator (valid where $t^2 \\ne 1$) gives a polynomial equation.",
+        "description": "Move everything to one side",
+        "workingLatex": "10\\sin x\\cos x - 4\\cos x = 0",
+        "explanation": "It is tempting to divide both sides by $\\cos x$, but that would throw away the solutions where $\\cos x = 0$. Instead we bring all terms to one side so we can factor safely.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Expand and rearrange",
-        "workingLatex": "2t = 3t - 3t^3 \\;\\Rightarrow\\; 3t^3 - t = 0",
-        "explanation": "Bringing all terms to one side gives a cubic in $t$.",
+        "description": "Factor out the common term",
+        "workingLatex": "2\\cos x\\left(5\\sin x - 2\\right) = 0",
+        "explanation": "Both terms share a factor of $2\\cos x$. Taking it out keeps every solution, because a product is zero exactly when one of its factors is zero.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Factorise",
-        "workingLatex": "t(3t^2 - 1) = 0",
-        "explanation": "Taking out the common factor $t$ splits the cubic.",
+        "description": "Split into two cases",
+        "workingLatex": "\\cos x = 0 \\quad \\text{or} \\quad 5\\sin x - 2 = 0",
+        "explanation": "The zero-product principle gives two separate equations, and we must solve both to capture the full solution set.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve t = 0",
-        "workingLatex": "\\tan\\theta = 0 \\;\\Rightarrow\\; \\theta = 0^\\circ, 180^\\circ",
-        "explanation": "Tangent is zero at $0^\\circ$ and $180^\\circ$.",
+        "description": "Solve cos x = 0",
+        "workingLatex": "\\cos x = 0 \\ \\Rightarrow \\ x = 90^\\circ,\\ 270^\\circ",
+        "explanation": "Cosine is zero at the top and bottom of the unit circle, giving $x = 90^\\circ$ and $x = 270^\\circ$ in the interval.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Solve the quadratic factor",
-        "workingLatex": "t^2 = \\tfrac{1}{3} \\;\\Rightarrow\\; \\tan\\theta = \\pm\\frac{1}{\\sqrt3}",
-        "explanation": "These values satisfy $t^2 \\ne 1$, so the earlier division was valid.",
+        "description": "Solve for sin x in the second case",
+        "workingLatex": "\\sin x = \\tfrac{2}{5} = 0.4",
+        "explanation": "Rearranging the second factor gives $\\sin x = 0.4$, which lies within $[-1,1]$ and so is attainable.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Find those angles",
-        "workingLatex": "\\theta = 30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ",
-        "explanation": "Tangent $\\pm\\frac{1}{\\sqrt3}$ gives one solution in each quadrant.",
+        "description": "Find the reference angle",
+        "workingLatex": "\\sin^{-1}(0.4) = 23.58^\\circ",
+        "explanation": "The inverse sine gives the first-quadrant angle whose sine is $0.4$.",
         "diagram": null
       },
       {
         "stepNumber": 9,
+        "description": "First-quadrant solution",
+        "workingLatex": "x = 23.58^\\circ",
+        "explanation": "Since $\\sin x$ is positive, the first solution is the reference angle itself.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Second-quadrant solution",
+        "workingLatex": "x = 180^\\circ - 23.58^\\circ = 156.42^\\circ",
+        "explanation": "Sine is also positive in the second quadrant, so $180^\\circ - 23.58^\\circ = 156.42^\\circ$ is the partner solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify a cos x = 0 solution",
+        "workingLatex": "5\\sin 180^\\circ = 0, \\qquad 4\\cos 90^\\circ = 0",
+        "explanation": "At $x = 90^\\circ$ both sides are zero, confirming that the $\\cos x = 0$ solutions are real and would have been lost by cancelling.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Verify a sin x = 0.4 solution",
+        "workingLatex": "\\cos x = \\sqrt{0.84}: \\ 5\\sin 2x = 10(0.4)(0.9165) = 3.666, \\ 4\\cos x = 4(0.9165) = 3.666",
+        "explanation": "At $x = 23.58^\\circ$, $\\cos x = \\sqrt{1 - 0.16} = 0.9165$, and both sides evaluate to $3.666$, confirming the solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
         "description": "Collect all solutions",
-        "workingLatex": "\\theta = 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ, 210^\\circ, 330^\\circ",
-        "explanation": "Combining both factors gives six solutions in the interval.",
+        "workingLatex": "x = 23.58^\\circ,\\ 90^\\circ,\\ 156.42^\\circ,\\ 270^\\circ",
+        "explanation": "Combining both cases gives four solutions in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the solution set",
+        "workingLatex": "x = 23.6^\\circ,\\ 90^\\circ,\\ 156.4^\\circ,\\ 270^\\circ",
+        "explanation": "Rounding the non-exact values to one decimal place gives the final answers.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ, 210^\\circ, 330^\\circ$"
+    "finalAnswer": "$x = 23.6^\\circ,\\ 90^\\circ,\\ 156.4^\\circ,\\ 270^\\circ$ (decimals to 1 d.p.)."
   }
 }

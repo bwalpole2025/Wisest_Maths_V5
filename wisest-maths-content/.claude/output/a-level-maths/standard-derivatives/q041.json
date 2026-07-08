@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "written",
+  "tags": [
+    "increasing decreasing",
+    "exponential",
+    "standard derivatives"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^{x} - x$. Determine the set of values of $x$ for which $C$ is increasing, and the set for which it is decreasing, justifying your answer.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function and the strategy",
+        "workingLatex": "y = e^{x} - x",
+        "explanation": "A curve is increasing where its gradient $\\frac{dy}{dx}$ is positive and decreasing where it is negative, so the whole question is decided by the sign of the derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate term by term",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} - 1",
+        "explanation": "Using the standard result $\\frac{d}{dx}(e^{x})=e^{x}$ and $\\frac{d}{dx}(x)=1$; linearity lets us differentiate each term separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the behaviour of the exponential",
+        "workingLatex": "e^{x} > 0 \\text{ for all } x",
+        "explanation": "The exponential is always positive, so the sign of $e^{x}-1$ is controlled entirely by whether $e^{x}$ is above or below $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Condition for increasing",
+        "workingLatex": "\\text{increasing} \\iff \\frac{dy}{dx} > 0 \\iff e^{x} - 1 > 0",
+        "explanation": "Increasing means a positive gradient, so we require $e^{x}-1>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the increasing inequality",
+        "workingLatex": "e^{x} > 1 \\iff x > 0",
+        "explanation": "Since $e^{x}$ is an increasing function and $e^{0}=1$, $e^{x}>1$ exactly when $x>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Condition for decreasing",
+        "workingLatex": "\\text{decreasing} \\iff e^{x} - 1 < 0 \\iff e^{x} < 1",
+        "explanation": "Decreasing means a negative gradient, so we need $e^{x}<1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the decreasing inequality",
+        "workingLatex": "e^{x} < 1 \\iff x < 0",
+        "explanation": "Again using that $e^{x}$ is increasing with $e^{0}=1$, $e^{x}<1$ exactly when $x<0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Locate the turning point",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\iff e^{x} = 1 \\iff x = 0",
+        "explanation": "At $x=0$ the gradient is zero; this is the single point separating the decreasing and increasing parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check a test value on each side",
+        "workingLatex": "x=1:\\ e^{1}-1 \\approx 1.72 > 0, \\quad x=-1:\\ e^{-1}-1 \\approx -0.63 < 0",
+        "explanation": "Substituting a point from each region confirms the gradient is positive to the right of $0$ and negative to the left, as expected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{increasing for } x>0, \\qquad \\text{decreasing for } x<0",
+        "explanation": "So $C$ falls until $x=0$ and rises thereafter, with a minimum turning point at $x=0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$C$ is increasing for $x>0$ and decreasing for $x<0$ (with a stationary point at $x=0$)."
+  }
+}

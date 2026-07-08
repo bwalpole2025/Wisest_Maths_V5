@@ -5,60 +5,96 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "marks": 4,
+  "answerType": "proof",
   "tags": [
-    "simplify",
     "identities",
-    "factorising"
+    "cosec",
+    "cot",
+    "pythagorean identity"
   ],
-  "questionText": "Simplify $\\dfrac{\\sec^2\\theta - 1}{\\sec^2\\theta}$, giving your answer as a single trigonometric function squared.",
+  "questionText": "Prove that $\\operatorname{cosec}\\theta - \\sin\\theta \\equiv \\cos\\theta\\,\\cot\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace the numerator using an identity",
-        "workingLatex": "\\sec^2\\theta - 1 = \\tan^2\\theta",
-        "explanation": "The identity $\\sec^2\\theta = 1 + \\tan^2\\theta$ rearranges so the numerator becomes $\\tan^2\\theta$.",
+        "description": "State the identity and strategy",
+        "workingLatex": "\\text{Prove: } \\operatorname{cosec}\\theta - \\sin\\theta \\equiv \\cos\\theta\\,\\cot\\theta \\qquad \\text{Start with LHS}",
+        "explanation": "We rewrite $\\operatorname{cosec}\\theta$ as $\\dfrac{1}{\\sin\\theta}$ and combine with $\\sin\\theta$, aiming for $\\cos\\theta\\,\\cot\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite the expression",
-        "workingLatex": "\\frac{\\tan^2\\theta}{\\sec^2\\theta}",
-        "explanation": "Substituting simplifies the numerator, leaving a ratio of two squared functions.",
+        "description": "Recall the definition of cosec",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "Cosecant is the reciprocal of sine, so the left side becomes a difference of sine terms.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write tangent and secant in sine and cosine",
-        "workingLatex": "= \\frac{\\frac{\\sin^2\\theta}{\\cos^2\\theta}}{\\frac{1}{\\cos^2\\theta}}",
-        "explanation": "Converting both to sine and cosine makes the cancellation visible.",
+        "description": "Substitute into the LHS",
+        "workingLatex": "\\operatorname{cosec}\\theta - \\sin\\theta = \\frac{1}{\\sin\\theta} - \\sin\\theta",
+        "explanation": "Now both terms are expressed through sine, ready to be combined over one denominator.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Divide by multiplying by the reciprocal",
-        "workingLatex": "= \\frac{\\sin^2\\theta}{\\cos^2\\theta}\\times\\frac{\\cos^2\\theta}{1}",
-        "explanation": "Dividing by $\\frac{1}{\\cos^2\\theta}$ is multiplying by $\\cos^2\\theta$, which will cancel the denominator.",
+        "description": "Combine over a common denominator",
+        "workingLatex": "= \\frac{1 - \\sin^2\\theta}{\\sin\\theta}",
+        "explanation": "Writing $\\sin\\theta$ as $\\dfrac{\\sin^2\\theta}{\\sin\\theta}$ lets the two terms merge into a single fraction.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Cancel the cosine-squared factors",
-        "workingLatex": "= \\sin^2\\theta",
-        "explanation": "The $\\cos^2\\theta$ terms cancel, leaving just $\\sin^2\\theta$.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 - \\sin^2\\theta \\equiv \\cos^2\\theta",
+        "explanation": "The numerator is the rearranged Pythagorean identity, which introduces cosine into the expression.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the simplified result",
-        "workingLatex": "\\frac{\\sec^2\\theta - 1}{\\sec^2\\theta} = \\sin^2\\theta",
-        "explanation": "The expression reduces to $\\sin^2\\theta$, a single trigonometric function squared as required.",
+        "description": "Substitute the numerator",
+        "workingLatex": "= \\frac{\\cos^2\\theta}{\\sin\\theta}",
+        "explanation": "Replacing $1-\\sin^2\\theta$ with $\\cos^2\\theta$ gives a fraction we can split into a product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Split into a product",
+        "workingLatex": "\\frac{\\cos^2\\theta}{\\sin\\theta} = \\cos\\theta\\cdot \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Peeling off one factor of $\\cos\\theta$ leaves $\\dfrac{\\cos\\theta}{\\sin\\theta}$, which is a cotangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Recall the definition of cot",
+        "workingLatex": "\\frac{\\cos\\theta}{\\sin\\theta} = \\cot\\theta",
+        "explanation": "By definition $\\cot\\theta=\\dfrac{\\cos\\theta}{\\sin\\theta}$, so the second factor is $\\cot\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Combine to the RHS",
+        "workingLatex": "\\cos\\theta\\cdot \\frac{\\cos\\theta}{\\sin\\theta} = \\cos\\theta\\,\\cot\\theta",
+        "explanation": "The product is exactly $\\cos\\theta\\,\\cot\\theta$, the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check at a convenient angle",
+        "workingLatex": "\\operatorname{cosec}30^\\circ - \\sin 30^\\circ = 2 - \\tfrac{1}{2} = \\tfrac{3}{2}, \\qquad \\cos 30^\\circ\\,\\cot 30^\\circ = \\frac{\\sqrt{3}}{2}\\cdot \\sqrt{3} = \\tfrac{3}{2}",
+        "explanation": "Both sides equal $\\tfrac{3}{2}$ at $30^\\circ$, supporting the proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the conclusion",
+        "workingLatex": "\\operatorname{cosec}\\theta - \\sin\\theta \\equiv \\cos\\theta\\,\\cot\\theta \\qquad \\text{(LHS} \\equiv \\text{RHS, QED)}",
+        "explanation": "Using the definition of cosecant, the Pythagorean identity and the definition of cotangent, the left side becomes $\\cos\\theta\\,\\cot\\theta$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin^2\\theta$"
+    "finalAnswer": "$\\operatorname{cosec}\\theta-\\sin\\theta=\\dfrac{1}{\\sin\\theta}-\\sin\\theta=\\dfrac{1-\\sin^2\\theta}{\\sin\\theta}=\\dfrac{\\cos^2\\theta}{\\sin\\theta}=\\cos\\theta\\cot\\theta$, so $\\operatorname{cosec}\\theta-\\sin\\theta\\equiv\\cos\\theta\\,\\cot\\theta$."
   }
 }

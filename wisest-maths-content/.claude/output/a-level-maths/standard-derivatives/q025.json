@@ -1,0 +1,99 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "trigonometry"
+  ],
+  "questionText": "The curve has equation $y = \\sin x + \\cos x$, where $x$ is in radians. Find an equation of the tangent to the curve at the point where $x = \\dfrac{\\pi}{2}$, giving your answer in exact form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall that the tangent gradient equals the derivative (in radians)",
+        "workingLatex": "m = \\left.\\frac{dy}{dx}\\right|_{x=\\pi/2}",
+        "explanation": "The gradient of the tangent is the derivative at the point. Because these are trigonometric derivatives, $x$ must be measured in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standard trig derivatives",
+        "workingLatex": "\\frac{d}{dx}(\\sin x) = \\cos x, \\qquad \\frac{d}{dx}(\\cos x) = -\\sin x",
+        "explanation": "These are the standard results: $\\sin$ differentiates to $\\cos$, and $\\cos$ differentiates to $-\\sin$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the sum",
+        "workingLatex": "\\frac{dy}{dx} = \\cos x - \\sin x",
+        "explanation": "Differentiating each term and adding, using the linearity of differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the required trig values at x = π/2",
+        "workingLatex": "\\cos\\tfrac{\\pi}{2} = 0, \\qquad \\sin\\tfrac{\\pi}{2} = 1",
+        "explanation": "At the quarter-turn $x=\\tfrac{\\pi}{2}$ radians, cosine is $0$ and sine is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the gradient",
+        "workingLatex": "m = \\cos\\tfrac{\\pi}{2} - \\sin\\tfrac{\\pi}{2} = 0 - 1 = -1",
+        "explanation": "Substituting the values gives a tangent gradient of $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate of the point of contact",
+        "workingLatex": "y = \\sin\\tfrac{\\pi}{2} + \\cos\\tfrac{\\pi}{2} = 1 + 0 = 1",
+        "explanation": "On the curve at $x=\\tfrac{\\pi}{2}$, giving the point $\\left(\\tfrac{\\pi}{2},\\ 1\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Collect the point and gradient",
+        "workingLatex": "\\left(\\tfrac{\\pi}{2},\\ 1\\right), \\qquad m = -1",
+        "explanation": "We are ready to build the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Use the point–gradient form",
+        "workingLatex": "y - 1 = -1\\left(x - \\tfrac{\\pi}{2}\\right)",
+        "explanation": "Substitute the point and gradient into $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Expand the bracket",
+        "workingLatex": "y - 1 = -x + \\tfrac{\\pi}{2}",
+        "explanation": "Multiplying $-1$ through the bracket changes both signs inside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Rearrange to state the tangent",
+        "workingLatex": "y = -x + \\tfrac{\\pi}{2} + 1",
+        "explanation": "Adding $1$ to both sides gives the tangent line in exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check the line passes through the point",
+        "workingLatex": "x=\\tfrac{\\pi}{2}:\\ -\\tfrac{\\pi}{2} + \\tfrac{\\pi}{2} + 1 = 1 \\ \\checkmark",
+        "explanation": "The tangent gives $y=1$ at $x=\\tfrac{\\pi}{2}$, matching the point of contact.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = -x + \\dfrac{\\pi}{2} + 1$ (equivalently $y = \\dfrac{\\pi}{2} + 1 - x$)."
+  }
+}

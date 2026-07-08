@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.stats.normal-distribution.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "standardising",
+    "probability"
+  ],
+  "questionText": "Scores on an aptitude test, $X$, are modelled by $X \\sim N(100, 10^2)$. Find $P(X < 125)$, giving your answer to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and what is required",
+        "workingLatex": "X \\sim N(100,\\ 10^2), \\qquad P(X < 125) = \\ ?",
+        "explanation": "The scores are normal with mean $\\mu = 100$ and standard deviation $\\sigma = 10$. We want the probability that a score is below $125$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write down the standardisation",
+        "workingLatex": "Z = \\dfrac{X - 100}{10}, \\qquad Z \\sim N(0,1)",
+        "explanation": "Standardising rescales the score so it is measured in standard deviations from the mean, letting us use the standard normal distribution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the value 125",
+        "workingLatex": "z = \\dfrac{125 - 100}{10} = \\dfrac{25}{10} = 2.5",
+        "explanation": "The score $125$ is $25$ above the mean, and $25$ is $2.5$ standard deviations of $10$. So $125$ corresponds to $z = 2.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the probability in terms of Z",
+        "workingLatex": "P(X < 125) = P(Z < 2.5) = \\Phi(2.5)",
+        "explanation": "Being below $125$ is the same event as $Z$ being below $2.5$, which is the lower-tail area $\\Phi(2.5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the standard normal probability",
+        "workingLatex": "\\Phi(2.5) = 0.9938",
+        "explanation": "The standard normal cumulative value at $z = 2.5$ is $0.9938$ to $4$ significant figures.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "P(X < 125) \\approx 0.9938",
+        "explanation": "So about $99.4\\%$ of scores are below $125$. A score of $125$ sits $2.5$ standard deviations above the mean, so almost everyone scores less than it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P(X < 125) \\approx 0.9938$."
+  }
+}

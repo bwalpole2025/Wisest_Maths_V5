@@ -5,75 +5,124 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
-    "equations",
-    "secant",
-    "tangent",
-    "quadratic"
+    "inverse trig",
+    "composition",
+    "arccos",
+    "arctan"
   ],
-  "questionText": "Solve $\\sec^2\\theta + \\tan\\theta = 3$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionText": "Find the exact values of (a) $\\sin\\!\\left(\\arccos\\tfrac{3}{5}\\right)$ and (b) $\\cos\\!\\left(\\arctan\\tfrac{5}{12}\\right)$, justifying the sign of each answer.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace secant squared using an identity",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "This converts the equation into one purely in tangent.",
+        "description": "Recall what arccos and arctan mean",
+        "workingLatex": "\\alpha = \\arccos\\!\\left(\\tfrac{3}{5}\\right) \\ \\text{means}\\ \\cos\\alpha = \\tfrac{3}{5}, \\quad \\alpha \\in [0, \\pi]",
+        "explanation": "The inverse cosine returns the unique angle in $[0,\\pi]$ whose cosine is $\\tfrac35$. Naming that angle $\\alpha$ turns the composition into an ordinary trigonometry problem.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the equation",
-        "workingLatex": "1 + \\tan^2\\theta + \\tan\\theta = 3",
-        "explanation": "The equation is now in tangent only.",
+        "description": "Set up part (a)",
+        "workingLatex": "\\text{Part (a): find } \\sin\\alpha, \\quad \\cos\\alpha = \\tfrac{3}{5}",
+        "explanation": "We want $\\sin\\!\\big(\\arccos\\tfrac35\\big)=\\sin\\alpha$, so the task reduces to finding $\\sin\\alpha$ from the known cosine.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to standard form",
-        "workingLatex": "\\tan^2\\theta + \\tan\\theta - 2 = 0",
-        "explanation": "Moving all terms to one side gives a quadratic in $\\tan\\theta$.",
+        "description": "Fix the sign of sin alpha",
+        "workingLatex": "\\cos\\alpha > 0 \\ \\Rightarrow\\ \\alpha \\in \\left[0, \\tfrac{\\pi}{2}\\right), \\quad \\sin\\alpha \\ge 0",
+        "explanation": "Since $\\cos\\alpha$ is positive and $\\alpha$ lies in $[0,\\pi]$, the angle is in the first quadrant, where sine is non-negative. This is why we will take the positive root.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(\\tan\\theta + 2)(\\tan\\theta - 1) = 0",
-        "explanation": "The factors of $-2$ that add to $+1$ are $+2$ and $-1$.",
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^2\\alpha = 1 - \\cos^2\\alpha = 1 - \\tfrac{9}{25} = \\tfrac{16}{25}",
+        "explanation": "Rearranging $\\sin^2\\alpha+\\cos^2\\alpha\\equiv1$ gives $\\sin^2\\alpha$ directly from the known cosine.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve the first factor",
-        "workingLatex": "\\tan\\theta = 1 \\;\\Rightarrow\\; \\theta = 45^\\circ, 225^\\circ",
-        "explanation": "Tangent equals $1$ at $45^\\circ$ and one period later at $225^\\circ$.",
+        "description": "Take the positive square root",
+        "workingLatex": "\\sin\\alpha = +\\sqrt{\\tfrac{16}{25}} = \\tfrac{4}{5}",
+        "explanation": "The sign reasoning in Step 3 tells us to keep the positive root, giving $\\sin\\alpha=\\tfrac45$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the second factor",
-        "workingLatex": "\\tan\\theta = -2 \\;\\Rightarrow\\; \\theta \\approx 116.6^\\circ, 296.6^\\circ",
-        "explanation": "The reference angle is $\\tan^{-1}2 \\approx 63.4^\\circ$; negative tangent gives quadrant II and IV solutions.",
+        "description": "State the answer to part (a)",
+        "workingLatex": "\\sin\\!\\left(\\arccos\\tfrac{3}{5}\\right) = \\tfrac{4}{5}",
+        "explanation": "This is the exact value of the first composition; the $3$-$4$-$5$ triangle is visible in the working.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Collect and round the solutions",
-        "workingLatex": "\\theta = 45^\\circ, 117^\\circ, 225^\\circ, 297^\\circ",
-        "explanation": "Combining both factors and rounding gives four solutions in the interval.",
+        "description": "Set up part (b)",
+        "workingLatex": "\\beta = \\arctan\\!\\left(\\tfrac{5}{12}\\right) \\ \\text{means}\\ \\tan\\beta = \\tfrac{5}{12}, \\quad \\beta \\in \\left(-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right)",
+        "explanation": "Inverse tangent returns the unique angle in $\\left(-\\tfrac\\pi2,\\tfrac\\pi2\\right)$ with the given tangent. We want $\\cos\\beta$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Confirm the interval",
-        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "Every solution lies within the required range.",
+        "description": "Fix the sign of cos beta",
+        "workingLatex": "\\tan\\beta > 0 \\ \\Rightarrow\\ \\beta \\in \\left(0, \\tfrac{\\pi}{2}\\right), \\quad \\cos\\beta > 0",
+        "explanation": "A positive tangent in the principal range forces $\\beta$ into the first quadrant, where cosine is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Model with a right triangle",
+        "workingLatex": "\\text{opposite} = 5, \\quad \\text{adjacent} = 12",
+        "explanation": "Because $\\tan\\beta=\\dfrac{\\text{opposite}}{\\text{adjacent}}=\\dfrac{5}{12}$, a right triangle with legs $5$ and $12$ captures the angle $\\beta$ exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the hypotenuse",
+        "workingLatex": "\\text{hypotenuse} = \\sqrt{5^2 + 12^2} = \\sqrt{169} = 13",
+        "explanation": "Pythagoras' theorem gives the hypotenuse; the sides form the familiar $5$-$12$-$13$ triangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Read off cos beta",
+        "workingLatex": "\\cos\\beta = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\tfrac{12}{13}",
+        "explanation": "Cosine is adjacent over hypotenuse, and it is positive as anticipated in Step 8.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "State the answer to part (b)",
+        "workingLatex": "\\cos\\!\\left(\\arctan\\tfrac{5}{12}\\right) = \\tfrac{12}{13}",
+        "explanation": "This is the exact value of the second composition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Cross-check with an identity",
+        "workingLatex": "\\sec^2\\beta = 1 + \\tan^2\\beta = 1 + \\tfrac{25}{144} = \\tfrac{169}{144}",
+        "explanation": "As a check we use $1+\\tan^2\\beta\\equiv\\sec^2\\beta$, avoiding the triangle entirely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Confirm cos beta from the check",
+        "workingLatex": "\\sec\\beta = \\tfrac{13}{12} \\ \\Rightarrow\\ \\cos\\beta = \\tfrac{12}{13}",
+        "explanation": "Taking the positive root (cosine positive) and reciprocating agrees with the triangle result, confirming part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State both exact values",
+        "workingLatex": "\\sin\\!\\left(\\arccos\\tfrac{3}{5}\\right) = \\tfrac{4}{5}, \\qquad \\cos\\!\\left(\\arctan\\tfrac{5}{12}\\right) = \\tfrac{12}{13}",
+        "explanation": "Collecting the two results gives the final exact answers.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 45^\\circ, 117^\\circ, 225^\\circ, 297^\\circ$"
+    "finalAnswer": "$\\sin\\!\\big(\\arccos\\tfrac35\\big)=\\tfrac45$ and $\\cos\\!\\big(\\arctan\\tfrac{5}{12}\\big)=\\tfrac{12}{13}$ (both positive because each inner angle lies in the first quadrant)."
   }
 }

@@ -4,62 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "tangent",
-    "parabola",
-    "general"
+    "trig parametric",
+    "gradient",
+    "parametric differentiation"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Show that the tangent at the point with parameter $p$ has equation $py = x + p^2$.",
+  "questionText": "A point moves along an elliptical path with position (in metres) given by $x = 4\\cos t$ and $y = 3\\sin t$, where $t$ is measured in radians. Find the exact gradient of the path, $\\dfrac{dy}{dx}$, at the instant $t = \\dfrac{\\pi}{6}$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find the point with parameter p",
-        "workingLatex": "(p^2, 2p)",
-        "explanation": "Substituting $t = p$ into the parametric equations gives the general point.",
+        "description": "State the parametric gradient rule",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{dy/dt}{dx/dt}",
+        "explanation": "Both $x$ and $y$ are written in terms of $t$, so we cannot differentiate $y$ with respect to $x$ directly. Instead we find how each coordinate changes with $t$ and take their ratio, which gives the slope of the path.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find the gradient",
-        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t} = \\frac{1}{p}",
-        "explanation": "The parametric gradient is $\\frac{1}{t}$, which is $\\frac{1}{p}$ at this point.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = -4\\sin t",
+        "explanation": "The derivative of $\\cos t$ is $-\\sin t$, and the constant $4$ carries through. This is the rate at which the horizontal position changes.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the point-gradient form",
-        "workingLatex": "y - 2p = \\frac{1}{p}(x - p^2)",
-        "explanation": "Using the general point and gradient in $y - y_1 = m(x - x_1)$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 3\\cos t",
+        "explanation": "The derivative of $\\sin t$ is $\\cos t$, giving the rate at which the vertical position changes.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Multiply through by p",
-        "workingLatex": "p(y - 2p) = x - p^2",
-        "explanation": "Clearing the fraction by multiplying both sides by $p$.",
+        "description": "Form the gradient in terms of t",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{3\\cos t}{-4\\sin t}",
+        "explanation": "Dividing the vertical rate by the horizontal rate gives the slope of the path at any time $t$ (valid wherever $\\dot{x}\\neq 0$).",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Expand",
-        "workingLatex": "py - 2p^2 = x - p^2",
-        "explanation": "Distributing $p$ on the left.",
+        "description": "Evaluate the trig values at t = pi/6",
+        "workingLatex": "\\cos\\tfrac{\\pi}{6} = \\dfrac{\\sqrt{3}}{2}, \\qquad \\sin\\tfrac{\\pi}{6} = \\dfrac{1}{2}",
+        "explanation": "These are exact standard values, so the final answer can be left in surd form rather than as a decimal.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Rearrange to the required form",
-        "workingLatex": "py = x + p^2",
-        "explanation": "Moving the $p^2$ terms across gives $py = x + p^2$, as required.",
+        "description": "Substitute into the horizontal rate",
+        "workingLatex": "\\dot{x} = -4\\left(\\dfrac{1}{2}\\right) = -2",
+        "explanation": "Putting in $\\sin\\tfrac{\\pi}{6}=\\tfrac12$ gives the horizontal velocity at this instant; the negative sign shows the point is moving to the left.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute into the vertical rate",
+        "workingLatex": "\\dot{y} = 3\\left(\\dfrac{\\sqrt{3}}{2}\\right) = \\dfrac{3\\sqrt{3}}{2}",
+        "explanation": "Putting in $\\cos\\tfrac{\\pi}{6}=\\tfrac{\\sqrt3}{2}$ gives the vertical velocity, which is positive, so the point is rising.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Divide the two rates",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\;\\frac{3\\sqrt{3}}{2}\\;}{-2} = \\dfrac{3\\sqrt{3}}{2}\\times\\dfrac{1}{-2}",
+        "explanation": "The gradient is the vertical velocity divided by the horizontal velocity at $t=\\tfrac{\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify to the exact gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = -\\dfrac{3\\sqrt{3}}{4}",
+        "explanation": "This exact value is the slope of the elliptical path at that moment; being negative, the path is sloping downwards there.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$py = x + p^2$"
+    "finalAnswer": "At $t = \\dfrac{\\pi}{6}$ the gradient of the path is $\\dfrac{dy}{dx} = -\\dfrac{3\\sqrt{3}}{4}$."
   }
 }

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "chain rule",
+    "surds",
+    "differentiation"
+  ],
+  "questionText": "Find $\\dfrac{dy}{dx}$ for $y = \\sqrt{4x+1}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the root as a power",
+        "workingLatex": "y = \\sqrt{4x+1} = (4x+1)^{1/2}",
+        "explanation": "A square root is the same as raising to the power $\\tfrac12$. Writing it this way lets us use the power rule and see clearly that a bracket $4x+1$ is sitting inside the power.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Introduce the inner function as $u$",
+        "workingLatex": "u = 4x+1 \\quad \\Rightarrow \\quad y = u^{1/2}",
+        "explanation": "The inside of the root is the inner function, so we call it $u$. The outer operation is then the simple half-power $y=u^{1/2}$, ready for the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 4",
+        "explanation": "Differentiating $u=4x+1$ gives $4$, since the derivative of $4x$ is $4$ and the constant drops out.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = \\tfrac{1}{2}u^{-1/2}",
+        "explanation": "Applying the power rule to $y=u^{1/2}$ brings the $\\tfrac12$ down and reduces the exponent to $-\\tfrac12$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx} = \\tfrac{1}{2}u^{-1/2}\\cdot 4",
+        "explanation": "Multiplying the outer rate by the inner rate combines the two effects into the single derivative with respect to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the constant",
+        "workingLatex": "\\frac{dy}{dx} = 2u^{-1/2}",
+        "explanation": "The constants combine as $\\tfrac12\\times 4 = 2$, tidying the expression before we return to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute back and write as a surd",
+        "workingLatex": "\\frac{dy}{dx} = 2(4x+1)^{-1/2} = \\frac{2}{\\sqrt{4x+1}}",
+        "explanation": "Replacing $u$ with $4x+1$ and rewriting the negative power as a fraction over the root gives the cleanest final form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\dfrac{2}{\\sqrt{4x+1}}$."
+  }
+}

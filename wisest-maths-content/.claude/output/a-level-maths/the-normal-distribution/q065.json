@@ -1,0 +1,120 @@
+{
+  "id": "al.y2.stats.normal-distribution.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "expected frequency",
+    "modelling"
+  ],
+  "questionText": "A factory produces steel rods whose lengths, $X$ cm, are modelled by $X \\sim N(20, 0.5^2)$. A rod is scrapped if its length is less than $19$ cm, in which case the whole rod is wasted. Each rod costs £2 to produce. In a production run of $8000$ rods, estimate the number of rods scrapped and hence the expected total cost of the scrapped rods.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution, batch size and cost",
+        "workingLatex": "X \\sim N(20,\\ 0.5^2), \\qquad n = 8000",
+        "explanation": "Rod lengths are normal with mean $20$ cm and standard deviation $0.5$ cm. We will find the probability a rod is scrapped, scale up to $8000$ rods, then attach the cost. Each rod costs $2$ pounds to make.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write 'scrapped' as a probability",
+        "workingLatex": "P(\\text{scrapped}) = P(X < 19)",
+        "explanation": "A rod is scrapped precisely when its length falls below $19$ cm, so the scrap rate is the probability that $X$ is less than $19$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise 19 as a fraction",
+        "workingLatex": "z = \\dfrac{19 - 20}{0.5} = \\dfrac{-1}{0.5}",
+        "explanation": "We convert the cut-off length $19$ into a $z$-score by subtracting the mean and dividing by the standard deviation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the z-value",
+        "workingLatex": "z = -2",
+        "explanation": "The length $19$ cm lies exactly two standard deviations below the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Express the probability using symmetry",
+        "workingLatex": "P(X < 19) = \\Phi(-2) = 1 - \\Phi(2)",
+        "explanation": "The area to the left of $z = -2$ equals the area to the right of $z = +2$, which is $1 - \\Phi(2)$, by the symmetry of the bell curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the standard-normal value",
+        "workingLatex": "\\Phi(2) = 0.9772",
+        "explanation": "The cumulative normal at $z = 2$ gives the fraction of rods shorter than two standard deviations above the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compute the scrap probability",
+        "workingLatex": "p = 1 - 0.9772 = 0.02275",
+        "explanation": "About $2.3\\%$ of rods are too short and must be scrapped.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set up the expected number scrapped",
+        "workingLatex": "E(\\text{scrapped}) = n \\times p = 8000 \\times 0.02275",
+        "explanation": "For a large independent batch the expected number of scrapped rods is the batch size times the scrap probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Compute the expected number scrapped",
+        "workingLatex": "8000 \\times 0.02275 = 182.0",
+        "explanation": "Multiplying gives the expected count of scrapped rods in the run.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Round to a whole number of rods",
+        "workingLatex": "E(\\text{scrapped}) \\approx 182 \\text{ rods}",
+        "explanation": "Rods are whole items, so we round to the nearest whole rod.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Link the count to a cost",
+        "workingLatex": "\\text{cost} = 182 \\times 2",
+        "explanation": "Every scrapped rod is a total loss of its $2$-pound production cost, so the expected wasted cost is the number of scrapped rods multiplied by $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Compute the expected cost",
+        "workingLatex": "182 \\times 2 = 364",
+        "explanation": "Carrying out the multiplication gives the expected money wasted on scrapped rods, in pounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the expected total scrap cost",
+        "workingLatex": "\\text{expected cost} \\approx £364",
+        "explanation": "This is the amount the factory can expect to lose to scrapped rods in a run of $8000$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Sense check",
+        "workingLatex": "0.02275 \\times 8000 \\times 2 = 364",
+        "explanation": "Combining the scrap rate, batch size and unit cost in one line reproduces the same figure, confirming the two-stage calculation is consistent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "About $182$ rods are scrapped ($8000 \\times 0.02275$), giving an expected scrap cost of about £364."
+  }
+}

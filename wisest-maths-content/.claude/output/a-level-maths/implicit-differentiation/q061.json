@@ -1,0 +1,127 @@
+{
+  "id": "al.y2.pure.implicit.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "tangent",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $x^2 + xy + y^2 = 12$. (a) Find $\\frac{dy}{dx}$ in terms of $x$ and $y$. (b) Find an equation of the tangent to $C$ at the point $P(2, 2)$. (c) Find the coordinates of the points on $C$ where the tangent is horizontal. (d) The tangent at $P$ meets the coordinate axes at $A$ and $B$; find the area of triangle $OAB$, where $O$ is the origin.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(12)",
+        "explanation": "Because $y$ is a function of $x$, we differentiate the whole equation with respect to $x$. The right-hand side is a constant, so its derivative is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the x^2 term and the constant",
+        "workingLatex": "2x + \\frac{d}{dx}(xy) + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "The power rule sends $x^2$ to $2x$, and the constant $12$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the xy term with the product rule",
+        "workingLatex": "\\frac{d}{dx}(xy) = y + x\\frac{dy}{dx}",
+        "explanation": "The term $xy$ is a product of two functions of $x$. The product rule gives $y$ (differentiate $x$, keep $y$) plus $x\\frac{dy}{dx}$ (keep $x$, differentiate $y$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the y^2 term with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "Differentiating $y^2$ with respect to $x$ needs the chain rule: bring down the power to get $2y$, then multiply by $\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x + y + x\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Collecting the three differentiated terms gives one equation containing $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(x + 2y)\\frac{dy}{dx} = -(2x + y)",
+        "explanation": "We group the two $\\frac{dy}{dx}$ terms on one side and move everything else to the other, ready to make $\\frac{dy}{dx}$ the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x + y}{x + 2y}",
+        "explanation": "Dividing by $(x+2y)$ isolates the gradient, which depends on both $x$ and $y$ as expected for an implicit curve. This answers part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the gradient at P(2, 2)",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(2,2)} = -\\frac{2(2)+2}{2+2(2)} = -\\frac{6}{6} = -1",
+        "explanation": "First note $P(2,2)$ lies on $C$ since $4+4+4=12$. Substituting gives the tangent gradient $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Form the tangent at P",
+        "workingLatex": "y - 2 = -1(x - 2) \\;\\Rightarrow\\; x + y = 4",
+        "explanation": "Using $y-y_1=m(x-x_1)$ with $m=-1$ through $(2,2)$ gives the tangent, which tidies to $x+y=4$. This answers part (b).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Set up the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; 2x + y = 0 \\;\\Rightarrow\\; y = -2x",
+        "explanation": "A horizontal tangent has gradient $0$, so the numerator of $\\frac{dy}{dx}$ must be zero (with the denominator non-zero).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Substitute y = -2x into the curve",
+        "workingLatex": "x^2 + x(-2x) + (-2x)^2 = 12",
+        "explanation": "The horizontal-tangent points must also lie on $C$, so we substitute the relation $y=-2x$ into the curve's equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Simplify and solve for x",
+        "workingLatex": "x^2 - 2x^2 + 4x^2 = 3x^2 = 12 \\;\\Rightarrow\\; x^2 = 4",
+        "explanation": "Combining like terms gives $3x^2=12$, so $x^2=4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State the horizontal-tangent points",
+        "workingLatex": "x = \\pm 2 \\;\\Rightarrow\\; (2, -4) \\text{ and } (-2, 4)",
+        "explanation": "With $y=-2x$, $x=2$ gives $(2,-4)$ and $x=-2$ gives $(-2,4)$. At each the denominator $x+2y\\neq0$, so these are genuine horizontal tangents. This answers part (c).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Find where the tangent x + y = 4 meets the axes",
+        "workingLatex": "A(4, 0), \\qquad B(0, 4)",
+        "explanation": "Setting $y=0$ gives the $x$-intercept $A(4,0)$; setting $x=0$ gives the $y$-intercept $B(0,4)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "Compute the area of triangle OAB",
+        "workingLatex": "\\text{Area} = \\tfrac{1}{2}\\times OA \\times OB = \\tfrac{1}{2}\\times 4 \\times 4 = 8",
+        "explanation": "The triangle is right-angled at the origin, so its area is half the product of the two intercept lengths. This answers part (d).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\frac{dy}{dx} = -\\frac{2x+y}{x+2y}$; (b) tangent $x+y=4$; (c) horizontal tangents at $(2,-4)$ and $(-2,4)$; (d) area of triangle $OAB = 8$."
+  }
+}

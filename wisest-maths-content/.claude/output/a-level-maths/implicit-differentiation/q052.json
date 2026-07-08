@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.pure.implicit.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "folium",
+    "horizontal tangent",
+    "show that"
+  ],
+  "questionText": "The folium of Descartes $C$ has equation $x^3 + y^3 = 6xy$. (a) Show that $\\dfrac{dy}{dx} = \\dfrac{2y - x^2}{y^2 - 2x}$. (b) Hence find the exact coordinates of the point on $C$, other than the origin, where the tangent is horizontal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^3) + \\frac{d}{dx}(y^3) = \\frac{d}{dx}(6xy)",
+        "explanation": "We differentiate the relation term by term, treating $y$ as a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the cubic terms",
+        "workingLatex": "3x^2 + 3y^2\\frac{dy}{dx} = \\frac{d}{dx}(6xy)",
+        "explanation": "The power rule gives $3x^2$; the chain rule turns $y^3$ into $3y^2\\frac{dy}{dx}$ because $y$ depends on $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate 6xy with the product rule",
+        "workingLatex": "\\frac{d}{dx}(6xy) = 6y + 6x\\frac{dy}{dx}",
+        "explanation": "The product rule on $6xy$ gives $6y$ from differentiating $x$, plus $6x\\frac{dy}{dx}$ from differentiating $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "3x^2 + 3y^2\\frac{dy}{dx} = 6y + 6x\\frac{dy}{dx}",
+        "explanation": "Combining the differentiated terms produces one equation in $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Collect and factor the dy/dx terms",
+        "workingLatex": "(3y^2 - 6x)\\frac{dy}{dx} = 6y - 3x^2",
+        "explanation": "Gathering the $\\frac{dy}{dx}$ terms on one side and factoring prepares us to make it the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Make dy/dx the subject (the required result)",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{6y - 3x^2}{3y^2 - 6x} = \\frac{2y - x^2}{y^2 - 2x}",
+        "explanation": "Dividing by $(3y^2-6x)$ and cancelling the factor of $3$ gives exactly the stated formula, proving part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the horizontal-tangent condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Rightarrow\\; 2y - x^2 = 0 \\;\\Rightarrow\\; y = \\tfrac{1}{2}x^2",
+        "explanation": "A horizontal tangent has gradient $0$, so the numerator must be zero. This gives a relation between $x$ and $y$ to combine with the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute into the curve equation",
+        "workingLatex": "x^3 + \\left(\\tfrac{1}{2}x^2\\right)^3 = 6x\\left(\\tfrac{1}{2}x^2\\right)",
+        "explanation": "The point must lie on $C$ as well, so we substitute $y = \\tfrac12 x^2$ into $x^3+y^3=6xy$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Simplify each term",
+        "workingLatex": "x^3 + \\tfrac{1}{8}x^6 = 3x^3",
+        "explanation": "Cubing $\\tfrac12 x^2$ gives $\\tfrac18 x^6$, and $6x\\cdot\\tfrac12 x^2 = 3x^3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Rearrange into a polynomial equation",
+        "workingLatex": "\\tfrac{1}{8}x^6 = 2x^3 \\;\\Rightarrow\\; x^6 = 16x^3",
+        "explanation": "Subtract $x^3$ from both sides, then multiply by $8$ to clear the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Factor and solve",
+        "workingLatex": "x^6 - 16x^3 = 0 \\;\\Rightarrow\\; x^3(x^3 - 16) = 0",
+        "explanation": "Factoring out $x^3$ shows the solutions are $x^3 = 0$ or $x^3 = 16$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Reject the origin and take the real cube root",
+        "workingLatex": "x^3 = 16 \\;\\Rightarrow\\; x = \\sqrt[3]{16} = 2\\sqrt[3]{2}",
+        "explanation": "The root $x=0$ gives the origin, which is excluded. So $x = \\sqrt[3]{16}$, and since $16 = 8\\cdot 2$ this is $2\\sqrt[3]{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Find the corresponding y-coordinate",
+        "workingLatex": "y = \\tfrac{1}{2}x^2 = \\tfrac{1}{2}\\left(\\sqrt[3]{16}\\right)^2 = \\tfrac{1}{2}\\cdot 16^{2/3} = 2\\sqrt[3]{4}",
+        "explanation": "Using $y = \\tfrac12 x^2$ with $16^{2/3} = 2^{8/3} = 4\\sqrt[3]{4}$ gives $y = 2\\sqrt[3]{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Confirm this is a horizontal (not vertical) tangent",
+        "workingLatex": "y^2 - 2x = \\left(2\\sqrt[3]{4}\\right)^2 - 2\\left(2\\sqrt[3]{2}\\right) = 4\\sqrt[3]{2} \\ne 0",
+        "explanation": "The denominator of $\\frac{dy}{dx}$ is nonzero here, so the gradient really is $0$ and the tangent is horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the point",
+        "workingLatex": "\\left(2\\sqrt[3]{2},\\; 2\\sqrt[3]{4}\\right)",
+        "explanation": "This is the point on $C$, apart from the origin, where the tangent is horizontal.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent is horizontal at $\\left(2\\sqrt[3]{2},\\, 2\\sqrt[3]{4}\\right)$."
+  }
+}

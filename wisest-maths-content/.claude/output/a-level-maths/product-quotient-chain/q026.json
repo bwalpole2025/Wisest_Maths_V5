@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "chain rule",
+    "surd",
+    "gradient"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\sqrt{x^2 + 1}$. (a) Find $\\dfrac{dy}{dx}$. (b) Find the exact gradient of $C$ at the point where $x = 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the surd as a power",
+        "workingLatex": "y = (x^2 + 1)^{1/2}",
+        "explanation": "Writing the square root as a power of $\\tfrac{1}{2}$ lets us use the power rule together with the chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the inner substitution",
+        "workingLatex": "u = x^2 + 1, \\qquad y = u^{1/2}",
+        "explanation": "Let $u$ be the inside of the root; then $y=u^{1/2}$ is a simple power of $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the outer function",
+        "workingLatex": "\\frac{dy}{du} = \\tfrac{1}{2}u^{-1/2}",
+        "explanation": "Differentiating $u^{1/2}$ brings the $\\tfrac{1}{2}$ down and lowers the power to $-\\tfrac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the inner function",
+        "workingLatex": "\\frac{du}{dx} = 2x",
+        "explanation": "Differentiating $u=x^2+1$ gives $2x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\frac{dy}{dx} = \\tfrac{1}{2}u^{-1/2}\\cdot 2x = x\\,u^{-1/2}",
+        "explanation": "Multiplying the two derivatives, the $\\tfrac{1}{2}$ and the $2$ cancel, leaving $x\\,u^{-1/2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute u back and rewrite as a fraction",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x}{\\sqrt{x^2 + 1}}",
+        "explanation": "Replacing $u=x^2+1$ and turning the negative power back into a root gives the derivative for part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Substitute x = 2",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=2} = \\frac{2}{\\sqrt{(2)^2 + 1}} = \\frac{2}{\\sqrt{5}}",
+        "explanation": "The gradient at $x=2$ is the derivative evaluated there; $2^2+1=5$ inside the root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Rationalise the denominator",
+        "workingLatex": "\\frac{2}{\\sqrt{5}} = \\frac{2\\sqrt{5}}{5}",
+        "explanation": "Multiplying top and bottom by $\\sqrt{5}$ clears the surd from the denominator, giving the exact gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the exact gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\sqrt{5}}{5} \\approx 0.894",
+        "explanation": "So the exact gradient at $x=2$ is $\\dfrac{2\\sqrt{5}}{5}$, about $0.894$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\dfrac{x}{\\sqrt{x^2+1}}$. (b) At $x=2$ the exact gradient is $\\dfrac{2\\sqrt{5}}{5}\\ (\\approx 0.894)$."
+  }
+}

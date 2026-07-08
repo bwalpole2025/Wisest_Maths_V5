@@ -5,53 +5,88 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
-  "marks": 6,
+  "marks": 4,
   "answerType": "proof",
   "tags": [
     "double angle",
-    "identities",
-    "proof"
+    "proof",
+    "identity"
   ],
-  "questionText": "Prove that $(\\sin\\theta + \\cos\\theta)^2 \\equiv 1 + \\sin 2\\theta$.",
+  "questionText": "Prove the identity $\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\tan\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Expand the square",
-        "workingLatex": "(\\sin\\theta + \\cos\\theta)^2 = \\sin^2\\theta + 2\\sin\\theta\\cos\\theta + \\cos^2\\theta",
-        "explanation": "Using $(a+b)^2$ gives three terms; two of them combine via the Pythagorean identity.",
+        "description": "State the LHS and the plan",
+        "workingLatex": "\\text{LHS} = \\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta}",
+        "explanation": "We start from the left-hand side and head towards $\\tan\\theta$, converting each double angle into single-angle ratios so a factor cancels.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Group the squared terms",
-        "workingLatex": "= (\\sin^2\\theta + \\cos^2\\theta) + 2\\sin\\theta\\cos\\theta",
-        "explanation": "Grouping the two squares prepares to use the Pythagorean identity.",
+        "description": "Choose a form of cos 2theta for the numerator",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
+        "explanation": "We pick the $1 - 2\\sin^2\\theta$ version because subtracting it from $1$ will cancel the constant and leave a pure sine term.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = 1",
-        "explanation": "The grouped squares equal $1$.",
+        "description": "Simplify the numerator",
+        "workingLatex": "1 - \\cos 2\\theta = 1 - (1 - 2\\sin^2\\theta) = 2\\sin^2\\theta",
+        "explanation": "The two $1$'s cancel, so the numerator becomes $2\\sin^2\\theta$, a single term that shares a factor with the denominator.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Recognise the double angle",
-        "workingLatex": "2\\sin\\theta\\cos\\theta = \\sin 2\\theta",
-        "explanation": "The remaining term is exactly $\\sin 2\\theta$.",
+        "description": "Expand the denominator",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "The sine double-angle formula rewrites the denominator using single-angle ratios; it contains the factor $2\\sin\\theta$ that the numerator also has.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Combine",
-        "workingLatex": "= 1 + \\sin 2\\theta \\;\\blacksquare",
-        "explanation": "Substituting both results gives the right-hand side, completing the proof.",
+        "description": "Rewrite the whole fraction",
+        "workingLatex": "\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} = \\dfrac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta}",
+        "explanation": "With both parts rewritten, the shared factor $2\\sin\\theta$ is now visible in numerator and denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel the common factor",
+        "workingLatex": "\\dfrac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta} = \\dfrac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Dividing top and bottom by $2\\sin\\theta$ leaves the ratio $\\dfrac{\\sin\\theta}{\\cos\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise the tangent ratio",
+        "workingLatex": "\\dfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta",
+        "explanation": "By definition this ratio is $\\tan\\theta$, which is exactly the target expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the RHS is reached",
+        "workingLatex": "\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} = \\tan\\theta",
+        "explanation": "The LHS has been reduced to $\\tan\\theta$, matching the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\dfrac{1 - \\cos 60^\\circ}{\\sin 60^\\circ} = \\dfrac{1/2}{\\sqrt3/2} = \\dfrac{1}{\\sqrt3} = \\tan 30^\\circ",
+        "explanation": "At $\\theta = 30^\\circ$ both sides equal $\\dfrac{1}{\\sqrt3}$, which supports the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the proof",
+        "workingLatex": "\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\tan\\theta \\quad \\blacksquare",
+        "explanation": "The LHS equals the RHS for all valid $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(\\sin\\theta + \\cos\\theta)^2 \\equiv 1 + \\sin 2\\theta$"
+    "finalAnswer": "Using $1 - \\cos 2\\theta = 2\\sin^2\\theta$ and $\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$, the fraction reduces to $\\dfrac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$, hence $\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\tan\\theta$."
   }
 }

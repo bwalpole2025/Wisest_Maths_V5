@@ -4,61 +4,104 @@
   "topic": "Year 2 Pure",
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
-  "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "solving"
+    "maximum and minimum",
+    "radians"
   ],
-  "questionText": "Solve $4\\sin\\theta - 3\\cos\\theta = 4$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionText": "Given that $g(\\theta)=\\dfrac{6}{4+\\sin\\theta+\\sqrt{3}\\,\\cos\\theta}$ for $0 \\le \\theta \\le 2\\pi$, express $\\sin\\theta+\\sqrt{3}\\,\\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$ with $R>0$ and $0<\\alpha<\\tfrac{\\pi}{2}$, and hence find the exact greatest and least values of $g(\\theta)$ and the value of $\\theta$ at which each occurs.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{4^2 + 3^2} = 5, \\quad \\tan\\alpha = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
-        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $5$ and phase about $36.87^\\circ$.",
+        "description": "Set up the identity for the denominator",
+        "workingLatex": "\\sin\\theta+\\sqrt{3}\\,\\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "Turning $\\sin\\theta+\\sqrt{3}\\,\\cos\\theta$ into a single sine wave will pin its range down neatly, since one sine only swings between $-R$ and $R$. We set it identically equal to $R\\sin(\\theta+\\alpha)$ to expand and compare.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Write the harmonic form",
-        "workingLatex": "4\\sin\\theta - 3\\cos\\theta = 5\\sin(\\theta - 36.87^\\circ)",
-        "explanation": "Combining gives the single-sine form.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha)=R\\cos\\alpha\\,\\sin\\theta+R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Applying $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ and multiplying by $R$ puts the right-hand side in the same $\\sin\\theta$-plus-$\\cos\\theta$ shape as the left.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set up the equation",
-        "workingLatex": "5\\sin(\\theta - 36.87^\\circ) = 4 \\;\\Rightarrow\\; \\sin(\\theta - 36.87^\\circ) = 0.8",
-        "explanation": "Dividing by $5$ gives sine equal to $0.8$.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=1,\\qquad R\\sin\\alpha=\\sqrt{3}",
+        "explanation": "For the two expressions to be equal for all $\\theta$, the coefficients of $\\sin\\theta$ must match and so must those of $\\cos\\theta$, giving these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set the shifted interval",
-        "workingLatex": "-36.87^\\circ \\le \\theta - 36.87^\\circ < 323.13^\\circ",
-        "explanation": "Subtracting the shift from the bounds.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{1^2+(\\sqrt{3})^2}=\\sqrt{4}=2",
+        "explanation": "Squaring and adding removes $\\alpha$ through $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=1+3=4$. The positive root gives $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Solve for the shifted angle",
-        "workingLatex": "\\theta - 36.87^\\circ = 53.13^\\circ, 126.87^\\circ",
-        "explanation": "Sine $0.8$ gives principal value $53.13^\\circ$ and partner $126.87^\\circ$.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{\\sqrt{3}}{1}=\\sqrt{3}\\Rightarrow \\alpha=\\dfrac{\\pi}{3}",
+        "explanation": "Dividing the two equations cancels $R$ to give $\\tan\\alpha=\\sqrt{3}$. Both coefficients are positive, so $\\alpha$ is acute, and the exact angle with $\\tan\\alpha=\\sqrt{3}$ is $\\dfrac{\\pi}{3}$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Add the shift and round",
-        "workingLatex": "\\theta \\approx 90^\\circ, 164^\\circ",
-        "explanation": "Adding $36.87^\\circ$ and rounding gives the two solutions.",
+        "description": "Rewrite g using the R-form",
+        "workingLatex": "g(\\theta)=\\dfrac{6}{4+2\\sin\\left(\\theta+\\frac{\\pi}{3}\\right)}",
+        "explanation": "Replacing the two-term part with $2\\sin\\left(\\theta+\\tfrac{\\pi}{3}\\right)$ gives a denominator built from a single bounded wave, which we can now bound cleanly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Bound the sine term",
+        "workingLatex": "-1\\le \\sin\\left(\\theta+\\frac{\\pi}{3}\\right)\\le 1",
+        "explanation": "Whatever the angle, a sine value lies between $-1$ and $1$, so this is the complete range of the wave inside the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Bound the denominator",
+        "workingLatex": "2\\le 4+2\\sin\\left(\\theta+\\frac{\\pi}{3}\\right)\\le 6",
+        "explanation": "Scaling the sine bounds by $2$ and adding $4$ gives a denominator between $2$ and $6$. The smallest value is $2>0$, so the fraction is always positive and well defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Greatest value of g",
+        "workingLatex": "g_{\\max}=\\dfrac{6}{2}=3",
+        "explanation": "With a fixed positive numerator, the fraction is greatest when its denominator is least. The least denominator is $2$, giving $g_{\\max}=\\tfrac{6}{2}=3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Value of θ giving the greatest value",
+        "workingLatex": "\\sin\\left(\\theta+\\tfrac{\\pi}{3}\\right)=-1\\Rightarrow \\theta+\\dfrac{\\pi}{3}=\\dfrac{3\\pi}{2}\\Rightarrow \\theta=\\dfrac{7\\pi}{6}",
+        "explanation": "The denominator is least when the sine is $-1$, at $\\theta+\\tfrac{\\pi}{3}=\\tfrac{3\\pi}{2}$. Subtracting $\\tfrac{\\pi}{3}$ gives $\\theta=\\tfrac{7\\pi}{6}$, which lies inside $[0,2\\pi]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Least value of g",
+        "workingLatex": "g_{\\min}=\\dfrac{6}{6}=1",
+        "explanation": "The fraction is smallest when the denominator is largest. The greatest denominator is $6$, giving $g_{\\min}=\\tfrac{6}{6}=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Value of θ giving the least value",
+        "workingLatex": "\\sin\\left(\\theta+\\tfrac{\\pi}{3}\\right)=1\\Rightarrow \\theta+\\dfrac{\\pi}{3}=\\dfrac{\\pi}{2}\\Rightarrow \\theta=\\dfrac{\\pi}{6}",
+        "explanation": "The denominator is largest when the sine is $1$, at $\\theta+\\tfrac{\\pi}{3}=\\tfrac{\\pi}{2}$. Subtracting $\\tfrac{\\pi}{3}$ gives $\\theta=\\tfrac{\\pi}{6}$, which lies inside $[0,2\\pi]$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 90^\\circ, 164^\\circ$"
+    "finalAnswer": "$\\sin\\theta+\\sqrt{3}\\,\\cos\\theta=2\\sin\\left(\\theta+\\tfrac{\\pi}{3}\\right)$. The greatest value is $g=3$ at $\\theta=\\tfrac{7\\pi}{6}$, and the least value is $g=1$ at $\\theta=\\tfrac{\\pi}{6}$."
   }
 }

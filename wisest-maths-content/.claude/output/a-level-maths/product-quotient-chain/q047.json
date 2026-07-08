@@ -1,0 +1,98 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "quotient rule",
+    "stationary points"
+  ],
+  "questionText": "The curve $C$ has equation $y = \\dfrac{x^2}{x-1}$, $x\\neq 1$. (a) Find $\\dfrac{dy}{dx}$. (b) Hence find the coordinates of the two stationary points of $C$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the quotient rule",
+        "workingLatex": "u = x^2, \\qquad v = x-1",
+        "explanation": "The curve is a quotient, so we use the quotient rule with $u$ on top and $v$ underneath.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate each part",
+        "workingLatex": "u' = 2x, \\qquad v' = 1",
+        "explanation": "The derivative of $x^2$ is $2x$, and the derivative of $x-1$ is $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the quotient rule",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{u'v - uv'}{v^2}",
+        "explanation": "Derivative of top times bottom minus top times derivative of bottom, all over the bottom squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the pieces",
+        "workingLatex": "= \\frac{2x(x-1) - x^2\\cdot 1}{(x-1)^2}",
+        "explanation": "Placing $u,u',v,v'$ into the formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand the numerator",
+        "workingLatex": "= \\frac{2x^2 - 2x - x^2}{(x-1)^2}",
+        "explanation": "Multiplying out $2x(x-1)=2x^2-2x$, then subtracting $x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\frac{x^2 - 2x}{(x-1)^2}",
+        "explanation": "Collecting $2x^2-x^2=x^2$ leaves $x^2-2x$ on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Factorise the numerator",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{x(x-2)}{(x-1)^2}",
+        "explanation": "Taking out the common factor $x$ makes the numerator easy to set to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\frac{x(x-2)}{(x-1)^2} = 0 \\;\\Rightarrow\\; x(x-2) = 0",
+        "explanation": "The denominator $(x-1)^2$ cannot be zero on the curve, so we set the numerator to zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Solve for x",
+        "workingLatex": "x = 0 \\quad \\text{or} \\quad x = 2",
+        "explanation": "A product is zero when one of its factors is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the y-coordinates",
+        "workingLatex": "x=0:\\; y = 0; \\qquad x=2:\\; y = \\frac{4}{1} = 4",
+        "explanation": "Substituting each $x$ into $y=\\dfrac{x^2}{x-1}$ gives the heights $0$ and $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the stationary points",
+        "workingLatex": "(0, 0) \\quad \\text{and} \\quad (2, 4)",
+        "explanation": "So the two stationary points of $C$ are $(0,0)$ and $(2,4)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dy}{dx} = \\dfrac{x(x-2)}{(x-1)^2}$. (b) Stationary points at $(0,0)$ and $(2,4)$."
+  }
+}

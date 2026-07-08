@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "e^x",
+    "gradient"
+  ],
+  "questionText": "Find $\\dfrac{dy}{dx}$ for $y = e^x + 2x$, and hence find the gradient of the curve at $x = 0$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise the structure and use linearity",
+        "workingLatex": "y = e^x + 2x",
+        "explanation": "The function is a sum of two standard terms, so we can differentiate each one separately and add the results (linearity of differentiation).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the exponential term",
+        "workingLatex": "\\frac{d}{dx}(e^x) = e^x",
+        "explanation": "$e^x$ is special: it is its own derivative, so this term is unchanged.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the linear term",
+        "workingLatex": "\\frac{d}{dx}(2x) = 2",
+        "explanation": "By the power rule the derivative of $x$ is $1$, and the constant multiple $2$ carries through, giving $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = e^x + 2",
+        "explanation": "Adding the two derivatives gives the gradient function for the whole curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=0} = e^{0} + 2",
+        "explanation": "The gradient at a particular point is found by substituting that $x$-value into the derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the exponential",
+        "workingLatex": "e^{0} + 2 = 1 + 2",
+        "explanation": "Any nonzero base raised to the power $0$ equals $1$, so $e^{0}=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = 3",
+        "explanation": "So the curve rises with gradient $3$ at $x=0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = e^x + 2$, and the gradient at $x=0$ is $3$."
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "stationary points",
+    "second derivative",
+    "exponential"
+  ],
+  "questionText": "Find the exact coordinates of the stationary point of the curve $y = 4^{x} - x\\ln 4$, and use the second derivative to show that it is a minimum. Hence state the minimum value of $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = 4^{x}\\ln 4 - \\ln 4",
+        "explanation": "Using the standard result $\\dfrac{d}{dx}(a^{x})=a^{x}\\ln a$ with $a=4$, and $\\dfrac{d}{dx}(x\\ln 4)=\\ln 4$ since $\\ln 4$ is a constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise the derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\ln 4\\,(4^{x} - 1)",
+        "explanation": "Both terms share the factor $\\ln 4$; taking it out makes the stationary condition easy to solve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the derivative to zero",
+        "workingLatex": "\\ln 4 \\ne 0 \\Rightarrow 4^{x} - 1 = 0 \\Rightarrow 4^{x} = 1",
+        "explanation": "Since $\\ln 4$ is a positive constant, the gradient is zero only when the bracket is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for x",
+        "workingLatex": "4^{x} = 4^{0} \\Rightarrow x = 0",
+        "explanation": "Any nonzero base raised to the power $0$ equals $1$, so $4^{x}=1$ gives $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = 4^{0} - 0\\cdot\\ln 4 = 1 \\quad\\Rightarrow\\quad (0,\\, 1)",
+        "explanation": "Substituting $x=0$ into the curve gives the exact coordinates of the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Differentiate again for the second derivative",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = \\ln 4\\,(4^{x}\\ln 4) = (\\ln 4)^{2}\\,4^{x}",
+        "explanation": "Differentiating $\\ln 4\\,(4^{x}-1)$ gives $\\ln 4$ times $4^{x}\\ln 4$; the constant $-1$ contributes nothing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate the second derivative",
+        "workingLatex": "x=0:\\ (\\ln 4)^{2}\\cdot 4^{0} = (\\ln 4)^{2} > 0 \\Rightarrow \\text{minimum}",
+        "explanation": "A squared quantity times a positive power is positive, so the curve is concave up and the point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm with a sign argument",
+        "workingLatex": "x < 0:\\ 4^{x} < 1 \\Rightarrow \\frac{dy}{dx} < 0; \\quad x > 0:\\ 4^{x} > 1 \\Rightarrow \\frac{dy}{dx} > 0",
+        "explanation": "The curve falls before $x=0$ and rises after it, which independently confirms a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the minimum value",
+        "workingLatex": "\\text{minimum value } y = 1, \\ \\text{so } y \\ge 1 \\ \\text{for all } x",
+        "explanation": "Because there is a single turning point and the curve falls then rises, $y=1$ is the lowest value the curve reaches.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Numerical check of the second derivative",
+        "workingLatex": "\\ln 4 \\approx 1.386, \\quad (\\ln 4)^{2} \\approx 1.922 > 0",
+        "explanation": "The second derivative is comfortably positive, consistent with a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Verify the gradient is zero at x = 0",
+        "workingLatex": "\\ln 4\\,(4^{0} - 1) = \\ln 4\\,(0) = 0 \\;\\checkmark",
+        "explanation": "Substituting $x=0$ into the factorised derivative gives zero, confirming the stationary point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Note an equivalent tidy form",
+        "workingLatex": "\\ln 4 = 2\\ln 2 \\ \\Rightarrow\\ \\frac{dy}{dx} = 2\\ln 2\\,(4^{x}-1)",
+        "explanation": "Writing $\\ln 4 = 2\\ln 2$ is a neat equivalent form and a useful sanity check on the constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Restate the classified stationary point",
+        "workingLatex": "\\text{minimum at } (0,\\, 1)",
+        "explanation": "The point $(0,1)$ is the global minimum of the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "\\text{Minimum } (0,\\,1), \\quad y_{\\min} = 1",
+        "explanation": "This gives the exact coordinates, the confirmed classification, and the minimum value.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The stationary point is $(0,\\,1)$; since $\\dfrac{d^{2}y}{dx^{2}}=(\\ln 4)^{2}>0$ it is a minimum, and the minimum value of $y$ is $1$."
+  }
+}

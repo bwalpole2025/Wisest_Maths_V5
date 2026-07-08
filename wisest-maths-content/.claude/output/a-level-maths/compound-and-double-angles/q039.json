@@ -4,90 +4,103 @@
   "topic": "Year 2 Pure",
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
-  "difficulty": "Hard",
-  "marks": 8,
+  "difficulty": "Intermediate",
+  "marks": 5,
   "answerType": "proof",
   "tags": [
+    "compound angle",
     "triple angle",
-    "identities",
-    "proof",
-    "cosine"
+    "proof"
   ],
-  "questionText": "Prove that $\\cos 3\\theta \\equiv 4\\cos^3\\theta - 3\\cos\\theta$.",
+  "questionText": "Prove that $\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
         "description": "Split the triple angle",
-        "workingLatex": "\\cos 3\\theta = \\cos(2\\theta + \\theta)",
-        "explanation": "Writing $3\\theta$ as $2\\theta + \\theta$ enables the addition and double angle formulae.",
+        "workingLatex": "\\sin 3\\theta = \\sin(2\\theta + \\theta)",
+        "explanation": "We only have addition and double-angle formulae, so we write $3\\theta$ as the compound angle $2\\theta + \\theta$ to make them apply.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the cosine addition formula",
-        "workingLatex": "= \\cos 2\\theta\\cos\\theta - \\sin 2\\theta\\sin\\theta",
-        "explanation": "Expanding with $A = 2\\theta$ and $B = \\theta$.",
+        "description": "Apply the sine addition formula",
+        "workingLatex": "\\sin(2\\theta + \\theta) = \\sin 2\\theta\\cos\\theta + \\cos 2\\theta\\sin\\theta",
+        "explanation": "Using $\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B$ with $A = 2\\theta$ and $B = \\theta$ expands the compound angle.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Choose the cosine form for cos 2θ",
-        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
-        "explanation": "Since the target is in cosine only, this form is the right choice.",
+        "description": "Substitute the sine double angle",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "Replacing $\\sin 2\\theta$ moves everything towards single-angle ratios.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Substitute the sine double angle",
-        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "Replacing $\\sin 2\\theta$ prepares the second term.",
+        "description": "Choose a sine-only cos 2theta",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
+        "explanation": "Because the target answer is written purely in $\\sin\\theta$, we pick the version of $\\cos 2\\theta$ that contains only sine.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute both",
-        "workingLatex": "= (2\\cos^2\\theta - 1)\\cos\\theta - (2\\sin\\theta\\cos\\theta)\\sin\\theta",
-        "explanation": "Inserting both expansions gives an expression in sine and cosine.",
+        "description": "Substitute both double angles",
+        "workingLatex": "\\sin 3\\theta = (2\\sin\\theta\\cos\\theta)\\cos\\theta + (1 - 2\\sin^2\\theta)\\sin\\theta",
+        "explanation": "Putting both expansions in place gives an expression in $\\sin\\theta$ and $\\cos\\theta$ only.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Multiply out",
-        "workingLatex": "= 2\\cos^3\\theta - \\cos\\theta - 2\\sin^2\\theta\\cos\\theta",
-        "explanation": "Expanding each product gives a cubic cosine term and a sine-squared term.",
+        "description": "Expand the brackets",
+        "workingLatex": "= 2\\sin\\theta\\cos^2\\theta + \\sin\\theta - 2\\sin^3\\theta",
+        "explanation": "Multiplying out each product separates the terms so we can deal with the remaining $\\cos^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Replace sine squared",
-        "workingLatex": "\\sin^2\\theta = 1 - \\cos^2\\theta",
-        "explanation": "Using the Pythagorean identity converts the sine-squared term into cosine.",
+        "description": "Replace cos squared with sine",
+        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta",
+        "explanation": "The Pythagorean identity converts the last cosine term into sine so the whole answer is in $\\sin\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Substitute",
-        "workingLatex": "= 2\\cos^3\\theta - \\cos\\theta - 2(1 - \\cos^2\\theta)\\cos\\theta",
-        "explanation": "Now every term is in cosine.",
+        "description": "Substitute for cos squared",
+        "workingLatex": "= 2\\sin\\theta(1 - \\sin^2\\theta) + \\sin\\theta - 2\\sin^3\\theta",
+        "explanation": "Only sines remain now; expanding the bracket will let us collect like terms.",
         "diagram": null
       },
       {
         "stepNumber": 9,
-        "description": "Expand the bracket",
-        "workingLatex": "= 2\\cos^3\\theta - \\cos\\theta - 2\\cos\\theta + 2\\cos^3\\theta",
-        "explanation": "Distributing $-2\\cos\\theta$ over the bracket.",
+        "description": "Expand the remaining bracket",
+        "workingLatex": "= 2\\sin\\theta - 2\\sin^3\\theta + \\sin\\theta - 2\\sin^3\\theta",
+        "explanation": "Distributing $2\\sin\\theta$ across $(1 - \\sin^2\\theta)$ gives $2\\sin\\theta - 2\\sin^3\\theta$, leaving four terms to gather.",
         "diagram": null
       },
       {
         "stepNumber": 10,
         "description": "Collect like terms",
-        "workingLatex": "= 4\\cos^3\\theta - 3\\cos\\theta \\;\\blacksquare",
-        "explanation": "Combining the cubic and linear cosine terms gives the right-hand side, completing the proof.",
+        "workingLatex": "= 3\\sin\\theta - 4\\sin^3\\theta",
+        "explanation": "The sine terms give $2\\sin\\theta + \\sin\\theta = 3\\sin\\theta$ and the cubic terms give $-2\\sin^3\\theta - 2\\sin^3\\theta = -4\\sin^3\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Numerical check at theta = 30 degrees",
+        "workingLatex": "\\sin 90^\\circ = 1, \\quad 3\\sin 30^\\circ - 4\\sin^3 30^\\circ = \\tfrac{3}{2} - 4\\cdot\\tfrac{1}{8} = 1",
+        "explanation": "At $\\theta = 30^\\circ$ the left side is $\\sin 90^\\circ = 1$ and the right side also equals $1$, supporting the identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Conclude the proof",
+        "workingLatex": "\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta \\quad \\blacksquare",
+        "explanation": "The LHS reduces to the RHS for all $\\theta$, so the identity is proved.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\cos 3\\theta \\equiv 4\\cos^3\\theta - 3\\cos\\theta$"
+    "finalAnswer": "Writing $\\sin 3\\theta = \\sin(2\\theta + \\theta)$ and expanding with the addition and double-angle formulae, then using $\\cos^2\\theta = 1 - \\sin^2\\theta$, gives $3\\sin\\theta - 4\\sin^3\\theta$, so $\\sin 3\\theta \\equiv 3\\sin\\theta - 4\\sin^3\\theta$."
   }
 }

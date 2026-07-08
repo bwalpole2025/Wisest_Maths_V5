@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.product-quotient-chain.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Product, quotient and chain rules",
+  "subtopicId": "al.y2.pure.product-quotient-chain",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "product rule",
+    "trigonometry",
+    "differentiation"
+  ],
+  "questionText": "Given that $y = (2x-1)\\cos x$, where $x$ is in radians, find $\\dfrac{dy}{dx}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a product and state the rule",
+        "workingLatex": "\\frac{d}{dx}(uv) = u'v + uv'",
+        "explanation": "$y = (2x-1)\\cos x$ is a product of $(2x-1)$ and $\\cos x$, so we differentiate with the product rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Label the two factors",
+        "workingLatex": "u = 2x - 1, \\qquad v = \\cos x",
+        "explanation": "We set $u = 2x - 1$ and $v = \\cos x$ ready to substitute into the rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the first factor",
+        "workingLatex": "u' = 2",
+        "explanation": "Differentiating $2x - 1$ gives $2$, since the constant $-1$ disappears.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the second factor",
+        "workingLatex": "v' = -\\sin x",
+        "explanation": "The derivative of $\\cos x$ is $-\\sin x$; the minus sign is important to carry through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the product rule",
+        "workingLatex": "\\frac{dy}{dx} = (2)\\cos x + (2x-1)(-\\sin x)",
+        "explanation": "Substituting into $u'v + uv'$ gives one term from differentiating the bracket and one from differentiating $\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Tidy the signs",
+        "workingLatex": "\\frac{dy}{dx} = 2\\cos x - (2x-1)\\sin x",
+        "explanation": "Writing $+ (2x-1)(-\\sin x)$ as $- (2x-1)\\sin x$ removes the double sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the derivative",
+        "workingLatex": "\\frac{dy}{dx} = 2\\cos x - (2x-1)\\sin x",
+        "explanation": "This is the fully simplified derivative of $y = (2x-1)\\cos x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 2\\cos x - (2x-1)\\sin x$."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.implicit.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "implicit differentiation",
+    "product rule",
+    "chain rule"
+  ],
+  "questionText": "A curve has equation $x^2 + 3xy + y^2 = 5$. Find $\\dfrac{dy}{dx}$ in terms of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate every term with respect to x",
+        "workingLatex": "\\frac{d}{dx}(x^2) + \\frac{d}{dx}(3xy) + \\frac{d}{dx}(y^2) = \\frac{d}{dx}(5)",
+        "explanation": "We differentiate the whole equation with respect to $x$, remembering that $y$ is a function of $x$. The constant on the right gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the x^2 term and the constant",
+        "workingLatex": "2x + \\frac{d}{dx}(3xy) + \\frac{d}{dx}(y^2) = 0",
+        "explanation": "The power rule gives $2x$ from $x^2$, and the constant $5$ differentiates to $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the 3xy term with the product rule",
+        "workingLatex": "\\frac{d}{dx}(3xy) = 3\\left(y + x\\frac{dy}{dx}\\right) = 3y + 3x\\frac{dy}{dx}",
+        "explanation": "The constant $3$ stays outside. The product $xy$ differentiates to $y + x\\frac{dy}{dx}$, so multiplying by $3$ gives $3y + 3x\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Differentiate the y^2 term with the chain rule",
+        "workingLatex": "\\frac{d}{dx}(y^2) = 2y\\frac{dy}{dx}",
+        "explanation": "By the chain rule, $y^2$ gives $2y$ times $\\frac{dy}{dx}$, since $y$ is a function of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Assemble the differentiated equation",
+        "workingLatex": "2x + 3y + 3x\\frac{dy}{dx} + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Combining all the differentiated terms gives a single equation involving $\\frac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect the dy/dx terms",
+        "workingLatex": "(3x + 2y)\\frac{dy}{dx} = -(2x + 3y)",
+        "explanation": "Factor $\\frac{dy}{dx}$ out of the two terms that contain it, and move the rest to the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2x + 3y}{3x + 2y}",
+        "explanation": "Dividing by $(3x + 2y)$ isolates the gradient function of the curve.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = -\\dfrac{2x + 3y}{3x + 2y}$."
+  }
+}

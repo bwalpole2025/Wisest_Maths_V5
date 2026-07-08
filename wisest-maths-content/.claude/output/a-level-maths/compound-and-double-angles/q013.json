@@ -5,61 +5,67 @@
   "subtopic": "Compound and double angles",
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Easy",
-  "marks": 4,
-  "answerType": "value",
+  "marks": 3,
+  "answerType": "exact",
   "tags": [
-    "compound angles",
+    "compound angle",
     "exact values",
-    "surds",
-    "sine"
+    "radians"
   ],
-  "questionText": "Find the exact value of $\\sin 15^\\circ$, writing $15^\\circ = 45^\\circ - 30^\\circ$.",
+  "questionText": "Find the exact value of $\\cos\\dfrac{\\pi}{12}$ by writing $\\dfrac{\\pi}{12}$ as a difference of two standard angles.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Split the angle",
-        "workingLatex": "15^\\circ = 45^\\circ - 30^\\circ",
-        "explanation": "Writing $15^\\circ$ as a difference of standard angles lets us use exact values.",
+        "description": "Split the angle into standard parts",
+        "workingLatex": "\\frac{\\pi}{12} = \\frac{3\\pi}{12} - \\frac{2\\pi}{12} = \\frac{\\pi}{4} - \\frac{\\pi}{6}",
+        "explanation": "We choose two angles with known ratios whose difference is $\\frac{\\pi}{12}$. Over a denominator of $12$, $\\frac{\\pi}{4}=\\frac{3\\pi}{12}$ and $\\frac{\\pi}{6}=\\frac{2\\pi}{12}$, and their difference is exactly $\\frac{\\pi}{12}$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the sine subtraction formula",
-        "workingLatex": "\\sin 15^\\circ = \\sin 45^\\circ\\cos 30^\\circ - \\cos 45^\\circ\\sin 30^\\circ",
-        "explanation": "For sine, the minus inside the bracket gives a minus between the two products.",
+        "description": "Apply the cosine subtraction formula",
+        "workingLatex": "\\cos\\left(\\frac{\\pi}{4} - \\frac{\\pi}{6}\\right) = \\cos\\frac{\\pi}{4}\\cos\\frac{\\pi}{6} + \\sin\\frac{\\pi}{4}\\sin\\frac{\\pi}{6}",
+        "explanation": "Because the angle is a difference, we use $\\cos(A-B)=\\cos A\\cos B+\\sin A\\sin B$ with $A=\\frac{\\pi}{4}$ and $B=\\frac{\\pi}{6}$. Note the sign on the right is plus, the opposite of the minus inside the bracket.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute the exact values",
-        "workingLatex": "= \\frac{\\sqrt2}{2}\\cdot\\frac{\\sqrt3}{2} - \\frac{\\sqrt2}{2}\\cdot\\frac{1}{2}",
-        "explanation": "Inserting the standard exact values prepares the arithmetic.",
+        "description": "Quote the standard exact values",
+        "workingLatex": "\\cos\\frac{\\pi}{4} = \\sin\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2}, \\quad \\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}, \\quad \\sin\\frac{\\pi}{6} = \\frac{1}{2}",
+        "explanation": "These come straight from the $45^\\circ$ and $30^\\circ$ triangles, written in radians so they slot into the formula.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Multiply out",
-        "workingLatex": "= \\frac{\\sqrt6}{4} - \\frac{\\sqrt2}{4}",
-        "explanation": "Each product simplifies to a surd over $4$.",
+        "description": "Substitute the exact values",
+        "workingLatex": "= \\frac{\\sqrt{2}}{2}\\cdot\\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2}\\cdot\\frac{1}{2}",
+        "explanation": "Substituting each ratio turns the trigonometric expression into surd multiplication.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Combine",
-        "workingLatex": "= \\frac{\\sqrt6 - \\sqrt2}{4}",
-        "explanation": "The matching denominators allow the numerators to combine.",
+        "description": "Multiply out each product",
+        "workingLatex": "= \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4}",
+        "explanation": "The first product gives $\\sqrt{2}\\times\\sqrt{3}=\\sqrt{6}$ over $4$, and the second gives $\\sqrt{2}$ over $4$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Relate to a known value",
-        "workingLatex": "\\sin 15^\\circ = \\cos 75^\\circ \\approx 0.259",
-        "explanation": "The value matches $\\cos 75^\\circ$ found earlier, a good consistency check via the cofunction relationship.",
+        "description": "Combine over the common denominator",
+        "workingLatex": "= \\frac{\\sqrt{6} + \\sqrt{2}}{4}",
+        "explanation": "With a shared denominator of $4$ the numerators add directly, giving the exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check the size of the answer",
+        "workingLatex": "\\frac{\\sqrt{6}+\\sqrt{2}}{4} \\approx 0.966",
+        "explanation": "A decimal check gives about $0.966$, which is reasonable for the cosine of a small angle close to $0$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\sin 15^\\circ = \\dfrac{\\sqrt6 - \\sqrt2}{4}$"
+    "finalAnswer": "$\\cos\\dfrac{\\pi}{12} = \\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$."
   }
 }

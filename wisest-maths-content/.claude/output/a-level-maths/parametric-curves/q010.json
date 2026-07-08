@@ -5,53 +5,60 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Easy",
-  "marks": 4,
-  "answerType": "expression",
+  "marks": 3,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "square root"
+    "eliminating the parameter",
+    "trig identity",
+    "circle"
   ],
-  "questionText": "A curve has parametric equations $x = t^2$, $y = t$ for $t \\ge 0$. Find the Cartesian equation and state the domain.",
+  "questionText": "A curve has parametric equations $x = \\cos t$ and $y = \\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve and describe it.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Make t the subject of the y-equation",
-        "workingLatex": "t = y",
-        "explanation": "Since $y = t$, the parameter equals $y$, which is the simplest substitution.",
+        "description": "Identify the trig functions",
+        "workingLatex": "x = \\cos t, \\qquad y = \\sin t",
+        "explanation": "To remove $t$ we look for an identity that links $\\sin t$ and $\\cos t$. Here $x$ is exactly $\\cos t$ and $y$ is exactly $\\sin t$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the x-equation",
-        "workingLatex": "x = y^2",
-        "explanation": "Replacing $t$ with $y$ in $x = t^2$ gives a relationship between $x$ and $y$.",
+        "description": "Square the x-equation",
+        "workingLatex": "x^{2} = \\cos^{2} t",
+        "explanation": "Squaring the $x$-equation produces $\\cos^{2} t$, one of the two terms in the identity we will use.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Consider the restriction on t",
-        "workingLatex": "t \\ge 0 \\;\\Rightarrow\\; y \\ge 0",
-        "explanation": "Since $y = t$ and $t \\ge 0$, the curve only includes points with $y \\ge 0$.",
+        "description": "Square the y-equation",
+        "workingLatex": "y^{2} = \\sin^{2} t",
+        "explanation": "Squaring the $y$-equation produces $\\sin^{2} t$, the other term in the identity.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Express y explicitly if required",
-        "workingLatex": "y = \\sqrt{x}",
-        "explanation": "For $y \\ge 0$, taking the positive root of $x = y^2$ gives $y = \\sqrt{x}$, the upper half of the sideways parabola.",
+        "description": "Recall the Pythagorean identity",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "This identity is true for every value of $t$, so it lets us eliminate the parameter completely.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer with domain",
-        "workingLatex": "x = y^2, \\; y \\ge 0 \\quad (\\text{i.e. } y = \\sqrt x, \\; x \\ge 0)",
-        "explanation": "The restriction is essential; without it the whole sideways parabola would be included.",
+        "description": "Add the squared equations",
+        "workingLatex": "x^{2} + y^{2} = \\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "Adding the squared equations, the right-hand side becomes the identity, which equals $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State and describe the curve",
+        "workingLatex": "x^{2} + y^{2} = 1",
+        "explanation": "This is a circle centred at the origin with radius $1$. As $t$ runs from $0$ to $2\\pi$ the point traces the whole circle once.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x = y^2$ with $y \\ge 0$ (equivalently $y = \\sqrt{x}$, $x \\ge 0$)."
+    "finalAnswer": "$x^{2} + y^{2} = 1$ — a circle centred at the origin with radius $1$."
   }
 }

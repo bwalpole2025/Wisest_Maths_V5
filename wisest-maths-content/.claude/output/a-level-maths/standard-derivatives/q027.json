@@ -1,0 +1,106 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "parallel"
+  ],
+  "questionText": "The curve $C$ has equation $y = e^{2x}$. The tangent to $C$ at a point $P$ is parallel to the line $y = 4x - 1$. Find the coordinates of $P$ and an equation of this tangent, giving your answers in exact form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use that parallel lines share the same gradient",
+        "workingLatex": "m = 4",
+        "explanation": "The line $y=4x-1$ has gradient $4$. A tangent parallel to it must also have gradient $4$, so we look for where $\\tfrac{dy}{dx}=4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the standard derivative of e^{2x}",
+        "workingLatex": "\\frac{d}{dx}\\left(e^{2x}\\right) = 2e^{2x}",
+        "explanation": "This is the standard result $\\tfrac{d}{dx}(e^{kx})=k\\,e^{kx}$ with $k=2$; it is quoted directly, not derived from a chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = 2e^{2x}",
+        "explanation": "This gives the gradient of the curve at any value of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the gradient equal to 4",
+        "workingLatex": "2e^{2x} = 4",
+        "explanation": "We require the point $P$ where the tangent gradient is $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the exponential equation",
+        "workingLatex": "e^{2x} = 2",
+        "explanation": "Dividing both sides by $2$ isolates the exponential.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Take natural logarithms",
+        "workingLatex": "2x = \\ln 2",
+        "explanation": "Applying $\\ln$ to both sides undoes the exponential.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x",
+        "workingLatex": "x = \\tfrac{1}{2}\\ln 2",
+        "explanation": "Dividing by $2$ gives the exact $x$-coordinate of $P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{2x} = 2",
+        "explanation": "From step $5$, $e^{2x}=2$ at this point, so the $y$-coordinate is exactly $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the point P",
+        "workingLatex": "P\\left(\\tfrac{1}{2}\\ln 2,\\ 2\\right)",
+        "explanation": "This is where the curve has gradient $4$, matching the given line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Use the point–gradient form",
+        "workingLatex": "y - 2 = 4\\left(x - \\tfrac{1}{2}\\ln 2\\right)",
+        "explanation": "Substitute $P$ and $m=4$ into $y - y_1 = m(x - x_1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Expand and simplify",
+        "workingLatex": "y = 4x - 2\\ln 2 + 2",
+        "explanation": "Multiplying out: $4 \\times \\tfrac{1}{2}\\ln 2 = 2\\ln 2$, giving the tangent in exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check the tangent passes through P",
+        "workingLatex": "x=\\tfrac{1}{2}\\ln 2:\\ 4\\left(\\tfrac{1}{2}\\ln 2\\right) - 2\\ln 2 + 2 = 2 \\ \\checkmark",
+        "explanation": "The line gives $y=2$ at $P$ and has gradient $4$, so it is the required tangent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P\\left(\\dfrac{1}{2}\\ln 2,\\ 2\\right)$; tangent $y = 4x - 2\\ln 2 + 2$."
+  }
+}

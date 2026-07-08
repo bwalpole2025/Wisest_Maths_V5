@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.stats.normal-distribution.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "inverse normal",
+    "percentiles"
+  ],
+  "questionText": "The lengths, $X$ mm, of machined components are modelled by $X \\sim N(\\mu, \\sigma^2)$. Inspection shows that $5\\%$ of components are shorter than $49.0$ mm and $20\\%$ are longer than $51.5$ mm. (a) Find $\\mu$ and $\\sigma$ to $3$ significant figures. (b) The longest $5\\%$ of components are set aside. Find the length above which a component is set aside.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and the two given facts",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 49.0) = 0.05, \\qquad P(X > 51.5) = 0.20",
+        "explanation": "Lengths are normal with unknown $\\mu$ and $\\sigma$. ‘$5\\%$ shorter than $49.0$’ gives $P(X<49.0)=0.05$ and ‘$20\\%$ longer than $51.5$’ gives $P(X>51.5)=0.20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{49.0 - \\mu}{\\sigma}\\right) = 0.05",
+        "explanation": "Standardising $49.0$ with $Z=\\dfrac{X-\\mu}{\\sigma}$ keeps the lower-tail area at $0.05$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first z-value",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.05) = -1.6449",
+        "explanation": "With only $5\\%$ of the area below it, this point lies well into the left tail, so the standardised value is a sizeable negative number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation",
+        "workingLatex": "\\dfrac{49.0 - \\mu}{\\sigma} = -1.6449",
+        "explanation": "Equating the standardised value of $49.0$ with $z_1$ gives the first equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Convert and standardise the second condition",
+        "workingLatex": "P(X < 51.5) = 1 - 0.20 = 0.80 \\ \\Rightarrow\\ z_2 = \\Phi^{-1}(0.80) = 0.8416",
+        "explanation": "Since $20\\%$ exceed $51.5$, exactly $80\\%$ fall below it; converting to the lower tail lets us read $z_2 = 0.8416$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the second equation",
+        "workingLatex": "\\dfrac{51.5 - \\mu}{\\sigma} = 0.8416",
+        "explanation": "Equating the standardised value of $51.5$ with $z_2$ gives the second simultaneous equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "51.5 - 49.0 = (0.8416 - (-1.6449))\\,\\sigma \\ \\Rightarrow\\ 2.5 = 2.4865\\,\\sigma",
+        "explanation": "Subtracting the two ‘value $-\\ \\mu = z\\sigma$’ forms cancels $\\mu$; the $2.5$ mm gap spans about $2.49$ standard deviations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{2.5}{2.4865} = 1.005",
+        "explanation": "Dividing the length gap by the standardised gap gives a standard deviation of about $1.01$ mm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 49.0 + 1.6449 \\times 1.005 = 50.65",
+        "explanation": "From the first equation $\\mu = 49.0 + 1.6449\\,\\sigma$. The mean of about $50.7$ mm lies above $49.0$, consistent with only $5\\%$ being shorter than $49.0$ mm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the parameters (part a)",
+        "workingLatex": "\\mu \\approx 50.7, \\qquad \\sigma \\approx 1.01",
+        "explanation": "To three significant figures the model is $X \\sim N(50.7,\\ 1.01^2)$ mm, answering part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Interpret part (b) as an inverse-normal problem",
+        "workingLatex": "P(X > a) = 0.05 \\ \\Rightarrow\\ P(X < a) = 0.95",
+        "explanation": "‘The longest $5\\%$ are set aside’ means we need the length $a$ exceeded by only $5\\%$ of components, so $95\\%$ lie below $a$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find the required z-value",
+        "workingLatex": "z = \\Phi^{-1}(0.95) = 1.6449",
+        "explanation": "The standardised value with $95\\%$ of the area below it is $1.6449$, sitting well to the right of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Write the standardisation equation for a",
+        "workingLatex": "\\dfrac{a - 50.7}{1.01} = 1.6449",
+        "explanation": "Standardising the unknown length $a$ and setting it equal to the $z$ we found links $a$ to the parameters.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Solve for a",
+        "workingLatex": "a = 50.7 + 1.01 \\times 1.6449 = 52.36",
+        "explanation": "Undoing the standardisation — multiply by $\\sigma$ and add $\\mu$ — gives the cut-off length in millimetres.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the answer",
+        "workingLatex": "a \\approx 52.4 \\text{ mm}",
+        "explanation": "Components longer than about $52.4$ mm form the top $5\\%$ and are set aside; the value lies above the mean, as expected for an upper cut-off.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\mu \\approx 50.7$ mm, $\\sigma \\approx 1.01$ mm. (b) components longer than $a \\approx 52.4$ mm are set aside."
+  }
+}

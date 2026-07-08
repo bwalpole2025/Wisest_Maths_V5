@@ -5,75 +5,124 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "proof",
+  "marks": 6,
+  "answerType": "expression",
   "tags": [
-    "identities",
-    "proof",
-    "cosecant",
-    "cotangent"
+    "inverse trig",
+    "arctan",
+    "sec",
+    "expression"
   ],
-  "questionText": "Prove that $\\dfrac{\\sin\\theta}{1 - \\cos\\theta} \\equiv \\csc\\theta + \\cot\\theta$.",
+  "questionText": "Show that $\\sec(\\arctan x) = \\sqrt{1 + x^2}$ for all real $x$, and hence find the exact value of $\\sec\\!\\left(\\arctan\\tfrac{3}{4}\\right)$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\frac{\\sin\\theta}{1 - \\cos\\theta}",
-        "explanation": "The denominator $1 - \\cos\\theta$ suggests multiplying by the conjugate $1 + \\cos\\theta$ to create a difference of squares.",
+        "description": "Introduce the inner angle",
+        "workingLatex": "\\text{Let } \\beta = \\arctan x, \\quad \\tan\\beta = x, \\quad \\beta \\in \\left(-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right)",
+        "explanation": "Naming the inverse-tangent output $\\beta$ turns $\\sec(\\arctan x)$ into $\\sec\\beta$, an ordinary secant to evaluate.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Multiply top and bottom by the conjugate",
-        "workingLatex": "= \\frac{\\sin\\theta}{1 - \\cos\\theta}\\times\\frac{1 + \\cos\\theta}{1 + \\cos\\theta}",
-        "explanation": "Multiplying by $\\frac{1 + \\cos\\theta}{1 + \\cos\\theta}$ equals multiplying by $1$ and will simplify the denominator.",
+        "description": "State the goal",
+        "workingLatex": "\\text{Find } \\sec\\beta \\text{ in terms of } x",
+        "explanation": "Since $\\tan\\beta=x$ is known, the Pythagorean identity linking tangent and secant is the natural tool.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand the denominator",
-        "workingLatex": "(1 - \\cos\\theta)(1 + \\cos\\theta) = 1 - \\cos^2\\theta",
-        "explanation": "The conjugate product is a difference of squares.",
+        "description": "Fix the sign of sec beta",
+        "workingLatex": "\\beta \\in \\left(-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right) \\ \\Rightarrow\\ \\cos\\beta > 0 \\ \\Rightarrow\\ \\sec\\beta > 0",
+        "explanation": "Across the whole range of $\\arctan$, cosine is positive, so its reciprocal secant is positive too. This tells us which square root to keep later.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "1 - \\cos^2\\theta = \\sin^2\\theta",
-        "explanation": "The denominator becomes $\\sin^2\\theta$, which will cancel against the sine on top.",
+        "description": "Recall the Pythagorean identity",
+        "workingLatex": "1 + \\tan^2\\beta \\equiv \\sec^2\\beta",
+        "explanation": "Dividing $\\sin^2\\beta+\\cos^2\\beta\\equiv1$ by $\\cos^2\\beta$ produces the identity connecting $\\tan\\beta$ and $\\sec\\beta$ directly.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Rewrite the fraction",
-        "workingLatex": "= \\frac{\\sin\\theta(1 + \\cos\\theta)}{\\sin^2\\theta}",
-        "explanation": "The numerator is $\\sin\\theta(1 + \\cos\\theta)$ and the denominator is $\\sin^2\\theta$.",
+        "description": "Substitute tan beta equals x",
+        "workingLatex": "\\sec^2\\beta = 1 + x^2",
+        "explanation": "Replacing $\\tan\\beta$ with $x$ expresses $\\sec^2\\beta$ purely in terms of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Cancel one factor of sine",
-        "workingLatex": "= \\frac{1 + \\cos\\theta}{\\sin\\theta}",
-        "explanation": "Cancelling a common sine leaves a single sine in the denominator.",
+        "description": "Take the positive root",
+        "workingLatex": "\\sec\\beta = +\\sqrt{1 + x^2}",
+        "explanation": "The sign reasoning in Step 3 selects the positive root, so $\\sec\\beta=\\sqrt{1+x^2}$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Split the fraction",
-        "workingLatex": "= \\frac{1}{\\sin\\theta} + \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Separating the numerator into two fractions exposes the two reciprocal functions.",
+        "description": "State the composition result",
+        "workingLatex": "\\sec(\\arctan x) = \\sqrt{1 + x^2}",
+        "explanation": "This is the required simplified form of the composition.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Recognise the functions and conclude",
-        "workingLatex": "= \\csc\\theta + \\cot\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "One over sine is cosecant and cosine over sine is cotangent, giving exactly the right-hand side and completing the proof.",
+        "description": "State the domain",
+        "workingLatex": "x \\in \\mathbb{R}",
+        "explanation": "The inner function $\\arctan x$ accepts every real number, and $1+x^2\\ge1>0$ always, so the result is valid for all real $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Note the even symmetry",
+        "workingLatex": "\\sec(\\arctan(-x)) = \\sqrt{1 + x^2} = \\sec(\\arctan x)",
+        "explanation": "The expression $\\sqrt{1+x^2}$ is unchanged by replacing $x$ with $-x$, consistent with $\\sec\\beta$ being an even function of $\\beta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Right-triangle picture",
+        "workingLatex": "\\text{For } x > 0:\\ \\text{opposite} = x, \\ \\text{adjacent} = 1, \\ \\text{hypotenuse} = \\sqrt{1 + x^2}",
+        "explanation": "For positive $x$, $\\tan\\beta=\\dfrac{x}{1}$ fits a right triangle with legs $x$ and $1$, whose hypotenuse is $\\sqrt{1+x^2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Confirm sec from the triangle",
+        "workingLatex": "\\sec\\beta = \\frac{\\text{hypotenuse}}{\\text{adjacent}} = \\frac{\\sqrt{1 + x^2}}{1} = \\sqrt{1 + x^2}",
+        "explanation": "Secant is hypotenuse over adjacent, which agrees with the identity-based result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Evaluate at x equals three quarters",
+        "workingLatex": "\\sec\\!\\left(\\arctan\\tfrac{3}{4}\\right) = \\sqrt{1 + \\left(\\tfrac{3}{4}\\right)^2}",
+        "explanation": "Substituting $x=\\tfrac34$ into the general formula gives a specific value to compute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Simplify inside the root",
+        "workingLatex": "= \\sqrt{1 + \\tfrac{9}{16}} = \\sqrt{\\tfrac{25}{16}}",
+        "explanation": "Adding $1=\\tfrac{16}{16}$ to $\\tfrac{9}{16}$ gives $\\tfrac{25}{16}$, a perfect square over a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Take the root",
+        "workingLatex": "= \\tfrac{5}{4}",
+        "explanation": "Both numerator and denominator are perfect squares, so the root is exact: $\\sec\\!\\big(\\arctan\\tfrac34\\big)=\\tfrac54$. The $3$-$4$-$5$ triangle confirms this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the results",
+        "workingLatex": "\\sec(\\arctan x) = \\sqrt{1 + x^2} \\ (x \\in \\mathbb{R}), \\qquad \\sec\\!\\left(\\arctan\\tfrac{3}{4}\\right) = \\tfrac{5}{4}",
+        "explanation": "The general identity and the specific value together form the complete answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{\\sin\\theta}{1 - \\cos\\theta} \\equiv \\csc\\theta + \\cot\\theta$"
+    "finalAnswer": "$\\sec(\\arctan x)=\\sqrt{1+x^2}$ for all real $x$ (the positive root is taken since $\\cos\\beta>0$ on the range of $\\arctan$), and $\\sec\\!\\big(\\arctan\\tfrac34\\big)=\\tfrac54$."
   }
 }

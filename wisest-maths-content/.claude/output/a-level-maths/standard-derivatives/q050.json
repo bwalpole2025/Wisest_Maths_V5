@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "stationary point",
+    "second derivative",
+    "trigonometric"
+  ],
+  "questionText": "The curve $y = \\sin x + \\cos x$ is defined for $0 \\le x \\le 2\\pi$, with $x$ in radians. Find the stationary points and use the second derivative to classify each one.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function and interval",
+        "workingLatex": "y = \\sin x + \\cos x, \\quad 0 \\le x \\le 2\\pi",
+        "explanation": "Stationary points occur where the gradient is zero, so we differentiate first (with $x$ in radians).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = \\cos x - \\sin x",
+        "explanation": "Using $\\frac{d}{dx}(\\sin x)=\\cos x$ and $\\frac{d}{dx}(\\cos x)=-\\sin x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the gradient to zero",
+        "workingLatex": "\\cos x - \\sin x = 0 \\iff \\cos x = \\sin x",
+        "explanation": "At a stationary point the gradient is zero, so sine and cosine must be equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve",
+        "workingLatex": "\\tan x = 1 \\iff x = \\frac{\\pi}{4}, \\ \\frac{5\\pi}{4}",
+        "explanation": "Dividing by $\\cos x$ gives $\\tan x=1$; on $[0,2\\pi]$ this holds at $\\frac{\\pi}{4}$ and $\\frac{5\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the second derivative",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = -\\sin x - \\cos x",
+        "explanation": "Differentiating $\\cos x-\\sin x$ again: $\\frac{d}{dx}(\\cos x)=-\\sin x$ and $\\frac{d}{dx}(-\\sin x)=-\\cos x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Classify the first stationary point",
+        "workingLatex": "\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{x=\\pi/4} = -\\frac{\\sqrt{2}}{2} - \\frac{\\sqrt{2}}{2} = -\\sqrt{2} < 0",
+        "explanation": "At $x=\\frac{\\pi}{4}$ both $\\sin$ and $\\cos$ equal $\\frac{\\sqrt{2}}{2}$; the negative second derivative means a maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find its y-coordinate",
+        "workingLatex": "y = \\sin\\frac{\\pi}{4} + \\cos\\frac{\\pi}{4} = \\frac{\\sqrt{2}}{2} + \\frac{\\sqrt{2}}{2} = \\sqrt{2}",
+        "explanation": "Substituting $x=\\frac{\\pi}{4}$ into the curve gives the height of the maximum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Classify the second stationary point",
+        "workingLatex": "\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{x=5\\pi/4} = -\\left(-\\frac{\\sqrt{2}}{2}\\right) - \\left(-\\frac{\\sqrt{2}}{2}\\right) = \\sqrt{2} > 0",
+        "explanation": "At $x=\\frac{5\\pi}{4}$ both $\\sin$ and $\\cos$ equal $-\\frac{\\sqrt{2}}{2}$; the positive second derivative means a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find its y-coordinate",
+        "workingLatex": "y = \\sin\\frac{5\\pi}{4} + \\cos\\frac{5\\pi}{4} = -\\frac{\\sqrt{2}}{2} - \\frac{\\sqrt{2}}{2} = -\\sqrt{2}",
+        "explanation": "Substituting $x=\\frac{5\\pi}{4}$ into the curve gives the height of the minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{max } \\left(\\frac{\\pi}{4},\\ \\sqrt{2}\\right), \\quad \\text{min } \\left(\\frac{5\\pi}{4},\\ -\\sqrt{2}\\right)",
+        "explanation": "So the curve has a maximum at $\\left(\\frac{\\pi}{4},\\sqrt{2}\\right)$ and a minimum at $\\left(\\frac{5\\pi}{4},-\\sqrt{2}\\right)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum at $\\left(\\dfrac{\\pi}{4},\\ \\sqrt{2}\\right)$; minimum at $\\left(\\dfrac{5\\pi}{4},\\ -\\sqrt{2}\\right)$."
+  }
+}

@@ -5,60 +5,67 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Easy",
-  "marks": 4,
+  "marks": 3,
   "answerType": "expression",
   "tags": [
+    "r form",
     "harmonic form",
-    "Rcos",
-    "surds"
+    "exact values"
   ],
-  "questionText": "Express $5\\cos\\theta + 12\\sin\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving $\\alpha$ to the nearest degree.",
+  "questionText": "Express $\\sqrt{3}\\,\\sin\\theta + \\cos\\theta$ in the form $R\\sin(\\theta+\\alpha)$, where $R>0$ and $0^\\circ < \\alpha < 90^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Reorder to match the sine-first form",
-        "workingLatex": "5\\cos\\theta + 12\\sin\\theta = 12\\sin\\theta + 5\\cos\\theta",
-        "explanation": "Writing the sine term first makes the comparison with $R\\sin(\\theta + \\alpha)$ cleaner.",
+        "description": "Set up the identity to match",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta + \\cos\\theta \\equiv R\\sin(\\theta+\\alpha)",
+        "explanation": "We aim to combine the two terms into one sine wave. Writing the expression as $R\\sin(\\theta+\\alpha)$ and expanding will let us match coefficients on both sides.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Expand the target form",
-        "workingLatex": "R\\sin(\\theta + \\alpha) = R\\cos\\alpha\\sin\\theta + R\\sin\\alpha\\cos\\theta",
-        "explanation": "The expansion sets up the coefficient comparison.",
+        "description": "Expand the target with the addition formula",
+        "workingLatex": "R\\sin(\\theta+\\alpha) = R\\cos\\alpha\\,\\sin\\theta + R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Applying $\\sin(\\theta+\\alpha)=\\sin\\theta\\cos\\alpha+\\cos\\theta\\sin\\alpha$ writes the target as a multiple of $\\sin\\theta$ plus a multiple of $\\cos\\theta$, exactly the form of the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Compare coefficients",
-        "workingLatex": "R\\cos\\alpha = 12, \\quad R\\sin\\alpha = 5",
-        "explanation": "Matching the sine and cosine terms gives two equations.",
+        "description": "Compare coefficients of sinθ and cosθ",
+        "workingLatex": "R\\cos\\alpha = \\sqrt{3}, \\qquad R\\sin\\alpha = 1",
+        "explanation": "Matching the coefficient of $\\sin\\theta$ gives $R\\cos\\alpha=\\sqrt{3}$ and matching the coefficient of $\\cos\\theta$ gives $R\\sin\\alpha=1$. These two equations determine $R$ and $\\alpha$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find R",
-        "workingLatex": "R^2 = 12^2 + 5^2 = 169 \\;\\Rightarrow\\; R = 13",
-        "explanation": "The sum of squares gives $R = 13$ (a $5$-$12$-$13$ triangle).",
+        "description": "Find R using R² = a² + b²",
+        "workingLatex": "R = \\sqrt{(\\sqrt{3})^2 + 1^2} = \\sqrt{4} = 2",
+        "explanation": "Squaring and adding removes $\\alpha$ since $\\cos^2\\alpha+\\sin^2\\alpha=1$, leaving $R^2=3+1=4$. Taking the positive root gives the amplitude $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find alpha",
-        "workingLatex": "\\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\alpha \\approx 23^\\circ",
-        "explanation": "The ratio gives the tangent of $\\alpha$, and the inverse tangent gives about $23^\\circ$.",
+        "description": "Find α using tanα = b/a",
+        "workingLatex": "\\tan\\alpha = \\dfrac{1}{\\sqrt{3}} \\Rightarrow \\alpha = 30^\\circ",
+        "explanation": "Dividing the two equations cancels $R$ and gives $\\tan\\alpha=\\tfrac{1}{\\sqrt{3}}$. This is a standard exact value, so $\\alpha=30^\\circ$, which is acute as required.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the final form",
-        "workingLatex": "5\\cos\\theta + 12\\sin\\theta = 13\\sin(\\theta + 23^\\circ)",
-        "explanation": "Combining $R$ and $\\alpha$ gives the required form.",
+        "description": "State the R-form",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta + \\cos\\theta = 2\\sin(\\theta+30^\\circ)",
+        "explanation": "Combining the amplitude and phase gives the single-wave form. The expression therefore has maximum $2$ and minimum $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check by expanding back",
+        "workingLatex": "2\\sin(\\theta+30^\\circ) = 2\\left(\\dfrac{\\sqrt{3}}{2}\\sin\\theta + \\dfrac{1}{2}\\cos\\theta\\right) = \\sqrt{3}\\,\\sin\\theta + \\cos\\theta",
+        "explanation": "Expanding the answer returns the original expression, confirming the values of $R$ and $\\alpha$ are correct.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$5\\cos\\theta + 12\\sin\\theta = 13\\sin(\\theta + 23^\\circ)$"
+    "finalAnswer": "$\\sqrt{3}\\,\\sin\\theta + \\cos\\theta = 2\\sin(\\theta+30^\\circ)$."
   }
 }

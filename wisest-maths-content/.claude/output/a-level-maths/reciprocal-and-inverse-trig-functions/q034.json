@@ -5,68 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 6,
-  "answerType": "proof",
+  "marks": 4,
+  "answerType": "expression",
   "tags": [
-    "identities",
-    "proof",
-    "secant",
-    "cosecant"
+    "simplify",
+    "cot",
+    "cosec",
+    "pythagorean identity"
   ],
-  "questionText": "Prove that $\\tan\\theta + \\cot\\theta \\equiv \\sec\\theta\\csc\\theta$.",
+  "questionText": "Simplify fully $(1 + \\cot^2\\theta)\\sin^2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Start with the left-hand side",
-        "workingLatex": "\\text{LHS} = \\tan\\theta + \\cot\\theta",
-        "explanation": "We begin on the left and rewrite both terms in sine and cosine so they can be combined.",
+        "description": "State the expression and strategy",
+        "workingLatex": "(1 + \\cot^2\\theta)\\sin^2\\theta",
+        "explanation": "We simplify by recognising the bracket as a Pythagorean identity, then cancelling with the $\\sin^2\\theta$ outside.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rewrite in sine and cosine",
-        "workingLatex": "= \\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\cos\\theta}{\\sin\\theta}",
-        "explanation": "Tangent is sine over cosine and cotangent is cosine over sine, giving two fractions to add.",
+        "description": "Start from the fundamental identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1",
+        "explanation": "The bracket $1+\\cot^2\\theta$ comes from the Pythagorean identity, so we begin there and adapt it.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Form a common denominator",
-        "workingLatex": "= \\frac{\\sin^2\\theta + \\cos^2\\theta}{\\cos\\theta\\sin\\theta}",
-        "explanation": "The common denominator is $\\cos\\theta\\sin\\theta$; adding the numerators produces $\\sin^2\\theta + \\cos^2\\theta$.",
+        "description": "Divide through by sin^2",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\sin^2\\theta} + \\frac{\\cos^2\\theta}{\\sin^2\\theta} = \\frac{1}{\\sin^2\\theta}",
+        "explanation": "Dividing every term by $\\sin^2\\theta$ turns the identity into one involving $\\cot\\theta$ and $\\operatorname{cosec}\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = 1",
-        "explanation": "The numerator is the Pythagorean identity, which equals $1$, dramatically simplifying the fraction.",
+        "description": "Simplify to the standard identity",
+        "workingLatex": "1 + \\cot^2\\theta = \\operatorname{cosec}^2\\theta",
+        "explanation": "Because $\\dfrac{\\cos^2\\theta}{\\sin^2\\theta}=\\cot^2\\theta$ and $\\dfrac{1}{\\sin^2\\theta}=\\operatorname{cosec}^2\\theta$, the bracket equals $\\operatorname{cosec}^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Substitute the numerator",
-        "workingLatex": "= \\frac{1}{\\cos\\theta\\sin\\theta}",
-        "explanation": "With the top equal to $1$, the expression becomes a single reciprocal of a product.",
+        "description": "Replace the bracket",
+        "workingLatex": "(1 + \\cot^2\\theta)\\sin^2\\theta = \\operatorname{cosec}^2\\theta\\,\\sin^2\\theta",
+        "explanation": "Substituting the identity replaces the bracket with $\\operatorname{cosec}^2\\theta$, which is a reciprocal of $\\sin^2\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Split the reciprocal into two factors",
-        "workingLatex": "= \\frac{1}{\\cos\\theta}\\cdot\\frac{1}{\\sin\\theta}",
-        "explanation": "A reciprocal of a product is the product of the reciprocals, separating cosine and sine.",
+        "description": "Write cosec^2 as a reciprocal",
+        "workingLatex": "\\operatorname{cosec}^2\\theta = \\frac{1}{\\sin^2\\theta}",
+        "explanation": "Writing $\\operatorname{cosec}^2\\theta$ as $\\dfrac{1}{\\sin^2\\theta}$ exposes the cancellation with the $\\sin^2\\theta$ factor.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Recognise secant and cosecant",
-        "workingLatex": "= \\sec\\theta\\csc\\theta = \\text{RHS} \\;\\blacksquare",
-        "explanation": "Each reciprocal is a named function, giving $\\sec\\theta\\csc\\theta$, exactly the right-hand side.",
+        "description": "Substitute and multiply",
+        "workingLatex": "\\operatorname{cosec}^2\\theta\\,\\sin^2\\theta = \\frac{1}{\\sin^2\\theta}\\cdot \\sin^2\\theta = \\frac{\\sin^2\\theta}{\\sin^2\\theta}",
+        "explanation": "Replacing $\\operatorname{cosec}^2\\theta$ and multiplying gathers the terms into a single fraction with matching numerator and denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Cancel the common factor",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\sin^2\\theta} = 1 \\qquad (\\sin\\theta \\neq 0)",
+        "explanation": "The $\\sin^2\\theta$ terms cancel wherever $\\sin\\theta\\neq0$, leaving the constant $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check at a convenient angle",
+        "workingLatex": "(1 + \\cot^2 30^\\circ)\\sin^2 30^\\circ = (1 + 3)\\left(\\tfrac{1}{2}\\right)^2 = 4 \\cdot \\tfrac{1}{4} = 1",
+        "explanation": "Testing at $30^\\circ$ gives $1$, confirming the simplification.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the result",
+        "workingLatex": "(1 + \\cot^2\\theta)\\sin^2\\theta = 1",
+        "explanation": "The expression simplifies completely to the constant $1$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\tan\\theta + \\cot\\theta \\equiv \\sec\\theta\\csc\\theta$"
+    "finalAnswer": "Using $1+\\cot^2\\theta\\equiv\\operatorname{cosec}^2\\theta$ gives $(1+\\cot^2\\theta)\\sin^2\\theta=\\operatorname{cosec}^2\\theta\\,\\sin^2\\theta=\\dfrac{\\sin^2\\theta}{\\sin^2\\theta}=1$."
   }
 }

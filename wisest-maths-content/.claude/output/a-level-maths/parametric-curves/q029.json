@@ -5,67 +5,88 @@
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "parametric",
-    "intersection",
-    "line"
+    "ellipse",
+    "bounded range",
+    "max and min"
   ],
-  "questionText": "A curve has parametric equations $x = t - 1$, $y = t^2 + t$. Find where it meets the line $y = 2x + 4$.",
+  "questionText": "A curve has parametric equations $x = 3 + 4\\cos t$ and $y = -1 + 2\\sin t$, for $0 \\le t < 2\\pi$. Find a Cartesian equation of the curve, and, without using calculus, find the greatest and least values taken by $x$ and by $y$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Substitute into the line equation",
-        "workingLatex": "t^2 + t = 2(t - 1) + 4",
-        "explanation": "Replacing $x$ and $y$ with their parametric forms gives an equation in $t$.",
+        "description": "Set up",
+        "workingLatex": "x = 3 + 4\\cos t, \\qquad y = -1 + 2\\sin t",
+        "explanation": "The extreme values of $x$ and $y$ come purely from how far $\\cos t$ and $\\sin t$ can stretch, so no differentiation is needed. First we still find the Cartesian equation.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Expand the right side",
-        "workingLatex": "t^2 + t = 2t + 2",
-        "explanation": "Multiplying out $2(t-1) + 4$ gives $2t + 2$.",
+        "description": "Isolate cos t",
+        "workingLatex": "\\cos t = \\dfrac{x - 3}{4}",
+        "explanation": "Subtracting $3$ and dividing by $4$ isolates $\\cos t$, with $x - 3$ marking the horizontal shift of the centre.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Rearrange to a quadratic",
-        "workingLatex": "t^2 - t - 2 = 0",
-        "explanation": "Collecting all terms on one side gives a quadratic in $t$.",
+        "description": "Isolate sin t",
+        "workingLatex": "\\sin t = \\dfrac{y + 1}{2}",
+        "explanation": "Adding $1$ and dividing by $2$ isolates $\\sin t$, with $y + 1$ marking the vertical shift.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(t - 2)(t + 1) = 0 \\;\\Rightarrow\\; t = 2, -1",
-        "explanation": "The factors of $-2$ that add to $-1$ are $-2$ and $+1$.",
+        "description": "Apply the identity",
+        "workingLatex": "\\dfrac{(x - 3)^{2}}{16} + \\dfrac{(y + 1)^{2}}{4} = 1",
+        "explanation": "Substituting both into $\\cos^{2} t + \\sin^{2} t = 1$ and squaring gives the Cartesian equation, an ellipse centred at $(3,\\,-1)$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the point for t = 2",
-        "workingLatex": "(t - 1, t^2 + t) = (1, 6)",
-        "explanation": "Substituting $t = 2$ into both parametric equations.",
+        "description": "Bound cos t",
+        "workingLatex": "-1 \\le \\cos t \\le 1",
+        "explanation": "The cosine of any angle can never exceed $1$ or fall below $-1$. This bound is what controls the horizontal spread of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Find the point for t = -1",
-        "workingLatex": "(t - 1, t^2 + t) = (-2, 0)",
-        "explanation": "Substituting $t = -1$ into both equations.",
+        "description": "Turn the bound into x-values",
+        "workingLatex": "3 + 4(-1) \\le x \\le 3 + 4(1)",
+        "explanation": "Multiplying the bound by $4$ and adding $3$ scales it to the actual range of $x$. This is the no-calculus way to find extremes of a trig expression.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the intersection points",
-        "workingLatex": "(1, 6) \\text{ and } (-2, 0)",
-        "explanation": "These are the two points where the curve meets the line.",
+        "description": "Evaluate the x-range",
+        "workingLatex": "-1 \\le x \\le 7",
+        "explanation": "The smallest $x$ is $3 - 4 = -1$ and the largest is $3 + 4 = 7$, reached when $\\cos t = -1$ and $\\cos t = 1$ respectively.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Bound sin t",
+        "workingLatex": "-1 \\le \\sin t \\le 1",
+        "explanation": "The sine of any angle is likewise trapped between $-1$ and $1$, which controls the vertical spread of $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Turn the bound into y-values",
+        "workingLatex": "-1 + 2(-1) \\le y \\le -1 + 2(1)",
+        "explanation": "Multiplying by $2$ and adding $-1$ scales the sine bound to the range of $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Evaluate the y-range",
+        "workingLatex": "-3 \\le y \\le 1",
+        "explanation": "So the least value of $y$ is $-3$ and the greatest is $1$, at $\\sin t = -1$ and $\\sin t = 1$ respectively.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(1, 6)$ and $(-2, 0)$"
+    "finalAnswer": "The Cartesian equation is $\\dfrac{(x - 3)^{2}}{16} + \\dfrac{(y + 1)^{2}}{4} = 1$ (an ellipse centred at $(3,\\,-1)$). The greatest and least values are $x_{\\max} = 7$, $x_{\\min} = -1$, $y_{\\max} = 1$ and $y_{\\min} = -3$."
   }
 }

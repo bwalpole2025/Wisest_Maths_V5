@@ -5,60 +5,88 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Intermediate",
-  "marks": 7,
-  "answerType": "value",
+  "marks": 5,
+  "answerType": "equation",
   "tags": [
-    "parametric modelling",
-    "vertical tangent",
-    "coordinates"
+    "parametric differentiation",
+    "tangent",
+    "trajectory"
   ],
-  "questionText": "A curve has parametric equations $x = t^2 - 4t$, $y = t^2 + 2t$. Find the coordinates of the point where the tangent is vertical.",
+  "questionText": "A drone moves so that, $t$ seconds after launch, its position in metres is modelled by $x = t^{2} - 1$ and $y = t^{3} - 3t$. Find the equation of the tangent to the drone's path at the instant $t = 2$, giving your answer in the form $ax + by + c = 0$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "State the vertical tangent condition",
-        "workingLatex": "\\frac{dx}{dt} = 0",
-        "explanation": "A vertical tangent has an undefined gradient, requiring the denominator $\\frac{dx}{dt}$ to be zero (with $\\frac{dy}{dt} \\ne 0$).",
+        "description": "Identify what the tangent needs",
+        "workingLatex": "\\text{tangent: gradient } \\dfrac{dy}{dx} \\text{ and the point at } t=2",
+        "explanation": "A tangent line is fixed by two things: the point it touches and the gradient of the path there. So we need the coordinates at $t = 2$ and the value of $\\dfrac{dy}{dx}$ at that instant.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Differentiate x",
-        "workingLatex": "\\frac{dx}{dt} = 2t - 4",
-        "explanation": "Differentiating $x = t^2 - 4t$.",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 2t",
+        "explanation": "Differentiating the horizontal position gives the horizontal velocity $\\dot{x}$. This becomes the denominator when we build the path's gradient.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Solve for t",
-        "workingLatex": "2t - 4 = 0 \\;\\Rightarrow\\; t = 2",
-        "explanation": "The horizontal rate of change is zero at $t = 2$.",
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 3t^{2} - 3",
+        "explanation": "Differentiating the vertical position gives the vertical velocity $\\dot{y}$. This becomes the numerator of the gradient.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the y-derivative",
-        "workingLatex": "\\frac{dy}{dt} = 2t + 2 = 6 \\ne 0 \\text{ at } t = 2",
-        "explanation": "The vertical rate is nonzero, so the tangent is genuinely vertical.",
+        "description": "Form the gradient of the path",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}} = \\dfrac{3t^{2} - 3}{2t}",
+        "explanation": "The chain rule links the two rates: dividing the vertical rate by the horizontal rate cancels the $dt$ and leaves the slope of the path in the $x$-$y$ plane.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the coordinates",
-        "workingLatex": "x = 4 - 8 = -4, \\quad y = 4 + 4 = 8",
-        "explanation": "Substituting $t = 2$ into both equations.",
+        "description": "Find the point at t = 2",
+        "workingLatex": "x = 2^{2} - 1 = 3, \\qquad y = 2^{3} - 3(2) = 2",
+        "explanation": "The tangent touches the path at the drone's actual location, so we substitute $t = 2$ into the position equations to get the point $(3,\\,2)$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "State the answer",
-        "workingLatex": "(-4, 8)",
-        "explanation": "The curve has a vertical tangent at $(-4, 8)$.",
+        "description": "Evaluate the gradient at t = 2",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{3(2)^{2} - 3}{2(2)} = \\dfrac{9}{4}",
+        "explanation": "Putting $t = 2$ into the gradient formula gives the exact slope of the path at that moment, which is the slope of the tangent line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write the tangent in point-slope form",
+        "workingLatex": "y - 2 = \\dfrac{9}{4}\\left(x - 3\\right)",
+        "explanation": "A straight line through $(3,\\,2)$ with gradient $\\dfrac{9}{4}$ is written most directly in point-slope form before tidying.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Clear the fraction",
+        "workingLatex": "4y - 8 = 9\\left(x - 3\\right) = 9x - 27",
+        "explanation": "Multiplying both sides by $4$ removes the fraction, which makes it easy to collect everything on one side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Rearrange to the required form",
+        "workingLatex": "9x - 4y - 19 = 0",
+        "explanation": "Moving all terms to one side gives the tidy implicit form $ax + by + c = 0$ that the question asks for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the tangent",
+        "workingLatex": "9x - 4y - 19 = 0",
+        "explanation": "This line passes through $(3,\\,2)$ with gradient $\\dfrac{9}{4}$, matching both conditions, so it is the tangent to the path at $t = 2$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$(-4, 8)$"
+    "finalAnswer": "The tangent to the path at $t = 2$ is $9x - 4y - 19 = 0$ (equivalently $y = \\dfrac{9}{4}x - \\dfrac{19}{4}$)."
   }
 }

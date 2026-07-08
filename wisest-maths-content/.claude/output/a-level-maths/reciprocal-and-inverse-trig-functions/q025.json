@@ -6,66 +6,89 @@
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "equations",
-    "cotangent",
-    "solving"
+    "given one ratio",
+    "quadrant",
+    "sec",
+    "cosec",
+    "cot"
   ],
-  "questionText": "Solve $\\cot\\theta = \\sqrt{3}$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Given that $\\sin\\theta = \\tfrac{5}{13}$ and that $\\theta$ lies in the second quadrant, find the exact values of $\\sec\\theta$, $\\operatorname{cosec}\\theta$ and $\\cot\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Convert cotangent to tangent",
-        "workingLatex": "\\cot\\theta = \\sqrt{3} \\;\\Rightarrow\\; \\frac{1}{\\tan\\theta} = \\sqrt{3}",
-        "explanation": "Cotangent equations become manageable once rewritten in tangent, whose inverse we can evaluate directly.",
+        "description": "Note the signs in the second quadrant",
+        "workingLatex": "\\text{Q2:}\\quad \\sin\\theta > 0, \\quad \\cos\\theta < 0, \\quad \\tan\\theta < 0",
+        "explanation": "In the second quadrant only sine is positive; cosine and tangent are negative. Fixing the signs now means we can attach the correct sign to each value as we find it.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rearrange for tangent",
-        "workingLatex": "\\tan\\theta = \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3}",
-        "explanation": "Taking the reciprocal gives tangent equal to $\\frac{1}{\\sqrt{3}}$, a known exact value corresponding to $30^\\circ$.",
+        "description": "Find cosec from its definition",
+        "workingLatex": "\\operatorname{cosec}\\theta = \\frac{1}{\\sin\\theta} = \\frac{1}{\\tfrac{5}{13}} = \\frac{13}{5}",
+        "explanation": "Cosecant is just the reciprocal of sine, so we flip the given fraction. It is positive, matching the fact that sine is positive here.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the principal value",
-        "workingLatex": "\\theta = \\tan^{-1}\\left(\\tfrac{1}{\\sqrt{3}}\\right) = 30^\\circ",
-        "explanation": "The inverse tangent of $\\frac{1}{\\sqrt{3}}$ is $30^\\circ$, the first solution.",
+        "description": "Use the Pythagorean identity to find cos squared",
+        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\tfrac{25}{169} = \\tfrac{144}{169}",
+        "explanation": "To reach $\\sec\\theta$ and $\\cot\\theta$ we need $\\cos\\theta$. Rearranging $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ isolates $\\cos^2\\theta$, and substituting the known sine gives its value.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Use the period of tangent",
-        "workingLatex": "\\tan\\theta \\text{ has period } 180^\\circ",
-        "explanation": "Tangent repeats every $180^\\circ$, so further solutions are found by adding multiples of $180^\\circ$ to the principal value.",
+        "description": "Take the root with the correct sign",
+        "workingLatex": "\\cos\\theta = -\\sqrt{\\tfrac{144}{169}} = -\\tfrac{12}{13}",
+        "explanation": "Cosine is negative in the second quadrant, so we take the negative square root. Choosing the sign from the quadrant is the key modelling decision.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the second solution",
-        "workingLatex": "\\theta = 30^\\circ + 180^\\circ = 210^\\circ",
-        "explanation": "Adding one period gives the second solution at $210^\\circ$, which is still inside the interval.",
+        "description": "Find sec from its definition",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta} = \\frac{1}{-\\tfrac{12}{13}} = -\\tfrac{13}{12}",
+        "explanation": "Secant is the reciprocal of cosine, so we flip the fraction just found. The negative sign carries through because cosine is negative.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check for further solutions",
-        "workingLatex": "30^\\circ + 360^\\circ = 390^\\circ > 360^\\circ",
-        "explanation": "Adding another period exceeds the interval, so there are no more solutions to include.",
+        "description": "Find tan as sin over cos",
+        "workingLatex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{\\tfrac{5}{13}}{-\\tfrac{12}{13}} = -\\tfrac{5}{12}",
+        "explanation": "Tangent is sine divided by cosine; the thirteenths cancel, leaving a simple fraction. It is negative because sine and cosine have opposite signs here.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = 30^\\circ \\text{ or } \\theta = 210^\\circ",
-        "explanation": "These are the two solutions of the cotangent equation in the given interval.",
+        "description": "Find cot as the reciprocal of tan",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{1}{-\\tfrac{5}{12}} = -\\tfrac{12}{5}",
+        "explanation": "Cotangent is the reciprocal of tangent, so we flip the fraction. It stays negative, consistent with a second-quadrant angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check with the identity 1 + tan^2 = sec^2",
+        "workingLatex": "1 + \\left(-\\tfrac{5}{12}\\right)^2 = 1 + \\tfrac{25}{144} = \\tfrac{169}{144} = \\left(-\\tfrac{13}{12}\\right)^2",
+        "explanation": "A quick check that $1 + \\tan^2\\theta$ equals $\\sec^2\\theta$: both sides give $\\tfrac{169}{144}$, confirming the tangent and secant are consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check with the identity 1 + cot^2 = cosec^2",
+        "workingLatex": "1 + \\left(-\\tfrac{12}{5}\\right)^2 = 1 + \\tfrac{144}{25} = \\tfrac{169}{25} = \\left(\\tfrac{13}{5}\\right)^2",
+        "explanation": "Similarly $1 + \\cot^2\\theta$ should equal $\\operatorname{cosec}^2\\theta$, and both sides give $\\tfrac{169}{25}$, so all three values agree.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sec\\theta = -\\tfrac{13}{12}, \\quad \\operatorname{cosec}\\theta = \\tfrac{13}{5}, \\quad \\cot\\theta = -\\tfrac{12}{5}",
+        "explanation": "Collecting the three exact values completes the answer, with signs consistent with a second-quadrant angle.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 30^\\circ \\text{ or } 210^\\circ$"
+    "finalAnswer": "$\\sec\\theta = -\\tfrac{13}{12}$, $\\operatorname{cosec}\\theta = \\tfrac{13}{5}$, $\\cot\\theta = -\\tfrac{12}{5}$."
   }
 }

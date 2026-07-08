@@ -5,53 +5,67 @@
   "subtopic": "Parametric modelling",
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Easy",
-  "marks": 6,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "numeric",
   "tags": [
-    "parametric modelling",
-    "stationary point",
-    "horizontal tangent"
+    "speed",
+    "parametric differentiation",
+    "modelling"
   ],
-  "questionText": "A curve has parametric equations $x = t^3$, $y = t^2 - 4t$. Find the value of $t$ where the curve has a horizontal tangent.",
+  "questionText": "A ball rolls so that, at time $t$ seconds, its position in metres is $x = 3t^{2}$ and $y = 8t$. Find the speed of the ball at $t = 1$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Recall the horizontal tangent condition",
-        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Leftrightarrow\\; \\frac{dy}{dt} = 0",
-        "explanation": "A horizontal tangent has zero gradient, which for a parametric curve means the numerator $\\frac{dy}{dt}$ is zero (with $\\frac{dx}{dt} \\ne 0$).",
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 6t",
+        "explanation": "The horizontal velocity is the rate of change of $x = 3t^{2}$, found by differentiating.",
         "diagram": null
       },
       {
         "stepNumber": 2,
         "description": "Differentiate y with respect to t",
-        "workingLatex": "\\frac{dy}{dt} = 2t - 4",
-        "explanation": "Differentiating $y = t^2 - 4t$ gives $2t - 4$.",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 8",
+        "explanation": "The vertical velocity is the rate of change of $y = 8t$, a constant $8$ m/s.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Set the derivative to zero",
-        "workingLatex": "2t - 4 = 0 \\;\\Rightarrow\\; t = 2",
-        "explanation": "Solving gives the parameter value for the horizontal tangent.",
+        "description": "Evaluate the velocity components at t = 1",
+        "workingLatex": "\\dot{x} = 6(1) = 6, \\quad \\dot{y} = 8",
+        "explanation": "At $t = 1$ the horizontal velocity is $6$ and the vertical velocity is $8$. These are the two components of the ball's motion.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Check the x-derivative is nonzero",
-        "workingLatex": "\\frac{dx}{dt} = 3t^2 = 12 \\ne 0",
-        "explanation": "At $t = 2$ the horizontal rate of change is nonzero, so the gradient is genuinely zero (not undefined).",
+        "description": "Write the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}}",
+        "explanation": "Speed is the overall size of the velocity, and because the two components act at right angles we combine them with Pythagoras' theorem.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "t = 2",
-        "explanation": "The curve has a horizontal tangent at $t = 2$.",
+        "description": "Substitute the components",
+        "workingLatex": "\\text{speed} = \\sqrt{6^{2} + 8^{2}}",
+        "explanation": "Putting in $\\dot{x} = 6$ and $\\dot{y} = 8$ prepares the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify inside the root",
+        "workingLatex": "= \\sqrt{36 + 64} = \\sqrt{100}",
+        "explanation": "Squaring and adding gives $100$ under the square root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Take the square root",
+        "workingLatex": "= 10",
+        "explanation": "The square root of $100$ is $10$, so the ball's speed is $10$ m/s.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$t = 2$"
+    "finalAnswer": "At $t = 1$ s the ball's speed is $10$ m/s."
   }
 }

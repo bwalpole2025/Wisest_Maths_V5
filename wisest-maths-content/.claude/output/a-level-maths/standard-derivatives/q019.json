@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "tangent function",
+    "radians"
+  ],
+  "questionText": "Find the gradient of the curve $y = \\tan x$ at the point where $x = \\dfrac{\\pi}{4}$, where $x$ is in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the standard derivative of tan x",
+        "workingLatex": "\\frac{d}{dx}(\\tan x) = \\sec^2 x",
+        "explanation": "The standard derivative of $\\tan x$ is $\\sec^2 x$, valid when $x$ is in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = \\sec^2 x",
+        "explanation": "So the gradient function of the curve is $\\sec^2 x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\frac{\\pi}{4}} = \\sec^2\\tfrac{\\pi}{4}",
+        "explanation": "Substitute $x=\\tfrac{\\pi}{4}$ radians into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite secant using cosine",
+        "workingLatex": "\\sec^2\\tfrac{\\pi}{4} = \\frac{1}{\\cos^2\\tfrac{\\pi}{4}}",
+        "explanation": "Recall $\\sec\\theta = \\tfrac{1}{\\cos\\theta}$, so $\\sec^2\\theta = \\tfrac{1}{\\cos^2\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the cosine",
+        "workingLatex": "\\cos\\tfrac{\\pi}{4} = \\frac{\\sqrt{2}}{2}",
+        "explanation": "In radians $\\cos\\tfrac{\\pi}{4} = \\tfrac{\\sqrt{2}}{2}$, an exact standard value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the reciprocal of the square",
+        "workingLatex": "\\frac{1}{\\left(\\frac{\\sqrt{2}}{2}\\right)^2} = \\frac{1}{\\frac{1}{2}} = 2",
+        "explanation": "Squaring $\\tfrac{\\sqrt{2}}{2}$ gives $\\tfrac{1}{2}$, and the reciprocal of $\\tfrac{1}{2}$ is $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = 2",
+        "explanation": "So the gradient of $y=\\tan x$ at $x=\\tfrac{\\pi}{4}$ is $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient at $x=\\tfrac{\\pi}{4}$ is $2$."
+  }
+}

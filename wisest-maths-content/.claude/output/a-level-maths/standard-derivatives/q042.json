@@ -1,0 +1,92 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "stationary point",
+    "second derivative",
+    "exponential"
+  ],
+  "questionText": "The curve $y = e^{x} + e^{-x}$ has a single stationary point. Find its coordinates and use the second derivative to determine its nature.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the function",
+        "workingLatex": "y = e^{x} + e^{-x}",
+        "explanation": "We first differentiate to locate the stationary point, which is where the gradient is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\frac{dy}{dx} = e^{x} - e^{-x}",
+        "explanation": "Using $\\frac{d}{dx}(e^{x})=e^{x}$ and $\\frac{d}{dx}(e^{-x})=-e^{-x}$ (the standard result $\\frac{d}{dx}(e^{kx})=ke^{kx}$ with $k=-1$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the gradient to zero",
+        "workingLatex": "e^{x} - e^{-x} = 0",
+        "explanation": "Stationary points occur exactly where the gradient vanishes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange",
+        "workingLatex": "e^{x} = e^{-x}",
+        "explanation": "Move the second term across; both sides are positive so we can safely compare the exponents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve",
+        "workingLatex": "e^{2x} = 1 \\iff 2x = 0 \\iff x = 0",
+        "explanation": "Multiplying both sides by $e^{x}$ gives $e^{2x}=1$; since $e^{0}=1$ the only solution is $x=0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = e^{0} + e^{-0} = 1 + 1 = 2",
+        "explanation": "Substituting $x=0$ back into the curve gives the height of the stationary point, so it is $(0,2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Differentiate again",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = e^{x} + e^{-x}",
+        "explanation": "Differentiating $e^{x}-e^{-x}$ once more: $\\frac{d}{dx}(-e^{-x})=+e^{-x}$, giving $e^{x}+e^{-x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Evaluate the second derivative at the stationary point",
+        "workingLatex": "\\left.\\frac{d^{2}y}{dx^{2}}\\right|_{x=0} = e^{0}+e^{-0} = 2",
+        "explanation": "We test the sign of the second derivative at $x=0$ to decide the nature of the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the sign",
+        "workingLatex": "\\frac{d^{2}y}{dx^{2}} = 2 > 0",
+        "explanation": "A positive second derivative means the curve is concave up there, so the stationary point is a minimum.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "\\text{minimum at } (0,\\ 2)",
+        "explanation": "The curve has a single minimum turning point at $(0,2)$; this matches the fact that $e^{x}+e^{-x}\\ge 2$ for all $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum turning point at $(0,\\ 2)$, confirmed by $\\dfrac{d^{2}y}{dx^{2}}=2>0$."
+  }
+}

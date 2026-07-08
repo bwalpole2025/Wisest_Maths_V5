@@ -5,75 +5,116 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 6,
+  "answerType": "numeric",
   "tags": [
-    "equations",
-    "secant",
-    "tangent",
-    "quadratic"
+    "solving equations",
+    "cosec",
+    "reject root"
   ],
-  "questionText": "Solve $2\\sec^2\\theta - \\tan\\theta - 3 = 0$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree where necessary.",
+  "questionText": "Solve $2\\cot^2 x + 4 = 5\\operatorname{cosec} x$ for $0 \\le x < 360^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Replace secant squared using an identity",
-        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
-        "explanation": "Converting to tangent gives a single-function quadratic equation.",
+        "description": "State the equation and note the domain",
+        "workingLatex": "2\\cot^2 x + 4 = 5\\operatorname{cosec} x, \\qquad 0 \\le x < 360^\\circ, \\;\\; \\sin x \\neq 0",
+        "explanation": "The equation contains $\\cot^2 x$ and $\\operatorname{cosec} x$, so we will convert $\\cot^2 x$ to $\\operatorname{cosec} x$ using the matching Pythagorean identity.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Substitute into the equation",
-        "workingLatex": "2(1 + \\tan^2\\theta) - \\tan\\theta - 3 = 0",
-        "explanation": "The equation is now entirely in tangent.",
+        "description": "Choose the identity",
+        "workingLatex": "1 + \\cot^2 x \\equiv \\operatorname{cosec}^2 x \\;\\Rightarrow\\; \\cot^2 x = \\operatorname{cosec}^2 x - 1",
+        "explanation": "Replacing $\\cot^2 x$ with $\\operatorname{cosec}^2 x - 1$ leaves a single ratio, $\\operatorname{cosec} x$, throughout the equation.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand and simplify",
-        "workingLatex": "2 + 2\\tan^2\\theta - \\tan\\theta - 3 = 0",
-        "explanation": "Multiplying out the bracket prepares for collecting terms.",
+        "description": "Substitute",
+        "workingLatex": "2\\left(\\operatorname{cosec}^2 x - 1\\right) + 4 = 5\\operatorname{cosec} x",
+        "explanation": "The substitution turns the equation into one purely about $\\operatorname{cosec} x$, which we can shape into a quadratic.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Write in standard quadratic form",
-        "workingLatex": "2\\tan^2\\theta - \\tan\\theta - 1 = 0",
-        "explanation": "Combining the constants $2 - 3 = -1$ gives a tidy quadratic in $\\tan\\theta$.",
+        "description": "Expand and simplify",
+        "workingLatex": "2\\operatorname{cosec}^2 x + 2 = 5\\operatorname{cosec} x",
+        "explanation": "Expanding gives $2\\operatorname{cosec}^2 x - 2 + 4$, and $-2 + 4 = 2$, tidying the left-hand side.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Factorise",
-        "workingLatex": "(2\\tan\\theta + 1)(\\tan\\theta - 1) = 0",
-        "explanation": "The factorisation checks out since the cross terms $2\\tan\\theta - \\tan\\theta = \\tan\\theta$ but with signs give $-\\tan\\theta$.",
+        "description": "Rearrange to a quadratic equal to zero",
+        "workingLatex": "2\\operatorname{cosec}^2 x - 5\\operatorname{cosec} x + 2 = 0",
+        "explanation": "Moving the $5\\operatorname{cosec} x$ across sets the quadratic to zero, ready for factorising.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Solve the first factor",
-        "workingLatex": "\\tan\\theta = 1 \\;\\Rightarrow\\; \\theta = 45^\\circ, 225^\\circ",
-        "explanation": "Tangent equals $1$ at $45^\\circ$ and one period later at $225^\\circ$.",
+        "description": "Introduce a substitution",
+        "workingLatex": "2u^2 - 5u + 2 = 0, \\quad \\text{where } u = \\operatorname{cosec} x",
+        "explanation": "The substitution $u = \\operatorname{cosec} x$ makes the quadratic structure explicit.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "Solve the second factor",
-        "workingLatex": "\\tan\\theta = -\\tfrac{1}{2} \\;\\Rightarrow\\; \\theta \\approx 153.4^\\circ, 333.4^\\circ",
-        "explanation": "The reference angle is $\\tan^{-1}\\frac{1}{2} \\approx 26.6^\\circ$; negative tangent gives quadrant II and IV solutions.",
+        "description": "Factorise",
+        "workingLatex": "(2u - 1)(u - 2) = 0",
+        "explanation": "Splitting the middle term ($-5u = -u - 4u$) gives this factorisation, which expands back to $2u^2 - 5u + 2$.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = 45^\\circ, 153^\\circ, 225^\\circ, 333^\\circ",
-        "explanation": "Combining both factors and rounding gives four solutions in the interval.",
+        "description": "Read off the roots",
+        "workingLatex": "u = \\tfrac{1}{2} \\quad \\text{or} \\quad u = 2",
+        "explanation": "These are the two candidate values of $\\operatorname{cosec} x$. Each must now be tested against the possible range of $\\operatorname{cosec}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Reject the impossible root",
+        "workingLatex": "\\operatorname{cosec} x = \\tfrac{1}{2} \\;\\Rightarrow\\; \\sin x = 2 \\;\\; (\\text{impossible, since } |\\sin x| \\le 1)",
+        "explanation": "Because $\\operatorname{cosec} x = \\tfrac{1}{\\sin x}$, the value $\\tfrac12$ would need $\\sin x = 2$, which no angle achieves. Equivalently $|\\operatorname{cosec} x| \\ge 1$ always, so this root is rejected outright.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Keep the valid root",
+        "workingLatex": "\\operatorname{cosec} x = 2 \\;\\Rightarrow\\; \\sin x = \\tfrac{1}{2}",
+        "explanation": "The second root gives $\\sin x = \\tfrac12$, which satisfies $|\\sin x| \\le 1$, so it is genuine and we solve it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Find the base angle",
+        "workingLatex": "\\sin^{-1}\\left(\\tfrac{1}{2}\\right) = 30^\\circ",
+        "explanation": "The acute angle whose sine is $\\tfrac12$ is $30^\\circ$, the reference angle for all solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Find all angles with sin x = 1/2",
+        "workingLatex": "x = 30^\\circ \\quad \\text{or} \\quad x = 180^\\circ - 30^\\circ = 150^\\circ",
+        "explanation": "Sine is positive in the first and second quadrants, so the solutions are $30^\\circ$ and $180^\\circ - 30^\\circ = 150^\\circ$, both within the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Verify a solution",
+        "workingLatex": "\\sin 30^\\circ = \\tfrac{1}{2}: \\;\\; \\cot^2 30^\\circ = 3, \\;\\; 2(3) + 4 = 10, \\;\\; 5\\operatorname{cosec} 30^\\circ = 5(2) = 10",
+        "explanation": "At $x = 30^\\circ$ both sides equal $10$, confirming the surviving root really does solve the original equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the final answer",
+        "workingLatex": "x = 30^\\circ,\\; 150^\\circ",
+        "explanation": "Only the root $\\operatorname{cosec} x = 2$ produced solutions; the rejected root contributed none.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta \\approx 45^\\circ, 153^\\circ, 225^\\circ, 333^\\circ$"
+    "finalAnswer": "$x = 30^\\circ,\\ 150^\\circ$. The root $\\operatorname{cosec} x = \\tfrac12$ is rejected because it needs $\\sin x = 2$, which is impossible."
   }
 }

@@ -6,52 +6,94 @@
   "subtopicId": "al.y2.pure.parametric-modelling",
   "difficulty": "Intermediate",
   "marks": 6,
-  "answerType": "value",
+  "answerType": "exact",
   "tags": [
-    "parametric modelling",
-    "projectile",
-    "specific height"
+    "exponential",
+    "direction of motion",
+    "speed"
   ],
-  "questionText": "A projectile has position $x = 24t$, $y = 10t - 5t^2$ (metres) at time $t$ seconds. Find the times when the projectile is at height $y = 5$ m.",
+  "questionText": "A particle moves so that, $t$ seconds after release, its position in metres is modelled by $x = e^{t}$ and $y = e^{-t}$. At the instant $t = \\ln 2$, find the velocity components, the speed of the particle, and the angle its direction of motion makes with the positive $x$-direction.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Set the height equation",
-        "workingLatex": "10t - 5t^2 = 5",
-        "explanation": "We want the times at which the vertical position is $5$ m.",
+        "description": "Differentiate the horizontal position",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = e^{t}",
+        "explanation": "Differentiating $e^{t}$ returns itself; this is the horizontal velocity of the particle.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rearrange to standard form",
-        "workingLatex": "5t^2 - 10t + 5 = 0",
-        "explanation": "Bringing all terms to one side gives a quadratic in $t$.",
+        "description": "Differentiate the vertical position",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = -e^{-t}",
+        "explanation": "By the chain rule the derivative of $e^{-t}$ is $-e^{-t}$; the minus sign shows the height is decreasing.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Divide by the common factor",
-        "workingLatex": "t^2 - 2t + 1 = 0",
-        "explanation": "Dividing by $5$ simplifies the quadratic.",
+        "description": "Evaluate the exponentials at t = ln 2",
+        "workingLatex": "e^{\\ln 2} = 2, \\qquad e^{-\\ln 2} = \\dfrac{1}{2}",
+        "explanation": "Since $e$ and $\\ln$ are inverse operations, $e^{\\ln 2} = 2$, and $e^{-\\ln 2}$ is its reciprocal.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factorise",
-        "workingLatex": "(t - 1)^2 = 0 \\;\\Rightarrow\\; t = 1",
-        "explanation": "This is a perfect square, giving a single repeated root.",
+        "description": "State the velocity components",
+        "workingLatex": "\\dot{x} = 2, \\qquad \\dot{y} = -\\dfrac{1}{2}",
+        "explanation": "At this instant the particle moves right at $2$ m/s and downward at $\\dfrac{1}{2}$ m/s.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Interpret the repeated root",
-        "workingLatex": "t = 1 \\text{ s (turning point at this height)}",
-        "explanation": "The single solution means $y = 5$ is the maximum height, reached exactly once, at $t = 1$ s.",
+        "description": "Apply the speed formula",
+        "workingLatex": "\\text{speed} = \\sqrt{\\dot{x}^{2} + \\dot{y}^{2}} = \\sqrt{2^{2} + \\left(-\\tfrac{1}{2}\\right)^{2}}",
+        "explanation": "Speed is the length of the velocity vector, found from its two components with Pythagoras.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{4 + \\dfrac{1}{4}} = \\sqrt{\\dfrac{17}{4}} = \\dfrac{\\sqrt{17}}{2}",
+        "explanation": "Combining the terms over a common denominator gives an exact surd for the speed, about $2.06$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set up the direction",
+        "workingLatex": "\\tan\\theta = \\dfrac{\\dot{y}}{\\dot{x}}",
+        "explanation": "The direction of motion is along the velocity vector, and its angle satisfies $\\tan\\theta = \\dfrac{\\dot{y}}{\\dot{x}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Substitute the components",
+        "workingLatex": "\\tan\\theta = \\dfrac{-\\tfrac{1}{2}}{2} = -\\dfrac{1}{4}",
+        "explanation": "The negative value confirms the velocity points below the horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the direction",
+        "workingLatex": "\\dot{x} > 0, \\quad \\dot{y} < 0 \\Rightarrow \\text{moving right and downward}",
+        "explanation": "Because the horizontal component is positive and the vertical negative, the particle heads to the right and slightly downward.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find the angle",
+        "workingLatex": "\\theta = \\arctan\\left(\\dfrac{1}{4}\\right) \\approx 14.0^{\\circ}",
+        "explanation": "Taking the inverse tangent of the magnitude gives the angle below the horizontal, roughly $14.0^{\\circ}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State the results",
+        "workingLatex": "\\text{speed} = \\dfrac{\\sqrt{17}}{2},\\quad \\theta \\approx 14.0^{\\circ}\\ \\text{below horizontal}",
+        "explanation": "This gives both how fast and in which direction the particle is moving at $t = \\ln 2$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$t = 1$ s (this height is the peak, reached once)."
+    "finalAnswer": "At $t = \\ln 2$ the velocity components are $\\dot{x} = 2$ and $\\dot{y} = -\\dfrac{1}{2}$, the speed is $\\dfrac{\\sqrt{17}}{2} \\approx 2.06$ m/s, and the direction is about $14.0^{\\circ}$ below the horizontal."
   }
 }

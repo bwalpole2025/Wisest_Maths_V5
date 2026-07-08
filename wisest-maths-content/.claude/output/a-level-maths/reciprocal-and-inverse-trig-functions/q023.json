@@ -5,74 +5,89 @@
   "subtopic": "Reciprocal and inverse trig functions",
   "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
   "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "value",
+  "marks": 4,
+  "answerType": "proof",
   "tags": [
-    "equations",
-    "secant",
-    "solving"
+    "pythagorean identity",
+    "sec",
+    "tan",
+    "proof"
   ],
-  "questionText": "Solve $\\sec\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionText": "Starting from the identity $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$, prove that $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Convert secant to cosine",
-        "workingLatex": "\\sec\\theta = 2 \\;\\Rightarrow\\; \\frac{1}{\\cos\\theta} = 2",
-        "explanation": "Equations in secant are easiest to solve once rewritten in cosine, whose behaviour and values we know well.",
+        "description": "Write down the identity to start from",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1",
+        "explanation": "Every Pythagorean identity in trigonometry grows from this one relationship between $\\sin\\theta$ and $\\cos\\theta$, so it is our natural starting point.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Rearrange for cosine",
-        "workingLatex": "\\cos\\theta = \\frac{1}{2}",
-        "explanation": "Taking the reciprocal of both sides turns the secant equation into a standard cosine equation.",
+        "description": "Decide to divide through by cos squared theta",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} + \\frac{\\cos^2\\theta}{\\cos^2\\theta} \\equiv \\frac{1}{\\cos^2\\theta}",
+        "explanation": "We are aiming for $\\tan\\theta$ and $\\sec\\theta$, and both of those come from dividing by $\\cos\\theta$. Dividing every term by $\\cos^2\\theta$ keeps the identity true and steers each term towards the functions we want.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Find the principal value",
-        "workingLatex": "\\theta = \\cos^{-1}\\left(\\tfrac{1}{2}\\right) = 60^\\circ",
-        "explanation": "The first solution comes from the inverse cosine of one half, which is the familiar $60^\\circ$.",
+        "description": "Simplify the first term to tan squared",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} = \\left(\\frac{\\sin\\theta}{\\cos\\theta}\\right)^2 = \\tan^2\\theta",
+        "explanation": "The ratio $\\dfrac{\\sin\\theta}{\\cos\\theta}$ is exactly $\\tan\\theta$, so squaring it gives $\\tan^2\\theta$. This is where the tangent enters the identity.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the quadrants where cosine is positive",
-        "workingLatex": "\\cos\\theta > 0 \\text{ in quadrants I and IV}",
-        "explanation": "Cosine is positive in the first and fourth quadrants, so there is a second solution in the fourth quadrant.",
+        "description": "Simplify the middle term to 1",
+        "workingLatex": "\\frac{\\cos^2\\theta}{\\cos^2\\theta} = 1",
+        "explanation": "Any non-zero quantity divided by itself is $1$, so this term collapses to a simple constant.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Find the second solution",
-        "workingLatex": "\\theta = 360^\\circ - 60^\\circ = 300^\\circ",
-        "explanation": "The fourth-quadrant solution is found by subtracting the acute angle from $360^\\circ$, giving $300^\\circ$.",
+        "description": "Simplify the right-hand side to sec squared",
+        "workingLatex": "\\frac{1}{\\cos^2\\theta} = \\left(\\frac{1}{\\cos\\theta}\\right)^2 = \\sec^2\\theta",
+        "explanation": "Since $\\sec\\theta = \\dfrac{1}{\\cos\\theta}$, the right-hand side is $\\sec\\theta$ squared. This is where the secant appears.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Check both lie in the interval",
-        "workingLatex": "60^\\circ, 300^\\circ \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
-        "explanation": "Both values fall inside the required range, so both are kept.",
+        "description": "Put the simplified terms back together",
+        "workingLatex": "\\tan^2\\theta + 1 \\equiv \\sec^2\\theta",
+        "explanation": "Replacing each term by its simplified form turns the divided identity into a relationship purely between $\\tan\\theta$ and $\\sec\\theta$.",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = 60^\\circ \\text{ or } \\theta = 300^\\circ",
-        "explanation": "These are the two solutions of the original secant equation in the given interval.",
+        "description": "Rearrange into the standard order",
+        "workingLatex": "1 + \\tan^2\\theta \\equiv \\sec^2\\theta",
+        "explanation": "Writing the constant first gives the identity in the form it is normally quoted and used.",
         "diagram": null
       },
       {
         "stepNumber": 8,
-        "description": "Verify one solution",
-        "workingLatex": "\\sec 60^\\circ = \\frac{1}{\\cos 60^\\circ} = \\frac{1}{1/2} = 2 \\;\\checkmark",
-        "explanation": "Substituting $60^\\circ$ back reproduces $\\sec\\theta = 2$, confirming the method.",
+        "description": "State where the identity is valid",
+        "workingLatex": "\\cos\\theta \\neq 0",
+        "explanation": "We divided by $\\cos^2\\theta$, which is only allowed when $\\cos\\theta \\neq 0$. This matches the fact that $\\tan\\theta$ and $\\sec\\theta$ are themselves undefined wherever $\\cos\\theta = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Check with a known angle",
+        "workingLatex": "1 + \\tan^2 60^\\circ = 1 + 3 = 4, \\qquad \\sec^2 60^\\circ = 2^2 = 4",
+        "explanation": "Testing $\\theta = 60^\\circ$ gives $4$ on both sides, which is a quick reassurance that the identity we derived behaves correctly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the conclusion",
+        "workingLatex": "1 + \\tan^2\\theta \\equiv \\sec^2\\theta \\quad \\text{as required.}",
+        "explanation": "Each step followed from the previous by a valid operation, so the identity is proved for all $\\theta$ where $\\cos\\theta \\neq 0$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = 60^\\circ \\text{ or } 300^\\circ$"
+    "finalAnswer": "Dividing $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ through by $\\cos^2\\theta$ gives $\\tan^2\\theta + 1 \\equiv \\sec^2\\theta$, that is $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$, valid whenever $\\cos\\theta \\neq 0$."
   }
 }

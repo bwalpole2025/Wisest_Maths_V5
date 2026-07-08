@@ -4,55 +4,82 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Hard",
-  "marks": 6,
-  "answerType": "expression",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "coordinates",
   "tags": [
-    "parametric",
-    "cartesian",
-    "circle",
-    "combination"
+    "find parameter",
+    "valid parameter",
+    "coordinates"
   ],
-  "questionText": "A curve has parametric equations $x = \\cos\\theta + \\sin\\theta$, $y = \\cos\\theta - \\sin\\theta$. Show that $x^2 + y^2 = 2$.",
+  "questionText": "A curve has parametric equations $x = t^{2} + 1$ and $y = 4t - 3$. A point $A$ on the curve has $x$-coordinate $10$ and lies below the $x$-axis. Find the value of $t$ at $A$ and the coordinates of $A$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Square the x-equation",
-        "workingLatex": "x^2 = (\\cos\\theta + \\sin\\theta)^2 = \\cos^2\\theta + 2\\sin\\theta\\cos\\theta + \\sin^2\\theta",
-        "explanation": "Expanding the square gives a cross term $2\\sin\\theta\\cos\\theta$.",
+        "description": "Use the known x-coordinate",
+        "workingLatex": "t^{2} + 1 = 10",
+        "explanation": "We know the horizontal position of $A$, and $x$ depends only on $t$, so setting the $x$ equation equal to $10$ pins down the parameter.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Square the y-equation",
-        "workingLatex": "y^2 = (\\cos\\theta - \\sin\\theta)^2 = \\cos^2\\theta - 2\\sin\\theta\\cos\\theta + \\sin^2\\theta",
-        "explanation": "The difference gives an opposite cross term $-2\\sin\\theta\\cos\\theta$.",
+        "description": "Rearrange",
+        "workingLatex": "t^{2} = 9",
+        "explanation": "Subtracting $1$ isolates $t^{2}$, ready to take the square root.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Add the two squares",
-        "workingLatex": "x^2 + y^2 = 2\\cos^2\\theta + 2\\sin^2\\theta",
-        "explanation": "Adding cancels the cross terms and doubles the squared terms.",
+        "description": "Solve for t",
+        "workingLatex": "t = \\pm 3",
+        "explanation": "A square root has two signs, so there are two candidate parameter values, each giving a point with $x = 10$.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Factor and apply the identity",
-        "workingLatex": "= 2(\\cos^2\\theta + \\sin^2\\theta) = 2(1)",
-        "explanation": "The bracket is the Pythagorean identity, equal to $1$.",
+        "description": "Find y when t = 3",
+        "workingLatex": "t = 3:\\quad y = 4(3) - 3 = 9",
+        "explanation": "We test each candidate against the extra condition. For $t = 3$ the height is $9$, which is above the $x$-axis.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Conclude",
-        "workingLatex": "x^2 + y^2 = 2",
-        "explanation": "This is a circle centred at the origin with radius $\\sqrt2$.",
+        "description": "Find y when t = -3",
+        "workingLatex": "t = -3:\\quad y = 4(-3) - 3 = -15",
+        "explanation": "For $t = -3$ the height is $-15$, which is below the $x$-axis.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Apply the 'below the x-axis' condition",
+        "workingLatex": "y < 0 \\ \\Rightarrow\\ t = 3 \\ \\text{rejected}, \\quad t = -3 \\ \\text{kept}",
+        "explanation": "Only one of the two points lies below the axis, so the condition $y < 0$ selects $t = -3$ and discards $t = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Write down the coordinates of A",
+        "workingLatex": "A = (10,\\, -15)",
+        "explanation": "With the valid parameter chosen, we already have both coordinates of $A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify the x-coordinate",
+        "workingLatex": "x = (-3)^{2} + 1 = 10 \\ \\checkmark",
+        "explanation": "Rechecking the $x$-coordinate confirms that $t = -3$ really does give the point we were told about.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer",
+        "workingLatex": "t = -3, \\qquad A = (10,\\, -15)",
+        "explanation": "This is the parameter value and the point that satisfy both conditions.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x^2 + y^2 = 2$ (circle, radius $\\sqrt2$)."
+    "finalAnswer": "$t = -3$ and $A = (10,\\,-15)$. The value $t = 3$ is rejected because it gives $y = 9$, which is above the $x$-axis."
   }
 }

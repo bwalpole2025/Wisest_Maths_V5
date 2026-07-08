@@ -6,53 +6,80 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "expression",
+  "answerType": "parametric",
   "tags": [
-    "parametric",
-    "cartesian",
-    "hyperbola",
-    "scaled"
+    "cartesian to parametric",
+    "parabola",
+    "parameter range"
   ],
-  "questionText": "A curve has parametric equations $x = \\sec\\theta$, $y = 3\\tan\\theta$. Find the Cartesian equation.",
+  "questionText": "A parabola has Cartesian equation $y^{2} = 8x$. Find parametric equations for the parabola in terms of a parameter $t$, state the range of $t$ needed to describe the whole curve, and state the range of $x$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the trig functions",
-        "workingLatex": "\\sec\\theta = x, \\quad \\tan\\theta = \\frac{y}{3}",
-        "explanation": "Dividing the $y$-equation by $3$ isolates $\\tan\\theta$.",
+        "description": "Compare with the standard parabola form",
+        "workingLatex": "y^{2} = 4ax \\quad\\Rightarrow\\quad 4a = 8 \\quad\\Rightarrow\\quad a = 2",
+        "explanation": "A right-opening parabola $y^{2} = 4ax$ has a known parametric form, so we first read off $a$ by matching $4a$ with the given coefficient $8$.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Choose the linking identity",
-        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = 1",
-        "explanation": "This identity connects the two parameters.",
+        "description": "Recall the standard parametrisation",
+        "workingLatex": "x = a t^{2}, \\qquad y = 2 a t",
+        "explanation": "For $y^{2} = 4ax$ the standard parameter satisfies these two equations; substituting them makes the Cartesian equation an identity, which we will confirm.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute",
-        "workingLatex": "x^2 - \\left(\\frac{y}{3}\\right)^2 = 1",
-        "explanation": "Inserting the parametric expressions eliminates $\\theta$.",
+        "description": "Substitute a = 2",
+        "workingLatex": "x = 2 t^{2}, \\qquad y = 4 t",
+        "explanation": "Putting $a = 2$ into the standard form gives concrete parametric equations for this particular parabola.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Simplify",
-        "workingLatex": "x^2 - \\frac{y^2}{9} = 1",
-        "explanation": "Squaring the fraction gives $\\frac{y^2}{9}$.",
+        "description": "Compute each side of the Cartesian equation",
+        "workingLatex": "y^{2} = (4t)^{2} = 16 t^{2}, \\qquad 8x = 8(2t^{2}) = 16 t^{2}",
+        "explanation": "Both sides equal $16t^{2}$ for every $t$, which shows the point always lies on $y^{2} = 8x$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Identify the curve",
-        "workingLatex": "x^2 - \\frac{y^2}{9} = 1 \\text{ (hyperbola)}",
-        "explanation": "This is a hyperbola with vertices at $(\\pm 1, 0)$.",
+        "description": "Confirm the identity holds",
+        "workingLatex": "y^{2} = 8x \\ \\checkmark",
+        "explanation": "Since the two expressions are equal for all $t$, the parametrisation genuinely traces the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the range of t",
+        "workingLatex": "t \\in \\mathbb{R}",
+        "explanation": "Nothing stops $t$ taking any real value, and each real $t$ gives a distinct point, so all real $t$ are needed to sweep the whole curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Reason about the range of x",
+        "workingLatex": "x = 2 t^{2} \\ge 0 \\quad \\text{since } t^{2} \\ge 0",
+        "explanation": "A square is never negative, so $2t^{2}$ cannot be negative; this tells us how far the curve reaches horizontally.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the range of x",
+        "workingLatex": "x \\ge 0",
+        "explanation": "The parabola lies entirely in the region $x \\ge 0$, opening to the right from its vertex at the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Collect the results together",
+        "workingLatex": "x = 2t^{2},\\ \\ y = 4t, \\quad t \\in \\mathbb{R}, \\quad x \\ge 0",
+        "explanation": "These parametric equations, with $t$ over all reals, describe the entire parabola, which occupies $x \\ge 0$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$x^2 - \\dfrac{y^2}{9} = 1$"
+    "finalAnswer": "$x = 2t^{2},\\ y = 4t$ for $t \\in \\mathbb{R}$; the curve occupies $x \\ge 0$."
   }
 }

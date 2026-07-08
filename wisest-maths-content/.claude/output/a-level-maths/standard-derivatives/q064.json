@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "exponential",
+    "rate of change",
+    "modelling"
+  ],
+  "questionText": "The number of bacteria, $P$ thousand, in a culture after $t$ hours is modelled by $P = 5e^{0.4t}$, $t \\ge 0$.\n(a) Find $\\dfrac{dP}{dt}$.\n(b) Find the initial rate of growth.\n(c) Find, in exact form, the time at which the rate of growth is $8$ thousand bacteria per hour, and the population at that time.\n(d) Show that the rate of growth is proportional to $P$, and find the time taken for the population to double from its initial value.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the standard result",
+        "workingLatex": "\\frac{d}{dt}(e^{0.4t}) = 0.4\\,e^{0.4t}",
+        "explanation": "The model uses the standard form $e^{kt}$ with $k=0.4$, whose derivative is $k$ times itself, i.e. $0.4e^{0.4t}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the model (part a)",
+        "workingLatex": "\\frac{dP}{dt} = 5 \\cdot 0.4\\,e^{0.4t} = 2e^{0.4t}",
+        "explanation": "Multiplying the constant $5$ by the derivative gives the rate of change of the population.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Interpret the derivative",
+        "workingLatex": "\\frac{dP}{dt} = 2e^{0.4t} \\quad (\\text{thousand per hour})",
+        "explanation": "This expression gives the instantaneous growth rate at any time $t$, measured in thousand bacteria per hour.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the initial rate (part b)",
+        "workingLatex": "\\left.\\frac{dP}{dt}\\right|_{t=0} = 2e^{0} = 2",
+        "explanation": "At $t=0$ the exponential is $1$, so the initial rate of growth is $2$ thousand bacteria per hour.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the rate equal to 8 (part c)",
+        "workingLatex": "2e^{0.4t} = 8 \\;\\Rightarrow\\; e^{0.4t} = 4",
+        "explanation": "We want the moment the growth rate reaches $8$ thousand per hour, so we set the derivative equal to $8$ and isolate the exponential.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Take natural logarithms",
+        "workingLatex": "0.4t = \\ln 4",
+        "explanation": "Applying $\\ln$ to both sides removes the exponential and gives a linear equation in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for t exactly",
+        "workingLatex": "t = \\frac{\\ln 4}{0.4} = \\frac{2\\ln 2}{0.4} = 5\\ln 2 \\approx 3.47",
+        "explanation": "Using $\\ln 4 = 2\\ln 2$ simplifies the answer to $5\\ln 2$ hours, about $3.47$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the population at that time",
+        "workingLatex": "P = 5e^{0.4t} = 5 \\times 4 = 20",
+        "explanation": "Since $e^{0.4t}=4$ at this instant, the population is $5\\times 4 = 20$ thousand bacteria.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Show the rate is proportional to P (part d)",
+        "workingLatex": "\\frac{dP}{dt} = 2e^{0.4t} = 0.4\\bigl(5e^{0.4t}\\bigr) = 0.4P",
+        "explanation": "Factoring the rate reveals it equals $0.4$ times the population itself, so the growth rate is proportional to $P$ with constant $0.4$ per hour.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Verify the proportionality against earlier answers",
+        "workingLatex": "0.4 \\times 5 = 2, \\qquad 0.4 \\times 20 = 8",
+        "explanation": "This matches part (b) (population $5$, rate $2$) and part (c) (population $20$, rate $8$), confirming $\\dfrac{dP}{dt}=0.4P$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Set up the doubling condition",
+        "workingLatex": "5e^{0.4t} = 10 \\;\\Rightarrow\\; e^{0.4t} = 2",
+        "explanation": "The initial value is $5$ thousand, so doubling means reaching $10$ thousand. We solve for the time this takes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Take logarithms",
+        "workingLatex": "0.4t = \\ln 2",
+        "explanation": "Applying $\\ln$ again isolates $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for the doubling time",
+        "workingLatex": "t = \\frac{\\ln 2}{0.4} = \\tfrac{5}{2}\\ln 2 \\approx 1.73",
+        "explanation": "The population doubles from its initial value after $\\tfrac{5}{2}\\ln 2$ hours, about $1.73$ hours.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Summarise the results",
+        "workingLatex": "\\frac{dP}{dt} = 2e^{0.4t}, \\quad t = 5\\ln 2,\\; P=20, \\quad \\frac{dP}{dt}=0.4P, \\quad t_{2\\times} = \\tfrac{5}{2}\\ln 2",
+        "explanation": "All parts are complete: the rate, the initial rate, the exact time and population at rate $8$, the proportionality, and the doubling time.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dP}{dt}=2e^{0.4t}$. (b) $2$ thousand per hour. (c) $t=5\\ln 2\\approx 3.47$ hours, when $P=20$ thousand. (d) $\\dfrac{dP}{dt}=0.4P$; the population doubles from its initial value after $t=\\tfrac{5}{2}\\ln 2\\approx 1.73$ hours."
+  }
+}

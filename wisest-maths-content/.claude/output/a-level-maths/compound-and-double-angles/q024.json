@@ -6,60 +6,87 @@
   "subtopicId": "al.y2.pure.compound-double-angles",
   "difficulty": "Intermediate",
   "marks": 5,
-  "answerType": "proof",
+  "answerType": "exact",
   "tags": [
     "double angle",
-    "identities",
-    "proof",
-    "tangent"
+    "quadrant",
+    "exact values"
   ],
-  "questionText": "Prove that $\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\tan\\theta$.",
+  "questionText": "Given that $\\cos\\theta = \\tfrac{5}{13}$ and that $270^\\circ < \\theta < 360^\\circ$, find the exact values of $\\sin 2\\theta$, $\\cos 2\\theta$ and $\\tan 2\\theta$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the useful form of the numerator",
-        "workingLatex": "1 - \\cos 2\\theta = 1 - (1 - 2\\sin^2\\theta)",
-        "explanation": "Using $\\cos 2\\theta = 1 - 2\\sin^2\\theta$ is deliberate so the constants cancel and a sine squared remains.",
+        "description": "Identify the signs from the quadrant",
+        "workingLatex": "270^\\circ < \\theta < 360^\\circ \\;\\Rightarrow\\; \\cos\\theta>0,\\ \\sin\\theta<0",
+        "explanation": "This is the fourth quadrant, where cosine is positive and sine is negative. The given $\\cos\\theta=\\tfrac{5}{13}$ fits, and it warns that $\\sin\\theta$ must be taken negative.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Simplify the numerator",
-        "workingLatex": "1 - \\cos 2\\theta = 2\\sin^2\\theta",
-        "explanation": "The $1$ and $-1$ cancel, leaving $2\\sin^2\\theta$.",
+        "description": "Find sin theta from the Pythagorean identity",
+        "workingLatex": "\\sin\\theta = -\\sqrt{1-\\cos^2\\theta} = -\\sqrt{1-\\tfrac{25}{169}} = -\\sqrt{\\tfrac{144}{169}} = -\\tfrac{12}{13}",
+        "explanation": "From $\\sin^2\\theta+\\cos^2\\theta\\equiv1$ we get $\\sin\\theta=\\pm\\sqrt{1-\\cos^2\\theta}$; the fourth-quadrant rule selects the negative root.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Expand the denominator",
+        "description": "State the sine double-angle formula",
         "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
-        "explanation": "The denominator becomes the standard double angle expansion.",
+        "explanation": "The double angle is expressed through the single-angle ratios we have found.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Form the fraction",
-        "workingLatex": "\\frac{1 - \\cos 2\\theta}{\\sin 2\\theta} = \\frac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta}",
-        "explanation": "Substituting both parts gives a fraction ready to cancel.",
+        "description": "Substitute to find sin 2theta",
+        "workingLatex": "\\sin 2\\theta = 2\\left(-\\tfrac{12}{13}\\right)\\left(\\tfrac{5}{13}\\right) = -\\tfrac{120}{169}",
+        "explanation": "One negative and one positive factor multiply to a negative result.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Cancel common factors",
-        "workingLatex": "= \\frac{\\sin\\theta}{\\cos\\theta}",
-        "explanation": "Cancelling the $2$ and one sine leaves sine over cosine.",
+        "description": "Choose a cosine double-angle formula",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "Here the $2\\cos^2\\theta-1$ form is convenient because $\\cos\\theta$ is exactly the ratio we were given.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Recognise the result",
-        "workingLatex": "= \\tan\\theta \\;\\blacksquare",
-        "explanation": "This is tangent, matching the right-hand side. This identity is the half-angle tangent result.",
+        "description": "Substitute to find cos 2theta",
+        "workingLatex": "\\cos 2\\theta = 2\\cdot\\tfrac{25}{169} - 1 = \\tfrac{50}{169} - \\tfrac{169}{169} = -\\tfrac{119}{169}",
+        "explanation": "Writing $1$ as $\\tfrac{169}{169}$ makes the subtraction of fractions straightforward and gives a negative cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form tan 2theta by division",
+        "workingLatex": "\\tan 2\\theta = \\dfrac{\\sin 2\\theta}{\\cos 2\\theta} = \\dfrac{-120/169}{-119/169} = \\tfrac{120}{119}",
+        "explanation": "Dividing the two exact values, the $169$s cancel and the two negatives give a positive tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check with the Pythagorean identity",
+        "workingLatex": "\\sin^2 2\\theta + \\cos^2 2\\theta = \\tfrac{14400}{28561} + \\tfrac{14161}{28561} = \\tfrac{28561}{28561} = 1",
+        "explanation": "The squared double-angle ratios sum to $1$, confirming the two values are consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret the quadrant of 2theta",
+        "workingLatex": "\\sin 2\\theta<0,\\ \\cos 2\\theta<0 \\;\\Rightarrow\\; 2\\theta \\text{ is a third-quadrant angle}",
+        "explanation": "Both ratios are negative, so $2\\theta$ (in standard position) lies in the third quadrant, a helpful check on the signs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "State the results",
+        "workingLatex": "\\sin 2\\theta = -\\tfrac{120}{169}, \\quad \\cos 2\\theta = -\\tfrac{119}{169}, \\quad \\tan 2\\theta = \\tfrac{120}{119}",
+        "explanation": "Collecting the exact values gives the final answer.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\tan\\theta$"
+    "finalAnswer": "$\\sin 2\\theta = -\\tfrac{120}{169}$, $\\cos 2\\theta = -\\tfrac{119}{169}$, $\\tan 2\\theta = \\tfrac{120}{119}$."
   }
 }

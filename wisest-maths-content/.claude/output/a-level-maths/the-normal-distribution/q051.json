@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.stats.normal-distribution.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "coordinates",
+  "tags": [
+    "normal distribution",
+    "finding mu and sigma",
+    "simultaneous equations",
+    "inverse normal"
+  ],
+  "questionText": "The marks, $X$, scored by a large cohort of students in an examination are modelled by a normal distribution $X \\sim N(\\mu, \\sigma^2)$. It is known that $10\\%$ of students score below $40$ marks and $5\\%$ of students score above $70$ marks. Find the values of $\\mu$ and $\\sigma$, giving your answers to $3$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the model and write the given facts as probabilities",
+        "workingLatex": "X \\sim N(\\mu, \\sigma^2), \\qquad P(X < 40) = 0.10, \\qquad P(X > 70) = 0.05",
+        "explanation": "The marks follow a normal distribution with unknown mean $\\mu$ and unknown standard deviation $\\sigma$. ‘$10\\%$ score below $40$’ means the area to the left of $40$ is $0.10$, so $P(X<40)=0.10$; ‘$5\\%$ score above $70$’ means $P(X>70)=0.05$. Two unknowns require two equations, which these two facts will supply.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the first condition",
+        "workingLatex": "P\\left(Z < \\dfrac{40 - \\mu}{\\sigma}\\right) = 0.10",
+        "explanation": "To use the standard normal we substitute $Z=\\dfrac{X-\\mu}{\\sigma}$, which turns the mark $40$ into the standardised value $\\dfrac{40-\\mu}{\\sigma}$. The area below that standardised value is still $0.10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the z-value for the lower tail",
+        "workingLatex": "z_1 = \\Phi^{-1}(0.10) = -1.2816",
+        "explanation": "The inverse normal $\\Phi^{-1}(0.10)$ returns the standardised value with $10\\%$ of the area below it. It is negative because a point with only $10\\%$ of the distribution beneath it must lie to the left of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the first equation in mu and sigma",
+        "workingLatex": "\\dfrac{40 - \\mu}{\\sigma} = -1.2816",
+        "explanation": "Because the standardised value of $40$ equals $z_1$, we may set the two equal. This links the unknowns $\\mu$ and $\\sigma$ in a single linear relationship.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rewrite the upper-tail condition and standardise",
+        "workingLatex": "P(X < 70) = 1 - 0.05 = 0.95 \\ \\Rightarrow\\ P\\left(Z < \\dfrac{70 - \\mu}{\\sigma}\\right) = 0.95",
+        "explanation": "The inverse normal reads from the lower tail, so we convert the upper-tail statement: if $5\\%$ lie above $70$ then $95\\%$ lie below it. Standardising $70$ then gives the second condition on $Z$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the z-value for the second condition",
+        "workingLatex": "z_2 = \\Phi^{-1}(0.95) = 1.6449",
+        "explanation": "The value with $95\\%$ of the area below it is positive because it sits well to the right of the mean; the inverse normal gives $z_2 = 1.6449$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the second equation in mu and sigma",
+        "workingLatex": "\\dfrac{70 - \\mu}{\\sigma} = 1.6449",
+        "explanation": "Equating the standardised value of $70$ with $z_2$ gives a second linear equation in $\\mu$ and $\\sigma$, so we now have a pair to solve simultaneously.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Clear the fractions in both equations",
+        "workingLatex": "40 - \\mu = -1.2816\\,\\sigma, \\qquad 70 - \\mu = 1.6449\\,\\sigma",
+        "explanation": "Multiplying each equation by $\\sigma$ removes the fractions and puts both into the tidy form ‘value minus mean equals $z$ times standard deviation’, ready for elimination.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Subtract to eliminate mu",
+        "workingLatex": "(70 - \\mu) - (40 - \\mu) = 1.6449\\,\\sigma - (-1.2816\\,\\sigma)",
+        "explanation": "Subtracting the first equation from the second cancels the $-\\mu$ terms, leaving one equation in $\\sigma$ alone. Eliminating $\\mu$ first is the quickest route because $\\sigma$ then follows immediately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Simplify both sides",
+        "workingLatex": "30 = 2.9265\\,\\sigma",
+        "explanation": "The left side is $70 - 40 = 30$; on the right the two $z$-values combine as $1.6449 + 1.2816 = 2.9265$. This isolates $\\sigma$ up to a single division.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Solve for sigma",
+        "workingLatex": "\\sigma = \\dfrac{30}{2.9265} = 10.25",
+        "explanation": "Dividing the gap in marks by the gap in standardised values gives the standard deviation. Intuitively $30$ marks spans about $2.93$ standard deviations, so one standard deviation is roughly $10.3$ marks.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Substitute back to find mu",
+        "workingLatex": "\\mu = 40 + 1.2816 \\times 10.25 = 53.14",
+        "explanation": "Rearranging the first equation gives $\\mu = 40 + 1.2816\\,\\sigma$. Substituting $\\sigma$ locates the mean above $40$, as expected, since $40$ is a low mark with only $10\\%$ of students below it.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "State both parameters to 3 s.f.",
+        "workingLatex": "\\mu \\approx 53.1, \\qquad \\sigma \\approx 10.3",
+        "explanation": "Rounding each to three significant figures gives the fitted model $X \\sim N(53.1,\\ 10.3^2)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check against the original information",
+        "workingLatex": "P(X < 40) \\approx 0.102, \\qquad P(X > 70) \\approx 0.050",
+        "explanation": "Substituting $\\mu = 53.1$ and $\\sigma = 10.3$ reproduces about $10\\%$ below $40$ and $5\\%$ above $70$, confirming the parameters agree with the given information.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\mu \\approx 53.1$ marks and $\\sigma \\approx 10.3$ marks, so $X \\sim N(53.1,\\ 10.3^2)$."
+  }
+}

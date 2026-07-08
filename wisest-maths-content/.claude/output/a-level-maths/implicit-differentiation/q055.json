@@ -1,0 +1,121 @@
+{
+  "id": "al.y2.pure.implicit.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Implicit differentiation",
+  "subtopicId": "al.y2.pure.implicit",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "implicit differentiation",
+    "circle",
+    "tangent",
+    "area"
+  ],
+  "questionText": "The circle $C$ has equation $x^2 + y^2 = 25$. The tangent to $C$ at the point $P(3, 4)$ meets the $x$-axis at $A$ and the $y$-axis at $B$. Find the coordinates of $A$ and $B$, and hence the exact area of triangle $OAB$, where $O$ is the origin.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Check that P(3, 4) lies on C",
+        "workingLatex": "3^2 + 4^2 = 9 + 16 = 25",
+        "explanation": "The coordinates satisfy $x^2+y^2=25$, so $P(3,4)$ lies on the circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both sides with respect to x",
+        "workingLatex": "2x + 2y\\frac{dy}{dx} = 0",
+        "explanation": "Differentiating $x^2$ gives $2x$; differentiating $y^2$ needs the chain rule, giving $2y\\frac{dy}{dx}$. The constant $25$ gives $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Make dy/dx the subject",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{x}{y}",
+        "explanation": "Dividing through by $2y$ isolates the gradient as $-\\tfrac{x}{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute P(3, 4) to find the gradient",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{(3,4)} = -\\frac{3}{4}",
+        "explanation": "Substituting the coordinates of $P$ gives the tangent gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the tangent gradient",
+        "workingLatex": "m = -\\frac{3}{4}",
+        "explanation": "So the tangent to $C$ at $P$ has gradient $-\\tfrac{3}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form the tangent equation",
+        "workingLatex": "y - 4 = -\\frac{3}{4}(x - 3)",
+        "explanation": "Using $y - y_1 = m(x - x_1)$ through $P(3,4)$ with gradient $-\\tfrac34$ gives the tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Clear fractions and tidy",
+        "workingLatex": "4(y - 4) = -3(x - 3) \\;\\Rightarrow\\; 4y - 16 = -3x + 9",
+        "explanation": "Multiplying both sides by $4$ removes the fraction before rearranging.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write the tangent in a clean form",
+        "workingLatex": "3x + 4y = 25",
+        "explanation": "Collecting terms gives the tidy tangent equation $3x + 4y = 25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Find A where the tangent meets the x-axis",
+        "workingLatex": "y = 0 \\;\\Rightarrow\\; 3x = 25 \\;\\Rightarrow\\; x = \\frac{25}{3}",
+        "explanation": "On the $x$-axis $y=0$; solving gives $A = \\left(\\tfrac{25}{3}, 0\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Find B where the tangent meets the y-axis",
+        "workingLatex": "x = 0 \\;\\Rightarrow\\; 4y = 25 \\;\\Rightarrow\\; y = \\frac{25}{4}",
+        "explanation": "On the $y$-axis $x=0$; solving gives $B = \\left(0, \\tfrac{25}{4}\\right)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Identify the triangle's legs",
+        "workingLatex": "OA = \\frac{25}{3}, \\qquad OB = \\frac{25}{4}",
+        "explanation": "Triangle $OAB$ is right-angled at the origin, with legs along the axes of these lengths.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Set up the area",
+        "workingLatex": "\\text{Area} = \\frac{1}{2}\\times OA \\times OB = \\frac{1}{2}\\times \\frac{25}{3}\\times \\frac{25}{4}",
+        "explanation": "The area of a right-angled triangle is half the product of the two perpendicular legs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Evaluate the area",
+        "workingLatex": "\\text{Area} = \\frac{1}{2}\\times \\frac{625}{12} = \\frac{625}{24}",
+        "explanation": "Multiplying the fractions gives the exact area $\\tfrac{625}{24}$ (about $26.0$ square units).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "State the results",
+        "workingLatex": "A = \\left(\\tfrac{25}{3}, 0\\right), \\quad B = \\left(0, \\tfrac{25}{4}\\right), \\quad \\text{Area} = \\frac{625}{24}",
+        "explanation": "These are the axis intercepts of the tangent and the exact area of triangle $OAB$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$A = \\left(\\tfrac{25}{3}, 0\\right)$, $B = \\left(0, \\tfrac{25}{4}\\right)$; area of triangle $OAB = \\dfrac{625}{24}$."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "trigonometry",
+    "radians"
+  ],
+  "questionText": "The curve $y = 3\\sin x + 2\\cos x$ is defined with $x$ in radians. Find the gradient of the curve at $x = \\dfrac{\\pi}{2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up and note the angle units",
+        "workingLatex": "y = 3\\sin x + 2\\cos x",
+        "explanation": "We differentiate each term separately. The standard trig derivatives are only valid when $x$ is measured in radians, which it is here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the sine term",
+        "workingLatex": "\\frac{d}{dx}(3\\sin x) = 3\\cos x",
+        "explanation": "The derivative of $\\sin x$ is $\\cos x$, and the constant $3$ multiplies through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the cosine term",
+        "workingLatex": "\\frac{d}{dx}(2\\cos x) = -2\\sin x",
+        "explanation": "The derivative of $\\cos x$ is $-\\sin x$ (note the minus sign), and the constant $2$ multiplies through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = 3\\cos x - 2\\sin x",
+        "explanation": "Adding the derivatives of the two terms gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\frac{\\pi}{2}} = 3\\cos\\tfrac{\\pi}{2} - 2\\sin\\tfrac{\\pi}{2}",
+        "explanation": "Substitute $x=\\tfrac{\\pi}{2}$ radians into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the trig values",
+        "workingLatex": "= 3(0) - 2(1)",
+        "explanation": "In radians $\\cos\\tfrac{\\pi}{2}=0$ and $\\sin\\tfrac{\\pi}{2}=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = -2",
+        "explanation": "So the curve is falling at $x=\\tfrac{\\pi}{2}$, with gradient $-2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient at $x=\\tfrac{\\pi}{2}$ is $-2$."
+  }
+}

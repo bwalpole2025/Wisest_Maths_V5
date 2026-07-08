@@ -4,47 +4,117 @@
   "topic": "Year 2 Pure",
   "subtopic": "Parametric curves",
   "subtopicId": "al.y2.pure.parametric-curves",
-  "difficulty": "Intermediate",
-  "marks": 5,
-  "answerType": "expression",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "equation",
   "tags": [
-    "parametric",
-    "cartesian",
-    "ellipse"
+    "double angle",
+    "eliminating the parameter",
+    "domain and range"
   ],
-  "questionText": "A curve has parametric equations $x = 5\\cos\\theta$, $y = 12\\sin\\theta$. Find the Cartesian equation.",
+  "questionText": "A curve is given parametrically by $x = \\sin t$ and $y = \\sin 2t$, for $0 \\le t < 2\\pi$. (a) Show that a Cartesian equation of the curve is $y^{2} = 4x^{2}\\left(1 - x^{2}\\right)$. (b) State the domain of $x$ and the range of $y$. (c) Find the coordinates of every point where the curve meets the coordinate axes.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Isolate the trig functions",
-        "workingLatex": "\\cos\\theta = \\frac{x}{5}, \\quad \\sin\\theta = \\frac{y}{12}",
-        "explanation": "Dividing by each coefficient isolates the trig functions.",
+        "description": "Choose the identity to use",
+        "workingLatex": "x = \\sin t, \\qquad y = \\sin 2t",
+        "explanation": "Here $y$ is a double angle of the same angle $t$ that appears in $x$. The double-angle formula $\\sin 2t = 2\\sin t\\cos t$ will let us bring in $x = \\sin t$ directly.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Apply the Pythagorean identity",
-        "workingLatex": "\\left(\\frac{x}{5}\\right)^2 + \\left(\\frac{y}{12}\\right)^2 = 1",
-        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ removes $\\theta$.",
+        "description": "Write down the double-angle formula",
+        "workingLatex": "\\sin 2t = 2\\sin t \\cos t",
+        "explanation": "This is the standard expansion of $\\sin 2t$. It contains both $\\sin t$ and $\\cos t$, so we will need each of them in terms of $x$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Simplify",
-        "workingLatex": "\\frac{x^2}{25} + \\frac{y^2}{144} = 1",
-        "explanation": "Squaring gives denominators $25$ and $144$.",
+        "description": "Substitute sin t = x",
+        "workingLatex": "y = 2x\\cos t",
+        "explanation": "Since $x = \\sin t$, the $\\sin t$ factor becomes $x$. The awkward part is the leftover $\\cos t$, which is not directly one of our variables.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Identify the curve",
-        "workingLatex": "\\frac{x^2}{25} + \\frac{y^2}{144} = 1 \\text{ (ellipse)}",
-        "explanation": "An ellipse with semi-axes $5$ horizontally and $12$ vertically.",
+        "description": "Express cos t using the Pythagorean identity",
+        "workingLatex": "\\cos t = \\pm\\sqrt{1 - \\sin^{2} t} = \\pm\\sqrt{1 - x^{2}}",
+        "explanation": "From $\\sin^{2} t + \\cos^{2} t = 1$ we get $\\cos t = \\pm\\sqrt{1-x^{2}}$. The sign depends on which quarter of the circle $t$ lies in, so we must keep the $\\pm$ for now.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute for cos t",
+        "workingLatex": "y = \\pm 2x\\sqrt{1 - x^{2}}",
+        "explanation": "This gives $y$ in terms of $x$, but the $\\pm$ makes it a pair of equations rather than one clean curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Remove the ambiguous sign by squaring",
+        "workingLatex": "y^{2} = 4x^{2}\\left(1 - x^{2}\\right)",
+        "explanation": "Squaring both sides eliminates the troublesome $\\pm$ and captures both branches in a single equation. This is the required Cartesian form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the domain from x = sin t",
+        "workingLatex": "-1 \\le \\sin t \\le 1 \\implies -1 \\le x \\le 1",
+        "explanation": "Because $x = \\sin t$ and sine never leaves $[-1, 1]$, the curve only exists for $-1 \\le x \\le 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the range from y = sin 2t",
+        "workingLatex": "-1 \\le \\sin 2t \\le 1 \\implies -1 \\le y \\le 1",
+        "explanation": "Likewise $y = \\sin 2t$ is a sine, so it too is bounded between $-1$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Note the symmetry of the equation",
+        "workingLatex": "x \\to -x: \\ (-x)^{2} = x^{2}; \\qquad y \\to -y: \\ (-y)^{2} = y^{2}",
+        "explanation": "The equation only contains $x^{2}$ and $y^{2}$, so replacing $x$ by $-x$ or $y$ by $-y$ leaves it unchanged. The curve is therefore symmetric about both axes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Meet the y-axis",
+        "workingLatex": "x = 0 \\implies y^{2} = 4(0)\\left(1 - 0\\right) = 0 \\implies y = 0",
+        "explanation": "Setting $x=0$ forces $y=0$, so the only crossing on the $y$-axis is the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Meet the x-axis",
+        "workingLatex": "y = 0 \\implies 4x^{2}\\left(1 - x^{2}\\right) = 0",
+        "explanation": "On the $x$-axis $y=0$, so the right-hand side must vanish. A product is zero exactly when one of its factors is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Solve for x",
+        "workingLatex": "x = 0 \\quad \\text{or} \\quad 1 - x^{2} = 0 \\implies x = \\pm 1",
+        "explanation": "This gives $x = 0$ and $x = \\pm 1$, all of which satisfy $-1 \\le x \\le 1$, so all are valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "List the axis points",
+        "workingLatex": "(0,\\ 0), \\qquad (1,\\ 0), \\qquad (-1,\\ 0)",
+        "explanation": "The curve passes through the origin and touches the $x$-axis at $(\\pm 1, 0)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Describe the curve",
+        "workingLatex": "y^{2} = 4x^{2}\\left(1 - x^{2}\\right), \\quad -1 \\le x \\le 1",
+        "explanation": "The two branches $y = \\pm 2x\\sqrt{1-x^{2}}$ join at the origin and at $(\\pm 1, 0)$, producing a symmetric figure-of-eight made of two loops, one on each side of the $y$-axis.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\dfrac{x^2}{25} + \\dfrac{y^2}{144} = 1$"
+    "finalAnswer": "(a) $y^{2} = 4x^{2}\\left(1 - x^{2}\\right)$. (b) Domain $-1 \\le x \\le 1$, range $-1 \\le y \\le 1$. (c) The curve meets the axes at $(0,\\,0)$, $(1,\\,0)$ and $(-1,\\,0)$; it is a symmetric figure-of-eight passing through the origin."
   }
 }

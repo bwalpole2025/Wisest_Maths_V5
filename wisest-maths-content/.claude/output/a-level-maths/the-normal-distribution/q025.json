@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "between two values",
+    "expected number"
+  ],
+  "questionText": "The lifetimes, $X$ hours, of a type of battery are modelled by $X \\sim N(20, 3^2)$. A shop sells a batch of $200$ of these batteries. Estimate how many of them have a lifetime between $18$ and $24$ hours.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution and the probability required",
+        "workingLatex": "X \\sim N(20,\\ 3^2), \\qquad P(18 < X < 24)",
+        "explanation": "Lifetimes are normal with mean $\\mu = 20$ and standard deviation $\\sigma = 3$. We first find the probability that a single battery lasts between $18$ and $24$ hours, then scale up to the batch.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Standardise the lower boundary",
+        "workingLatex": "z_1 = \\dfrac{18 - 20}{3} = -0.6667",
+        "explanation": "Measuring $18$ in standard deviations from the mean gives a negative $z$, since $18$ is below the mean of $20$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Standardise the upper boundary",
+        "workingLatex": "z_2 = \\dfrac{24 - 20}{3} = 1.3333",
+        "explanation": "The upper boundary $24$ lies above the mean, so its standardised value is positive at $1.3333$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite in terms of $Z$",
+        "workingLatex": "P(18 < X < 24) = P(-0.6667 < Z < 1.3333)",
+        "explanation": "Standardising both ends turns the lifetime band into a $Z$-band, so we can read the area from the standard normal distribution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Express as a difference of $\\Phi$ values",
+        "workingLatex": "= \\Phi(1.3333) - \\Phi(-0.6667)",
+        "explanation": "The area of the band equals the cumulative area up to the right boundary minus the cumulative area up to the left boundary.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the two cumulative probabilities",
+        "workingLatex": "\\Phi(1.3333) = 0.9088, \\qquad \\Phi(-0.6667) = 0.2525",
+        "explanation": "The calculator's normal CDF gives the area to the left of each $z$-value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract to find the probability for one battery",
+        "workingLatex": "P(18 < X < 24) = 0.9088 - 0.2525 = 0.6563",
+        "explanation": "Removing the lower area leaves the probability that a single battery's lifetime falls in the required band.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Scale up to the batch of 200",
+        "workingLatex": "200 \\times 0.6563 = 131.26",
+        "explanation": "If each of the $200$ batteries independently has probability $0.6563$ of landing in the band, the expected number is the batch size multiplied by that probability.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Interpret as a whole number of batteries",
+        "workingLatex": "131.26 \\approx 131",
+        "explanation": "A count of batteries must be a whole number, so we round to the nearest integer: about $131$ batteries are expected to last between $18$ and $24$ hours.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "About $131$ batteries (from $200 \\times 0.6563 = 131.26$)."
+  }
+}

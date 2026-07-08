@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "numeric",
+  "tags": [
+    "standard derivatives",
+    "trigonometry",
+    "radians"
+  ],
+  "questionText": "The curve $y = 2\\sin x + 3x$ has $x$ in radians. Find the gradient of the curve at $x = \\dfrac{\\pi}{3}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up and note the angle units",
+        "workingLatex": "y = 2\\sin x + 3x",
+        "explanation": "Differentiate the trig term and the linear term separately; the trig derivative needs $x$ in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the sine term",
+        "workingLatex": "\\frac{d}{dx}(2\\sin x) = 2\\cos x",
+        "explanation": "The derivative of $\\sin x$ is $\\cos x$, and the constant $2$ multiplies through.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the linear term",
+        "workingLatex": "\\frac{d}{dx}(3x) = 3",
+        "explanation": "The derivative of $x$ is $1$, so $3x$ differentiates to $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine to form the gradient function",
+        "workingLatex": "\\frac{dy}{dx} = 2\\cos x + 3",
+        "explanation": "Adding the two derivatives gives the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the required x-value",
+        "workingLatex": "\\left.\\frac{dy}{dx}\\right|_{x=\\frac{\\pi}{3}} = 2\\cos\\tfrac{\\pi}{3} + 3",
+        "explanation": "Substitute $x=\\tfrac{\\pi}{3}$ radians into the gradient function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= 2\\left(\\tfrac{1}{2}\\right) + 3 = 1 + 3",
+        "explanation": "In radians $\\cos\\tfrac{\\pi}{3}=\\tfrac{1}{2}$, so $2\\times\\tfrac{1}{2}=1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\frac{dy}{dx} = 4",
+        "explanation": "So the gradient at $x=\\tfrac{\\pi}{3}$ is $4$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The gradient at $x=\\tfrac{\\pi}{3}$ is $4$."
+  }
+}

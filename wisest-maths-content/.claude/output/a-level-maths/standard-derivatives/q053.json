@@ -1,0 +1,128 @@
+{
+  "id": "al.y2.pure.standard-derivatives.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Standard derivatives",
+  "subtopicId": "al.y2.pure.standard-derivatives",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "standard derivatives",
+    "tangent",
+    "intersection",
+    "exponential"
+  ],
+  "questionText": "The tangent to the curve $y = e^{x}$ at the point where $x = 0$ is $T_1$, and the tangent at the point where $x = 1$ is $T_2$. Find the equations of $T_1$ and $T_2$, and hence the exact coordinates of the point where the two tangents intersect.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the curve",
+        "workingLatex": "\\frac{dy}{dx} = e^{x}",
+        "explanation": "The standard result $\\dfrac{d}{dx}(e^{x}) = e^{x}$ means the gradient at any point equals the $y$-value there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the gradient and point of contact at x = 0",
+        "workingLatex": "m_{1} = e^{0} = 1, \\quad y = e^{0} = 1 \\Rightarrow (0,\\,1)",
+        "explanation": "At $x=0$ both the gradient and the $y$-coordinate equal $1$, so $T_1$ has gradient $1$ through $(0,1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the equation of T_1",
+        "workingLatex": "T_{1}:\\ y - 1 = 1(x - 0) \\Rightarrow y = x + 1",
+        "explanation": "Using point-gradient form with $(0,1)$ and gradient $1$ gives the first tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the gradient and point of contact at x = 1",
+        "workingLatex": "m_{2} = e^{1} = e, \\quad y = e^{1} = e \\Rightarrow (1,\\, e)",
+        "explanation": "At $x=1$ the gradient and $y$-coordinate both equal $e$, so $T_2$ has gradient $e$ through $(1,e)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the equation of T_2",
+        "workingLatex": "T_{2}:\\ y - e = e(x - 1) \\Rightarrow y = ex",
+        "explanation": "Expanding $e(x-1)+e = ex - e + e = ex$ gives a very clean tangent through the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set the two tangents equal to find the intersection",
+        "workingLatex": "x + 1 = ex",
+        "explanation": "At the intersection both lines share the same $x$ and $y$, so we set their right-hand sides equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve for x",
+        "workingLatex": "1 = ex - x = x(e - 1) \\Rightarrow x = \\frac{1}{e-1}",
+        "explanation": "Collecting the $x$ terms and factoring gives the exact $x$-coordinate of the intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = x + 1 = \\frac{1}{e-1} + 1 = \\frac{1 + (e-1)}{e-1} = \\frac{e}{e-1}",
+        "explanation": "Substituting back into $T_1$ and writing over a common denominator gives the exact $y$-coordinate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the intersection point",
+        "workingLatex": "\\left(\\frac{1}{e-1},\\ \\frac{e}{e-1}\\right)",
+        "explanation": "This is the single point at which the two tangents cross.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the point also lies on T_2",
+        "workingLatex": "y = ex = e\\cdot\\frac{1}{e-1} = \\frac{e}{e-1} \\;\\checkmark",
+        "explanation": "Substituting the $x$-coordinate into $T_2$ gives the same $y$, confirming the point lies on both lines.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Check T_1 passes through its point of contact",
+        "workingLatex": "T_{1}\\text{ at }(0,1):\\ 0 + 1 = 1 \\;\\checkmark",
+        "explanation": "Verifying the point of tangency lies on $T_1$ guards against an arithmetic slip.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Check T_2 passes through its point of contact",
+        "workingLatex": "T_{2}\\text{ at }(1,e):\\ e(1) = e \\;\\checkmark",
+        "explanation": "Likewise the point $(1,e)$ satisfies $T_2$, confirming that tangent too.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Numerical value of the intersection",
+        "workingLatex": "x \\approx \\frac{1}{1.718} \\approx 0.582, \\quad y \\approx 1.582",
+        "explanation": "Since $e-1\\approx 1.718$, the intersection lies between the two points of contact, which is geometrically sensible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Confirm both tangents agree numerically there",
+        "workingLatex": "T_{1}:\\ 0.582 + 1 = 1.582; \\quad T_{2}:\\ e(0.582) \\approx 1.582 \\;\\checkmark",
+        "explanation": "Both tangents give the same $y$ at $x\\approx 0.582$, confirming the intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 15,
+        "description": "State the final answer",
+        "workingLatex": "T_{1}:\\ y = x+1, \\quad T_{2}:\\ y = ex, \\quad \\left(\\dfrac{1}{e-1},\\ \\dfrac{e}{e-1}\\right)",
+        "explanation": "Collecting the tangent equations and the intersection completes the solution in exact form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$T_1: y = x+1$ and $T_2: y = ex$; they intersect at $\\left(\\dfrac{1}{e-1},\\ \\dfrac{e}{e-1}\\right) \\approx (0.582,\\ 1.582)$."
+  }
+}

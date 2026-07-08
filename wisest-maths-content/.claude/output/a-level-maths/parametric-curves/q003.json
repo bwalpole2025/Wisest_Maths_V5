@@ -6,52 +6,59 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Easy",
   "marks": 4,
-  "answerType": "expression",
+  "answerType": "numeric",
   "tags": [
     "parametric",
-    "cartesian",
-    "quadratic"
+    "find parameter",
+    "verification"
   ],
-  "questionText": "A curve has parametric equations $x = t$, $y = t^2 - 4$. Find the Cartesian equation.",
+  "questionText": "A curve has parametric equations $x = t - 1$ and $y = t^{2}$. Show that the point $(2,\\, 9)$ lies on the curve, and state the value of $t$ there.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Identify the simplest substitution",
-        "workingLatex": "x = t",
-        "explanation": "Here $x$ equals $t$ directly, so eliminating $t$ is immediate.",
+        "description": "Use the x-coordinate to find t",
+        "workingLatex": "t - 1 = 2",
+        "explanation": "If the point lies on the curve, its $x$-value must come from the $x$-equation. Setting $x = 2$ lets us find the value of $t$ at that point.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "State t in terms of x",
-        "workingLatex": "t = x",
-        "explanation": "Since $x = t$, the parameter is just $x$.",
+        "description": "Solve for t",
+        "workingLatex": "t = 2 + 1 = 3",
+        "explanation": "Adding $1$ to both sides isolates $t$, giving the parameter value that produces $x = 2$.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Substitute into the y-equation",
-        "workingLatex": "y = x^2 - 4",
-        "explanation": "Replacing $t$ with $x$ in $y = t^2 - 4$ gives the Cartesian form directly.",
+        "description": "Set up the check",
+        "workingLatex": "y = t^{2}",
+        "explanation": "A point only lies on the curve if the same $t$ also gives the correct $y$-value, so we test $t = 3$ in the $y$-equation.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Describe the curve",
-        "workingLatex": "y = x^2 - 4",
-        "explanation": "This is a parabola with vertex at $(0, -4)$, opening upwards.",
+        "description": "Substitute t = 3 into the y-equation",
+        "workingLatex": "y = (3)^{2}",
+        "explanation": "Using $t = 3$ predicts the $y$-coordinate the curve should have at this point.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Check a point",
-        "workingLatex": "t = 2: (2, 0), \\quad 2^2 - 4 = 0 \\;\\checkmark",
-        "explanation": "The point from $t = 2$ satisfies the Cartesian equation, confirming the conversion.",
+        "description": "Evaluate y",
+        "workingLatex": "y = 9",
+        "explanation": "Squaring $3$ gives $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare and conclude",
+        "workingLatex": "9 = 9 \\quad \\text{(matches)}",
+        "explanation": "The predicted $y = 9$ matches the point's $y$-coordinate, so $(2,\\,9)$ does lie on the curve, and it occurs when $t = 3$.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = x^2 - 4$"
+    "finalAnswer": "The point $(2,\\, 9)$ lies on the curve; it corresponds to $t = 3$."
   }
 }

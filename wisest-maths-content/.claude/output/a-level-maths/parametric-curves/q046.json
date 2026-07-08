@@ -6,53 +6,94 @@
   "subtopicId": "al.y2.pure.parametric-curves",
   "difficulty": "Intermediate",
   "marks": 6,
-  "answerType": "expression",
+  "answerType": "parametric",
   "tags": [
-    "parametric",
-    "cartesian",
-    "line segment",
-    "trig"
+    "cartesian to parametric",
+    "circle",
+    "complete the square"
   ],
-  "questionText": "A curve has parametric equations $x = 2\\sin\\theta + 1$, $y = 2\\sin\\theta - 1$. Find the Cartesian equation and state the restriction on $x$.",
+  "questionText": "A circle has Cartesian equation $x^{2} + y^{2} - 4x + 6y - 3 = 0$. Express the circle in parametric form using a parameter $t$, and state a suitable range for $t$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Subtract the two equations",
-        "workingLatex": "x - y = (2\\sin\\theta + 1) - (2\\sin\\theta - 1)",
-        "explanation": "Both share the term $2\\sin\\theta$, so subtracting eliminates the parameter entirely.",
+        "description": "Group the x-terms and y-terms",
+        "workingLatex": "\\left( x^{2} - 4x \\right) + \\left( y^{2} + 6y \\right) - 3 = 0",
+        "explanation": "To read off the circle's centre and radius we complete the square, so we first gather the $x$-terms together and the $y$-terms together.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Simplify",
-        "workingLatex": "x - y = 2",
-        "explanation": "The $2\\sin\\theta$ terms cancel, leaving a constant.",
+        "description": "Complete the square in x",
+        "workingLatex": "x^{2} - 4x = (x - 2)^{2} - 4",
+        "explanation": "Halving the coefficient of $x$ gives $-2$; squaring the bracket introduces an extra $4$, which we subtract to keep the value unchanged.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "State the line",
-        "workingLatex": "y = x - 2",
-        "explanation": "Rearranging gives the straight-line equation.",
+        "description": "Complete the square in y",
+        "workingLatex": "y^{2} + 6y = (y + 3)^{2} - 9",
+        "explanation": "Halving $6$ gives $3$, so the bracket is $(y + 3)^{2}$, and we subtract the $9$ it adds on.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Find the restriction",
-        "workingLatex": "-1 \\le \\sin\\theta \\le 1 \\;\\Rightarrow\\; -1 \\le x \\le 3",
-        "explanation": "Since $x = 2\\sin\\theta + 1$, the sine bounds give $x$ between $-1$ and $3$.",
+        "description": "Substitute the completed squares back",
+        "workingLatex": "(x - 2)^{2} - 4 + (y + 3)^{2} - 9 - 3 = 0",
+        "explanation": "Replacing each grouped pair with its completed-square form rewrites the whole equation without changing it.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "State the answer",
-        "workingLatex": "y = x - 2, \\; -1 \\le x \\le 3",
-        "explanation": "The curve is only the segment of the line between $x = -1$ and $x = 3$.",
+        "description": "Tidy the constants",
+        "workingLatex": "(x - 2)^{2} + (y + 3)^{2} = 16",
+        "explanation": "Moving the constants $-4 - 9 - 3 = -16$ to the right gives the standard circle form, revealing the geometry at a glance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Read off the centre and radius",
+        "workingLatex": "\\text{centre } (2,\\, -3), \\qquad r = \\sqrt{16} = 4",
+        "explanation": "Comparing with $(x - a)^{2} + (y - b)^{2} = r^{2}$, the centre is $(2,\\,-3)$ and the radius is $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recall the circle parametrisation",
+        "workingLatex": "\\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "Any point a fixed distance $r$ from a centre can be written using $\\cos t$ and $\\sin t$, because this identity guarantees the point stays on the circle for every $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Write x parametrically",
+        "workingLatex": "x = 2 + 4\\cos t",
+        "explanation": "Starting from the centre's $x$-coordinate and adding $r\\cos t$ sweeps the horizontal position around the circle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Write y parametrically",
+        "workingLatex": "y = -3 + 4\\sin t",
+        "explanation": "Likewise the vertical position is the centre's $y$-coordinate plus $r\\sin t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Check the parametrisation satisfies the circle",
+        "workingLatex": "\\left( \\dfrac{x - 2}{4} \\right)^{2} + \\left( \\dfrac{y + 3}{4} \\right)^{2} = \\cos^{2} t + \\sin^{2} t = 1",
+        "explanation": "Substituting the expressions back confirms they satisfy $(x - 2)^{2} + (y + 3)^{2} = 16$ for every $t$, so the parametrisation is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "State a suitable range for t",
+        "workingLatex": "0 \\le t < 2\\pi",
+        "explanation": "Letting $t$ run through one full turn traces the whole circle exactly once with no repeats, which is why this interval is the natural choice.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$y = x - 2$ for $-1 \\le x \\le 3$ (a line segment)."
+    "finalAnswer": "$x = 2 + 4\\cos t,\\quad y = -3 + 4\\sin t$, for $0 \\le t < 2\\pi$ — a circle with centre $(2,\\,-3)$ and radius $4$."
   }
 }

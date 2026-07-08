@@ -5,68 +5,117 @@
   "subtopic": "The form Rsin(θ + α)",
   "subtopicId": "al.y2.pure.rsin-form",
   "difficulty": "Hard",
-  "marks": 8,
-  "answerType": "value",
+  "marks": 7,
+  "answerType": "solutions",
   "tags": [
+    "r form",
     "harmonic form",
-    "equations",
-    "exact",
-    "radians"
+    "proof",
+    "solving equations"
   ],
-  "questionText": "Solve $\\sqrt3\\cos\\theta - \\sin\\theta = 1$ for $0 \\le \\theta < 2\\pi$, giving exact answers in radians.",
+  "questionText": "(a) Prove that $\\sqrt{3}\\,\\sin\\theta-\\cos\\theta\\equiv 2\\sin(\\theta-30^\\circ)$. (b) Hence solve the equation $\\sqrt{3}\\,\\sin\\theta-\\cos\\theta=1$ for $0^\\circ\\le\\theta\\le 720^\\circ$.",
   "questionDiagram": null,
   "workedSolution": {
     "steps": [
       {
         "stepNumber": 1,
-        "description": "Choose the cosine form",
-        "workingLatex": "\\sqrt3\\cos\\theta - \\sin\\theta = R\\cos(\\theta + \\alpha)",
-        "explanation": "Cosine first with a minus sign matches $R\\cos(\\theta + \\alpha)$.",
+        "description": "Choose the target form",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta-\\cos\\theta \\equiv R\\sin(\\theta-\\alpha)",
+        "explanation": "Because the cosine term is subtracted, the natural match is $R\\sin(\\theta-\\alpha)$, whose expansion also has a minus sign in front of the $\\cos\\theta$ term.",
         "diagram": null
       },
       {
         "stepNumber": 2,
-        "description": "Find R and alpha",
-        "workingLatex": "R = \\sqrt{3 + 1} = 2, \\quad \\tan\\alpha = \\frac{1}{\\sqrt3} \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{6}",
-        "explanation": "Amplitude $2$ and phase $\\frac{\\pi}{6}$.",
+        "description": "Expand the target",
+        "workingLatex": "R\\sin(\\theta-\\alpha)=R\\cos\\alpha\\,\\sin\\theta-R\\sin\\alpha\\,\\cos\\theta",
+        "explanation": "Using $\\sin(\\theta-\\alpha)=\\sin\\theta\\cos\\alpha-\\cos\\theta\\sin\\alpha$ and pulling the $R$ through gives a $\\sin\\theta$ term minus a $\\cos\\theta$ term, matching the structure we want to prove.",
         "diagram": null
       },
       {
         "stepNumber": 3,
-        "description": "Write the harmonic form",
-        "workingLatex": "\\sqrt3\\cos\\theta - \\sin\\theta = 2\\cos\\left(\\theta + \\frac{\\pi}{6}\\right)",
-        "explanation": "Combining gives a single cosine.",
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha=\\sqrt{3},\\qquad R\\sin\\alpha=1",
+        "explanation": "Equating the coefficients of $\\sin\\theta$ and of $\\cos\\theta$ on both sides gives these two equations.",
         "diagram": null
       },
       {
         "stepNumber": 4,
-        "description": "Set up the equation",
-        "workingLatex": "2\\cos\\left(\\theta + \\frac{\\pi}{6}\\right) = 1 \\;\\Rightarrow\\; \\cos\\left(\\theta + \\frac{\\pi}{6}\\right) = \\frac{1}{2}",
-        "explanation": "Dividing by $2$ gives a standard exact value.",
+        "description": "Find R",
+        "workingLatex": "R=\\sqrt{(\\sqrt{3})^2+1^2}=\\sqrt{4}=2",
+        "explanation": "Squaring and adding removes $\\alpha$, leaving $R^2=3+1=4$, so the positive amplitude is $R=2$.",
         "diagram": null
       },
       {
         "stepNumber": 5,
-        "description": "Set the shifted interval and solve",
-        "workingLatex": "\\theta + \\frac{\\pi}{6} = \\frac{\\pi}{3}, \\frac{5\\pi}{3}, \\frac{7\\pi}{3}",
-        "explanation": "Within $[\\frac{\\pi}{6}, 2\\pi + \\frac{\\pi}{6})$, cosine one half occurs at $\\frac{\\pi}{3}$, $\\frac{5\\pi}{3}$ and $\\frac{7\\pi}{3}$.",
+        "description": "Find the acute angle α",
+        "workingLatex": "\\tan\\alpha=\\dfrac{1}{\\sqrt{3}}\\Rightarrow\\alpha=30^\\circ",
+        "explanation": "Dividing the equations gives $\\tan\\alpha=\\tfrac{1}{\\sqrt{3}}$, and since both coefficients are positive $\\alpha$ is acute, giving $\\alpha=30^\\circ$.",
         "diagram": null
       },
       {
         "stepNumber": 6,
-        "description": "Subtract the shift",
-        "workingLatex": "\\theta = \\frac{\\pi}{6}, \\frac{3\\pi}{2}, \\frac{13\\pi}{6}",
-        "explanation": "Subtracting $\\frac{\\pi}{6}$ from each; the last, $\\frac{13\\pi}{6}$, exceeds $2\\pi$ and is rejected.",
+        "description": "Confirm the identity",
+        "workingLatex": "2\\sin(\\theta-30^\\circ)=2\\!\\left(\\tfrac{\\sqrt{3}}{2}\\sin\\theta-\\tfrac{1}{2}\\cos\\theta\\right)=\\sqrt{3}\\,\\sin\\theta-\\cos\\theta",
+        "explanation": "Expanding $2\\sin(\\theta-30^\\circ)$ with the exact values $\\cos30^\\circ=\\tfrac{\\sqrt{3}}{2}$ and $\\sin30^\\circ=\\tfrac{1}{2}$ returns the original expression, which completes the proof of part (a).",
         "diagram": null
       },
       {
         "stepNumber": 7,
-        "description": "State the solutions",
-        "workingLatex": "\\theta = \\frac{\\pi}{6}, \\frac{3\\pi}{2}",
-        "explanation": "These are the exact solutions in the required range.",
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt{3}\\,\\sin\\theta-\\cos\\theta=1\\ \\Rightarrow\\ 2\\sin(\\theta-30^\\circ)=1",
+        "explanation": "Replacing the left-hand side with the single wave we just proved turns the equation into a simple sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta-30^\\circ)=\\dfrac{1}{2}",
+        "explanation": "Dividing both sides by $2$ leaves a standard sine value whose solutions we know exactly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Shift the interval",
+        "workingLatex": "0^\\circ\\le\\theta\\le720^\\circ\\ \\Rightarrow\\ -30^\\circ\\le\\theta-30^\\circ\\le 690^\\circ",
+        "explanation": "Since we are now solving for $\\theta-30^\\circ$, we shift the whole search interval down by $30^\\circ$ so that no solutions are lost at either end.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Take the principal value",
+        "workingLatex": "\\theta-30^\\circ=30^\\circ",
+        "explanation": "The principal solution of $\\sin x=\\tfrac{1}{2}$ is $x=\\arcsin\\tfrac{1}{2}=30^\\circ$, which lies inside the shifted interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Take the second-quadrant value",
+        "workingLatex": "\\theta-30^\\circ=150^\\circ",
+        "explanation": "Sine is also positive in the second quadrant, giving $180^\\circ-30^\\circ=150^\\circ$ as a further solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Add full turns within the interval",
+        "workingLatex": "\\theta-30^\\circ=390^\\circ,\\;510^\\circ",
+        "explanation": "Sine repeats every $360^\\circ$, so adding a full turn to each base solution gives $30^\\circ+360^\\circ=390^\\circ$ and $150^\\circ+360^\\circ=510^\\circ$, both still inside $[-30^\\circ,690^\\circ]$. A further turn would exceed $690^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Solve for θ",
+        "workingLatex": "\\theta=60^\\circ,\\;180^\\circ,\\;420^\\circ,\\;540^\\circ",
+        "explanation": "Adding $30^\\circ$ back to each shifted value undoes the substitution and gives the four values of $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 14,
+        "description": "Check the solutions",
+        "workingLatex": "\\theta=60^\\circ,\\,180^\\circ,\\,420^\\circ,\\,540^\\circ\\ \\text{all lie in}\\ [0^\\circ,720^\\circ]",
+        "explanation": "Every value is inside the required interval and, for example, $\\sqrt{3}\\sin60^\\circ-\\cos60^\\circ=\\tfrac{3}{2}-\\tfrac{1}{2}=1$, confirming the equation is satisfied.",
         "diagram": null
       }
     ],
-    "finalAnswer": "$\\theta = \\dfrac{\\pi}{6}, \\dfrac{3\\pi}{2}$"
+    "finalAnswer": "(a) $\\sqrt{3}\\,\\sin\\theta-\\cos\\theta=2\\sin(\\theta-30^\\circ)$, as shown. (b) The solutions in $0^\\circ\\le\\theta\\le720^\\circ$ are $\\theta=60^\\circ,\\;180^\\circ,\\;420^\\circ,\\;540^\\circ$."
   }
 }

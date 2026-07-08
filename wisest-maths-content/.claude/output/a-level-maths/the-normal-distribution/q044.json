@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.stats.normal-distribution.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Statistics",
+  "subtopic": "The normal distribution",
+  "subtopicId": "al.y2.stats.normal-distribution",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "normal distribution",
+    "inverse normal",
+    "symmetric interval"
+  ],
+  "questionText": "The masses, $X$ grams, of bags of flour filled by a machine are modelled by $X \\sim N(500, 8^2)$. Find the interval, symmetric about the mean, within which the masses of $95\\%$ of the bags lie. Give the endpoints to $4$ significant figures.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the distribution",
+        "workingLatex": "X \\sim N(500,\\ 8^2)",
+        "explanation": "The masses are normal with mean $\\mu = 500$ g and standard deviation $\\sigma = 8$ g. We want a central interval, symmetric about $500$, holding $95\\%$ of the bags.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Split the outer 5% between the two tails",
+        "workingLatex": "\\dfrac{1 - 0.95}{2} = 0.025",
+        "explanation": "If the central $95\\%$ is symmetric about the mean, the remaining $5\\%$ is shared equally between the two tails, leaving $0.025$ in each tail.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the cumulative probability at the upper endpoint",
+        "workingLatex": "P(X < b) = 0.95 + 0.025 = 0.975",
+        "explanation": "The upper endpoint $b$ has the central $95\\%$ plus the lower tail's $2.5\\%$ below it, so the area to its left is $0.975$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Use the inverse normal to find the z-value",
+        "workingLatex": "z = \\Phi^{-1}(0.975) = 1.960",
+        "explanation": "The standardised value with $97.5\\%$ of the area below it is $1.960$. This is the well-known $z$ for a central $95\\%$ interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the endpoints in the form mu plus or minus z sigma",
+        "workingLatex": "500 \\pm 1.960 \\times 8",
+        "explanation": "By symmetry the two endpoints are the same distance from the mean, one at $z = +1.960$ and one at $z = -1.960$, i.e. $\\mu \\pm z\\sigma$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compute the half-width of the interval",
+        "workingLatex": "1.960 \\times 8 = 15.68",
+        "explanation": "Multiplying the $z$-value by the standard deviation converts it back into grams: the endpoints lie $15.68$ g either side of the mean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the lower endpoint",
+        "workingLatex": "500 - 15.68 = 484.3",
+        "explanation": "Subtracting the half-width from the mean gives the lower boundary of the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find the upper endpoint",
+        "workingLatex": "500 + 15.68 = 515.7",
+        "explanation": "Adding the half-width to the mean gives the upper boundary of the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the interval to 4 significant figures",
+        "workingLatex": "484.3 < X < 515.7",
+        "explanation": "So $95\\%$ of bags have masses between $484.3$ g and $515.7$ g. The interval is centred on $500$ g, as expected for a symmetric central region.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$95\\%$ of the bags have masses in the interval $484.3\\text{ g} < X < 515.7\\text{ g}$ (endpoints to 4 s.f.)."
+  }
+}
