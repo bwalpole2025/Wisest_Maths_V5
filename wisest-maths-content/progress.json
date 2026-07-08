@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
   "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Parametric differentiation",
-  "currentSubtopicId": "al.y2.pure.parametric-differentiation",
+  "currentSubtopic": "Second derivatives and curve behaviour",
+  "currentSubtopicId": "al.y2.pure.second-derivatives",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -68,13 +68,19 @@
     "al.y2.pure.product-quotient-chain",
     "al.y2.pure.implicit",
     "al.y2.stats.normal-distribution",
-    "al.y2.pure.parametric-differentiation"
+    "al.y2.pure.parametric-differentiation",
+    "al.y2.pure.connected-rates",
+    "al.y2.pure.roots-iteration",
+    "al.y2.pure.newton-raphson",
+    "al.y2.pure.numerical-integration",
+    "al.y2.pure.standard-integrals",
+    "al.y2.pure.second-derivatives"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 63,
-      "totalQuestionsGenerated": 4410
+      "completedSubtopics": 69,
+      "totalQuestionsGenerated": 4830
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

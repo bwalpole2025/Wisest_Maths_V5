@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q048",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "connected rates"
+  ],
+  "questionText": "The radius of a circular ripple increases at $0.5$ m/s. Find the rate at which the area is increasing when $r = 10$ m.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the connecting formula",
+        "workingLatex": "A = \\pi r^{2}",
+        "explanation": "Identify how the changing quantities are related.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dA}{dt} = 2\\pi r\\dfrac{dr}{dt}",
+        "explanation": "Differentiate both sides with respect to $t$ using the chain rule on every variable that depends on time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute known rates",
+        "workingLatex": "\\dfrac{dA}{dt} = 2\\pi (10)(0.5)",
+        "explanation": "Insert the given numerical rates and dimensions at the required instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the unknown rate",
+        "workingLatex": "\\dfrac{dA}{dt} = 10\\pi",
+        "explanation": "Rearrange the connected-rates equation to make the required derivative the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "$\\dfrac{dA}{dt} = 10\\pi$ m$^{2}$/s",
+        "explanation": "Calculate the numerical value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check units",
+        "workingLatex": "$\\dfrac{dA}{dt} = 10\\pi$ m$^{2}$/s",
+        "explanation": "Confirm the units match the physical quantity being measured.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "$\\dfrac{dA}{dt} = 10\\pi$ m$^{2}$/s",
+        "explanation": "This is the required rate of change at that instant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dA}{dt} = 10\\pi$ m$^{2}$/s"
+  }
+}

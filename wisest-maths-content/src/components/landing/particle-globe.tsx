@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { cn } from "@/lib/utils";
 
 type Dot = { x: number; y: number; z: number; size: number; opacity: number };
 
@@ -185,8 +186,8 @@ export function ParticleGlobe({
   }, [sizeMultiplier]);
 
   return (
-    <div ref={containerRef} className={className} aria-hidden>
-      <canvas ref={canvasRef} className="block h-full w-full" />
+    <div ref={containerRef} className={cn(className, "pointer-events-none")} aria-hidden>
+      <canvas ref={canvasRef} className="pointer-events-none block h-full w-full" />
     </div>
   );
 }

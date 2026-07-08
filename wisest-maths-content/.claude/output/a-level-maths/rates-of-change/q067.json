@@ -1,0 +1,87 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q067",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "cone",
+    "inverse problem",
+    "multi-step"
+  ],
+  "questionText": "Sand is poured onto a flat surface forming a conical pile of fixed apex angle, so $h = 3r$. If $\\dfrac{dV}{dt} = 12\\pi$ m$^{3}$/s, find $\\dfrac{dr}{dt}$ when $r = 2$ m.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Volume with h = 3r",
+        "workingLatex": "V = \\dfrac{1}{3}\\pi r^{2}(3r) = \\pi r^{3}",
+        "explanation": "Substitute the shape constraint.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate",
+        "workingLatex": "\\dfrac{dV}{dt} = 3\\pi r^{2}\\dfrac{dr}{dt}",
+        "explanation": "Chain rule connects the rates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute dV/dt = 12π and r = 2",
+        "workingLatex": "12\\pi = 3\\pi (4)\\dfrac{dr}{dt}",
+        "explanation": "Insert known values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve",
+        "workingLatex": "\\dfrac{dr}{dt} = 1",
+        "explanation": "The base radius grows at $1$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find dh/dt",
+        "workingLatex": "\\dfrac{dh}{dt} = 3\\dfrac{dr}{dt} = 3",
+        "explanation": "Height grows three times as fast as radius.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Volume at r = 2",
+        "workingLatex": "V = 8\\pi",
+        "explanation": "The pile contains $8\\pi$ m$^{3}$ at this instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Rate scaling",
+        "workingLatex": "\\dfrac{dr}{dt} \\propto \\dfrac{1}{r^{2}}",
+        "explanation": "Larger piles spread more slowly for the same sand influx.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check at r = 1",
+        "workingLatex": "\\dfrac{dr}{dt} = 4",
+        "explanation": "Smaller radius gives faster spread.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dr}{dt} = 1\\text{ m/s}",
+        "explanation": "The base radius increases at $1$ m/s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dr}{dt} = 1$ m/s."
+  }
+}

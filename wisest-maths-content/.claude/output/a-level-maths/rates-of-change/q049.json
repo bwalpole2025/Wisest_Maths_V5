@@ -1,0 +1,65 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q049",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "shadow",
+    "similar triangles"
+  ],
+  "questionText": "A $2$ m tall person walks away from a $6$ m lamp post at $1.5$ m/s. Let $x$ be the distance from the post to the person and $s$ the length of the shadow. By similar triangles $\\dfrac{s}{2} = \\dfrac{s + x}{6}$. When $x = 8$ m, find $\\dfrac{ds}{dt}$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Simplify the similar-triangles relation",
+        "workingLatex": "6s = 2(s + x) \\Rightarrow 6s = 2s + 2x \\Rightarrow 4s = 2x \\Rightarrow s = \\dfrac{x}{2}",
+        "explanation": "Similar triangles link the shadow length to the person's distance from the post.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{ds}{dt} = \\dfrac{1}{2}\\dfrac{dx}{dt}",
+        "explanation": "Since $s$ is half of $x$, its rate of change is half the walking speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute dx/dt",
+        "workingLatex": "\\dfrac{ds}{dt} = \\dfrac{1}{2}(1.5)",
+        "explanation": "The person walks at $1.5$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{ds}{dt} = 0.75",
+        "explanation": "The shadow lengthens at $0.75$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Verify at x = 8",
+        "workingLatex": "s = 4",
+        "explanation": "At this instant the shadow is $4$ m long, consistent with the relation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{ds}{dt} = 0.75\\text{ m/s}",
+        "explanation": "The shadow grows at three-quarters of a metre per second.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{ds}{dt} = 0.75$ m/s."
+  }
+}

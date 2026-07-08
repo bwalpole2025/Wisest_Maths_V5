@@ -1,0 +1,65 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q050",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "perimeter constraint",
+    "rectangle"
+  ],
+  "questionText": "A rectangle has perimeter $20$ cm, so $2x + 2y = 20$ and hence $y = 10 - x$. The length $x$ is increasing at $0.3$ cm/s. Find $\\dfrac{dA}{dt}$ when $x = 6$ cm.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Express area using the constraint",
+        "workingLatex": "A = xy = x(10 - x) = 10x - x^{2}",
+        "explanation": "Substitute $y = 10 - x$ to write $A$ in terms of $x$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dA}{dt} = 10\\dfrac{dx}{dt} - 2x\\dfrac{dx}{dt} = (10 - 2x)\\dfrac{dx}{dt}",
+        "explanation": "Use the chain rule on each term involving $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute x = 6 and dx/dt = 0.3",
+        "workingLatex": "\\dfrac{dA}{dt} = (10 - 12)(0.3)",
+        "explanation": "At the required instant $x = 6$ cm.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dA}{dt} = -0.6",
+        "explanation": "The area is decreasing because the width is shrinking faster than the length is growing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{dA}{dt} < 0",
+        "explanation": "A negative rate means the area is getting smaller at this moment.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dA}{dt} = -0.6\\text{ cm}^{2}\\text{/s}",
+        "explanation": "The rectangle's area is decreasing at $0.6$ cm$^{2}$/s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dA}{dt} = -0.6$ cm$^{2}$/s."
+  }
+}

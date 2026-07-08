@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q025",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "exponential decay"
+  ],
+  "questionText": "A radioactive substance decays according to $N = 200e^{-0.1t}$, where $t$ is in years. Find the rate at which the mass is decreasing when $t = 10$ years.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the decay model",
+        "workingLatex": "N = N_{0}e^{-kt}",
+        "explanation": "Radioactive decay and similar processes follow an exponential decrease.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dN}{dt} = -kN_{0}e^{-kt} = -kN",
+        "explanation": "The derivative is negative, showing the quantity is decreasing, and its magnitude is proportional to the amount remaining.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find N at the given time",
+        "workingLatex": "N = 200e^{-0.1 \\times 10}",
+        "explanation": "Evaluate the population at $t = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Calculate dN/dt",
+        "workingLatex": "\\dfrac{dN}{dt} = -0.1N = -20e^{-1}",
+        "explanation": "Multiply by $-k$ to obtain the rate of decrease.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{dN}{dt} < 0",
+        "explanation": "The negative sign confirms the quantity is decaying.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dN}{dt} = -20e^{-1}",
+        "explanation": "This is the instantaneous rate of change at the given time.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dN}{dt} = -20e^{-1}$ g/year."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q061",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "sphere",
+    "proof",
+    "multi-step"
+  ],
+  "questionText": "A spherical balloon is inflated so that $\\dfrac{dV}{dt} = k$ (constant). Show that $\\dfrac{dr}{dt} = \\dfrac{k}{4\\pi r^{2}}$ and find $\\dfrac{dr}{dt}$ when $r = 2$ cm if $k = 16\\pi$ cm$^{3}$/s.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start from the volume formula",
+        "workingLatex": "V = \\dfrac{4}{3}\\pi r^{3}",
+        "explanation": "Volume depends on radius cubed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dV}{dt} = 4\\pi r^{2}\\dfrac{dr}{dt}",
+        "explanation": "Chain rule on both sides.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for dr/dt",
+        "workingLatex": "\\dfrac{dr}{dt} = \\dfrac{1}{4\\pi r^{2}}\\dfrac{dV}{dt}",
+        "explanation": "Rearrange to express radius rate in terms of volume rate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute constant dV/dt = k",
+        "workingLatex": "\\dfrac{dr}{dt} = \\dfrac{k}{4\\pi r^{2}}",
+        "explanation": "With constant pumping rate, the radius rate decreases as the balloon grows.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Insert k = 16π and r = 2",
+        "workingLatex": "\\dfrac{dr}{dt} = \\dfrac{16\\pi}{4\\pi (4)}",
+        "explanation": "Substitute the numerical values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "\\dfrac{dr}{dt} = 1",
+        "explanation": "The radius grows at $1$ cm/s at this instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Interpret inverse-square dependence",
+        "workingLatex": "\\dfrac{dr}{dt} \\propto \\dfrac{1}{r^{2}}",
+        "explanation": "As the balloon expands, the same volume influx produces a slower radius increase.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Compare at r = 4",
+        "workingLatex": "\\dfrac{dr}{dt} = \\dfrac{1}{4}",
+        "explanation": "Doubling the radius quarters the radius growth rate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dr}{dt} = 1\\text{ cm/s}",
+        "explanation": "At $r = 2$ cm with $k = 16\\pi$, the radius increases at $1$ cm/s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dr}{dt} = \\dfrac{k}{4\\pi r^{2}}$; when $k = 16\\pi$ and $r = 2$, $\\dfrac{dr}{dt} = 1$ cm/s."
+  }
+}

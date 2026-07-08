@@ -66,6 +66,11 @@ import { questions as standardDerivatives } from "@/data/questions/a-level-maths
 import { questions as productQuotientChain } from "@/data/questions/a-level-maths/year-2-pure/product-quotient-chain";
 import { questions as implicitDifferentiation } from "@/data/questions/a-level-maths/year-2-pure/implicit-differentiation";
 import { questions as parametricDifferentiation } from "@/data/questions/a-level-maths/year-2-pure/parametric-differentiation";
+import { questions as ratesOfChange } from "@/data/questions/a-level-maths/year-2-pure/rates-of-change";
+import { questions as locatingRootsAndIteration } from "@/data/questions/a-level-maths/year-2-pure/locating-roots-and-iteration";
+import { questions as newtonRaphson } from "@/data/questions/a-level-maths/year-2-pure/newton-raphson";
+import { questions as numericalIntegration } from "@/data/questions/a-level-maths/year-2-pure/numerical-integration";
+import { questions as secondDerivativesAndCurveBehaviour } from "@/data/questions/a-level-maths/year-2-pure/second-derivatives-and-curve-behaviour";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 import { questions as theNormalDistribution } from "@/data/questions/a-level-maths/year-2-stats/the-normal-distribution";
 
@@ -133,6 +138,11 @@ export const allQuestions: Question[] = [
   ...productQuotientChain,
   ...implicitDifferentiation,
   ...parametricDifferentiation,
+  ...ratesOfChange,
+  ...locatingRootsAndIteration,
+  ...newtonRaphson,
+  ...numericalIntegration,
+  ...secondDerivativesAndCurveBehaviour,
   ...conditionalProbability,
   ...theNormalDistribution,
 ];

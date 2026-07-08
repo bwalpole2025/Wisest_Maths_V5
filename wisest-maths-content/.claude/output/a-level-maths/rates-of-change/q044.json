@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q044",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "connected rates"
+  ],
+  "questionText": "Air is pumped into a spherical balloon so that $\\dfrac{dV}{dt} = 50\\pi$ cm$^{3}$/s. Find $\\dfrac{dr}{dt}$ when $r = 5$ cm.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the connecting formula",
+        "workingLatex": "V = \\dfrac{4}{3}\\pi r^{3}",
+        "explanation": "Identify how the changing quantities are related.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dV}{dt} = 4\\pi r^{2}\\dfrac{dr}{dt}",
+        "explanation": "Differentiate both sides with respect to $t$ using the chain rule on every variable that depends on time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute known rates",
+        "workingLatex": "50\\pi = 4\\pi (25)\\dfrac{dr}{dt}",
+        "explanation": "Insert the given numerical rates and dimensions at the required instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the unknown rate",
+        "workingLatex": "\\dfrac{dr}{dt} = \\dfrac{1}{2}",
+        "explanation": "Rearrange the connected-rates equation to make the required derivative the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "$\\dfrac{dr}{dt} = \\dfrac{1}{2}$ cm/s",
+        "explanation": "Calculate the numerical value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check units",
+        "workingLatex": "$\\dfrac{dr}{dt} = \\dfrac{1}{2}$ cm/s",
+        "explanation": "Confirm the units match the physical quantity being measured.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "$\\dfrac{dr}{dt} = \\dfrac{1}{2}$ cm/s",
+        "explanation": "This is the required rate of change at that instant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dr}{dt} = \\dfrac{1}{2}$ cm/s"
+  }
+}

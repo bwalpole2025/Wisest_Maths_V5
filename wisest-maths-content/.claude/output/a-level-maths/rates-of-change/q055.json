@@ -1,0 +1,65 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q055",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "angle",
+    "trigonometry"
+  ],
+  "questionText": "A ladder $5$ m long makes an angle $\\theta$ with the ground, with foot $x$ m from the wall. Using $x = 5\\cos\\theta$, find $\\dfrac{dx}{dt}$ when $\\theta = \\dfrac{\\pi}{3}$ and $\\dfrac{d\\theta}{dt} = -0.1$ rad/s.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the relation",
+        "workingLatex": "x = 5\\cos\\theta",
+        "explanation": "The horizontal distance depends on the angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dx}{dt} = -5\\sin\\theta\\,\\dfrac{d\\theta}{dt}",
+        "explanation": "The chain rule introduces a factor of $\\dfrac{d\\theta}{dt}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute θ = π/3",
+        "workingLatex": "\\dfrac{dx}{dt} = -5\\sin\\!\\left(\\dfrac{\\pi}{3}\\right)(-0.1)",
+        "explanation": "Use $\\sin(\\pi/3) = \\sqrt{3}/2$ and $\\dfrac{d\\theta}{dt} = -0.1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify",
+        "workingLatex": "\\dfrac{dx}{dt} = \\dfrac{\\sqrt{3}}{4}",
+        "explanation": "The negative signs cancel, giving a positive horizontal speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret",
+        "workingLatex": "\\dfrac{dx}{dt} > 0",
+        "explanation": "The foot moves away from the wall as the angle decreases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dx}{dt} = \\dfrac{\\sqrt{3}}{4}\\text{ m/s}",
+        "explanation": "This is the horizontal speed of the ladder's foot.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dx}{dt} = \\dfrac{\\sqrt{3}}{4}$ m/s."
+  }
+}

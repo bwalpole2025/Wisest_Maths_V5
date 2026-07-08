@@ -1,0 +1,87 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q070",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "Pythagoras",
+    "kinematics",
+    "multi-step"
+  ],
+  "questionText": "A balloon rises vertically at $5$ m/s and is tracked from a point $60$ m horizontally from the launch site. Let $s$ be the distance from the observer to the balloon and $h$ the height. Find $\\dfrac{ds}{dt}$ when $h = 80$ m.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Relate s and h",
+        "workingLatex": "s^{2} = 60^{2} + h^{2}",
+        "explanation": "Pythagoras links the distance to the observer and the height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "2s\\dfrac{ds}{dt} = 2h\\dfrac{dh}{dt}",
+        "explanation": "Implicit differentiation of the Pythagorean relation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for ds/dt",
+        "workingLatex": "\\dfrac{ds}{dt} = \\dfrac{h}{s}\\dfrac{dh}{dt}",
+        "explanation": "Isolate the rate of change of distance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find s when h = 80",
+        "workingLatex": "s = \\sqrt{3600 + 6400} = 100",
+        "explanation": "Calculate the slant distance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute dh/dt = 5",
+        "workingLatex": "\\dfrac{ds}{dt} = \\dfrac{80}{100}(5)",
+        "explanation": "The balloon rises at $5$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{ds}{dt} = 4",
+        "explanation": "The distance to the observer increases at $4$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare with vertical rate",
+        "workingLatex": "\\dfrac{ds}{dt} < \\dfrac{dh}{dt}",
+        "explanation": "The slant distance changes more slowly than the height at this stage.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Limit as h → ∞",
+        "workingLatex": "\\dfrac{ds}{dt} \\to 5",
+        "explanation": "Far away, the slant distance changes at nearly the same rate as the height.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{ds}{dt} = 4\\text{ m/s}",
+        "explanation": "The observer sees the distance growing at $4$ m/s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{ds}{dt} = 4$ m/s."
+  }
+}

@@ -1,0 +1,42 @@
+---
+description: Prevent unresponsive links and dead-feeling navigation in the Wisest Maths frontend
+globs: wisest-maths-content/**/*.{tsx,css}
+alwaysApply: false
+---
+
+# Frontend interaction safety
+
+## Root cause (do not repeat)
+
+Links felt broken for two reasons:
+
+1. **Overlapping sections blocked clicks** — `LandingFeatures` uses negative margin (`-mt-14`) and sits at `z-20` above the hero (`z-10`). Its opaque `bg-landing-light` covered hero CTAs in the overlap band and intercepted pointer events.
+2. **No navigation feedback** — routes like `/curriculum` eagerly import the full question bank and can take 30–60s to compile in dev. Without a loading indicator, clicks look dead.
+
+## Rules
+
+### Overlapping layout layers
+
+- Decorative or overlapping sections MUST use `pointer-events-none` on the wrapper.
+- Interactive children MUST re-enable with `pointer-events-auto`.
+- Hero CTAs and nav links MUST sit above overlapping sections (`z-30+` for interactive hero content vs `z-20` for overlapping panels).
+
+```tsx
+// ✅ Overlap passes clicks through to content below
+<section className="relative z-20 -mt-14 pointer-events-none ...">
+  <div className="pointer-events-auto">...</div>
+</section>
+```
+
+### Canvas / animation overlays
+
+- Particle canvases and decorative absolute layers MUST have `pointer-events-none` on every element in the stack (not only the parent).
+
+### Navigation feedback
+
+- Keep `NavigationProgress` in the root layout so every in-app link shows immediate feedback.
+- Add or keep `loading.tsx` boundaries on slow routes (`/curriculum`, `/questions`, `/dashboard`).
+
+### Dev server
+
+- Bind to `127.0.0.1`, not `::`, so embedded browsers resolve `localhost` reliably.

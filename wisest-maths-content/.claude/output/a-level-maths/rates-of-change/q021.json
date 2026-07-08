@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q021",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "composite function"
+  ],
+  "questionText": "Given that $y = u^{4}$ and $u = x - 5$, find $\\dfrac{dy}{dx}$ in terms of $u$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the composite structure",
+        "workingLatex": "y = u^{4}, \\quad u = x - 5",
+        "explanation": "The function is built in two stages, so the chain rule connects $\\dfrac{dy}{dx}$ to derivatives with respect to the inner variable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find dy/du",
+        "workingLatex": "\\dfrac{dy}{du} = 4u^{3}",
+        "explanation": "Differentiate the outer function with respect to $u$, treating $u$ as the variable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find du/dx",
+        "workingLatex": "\\dfrac{du}{dx} = 1",
+        "explanation": "Differentiate the inner function with respect to $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the chain rule",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{dy}{du} \\times \\dfrac{du}{dx}",
+        "explanation": "Multiply the two rates of change: this is the key connected-rates idea.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute",
+        "workingLatex": "\\dfrac{dy}{dx} = (4u^{3}) \\times (1)",
+        "explanation": "Put in the expressions found in the previous steps.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "\\dfrac{dy}{dx} = 4u^{3}",
+        "explanation": "Carry out the algebra to obtain the derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the result",
+        "workingLatex": "\\dfrac{dy}{dx} = 4u^{3}",
+        "explanation": "This gives the rate of change of $y$ with respect to $x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 4u^{3}$"
+  }
+}

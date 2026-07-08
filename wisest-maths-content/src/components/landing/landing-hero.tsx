@@ -9,7 +9,7 @@ export function LandingHero() {
         <ParticleGlobe className="h-full w-full" sizeMultiplier={6} />
       </div>
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-3xl flex-col items-center px-6 pb-44 pt-28 text-center sm:px-8 sm:pt-32 lg:pt-36">
+      <div className="relative z-30 mx-auto flex min-h-[100svh] max-w-3xl flex-col items-center px-6 pb-44 pt-28 text-center sm:px-8 sm:pt-32 lg:pt-36">
         <div className="flex w-full flex-col items-center">
           <Reveal>
             <div className="inline-flex items-center gap-2.5 rounded-full border border-white/12 bg-black/20 px-5 py-2 text-[13px] font-medium text-white/85 backdrop-blur-md">

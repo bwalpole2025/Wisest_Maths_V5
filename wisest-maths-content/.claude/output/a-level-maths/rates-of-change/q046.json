@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q046",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "connected rates"
+  ],
+  "questionText": "Water flows into a cylindrical tank of radius $2$ m at $4\\pi$ m$^{3}$/s. The volume is $V = \\pi r^{2}h$ with fixed $r$. Find $\\dfrac{dh}{dt}$ when $h = 5$ m.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the connecting formula",
+        "workingLatex": "V = \\pi r^{2}h",
+        "explanation": "Identify how the changing quantities are related.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dV}{dt} = \\pi r^{2}\\dfrac{dh}{dt}",
+        "explanation": "Differentiate both sides with respect to $t$ using the chain rule on every variable that depends on time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute known rates",
+        "workingLatex": "4\\pi = \\pi (4)\\dfrac{dh}{dt}",
+        "explanation": "Insert the given numerical rates and dimensions at the required instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the unknown rate",
+        "workingLatex": "\\dfrac{dh}{dt} = 1",
+        "explanation": "Rearrange the connected-rates equation to make the required derivative the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "$\\dfrac{dh}{dt} = 1$ m/s",
+        "explanation": "Calculate the numerical value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check units",
+        "workingLatex": "$\\dfrac{dh}{dt} = 1$ m/s",
+        "explanation": "Confirm the units match the physical quantity being measured.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "$\\dfrac{dh}{dt} = 1$ m/s",
+        "explanation": "This is the required rate of change at that instant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dh}{dt} = 1$ m/s"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q058",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "product rule",
+    "rectangle"
+  ],
+  "questionText": "A rectangle has $A = xy$ with $x = 2t^{2}$ and $y = 3t$. Find $\\dfrac{dA}{dt}$ when $t = 2$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Method 1: differentiate A directly",
+        "workingLatex": "A = xy = (2t^{2})(3t) = 6t^{3}",
+        "explanation": "Multiply first to get $A$ explicitly in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate A with respect to t",
+        "workingLatex": "\\dfrac{dA}{dt} = 18t^{2}",
+        "explanation": "Power rule gives the rate of area change.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute t = 2",
+        "workingLatex": "\\dfrac{dA}{dt} = 72",
+        "explanation": "At $t = 2$ the area grows at $72$ square units per second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Method 2: product rule check",
+        "workingLatex": "\\dfrac{dA}{dt} = x\\dfrac{dy}{dt} + y\\dfrac{dx}{dt}",
+        "explanation": "The product rule offers an alternative route using connected rates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find dx/dt and dy/dt",
+        "workingLatex": "\\dfrac{dx}{dt} = 4t, \\quad \\dfrac{dy}{dt} = 3",
+        "explanation": "Differentiate the parametric expressions for the sides.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Verify at t = 2",
+        "workingLatex": "\\dfrac{dA}{dt} = (8)(3) + (6)(8) = 72",
+        "explanation": "Both methods agree, confirming the answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dA}{dt} = 72",
+        "explanation": "The area increases at $72$ square units per second.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dA}{dt} = 72$ square units/s."
+  }
+}

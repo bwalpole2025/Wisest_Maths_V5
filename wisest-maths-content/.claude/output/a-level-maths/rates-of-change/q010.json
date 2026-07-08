@@ -1,0 +1,65 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q010",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "circle",
+    "area"
+  ],
+  "questionText": "Oil spreads on water in a circular patch. When the radius is $10$ cm, the radius is increasing at $0.1$ cm/s. Find the rate at which the area is increasing.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the area formula",
+        "workingLatex": "A = \\pi r^{2}",
+        "explanation": "The area of a circular oil patch depends on its radius.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dA}{dt} = 2\\pi r\\dfrac{dr}{dt}",
+        "explanation": "By the chain rule, differentiating $r^{2}$ gives $2r\\dfrac{dr}{dt}$ when $r$ varies with time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute known values",
+        "workingLatex": "\\dfrac{dA}{dt} = 2\\pi (10)(0.1)",
+        "explanation": "Use $r = 10$ cm and $\\dfrac{dr}{dt} = 0.1$ cm/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dA}{dt} = 2\\pi",
+        "explanation": "Multiply to find the rate of change of area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State with units",
+        "workingLatex": "\\dfrac{dA}{dt} = 2\\pi\\text{ cm}^{2}\\text{/s}",
+        "explanation": "Area rate is measured in square units per second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret",
+        "workingLatex": "\\dfrac{dA}{dt} = 2\\pi\\text{ cm}^{2}\\text{/s}",
+        "explanation": "The patch is spreading at this rate when the radius reaches the stated value.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dA}{dt} = 2\\pi$ cm$^{2}$/s."
+  }
+}

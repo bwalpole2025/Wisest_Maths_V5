@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q024",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "exponential growth"
+  ],
+  "questionText": "A population of bacteria grows according to $N = 500e^{0.3t}$, where $t$ is time in hours. Find the rate of growth when $t = 2$ hours.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the growth model",
+        "workingLatex": "N = N_{0}e^{kt}",
+        "explanation": "Exponential growth means the population is proportional to $e^{kt}$ for some constant $k > 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dN}{dt} = kN_{0}e^{kt} = kN",
+        "explanation": "Differentiating gives $k$ times the original function, so the rate of growth is proportional to the current size.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find N at the given time",
+        "workingLatex": "N = 500e^{0.3 \\times 2} = 500e^{0.6}",
+        "explanation": "Substitute $t = 2$ to find the population at that instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Calculate dN/dt",
+        "workingLatex": "\\dfrac{dN}{dt} = 0.3 \\times N = 300e^{0.6}",
+        "explanation": "Multiply $k$ by the current population: $\\dfrac{dN}{dt} = kN$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State with context",
+        "workingLatex": "\\dfrac{dN}{dt} = 300e^{0.6}",
+        "explanation": "This is how fast the quantity is growing at the specified time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret",
+        "workingLatex": "\\dfrac{dN}{dt} = 300e^{0.6}",
+        "explanation": "The growth rate depends on both the constant $k$ and the current population.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dN}{dt} = 300e^{0.6}$ bacteria/hour."
+  }
+}

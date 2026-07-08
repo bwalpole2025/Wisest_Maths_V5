@@ -1,0 +1,72 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q054",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "distance",
+    "Pythagoras"
+  ],
+  "questionText": "A car travels north at $60$ km/h and a second car travels east at $80$ km/h from the same intersection. How fast is the distance between them increasing $0.5$ hours later?",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set up distances",
+        "workingLatex": "a = 60t, \\quad b = 80t, \\quad D = \\sqrt{a^{2} + b^{2}}",
+        "explanation": "After $t$ hours the north–south and east–west separations are proportional to time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "At t = 0.5",
+        "workingLatex": "a = 30, \\quad b = 40, \\quad D = 50",
+        "explanation": "Half an hour later the cars are $30$ km and $40$ km from the junction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate D²",
+        "workingLatex": "2D\\dfrac{dD}{dt} = 2a\\dfrac{da}{dt} + 2b\\dfrac{db}{dt}",
+        "explanation": "Differentiate $D^{2} = a^{2} + b^{2}$ with respect to time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for dD/dt",
+        "workingLatex": "\\dfrac{dD}{dt} = \\dfrac{a\\dfrac{da}{dt} + b\\dfrac{db}{dt}}{D}",
+        "explanation": "Rearrange to isolate the rate of change of distance.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute",
+        "workingLatex": "\\dfrac{dD}{dt} = \\dfrac{(30)(60) + (40)(80)}{50}",
+        "explanation": "Speeds are $\\dfrac{da}{dt} = 60$ and $\\dfrac{db}{dt} = 80$ km/h.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dD}{dt} = 100",
+        "explanation": "The distance between the cars grows at $100$ km/h.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dD}{dt} = 100\\text{ km/h}",
+        "explanation": "This classic $3$–$4$–$5$ triangle gives a clean numerical answer.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The distance between the cars is increasing at $100$ km/h."
+  }
+}

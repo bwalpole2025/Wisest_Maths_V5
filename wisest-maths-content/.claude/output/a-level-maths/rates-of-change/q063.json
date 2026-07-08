@@ -1,0 +1,87 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q063",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "exponential growth",
+    "modelling",
+    "multi-step"
+  ],
+  "questionText": "A bacteria culture grows as $N = 500e^{0.4t}$. (a) Find $\\dfrac{dN}{dt}$ in terms of $N$. (b) Find the rate of growth when $N = 1000$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the model",
+        "workingLatex": "\\dfrac{dN}{dt} = 500 \\times 0.4 e^{0.4t} = 0.4 \\times 500e^{0.4t}",
+        "explanation": "Differentiate the exponential, keeping the coefficient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite using N",
+        "workingLatex": "\\dfrac{dN}{dt} = 0.4N",
+        "explanation": "Since $N = 500e^{0.4t}$, the rate is simply $0.4$ times the current population.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State part (a)",
+        "workingLatex": "\\dfrac{dN}{dt} = 0.4N",
+        "explanation": "Exponential growth has rate proportional to size.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute N = 1000 for part (b)",
+        "workingLatex": "\\dfrac{dN}{dt} = 0.4(1000)",
+        "explanation": "Use the given population.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dN}{dt} = 400",
+        "explanation": "The culture grows by $400$ bacteria per hour at this instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Doubling-time insight",
+        "workingLatex": "N \\text{ doubles } \\Rightarrow \\dfrac{dN}{dt} \\text{ doubles}",
+        "explanation": "The rate doubles whenever the population doubles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Compare at N = 500",
+        "workingLatex": "\\dfrac{dN}{dt} = 200",
+        "explanation": "Half the population gives half the growth rate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Units",
+        "workingLatex": "400\\text{ bacteria/hour}",
+        "explanation": "Include appropriate units for the context.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State both answers",
+        "workingLatex": "\\dfrac{dN}{dt} = 0.4N; \\quad 400\\text{ bacteria/hour}",
+        "explanation": "Part (a) gives the general relation; part (b) evaluates it.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dN}{dt} = 0.4N$. (b) When $N = 1000$, $\\dfrac{dN}{dt} = 400$ bacteria/hour."
+  }
+}

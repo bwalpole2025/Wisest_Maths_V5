@@ -1,0 +1,87 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q068",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "exponential decay",
+    "half-life",
+    "multi-step"
+  ],
+  "questionText": "A substance decays as $M = M_{0}e^{-0.3t}$. Find (a) the rate of decay when $t = 5$, and (b) the time when the mass is decreasing at half its initial rate of decay.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate",
+        "workingLatex": "\\dfrac{dM}{dt} = -0.3M_{0}e^{-0.3t} = -0.3M",
+        "explanation": "Decay rate is proportional to remaining mass.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Initial decay rate at t = 0",
+        "workingLatex": "\\dfrac{dM}{dt}\\bigg|_{t=0} = -0.3M_{0}",
+        "explanation": "The initial rate of decrease has magnitude $0.3M_{0}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Part (a): substitute t = 5",
+        "workingLatex": "\\dfrac{dM}{dt} = -0.3M_{0}e^{-1.5}",
+        "explanation": "Evaluate at the required time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify part (a)",
+        "workingLatex": "\\dfrac{dM}{dt} = -0.3M_{0}e^{-1.5}",
+        "explanation": "This is approximately $-0.067M_{0}$ per unit time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Part (b): half initial rate",
+        "workingLatex": "|\\dfrac{dM}{dt}| = 0.15M_{0}",
+        "explanation": "Half the initial magnitude means $0.3M/2 = 0.15M_{0}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set up equation",
+        "workingLatex": "0.3M_{0}e^{-0.3t} = 0.15M_{0}",
+        "explanation": "Solve for when the decay rate halved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify",
+        "workingLatex": "e^{-0.3t} = 0.5",
+        "explanation": "Divide by $0.3M_{0}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{\\ln 2}{0.3}",
+        "explanation": "Take natural logarithms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State answers",
+        "workingLatex": "(a) $-0.3M_{0}e^{-1.5}$; (b) $t = \\dfrac{\\ln 2}{0.3}$",
+        "explanation": "Part (a) gives the rate at $t = 5$; part (b) the required time.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\dfrac{dM}{dt} = -0.3M_{0}e^{-1.5}$. (b) $t = \\dfrac{\\ln 2}{0.3}$."
+  }
+}

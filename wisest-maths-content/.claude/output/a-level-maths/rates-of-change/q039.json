@@ -1,0 +1,58 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q039",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "rectangle",
+    "product rule"
+  ],
+  "questionText": "A rectangle has length $x$ m and width $y$ m. At a certain instant $x = 6$, $y = 4$, $\\dfrac{dx}{dt} = 0.5$ m/s and $\\dfrac{dy}{dt} = -0.2$ m/s. Find $\\dfrac{dA}{dt}$ at this instant.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the area formula",
+        "workingLatex": "A = xy",
+        "explanation": "The area of a rectangle is the product of its length and width.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dA}{dt} = x\\dfrac{dy}{dt} + y\\dfrac{dx}{dt}",
+        "explanation": "Use the product rule: the rate of change of a product equals the first times the rate of the second, plus the second times the rate of the first.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute known values",
+        "workingLatex": "\\dfrac{dA}{dt} = (6)(-0.2) + (4)(0.5)",
+        "explanation": "Insert $x = 6$, $y = 4$, $\\dfrac{dx}{dt} = 0.5$ and $\\dfrac{dy}{dt} = -0.2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dA}{dt} = 0.8",
+        "explanation": "Carry out the arithmetic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dA}{dt} = 0.8",
+        "explanation": "This is how fast the area is changing at that instant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dA}{dt} = 0.8$ m$^{2}$/s."
+  }
+}

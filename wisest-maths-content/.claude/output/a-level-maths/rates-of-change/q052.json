@@ -1,0 +1,65 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q052",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "surface area",
+    "sphere"
+  ],
+  "questionText": "The surface area of a sphere is $S = 4\\pi r^{2}$. If the radius increases at $0.2$ cm/s, find $\\dfrac{dS}{dt}$ when $r = 5$ cm.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the surface-area formula",
+        "workingLatex": "S = 4\\pi r^{2}",
+        "explanation": "Surface area depends on the radius squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dS}{dt} = 8\\pi r\\dfrac{dr}{dt}",
+        "explanation": "The chain rule links the rate of change of surface area to the rate of change of radius.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute",
+        "workingLatex": "\\dfrac{dS}{dt} = 8\\pi (5)(0.2)",
+        "explanation": "Use $r = 5$ cm and $\\dfrac{dr}{dt} = 0.2$ cm/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dS}{dt} = 8\\pi",
+        "explanation": "The surface area grows at $8\\pi$ cm$^{2}$/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State with units",
+        "workingLatex": "\\dfrac{dS}{dt} = 8\\pi\\text{ cm}^{2}\\text{/s}",
+        "explanation": "This measures how fast the outer surface is expanding.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Interpret",
+        "workingLatex": "\\dfrac{dS}{dt} = 8\\pi\\text{ cm}^{2}\\text{/s}",
+        "explanation": "A growing sphere gains surface area faster when the radius is larger.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dS}{dt} = 8\\pi$ cm$^{2}$/s."
+  }
+}

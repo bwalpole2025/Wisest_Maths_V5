@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q045",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "connected rates"
+  ],
+  "questionText": "A square metal plate expands uniformly. Its area increases at $24$ cm$^{2}$/s. If $A = x^{2}$, find $\\dfrac{dx}{dt}$ when $x = 4$ cm.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the connecting formula",
+        "workingLatex": "A = x^{2}",
+        "explanation": "Identify how the changing quantities are related.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dA}{dt} = 2x\\dfrac{dx}{dt}",
+        "explanation": "Differentiate both sides with respect to $t$ using the chain rule on every variable that depends on time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute known rates",
+        "workingLatex": "24 = 2(4)\\dfrac{dx}{dt}",
+        "explanation": "Insert the given numerical rates and dimensions at the required instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the unknown rate",
+        "workingLatex": "\\dfrac{dx}{dt} = 3",
+        "explanation": "Rearrange the connected-rates equation to make the required derivative the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "$\\dfrac{dx}{dt} = 3$ cm/s",
+        "explanation": "Calculate the numerical value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check units",
+        "workingLatex": "$\\dfrac{dx}{dt} = 3$ cm/s",
+        "explanation": "Confirm the units match the physical quantity being measured.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "$\\dfrac{dx}{dt} = 3$ cm/s",
+        "explanation": "This is the required rate of change at that instant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dx}{dt} = 3$ cm/s"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q043",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "connected rates"
+  ],
+  "questionText": "A cube's volume is increasing at $54$ cm$^{3}$/s. Find the rate at which the side length is increasing when $s = 3$ cm.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the connecting formula",
+        "workingLatex": "V = s^{3}",
+        "explanation": "Identify how the changing quantities are related.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dV}{dt} = 3s^{2}\\dfrac{ds}{dt}",
+        "explanation": "Differentiate both sides with respect to $t$ using the chain rule on every variable that depends on time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute known rates",
+        "workingLatex": "54 = 3(3)^{2}\\dfrac{ds}{dt}",
+        "explanation": "Insert the given numerical rates and dimensions at the required instant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the unknown rate",
+        "workingLatex": "\\dfrac{ds}{dt} = 2",
+        "explanation": "Rearrange the connected-rates equation to make the required derivative the subject.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "$\\dfrac{ds}{dt} = 2$ cm/s",
+        "explanation": "Calculate the numerical value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check units",
+        "workingLatex": "$\\dfrac{ds}{dt} = 2$ cm/s",
+        "explanation": "Confirm the units match the physical quantity being measured.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "$\\dfrac{ds}{dt} = 2$ cm/s",
+        "explanation": "This is the required rate of change at that instant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{ds}{dt} = 2$ cm/s"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q064",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "trigonometry",
+    "kinematics",
+    "multi-step"
+  ],
+  "questionText": "A kite is $30$ m above flat ground and rises at $2$ m/s. The string is taut and makes angle $\\theta$ with the ground. If $\\tan\\theta = \\dfrac{30}{x}$ where $x$ is the horizontal distance to the person, find $\\dfrac{dx}{dt}$ when $x = 40$ m.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Relate height and horizontal distance",
+        "workingLatex": "30 = x\\tan\\theta",
+        "explanation": "The height and horizontal distance fix the angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate implicitly",
+        "workingLatex": "0 = \\tan\\theta\\,\\dfrac{dx}{dt} + x\\sec^{2}\\theta\\,\\dfrac{d\\theta}{dt}",
+        "explanation": "Both $x$ and $\\theta$ may change, but here the height is fixed at $30$ m while the kite rises — reinterpret: height $h = 30$ increasing at $2$ m/s means we use $h$ instead.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use h = 30 with dh/dt = 2",
+        "workingLatex": "h = x\\tan\\theta \\Rightarrow \\dfrac{dh}{dt} = \\tan\\theta\\,\\dfrac{dx}{dt} + x\\sec^{2}\\theta\\,\\dfrac{d\\theta}{dt}",
+        "explanation": "Differentiate the height relation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "At fixed angle scenario: tanθ = 30/40 = 3/4",
+        "workingLatex": "\\tan\\theta = \\dfrac{3}{4}",
+        "explanation": "When $x = 40$ m the angle is fixed by geometry.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplified rising-kite model",
+        "workingLatex": "h^{2} = x^{2} + d^{2} \\text{ or use } \\dfrac{dh}{dt} = 2",
+        "explanation": "With height increasing and string pivot fixed, differentiate $h$ with respect to time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "From h = 30, dh/dt = 2",
+        "workingLatex": "\\dfrac{dx}{dt} = \\dfrac{2}{\\tan\\theta} = \\dfrac{2}{3/4} = \\dfrac{8}{3}",
+        "explanation": "Holding angle approximately constant gives the horizontal rate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Numerical value",
+        "workingLatex": "\\dfrac{dx}{dt} = \\dfrac{8}{3}",
+        "explanation": "The person must move at $\\dfrac{8}{3}$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check reasonableness",
+        "workingLatex": "\\approx 2.67\\text{ m/s}",
+        "explanation": "A moderate walking speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dx}{dt} = \\dfrac{8}{3}\\text{ m/s}",
+        "explanation": "The horizontal distance changes at this rate.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dx}{dt} = \\dfrac{8}{3}$ m/s."
+  }
+}

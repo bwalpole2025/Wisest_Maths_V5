@@ -1,0 +1,87 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q060",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "parabola",
+    "chain rule",
+    "multi-step"
+  ],
+  "questionText": "A point moves along $y = x^{2}$. If $\\dfrac{dx}{dt} = 3$ units/s, find $\\dfrac{dy}{dt}$ when $x = 2$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the path equation",
+        "workingLatex": "y = x^{2}",
+        "explanation": "The curve relates $y$ and $x$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dy}{dt} = 2x\\dfrac{dx}{dt}",
+        "explanation": "The chain rule connects the vertical and horizontal rates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute x = 2 and dx/dt = 3",
+        "workingLatex": "\\dfrac{dy}{dt} = 2(2)(3)",
+        "explanation": "Use the given position and horizontal speed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dy}{dt} = 12",
+        "explanation": "The vertical speed is $12$ units/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Geometric check",
+        "workingLatex": "m = 2x = 4",
+        "explanation": "The gradient at $x = 2$ is $4$, and $\\dfrac{dy}{dt}/\\dfrac{dx}{dt} = 4$ as expected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Relate to dy/dx",
+        "workingLatex": "\\dfrac{dy}{dx} = 4 = \\dfrac{12}{3}",
+        "explanation": "The ratio of rates equals the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Consider direction",
+        "workingLatex": "\\dfrac{dy}{dt} > 0",
+        "explanation": "The point moves upward along the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Physical meaning",
+        "workingLatex": "\\text{12 units/s upward}",
+        "explanation": "If $x$ increases, $y$ increases faster because the curve steepens.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dy}{dt} = 12\\text{ units/s}",
+        "explanation": "The $y$-coordinate changes at $12$ units per second.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dt} = 12$ units/s."
+  }
+}

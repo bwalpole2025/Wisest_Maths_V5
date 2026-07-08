@@ -1,0 +1,65 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q012",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "cube",
+    "volume"
+  ],
+  "questionText": "A metal cube is heated and expands uniformly. When the side length is $3$ cm, the side is lengthening at $0.5$ cm/s. Find the rate at which the volume is increasing.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Relate volume to side length",
+        "workingLatex": "V = s^{3}",
+        "explanation": "A cube's volume is the cube of its side length.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "\\dfrac{dV}{dt} = 3s^{2}\\dfrac{ds}{dt}",
+        "explanation": "The chain rule links the rate of change of volume to the rate of change of the side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute",
+        "workingLatex": "\\dfrac{dV}{dt} = 3(3)^{2} \\times 0.5",
+        "explanation": "At $s = 3$ cm with $\\dfrac{ds}{dt} = 0.5$ cm/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Calculate",
+        "workingLatex": "\\dfrac{dV}{dt} = 13.5",
+        "explanation": "Evaluate the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add units",
+        "workingLatex": "\\dfrac{dV}{dt} = 13.5\\text{ cm}^{3}\\text{/s}",
+        "explanation": "Volume changes in cubic units per second.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "\\dfrac{dV}{dt} = 13.5\\text{ cm}^{3}\\text{/s}",
+        "explanation": "This is the instantaneous rate of volume increase.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dV}{dt} = 13.5$ cm$^{3}$/s."
+  }
+}

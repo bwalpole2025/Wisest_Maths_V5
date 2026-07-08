@@ -1,0 +1,79 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Rates of change",
+  "subtopicId": "al.y2.pure.connected-rates",
+  "questionDiagram": null,
+  "id": "al.y2.pure.connected-rates.q030",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "rates of change",
+    "chain rule",
+    "ladder",
+    "Pythagoras"
+  ],
+  "questionText": "A 10 m ladder leans against a vertical wall with its foot on horizontal ground. The foot slides away from the wall at 0.5 m/s. When the foot is 6 m from the wall, find the rate at which the top of the ladder is sliding down the wall.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the constraint",
+        "workingLatex": "x^{2} + y^{2} = 100",
+        "explanation": "The ladder, wall and ground form a right triangle, so Pythagoras links $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate with respect to time",
+        "workingLatex": "2x\\dfrac{dx}{dt} + 2y\\dfrac{dy}{dt} = 0",
+        "explanation": "Differentiate both sides with respect to $t$, using the chain rule on each term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for dy/dt",
+        "workingLatex": "\\dfrac{dy}{dt} = -\\dfrac{x}{y}\\dfrac{dx}{dt}",
+        "explanation": "Rearrange to express the vertical rate in terms of the horizontal rate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find y at the given x",
+        "workingLatex": "y = \\sqrt{100 - 36} = 8",
+        "explanation": "When $x = 6$ m, substitute into the constraint to find $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute values",
+        "workingLatex": "\\dfrac{dy}{dt} = -\\dfrac{6}{8} \\times 0.5",
+        "explanation": "Use $x = 6$, $y = 8$ and $\\dfrac{dx}{dt} = 0.5$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "\\dfrac{dy}{dt} = -\\dfrac{3}{8}",
+        "explanation": "Calculate the vertical speed of the top of the ladder.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{dy}{dt} < 0",
+        "explanation": "A negative value means the top is sliding down the wall.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer",
+        "workingLatex": "\\dfrac{dy}{dt} = -\\dfrac{3}{8}\\text{ m/s}",
+        "explanation": "This is how fast the top of the ladder is moving vertically at that instant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dt} = -\\dfrac{3}{8}$ m/s."
+  }
+}
