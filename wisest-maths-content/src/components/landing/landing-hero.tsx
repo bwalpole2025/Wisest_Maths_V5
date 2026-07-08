@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { AppLink } from "@/components/app-link";
 import { Reveal } from "@/components/reveal";
 import { ParticleGlobe } from "@/components/landing/particle-globe";
 
@@ -34,12 +34,12 @@ export function LandingHero() {
           </Reveal>
 
           <Reveal delay={0.19}>
-            <Link
+            <AppLink
               href="/questions"
               className="landing-lime-btn mt-10 min-w-[220px] px-9 py-3.5 text-[15px] sm:mt-12"
             >
               Explore the question bank
-            </Link>
+            </AppLink>
           </Reveal>
         </div>
       </div>

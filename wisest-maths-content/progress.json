@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 2 Statistics",
-  "currentSubtopic": "Regression and correlation",
-  "currentSubtopicId": "al.y2.stats.regression-correlation",
+  "currentTopic": "Year 2 Mechanics",
+  "currentSubtopic": "Further kinematics",
+  "currentSubtopicId": "al.y2.mech.further-kinematics",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -81,13 +81,20 @@
     "al.y2.pure.areas-applications",
     "al.y2.pure.differential-equations",
     "al.y2.pure.vectors-3d",
-    "al.y2.stats.regression-correlation"
+    "al.y2.stats.regression-correlation",
+    "al.y2.stats.normal-approximation",
+    "al.y2.stats.hypothesis-normal",
+    "al.y2.mech.moments",
+    "al.y2.mech.forces-friction",
+    "al.y2.mech.projectilescontinued",
+    "al.y2.mech.applications-forces",
+    "al.y2.mech.further-kinematics"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 76,
-      "totalQuestionsGenerated": 5320
+      "completedSubtopics": 83,
+      "totalQuestionsGenerated": 5810
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,

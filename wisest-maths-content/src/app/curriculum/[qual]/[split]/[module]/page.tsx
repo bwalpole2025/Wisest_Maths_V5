@@ -29,7 +29,7 @@ export default async function ModulePage({
           title="Topics"
           blurb={`${plural(topics.length, "topic")} in ${m.label}. Open one to see its subtopics and question banks.`}
         />
-        <CardGrid>
+        <CardGrid prefetchHrefs={topics.map((t) => `/curriculum/${q.slug}/${sp.slug}/${m.slug}/${t.slug}`)}>
           {topics.map((t, i) => (
             <NavCard
               key={t.slug}

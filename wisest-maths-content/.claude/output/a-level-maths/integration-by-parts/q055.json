@@ -1,0 +1,115 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q055",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "exponential",
+    "definite integral",
+    "repeated parts",
+    "multi-step"
+  ],
+  "questionText": "Evaluate $\\displaystyle\\int_{0}^{1} x^{2}e^{x}\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Repeated parts needed",
+        "workingLatex": "\\int x^{2}e^{x}dx \\text{ then evaluate}",
+        "explanation": "Find antiderivative first or work directly on $[0,1]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "First parts",
+        "workingLatex": "u = x^{2},\\; dv = e^{x}dx \\Rightarrow x^{2}e^{x} - 2\\int xe^{x}dx",
+        "explanation": "Reduce power of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Second parts on ∫xeˣdx",
+        "workingLatex": "\\int xe^{x}dx = xe^{x} - e^{x}",
+        "explanation": "Standard result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Antiderivative",
+        "workingLatex": "x^{2}e^{x} - 2xe^{x} + 2e^{x}",
+        "explanation": "Combine before evaluating.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate at x=1",
+        "workingLatex": "e - 2e + 2e = e",
+        "explanation": "Simplify at upper limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate at x=0",
+        "workingLatex": "0 - 0 + 2 = 2",
+        "explanation": "Lower limit contribution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract",
+        "workingLatex": "e - 2",
+        "explanation": "Definite value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpretation",
+        "workingLatex": "\\text{Area under } x^{2}e^{x} \\text{ on } [0,1]",
+        "explanation": "Positive area since integrand $>0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int_{0}^{1} x^{2}e^{x}\\,dx = e - 2",
+        "explanation": "Exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int_{0}^{1} x^{2}e^{x}\\,dx = e - 2$."
+  }
+}

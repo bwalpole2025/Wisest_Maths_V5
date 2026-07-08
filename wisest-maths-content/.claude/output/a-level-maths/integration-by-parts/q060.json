@@ -1,0 +1,114 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q060",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "logarithm",
+    "definite integral",
+    "multi-step"
+  ],
+  "questionText": "Find $\\displaystyle\\int x^{2}\\ln x\\,dx$ and hence evaluate $\\displaystyle\\int_{1}^{e} x^{2}\\ln x\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose u = ln x",
+        "workingLatex": "u = \\ln x,\\; dv = x^{2}dx",
+        "explanation": "Logarithm as $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find du and v",
+        "workingLatex": "du = \\dfrac{1}{x}dx,\\; v = \\dfrac{x^{3}}{3}",
+        "explanation": "Power rule for $v$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply by parts",
+        "workingLatex": "\\dfrac{x^{3}}{3}\\ln x - \\int \\dfrac{x^{2}}{3}dx",
+        "explanation": "Reduce to polynomial.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Integrate",
+        "workingLatex": "\\dfrac{x^{3}}{3}\\ln x - \\dfrac{x^{3}}{9} + c",
+        "explanation": "Indefinite result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate at x=e",
+        "workingLatex": "\\dfrac{e^{3}}{3} - \\dfrac{e^{3}}{9} = \\dfrac{2e^{3}}{9}",
+        "explanation": "Upper limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate at x=1",
+        "workingLatex": "0 - \\dfrac{1}{9} = -\\dfrac{1}{9}",
+        "explanation": "Lower limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Subtract",
+        "workingLatex": "\\dfrac{2e^{3}}{9} + \\dfrac{1}{9} = \\dfrac{2e^{3}+1}{9}",
+        "explanation": "Definite value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Hence link",
+        "workingLatex": "\\text{Indefinite integral evaluated at limits}",
+        "explanation": "Shows the power of finding $F(x)$ first.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int x^{2}\\ln x\\,dx = \\dfrac{x^{3}}{3}\\ln x - \\dfrac{x^{3}}{9} + c;\\; \\int_{1}^{e} = \\dfrac{2e^{3}+1}{9}",
+        "explanation": "Both forms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int x^{2}\\ln x\\,dx = \\dfrac{x^{3}}{3}\\ln x - \\dfrac{x^{3}}{9} + c$; $\\displaystyle\\int_{1}^{e} x^{2}\\ln x\\,dx = \\dfrac{2e^{3}+1}{9}$."
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q066",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "exact",
+  "tags": [
+    "integration by parts",
+    "exponential",
+    "definite integral"
+  ],
+  "questionText": "Use integration by parts to evaluate $\\displaystyle\\int_{0}^{\\ln 2} x e^{x}\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the formula",
+        "workingLatex": "\\int_{a}^{b} u\\,dv = \\left[uv\\right]_{a}^{b} - \\int_{a}^{b} v\\,du",
+        "explanation": "The definite-integral version avoids introducing $+c$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose u and dv",
+        "workingLatex": "u = x,\\quad dv = e^{x}\\,dx",
+        "explanation": "Pick $u$ so that $du$ is simpler than $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find du and v",
+        "workingLatex": "du = dx,\\quad v = e^{x}",
+        "explanation": "Differentiate and integrate the chosen parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply by parts",
+        "workingLatex": "\\left[xe^{x}\\right]_{0}^{\\ln 2} - \\int_{0}^{\\ln 2} e^{x}\\,dx",
+        "explanation": "By parts on $[0, \\ln 2]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the boundary term",
+        "workingLatex": "2\\ln 2",
+        "explanation": "Upper boundary: $\\ln 2 \\cdot e^{\\ln 2} = 2\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the remaining integral",
+        "workingLatex": "-(2-1) = -1",
+        "explanation": "Remaining integral: $e^{x}$ from $0$ to $\\ln 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Combine and simplify",
+        "workingLatex": "2\\ln 2 - 1",
+        "explanation": "Give the exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer",
+        "workingLatex": "\\int_{0}^{\\ln 2} x e^{x}\\,dx = 2\\ln 2 - 1",
+        "explanation": "Final definite integral value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int_{0}^{\\ln 2} x e^{x}\\,dx = 2\\ln 2 - 1$."
+  }
+}

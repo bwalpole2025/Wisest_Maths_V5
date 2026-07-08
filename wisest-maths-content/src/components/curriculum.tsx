@@ -1,4 +1,5 @@
-import Link from "next/link";
+import { AppLink } from "@/components/app-link";
+import { PrefetchOnView } from "@/components/prefetch-on-view";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 import { Reveal } from "@/components/reveal";
 import { cn } from "@/lib/utils";
@@ -13,9 +14,9 @@ export function Crumbs({ trail }: { trail: { label: string; href?: string }[] })
           <span key={i} className="flex items-center gap-1">
             {i > 0 && <span className="px-1 opacity-40">/</span>}
             {c.href ? (
-              <Link href={c.href} className="rounded-md px-1.5 py-1 transition-colors hover:text-foreground">
+              <AppLink href={c.href} className="rounded-md px-1.5 py-1 transition-colors hover:text-foreground">
                 {c.label}
-              </Link>
+              </AppLink>
             ) : (
               <span className="px-1.5 py-1 font-medium text-foreground">{c.label}</span>
             )}
@@ -51,11 +52,13 @@ export function LevelHeader({
 export function CardGrid({
   children,
   cols = 3,
+  prefetchHrefs,
 }: {
   children: React.ReactNode;
   cols?: 2 | 3;
+  prefetchHrefs?: string[];
 }) {
-  return (
+  const grid = (
     <div
       className={cn(
         "mt-8 grid gap-4",
@@ -65,6 +68,12 @@ export function CardGrid({
       {children}
     </div>
   );
+
+  if (prefetchHrefs?.length) {
+    return <PrefetchOnView hrefs={prefetchHrefs}>{grid}</PrefetchOnView>;
+  }
+
+  return grid;
 }
 
 /* -------------------------------------------------------------- nav card */
@@ -86,7 +95,7 @@ interface NavCardProps {
 export function NavCard(p: NavCardProps) {
   return (
     <Reveal delay={((p.index ?? 0) % 3) * 0.05}>
-      <Link href={p.href} className="group block h-full">
+      <AppLink href={p.href} className="group block h-full">
         <div className="card-glow glass relative flex h-full flex-col overflow-hidden rounded-3xl p-6 transition-transform duration-300 group-hover:-translate-y-1">
           <div
             className={cn(
@@ -128,7 +137,7 @@ export function NavCard(p: NavCardProps) {
             </span>
           </div>
         </div>
-      </Link>
+      </AppLink>
     </Reveal>
   );
 }
@@ -214,9 +223,9 @@ export function SubtopicGridCard({ s, index = 0 }: { s: SubtopicCardData; index?
   return (
     <Reveal delay={(index % 3) * 0.05}>
       {s.live && s.href ? (
-        <Link href={s.href} className="group block h-full">
+        <AppLink href={s.href} className="group block h-full">
           {inner}
-        </Link>
+        </AppLink>
       ) : (
         <div className="h-full cursor-default">{inner}</div>
       )}
@@ -229,12 +238,12 @@ export function SubtopicGridCard({ s, index = 0 }: { s: SubtopicCardData; index?
 export function BackLink({ href, label }: { href: string; label: string }) {
   return (
     <Reveal>
-      <Link
+      <AppLink
         href={href}
         className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground"
       >
         <ArrowLeft className="h-4 w-4" /> {label}
-      </Link>
+      </AppLink>
     </Reveal>
   );
 }

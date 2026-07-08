@@ -1,0 +1,85 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q021",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "trigonometric",
+    "repeated parts"
+  ],
+  "questionText": "Use integration by parts to find $\\displaystyle\\int x^{2}\\cos x\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the formula",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "Integration by parts reverses the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose u and dv",
+        "workingLatex": "u = x^{2},\\quad dv = \\cos x\\,dx",
+        "explanation": "Use LIATE: Log, Inverse trig, Algebraic, Trig, Exponential — pick $u$ to simplify on differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find du and v",
+        "workingLatex": "du = 2x\\,dx,\\quad v = \\sin x",
+        "explanation": "Differentiate $u$ and integrate $dv$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the formula",
+        "workingLatex": "x^{2}\\sin x - \\int 2x\\sin x\\,dx",
+        "explanation": "Substitute into $\\int u\\,dv = uv - \\int v\\,du$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the remaining integral",
+        "workingLatex": "x^{2}\\sin x + 2x\\cos x - 2\\sin x",
+        "explanation": "The new integral should be simpler than the original.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify and add +c",
+        "workingLatex": "x^{2}\\sin x + 2x\\cos x - 2\\sin x + c",
+        "explanation": "Combine terms and include the constant of integration.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "\\int x^{2}\\cos x\\,dx = x^{2}\\sin x + 2x\\cos x - 2\\sin x + c",
+        "explanation": "Present the antiderivative clearly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int x^{2}\\cos x\\,dx = x^{2}\\sin x + 2x\\cos x - 2\\sin x + c$."
+  }
+}

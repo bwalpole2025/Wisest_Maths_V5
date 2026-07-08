@@ -1,4 +1,4 @@
-import { subtopics } from "@/lib/questions";
+import { subtopics } from "@/lib/question-summaries";
 import { Reveal } from "@/components/reveal";
 import { LandingFeaturesPanel } from "@/components/landing/landing-features-panel";
 

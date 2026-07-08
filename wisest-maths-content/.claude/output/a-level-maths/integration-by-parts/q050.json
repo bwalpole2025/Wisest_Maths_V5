@@ -1,0 +1,115 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q050",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "cyclic",
+    "exponential",
+    "trigonometric",
+    "multi-step"
+  ],
+  "questionText": "Find $\\displaystyle\\int e^{x}\\cos x\\,dx$ using integration by parts twice.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Let J denote the integral",
+        "workingLatex": "J = \\int e^{x}\\cos x\\,dx",
+        "explanation": "This pairs with the sine cyclic integral.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "First application: u = cos x",
+        "workingLatex": "u = \\cos x,\\; dv = e^{x}dx",
+        "explanation": "Trig as $u$, exponential as $dv$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply by parts",
+        "workingLatex": "J = e^{x}\\cos x + \\int e^{x}\\sin x\\,dx",
+        "explanation": "Note the plus from $du = -\\sin x\\,dx$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Parts on ∫eˣ sin x dx",
+        "workingLatex": "\\int e^{x}\\sin x\\,dx = e^{x}\\sin x - J",
+        "explanation": "Second application returns $J$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute",
+        "workingLatex": "J = e^{x}\\cos x + e^{x}\\sin x - J",
+        "explanation": "Equation in $J$ only.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve",
+        "workingLatex": "2J = e^{x}(\\cos x + \\sin x)",
+        "explanation": "Collect terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Final form",
+        "workingLatex": "J = \\dfrac{e^{x}}{2}(\\cos x + \\sin x) + c",
+        "explanation": "Companion result to the sine case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify",
+        "workingLatex": "\\dfrac{d}{dx}\\left[\\dfrac{e^{x}}{2}(\\cos x + \\sin x)\\right] = e^{x}\\cos x",
+        "explanation": "Differentiation check.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int e^{x}\\cos x\\,dx = \\dfrac{e^{x}}{2}(\\cos x + \\sin x) + c",
+        "explanation": "Standard cyclic integral.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int e^{x}\\cos x\\,dx = \\dfrac{e^{x}}{2}(\\cos x + \\sin x) + c$."
+  }
+}

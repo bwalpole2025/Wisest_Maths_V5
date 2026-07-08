@@ -1,5 +1,5 @@
 import type { Question } from "@/lib/types";
-import { SUBTOPICS, subtopicBySlug, slugForSubtopicId } from "@/data/questions/a-level-maths";
+import { slugForSubtopicId } from "@/data/questions/a-level-maths";
 
 // Eager imports — used only in server components (landing, dashboard, subtopic
 // pages, solve pages) for build-time stats and summaries. Client components use
@@ -81,6 +81,13 @@ import { questions as vectorsInThreeDimensions } from "@/data/questions/a-level-
 import { questions as regressionAndCorrelation } from "@/data/questions/a-level-maths/year-2-stats/regression-and-correlation";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 import { questions as theNormalDistribution } from "@/data/questions/a-level-maths/year-2-stats/the-normal-distribution";
+import { questions as normalApproximationToBinomial } from "@/data/questions/a-level-maths/year-2-stats/normal-approximation-to-binomial";
+import { questions as hypothesisTestingNormal } from "@/data/questions/a-level-maths/year-2-stats/hypothesis-testing-normal";
+import { questions as moments } from "@/data/questions/a-level-maths/year-2-mech/moments";
+import { questions as forcesAndFriction } from "@/data/questions/a-level-maths/year-2-mech/forces-and-friction";
+import { questions as projectiles } from "@/data/questions/a-level-maths/year-2-mech/projectiles";
+import { questions as applicationsOfForces } from "@/data/questions/a-level-maths/year-2-mech/applications-of-forces";
+import { questions as furtherKinematics } from "@/data/questions/a-level-maths/year-2-mech/further-kinematics";
 
 export { slugForSubtopicId };
 
@@ -161,60 +168,15 @@ export const allQuestions: Question[] = [
   ...regressionAndCorrelation,
   ...conditionalProbability,
   ...theNormalDistribution,
+  ...normalApproximationToBinomial,
+  ...hypothesisTestingNormal,
+  ...moments,
+  ...forcesAndFriction,
+  ...projectiles,
+  ...applicationsOfForces,
+  ...furtherKinematics,
 ];
-
-export interface SubtopicSummary {
-  id: string;
-  name: string;
-  topic: string;
-  level: string;
-  count: number;
-  easy: number;
-  intermediate: number;
-  hard: number;
-  gradient: string;
-  blurb: string;
-  slug: string;
-  order: number;
-}
-
-/** Summaries built from the registry (metadata) + eager data (counts). */
-export const subtopics: SubtopicSummary[] = SUBTOPICS.map((entry) => {
-  const qs = allQuestions.filter((q) => q.subtopicId === entry.id);
-  return {
-    id: entry.id,
-    name: entry.name,
-    slug: entry.slug,
-    gradient: entry.gradient,
-    blurb: entry.blurb,
-    order: entry.order,
-    topic: qs[0]?.topic ?? "Year 1 Pure",
-    level: qs[0]?.level ?? "A-Level Maths",
-    count: qs.length,
-    easy: qs.filter((q) => q.difficulty === "Easy").length,
-    intermediate: qs.filter((q) => q.difficulty === "Intermediate").length,
-    hard: qs.filter((q) => q.difficulty === "Hard").length,
-  };
-}).sort((a, b) => a.order - b.order);
 
 export function getQuestionById(id: string): Question | undefined {
   return allQuestions.find((q) => q.id === id);
 }
-
-export function getSubtopicBySlug(slug: string): SubtopicSummary | undefined {
-  return subtopics.find((s) => s.slug === slug);
-}
-
-export function getQuestionsBySubtopicSlug(slug: string): Question[] {
-  const entry = subtopicBySlug(slug);
-  return entry ? allQuestions.filter((q) => q.subtopicId === entry.id) : [];
-}
-
-export const stats = {
-  total: allQuestions.length,
-  subtopics: subtopics.length,
-  easy: allQuestions.filter((q) => q.difficulty === "Easy").length,
-  intermediate: allQuestions.filter((q) => q.difficulty === "Intermediate").length,
-  hard: allQuestions.filter((q) => q.difficulty === "Hard").length,
-  steps: allQuestions.reduce((n, q) => n + q.workedSolution.steps.length, 0),
-};

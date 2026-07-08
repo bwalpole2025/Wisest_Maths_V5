@@ -1,6 +1,6 @@
-import Link from "next/link";
+import { AppLink } from "@/components/app-link";
 import { Library, Layers3, ListChecks, Flame, ArrowRight } from "lucide-react";
-import { stats, subtopics } from "@/lib/questions";
+import { stats, subtopics } from "@/lib/question-summaries";
 import { Reveal } from "@/components/reveal";
 import { SectionLabel } from "@/components/ui";
 import { Footer } from "@/components/footer";
@@ -86,14 +86,14 @@ export default function DashboardPage() {
                   <h2 className="font-display text-lg font-semibold tracking-tight">Coverage by subtopic</h2>
                   <p className="mt-1 text-sm text-muted-foreground">Each subtopic is complete at 70 questions.</p>
                 </div>
-                <Link href="/questions" className="hidden items-center gap-1 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground sm:flex">
+                <AppLink href="/questions" className="hidden items-center gap-1 text-sm font-semibold text-muted-foreground transition-colors hover:text-foreground sm:flex">
                   All <ArrowRight className="h-4 w-4" />
-                </Link>
+                </AppLink>
               </div>
 
               <div className="mt-6 space-y-4">
                 {subtopics.map((s) => (
-                  <Link key={s.id} href={`/questions/${s.slug}`} className="group block">
+                  <AppLink key={s.id} href={`/questions/${s.slug}`} className="group block">
                     <div className="flex items-center justify-between text-sm">
                       <span className="font-medium transition-colors group-hover:text-foreground">{s.name}</span>
                       <span className="text-xs text-muted-foreground">{s.count}/70</span>
@@ -101,7 +101,7 @@ export default function DashboardPage() {
                     <div className="mt-2 h-2 overflow-hidden rounded-full bg-black/[0.06]">
                       <div className={cn("h-full rounded-full bg-gradient-to-r transition-all duration-500", s.gradient)} style={{ width: `${(s.count / 70) * 100}%` }} />
                     </div>
-                  </Link>
+                  </AppLink>
                 ))}
               </div>
             </div>

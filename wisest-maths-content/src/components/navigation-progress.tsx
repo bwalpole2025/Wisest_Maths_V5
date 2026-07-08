@@ -1,23 +1,32 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 /**
- * Shows a top progress bar as soon as an in-app link is clicked, so slow
- * dev-mode route compilation never feels like a dead click.
+ * Top progress bar on link click + hover prefetch for sub-800ms navigation.
  */
 export function NavigationProgress() {
   const pathname = usePathname();
+  const router = useRouter();
   const [active, setActive] = useState(false);
   const [progress, setProgress] = useState(0);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const prefetched = useRef(new Set<string>());
 
   const stopTimer = () => {
     if (timerRef.current) {
       clearInterval(timerRef.current);
       timerRef.current = null;
     }
+  };
+
+  const prefetchPath = (href: string | null) => {
+    if (!href || href.startsWith("#") || href.startsWith("http")) return;
+    const nextPath = href.split(/[?#]/)[0];
+    if (!nextPath || prefetched.current.has(nextPath)) return;
+    prefetched.current.add(nextPath);
+    router.prefetch(nextPath);
   };
 
   useEffect(() => {
@@ -29,6 +38,12 @@ export function NavigationProgress() {
   }, [pathname]);
 
   useEffect(() => {
+    const onPointerOver = (event: Event) => {
+      const anchor = (event.target as HTMLElement).closest("a");
+      if (!anchor) return;
+      prefetchPath(anchor.getAttribute("href"));
+    };
+
     const onClick = (event: MouseEvent) => {
       if (event.defaultPrevented || event.button !== 0) return;
       if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
@@ -44,6 +59,7 @@ export function NavigationProgress() {
       const nextPath = href.split(/[?#]/)[0];
       if (!nextPath || nextPath === pathname) return;
 
+      prefetchPath(href);
       stopTimer();
       setActive(true);
       setProgress(18);
@@ -53,12 +69,14 @@ export function NavigationProgress() {
       }, 400);
     };
 
+    document.addEventListener("mouseover", onPointerOver, true);
     document.addEventListener("click", onClick, true);
     return () => {
+      document.removeEventListener("mouseover", onPointerOver, true);
       document.removeEventListener("click", onClick, true);
       stopTimer();
     };
-  }, [pathname]);
+  }, [pathname, router]);
 
   if (!active && progress === 0) return null;
 

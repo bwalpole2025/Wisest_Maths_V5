@@ -1,0 +1,114 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q056",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "logarithm",
+    "definite integral",
+    "multi-step"
+  ],
+  "questionText": "Evaluate $\\displaystyle\\int_{1}^{e} x(\\ln x)^{2}\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose u",
+        "workingLatex": "u = (\\ln x)^{2},\\; dv = x\\,dx",
+        "explanation": "Logarithmic power as $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find du and v",
+        "workingLatex": "du = \\dfrac{2\\ln x}{x}dx,\\; v = \\dfrac{x^{2}}{2}",
+        "explanation": "Differentiate $(\\ln x)^{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply by parts",
+        "workingLatex": "\\left[\\dfrac{x^{2}}{2}(\\ln x)^{2}\\right]_{1}^{e} - \\int_{1}^{e} x\\ln x\\,dx",
+        "explanation": "Definite by parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Boundary term",
+        "workingLatex": "\\dfrac{e^{2}}{2}",
+        "explanation": "At $x=e$; at $x=1$ the log term is $0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Remaining integral",
+        "workingLatex": "\\int_{1}^{e} x\\ln x\\,dx = \\dfrac{e^{2}}{4} + \\dfrac{1}{4}",
+        "explanation": "Known definite result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract",
+        "workingLatex": "\\dfrac{e^{2}}{2} - \\dfrac{e^{2}}{4} - \\dfrac{1}{4}",
+        "explanation": "Combine exact values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify",
+        "workingLatex": "\\dfrac{e^{2}}{4} - \\dfrac{1}{4}",
+        "explanation": "Final exact form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factor",
+        "workingLatex": "\\dfrac{1}{4}(e^{2}-1)",
+        "explanation": "Neat factored answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int_{1}^{e} x(\\ln x)^{2}\\,dx = \\dfrac{e^{2}-1}{4}",
+        "explanation": "Definite integral value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int_{1}^{e} x(\\ln x)^{2}\\,dx = \\dfrac{e^{2}-1}{4}$."
+  }
+}

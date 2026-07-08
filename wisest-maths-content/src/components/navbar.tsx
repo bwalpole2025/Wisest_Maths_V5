@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { FastLink } from "@/components/fast-link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import { Brand } from "@/components/brand";
@@ -36,7 +36,7 @@ export function Navbar() {
 
         <div className="hidden items-center gap-9 md:flex">
           {links.map((l) => (
-            <Link
+            <FastLink
               key={l.href}
               href={l.href}
               className={cn(
@@ -55,12 +55,12 @@ export function Navbar() {
                 />
               )}
               {l.label}
-            </Link>
+            </FastLink>
           ))}
         </div>
 
         <div className="flex items-center gap-4">
-          <Link
+          <FastLink
             href="/dashboard"
             className={cn(
               "hidden text-[13px] font-medium transition-colors sm:block",
@@ -68,8 +68,8 @@ export function Navbar() {
             )}
           >
             Log in
-          </Link>
-          <Link
+          </FastLink>
+          <FastLink
             href="/questions"
             className={cn(
               "hidden rounded-full px-4 py-2 text-[13px] font-medium transition-colors sm:inline-flex",
@@ -79,7 +79,7 @@ export function Navbar() {
             )}
           >
             Start solving
-          </Link>
+          </FastLink>
         </div>
       </nav>
     </header>

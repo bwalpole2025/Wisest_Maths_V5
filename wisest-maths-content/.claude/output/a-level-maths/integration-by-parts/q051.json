@@ -1,0 +1,115 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q051",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "cyclic",
+    "exponential",
+    "trigonometric",
+    "multi-step"
+  ],
+  "questionText": "Find $\\displaystyle\\int e^{2x}\\sin 3x\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Let I = ∫e^{2x} sin 3x dx",
+        "workingLatex": "I = \\int e^{2x}\\sin 3x\\,dx",
+        "explanation": "Scaled exponential–trig cyclic form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "First parts: u = sin 3x",
+        "workingLatex": "u = \\sin 3x,\\; dv = e^{2x}dx \\Rightarrow du = 3\\cos 3x\\,dx,\\; v = \\dfrac{1}{2}e^{2x}",
+        "explanation": "Account for the factor $2$ in the exponent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply formula",
+        "workingLatex": "I = \\dfrac{1}{2}e^{2x}\\sin 3x - \\dfrac{3}{2}\\int e^{2x}\\cos 3x\\,dx",
+        "explanation": "First reduction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Second parts on cosine integral",
+        "workingLatex": "u = \\cos 3x,\\; dv = e^{2x}dx \\Rightarrow \\dfrac{1}{2}e^{2x}\\cos 3x + \\dfrac{3}{2}I",
+        "explanation": "Parts again brings back $I$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute",
+        "workingLatex": "I = \\dfrac{1}{2}e^{2x}\\sin 3x - \\dfrac{3}{2}\\left(\\dfrac{1}{2}e^{2x}\\cos 3x + \\dfrac{3}{2}I\\right)",
+        "explanation": "Full substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand and collect I",
+        "workingLatex": "I + \\dfrac{9}{4}I = \\dfrac{1}{2}e^{2x}\\sin 3x - \\dfrac{3}{4}e^{2x}\\cos 3x",
+        "explanation": "Linear equation in $I$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve",
+        "workingLatex": "\\dfrac{13}{4}I = \\dfrac{e^{2x}}{4}(2\\sin 3x - 3\\cos 3x)",
+        "explanation": "Multiply through by $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Divide",
+        "workingLatex": "I = \\dfrac{e^{2x}}{13}(2\\sin 3x - 3\\cos 3x) + c",
+        "explanation": "General pattern: denominator $a^{2}+b^{2}$ for $e^{ax}\\sin bx$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int e^{2x}\\sin 3x\\,dx = \\dfrac{e^{2x}}{13}(2\\sin 3x - 3\\cos 3x) + c",
+        "explanation": "Final antiderivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int e^{2x}\\sin 3x\\,dx = \\dfrac{e^{2x}}{13}(2\\sin 3x - 3\\cos 3x) + c$."
+  }
+}

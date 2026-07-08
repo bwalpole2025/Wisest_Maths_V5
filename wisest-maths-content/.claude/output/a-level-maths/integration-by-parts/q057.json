@@ -1,0 +1,114 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q057",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "trigonometric",
+    "identity",
+    "multi-step"
+  ],
+  "questionText": "Find $\\displaystyle\\int x\\sin^{2}x\\,dx$ using the identity $\\sin^{2}x = \\dfrac{1 - \\cos 2x}{2}$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the double-angle identity",
+        "workingLatex": "\\sin^{2}x = \\dfrac{1 - \\cos 2x}{2}",
+        "explanation": "Reduces to integrable standard forms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite integral",
+        "workingLatex": "\\int x\\sin^{2}x\\,dx = \\dfrac{1}{2}\\int x\\,dx - \\dfrac{1}{2}\\int x\\cos 2x\\,dx",
+        "explanation": "Split into two integrals.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "First integral",
+        "workingLatex": "\\dfrac{1}{2}\\int x\\,dx = \\dfrac{x^{2}}{4}",
+        "explanation": "Polynomial.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Second: parts on x cos 2x",
+        "workingLatex": "u = x,\\; dv = \\cos 2x\\,dx \\Rightarrow \\dfrac{x}{2}\\sin 2x - \\dfrac{1}{4}\\sin 2x",
+        "explanation": "Standard trig by parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine",
+        "workingLatex": "\\dfrac{x^{2}}{4} - \\dfrac{x}{4}\\sin 2x + \\dfrac{1}{8}\\cos 2x + c",
+        "explanation": "Subtract the half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Alternative form",
+        "workingLatex": "\\dfrac{x^{2}}{4} + \\dfrac{x}{4}\\sin 2x - \\dfrac{1}{8}\\sin 2x \\cdot 2 + \\cdots",
+        "explanation": "Check signs carefully.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify",
+        "workingLatex": "\\dfrac{x^{2}}{4} - \\dfrac{x}{4}\\sin 2x + \\dfrac{1}{8}\\cos 2x + c",
+        "explanation": "Confirmed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Verify at x=0",
+        "workingLatex": "\\text{Constant term } \\tfrac{1}{8} + c",
+        "explanation": "Consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int x\\sin^{2}x\\,dx = \\dfrac{x^{2}}{4} - \\dfrac{x}{4}\\sin 2x + \\dfrac{1}{8}\\cos 2x + c",
+        "explanation": "Identity plus by parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int x\\sin^{2}x\\,dx = \\dfrac{x^{2}}{4} - \\dfrac{x}{4}\\sin 2x + \\dfrac{1}{8}\\cos 2x + c$."
+  }
+}

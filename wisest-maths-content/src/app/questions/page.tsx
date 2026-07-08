@@ -1,4 +1,4 @@
-import { subtopics, stats } from "@/lib/questions";
+import { subtopics, stats } from "@/lib/question-summaries";
 import { SubtopicBrowser } from "@/components/subtopic-browser";
 import { Reveal } from "@/components/reveal";
 import { SectionLabel } from "@/components/ui";

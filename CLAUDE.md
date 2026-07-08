@@ -125,3 +125,12 @@ Available skills (register all below):
 - /simulate-student-click
 - /personalize-learning-path
 - /create-agent-response
+
+## Link Performance Rule (Frontend — mandatory)
+
+Target: **every link loads in <2 seconds** (<800ms ideal). See `.cursor/rules/link-performance.mdc`.
+
+- Use `AppLink` (server) / `FastLink` (client) — never raw `next/link` in app code
+- Every route segment needs `loading.tsx` with skeletons
+- Solve pages use `loadQuestionWithSiblings` — never `allQuestions` for navigation
+- Run `npm run perf:links` after navigation or data-loading changes

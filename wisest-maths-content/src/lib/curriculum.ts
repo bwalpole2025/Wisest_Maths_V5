@@ -1,6 +1,6 @@
 import rawData from "../../subtopics.json";
 import topicMap from "@/data/curriculum-topics.json";
-import { subtopics as builtSummaries } from "@/lib/questions";
+import { subtopics as builtSummaries } from "@/lib/question-summaries";
 
 /**
  * Curriculum navigation model.

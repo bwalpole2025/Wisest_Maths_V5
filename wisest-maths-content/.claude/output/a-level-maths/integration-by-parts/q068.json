@@ -1,0 +1,114 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q068",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "cyclic",
+    "proof",
+    "multi-step"
+  ],
+  "questionText": "Use integration by parts to show $\\displaystyle\\int e^{ax}\\sin bx\\,dx = \\dfrac{e^{ax}}{a^{2}+b^{2}}(a\\sin bx - b\\cos bx) + c$ for constants $a, b \\neq 0$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Let I = ∫e^{ax} sin bx dx",
+        "workingLatex": "I = \\int e^{ax}\\sin bx\\,dx",
+        "explanation": "General cyclic template.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "First parts",
+        "workingLatex": "u = \\sin bx,\\; dv = e^{ax}dx",
+        "explanation": "Trig as $u$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "After first application",
+        "workingLatex": "I = \\dfrac{e^{ax}}{a}\\sin bx - \\dfrac{b}{a}\\int e^{ax}\\cos bx\\,dx",
+        "explanation": "Factor $\\tfrac{1}{a}$ from $v$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Second parts on cosine integral",
+        "workingLatex": "u = \\cos bx,\\; dv = e^{ax}dx \\Rightarrow \\dfrac{e^{ax}}{a}\\cos bx + \\dfrac{b}{a}I",
+        "explanation": "Brings $I$ back.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute and solve",
+        "workingLatex": "I\\left(1 + \\dfrac{b^{2}}{a^{2}}\\right) = \\dfrac{e^{ax}}{a}(\\sin bx - \\dfrac{b}{a}\\cos bx)",
+        "explanation": "Linear equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Multiply by a²",
+        "workingLatex": "I(a^{2}+b^{2}) = e^{ax}(a\\sin bx - b\\cos bx)",
+        "explanation": "Clear denominators.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Divide",
+        "workingLatex": "I = \\dfrac{e^{ax}}{a^{2}+b^{2}}(a\\sin bx - b\\cos bx) + c",
+        "explanation": "General formula.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Check a=b=1",
+        "workingLatex": "Matches \\dfrac{e^{x}}{2}(\\sin x - \\cos x)",
+        "explanation": "Recovers the special case.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int e^{ax}\\sin bx\\,dx = \\dfrac{e^{ax}}{a^{2}+b^{2}}(a\\sin bx - b\\cos bx) + c",
+        "explanation": "Proved.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Exam tip",
+        "workingLatex": "a^{2}+b^{2} \\text{ is the denominator in the template}",
+        "explanation": "Saves time in exams.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int e^{ax}\\sin bx\\,dx = \\dfrac{e^{ax}}{a^{2}+b^{2}}(a\\sin bx - b\\cos bx) + c$."
+  }
+}

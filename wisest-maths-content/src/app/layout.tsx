@@ -6,11 +6,15 @@ import { ThemeProvider } from "@/components/theme-provider";
 import { SiteBackground } from "@/components/site-background";
 import { Navbar } from "@/components/navbar";
 import { NavigationProgress } from "@/components/navigation-progress";
+import { RoutePrefetcher } from "@/components/route-prefetcher";
+import { ServiceWorkerRegister } from "@/components/service-worker-register";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
 const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", display: "swap" });
 const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", variable: "--font-serif", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
+
+const CRITICAL_ROUTES = ["/curriculum", "/questions", "/dashboard"];
 
 export const metadata: Metadata = {
   title: "Wisest Maths — Master A-Level Maths, one elegant step at a time",
@@ -21,8 +25,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${display.variable} ${serif.variable} ${mono.variable}`}>
+      <head>
+        {CRITICAL_ROUTES.map((href) => (
+          <link key={href} rel="prefetch" href={href} />
+        ))}
+      </head>
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} forcedTheme="light">
+          <RoutePrefetcher />
+          <ServiceWorkerRegister />
           <NavigationProgress />
           <SiteBackground />
           <Navbar />

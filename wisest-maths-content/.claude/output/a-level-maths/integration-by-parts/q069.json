@@ -1,0 +1,115 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q069",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "logarithm",
+    "area",
+    "multi-part",
+    "multi-step"
+  ],
+  "questionText": "(a) Find $\\displaystyle\\int x\\ln x\\,dx$.\n(b) Hence find the exact area bounded by $y = x\\ln x$, the $x$-axis and the lines $x = 1$ and $x = e$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "(a) By parts with u = ln x",
+        "workingLatex": "u = \\ln x,\\; dv = x\\,dx",
+        "explanation": "Logarithm priority.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Antiderivative",
+        "workingLatex": "F(x) = \\dfrac{x^{2}}{2}\\ln x - \\dfrac{x^{2}}{4}",
+        "explanation": "From part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "(b) Identify region",
+        "workingLatex": "y = x\\ln x \\geq 0 \\text{ on } [1,e]",
+        "explanation": "Integrand non-negative on interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up area",
+        "workingLatex": "A = \\int_{1}^{e} x\\ln x\\,dx",
+        "explanation": "Definite integral of part (a).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate at x=e",
+        "workingLatex": "\\dfrac{e^{2}}{2} - \\dfrac{e^{2}}{4} = \\dfrac{e^{2}}{4}",
+        "explanation": "Upper limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate at x=1",
+        "workingLatex": "0 - \\dfrac{1}{4} = -\\dfrac{1}{4}",
+        "explanation": "Lower limit.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Area",
+        "workingLatex": "A = \\dfrac{e^{2}}{4} + \\dfrac{1}{4}",
+        "explanation": "Subtract antiderivative values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify",
+        "workingLatex": "A = \\dfrac{e^{2}+1}{4}",
+        "explanation": "Exact area.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Units",
+        "workingLatex": "\\text{square units}",
+        "explanation": "Area interpretation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Answer",
+        "workingLatex": "(a) $\\tfrac{x^{2}}{2}\\ln x - \\tfrac{x^{2}}{4} + c$; (b) $\\tfrac{e^{2}+1}{4}$",
+        "explanation": "Both parts.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "(a) $\\displaystyle\\int x\\ln x\\,dx = \\dfrac{x^{2}}{2}\\ln x - \\dfrac{x^{2}}{4} + c$. (b) Area $= \\dfrac{e^{2}+1}{4}$."
+  }
+}

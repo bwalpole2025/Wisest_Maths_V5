@@ -1,0 +1,48 @@
+---
+description: Enforce sub-2s link navigation performance across the Wisest Maths app
+globs: wisest-maths-content/**/*.{tsx,ts,jsx,js,mjs}
+alwaysApply: false
+---
+
+# Link Performance Rule (<2s target, <800ms ideal)
+
+Every navigation link in the app must feel instant. Follow these rules on every change:
+
+## Link components (mandatory)
+- **Server components**: use `AppLink` from `@/components/app-link` (never raw `next/link`)
+- **Client components**: use `FastLink` from `@/components/fast-link` (hover + focus prefetch)
+- Never use `router.push` for primary navigation — keep the declarative link graph
+
+## Route loading
+- Every route segment MUST have a `loading.tsx` with skeleton UI from `@/components/link-skeletons`
+- Heavy client components (`QuestionList`, `SolutionViewer`, landing panels) MUST use `next/dynamic` + `Suspense`
+- Solve pages MUST use `loadQuestionWithSiblings` — never import `allQuestions` for navigation
+
+## Prefetch strategy
+- Critical routes (`/curriculum`, `/questions`, `/dashboard`) are prefetched in root layout `<head>`
+- `RoutePrefetcher` runs on idle in root layout
+- Link-heavy grids use `PrefetchOnView` (IntersectionObserver)
+- `NavigationProgress` prefetches on hover before click
+
+## Data loading
+- Subtopic pages: `loadSubtopic(slug)` only — one chunk per subtopic
+- Question summaries for listings; full questions only on subtopic/solve pages
+- Run `npm run sync-summaries` after adding subtopics
+
+## Assets & caching
+- `next.config.mjs`: keep `compress: true` and `optimizePackageImports` for lucide/framer-motion
+- Service worker at `public/sw.js` caches navigations (stale-while-revalidate)
+- Middleware sets long-cache headers for `/_next/static/`
+
+## Verification (before merging)
+```bash
+cd wisest-maths-content
+npm run build && npm run start
+npm run perf:links   # all routes must be <2000ms
+```
+
+## Forbidden patterns
+- Raw `<a href>` for internal routes
+- Eager `allQuestions` import on solve/navigation paths
+- New routes without `loading.tsx`
+- Disabling `prefetch` without documented reason

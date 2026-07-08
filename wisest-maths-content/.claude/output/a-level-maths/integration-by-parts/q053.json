@@ -1,0 +1,113 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Integration by parts",
+  "subtopicId": "al.y2.pure.integration-by-parts",
+  "questionDiagram": null,
+  "id": "al.y2.pure.integration-by-parts.q053",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "integration by parts",
+    "inverse trigonometric",
+    "multi-step"
+  ],
+  "questionText": "Find $\\displaystyle\\int x\\arctan x\\,dx$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose u using LIATE",
+        "workingLatex": "u = \\arctan x,\\; dv = x\\,dx",
+        "explanation": "Inverse trig has higher priority than algebraic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find du and v",
+        "workingLatex": "du = \\dfrac{1}{1+x^{2}}dx,\\; v = \\dfrac{x^{2}}{2}",
+        "explanation": "Differentiate and integrate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply by parts",
+        "workingLatex": "\\dfrac{x^{2}}{2}\\arctan x - \\int \\dfrac{x^{2}}{2(1+x^{2})}dx",
+        "explanation": "Standard substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the fraction",
+        "workingLatex": "\\dfrac{x^{2}}{1+x^{2}} = 1 - \\dfrac{1}{1+x^{2}}",
+        "explanation": "Algebraic trick for the remaining integral.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Split the integral",
+        "workingLatex": "\\int \\dfrac{x^{2}}{2(1+x^{2})}dx = \\dfrac{1}{2}\\int 1\\,dx - \\dfrac{1}{2}\\int \\dfrac{1}{1+x^{2}}dx",
+        "explanation": "Two standard integrals.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Integrate",
+        "workingLatex": "\\dfrac{x}{2} - \\dfrac{1}{2}\\arctan x",
+        "explanation": "Power and inverse-tan results.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Combine",
+        "workingLatex": "\\dfrac{x^{2}}{2}\\arctan x - \\dfrac{x}{2} + \\dfrac{1}{2}\\arctan x + c",
+        "explanation": "Gather terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Factor arctan",
+        "workingLatex": "\\dfrac{1}{2}(x^{2}+1)\\arctan x - \\dfrac{x}{2} + c",
+        "explanation": "Alternative neat form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Answer",
+        "workingLatex": "\\int x\\arctan x\\,dx = \\dfrac{1}{2}(x^{2}+1)\\arctan x - \\dfrac{x}{2} + c",
+        "explanation": "Final antiderivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Recall integration by parts",
+        "workingLatex": "\\int u\\,dv = uv - \\int v\\,du",
+        "explanation": "This formula comes from reversing the product rule for differentiation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 11,
+        "description": "Use LIATE to choose u",
+        "workingLatex": "\\text{Log, Inverse trig, Algebraic, Trig, Exponential}",
+        "explanation": "Pick $u$ to be the factor that simplifies when differentiated.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 12,
+        "description": "Differentiate u to find du",
+        "workingLatex": "du = u'\\,dx",
+        "explanation": "Differentiation of $u$ should ideally reduce complexity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 13,
+        "description": "Integrate dv to find v",
+        "workingLatex": "v = \\int dv",
+        "explanation": "Integration of $dv$ must be doable — if not, swap your choice of $u$ and $dv$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\displaystyle\\int x\\arctan x\\,dx = \\dfrac{1}{2}(x^{2}+1)\\arctan x - \\dfrac{x}{2} + c$."
+  }
+}
