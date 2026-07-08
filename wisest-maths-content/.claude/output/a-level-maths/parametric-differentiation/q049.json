@@ -1,0 +1,78 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q049",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "exact",
+  "tags": [
+    "parametric differentiation",
+    "gradient",
+    "solving"
+  ],
+  "questionText": "A curve has parametric equations $x = t^{2}$ and $y = 4t - t^{2}$. The tangent to the curve has gradient 0. Find the value(s) of $t$ and the coordinates of the corresponding point(s).",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = 2t",
+        "explanation": "Differentiate the $x$-equation to obtain $\\dot{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = 4 - 2t",
+        "explanation": "Differentiate the $y$-equation to obtain $\\dot{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write dy/dx in terms of t",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{4 - 2t}{2t} = \\dfrac{4 - 2t}{2t} = \\dfrac{2 - t}{t}",
+        "explanation": "Form the gradient using $\\dfrac{\\dot{y}}{\\dot{x}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the gradient equal to the target value",
+        "workingLatex": "\\dfrac{dy}{dx} = 0",
+        "explanation": "We want the values of $t$ where the tangent has the specified slope.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for t",
+        "workingLatex": "t = 2",
+        "explanation": "Clear fractions and solve the resulting equation for $t$, checking that $\\dot{x} \\neq 0$ at each solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Verify each solution",
+        "workingLatex": "t = 2",
+        "explanation": "Substitute each value of $t$ back into $\\dfrac{dy}{dx}$ to confirm it gives the required gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the corresponding point",
+        "workingLatex": "$(4,\\, 4)$",
+        "explanation": "Substitute the valid value(s) of $t$ into the parametric equations to locate the point(s) on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the answer",
+        "workingLatex": "$(4,\\, 4)$",
+        "explanation": "These are the point(s) where the curve has the required gradient.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(4,\\, 4)$"
+  }
+}

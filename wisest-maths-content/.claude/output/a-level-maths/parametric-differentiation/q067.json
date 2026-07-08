@@ -1,0 +1,85 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q067",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "exact",
+  "tags": [
+    "parametric differentiation",
+    "second derivative",
+    "concavity"
+  ],
+  "questionText": "A curve has parametric equations $x = t^{2}$ and $y = t^{3}$. Find $\\dfrac{d^{2}y}{dx^{2}}$ in terms of $t$, and hence find its value when $t = 2$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = 2t",
+        "explanation": "Begin with the first derivatives of the parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = 3t^{2}",
+        "explanation": "Differentiate $y$ with respect to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the first derivative dy/dx",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{3t^{2}}{2t} = \\dfrac{3t}{2}",
+        "explanation": "The first derivative is $\\dfrac{\\dot{y}}{\\dot{x}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the second-derivative formula",
+        "workingLatex": "\\dfrac{d^{2}y}{dx^{2}} = \\dfrac{\\dfrac{d}{dt}\\!\\left(\\dfrac{dy}{dx}\\right)}{\\dfrac{dx}{dt}}",
+        "explanation": "To differentiate with respect to $x$ we differentiate with respect to $t$ and divide by $\\dfrac{dx}{dt}$, because $\\dfrac{d}{dx} = \\dfrac{1}{\\dot{x}}\\dfrac{d}{dt}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Differentiate dy/dx with respect to t",
+        "workingLatex": "\\dfrac{d}{dt}\\!\\left(\\dfrac{dy}{dx}\\right) = \\dfrac{3}{4t}",
+        "explanation": "Differentiate the expression for $\\dfrac{dy}{dx}$ using standard rules.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Form d²y/dx²",
+        "workingLatex": "\\dfrac{d^{2}y}{dx^{2}} = \\dfrac{3}{4t}",
+        "explanation": "Divide the result of step 5 by $\\dot{x}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Evaluate at t = 2",
+        "workingLatex": "\\dfrac{d^{2}y}{dx^{2}} = \\dfrac{3}{8}",
+        "explanation": "Substitute $t = 2$ into the second derivative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{d^{2}y}{dx^{2}} > 0",
+        "explanation": "A negative second derivative indicates the curve is concave down; a positive value indicates concave up.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the second derivative",
+        "workingLatex": "\\dfrac{d^{2}y}{dx^{2}} = \\dfrac{3}{8}",
+        "explanation": "This measures how the gradient is changing at the given point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "\\dfrac{d^{2}y}{dx^{2}} = \\dfrac{3}{8}"
+  }
+}

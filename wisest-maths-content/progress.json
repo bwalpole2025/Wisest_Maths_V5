@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 2 Statistics",
-  "currentSubtopic": "The normal distribution",
-  "currentSubtopicId": "al.y2.stats.normal-distribution",
+  "currentTopic": "Year 2 Pure",
+  "currentSubtopic": "Parametric differentiation",
+  "currentSubtopicId": "al.y2.pure.parametric-differentiation",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -67,13 +67,14 @@
     "al.y2.pure.standard-derivatives",
     "al.y2.pure.product-quotient-chain",
     "al.y2.pure.implicit",
-    "al.y2.stats.normal-distribution"
+    "al.y2.stats.normal-distribution",
+    "al.y2.pure.parametric-differentiation"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 62,
-      "totalQuestionsGenerated": 4340
+      "completedSubtopics": 63,
+      "totalQuestionsGenerated": 4410
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
@@ -86,5 +87,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-06"
+  "lastUpdated": "2026-07-08"
 }

@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q022",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "parametric differentiation",
+    "gradient",
+    "direction"
+  ],
+  "questionText": "A curve has parametric equations $x = 5t$ and $y = t^{3} - 3t$. Find the gradient of the curve when $t = 0$, and state whether the curve is rising or falling there.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = 5",
+        "explanation": "Start by differentiating the expression for $x$ with respect to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = 3t^{2} - 3",
+        "explanation": "Differentiate $y$ in the same way to find $\\dot{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{3t^{2} - 3}{5} = \\dfrac{3t^{2} - 3}{5}",
+        "explanation": "The gradient of the curve is the ratio $\\dfrac{\\dot{y}}{\\dot{x}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute t = 0",
+        "workingLatex": "\\dfrac{dy}{dx}\\bigg|_{t=0} = -\\dfrac{3}{5}",
+        "explanation": "Putting $t = 0$ into the gradient formula gives its value at that point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{dy}{dx} < 0",
+        "explanation": "A negative gradient means the curve is falling as $x$ increases through that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the conclusion",
+        "workingLatex": "\\dfrac{dy}{dx} = -\\dfrac{3}{5} \\text{ (falling)}",
+        "explanation": "At $t = 0$ the gradient is -\\dfrac{3}{5} and the curve is falling there.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "At $t = 0$ the gradient is -\\dfrac{3}{5}, so the curve is falling there."
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q034",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "equation",
+  "tags": [
+    "parametric differentiation",
+    "normal",
+    "tangent"
+  ],
+  "questionText": "A curve has parametric equations $x = 2t$ and $y = t^{2}$. Find the equation of the normal to the curve at the point where $t = 3$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both coordinates",
+        "workingLatex": "\\dot{x} = 2, \\qquad \\dot{y} = 2t",
+        "explanation": "The normal is perpendicular to the tangent, so we begin by finding the rates of change of $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the tangent gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{2t}{2} = t",
+        "explanation": "The tangent slope is $\\dfrac{\\dot{y}}{\\dot{x}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the point at t = 3",
+        "workingLatex": "(6,\\, 9)",
+        "explanation": "Substitute $t$ into the parametric equations to fix the point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the tangent gradient at t = 3",
+        "workingLatex": "m_{\\text{tangent}} = 3",
+        "explanation": "This is the slope of the curve itself at the required point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\dfrac{1}{m_{\\text{tangent}}} = -\\dfrac{1}{3}",
+        "explanation": "Perpendicular lines have gradients that multiply to $-1$, so the normal gradient is the negative reciprocal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the normal equation",
+        "workingLatex": "y - 9 = -\\dfrac{1}{3}(x - 6)",
+        "explanation": "Use point–gradient form with the point and normal slope.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the normal",
+        "workingLatex": "y = -\\dfrac{1}{3}x + 11",
+        "explanation": "Rearrange to a convenient form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the normal",
+        "workingLatex": "y = -\\dfrac{1}{3}x + 11",
+        "explanation": "This line is perpendicular to the tangent at the given point on the curve.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "y = -\\dfrac{1}{3}x + 11"
+  }
+}

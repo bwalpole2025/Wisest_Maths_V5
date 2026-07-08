@@ -1,0 +1,78 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q052",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "coordinates",
+  "tags": [
+    "parametric differentiation",
+    "stationary point",
+    "horizontal tangent"
+  ],
+  "questionText": "A curve has parametric equations $x = t + 3$ and $y = t^{2} - 6t + 5$. Find the coordinates of the stationary point on the curve and describe its nature.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the stationary-point condition",
+        "workingLatex": "\\dfrac{dy}{dx} = 0",
+        "explanation": "On a parametric curve, the gradient is zero when the tangent is horizontal, which requires $\\dot{y} = 0$ (and $\\dot{x} \\neq 0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate both coordinates",
+        "workingLatex": "\\dot{x} = 1, \\qquad \\dot{y} = 2t - 6",
+        "explanation": "Find $\\dot{x}$ and $\\dot{y}$ so we can locate where the tangent is horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set dy/dt equal to zero",
+        "workingLatex": "\\dot{y} = 2t - 6 = 0",
+        "explanation": "A horizontal tangent occurs when the vertical rate of change is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for t",
+        "workingLatex": "t = 3",
+        "explanation": "Solve the equation $\\dot{y} = 0$ for $t$, and check that $\\dot{x} \\neq 0$ at each solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the coordinates",
+        "workingLatex": "$(6,\\, -4)$",
+        "explanation": "Substitute each valid $t$ into the parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm the gradient is zero",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{2t - 6}{1} = 0",
+        "explanation": "With $\\dot{y} = 0$ and $\\dot{x} \\neq 0$, the gradient is indeed zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Describe the stationary point",
+        "workingLatex": "The curve has a local minimum at this point.",
+        "explanation": "Use the sign of $\\dot{y}$ on either side of the solution, or a quick sketch, to classify the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the stationary point",
+        "workingLatex": "$(6,\\, -4)$",
+        "explanation": "This is where the curve has a horizontal tangent.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(6,\\, -4)$. The curve has a local minimum at this point."
+  }
+}

@@ -65,6 +65,7 @@ import { questions as parametricModelling } from "@/data/questions/a-level-maths
 import { questions as standardDerivatives } from "@/data/questions/a-level-maths/year-2-pure/standard-derivatives";
 import { questions as productQuotientChain } from "@/data/questions/a-level-maths/year-2-pure/product-quotient-chain";
 import { questions as implicitDifferentiation } from "@/data/questions/a-level-maths/year-2-pure/implicit-differentiation";
+import { questions as parametricDifferentiation } from "@/data/questions/a-level-maths/year-2-pure/parametric-differentiation";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 import { questions as theNormalDistribution } from "@/data/questions/a-level-maths/year-2-stats/the-normal-distribution";
 
@@ -131,6 +132,7 @@ export const allQuestions: Question[] = [
   ...standardDerivatives,
   ...productQuotientChain,
   ...implicitDifferentiation,
+  ...parametricDifferentiation,
   ...conditionalProbability,
   ...theNormalDistribution,
 ];

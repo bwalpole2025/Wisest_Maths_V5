@@ -1,0 +1,71 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q062",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "parametric differentiation",
+    "trigonometry",
+    "gradient"
+  ],
+  "questionText": "A curve has parametric equations $x = \\sec t$ and $y = \\tan t$. Find $\\dfrac{dy}{dx}$ in terms of $t$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\sec t \\tan t",
+        "explanation": "Differentiate the trigonometric expression for $x$; remember $\\dfrac{d}{dt}(\\sin t) = \\cos t$ and $\\dfrac{d}{dt}(\\cos t) = -\\sin t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\sec^{2} t",
+        "explanation": "Differentiate $y$ using the same trigonometric rules.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the gradient formula",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}}",
+        "explanation": "Combine the derivatives using the parametric chain rule.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute and simplify",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\sec^{2} t}{\\sec t \\tan t}",
+        "explanation": "Put in the expressions for $\\dot{x}$ and $\\dot{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Use trigonometric identities if helpful",
+        "workingLatex": "\\dfrac{dy}{dx} = \\sec t",
+        "explanation": "Simplify using identities such as $\\tan t = \\dfrac{\\sin t}{\\cos t}$ where appropriate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note restrictions on t",
+        "workingLatex": "\\dot{x} \\neq 0",
+        "explanation": "The formula is valid only where $\\dot{x} \\neq 0$, so exclude values of $t$ that make the denominator zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = \\sec t",
+        "explanation": "This gives the slope of the tangent for admissible values of $t$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = \\sec t$"
+  }
+}

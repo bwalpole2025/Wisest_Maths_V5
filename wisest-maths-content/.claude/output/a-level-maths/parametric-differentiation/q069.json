@@ -1,0 +1,85 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q069",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "equation",
+  "tags": [
+    "parametric differentiation",
+    "tangent",
+    "parallel lines"
+  ],
+  "questionText": "A curve has parametric equations $x = t$ and $y = t^{2}$. Find the equation of the tangent to the curve that is parallel to the line $y = 3x$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both coordinates",
+        "workingLatex": "\\dot{x} = 1, \\qquad \\dot{y} = 2t",
+        "explanation": "Parallel tangents share the same gradient, so we need $\\dfrac{dy}{dx}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form dy/dx",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{2t}{1} = 2t",
+        "explanation": "Write the gradient in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the gradient equal to the given slope",
+        "workingLatex": "\\dfrac{dy}{dx} = 3",
+        "explanation": "A tangent parallel to a line with gradient $m$ has slope $m$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for t",
+        "workingLatex": "t = \\dfrac{3}{2}",
+        "explanation": "Solve for $t$, discarding any values where $\\dot{x} = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the point on the curve",
+        "workingLatex": "$(\\tfrac{3}{2},\\, \\tfrac{9}{4})$",
+        "explanation": "Substitute the valid $t$ into the parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the tangent equation",
+        "workingLatex": "y = 3x - \\dfrac{9}{4}",
+        "explanation": "Use the point and the known parallel gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Verify parallelism",
+        "workingLatex": "m = 3",
+        "explanation": "The tangent gradient matches the required slope, confirming the line is parallel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Confirm the point lies on the curve",
+        "workingLatex": "$(\\tfrac{3}{2},\\, \\tfrac{9}{4})$",
+        "explanation": "Substituting back into the parametric equations checks the point is correct.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the tangent",
+        "workingLatex": "y = 3x - \\dfrac{9}{4}",
+        "explanation": "This tangent is parallel to the given line and touches the curve at the found point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "y = 3x - \\dfrac{9}{4}"
+  }
+}

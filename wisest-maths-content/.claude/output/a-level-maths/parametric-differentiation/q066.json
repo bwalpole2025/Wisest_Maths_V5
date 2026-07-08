@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q066",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "parametric differentiation",
+    "exponential",
+    "gradient"
+  ],
+  "questionText": "A curve has parametric equations $x = e^{2t}$ and $y = e^{t}$. Find the gradient of the curve when $t = 0$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = 2e^{2t}",
+        "explanation": "For exponential terms, $\\dfrac{d}{dt}(e^{kt}) = ke^{kt}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = e^{t}",
+        "explanation": "Apply the same exponential differentiation rule to $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form dy/dx",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{e^{t}}{2e^{2t}} = \\dfrac{1}{2e^{t}}",
+        "explanation": "Divide the derivatives and cancel common exponential factors where possible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute t = 0",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{1}{2}",
+        "explanation": "Evaluate the gradient at $t = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the numerical value",
+        "workingLatex": "\\dfrac{1}{2}",
+        "explanation": "Carry out the arithmetic to obtain the gradient at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the gradient",
+        "workingLatex": "\\dfrac{1}{2}",
+        "explanation": "This is the slope of the tangent at the specified value of $t$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "At $t = 0$, $\\dfrac{dy}{dx} = \\dfrac{1}{2}$."
+  }
+}

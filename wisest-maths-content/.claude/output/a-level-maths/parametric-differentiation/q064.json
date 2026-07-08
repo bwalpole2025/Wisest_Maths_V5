@@ -1,0 +1,70 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q064",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "coordinates",
+  "tags": [
+    "parametric differentiation",
+    "vertical tangent"
+  ],
+  "questionText": "A curve has parametric equations $x = t^{2} - 4t + 3$ and $y = t^{3}$. Find the coordinates of the point where the tangent to the curve is vertical.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both coordinates",
+        "workingLatex": "\\dot{x} = 2t - 4, \\qquad \\dot{y} = 3t^{2}",
+        "explanation": "A vertical tangent occurs when $\\dot{x} = 0$ but $\\dot{y} \\neq 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set dx/dt equal to zero",
+        "workingLatex": "\\dot{x} = 2t - 4 = 0",
+        "explanation": "Solve $\\dot{x} = 0$ to find where the curve has a vertical tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for t",
+        "workingLatex": "t = 2",
+        "explanation": "Find the parameter value(s) that make the horizontal rate of change zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check dy/dt is non-zero",
+        "workingLatex": "\\dot{y} \\neq 0 \\text{ at } t = 2",
+        "explanation": "Confirm $\\dot{y}$ is not also zero, otherwise the point would be a cusp rather than a vertical tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the coordinates",
+        "workingLatex": "$(-1,\\, 8)$",
+        "explanation": "Substitute into the parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Describe the tangent",
+        "workingLatex": "x = \\text{constant}",
+        "explanation": "When $\\dot{x} = 0$, the tangent is vertical: its equation has the form $x = k$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the vertical tangent",
+        "workingLatex": "$(-1,\\, 8)$",
+        "explanation": "At this point the tangent line is vertical.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent is vertical at $(-1,\\, 8)$."
+  }
+}

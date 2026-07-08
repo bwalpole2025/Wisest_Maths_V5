@@ -564,6 +564,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-2-pure/implicit-differentiation").then((m) => m.questions),
   },
   {
+    slug: "parametric-differentiation",
+    id: "al.y2.pure.parametric-differentiation",
+    name: "Parametric differentiation",
+    blurb: "Finding dy/dx from parametric equations using ẏ/ẋ, equations of tangents and normals to parametric curves, stationary and vertical tangent points, and the second derivative d²y/dx².",
+    gradient: "from-rose-400 to-orange-500",
+    order: 61,
+    load: () => import("./year-2-pure/parametric-differentiation").then((m) => m.questions),
+  },
+  {
     slug: "conditional-probability",
     id: "al.y2.stats.conditional-probability",
     name: "Conditional probability",

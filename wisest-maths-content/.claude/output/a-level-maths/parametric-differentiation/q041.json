@@ -1,0 +1,85 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q041",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "equation",
+  "tags": [
+    "parametric differentiation",
+    "normal",
+    "tangent"
+  ],
+  "questionText": "A curve has parametric equations $x = 2t^{2}$ and $y = t^{3}$. Find the equation of the normal to the curve at the point where $t = 2$, and the coordinates where this normal crosses the $x$-axis.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both coordinates",
+        "workingLatex": "\\dot{x} = 4t, \\qquad \\dot{y} = 3t^{2}",
+        "explanation": "The normal is perpendicular to the tangent, so we begin by finding the rates of change of $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the tangent gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{3t^{2}}{4t} = \\dfrac{3t}{4}",
+        "explanation": "The tangent slope is $\\dfrac{\\dot{y}}{\\dot{x}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the point at t = 2",
+        "workingLatex": "(8,\\, 8)",
+        "explanation": "Substitute $t$ into the parametric equations to fix the point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the tangent gradient at t = 2",
+        "workingLatex": "m_{\\text{tangent}} = \\dfrac{3}{2}",
+        "explanation": "This is the slope of the curve itself at the required point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\dfrac{1}{m_{\\text{tangent}}} = -\\dfrac{2}{3}",
+        "explanation": "Perpendicular lines have gradients that multiply to $-1$, so the normal gradient is the negative reciprocal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Write the normal equation",
+        "workingLatex": "y - 8 = -\\dfrac{2}{3}(x - 8)",
+        "explanation": "Use point–gradient form with the point and normal slope.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Simplify the normal",
+        "workingLatex": "y = -\\dfrac{2}{3}x + \\dfrac{40}{3}",
+        "explanation": "Rearrange to a convenient form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find where the normal meets the x-axis",
+        "workingLatex": "y = 0 \\;\\Rightarrow\\; $(20,\\, 0)$",
+        "explanation": "On the $x$-axis we have $y = 0$; substitute into the normal equation and solve for $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "State the crossing point",
+        "workingLatex": "$(20,\\, 0)$",
+        "explanation": "This is where the normal line cuts the $x$-axis.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The normal is y = -\\dfrac{2}{3}x + \\dfrac{40}{3}, and it crosses the $x$-axis at $(20,\\, 0)$."
+  }
+}

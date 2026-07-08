@@ -1,0 +1,70 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q032",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "equation",
+  "tags": [
+    "parametric differentiation",
+    "tangent"
+  ],
+  "questionText": "A curve $C$ has parametric equations $x = t^{2} - 1$ and $y = 2t$. Find the equation of the tangent to $C$ at the point where $t = 2$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate both coordinates",
+        "workingLatex": "\\dot{x} = 2t, \\qquad \\dot{y} = 2",
+        "explanation": "To find the tangent we need the gradient, which comes from differentiating $x$ and $y$ with respect to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find dy/dx",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{2}{2t} = \\dfrac{1}{t}",
+        "explanation": "Divide $\\dot{y}$ by $\\dot{x}$ to obtain the slope of the tangent in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate the point at t = 2",
+        "workingLatex": "x = 3, \\qquad y = 4",
+        "explanation": "Substitute $t = 2$ into both parametric equations to locate the point of tangency.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the gradient at t = 2",
+        "workingLatex": "m = \\dfrac{1}{2}",
+        "explanation": "Put the same value of $t$ into $\\dfrac{dy}{dx}$ to get the tangent's slope at that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the tangent equation",
+        "workingLatex": "y - 4 = \\dfrac{1}{2}(x - 3)",
+        "explanation": "Use point–gradient form with the coordinates and slope just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "y = \\dfrac{1}{2}x + \\dfrac{5}{2}",
+        "explanation": "Expand and collect terms to give the tangent in a tidy form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the tangent",
+        "workingLatex": "y = \\dfrac{1}{2}x + \\dfrac{5}{2}",
+        "explanation": "This is the equation of the tangent to the curve at the required point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "y = \\dfrac{1}{2}x + \\dfrac{5}{2}"
+  }
+}

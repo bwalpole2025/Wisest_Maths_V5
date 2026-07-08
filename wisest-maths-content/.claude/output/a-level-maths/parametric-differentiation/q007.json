@@ -1,0 +1,63 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q007",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "parametric differentiation",
+    "gradient"
+  ],
+  "questionText": "A curve $C$ has parametric equations $x = t$ and $y = t^{4}$. Find $\\dfrac{dy}{dx}$ in terms of $t$.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = \\dfrac{dx}{dt} = 1",
+        "explanation": "The curve is given parametrically, so we first find how $x$ changes as the parameter $t$ changes. This is written $\\dot{x}$ or $\\dfrac{dx}{dt}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = \\dfrac{dy}{dt} = 4t^{3}",
+        "explanation": "In the same way, differentiate the formula for $y$ with respect to $t$ to obtain $\\dot{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the parametric gradient formula",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{\\dot{y}}{\\dot{x}}",
+        "explanation": "Because both $x$ and $y$ depend on $t$, the chain rule gives $\\dfrac{dy}{dx} = \\dfrac{dy/dt}{dx/dt}$, provided $\\dot{x} \\neq 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the derivatives",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{4t^{3}}{1}",
+        "explanation": "Replace $\\dot{y}$ and $\\dot{x}$ with the expressions just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = 4t^{3}",
+        "explanation": "Cancel common factors where possible so the gradient is in its simplest form in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "\\dfrac{dy}{dx} = 4t^{3}",
+        "explanation": "This gives the slope of the tangent to the curve at any value of $t$ for which $\\dot{x} \\neq 0$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = 4t^{3}$"
+  }
+}

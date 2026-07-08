@@ -1,0 +1,64 @@
+{
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric differentiation",
+  "subtopicId": "al.y2.pure.parametric-differentiation",
+  "questionDiagram": null,
+  "id": "al.y2.pure.parametric-differentiation.q016",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "exact",
+  "tags": [
+    "parametric differentiation",
+    "gradient",
+    "direction"
+  ],
+  "questionText": "A curve has parametric equations $x = t + 1$ and $y = t^{2} - 4$. Find the gradient of the curve when $t = 2$, and state whether the curve is rising or falling there.",
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\dot{x} = 1",
+        "explanation": "Start by differentiating the expression for $x$ with respect to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y with respect to t",
+        "workingLatex": "\\dot{y} = 2t",
+        "explanation": "Differentiate $y$ in the same way to find $\\dot{y}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form the gradient",
+        "workingLatex": "\\dfrac{dy}{dx} = \\dfrac{2t}{1} = 2t",
+        "explanation": "The gradient of the curve is the ratio $\\dfrac{\\dot{y}}{\\dot{x}}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute t = 2",
+        "workingLatex": "\\dfrac{dy}{dx}\\bigg|_{t=2} = 4",
+        "explanation": "Putting $t = 2$ into the gradient formula gives its value at that point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the sign",
+        "workingLatex": "\\dfrac{dy}{dx} > 0",
+        "explanation": "A positive gradient means the curve is rising as $x$ increases through that point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the conclusion",
+        "workingLatex": "\\dfrac{dy}{dx} = 4 \\text{ (rising)}",
+        "explanation": "At $t = 2$ the gradient is 4 and the curve is rising there.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "At $t = 2$ the gradient is 4, so the curve is rising there."
+  }
+}
