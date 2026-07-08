@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $\\sin 2\\theta = \\dfrac{\\sqrt3}{2}$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute for the double angle variable",
+        "workingLatex": "\\text{let } \\phi = 2\\theta, \\quad 0^\\circ \\le \\phi < 720^\\circ",
+        "explanation": "Because $\\theta$ ranges over $[0,360^\\circ)$, the doubled angle $\\phi$ ranges over $[0,720^\\circ)$; we must find all solutions there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the base solutions",
+        "workingLatex": "\\sin\\phi = \\tfrac{\\sqrt3}{2} \\;\\Rightarrow\\; \\phi = 60^\\circ, 120^\\circ",
+        "explanation": "In the first revolution, sine equals $\\frac{\\sqrt3}{2}$ at $60^\\circ$ and $120^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add a full revolution for more solutions",
+        "workingLatex": "\\phi = 60^\\circ + 360^\\circ = 420^\\circ, \\quad 120^\\circ + 360^\\circ = 480^\\circ",
+        "explanation": "Since $\\phi$ extends to $720^\\circ$, we add $360^\\circ$ to each base solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "List all values of phi",
+        "workingLatex": "\\phi = 60^\\circ, 120^\\circ, 420^\\circ, 480^\\circ",
+        "explanation": "These are all the solutions of the doubled-angle equation in range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Halve to find theta",
+        "workingLatex": "\\theta = 30^\\circ, 60^\\circ, 210^\\circ, 240^\\circ",
+        "explanation": "Dividing each $\\phi$ by $2$ gives the solutions for $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm the interval",
+        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
+        "explanation": "Every value lies within the required range, so all are kept.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ, 60^\\circ, 210^\\circ, 240^\\circ$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "stationary point",
+    "vertical tangent"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2 - 9$, $y = t^3$. Find the value of $t$ where the curve has a vertical tangent.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the vertical tangent condition",
+        "workingLatex": "\\text{vertical tangent} \\;\\Leftrightarrow\\; \\frac{dx}{dt} = 0",
+        "explanation": "A vertical tangent has an undefined (infinite) gradient, which for a parametric curve means the denominator $\\frac{dx}{dt}$ is zero (with $\\frac{dy}{dt} \\ne 0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate x with respect to t",
+        "workingLatex": "\\frac{dx}{dt} = 2t",
+        "explanation": "Differentiating $x = t^2 - 9$ gives $2t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the derivative to zero",
+        "workingLatex": "2t = 0 \\;\\Rightarrow\\; t = 0",
+        "explanation": "Solving gives the parameter value for the vertical tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the y-derivative is nonzero",
+        "workingLatex": "\\frac{dy}{dt} = 3t^2 = 0 \\text{ at } t = 0",
+        "explanation": "Here both derivatives are zero at $t = 0$, so we must examine the behaviour more carefully rather than assuming a vertical tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Analyse the gradient near t = 0",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3t}{2} \\to 0 \\text{ as } t \\to 0",
+        "explanation": "The gradient actually tends to $0$, so the tangent is horizontal at $t = 0$, not vertical. This is a cusp-like point where care is needed.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude",
+        "workingLatex": "\\text{no vertical tangent; } t = 0 \\text{ gives a horizontal tangent}",
+        "explanation": "Because $\\frac{dy}{dt}$ also vanishes, the naive condition fails; the limit shows the tangent is horizontal, so there is no vertical tangent on this curve.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "There is no vertical tangent; at $t = 0$ the gradient tends to $0$ (horizontal)."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.rsin-form.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "maximum",
+    "minimum",
+    "constant"
+  ],
+  "questionText": "The function $f(\\theta) = 3\\sin\\theta + 4\\cos\\theta + 7$ is defined for all $\\theta$. Find its maximum and minimum values and the value of $\\theta$ (to the nearest degree) at which the maximum occurs, using $3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + 53^\\circ)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the function",
+        "workingLatex": "f(\\theta) = 5\\sin(\\theta + 53^\\circ) + 7",
+        "explanation": "Replacing the two-term part with the harmonic form makes the range obvious.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound the sine term",
+        "workingLatex": "-5 \\le 5\\sin(\\theta + 53^\\circ) \\le 5",
+        "explanation": "The amplitude $5$ scales the sine's range from $[-1,1]$ to $[-5,5]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the constant",
+        "workingLatex": "2 \\le f(\\theta) \\le 12",
+        "explanation": "Adding $7$ shifts the whole range up by $7$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State max and min",
+        "workingLatex": "\\text{max} = 12, \\quad \\text{min} = 2",
+        "explanation": "The constant offset moves the extremes to $12$ and $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find theta for the maximum",
+        "workingLatex": "\\sin(\\theta + 53^\\circ) = 1 \\;\\Rightarrow\\; \\theta + 53^\\circ = 90^\\circ",
+        "explanation": "The maximum needs the sine at its peak, i.e. the bracket equal to $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for theta",
+        "workingLatex": "\\theta = 37^\\circ",
+        "explanation": "Subtracting the phase shift gives $\\theta = 37^\\circ$ to the nearest degree.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum $12$ at $\\theta \\approx 37^\\circ$; minimum $2$."
+  }
+}

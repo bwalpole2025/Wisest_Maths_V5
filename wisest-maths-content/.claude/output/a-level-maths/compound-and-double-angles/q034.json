@@ -1,0 +1,63 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "given expression"
+  ],
+  "questionText": "Given that $\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}$, find the exact value of $\\sin 2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Square both sides",
+        "workingLatex": "(\\sin\\theta + \\cos\\theta)^2 = \\left(\\frac{1}{2}\\right)^2",
+        "explanation": "Squaring links the given sum to $\\sin 2\\theta$, because the cross term produces $2\\sin\\theta\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand the left side",
+        "workingLatex": "\\sin^2\\theta + 2\\sin\\theta\\cos\\theta + \\cos^2\\theta = \\frac{1}{4}",
+        "explanation": "The square expands into three terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 + 2\\sin\\theta\\cos\\theta = \\frac{1}{4}",
+        "explanation": "The two squared terms sum to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recognise the double angle",
+        "workingLatex": "1 + \\sin 2\\theta = \\frac{1}{4}",
+        "explanation": "The cross term $2\\sin\\theta\\cos\\theta$ is $\\sin 2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for sin 2θ",
+        "workingLatex": "\\sin 2\\theta = \\frac{1}{4} - 1 = -\\frac{3}{4}",
+        "explanation": "Subtracting $1$ gives $-\\frac{3}{4}$, a valid sine value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check plausibility",
+        "workingLatex": "\\left|-\\tfrac{3}{4}\\right| \\le 1 \\;\\checkmark",
+        "explanation": "The result lies within the valid sine range, so it is reasonable.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 2\\theta = -\\dfrac{3}{4}$"
+  }
+}

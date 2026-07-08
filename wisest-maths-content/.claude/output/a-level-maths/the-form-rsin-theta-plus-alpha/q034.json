@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "double angle argument"
+  ],
+  "questionText": "Solve $5\\sin 2\\theta + 12\\cos 2\\theta = 6.5$ for $0^\\circ \\le \\theta < 180^\\circ$, giving answers to the nearest degree. Use $5\\sin x + 12\\cos x = 13\\sin(x + 67.38^\\circ)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Apply the R-form with x = 2θ",
+        "workingLatex": "13\\sin(2\\theta + 67.38^\\circ) = 6.5",
+        "explanation": "Treating the argument as $2\\theta$ turns the equation into a single sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(2\\theta + 67.38^\\circ) = 0.5",
+        "explanation": "Dividing by $13$ gives sine equal to $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the interval for the argument",
+        "workingLatex": "67.38^\\circ \\le 2\\theta + 67.38^\\circ < 427.38^\\circ",
+        "explanation": "Since $\\theta \\in [0^\\circ, 180^\\circ)$, the quantity $2\\theta$ spans $[0^\\circ, 360^\\circ)$, so the shifted argument spans this interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for the argument",
+        "workingLatex": "2\\theta + 67.38^\\circ = 150^\\circ, 390^\\circ",
+        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$; $30^\\circ$ is out of range, so we use $150^\\circ$ and $30^\\circ + 360^\\circ = 390^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for 2θ",
+        "workingLatex": "2\\theta = 82.62^\\circ, 322.62^\\circ",
+        "explanation": "Subtracting the phase shift from each.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Halve to find theta",
+        "workingLatex": "\\theta \\approx 41^\\circ, 161^\\circ",
+        "explanation": "Dividing by $2$ and rounding gives the two solutions in the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 41^\\circ, 161^\\circ$"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "composite",
+    "tangent"
+  ],
+  "questionText": "Find the exact value of $\\tan\\left(\\arccos\\dfrac{5}{13}\\right)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Name the inner angle",
+        "workingLatex": "\\text{let } \\alpha = \\arccos\\tfrac{5}{13}, \\text{ so } \\cos\\alpha = \\tfrac{5}{13}",
+        "explanation": "Naming the inner arccosine gives an angle $\\alpha$ whose cosine we know; we then need its tangent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the range of the inner angle",
+        "workingLatex": "0 \\le \\alpha \\le \\pi, \\text{ and } \\cos\\alpha > 0 \\Rightarrow 0 \\le \\alpha < \\tfrac{\\pi}{2}",
+        "explanation": "Arccosine gives $\\alpha$ in $[0,\\pi]$; a positive cosine narrows it to the first quadrant, where sine and tangent are positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find sine using the Pythagorean identity",
+        "workingLatex": "\\sin^2\\alpha = 1 - \\left(\\tfrac{5}{13}\\right)^2 = 1 - \\frac{25}{169}",
+        "explanation": "We need sine to build the tangent; the identity gives it from the known cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the sine squared",
+        "workingLatex": "\\sin^2\\alpha = \\frac{144}{169} \\;\\Rightarrow\\; \\sin\\alpha = \\frac{12}{13}",
+        "explanation": "The difference is $\\frac{144}{169}$, whose positive root is $\\frac{12}{13}$, positive because $\\alpha$ is in the first quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Form the tangent",
+        "workingLatex": "\\tan\\alpha = \\frac{\\sin\\alpha}{\\cos\\alpha} = \\frac{\\frac{12}{13}}{\\frac{5}{13}}",
+        "explanation": "Tangent is sine over cosine; substituting both fractions sets up the division.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "\\tan\\alpha = \\frac{12}{13}\\times\\frac{13}{5} = \\frac{12}{5}",
+        "explanation": "The thirteens cancel, giving $\\frac{12}{5}$, matching the $5$-$12$-$13$ triangle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final value",
+        "workingLatex": "\\tan\\left(\\arccos\\tfrac{5}{13}\\right) = \\frac{12}{5}",
+        "explanation": "This is the exact value requested.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\tan\\left(\\arccos\\dfrac{5}{13}\\right) = \\dfrac{12}{5}$"
+  }
+}

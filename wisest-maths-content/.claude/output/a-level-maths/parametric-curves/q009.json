@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "circle",
+    "translated"
+  ],
+  "questionText": "A curve has parametric equations $x = 2 + 3\\cos\\theta$, $y = 1 + 3\\sin\\theta$. Find the Cartesian equation of the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the trig functions",
+        "workingLatex": "\\cos\\theta = \\frac{x - 2}{3}, \\quad \\sin\\theta = \\frac{y - 1}{3}",
+        "explanation": "Subtracting the constant and dividing by the coefficient isolates each trig function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\left(\\frac{x-2}{3}\\right)^2 + \\left(\\frac{y-1}{3}\\right)^2 = 1",
+        "explanation": "Substituting into $\\cos^2\\theta + \\sin^2\\theta = 1$ removes $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the squares",
+        "workingLatex": "\\frac{(x-2)^2}{9} + \\frac{(y-1)^2}{9} = 1",
+        "explanation": "Squaring each fraction gives denominators of $9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply through by 9",
+        "workingLatex": "(x - 2)^2 + (y - 1)^2 = 9",
+        "explanation": "Clearing the denominator gives the standard circle form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Describe the curve",
+        "workingLatex": "\\text{circle centre } (2, 1), \\text{ radius } 3",
+        "explanation": "The constants $2$ and $1$ translate the circle away from the origin.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x - 2)^2 + (y - 1)^2 = 9$"
+  }
+}

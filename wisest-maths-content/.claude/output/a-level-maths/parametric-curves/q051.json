@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "coordinates",
+    "trig"
+  ],
+  "questionText": "A curve has parametric equations $x = 1 + 2\\cos\\theta$, $y = 3 + 2\\sin\\theta$. Find the coordinates of the points where the curve crosses the line $y = 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set y equal to 3",
+        "workingLatex": "3 + 2\\sin\\theta = 3 \\;\\Rightarrow\\; \\sin\\theta = 0",
+        "explanation": "The line $y = 3$ passes through the centre's height, so we solve the $y$-equation for the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the angles",
+        "workingLatex": "\\theta = 0 \\text{ or } \\theta = \\pi",
+        "explanation": "Sine is zero at these angles within one revolution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find x for θ = 0",
+        "workingLatex": "x = 1 + 2\\cos 0 = 1 + 2 = 3",
+        "explanation": "At $\\theta = 0$, cosine is $1$, giving $x = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find x for θ = π",
+        "workingLatex": "x = 1 + 2\\cos\\pi = 1 - 2 = -1",
+        "explanation": "At $\\theta = \\pi$, cosine is $-1$, giving $x = -1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the points",
+        "workingLatex": "(3, 3) \\text{ and } (-1, 3)",
+        "explanation": "These are the ends of the horizontal diameter of the circle centre $(1,3)$ radius $2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(3, 3)$ and $(-1, 3)$"
+  }
+}

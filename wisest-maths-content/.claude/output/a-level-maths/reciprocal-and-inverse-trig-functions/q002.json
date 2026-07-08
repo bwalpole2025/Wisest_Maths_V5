@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q002",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
+  "tags": [
+    "reciprocal trig",
+    "cosecant",
+    "definition"
+  ],
+  "questionText": "Write down the definition of $\\csc\\theta$ in terms of $\\sin\\theta$, and state the values of $\\theta$ for which it is undefined.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the reciprocal trig functions",
+        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}, \\quad \\sec\\theta = \\frac{1}{\\cos\\theta}, \\quad \\cot\\theta = \\frac{1}{\\tan\\theta}",
+        "explanation": "Writing the family out first makes it clear that cosecant is the reciprocal of sine, so any statement about sine transfers directly to cosecant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Select the cosecant definition",
+        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "The name cosecant pairs with sine: the third letters match, co-S-ecant with S-ine, which is a reliable way to avoid mixing it up with secant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find when the denominator is zero",
+        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\csc\\theta \\text{ undefined}",
+        "explanation": "Cosecant is one over sine, so it fails to exist exactly where sine is zero, because we cannot divide by zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the angles where sine is zero",
+        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\theta = 180^\\circ n = \\pi n",
+        "explanation": "Sine is zero at $0^\\circ$ and every $180^\\circ$ thereafter, so all the excluded angles are integer multiples of $\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the range restriction on cosecant",
+        "workingLatex": "|\\sin\\theta| \\le 1 \\;\\Rightarrow\\; |\\csc\\theta| \\ge 1",
+        "explanation": "As sine is bounded between $-1$ and $1$, its reciprocal is always at least $1$ in magnitude, so cosecant never takes a value strictly between $-1$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final definition and restriction",
+        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}, \\quad \\theta \\ne \\pi n",
+        "explanation": "This is the complete answer, giving both the definition and the angles that must be excluded.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\csc\\theta = \\dfrac{1}{\\sin\\theta}$, undefined when $\\theta = \\pi n$ (i.e. $\\sin\\theta = 0$)."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "hyperbola",
+    "intersection"
+  ],
+  "questionText": "A curve has parametric equations $x = 4t$, $y = \\dfrac{4}{t}$ for $t \\ne 0$. Find the coordinates of the points on the curve where $y = x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set the parametric expressions equal",
+        "workingLatex": "4t = \\frac{4}{t}",
+        "explanation": "The condition $y = x$ means the two parametric expressions are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Clear the fraction",
+        "workingLatex": "4t^2 = 4",
+        "explanation": "Multiplying both sides by $t$ (valid since $t \\ne 0$) removes the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for t",
+        "workingLatex": "t^2 = 1 \\;\\Rightarrow\\; t = \\pm 1",
+        "explanation": "Dividing by $4$ and square-rooting gives two parameter values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the point for t = 1",
+        "workingLatex": "(4, 4)",
+        "explanation": "Substituting $t = 1$ gives $x = 4$ and $y = 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the point for t = -1",
+        "workingLatex": "(-4, -4)",
+        "explanation": "Substituting $t = -1$ gives $x = -4$ and $y = -4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "(4, 4) \\text{ and } (-4, -4)",
+        "explanation": "These are the points where the hyperbola meets the line $y = x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(4, 4)$ and $(-4, -4)$"
+  }
+}

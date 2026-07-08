@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "compound angles",
+    "exact values",
+    "surds",
+    "cosine"
+  ],
+  "questionText": "Find the exact value of $\\cos 105^\\circ$, writing $105^\\circ = 60^\\circ + 45^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Split the angle",
+        "workingLatex": "105^\\circ = 60^\\circ + 45^\\circ",
+        "explanation": "Writing $105^\\circ$ as a sum of two standard angles lets us use known exact values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the cosine addition formula",
+        "workingLatex": "\\cos 105^\\circ = \\cos 60^\\circ\\cos 45^\\circ - \\sin 60^\\circ\\sin 45^\\circ",
+        "explanation": "For cosine the plus inside the bracket gives a minus between the products.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the exact values",
+        "workingLatex": "= \\frac{1}{2}\\cdot\\frac{\\sqrt2}{2} - \\frac{\\sqrt3}{2}\\cdot\\frac{\\sqrt2}{2}",
+        "explanation": "Inserting the standard values prepares the arithmetic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply out",
+        "workingLatex": "= \\frac{\\sqrt2}{4} - \\frac{\\sqrt6}{4}",
+        "explanation": "Each product simplifies to a surd over $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine",
+        "workingLatex": "= \\frac{\\sqrt2 - \\sqrt6}{4}",
+        "explanation": "The numerators combine over the common denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the sign",
+        "workingLatex": "\\frac{\\sqrt2 - \\sqrt6}{4} \\approx -0.259 < 0",
+        "explanation": "The result is negative, as expected since $105^\\circ$ is obtuse and cosine is negative in the second quadrant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos 105^\\circ = \\dfrac{\\sqrt2 - \\sqrt6}{4}$"
+  }
+}

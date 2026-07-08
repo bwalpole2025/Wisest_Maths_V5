@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q056",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "tangent",
+    "meets curve again"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. The tangent at $t = 1$ meets the curve again. Find the parameter and coordinates of the second point.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the tangent at t = 1",
+        "workingLatex": "\\text{point } (1, 1), \\; \\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3}{2}",
+        "explanation": "The gradient at $t = 1$ is $\\frac{3}{2}$; the tangent passes through $(1, 1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the tangent equation",
+        "workingLatex": "y - 1 = \\frac{3}{2}(x - 1)",
+        "explanation": "Using the point-gradient form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the parametric point",
+        "workingLatex": "s^3 - 1 = \\frac{3}{2}(s^2 - 1)",
+        "explanation": "A general curve point is $(s^2, s^3)$; substituting finds all intersections.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Clear the fraction and rearrange",
+        "workingLatex": "2s^3 - 2 = 3s^2 - 3 \\;\\Rightarrow\\; 2s^3 - 3s^2 + 1 = 0",
+        "explanation": "Multiplying by $2$ and collecting terms gives a cubic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor using the known root",
+        "workingLatex": "(s - 1)^2(2s + 1) = 0",
+        "explanation": "The tangent point $s = 1$ is a double root; factoring leaves the extra root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the second parameter",
+        "workingLatex": "2s + 1 = 0 \\;\\Rightarrow\\; s = -\\frac{1}{2}",
+        "explanation": "The remaining factor gives the second intersection parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the coordinates",
+        "workingLatex": "\\left(\\left(-\\tfrac{1}{2}\\right)^2, \\left(-\\tfrac{1}{2}\\right)^3\\right) = \\left(\\tfrac{1}{4}, -\\tfrac{1}{8}\\right)",
+        "explanation": "Substituting $s = -\\frac{1}{2}$ into the parametric equations.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Second point at $s = -\\dfrac{1}{2}$: $\\left(\\dfrac{1}{4}, -\\dfrac{1}{8}\\right)$."
+  }
+}

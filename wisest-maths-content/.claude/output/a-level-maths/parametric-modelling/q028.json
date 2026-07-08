@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q028",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "tangent",
+    "axis intercept"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. The tangent at $t = 2$ meets the $x$-axis at point $P$. Find the coordinates of $P$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point of tangency",
+        "workingLatex": "t = 2: (4, 4)",
+        "explanation": "The tangent touches the curve at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2}{2t} = \\frac{1}{t} = \\frac{1}{2}",
+        "explanation": "The parametric gradient is $\\frac{1}{t}$, which is $\\frac{1}{2}$ at $t = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the tangent equation",
+        "workingLatex": "y - 4 = \\frac{1}{2}(x - 4)",
+        "explanation": "Using the point-gradient form with $(4, 4)$ and gradient $\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set y = 0 for the x-axis",
+        "workingLatex": "0 - 4 = \\frac{1}{2}(x - 4)",
+        "explanation": "The tangent meets the $x$-axis where $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for x",
+        "workingLatex": "-8 = x - 4 \\;\\Rightarrow\\; x = -4",
+        "explanation": "Multiplying by $2$ and rearranging gives the intercept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the point",
+        "workingLatex": "P = (-4, 0)",
+        "explanation": "The tangent crosses the $x$-axis at $(-4, 0)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$P = (-4, 0)$"
+  }
+}

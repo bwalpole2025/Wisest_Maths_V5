@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "expression",
+  "tags": [
+    "reciprocal trig",
+    "cotangent",
+    "definition"
+  ],
+  "questionText": "Write down two equivalent expressions for $\\cot\\theta$: one in terms of $\\tan\\theta$, and one in terms of $\\cos\\theta$ and $\\sin\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the definition of cotangent as a reciprocal",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta}",
+        "explanation": "Cotangent is the reciprocal of tangent, which is the most direct definition and the first expression the question asks for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the quotient form of tangent",
+        "workingLatex": "\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Tangent itself can be written as sine over cosine, and we will invert this to get the second required form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Take the reciprocal of the quotient",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{1}{\\;\\frac{\\sin\\theta}{\\cos\\theta}\\;}",
+        "explanation": "Substituting the quotient form into the reciprocal gives a fraction divided by a fraction, which we can now simplify.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the compound fraction",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Dividing by $\\frac{\\sin\\theta}{\\cos\\theta}$ is the same as multiplying by its flip, so the cosine rises to the top and the sine drops to the bottom.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State when cotangent is undefined",
+        "workingLatex": "\\sin\\theta = 0 \\;\\Rightarrow\\; \\cot\\theta \\text{ undefined}",
+        "explanation": "From the form $\\frac{\\cos\\theta}{\\sin\\theta}$ we see the denominator is sine, so cotangent is undefined wherever sine is zero, at $\\theta = \\pi n$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State both equivalent expressions",
+        "workingLatex": "\\cot\\theta = \\frac{1}{\\tan\\theta} = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "This presents both requested forms side by side, confirming they describe the same function.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cot\\theta = \\dfrac{1}{\\tan\\theta} = \\dfrac{\\cos\\theta}{\\sin\\theta}$"
+  }
+}

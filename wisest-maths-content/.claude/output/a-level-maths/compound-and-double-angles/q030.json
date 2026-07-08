@@ -1,0 +1,63 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "double angle",
+    "simplify"
+  ],
+  "questionText": "Show that $4\\sin\\theta\\cos\\theta\\cos 2\\theta$ simplifies to $\\sin 4\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Group the first two factors",
+        "workingLatex": "4\\sin\\theta\\cos\\theta\\cos 2\\theta = 2(2\\sin\\theta\\cos\\theta)\\cos 2\\theta",
+        "explanation": "Splitting the $4$ as $2\\times 2$ lets us recognise a double angle inside.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the sine double angle formula",
+        "workingLatex": "2\\sin\\theta\\cos\\theta = \\sin 2\\theta",
+        "explanation": "The bracket is exactly $\\sin 2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute",
+        "workingLatex": "= 2\\sin 2\\theta\\cos 2\\theta",
+        "explanation": "The expression is now $2\\sin 2\\theta\\cos 2\\theta$, again a double angle pattern.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the double angle formula again",
+        "workingLatex": "2\\sin 2\\theta\\cos 2\\theta = \\sin(2\\cdot 2\\theta)",
+        "explanation": "With inner angle $2\\theta$, the pattern folds into a single sine of the doubled angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the angle",
+        "workingLatex": "= \\sin 4\\theta",
+        "explanation": "Doubling $2\\theta$ gives $4\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "4\\sin\\theta\\cos\\theta\\cos 2\\theta = \\sin 4\\theta",
+        "explanation": "Two applications of the double angle formula reduce the product to a single sine term.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 4\\theta$"
+  }
+}

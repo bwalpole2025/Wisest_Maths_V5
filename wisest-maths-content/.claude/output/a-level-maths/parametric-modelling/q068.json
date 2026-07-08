@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "normal",
+    "meets axis"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Find where the normal at $t = 2$ meets the $x$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point",
+        "workingLatex": "t = 2: (4, 4)",
+        "explanation": "Substituting $t = 2$ into both equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the tangent gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{1}{t} = \\frac{1}{2}",
+        "explanation": "The parametric gradient at $t = 2$ is $\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -2",
+        "explanation": "The negative reciprocal of $\\frac{1}{2}$ is $-2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the normal equation",
+        "workingLatex": "y - 4 = -2(x - 4)",
+        "explanation": "Using the point $(4, 4)$ and the normal gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set y = 0",
+        "workingLatex": "-4 = -2(x - 4) \\;\\Rightarrow\\; 2 = x - 4 \\;\\Rightarrow\\; x = 6",
+        "explanation": "The normal meets the $x$-axis where $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the point",
+        "workingLatex": "(6, 0)",
+        "explanation": "The normal crosses the $x$-axis at $(6, 0)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(6, 0)$"
+  }
+}

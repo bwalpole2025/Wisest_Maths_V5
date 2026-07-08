@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "tangent identity"
+  ],
+  "questionText": "A curve has parametric equations $x = \\sec\\theta$, $y = \\tan\\theta$. Show that its Cartesian equation is $x^2 - y^2 = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose the relevant identity",
+        "workingLatex": "1 + \\tan^2\\theta = \\sec^2\\theta",
+        "explanation": "Because the parameters are secant and tangent, this Pythagorean identity is the natural tool.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange the identity",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = 1",
+        "explanation": "Subtracting $\\tan^2\\theta$ from both sides isolates the difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the parametric expressions",
+        "workingLatex": "x = \\sec\\theta \\;\\Rightarrow\\; x^2 = \\sec^2\\theta",
+        "explanation": "Squaring $x = \\sec\\theta$ gives $\\sec^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the second expression",
+        "workingLatex": "y = \\tan\\theta \\;\\Rightarrow\\; y^2 = \\tan^2\\theta",
+        "explanation": "Squaring $y = \\tan\\theta$ gives $\\tan^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine",
+        "workingLatex": "x^2 - y^2 = \\sec^2\\theta - \\tan^2\\theta = 1",
+        "explanation": "Substituting into the rearranged identity gives the required Cartesian equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Identify the curve",
+        "workingLatex": "x^2 - y^2 = 1 \\text{ (hyperbola)}",
+        "explanation": "This is a hyperbola, as expected from a secant-tangent parametrisation.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 - y^2 = 1$"
+  }
+}

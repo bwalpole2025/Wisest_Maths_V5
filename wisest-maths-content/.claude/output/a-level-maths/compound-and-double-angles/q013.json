@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q013",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "compound angles",
+    "exact values",
+    "surds",
+    "sine"
+  ],
+  "questionText": "Find the exact value of $\\sin 15^\\circ$, writing $15^\\circ = 45^\\circ - 30^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Split the angle",
+        "workingLatex": "15^\\circ = 45^\\circ - 30^\\circ",
+        "explanation": "Writing $15^\\circ$ as a difference of standard angles lets us use exact values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the sine subtraction formula",
+        "workingLatex": "\\sin 15^\\circ = \\sin 45^\\circ\\cos 30^\\circ - \\cos 45^\\circ\\sin 30^\\circ",
+        "explanation": "For sine, the minus inside the bracket gives a minus between the two products.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the exact values",
+        "workingLatex": "= \\frac{\\sqrt2}{2}\\cdot\\frac{\\sqrt3}{2} - \\frac{\\sqrt2}{2}\\cdot\\frac{1}{2}",
+        "explanation": "Inserting the standard exact values prepares the arithmetic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply out",
+        "workingLatex": "= \\frac{\\sqrt6}{4} - \\frac{\\sqrt2}{4}",
+        "explanation": "Each product simplifies to a surd over $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine",
+        "workingLatex": "= \\frac{\\sqrt6 - \\sqrt2}{4}",
+        "explanation": "The matching denominators allow the numerators to combine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Relate to a known value",
+        "workingLatex": "\\sin 15^\\circ = \\cos 75^\\circ \\approx 0.259",
+        "explanation": "The value matches $\\cos 75^\\circ$ found earlier, a good consistency check via the cofunction relationship.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 15^\\circ = \\dfrac{\\sqrt6 - \\sqrt2}{4}$"
+  }
+}

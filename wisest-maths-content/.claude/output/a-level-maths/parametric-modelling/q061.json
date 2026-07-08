@@ -1,0 +1,51 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "tangent",
+    "general",
+    "intercept"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Show that the tangent at parameter $p$ meets the $x$-axis at $(-p^2, 0)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the general tangent",
+        "workingLatex": "py = x + p^2",
+        "explanation": "The tangent to this parabola at parameter $p$ has this standard equation (derived earlier).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set y = 0 for the x-axis",
+        "workingLatex": "p(0) = x + p^2",
+        "explanation": "The tangent meets the $x$-axis where $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for x",
+        "workingLatex": "0 = x + p^2 \\;\\Rightarrow\\; x = -p^2",
+        "explanation": "Rearranging gives the $x$-coordinate of the intercept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the point",
+        "workingLatex": "(-p^2, 0)",
+        "explanation": "The tangent crosses the $x$-axis at $(-p^2, 0)$, mirroring the point's own $x$-coordinate $p^2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent meets the $x$-axis at $(-p^2, 0)$."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "secant",
+    "tangent"
+  ],
+  "questionText": "Prove that $\\sec^4\\theta - \\tan^4\\theta \\equiv \\sec^2\\theta + \\tan^2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = \\sec^4\\theta - \\tan^4\\theta",
+        "explanation": "The fourth powers form a difference of two squares if we view them as $(\\sec^2\\theta)^2 - (\\tan^2\\theta)^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write as a difference of squares",
+        "workingLatex": "= (\\sec^2\\theta)^2 - (\\tan^2\\theta)^2",
+        "explanation": "Recognising the structure lets us factorise using $a^2 - b^2 = (a-b)(a+b)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factorise",
+        "workingLatex": "= (\\sec^2\\theta - \\tan^2\\theta)(\\sec^2\\theta + \\tan^2\\theta)",
+        "explanation": "Applying the difference-of-squares factorisation gives two brackets.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recall the Pythagorean identity",
+        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
+        "explanation": "This identity will simplify the first bracket dramatically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the first bracket",
+        "workingLatex": "\\sec^2\\theta - \\tan^2\\theta = (1 + \\tan^2\\theta) - \\tan^2\\theta = 1",
+        "explanation": "The tangent-squared terms cancel, so the first bracket equals $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Substitute back",
+        "workingLatex": "= 1\\cdot(\\sec^2\\theta + \\tan^2\\theta)",
+        "explanation": "With the first bracket equal to $1$, only the second bracket survives.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Conclude the proof",
+        "workingLatex": "= \\sec^2\\theta + \\tan^2\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "This matches the right-hand side, completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sec^4\\theta - \\tan^4\\theta \\equiv \\sec^2\\theta + \\tan^2\\theta$"
+  }
+}

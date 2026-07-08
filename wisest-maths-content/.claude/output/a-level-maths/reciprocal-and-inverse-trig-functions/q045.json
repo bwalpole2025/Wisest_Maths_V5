@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q045",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "secant",
+    "quadratic",
+    "solving"
+  ],
+  "questionText": "Solve $\\sec^2\\theta - 3\\sec\\theta + 2 = 0$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Treat as a quadratic in secant",
+        "workingLatex": "\\text{let } s = \\sec\\theta: \\quad s^2 - 3s + 2 = 0",
+        "explanation": "Substituting $s = \\sec\\theta$ reveals a standard quadratic, which is easier to factorise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise",
+        "workingLatex": "(s - 1)(s - 2) = 0",
+        "explanation": "The factors of $2$ that add to $3$ are $1$ and $2$, giving this factorisation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Read off the two secant values",
+        "workingLatex": "\\sec\\theta = 1 \\quad \\text{or} \\quad \\sec\\theta = 2",
+        "explanation": "Setting each factor to zero gives the possible secant values, both with magnitude at least $1$, so both are attainable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve the first case",
+        "workingLatex": "\\sec\\theta = 1 \\;\\Rightarrow\\; \\cos\\theta = 1 \\;\\Rightarrow\\; \\theta = 0^\\circ",
+        "explanation": "Cosine equals $1$ only at $0^\\circ$ in the interval, giving a single solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the second case",
+        "workingLatex": "\\sec\\theta = 2 \\;\\Rightarrow\\; \\cos\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; \\theta = 60^\\circ, 300^\\circ",
+        "explanation": "Cosine equals one half at $60^\\circ$ and $300^\\circ$, giving two more solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Collect all solutions",
+        "workingLatex": "\\theta = 0^\\circ, 60^\\circ, 300^\\circ",
+        "explanation": "Combining both cases gives three solutions in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Confirm the interval",
+        "workingLatex": "0^\\circ, 60^\\circ, 300^\\circ \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
+        "explanation": "All solutions lie in the required range and are retained.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 0^\\circ, 60^\\circ, 300^\\circ$"
+  }
+}

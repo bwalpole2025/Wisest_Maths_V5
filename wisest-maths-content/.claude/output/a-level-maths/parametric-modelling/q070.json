@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "circular motion",
+    "distance"
+  ],
+  "questionText": "A particle moves so that $x = 4\\cos\\theta$, $y = 4\\sin\\theta$ (metres), where $\\theta$ increases steadily from $0$ to $2\\pi$. Find the total distance travelled by the particle.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the path",
+        "workingLatex": "x^2 + y^2 = 16",
+        "explanation": "Eliminating $\\theta$ shows the path is a circle of radius $4$ centred at the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the rate of change of arc length",
+        "workingLatex": "\\frac{dx}{d\\theta} = -4\\sin\\theta, \\quad \\frac{dy}{d\\theta} = 4\\cos\\theta",
+        "explanation": "These give how position changes with the parameter $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Compute the speed with respect to θ",
+        "workingLatex": "\\sqrt{(-4\\sin\\theta)^2 + (4\\cos\\theta)^2} = \\sqrt{16(\\sin^2\\theta + \\cos^2\\theta)} = 4",
+        "explanation": "The magnitude is constant at $4$, using the Pythagorean identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Integrate over the full turn",
+        "workingLatex": "\\text{distance} = \\int_0^{2\\pi} 4 \\, d\\theta",
+        "explanation": "Total arc length is the integral of the speed-with-respect-to-$\\theta$ over the range of $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate",
+        "workingLatex": "= 4 \\times 2\\pi = 8\\pi",
+        "explanation": "The constant integrand times the interval length gives $8\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm with the circumference",
+        "workingLatex": "2\\pi r = 2\\pi(4) = 8\\pi \\;\\checkmark",
+        "explanation": "The particle completes one full circle, so the distance equals the circumference $8\\pi$ m, confirming the result.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Total distance $= 8\\pi \\approx 25.1$ m (one full circle)."
+  }
+}

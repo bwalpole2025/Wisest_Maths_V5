@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "equations",
+    "factorising"
+  ],
+  "questionText": "Solve $\\sin 4\\theta = \\cos 2\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write sin 4θ as a double angle of 2θ",
+        "workingLatex": "\\sin 4\\theta = 2\\sin 2\\theta\\cos 2\\theta",
+        "explanation": "Treating $4\\theta$ as twice $2\\theta$ introduces a shared $\\cos 2\\theta$ factor with the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite the equation",
+        "workingLatex": "2\\sin 2\\theta\\cos 2\\theta = \\cos 2\\theta",
+        "explanation": "Both sides now contain $\\cos 2\\theta$, so we can factorise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Move to one side and factor",
+        "workingLatex": "\\cos 2\\theta(2\\sin 2\\theta - 1) = 0",
+        "explanation": "Factoring rather than dividing keeps the $\\cos 2\\theta = 0$ solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the interval for the doubled angle",
+        "workingLatex": "0^\\circ \\le 2\\theta < 720^\\circ",
+        "explanation": "Both factors involve $2\\theta$, which ranges up to $720^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the first factor",
+        "workingLatex": "\\cos 2\\theta = 0 \\;\\Rightarrow\\; 2\\theta = 90^\\circ, 270^\\circ, 450^\\circ, 630^\\circ",
+        "explanation": "Cosine is zero at these four values within $720^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Halve those",
+        "workingLatex": "\\theta = 45^\\circ, 135^\\circ, 225^\\circ, 315^\\circ",
+        "explanation": "Dividing each by $2$ gives four solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the second factor",
+        "workingLatex": "\\sin 2\\theta = \\tfrac{1}{2} \\;\\Rightarrow\\; 2\\theta = 30^\\circ, 150^\\circ, 390^\\circ, 510^\\circ",
+        "explanation": "Sine one half at these four values within $720^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Halve those",
+        "workingLatex": "\\theta = 15^\\circ, 75^\\circ, 195^\\circ, 255^\\circ",
+        "explanation": "Dividing each by $2$ gives four more solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Collect all solutions",
+        "workingLatex": "\\theta = 15^\\circ, 45^\\circ, 75^\\circ, 135^\\circ, 195^\\circ, 225^\\circ, 255^\\circ, 315^\\circ",
+        "explanation": "Combining both factors gives eight solutions in the interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 15^\\circ, 45^\\circ, 75^\\circ, 135^\\circ, 195^\\circ, 225^\\circ, 255^\\circ, 315^\\circ$"
+  }
+}

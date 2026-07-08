@@ -1,0 +1,86 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "tangent",
+    "equations",
+    "factorising"
+  ],
+  "questionText": "Solve $\\tan 2\\theta = 3\\tan\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the double angle",
+        "workingLatex": "\\frac{2\\tan\\theta}{1 - \\tan^2\\theta} = 3\\tan\\theta",
+        "explanation": "Using the tangent double angle formula gives an equation in $\\tan\\theta$ alone.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Let t stand for tangent",
+        "workingLatex": "\\frac{2t}{1 - t^2} = 3t, \\quad t = \\tan\\theta",
+        "explanation": "A substitution keeps the algebra clean.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Multiply through by the denominator",
+        "workingLatex": "2t = 3t(1 - t^2)",
+        "explanation": "Clearing the denominator (valid where $t^2 \\ne 1$) gives a polynomial equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand and rearrange",
+        "workingLatex": "2t = 3t - 3t^3 \\;\\Rightarrow\\; 3t^3 - t = 0",
+        "explanation": "Bringing all terms to one side gives a cubic in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factorise",
+        "workingLatex": "t(3t^2 - 1) = 0",
+        "explanation": "Taking out the common factor $t$ splits the cubic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve t = 0",
+        "workingLatex": "\\tan\\theta = 0 \\;\\Rightarrow\\; \\theta = 0^\\circ, 180^\\circ",
+        "explanation": "Tangent is zero at $0^\\circ$ and $180^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Solve the quadratic factor",
+        "workingLatex": "t^2 = \\tfrac{1}{3} \\;\\Rightarrow\\; \\tan\\theta = \\pm\\frac{1}{\\sqrt3}",
+        "explanation": "These values satisfy $t^2 \\ne 1$, so the earlier division was valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Find those angles",
+        "workingLatex": "\\theta = 30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ",
+        "explanation": "Tangent $\\pm\\frac{1}{\\sqrt3}$ gives one solution in each quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Collect all solutions",
+        "workingLatex": "\\theta = 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ, 210^\\circ, 330^\\circ",
+        "explanation": "Combining both factors gives six solutions in the interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 0^\\circ, 30^\\circ, 150^\\circ, 180^\\circ, 210^\\circ, 330^\\circ$"
+  }
+}

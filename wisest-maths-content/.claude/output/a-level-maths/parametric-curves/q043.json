@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "coordinates",
+    "trig"
+  ],
+  "questionText": "A curve has parametric equations $x = 2\\cos\\theta$, $y = 2\\sin\\theta$. Find the coordinates of the points on the curve where $x = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Solve for the parameter",
+        "workingLatex": "2\\cos\\theta = 1 \\;\\Rightarrow\\; \\cos\\theta = \\frac{1}{2}",
+        "explanation": "Setting the $x$-equation equal to $1$ gives a cosine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the angles",
+        "workingLatex": "\\theta = \\frac{\\pi}{3} \\text{ or } \\theta = -\\frac{\\pi}{3} \\;(=\\tfrac{5\\pi}{3})",
+        "explanation": "Cosine one half occurs at these angles, giving two points.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find y for the first angle",
+        "workingLatex": "y = 2\\sin\\frac{\\pi}{3} = 2\\cdot\\frac{\\sqrt3}{2} = \\sqrt3",
+        "explanation": "Substituting $\\theta = \\frac{\\pi}{3}$ gives a positive $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find y for the second angle",
+        "workingLatex": "y = 2\\sin\\left(-\\frac{\\pi}{3}\\right) = -\\sqrt3",
+        "explanation": "Substituting the negative angle gives the negative $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the points",
+        "workingLatex": "(1, \\sqrt3) \\text{ and } (1, -\\sqrt3)",
+        "explanation": "The vertical line $x = 1$ cuts the circle of radius $2$ at these two points.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(1, \\sqrt3)$ and $(1, -\\sqrt3)$"
+  }
+}

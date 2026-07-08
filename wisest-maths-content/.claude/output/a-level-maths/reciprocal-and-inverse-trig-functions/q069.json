@@ -1,0 +1,86 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "cotangent",
+    "factorising",
+    "solving"
+  ],
+  "questionText": "Solve $2\\cos\\theta = \\cot\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite cotangent in sine and cosine",
+        "workingLatex": "2\\cos\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Expressing cotangent in basic functions lets us clear the fraction carefully without dividing away solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply both sides by sine",
+        "workingLatex": "2\\cos\\theta\\sin\\theta = \\cos\\theta",
+        "explanation": "Multiplying by $\\sin\\theta$ removes the denominator; this is valid since cotangent requires $\\sin\\theta \\ne 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Move everything to one side",
+        "workingLatex": "2\\cos\\theta\\sin\\theta - \\cos\\theta = 0",
+        "explanation": "Rearranging prepares the equation for factorising, rather than dividing by cosine (which could lose solutions).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor out cosine",
+        "workingLatex": "\\cos\\theta(2\\sin\\theta - 1) = 0",
+        "explanation": "Taking out the common factor $\\cos\\theta$ splits the problem into two independent cases.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve the first factor",
+        "workingLatex": "\\cos\\theta = 0 \\;\\Rightarrow\\; \\theta = 90^\\circ, 270^\\circ",
+        "explanation": "Cosine is zero at $90^\\circ$ and $270^\\circ$; both keep sine nonzero, so cotangent is defined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve the second factor",
+        "workingLatex": "2\\sin\\theta - 1 = 0 \\;\\Rightarrow\\; \\sin\\theta = \\tfrac{1}{2}",
+        "explanation": "Setting the bracket to zero gives sine equal to one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find those angles",
+        "workingLatex": "\\theta = 30^\\circ, 150^\\circ",
+        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$ in the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Collect all solutions",
+        "workingLatex": "\\theta = 30^\\circ, 90^\\circ, 150^\\circ, 270^\\circ",
+        "explanation": "Combining both cases gives four solutions; factoring rather than dividing ensured the $\\cos\\theta = 0$ solutions were not lost.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Verify a cosine-zero solution",
+        "workingLatex": "\\theta = 90^\\circ: 2\\cos 90^\\circ = 0, \\; \\cot 90^\\circ = 0 \\;\\checkmark",
+        "explanation": "At $90^\\circ$ both sides are $0$, confirming these easily-missed solutions are genuine.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ, 90^\\circ, 150^\\circ, 270^\\circ$"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q037",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "secant"
+  ],
+  "questionText": "Prove that $\\dfrac{\\sin 2\\theta}{\\sin\\theta} - \\dfrac{\\cos 2\\theta}{\\cos\\theta} \\equiv \\sec\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Simplify the first fraction",
+        "workingLatex": "\\frac{\\sin 2\\theta}{\\sin\\theta} = \\frac{2\\sin\\theta\\cos\\theta}{\\sin\\theta} = 2\\cos\\theta",
+        "explanation": "Expanding $\\sin 2\\theta$ and cancelling the sine gives a clean $2\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose a helpful form for the second fraction",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "This form divides neatly by cosine, producing a secant term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the second fraction",
+        "workingLatex": "\\frac{\\cos 2\\theta}{\\cos\\theta} = \\frac{2\\cos^2\\theta - 1}{\\cos\\theta} = 2\\cos\\theta - \\frac{1}{\\cos\\theta}",
+        "explanation": "Splitting the fraction gives $2\\cos\\theta$ minus one over cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Subtract the two results",
+        "workingLatex": "2\\cos\\theta - \\left(2\\cos\\theta - \\frac{1}{\\cos\\theta}\\right)",
+        "explanation": "Substituting both simplified fractions into the original expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel the common term",
+        "workingLatex": "= \\frac{1}{\\cos\\theta}",
+        "explanation": "The $2\\cos\\theta$ terms cancel, leaving one over cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Recognise the result",
+        "workingLatex": "= \\sec\\theta \\;\\blacksquare",
+        "explanation": "One over cosine is secant, matching the right-hand side and completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sin 2\\theta}{\\sin\\theta} - \\dfrac{\\cos 2\\theta}{\\cos\\theta} \\equiv \\sec\\theta$"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "al.y2.pure.parametric-curves.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "self-intersection",
+    "cartesian"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2 - 2t$, $y = t^2 + 2t$. Show that the curve does not cross itself.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the self-intersection condition",
+        "workingLatex": "x(t_1) = x(t_2), \\; y(t_1) = y(t_2), \\; t_1 \\ne t_2",
+        "explanation": "A curve crosses itself where two distinct parameter values give the same point; we test whether this is possible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the x-values equal",
+        "workingLatex": "t_1^2 - 2t_1 = t_2^2 - 2t_2",
+        "explanation": "Equal $x$-coordinates give this equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor the x-condition",
+        "workingLatex": "(t_1 - t_2)(t_1 + t_2) - 2(t_1 - t_2) = 0 \\;\\Rightarrow\\; t_1 + t_2 = 2",
+        "explanation": "Factoring out $(t_1 - t_2)$ (nonzero) leaves $t_1 + t_2 = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the y-values equal",
+        "workingLatex": "t_1^2 + 2t_1 = t_2^2 + 2t_2",
+        "explanation": "Equal $y$-coordinates give this second equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Factor the y-condition",
+        "workingLatex": "(t_1 - t_2)(t_1 + t_2) + 2(t_1 - t_2) = 0 \\;\\Rightarrow\\; t_1 + t_2 = -2",
+        "explanation": "Factoring similarly leaves $t_1 + t_2 = -2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Compare the two conditions",
+        "workingLatex": "t_1 + t_2 = 2 \\text{ and } t_1 + t_2 = -2",
+        "explanation": "For a self-intersection both must hold simultaneously.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Reach a contradiction",
+        "workingLatex": "2 \\ne -2 \\;\\Rightarrow\\; \\text{no such } t_1, t_2",
+        "explanation": "The two requirements are inconsistent, so no pair of distinct parameters gives the same point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude",
+        "workingLatex": "\\text{the curve does not cross itself} \\;\\blacksquare",
+        "explanation": "Since the self-intersection conditions cannot both be satisfied, the curve has no self-crossing.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The curve does not cross itself, since $t_1 + t_2 = 2$ and $t_1 + t_2 = -2$ cannot both hold."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 2,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "arccos",
+    "exact values",
+    "radians"
+  ],
+  "questionText": "Find the exact value of $\\arccos(0)$, giving your answer in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the inverse cosine",
+        "workingLatex": "\\arccos(0) = \\theta \\;\\Leftrightarrow\\; \\cos\\theta = 0",
+        "explanation": "We need the angle whose cosine is zero, chosen from the arccosine range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the principal range of arccos",
+        "workingLatex": "0 \\le \\theta \\le \\pi",
+        "explanation": "Arccosine outputs angles in this interval, so the answer lies somewhere between $0$ and $\\pi$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall where cosine is zero",
+        "workingLatex": "\\cos\\frac{\\pi}{2} = 0",
+        "explanation": "Cosine is zero at $90^\\circ$, which is $\\frac{\\pi}{2}$ radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the angle lies in range",
+        "workingLatex": "0 \\le \\frac{\\pi}{2} \\le \\pi \\;\\checkmark",
+        "explanation": "The angle $\\frac{\\pi}{2}$ is within the range, so it is the valid output.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the final value",
+        "workingLatex": "\\arccos(0) = \\frac{\\pi}{2}",
+        "explanation": "This is the exact value in radians.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Note the geometric meaning",
+        "workingLatex": "\\cos\\tfrac{\\pi}{2} = 0 \\text{ (quarter turn)}",
+        "explanation": "A quarter turn points straight up, where the horizontal cosine component vanishes, which is why the cosine there is zero.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\arccos(0) = \\dfrac{\\pi}{2}$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $12\\sin\\theta - 5\\cos\\theta = 6.5$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{12^2 + 5^2} = 13, \\quad \\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\alpha \\approx 22.62^\\circ",
+        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $13$ and phase about $22.62^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the harmonic form",
+        "workingLatex": "12\\sin\\theta - 5\\cos\\theta = 13\\sin(\\theta - 22.62^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the equation",
+        "workingLatex": "13\\sin(\\theta - 22.62^\\circ) = 6.5 \\;\\Rightarrow\\; \\sin(\\theta - 22.62^\\circ) = 0.5",
+        "explanation": "Dividing by $13$ gives sine equal to $0.5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve within the shifted interval",
+        "workingLatex": "\\theta - 22.62^\\circ = 30^\\circ, 150^\\circ",
+        "explanation": "Sine $0.5$ gives principal value $30^\\circ$ and partner $150^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the shift and round",
+        "workingLatex": "\\theta \\approx 53^\\circ, 173^\\circ",
+        "explanation": "Adding $22.62^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 53^\\circ, 173^\\circ$"
+  }
+}

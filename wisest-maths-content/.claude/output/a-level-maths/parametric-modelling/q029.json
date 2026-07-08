@@ -1,0 +1,56 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q029",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "second derivative"
+  ],
+  "questionText": "A curve has parametric equations $x = t^3$, $y = t^2$. Find $\\dfrac{d^2y}{dx^2}$ at $t = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the first derivative",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{dy/dt}{dx/dt} = \\frac{2t}{3t^2} = \\frac{2}{3t}",
+        "explanation": "The parametric gradient is the ratio of the two rates of change, simplified.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the second derivative rule",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{\\frac{d}{dt}\\left(\\frac{dy}{dx}\\right)}{\\frac{dx}{dt}}",
+        "explanation": "The second derivative is found by differentiating the gradient with respect to $t$, then dividing by $\\frac{dx}{dt}$ again — not by differentiating twice with respect to $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the gradient with respect to t",
+        "workingLatex": "\\frac{d}{dt}\\left(\\frac{2}{3t}\\right) = -\\frac{2}{3t^2}",
+        "explanation": "Writing $\\frac{2}{3t} = \\frac{2}{3}t^{-1}$ and differentiating gives $-\\frac{2}{3}t^{-2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide by dx/dt",
+        "workingLatex": "\\frac{d^2y}{dx^2} = \\frac{-\\frac{2}{3t^2}}{3t^2} = -\\frac{2}{9t^4}",
+        "explanation": "Dividing by $\\frac{dx}{dt} = 3t^2$ gives the second derivative in terms of $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate at t = 1",
+        "workingLatex": "\\frac{d^2y}{dx^2}\\bigg|_{t=1} = -\\frac{2}{9}",
+        "explanation": "Substituting $t = 1$ gives the value $-\\frac{2}{9}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{d^2y}{dx^2} = -\\dfrac{2}{9}$"
+  }
+}

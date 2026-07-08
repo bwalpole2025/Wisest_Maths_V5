@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "simplify",
+    "reciprocal trig",
+    "identities"
+  ],
+  "questionText": "Simplify $\\sec\\theta \\cos\\theta + \\csc\\theta \\sin\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite secant as a reciprocal",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Converting the reciprocal functions back to sine and cosine is the standard first move when simplifying expressions like this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite cosecant as a reciprocal",
+        "workingLatex": "\\csc\\theta = \\frac{1}{\\sin\\theta}",
+        "explanation": "Similarly, cosecant becomes one over sine, so every term is now expressed in the basic functions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute into the first product",
+        "workingLatex": "\\sec\\theta\\cos\\theta = \\frac{1}{\\cos\\theta}\\cdot\\cos\\theta",
+        "explanation": "Substituting shows the cosine multiplying its own reciprocal, which is set up to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel the first product",
+        "workingLatex": "\\frac{\\cos\\theta}{\\cos\\theta} = 1",
+        "explanation": "A function times its reciprocal is $1$, so the first product simplifies to a constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute and cancel the second product",
+        "workingLatex": "\\csc\\theta\\sin\\theta = \\frac{1}{\\sin\\theta}\\cdot\\sin\\theta = 1",
+        "explanation": "The same reasoning applies to the second product, which also collapses to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the results",
+        "workingLatex": "1 + 1 = 2",
+        "explanation": "Combining the two simplified products gives a constant value of $2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the simplified expression",
+        "workingLatex": "\\sec\\theta\\cos\\theta + \\csc\\theta\\sin\\theta = 2",
+        "explanation": "The whole expression simplifies to the constant $2$, valid wherever the functions are defined.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q044",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "simplify",
+    "identities",
+    "cotangent"
+  ],
+  "questionText": "Express $\\cot\\theta\\sec\\theta$ as a single reciprocal trigonometric function.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite cotangent in sine and cosine",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Expressing in basic functions is the standard route to combining a product like this.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite secant in cosine",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Secant becomes one over cosine, so both factors are in basic form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Multiply the two",
+        "workingLatex": "\\cot\\theta\\sec\\theta = \\frac{\\cos\\theta}{\\sin\\theta}\\cdot\\frac{1}{\\cos\\theta}",
+        "explanation": "Writing the product shows a cosine in the numerator and denominator, poised to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cancel the cosine",
+        "workingLatex": "= \\frac{\\cos\\theta}{\\sin\\theta\\cos\\theta} = \\frac{1}{\\sin\\theta}",
+        "explanation": "The cosine factors cancel, leaving one over sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the reciprocal function",
+        "workingLatex": "\\frac{1}{\\sin\\theta} = \\csc\\theta",
+        "explanation": "One over sine is by definition cosecant, giving a single reciprocal function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "\\cot\\theta\\sec\\theta = \\csc\\theta",
+        "explanation": "The product simplifies to $\\csc\\theta$, as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cot\\theta\\sec\\theta = \\csc\\theta$"
+  }
+}

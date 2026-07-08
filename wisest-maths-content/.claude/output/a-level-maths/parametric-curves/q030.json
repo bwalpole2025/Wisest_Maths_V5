@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q030",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "trig",
+    "shift"
+  ],
+  "questionText": "A curve has parametric equations $x = 1 + \\tan\\theta$, $y = \\sec^2\\theta$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the tangent",
+        "workingLatex": "\\tan\\theta = x - 1",
+        "explanation": "Rearranging the $x$-equation expresses $\\tan\\theta$ in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Choose the linking identity",
+        "workingLatex": "\\sec^2\\theta = 1 + \\tan^2\\theta",
+        "explanation": "This identity connects the $y$-variable $\\sec^2\\theta$ to $\\tan\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute for y and tangent",
+        "workingLatex": "y = 1 + (x - 1)^2",
+        "explanation": "Replacing $\\sec^2\\theta$ with $y$ and $\\tan\\theta$ with $x - 1$ eliminates $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = 1 + (x - 1)^2",
+        "explanation": "This is a parabola with vertex at $(1, 1)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the range of y",
+        "workingLatex": "\\sec^2\\theta \\ge 1 \\;\\Rightarrow\\; y \\ge 1",
+        "explanation": "Since $\\sec^2\\theta$ is always at least $1$, the curve lies on or above $y = 1$, consistent with the vertex.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 1 + (x - 1)^2$ (with $y \\ge 1$)."
+  }
+}

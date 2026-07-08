@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "point on curve",
+    "parameter"
+  ],
+  "questionText": "The point $(8, 5)$ lies on the curve with parametric equations $x = t^2 - 1$, $y = 2t + 1$. Find the value of $t$ at this point and verify it is consistent.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the y-coordinate to find t",
+        "workingLatex": "2t + 1 = 5 \\;\\Rightarrow\\; t = 2",
+        "explanation": "The $y$-equation is linear, so solving it for the given $y$ pins down $t$ uniquely.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Check the x-coordinate",
+        "workingLatex": "x = t^2 - 1 = 2^2 - 1 = 3",
+        "explanation": "Substituting $t = 2$ into the $x$-equation should reproduce the given $x = 8$ if the point is consistent.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Compare with the required x",
+        "workingLatex": "3 \\ne 8",
+        "explanation": "The computed $x$ is $3$, not $8$, so $t = 2$ does not give the point $(8,5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Re-examine using the x-coordinate",
+        "workingLatex": "t^2 - 1 = 8 \\;\\Rightarrow\\; t^2 = 9 \\;\\Rightarrow\\; t = \\pm 3",
+        "explanation": "Solving the $x$-equation gives possible $t$ values of $\\pm 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Test these against the y-coordinate",
+        "workingLatex": "t = 3: y = 7; \\quad t = -3: y = -5",
+        "explanation": "Neither gives $y = 5$, so the two equations are inconsistent for $(8,5)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude",
+        "workingLatex": "(8, 5) \\text{ is NOT on the curve}",
+        "explanation": "Because no single value of $t$ produces both coordinates, the point does not lie on the curve. This shows why both equations must be checked.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The point $(8,5)$ is not on the curve: no single $t$ gives both coordinates."
+  }
+}

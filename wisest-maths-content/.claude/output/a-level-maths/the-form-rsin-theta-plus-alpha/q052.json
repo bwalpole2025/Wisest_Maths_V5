@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "reverse",
+    "maximum"
+  ],
+  "questionText": "The expression $a\\sin\\theta + b\\cos\\theta$ (with $a, b > 0$) has a maximum value of $10$, which first occurs at $\\theta = 30^\\circ$. Find $a$ and $b$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Relate the maximum to R",
+        "workingLatex": "a\\sin\\theta + b\\cos\\theta = R\\sin(\\theta + \\alpha), \\quad R = 10",
+        "explanation": "The maximum value of a harmonic expression equals its amplitude, so $R = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Use the location of the maximum",
+        "workingLatex": "\\text{max at } \\theta = 30^\\circ \\;\\Rightarrow\\; 30^\\circ + \\alpha = 90^\\circ",
+        "explanation": "The maximum of $\\sin(\\theta + \\alpha)$ occurs when its argument is $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find alpha",
+        "workingLatex": "\\alpha = 60^\\circ",
+        "explanation": "Solving gives the phase angle $\\alpha = 60^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recover a",
+        "workingLatex": "a = R\\cos\\alpha = 10\\cos 60^\\circ = 10\\cdot\\frac{1}{2} = 5",
+        "explanation": "From the standard relations, $a = R\\cos\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recover b",
+        "workingLatex": "b = R\\sin\\alpha = 10\\sin 60^\\circ = 10\\cdot\\frac{\\sqrt3}{2} = 5\\sqrt3",
+        "explanation": "Similarly, $b = R\\sin\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "a = 5, \\quad b = 5\\sqrt3",
+        "explanation": "Check: $\\sqrt{5^2 + (5\\sqrt3)^2} = \\sqrt{25 + 75} = 10$, consistent with the maximum.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$a = 5, \\quad b = 5\\sqrt3$"
+  }
+}

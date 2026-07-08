@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "circle",
+    "range"
+  ],
+  "questionText": "A curve has parametric equations $x = 5 + 3\\cos\\theta$, $y = -2 + 3\\sin\\theta$. State the greatest and least values of $y$ on the curve and the corresponding $x$-values.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the range of sine",
+        "workingLatex": "-1 \\le \\sin\\theta \\le 1",
+        "explanation": "The $y$-value depends on $\\sin\\theta$, which is bounded between $-1$ and $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Scale and shift for y",
+        "workingLatex": "-2 - 3 \\le -2 + 3\\sin\\theta \\le -2 + 3",
+        "explanation": "Multiplying the sine bounds by $3$ and subtracting $2$ gives the range of $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State greatest and least y",
+        "workingLatex": "y_{\\max} = 1, \\quad y_{\\min} = -5",
+        "explanation": "The top of the circle has $y = 1$ and the bottom has $y = -5$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find x at these points",
+        "workingLatex": "\\sin\\theta = \\pm 1 \\;\\Rightarrow\\; \\cos\\theta = 0 \\;\\Rightarrow\\; x = 5",
+        "explanation": "When sine is at an extreme, cosine is zero, so $x = 5 + 0 = 5$ at both.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the points",
+        "workingLatex": "(5, 1) \\text{ and } (5, -5)",
+        "explanation": "These are the top and bottom of the circle centre $(5, -2)$ radius $3$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Greatest $y = 1$ at $(5,1)$; least $y = -5$ at $(5,-5)$."
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q023",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "exact"
+  ],
+  "questionText": "Solve $\\sqrt2\\sin\\theta + \\sqrt2\\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{(\\sqrt2)^2 + (\\sqrt2)^2} = \\sqrt4 = 2",
+        "explanation": "The sum of squares is $2 + 2 = 4$, so $R = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{\\sqrt2}{\\sqrt2} = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
+        "explanation": "Equal components give $\\alpha = 45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the equation in harmonic form",
+        "workingLatex": "2\\sin(\\theta + 45^\\circ) = 1 \\;\\Rightarrow\\; \\sin(\\theta + 45^\\circ) = \\tfrac{1}{2}",
+        "explanation": "Substituting and dividing by $2$ gives a standard sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the shifted interval",
+        "workingLatex": "45^\\circ \\le \\theta + 45^\\circ < 405^\\circ",
+        "explanation": "Adding the shift to the bounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta + 45^\\circ = 150^\\circ, 390^\\circ",
+        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$; but $30^\\circ < 45^\\circ$ is out of range, so we use $150^\\circ$ and $30^\\circ + 360^\\circ = 390^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = 105^\\circ, 345^\\circ",
+        "explanation": "Subtracting $45^\\circ$ from each valid solution gives the answers.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 105^\\circ, 345^\\circ$"
+  }
+}

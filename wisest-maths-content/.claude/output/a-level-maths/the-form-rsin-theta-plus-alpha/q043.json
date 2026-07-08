@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q043",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $4\\sin\\theta - 3\\cos\\theta = 4$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{4^2 + 3^2} = 5, \\quad \\tan\\alpha = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
+        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $5$ and phase about $36.87^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the harmonic form",
+        "workingLatex": "4\\sin\\theta - 3\\cos\\theta = 5\\sin(\\theta - 36.87^\\circ)",
+        "explanation": "Combining gives the single-sine form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the equation",
+        "workingLatex": "5\\sin(\\theta - 36.87^\\circ) = 4 \\;\\Rightarrow\\; \\sin(\\theta - 36.87^\\circ) = 0.8",
+        "explanation": "Dividing by $5$ gives sine equal to $0.8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the shifted interval",
+        "workingLatex": "-36.87^\\circ \\le \\theta - 36.87^\\circ < 323.13^\\circ",
+        "explanation": "Subtracting the shift from the bounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta - 36.87^\\circ = 53.13^\\circ, 126.87^\\circ",
+        "explanation": "Sine $0.8$ gives principal value $53.13^\\circ$ and partner $126.87^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the shift and round",
+        "workingLatex": "\\theta \\approx 90^\\circ, 164^\\circ",
+        "explanation": "Adding $36.87^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 90^\\circ, 164^\\circ$"
+  }
+}

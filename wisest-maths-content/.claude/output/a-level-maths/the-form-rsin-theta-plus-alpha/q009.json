@@ -1,0 +1,56 @@
+{
+  "id": "al.y2.pure.rsin-form.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "R value"
+  ],
+  "questionText": "Find the exact value of $R$ when $6\\sin\\theta - 8\\cos\\theta$ is written in the form $R\\sin(\\theta - \\alpha)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Identify the coefficients",
+        "workingLatex": "a = 6, \\quad b = 8",
+        "explanation": "The amplitude depends only on the sizes of the two coefficients, regardless of the signs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Use the amplitude formula",
+        "workingLatex": "R = \\sqrt{a^2 + b^2}",
+        "explanation": "For any expression $a\\sin\\theta \\pm b\\cos\\theta$, the amplitude is the root of the sum of the squared coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute",
+        "workingLatex": "R = \\sqrt{6^2 + 8^2} = \\sqrt{36 + 64}",
+        "explanation": "Squaring and adding the coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify",
+        "workingLatex": "R = \\sqrt{100} = 10",
+        "explanation": "The sum is $100$, a perfect square, so $R = 10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the value",
+        "workingLatex": "R = 10",
+        "explanation": "This is the exact amplitude, a $6$-$8$-$10$ (i.e. $3$-$4$-$5$ scaled) triangle.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$R = 10$"
+  }
+}

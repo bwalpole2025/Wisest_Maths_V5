@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "stationary points",
+    "coordinates"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2 - t$, $y = t^3 - 3t$. Find the coordinates of the points on the curve where the tangent is horizontal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the horizontal tangent condition",
+        "workingLatex": "\\frac{dy}{dt} = 0 \\text{ (with } \\tfrac{dx}{dt} \\ne 0)",
+        "explanation": "A horizontal tangent needs the vertical rate of change to be zero while the horizontal one is not.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y",
+        "workingLatex": "\\frac{dy}{dt} = 3t^2 - 3",
+        "explanation": "Differentiating $y = t^3 - 3t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for t",
+        "workingLatex": "3t^2 - 3 = 0 \\;\\Rightarrow\\; t = \\pm 1",
+        "explanation": "Two parameter values give horizontal tangents.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check dx/dt is nonzero",
+        "workingLatex": "\\frac{dx}{dt} = 2t - 1 = 1 \\text{ or } -3, \\text{ both } \\ne 0",
+        "explanation": "At $t = 1$ and $t = -1$ the horizontal rate is nonzero, so the tangents are genuinely horizontal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the point for t = 1",
+        "workingLatex": "x = 1 - 1 = 0, \\; y = 1 - 3 = -2 \\;\\Rightarrow\\; (0, -2)",
+        "explanation": "Substituting $t = 1$ into both equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the point for t = -1",
+        "workingLatex": "x = 1 + 1 = 2, \\; y = -1 + 3 = 2 \\;\\Rightarrow\\; (2, 2)",
+        "explanation": "Substituting $t = -1$ into both equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "(0, -2) \\text{ and } (2, 2)",
+        "explanation": "These are the points with horizontal tangents.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(0, -2)$ and $(2, 2)$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q068",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "reciprocal trig"
+  ],
+  "questionText": "A curve has parametric equations $x = \\cos\\theta$, $y = \\sec\\theta$. Find the Cartesian equation and state the restrictions on $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the reciprocal relationship",
+        "workingLatex": "y = \\sec\\theta = \\frac{1}{\\cos\\theta}",
+        "explanation": "Secant is the reciprocal of cosine, which is exactly $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute x",
+        "workingLatex": "y = \\frac{1}{x}",
+        "explanation": "Since $x = \\cos\\theta$, we replace $\\cos\\theta$ with $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Restrict x from the cosine range",
+        "workingLatex": "-1 \\le \\cos\\theta \\le 1, \\; \\cos\\theta \\ne 0 \\;\\Rightarrow\\; -1 \\le x \\le 1, \\; x \\ne 0",
+        "explanation": "Cosine lies in $[-1, 1]$ but cannot be zero (or secant is undefined).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Deduce the restriction on y",
+        "workingLatex": "|y| = \\left|\\frac{1}{x}\\right| \\ge 1",
+        "explanation": "Since $|x| \\le 1$, its reciprocal has magnitude at least $1$, so $y \\le -1$ or $y \\ge 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "y = \\frac{1}{x}, \\; -1 \\le x \\le 1, \\; x \\ne 0",
+        "explanation": "Only the outer parts of the hyperbola $y = \\frac{1}{x}$ (where $|y| \\ge 1$) are traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = \\dfrac{1}{x}$ with $-1 \\le x \\le 1$, $x \\ne 0$ (so $|y| \\ge 1$)."
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "trig product"
+  ],
+  "questionText": "A curve has parametric equations $x = \\cos\\theta$, $y = \\sin\\theta\\cos\\theta$. Show that $y^2 = x^2(1 - x^2)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute x for cosine",
+        "workingLatex": "y = \\sin\\theta\\cos\\theta = x\\sin\\theta",
+        "explanation": "Since $x = \\cos\\theta$, one factor of $y$ becomes $x$; the sine factor remains.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Square both sides",
+        "workingLatex": "y^2 = x^2\\sin^2\\theta",
+        "explanation": "Squaring lets us convert the remaining sine using the Pythagorean identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Replace sine squared",
+        "workingLatex": "\\sin^2\\theta = 1 - \\cos^2\\theta = 1 - x^2",
+        "explanation": "The Pythagorean identity expresses $\\sin^2\\theta$ in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute",
+        "workingLatex": "y^2 = x^2(1 - x^2)",
+        "explanation": "Replacing $\\sin^2\\theta$ gives the required Cartesian relationship.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the domain",
+        "workingLatex": "-1 \\le x \\le 1",
+        "explanation": "Since $x = \\cos\\theta$, the values lie in $[-1, 1]$; squaring was necessary because $y$ can be positive or negative.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y^2 = x^2(1 - x^2)$"
+  }
+}

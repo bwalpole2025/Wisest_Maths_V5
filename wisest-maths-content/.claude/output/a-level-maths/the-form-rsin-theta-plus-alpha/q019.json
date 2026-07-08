@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "minimum",
+    "constant"
+  ],
+  "questionText": "Find the minimum value of $6\\sin\\theta + 8\\cos\\theta - 3$ and the value of $\\theta$ (to the nearest degree) at which it occurs, using $6\\sin\\theta + 8\\cos\\theta = 10\\sin(\\theta + 53.13^\\circ)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite the expression",
+        "workingLatex": "6\\sin\\theta + 8\\cos\\theta - 3 = 10\\sin(\\theta + 53.13^\\circ) - 3",
+        "explanation": "The harmonic form makes the range of the whole expression clear.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound the sine term",
+        "workingLatex": "-10 \\le 10\\sin(\\theta + 53.13^\\circ) \\le 10",
+        "explanation": "The amplitude $10$ scales the sine range to $[-10, 10]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Subtract the constant",
+        "workingLatex": "-13 \\le \\text{expression} \\le 7",
+        "explanation": "Subtracting $3$ shifts the range down.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify the minimum",
+        "workingLatex": "\\text{min} = -13",
+        "explanation": "The least value occurs when the sine equals $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find theta for the minimum",
+        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = -1 \\;\\Rightarrow\\; \\theta + 53.13^\\circ = 270^\\circ",
+        "explanation": "The sine reaches $-1$ when its argument is $270^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for theta",
+        "workingLatex": "\\theta = 270^\\circ - 53.13^\\circ \\approx 217^\\circ",
+        "explanation": "Subtracting the phase shift gives $\\theta \\approx 217^\\circ$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum $= -13$ at $\\theta \\approx 217^\\circ$."
+  }
+}

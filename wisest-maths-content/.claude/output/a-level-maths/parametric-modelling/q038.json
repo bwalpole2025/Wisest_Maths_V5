@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q038",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "normal",
+    "line"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find the equation of the normal at the point where $t = 1$, in the form $ax + by = c$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point",
+        "workingLatex": "t = 1: (1, 1)",
+        "explanation": "The normal passes through this point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the tangent gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{3t^2}{2t} = \\frac{3t}{2} = \\frac{3}{2}",
+        "explanation": "The parametric gradient at $t = 1$ is $\\frac{3}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -\\frac{2}{3}",
+        "explanation": "The normal gradient is the negative reciprocal of the tangent gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the point-gradient form",
+        "workingLatex": "y - 1 = -\\frac{2}{3}(x - 1)",
+        "explanation": "Using the point $(1,1)$ and the normal gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Clear the fraction",
+        "workingLatex": "3(y - 1) = -2(x - 1) \\;\\Rightarrow\\; 3y - 3 = -2x + 2",
+        "explanation": "Multiplying by $3$ removes the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange to the required form",
+        "workingLatex": "2x + 3y = 5",
+        "explanation": "Collecting terms gives the normal in the form $ax + by = c$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2x + 3y = 5$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $2\\sin\\theta - 5\\cos\\theta = 3$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{2^2 + 5^2} = \\sqrt{29}, \\quad \\tan\\alpha = \\frac{5}{2} \\;\\Rightarrow\\; \\alpha \\approx 68.20^\\circ",
+        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $\\sqrt{29}$ and phase about $68.20^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the harmonic form",
+        "workingLatex": "2\\sin\\theta - 5\\cos\\theta = \\sqrt{29}\\sin(\\theta - 68.20^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the equation",
+        "workingLatex": "\\sin(\\theta - 68.20^\\circ) = \\frac{3}{\\sqrt{29}} \\approx 0.5571",
+        "explanation": "Dividing by $\\sqrt{29}$ gives the sine value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve within the shifted interval",
+        "workingLatex": "\\theta - 68.20^\\circ = 33.86^\\circ, 146.14^\\circ",
+        "explanation": "Within $[-68.20^\\circ, 291.80^\\circ)$, the sine equation gives these two values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the shift and round",
+        "workingLatex": "\\theta \\approx 102^\\circ, 214^\\circ",
+        "explanation": "Adding $68.20^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Verify plausibility",
+        "workingLatex": "3 < \\sqrt{29} \\approx 5.39 \\;\\checkmark",
+        "explanation": "Since $3$ is within the amplitude, two solutions are expected, matching our answer.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 102^\\circ, 214^\\circ$"
+  }
+}

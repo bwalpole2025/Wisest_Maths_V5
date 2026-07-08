@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "vertical tangent",
+    "coordinates"
+  ],
+  "questionText": "A curve has parametric equations $x = t^3 - 3t$, $y = t^2$. Find the coordinates of the points where the tangent is vertical.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the vertical tangent condition",
+        "workingLatex": "\\frac{dx}{dt} = 0 \\text{ (with } \\tfrac{dy}{dt} \\ne 0)",
+        "explanation": "A vertical tangent requires the horizontal rate of change to vanish while the vertical one does not.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate x",
+        "workingLatex": "\\frac{dx}{dt} = 3t^2 - 3",
+        "explanation": "Differentiating $x = t^3 - 3t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for t",
+        "workingLatex": "3t^2 - 3 = 0 \\;\\Rightarrow\\; t = \\pm 1",
+        "explanation": "Setting the derivative to zero gives two parameter values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check dy/dt is nonzero",
+        "workingLatex": "\\frac{dy}{dt} = 2t = \\pm 2 \\ne 0",
+        "explanation": "At both values the vertical rate is nonzero, so the tangents are genuinely vertical.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the coordinates",
+        "workingLatex": "t = 1: (-2, 1); \\quad t = -1: (2, 1)",
+        "explanation": "Substituting each value into the parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "(-2, 1) \\text{ and } (2, 1)",
+        "explanation": "These are the two points with vertical tangents.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(-2, 1)$ and $(2, 1)$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "exact"
+  ],
+  "questionText": "Solve $\\sqrt2\\sin\\theta - \\sqrt2\\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{(\\sqrt2)^2 + (\\sqrt2)^2} = 2, \\quad \\tan\\alpha = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
+        "explanation": "For $R\\sin(\\theta - \\alpha)$, equal magnitudes give amplitude $2$ and phase $45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the harmonic form",
+        "workingLatex": "\\sqrt2\\sin\\theta - \\sqrt2\\cos\\theta = 2\\sin(\\theta - 45^\\circ)",
+        "explanation": "Combining gives the single-sine form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the equation",
+        "workingLatex": "2\\sin(\\theta - 45^\\circ) = 1 \\;\\Rightarrow\\; \\sin(\\theta - 45^\\circ) = \\frac{1}{2}",
+        "explanation": "Dividing by $2$ gives a standard exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the shifted interval",
+        "workingLatex": "-45^\\circ \\le \\theta - 45^\\circ < 315^\\circ",
+        "explanation": "Subtracting the shift from the bounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta - 45^\\circ = 30^\\circ, 150^\\circ",
+        "explanation": "Sine one half occurs at $30^\\circ$ and $150^\\circ$, both within the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the shift",
+        "workingLatex": "\\theta = 75^\\circ, 195^\\circ",
+        "explanation": "Adding $45^\\circ$ to each gives the solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 75^\\circ, 195^\\circ$"
+  }
+}

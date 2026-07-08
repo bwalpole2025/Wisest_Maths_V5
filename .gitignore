@@ -23,3 +23,7 @@ out/
 *.log
 .env
 .env.local
+
+# Cloud agent runtime artifacts
+.cursor/app-url.txt
+.cursor/cloudflared.log

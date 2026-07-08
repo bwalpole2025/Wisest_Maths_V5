@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q069",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "elimination"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2 + t$, $y = t^2 - t$. Find the Cartesian equation in terms of $x$ and $y$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Subtract the equations",
+        "workingLatex": "x - y = (t^2 + t) - (t^2 - t) = 2t",
+        "explanation": "Subtracting eliminates $t^2$ and isolates the linear term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Add the equations",
+        "workingLatex": "x + y = (t^2 + t) + (t^2 - t) = 2t^2",
+        "explanation": "Adding eliminates the linear term and isolates $2t^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Express t from the difference",
+        "workingLatex": "t = \\frac{x - y}{2}",
+        "explanation": "Rearranging the subtraction result gives $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into the sum",
+        "workingLatex": "x + y = 2\\left(\\frac{x - y}{2}\\right)^2",
+        "explanation": "Replacing $t^2$ using $2t^2 = x + y$ and $t = \\frac{x-y}{2}$ removes the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "x + y = 2\\cdot\\frac{(x - y)^2}{4} = \\frac{(x - y)^2}{2}",
+        "explanation": "Squaring and simplifying the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Clear the fraction",
+        "workingLatex": "2(x + y) = (x - y)^2",
+        "explanation": "Multiplying through by $2$ gives a clean Cartesian equation, a rotated parabola.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(x - y)^2 = 2(x + y)$"
+  }
+}

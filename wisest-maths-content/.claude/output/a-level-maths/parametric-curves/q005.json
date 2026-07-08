@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "reciprocal"
+  ],
+  "questionText": "A curve has parametric equations $x = t$, $y = \\dfrac{1}{t}$ for $t \\ne 0$. Find the Cartesian equation and state what type of curve it is.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute directly",
+        "workingLatex": "t = x",
+        "explanation": "Since $x = t$, the parameter equals $x$, so substitution is immediate.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Replace t in the y-equation",
+        "workingLatex": "y = \\frac{1}{x}",
+        "explanation": "Substituting $t = x$ into $y = \\frac{1}{t}$ gives the Cartesian equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the excluded value",
+        "workingLatex": "x \\ne 0",
+        "explanation": "The restriction $t \\ne 0$ carries over to $x \\ne 0$, since the reciprocal is undefined there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify the curve",
+        "workingLatex": "xy = 1 \\text{ (rectangular hyperbola)}",
+        "explanation": "The equation $y = \\frac{1}{x}$, or $xy = 1$, is a rectangular hyperbola with the axes as asymptotes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "y = \\frac{1}{x}, \\; x \\ne 0",
+        "explanation": "This is the required Cartesian equation with its domain restriction.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = \\dfrac{1}{x}$ ($x \\ne 0$), a rectangular hyperbola."
+  }
+}

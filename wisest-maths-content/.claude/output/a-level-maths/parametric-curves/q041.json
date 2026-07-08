@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.parametric-curves.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "intersection",
+    "line"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find the coordinates of the points where the curve meets the line $y = 2x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute into the line",
+        "workingLatex": "t^3 = 2t^2",
+        "explanation": "Replacing $x$ and $y$ with their parametric forms gives an equation in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Move to one side",
+        "workingLatex": "t^3 - 2t^2 = 0",
+        "explanation": "Rearranging prepares for factorising; dividing by $t^2$ would lose the $t = 0$ solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factorise",
+        "workingLatex": "t^2(t - 2) = 0",
+        "explanation": "Taking out $t^2$ gives the factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Solve for t",
+        "workingLatex": "t = 0 \\text{ or } t = 2",
+        "explanation": "Each root gives a point of intersection.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the point for t = 0",
+        "workingLatex": "(0, 0)",
+        "explanation": "Substituting $t = 0$ gives the origin.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the point for t = 2",
+        "workingLatex": "(4, 8)",
+        "explanation": "Substituting $t = 2$ gives $x = 4$ and $y = 8$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the answer",
+        "workingLatex": "(0, 0) \\text{ and } (4, 8)",
+        "explanation": "These are the intersection points; both satisfy $y = 2x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(0, 0)$ and $(4, 8)$"
+  }
+}

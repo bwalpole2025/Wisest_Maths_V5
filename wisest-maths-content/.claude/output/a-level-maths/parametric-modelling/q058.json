@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q058",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "range of y",
+    "interval"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3 - 3t$ for $-2 \\le t \\le 2$. Find the greatest and least values of $y$ on this interval.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate y",
+        "workingLatex": "\\frac{dy}{dt} = 3t^2 - 3",
+        "explanation": "Turning points of $y$ occur where its derivative with respect to $t$ is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the stationary values of t",
+        "workingLatex": "3t^2 - 3 = 0 \\;\\Rightarrow\\; t = \\pm 1",
+        "explanation": "Both lie inside the interval, so they are candidates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate y at the stationary points",
+        "workingLatex": "y(1) = 1 - 3 = -2, \\quad y(-1) = -1 + 3 = 2",
+        "explanation": "Substituting each stationary value into $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate y at the endpoints",
+        "workingLatex": "y(2) = 8 - 6 = 2, \\quad y(-2) = -8 + 6 = -2",
+        "explanation": "We must also check the ends of the interval, as extremes can occur there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Compare all values",
+        "workingLatex": "y \\in \\{-2, 2\\}",
+        "explanation": "The values obtained are $-2$ and $2$; these are the extreme values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "\\text{greatest } y = 2, \\quad \\text{least } y = -2",
+        "explanation": "The greatest value of $y$ is $2$ and the least is $-2$ on this interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Greatest $y = 2$, least $y = -2$."
+  }
+}

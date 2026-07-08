@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q003",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "sine",
+    "formula recall"
+  ],
+  "questionText": "Write down the double angle formula for $\\sin 2A$ and explain how it follows from $\\sin(A + B)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start from the sine addition formula",
+        "workingLatex": "\\sin(A + B) = \\sin A\\cos B + \\cos A\\sin B",
+        "explanation": "Double angle formulae are just addition formulae with the two angles made equal, so we begin here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set B equal to A",
+        "workingLatex": "\\sin(A + A) = \\sin A\\cos A + \\cos A\\sin A",
+        "explanation": "Replacing $B$ with $A$ turns the compound angle into $2A$ and duplicates the terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the left-hand side",
+        "workingLatex": "\\sin(A + A) = \\sin 2A",
+        "explanation": "Adding $A$ to $A$ gives $2A$, so the left side becomes $\\sin 2A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Combine the identical terms",
+        "workingLatex": "\\sin A\\cos A + \\cos A\\sin A = 2\\sin A\\cos A",
+        "explanation": "The two products are identical, so they add to give twice one of them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the double angle formula",
+        "workingLatex": "\\sin 2A = 2\\sin A\\cos A",
+        "explanation": "This is the standard double angle formula for sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Sanity check with a known value",
+        "workingLatex": "\\sin 60^\\circ = 2\\sin 30^\\circ\\cos 30^\\circ = 2\\cdot\\tfrac{1}{2}\\cdot\\tfrac{\\sqrt3}{2} = \\tfrac{\\sqrt3}{2} \\;\\checkmark",
+        "explanation": "Using $A = 30^\\circ$ reproduces the exact value of $\\sin 60^\\circ$, confirming the formula.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 2A = 2\\sin A\\cos A$"
+  }
+}

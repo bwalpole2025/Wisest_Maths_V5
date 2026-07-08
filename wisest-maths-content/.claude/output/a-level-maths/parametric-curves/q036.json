@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "rational"
+  ],
+  "questionText": "A curve has parametric equations $x = \\dfrac{1}{t + 1}$, $y = \\dfrac{t}{t + 1}$ for $t \\ne -1$. Find the Cartesian equation and state any restriction.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Add the two parametric expressions",
+        "workingLatex": "x + y = \\frac{1}{t+1} + \\frac{t}{t+1}",
+        "explanation": "The two fractions share a denominator, so adding them may simplify dramatically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Combine the fractions",
+        "workingLatex": "x + y = \\frac{1 + t}{t + 1}",
+        "explanation": "The numerators add to $1 + t$, which matches the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify",
+        "workingLatex": "x + y = 1",
+        "explanation": "Since $\\frac{t+1}{t+1} = 1$, the sum is constant, giving a straight line.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the excluded point",
+        "workingLatex": "x = \\frac{1}{t+1} \\ne 0 \\text{ for all } t",
+        "explanation": "The value $x = 0$ would require $\\frac{1}{t+1} = 0$, which is impossible, so $x = 0$ is never reached.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer with restriction",
+        "workingLatex": "x + y = 1, \\; x \\ne 0",
+        "explanation": "The curve is the line $x + y = 1$ with the single point $(0, 1)$ removed.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x + y = 1$ (with $x \\ne 0$, so the point $(0,1)$ is excluded)."
+  }
+}

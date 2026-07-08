@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "velocity",
+    "direction"
+  ],
+  "questionText": "A particle has position $x = t^2$, $y = t^3$ (metres) at time $t$ seconds. Find the time(s) at which the horizontal and vertical velocity components are equal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 2t, \\quad v_y = 3t^2",
+        "explanation": "Differentiating each position component.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set the components equal",
+        "workingLatex": "2t = 3t^2",
+        "explanation": "We want the times when the two velocity components have the same value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Move to one side",
+        "workingLatex": "3t^2 - 2t = 0",
+        "explanation": "Rearranging prepares for factorising rather than dividing (which would lose $t = 0$).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise",
+        "workingLatex": "t(3t - 2) = 0",
+        "explanation": "Taking out the common factor $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve",
+        "workingLatex": "t = 0 \\text{ or } t = \\frac{2}{3}",
+        "explanation": "Each root is a time at which the components are equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "t = 0 \\text{ and } t = \\frac{2}{3} \\text{ s}",
+        "explanation": "At these times the velocity is directed at $45^\\circ$ (equal components), except $t = 0$ where the particle is momentarily at rest.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t = 0$ and $t = \\dfrac{2}{3}$ s."
+  }
+}

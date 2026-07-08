@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "reciprocal squares"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = \\dfrac{1}{t^2}$ for $t \\ne 0$. Find the Cartesian equation and state the domain.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Relate x and y",
+        "workingLatex": "y = \\frac{1}{t^2} = \\frac{1}{x}",
+        "explanation": "Since $x = t^2$, the $y$-equation becomes $\\frac{1}{x}$ directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write in product form",
+        "workingLatex": "xy = 1",
+        "explanation": "Multiplying through by $x$ gives the clean form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the domain",
+        "workingLatex": "x = t^2 > 0 \\text{ (since } t \\ne 0)",
+        "explanation": "A nonzero square is strictly positive, so $x > 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Deduce the range of y",
+        "workingLatex": "y = \\frac{1}{x} > 0",
+        "explanation": "For positive $x$, the reciprocal is also positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "xy = 1, \\; x > 0",
+        "explanation": "Only the branch of the hyperbola in the first quadrant is traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$xy = 1$ for $x > 0$ (first-quadrant branch only)."
+  }
+}

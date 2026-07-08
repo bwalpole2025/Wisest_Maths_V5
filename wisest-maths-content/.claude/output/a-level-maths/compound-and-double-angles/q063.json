@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "tangent",
+    "given ratio"
+  ],
+  "questionText": "Given that $\\tan\\theta = \\dfrac{3}{4}$ and $\\theta$ is acute, use the $t$-formulae to find the exact values of $\\sin 2\\theta$ and $\\cos 2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the t-formulae",
+        "workingLatex": "\\sin 2\\theta = \\frac{2t}{1 + t^2}, \\quad \\cos 2\\theta = \\frac{1 - t^2}{1 + t^2}, \\quad t = \\tan\\theta",
+        "explanation": "These express the double angles directly in terms of $\\tan\\theta$, avoiding the need to find sine and cosine separately.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compute the common denominator",
+        "workingLatex": "1 + t^2 = 1 + \\frac{9}{16} = \\frac{25}{16}",
+        "explanation": "Both formulae share the denominator $1 + t^2$, so we evaluate it once.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find sin 2θ numerator",
+        "workingLatex": "2t = 2\\cdot\\frac{3}{4} = \\frac{3}{2}",
+        "explanation": "The numerator of the sine formula is $2t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate sin 2θ",
+        "workingLatex": "\\sin 2\\theta = \\frac{3/2}{25/16} = \\frac{3}{2}\\cdot\\frac{16}{25} = \\frac{24}{25}",
+        "explanation": "Dividing by $\\frac{25}{16}$ gives $\\frac{24}{25}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find cos 2θ numerator",
+        "workingLatex": "1 - t^2 = 1 - \\frac{9}{16} = \\frac{7}{16}",
+        "explanation": "The numerator of the cosine formula is $1 - t^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate cos 2θ",
+        "workingLatex": "\\cos 2\\theta = \\frac{7/16}{25/16} = \\frac{7}{25}",
+        "explanation": "The common denominator cancels, leaving $\\frac{7}{25}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Check consistency",
+        "workingLatex": "\\left(\\tfrac{24}{25}\\right)^2 + \\left(\\tfrac{7}{25}\\right)^2 = 1 \\;\\checkmark",
+        "explanation": "The two answers satisfy the Pythagorean identity, confirming they are correct.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 2\\theta = \\dfrac{24}{25}, \\quad \\cos 2\\theta = \\dfrac{7}{25}$"
+  }
+}

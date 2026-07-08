@@ -1,0 +1,85 @@
+{
+  "id": "al.y2.pure.rsin-form.q035",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "full method"
+  ],
+  "questionText": "Express $8\\sin\\theta - 6\\cos\\theta$ in the form $R\\sin(\\theta - \\alpha)$ with $R > 0$ and $0 < \\alpha < 90^\\circ$, and hence solve $8\\sin\\theta - 6\\cos\\theta = 5$ for $0^\\circ \\le \\theta < 360^\\circ$, to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the target form",
+        "workingLatex": "R\\sin(\\theta - \\alpha) = R\\cos\\alpha\\sin\\theta - R\\sin\\alpha\\cos\\theta",
+        "explanation": "The minus form matches the given difference of terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 8, \\quad R\\sin\\alpha = 6",
+        "explanation": "Matching the sine and cosine coefficients.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{8^2 + 6^2} = 10",
+        "explanation": "The amplitude is $10$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{6}{8} = 0.75 \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
+        "explanation": "The ratio gives the phase angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the harmonic form",
+        "workingLatex": "8\\sin\\theta - 6\\cos\\theta = 10\\sin(\\theta - 36.87^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Set up the equation",
+        "workingLatex": "10\\sin(\\theta - 36.87^\\circ) = 5 \\;\\Rightarrow\\; \\sin(\\theta - 36.87^\\circ) = 0.5",
+        "explanation": "Dividing by $10$ gives a standard sine equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Set the shifted interval",
+        "workingLatex": "-36.87^\\circ \\le \\theta - 36.87^\\circ < 323.13^\\circ",
+        "explanation": "Subtracting the shift from the bounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta - 36.87^\\circ = 30^\\circ, 150^\\circ",
+        "explanation": "Sine $0.5$ occurs at $30^\\circ$ and $150^\\circ$, both within the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Add the shift and round",
+        "workingLatex": "\\theta \\approx 67^\\circ, 187^\\circ",
+        "explanation": "Adding $36.87^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$8\\sin\\theta - 6\\cos\\theta = 10\\sin(\\theta - 36.87^\\circ)$; $\\theta \\approx 67^\\circ, 187^\\circ$."
+  }
+}

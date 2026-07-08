@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q020",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "reciprocal trig",
+    "secant",
+    "exact values",
+    "obtuse"
+  ],
+  "questionText": "Find the exact value of $\\sec\\dfrac{2\\pi}{3}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Convert the angle to degrees",
+        "workingLatex": "\\frac{2\\pi}{3} = 120^\\circ",
+        "explanation": "Recognising this angle as $120^\\circ$ helps us place it in the second quadrant and recall the relevant exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write secant as one over cosine",
+        "workingLatex": "\\sec\\frac{2\\pi}{3} = \\frac{1}{\\cos\\frac{2\\pi}{3}}",
+        "explanation": "Secant is one over cosine, so we first evaluate the cosine of this angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Determine the sign in the second quadrant",
+        "workingLatex": "120^\\circ \\text{ in quadrant II} \\;\\Rightarrow\\; \\cos < 0",
+        "explanation": "In the second quadrant cosine is negative, so we expect a negative value here.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Use the related acute angle",
+        "workingLatex": "\\cos\\frac{2\\pi}{3} = -\\cos\\frac{\\pi}{3} = -\\frac{1}{2}",
+        "explanation": "The related acute angle is $60^\\circ$, whose cosine is one half; applying the negative sign for quadrant II gives $-\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute into the reciprocal",
+        "workingLatex": "\\sec\\frac{2\\pi}{3} = \\frac{1}{-\\frac{1}{2}}",
+        "explanation": "We now take the reciprocal of $-\\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate the reciprocal",
+        "workingLatex": "\\frac{1}{-\\frac{1}{2}} = -2",
+        "explanation": "The reciprocal of $-\\frac{1}{2}$ is $-2$; the negative sign is retained throughout.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the final value",
+        "workingLatex": "\\sec\\frac{2\\pi}{3} = -2",
+        "explanation": "This is the exact value; its size exceeds $1$ as required for secant, and it is negative as expected in the second quadrant.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sec\\dfrac{2\\pi}{3} = -2$"
+  }
+}

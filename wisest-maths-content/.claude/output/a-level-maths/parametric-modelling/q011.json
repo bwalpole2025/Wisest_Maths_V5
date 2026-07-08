@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "velocity",
+    "components"
+  ],
+  "questionText": "A particle has position $x = t^2$, $y = 3t$ (metres) at time $t$ seconds. Find the horizontal and vertical velocity components at $t = 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall that velocity is the rate of change of position",
+        "workingLatex": "v_x = \\frac{dx}{dt}, \\quad v_y = \\frac{dy}{dt}",
+        "explanation": "In a motion model, differentiating each position component with respect to time gives the corresponding velocity component.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate the x-equation",
+        "workingLatex": "v_x = \\frac{dx}{dt} = 2t",
+        "explanation": "The horizontal velocity is the derivative of $x = t^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Differentiate the y-equation",
+        "workingLatex": "v_y = \\frac{dy}{dt} = 3",
+        "explanation": "The vertical velocity is the derivative of $y = 3t$, which is constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate at t = 2",
+        "workingLatex": "v_x = 2(2) = 4, \\quad v_y = 3",
+        "explanation": "Substituting $t = 2$ gives the two velocity components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "v_x = 4 \\text{ m/s}, \\quad v_y = 3 \\text{ m/s}",
+        "explanation": "These are the horizontal and vertical velocities at $t = 2$ s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$v_x = 4$ m/s, $v_y = 3$ m/s."
+  }
+}

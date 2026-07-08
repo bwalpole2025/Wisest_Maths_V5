@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "radians",
+    "exact"
+  ],
+  "questionText": "Express $\\cos\\theta + \\sin\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < \\dfrac{\\pi}{2}$, giving exact values in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder the expression",
+        "workingLatex": "\\cos\\theta + \\sin\\theta = \\sin\\theta + \\cos\\theta",
+        "explanation": "Writing the sine term first aligns with the $R\\sin(\\theta + \\alpha)$ template.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 1, \\quad R\\sin\\alpha = 1",
+        "explanation": "Both coefficients are $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{1^2 + 1^2} = \\sqrt2",
+        "explanation": "The sum of squares gives $R = \\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find alpha in radians",
+        "workingLatex": "\\tan\\alpha = 1 \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{4}",
+        "explanation": "Equal components give $\\tan\\alpha = 1$, so $\\alpha = \\frac{\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the final form",
+        "workingLatex": "\\cos\\theta + \\sin\\theta = \\sqrt2\\sin\\left(\\theta + \\frac{\\pi}{4}\\right)",
+        "explanation": "Combining the exact values gives the harmonic form in radians.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos\\theta + \\sin\\theta = \\sqrt2\\sin\\left(\\theta + \\dfrac{\\pi}{4}\\right)$"
+  }
+}

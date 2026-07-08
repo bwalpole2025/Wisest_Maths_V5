@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "Rcos",
+    "difference"
+  ],
+  "questionText": "Express $\\cos\\theta - \\sqrt3\\sin\\theta$ in the form $R\\cos(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the target form",
+        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
+        "explanation": "The cosine form has a minus between the terms, matching the given expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 1, \\quad R\\sin\\alpha = \\sqrt3",
+        "explanation": "Matching the cosine and sine terms gives two equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R",
+        "workingLatex": "R = \\sqrt{1^2 + (\\sqrt3)^2} = \\sqrt4 = 2",
+        "explanation": "The sum of squares gives $R = 2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{\\sqrt3}{1} = \\sqrt3 \\;\\Rightarrow\\; \\alpha = 60^\\circ",
+        "explanation": "The ratio gives $\\tan\\alpha = \\sqrt3$, so $\\alpha = 60^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the final form",
+        "workingLatex": "\\cos\\theta - \\sqrt3\\sin\\theta = 2\\cos(\\theta + 60^\\circ)",
+        "explanation": "Combining the exact values gives the harmonic form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos\\theta - \\sqrt3\\sin\\theta = 2\\cos(\\theta + 60^\\circ)$"
+  }
+}

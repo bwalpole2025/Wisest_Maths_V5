@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "reciprocal trig",
+    "cosecant",
+    "exact values",
+    "surds"
+  ],
+  "questionText": "Find the exact value of $\\csc 60^\\circ$, giving your answer with a rational denominator.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write cosecant as one over sine",
+        "workingLatex": "\\csc 60^\\circ = \\frac{1}{\\sin 60^\\circ}",
+        "explanation": "Cosecant reciprocates sine, so we rewrite it in terms of sine to use the known exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the exact value of sine 60 degrees",
+        "workingLatex": "\\sin 60^\\circ = \\frac{\\sqrt{3}}{2}",
+        "explanation": "This exact value is taken from the $30$-$60$-$90$ triangle and is a standard result.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute and invert",
+        "workingLatex": "\\csc 60^\\circ = \\frac{1}{\\;\\frac{\\sqrt{3}}{2}\\;} = \\frac{2}{\\sqrt{3}}",
+        "explanation": "Taking the reciprocal flips the fraction to $\\frac{2}{\\sqrt{3}}$, which still has a surd in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rationalise the denominator",
+        "workingLatex": "\\frac{2}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{2\\sqrt{3}}{3}",
+        "explanation": "Multiplying top and bottom by $\\sqrt{3}$ removes the root from the denominator, giving the rational denominator the question asks for.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the size of the answer",
+        "workingLatex": "\\frac{2\\sqrt{3}}{3} \\approx 1.155 \\ge 1 \\;\\checkmark",
+        "explanation": "Cosecant must be at least $1$ in size, and the decimal value $1.155$ confirms this, so the answer is reasonable.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\csc 60^\\circ = \\frac{2\\sqrt{3}}{3}",
+        "explanation": "This is the exact value with a rationalised denominator, as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\csc 60^\\circ = \\dfrac{2\\sqrt{3}}{3}$"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q059",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "triple angle",
+    "identities",
+    "proof"
+  ],
+  "questionText": "Prove that $\\dfrac{\\sin 3\\theta}{\\sin\\theta} - \\dfrac{\\cos 3\\theta}{\\cos\\theta} \\equiv 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the triple angle formula for sine",
+        "workingLatex": "\\sin 3\\theta = 3\\sin\\theta - 4\\sin^3\\theta",
+        "explanation": "The triple angle results let each fraction simplify to a polynomial in a single function.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify the first fraction",
+        "workingLatex": "\\frac{\\sin 3\\theta}{\\sin\\theta} = 3 - 4\\sin^2\\theta",
+        "explanation": "Dividing each term by $\\sin\\theta$ removes the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the triple angle formula for cosine",
+        "workingLatex": "\\cos 3\\theta = 4\\cos^3\\theta - 3\\cos\\theta",
+        "explanation": "The matching cosine formula handles the second fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the second fraction",
+        "workingLatex": "\\frac{\\cos 3\\theta}{\\cos\\theta} = 4\\cos^2\\theta - 3",
+        "explanation": "Dividing each term by $\\cos\\theta$ removes the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract the two results",
+        "workingLatex": "(3 - 4\\sin^2\\theta) - (4\\cos^2\\theta - 3)",
+        "explanation": "Substituting both simplified fractions into the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Expand and group",
+        "workingLatex": "= 6 - 4\\sin^2\\theta - 4\\cos^2\\theta",
+        "explanation": "Combining the constants gives $6$, with the two squared terms sharing a factor of $-4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "= 6 - 4(\\sin^2\\theta + \\cos^2\\theta) = 6 - 4",
+        "explanation": "The bracket equals $1$, so the subtraction becomes $6 - 4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Conclude",
+        "workingLatex": "= 2 \\;\\blacksquare",
+        "explanation": "The expression simplifies to the constant $2$, as required.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sin 3\\theta}{\\sin\\theta} - \\dfrac{\\cos 3\\theta}{\\cos\\theta} \\equiv 2$"
+  }
+}

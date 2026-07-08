@@ -1,0 +1,50 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "speed",
+    "specific time"
+  ],
+  "questionText": "A particle has position $x = t^3 - 3t$, $y = 3t^2$ (metres) at time $t$ seconds. Find its speed at $t = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 3t^2 - 3, \\quad v_y = 6t",
+        "explanation": "Differentiating each position component gives the velocities.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Evaluate at t = 1",
+        "workingLatex": "v_x = 3 - 3 = 0, \\quad v_y = 6",
+        "explanation": "At $t = 1$ the horizontal velocity is zero, so the particle moves purely vertically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{0^2 + 6^2} = 6",
+        "explanation": "With no horizontal component, the speed is just the vertical component.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the answer",
+        "workingLatex": "\\text{speed} = 6 \\text{ m/s}",
+        "explanation": "The particle's speed at $t = 1$ is $6$ m/s (moving vertically).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Speed $= 6$ m/s"
+  }
+}

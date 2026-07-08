@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "secant",
+    "tangent",
+    "pythagorean"
+  ],
+  "questionText": "Prove that $1 + \\tan^2\\theta \\equiv \\sec^2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start from the fundamental Pythagorean identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1",
+        "explanation": "The reciprocal identities all descend from the basic Pythagorean identity, so this is the natural starting point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Decide what to divide by",
+        "workingLatex": "\\text{divide every term by } \\cos^2\\theta",
+        "explanation": "Since we are aiming for $\\sec^2\\theta = \\frac{1}{\\cos^2\\theta}$ on the right, dividing through by $\\cos^2\\theta$ will manufacture the reciprocal terms we want.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide each term by cosine squared",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} + \\frac{\\cos^2\\theta}{\\cos^2\\theta} \\equiv \\frac{1}{\\cos^2\\theta}",
+        "explanation": "Dividing every term keeps the equation balanced, and each fraction is now ready to be rewritten using a reciprocal or quotient identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rewrite the first term as tangent squared",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\cos^2\\theta} = \\tan^2\\theta",
+        "explanation": "Since $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$, squaring gives $\\tan^2\\theta$, converting the first fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify the middle term",
+        "workingLatex": "\\frac{\\cos^2\\theta}{\\cos^2\\theta} = 1",
+        "explanation": "Any nonzero quantity divided by itself is $1$, so the middle term collapses to a constant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the right-hand side as secant squared",
+        "workingLatex": "\\frac{1}{\\cos^2\\theta} = \\sec^2\\theta",
+        "explanation": "By definition $\\sec\\theta = \\frac{1}{\\cos\\theta}$, so its square is $\\frac{1}{\\cos^2\\theta}$, giving the target form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Assemble the identity",
+        "workingLatex": "\\tan^2\\theta + 1 \\equiv \\sec^2\\theta",
+        "explanation": "Collecting the rewritten terms produces exactly the required identity, completing the proof.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the conclusion",
+        "workingLatex": "1 + \\tan^2\\theta \\equiv \\sec^2\\theta \\;\\blacksquare",
+        "explanation": "The identity holds for all $\\theta$ where the functions are defined, which is what we set out to prove.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$1 + \\tan^2\\theta \\equiv \\sec^2\\theta$, proved by dividing $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ through by $\\cos^2\\theta$."
+  }
+}

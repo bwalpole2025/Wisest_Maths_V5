@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "projectile",
+    "specific height"
+  ],
+  "questionText": "A projectile has position $x = 24t$, $y = 10t - 5t^2$ (metres) at time $t$ seconds. Find the times when the projectile is at height $y = 5$ m.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set the height equation",
+        "workingLatex": "10t - 5t^2 = 5",
+        "explanation": "We want the times at which the vertical position is $5$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange to standard form",
+        "workingLatex": "5t^2 - 10t + 5 = 0",
+        "explanation": "Bringing all terms to one side gives a quadratic in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide by the common factor",
+        "workingLatex": "t^2 - 2t + 1 = 0",
+        "explanation": "Dividing by $5$ simplifies the quadratic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise",
+        "workingLatex": "(t - 1)^2 = 0 \\;\\Rightarrow\\; t = 1",
+        "explanation": "This is a perfect square, giving a single repeated root.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the repeated root",
+        "workingLatex": "t = 1 \\text{ s (turning point at this height)}",
+        "explanation": "The single solution means $y = 5$ is the maximum height, reached exactly once, at $t = 1$ s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$t = 1$ s (this height is the peak, reached once)."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "modelling",
+    "temperature"
+  ],
+  "questionText": "The temperature in a greenhouse is modelled by $T = 18 + 4\\sin(15t)^\\circ + 3\\cos(15t)^\\circ$ degrees Celsius, where $t$ is the number of hours after 06:00. Find the maximum temperature and the time (to the nearest quarter hour) when it first occurs.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the oscillating part in R-form",
+        "workingLatex": "4\\sin x + 3\\cos x = R\\sin(x + \\alpha), \\quad x = 15t",
+        "explanation": "Combining the terms gives amplitude and phase for the temperature swing.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{4^2 + 3^2} = 5, \\quad \\tan\\alpha = \\frac{3}{4} \\;\\Rightarrow\\; \\alpha \\approx 36.87^\\circ",
+        "explanation": "Amplitude $5$ and phase about $36.87^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the temperature model",
+        "workingLatex": "T = 18 + 5\\sin(15t + 36.87^\\circ)",
+        "explanation": "The model is a single sinusoid oscillating about $18$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the maximum temperature",
+        "workingLatex": "T_{\\max} = 18 + 5 = 23^\\circ\\text{C}",
+        "explanation": "The maximum occurs when the sine equals $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the sine to its peak",
+        "workingLatex": "15t + 36.87^\\circ = 90^\\circ",
+        "explanation": "The first maximum occurs when the argument first equals $90^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for t",
+        "workingLatex": "15t = 53.13^\\circ \\;\\Rightarrow\\; t \\approx 3.54 \\text{ hours}",
+        "explanation": "Dividing by $15$ gives the time after 06:00.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Convert to a clock time",
+        "workingLatex": "t \\approx 3.5 \\text{ h} \\;\\Rightarrow\\; 09{:}30",
+        "explanation": "Rounding to the nearest quarter hour, the maximum first occurs at about 09:30.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum $23^\\circ$C, first at about 09:30."
+  }
+}

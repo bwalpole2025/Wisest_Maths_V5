@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "compound angles",
+    "given ratios",
+    "quadrants",
+    "cosine"
+  ],
+  "questionText": "Given that $\\sin A = \\dfrac{4}{5}$ with $A$ obtuse, and $\\sin B = \\dfrac{5}{13}$ with $B$ acute, find the exact value of $\\cos(A + B)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the compound angle formula",
+        "workingLatex": "\\cos(A + B) = \\cos A\\cos B - \\sin A\\sin B",
+        "explanation": "We need $\\cos A$ and $\\cos B$; the quadrant information will fix their signs.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find cos A with the correct sign",
+        "workingLatex": "\\cos A = -\\sqrt{1 - \\tfrac{16}{25}} = -\\frac{3}{5}",
+        "explanation": "Since $A$ is obtuse (quadrant II), cosine is negative, giving $-\\frac{3}{5}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find cos B with the correct sign",
+        "workingLatex": "\\cos B = +\\sqrt{1 - \\tfrac{25}{169}} = \\frac{12}{13}",
+        "explanation": "Since $B$ is acute, cosine is positive, giving $\\frac{12}{13}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute all values",
+        "workingLatex": "\\cos(A + B) = \\left(-\\frac{3}{5}\\right)\\frac{12}{13} - \\frac{4}{5}\\cdot\\frac{5}{13}",
+        "explanation": "Inserting the four values, taking care with the negative cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Multiply out",
+        "workingLatex": "= -\\frac{36}{65} - \\frac{20}{65}",
+        "explanation": "Both products share the denominator $65$; the first is negative.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Combine",
+        "workingLatex": "= -\\frac{56}{65}",
+        "explanation": "Adding the two negative terms gives $-\\frac{56}{65}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Interpret the sign",
+        "workingLatex": "\\cos(A + B) < 0",
+        "explanation": "A negative cosine indicates $A + B$ is obtuse, which is consistent with $A$ being obtuse already.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos(A + B) = -\\dfrac{56}{65}$"
+  }
+}

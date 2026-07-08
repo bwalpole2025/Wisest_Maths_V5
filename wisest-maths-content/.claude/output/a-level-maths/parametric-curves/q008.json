@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q008",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "coordinates",
+    "trig"
+  ],
+  "questionText": "A curve is defined by $x = 2 + 3\\cos\\theta$, $y = 1 + 3\\sin\\theta$. Find the coordinates of the point where $\\theta = \\dfrac{\\pi}{2}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the exact trig values",
+        "workingLatex": "\\cos\\frac{\\pi}{2} = 0, \\quad \\sin\\frac{\\pi}{2} = 1",
+        "explanation": "We need these standard values to substitute the given angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the x-coordinate",
+        "workingLatex": "x = 2 + 3(0) = 2",
+        "explanation": "Substituting $\\cos\\frac{\\pi}{2} = 0$ into the $x$-equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the y-coordinate",
+        "workingLatex": "y = 1 + 3(1) = 4",
+        "explanation": "Substituting $\\sin\\frac{\\pi}{2} = 1$ into the $y$-equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Write the point",
+        "workingLatex": "(2, 4)",
+        "explanation": "The two coordinates give the point on the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the geometry",
+        "workingLatex": "\\text{circle centre } (2,1), \\text{ radius } 3",
+        "explanation": "The curve is a circle centred at $(2,1)$; the point $(2,4)$ is the topmost point, consistent with $\\theta = \\frac{\\pi}{2}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(2, 4)$"
+  }
+}

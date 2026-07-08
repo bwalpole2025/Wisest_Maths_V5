@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.parametric-curves.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "circle",
+    "combination"
+  ],
+  "questionText": "A curve has parametric equations $x = \\cos\\theta + \\sin\\theta$, $y = \\cos\\theta - \\sin\\theta$. Show that $x^2 + y^2 = 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Square the x-equation",
+        "workingLatex": "x^2 = (\\cos\\theta + \\sin\\theta)^2 = \\cos^2\\theta + 2\\sin\\theta\\cos\\theta + \\sin^2\\theta",
+        "explanation": "Expanding the square gives a cross term $2\\sin\\theta\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Square the y-equation",
+        "workingLatex": "y^2 = (\\cos\\theta - \\sin\\theta)^2 = \\cos^2\\theta - 2\\sin\\theta\\cos\\theta + \\sin^2\\theta",
+        "explanation": "The difference gives an opposite cross term $-2\\sin\\theta\\cos\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add the two squares",
+        "workingLatex": "x^2 + y^2 = 2\\cos^2\\theta + 2\\sin^2\\theta",
+        "explanation": "Adding cancels the cross terms and doubles the squared terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factor and apply the identity",
+        "workingLatex": "= 2(\\cos^2\\theta + \\sin^2\\theta) = 2(1)",
+        "explanation": "The bracket is the Pythagorean identity, equal to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude",
+        "workingLatex": "x^2 + y^2 = 2",
+        "explanation": "This is a circle centred at the origin with radius $\\sqrt2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + y^2 = 2$ (circle, radius $\\sqrt2$)."
+  }
+}

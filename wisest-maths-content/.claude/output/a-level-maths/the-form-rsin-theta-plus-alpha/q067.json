@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q067",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $\\sin\\theta - 2\\cos\\theta = 1$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{1^2 + 2^2} = \\sqrt5, \\quad \\tan\\alpha = \\frac{2}{1} \\;\\Rightarrow\\; \\alpha \\approx 63.43^\\circ",
+        "explanation": "For $R\\sin(\\theta - \\alpha)$, amplitude is $\\sqrt5$ and phase about $63.43^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the harmonic form",
+        "workingLatex": "\\sin\\theta - 2\\cos\\theta = \\sqrt5\\sin(\\theta - 63.43^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the equation",
+        "workingLatex": "\\sin(\\theta - 63.43^\\circ) = \\frac{1}{\\sqrt5} \\approx 0.4472",
+        "explanation": "Dividing by $\\sqrt5$ gives the sine value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the base angles",
+        "workingLatex": "\\theta - 63.43^\\circ = 26.57^\\circ, 153.43^\\circ",
+        "explanation": "The principal value is $26.57^\\circ$ with partner $153.43^\\circ$; both lie in the shifted interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the shift and round",
+        "workingLatex": "\\theta \\approx 90^\\circ, 217^\\circ",
+        "explanation": "Adding $63.43^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 90^\\circ, 217^\\circ$"
+  }
+}

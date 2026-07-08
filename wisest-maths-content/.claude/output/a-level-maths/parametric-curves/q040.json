@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q040",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "trig sum"
+  ],
+  "questionText": "A curve has parametric equations $x = 4\\sin^2\\theta$, $y = 3\\cos^2\\theta$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the squared trig functions",
+        "workingLatex": "\\sin^2\\theta = \\frac{x}{4}, \\quad \\cos^2\\theta = \\frac{y}{3}",
+        "explanation": "Dividing by the coefficients isolates the squared trig terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = 1 \\;\\Rightarrow\\; \\frac{x}{4} + \\frac{y}{3} = 1",
+        "explanation": "Adding the two expressions and using the identity gives a linear equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Clear denominators",
+        "workingLatex": "3x + 4y = 12",
+        "explanation": "Multiplying through by $12$ gives a tidy linear form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the restriction on x",
+        "workingLatex": "0 \\le \\sin^2\\theta \\le 1 \\;\\Rightarrow\\; 0 \\le x \\le 4",
+        "explanation": "Since $\\sin^2\\theta$ lies in $[0,1]$, the $x$-values are restricted, so the curve is a line segment.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "3x + 4y = 12, \\; 0 \\le x \\le 4",
+        "explanation": "The curve is the segment of the line joining $(0,3)$ to $(4,0)$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$3x + 4y = 12$ for $0 \\le x \\le 4$ (a line segment)."
+  }
+}

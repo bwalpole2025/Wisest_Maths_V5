@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $\\sin\\theta + \\cos\\theta = \\dfrac{1}{2}$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in R-form",
+        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt2\\sin(\\theta + 45^\\circ)",
+        "explanation": "Equal unit coefficients give amplitude $\\sqrt2$ and phase $45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set up the equation",
+        "workingLatex": "\\sqrt2\\sin(\\theta + 45^\\circ) = \\frac{1}{2} \\;\\Rightarrow\\; \\sin(\\theta + 45^\\circ) = \\frac{1}{2\\sqrt2}",
+        "explanation": "Dividing by $\\sqrt2$ gives sine equal to about $0.3536$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the base angle",
+        "workingLatex": "\\sin^{-1}(0.3536) \\approx 20.70^\\circ",
+        "explanation": "The principal value of the inverse sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "List solutions in the shifted interval",
+        "workingLatex": "\\theta + 45^\\circ = 159.30^\\circ, 380.70^\\circ",
+        "explanation": "Within $[45^\\circ, 405^\\circ)$, the values are the second-quadrant $159.30^\\circ$ and $20.70^\\circ + 360^\\circ = 380.70^\\circ$; the bare $20.70^\\circ$ is below the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = 114.30^\\circ, 335.70^\\circ",
+        "explanation": "Subtracting $45^\\circ$ from each valid value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Round the solutions",
+        "workingLatex": "\\theta \\approx 114^\\circ, 336^\\circ",
+        "explanation": "Rounding to the nearest degree gives the final answers.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 114^\\circ, 336^\\circ$"
+  }
+}

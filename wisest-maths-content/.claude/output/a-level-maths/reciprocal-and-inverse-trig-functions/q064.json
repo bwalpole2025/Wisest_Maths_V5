@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q064",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "equation",
+    "arccos"
+  ],
+  "questionText": "Solve $2\\arccos x = \\dfrac{\\pi}{3}$ for $x$, giving your answer in exact form.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Isolate the inverse function",
+        "workingLatex": "\\arccos x = \\frac{\\pi}{6}",
+        "explanation": "Dividing both sides by $2$ leaves a single arccosine equal to a known angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply cosine to both sides",
+        "workingLatex": "x = \\cos\\frac{\\pi}{6}",
+        "explanation": "Taking the cosine of both sides undoes the arccosine, isolating $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate the cosine",
+        "workingLatex": "\\cos\\frac{\\pi}{6} = \\frac{\\sqrt{3}}{2}",
+        "explanation": "This is the standard exact value for the cosine of $30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State x",
+        "workingLatex": "x = \\frac{\\sqrt{3}}{2}",
+        "explanation": "So the value of $x$ is $\\frac{\\sqrt3}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the domain and range",
+        "workingLatex": "-1 \\le \\tfrac{\\sqrt3}{2} \\le 1, \\quad \\tfrac{\\pi}{6} \\in [0,\\pi]",
+        "explanation": "The value lies in the domain of arccosine and the angle $\\frac{\\pi}{6}$ is in its range, so the solution is valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final answer",
+        "workingLatex": "x = \\frac{\\sqrt{3}}{2}",
+        "explanation": "This is the exact solution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x = \\dfrac{\\sqrt{3}}{2}$"
+  }
+}

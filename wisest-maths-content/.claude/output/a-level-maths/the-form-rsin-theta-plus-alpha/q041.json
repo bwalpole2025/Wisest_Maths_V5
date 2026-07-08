@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "range",
+    "reciprocal"
+  ],
+  "questionText": "Find the greatest and least values of $\\dfrac{1}{4 + \\sin\\theta + \\cos\\theta}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the varying part in R-form",
+        "workingLatex": "\\sin\\theta + \\cos\\theta = \\sqrt2\\sin(\\theta + 45^\\circ)",
+        "explanation": "Combining the two terms gives amplitude $\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Bound the denominator",
+        "workingLatex": "4 - \\sqrt2 \\le 4 + \\sqrt2\\sin(\\theta + 45^\\circ) \\le 4 + \\sqrt2",
+        "explanation": "The sine part ranges over $[-\\sqrt2, \\sqrt2]$, shifting the denominator around $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Note the denominator stays positive",
+        "workingLatex": "4 - \\sqrt2 \\approx 2.59 > 0",
+        "explanation": "Since the smallest denominator is positive, the fraction is always defined and positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Greatest value of the fraction",
+        "workingLatex": "\\frac{1}{4 - \\sqrt2}",
+        "explanation": "The fraction is greatest when the denominator is smallest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Least value of the fraction",
+        "workingLatex": "\\frac{1}{4 + \\sqrt2}",
+        "explanation": "The fraction is least when the denominator is largest.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the results",
+        "workingLatex": "\\text{greatest} = \\frac{1}{4 - \\sqrt2}, \\quad \\text{least} = \\frac{1}{4 + \\sqrt2}",
+        "explanation": "These exact fractions are the extreme values; rationalising is optional.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Greatest $= \\dfrac{1}{4 - \\sqrt2}$, least $= \\dfrac{1}{4 + \\sqrt2}$."
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q057",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "parametric modelling",
+    "normal",
+    "parabola",
+    "general"
+  ],
+  "questionText": "A curve has parametric equations $x = at^2$, $y = 2at$. Show that the normal at the point with parameter $p$ has equation $y + px = 2ap + ap^3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the point with parameter p",
+        "workingLatex": "(ap^2, 2ap)",
+        "explanation": "Substituting $t = p$ gives the general point on the parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the tangent gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2a}{2at} = \\frac{1}{t} = \\frac{1}{p}",
+        "explanation": "The parametric gradient is $\\frac{1}{p}$ at this point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the normal gradient",
+        "workingLatex": "m_{\\text{normal}} = -p",
+        "explanation": "The normal gradient is the negative reciprocal of $\\frac{1}{p}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the point-gradient form",
+        "workingLatex": "y - 2ap = -p(x - ap^2)",
+        "explanation": "Using the general point and the normal gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Expand",
+        "workingLatex": "y - 2ap = -px + ap^3",
+        "explanation": "Distributing $-p$ over the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rearrange to the required form",
+        "workingLatex": "y + px = 2ap + ap^3",
+        "explanation": "Collecting terms gives the standard equation of the normal to a parabola.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y + px = 2ap + ap^3$"
+  }
+}

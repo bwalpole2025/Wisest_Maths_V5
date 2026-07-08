@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "double angle",
+    "simplify",
+    "sine"
+  ],
+  "questionText": "Write $2\\sin 3\\theta\\cos 3\\theta$ as a single trigonometric term.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall the double angle formula for sine",
+        "workingLatex": "\\sin 2X = 2\\sin X\\cos X",
+        "explanation": "The expression matches the right-hand side of the sine double angle formula, read in reverse.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the inner angle",
+        "workingLatex": "X = 3\\theta",
+        "explanation": "Comparing $2\\sin 3\\theta\\cos 3\\theta$ with $2\\sin X\\cos X$ shows $X = 3\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply the formula",
+        "workingLatex": "2\\sin 3\\theta\\cos 3\\theta = \\sin(2\\cdot 3\\theta)",
+        "explanation": "Substituting $X = 3\\theta$ folds the product into a single sine of the doubled angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the angle",
+        "workingLatex": "= \\sin 6\\theta",
+        "explanation": "Doubling $3\\theta$ gives $6\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check with a value",
+        "workingLatex": "\\theta = 15^\\circ: 2\\sin 45^\\circ\\cos 45^\\circ = 1 = \\sin 90^\\circ \\;\\checkmark",
+        "explanation": "Testing $\\theta = 15^\\circ$ gives $1$ on both sides, confirming the simplification.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "2\\sin 3\\theta\\cos 3\\theta = \\sin 6\\theta",
+        "explanation": "The product simplifies to a single sine term.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 6\\theta$"
+  }
+}

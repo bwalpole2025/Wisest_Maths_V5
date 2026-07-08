@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q024",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "tangent"
+  ],
+  "questionText": "Prove that $\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\tan\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose the useful form of the numerator",
+        "workingLatex": "1 - \\cos 2\\theta = 1 - (1 - 2\\sin^2\\theta)",
+        "explanation": "Using $\\cos 2\\theta = 1 - 2\\sin^2\\theta$ is deliberate so the constants cancel and a sine squared remains.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Simplify the numerator",
+        "workingLatex": "1 - \\cos 2\\theta = 2\\sin^2\\theta",
+        "explanation": "The $1$ and $-1$ cancel, leaving $2\\sin^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator",
+        "workingLatex": "\\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "The denominator becomes the standard double angle expansion.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Form the fraction",
+        "workingLatex": "\\frac{1 - \\cos 2\\theta}{\\sin 2\\theta} = \\frac{2\\sin^2\\theta}{2\\sin\\theta\\cos\\theta}",
+        "explanation": "Substituting both parts gives a fraction ready to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel common factors",
+        "workingLatex": "= \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "Cancelling the $2$ and one sine leaves sine over cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Recognise the result",
+        "workingLatex": "= \\tan\\theta \\;\\blacksquare",
+        "explanation": "This is tangent, matching the right-hand side. This identity is the half-angle tangent result.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1 - \\cos 2\\theta}{\\sin 2\\theta} \\equiv \\tan\\theta$"
+  }
+}

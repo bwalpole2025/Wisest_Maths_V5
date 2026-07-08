@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q034",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "secant",
+    "cosecant"
+  ],
+  "questionText": "Prove that $\\tan\\theta + \\cot\\theta \\equiv \\sec\\theta\\csc\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = \\tan\\theta + \\cot\\theta",
+        "explanation": "We begin on the left and rewrite both terms in sine and cosine so they can be combined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite in sine and cosine",
+        "workingLatex": "= \\frac{\\sin\\theta}{\\cos\\theta} + \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Tangent is sine over cosine and cotangent is cosine over sine, giving two fractions to add.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Form a common denominator",
+        "workingLatex": "= \\frac{\\sin^2\\theta + \\cos^2\\theta}{\\cos\\theta\\sin\\theta}",
+        "explanation": "The common denominator is $\\cos\\theta\\sin\\theta$; adding the numerators produces $\\sin^2\\theta + \\cos^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta = 1",
+        "explanation": "The numerator is the Pythagorean identity, which equals $1$, dramatically simplifying the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute the numerator",
+        "workingLatex": "= \\frac{1}{\\cos\\theta\\sin\\theta}",
+        "explanation": "With the top equal to $1$, the expression becomes a single reciprocal of a product.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Split the reciprocal into two factors",
+        "workingLatex": "= \\frac{1}{\\cos\\theta}\\cdot\\frac{1}{\\sin\\theta}",
+        "explanation": "A reciprocal of a product is the product of the reciprocals, separating cosine and sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Recognise secant and cosecant",
+        "workingLatex": "= \\sec\\theta\\csc\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "Each reciprocal is a named function, giving $\\sec\\theta\\csc\\theta$, exactly the right-hand side.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\tan\\theta + \\cot\\theta \\equiv \\sec\\theta\\csc\\theta$"
+  }
+}

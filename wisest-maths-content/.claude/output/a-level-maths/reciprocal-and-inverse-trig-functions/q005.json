@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q005",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "reciprocal trig",
+    "cosecant",
+    "exact values"
+  ],
+  "questionText": "Find the exact value of $\\csc 30^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write cosecant as one over sine",
+        "workingLatex": "\\csc 30^\\circ = \\frac{1}{\\sin 30^\\circ}",
+        "explanation": "Converting cosecant into a sine expression lets us use the exact values we already know from the special triangles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the exact value of sine 30 degrees",
+        "workingLatex": "\\sin 30^\\circ = \\frac{1}{2}",
+        "explanation": "This exact value comes from the $30$-$60$-$90$ triangle and is one of the standard results to memorise.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the value",
+        "workingLatex": "\\csc 30^\\circ = \\frac{1}{\\;\\frac{1}{2}\\;}",
+        "explanation": "Replacing sine with a half reduces the problem to a reciprocal of a simple fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate the reciprocal",
+        "workingLatex": "\\frac{1}{\\;\\frac{1}{2}\\;} = 2",
+        "explanation": "The reciprocal of one half is two, so the calculation resolves cleanly to a whole number.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Check the answer is sensible",
+        "workingLatex": "|\\csc\\theta| \\ge 1 \\;\\checkmark",
+        "explanation": "Cosecant is always at least $1$ in magnitude, and $2$ meets this requirement, confirming the result is plausible.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\csc 30^\\circ = 2",
+        "explanation": "This is the exact answer, needing no decimal approximation.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\csc 30^\\circ = 2$"
+  }
+}

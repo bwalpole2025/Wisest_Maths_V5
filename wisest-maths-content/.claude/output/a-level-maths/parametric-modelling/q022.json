@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric modelling",
+    "tangent",
+    "trig"
+  ],
+  "questionText": "A curve has parametric equations $x = 3\\cos\\theta$, $y = 2\\sin\\theta$. Find the gradient of the curve at $\\theta = \\dfrac{\\pi}{4}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate each equation",
+        "workingLatex": "\\frac{dx}{d\\theta} = -3\\sin\\theta, \\quad \\frac{dy}{d\\theta} = 2\\cos\\theta",
+        "explanation": "Differentiating the trig positions with respect to $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Form the gradient",
+        "workingLatex": "\\frac{dy}{dx} = \\frac{2\\cos\\theta}{-3\\sin\\theta}",
+        "explanation": "Dividing the two derivatives.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2}{3}\\cot\\theta",
+        "explanation": "Writing cosine over sine as cotangent tidies the gradient.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Evaluate at the given angle",
+        "workingLatex": "\\cot\\frac{\\pi}{4} = 1 \\;\\Rightarrow\\; \\frac{dy}{dx} = -\\frac{2}{3}",
+        "explanation": "Since $\\cot\\frac{\\pi}{4} = 1$, the gradient is $-\\frac{2}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\frac{dy}{dx} = -\\frac{2}{3}",
+        "explanation": "This is the gradient at $\\theta = \\frac{\\pi}{4}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{dy}{dx} = -\\dfrac{2}{3}$"
+  }
+}

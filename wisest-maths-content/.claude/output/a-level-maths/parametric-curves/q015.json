@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q015",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "double angle"
+  ],
+  "questionText": "A curve has parametric equations $x = \\sin\\theta$, $y = \\cos 2\\theta$. Find the Cartesian equation.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose a double angle form matching x",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
+        "explanation": "Since $x = \\sin\\theta$, using the sine form of the double angle lets us write $y$ directly in terms of $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute x for sine",
+        "workingLatex": "y = 1 - 2\\sin^2\\theta = 1 - 2x^2",
+        "explanation": "Replacing $\\sin\\theta$ with $x$ eliminates the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the Cartesian equation",
+        "workingLatex": "y = 1 - 2x^2",
+        "explanation": "This is a downward parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the domain from the parameter",
+        "workingLatex": "-1 \\le \\sin\\theta \\le 1 \\;\\Rightarrow\\; -1 \\le x \\le 1",
+        "explanation": "Because $x = \\sin\\theta$, the $x$-values are restricted to $[-1, 1]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer with domain",
+        "workingLatex": "y = 1 - 2x^2, \\; -1 \\le x \\le 1",
+        "explanation": "The domain restriction is important: only part of the parabola is traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 1 - 2x^2$ for $-1 \\le x \\le 1$."
+  }
+}

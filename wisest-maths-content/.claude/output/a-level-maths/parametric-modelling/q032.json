@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q032",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "displacement",
+    "coordinates"
+  ],
+  "questionText": "A particle has position $x = t^2$, $y = 2t$ (metres) at time $t$ seconds. Find the magnitude of the displacement between $t = 1$ and $t = 3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the position at t = 1",
+        "workingLatex": "(1, 2)",
+        "explanation": "Substituting $t = 1$ into both position equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the position at t = 3",
+        "workingLatex": "(9, 6)",
+        "explanation": "Substituting $t = 3$ gives the later position.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the displacement",
+        "workingLatex": "\\text{displacement} = \\sqrt{(9 - 1)^2 + (6 - 2)^2}",
+        "explanation": "Displacement is the straight-line distance between the two positions, regardless of the path taken.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compute the differences",
+        "workingLatex": "= \\sqrt{8^2 + 4^2} = \\sqrt{64 + 16}",
+        "explanation": "The changes are $8$ horizontally and $4$ vertically.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "= \\sqrt{80} = 4\\sqrt{5} \\approx 8.9 \\text{ m}",
+        "explanation": "Since $80 = 16 \\times 5$, the displacement is $4\\sqrt{5}$ m.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Displacement $= 4\\sqrt{5} \\approx 8.9$ m"
+  }
+}

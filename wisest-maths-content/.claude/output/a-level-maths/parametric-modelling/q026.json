@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q026",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "collision",
+    "two particles"
+  ],
+  "questionText": "Particle A has position $x = 2t$, $y = t^2$ and particle B has position $x = 12 - t$, $y = 9$ (metres, $t$ in seconds). Determine whether the particles collide, and if so, when and where.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the collision condition",
+        "workingLatex": "x_A = x_B \\text{ and } y_A = y_B \\text{ at the same } t",
+        "explanation": "A collision requires both coordinates to match at the same instant, not just the paths to cross.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Match the y-coordinates",
+        "workingLatex": "t^2 = 9 \\;\\Rightarrow\\; t = 3 \\; (t \\ge 0)",
+        "explanation": "Setting $y_A = y_B$ gives $t = 3$ (taking the physically sensible positive time).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Check the x-coordinates at that time",
+        "workingLatex": "x_A = 2(3) = 6, \\quad x_B = 12 - 3 = 9",
+        "explanation": "At $t = 3$, particle A is at $x = 6$ and particle B is at $x = 9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compare",
+        "workingLatex": "6 \\ne 9",
+        "explanation": "The $x$-coordinates differ at $t = 3$, so the particles are not at the same point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Conclude",
+        "workingLatex": "\\text{no collision}",
+        "explanation": "Since there is no time when both coordinates agree, the particles do not collide.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The particles do not collide (at $t = 3$ they share $y$ but not $x$)."
+  }
+}

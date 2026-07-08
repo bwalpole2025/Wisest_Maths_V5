@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q017",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "stationary point",
+    "coordinates"
+  ],
+  "questionText": "A curve has parametric equations $x = t^3 - 3t$, $y = t^2$. Find the coordinates of the stationary point of the curve.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the stationary condition",
+        "workingLatex": "\\frac{dy}{dx} = 0 \\;\\Leftrightarrow\\; \\frac{dy}{dt} = 0 \\; (\\text{with } \\tfrac{dx}{dt} \\ne 0)",
+        "explanation": "A stationary point has zero gradient, which requires the numerator $\\frac{dy}{dt}$ to be zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y",
+        "workingLatex": "\\frac{dy}{dt} = 2t",
+        "explanation": "Differentiating $y = t^2$ gives $2t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for t",
+        "workingLatex": "2t = 0 \\;\\Rightarrow\\; t = 0",
+        "explanation": "The vertical rate of change is zero at $t = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the x-derivative is nonzero",
+        "workingLatex": "\\frac{dx}{dt} = 3t^2 - 3 = -3 \\ne 0 \\text{ at } t = 0",
+        "explanation": "At $t = 0$ the horizontal rate of change is $-3$, so the gradient is genuinely zero, not undefined.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the coordinates",
+        "workingLatex": "x = 0^3 - 3(0) = 0, \\quad y = 0^2 = 0",
+        "explanation": "Substituting $t = 0$ into both equations gives the point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "(0, 0)",
+        "explanation": "The stationary point is at the origin.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(0, 0)$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "distance",
+    "coordinates"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. Find the distance between the points on the curve at $t = 1$ and $t = 4$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the first point",
+        "workingLatex": "t = 1: (1^2, 2\\cdot 1) = (1, 2)",
+        "explanation": "Substituting $t = 1$ into both parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the second point",
+        "workingLatex": "t = 4: (4^2, 2\\cdot 4) = (16, 8)",
+        "explanation": "Substituting $t = 4$ gives the second point.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set up the distance formula",
+        "workingLatex": "d = \\sqrt{(16 - 1)^2 + (8 - 2)^2}",
+        "explanation": "The distance between two points uses the differences in their coordinates.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Compute the differences",
+        "workingLatex": "d = \\sqrt{15^2 + 6^2} = \\sqrt{225 + 36}",
+        "explanation": "The horizontal difference is $15$ and the vertical difference is $6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "d = \\sqrt{261} = 3\\sqrt{29}",
+        "explanation": "Since $261 = 9 \\times 29$, the surd simplifies to $3\\sqrt{29}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$d = 3\\sqrt{29}$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q053",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "proof",
+  "tags": [
+    "harmonic form",
+    "proof",
+    "equivalent forms"
+  ],
+  "questionText": "Show that $3\\sin\\theta + 4\\cos\\theta$ can be written as both $5\\sin(\\theta + \\alpha)$ and $5\\cos(\\theta - \\beta)$, and find the relationship between $\\alpha$ and $\\beta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the sine form",
+        "workingLatex": "3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + \\alpha), \\quad \\tan\\alpha = \\frac{4}{3}",
+        "explanation": "The standard sine form has amplitude $5$ and $\\tan\\alpha = \\frac{4}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Use the sine-cosine shift identity",
+        "workingLatex": "\\sin X = \\cos(X - 90^\\circ)",
+        "explanation": "A sine can always be rewritten as a cosine shifted by $90^\\circ$; this converts the form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Apply with X = θ + α",
+        "workingLatex": "5\\sin(\\theta + \\alpha) = 5\\cos(\\theta + \\alpha - 90^\\circ)",
+        "explanation": "Substituting the shift gives a cosine form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Rearrange to match the target",
+        "workingLatex": "5\\cos(\\theta + \\alpha - 90^\\circ) = 5\\cos(\\theta - (90^\\circ - \\alpha))",
+        "explanation": "Writing the phase as a subtraction matches the required $5\\cos(\\theta - \\beta)$ form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Identify beta",
+        "workingLatex": "\\beta = 90^\\circ - \\alpha",
+        "explanation": "Comparing gives the relationship: the cosine phase is the complement of the sine phase.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State numerical values",
+        "workingLatex": "\\alpha \\approx 53.13^\\circ, \\quad \\beta \\approx 36.87^\\circ",
+        "explanation": "The two phase angles are complementary, summing to $90^\\circ$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\beta = 90^\\circ - \\alpha$ (so $\\alpha \\approx 53.13^\\circ$, $\\beta \\approx 36.87^\\circ$)."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q025",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "equations",
+    "cotangent",
+    "solving"
+  ],
+  "questionText": "Solve $\\cot\\theta = \\sqrt{3}$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Convert cotangent to tangent",
+        "workingLatex": "\\cot\\theta = \\sqrt{3} \\;\\Rightarrow\\; \\frac{1}{\\tan\\theta} = \\sqrt{3}",
+        "explanation": "Cotangent equations become manageable once rewritten in tangent, whose inverse we can evaluate directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rearrange for tangent",
+        "workingLatex": "\\tan\\theta = \\frac{1}{\\sqrt{3}} = \\frac{\\sqrt{3}}{3}",
+        "explanation": "Taking the reciprocal gives tangent equal to $\\frac{1}{\\sqrt{3}}$, a known exact value corresponding to $30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the principal value",
+        "workingLatex": "\\theta = \\tan^{-1}\\left(\\tfrac{1}{\\sqrt{3}}\\right) = 30^\\circ",
+        "explanation": "The inverse tangent of $\\frac{1}{\\sqrt{3}}$ is $30^\\circ$, the first solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Use the period of tangent",
+        "workingLatex": "\\tan\\theta \\text{ has period } 180^\\circ",
+        "explanation": "Tangent repeats every $180^\\circ$, so further solutions are found by adding multiples of $180^\\circ$ to the principal value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the second solution",
+        "workingLatex": "\\theta = 30^\\circ + 180^\\circ = 210^\\circ",
+        "explanation": "Adding one period gives the second solution at $210^\\circ$, which is still inside the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check for further solutions",
+        "workingLatex": "30^\\circ + 360^\\circ = 390^\\circ > 360^\\circ",
+        "explanation": "Adding another period exceeds the interval, so there are no more solutions to include.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta = 30^\\circ \\text{ or } \\theta = 210^\\circ",
+        "explanation": "These are the two solutions of the cotangent equation in the given interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ \\text{ or } 210^\\circ$"
+  }
+}

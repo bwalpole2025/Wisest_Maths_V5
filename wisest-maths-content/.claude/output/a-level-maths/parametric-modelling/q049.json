@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q049",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "cycloid",
+    "speed"
+  ],
+  "questionText": "A point on a rolling wheel has position $x = t - \\sin t$, $y = 1 - \\cos t$ (metres, $t$ in seconds). Find its speed at $t = \\pi$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 1 - \\cos t, \\quad v_y = \\sin t",
+        "explanation": "Differentiating each position component; the derivative of $t - \\sin t$ is $1 - \\cos t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the speed",
+        "workingLatex": "\\text{speed} = \\sqrt{(1 - \\cos t)^2 + \\sin^2 t}",
+        "explanation": "Speed is the magnitude of the velocity vector.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the square",
+        "workingLatex": "= \\sqrt{1 - 2\\cos t + \\cos^2 t + \\sin^2 t}",
+        "explanation": "Expanding $(1 - \\cos t)^2$ and keeping the $\\sin^2 t$ term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "= \\sqrt{2 - 2\\cos t}",
+        "explanation": "Since $\\cos^2 t + \\sin^2 t = 1$, the expression simplifies to $2 - 2\\cos t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute t = π",
+        "workingLatex": "= \\sqrt{2 - 2\\cos\\pi} = \\sqrt{2 - 2(-1)}",
+        "explanation": "At $t = \\pi$, cosine is $-1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Simplify",
+        "workingLatex": "= \\sqrt{4} = 2 \\text{ m/s}",
+        "explanation": "The speed at $t = \\pi$ is $2$ m/s (the fastest point of a cycloid, at the top of the wheel).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Speed $= 2$ m/s"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "inverse trig",
+    "arctan",
+    "exact values",
+    "radians"
+  ],
+  "questionText": "Find the exact value of $\\arctan(1)$, giving your answer in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Interpret the inverse tangent",
+        "workingLatex": "\\arctan(1) = \\theta \\;\\Leftrightarrow\\; \\tan\\theta = 1",
+        "explanation": "Inverse tangent asks which angle has a tangent of $1$, so we look for the angle $\\theta$ satisfying $\\tan\\theta = 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the principal range of arctan",
+        "workingLatex": "-\\frac{\\pi}{2} < \\theta < \\frac{\\pi}{2}",
+        "explanation": "Arctangent returns angles strictly between $-\\frac{\\pi}{2}$ and $\\frac{\\pi}{2}$, so we must choose our answer from this open interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall which standard angle has tangent one",
+        "workingLatex": "\\tan\\frac{\\pi}{4} = 1",
+        "explanation": "In the $45$-$45$-$90$ triangle opposite equals adjacent, so the tangent of $45^\\circ$, or $\\frac{\\pi}{4}$, is exactly $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the angle lies in range",
+        "workingLatex": "-\\frac{\\pi}{2} < \\frac{\\pi}{4} < \\frac{\\pi}{2} \\;\\checkmark",
+        "explanation": "The angle $\\frac{\\pi}{4}$ lies inside the arctangent range, so it is the valid output.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the uniqueness",
+        "workingLatex": "\\tan\\theta \\text{ increasing on } \\left(-\\tfrac{\\pi}{2}, \\tfrac{\\pi}{2}\\right)",
+        "explanation": "Tangent rises steadily across this interval, hitting each value only once, so $\\frac{\\pi}{4}$ is the unique answer.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\arctan(1) = \\frac{\\pi}{4}",
+        "explanation": "This is the exact value in radians.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\arctan(1) = \\dfrac{\\pi}{4}$"
+  }
+}

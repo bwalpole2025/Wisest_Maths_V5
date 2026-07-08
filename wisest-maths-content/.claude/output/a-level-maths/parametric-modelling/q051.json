@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "velocity",
+    "specific direction"
+  ],
+  "questionText": "A particle has position $x = t^2 - 4t$, $y = t^2 + 2t$ (metres) at time $t$ seconds. Find the time at which the particle is moving parallel to the line $y = x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition",
+        "workingLatex": "\\frac{dy}{dx} = 1",
+        "explanation": "Moving parallel to $y = x$ means the direction of motion has gradient $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the velocity components",
+        "workingLatex": "\\frac{dx}{dt} = 2t - 4, \\quad \\frac{dy}{dt} = 2t + 2",
+        "explanation": "Differentiating each position component.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the gradient to 1",
+        "workingLatex": "\\frac{2t + 2}{2t - 4} = 1",
+        "explanation": "The direction gradient is the ratio of the velocity components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Cross-multiply",
+        "workingLatex": "2t + 2 = 2t - 4",
+        "explanation": "Clearing the fraction to solve for $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Analyse the result",
+        "workingLatex": "2 = -4 \\text{ (impossible)}",
+        "explanation": "The $t$ terms cancel, leaving a false statement, so no time satisfies the condition.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude",
+        "workingLatex": "\\text{never moves parallel to } y = x",
+        "explanation": "Since the velocity components differ by a constant, the direction is never exactly gradient $1$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "There is no such time; the particle never moves parallel to $y = x$."
+  }
+}

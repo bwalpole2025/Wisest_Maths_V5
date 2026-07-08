@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q041",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "equations",
+    "quadratic",
+    "rejecting roots"
+  ],
+  "questionText": "Solve $5\\sin\\theta = 2 + \\cos 2\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose the sine form of the double angle",
+        "workingLatex": "\\cos 2\\theta = 1 - 2\\sin^2\\theta",
+        "explanation": "The other terms involve sine, so this form yields a quadratic in $\\sin\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute",
+        "workingLatex": "5\\sin\\theta = 2 + 1 - 2\\sin^2\\theta",
+        "explanation": "Replacing $\\cos 2\\theta$ puts everything in sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to standard form",
+        "workingLatex": "2\\sin^2\\theta + 5\\sin\\theta - 3 = 0",
+        "explanation": "Collecting terms gives a quadratic in $\\sin\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise",
+        "workingLatex": "(2\\sin\\theta - 1)(\\sin\\theta + 3) = 0",
+        "explanation": "The factorisation checks out via the cross terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Reject the impossible root",
+        "workingLatex": "\\sin\\theta = -3 \\text{ rejected since } |\\sin\\theta| \\le 1",
+        "explanation": "Sine can never be $-3$, so that factor gives no solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve the valid factor",
+        "workingLatex": "\\sin\\theta = \\tfrac{1}{2}",
+        "explanation": "The remaining factor gives sine equal to one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find the angles",
+        "workingLatex": "\\theta = 30^\\circ, 150^\\circ",
+        "explanation": "Sine one half gives solutions in quadrants I and II.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the solutions",
+        "workingLatex": "\\theta = 30^\\circ, 150^\\circ",
+        "explanation": "These are the only solutions, since the other factor was impossible.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ, 150^\\circ$"
+  }
+}

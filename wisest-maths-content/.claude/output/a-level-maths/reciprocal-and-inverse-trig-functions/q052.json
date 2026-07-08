@@ -1,0 +1,93 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q052",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "fractions",
+    "secant"
+  ],
+  "questionText": "Prove that $\\dfrac{1}{\\sec\\theta - 1} + \\dfrac{1}{\\sec\\theta + 1} \\equiv 2\\cot\\theta\\csc\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = \\frac{1}{\\sec\\theta - 1} + \\frac{1}{\\sec\\theta + 1}",
+        "explanation": "We add the two fractions first, which requires a common denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Use the common denominator",
+        "workingLatex": "= \\frac{(\\sec\\theta + 1) + (\\sec\\theta - 1)}{(\\sec\\theta - 1)(\\sec\\theta + 1)}",
+        "explanation": "The common denominator is the product of the two denominators; the numerator sums the cross terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the numerator",
+        "workingLatex": "= \\frac{2\\sec\\theta}{(\\sec\\theta - 1)(\\sec\\theta + 1)}",
+        "explanation": "The $+1$ and $-1$ cancel in the numerator, leaving $2\\sec\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the denominator as a difference of squares",
+        "workingLatex": "(\\sec\\theta - 1)(\\sec\\theta + 1) = \\sec^2\\theta - 1",
+        "explanation": "The conjugate product gives a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "\\sec^2\\theta - 1 = \\tan^2\\theta",
+        "explanation": "This difference is exactly $\\tan^2\\theta$, a key simplification.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the fraction",
+        "workingLatex": "= \\frac{2\\sec\\theta}{\\tan^2\\theta}",
+        "explanation": "Substituting the denominator gives a single, cleaner fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Convert to sine and cosine",
+        "workingLatex": "= \\frac{2\\cdot\\frac{1}{\\cos\\theta}}{\\frac{\\sin^2\\theta}{\\cos^2\\theta}}",
+        "explanation": "Writing secant and tangent in basic functions exposes how the cosines will combine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Simplify the compound fraction",
+        "workingLatex": "= \\frac{2}{\\cos\\theta}\\times\\frac{\\cos^2\\theta}{\\sin^2\\theta} = \\frac{2\\cos\\theta}{\\sin^2\\theta}",
+        "explanation": "Multiplying by the reciprocal and cancelling one cosine leaves $\\frac{2\\cos\\theta}{\\sin^2\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Split into reciprocal functions",
+        "workingLatex": "= 2\\cdot\\frac{\\cos\\theta}{\\sin\\theta}\\cdot\\frac{1}{\\sin\\theta} = 2\\cot\\theta\\csc\\theta",
+        "explanation": "Separating the factors reveals cotangent (cosine over sine) times cosecant (one over sine), which is the right-hand side.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 10,
+        "description": "Conclude the proof",
+        "workingLatex": "\\frac{1}{\\sec\\theta - 1} + \\frac{1}{\\sec\\theta + 1} \\equiv 2\\cot\\theta\\csc\\theta \\;\\blacksquare",
+        "explanation": "The transformed left-hand side matches the right-hand side exactly.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1}{\\sec\\theta - 1} + \\dfrac{1}{\\sec\\theta + 1} \\equiv 2\\cot\\theta\\csc\\theta$"
+  }
+}

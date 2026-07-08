@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q055",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "range",
+    "values of k"
+  ],
+  "questionText": "Find the set of values of $k$ for which the equation $7\\sin\\theta + 24\\cos\\theta = k$ has at least one solution.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write in R-form",
+        "workingLatex": "7\\sin\\theta + 24\\cos\\theta = 25\\sin(\\theta + \\alpha)",
+        "explanation": "The amplitude is $R = \\sqrt{49 + 576} = 25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "State the range of the expression",
+        "workingLatex": "-25 \\le 25\\sin(\\theta + \\alpha) \\le 25",
+        "explanation": "The expression takes every value between $-25$ and $25$ as $\\theta$ varies.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Relate to k",
+        "workingLatex": "k = 25\\sin(\\theta + \\alpha)",
+        "explanation": "A solution exists precisely when $k$ is an achievable value of the expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the condition",
+        "workingLatex": "-25 \\le k \\le 25",
+        "explanation": "Any $k$ in this closed interval is attained, since sine is continuous and reaches every value in $[-1,1]$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Note the boundary cases",
+        "workingLatex": "k = \\pm 25 \\text{ give exactly one solution each}",
+        "explanation": "At the extremes the sine touches $\\pm 1$ once per revolution, so those values still count as having a solution.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$-25 \\le k \\le 25$"
+  }
+}

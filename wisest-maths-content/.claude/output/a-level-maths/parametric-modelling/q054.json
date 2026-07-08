@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "projectile",
+    "launch angle"
+  ],
+  "questionText": "A projectile is launched with position $x = 12t$, $y = 16t - 5t^2$ (metres). Find its initial speed and the angle of projection above the horizontal.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 12, \\quad v_y = 16 - 10t",
+        "explanation": "Differentiating each position component gives the velocities.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Evaluate at launch (t = 0)",
+        "workingLatex": "v_x = 12, \\quad v_y = 16",
+        "explanation": "The initial velocity is the velocity at $t = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the initial speed",
+        "workingLatex": "\\text{speed} = \\sqrt{12^2 + 16^2} = \\sqrt{400} = 20",
+        "explanation": "Combining the components with Pythagoras gives $20$ m/s.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the angle",
+        "workingLatex": "\\tan\\alpha = \\frac{16}{12} = \\frac{4}{3}",
+        "explanation": "The angle of projection has tangent equal to the ratio of vertical to horizontal velocity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the angle",
+        "workingLatex": "\\alpha = \\tan^{-1}\\frac{4}{3} \\approx 53.1^\\circ",
+        "explanation": "The inverse tangent gives the launch angle.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Initial speed $20$ m/s at $\\approx 53.1^\\circ$ above the horizontal."
+  }
+}

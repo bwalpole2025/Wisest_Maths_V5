@@ -1,0 +1,58 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 6,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "difference of squares"
+  ],
+  "questionText": "Prove that $\\cos^4\\theta - \\sin^4\\theta \\equiv \\cos 2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recognise a difference of squares",
+        "workingLatex": "\\cos^4\\theta - \\sin^4\\theta = (\\cos^2\\theta)^2 - (\\sin^2\\theta)^2",
+        "explanation": "The fourth powers are squares of squares, so a difference-of-squares factorisation applies.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise",
+        "workingLatex": "= (\\cos^2\\theta - \\sin^2\\theta)(\\cos^2\\theta + \\sin^2\\theta)",
+        "explanation": "Applying $a^2 - b^2 = (a-b)(a+b)$ gives two brackets.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the second bracket",
+        "workingLatex": "\\cos^2\\theta + \\sin^2\\theta = 1",
+        "explanation": "The second bracket is the Pythagorean identity, equal to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute",
+        "workingLatex": "= \\cos^2\\theta - \\sin^2\\theta",
+        "explanation": "Multiplying by $1$ leaves only the first bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the double angle",
+        "workingLatex": "= \\cos 2\\theta \\;\\blacksquare",
+        "explanation": "This is the first form of $\\cos 2\\theta$, completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos^4\\theta - \\sin^4\\theta \\equiv \\cos 2\\theta$"
+  }
+}

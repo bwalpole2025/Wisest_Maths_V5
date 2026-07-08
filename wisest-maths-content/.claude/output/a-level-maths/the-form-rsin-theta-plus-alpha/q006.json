@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "Rsin",
+    "surds"
+  ],
+  "questionText": "Express $2\\sin\\theta + 2\\cos\\theta$ in the form $R\\sin(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving exact values.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the target form",
+        "workingLatex": "R\\sin(\\theta + \\alpha) = R\\cos\\alpha\\sin\\theta + R\\sin\\alpha\\cos\\theta",
+        "explanation": "The expansion prepares the coefficient comparison.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 2, \\quad R\\sin\\alpha = 2",
+        "explanation": "Both coefficients are $2$, which will make $\\alpha$ a familiar angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R",
+        "workingLatex": "R^2 = 2^2 + 2^2 = 8 \\;\\Rightarrow\\; R = 2\\sqrt2",
+        "explanation": "The sum of squares is $8$, whose root is $2\\sqrt2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{2}{2} = 1 \\;\\Rightarrow\\; \\alpha = 45^\\circ",
+        "explanation": "Equal components give $\\tan\\alpha = 1$, so $\\alpha = 45^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the final form",
+        "workingLatex": "2\\sin\\theta + 2\\cos\\theta = 2\\sqrt2\\sin(\\theta + 45^\\circ)",
+        "explanation": "Combining the exact $R$ and $\\alpha$ gives the harmonic form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$2\\sin\\theta + 2\\cos\\theta = 2\\sqrt2\\sin(\\theta + 45^\\circ)$"
+  }
+}

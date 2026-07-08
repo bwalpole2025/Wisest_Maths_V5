@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "parametric",
+    "intersection",
+    "axes"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2 - 9$, $y = t + 1$. Find where the curve crosses the $y$-axis.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition for the y-axis",
+        "workingLatex": "x = 0",
+        "explanation": "A curve meets the $y$-axis where the $x$-coordinate is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Solve for the parameter",
+        "workingLatex": "t^2 - 9 = 0 \\;\\Rightarrow\\; t = \\pm 3",
+        "explanation": "Setting $x = 0$ gives a quadratic with two solutions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find y when t = 3",
+        "workingLatex": "y = 3 + 1 = 4",
+        "explanation": "Substituting the first parameter value into the $y$-equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find y when t = -3",
+        "workingLatex": "y = -3 + 1 = -2",
+        "explanation": "Substituting the second parameter value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the points",
+        "workingLatex": "(0, 4) \\text{ and } (0, -2)",
+        "explanation": "Each parameter value gives a point on the $y$-axis.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(0, 4)$ and $(0, -2)$"
+  }
+}

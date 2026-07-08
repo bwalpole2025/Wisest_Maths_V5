@@ -1,0 +1,56 @@
+{
+  "id": "al.y2.pure.rsin-form.q007",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "harmonic form",
+    "Rcos"
+  ],
+  "questionText": "Express $7\\cos\\theta - 24\\sin\\theta$ in the form $R\\cos(\\theta + \\alpha)$ where $R > 0$ and $0 < \\alpha < 90^\\circ$, giving $\\alpha$ to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the target form",
+        "workingLatex": "R\\cos(\\theta + \\alpha) = R\\cos\\alpha\\cos\\theta - R\\sin\\alpha\\sin\\theta",
+        "explanation": "The cosine form has a minus between the terms, matching the given expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Compare coefficients",
+        "workingLatex": "R\\cos\\alpha = 7, \\quad R\\sin\\alpha = 24",
+        "explanation": "Matching the cosine term gives $7$; matching the sine term (both negative) gives $24$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find R",
+        "workingLatex": "R^2 = 7^2 + 24^2 = 625 \\;\\Rightarrow\\; R = 25",
+        "explanation": "The sum of squares is $625$ (a $7$-$24$-$25$ triangle), so $R = 25$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{24}{7} \\;\\Rightarrow\\; \\alpha \\approx 74^\\circ",
+        "explanation": "The ratio gives the tangent of $\\alpha$; the inverse tangent is about $74^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the final form",
+        "workingLatex": "7\\cos\\theta - 24\\sin\\theta = 25\\cos(\\theta + 74^\\circ)",
+        "explanation": "Combining $R$ and $\\alpha$ gives the required form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$7\\cos\\theta - 24\\sin\\theta = 25\\cos(\\theta + 74^\\circ)$"
+  }
+}

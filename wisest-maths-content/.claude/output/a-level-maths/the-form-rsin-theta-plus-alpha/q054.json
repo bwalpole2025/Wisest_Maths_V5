@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.rsin-form.q054",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving",
+    "cosine"
+  ],
+  "questionText": "Solve $5\\cos\\theta + 12\\sin\\theta + 4 = 0$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Reorder and find R",
+        "workingLatex": "12\\sin\\theta + 5\\cos\\theta, \\quad R = \\sqrt{12^2 + 5^2} = 13",
+        "explanation": "Writing sine first, the amplitude is $13$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find alpha",
+        "workingLatex": "\\tan\\alpha = \\frac{5}{12} \\;\\Rightarrow\\; \\alpha \\approx 22.62^\\circ",
+        "explanation": "The ratio gives the phase angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the equation",
+        "workingLatex": "13\\sin(\\theta + 22.62^\\circ) + 4 = 0",
+        "explanation": "Substituting the harmonic form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta + 22.62^\\circ) = -\\frac{4}{13} \\approx -0.3077",
+        "explanation": "Subtracting $4$ and dividing by $13$ gives a negative sine value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the base angles",
+        "workingLatex": "\\theta + 22.62^\\circ = 197.92^\\circ, 342.08^\\circ",
+        "explanation": "A negative sine gives third- and fourth-quadrant solutions; within the shifted interval these are the relevant values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta \\approx 175^\\circ, 319^\\circ",
+        "explanation": "Subtracting $22.62^\\circ$ and rounding gives the two solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 175^\\circ, 319^\\circ$"
+  }
+}

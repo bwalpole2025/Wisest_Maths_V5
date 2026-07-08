@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q042",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "difference of squares"
+  ],
+  "questionText": "Prove that $(\\csc\\theta - \\cot\\theta)(\\csc\\theta + \\cot\\theta) \\equiv 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = (\\csc\\theta - \\cot\\theta)(\\csc\\theta + \\cot\\theta)",
+        "explanation": "The product of a difference and a sum of the same terms signals a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Expand as a difference of squares",
+        "workingLatex": "= \\csc^2\\theta - \\cot^2\\theta",
+        "explanation": "Applying $(a-b)(a+b) = a^2 - b^2$ collapses the product neatly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the relevant identity",
+        "workingLatex": "\\csc^2\\theta = 1 + \\cot^2\\theta",
+        "explanation": "This identity relates cosecant squared and cotangent squared, exactly the two terms present.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute for cosecant squared",
+        "workingLatex": "= (1 + \\cot^2\\theta) - \\cot^2\\theta",
+        "explanation": "Replacing $\\csc^2\\theta$ shows the cotangent-squared terms are about to cancel.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Cancel and simplify",
+        "workingLatex": "= 1",
+        "explanation": "The $\\cot^2\\theta$ terms cancel, leaving the constant $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude",
+        "workingLatex": "(\\csc\\theta - \\cot\\theta)(\\csc\\theta + \\cot\\theta) \\equiv 1 \\;\\blacksquare",
+        "explanation": "The left-hand side equals $1$, matching the right-hand side, so the identity is proved.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(\\csc\\theta - \\cot\\theta)(\\csc\\theta + \\cot\\theta) \\equiv 1$"
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q066",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "rational"
+  ],
+  "questionText": "A curve has parametric equations $x = \\dfrac{t}{t + 1}$, $y = \\dfrac{t - 1}{t + 1}$ for $t \\ne -1$. Show that $y = 2x - 1$ and state the excluded point.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Rewrite x by splitting the fraction",
+        "workingLatex": "x = \\frac{t}{t+1} = 1 - \\frac{1}{t+1}",
+        "explanation": "Writing $t = (t+1) - 1$ splits the fraction into a constant plus a simple reciprocal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Rewrite y similarly",
+        "workingLatex": "y = \\frac{t - 1}{t+1} = 1 - \\frac{2}{t+1}",
+        "explanation": "Writing $t - 1 = (t+1) - 2$ splits $y$ the same way.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Isolate the common reciprocal",
+        "workingLatex": "\\frac{1}{t+1} = 1 - x",
+        "explanation": "Rearranging the $x$-expression isolates $\\frac{1}{t+1}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into y",
+        "workingLatex": "y = 1 - 2(1 - x)",
+        "explanation": "Since $\\frac{2}{t+1} = 2(1-x)$, substituting removes the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "y = 1 - 2 + 2x = 2x - 1",
+        "explanation": "Expanding gives the required linear equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find the excluded point",
+        "workingLatex": "x = 1 - \\frac{1}{t+1} \\ne 1",
+        "explanation": "Since $\\frac{1}{t+1}$ is never zero, $x$ can never equal $1$, so the point $(1, 1)$ is excluded.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = 2x - 1$, excluding the point $(1, 1)$."
+  }
+}

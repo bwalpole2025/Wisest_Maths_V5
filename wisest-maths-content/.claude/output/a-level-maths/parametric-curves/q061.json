@@ -1,0 +1,50 @@
+{
+  "id": "al.y2.pure.parametric-curves.q061",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "quartic"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^4 + 1$. Find the Cartesian equation and state the domain.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Relate the powers",
+        "workingLatex": "t^4 = (t^2)^2 = x^2",
+        "explanation": "Since $x = t^2$, the fourth power $t^4$ is $x^2$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute",
+        "workingLatex": "y = x^2 + 1",
+        "explanation": "Replacing $t^4$ with $x^2$ eliminates the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the domain",
+        "workingLatex": "x = t^2 \\ge 0",
+        "explanation": "A square is never negative, so $x \\ge 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "State the answer",
+        "workingLatex": "y = x^2 + 1, \\; x \\ge 0",
+        "explanation": "Only the right half of the parabola is traced.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$y = x^2 + 1$ for $x \\ge 0$."
+  }
+}

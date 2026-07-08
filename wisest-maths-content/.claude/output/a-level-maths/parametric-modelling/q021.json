@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q021",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "horizontal tangent",
+    "coordinates"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3 - 3t$. Find the coordinates of the points where the curve has a horizontal tangent.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the condition",
+        "workingLatex": "\\frac{dy}{dt} = 0",
+        "explanation": "A horizontal tangent requires the vertical rate of change to be zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Differentiate y",
+        "workingLatex": "\\frac{dy}{dt} = 3t^2 - 3",
+        "explanation": "Differentiating $y = t^3 - 3t$ gives $3t^2 - 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Solve for t",
+        "workingLatex": "3t^2 - 3 = 0 \\;\\Rightarrow\\; t = \\pm 1",
+        "explanation": "Setting the derivative to zero gives two parameter values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the point for t = 1",
+        "workingLatex": "x = 1, \\; y = 1 - 3 = -2 \\;\\Rightarrow\\; (1, -2)",
+        "explanation": "Substituting $t = 1$ into both equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the point for t = -1",
+        "workingLatex": "x = 1, \\; y = -1 + 3 = 2 \\;\\Rightarrow\\; (1, 2)",
+        "explanation": "Substituting $t = -1$; note the same $x$ but different $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the answer",
+        "workingLatex": "(1, -2) \\text{ and } (1, 2)",
+        "explanation": "These are the two points with horizontal tangents.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(1, -2)$ and $(1, 2)$"
+  }
+}

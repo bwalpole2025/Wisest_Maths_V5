@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.rsin-form.q014",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $3\\sin\\theta + 4\\cos\\theta = 2$ for $0^\\circ \\le \\theta < 360^\\circ$, giving answers to the nearest degree. Use $3\\sin\\theta + 4\\cos\\theta = 5\\sin(\\theta + 53.13^\\circ)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute the harmonic form",
+        "workingLatex": "5\\sin(\\theta + 53.13^\\circ) = 2",
+        "explanation": "Using the given harmonic form replaces the two-term expression with a single sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Isolate the sine",
+        "workingLatex": "\\sin(\\theta + 53.13^\\circ) = 0.4",
+        "explanation": "Dividing by $5$ gives the sine equal to $0.4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Set the shifted interval",
+        "workingLatex": "53.13^\\circ \\le \\theta + 53.13^\\circ < 413.13^\\circ",
+        "explanation": "Adding the shift to the bounds gives the interval for the shifted angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the base solutions",
+        "workingLatex": "\\theta + 53.13^\\circ = 23.58^\\circ, 156.42^\\circ, 383.58^\\circ",
+        "explanation": "The principal value is $23.58^\\circ$; the second-quadrant partner is $156.42^\\circ$; adding $360^\\circ$ to the first gives $383.58^\\circ$, all needed to cover the shifted interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Discard out-of-range values",
+        "workingLatex": "23.58^\\circ < 53.13^\\circ \\text{ so reject}",
+        "explanation": "The value $23.58^\\circ$ is below the start of the shifted interval, so it is discarded; the other two are kept.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = 156.42^\\circ - 53.13^\\circ, \\; 383.58^\\circ - 53.13^\\circ",
+        "explanation": "Subtracting $53.13^\\circ$ recovers $\\theta$ from each valid solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta \\approx 103^\\circ, 330^\\circ",
+        "explanation": "Rounding gives the two solutions in the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta \\approx 103^\\circ, 330^\\circ$"
+  }
+}

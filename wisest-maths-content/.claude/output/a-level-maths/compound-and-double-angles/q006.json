@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q006",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "compound angles",
+    "exact values",
+    "surds",
+    "sine"
+  ],
+  "questionText": "Use the compound angle formula to find the exact value of $\\sin 75^\\circ$, writing $75^\\circ = 45^\\circ + 30^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Split the angle into known parts",
+        "workingLatex": "75^\\circ = 45^\\circ + 30^\\circ",
+        "explanation": "Writing $75^\\circ$ as a sum of two standard angles lets us use known exact values.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Apply the sine addition formula",
+        "workingLatex": "\\sin 75^\\circ = \\sin 45^\\circ\\cos 30^\\circ + \\cos 45^\\circ\\sin 30^\\circ",
+        "explanation": "The sine addition formula mixes the functions, with a plus sign matching the plus inside the bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the exact values",
+        "workingLatex": "= \\frac{\\sqrt2}{2}\\cdot\\frac{\\sqrt3}{2} + \\frac{\\sqrt2}{2}\\cdot\\frac{1}{2}",
+        "explanation": "Inserting the standard exact values sets up the arithmetic.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply out each product",
+        "workingLatex": "= \\frac{\\sqrt6}{4} + \\frac{\\sqrt2}{4}",
+        "explanation": "Each product simplifies to a surd over $4$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Combine over the common denominator",
+        "workingLatex": "= \\frac{\\sqrt6 + \\sqrt2}{4}",
+        "explanation": "The matching denominators let the numerators combine into a single expression.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check against a related value",
+        "workingLatex": "\\sin 75^\\circ = \\cos 15^\\circ \\approx 0.966",
+        "explanation": "The value is close to $1$, as expected for an angle near $90^\\circ$, and equals $\\cos 15^\\circ$ by the cofunction relationship.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the exact value",
+        "workingLatex": "\\sin 75^\\circ = \\frac{\\sqrt6 + \\sqrt2}{4}",
+        "explanation": "This is the exact value in simplest surd form.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sin 75^\\circ = \\dfrac{\\sqrt6 + \\sqrt2}{4}$"
+  }
+}

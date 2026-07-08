@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.rsin-form.q063",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "exact",
+    "radians"
+  ],
+  "questionText": "Solve $\\sqrt3\\cos\\theta - \\sin\\theta = 1$ for $0 \\le \\theta < 2\\pi$, giving exact answers in radians.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Choose the cosine form",
+        "workingLatex": "\\sqrt3\\cos\\theta - \\sin\\theta = R\\cos(\\theta + \\alpha)",
+        "explanation": "Cosine first with a minus sign matches $R\\cos(\\theta + \\alpha)$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt{3 + 1} = 2, \\quad \\tan\\alpha = \\frac{1}{\\sqrt3} \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{6}",
+        "explanation": "Amplitude $2$ and phase $\\frac{\\pi}{6}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Write the harmonic form",
+        "workingLatex": "\\sqrt3\\cos\\theta - \\sin\\theta = 2\\cos\\left(\\theta + \\frac{\\pi}{6}\\right)",
+        "explanation": "Combining gives a single cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set up the equation",
+        "workingLatex": "2\\cos\\left(\\theta + \\frac{\\pi}{6}\\right) = 1 \\;\\Rightarrow\\; \\cos\\left(\\theta + \\frac{\\pi}{6}\\right) = \\frac{1}{2}",
+        "explanation": "Dividing by $2$ gives a standard exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Set the shifted interval and solve",
+        "workingLatex": "\\theta + \\frac{\\pi}{6} = \\frac{\\pi}{3}, \\frac{5\\pi}{3}, \\frac{7\\pi}{3}",
+        "explanation": "Within $[\\frac{\\pi}{6}, 2\\pi + \\frac{\\pi}{6})$, cosine one half occurs at $\\frac{\\pi}{3}$, $\\frac{5\\pi}{3}$ and $\\frac{7\\pi}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Subtract the shift",
+        "workingLatex": "\\theta = \\frac{\\pi}{6}, \\frac{3\\pi}{2}, \\frac{13\\pi}{6}",
+        "explanation": "Subtracting $\\frac{\\pi}{6}$ from each; the last, $\\frac{13\\pi}{6}$, exceeds $2\\pi$ and is rejected.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta = \\frac{\\pi}{6}, \\frac{3\\pi}{2}",
+        "explanation": "These are the exact solutions in the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = \\dfrac{\\pi}{6}, \\dfrac{3\\pi}{2}$"
+  }
+}

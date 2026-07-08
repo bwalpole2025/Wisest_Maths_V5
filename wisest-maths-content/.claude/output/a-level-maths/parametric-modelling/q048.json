@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q048",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "intersection",
+    "line"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t^3$. Find the coordinates of the points where the curve meets the line $y = x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute into the line",
+        "workingLatex": "t^3 = t^2",
+        "explanation": "Replacing $x$ and $y$ with their parametric forms gives an equation in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Move to one side",
+        "workingLatex": "t^3 - t^2 = 0",
+        "explanation": "Rearranging keeps the $t = 0$ solution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factorise",
+        "workingLatex": "t^2(t - 1) = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 1",
+        "explanation": "Taking out $t^2$ gives the roots.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the points",
+        "workingLatex": "t = 0: (0, 0); \\quad t = 1: (1, 1)",
+        "explanation": "Substituting each root into the parametric equations.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "(0, 0) \\text{ and } (1, 1)",
+        "explanation": "These are the intersection points, both lying on $y = x$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$(0, 0)$ and $(1, 1)$"
+  }
+}

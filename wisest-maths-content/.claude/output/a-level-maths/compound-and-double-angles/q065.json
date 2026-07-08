@@ -1,0 +1,86 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 9,
+  "answerType": "proof",
+  "tags": [
+    "double angle",
+    "identities",
+    "proof",
+    "tangent"
+  ],
+  "questionText": "Prove that $\\dfrac{1 - \\cos 2\\theta + \\sin 2\\theta}{1 + \\cos 2\\theta + \\sin 2\\theta} \\equiv \\tan\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Replace the double angles in the numerator",
+        "workingLatex": "1 - \\cos 2\\theta = 2\\sin^2\\theta, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "Using $\\cos 2\\theta = 1 - 2\\sin^2\\theta$ for the numerator makes a sine-squared term, which pairs well with the sine double angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the numerator",
+        "workingLatex": "1 - \\cos 2\\theta + \\sin 2\\theta = 2\\sin^2\\theta + 2\\sin\\theta\\cos\\theta",
+        "explanation": "Substituting both pieces gives the full numerator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Factor the numerator",
+        "workingLatex": "= 2\\sin\\theta(\\sin\\theta + \\cos\\theta)",
+        "explanation": "Taking out $2\\sin\\theta$ exposes the common bracket.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Replace the double angles in the denominator",
+        "workingLatex": "1 + \\cos 2\\theta = 2\\cos^2\\theta, \\quad \\sin 2\\theta = 2\\sin\\theta\\cos\\theta",
+        "explanation": "Using $\\cos 2\\theta = 2\\cos^2\\theta - 1$ for the denominator makes a cosine-squared term.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the denominator",
+        "workingLatex": "1 + \\cos 2\\theta + \\sin 2\\theta = 2\\cos^2\\theta + 2\\sin\\theta\\cos\\theta",
+        "explanation": "Substituting both pieces gives the full denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Factor the denominator",
+        "workingLatex": "= 2\\cos\\theta(\\cos\\theta + \\sin\\theta)",
+        "explanation": "Taking out $2\\cos\\theta$ exposes the same bracket as the numerator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Form the ratio",
+        "workingLatex": "\\frac{2\\sin\\theta(\\sin\\theta + \\cos\\theta)}{2\\cos\\theta(\\cos\\theta + \\sin\\theta)}",
+        "explanation": "Placing the factored numerator over the factored denominator reveals the common factors.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Cancel common factors",
+        "workingLatex": "= \\frac{\\sin\\theta}{\\cos\\theta}",
+        "explanation": "The $2$ and the bracket $(\\sin\\theta + \\cos\\theta)$ cancel, leaving sine over cosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 9,
+        "description": "Conclude",
+        "workingLatex": "= \\tan\\theta \\;\\blacksquare",
+        "explanation": "This is tangent, matching the right-hand side and completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{1 - \\cos 2\\theta + \\sin 2\\theta}{1 + \\cos 2\\theta + \\sin 2\\theta} \\equiv \\tan\\theta$"
+  }
+}

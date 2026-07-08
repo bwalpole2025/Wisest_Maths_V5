@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "given ratio",
+    "repeated"
+  ],
+  "questionText": "Given that $\\cos\\theta = \\dfrac{2}{3}$, find the exact values of $\\cos 2\\theta$ and $\\cos 4\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the cosine-only double angle form",
+        "workingLatex": "\\cos 2\\theta = 2\\cos^2\\theta - 1",
+        "explanation": "This form uses the given cosine directly with no need for sine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute",
+        "workingLatex": "\\cos 2\\theta = 2\\left(\\frac{2}{3}\\right)^2 - 1 = 2\\cdot\\frac{4}{9} - 1",
+        "explanation": "Squaring $\\frac{2}{3}$ gives $\\frac{4}{9}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Evaluate cos 2θ",
+        "workingLatex": "\\cos 2\\theta = \\frac{8}{9} - 1 = -\\frac{1}{9}",
+        "explanation": "Subtracting gives $-\\frac{1}{9}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Treat cos 4θ as a double angle of 2θ",
+        "workingLatex": "\\cos 4\\theta = 2\\cos^2 2\\theta - 1",
+        "explanation": "Since $4\\theta = 2(2\\theta)$, we reapply the double angle formula using the value just found.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Substitute cos 2θ",
+        "workingLatex": "\\cos 4\\theta = 2\\left(-\\frac{1}{9}\\right)^2 - 1 = 2\\cdot\\frac{1}{81} - 1",
+        "explanation": "Squaring $-\\frac{1}{9}$ gives $\\frac{1}{81}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate cos 4θ",
+        "workingLatex": "\\cos 4\\theta = \\frac{2}{81} - 1 = -\\frac{79}{81}",
+        "explanation": "Subtracting from $1$ (as $\\frac{81}{81}$) gives $-\\frac{79}{81}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the results",
+        "workingLatex": "\\cos 2\\theta = -\\frac{1}{9}, \\quad \\cos 4\\theta = -\\frac{79}{81}",
+        "explanation": "Both are exact, obtained by applying the double angle formula twice.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos 2\\theta = -\\dfrac{1}{9}, \\quad \\cos 4\\theta = -\\dfrac{79}{81}$"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-curves.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "square root"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = t$ for $t \\ge 0$. Find the Cartesian equation and state the domain.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Make t the subject of the y-equation",
+        "workingLatex": "t = y",
+        "explanation": "Since $y = t$, the parameter equals $y$, which is the simplest substitution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute into the x-equation",
+        "workingLatex": "x = y^2",
+        "explanation": "Replacing $t$ with $y$ in $x = t^2$ gives a relationship between $x$ and $y$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Consider the restriction on t",
+        "workingLatex": "t \\ge 0 \\;\\Rightarrow\\; y \\ge 0",
+        "explanation": "Since $y = t$ and $t \\ge 0$, the curve only includes points with $y \\ge 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Express y explicitly if required",
+        "workingLatex": "y = \\sqrt{x}",
+        "explanation": "For $y \\ge 0$, taking the positive root of $x = y^2$ gives $y = \\sqrt{x}$, the upper half of the sideways parabola.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer with domain",
+        "workingLatex": "x = y^2, \\; y \\ge 0 \\quad (\\text{i.e. } y = \\sqrt x, \\; x \\ge 0)",
+        "explanation": "The restriction is essential; without it the whole sideways parabola would be included.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x = y^2$ with $y \\ge 0$ (equivalently $y = \\sqrt{x}$, $x \\ge 0$)."
+  }
+}

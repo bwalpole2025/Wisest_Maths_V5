@@ -1,0 +1,15 @@
+{
+  "install": "cd wisest-maths-content && npm install",
+  "terminals": [
+    {
+      "name": "Next.js Dev Server",
+      "command": "cd wisest-maths-content && npm run dev",
+      "ports": [3000]
+    },
+    {
+      "name": "Cloudflare Tunnel",
+      "command": "bash .cursor/start-tunnel.sh"
+    }
+  ],
+  "ports": [3000]
+}

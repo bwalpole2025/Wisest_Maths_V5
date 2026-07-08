@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q010",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "value",
+  "tags": [
+    "reciprocal trig",
+    "secant",
+    "radians",
+    "exact values"
+  ],
+  "questionText": "Find the exact value of $\\sec\\dfrac{\\pi}{3}$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Convert the radian angle to degrees if helpful",
+        "workingLatex": "\\frac{\\pi}{3} = 60^\\circ",
+        "explanation": "Recognising that $\\frac{\\pi}{3}$ radians equals $60^\\circ$ lets us use the exact values we know most comfortably.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write secant as one over cosine",
+        "workingLatex": "\\sec\\frac{\\pi}{3} = \\frac{1}{\\cos\\frac{\\pi}{3}}",
+        "explanation": "Secant is one over cosine, so we set up the reciprocal of the cosine of this angle.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall the cosine value",
+        "workingLatex": "\\cos\\frac{\\pi}{3} = \\frac{1}{2}",
+        "explanation": "The cosine of $60^\\circ$, or $\\frac{\\pi}{3}$, is exactly one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the value",
+        "workingLatex": "\\sec\\frac{\\pi}{3} = \\frac{1}{\\;\\frac{1}{2}\\;}",
+        "explanation": "The problem now reduces to the reciprocal of one half.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Evaluate the reciprocal",
+        "workingLatex": "\\frac{1}{\\;\\frac{1}{2}\\;} = 2",
+        "explanation": "The reciprocal of a half is two.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final value",
+        "workingLatex": "\\sec\\frac{\\pi}{3} = 2",
+        "explanation": "This is the exact value; working in radians gives the same result as degrees, as expected.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sec\\dfrac{\\pi}{3} = 2$"
+  }
+}

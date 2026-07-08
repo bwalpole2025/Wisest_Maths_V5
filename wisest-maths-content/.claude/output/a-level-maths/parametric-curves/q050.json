@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-curves.q050",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "cubic"
+  ],
+  "questionText": "A curve has parametric equations $x = 3t^2$, $y = 2t^3$. Show that $27y^2 = 4x^3$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Square the y-equation",
+        "workingLatex": "y^2 = (2t^3)^2 = 4t^6",
+        "explanation": "Squaring produces $t^6$, matching the power we can get from cubing $x$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Cube the x-equation",
+        "workingLatex": "x^3 = (3t^2)^3 = 27t^6",
+        "explanation": "Cubing also produces $t^6$, so the two can be linked.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Express t^6 from the y-equation",
+        "workingLatex": "t^6 = \\frac{y^2}{4}",
+        "explanation": "Rearranging $y^2 = 4t^6$ isolates $t^6$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute into the x-cubed equation",
+        "workingLatex": "x^3 = 27\\cdot\\frac{y^2}{4}",
+        "explanation": "Replacing $t^6$ removes the parameter.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rearrange",
+        "workingLatex": "4x^3 = 27y^2",
+        "explanation": "Multiplying both sides by $4$ gives the required form.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the result",
+        "workingLatex": "27y^2 = 4x^3",
+        "explanation": "This is the Cartesian equation, a semicubical parabola.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$27y^2 = 4x^3$"
+  }
+}

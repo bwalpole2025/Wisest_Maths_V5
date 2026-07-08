@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q019",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "statement",
+  "tags": [
+    "inverse trig",
+    "arccos",
+    "domain",
+    "range"
+  ],
+  "questionText": "State the domain and range of $y = \\arccos x$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Recall what arccosine inverts",
+        "workingLatex": "y = \\arccos x \\;\\Leftrightarrow\\; x = \\cos y",
+        "explanation": "Arccosine is the inverse of cosine, so its domain and range come from swapping cosine's range and restricted domain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the range of cosine",
+        "workingLatex": "-1 \\le \\cos y \\le 1",
+        "explanation": "Cosine only outputs values between $-1$ and $1$, so those are the permitted inputs to arccosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Deduce the domain of arccosine",
+        "workingLatex": "\\text{domain: } -1 \\le x \\le 1",
+        "explanation": "The range of cosine becomes the domain of its inverse, so arccosine accepts inputs from $-1$ to $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Recall the restricted domain of cosine used for inversion",
+        "workingLatex": "0 \\le y \\le \\pi",
+        "explanation": "Cosine is made invertible by restricting it to $[0,\\pi]$, where it decreases through every value once. This becomes the range of arccosine.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Deduce the range of arccosine",
+        "workingLatex": "\\text{range: } 0 \\le y \\le \\pi",
+        "explanation": "The outputs of arccosine are exactly the angles in that restricted domain.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State both together",
+        "workingLatex": "-1 \\le x \\le 1, \\quad 0 \\le \\arccos x \\le \\pi",
+        "explanation": "This gives the domain and range in a single summary, as required. Note the range differs from arcsine's, being $[0,\\pi]$ rather than symmetric about zero.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Domain: $-1 \\le x \\le 1$; Range: $0 \\le y \\le \\pi$."
+  }
+}

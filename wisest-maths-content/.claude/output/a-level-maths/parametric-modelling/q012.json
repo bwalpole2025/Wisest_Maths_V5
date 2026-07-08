@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q012",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "speed",
+    "Pythagoras"
+  ],
+  "questionText": "A particle has position $x = t^2$, $y = 3t$ (metres) at time $t$ seconds. Find the speed of the particle at $t = 2$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 2t, \\quad v_y = 3",
+        "explanation": "Differentiating each position component gives the velocities; speed will combine them.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Evaluate at t = 2",
+        "workingLatex": "v_x = 4, \\quad v_y = 3",
+        "explanation": "At $t = 2$ the components are $4$ and $3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Recall speed as the magnitude of velocity",
+        "workingLatex": "\\text{speed} = \\sqrt{v_x^2 + v_y^2}",
+        "explanation": "Speed is the magnitude of the velocity vector, found by Pythagoras from the components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Substitute the components",
+        "workingLatex": "\\text{speed} = \\sqrt{4^2 + 3^2} = \\sqrt{16 + 9}",
+        "explanation": "Squaring and adding the components.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Simplify",
+        "workingLatex": "\\text{speed} = \\sqrt{25} = 5 \\text{ m/s}",
+        "explanation": "The speed is $5$ m/s (a $3$-$4$-$5$ triangle).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Speed $= 5$ m/s"
+  }
+}

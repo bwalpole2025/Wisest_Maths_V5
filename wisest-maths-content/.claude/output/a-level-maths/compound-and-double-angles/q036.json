@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "equations",
+    "cosine",
+    "solving"
+  ],
+  "questionText": "Solve $\\cos 2\\theta = \\dfrac{1}{2}$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Substitute for the double angle variable",
+        "workingLatex": "\\text{let } \\phi = 2\\theta, \\quad 0^\\circ \\le \\phi < 720^\\circ",
+        "explanation": "Doubling widens the interval to $[0,720^\\circ)$, so we search there.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the base solutions",
+        "workingLatex": "\\cos\\phi = \\tfrac{1}{2} \\;\\Rightarrow\\; \\phi = 60^\\circ, 300^\\circ",
+        "explanation": "Cosine one half occurs at $60^\\circ$ and $300^\\circ$ in the first revolution.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add a full revolution",
+        "workingLatex": "\\phi = 420^\\circ, 660^\\circ",
+        "explanation": "Adding $360^\\circ$ to each gives the remaining solutions within $720^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "List all values of phi",
+        "workingLatex": "\\phi = 60^\\circ, 300^\\circ, 420^\\circ, 660^\\circ",
+        "explanation": "These are all the doubled-angle solutions in range.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Halve to find theta",
+        "workingLatex": "\\theta = 30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ",
+        "explanation": "Dividing each by $2$ gives the solutions for $\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Confirm the interval",
+        "workingLatex": "\\text{all} \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
+        "explanation": "All four solutions lie within the required range.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ$"
+  }
+}

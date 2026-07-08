@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q065",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "minimum speed",
+    "projectile"
+  ],
+  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find its minimum speed during the flight.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the velocity components",
+        "workingLatex": "v_x = 20, \\quad v_y = 15 - 10t",
+        "explanation": "The horizontal velocity is constant; only the vertical part changes.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the speed squared",
+        "workingLatex": "\\text{speed}^2 = 20^2 + (15 - 10t)^2",
+        "explanation": "Minimising the speed is the same as minimising its square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Identify the minimising condition",
+        "workingLatex": "(15 - 10t)^2 \\ge 0, \\text{ least when } 15 - 10t = 0",
+        "explanation": "The horizontal part is fixed, so the speed is smallest when the vertical velocity is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the time",
+        "workingLatex": "15 - 10t = 0 \\;\\Rightarrow\\; t = 1.5",
+        "explanation": "This is the top of the trajectory, where vertical motion momentarily stops.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Find the minimum speed",
+        "workingLatex": "\\text{speed} = \\sqrt{20^2 + 0} = 20 \\text{ m/s}",
+        "explanation": "At the highest point the speed equals the horizontal velocity, $20$ m/s.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Minimum speed $= 20$ m/s (at the top, $t = 1.5$ s)."
+  }
+}

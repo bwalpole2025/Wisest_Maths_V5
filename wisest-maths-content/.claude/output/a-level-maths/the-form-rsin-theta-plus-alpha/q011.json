@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.rsin-form.q011",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Easy",
+  "marks": 4,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "maximum",
+    "value of theta"
+  ],
+  "questionText": "Given that $\\sin\\theta + \\sqrt3\\cos\\theta = 2\\sin(\\theta + 60^\\circ)$, find the value of $\\theta$ in $0^\\circ \\le \\theta < 360^\\circ$ at which the maximum occurs.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "State the maximum condition",
+        "workingLatex": "\\text{max when } \\sin(\\theta + 60^\\circ) = 1",
+        "explanation": "The expression is largest when the sine reaches its peak value of $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Solve for the bracket",
+        "workingLatex": "\\theta + 60^\\circ = 90^\\circ",
+        "explanation": "Sine equals $1$ when its argument is $90^\\circ$ (within one revolution).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Isolate theta",
+        "workingLatex": "\\theta = 90^\\circ - 60^\\circ = 30^\\circ",
+        "explanation": "Subtracting the phase shift gives $\\theta = 30^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Check the interval",
+        "workingLatex": "30^\\circ \\in [0^\\circ, 360^\\circ) \\;\\checkmark",
+        "explanation": "The value lies in the required range, so it is valid.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\theta = 30^\\circ, \\quad \\text{max value} = 2",
+        "explanation": "At $\\theta = 30^\\circ$ the expression reaches its maximum of $R = 2$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ$ (maximum value $2$)."
+  }
+}

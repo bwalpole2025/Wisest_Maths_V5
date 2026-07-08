@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q047",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "projectile",
+    "range"
+  ],
+  "questionText": "A projectile has position $x = 40t$, $y = 30t - 5t^2$ (metres) at time $t$ seconds. Find the total time of flight and the horizontal range.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Set the height to zero",
+        "workingLatex": "30t - 5t^2 = 0",
+        "explanation": "The projectile lands when it returns to ground level, $y = 0$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Factorise",
+        "workingLatex": "5t(6 - t) = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 6",
+        "explanation": "The nonzero solution gives the landing time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "State the time of flight",
+        "workingLatex": "T = 6 \\text{ s}",
+        "explanation": "The flight lasts $6$ seconds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the range",
+        "workingLatex": "x = 40(6) = 240",
+        "explanation": "Substituting the landing time into the horizontal-position equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\text{range} = 240 \\text{ m}",
+        "explanation": "The projectile travels $240$ m horizontally before landing.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Time of flight $6$ s; range $240$ m."
+  }
+}

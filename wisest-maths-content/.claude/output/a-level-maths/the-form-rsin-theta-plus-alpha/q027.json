@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.rsin-form.q027",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "The form Rsin(θ + α)",
+  "subtopicId": "al.y2.pure.rsin-form",
+  "difficulty": "Intermediate",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "harmonic form",
+    "equations",
+    "radians"
+  ],
+  "questionText": "Solve $\\sin\\theta - \\cos\\theta = 1$ for $0 \\le \\theta < 2\\pi$, using the form $R\\sin(\\theta - \\alpha)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find R and alpha",
+        "workingLatex": "R = \\sqrt2, \\quad \\tan\\alpha = 1 \\;\\Rightarrow\\; \\alpha = \\frac{\\pi}{4}",
+        "explanation": "Equal components give $R = \\sqrt2$ and phase $\\frac{\\pi}{4}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Write the harmonic form",
+        "workingLatex": "\\sin\\theta - \\cos\\theta = \\sqrt2\\sin\\left(\\theta - \\frac{\\pi}{4}\\right)",
+        "explanation": "The difference becomes a single sine with a phase shift.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rewrite the equation",
+        "workingLatex": "\\sqrt2\\sin\\left(\\theta - \\frac{\\pi}{4}\\right) = 1 \\;\\Rightarrow\\; \\sin\\left(\\theta - \\frac{\\pi}{4}\\right) = \\frac{1}{\\sqrt2}",
+        "explanation": "Dividing by $\\sqrt2$ gives a recognisable exact value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Set the shifted interval",
+        "workingLatex": "-\\frac{\\pi}{4} \\le \\theta - \\frac{\\pi}{4} < \\frac{7\\pi}{4}",
+        "explanation": "Subtracting $\\frac{\\pi}{4}$ from the bounds.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Solve for the shifted angle",
+        "workingLatex": "\\theta - \\frac{\\pi}{4} = \\frac{\\pi}{4}, \\frac{3\\pi}{4}",
+        "explanation": "Sine $\\frac{1}{\\sqrt2}$ occurs at $\\frac{\\pi}{4}$ and $\\frac{3\\pi}{4}$ within the interval.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Add the shift",
+        "workingLatex": "\\theta = \\frac{\\pi}{2}, \\pi",
+        "explanation": "Adding $\\frac{\\pi}{4}$ to each gives the solutions.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = \\dfrac{\\pi}{2}, \\pi$"
+  }
+}

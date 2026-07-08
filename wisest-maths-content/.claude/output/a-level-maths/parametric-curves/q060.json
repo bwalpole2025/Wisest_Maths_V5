@@ -1,0 +1,65 @@
+{
+  "id": "al.y2.pure.parametric-curves.q060",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric curves",
+  "subtopicId": "al.y2.pure.parametric-curves",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "expression",
+  "tags": [
+    "parametric",
+    "cartesian",
+    "half angle",
+    "circle"
+  ],
+  "questionText": "A curve has parametric equations $x = \\dfrac{1 - t^2}{1 + t^2}$, $y = \\dfrac{2t}{1 + t^2}$. Show that $x^2 + y^2 = 1$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Square the x-expression",
+        "workingLatex": "x^2 = \\frac{(1 - t^2)^2}{(1 + t^2)^2}",
+        "explanation": "Squaring the first fraction; we will add it to $y^2$ over the same denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Square the y-expression",
+        "workingLatex": "y^2 = \\frac{4t^2}{(1 + t^2)^2}",
+        "explanation": "Squaring the second fraction gives the same denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Add over the common denominator",
+        "workingLatex": "x^2 + y^2 = \\frac{(1 - t^2)^2 + 4t^2}{(1 + t^2)^2}",
+        "explanation": "The shared denominator lets us combine the numerators.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Expand the numerator",
+        "workingLatex": "(1 - t^2)^2 + 4t^2 = 1 - 2t^2 + t^4 + 4t^2 = 1 + 2t^2 + t^4",
+        "explanation": "Expanding and combining the $t^2$ terms gives a perfect square.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Recognise the perfect square",
+        "workingLatex": "1 + 2t^2 + t^4 = (1 + t^2)^2",
+        "explanation": "The numerator factorises to $(1 + t^2)^2$, matching the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel and conclude",
+        "workingLatex": "x^2 + y^2 = \\frac{(1 + t^2)^2}{(1 + t^2)^2} = 1",
+        "explanation": "The numerator and denominator are equal, giving the unit circle (this is the half-angle rational parametrisation).",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$x^2 + y^2 = 1$"
+  }
+}

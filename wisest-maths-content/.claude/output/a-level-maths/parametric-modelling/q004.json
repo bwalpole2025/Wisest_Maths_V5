@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q004",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Easy",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "range",
+    "projectile"
+  ],
+  "questionText": "A projectile has position $x = 20t$, $y = 15t - 5t^2$ (metres) at time $t$ seconds. Find the horizontal distance travelled before it lands.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find the landing time",
+        "workingLatex": "15t - 5t^2 = 0 \\;\\Rightarrow\\; t = 0 \\text{ or } 3",
+        "explanation": "The projectile lands when $y = 0$ again, at $t = 3$ s (the nonzero solution).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Use the horizontal-position equation",
+        "workingLatex": "x = 20t",
+        "explanation": "Horizontal distance is given by the $x$-equation evaluated at the landing time.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute the landing time",
+        "workingLatex": "x = 20(3) = 60",
+        "explanation": "At $t = 3$ s the horizontal position is $60$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Interpret",
+        "workingLatex": "\\text{range} = 60 \\text{ m}",
+        "explanation": "Since horizontal motion started at $x = 0$, the total horizontal distance (range) is $60$ m.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "60 \\text{ m}",
+        "explanation": "This is the horizontal range of the projectile.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$60$ m"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q062",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "given ratio",
+    "secant",
+    "cotangent",
+    "quadrant"
+  ],
+  "questionText": "Given that $\\csc\\theta = -2$ and $180^\\circ < \\theta < 270^\\circ$, find the exact values of $\\sec\\theta$ and $\\cot\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Find sine from cosecant",
+        "workingLatex": "\\sin\\theta = \\frac{1}{\\csc\\theta} = -\\frac{1}{2}",
+        "explanation": "Sine is the reciprocal of cosecant, so $\\sin\\theta = -\\frac{1}{2}$; the negative sign fits the third quadrant.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Identify the quadrant signs",
+        "workingLatex": "180^\\circ < \\theta < 270^\\circ \\;\\Rightarrow\\; \\sin < 0, \\cos < 0",
+        "explanation": "In the third quadrant both sine and cosine are negative, which will determine the sign of every value we compute.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Use the Pythagorean identity for cosine",
+        "workingLatex": "\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\frac{1}{4}",
+        "explanation": "We find cosine from sine using the fundamental identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify cosine squared",
+        "workingLatex": "\\cos^2\\theta = \\frac{3}{4}",
+        "explanation": "Subtracting gives $\\frac{3}{4}$ for cosine squared.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Take the root with the correct sign",
+        "workingLatex": "\\cos\\theta = -\\frac{\\sqrt{3}}{2}",
+        "explanation": "The root is $\\frac{\\sqrt3}{2}$, and the third quadrant forces the negative sign.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Find secant",
+        "workingLatex": "\\sec\\theta = \\frac{1}{\\cos\\theta} = -\\frac{2}{\\sqrt{3}} = -\\frac{2\\sqrt{3}}{3}",
+        "explanation": "Secant is the reciprocal of cosine; rationalising gives $-\\frac{2\\sqrt3}{3}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Find cotangent",
+        "workingLatex": "\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta} = \\frac{-\\frac{\\sqrt3}{2}}{-\\frac{1}{2}} = \\sqrt{3}",
+        "explanation": "Cotangent is cosine over sine; the two negatives cancel, giving a positive $\\sqrt{3}$, consistent with the third quadrant where cotangent is positive.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "State the results",
+        "workingLatex": "\\sec\\theta = -\\frac{2\\sqrt{3}}{3}, \\quad \\cot\\theta = \\sqrt{3}",
+        "explanation": "These are the exact values, with signs matching the third-quadrant position.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\sec\\theta = -\\dfrac{2\\sqrt{3}}{3}, \\quad \\cot\\theta = \\sqrt{3}$"
+  }
+}

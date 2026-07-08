@@ -1,0 +1,71 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q051",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "compound angles",
+    "equations",
+    "solving"
+  ],
+  "questionText": "Solve $\\sin(\\theta + 30^\\circ) = \\cos\\theta$ for $0^\\circ \\le \\theta < 360^\\circ$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Expand the compound angle",
+        "workingLatex": "\\sin\\theta\\cos 30^\\circ + \\cos\\theta\\sin 30^\\circ = \\cos\\theta",
+        "explanation": "Expanding the left side lets us collect sine and cosine terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute the exact values",
+        "workingLatex": "\\frac{\\sqrt3}{2}\\sin\\theta + \\frac{1}{2}\\cos\\theta = \\cos\\theta",
+        "explanation": "Using $\\cos 30^\\circ = \\frac{\\sqrt3}{2}$ and $\\sin 30^\\circ = \\frac{1}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Collect the cosine terms",
+        "workingLatex": "\\frac{\\sqrt3}{2}\\sin\\theta = \\cos\\theta - \\frac{1}{2}\\cos\\theta = \\frac{1}{2}\\cos\\theta",
+        "explanation": "Moving the cosine terms together leaves a half cosine on the right.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Divide to form a tangent",
+        "workingLatex": "\\frac{\\sin\\theta}{\\cos\\theta} = \\frac{1/2}{\\sqrt3/2} = \\frac{1}{\\sqrt3}",
+        "explanation": "Dividing both sides by $\\frac{\\sqrt3}{2}\\cos\\theta$ gives a tangent equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Write the tangent equation",
+        "workingLatex": "\\tan\\theta = \\frac{1}{\\sqrt3}",
+        "explanation": "The ratio simplifies to $\\frac{1}{\\sqrt3}$, a standard value.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Solve for theta",
+        "workingLatex": "\\theta = 30^\\circ, 210^\\circ",
+        "explanation": "Tangent $\\frac{1}{\\sqrt3}$ occurs at $30^\\circ$ and one period later at $210^\\circ$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "State the solutions",
+        "workingLatex": "\\theta = 30^\\circ, 210^\\circ",
+        "explanation": "These are the two solutions in the interval.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\theta = 30^\\circ, 210^\\circ$"
+  }
+}

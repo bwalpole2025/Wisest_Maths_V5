@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q018",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "value",
+  "tags": [
+    "compound angles",
+    "given ratios",
+    "cosine"
+  ],
+  "questionText": "Given that $\\sin A = \\dfrac{3}{5}$ with $A$ acute, and $\\cos B = \\dfrac{5}{13}$ with $B$ acute, find the exact value of $\\cos(A - B)$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the compound angle formula",
+        "workingLatex": "\\cos(A - B) = \\cos A\\cos B + \\sin A\\sin B",
+        "explanation": "For a difference the two products are added. We reuse the values found from the triangles.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Recall the needed values",
+        "workingLatex": "\\cos A = \\frac{4}{5}, \\quad \\sin B = \\frac{12}{13}",
+        "explanation": "As before, acute angles give positive $\\cos A = \\frac{4}{5}$ and $\\sin B = \\frac{12}{13}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Substitute all values",
+        "workingLatex": "\\cos(A - B) = \\frac{4}{5}\\cdot\\frac{5}{13} + \\frac{3}{5}\\cdot\\frac{12}{13}",
+        "explanation": "Inserting the four values sets up the calculation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Multiply out",
+        "workingLatex": "= \\frac{20}{65} + \\frac{36}{65}",
+        "explanation": "Both products share the denominator $65$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Add the fractions",
+        "workingLatex": "= \\frac{56}{65}",
+        "explanation": "Adding the numerators gives $\\frac{56}{65}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Check the value is valid",
+        "workingLatex": "\\left|\\frac{56}{65}\\right| \\le 1 \\;\\checkmark",
+        "explanation": "The value lies within the valid cosine range, confirming it is reasonable.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\cos(A - B) = \\dfrac{56}{65}$"
+  }
+}

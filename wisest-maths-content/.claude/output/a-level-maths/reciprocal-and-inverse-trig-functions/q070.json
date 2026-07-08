@@ -1,0 +1,79 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q070",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "proof",
+    "cosecant",
+    "cotangent"
+  ],
+  "questionText": "Prove that $\\dfrac{\\sin\\theta}{1 - \\cos\\theta} \\equiv \\csc\\theta + \\cot\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start with the left-hand side",
+        "workingLatex": "\\text{LHS} = \\frac{\\sin\\theta}{1 - \\cos\\theta}",
+        "explanation": "The denominator $1 - \\cos\\theta$ suggests multiplying by the conjugate $1 + \\cos\\theta$ to create a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Multiply top and bottom by the conjugate",
+        "workingLatex": "= \\frac{\\sin\\theta}{1 - \\cos\\theta}\\times\\frac{1 + \\cos\\theta}{1 + \\cos\\theta}",
+        "explanation": "Multiplying by $\\frac{1 + \\cos\\theta}{1 + \\cos\\theta}$ equals multiplying by $1$ and will simplify the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Expand the denominator",
+        "workingLatex": "(1 - \\cos\\theta)(1 + \\cos\\theta) = 1 - \\cos^2\\theta",
+        "explanation": "The conjugate product is a difference of squares.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Apply the Pythagorean identity",
+        "workingLatex": "1 - \\cos^2\\theta = \\sin^2\\theta",
+        "explanation": "The denominator becomes $\\sin^2\\theta$, which will cancel against the sine on top.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rewrite the fraction",
+        "workingLatex": "= \\frac{\\sin\\theta(1 + \\cos\\theta)}{\\sin^2\\theta}",
+        "explanation": "The numerator is $\\sin\\theta(1 + \\cos\\theta)$ and the denominator is $\\sin^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Cancel one factor of sine",
+        "workingLatex": "= \\frac{1 + \\cos\\theta}{\\sin\\theta}",
+        "explanation": "Cancelling a common sine leaves a single sine in the denominator.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Split the fraction",
+        "workingLatex": "= \\frac{1}{\\sin\\theta} + \\frac{\\cos\\theta}{\\sin\\theta}",
+        "explanation": "Separating the numerator into two fractions exposes the two reciprocal functions.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 8,
+        "description": "Recognise the functions and conclude",
+        "workingLatex": "= \\csc\\theta + \\cot\\theta = \\text{RHS} \\;\\blacksquare",
+        "explanation": "One over sine is cosecant and cosine over sine is cotangent, giving exactly the right-hand side and completing the proof.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\dfrac{\\sin\\theta}{1 - \\cos\\theta} \\equiv \\csc\\theta + \\cot\\theta$"
+  }
+}

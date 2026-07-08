@@ -1,0 +1,72 @@
+{
+  "id": "al.y2.pure.reciprocal-inverse-trig.q022",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Reciprocal and inverse trig functions",
+  "subtopicId": "al.y2.pure.reciprocal-inverse-trig",
+  "difficulty": "Intermediate",
+  "marks": 5,
+  "answerType": "proof",
+  "tags": [
+    "identities",
+    "cosecant",
+    "cotangent",
+    "pythagorean"
+  ],
+  "questionText": "Prove that $1 + \\cot^2\\theta \\equiv \\csc^2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start from the fundamental Pythagorean identity",
+        "workingLatex": "\\sin^2\\theta + \\cos^2\\theta \\equiv 1",
+        "explanation": "As before, this second reciprocal identity is derived from the core Pythagorean identity.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Decide what to divide by",
+        "workingLatex": "\\text{divide every term by } \\sin^2\\theta",
+        "explanation": "We want $\\csc^2\\theta = \\frac{1}{\\sin^2\\theta}$ on the right, so dividing by $\\sin^2\\theta$ will produce the cosecant and cotangent terms.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Divide each term by sine squared",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\sin^2\\theta} + \\frac{\\cos^2\\theta}{\\sin^2\\theta} \\equiv \\frac{1}{\\sin^2\\theta}",
+        "explanation": "Dividing every term preserves the equality and sets up each fraction for rewriting.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the first term",
+        "workingLatex": "\\frac{\\sin^2\\theta}{\\sin^2\\theta} = 1",
+        "explanation": "This fraction is a quantity over itself, so it equals $1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Rewrite the second term as cotangent squared",
+        "workingLatex": "\\frac{\\cos^2\\theta}{\\sin^2\\theta} = \\cot^2\\theta",
+        "explanation": "Since $\\cot\\theta = \\frac{\\cos\\theta}{\\sin\\theta}$, squaring gives $\\cot^2\\theta$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Rewrite the right-hand side as cosecant squared",
+        "workingLatex": "\\frac{1}{\\sin^2\\theta} = \\csc^2\\theta",
+        "explanation": "By definition $\\csc\\theta = \\frac{1}{\\sin\\theta}$, so its square is $\\frac{1}{\\sin^2\\theta}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 7,
+        "description": "Assemble the identity",
+        "workingLatex": "1 + \\cot^2\\theta \\equiv \\csc^2\\theta \\;\\blacksquare",
+        "explanation": "Collecting the rewritten terms gives exactly the identity we were asked to prove.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$1 + \\cot^2\\theta \\equiv \\csc^2\\theta$, proved by dividing $\\sin^2\\theta + \\cos^2\\theta \\equiv 1$ through by $\\sin^2\\theta$."
+  }
+}

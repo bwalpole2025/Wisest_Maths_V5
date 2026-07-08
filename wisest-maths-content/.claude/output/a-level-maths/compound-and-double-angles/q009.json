@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q009",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Easy",
+  "marks": 3,
+  "answerType": "expression",
+  "tags": [
+    "double angle",
+    "tangent",
+    "formula recall"
+  ],
+  "questionText": "Write down the double angle formula for $\\tan 2A$ and state when it is undefined.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Start from the tangent addition formula",
+        "workingLatex": "\\tan(A + B) = \\frac{\\tan A + \\tan B}{1 - \\tan A\\tan B}",
+        "explanation": "The double angle formula follows by setting the two angles equal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Set B equal to A",
+        "workingLatex": "\\tan 2A = \\frac{\\tan A + \\tan A}{1 - \\tan A\\tan A}",
+        "explanation": "Putting $B = A$ turns the compound angle into $2A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify numerator and denominator",
+        "workingLatex": "\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}",
+        "explanation": "The numerator doubles and the denominator becomes $1 - \\tan^2 A$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Identify when the denominator is zero",
+        "workingLatex": "1 - \\tan^2 A = 0 \\;\\Rightarrow\\; \\tan A = \\pm 1",
+        "explanation": "The formula fails when the denominator vanishes, which happens when $\\tan A = \\pm 1$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State those angles",
+        "workingLatex": "A = 45^\\circ + 90^\\circ n",
+        "explanation": "Tangent is $\\pm 1$ at $45^\\circ$ and every $90^\\circ$ after, so the formula is undefined there (and also where $\\tan A$ itself is undefined).",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "State the final formula and restriction",
+        "workingLatex": "\\tan 2A = \\frac{2\\tan A}{1 - \\tan^2 A}, \\quad \\tan A \\ne \\pm 1",
+        "explanation": "This gives the double angle formula together with its restriction.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\tan 2A = \\dfrac{2\\tan A}{1 - \\tan^2 A}$, undefined when $\\tan A = \\pm 1$."
+  }
+}

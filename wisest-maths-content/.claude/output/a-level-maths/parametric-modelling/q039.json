@@ -1,0 +1,57 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q039",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 7,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "projectile",
+    "maximum height"
+  ],
+  "questionText": "A projectile has position $x = 30t$, $y = 25t - 5t^2$ (metres) at time $t$ seconds. Find the maximum height and the horizontal distance travelled when it is reached.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Differentiate the height",
+        "workingLatex": "\\frac{dy}{dt} = 25 - 10t",
+        "explanation": "The maximum height is where the vertical velocity is zero.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Find the time of maximum height",
+        "workingLatex": "25 - 10t = 0 \\;\\Rightarrow\\; t = 2.5",
+        "explanation": "Solving gives the time at the peak.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Find the maximum height",
+        "workingLatex": "y = 25(2.5) - 5(2.5)^2 = 62.5 - 31.25 = 31.25",
+        "explanation": "Substituting the time into the height equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Find the horizontal distance at that time",
+        "workingLatex": "x = 30(2.5) = 75",
+        "explanation": "Substituting the time into the horizontal-position equation.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "State the answer",
+        "workingLatex": "\\text{max height} = 31.25 \\text{ m at } x = 75 \\text{ m}",
+        "explanation": "The projectile is highest $75$ m downrange, at a height of $31.25$ m.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "Maximum height $31.25$ m, reached at $x = 75$ m."
+  }
+}

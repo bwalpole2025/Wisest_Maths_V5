@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.parametric-modelling.q036",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Parametric modelling",
+  "subtopicId": "al.y2.pure.parametric-modelling",
+  "difficulty": "Hard",
+  "marks": 8,
+  "answerType": "value",
+  "tags": [
+    "parametric modelling",
+    "tangent",
+    "intersection"
+  ],
+  "questionText": "A curve has parametric equations $x = t^2$, $y = 2t$. The tangent at $t = 3$ meets the curve again at a second point. Find the parameter value there.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Use the general tangent result",
+        "workingLatex": "py = x + p^2, \\quad p = 3 \\;\\Rightarrow\\; 3y = x + 9",
+        "explanation": "The tangent at parameter $p$ is $py = x + p^2$; at $p = 3$ this is $3y = x + 9$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute the parametric point",
+        "workingLatex": "3(2t) = t^2 + 9",
+        "explanation": "Any point on the curve has coordinates $(t^2, 2t)$; substituting finds where the tangent meets the curve.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Rearrange to a quadratic",
+        "workingLatex": "t^2 - 6t + 9 = 0",
+        "explanation": "Bringing all terms to one side gives a quadratic in $t$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Factorise",
+        "workingLatex": "(t - 3)^2 = 0",
+        "explanation": "This is a perfect square with a repeated root at $t = 3$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Interpret the repeated root",
+        "workingLatex": "t = 3 \\text{ (double root)}",
+        "explanation": "The repeated root means the line touches the curve only at $t = 3$ — it is a genuine tangent and does not cross the parabola again.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Conclude",
+        "workingLatex": "\\text{no second intersection point}",
+        "explanation": "For this parabola every tangent meets the curve exactly once, so there is no second point.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "The tangent touches only at $t = 3$ (repeated root); there is no second intersection."
+  }
+}

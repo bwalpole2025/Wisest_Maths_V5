@@ -1,0 +1,64 @@
+{
+  "id": "al.y2.pure.compound-double-angles.q031",
+  "level": "A-Level Maths",
+  "topic": "Year 2 Pure",
+  "subtopic": "Compound and double angles",
+  "subtopicId": "al.y2.pure.compound-double-angles",
+  "difficulty": "Intermediate",
+  "marks": 6,
+  "answerType": "value",
+  "tags": [
+    "double angle",
+    "tangent",
+    "given ratio"
+  ],
+  "questionText": "Given that $\\tan\\theta = \\dfrac{3}{4}$, find the exact value of $\\tan 2\\theta$.",
+  "questionDiagram": null,
+  "workedSolution": {
+    "steps": [
+      {
+        "stepNumber": 1,
+        "description": "Write the double angle formula for tangent",
+        "workingLatex": "\\tan 2\\theta = \\frac{2\\tan\\theta}{1 - \\tan^2\\theta}",
+        "explanation": "Only tangent is needed, and it is given, so we substitute directly.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 2,
+        "description": "Substitute the given tangent",
+        "workingLatex": "= \\frac{2\\cdot\\frac{3}{4}}{1 - \\left(\\frac{3}{4}\\right)^2}",
+        "explanation": "Inserting $\\tan\\theta = \\frac{3}{4}$ sets up the fraction.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 3,
+        "description": "Simplify the numerator",
+        "workingLatex": "2\\cdot\\frac{3}{4} = \\frac{3}{2}",
+        "explanation": "Doubling $\\frac{3}{4}$ gives $\\frac{3}{2}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 4,
+        "description": "Simplify the denominator",
+        "workingLatex": "1 - \\frac{9}{16} = \\frac{7}{16}",
+        "explanation": "Squaring $\\frac{3}{4}$ gives $\\frac{9}{16}$; subtracting from $1$ leaves $\\frac{7}{16}$.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 5,
+        "description": "Divide the fractions",
+        "workingLatex": "\\tan 2\\theta = \\frac{3/2}{7/16} = \\frac{3}{2}\\times\\frac{16}{7}",
+        "explanation": "Dividing by $\\frac{7}{16}$ means multiplying by its reciprocal.",
+        "diagram": null
+      },
+      {
+        "stepNumber": 6,
+        "description": "Evaluate",
+        "workingLatex": "= \\frac{48}{14} = \\frac{24}{7}",
+        "explanation": "Multiplying and simplifying gives $\\frac{24}{7}$.",
+        "diagram": null
+      }
+    ],
+    "finalAnswer": "$\\tan 2\\theta = \\dfrac{24}{7}$"
+  }
+}
