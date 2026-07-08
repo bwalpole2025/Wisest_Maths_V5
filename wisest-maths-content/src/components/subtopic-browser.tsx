@@ -55,7 +55,7 @@ export function SubtopicBrowser({ tabs, initialSlug }: { tabs: SubtopicTab[]; in
               onClick={() => setActive(t.slug)}
               className={cn(
                 "relative overflow-hidden rounded-full border px-4 py-2 text-sm font-medium transition-colors",
-                on ? "border-transparent text-white" : "border-white/10 bg-white/[0.03] text-muted-foreground hover:text-foreground",
+                on ? "border-transparent text-white" : "border-black/[0.08] bg-white text-landing-navy/55 hover:text-landing-navy",
               )}
             >
               {on && (
@@ -67,7 +67,7 @@ export function SubtopicBrowser({ tabs, initialSlug }: { tabs: SubtopicTab[]; in
               )}
               <span className="relative z-10 flex items-center gap-2">
                 {t.name}
-                <span className={cn("rounded-full px-1.5 py-0.5 text-[11px] font-semibold", on ? "bg-black/25 text-white" : "bg-white/[0.06] text-muted-foreground")}>
+                <span className={cn("rounded-full px-1.5 py-0.5 text-[11px] font-semibold", on ? "bg-black/20 text-white" : "bg-landing-light text-landing-navy/50")}>
                   {t.count}
                 </span>
               </span>
@@ -108,7 +108,7 @@ function BrowserSkeleton() {
   return (
     <div>
       <div className="glass flex items-center gap-3 rounded-2xl p-4 text-sm text-muted-foreground">
-        <Loader2 className="h-4 w-4 animate-spin text-violet-400" />
+        <Loader2 className="h-4 w-4 animate-spin text-[#1565c0]" />
         Loading subtopic…
       </div>
       <div className="mt-4 grid gap-3">

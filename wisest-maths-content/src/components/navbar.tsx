@@ -1,16 +1,12 @@
 "use client";
 
 import Link from "next/link";
-import type { CSSProperties } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
 import { Brand } from "@/components/brand";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "/", label: "Home" },
   { href: "/curriculum", label: "Curriculum" },
   { href: "/questions", label: "Question Bank" },
   { href: "/dashboard", label: "Dashboard" },
@@ -18,46 +14,71 @@ const links = [
 
 export function Navbar() {
   const pathname = usePathname();
-  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
+  const isLanding = pathname === "/";
+  const isActive = (href: string) => pathname.startsWith(href);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4">
-      <nav
-        className="glass rise flex w-full max-w-6xl items-center justify-between gap-4 rounded-full px-3 py-2 pl-4"
-        style={{ "--rise-y": "-24px" } as CSSProperties}
-      >
-        <Brand />
+    <header
+      className={cn(
+        "fixed inset-x-0 top-0 z-50",
+        isLanding
+          ? "bg-transparent"
+          : "border-b border-black/[0.06] bg-landing-light/90 backdrop-blur-md",
+      )}
+    >
+      <nav className="mx-auto flex max-w-[1200px] items-center justify-between gap-6 px-6 py-5 lg:px-10">
+        <Brand
+          className={cn(
+            isLanding &&
+              "[&_span:first-child]:bg-white/10 [&_span:first-child]:shadow-none [&_span:first-child]:ring-white/20 [&_span:last-child]:text-white",
+          )}
+        />
 
-        <div className="hidden items-center gap-1 rounded-full border border-white/[0.06] bg-white/[0.02] p-1 md:flex">
+        <div className="hidden items-center gap-9 md:flex">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
               className={cn(
-                "relative rounded-full px-4 py-1.5 text-sm font-medium transition-colors",
-                isActive(l.href) ? "text-foreground" : "text-muted-foreground hover:text-foreground",
+                "relative text-[13px] font-medium transition-colors",
+                isLanding
+                  ? "text-white/65 hover:text-white"
+                  : isActive(l.href)
+                    ? "text-landing-navy"
+                    : "text-landing-navy/55 hover:text-landing-navy",
               )}
             >
-              {isActive(l.href) && (
+              {!isLanding && isActive(l.href) && (
                 <motion.span
-                  layoutId="nav-pill"
-                  className="absolute inset-0 rounded-full bg-white/[0.08] ring-1 ring-white/10"
-                  transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                  layoutId="nav-underline"
+                  className="absolute -bottom-1 left-0 right-0 h-px bg-landing-electric"
                 />
               )}
-              <span className="relative z-10">{l.label}</span>
+              {l.label}
             </Link>
           ))}
         </div>
 
-        <div className="flex items-center gap-2">
-          <ThemeToggle />
+        <div className="flex items-center gap-4">
           <Link
-            href="/curriculum"
-            className="group hidden items-center gap-1 rounded-full bg-foreground px-4 py-2 text-sm font-semibold text-background transition-transform hover:scale-[1.03] sm:flex"
+            href="/dashboard"
+            className={cn(
+              "hidden text-[13px] font-medium transition-colors sm:block",
+              isLanding ? "text-white/65 hover:text-white" : "text-landing-navy/55 hover:text-landing-navy",
+            )}
+          >
+            Log in
+          </Link>
+          <Link
+            href="/questions"
+            className={cn(
+              "hidden rounded-full px-4 py-2 text-[13px] font-medium transition-colors sm:inline-flex",
+              isLanding
+                ? "border border-white/30 text-white hover:bg-white/10"
+                : "app-btn-primary py-2",
+            )}
           >
             Start solving
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>
       </nav>

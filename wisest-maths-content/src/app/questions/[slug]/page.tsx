@@ -4,7 +4,6 @@ import { ArrowLeft } from "lucide-react";
 import { subtopics, getSubtopicBySlug, getQuestionsBySubtopicSlug } from "@/lib/questions";
 import { QuestionList } from "@/components/question-list";
 import { Reveal } from "@/components/reveal";
-import { DifficultyBadge } from "@/components/ui";
 import { Footer } from "@/components/footer";
 import { cn } from "@/lib/utils";
 
@@ -36,7 +35,7 @@ export default async function SubtopicPage({ params }: { params: Promise<{ slug:
               <p className="text-xs font-medium uppercase tracking-widest text-muted-foreground">
                 {subtopic.level} · {subtopic.topic}
               </p>
-              <h1 className="mt-1 font-display text-3xl font-bold tracking-tight sm:text-4xl">{subtopic.name}</h1>
+              <h1 className="mt-1 font-serif text-3xl font-normal tracking-tight text-landing-navy sm:text-4xl">{subtopic.name}</h1>
               <p className="mt-2 max-w-xl text-muted-foreground">{subtopic.blurb}</p>
             </div>
           </div>
@@ -44,10 +43,10 @@ export default async function SubtopicPage({ params }: { params: Promise<{ slug:
 
         <Reveal delay={0.1}>
           <div className="mt-6 flex flex-wrap gap-2">
-            <span className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-sm font-semibold">{subtopic.count} questions</span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/10 px-3 py-1 text-sm font-semibold text-emerald-300 ring-1 ring-inset ring-emerald-400/30">{subtopic.easy} Easy</span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-500/10 px-3 py-1 text-sm font-semibold text-amber-300 ring-1 ring-inset ring-amber-400/30">{subtopic.intermediate} Intermediate</span>
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-500/10 px-3 py-1 text-sm font-semibold text-rose-300 ring-1 ring-inset ring-rose-400/30">{subtopic.hard} Hard</span>
+            <span className="rounded-full border border-black/[0.08] bg-landing-light px-3 py-1 text-sm font-semibold text-landing-navy">{subtopic.count} questions</span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 ring-1 ring-inset ring-emerald-200">{subtopic.easy} Easy</span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-amber-50 px-3 py-1 text-sm font-semibold text-amber-700 ring-1 ring-inset ring-amber-200">{subtopic.intermediate} Intermediate</span>
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-rose-50 px-3 py-1 text-sm font-semibold text-rose-700 ring-1 ring-inset ring-rose-200">{subtopic.hard} Hard</span>
           </div>
         </Reveal>
 

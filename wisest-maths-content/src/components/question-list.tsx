@@ -44,10 +44,10 @@ export function QuestionList({ questions }: { questions: Question[] }) {
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             placeholder="Search questions, tags or ids…"
-            className="w-full rounded-xl border border-white/10 bg-white/[0.03] py-2.5 pl-10 pr-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-violet-400/50 focus:bg-white/[0.05]"
+            className="app-input"
           />
         </div>
-        <div className="flex items-center gap-1 rounded-xl border border-white/[0.06] bg-white/[0.02] p-1">
+        <div className="flex items-center gap-1 rounded-xl border border-black/[0.08] bg-landing-light p-1">
           <SlidersHorizontal className="mx-1.5 h-3.5 w-3.5 text-muted-foreground" />
           {FILTERS.map((f) => (
             <button
@@ -59,7 +59,7 @@ export function QuestionList({ questions }: { questions: Question[] }) {
               )}
             >
               {difficulty === f && (
-                <motion.span layoutId="filter-pill" className="absolute inset-0 rounded-lg bg-white/[0.09] ring-1 ring-white/10" transition={{ type: "spring", stiffness: 400, damping: 32 }} />
+                <motion.span layoutId="filter-pill" className="absolute inset-0 rounded-lg bg-landing-sky ring-1 ring-landing-electric/20" transition={{ type: "spring", stiffness: 400, damping: 32 }} />
               )}
               <span className="relative z-10">{f}</span>
             </button>
@@ -90,7 +90,7 @@ export function QuestionList({ questions }: { questions: Question[] }) {
               >
                 {/* header */}
                 <div className="flex items-center gap-3 p-4 sm:px-5">
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-teal-400/25 bg-teal-400/[0.08] font-display text-lg font-bold text-teal-300">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl border border-[#1565c0]/25 bg-[#1565c0]/[0.08] font-display text-lg font-bold text-[#1565c0]">
                     {num}
                   </span>
                   <h3 className="min-w-0 truncate text-base font-semibold text-foreground sm:text-lg">
@@ -104,13 +104,13 @@ export function QuestionList({ questions }: { questions: Question[] }) {
                   >
                     {q.difficulty}
                   </span>
-                  <span className="ml-auto shrink-0 rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-muted-foreground">
+                  <span className="ml-auto shrink-0 rounded-full border border-black/[0.08] bg-landing-light px-3 py-1 text-xs font-medium text-landing-navy/55">
                     {q.marks} mark{q.marks === 1 ? "" : "s"}
                   </span>
                 </div>
 
                 {/* divider */}
-                <div className="border-t border-white/[0.06]" />
+                <div className="border-t border-black/[0.06]" />
 
                 {/* body */}
                 <div className="p-5 sm:p-6">
@@ -120,7 +120,7 @@ export function QuestionList({ questions }: { questions: Question[] }) {
                   <div className="mt-6 flex justify-end">
                     <Link
                       href={`/solve/${q.id}`}
-                      className="inline-flex items-center justify-center rounded-xl bg-gradient-to-br from-teal-400 to-cyan-500 px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-cyan-500/20 transition-all hover:brightness-110 hover:shadow-cyan-500/30 active:scale-[0.98]"
+                      className="app-btn-primary rounded-xl px-6 py-2.5"
                     >
                       Attempt
                     </Link>

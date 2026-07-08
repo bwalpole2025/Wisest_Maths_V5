@@ -39,8 +39,8 @@ export function LevelHeader({
 }) {
   return (
     <Reveal delay={0.05}>
-      <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-primary">{eyebrow}</p>
-      <h1 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight sm:text-4xl">{title}</h1>
+      <p className="mt-8 text-xs font-semibold uppercase tracking-[0.2em] text-landing-electric">{eyebrow}</p>
+      <h1 className="mt-3 text-balance font-serif text-3xl font-normal tracking-tight text-landing-navy sm:text-4xl">{title}</h1>
       <p className="mt-3 max-w-2xl text-muted-foreground">{blurb}</p>
     </Reveal>
   );
@@ -105,7 +105,7 @@ export function NavCard(p: NavCardProps) {
               {p.tile}
             </span>
             {p.badge && (
-              <span className="rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs font-semibold text-muted-foreground">
+              <span className="rounded-full border border-black/[0.08] bg-landing-light px-2.5 py-1 text-xs font-semibold text-landing-navy/55">
                 {p.badge}
               </span>
             )}
@@ -168,17 +168,17 @@ export function SubtopicGridCard({ s, index = 0 }: { s: SubtopicCardData; index?
         <span
           className={cn(
             "grid h-10 w-10 shrink-0 place-items-center rounded-xl text-white shadow-lg ring-1 ring-white/20",
-            s.live ? cn("bg-gradient-to-br", s.grad) : "bg-white/[0.06] text-muted-foreground ring-white/10",
+            s.live ? cn("bg-gradient-to-br", s.grad) : "bg-landing-light text-landing-navy/40 ring-black/[0.06]",
           )}
         >
           <span className="font-display text-sm font-bold">{s.live ? "✓" : "·"}</span>
         </span>
         {s.live ? (
-          <span className="rounded-full border border-emerald-400/30 bg-emerald-500/10 px-2.5 py-1 text-xs font-semibold text-emerald-300">
+          <span className="rounded-full border border-emerald-300 bg-emerald-50 px-2.5 py-1 text-xs font-semibold text-emerald-700">
             {s.count} Q
           </span>
         ) : (
-          <span className="rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-1 text-xs font-semibold text-muted-foreground">
+          <span className="rounded-full border border-black/[0.08] bg-landing-light px-2.5 py-1 text-xs font-semibold text-landing-navy/55">
             {s.higherOnly ? "Higher only" : "Coming soon"}
           </span>
         )}
@@ -189,16 +189,16 @@ export function SubtopicGridCard({ s, index = 0 }: { s: SubtopicCardData; index?
 
       {s.live ? (
         <>
-          <div className="relative mt-5 flex h-1.5 overflow-hidden rounded-full bg-white/[0.06]">
+          <div className="relative mt-5 flex h-1.5 overflow-hidden rounded-full bg-black/[0.06]">
             <span className="bg-emerald-400/80" style={{ width: `${(s.easy / s.count) * 100}%` }} />
             <span className="bg-amber-400/80" style={{ width: `${(s.intermediate / s.count) * 100}%` }} />
             <span className="bg-rose-400/80" style={{ width: `${(s.hard / s.count) * 100}%` }} />
           </div>
           <div className="relative mt-3 flex items-center justify-between text-xs text-muted-foreground">
             <span className="flex gap-3">
-              <span><b className="text-emerald-300">{s.easy}</b> easy</span>
-              <span><b className="text-amber-300">{s.intermediate}</b> med</span>
-              <span><b className="text-rose-300">{s.hard}</b> hard</span>
+              <span><b className="text-emerald-700">{s.easy}</b> easy</span>
+              <span><b className="text-amber-700">{s.intermediate}</b> med</span>
+              <span><b className="text-rose-700">{s.hard}</b> hard</span>
             </span>
             <span className="flex items-center gap-1 font-medium text-foreground opacity-0 transition-opacity group-hover:opacity-100">
               Open <ArrowRight className="h-3.5 w-3.5" />
@@ -206,7 +206,7 @@ export function SubtopicGridCard({ s, index = 0 }: { s: SubtopicCardData; index?
           </div>
         </>
       ) : (
-        <div className="relative mt-5 h-1.5 overflow-hidden rounded-full bg-white/[0.04]" />
+        <div className="relative mt-5 h-1.5 overflow-hidden rounded-full bg-black/[0.04]" />
       )}
     </div>
   );

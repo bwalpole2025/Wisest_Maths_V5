@@ -9,9 +9,18 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-sans)", "system-ui", "sans-serif"],
         display: ["var(--font-display)", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "Georgia", "serif"],
         mono: ["var(--font-mono)", "ui-monospace", "monospace"],
       },
       colors: {
+        landing: {
+          navy: "#001033",
+          blue: "#0a3d8f",
+          electric: "#1a6fd4",
+          lime: "#d0f100",
+          light: "#f8f9fc",
+          sky: "#e0f6ff",
+        },
         border: "hsl(var(--border) / <alpha-value>)",
         input: "hsl(var(--input) / <alpha-value>)",
         ring: "hsl(var(--ring) / <alpha-value>)",

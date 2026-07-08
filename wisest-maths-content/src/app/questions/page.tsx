@@ -17,7 +17,7 @@ export default function QuestionBankPage() {
       <section className="mx-auto max-w-6xl px-6 pt-36">
         <Reveal>
           <SectionLabel>Question Bank</SectionLabel>
-          <h1 className="mt-5 font-display text-4xl font-bold tracking-tight sm:text-5xl">
+          <h1 className="mt-5 font-serif text-4xl font-normal tracking-tight text-landing-navy sm:text-5xl">
             Every question, fully solved
           </h1>
           <p className="mt-3 max-w-xl text-muted-foreground">

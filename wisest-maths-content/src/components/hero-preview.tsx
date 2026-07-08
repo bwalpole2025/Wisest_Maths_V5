@@ -30,7 +30,7 @@ export function HeroPreview() {
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: -2 }}
       >
         <div className="glass flex items-center gap-2 rounded-2xl px-3 py-2 text-xs font-semibold">
-          <Sparkles className="h-4 w-4 text-violet-300" /> KaTeX typeset
+          <Sparkles className="h-4 w-4 text-[#1565c0]" /> KaTeX typeset
         </div>
       </motion.div>
 
@@ -55,9 +55,9 @@ export function HeroPreview() {
               initial={false}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.5 + i * 0.25, duration: 0.5 }}
-              className="flex gap-3 rounded-2xl border border-white/[0.06] bg-white/[0.02] p-3"
+              className="flex gap-3 rounded-2xl border border-black/[0.06] bg-landing-light p-3"
             >
-              <span className="grid h-6 w-6 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-violet-500 to-sky-500 text-[11px] font-bold text-white">
+              <span className="grid h-6 w-6 shrink-0 place-items-center rounded-lg bg-gradient-to-br from-[#0a3580] to-[#42a5f5] text-[11px] font-bold text-white">
                 {i + 1}
               </span>
               <div className="min-w-0">
@@ -74,9 +74,9 @@ export function HeroPreview() {
           initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.4, duration: 0.5 }}
-          className="mt-5 rounded-2xl border border-emerald-400/20 bg-emerald-500/[0.07] p-3"
+          className="mt-5 rounded-2xl border border-emerald-200 bg-emerald-50 p-3"
         >
-          <div className="text-[11px] font-semibold uppercase tracking-widest text-emerald-300/80">Final answer</div>
+          <div className="text-[11px] font-semibold uppercase tracking-widest text-emerald-700">Final answer</div>
           <div className="mt-1 text-sm text-foreground">
             <MathText text="$x = 2$ or $x = 3$" />
           </div>

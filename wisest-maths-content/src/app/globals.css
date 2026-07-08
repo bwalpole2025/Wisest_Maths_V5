@@ -4,31 +4,17 @@
 
 @layer base {
   :root {
-    --background: 240 24% 4%;
-    --foreground: 220 20% 96%;
-    --card: 240 20% 8%;
-    --card-foreground: 220 20% 96%;
-    --muted: 240 14% 14%;
-    --muted-foreground: 232 12% 62%;
-    --primary: 263 90% 66%;
-    --primary-foreground: 240 24% 6%;
-    --border: 240 14% 18%;
-    --input: 240 14% 18%;
-    --ring: 263 90% 66%;
-  }
-
-  .light {
-    --background: 240 30% 99%;
-    --foreground: 240 30% 8%;
+    --background: 220 33% 98%;
+    --foreground: 220 100% 10%;
     --card: 0 0% 100%;
-    --card-foreground: 240 30% 8%;
-    --muted: 240 20% 94%;
-    --muted-foreground: 240 8% 42%;
-    --primary: 263 80% 56%;
+    --card-foreground: 220 100% 10%;
+    --muted: 214 32% 94%;
+    --muted-foreground: 215 16% 42%;
+    --primary: 210 79% 46%;
     --primary-foreground: 0 0% 100%;
-    --border: 240 16% 88%;
-    --input: 240 16% 88%;
-    --ring: 263 80% 56%;
+    --border: 214 24% 88%;
+    --input: 214 24% 88%;
+    --ring: 210 79% 46%;
   }
 
   * {
@@ -46,10 +32,9 @@
   }
 
   ::selection {
-    background: hsl(var(--primary) / 0.3);
+    background: rgba(21, 101, 192, 0.18);
   }
 
-  /* Refined scrollbar */
   ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -58,30 +43,21 @@
     background: transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background: hsl(var(--muted-foreground) / 0.25);
+    background: rgba(0, 16, 51, 0.15);
     border-radius: 9999px;
     border: 3px solid transparent;
     background-clip: content-box;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(var(--muted-foreground) / 0.4);
+    background: rgba(0, 16, 51, 0.28);
     background-clip: content-box;
   }
 }
 
 @layer components {
   .glass {
-    @apply border border-white/[0.08] bg-white/[0.03] backdrop-blur-xl;
-    box-shadow:
-      0 1px 0 0 hsl(0 0% 100% / 0.05) inset,
-      0 20px 40px -20px hsl(240 60% 2% / 0.6);
-  }
-
-  .light .glass {
-    @apply border-black/[0.06] bg-white/70;
-    box-shadow:
-      0 1px 0 0 hsl(0 0% 100% / 0.8) inset,
-      0 20px 40px -24px hsl(240 30% 40% / 0.18);
+    @apply border border-black/[0.06] bg-white;
+    box-shadow: 0 24px 80px -24px rgba(0, 39, 80, 0.12);
   }
 
   .card-glow {
@@ -95,10 +71,10 @@
     padding: 1px;
     background: linear-gradient(
       130deg,
-      hsl(263 90% 66% / 0.5),
+      rgba(21, 101, 192, 0.35),
       transparent 35%,
       transparent 65%,
-      hsl(190 90% 60% / 0.4)
+      rgba(66, 165, 245, 0.3)
     );
     -webkit-mask:
       linear-gradient(#000 0 0) content-box,
@@ -117,10 +93,10 @@
     @apply bg-clip-text text-transparent;
     background-image: linear-gradient(
       110deg,
-      hsl(220 20% 98%),
-      hsl(263 90% 78%) 40%,
-      hsl(190 90% 70%) 70%,
-      hsl(220 20% 98%)
+      #001033,
+      #1565c0 45%,
+      #42a5f5 75%,
+      #001033
     );
     background-size: 200% auto;
     animation: gradient-x 8s ease infinite;
@@ -128,16 +104,70 @@
 
   .grid-bg {
     background-image:
-      linear-gradient(to right, hsl(var(--border) / 0.4) 1px, transparent 1px),
-      linear-gradient(to bottom, hsl(var(--border) / 0.4) 1px, transparent 1px);
+      linear-gradient(to right, rgba(0, 16, 51, 0.06) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 16, 51, 0.06) 1px, transparent 1px);
     background-size: 56px 56px;
     -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
     mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, #000 40%, transparent 100%);
   }
 
   .dot-bg {
-    background-image: radial-gradient(hsl(var(--muted-foreground) / 0.18) 1px, transparent 1px);
+    background-image: radial-gradient(rgba(0, 16, 51, 0.08) 1px, transparent 1px);
     background-size: 22px 22px;
+  }
+
+  /* Landing hero — Antimetal gradient (home page only) */
+  .landing-hero-bg {
+    background: linear-gradient(
+      180deg,
+      #00040d 0%,
+      #000814 8%,
+      #001033 22%,
+      #0a3580 48%,
+      #1565c0 62%,
+      #42a5f5 78%,
+      #90caf9 90%,
+      #f8f9fc 100%
+    );
+  }
+
+  .landing-lime-btn {
+    @apply inline-flex items-center justify-center rounded-full bg-[#d0f100] px-7 py-3 text-sm font-semibold text-[#001033] transition-transform hover:scale-[1.02];
+    box-shadow: 0 0 48px -6px rgba(208, 241, 0, 0.65);
+  }
+
+  .landing-ghost-btn {
+    @apply inline-flex items-center justify-center rounded-full border border-white/25 bg-white/[0.04] px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/[0.08];
+  }
+
+  .landing-feature-card,
+  .app-card {
+    @apply rounded-3xl border border-black/[0.06] bg-white shadow-[0_24px_80px_-24px_rgba(0,39,80,0.18)];
+  }
+
+  .landing-section {
+    @apply px-6 sm:px-8 lg:px-10;
+  }
+
+  .landing-section-y {
+    @apply py-24 sm:py-28 lg:py-32;
+  }
+
+  .landing-section-header {
+    @apply mb-14 sm:mb-16 lg:mb-20;
+  }
+
+  .app-input {
+    @apply w-full rounded-xl border border-black/[0.08] bg-white py-2.5 pl-10 pr-4 text-sm text-foreground outline-none transition-colors placeholder:text-muted-foreground focus:border-landing-electric/50 focus:ring-2 focus:ring-landing-electric/15;
+  }
+
+  .app-btn-primary {
+    @apply inline-flex items-center justify-center rounded-full bg-[#d0f100] px-5 py-2.5 text-sm font-semibold text-[#001033] transition-transform hover:scale-[1.02];
+    box-shadow: 0 0 32px -8px rgba(208, 241, 0, 0.5);
+  }
+
+  .app-btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-black/[0.12] bg-white px-5 py-2.5 text-sm font-medium text-landing-navy transition-colors hover:bg-landing-sky/50;
   }
 }
 
@@ -164,9 +194,6 @@
   }
 }
 
-/* Entrance reveal driven purely by CSS so content is NEVER left invisible if
-   JS/animation fails to run. Elements default to visible; the animation only
-   plays it in. Per-element offset/delay via the --rise-y / --rise-delay vars. */
 @keyframes rise {
   from {
     opacity: 0;
@@ -203,9 +230,6 @@
   height: 6px;
 }
 .math-inline .katex {
-  color: hsl(263 90% 82%);
+  color: #1565c0;
   font-size: 1em;
-}
-.light .math-inline .katex {
-  color: hsl(263 70% 46%);
 }

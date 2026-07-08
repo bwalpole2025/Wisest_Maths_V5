@@ -4,8 +4,8 @@ import type { Difficulty } from "@/lib/types";
 
 export function SectionLabel({ children }: { children: React.ReactNode }) {
   return (
-    <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-muted-foreground">
-      <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-violet-400 to-sky-400" />
+    <span className="inline-flex items-center gap-2 rounded-full border border-black/[0.08] bg-white px-3 py-1 text-xs font-medium uppercase tracking-[0.16em] text-landing-navy/50">
+      <span className="h-1.5 w-1.5 rounded-full bg-[#d0f100]" />
       {children}
     </span>
   );
@@ -30,7 +30,7 @@ export function Pill({ children, className }: { children: React.ReactNode; class
   return (
     <span
       className={cn(
-        "inline-flex items-center rounded-full border border-white/10 bg-white/[0.03] px-2.5 py-0.5 text-xs font-medium text-muted-foreground",
+        "inline-flex items-center rounded-full border border-black/[0.08] bg-landing-light px-2.5 py-0.5 text-xs font-medium text-landing-navy/55",
         className,
       )}
     >
