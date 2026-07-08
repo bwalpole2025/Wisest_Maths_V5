@@ -1,27 +1,43 @@
 "use client";
 
-import katex from "katex";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { cn } from "@/lib/utils";
+import { renderKatexAsync } from "@/lib/katex-client";
 
-function render(tex: string, displayMode: boolean): string {
-  try {
-    return katex.renderToString(tex, {
-      displayMode,
-      throwOnError: false,
-      strict: false,
-      trust: true,
-      output: "html",
+function useKatexHtml(tex: string, displayMode: boolean): string | null {
+  const [html, setHtml] = useState<string | null>(null);
+
+  useEffect(() => {
+    let alive = true;
+    renderKatexAsync(tex, displayMode).then((result) => {
+      if (alive) setHtml(result);
     });
-  } catch {
-    return tex;
-  }
+    return () => {
+      alive = false;
+    };
+  }, [tex, displayMode]);
+
+  return html;
 }
 
 /** Renders a block of display math (e.g. workingLatex). */
 export function MathBlock({ tex, className }: { tex: string; className?: string }) {
-  const html = useMemo(() => render(tex, true), [tex]);
-  return <span className={cn("block", className)} dangerouslySetInnerHTML={{ __html: html }} />;
+  const html = useKatexHtml(tex, true);
+
+  if (!html) {
+    return (
+      <div className={cn("math-block overflow-x-auto font-mono text-sm text-muted-foreground", className)}>
+        {tex}
+      </div>
+    );
+  }
+
+  return (
+    <div
+      className={cn("math-block overflow-x-auto", className)}
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
+  );
 }
 
 /**
@@ -47,17 +63,23 @@ export function MathText({ text, className }: { text: string; className?: string
     <span className={className}>
       {nodes.map((n, i) =>
         n.type === "math" ? (
-          <span
-            key={i}
-            className="math-inline"
-            dangerouslySetInnerHTML={{ __html: render(n.value, false) }}
-          />
+          <MathInline key={i} tex={n.value} />
         ) : (
           <Emphasis key={i} value={n.value} />
         ),
       )}
     </span>
   );
+}
+
+function MathInline({ tex }: { tex: string }) {
+  const html = useKatexHtml(tex, false);
+
+  if (!html) {
+    return <span className="math-inline font-mono text-[#1565c0]">${tex}$</span>;
+  }
+
+  return <span className="math-inline" dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
 function Emphasis({ value }: { value: string }) {

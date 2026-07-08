@@ -13,7 +13,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const outPath = resolve(__dirname, "../src/data/question-summaries.json");
 
 const { allQuestions } = await import("../src/lib/questions.ts");
-const { SUBTOPICS } = await import("../src/data/questions/a-level-maths/index.ts");
+const { SUBTOPICS } = await import("../src/data/questions/registry.ts");
 
 const subtopics = SUBTOPICS.map((entry) => {
   const qs = allQuestions.filter((q) => q.subtopicId === entry.id);

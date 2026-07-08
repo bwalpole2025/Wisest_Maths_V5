@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { getSubtopicBySlug, subtopics } from "@/lib/question-summaries";
-import { loadSubtopic } from "@/data/questions/a-level-maths";
+import { loadSubtopic } from "@/data/questions/registry";
 import { AppLink } from "@/components/app-link";
 import { QuestionListSkeleton } from "@/components/link-skeletons";
 import { Reveal } from "@/components/reveal";

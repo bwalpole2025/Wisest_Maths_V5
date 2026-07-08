@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowRight, ArrowLeftCircle } from "lucide-react";
 import { questionIds } from "@/lib/question-summaries";
 import { loadQuestionWithSiblings } from "@/lib/question-loader";
-import { slugForSubtopicId } from "@/data/questions/a-level-maths";
+import { slugForSubtopicId } from "@/data/questions/registry";
 import { AppLink } from "@/components/app-link";
 import { SolvePageSkeleton } from "@/components/link-skeletons";
 import { Reveal } from "@/components/reveal";

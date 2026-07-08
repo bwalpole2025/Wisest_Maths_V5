@@ -1,5 +1,5 @@
 import type { Question } from "@/lib/types";
-import { slugForSubtopicId } from "@/data/questions/a-level-maths";
+import { slugForSubtopicId } from "@/data/questions/registry";
 
 // Eager imports — used only in server components (landing, dashboard, subtopic
 // pages, solve pages) for build-time stats and summaries. Client components use
@@ -88,6 +88,12 @@ import { questions as forcesAndFriction } from "@/data/questions/a-level-maths/y
 import { questions as projectiles } from "@/data/questions/a-level-maths/year-2-mech/projectiles";
 import { questions as applicationsOfForces } from "@/data/questions/a-level-maths/year-2-mech/applications-of-forces";
 import { questions as furtherKinematics } from "@/data/questions/a-level-maths/year-2-mech/further-kinematics";
+import { questions as complexArithmetic } from "@/data/questions/a-level-further-maths/year-1-pure/complex-arithmetic";
+import { questions as argand } from "@/data/questions/a-level-further-maths/year-1-pure/argand";
+import { questions as rootsPolynomials } from "@/data/questions/a-level-further-maths/year-1-pure/roots-polynomials";
+import { questions as induction } from "@/data/questions/a-level-further-maths/year-1-pure/induction";
+import { questions as matrices } from "@/data/questions/a-level-further-maths/year-1-pure/matrices";
+import { questions as linearTransformations } from "@/data/questions/a-level-further-maths/year-1-pure/linear-transformations";
 
 export { slugForSubtopicId };
 
@@ -175,6 +181,12 @@ export const allQuestions: Question[] = [
   ...projectiles,
   ...applicationsOfForces,
   ...furtherKinematics,
+  ...complexArithmetic,
+  ...argand,
+  ...rootsPolynomials,
+  ...induction,
+  ...matrices,
+  ...linearTransformations,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

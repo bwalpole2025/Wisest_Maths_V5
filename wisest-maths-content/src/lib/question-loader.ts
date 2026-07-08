@@ -1,5 +1,5 @@
 import type { Question } from "@/lib/types";
-import { loadSubtopic, slugForSubtopicId } from "@/data/questions/a-level-maths";
+import { loadSubtopic, slugForSubtopicId } from "@/data/questions/registry";
 
 /** e.g. al.y2.mech.moments.q001 → al.y2.mech.moments */
 export function subtopicIdFromQuestionId(id: string): string {

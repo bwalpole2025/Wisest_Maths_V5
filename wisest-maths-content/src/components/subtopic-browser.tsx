@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { FastLink } from "@/components/fast-link";
 import { motion } from "framer-motion";
 import { Loader2, ArrowUpRight } from "lucide-react";
-import { loadSubtopic } from "@/data/questions/a-level-maths";
+import { loadSubtopic } from "@/data/questions/registry";
 import type { Question } from "@/lib/types";
 import { QuestionList } from "@/components/question-list";
 import { cn } from "@/lib/utils";

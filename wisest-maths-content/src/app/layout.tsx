@@ -14,8 +14,6 @@ const display = Space_Grotesk({ subsets: ["latin"], variable: "--font-display", 
 const serif = Instrument_Serif({ subsets: ["latin"], weight: "400", variable: "--font-serif", display: "swap" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono", display: "swap" });
 
-const CRITICAL_ROUTES = ["/curriculum", "/questions", "/dashboard"];
-
 export const metadata: Metadata = {
   title: "Wisest Maths — Master A-Level Maths, one elegant step at a time",
   description:
@@ -25,11 +23,6 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning className={`${inter.variable} ${display.variable} ${serif.variable} ${mono.variable}`}>
-      <head>
-        {CRITICAL_ROUTES.map((href) => (
-          <link key={href} rel="prefetch" href={href} />
-        ))}
-      </head>
       <body className="min-h-screen">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem={false} forcedTheme="light">
           <RoutePrefetcher />

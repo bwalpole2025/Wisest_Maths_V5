@@ -4,6 +4,7 @@ const nextConfig = {
   eslint: { ignoreDuringBuilds: true },
   poweredByHeader: false,
   compress: true,
+  serverExternalPackages: ["katex"],
   experimental: {
     optimizePackageImports: ["lucide-react", "framer-motion"],
   },

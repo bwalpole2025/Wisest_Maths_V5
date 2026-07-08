@@ -1,8 +1,8 @@
 {
-  "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 2 Mechanics",
-  "currentSubtopic": "Further kinematics",
-  "currentSubtopicId": "al.y2.mech.further-kinematics",
+  "currentLevel": "A-Level Further Maths",
+  "currentTopic": "Further Maths Year 1: Pure (Core Pure 1)",
+  "currentSubtopic": "Linear transformations",
+  "currentSubtopicId": "fm.y1.pure.linear-transformations",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -88,7 +88,13 @@
     "al.y2.mech.forces-friction",
     "al.y2.mech.projectilescontinued",
     "al.y2.mech.applications-forces",
-    "al.y2.mech.further-kinematics"
+    "al.y2.mech.further-kinematics",
+    "fm.y1.pure.complex-arithmetic",
+    "fm.y1.pure.argand",
+    "fm.y1.pure.roots-polynomials",
+    "fm.y1.pure.induction",
+    "fm.y1.pure.matrices",
+    "fm.y1.pure.linear-transformations"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -98,8 +104,8 @@
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 0,
-      "totalQuestionsGenerated": 0
+      "completedSubtopics": 6,
+      "totalQuestionsGenerated": 420
     },
     "GCSE": {
       "totalSubtopics": 123,

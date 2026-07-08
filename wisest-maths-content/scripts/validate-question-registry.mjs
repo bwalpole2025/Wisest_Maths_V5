@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 /**
- * Guards against the duplicate-subtopic / duplicate-ID mistakes that corrupt
- * webpack's module graph and trigger:
- *   __webpack_modules__[moduleId] is not a function
+ * Guards against duplicate-subtopic / duplicate-ID mistakes across all registries.
  */
 
 import { readFileSync, existsSync } from "node:fs";
@@ -11,28 +9,39 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, "..");
-const indexPath = resolve(root, "src/data/questions/a-level-maths/index.ts");
+const registryPath = resolve(root, "src/data/questions/registry.ts");
 const questionsPath = resolve(root, "src/lib/questions.ts");
 const summariesPath = resolve(root, "src/data/question-summaries.json");
 
 const errors = [];
 
-const indexSrc = readFileSync(indexPath, "utf8");
-const subtopicIds = [...indexSrc.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]);
-const slugLoads = [...indexSrc.matchAll(/load:\s*\(\)\s*=>\s*import\("\.\/([^"]+)"\)/g)].map((m) => m[1]);
+const registrySrc = readFileSync(registryPath, "utf8");
+const mathsIndex = readFileSync(resolve(root, "src/data/questions/a-level-maths/index.ts"), "utf8");
+const fmIndex = readFileSync(resolve(root, "src/data/questions/a-level-further-maths/index.ts"), "utf8");
+
+const subtopicIds = [
+  ...[...mathsIndex.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]),
+  ...[...fmIndex.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]),
+];
+
+const slugLoads = [
+  ...[...mathsIndex.matchAll(/load:\s*\(\)\s*=>\s*import\("\.\/([^"]+)"\)/g)].map((m) => m[1]),
+  ...[...fmIndex.matchAll(/load:\s*\(\)\s*=>\s*import\("\.\/([^"]+)"\)/g)].map((m) => m[1]),
+];
 
 const dupSubtopicIds = subtopicIds.filter((id, i) => subtopicIds.indexOf(id) !== i);
 if (dupSubtopicIds.length) {
-  errors.push(`Duplicate subtopic ids in index.ts: ${[...new Set(dupSubtopicIds)].join(", ")}`);
+  errors.push(`Duplicate subtopic ids: ${[...new Set(dupSubtopicIds)].join(", ")}`);
 }
 
-const eagerImports = [...readFileSync(questionsPath, "utf8").matchAll(
-  /from "@\/data\/questions\/a-level-maths\/([^"]+)"/g,
-)].map((m) => m[1]);
+const eagerImports = [
+  ...[...readFileSync(questionsPath, "utf8").matchAll(/from "@\/data\/questions\/a-level-maths\/([^"]+)"/g)].map((m) => m[1]),
+  ...[...readFileSync(questionsPath, "utf8").matchAll(/from "@\/data\/questions\/a-level-further-maths\/([^"]+)"/g)].map((m) => m[1]),
+];
 
 if (slugLoads.length !== eagerImports.length) {
   errors.push(
-    `Registry/import mismatch: index.ts has ${slugLoads.length} dynamic loaders but questions.ts has ${eagerImports.length} eager imports.`,
+    `Registry/import mismatch: ${slugLoads.length} dynamic loaders vs ${eagerImports.length} eager imports.`,
   );
 }
 
@@ -49,6 +58,10 @@ if (!existsSync(summariesPath)) {
   } catch {
     errors.push("Invalid src/data/question-summaries.json — run: npm run sync-summaries");
   }
+}
+
+if (!registrySrc.includes("MATHS_SUBTOPICS") || !registrySrc.includes("FM_SUBTOPICS")) {
+  errors.push("registry.ts must merge a-level-maths and a-level-further-maths SUBTOPICS.");
 }
 
 if (errors.length) {
