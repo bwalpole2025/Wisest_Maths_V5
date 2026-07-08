@@ -70,7 +70,15 @@ import { questions as ratesOfChange } from "@/data/questions/a-level-maths/year-
 import { questions as locatingRootsAndIteration } from "@/data/questions/a-level-maths/year-2-pure/locating-roots-and-iteration";
 import { questions as newtonRaphson } from "@/data/questions/a-level-maths/year-2-pure/newton-raphson";
 import { questions as numericalIntegration } from "@/data/questions/a-level-maths/year-2-pure/numerical-integration";
+import { questions as standardIntegrals } from "@/data/questions/a-level-maths/year-2-pure/standard-integrals";
 import { questions as secondDerivativesAndCurveBehaviour } from "@/data/questions/a-level-maths/year-2-pure/second-derivatives-and-curve-behaviour";
+import { questions as integrationBySubstitution } from "@/data/questions/a-level-maths/year-2-pure/integration-by-substitution";
+import { questions as integrationByParts } from "@/data/questions/a-level-maths/year-2-pure/integration-by-parts";
+import { questions as integrationWithPartialFractions } from "@/data/questions/a-level-maths/year-2-pure/integration-with-partial-fractions";
+import { questions as areasAndFurtherApplications } from "@/data/questions/a-level-maths/year-2-pure/areas-and-further-applications";
+import { questions as differentialEquations } from "@/data/questions/a-level-maths/year-2-pure/differential-equations";
+import { questions as vectorsInThreeDimensions } from "@/data/questions/a-level-maths/year-2-pure/vectors-in-three-dimensions";
+import { questions as regressionAndCorrelation } from "@/data/questions/a-level-maths/year-2-stats/regression-and-correlation";
 import { questions as conditionalProbability } from "@/data/questions/a-level-maths/year-2-stats/conditional-probability";
 import { questions as theNormalDistribution } from "@/data/questions/a-level-maths/year-2-stats/the-normal-distribution";
 
@@ -142,7 +150,15 @@ export const allQuestions: Question[] = [
   ...locatingRootsAndIteration,
   ...newtonRaphson,
   ...numericalIntegration,
+  ...standardIntegrals,
   ...secondDerivativesAndCurveBehaviour,
+  ...integrationBySubstitution,
+  ...integrationByParts,
+  ...integrationWithPartialFractions,
+  ...areasAndFurtherApplications,
+  ...differentialEquations,
+  ...vectorsInThreeDimensions,
+  ...regressionAndCorrelation,
   ...conditionalProbability,
   ...theNormalDistribution,
 ];

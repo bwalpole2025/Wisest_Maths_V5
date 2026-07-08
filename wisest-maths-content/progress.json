@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 2 Pure",
-  "currentSubtopic": "Second derivatives and curve behaviour",
-  "currentSubtopicId": "al.y2.pure.second-derivatives",
+  "currentTopic": "Year 2 Statistics",
+  "currentSubtopic": "Regression and correlation",
+  "currentSubtopicId": "al.y2.stats.regression-correlation",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -74,13 +74,20 @@
     "al.y2.pure.newton-raphson",
     "al.y2.pure.numerical-integration",
     "al.y2.pure.standard-integrals",
-    "al.y2.pure.second-derivatives"
+    "al.y2.pure.second-derivatives",
+    "al.y2.pure.integration-substitution",
+    "al.y2.pure.integration-by-parts",
+    "al.y2.pure.integration-partial-fractions",
+    "al.y2.pure.areas-applications",
+    "al.y2.pure.differential-equations",
+    "al.y2.pure.vectors-3d",
+    "al.y2.stats.regression-correlation"
   ],
   "overallProgress": {
     "A-Level Maths": {
       "totalSubtopics": 83,
-      "completedSubtopics": 69,
-      "totalQuestionsGenerated": 4830
+      "completedSubtopics": 76,
+      "totalQuestionsGenerated": 5320
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
