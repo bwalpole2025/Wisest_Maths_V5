@@ -1151,8 +1151,8 @@ export const questions: Question[] = [
         {
           "stepNumber": 7,
           "description": "Check a value inside.",
-          "workingLatex": "x = 2.5: \\ (0.5)(-0.5) = -0.25 < 0 \\ \\checkmark",
-          "explanation": "At $x = 2.5$ the product is negative, confirming the inequality holds between the roots.",
+          "workingLatex": "x = \\tfrac{5}{2}: \\ (\\tfrac{1}{2})(-\\tfrac{1}{2}) = -\\tfrac{1}{4} < 0 \\ \\checkmark",
+          "explanation": "At $x = \\tfrac{5}{2}$ the product is negative, confirming the inequality holds between the roots.",
           "diagram": null
         },
         {
@@ -1615,13 +1615,13 @@ export const questions: Question[] = [
           "diagram": {
             "kind": "parabolaRegion",
             "r1": -2,
-            "r2": 0.5,
+            "r2": 1 / 2,
             "opensUp": true,
             "region": "exterior",
             "rootsClosed": false,
             "label": "x < -2 or x > 1/2",
             "caption": "(2x-1)(x+2) > 0: above the axis outside the roots -2 and ½.",
-            "alt": "Upward parabola crossing the x-axis at -2 and 0.5, with the two outer regions shaded and the roots marked as open points."
+            "alt": "Upward parabola crossing the x-axis at -2 and 1/2, with the two outer regions shaded and the roots marked as open points."
           }
         },
         {
@@ -2273,7 +2273,7 @@ export const questions: Question[] = [
                 "label": "2x + 1 > 0",
                 "intervals": [
                   {
-                    "from": -0.5,
+                    "from": -1 / 2,
                     "to": null,
                     "fromClosed": false
                   }
@@ -2284,7 +2284,7 @@ export const questions: Question[] = [
                 "highlight": true,
                 "intervals": [
                   {
-                    "from": -0.5,
+                    "from": -1 / 2,
                     "to": 2,
                     "fromClosed": false,
                     "toClosed": false
@@ -2293,7 +2293,7 @@ export const questions: Question[] = [
               }
             ],
             "caption": "The answer is where BOTH conditions are shaded: -½ < x < 2.",
-            "alt": "Three stacked number lines: -2 to 2 for the quadratic, x greater than -0.5 for the linear, and their overlap from -0.5 to 2 highlighted."
+            "alt": "Three stacked number lines: -2 to 2 for the quadratic, x greater than -1/2 for the linear, and their overlap from -1/2 to 2 highlighted."
           }
         },
         {
@@ -2382,7 +2382,7 @@ export const questions: Question[] = [
           "explanation": "The inequality $\\le 0$ holds for $x$ between $-\\tfrac13$ and $2$, including the roots themselves.",
           "diagram": {
             "kind": "parabolaRegion",
-            "r1": -0.3333,
+            "r1": -1 / 3,
             "r2": 2,
             "opensUp": true,
             "region": "interior",
@@ -3691,8 +3691,8 @@ export const questions: Question[] = [
         {
           "stepNumber": 7,
           "description": "Check a value between the roots.",
-          "workingLatex": "x = 3.5: \\ (0.5)(-0.5) = -0.25 \\not> 0",
-          "explanation": "At $x = 3.5$ the product is negative, confirming the inequality fails between the roots.",
+          "workingLatex": "x = \\tfrac{7}{2}: \\ (\\tfrac{1}{2})(-\\tfrac{1}{2}) = -\\tfrac{1}{4} \\not> 0",
+          "explanation": "At $x = \\tfrac{7}{2}$ the product is negative, confirming the inequality fails between the roots.",
           "diagram": null
         },
         {
@@ -4059,7 +4059,7 @@ export const questions: Question[] = [
           "explanation": "The inequality $\\ge 0$ holds for $x$ at most $\\tfrac13$ or at least $2$, including the roots.",
           "diagram": {
             "kind": "parabolaRegion",
-            "r1": 0.3333333333333333,
+            "r1": 1 / 3,
             "r2": 2,
             "opensUp": true,
             "region": "exterior",
@@ -4183,14 +4183,14 @@ export const questions: Question[] = [
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-\\tfrac12$ and $3$.",
           "diagram": {
             "kind": "parabolaRegion",
-            "r1": -0.5,
+            "r1": -1 / 2,
             "r2": 3,
             "opensUp": true,
             "region": "interior",
             "rootsClosed": false,
             "label": "-1/2 < x < 3",
             "caption": "2x² - 5x - 3 < 0: below the axis between the roots -1/2 and 3.",
-            "alt": "Upward parabola crossing the x-axis at -0.5 and 3, with the region between the roots shaded and the roots shown as open circles."
+            "alt": "Upward parabola crossing the x-axis at -1/2 and 3, with the region between the roots shaded and the roots shown as open circles."
           }
         },
         {
@@ -4875,8 +4875,8 @@ export const questions: Question[] = [
         {
           "stepNumber": 12,
           "description": "Check a value outside.",
-          "workingLatex": "x = -0.5: \\ x > 0 \\text{ fails}",
-          "explanation": "At $x = -0.5$ the condition $x > 0$ fails, confirming negative values are excluded despite satisfying the quadratic.",
+          "workingLatex": "x = -\\tfrac{1}{2}: \\ x > 0 \\text{ fails}",
+          "explanation": "At $x = -\\tfrac{1}{2}$ the condition $x > 0$ fails, confirming negative values are excluded despite satisfying the quadratic.",
           "diagram": null
         },
         {
@@ -6167,14 +6167,14 @@ export const questions: Question[] = [
           "explanation": "The inequality $< 0$ holds for $x$ strictly between $-\\tfrac32$ and $\\tfrac32$.",
           "diagram": {
             "kind": "parabolaRegion",
-            "r1": -1.5,
-            "r2": 1.5,
+            "r1": -3 / 2,
+            "r2": 3 / 2,
             "opensUp": true,
             "region": "interior",
             "rootsClosed": false,
             "label": "-3/2 < x < 3/2",
             "caption": "4x² - 9 < 0: below the axis between the roots -3/2 and 3/2.",
-            "alt": "Upward parabola crossing at -1.5 and 1.5, shaded strictly between the roots where it dips below the axis."
+            "alt": "Upward parabola crossing at -3/2 and 3/2, shaded strictly between the roots where it dips below the axis."
           }
         },
         {
@@ -6292,13 +6292,13 @@ export const questions: Question[] = [
           "diagram": {
             "kind": "parabolaRegion",
             "r1": -2,
-            "r2": 1.5,
+            "r2": 3 / 2,
             "opensUp": true,
             "region": "exterior",
             "rootsClosed": true,
             "label": "x ≤ -2 or x ≥ 3/2",
             "caption": "2x² + x - 6 ≥ 0: on or above the axis outside the roots -2 and 3/2.",
-            "alt": "Upward parabola crossing at -2 and 1.5, shaded on and outside the roots where it lies on or above the axis."
+            "alt": "Upward parabola crossing at -2 and 3/2, shaded on and outside the roots where it lies on or above the axis."
           }
         },
         {
