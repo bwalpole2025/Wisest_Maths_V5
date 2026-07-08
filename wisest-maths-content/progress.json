@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Further Maths",
-  "currentTopic": "Further Maths Year 1: Statistics (Further Statistics 1)",
-  "currentSubtopic": "Probability generating functions",
-  "currentSubtopicId": "fm.y1.stats.pgf",
+  "currentTopic": "Further Maths Year 2: Pure (Core Pure 2)",
+  "currentSubtopic": "De Moivre's theorem",
+  "currentSubtopicId": "fm.y2.pure.de-moivre",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -120,7 +120,10 @@
     "fm.y1.stats.quality-of-tests",
     "fm.y1.stats.central-limit",
     "fm.y1.stats.chi-squared",
-    "fm.y1.stats.pgf"
+    "fm.y1.stats.pgf",
+    "fm.y1.stats.contingency-tables",
+    "fm.y2.pure.complex-exponential",
+    "fm.y2.pure.de-moivre"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -130,8 +133,8 @@
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 31,
-      "totalQuestionsGenerated": 2170
+      "completedSubtopics": 34,
+      "totalQuestionsGenerated": 2380
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -139,5 +142,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-08T17:55:00+01:00"
+  "lastUpdated": "2026-07-08T18:55:00+01:00"
 }

@@ -114,7 +114,10 @@ import { questions as hypothesisTests } from "@/data/questions/a-level-further-m
 import { questions as qualityOfTests } from "@/data/questions/a-level-further-maths/year-1-stats/quality-of-tests";
 import { questions as centralLimit } from "@/data/questions/a-level-further-maths/year-1-stats/central-limit";
 import { questions as chiSquared } from "@/data/questions/a-level-further-maths/year-1-stats/chi-squared";
+import { questions as contingencyTables } from "@/data/questions/a-level-further-maths/year-1-stats/contingency-tables";
 import { questions as pgf } from "@/data/questions/a-level-further-maths/year-1-stats/pgf";
+import { questions as complexExponential } from "@/data/questions/a-level-further-maths/year-2-pure/complex-exponential";
+import { questions as deMoivre } from "@/data/questions/a-level-further-maths/year-2-pure/de-moivre";
 import { questions as poisson } from "@/data/questions/a-level-further-maths/year-1-stats/poisson";
 import { questions as elasticStringsSprings } from "@/data/questions/a-level-further-maths/year-1-mech/elastic-strings-springs";
 import { questions as impulseVectors } from "@/data/questions/a-level-further-maths/year-1-mech/impulse-vectors";
@@ -238,7 +241,10 @@ export const allQuestions: Question[] = [
   ...qualityOfTests,
   ...centralLimit,
   ...chiSquared,
+  ...contingencyTables,
   ...pgf,
+  ...complexExponential,
+  ...deMoivre,
 ];
 
 export function getQuestionById(id: string): Question | undefined {
