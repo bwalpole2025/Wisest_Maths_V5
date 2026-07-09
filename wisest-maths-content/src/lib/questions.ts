@@ -161,6 +161,7 @@ import { questions as continuousUniform } from "@/data/questions/a-level-further
 import { questions as inferenceForVariance } from "@/data/questions/a-level-further-maths/year-2-stats/inference-for-variance";
 import { questions as linearRegressionFm } from "@/data/questions/a-level-further-maths/year-2-stats/linear-regression";
 import { questions as gcseOrdering } from "@/data/questions/gcse/number/ordering-and-comparing-numbers";
+import { questions as gcseFourOperations } from "@/data/questions/gcse/number/four-operations-and-place-value";
 
 export { slugForSubtopicId };
 
@@ -321,6 +322,7 @@ export const allQuestions: Question[] = [
   ...inferenceForVariance,
   ...linearRegressionFm,
   ...gcseOrdering,
+  ...gcseFourOperations,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

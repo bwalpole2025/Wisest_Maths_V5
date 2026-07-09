@@ -1,10 +1,10 @@
 {
-  "currentLevel": "A-Level Further Maths",
-  "currentTopic": "Further Maths Year 2: Statistics (Further Statistics 2)",
-  "currentSubtopic": "Linear regression",
-  "currentSubtopicId": "fm.y2.stats.linear-regression",
-  "questionsGenerated": 70,
-  "targetQuestionsPerSubtopic": 70,
+  "currentLevel": "GCSE",
+  "currentTopic": "Number: Structure and calculation",
+  "currentSubtopic": "Four operations and place value",
+  "currentSubtopicId": "gcse.number.four-operations",
+  "questionsGenerated": 24,
+  "targetQuestionsPerSubtopic": 60,
   "completedSubtopics": [
     "al.y1.pure.argument-notation",
     "al.y1.pure.proof-deduction",
@@ -175,8 +175,12 @@
     "GCSE": {
       "totalSubtopics": 123,
       "completedSubtopics": 0,
-      "totalQuestionsGenerated": 0
+      "totalQuestionsGenerated": 36,
+      "inProgress": [
+        { "id": "gcse.number.ordering", "name": "Ordering and comparing numbers", "questions": 12 },
+        { "id": "gcse.number.four-operations", "name": "Four operations and place value", "questions": 24 }
+      ]
     }
   },
-  "lastUpdated": "2026-07-09T07:20:00+01:00"
+  "lastUpdated": "2026-07-09T08:48:00+01:00"
 }

@@ -18,15 +18,18 @@ const errors = [];
 const registrySrc = readFileSync(registryPath, "utf8");
 const mathsIndex = readFileSync(resolve(root, "src/data/questions/a-level-maths/index.ts"), "utf8");
 const fmIndex = readFileSync(resolve(root, "src/data/questions/a-level-further-maths/index.ts"), "utf8");
+const gcseIndex = readFileSync(resolve(root, "src/data/questions/gcse/index.ts"), "utf8");
 
 const subtopicIds = [
   ...[...mathsIndex.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]),
   ...[...fmIndex.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]),
+  ...[...gcseIndex.matchAll(/id:\s*"([^"]+)"/g)].map((m) => m[1]),
 ];
 
 const slugLoads = [
   ...[...mathsIndex.matchAll(/load:\s*\(\)\s*=>\s*import\("\.\/([^"]+)"\)/g)].map((m) => m[1]),
   ...[...fmIndex.matchAll(/load:\s*\(\)\s*=>\s*import\("\.\/([^"]+)"\)/g)].map((m) => m[1]),
+  ...[...gcseIndex.matchAll(/load:\s*\(\)\s*=>\s*import\("\.\/([^"]+)"\)/g)].map((m) => m[1]),
 ];
 
 const dupSubtopicIds = subtopicIds.filter((id, i) => subtopicIds.indexOf(id) !== i);
@@ -34,9 +37,11 @@ if (dupSubtopicIds.length) {
   errors.push(`Duplicate subtopic ids: ${[...new Set(dupSubtopicIds)].join(", ")}`);
 }
 
+const questionsSrc = readFileSync(questionsPath, "utf8");
 const eagerImports = [
-  ...[...readFileSync(questionsPath, "utf8").matchAll(/from "@\/data\/questions\/a-level-maths\/([^"]+)"/g)].map((m) => m[1]),
-  ...[...readFileSync(questionsPath, "utf8").matchAll(/from "@\/data\/questions\/a-level-further-maths\/([^"]+)"/g)].map((m) => m[1]),
+  ...[...questionsSrc.matchAll(/from "@\/data\/questions\/a-level-maths\/([^"]+)"/g)].map((m) => m[1]),
+  ...[...questionsSrc.matchAll(/from "@\/data\/questions\/a-level-further-maths\/([^"]+)"/g)].map((m) => m[1]),
+  ...[...questionsSrc.matchAll(/from "@\/data\/questions\/gcse\/([^"]+)"/g)].map((m) => m[1]),
 ];
 
 if (slugLoads.length !== eagerImports.length) {

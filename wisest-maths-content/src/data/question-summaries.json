@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-07-09T07:46:43.459Z",
+  "generatedAt": "2026-07-09T07:56:12.263Z",
   "stats": {
-    "total": 10862,
-    "subtopics": 156,
-    "easy": 3781,
-    "intermediate": 4455,
+    "total": 10886,
+    "subtopics": 157,
+    "easy": 3791,
+    "intermediate": 4469,
     "hard": 2626,
-    "steps": 102522
+    "steps": 102700
   },
   "subtopics": [
     {
@@ -78,6 +78,20 @@
       "easy": 25,
       "intermediate": 30,
       "hard": 15
+    },
+    {
+      "id": "gcse.number.four-operations",
+      "name": "Four operations and place value",
+      "slug": "four-operations-and-place-value",
+      "gradient": "from-indigo-400 to-violet-500",
+      "blurb": "Formal written methods for integers, decimals and money, and the meaning of each digit's place value.",
+      "order": 2,
+      "topic": "Number",
+      "level": "GCSE",
+      "count": 24,
+      "easy": 10,
+      "intermediate": 14,
+      "hard": 0
     },
     {
       "id": "al.y1.pure.disproof",
@@ -13056,6 +13070,30 @@
     "gcse.number.ordering.q009",
     "gcse.number.ordering.q010",
     "gcse.number.ordering.q011",
-    "gcse.number.ordering.q012"
+    "gcse.number.ordering.q012",
+    "gcse.number.four-operations.q001",
+    "gcse.number.four-operations.q002",
+    "gcse.number.four-operations.q003",
+    "gcse.number.four-operations.q004",
+    "gcse.number.four-operations.q005",
+    "gcse.number.four-operations.q006",
+    "gcse.number.four-operations.q007",
+    "gcse.number.four-operations.q008",
+    "gcse.number.four-operations.q009",
+    "gcse.number.four-operations.q010",
+    "gcse.number.four-operations.q011",
+    "gcse.number.four-operations.q012",
+    "gcse.number.four-operations.q013",
+    "gcse.number.four-operations.q014",
+    "gcse.number.four-operations.q015",
+    "gcse.number.four-operations.q016",
+    "gcse.number.four-operations.q017",
+    "gcse.number.four-operations.q018",
+    "gcse.number.four-operations.q019",
+    "gcse.number.four-operations.q020",
+    "gcse.number.four-operations.q021",
+    "gcse.number.four-operations.q022",
+    "gcse.number.four-operations.q023",
+    "gcse.number.four-operations.q024"
   ]
 }
