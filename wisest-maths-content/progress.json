@@ -1,8 +1,8 @@
 {
   "currentLevel": "GCSE",
-  "currentTopic": "Number: Structure and calculation",
-  "currentSubtopic": "Exact calculation",
-  "currentSubtopicId": "gcse.number.exact-calculation",
+  "currentTopic": "Notation, vocabulary and manipulation",
+  "currentSubtopic": "Identities and argument",
+  "currentSubtopicId": "gcse.algebra.identities-proof",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -168,7 +168,25 @@
     "gcse.number.product-rule",
     "gcse.number.powers-roots",
     "gcse.number.integer-indices",
-    "gcse.number.exact-calculation"
+    "gcse.number.exact-calculation",
+    "gcse.number.standard-form",
+    "gcse.number.fraction-arithmetic",
+    "gcse.number.fdp-equivalence",
+    "gcse.number.fractions-of-amounts",
+    "gcse.number.percentage-operators",
+    "gcse.number.units",
+    "gcse.number.estimation",
+    "gcse.number.rounding",
+    "gcse.number.error-intervals",
+    "gcse.algebra.notation",
+    "gcse.algebra.substitution",
+    "gcse.algebra.vocabulary",
+    "gcse.algebra.simplifying",
+    "gcse.algebra.expanding-binomials",
+    "gcse.algebra.factorising-quadratics",
+    "gcse.algebra.index-laws",
+    "gcse.algebra.rearranging",
+    "gcse.algebra.identities-proof"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -183,8 +201,8 @@
     },
     "GCSE": {
       "totalSubtopics": 123,
-      "completedSubtopics": 9,
-      "totalQuestionsGenerated": 666,
+      "completedSubtopics": 27,
+      "totalQuestionsGenerated": 1926,
       "inProgress": [
         { "id": "gcse.number.ordering", "name": "Ordering and comparing numbers", "questions": 12 },
         { "id": "gcse.number.four-operations", "name": "Four operations and place value", "questions": 24 }
@@ -198,9 +216,27 @@
         { "id": "gcse.number.product-rule", "name": "Product rule for counting", "questions": 70 },
         { "id": "gcse.number.powers-roots", "name": "Powers and roots", "questions": 70 },
         { "id": "gcse.number.integer-indices", "name": "Integer indices", "questions": 70 },
-        { "id": "gcse.number.exact-calculation", "name": "Exact calculation", "questions": 70 }
+        { "id": "gcse.number.exact-calculation", "name": "Exact calculation", "questions": 70 },
+        { "id": "gcse.number.standard-form", "name": "Standard form", "questions": 70 },
+        { "id": "gcse.number.fraction-arithmetic", "name": "Fraction arithmetic", "questions": 70 },
+        { "id": "gcse.number.fdp-equivalence", "name": "FDP equivalence", "questions": 70 },
+        { "id": "gcse.number.fractions-of-amounts", "name": "Fractions of amounts", "questions": 70 },
+        { "id": "gcse.number.percentage-operators", "name": "Percentages as operators", "questions": 70 },
+        { "id": "gcse.number.units", "name": "Standard and compound units", "questions": 70 },
+        { "id": "gcse.number.estimation", "name": "Estimation and checking", "questions": 70 },
+        { "id": "gcse.number.rounding", "name": "Rounding", "questions": 70 },
+        { "id": "gcse.number.error-intervals", "name": "Error intervals", "questions": 70 },
+        { "id": "gcse.algebra.notation", "name": "Algebraic notation", "questions": 70 },
+        { "id": "gcse.algebra.substitution", "name": "Substitution", "questions": 70 },
+        { "id": "gcse.algebra.vocabulary", "name": "Algebraic vocabulary", "questions": 70 },
+        { "id": "gcse.algebra.simplifying", "name": "Simplifying and single brackets", "questions": 70 },
+        { "id": "gcse.algebra.expanding-binomials", "name": "Expanding binomials", "questions": 70 },
+        { "id": "gcse.algebra.factorising-quadratics", "name": "Factorising quadratics", "questions": 70 },
+        { "id": "gcse.algebra.index-laws", "name": "Index laws in algebra", "questions": 70 },
+        { "id": "gcse.algebra.rearranging", "name": "Rearranging formulae", "questions": 70 },
+        { "id": "gcse.algebra.identities-proof", "name": "Identities and argument", "questions": 70 }
       ]
     }
   },
-  "lastUpdated": "2026-07-09T13:52:00+01:00"
+  "lastUpdated": "2026-07-09T23:10:00+01:00"
 }

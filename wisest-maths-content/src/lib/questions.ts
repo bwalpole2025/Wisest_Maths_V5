@@ -171,6 +171,24 @@ import { questions as gcseProductRule } from "@/data/questions/gcse/number/produ
 import { questions as gcsePowersRoots } from "@/data/questions/gcse/number/powers-and-roots";
 import { questions as gcseIntegerIndices } from "@/data/questions/gcse/number/integer-indices";
 import { questions as gcseExactCalculation } from "@/data/questions/gcse/number/exact-calculation";
+import { questions as gcseStandardForm } from "@/data/questions/gcse/number/standard-form";
+import { questions as gcseFractionArithmetic } from "@/data/questions/gcse/number/fraction-arithmetic";
+import { questions as gcseFdpEquivalence } from "@/data/questions/gcse/number/fdp-equivalence";
+import { questions as gcseFractionsOfAmounts } from "@/data/questions/gcse/number/fractions-of-amounts";
+import { questions as gcsePercentageOperators } from "@/data/questions/gcse/number/percentages-as-operators";
+import { questions as gcseUnits } from "@/data/questions/gcse/number/units";
+import { questions as gcseEstimation } from "@/data/questions/gcse/number/estimation-and-checking";
+import { questions as gcseRounding } from "@/data/questions/gcse/number/rounding";
+import { questions as gcseErrorIntervals } from "@/data/questions/gcse/number/error-intervals";
+import { questions as gcseAlgebraicNotation } from "@/data/questions/gcse/algebra/algebraic-notation";
+import { questions as gcseSubstitution } from "@/data/questions/gcse/algebra/substitution";
+import { questions as gcseAlgebraicVocabulary } from "@/data/questions/gcse/algebra/algebraic-vocabulary";
+import { questions as gcseSimplifying } from "@/data/questions/gcse/algebra/simplifying-and-single-brackets";
+import { questions as gcseExpandingBinomials } from "@/data/questions/gcse/algebra/expanding-binomials";
+import { questions as gcseFactorisingQuadratics } from "@/data/questions/gcse/algebra/factorising-quadratics";
+import { questions as gcseIndexLaws } from "@/data/questions/gcse/algebra/index-laws";
+import { questions as gcseRearrangingFormulae } from "@/data/questions/gcse/algebra/rearranging-formulae";
+import { questions as gcseIdentitiesAndArgument } from "@/data/questions/gcse/algebra/identities-and-argument";
 
 export { slugForSubtopicId };
 
@@ -341,6 +359,24 @@ export const allQuestions: Question[] = [
   ...gcsePowersRoots,
   ...gcseIntegerIndices,
   ...gcseExactCalculation,
+  ...gcseStandardForm,
+  ...gcseFractionArithmetic,
+  ...gcseFdpEquivalence,
+  ...gcseFractionsOfAmounts,
+  ...gcsePercentageOperators,
+  ...gcseUnits,
+  ...gcseEstimation,
+  ...gcseRounding,
+  ...gcseErrorIntervals,
+  ...gcseAlgebraicNotation,
+  ...gcseSubstitution,
+  ...gcseAlgebraicVocabulary,
+  ...gcseSimplifying,
+  ...gcseExpandingBinomials,
+  ...gcseFactorisingQuadratics,
+  ...gcseIndexLaws,
+  ...gcseRearrangingFormulae,
+  ...gcseIdentitiesAndArgument,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

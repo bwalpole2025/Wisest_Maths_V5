@@ -133,6 +133,188 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 11,
     load: () => import("./number/exact-calculation").then((m) => m.questions),
   },
+  {
+    slug: "standard-form",
+    id: "gcse.number.standard-form",
+    name: "Standard form",
+    blurb:
+      "Convert to and from $A \\times 10^{n}$ with $1 \\le A < 10$, and calculate with numbers in standard form.",
+    gradient: "from-emerald-400 to-teal-500",
+    order: 12,
+    load: () => import("./number/standard-form").then((m) => m.questions),
+  },
+  {
+    slug: "fraction-arithmetic",
+    id: "gcse.number.fraction-arithmetic",
+    name: "Fraction arithmetic",
+    blurb:
+      "Add, subtract, multiply and divide proper, improper and mixed-number fractions, simplifying the result.",
+    gradient: "from-teal-400 to-cyan-500",
+    order: 13,
+    load: () => import("./number/fraction-arithmetic").then((m) => m.questions),
+  },
+  {
+    slug: "fdp-equivalence",
+    id: "gcse.number.fdp-equivalence",
+    name: "FDP equivalence",
+    blurb:
+      "Convert freely between fractions, decimals and percentages, and order and compare mixed FDP values.",
+    gradient: "from-cyan-400 to-sky-500",
+    order: 14,
+    load: () => import("./number/fdp-equivalence").then((m) => m.questions),
+  },
+  {
+    slug: "fractions-of-amounts",
+    id: "gcse.number.fractions-of-amounts",
+    name: "Fractions of amounts",
+    blurb:
+      "Use fractions as operators to find a fraction of a quantity, including reverse and ratio problems.",
+    gradient: "from-sky-400 to-blue-500",
+    order: 15,
+    load: () => import("./number/fractions-of-amounts").then((m) => m.questions),
+  },
+  {
+    slug: "percentages-as-operators",
+    id: "gcse.number.percentage-operators",
+    name: "Percentages as operators",
+    blurb:
+      "Find percentages of amounts by build-up and multiplier methods, including increase, decrease and reverse problems.",
+    gradient: "from-blue-400 to-indigo-500",
+    order: 16,
+    load: () =>
+      import("./number/percentages-as-operators").then((m) => m.questions),
+  },
+  {
+    slug: "standard-and-compound-units",
+    id: "gcse.number.units",
+    name: "Standard and compound units",
+    blurb:
+      "Convert metric and imperial units of mass, length, time and money, and work with compound measures such as speed and density.",
+    gradient: "from-indigo-400 to-purple-500",
+    order: 17,
+    load: () => import("./number/units").then((m) => m.questions),
+  },
+  {
+    slug: "estimation-and-checking",
+    id: "gcse.number.estimation",
+    name: "Estimation and checking",
+    blurb:
+      "Round to 1 significant figure to estimate calculations, and check the reasonableness of answers.",
+    gradient: "from-purple-400 to-fuchsia-500",
+    order: 18,
+    load: () => import("./number/estimation-and-checking").then((m) => m.questions),
+  },
+  {
+    slug: "rounding",
+    id: "gcse.number.rounding",
+    name: "Rounding",
+    blurb:
+      "Round to decimal places and significant figures, and choose an appropriate degree of accuracy.",
+    gradient: "from-fuchsia-400 to-rose-500",
+    order: 19,
+    load: () => import("./number/rounding").then((m) => m.questions),
+  },
+  {
+    slug: "error-intervals",
+    id: "gcse.number.error-intervals",
+    name: "Error intervals",
+    blurb:
+      "Use inequality notation to state the error interval of a value after rounding or truncation.",
+    gradient: "from-rose-400 to-red-500",
+    order: 20,
+    load: () => import("./number/error-intervals").then((m) => m.questions),
+  },
+  {
+    slug: "algebraic-notation",
+    id: "gcse.algebra.notation",
+    name: "Algebraic notation",
+    blurb:
+      "Use algebraic conventions like $ab$, $3y$, $a^2$ and $\\frac{a}{b}$, and interpret and form expressions.",
+    gradient: "from-sky-400 to-indigo-500",
+    order: 21,
+    load: () => import("./algebra/algebraic-notation").then((m) => m.questions),
+  },
+  {
+    slug: "substitution",
+    id: "gcse.algebra.substitution",
+    name: "Substitution",
+    blurb:
+      "Substitute integers, decimals and fractions into expressions and scientific formulae.",
+    gradient: "from-indigo-400 to-violet-500",
+    order: 22,
+    load: () => import("./algebra/substitution").then((m) => m.questions),
+  },
+  {
+    slug: "algebraic-vocabulary",
+    id: "gcse.algebra.vocabulary",
+    name: "Algebraic vocabulary",
+    blurb:
+      "Distinguish expressions, equations, formulae and identities, and identify terms, coefficients and factors.",
+    gradient: "from-violet-400 to-fuchsia-500",
+    order: 23,
+    load: () => import("./algebra/algebraic-vocabulary").then((m) => m.questions),
+  },
+  {
+    slug: "simplifying-and-single-brackets",
+    id: "gcse.algebra.simplifying",
+    name: "Simplifying and single brackets",
+    blurb:
+      "Collect like terms, expand a single bracket and factorise out a common factor.",
+    gradient: "from-fuchsia-400 to-pink-500",
+    order: 24,
+    load: () =>
+      import("./algebra/simplifying-and-single-brackets").then((m) => m.questions),
+  },
+  {
+    slug: "expanding-binomials",
+    id: "gcse.algebra.expanding-binomials",
+    name: "Expanding binomials",
+    blurb:
+      "Expand products of two binomials, square binomials and use the difference of two squares.",
+    gradient: "from-pink-400 to-rose-500",
+    order: 25,
+    load: () => import("./algebra/expanding-binomials").then((m) => m.questions),
+  },
+  {
+    slug: "factorising-quadratics",
+    id: "gcse.algebra.factorising-quadratics",
+    name: "Factorising quadratics",
+    blurb:
+      "Factorise $x^2 + bx + c$, use the difference of two squares and solve by factorising.",
+    gradient: "from-rose-400 to-orange-500",
+    order: 26,
+    load: () => import("./algebra/factorising-quadratics").then((m) => m.questions),
+  },
+  {
+    slug: "index-laws",
+    id: "gcse.algebra.index-laws",
+    name: "Index laws in algebra",
+    blurb:
+      "Simplify algebraic expressions using the multiplication, division and power laws of indices.",
+    gradient: "from-orange-400 to-amber-500",
+    order: 27,
+    load: () => import("./algebra/index-laws").then((m) => m.questions),
+  },
+  {
+    slug: "rearranging-formulae",
+    id: "gcse.algebra.rearranging",
+    name: "Rearranging formulae",
+    blurb:
+      "Change the subject of a formula, including cases where the subject appears twice.",
+    gradient: "from-amber-400 to-yellow-500",
+    order: 28,
+    load: () => import("./algebra/rearranging-formulae").then((m) => m.questions),
+  },
+  {
+    slug: "identities-and-argument",
+    id: "gcse.algebra.identities-proof",
+    name: "Identities and argument",
+    blurb:
+      "Show equivalence of expressions, find unknown constants and build formal algebraic proofs.",
+    gradient: "from-yellow-400 to-lime-500",
+    order: 29,
+    load: () => import("./algebra/identities-and-argument").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>
