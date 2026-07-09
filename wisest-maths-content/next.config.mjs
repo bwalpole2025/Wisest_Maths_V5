@@ -6,7 +6,7 @@ const nextConfig = {
   compress: true,
   serverExternalPackages: ["katex"],
   experimental: {
-    optimizePackageImports: ["lucide-react", "framer-motion"],
+    optimizePackageImports: ["lucide-react"],
   },
 };
 

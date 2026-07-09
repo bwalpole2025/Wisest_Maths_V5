@@ -2325,6 +2325,16 @@
             "description": "PGFs of standard discrete distributions; mean and variance from G(t); sums of independent variables."
         },
         {
+            "id": "fm.y1.stats.combinations-random-variables",
+            "qualification": "ALEVEL_FM",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Further Maths Year 1: Statistics (Further Statistics 1)",
+            "name": "Combinations of random variables",
+            "tier": null,
+            "description": "Means and variances of sums, differences and scaled combinations; independent variables and covariance."
+        },
+        {
             "id": "fm.y1.stats.quality-of-tests",
             "qualification": "ALEVEL_FM",
             "year": "y1",

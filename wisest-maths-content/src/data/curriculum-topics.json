@@ -131,6 +131,7 @@
         "chi-squared": "Chi-squared goodness of fit",
         "contingency-tables": "Chi-squared tests",
         "pgf": "Probability generating functions",
+        "combinations-random-variables": "Combinations of random variables",
         "quality-of-tests": "Quality of tests"
       },
       "mech": {

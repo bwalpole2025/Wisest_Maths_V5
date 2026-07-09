@@ -35,6 +35,14 @@ interface RawSub {
 /** Strip the trailing "continued" parse-artifact from a handful of ids. */
 const cleanId = (id: string) => id.replace(/continued$/, "");
 
+const BUILT_ID_ALIASES: Record<string, string> = {
+  "fm.y2.pure.second-order-des": "fm.y2.pure.second-order-differential-equations",
+  "fm.y2.pure.de-modelling": "fm.y2.pure.modelling-differential-equations",
+  "fm.y2.pure.coupled-des": "fm.y2.pure.coupled-differential-equations",
+};
+
+const builtIdFor = (id: string) => BUILT_ID_ALIASES[cleanId(id)] ?? cleanId(id);
+
 const SUBS: RawSub[] = (rawData as { subtopics: RawSub[] }).subtopics.map((s) => ({
   ...s,
   id: cleanId(s.id),
@@ -201,7 +209,7 @@ export function getQualifications(): QualCard[] {
       blurb: q.blurb,
       splitLabels: q.splits.map((s) => s.label).join(" · "),
       total: all.length,
-      live: all.filter((s) => built.has(s.id)).length,
+      live: all.filter((s) => built.has(builtIdFor(s.id))).length,
     };
   });
 }
@@ -228,7 +236,7 @@ export function getSplits(qualSlug: string): { qual: QualMeta; splits: SplitCard
       grad: qual.grad,
       modules,
       subtopics: list.length,
-      live: list.filter((s) => built.has(s.id)).length,
+      live: list.filter((s) => built.has(builtIdFor(s.id))).length,
     };
   });
   return { qual, splits };
@@ -266,7 +274,7 @@ export function getModules(
       grad: meta.grad,
       topics: new Set(inMod.map((s) => topicOf(qual, s))).size,
       subtopics: inMod.length,
-      live: inMod.filter((s) => built.has(s.id)).length,
+      live: inMod.filter((s) => built.has(builtIdFor(s.id))).length,
     };
   });
   return { qual, split, modules };
@@ -312,7 +320,7 @@ export function getTopics(
       name,
       grad: gradAt(i),
       subtopics: inTopic.length,
-      live: inTopic.filter((s) => built.has(s.id)).length,
+      live: inTopic.filter((s) => built.has(builtIdFor(s.id))).length,
     };
   });
   return { qual: mods.qual, split: mods.split, module, topics };
@@ -352,7 +360,7 @@ export function getSubtopics(
     (s) => s.strand === strand && slugify(topicOf(t.qual, s)) === topicSlug,
   );
   const subtopics = list.map((s, i) => {
-    const b = built.get(s.id);
+    const b = built.get(builtIdFor(s.id));
     return {
       id: s.id,
       name: s.name,

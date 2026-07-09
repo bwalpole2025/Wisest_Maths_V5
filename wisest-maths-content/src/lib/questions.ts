@@ -116,6 +116,7 @@ import { questions as centralLimit } from "@/data/questions/a-level-further-math
 import { questions as chiSquared } from "@/data/questions/a-level-further-maths/year-1-stats/chi-squared";
 import { questions as contingencyTables } from "@/data/questions/a-level-further-maths/year-1-stats/contingency-tables";
 import { questions as pgf } from "@/data/questions/a-level-further-maths/year-1-stats/pgf";
+import { questions as combinationsRandomVariables } from "@/data/questions/a-level-further-maths/year-1-stats/combinations-random-variables";
 import { questions as complexExponential } from "@/data/questions/a-level-further-maths/year-2-pure/complex-exponential";
 import { questions as deMoivre } from "@/data/questions/a-level-further-maths/year-2-pure/de-moivre";
 import { questions as trigSeries } from "@/data/questions/a-level-further-maths/year-2-pure/trig-series";
@@ -126,12 +127,34 @@ import { questions as furtherIntegration } from "@/data/questions/a-level-furthe
 import { questions as improperIntegralsAndMeanValue } from "@/data/questions/a-level-further-maths/year-2-pure/improper-integrals-and-mean-value";
 import { questions as inverseTrigCalculus } from "@/data/questions/a-level-further-maths/year-2-pure/inverse-trig-calculus";
 import { questions as volumesParametric } from "@/data/questions/a-level-further-maths/year-2-pure/volumes-parametric";
+import { questions as polarCoordinates } from "@/data/questions/a-level-further-maths/year-2-pure/polar-coordinates";
+import { questions as polarAreas } from "@/data/questions/a-level-further-maths/year-2-pure/polar-areas";
+import { questions as hyperbolicFunctions } from "@/data/questions/a-level-further-maths/year-2-pure/hyperbolic-functions";
+import { questions as hyperbolicCalculus } from "@/data/questions/a-level-further-maths/year-2-pure/hyperbolic-calculus";
+import { questions as firstOrderDes } from "@/data/questions/a-level-further-maths/year-2-pure/first-order-des";
+import { questions as modellingDifferentialEquations } from "@/data/questions/a-level-further-maths/year-2-pure/modelling-with-differential-equations";
+import { questions as coupledDifferentialEquations } from "@/data/questions/a-level-further-maths/year-2-pure/coupled-differential-equations";
+import { questions as secondOrderDifferentialEquations } from "@/data/questions/a-level-further-maths/year-2-pure/second-order-differential-equations";
+import { questions as confidenceIntervals } from "@/data/questions/a-level-further-maths/year-2-stats/confidence-intervals";
 import { questions as multipleAngles } from "@/data/questions/a-level-further-maths/year-2-pure/multiple-angles";
 import { questions as poisson } from "@/data/questions/a-level-further-maths/year-1-stats/poisson";
 import { questions as elasticStringsSprings } from "@/data/questions/a-level-further-maths/year-1-mech/elastic-strings-springs";
 import { questions as impulseVectors } from "@/data/questions/a-level-further-maths/year-1-mech/impulse-vectors";
 import { questions as momentumImpulse } from "@/data/questions/a-level-further-maths/year-1-mech/momentum-impulse";
 import { questions as workEnergyPower } from "@/data/questions/a-level-further-maths/year-1-mech/work-energy-power";
+import { questions as horizontalCircular } from "@/data/questions/a-level-further-maths/year-2-mech/horizontal-circular";
+import { questions as verticalCircularMotion } from "@/data/questions/a-level-further-maths/year-2-mech/vertical-circular-motion";
+import { questions as comLaminas } from "@/data/questions/a-level-further-maths/year-2-mech/com-laminas";
+import { questions as comFrameworks } from "@/data/questions/a-level-further-maths/year-2-mech/com-frameworks";
+import { questions as centresOfMassSolidsCalculus } from "@/data/questions/a-level-further-maths/year-2-mech/centres-of-mass-solids-calculus";
+import { questions as staticsRigid } from "@/data/questions/a-level-further-maths/year-2-mech/statics-rigid";
+import { questions as obliqueImpactSurface } from "@/data/questions/a-level-further-maths/year-2-mech/oblique-impact-surface";
+import { questions as obliqueSpheres } from "@/data/questions/a-level-further-maths/year-2-mech/oblique-spheres";
+import { questions as furtherDynamics } from "@/data/questions/a-level-further-maths/year-2-mech/further-dynamics";
+import { questions as unbiasedEstimators } from "@/data/questions/a-level-further-maths/year-2-stats/unbiased-estimators";
+import { questions as spearmanRankCorrelation } from "@/data/questions/a-level-further-maths/year-2-stats/spearman";
+import { questions as continuousRandomVariables } from "@/data/questions/a-level-further-maths/year-2-stats/continuous-random-variables";
+import { questions as continuousUniform } from "@/data/questions/a-level-further-maths/year-2-stats/continuous-uniform";
 
 export { slugForSubtopicId };
 
@@ -252,6 +275,7 @@ export const allQuestions: Question[] = [
   ...chiSquared,
   ...contingencyTables,
   ...pgf,
+  ...combinationsRandomVariables,
   ...complexExponential,
   ...deMoivre,
   ...multipleAngles,
@@ -263,6 +287,28 @@ export const allQuestions: Question[] = [
   ...improperIntegralsAndMeanValue,
   ...volumesParametric,
   ...inverseTrigCalculus,
+  ...polarCoordinates,
+  ...polarAreas,
+  ...hyperbolicFunctions,
+  ...hyperbolicCalculus,
+  ...firstOrderDes,
+  ...modellingDifferentialEquations,
+  ...coupledDifferentialEquations,
+  ...secondOrderDifferentialEquations,
+  ...confidenceIntervals,
+  ...horizontalCircular,
+  ...verticalCircularMotion,
+  ...comLaminas,
+  ...comFrameworks,
+  ...centresOfMassSolidsCalculus,
+  ...staticsRigid,
+  ...obliqueImpactSurface,
+  ...obliqueSpheres,
+  ...furtherDynamics,
+  ...unbiasedEstimators,
+  ...spearmanRankCorrelation,
+  ...continuousRandomVariables,
+  ...continuousUniform,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Further Maths",
-  "currentTopic": "Further Maths Year 2: Pure (Core Pure 2)",
-  "currentSubtopic": "Inverse trigonometric calculus",
-  "currentSubtopicId": "fm.y2.pure.inverse-trig-calculus",
+  "currentTopic": "Further Maths Year 2: Statistics (Further Statistics 2)",
+  "currentSubtopic": "Unbiased estimators",
+  "currentSubtopicId": "fm.y2.stats.unbiased-estimators",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -122,6 +122,7 @@
     "fm.y1.stats.chi-squared",
     "fm.y1.stats.pgf",
     "fm.y1.stats.contingency-tables",
+    "fm.y1.stats.combinations-random-variables",
     "fm.y2.pure.complex-exponential",
     "fm.y2.pure.de-moivre",
     "fm.y2.pure.multiple-angles",
@@ -132,7 +133,29 @@
     "fm.y2.pure.further-calculus",
     "fm.y2.pure.further-integration",
     "fm.y2.pure.volumes-parametric",
-    "fm.y2.pure.inverse-trig-calculus"
+    "fm.y2.pure.inverse-trig-calculus",
+    "fm.y2.pure.polar-coordinates",
+    "fm.y2.pure.polar-areas",
+    "fm.y2.pure.hyperbolic-functions",
+    "fm.y2.pure.hyperbolic-calculus",
+    "fm.y2.pure.first-order-des",
+    "fm.y2.pure.modelling-differential-equations",
+    "fm.y2.pure.coupled-differential-equations",
+    "fm.y2.pure.second-order-differential-equations",
+    "fm.y2.mech.horizontal-circular",
+    "fm.y2.mech.com-laminas",
+    "fm.y2.mech.vertical-circular",
+    "fm.y2.mech.com-frameworks",
+    "fm.y2.mech.com-calculus",
+    "fm.y2.mech.statics-rigid",
+    "fm.y2.mech.collisions-2d",
+    "fm.y2.mech.oblique-spheres",
+    "fm.y2.mech.further-dynamics",
+    "fm.y2.stats.unbiased-estimators",
+    "fm.y2.stats.spearman",
+    "fm.y2.stats.continuous-rv",
+    "fm.y2.stats.estimation-ci",
+    "fm.y2.stats.continuous-uniform"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -141,9 +164,9 @@
       "totalQuestionsGenerated": 5810
     },
     "A-Level Further Maths": {
-      "totalSubtopics": 44,
-      "completedSubtopics": 44,
-      "totalQuestionsGenerated": 3080
+      "totalSubtopics": 67,
+      "completedSubtopics": 67,
+      "totalQuestionsGenerated": 4690
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -151,5 +174,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-09T02:37:00+01:00"
+  "lastUpdated": "2026-07-09T04:16:00+01:00"
 }
