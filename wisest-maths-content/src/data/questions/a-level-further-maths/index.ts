@@ -326,6 +326,42 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 34,
     load: () => import("./year-2-pure/de-moivre").then((m) => m.questions),
   },
+  {
+    slug: "multiple-angles",
+    id: "fm.y2.pure.multiple-angles",
+    name: "Multiple-angle identities",
+    blurb: "Expressing $\\cos n\\theta$ and $\\sin n\\theta$ in powers of trig functions; equations and integration.",
+    gradient: "from-purple-400 to-fuchsia-500",
+    order: 35,
+    load: () => import("./year-2-pure/multiple-angles").then((m) => m.questions),
+  },
+  {
+    slug: "trig-series",
+    id: "fm.y2.pure.trig-series",
+    name: "Trigonometric series",
+    blurb: "Sums of trigonometric series via geometric series of complex exponentials ($C + iS$ method).",
+    gradient: "from-violet-400 to-purple-500",
+    order: 36,
+    load: () => import("./year-2-pure/trig-series").then((m) => m.questions),
+  },
+  {
+    slug: "roots-of-unity",
+    id: "fm.y2.pure.roots-of-unity",
+    name: "Roots of unity",
+    blurb: "$n$th roots of unity and of any complex number; geometric interpretation and regular polygons.",
+    gradient: "from-purple-400 to-indigo-500",
+    order: 37,
+    load: () => import("./year-2-pure/roots-of-unity").then((m) => m.questions),
+  },
+  {
+    slug: "method-of-differences",
+    id: "fm.y2.pure.method-of-differences",
+    name: "Series: method of differences",
+    blurb: "Telescoping sums, including with partial fractions.",
+    gradient: "from-indigo-400 to-blue-500",
+    order: 38,
+    load: () => import("./year-2-pure/method-of-differences").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

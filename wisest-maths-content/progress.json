@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Further Maths",
   "currentTopic": "Further Maths Year 2: Pure (Core Pure 2)",
-  "currentSubtopic": "De Moivre's theorem",
-  "currentSubtopicId": "fm.y2.pure.de-moivre",
+  "currentSubtopic": "Series: method of differences",
+  "currentSubtopicId": "fm.y2.pure.method-of-differences",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -123,7 +123,11 @@
     "fm.y1.stats.pgf",
     "fm.y1.stats.contingency-tables",
     "fm.y2.pure.complex-exponential",
-    "fm.y2.pure.de-moivre"
+    "fm.y2.pure.de-moivre",
+    "fm.y2.pure.multiple-angles",
+    "fm.y2.pure.trig-series",
+    "fm.y2.pure.roots-of-unity",
+    "fm.y2.pure.method-of-differences"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -133,8 +137,8 @@
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 34,
-      "totalQuestionsGenerated": 2380
+      "completedSubtopics": 38,
+      "totalQuestionsGenerated": 2660
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -142,5 +146,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-08T18:55:00+01:00"
+  "lastUpdated": "2026-07-09T02:30:00+01:00"
 }

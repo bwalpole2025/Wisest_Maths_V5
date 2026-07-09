@@ -118,6 +118,10 @@ import { questions as contingencyTables } from "@/data/questions/a-level-further
 import { questions as pgf } from "@/data/questions/a-level-further-maths/year-1-stats/pgf";
 import { questions as complexExponential } from "@/data/questions/a-level-further-maths/year-2-pure/complex-exponential";
 import { questions as deMoivre } from "@/data/questions/a-level-further-maths/year-2-pure/de-moivre";
+import { questions as trigSeries } from "@/data/questions/a-level-further-maths/year-2-pure/trig-series";
+import { questions as rootsOfUnity } from "@/data/questions/a-level-further-maths/year-2-pure/roots-of-unity";
+import { questions as methodOfDifferences } from "@/data/questions/a-level-further-maths/year-2-pure/method-of-differences";
+import { questions as multipleAngles } from "@/data/questions/a-level-further-maths/year-2-pure/multiple-angles";
 import { questions as poisson } from "@/data/questions/a-level-further-maths/year-1-stats/poisson";
 import { questions as elasticStringsSprings } from "@/data/questions/a-level-further-maths/year-1-mech/elastic-strings-springs";
 import { questions as impulseVectors } from "@/data/questions/a-level-further-maths/year-1-mech/impulse-vectors";
@@ -245,6 +249,10 @@ export const allQuestions: Question[] = [
   ...pgf,
   ...complexExponential,
   ...deMoivre,
+  ...multipleAngles,
+  ...trigSeries,
+  ...rootsOfUnity,
+  ...methodOfDifferences,
 ];
 
 export function getQuestionById(id: string): Question | undefined {
