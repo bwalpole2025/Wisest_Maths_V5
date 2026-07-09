@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Further Maths",
   "currentTopic": "Further Maths Year 2: Pure (Core Pure 2)",
-  "currentSubtopic": "Volumes: parametric and modelling",
-  "currentSubtopicId": "fm.y2.pure.volumes-parametric",
+  "currentSubtopic": "Inverse trigonometric calculus",
+  "currentSubtopicId": "fm.y2.pure.inverse-trig-calculus",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -131,7 +131,8 @@
     "fm.y2.pure.maclaurin",
     "fm.y2.pure.further-calculus",
     "fm.y2.pure.further-integration",
-    "fm.y2.pure.volumes-parametric"
+    "fm.y2.pure.volumes-parametric",
+    "fm.y2.pure.inverse-trig-calculus"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -140,9 +141,9 @@
       "totalQuestionsGenerated": 5810
     },
     "A-Level Further Maths": {
-      "totalSubtopics": 43,
-      "completedSubtopics": 43,
-      "totalQuestionsGenerated": 3010
+      "totalSubtopics": 44,
+      "completedSubtopics": 44,
+      "totalQuestionsGenerated": 3080
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -150,5 +151,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-09T02:24:00+01:00"
+  "lastUpdated": "2026-07-09T02:37:00+01:00"
 }
