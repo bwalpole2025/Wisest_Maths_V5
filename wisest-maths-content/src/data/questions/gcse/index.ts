@@ -41,6 +41,68 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () =>
       import("./number/four-operations-and-place-value").then((m) => m.questions),
   },
+  {
+    slug: "negative-numbers",
+    id: "gcse.number.negatives",
+    name: "Negative numbers",
+    blurb:
+      "Calculate with directed numbers across all four operations, in and out of context, using number lines and sign rules.",
+    gradient: "from-violet-400 to-fuchsia-500",
+    order: 3,
+    load: () => import("./number/negative-numbers").then((m) => m.questions),
+  },
+  {
+    slug: "priority-of-operations",
+    id: "gcse.number.order-of-operations",
+    name: "Priority of operations",
+    blurb:
+      "Apply BIDMAS — brackets, indices and roots, then $\\times\\div$, then $+-$ — to evaluate expressions correctly.",
+    gradient: "from-fuchsia-400 to-pink-500",
+    order: 4,
+    load: () => import("./number/priority-of-operations").then((m) => m.questions),
+  },
+  {
+    slug: "factors-multiples-and-primes",
+    id: "gcse.number.factors-multiples",
+    name: "Factors, multiples and primes",
+    blurb:
+      "Find factors, multiples and primes, and work out the HCF and LCM by listing.",
+    gradient: "from-pink-400 to-rose-500",
+    order: 5,
+    load: () =>
+      import("./number/factors-multiples-and-primes").then((m) => m.questions),
+  },
+  {
+    slug: "prime-factorisation",
+    id: "gcse.number.prime-factorisation",
+    name: "Prime factorisation",
+    blurb:
+      "Write numbers as a product of primes in index form and use this to find the HCF and LCM.",
+    gradient: "from-rose-400 to-orange-500",
+    order: 6,
+    load: () => import("./number/prime-factorisation").then((m) => m.questions),
+  },
+  {
+    slug: "systematic-listing",
+    id: "gcse.number.systematic-listing",
+    name: "Systematic listing",
+    blurb:
+      "List every outcome or arrangement in a clear order, without omission or repetition, then count them.",
+    gradient: "from-orange-400 to-amber-500",
+    order: 7,
+    load: () => import("./number/systematic-listing").then((m) => m.questions),
+  },
+  {
+    slug: "product-rule-for-counting",
+    id: "gcse.number.product-rule",
+    name: "Product rule for counting",
+    blurb:
+      "Count combinations of choices with the product rule ($m\\times n$), including arrangements and restrictions.",
+    gradient: "from-amber-400 to-yellow-500",
+    order: 8,
+    load: () =>
+      import("./number/product-rule-for-counting").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

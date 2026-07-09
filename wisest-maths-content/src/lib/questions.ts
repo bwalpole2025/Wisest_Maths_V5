@@ -162,6 +162,12 @@ import { questions as inferenceForVariance } from "@/data/questions/a-level-furt
 import { questions as linearRegressionFm } from "@/data/questions/a-level-further-maths/year-2-stats/linear-regression";
 import { questions as gcseOrdering } from "@/data/questions/gcse/number/ordering-and-comparing-numbers";
 import { questions as gcseFourOperations } from "@/data/questions/gcse/number/four-operations-and-place-value";
+import { questions as gcseNegatives } from "@/data/questions/gcse/number/negative-numbers";
+import { questions as gcsePriorityOfOperations } from "@/data/questions/gcse/number/priority-of-operations";
+import { questions as gcseFactorsMultiples } from "@/data/questions/gcse/number/factors-multiples-and-primes";
+import { questions as gcsePrimeFactorisation } from "@/data/questions/gcse/number/prime-factorisation";
+import { questions as gcseSystematicListing } from "@/data/questions/gcse/number/systematic-listing";
+import { questions as gcseProductRule } from "@/data/questions/gcse/number/product-rule-for-counting";
 
 export { slugForSubtopicId };
 
@@ -323,6 +329,12 @@ export const allQuestions: Question[] = [
   ...linearRegressionFm,
   ...gcseOrdering,
   ...gcseFourOperations,
+  ...gcseNegatives,
+  ...gcsePriorityOfOperations,
+  ...gcseFactorsMultiples,
+  ...gcsePrimeFactorisation,
+  ...gcseSystematicListing,
+  ...gcseProductRule,
 ];
 
 export function getQuestionById(id: string): Question | undefined {
