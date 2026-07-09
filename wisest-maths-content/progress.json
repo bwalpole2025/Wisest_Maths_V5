@@ -160,7 +160,12 @@
     "fm.y2.stats.inference-variance",
     "fm.y2.stats.further-tests",
     "fm.y2.stats.linear-regression",
-    "gcse.number.negatives"
+    "gcse.number.negatives",
+    "gcse.number.order-of-operations",
+    "gcse.number.factors-multiples",
+    "gcse.number.prime-factorisation",
+    "gcse.number.systematic-listing",
+    "gcse.number.product-rule"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -175,16 +180,21 @@
     },
     "GCSE": {
       "totalSubtopics": 123,
-      "completedSubtopics": 1,
-      "totalQuestionsGenerated": 106,
+      "completedSubtopics": 6,
+      "totalQuestionsGenerated": 456,
       "inProgress": [
         { "id": "gcse.number.ordering", "name": "Ordering and comparing numbers", "questions": 12 },
         { "id": "gcse.number.four-operations", "name": "Four operations and place value", "questions": 24 }
       ],
       "completed": [
-        { "id": "gcse.number.negatives", "name": "Negative numbers", "questions": 70 }
+        { "id": "gcse.number.negatives", "name": "Negative numbers", "questions": 70 },
+        { "id": "gcse.number.order-of-operations", "name": "Priority of operations", "questions": 70 },
+        { "id": "gcse.number.factors-multiples", "name": "Factors, multiples and primes", "questions": 70 },
+        { "id": "gcse.number.prime-factorisation", "name": "Prime factorisation", "questions": 70 },
+        { "id": "gcse.number.systematic-listing", "name": "Systematic listing", "questions": 70 },
+        { "id": "gcse.number.product-rule", "name": "Product rule for counting", "questions": 70 }
       ]
     }
   },
-  "lastUpdated": "2026-07-09T09:20:00+01:00"
+  "lastUpdated": "2026-07-09T09:42:00+01:00"
 }
