@@ -371,6 +371,42 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 39,
     load: () => import("./year-2-pure/maclaurin").then((m) => m.questions),
   },
+  {
+    slug: "improper-integrals-and-mean-value",
+    id: "fm.y2.pure.further-calculus",
+    name: "Improper integrals and mean value",
+    blurb: "Improper integrals over infinite intervals or singular endpoints, convergence checks, and mean values of functions.",
+    gradient: "from-orange-400 to-red-500",
+    order: 40,
+    load: () => import("./year-2-pure/improper-integrals-and-mean-value").then((m) => m.questions),
+  },
+  {
+    slug: "volumes-parametric",
+    id: "fm.y2.pure.volumes-parametric",
+    name: "Volumes: parametric and modelling",
+    blurb: "Volumes of revolution for parametrically defined curves; washers, composite solids and modelling assumptions.",
+    gradient: "from-blue-400 to-cyan-500",
+    order: 41,
+    load: () => import("./year-2-pure/volumes-parametric").then((m) => m.questions),
+  },
+  {
+    slug: "further-integration",
+    id: "fm.y2.pure.further-integration",
+    name: "Further integration",
+    blurb: "Partial fractions with quadratic factors, arctangent forms, and harder substitutions for rational integrals.",
+    gradient: "from-rose-400 to-orange-500",
+    order: 42,
+    load: () => import("./year-2-pure/further-integration").then((m) => m.questions),
+  },
+  {
+    slug: "inverse-trig-calculus",
+    id: "fm.y2.pure.inverse-trig-calculus",
+    name: "Inverse trigonometric calculus",
+    blurb: "Differentiating and integrating inverse trigonometric functions; exact definite integrals, tangents and integration by parts.",
+    gradient: "from-pink-400 to-rose-500",
+    order: 43,
+    load: () => import("./year-2-pure/inverse-trig-calculus").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Further Maths",
   "currentTopic": "Further Maths Year 2: Pure (Core Pure 2)",
-  "currentSubtopic": "Maclaurin series",
-  "currentSubtopicId": "fm.y2.pure.maclaurin",
+  "currentSubtopic": "Volumes: parametric and modelling",
+  "currentSubtopicId": "fm.y2.pure.volumes-parametric",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -128,7 +128,10 @@
     "fm.y2.pure.trig-series",
     "fm.y2.pure.roots-of-unity",
     "fm.y2.pure.method-of-differences",
-    "fm.y2.pure.maclaurin"
+    "fm.y2.pure.maclaurin",
+    "fm.y2.pure.further-calculus",
+    "fm.y2.pure.further-integration",
+    "fm.y2.pure.volumes-parametric"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -138,8 +141,8 @@
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 39,
-      "totalQuestionsGenerated": 2730
+      "completedSubtopics": 43,
+      "totalQuestionsGenerated": 3010
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -147,5 +150,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-09T02:08:00+01:00"
+  "lastUpdated": "2026-07-09T02:24:00+01:00"
 }

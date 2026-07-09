@@ -122,6 +122,10 @@ import { questions as trigSeries } from "@/data/questions/a-level-further-maths/
 import { questions as rootsOfUnity } from "@/data/questions/a-level-further-maths/year-2-pure/roots-of-unity";
 import { questions as methodOfDifferences } from "@/data/questions/a-level-further-maths/year-2-pure/method-of-differences";
 import { questions as maclaurin } from "@/data/questions/a-level-further-maths/year-2-pure/maclaurin";
+import { questions as furtherIntegration } from "@/data/questions/a-level-further-maths/year-2-pure/further-integration";
+import { questions as improperIntegralsAndMeanValue } from "@/data/questions/a-level-further-maths/year-2-pure/improper-integrals-and-mean-value";
+import { questions as inverseTrigCalculus } from "@/data/questions/a-level-further-maths/year-2-pure/inverse-trig-calculus";
+import { questions as volumesParametric } from "@/data/questions/a-level-further-maths/year-2-pure/volumes-parametric";
 import { questions as multipleAngles } from "@/data/questions/a-level-further-maths/year-2-pure/multiple-angles";
 import { questions as poisson } from "@/data/questions/a-level-further-maths/year-1-stats/poisson";
 import { questions as elasticStringsSprings } from "@/data/questions/a-level-further-maths/year-1-mech/elastic-strings-springs";
@@ -255,6 +259,10 @@ export const allQuestions: Question[] = [
   ...rootsOfUnity,
   ...methodOfDifferences,
   ...maclaurin,
+  ...furtherIntegration,
+  ...improperIntegralsAndMeanValue,
+  ...volumesParametric,
+  ...inverseTrigCalculus,
 ];
 
 export function getQuestionById(id: string): Question | undefined {
