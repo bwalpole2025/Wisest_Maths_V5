@@ -2850,7 +2850,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 4 \\times 6 + 2 \\times 5 + 1 = 35",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = 6$ and $\\alpha + \\beta = 5$.",
           "diagram": null
         },
         {
@@ -2934,7 +2934,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 4 \\times 2 + -2 \\times 3 + 1 = 3",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = 2$ and $\\alpha + \\beta = 3$.",
           "diagram": null
         },
         {
@@ -3018,7 +3018,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 9 \\times 3 + 6 \\times -4 + 4 = 7",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = 3$ and $\\alpha + \\beta = -4$.",
           "diagram": null
         },
         {
@@ -3102,7 +3102,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 4 \\times 12 + -6 \\times 7 + 9 = 15",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = 12$ and $\\alpha + \\beta = 7$.",
           "diagram": null
         },
         {
@@ -3186,7 +3186,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 4 \\times -9 + 2 \\times 0 + 1 = -35",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = -9$ and $\\alpha + \\beta = 0$.",
           "diagram": null
         },
         {
@@ -3270,7 +3270,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 1 \\times -8 + -4 \\times -2 + 16 = 16",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = -8$ and $\\alpha + \\beta = -2$.",
           "diagram": null
         },
         {
@@ -3354,7 +3354,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 9 \\times 3 + -6 \\times 4 + 4 = 7",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = 3$ and $\\alpha + \\beta = 4$.",
           "diagram": null
         },
         {
@@ -3438,7 +3438,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Substitute",
           "workingLatex": "= 4 \\times 8 + 2 \\times -6 + 1 = 21",
-          "explanation": "Use $\\alpha\\beta = ${prod}$ and $\\alpha + \\beta = ${sum}$.",
+          "explanation": "Use $\\alpha\\beta = 8$ and $\\alpha + \\beta = -6$.",
           "diagram": null
         },
         {
@@ -3998,7 +3998,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Cubic shift",
           "workingLatex": "\\alpha' = \\alpha + 1,\\; \\beta' = \\beta + 1,\\; \\gamma' = \\gamma + 1",
-          "explanation": "Add $${k}$ to each root.",
+          "explanation": "Add $1$ to each root.",
           "diagram": null
         },
         {
@@ -4082,7 +4082,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Cubic shift",
           "workingLatex": "\\alpha' = \\alpha + 2,\\; \\beta' = \\beta + 2,\\; \\gamma' = \\gamma + 2",
-          "explanation": "Add $${k}$ to each root.",
+          "explanation": "Add $2$ to each root.",
           "diagram": null
         },
         {
@@ -4166,7 +4166,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Cubic shift",
           "workingLatex": "\\alpha' = \\alpha + -1,\\; \\beta' = \\beta + -1,\\; \\gamma' = \\gamma + -1",
-          "explanation": "Add $${k}$ to each root.",
+          "explanation": "Add $-1$ to each root.",
           "diagram": null
         },
         {
@@ -4250,7 +4250,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Cubic shift",
           "workingLatex": "\\alpha' = \\alpha + 2,\\; \\beta' = \\beta + 2,\\; \\gamma' = \\gamma + 2",
-          "explanation": "Add $${k}$ to each root.",
+          "explanation": "Add $2$ to each root.",
           "diagram": null
         },
         {
@@ -4334,7 +4334,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Cubic shift",
           "workingLatex": "\\alpha' = \\alpha + 3,\\; \\beta' = \\beta + 3,\\; \\gamma' = \\gamma + 3",
-          "explanation": "Add $${k}$ to each root.",
+          "explanation": "Add $3$ to each root.",
           "diagram": null
         },
         {
@@ -4418,7 +4418,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Cubic shift",
           "workingLatex": "\\alpha' = \\alpha + -2,\\; \\beta' = \\beta + -2,\\; \\gamma' = \\gamma + -2",
-          "explanation": "Add $${k}$ to each root.",
+          "explanation": "Add $-2$ to each root.",
           "diagram": null
         },
         {
@@ -4502,7 +4502,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Scale roots",
           "workingLatex": "\\alpha' = 2\\alpha,\\; \\beta' = 2\\beta,\\; \\gamma' = 2\\gamma",
-          "explanation": "Multiply each root by $${k}$.",
+          "explanation": "Multiply each root by $2$.",
           "diagram": null
         },
         {
@@ -4586,7 +4586,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Scale roots",
           "workingLatex": "\\alpha' = 3\\alpha,\\; \\beta' = 3\\beta,\\; \\gamma' = 3\\gamma",
-          "explanation": "Multiply each root by $${k}$.",
+          "explanation": "Multiply each root by $3$.",
           "diagram": null
         },
         {
@@ -4670,7 +4670,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Scale roots",
           "workingLatex": "\\alpha' = -2\\alpha,\\; \\beta' = -2\\beta,\\; \\gamma' = -2\\gamma",
-          "explanation": "Multiply each root by $${k}$.",
+          "explanation": "Multiply each root by $-2$.",
           "diagram": null
         },
         {
@@ -4754,7 +4754,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Scale roots",
           "workingLatex": "\\alpha' = -1\\alpha,\\; \\beta' = -1\\beta,\\; \\gamma' = -1\\gamma",
-          "explanation": "Multiply each root by $${k}$.",
+          "explanation": "Multiply each root by $-1$.",
           "diagram": null
         },
         {

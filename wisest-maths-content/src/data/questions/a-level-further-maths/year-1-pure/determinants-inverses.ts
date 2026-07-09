@@ -910,7 +910,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}0.4 & -0.1\\\\-0.2 & 0.3\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -972,7 +972,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}3 & -1\\\\-5 & 2\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1034,7 +1034,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}7 & -2\\\\-3 & 1\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1096,7 +1096,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}0.4286 & 0.1429\\\\-0.1429 & 0.2857\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1158,7 +1158,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}0.2 & 0\\\\0 & 0.3333\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1220,7 +1220,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}1 & -1\\\\-1.5 & 2\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1282,7 +1282,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}3 & -1\\\\-2 & 1\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1344,7 +1344,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}0.4 & -0.2\\\\-0.1 & 0.3\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1406,7 +1406,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}2 & -3\\\\-1 & 2\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -1468,7 +1468,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Divide by $\\det A$",
           "workingLatex": "A^{-1} = \\begin{pmatrix}0.3 & -0.1\\\\-0.2 & 0.4\\end{pmatrix}",
-          "explanation": "Scale every entry by $1/${d}$.",
+          "explanation": "Scale every entry by $1/\\det A$.",
           "diagram": null
         },
         {
@@ -3841,14 +3841,14 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Expand determinant",
           "workingLatex": "kd - bc = 0",
-          "explanation": "For $A = \\begin{pmatrix}k & ${b}\\\\${c} & ${d}\\end{pmatrix}$.",
+          "explanation": "For $A = \\begin{pmatrix}k & 2\\\\3 & 4\\end{pmatrix}$.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Substitute values",
           "workingLatex": "4k - 6 = 0",
-          "explanation": "Known entries $b = ${b}$, $c = ${c}$, $d = ${d}$.",
+          "explanation": "Known entries $b = 2$, $c = 3$, $d = 4$.",
           "diagram": null
         },
         {
@@ -3925,14 +3925,14 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Expand determinant",
           "workingLatex": "kd - bc = 0",
-          "explanation": "For $A = \\begin{pmatrix}k & ${b}\\\\${c} & ${d}\\end{pmatrix}$.",
+          "explanation": "For $A = \\begin{pmatrix}k & 3\\\\2 & 6\\end{pmatrix}$.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Substitute values",
           "workingLatex": "6k - 6 = 0",
-          "explanation": "Known entries $b = ${b}$, $c = ${c}$, $d = ${d}$.",
+          "explanation": "Known entries $b = 3$, $c = 2$, $d = 6$.",
           "diagram": null
         },
         {
@@ -4009,14 +4009,14 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Expand determinant",
           "workingLatex": "kd - bc = 0",
-          "explanation": "For $A = \\begin{pmatrix}k & ${b}\\\\${c} & ${d}\\end{pmatrix}$.",
+          "explanation": "For $A = \\begin{pmatrix}k & 4\\\\2 & 8\\end{pmatrix}$.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Substitute values",
           "workingLatex": "8k - 8 = 0",
-          "explanation": "Known entries $b = ${b}$, $c = ${c}$, $d = ${d}$.",
+          "explanation": "Known entries $b = 4$, $c = 2$, $d = 8$.",
           "diagram": null
         },
         {
@@ -4093,14 +4093,14 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Expand determinant",
           "workingLatex": "kd - bc = 0",
-          "explanation": "For $A = \\begin{pmatrix}k & ${b}\\\\${c} & ${d}\\end{pmatrix}$.",
+          "explanation": "For $A = \\begin{pmatrix}k & 6\\\\3 & 9\\end{pmatrix}$.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Substitute values",
           "workingLatex": "9k - 18 = 0",
-          "explanation": "Known entries $b = ${b}$, $c = ${c}$, $d = ${d}$.",
+          "explanation": "Known entries $b = 6$, $c = 3$, $d = 9$.",
           "diagram": null
         },
         {

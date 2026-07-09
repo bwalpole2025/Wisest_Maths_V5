@@ -1482,7 +1482,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Power definition",
           "workingLatex": "\\text{power} = P(X \\geq 7 \\mid p=0.6)",
-          "explanation": "Probability of rejecting $H_0$ when $p=${fmt(p1)}$.",
+          "explanation": "Probability of rejecting $H_0$ when the true probability is $p=0.6$.",
           "diagram": null
         },
         {
@@ -1496,7 +1496,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Evaluate power",
           "workingLatex": "\\text{power} = 0.3823",
-          "explanation": "Binomial probability under $p=${fmt(p1)}$.",
+          "explanation": "Binomial probability of landing in the critical region when $p=0.6$.",
           "diagram": null
         },
         {
@@ -1567,7 +1567,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Power definition",
           "workingLatex": "\\text{power} = P(X \\leq 4 \\mid p=0.3)",
-          "explanation": "Probability of rejecting $H_0$ when $p=${fmt(p1)}$.",
+          "explanation": "Probability of rejecting $H_0$ when the true probability is $p=0.3$.",
           "diagram": null
         },
         {
@@ -1581,7 +1581,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Evaluate power",
           "workingLatex": "\\text{power} = 0.5155",
-          "explanation": "Binomial probability under $p=${fmt(p1)}$.",
+          "explanation": "Binomial probability of landing in the critical region when $p=0.3$.",
           "diagram": null
         },
         {
@@ -2079,7 +2079,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Power definition",
           "workingLatex": "\\text{power} = P(X \\leq 2 \\mid p=0.2)",
-          "explanation": "Probability of rejecting $H_0$ when $p=${fmt(p1)}$.",
+          "explanation": "Probability of rejecting $H_0$ when the true probability is $p=0.2$.",
           "diagram": null
         },
         {
@@ -2093,7 +2093,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Evaluate power",
           "workingLatex": "\\text{power} = 0.5583",
-          "explanation": "Binomial probability under $p=${fmt(p1)}$.",
+          "explanation": "Binomial probability of landing in the critical region when $p=0.2$.",
           "diagram": null
         },
         {
@@ -2419,7 +2419,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Power definition",
           "workingLatex": "\\text{power} = P(X \\leq 3 \\mid p=0.4)",
-          "explanation": "Probability of rejecting $H_0$ when $p=${fmt(p1)}$.",
+          "explanation": "Probability of rejecting $H_0$ when the true probability is $p=0.4$.",
           "diagram": null
         },
         {
@@ -2433,7 +2433,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Evaluate power",
           "workingLatex": "\\text{power} = 0.3823",
-          "explanation": "Binomial probability under $p=${fmt(p1)}$.",
+          "explanation": "Binomial probability of landing in the critical region when $p=0.4$.",
           "diagram": null
         },
         {
@@ -2845,7 +2845,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Power definition",
           "workingLatex": "\\text{power} = P(X \\geq 12 \\mid p=0.7)",
-          "explanation": "Probability of rejecting $H_0$ when $p=${fmt(p1)}$.",
+          "explanation": "Probability of rejecting $H_0$ when the true probability is $p=0.7$.",
           "diagram": null
         },
         {
@@ -2859,7 +2859,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Evaluate power",
           "workingLatex": "\\text{power} = 0.4499",
-          "explanation": "Binomial probability under $p=${fmt(p1)}$.",
+          "explanation": "Binomial probability of landing in the critical region when $p=0.7$.",
           "diagram": null
         },
         {
@@ -3187,7 +3187,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Power definition",
           "workingLatex": "\\text{power} = P(X \\leq 0 \\mid p=0.1)",
-          "explanation": "Probability of rejecting $H_0$ when $p=${fmt(p1)}$.",
+          "explanation": "Probability of rejecting $H_0$ when the true probability is $p=0.1$.",
           "diagram": null
         },
         {
@@ -3201,7 +3201,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Evaluate power",
           "workingLatex": "\\text{power} = 0.1501",
-          "explanation": "Binomial probability under $p=${fmt(p1)}$.",
+          "explanation": "Binomial probability of landing in the critical region when $p=0.1$.",
           "diagram": null
         },
         {
@@ -3613,7 +3613,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Power definition",
           "workingLatex": "\\text{power} = P(X \\leq 0 \\mid p=0.25)",
-          "explanation": "Probability of rejecting $H_0$ when $p=${fmt(p1)}$.",
+          "explanation": "Probability of rejecting $H_0$ when the true probability is $p=0.25$.",
           "diagram": null
         },
         {
@@ -3627,7 +3627,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Evaluate power",
           "workingLatex": "\\text{power} = 0.0134",
-          "explanation": "Binomial probability under $p=${fmt(p1)}$.",
+          "explanation": "Binomial probability of landing in the critical region when $p=0.25$.",
           "diagram": null
         },
         {
@@ -3861,7 +3861,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Compare powers",
           "workingLatex": "\\pi_A=0.377,\\ \\pi_B=0.623",
-          "explanation": "Which detects $p=${fmt(p1)}$ better?",
+          "explanation": "Which test detects the alternative $p=0.5$ better?",
           "diagram": null
         },
         {
@@ -3963,7 +3963,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Type II",
           "workingLatex": "\\beta = 0.5618",
-          "explanation": "Miss rate when $p=${fmt(p1)}$.",
+          "explanation": "Probability of missing the effect when $p=0.6$.",
           "diagram": null
         },
         {
@@ -4319,7 +4319,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Compare powers",
           "workingLatex": "\\pi_A=0.4925,\\ \\pi_B=0.2528",
-          "explanation": "Which detects $p=${fmt(p1)}$ better?",
+          "explanation": "Which test detects the alternative $p=0.3$ better?",
           "diagram": null
         },
         {
@@ -4421,7 +4421,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Type II",
           "workingLatex": "\\beta = 0.9718",
-          "explanation": "Miss rate when $p=${fmt(p1)}$.",
+          "explanation": "Probability of missing the effect when $p=0.3$.",
           "diagram": null
         },
         {
@@ -4765,7 +4765,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Type II",
           "workingLatex": "\\beta = 0.4371",
-          "explanation": "Miss rate when $p=${fmt(p1)}$.",
+          "explanation": "Probability of missing the effect when $p=0.55$.",
           "diagram": null
         },
         {
@@ -5008,7 +5008,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Compare powers",
           "workingLatex": "\\pi_A=0.398,\\ \\pi_B=0.6482",
-          "explanation": "Which detects $p=${fmt(p1)}$ better?",
+          "explanation": "Which test detects the alternative $p=0.2$ better?",
           "diagram": null
         },
         {
@@ -5110,7 +5110,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Type II",
           "workingLatex": "\\beta = 0.5044",
-          "explanation": "Miss rate when $p=${fmt(p1)}$.",
+          "explanation": "Probability of missing the effect when $p=0.45$.",
           "diagram": null
         },
         {
@@ -5454,7 +5454,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Type II",
           "workingLatex": "\\beta = 0.2642",
-          "explanation": "Miss rate when $p=${fmt(p1)}$.",
+          "explanation": "Probability of missing the effect when $p=0.05$.",
           "diagram": null
         },
         {
@@ -5582,7 +5582,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Compare powers",
           "workingLatex": "\\pi_A=0.1493,\\ \\pi_B=0.3828",
-          "explanation": "Which detects $p=${fmt(p1)}$ better?",
+          "explanation": "Which test detects the alternative $p=0.7$ better?",
           "diagram": null
         },
         {
@@ -5912,7 +5912,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Type II",
           "workingLatex": "\\beta = 0.4158",
-          "explanation": "Miss rate when $p=${fmt(p1)}$.",
+          "explanation": "Probability of missing the effect when $p=0.7$.",
           "diagram": null
         },
         {
@@ -6040,7 +6040,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Compare powers",
           "workingLatex": "\\pi_A=0.2824,\\ \\pi_B=0.659",
-          "explanation": "Which detects $p=${fmt(p1)}$ better?",
+          "explanation": "Which test detects the alternative $p=0.1$ better?",
           "diagram": null
         },
         {
@@ -6142,7 +6142,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Type II",
           "workingLatex": "\\beta = 0.5968",
-          "explanation": "Miss rate when $p=${fmt(p1)}$.",
+          "explanation": "Probability of missing the effect when $p=0.6$.",
           "diagram": null
         },
         {

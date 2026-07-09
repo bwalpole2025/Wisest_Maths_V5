@@ -2733,7 +2733,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Calculate $E(X)$",
           "workingLatex": "E(X)=\\tfrac{4+1}{2}=2.5",
-          "explanation": "Substitute $n=${nValues}$.",
+          "explanation": "Substitute $n=4$ into the formula.",
           "diagram": null
         },
         {
@@ -2816,7 +2816,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Calculate $E(X)$",
           "workingLatex": "E(X)=\\tfrac{6+1}{2}=3.5",
-          "explanation": "Substitute $n=${nValues}$.",
+          "explanation": "Substitute $n=6$ into the formula.",
           "diagram": null
         },
         {
@@ -2899,7 +2899,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Calculate $E(X)$",
           "workingLatex": "E(X)=\\tfrac{8+1}{2}=4.5",
-          "explanation": "Substitute $n=${nValues}$.",
+          "explanation": "Substitute $n=8$ into the formula.",
           "diagram": null
         },
         {
@@ -2982,7 +2982,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Calculate $E(X)$",
           "workingLatex": "E(X)=\\tfrac{10+1}{2}=5.5",
-          "explanation": "Substitute $n=${nValues}$.",
+          "explanation": "Substitute $n=10$ into the formula.",
           "diagram": null
         },
         {

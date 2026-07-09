@@ -3424,7 +3424,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Locus",
           "workingLatex": "|z - (3)| = 2",
-          "explanation": "Circle of radius $r$ centred at $(${c})$.",
+          "explanation": "Circle of radius $2$ centred at $(3)$.",
           "diagram": null
         },
         {
@@ -3508,7 +3508,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Locus",
           "workingLatex": "|z - (4i)| = 3",
-          "explanation": "Circle of radius $r$ centred at $(${c})$.",
+          "explanation": "Circle of radius $3$ centred at $(4i)$.",
           "diagram": null
         },
         {
@@ -3592,7 +3592,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Locus",
           "workingLatex": "|z - (5)| = 2",
-          "explanation": "Circle of radius $r$ centred at $(${c})$.",
+          "explanation": "Circle of radius $2$ centred at $(5)$.",
           "diagram": null
         },
         {
@@ -3676,7 +3676,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Locus",
           "workingLatex": "|z - (-3 + 4i)| = 5",
-          "explanation": "Circle of radius $r$ centred at $(${c})$.",
+          "explanation": "Circle of radius $5$ centred at $(-3 + 4i)$.",
           "diagram": null
         },
         {
@@ -3760,7 +3760,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Locus",
           "workingLatex": "|z - (1 + 1i)| = 1",
-          "explanation": "Circle of radius $r$ centred at $(${c})$.",
+          "explanation": "Circle of radius $1$ centred at $(1 + 1i)$.",
           "diagram": null
         },
         {
@@ -3844,7 +3844,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Locus",
           "workingLatex": "|z - (0)| = 7",
-          "explanation": "Circle of radius $r$ centred at $(${c})$.",
+          "explanation": "Circle of radius $7$ centred at $(0)$.",
           "diagram": null
         },
         {
@@ -4264,14 +4264,14 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "First locus",
           "workingLatex": "|z - (0)| = 5",
-          "explanation": "Circle with centre $(${c})$.",
+          "explanation": "Circle with centre $(0)$.",
           "diagram": null
         },
         {
           "stepNumber": 2,
           "description": "Second locus",
           "workingLatex": "\\arg(z - (0)) = \\frac{\\pi}{4}",
-          "explanation": "Ray from $(${rc})$ at angle $${arg}$.",
+          "explanation": "Ray from $(0)$ at angle $\\frac{\\pi}{4}$.",
           "diagram": null
         },
         {
@@ -4376,14 +4376,14 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "First locus",
           "workingLatex": "|z - (1)| = 3",
-          "explanation": "Circle with centre $(${c})$.",
+          "explanation": "Circle with centre $(1)$.",
           "diagram": null
         },
         {
           "stepNumber": 2,
           "description": "Second locus",
           "workingLatex": "\\arg(z - (1)) = \\frac{\\pi}{2}",
-          "explanation": "Ray from $(${rc})$ at angle $${arg}$.",
+          "explanation": "Ray from $(1)$ at angle $\\frac{\\pi}{2}$.",
           "diagram": null
         },
         {
@@ -4488,14 +4488,14 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "First locus",
           "workingLatex": "|z - (0)| = 4",
-          "explanation": "Circle with centre $(${c})$.",
+          "explanation": "Circle with centre $(0)$.",
           "diagram": null
         },
         {
           "stepNumber": 2,
           "description": "Second locus",
           "workingLatex": "\\arg(z - (2)) = 0",
-          "explanation": "Ray from $(${rc})$ at angle $${arg}$.",
+          "explanation": "Ray from $(2)$ at angle $0$.",
           "diagram": null
         },
         {
@@ -4593,7 +4593,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (0)| \\leq 3$ and \\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (0)| \\leq 3$ and $\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -4688,7 +4688,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (0)| \\leq 3$ with the sector \\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (0)| \\leq 3$ with the sector $\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$."
     }
   },
   {
@@ -4705,7 +4705,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (1)| \\leq 2$ and 0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (1)| \\leq 2$ and $0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -4800,7 +4800,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (1)| \\leq 2$ with the sector 0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (1)| \\leq 2$ with the sector $0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$."
     }
   },
   {
@@ -4817,7 +4817,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (0)| \\leq 5$ and \\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{3}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (0)| \\leq 5$ and $\\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{3}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -4912,7 +4912,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (0)| \\leq 5$ with the sector \\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{3}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (0)| \\leq 5$ with the sector $\\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{3}$."
     }
   },
   {
@@ -4929,7 +4929,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (2 + 2i)| \\leq 4$ and \\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (2 + 2i)| \\leq 4$ and $\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -5024,7 +5024,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (2 + 2i)| \\leq 4$ with the sector \\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (2 + 2i)| \\leq 4$ with the sector $\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$."
     }
   },
   {
@@ -5041,7 +5041,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (-1)| \\leq 3$ and \\frac{\\pi}{2} \\leq \\arg(z) \\leq \\pi$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (-1)| \\leq 3$ and $\\frac{\\pi}{2} \\leq \\arg(z) \\leq \\pi$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -5136,7 +5136,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (-1)| \\leq 3$ with the sector \\frac{\\pi}{2} \\leq \\arg(z) \\leq \\pi$."
+      "finalAnswer": "Intersection of the closed disc $|z - (-1)| \\leq 3$ with the sector $\\frac{\\pi}{2} \\leq \\arg(z) \\leq \\pi$."
     }
   },
   {
@@ -5153,7 +5153,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (1i)| \\leq 4$ and 0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (1i)| \\leq 4$ and $0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -5248,7 +5248,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (1i)| \\leq 4$ with the sector 0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (1i)| \\leq 4$ with the sector $0 \\leq \\arg(z) \\leq \\frac{\\pi}{4}$."
     }
   },
   {
@@ -5265,7 +5265,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (3)| \\leq 5$ and \\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (3)| \\leq 5$ and $\\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -5360,7 +5360,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (3)| \\leq 5$ with the sector \\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (3)| \\leq 5$ with the sector $\\frac{\\pi}{6} \\leq \\arg(z) \\leq \\frac{\\pi}{2}$."
     }
   },
   {
@@ -5377,7 +5377,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (0)| \\leq 2$ and -\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{4}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (0)| \\leq 2$ and $-\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{4}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -5472,7 +5472,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (0)| \\leq 2$ with the sector -\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{4}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (0)| \\leq 2$ with the sector $-\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{\\pi}{4}$."
     }
   },
   {
@@ -5489,7 +5489,7 @@ export const questions: Question[] = [
     "difficulty": "Hard",
     "marks": 7,
     "answerType": "written",
-    "questionText": "Describe the region $|z - (1 + 1i)| \\leq 3$ and \\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{3\\pi}{4}$ on an Argand diagram.",
+    "questionText": "Describe the region $|z - (1 + 1i)| \\leq 3$ and $\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{3\\pi}{4}$ on an Argand diagram.",
     "workedSolution": {
       "steps": [
         {
@@ -5584,7 +5584,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Intersection of the closed disc $|z - (1 + 1i)| \\leq 3$ with the sector \\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{3\\pi}{4}$."
+      "finalAnswer": "Intersection of the closed disc $|z - (1 + 1i)| \\leq 3$ with the sector $\\frac{\\pi}{4} \\leq \\arg(z) \\leq \\frac{3\\pi}{4}$."
     }
   },
   {

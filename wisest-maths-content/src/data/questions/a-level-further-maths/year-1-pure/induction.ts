@@ -1240,7 +1240,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 2,
           "description": "Base case $n=2$",
-          "workingLatex": "2^{2} = 4$, \\quad 2 = 2",
+          "workingLatex": "2^{2} = 4, \\quad 2 = 2",
           "explanation": "Verify directly for the starting value.",
           "diagram": null
         },
@@ -1317,7 +1317,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 2,
           "description": "Base case $n=2$",
-          "workingLatex": "2^{2} = 4$, \\quad 2 = 2",
+          "workingLatex": "2^{2} = 4, \\quad 2 = 2",
           "explanation": "Verify directly for the starting value.",
           "diagram": null
         },
@@ -1394,7 +1394,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 2,
           "description": "Base case $n=1$",
-          "workingLatex": "3^{1} = 3$, \\quad 1 = 1",
+          "workingLatex": "3^{1} = 3, \\quad 1 = 1",
           "explanation": "Verify directly for the starting value.",
           "diagram": null
         },
@@ -1471,7 +1471,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 2,
           "description": "Base case $n=2$",
-          "workingLatex": "2^{2} = 4$, \\quad 2 = 2",
+          "workingLatex": "2^{2} = 4, \\quad 2 = 2",
           "explanation": "Verify directly for the starting value.",
           "diagram": null
         },
@@ -1548,7 +1548,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 2,
           "description": "Base case $n=2$",
-          "workingLatex": "2^{2} = 4$, \\quad 2 = 2",
+          "workingLatex": "2^{2} = 4, \\quad 2 = 2",
           "explanation": "Verify directly for the starting value.",
           "diagram": null
         },
@@ -1625,7 +1625,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 2,
           "description": "Base case $n=1$",
-          "workingLatex": "3^{1} = 3$, \\quad 1 = 1",
+          "workingLatex": "3^{1} = 3, \\quad 1 = 1",
           "explanation": "Verify directly for the starting value.",
           "diagram": null
         },
@@ -5527,7 +5527,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 9,
-          "description": "Verify for $k \\geqslant ${threshold}$",
+          "description": "Verify for $k \\geqslant 4$",
           "workingLatex": "\\text{For } k \\geqslant 4: (2-1)k^2 \\geqslant 16 > 2k + 1",
           "explanation": "The quadratic in $k$ is positive for large enough $k$.",
           "diagram": null
@@ -5639,7 +5639,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 9,
-          "description": "Verify for $k \\geqslant ${threshold}$",
+          "description": "Verify for $k \\geqslant 5$",
           "workingLatex": "\\text{For } k \\geqslant 5: (2-1)k^2 \\geqslant 25 > 2k + 1",
           "explanation": "The quadratic in $k$ is positive for large enough $k$.",
           "diagram": null

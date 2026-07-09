@@ -3597,7 +3597,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 1 \\cdot 2(2) + 13 = 17",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 13$.",
           "diagram": null
         },
         {
@@ -3682,7 +3682,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = -2 \\cdot 2(1) + 5 = 1",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 5$.",
           "diagram": null
         },
         {
@@ -3767,7 +3767,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 3 \\cdot 2(-1) + 2 = -4",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 2$.",
           "diagram": null
         },
         {
@@ -3852,7 +3852,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 0 \\cdot 2(2) + 5 = 5",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 5$.",
           "diagram": null
         },
         {
@@ -3937,7 +3937,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 2 \\cdot 2(-2) + 13 = 5",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 13$.",
           "diagram": null
         },
         {
@@ -4022,7 +4022,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = -1 \\cdot 2(3) + 13 = 7",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 13$.",
           "diagram": null
         },
         {
@@ -4107,7 +4107,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 4 \\cdot 2(1) + 2 = 10",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 2$.",
           "diagram": null
         },
         {
@@ -4192,7 +4192,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = -3 \\cdot 2(2) + 8 = -4",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 8$.",
           "diagram": null
         },
         {
@@ -4277,7 +4277,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 1 \\cdot 2(-1) + 5 = 3",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 5$.",
           "diagram": null
         },
         {
@@ -4362,7 +4362,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Sum of pairwise products",
           "workingLatex": "\\alpha\\beta + \\beta\\gamma + \\gamma\\alpha = 2 \\cdot 2(3) + 10 = 22",
-          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = ${pairProd}$.",
+          "explanation": "Use $\\beta\\gamma = |\\beta|^{2} = 10$.",
           "diagram": null
         },
         {

@@ -2356,14 +2356,14 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Inspect PGF",
           "workingLatex": "G_X(t) = 0.2 + 0.5t + 0.3t^2",
-          "explanation": "Identify the $t^{${k}}$ term.",
+          "explanation": "Identify the $t^{1}$ term.",
           "diagram": null
         },
         {
           "stepNumber": 4,
           "description": "Extract coefficient",
           "workingLatex": "P(X=1) = 0.5",
-          "explanation": "The coefficient of $t^{${k}}$.",
+          "explanation": "The coefficient of $t^{1}$.",
           "diagram": null
         },
         {
@@ -2439,14 +2439,14 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Inspect PGF",
           "workingLatex": "G_X(t) = 0.1 + 0.4t + 0.3t^2 + 0.2t^3",
-          "explanation": "Identify the $t^{${k}}$ term.",
+          "explanation": "Identify the $t^{2}$ term.",
           "diagram": null
         },
         {
           "stepNumber": 4,
           "description": "Extract coefficient",
           "workingLatex": "P(X=2) = 0.3",
-          "explanation": "The coefficient of $t^{${k}}$.",
+          "explanation": "The coefficient of $t^{2}$.",
           "diagram": null
         },
         {
@@ -2522,14 +2522,14 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Inspect PGF",
           "workingLatex": "G_X(t) = 0.25 + 0.25t + 0.5t^2",
-          "explanation": "Identify the $t^{${k}}$ term.",
+          "explanation": "Identify the $t^{0}$ term.",
           "diagram": null
         },
         {
           "stepNumber": 4,
           "description": "Extract coefficient",
           "workingLatex": "P(X=0) = 0.25",
-          "explanation": "The coefficient of $t^{${k}}$.",
+          "explanation": "The coefficient of $t^{0}$.",
           "diagram": null
         },
         {
@@ -2605,14 +2605,14 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Inspect PGF",
           "workingLatex": "G_X(t) = 0.4 + 0.35t + 0.25t^2",
-          "explanation": "Identify the $t^{${k}}$ term.",
+          "explanation": "Identify the $t^{2}$ term.",
           "diagram": null
         },
         {
           "stepNumber": 4,
           "description": "Extract coefficient",
           "workingLatex": "P(X=2) = 0.25",
-          "explanation": "The coefficient of $t^{${k}}$.",
+          "explanation": "The coefficient of $t^{2}$.",
           "diagram": null
         },
         {
@@ -4986,14 +4986,14 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Inspect PGF",
           "workingLatex": "G_X(t) = 0.15 + 0.35t + 0.35t^2 + 0.15t^3",
-          "explanation": "Identify the $t^{${k}}$ term.",
+          "explanation": "Identify the $t^{3}$ term.",
           "diagram": null
         },
         {
           "stepNumber": 4,
           "description": "Extract coefficient",
           "workingLatex": "P(X=3) = 0.15",
-          "explanation": "The coefficient of $t^{${k}}$.",
+          "explanation": "The coefficient of $t^{3}$.",
           "diagram": null
         },
         {

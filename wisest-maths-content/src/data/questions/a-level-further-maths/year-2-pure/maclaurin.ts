@@ -277,7 +277,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $n=${n}$",
+          "description": "Substitute $n=2$",
           "workingLatex": "\\text{Use } n=2 \\text{ in each coefficient}",
           "explanation": "Compute successive binomial coefficients.",
           "diagram": null
@@ -341,7 +341,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $n=${n}$",
+          "description": "Substitute $n=\\frac{1}{2}$",
           "workingLatex": "\\text{Use } n=\\frac{1}{2} \\text{ in each coefficient}",
           "explanation": "Compute successive binomial coefficients.",
           "diagram": null
@@ -405,7 +405,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $n=${n}$",
+          "description": "Substitute $n=-1$",
           "workingLatex": "\\text{Use } n=-1 \\text{ in each coefficient}",
           "explanation": "Compute successive binomial coefficients.",
           "diagram": null
@@ -469,7 +469,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $n=${n}$",
+          "description": "Substitute $n=3$",
           "workingLatex": "\\text{Use } n=3 \\text{ in each coefficient}",
           "explanation": "Compute successive binomial coefficients.",
           "diagram": null
@@ -971,7 +971,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\text{Replace } x \\text{ by } 2x",
-          "explanation": "Composite argument $${a}x$.",
+          "explanation": "The composite argument here is $2x$.",
           "diagram": null
         },
         {
@@ -1055,7 +1055,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\text{Replace } x \\text{ by } -1x",
-          "explanation": "Composite argument $${a}x$.",
+          "explanation": "The composite argument here is $-x$.",
           "diagram": null
         },
         {
@@ -1139,7 +1139,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\text{Replace } x \\text{ by } 3x",
-          "explanation": "Composite argument $${a}x$.",
+          "explanation": "The composite argument here is $3x$.",
           "diagram": null
         },
         {
@@ -1223,7 +1223,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\text{Replace } x \\text{ by } \\tfrac{1}{2}x",
-          "explanation": "Composite argument $${a}x$.",
+          "explanation": "The composite argument here is $\\tfrac{1}{2}x$.",
           "diagram": null
         },
         {
@@ -1305,9 +1305,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $x \\mapsto ${k}x$",
+          "description": "Substitute $x \\mapsto 2x$",
           "workingLatex": "\\sin(2x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $2x$.",
           "diagram": null
         },
         {
@@ -1389,9 +1389,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $x \\mapsto ${k}x$",
+          "description": "Substitute $x \\mapsto 3x$",
           "workingLatex": "\\sin(3x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $3x$.",
           "diagram": null
         },
         {
@@ -1473,9 +1473,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $x \\mapsto ${k}x$",
+          "description": "Substitute $x \\mapsto -x$",
           "workingLatex": "\\sin(-1x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $-x$.",
           "diagram": null
         },
         {
@@ -1559,7 +1559,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\cos(2x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $2x$.",
           "diagram": null
         },
         {
@@ -1643,7 +1643,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\cos(3x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $3x$.",
           "diagram": null
         },
         {
@@ -1727,7 +1727,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\cos(\\tfrac{1}{2}x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $\\tfrac{1}{2}x$.",
           "diagram": null
         },
         {
@@ -1812,7 +1812,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\ln(1 + 2x)",
-          "explanation": "Replace $x$ by $${inner}$.",
+          "explanation": "Replace $x$ by $2x$.",
           "diagram": null
         },
         {
@@ -1833,7 +1833,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Validity",
           "workingLatex": "|x| < \\tfrac{1}{2}",
-          "explanation": "Requires $|${inner}| < 1$ for convergence.",
+          "explanation": "Requires $|2x| < 1$ for convergence.",
           "diagram": null
         },
         {
@@ -1897,7 +1897,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\ln(1 + -1x)",
-          "explanation": "Replace $x$ by $${inner}$.",
+          "explanation": "Replace $x$ by $-x$.",
           "diagram": null
         },
         {
@@ -1918,7 +1918,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Validity",
           "workingLatex": "|x| < 1",
-          "explanation": "Requires $|${inner}| < 1$ for convergence.",
+          "explanation": "Requires $|-x| < 1$ for convergence.",
           "diagram": null
         },
         {
@@ -1982,7 +1982,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\ln(1 + 3x)",
-          "explanation": "Replace $x$ by $${inner}$.",
+          "explanation": "Replace $x$ by $3x$.",
           "diagram": null
         },
         {
@@ -2003,7 +2003,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Validity",
           "workingLatex": "|x| < \\tfrac{1}{3}",
-          "explanation": "Requires $|${inner}| < 1$ for convergence.",
+          "explanation": "Requires $|3x| < 1$ for convergence.",
           "diagram": null
         },
         {
@@ -2058,7 +2058,7 @@ export const questions: Question[] = [
       "steps": [
         {
           "stepNumber": 1,
-          "description": "Write as $(1+${a}x)^{${n}}$",
+          "description": "Write as $(1+2x)^{\\tfrac{1}{2}}$",
           "workingLatex": "\\text{Use binomial Maclaurin series}",
           "explanation": "Standard form $(1+x)^{n}$ with substitution.",
           "diagram": null
@@ -2143,7 +2143,7 @@ export const questions: Question[] = [
       "steps": [
         {
           "stepNumber": 1,
-          "description": "Write as $(1+${a}x)^{${n}}$",
+          "description": "Write as $(1+-1x)^{2}$",
           "workingLatex": "\\text{Use binomial Maclaurin series}",
           "explanation": "Standard form $(1+x)^{n}$ with substitution.",
           "diagram": null
@@ -2228,7 +2228,7 @@ export const questions: Question[] = [
       "steps": [
         {
           "stepNumber": 1,
-          "description": "Write as $(1+${a}x)^{${n}}$",
+          "description": "Write as $(1+3x)^{-1}$",
           "workingLatex": "\\text{Use binomial Maclaurin series}",
           "explanation": "Standard form $(1+x)^{n}$ with substitution.",
           "diagram": null
@@ -2313,7 +2313,7 @@ export const questions: Question[] = [
       "steps": [
         {
           "stepNumber": 1,
-          "description": "Write as $(1+${a}x)^{${n}}$",
+          "description": "Write as $(1+\\tfrac{1}{2}x)^{3}$",
           "workingLatex": "\\text{Use binomial Maclaurin series}",
           "explanation": "Standard form $(1+x)^{n}$ with substitution.",
           "diagram": null
@@ -2407,7 +2407,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\text{Replace } x \\text{ by } -2x",
-          "explanation": "Composite argument $${a}x$.",
+          "explanation": "The composite argument here is $-2x$.",
           "diagram": null
         },
         {
@@ -2489,9 +2489,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Substitute $x \\mapsto ${k}x$",
+          "description": "Substitute $x \\mapsto 4x$",
           "workingLatex": "\\sin(4x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $4x$.",
           "diagram": null
         },
         {
@@ -2575,7 +2575,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\cos(-2x)",
-          "explanation": "Replace $x$ by $${k}x$.",
+          "explanation": "Replace $x$ by $-2x$.",
           "diagram": null
         },
         {
@@ -5491,7 +5491,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "\\text{Replace } x \\text{ by } 5x",
-          "explanation": "Composite argument $${a}x$.",
+          "explanation": "The composite argument here is $5x$.",
           "diagram": null
         },
         {
@@ -5596,7 +5596,7 @@ export const questions: Question[] = [
       "steps": [
         {
           "stepNumber": 1,
-          "description": "Write as $(1+${a}x)^{${n}}$",
+          "description": "Write as $(1+4x)^{\\tfrac{1}{2}}$",
           "workingLatex": "\\text{Use binomial Maclaurin series}",
           "explanation": "Standard form $(1+x)^{n}$ with substitution.",
           "diagram": null

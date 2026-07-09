@@ -4676,7 +4676,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "1(0.3)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $1 \\times 6 = 6\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {
@@ -4788,7 +4788,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "2(0)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $2 \\times 8 = 16\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {
@@ -4900,7 +4900,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "1(0)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $1 \\times 10 = 10\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {
@@ -5012,7 +5012,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "3(-0.5786)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $3 \\times 9 = 27\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {
@@ -5124,7 +5124,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "2(1.7143)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $2 \\times 12 = 24\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {
@@ -5236,7 +5236,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "1(0)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $1 \\times 15 = 15\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {
@@ -5348,7 +5348,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "4(-0.9)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $4 \\times 6 = 24\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {
@@ -5460,7 +5460,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Overall momentum",
           "workingLatex": "2(-2.5)",
-          "explanation": "Total momentum equals ${m1}u throughout.",
+          "explanation": "The total momentum of the system is conserved, staying equal to its initial value $2 \\times 10 = 20\\ \\text{kg m s}^{-1}$ throughout.",
           "diagram": null
         },
         {

@@ -20,14 +20,36 @@ function useKatexHtml(tex: string, displayMode: boolean): string | null {
   return html;
 }
 
-/** Renders a block of display math (e.g. workingLatex). */
+/**
+ * Renders a block of working (e.g. `workingLatex`).
+ *
+ * Most values are raw LaTeX and render as display math. Some authored values,
+ * however, are either wrapped in a single `$...$` pair or mix prose with inline
+ * `$...$` segments (e.g. "Recall $\\int f\\,dx$ for $x \\neq 0$."). Feeding those
+ * straight to KaTeX shows the literal dollar signs, so we detect them and render
+ * accordingly: a lone wrapper is unwrapped to display math, and genuinely mixed
+ * text is interleaved just like {@link MathText}.
+ */
 export function MathBlock({ tex, className }: { tex: string; className?: string }) {
-  const html = useKatexHtml(tex, true);
+  const singleWrap = /^\s*\$([^$]+)\$\s*$/.exec(tex);
+  const isMixed = !singleWrap && tex.includes("$");
+  const displayTex = singleWrap ? singleWrap[1] : tex;
+
+  // Hook must run unconditionally; its result is ignored in the mixed case.
+  const html = useKatexHtml(displayTex, true);
+
+  if (isMixed) {
+    return (
+      <div className={cn("math-block overflow-x-auto", className)}>
+        <MathText text={tex} />
+      </div>
+    );
+  }
 
   if (!html) {
     return (
       <div className={cn("math-block overflow-x-auto font-mono text-sm text-muted-foreground", className)}>
-        {tex}
+        {displayTex}
       </div>
     );
   }

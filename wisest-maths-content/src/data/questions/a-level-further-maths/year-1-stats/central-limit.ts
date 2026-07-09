@@ -4151,7 +4151,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "CLT for sum",
           "workingLatex": "S \\approx N(250,\\,200)",
-          "explanation": "Total of ${sampleN} observations.",
+          "explanation": "Sum of $n=50$ observations.",
           "diagram": null
         },
         {
@@ -4265,7 +4265,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "CLT for sum",
           "workingLatex": "S \\approx N(800,\\,1000)",
-          "explanation": "Total of ${sampleN} observations.",
+          "explanation": "Sum of $n=40$ observations.",
           "diagram": null
         },
         {
@@ -4613,7 +4613,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Event",
           "workingLatex": "P(|\\overline{X}-30| < 2)",
-          "explanation": "Accuracy within ${d} of the true mean.",
+          "explanation": "Accuracy within $2$ of the true mean.",
           "diagram": null
         },
         {
@@ -4726,7 +4726,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Event",
           "workingLatex": "P(|\\overline{X}-8| < 0.5)",
-          "explanation": "Accuracy within ${d} of the true mean.",
+          "explanation": "Accuracy within $0.5$ of the true mean.",
           "diagram": null
         },
         {
@@ -4832,7 +4832,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Uniform parent",
           "workingLatex": "X \\sim U(0,12)",
-          "explanation": "Continuous uniform on $[${a},${b}]$.",
+          "explanation": "Continuous uniform on $[0,12]$.",
           "diagram": null
         },
         {
@@ -4945,7 +4945,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Uniform parent",
           "workingLatex": "X \\sim U(2,8)",
-          "explanation": "Continuous uniform on $[${a},${b}]$.",
+          "explanation": "Continuous uniform on $[2,8]$.",
           "diagram": null
         },
         {
@@ -5285,7 +5285,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "CLT for sum",
           "workingLatex": "S \\approx N(192,\\,144)",
-          "explanation": "Total of ${sampleN} observations.",
+          "explanation": "Sum of $n=64$ observations.",
           "diagram": null
         },
         {
@@ -5519,7 +5519,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Event",
           "workingLatex": "P(|\\overline{X}-50| < 2)",
-          "explanation": "Accuracy within ${d} of the true mean.",
+          "explanation": "Accuracy within $2$ of the true mean.",
           "diagram": null
         },
         {
@@ -5625,7 +5625,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Uniform parent",
           "workingLatex": "X \\sim U(0,1)",
-          "explanation": "Continuous uniform on $[${a},${b}]$.",
+          "explanation": "Continuous uniform on $[0,1]$.",
           "diagram": null
         },
         {
@@ -5965,7 +5965,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "CLT for sum",
           "workingLatex": "S \\approx N(825,\\,1980)",
-          "explanation": "Total of ${sampleN} observations.",
+          "explanation": "Sum of $n=55$ observations.",
           "diagram": null
         },
         {

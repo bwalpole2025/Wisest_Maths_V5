@@ -3222,14 +3222,14 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Evaluate at upper limit",
           "workingLatex": "F(1)",
-          "explanation": "Substitute $x = ${b}$.",
+          "explanation": "Substitute the upper limit into the antiderivative.",
           "diagram": null
         },
         {
           "stepNumber": 7,
           "description": "Evaluate at lower limit",
           "workingLatex": "F(0)",
-          "explanation": "Substitute $x = ${a}$.",
+          "explanation": "Substitute the lower limit into the antiderivative.",
           "diagram": null
         },
         {
@@ -3243,7 +3243,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Verify",
           "workingLatex": "A = \\dfrac{1}{6}",
-          "explanation": "The enclosed region has area ${area} square units.",
+          "explanation": "The enclosed region has area $\\dfrac{1}{6}$ square units.",
           "diagram": null
         }
       ],
@@ -3307,14 +3307,14 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Evaluate at upper limit",
           "workingLatex": "F(2)",
-          "explanation": "Substitute $x = ${b}$.",
+          "explanation": "Substitute the upper limit into the antiderivative.",
           "diagram": null
         },
         {
           "stepNumber": 7,
           "description": "Evaluate at lower limit",
           "workingLatex": "F(0)",
-          "explanation": "Substitute $x = ${a}$.",
+          "explanation": "Substitute the lower limit into the antiderivative.",
           "diagram": null
         },
         {
@@ -3328,7 +3328,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Verify",
           "workingLatex": "A = \\dfrac{4}{3}",
-          "explanation": "The enclosed region has area ${area} square units.",
+          "explanation": "The enclosed region has area $\\dfrac{4}{3}$ square units.",
           "diagram": null
         }
       ],
@@ -3392,14 +3392,14 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Evaluate at upper limit",
           "workingLatex": "F(1)",
-          "explanation": "Substitute $x = ${b}$.",
+          "explanation": "Substitute the upper limit into the antiderivative.",
           "diagram": null
         },
         {
           "stepNumber": 7,
           "description": "Evaluate at lower limit",
           "workingLatex": "F(0)",
-          "explanation": "Substitute $x = ${a}$.",
+          "explanation": "Substitute the lower limit into the antiderivative.",
           "diagram": null
         },
         {
@@ -3413,7 +3413,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Verify",
           "workingLatex": "A = \\dfrac{1}{3}",
-          "explanation": "The enclosed region has area ${area} square units.",
+          "explanation": "The enclosed region has area $\\dfrac{1}{3}$ square units.",
           "diagram": null
         }
       ],
@@ -3477,14 +3477,14 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Evaluate at upper limit",
           "workingLatex": "F(3)",
-          "explanation": "Substitute $x = ${b}$.",
+          "explanation": "Substitute the upper limit into the antiderivative.",
           "diagram": null
         },
         {
           "stepNumber": 7,
           "description": "Evaluate at lower limit",
           "workingLatex": "F(0)",
-          "explanation": "Substitute $x = ${a}$.",
+          "explanation": "Substitute the lower limit into the antiderivative.",
           "diagram": null
         },
         {
@@ -3498,7 +3498,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Verify",
           "workingLatex": "A = \\dfrac{9}{2}",
-          "explanation": "The enclosed region has area ${area} square units.",
+          "explanation": "The enclosed region has area $\\dfrac{9}{2}$ square units.",
           "diagram": null
         }
       ],
@@ -3562,14 +3562,14 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Evaluate at upper limit",
           "workingLatex": "F(2)",
-          "explanation": "Substitute $x = ${b}$.",
+          "explanation": "Substitute the upper limit into the antiderivative.",
           "diagram": null
         },
         {
           "stepNumber": 7,
           "description": "Evaluate at lower limit",
           "workingLatex": "F(-2)",
-          "explanation": "Substitute $x = ${a}$.",
+          "explanation": "Substitute the lower limit into the antiderivative.",
           "diagram": null
         },
         {
@@ -3583,7 +3583,7 @@ export const questions: Question[] = [
           "stepNumber": 9,
           "description": "Verify",
           "workingLatex": "A = \\dfrac{32}{3}",
-          "explanation": "The enclosed region has area ${area} square units.",
+          "explanation": "The enclosed region has area $\\dfrac{32}{3}$ square units.",
           "diagram": null
         }
       ],
@@ -3646,7 +3646,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{4t^{3}}{3} \\right]_{0}^{2}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -3730,7 +3730,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{t^{3}}{3} \\right]_{0}^{2}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -3814,7 +3814,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{2t^{3}}{3} \\right]_{0}^{3}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -3898,7 +3898,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{2t^{3}}{3} \\right]_{0}^{2}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -3982,7 +3982,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{3t^{5}}{5} \\right]_{0}^{1}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -4066,7 +4066,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{t^{3}}{3} \\right]_{0}^{2}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -4150,7 +4150,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{8t^{3}}{3} \\right]_{0}^{1}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -4234,7 +4234,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ t^{3} \\right]_{0}^{2}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -4318,7 +4318,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ 2t^{3} \\right]_{0}^{1}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -4402,7 +4402,7 @@ export const questions: Question[] = [
           "stepNumber": 6,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{t^{4}}{4} \\right]_{0}^{2}",
-          "explanation": "Evaluate at $t = ${t1}$ and $t = ${t0}$.",
+          "explanation": "Evaluate the antiderivative at the upper and lower parameter limits.",
           "diagram": null
         },
         {
@@ -4473,7 +4473,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{y^{3}}{3} \\right]_{0}^{2}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between the lower and upper $y$-limits.",
           "diagram": null
         },
         {
@@ -4558,7 +4558,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{y^{2}}{2} + y \\right]_{0}^{3}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between the lower and upper $y$-limits.",
           "diagram": null
         },
         {
@@ -4643,7 +4643,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Apply limits",
           "workingLatex": "\\left[ y^{2} \\right]_{0}^{4}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between the lower and upper $y$-limits.",
           "diagram": null
         },
         {
@@ -4728,7 +4728,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{y^{3}}{3} + y \\right]_{0}^{1}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between the lower and upper $y$-limits.",
           "diagram": null
         },
         {
@@ -4813,7 +4813,7 @@ export const questions: Question[] = [
           "stepNumber": 4,
           "description": "Apply limits",
           "workingLatex": "\\left[ \\dfrac{2}{3}y^{3/2} \\right]_{0}^{4}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between the lower and upper $y$-limits.",
           "diagram": null
         },
         {

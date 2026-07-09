@@ -1802,7 +1802,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/3} = r^{1/3}e^{i(\\theta + 2k\\pi)/3}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $3$ distinct roots, corresponding to $k = 0, 1, 2$.",
           "diagram": null
         },
         {
@@ -1887,7 +1887,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/4} = r^{1/4}e^{i(\\theta + 2k\\pi)/4}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $4$ distinct roots, corresponding to $k = 0, 1, 2, 3$.",
           "diagram": null
         },
         {
@@ -1971,7 +1971,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/2} = r^{1/2}e^{i(\\theta + 2k\\pi)/2}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $2$ distinct roots, corresponding to $k = 0, 1$.",
           "diagram": null
         },
         {
@@ -2055,7 +2055,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/3} = r^{1/3}e^{i(\\theta + 2k\\pi)/3}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $3$ distinct roots, corresponding to $k = 0, 1, 2$.",
           "diagram": null
         },
         {
@@ -2139,7 +2139,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/5} = r^{1/5}e^{i(\\theta + 2k\\pi)/5}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $5$ distinct roots, corresponding to $k = 0, 1, 2, 3, 4$.",
           "diagram": null
         },
         {
@@ -2648,7 +2648,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/6} = r^{1/6}e^{i(\\theta + 2k\\pi)/6}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $6$ distinct roots, corresponding to $k = 0, 1, 2, 3, 4, 5$.",
           "diagram": null
         },
         {
@@ -2732,7 +2732,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/4} = r^{1/4}e^{i(\\theta + 2k\\pi)/4}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $4$ distinct roots, corresponding to $k = 0, 1, 2, 3$.",
           "diagram": null
         },
         {
@@ -5814,7 +5814,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/3} = r^{1/3}e^{i(\\theta + 2k\\pi)/3}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $3$ distinct roots, corresponding to $k = 0, 1, 2$.",
           "diagram": null
         },
         {
@@ -5926,7 +5926,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "De Moivre for roots",
           "workingLatex": "z = re^{i\\theta} \\Rightarrow z^{1/7} = r^{1/7}e^{i(\\theta + 2k\\pi)/7}",
-          "explanation": "There are $n$ distinct roots for $k = 0, 1, \\ldots, ${n}-1$.",
+          "explanation": "There are $7$ distinct roots, corresponding to $k = 0, 1, 2, 3, 4, 5, 6$.",
           "diagram": null
         },
         {

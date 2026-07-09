@@ -1749,7 +1749,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ \\dfrac{y^{3}}{3} \\right]_{0}^{3}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 3$.",
           "diagram": null
         },
         {
@@ -1827,7 +1827,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ \\dfrac{y^{5}}{5} \\right]_{0}^{1}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 1$.",
           "diagram": null
         },
         {
@@ -1904,7 +1904,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ 4y \\right]_{0}^{3}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 3$.",
           "diagram": null
         },
         {
@@ -1982,7 +1982,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ \\dfrac{y^{2}}{2} \\right]_{0}^{4}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 4$.",
           "diagram": null
         },
         {
@@ -2060,7 +2060,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ 3y^{3} \\right]_{0}^{1}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 1$.",
           "diagram": null
         },
         {
@@ -3837,7 +3837,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ \\dfrac{y^{3}}{3} + y^{2} + y \\right]_{0}^{2}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 2$.",
           "diagram": null
         },
         {
@@ -3922,7 +3922,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ \\dfrac{4y^{5}}{5} \\right]_{0}^{1}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 1$.",
           "diagram": null
         },
         {
@@ -4007,7 +4007,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ 16y - 4y^{2} + \\dfrac{y^{3}}{3} \\right]_{0}^{2}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 2$.",
           "diagram": null
         },
         {
@@ -4600,7 +4600,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Apply limits",
           "workingLatex": "V = \\pi \\left[ \\dfrac{y^{7}}{7} \\right]_{0}^{1}",
-          "explanation": "Evaluate between $y = ${y0}$ and $y = ${y1}$.",
+          "explanation": "Evaluate the antiderivative between $y = 0$ and $y = 1$.",
           "diagram": null
         },
         {

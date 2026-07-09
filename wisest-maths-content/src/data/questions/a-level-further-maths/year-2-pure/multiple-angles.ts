@@ -256,7 +256,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Real part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is real}",
-          "explanation": "Even powers of $i$ contribute to $\\cos ${n}\\theta$.",
+          "explanation": "Even powers of $i$ are real, so they contribute to $\\cos 4\\theta$.",
           "diagram": null
         },
         {
@@ -270,7 +270,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Imaginary part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is imaginary}",
-          "explanation": "Odd powers of $i$ contribute to $\\sin ${n}\\theta$.",
+          "explanation": "Odd powers of $i$ are imaginary, so they contribute to $\\sin 4\\theta$.",
           "diagram": null
         },
         {
@@ -334,7 +334,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Real part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is real}",
-          "explanation": "Even powers of $i$ contribute to $\\cos ${n}\\theta$.",
+          "explanation": "Even powers of $i$ are real, so they contribute to $\\cos 5\\theta$.",
           "diagram": null
         },
         {
@@ -348,7 +348,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Imaginary part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is imaginary}",
-          "explanation": "Odd powers of $i$ contribute to $\\sin ${n}\\theta$.",
+          "explanation": "Odd powers of $i$ are imaginary, so they contribute to $\\sin 5\\theta$.",
           "diagram": null
         },
         {
@@ -1763,7 +1763,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Real part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is real}",
-          "explanation": "Even powers of $i$ contribute to $\\cos ${n}\\theta$.",
+          "explanation": "Even powers of $i$ are real, so they contribute to $\\cos 26\\theta$.",
           "diagram": null
         },
         {
@@ -1777,7 +1777,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Imaginary part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is imaginary}",
-          "explanation": "Odd powers of $i$ contribute to $\\sin ${n}\\theta$.",
+          "explanation": "Odd powers of $i$ are imaginary, so they contribute to $\\sin 26\\theta$.",
           "diagram": null
         },
         {
@@ -1848,7 +1848,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Real part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is real}",
-          "explanation": "Even powers of $i$ contribute to $\\cos ${n}\\theta$.",
+          "explanation": "Even powers of $i$ are real, so they contribute to $\\cos 27\\theta$.",
           "diagram": null
         },
         {
@@ -1862,7 +1862,7 @@ export const questions: Question[] = [
           "stepNumber": 5,
           "description": "Imaginary part",
           "workingLatex": "\\text{Collect terms where }i^k\\text{ is imaginary}",
-          "explanation": "Odd powers of $i$ contribute to $\\sin ${n}\\theta$.",
+          "explanation": "Odd powers of $i$ are imaginary, so they contribute to $\\sin 27\\theta$.",
           "diagram": null
         },
         {
@@ -1930,7 +1930,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 3,
-          "description": "Extract ${fn}",
+          "description": "Extract $\\cos^{2}\\theta$",
           "workingLatex": "\\text{Use }\\cos 2\\theta\\text{ or }\\sin 2\\theta\\text{ to eliminate cross terms}",
           "explanation": "Multiple-angle formula links powers.",
           "diagram": null
@@ -2014,7 +2014,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 3,
-          "description": "Extract ${fn}",
+          "description": "Extract $\\sin^{2}\\theta$",
           "workingLatex": "\\text{Use }\\cos 2\\theta\\text{ or }\\sin 2\\theta\\text{ to eliminate cross terms}",
           "explanation": "Multiple-angle formula links powers.",
           "diagram": null
@@ -2098,7 +2098,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 3,
-          "description": "Extract ${fn}",
+          "description": "Extract $\\cos^{3}\\theta$",
           "workingLatex": "\\text{Use }\\cos 3\\theta\\text{ or }\\sin 3\\theta\\text{ to eliminate cross terms}",
           "explanation": "Multiple-angle formula links powers.",
           "diagram": null
@@ -2182,7 +2182,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 3,
-          "description": "Extract ${fn}",
+          "description": "Extract $\\sin^{3}\\theta$",
           "workingLatex": "\\text{Use }\\cos 3\\theta\\text{ or }\\sin 3\\theta\\text{ to eliminate cross terms}",
           "explanation": "Multiple-angle formula links powers.",
           "diagram": null
@@ -2266,7 +2266,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 3,
-          "description": "Extract ${fn}",
+          "description": "Extract $\\cos^{4}\\theta$",
           "workingLatex": "\\text{Use }\\cos 4\\theta\\text{ or }\\sin 4\\theta\\text{ to eliminate cross terms}",
           "explanation": "Multiple-angle formula links powers.",
           "diagram": null
@@ -2350,7 +2350,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 3,
-          "description": "Extract ${fn}",
+          "description": "Extract $\\sin^{4}\\theta$",
           "workingLatex": "\\text{Use }\\cos 4\\theta\\text{ or }\\sin 4\\theta\\text{ to eliminate cross terms}",
           "explanation": "Multiple-angle formula links powers.",
           "diagram": null

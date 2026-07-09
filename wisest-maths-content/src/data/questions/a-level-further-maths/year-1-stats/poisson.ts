@@ -772,7 +772,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=0) = \\dfrac{e^{-2} \\cdot 2^{0}}{0!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 2$ and $k = 0$.",
           "diagram": null
         },
         {
@@ -834,7 +834,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=1) = \\dfrac{e^{-2} \\cdot 2^{1}}{1!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 2$ and $k = 1$.",
           "diagram": null
         },
         {
@@ -896,7 +896,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=2) = \\dfrac{e^{-2} \\cdot 2^{2}}{2!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 2$ and $k = 2$.",
           "diagram": null
         },
         {
@@ -958,7 +958,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=0) = \\dfrac{e^{-3} \\cdot 3^{0}}{0!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 3$ and $k = 0$.",
           "diagram": null
         },
         {
@@ -1020,7 +1020,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=1) = \\dfrac{e^{-3} \\cdot 3^{1}}{1!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 3$ and $k = 1$.",
           "diagram": null
         },
         {
@@ -1082,7 +1082,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=2) = \\dfrac{e^{-3} \\cdot 3^{2}}{2!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 3$ and $k = 2$.",
           "diagram": null
         },
         {
@@ -1144,7 +1144,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=0) = \\dfrac{e^{-4} \\cdot 4^{0}}{0!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 4$ and $k = 0$.",
           "diagram": null
         },
         {
@@ -1206,7 +1206,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=1) = \\dfrac{e^{-4} \\cdot 4^{1}}{1!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 4$ and $k = 1$.",
           "diagram": null
         },
         {
@@ -1268,7 +1268,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=0) = \\dfrac{e^{-5} \\cdot 5^{0}}{0!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 5$ and $k = 0$.",
           "diagram": null
         },
         {
@@ -1330,7 +1330,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=2) = \\dfrac{e^{-5} \\cdot 5^{2}}{2!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 5$ and $k = 2$.",
           "diagram": null
         },
         {
@@ -1392,7 +1392,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=1) = \\dfrac{e^{-6} \\cdot 6^{1}}{1!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 6$ and $k = 1$.",
           "diagram": null
         },
         {
@@ -1454,7 +1454,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "P(X=3) = \\dfrac{e^{-6} \\cdot 6^{3}}{3!}",
-          "explanation": "Insert $\\lambda = ${fmtLambda(lambda)}$ and $k = ${k}$.",
+          "explanation": "Insert $\\lambda = 6$ and $k = 3$.",
           "diagram": null
         },
         {
@@ -2178,9 +2178,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Calculate $P(X \\leq ${k - 1})$",
+          "description": "Calculate $P(X \\leq 1)$",
           "workingLatex": "P(X \\leq 1) = 0.1991",
-          "explanation": "Cumulative up to ${k - 1}.",
+          "explanation": "Cumulative up to $1$.",
           "diagram": null
         },
         {
@@ -2261,9 +2261,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Calculate $P(X \\leq ${k - 1})$",
+          "description": "Calculate $P(X \\leq 2)$",
           "workingLatex": "P(X \\leq 2) = 0.2381",
-          "explanation": "Cumulative up to ${k - 1}.",
+          "explanation": "Cumulative up to $2$.",
           "diagram": null
         },
         {
@@ -2344,9 +2344,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Calculate $P(X \\leq ${k - 1})$",
+          "description": "Calculate $P(X \\leq 3)$",
           "workingLatex": "P(X \\leq 3) = 0.265",
-          "explanation": "Cumulative up to ${k - 1}.",
+          "explanation": "Cumulative up to $3$.",
           "diagram": null
         },
         {
@@ -2427,9 +2427,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Calculate $P(X \\leq ${k - 1})$",
+          "description": "Calculate $P(X \\leq 4)$",
           "workingLatex": "P(X \\leq 4) = 0.2851",
-          "explanation": "Cumulative up to ${k - 1}.",
+          "explanation": "Cumulative up to $4$.",
           "diagram": null
         },
         {
@@ -2510,9 +2510,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Calculate $P(X \\leq ${k - 1})$",
+          "description": "Calculate $P(X \\leq 6)$",
           "workingLatex": "P(X \\leq 6) = 0.3134",
-          "explanation": "Cumulative up to ${k - 1}.",
+          "explanation": "Cumulative up to $6$.",
           "diagram": null
         },
         {
@@ -2593,9 +2593,9 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 2,
-          "description": "Calculate $P(X \\leq ${k - 1})$",
+          "description": "Calculate $P(X \\leq 8)$",
           "workingLatex": "P(X \\leq 8) = 0.3328",
-          "explanation": "Cumulative up to ${k - 1}.",
+          "explanation": "Cumulative up to $8$.",
           "diagram": null
         },
         {
@@ -4530,7 +4530,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 5,
           "description": "Calculate",
-          "workingLatex": "P(X = 2) = 0.1465$",
+          "workingLatex": "P(X = 2) = 0.1465",
           "explanation": "Evaluate.",
           "diagram": null
         },
@@ -4613,7 +4613,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 5,
           "description": "Calculate",
-          "workingLatex": "P(X \\leq 4) = 0.2851$",
+          "workingLatex": "P(X \\leq 4) = 0.2851",
           "explanation": "Evaluate.",
           "diagram": null
         },
@@ -4696,7 +4696,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 5,
           "description": "Calculate",
-          "workingLatex": "P(X \\geq 2) = 0.8009$",
+          "workingLatex": "P(X \\geq 2) = 0.8009",
           "explanation": "Evaluate.",
           "diagram": null
         },
@@ -4779,7 +4779,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 5,
           "description": "Calculate",
-          "workingLatex": "P(3 \\leq X \\leq 7) = 0.742$",
+          "workingLatex": "P(3 \\leq X \\leq 7) = 0.742",
           "explanation": "Evaluate.",
           "diagram": null
         },

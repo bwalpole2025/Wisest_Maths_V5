@@ -1020,7 +1020,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "PE = 2 \\times 9.8 \\times 5",
-          "explanation": "Use $g = ${g}\\ \\text{m s}^{-2}$ unless otherwise stated.",
+          "explanation": "Use $g = 9.8\\ \\text{m s}^{-2}$ unless otherwise stated.",
           "diagram": null
         },
         {
@@ -1082,7 +1082,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "PE = 3 \\times 10 \\times 4",
-          "explanation": "Use $g = ${g}\\ \\text{m s}^{-2}$ unless otherwise stated.",
+          "explanation": "Use $g = 10\\ \\text{m s}^{-2}$ unless otherwise stated.",
           "diagram": null
         },
         {
@@ -1144,7 +1144,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "PE = 1.5 \\times 9.8 \\times 8",
-          "explanation": "Use $g = ${g}\\ \\text{m s}^{-2}$ unless otherwise stated.",
+          "explanation": "Use $g = 9.8\\ \\text{m s}^{-2}$ unless otherwise stated.",
           "diagram": null
         },
         {
@@ -1206,7 +1206,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "PE = 4 \\times 10 \\times 2.5",
-          "explanation": "Use $g = ${g}\\ \\text{m s}^{-2}$ unless otherwise stated.",
+          "explanation": "Use $g = 10\\ \\text{m s}^{-2}$ unless otherwise stated.",
           "diagram": null
         },
         {
@@ -1268,7 +1268,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "PE = 6 \\times 9.8 \\times 3",
-          "explanation": "Use $g = ${g}\\ \\text{m s}^{-2}$ unless otherwise stated.",
+          "explanation": "Use $g = 9.8\\ \\text{m s}^{-2}$ unless otherwise stated.",
           "diagram": null
         },
         {
@@ -1330,7 +1330,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Substitute",
           "workingLatex": "PE = 2 \\times 10 \\times 12",
-          "explanation": "Use $g = ${g}\\ \\text{m s}^{-2}$ unless otherwise stated.",
+          "explanation": "Use $g = 10\\ \\text{m s}^{-2}$ unless otherwise stated.",
           "diagram": null
         },
         {
@@ -2767,7 +2767,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Substitute",
           "workingLatex": "10 \\times 5 = \\tfrac{1}{2}v^{2}",
-          "explanation": "Use the drop height and $g = ${g}$.",
+          "explanation": "Use the drop height and $g = 10\\ \\text{m s}^{-2}$.",
           "diagram": null
         },
         {
@@ -2850,7 +2850,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Substitute",
           "workingLatex": "9.8 \\times 8 = \\tfrac{1}{2}v^{2}",
-          "explanation": "Use the drop height and $g = ${g}$.",
+          "explanation": "Use the drop height and $g = 9.8\\ \\text{m s}^{-2}$.",
           "diagram": null
         },
         {
@@ -2933,7 +2933,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Substitute",
           "workingLatex": "10 \\times 20 = \\tfrac{1}{2}v^{2}",
-          "explanation": "Use the drop height and $g = ${g}$.",
+          "explanation": "Use the drop height and $g = 10\\ \\text{m s}^{-2}$.",
           "diagram": null
         },
         {
@@ -3016,7 +3016,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Substitute",
           "workingLatex": "9.8 \\times 1.25 = \\tfrac{1}{2}v^{2}",
-          "explanation": "Use the drop height and $g = ${g}$.",
+          "explanation": "Use the drop height and $g = 9.8\\ \\text{m s}^{-2}$.",
           "diagram": null
         },
         {
@@ -3099,7 +3099,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Substitute",
           "workingLatex": "10 \\times 45 = \\tfrac{1}{2}v^{2}",
-          "explanation": "Use the drop height and $g = ${g}$.",
+          "explanation": "Use the drop height and $g = 10\\ \\text{m s}^{-2}$.",
           "diagram": null
         },
         {
@@ -3182,7 +3182,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Substitute",
           "workingLatex": "9.8 \\times 2 = \\tfrac{1}{2}v^{2}",
-          "explanation": "Use the drop height and $g = ${g}$.",
+          "explanation": "Use the drop height and $g = 9.8\\ \\text{m s}^{-2}$.",
           "diagram": null
         },
         {
