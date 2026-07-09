@@ -1,8 +1,8 @@
 {
-  "currentLevel": "A-Level Further Maths",
-  "currentTopic": "Further Maths Year 2: Statistics (Further Statistics 2)",
-  "currentSubtopic": "Unbiased estimators",
-  "currentSubtopicId": "fm.y2.stats.unbiased-estimators",
+  "currentLevel": "A-Level Maths",
+  "currentTopic": "Year 1 Statistics",
+  "currentSubtopic": "Linear regression",
+  "currentSubtopicId": "al.y1.stats.linear-regression",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -43,6 +43,7 @@
     "al.y1.stats.location-spread",
     "al.y1.stats.data-presentation",
     "al.y1.stats.regression",
+    "al.y1.stats.linear-regression",
     "al.y1.stats.probability",
     "al.y1.stats.discrete-rv",
     "al.y1.stats.binomial",
@@ -122,7 +123,7 @@
     "fm.y1.stats.chi-squared",
     "fm.y1.stats.pgf",
     "fm.y1.stats.contingency-tables",
-    "fm.y1.stats.combinations-random-variables",
+    "fm.y2.stats.combining-rv",
     "fm.y2.pure.complex-exponential",
     "fm.y2.pure.de-moivre",
     "fm.y2.pure.multiple-angles",
@@ -155,18 +156,20 @@
     "fm.y2.stats.spearman",
     "fm.y2.stats.continuous-rv",
     "fm.y2.stats.estimation-ci",
-    "fm.y2.stats.continuous-uniform"
+    "fm.y2.stats.continuous-uniform",
+    "fm.y2.stats.inference-variance",
+    "fm.y2.stats.further-tests"
   ],
   "overallProgress": {
     "A-Level Maths": {
-      "totalSubtopics": 83,
-      "completedSubtopics": 83,
-      "totalQuestionsGenerated": 5810
+      "totalSubtopics": 84,
+      "completedSubtopics": 84,
+      "totalQuestionsGenerated": 5880
     },
     "A-Level Further Maths": {
-      "totalSubtopics": 67,
-      "completedSubtopics": 67,
-      "totalQuestionsGenerated": 4690
+      "totalSubtopics": 69,
+      "completedSubtopics": 69,
+      "totalQuestionsGenerated": 4830
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -174,5 +177,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-09T04:16:00+01:00"
+  "lastUpdated": "2026-07-09T05:11:00+01:00"
 }

@@ -357,6 +357,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () => import("./year-1-stats/correlation-and-regression").then((m) => m.questions),
   },
   {
+    slug: "linear-regression",
+    id: "al.y1.stats.linear-regression",
+    name: "Linear regression",
+    blurb: "Least-squares regression lines, prediction, residuals, interpolation, extrapolation and the limits of linear models.",
+    gradient: "from-emerald-400 to-lime-500",
+    order: 37.5,
+    load: () => import("./year-1-stats/linear-regression").then((m) => m.questions),
+  },
+  {
     slug: "probability",
     id: "al.y1.stats.probability",
     name: "Probability",

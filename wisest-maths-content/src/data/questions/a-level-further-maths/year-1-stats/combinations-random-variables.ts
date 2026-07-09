@@ -1,9 +1,9 @@
 import type { Question, WorkedSolution } from "@/lib/types";
 
 const level = "A-Level Further Maths";
-const topic = "Further Maths Year 1: Statistics (Further Statistics 1)";
+const topic = "Further Maths Year 2: Statistics (Further Statistics 2)";
 const subtopic = "Combinations of random variables";
-const subtopicId = "fm.y1.stats.combinations-random-variables";
+const subtopicId = "fm.y2.stats.combining-rv";
 
 type LinearSpec = {
   context: string;

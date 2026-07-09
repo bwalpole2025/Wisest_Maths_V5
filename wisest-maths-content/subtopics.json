@@ -2,10 +2,10 @@
     "source": "wisest-curriculum-database.pdf",
     "generatedAt": "2026-07-05T04:57:16+00:00",
     "counts": {
-        "total": 276,
+        "total": 277,
         "byQualification": {
             "GCSE": 123,
-            "ALEVEL_MATHS": 83,
+            "ALEVEL_MATHS": 84,
             "ALEVEL_FM": 70
         },
         "gcseTier": {
@@ -1553,6 +1553,16 @@
             "name": "Correlation and regression",
             "tier": null,
             "description": "Scatter diagrams; least-squares lines; interpretation and extrapolation limits."
+        },
+        {
+            "id": "al.y1.stats.linear-regression",
+            "qualification": "ALEVEL_MATHS",
+            "year": "y1",
+            "strand": "stats",
+            "topic": "Year 1 Statistics",
+            "name": "Linear regression",
+            "tier": null,
+            "description": "Fitting, interpreting and using least-squares regression lines; residuals, prediction, interpolation, extrapolation and the limits of linear models."
         },
         {
             "id": "al.y1.stats.probability",

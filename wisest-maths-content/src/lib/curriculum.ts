@@ -39,6 +39,7 @@ const BUILT_ID_ALIASES: Record<string, string> = {
   "fm.y2.pure.second-order-des": "fm.y2.pure.second-order-differential-equations",
   "fm.y2.pure.de-modelling": "fm.y2.pure.modelling-differential-equations",
   "fm.y2.pure.coupled-des": "fm.y2.pure.coupled-differential-equations",
+  "fm.y2.stats.variance-inference": "fm.y2.stats.inference-variance",
 };
 
 const builtIdFor = (id: string) => BUILT_ID_ALIASES[cleanId(id)] ?? cleanId(id);

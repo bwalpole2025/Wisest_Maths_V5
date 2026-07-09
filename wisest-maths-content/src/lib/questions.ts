@@ -42,6 +42,7 @@ import { questions as sampling } from "@/data/questions/a-level-maths/year-1-sta
 import { questions as locationSpread } from "@/data/questions/a-level-maths/year-1-stats/measures-of-location-and-spread";
 import { questions as dataPresentation } from "@/data/questions/a-level-maths/year-1-stats/data-presentation";
 import { questions as correlationRegression } from "@/data/questions/a-level-maths/year-1-stats/correlation-and-regression";
+import { questions as linearRegression } from "@/data/questions/a-level-maths/year-1-stats/linear-regression";
 import { questions as probability } from "@/data/questions/a-level-maths/year-1-stats/probability";
 import { questions as discreteRandomVariables } from "@/data/questions/a-level-maths/year-1-stats/discrete-random-variables";
 import { questions as theBinomialDistribution } from "@/data/questions/a-level-maths/year-1-stats/the-binomial-distribution";
@@ -117,6 +118,7 @@ import { questions as chiSquared } from "@/data/questions/a-level-further-maths/
 import { questions as contingencyTables } from "@/data/questions/a-level-further-maths/year-1-stats/contingency-tables";
 import { questions as pgf } from "@/data/questions/a-level-further-maths/year-1-stats/pgf";
 import { questions as combinationsRandomVariables } from "@/data/questions/a-level-further-maths/year-1-stats/combinations-random-variables";
+import { questions as combinationsRandomVariablesFs1 } from "@/data/questions/a-level-further-maths/year-1-stats/combinations-random-variables-fs1";
 import { questions as complexExponential } from "@/data/questions/a-level-further-maths/year-2-pure/complex-exponential";
 import { questions as deMoivre } from "@/data/questions/a-level-further-maths/year-2-pure/de-moivre";
 import { questions as trigSeries } from "@/data/questions/a-level-further-maths/year-2-pure/trig-series";
@@ -152,9 +154,11 @@ import { questions as obliqueImpactSurface } from "@/data/questions/a-level-furt
 import { questions as obliqueSpheres } from "@/data/questions/a-level-further-maths/year-2-mech/oblique-spheres";
 import { questions as furtherDynamics } from "@/data/questions/a-level-further-maths/year-2-mech/further-dynamics";
 import { questions as unbiasedEstimators } from "@/data/questions/a-level-further-maths/year-2-stats/unbiased-estimators";
+import { questions as furtherHypothesisTests } from "@/data/questions/a-level-further-maths/year-2-stats/further-hypothesis-tests";
 import { questions as spearmanRankCorrelation } from "@/data/questions/a-level-further-maths/year-2-stats/spearman";
 import { questions as continuousRandomVariables } from "@/data/questions/a-level-further-maths/year-2-stats/continuous-random-variables";
 import { questions as continuousUniform } from "@/data/questions/a-level-further-maths/year-2-stats/continuous-uniform";
+import { questions as inferenceForVariance } from "@/data/questions/a-level-further-maths/year-2-stats/inference-for-variance";
 
 export { slugForSubtopicId };
 
@@ -196,6 +200,7 @@ export const allQuestions: Question[] = [
   ...locationSpread,
   ...dataPresentation,
   ...correlationRegression,
+  ...linearRegression,
   ...probability,
   ...discreteRandomVariables,
   ...theBinomialDistribution,
@@ -276,6 +281,7 @@ export const allQuestions: Question[] = [
   ...contingencyTables,
   ...pgf,
   ...combinationsRandomVariables,
+  ...combinationsRandomVariablesFs1,
   ...complexExponential,
   ...deMoivre,
   ...multipleAngles,
@@ -306,9 +312,11 @@ export const allQuestions: Question[] = [
   ...obliqueSpheres,
   ...furtherDynamics,
   ...unbiasedEstimators,
+  ...furtherHypothesisTests,
   ...spearmanRankCorrelation,
   ...continuousRandomVariables,
   ...continuousUniform,
+  ...inferenceForVariance,
 ];
 
 export function getQuestionById(id: string): Question | undefined {
