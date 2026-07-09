@@ -1,8 +1,8 @@
 {
   "currentLevel": "GCSE",
   "currentTopic": "Number: Structure and calculation",
-  "currentSubtopic": "Product rule for counting",
-  "currentSubtopicId": "gcse.number.product-rule",
+  "currentSubtopic": "Exact calculation",
+  "currentSubtopicId": "gcse.number.exact-calculation",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -165,7 +165,10 @@
     "gcse.number.factors-multiples",
     "gcse.number.prime-factorisation",
     "gcse.number.systematic-listing",
-    "gcse.number.product-rule"
+    "gcse.number.product-rule",
+    "gcse.number.powers-roots",
+    "gcse.number.integer-indices",
+    "gcse.number.exact-calculation"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -180,8 +183,8 @@
     },
     "GCSE": {
       "totalSubtopics": 123,
-      "completedSubtopics": 6,
-      "totalQuestionsGenerated": 456,
+      "completedSubtopics": 9,
+      "totalQuestionsGenerated": 666,
       "inProgress": [
         { "id": "gcse.number.ordering", "name": "Ordering and comparing numbers", "questions": 12 },
         { "id": "gcse.number.four-operations", "name": "Four operations and place value", "questions": 24 }
@@ -192,9 +195,12 @@
         { "id": "gcse.number.factors-multiples", "name": "Factors, multiples and primes", "questions": 70 },
         { "id": "gcse.number.prime-factorisation", "name": "Prime factorisation", "questions": 70 },
         { "id": "gcse.number.systematic-listing", "name": "Systematic listing", "questions": 70 },
-        { "id": "gcse.number.product-rule", "name": "Product rule for counting", "questions": 70 }
+        { "id": "gcse.number.product-rule", "name": "Product rule for counting", "questions": 70 },
+        { "id": "gcse.number.powers-roots", "name": "Powers and roots", "questions": 70 },
+        { "id": "gcse.number.integer-indices", "name": "Integer indices", "questions": 70 },
+        { "id": "gcse.number.exact-calculation", "name": "Exact calculation", "questions": 70 }
       ]
     }
   },
-  "lastUpdated": "2026-07-09T09:42:00+01:00"
+  "lastUpdated": "2026-07-09T13:52:00+01:00"
 }

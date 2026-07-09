@@ -5106,7 +5106,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 10,
           "description": "Answer invariant",
-          "workingLatex": "$y=0$; \\text{ all } y=c$",
+          "workingLatex": "y=0; \\text{ all } y=c",
           "explanation": "Family of invariant lines.",
           "diagram": null
         },
@@ -5190,7 +5190,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 6,
           "description": "Verify composite",
-          "workingLatex": "(1,1)\\mapsto(1,-1)\\mapsto(-1,-1) \\text{ vs direct } (1,1)\\mapsto(-1,-1)$",
+          "workingLatex": "(1,1)\\mapsto(1,-1)\\mapsto(-1,-1) \\text{ vs direct } (1,1)\\mapsto(-1,-1)",
           "explanation": "Consistent.",
           "diagram": null
         },
@@ -5577,7 +5577,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 13,
           "description": "Answer image",
-          "workingLatex": "(6,2)$",
+          "workingLatex": "(6,2)",
           "explanation": "Image of $(2,0)$.",
           "diagram": null
         }

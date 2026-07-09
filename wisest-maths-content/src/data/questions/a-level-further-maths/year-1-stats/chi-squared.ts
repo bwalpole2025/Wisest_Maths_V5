@@ -1892,7 +1892,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 1.2$. Since $\\chi^2 < 7.815$, do not reject $H_0$ at 5\\%$: data are consistent with a uniform distribution."
+      "finalAnswer": "$\\chi^2 = 1.2$. Since $\\chi^2 < 7.815$, do not reject $H_0$ at $5\\%$: data are consistent with a uniform distribution."
     }
   },
   {
@@ -1977,7 +1977,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 3.333$. Since $\\chi^2 < 9.488$, do not reject $H_0$ at 5\\%$: data are consistent with a uniform distribution."
+      "finalAnswer": "$\\chi^2 = 3.333$. Since $\\chi^2 < 9.488$, do not reject $H_0$ at $5\\%$: data are consistent with a uniform distribution."
     }
   },
   {
@@ -2062,7 +2062,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 13.333$. Since $\\chi^2 > 9.488$, reject $H_0$ at 5\\%$: insufficient evidence that the distribution is uniform."
+      "finalAnswer": "$\\chi^2 = 13.333$. Since $\\chi^2 > 9.488$, reject $H_0$ at $5\\%$: insufficient evidence that the distribution is uniform."
     }
   },
   {
@@ -2147,7 +2147,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 8.56$. Since $\\chi^2 > 7.815$, reject $H_0$ at 5\\%$: insufficient evidence that the distribution is uniform."
+      "finalAnswer": "$\\chi^2 = 8.56$. Since $\\chi^2 > 7.815$, reject $H_0$ at $5\\%$: insufficient evidence that the distribution is uniform."
     }
   },
   {
@@ -2487,7 +2487,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Do not reject $H_0$ at 5\\%$: data are consistent with $B(100, 0.4)$."
+      "finalAnswer": "Do not reject $H_0$ at $5\\%$: data are consistent with $B(100, 0.4)$."
     }
   },
   {
@@ -2572,7 +2572,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Do not reject $H_0$ at 5\\%$: data are consistent with $B(100, 0.5)$."
+      "finalAnswer": "Do not reject $H_0$ at $5\\%$: data are consistent with $B(100, 0.5)$."
     }
   },
   {
@@ -2657,7 +2657,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "Do not reject $H_0$ at 5\\%$: data are consistent with $B(100, 0.5)$."
+      "finalAnswer": "Do not reject $H_0$ at $5\\%$: data are consistent with $B(100, 0.5)$."
     }
   },
   {

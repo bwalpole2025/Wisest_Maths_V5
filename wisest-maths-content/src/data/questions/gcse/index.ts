@@ -103,6 +103,36 @@ export const SUBTOPICS: SubtopicEntry[] = [
     load: () =>
       import("./number/product-rule-for-counting").then((m) => m.questions),
   },
+  {
+    slug: "powers-and-roots",
+    id: "gcse.number.powers-roots",
+    name: "Powers and roots",
+    blurb:
+      "Evaluate squares, cubes and higher powers, and find square and cube roots, recognising the common powers of $2,3,4$ and $5$.",
+    gradient: "from-yellow-400 to-lime-500",
+    order: 9,
+    load: () => import("./number/powers-and-roots").then((m) => m.questions),
+  },
+  {
+    slug: "integer-indices",
+    id: "gcse.number.integer-indices",
+    name: "Integer indices",
+    blurb:
+      "Apply the index laws — $a^m\\times a^n$, $a^m\\div a^n$ and $(a^m)^n$ — including the zero and negative indices.",
+    gradient: "from-lime-400 to-green-500",
+    order: 10,
+    load: () => import("./number/integer-indices").then((m) => m.questions),
+  },
+  {
+    slug: "exact-calculation",
+    id: "gcse.number.exact-calculation",
+    name: "Exact calculation",
+    blurb:
+      "Calculate exactly with fractions and in terms of $\\pi$, leaving answers unrounded.",
+    gradient: "from-green-400 to-emerald-500",
+    order: 11,
+    load: () => import("./number/exact-calculation").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

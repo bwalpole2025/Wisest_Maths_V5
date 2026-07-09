@@ -1873,7 +1873,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 8$, $\\nu = 1$. Since $\\chi^2 > 3.841$, reject $H_0$ at 5\\%$: there is evidence of an association."
+      "finalAnswer": "$\\chi^2 = 8$, $\\nu = 1$. Since $\\chi^2 > 3.841$, reject $H_0$ at $5\\%$: there is evidence of an association."
     }
   },
   {
@@ -1956,7 +1956,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 1$, $\\nu = 1$. Since $\\chi^2 < 3.841$, do not reject $H_0$ at 5\\%$: no significant evidence of association."
+      "finalAnswer": "$\\chi^2 = 1$, $\\nu = 1$. Since $\\chi^2 < 3.841$, do not reject $H_0$ at $5\\%$: no significant evidence of association."
     }
   },
   {
@@ -2039,7 +2039,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 0.533$, $\\nu = 1$. Since $\\chi^2 < 3.841$, do not reject $H_0$ at 5\\%$: no significant evidence of association."
+      "finalAnswer": "$\\chi^2 = 0.533$, $\\nu = 1$. Since $\\chi^2 < 3.841$, do not reject $H_0$ at $5\\%$: no significant evidence of association."
     }
   },
   {
@@ -2122,7 +2122,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 10.462$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at 5\\%$: there is evidence of an association."
+      "finalAnswer": "$\\chi^2 = 10.462$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at $5\\%$: there is evidence of an association."
     }
   },
   {
@@ -2205,7 +2205,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 0.175$, $\\nu = 1$. Since $\\chi^2 < 3.841$, do not reject $H_0$ at 5\\%$: no significant evidence of association."
+      "finalAnswer": "$\\chi^2 = 0.175$, $\\nu = 1$. Since $\\chi^2 < 3.841$, do not reject $H_0$ at $5\\%$: no significant evidence of association."
     }
   },
   {
@@ -2288,7 +2288,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 9.091$, $\\nu = 1$. Since $\\chi^2 > 3.841$, reject $H_0$ at 5\\%$: there is evidence of an association."
+      "finalAnswer": "$\\chi^2 = 9.091$, $\\nu = 1$. Since $\\chi^2 > 3.841$, reject $H_0$ at $5\\%$: there is evidence of an association."
     }
   },
   {
@@ -2371,7 +2371,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 14.518$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at 5\\%$: there is evidence of an association."
+      "finalAnswer": "$\\chi^2 = 14.518$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at $5\\%$: there is evidence of an association."
     }
   },
   {
@@ -2454,7 +2454,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 6.84$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at 5\\%$: there is evidence of an association."
+      "finalAnswer": "$\\chi^2 = 6.84$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at $5\\%$: there is evidence of an association."
     }
   },
   {
@@ -2537,7 +2537,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 11.748$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at 5\\%$: there is evidence of an association."
+      "finalAnswer": "$\\chi^2 = 11.748$, $\\nu = 2$. Since $\\chi^2 > 5.991$, reject $H_0$ at $5\\%$: there is evidence of an association."
     }
   },
   {
@@ -2620,7 +2620,7 @@ export const questions: Question[] = [
           "diagram": null
         }
       ],
-      "finalAnswer": "$\\chi^2 = 11.449$, $\\nu = 4$. Since $\\chi^2 > 9.488$, reject $H_0$ at 5\\%$: there is evidence of an association."
+      "finalAnswer": "$\\chi^2 = 11.449$, $\\nu = 4$. Since $\\chi^2 > 9.488$, reject $H_0$ at $5\\%$: there is evidence of an association."
     }
   },
   {

@@ -168,6 +168,9 @@ import { questions as gcseFactorsMultiples } from "@/data/questions/gcse/number/
 import { questions as gcsePrimeFactorisation } from "@/data/questions/gcse/number/prime-factorisation";
 import { questions as gcseSystematicListing } from "@/data/questions/gcse/number/systematic-listing";
 import { questions as gcseProductRule } from "@/data/questions/gcse/number/product-rule-for-counting";
+import { questions as gcsePowersRoots } from "@/data/questions/gcse/number/powers-and-roots";
+import { questions as gcseIntegerIndices } from "@/data/questions/gcse/number/integer-indices";
+import { questions as gcseExactCalculation } from "@/data/questions/gcse/number/exact-calculation";
 
 export { slugForSubtopicId };
 
@@ -335,6 +338,9 @@ export const allQuestions: Question[] = [
   ...gcsePrimeFactorisation,
   ...gcseSystematicListing,
   ...gcseProductRule,
+  ...gcsePowersRoots,
+  ...gcseIntegerIndices,
+  ...gcseExactCalculation,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

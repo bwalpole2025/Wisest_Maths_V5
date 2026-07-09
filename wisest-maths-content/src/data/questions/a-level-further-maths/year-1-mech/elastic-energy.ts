@@ -4651,7 +4651,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 5,
           "description": "At $x = 1$",
-          "workingLatex": "GPE lost $= 40$, EPE $= \\dfrac{160}{4} = 40\\ \\text{J}",
+          "workingLatex": "GPE lost $= 40$, EPE $= \\dfrac{160}{4} = 40\\ \\text{J}$",
           "explanation": "At $x = 1$, all GPE is EPE.",
           "diagram": null
         },

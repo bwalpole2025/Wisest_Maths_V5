@@ -1138,7 +1138,7 @@ export const questions: Question[] = [
     "difficulty": "Easy",
     "marks": 3,
     "answerType": "vector",
-    "questionText": "Given $\\mathbf{a} = 2\\mathbf{i}-\\mathbf{j}+4\\mathbf{k}$, find 3\\mathbf{a}$.",
+    "questionText": "Given $\\mathbf{a} = 2\\mathbf{i}-\\mathbf{j}+4\\mathbf{k}$, find $3\\mathbf{a}$.",
     "workedSolution": {
       "steps": [
         {
@@ -1200,7 +1200,7 @@ export const questions: Question[] = [
     "difficulty": "Easy",
     "marks": 3,
     "answerType": "vector",
-    "questionText": "Given $\\mathbf{a} = \\mathbf{i}+3\\mathbf{j}-2\\mathbf{k}$, find -2\\mathbf{a}$.",
+    "questionText": "Given $\\mathbf{a} = \\mathbf{i}+3\\mathbf{j}-2\\mathbf{k}$, find $-2\\mathbf{a}$.",
     "workedSolution": {
       "steps": [
         {
@@ -1262,7 +1262,7 @@ export const questions: Question[] = [
     "difficulty": "Easy",
     "marks": 3,
     "answerType": "vector",
-    "questionText": "Given $\\mathbf{a} = 4\\mathbf{i}+2\\mathbf{j}-6\\mathbf{k}$, find \\dfrac{1}{2}\\mathbf{a}$.",
+    "questionText": "Given $\\mathbf{a} = 4\\mathbf{i}+2\\mathbf{j}-6\\mathbf{k}$, find $\\dfrac{1}{2}\\mathbf{a}$.",
     "workedSolution": {
       "steps": [
         {
@@ -2717,7 +2717,7 @@ export const questions: Question[] = [
     "difficulty": "Intermediate",
     "marks": 4,
     "answerType": "vector",
-    "questionText": "Given $\\mathbf{a} = 2\\mathbf{i}-\\mathbf{j}+3\\mathbf{k}$, find -3\\mathbf{a}$.",
+    "questionText": "Given $\\mathbf{a} = 2\\mathbf{i}-\\mathbf{j}+3\\mathbf{k}$, find $-3\\mathbf{a}$.",
     "workedSolution": {
       "steps": [
         {
@@ -2800,7 +2800,7 @@ export const questions: Question[] = [
     "difficulty": "Intermediate",
     "marks": 4,
     "answerType": "vector",
-    "questionText": "Given $\\mathbf{a} = 6\\mathbf{i}+3\\mathbf{j}-9\\mathbf{k}$, find \\dfrac{1}{3}\\mathbf{a}$.",
+    "questionText": "Given $\\mathbf{a} = 6\\mathbf{i}+3\\mathbf{j}-9\\mathbf{k}$, find $\\dfrac{1}{3}\\mathbf{a}$.",
     "workedSolution": {
       "steps": [
         {

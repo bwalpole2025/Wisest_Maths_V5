@@ -5507,7 +5507,7 @@ export const questions: Question[] = [
         {
           "stepNumber": 8,
           "description": "Test point",
-          "workingLatex": "(1,0) \\mapsto (0,1) \\mapsto (0,-1)$ via steps; direct: $(1,0)\\mapsto(0,1)$ under $FR$",
+          "workingLatex": "$(1,0) \\mapsto (0,1) \\mapsto (0,-1)$ via steps; direct: $(1,0)\\mapsto(0,1)$ under $FR$",
           "explanation": "Consistent.",
           "diagram": null
         },

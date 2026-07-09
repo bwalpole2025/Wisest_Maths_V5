@@ -1739,21 +1739,21 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Define $\\omega$",
           "workingLatex": "\\omega = e^{i\\frac{2\\pi}{3}}",
-          "explanation": "A primitive ${n}th root of unity.",
+          "explanation": "A primitive cube root of unity.",
           "diagram": null
         },
         {
           "stepNumber": 2,
           "description": "Periodicity",
           "workingLatex": "\\omega^{3} = 1",
-          "explanation": "Every ${n}th power returns to 1.",
+          "explanation": "Every third power returns to 1.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Reduce exponent",
           "workingLatex": "\\omega^{2} = \\omega^{2}",
-          "explanation": "Use $\\omega^{${n}}=1$ to reduce the exponent.",
+          "explanation": "Use $\\omega^{3}=1$ to reduce the exponent.",
           "diagram": null
         },
         {
@@ -1781,7 +1781,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Check",
           "workingLatex": "(-\\frac{1}{2} - i\\frac{\\sqrt{3}}{2})^{3} = 1",
-          "explanation": "Confirms $\\omega^{${n}}=1$.",
+          "explanation": "Confirms $\\omega^{3}=1$.",
           "diagram": null
         },
         {
@@ -1817,21 +1817,21 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Define $\\omega$",
           "workingLatex": "\\omega = e^{i\\frac{2\\pi}{4}}",
-          "explanation": "A primitive ${n}th root of unity.",
+          "explanation": "A primitive fourth root of unity.",
           "diagram": null
         },
         {
           "stepNumber": 2,
           "description": "Periodicity",
           "workingLatex": "\\omega^{4} = 1",
-          "explanation": "Every ${n}th power returns to 1.",
+          "explanation": "Every fourth power returns to 1.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Reduce exponent",
           "workingLatex": "\\omega^{3} = \\omega^{3}",
-          "explanation": "Use $\\omega^{${n}}=1$ to reduce the exponent.",
+          "explanation": "Use $\\omega^{4}=1$ to reduce the exponent.",
           "diagram": null
         },
         {
@@ -1859,7 +1859,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Check",
           "workingLatex": "(-i)^{4} = 1",
-          "explanation": "Confirms $\\omega^{${n}}=1$.",
+          "explanation": "Confirms $\\omega^{4}=1$.",
           "diagram": null
         },
         {
@@ -1895,21 +1895,21 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Define $\\omega$",
           "workingLatex": "\\omega = e^{i\\frac{2\\pi}{6}}",
-          "explanation": "A primitive ${n}th root of unity.",
+          "explanation": "A primitive sixth root of unity.",
           "diagram": null
         },
         {
           "stepNumber": 2,
           "description": "Periodicity",
           "workingLatex": "\\omega^{6} = 1",
-          "explanation": "Every ${n}th power returns to 1.",
+          "explanation": "Every sixth power returns to 1.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Reduce exponent",
           "workingLatex": "\\omega^{4} = \\omega^{4}",
-          "explanation": "Use $\\omega^{${n}}=1$ to reduce the exponent.",
+          "explanation": "Use $\\omega^{6}=1$ to reduce the exponent.",
           "diagram": null
         },
         {
@@ -1937,7 +1937,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Check",
           "workingLatex": "(-1)^{6} = 1",
-          "explanation": "Confirms $\\omega^{${n}}=1$.",
+          "explanation": "Confirms $\\omega^{6}=1$.",
           "diagram": null
         },
         {
@@ -2377,7 +2377,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 2\\,e^{i\\frac{0 + 2k\\pi}{2}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $2$; arguments spaced by $2\\pi/2$.",
           "diagram": null
         },
         {
@@ -2462,7 +2462,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 2\\,e^{i\\frac{0 + 2k\\pi}{3}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $2$; arguments spaced by $2\\pi/3$.",
           "diagram": null
         },
         {
@@ -2547,7 +2547,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 2\\,e^{i\\frac{0 + 2k\\pi}{4}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $2$; arguments spaced by $2\\pi/4$.",
           "diagram": null
         },
         {
@@ -2632,7 +2632,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 3\\,e^{i\\frac{0 + 2k\\pi}{2}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $3$; arguments spaced by $2\\pi/2$.",
           "diagram": null
         },
         {
@@ -2717,7 +2717,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 3\\,e^{i\\frac{0 + 2k\\pi}{3}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $3$; arguments spaced by $2\\pi/3$.",
           "diagram": null
         },
         {
@@ -2803,7 +2803,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 1\\,e^{i\\frac{0 + 2k\\pi}{4}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $1$; arguments spaced by $2\\pi/4$.",
           "diagram": null
         },
         {
@@ -2888,7 +2888,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 2\\,e^{i\\frac{0 + 2k\\pi}{6}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $2$; arguments spaced by $2\\pi/6$.",
           "diagram": null
         },
         {
@@ -2973,7 +2973,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 2\\,e^{i\\frac{\\pi + 2k\\pi}{2}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $2$; arguments spaced by $2\\pi/2$.",
           "diagram": null
         },
         {
@@ -3058,7 +3058,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 1\\,e^{i\\frac{\\pi + 2k\\pi}{3}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $1$; arguments spaced by $2\\pi/3$.",
           "diagram": null
         },
         {
@@ -3143,7 +3143,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 2\\,e^{i\\frac{\\frac{\\pi}{2} + 2k\\pi}{4}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $2$; arguments spaced by $2\\pi/4$.",
           "diagram": null
         },
         {
@@ -3221,7 +3221,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Roots of unity",
           "workingLatex": "z = e^{i\\frac{2k\\pi}{3}}",
-          "explanation": "All ${n}th roots.",
+          "explanation": "All cube roots.",
           "diagram": null
         },
         {
@@ -3306,7 +3306,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Roots of unity",
           "workingLatex": "z = e^{i\\frac{2k\\pi}{4}}",
-          "explanation": "All ${n}th roots.",
+          "explanation": "All fourth roots.",
           "diagram": null
         },
         {
@@ -3391,7 +3391,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Roots of unity",
           "workingLatex": "z = e^{i\\frac{2k\\pi}{5}}",
-          "explanation": "All ${n}th roots.",
+          "explanation": "All fifth roots.",
           "diagram": null
         },
         {
@@ -3476,7 +3476,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Roots of unity",
           "workingLatex": "z = e^{i\\frac{2k\\pi}{6}}",
-          "explanation": "All ${n}th roots.",
+          "explanation": "All sixth roots.",
           "diagram": null
         },
         {
@@ -3561,7 +3561,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Roots of unity",
           "workingLatex": "z = e^{i\\frac{2k\\pi}{8}}",
-          "explanation": "All ${n}th roots.",
+          "explanation": "All eighth roots.",
           "diagram": null
         },
         {
@@ -3639,7 +3639,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Roots of unity",
           "workingLatex": "z^{3} = 1",
-          "explanation": "Vertices of a regular ${n}-gon.",
+          "explanation": "Vertices of an equilateral triangle.",
           "diagram": null
         },
         {
@@ -3681,7 +3681,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Symmetry",
           "workingLatex": "\\text{Rotational symmetry of order } 3",
-          "explanation": "Rotate by $2\\pi/${n}$.",
+          "explanation": "Rotate by $2\\pi/3$.",
           "diagram": null
         },
         {
@@ -3724,7 +3724,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Roots of unity",
           "workingLatex": "z^{4} = 1",
-          "explanation": "Vertices of a regular ${n}-gon.",
+          "explanation": "Vertices of a square.",
           "diagram": null
         },
         {
@@ -3766,7 +3766,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Symmetry",
           "workingLatex": "\\text{Rotational symmetry of order } 4",
-          "explanation": "Rotate by $2\\pi/${n}$.",
+          "explanation": "Rotate by $2\\pi/4$.",
           "diagram": null
         },
         {
@@ -3809,7 +3809,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Roots of unity",
           "workingLatex": "z^{5} = 1",
-          "explanation": "Vertices of a regular ${n}-gon.",
+          "explanation": "Vertices of a regular pentagon.",
           "diagram": null
         },
         {
@@ -3851,7 +3851,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Symmetry",
           "workingLatex": "\\text{Rotational symmetry of order } 5",
-          "explanation": "Rotate by $2\\pi/${n}$.",
+          "explanation": "Rotate by $2\\pi/5$.",
           "diagram": null
         },
         {
@@ -3894,7 +3894,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Roots of unity",
           "workingLatex": "z^{6} = 1",
-          "explanation": "Vertices of a regular ${n}-gon.",
+          "explanation": "Vertices of a regular hexagon.",
           "diagram": null
         },
         {
@@ -3936,7 +3936,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Symmetry",
           "workingLatex": "\\text{Rotational symmetry of order } 6",
-          "explanation": "Rotate by $2\\pi/${n}$.",
+          "explanation": "Rotate by $2\\pi/6$.",
           "diagram": null
         },
         {
@@ -3979,7 +3979,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Roots of unity",
           "workingLatex": "z^{8} = 1",
-          "explanation": "Vertices of a regular ${n}-gon.",
+          "explanation": "Vertices of a regular octagon.",
           "diagram": null
         },
         {
@@ -4021,7 +4021,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Symmetry",
           "workingLatex": "\\text{Rotational symmetry of order } 8",
-          "explanation": "Rotate by $2\\pi/${n}$.",
+          "explanation": "Rotate by $2\\pi/8$.",
           "diagram": null
         },
         {
@@ -4064,7 +4064,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "All roots",
           "workingLatex": "1 + \\omega + \\omega^{2} + \\cdots + \\omega^{2} = 0",
-          "explanation": "Sum of all ${n}th roots.",
+          "explanation": "Sum of all cube roots.",
           "diagram": null
         },
         {
@@ -4078,7 +4078,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Numerator",
           "workingLatex": "1 - \\omega^{3} = 1 - 1 = 0",
-          "explanation": "Since $\\omega^{${n}}=1$.",
+          "explanation": "Since $\\omega^{3}=1$.",
           "diagram": null
         },
         {
@@ -4111,7 +4111,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 8,
-          "description": "Verify $n=${n}$",
+          "description": "Verify $n=3$",
           "workingLatex": "\\text{Direct addition confirms } -1",
           "explanation": "Check numerically.",
           "diagram": null
@@ -4149,7 +4149,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "All roots",
           "workingLatex": "1 + \\omega + \\omega^{2} + \\cdots + \\omega^{3} = 0",
-          "explanation": "Sum of all ${n}th roots.",
+          "explanation": "Sum of all fourth roots.",
           "diagram": null
         },
         {
@@ -4163,7 +4163,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Numerator",
           "workingLatex": "1 - \\omega^{4} = 1 - 1 = 0",
-          "explanation": "Since $\\omega^{${n}}=1$.",
+          "explanation": "Since $\\omega^{4}=1$.",
           "diagram": null
         },
         {
@@ -4196,7 +4196,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 8,
-          "description": "Verify $n=${n}$",
+          "description": "Verify $n=4$",
           "workingLatex": "\\text{Direct addition confirms } -1",
           "explanation": "Check numerically.",
           "diagram": null
@@ -4234,7 +4234,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "All roots",
           "workingLatex": "1 + \\omega + \\omega^{2} + \\cdots + \\omega^{4} = 0",
-          "explanation": "Sum of all ${n}th roots.",
+          "explanation": "Sum of all fifth roots.",
           "diagram": null
         },
         {
@@ -4248,7 +4248,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Numerator",
           "workingLatex": "1 - \\omega^{5} = 1 - 1 = 0",
-          "explanation": "Since $\\omega^{${n}}=1$.",
+          "explanation": "Since $\\omega^{5}=1$.",
           "diagram": null
         },
         {
@@ -4281,7 +4281,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 8,
-          "description": "Verify $n=${n}$",
+          "description": "Verify $n=5$",
           "workingLatex": "\\text{Direct addition confirms } -1",
           "explanation": "Check numerically.",
           "diagram": null
@@ -4319,7 +4319,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Let $\\omega$",
           "workingLatex": "\\omega = e^{i\\frac{2\\pi}{3}}",
-          "explanation": "Primitive ${n}th root of unity.",
+          "explanation": "Primitive cube root of unity.",
           "diagram": null
         },
         {
@@ -4404,7 +4404,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Let $\\omega$",
           "workingLatex": "\\omega = e^{i\\frac{2\\pi}{5}}",
-          "explanation": "Primitive ${n}th root of unity.",
+          "explanation": "Primitive fifth root of unity.",
           "diagram": null
         },
         {
@@ -5555,21 +5555,21 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "Define $\\omega$",
           "workingLatex": "\\omega = e^{i\\frac{2\\pi}{5}}",
-          "explanation": "A primitive ${n}th root of unity.",
+          "explanation": "A primitive fifth root of unity.",
           "diagram": null
         },
         {
           "stepNumber": 2,
           "description": "Periodicity",
           "workingLatex": "\\omega^{5} = 1",
-          "explanation": "Every ${n}th power returns to 1.",
+          "explanation": "Every fifth power returns to 1.",
           "diagram": null
         },
         {
           "stepNumber": 3,
           "description": "Reduce exponent",
           "workingLatex": "\\omega^{3} = \\omega^{3}",
-          "explanation": "Use $\\omega^{${n}}=1$ to reduce the exponent.",
+          "explanation": "Use $\\omega^{5}=1$ to reduce the exponent.",
           "diagram": null
         },
         {
@@ -5597,7 +5597,7 @@ export const questions: Question[] = [
           "stepNumber": 7,
           "description": "Check",
           "workingLatex": "(\\frac{-1-\\sqrt{5}}{4} - i\\frac{\\sqrt{10-2\\sqrt{5}}}{4})^{5} = 1",
-          "explanation": "Confirms $\\omega^{${n}}=1$.",
+          "explanation": "Confirms $\\omega^{5}=1$.",
           "diagram": null
         },
         {
@@ -5654,7 +5654,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "General formula",
           "workingLatex": "z = 2\\,e^{i\\frac{0 + 2k\\pi}{5}}",
-          "explanation": "Modulus ${rootRStr}; arguments spaced by $2\\pi/${n}$.",
+          "explanation": "Modulus $2$; arguments spaced by $2\\pi/5$.",
           "diagram": null
         },
         {
@@ -5760,7 +5760,7 @@ export const questions: Question[] = [
           "stepNumber": 2,
           "description": "Roots of unity",
           "workingLatex": "z = e^{i\\frac{2k\\pi}{12}}",
-          "explanation": "All ${n}th roots.",
+          "explanation": "All twelfth roots.",
           "diagram": null
         },
         {
@@ -5866,7 +5866,7 @@ export const questions: Question[] = [
           "stepNumber": 1,
           "description": "All roots",
           "workingLatex": "1 + \\omega + \\omega^{2} + \\cdots + \\omega^{5} = 0",
-          "explanation": "Sum of all ${n}th roots.",
+          "explanation": "Sum of all sixth roots.",
           "diagram": null
         },
         {
@@ -5880,7 +5880,7 @@ export const questions: Question[] = [
           "stepNumber": 3,
           "description": "Numerator",
           "workingLatex": "1 - \\omega^{6} = 1 - 1 = 0",
-          "explanation": "Since $\\omega^{${n}}=1$.",
+          "explanation": "Since $\\omega^{6}=1$.",
           "diagram": null
         },
         {
@@ -5913,7 +5913,7 @@ export const questions: Question[] = [
         },
         {
           "stepNumber": 8,
-          "description": "Verify $n=${n}$",
+          "description": "Verify $n=6$",
           "workingLatex": "\\text{Direct addition confirms } -1",
           "explanation": "Check numerically.",
           "diagram": null
