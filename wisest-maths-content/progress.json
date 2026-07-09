@@ -1,8 +1,8 @@
 {
-  "currentLevel": "A-Level Maths",
-  "currentTopic": "Year 1 Statistics",
+  "currentLevel": "A-Level Further Maths",
+  "currentTopic": "Further Maths Year 2: Statistics (Further Statistics 2)",
   "currentSubtopic": "Linear regression",
-  "currentSubtopicId": "al.y1.stats.linear-regression",
+  "currentSubtopicId": "fm.y2.stats.linear-regression",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -158,7 +158,8 @@
     "fm.y2.stats.estimation-ci",
     "fm.y2.stats.continuous-uniform",
     "fm.y2.stats.inference-variance",
-    "fm.y2.stats.further-tests"
+    "fm.y2.stats.further-tests",
+    "fm.y2.stats.linear-regression"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -167,9 +168,9 @@
       "totalQuestionsGenerated": 5880
     },
     "A-Level Further Maths": {
-      "totalSubtopics": 69,
-      "completedSubtopics": 69,
-      "totalQuestionsGenerated": 4830
+      "totalSubtopics": 70,
+      "completedSubtopics": 70,
+      "totalQuestionsGenerated": 4900
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -177,5 +178,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-09T05:11:00+01:00"
+  "lastUpdated": "2026-07-09T07:20:00+01:00"
 }

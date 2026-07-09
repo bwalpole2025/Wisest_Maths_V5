@@ -641,6 +641,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 68,
     load: () => import("./year-2-stats/inference-for-variance").then((m) => m.questions),
   },
+  {
+    slug: "linear-regression-fm",
+    id: "fm.y2.stats.linear-regression",
+    name: "Linear regression",
+    blurb: "Least-squares model, residuals and the residual sum of squares; fitting, predicting and interpreting linear models.",
+    gradient: "from-emerald-400 to-lime-500",
+    order: 69,
+    load: () => import("./year-2-stats/linear-regression").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

@@ -159,6 +159,8 @@ import { questions as spearmanRankCorrelation } from "@/data/questions/a-level-f
 import { questions as continuousRandomVariables } from "@/data/questions/a-level-further-maths/year-2-stats/continuous-random-variables";
 import { questions as continuousUniform } from "@/data/questions/a-level-further-maths/year-2-stats/continuous-uniform";
 import { questions as inferenceForVariance } from "@/data/questions/a-level-further-maths/year-2-stats/inference-for-variance";
+import { questions as linearRegressionFm } from "@/data/questions/a-level-further-maths/year-2-stats/linear-regression";
+import { questions as gcseOrdering } from "@/data/questions/gcse/number/ordering-and-comparing-numbers";
 
 export { slugForSubtopicId };
 
@@ -317,6 +319,8 @@ export const allQuestions: Question[] = [
   ...continuousRandomVariables,
   ...continuousUniform,
   ...inferenceForVariance,
+  ...linearRegressionFm,
+  ...gcseOrdering,
 ];
 
 export function getQuestionById(id: string): Question | undefined {
