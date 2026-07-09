@@ -121,6 +121,7 @@ import { questions as deMoivre } from "@/data/questions/a-level-further-maths/ye
 import { questions as trigSeries } from "@/data/questions/a-level-further-maths/year-2-pure/trig-series";
 import { questions as rootsOfUnity } from "@/data/questions/a-level-further-maths/year-2-pure/roots-of-unity";
 import { questions as methodOfDifferences } from "@/data/questions/a-level-further-maths/year-2-pure/method-of-differences";
+import { questions as maclaurin } from "@/data/questions/a-level-further-maths/year-2-pure/maclaurin";
 import { questions as multipleAngles } from "@/data/questions/a-level-further-maths/year-2-pure/multiple-angles";
 import { questions as poisson } from "@/data/questions/a-level-further-maths/year-1-stats/poisson";
 import { questions as elasticStringsSprings } from "@/data/questions/a-level-further-maths/year-1-mech/elastic-strings-springs";
@@ -253,6 +254,7 @@ export const allQuestions: Question[] = [
   ...trigSeries,
   ...rootsOfUnity,
   ...methodOfDifferences,
+  ...maclaurin,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

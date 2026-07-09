@@ -362,6 +362,15 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 38,
     load: () => import("./year-2-pure/method-of-differences").then((m) => m.questions),
   },
+  {
+    slug: "maclaurin",
+    id: "fm.y2.pure.maclaurin",
+    name: "Maclaurin series",
+    blurb: "Series for $e^{x}$, $\\ln(1+x)$, $\\sin x$, $\\cos x$, $(1+x)^{n}$; validity; series of composites.",
+    gradient: "from-amber-400 to-orange-500",
+    order: 39,
+    load: () => import("./year-2-pure/maclaurin").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

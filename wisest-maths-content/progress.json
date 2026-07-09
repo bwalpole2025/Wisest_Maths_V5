@@ -1,8 +1,8 @@
 {
   "currentLevel": "A-Level Further Maths",
   "currentTopic": "Further Maths Year 2: Pure (Core Pure 2)",
-  "currentSubtopic": "Series: method of differences",
-  "currentSubtopicId": "fm.y2.pure.method-of-differences",
+  "currentSubtopic": "Maclaurin series",
+  "currentSubtopicId": "fm.y2.pure.maclaurin",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -127,7 +127,8 @@
     "fm.y2.pure.multiple-angles",
     "fm.y2.pure.trig-series",
     "fm.y2.pure.roots-of-unity",
-    "fm.y2.pure.method-of-differences"
+    "fm.y2.pure.method-of-differences",
+    "fm.y2.pure.maclaurin"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -137,8 +138,8 @@
     },
     "A-Level Further Maths": {
       "totalSubtopics": 43,
-      "completedSubtopics": 38,
-      "totalQuestionsGenerated": 2660
+      "completedSubtopics": 39,
+      "totalQuestionsGenerated": 2730
     },
     "GCSE": {
       "totalSubtopics": 123,
@@ -146,5 +147,5 @@
       "totalQuestionsGenerated": 0
     }
   },
-  "lastUpdated": "2026-07-09T02:30:00+01:00"
+  "lastUpdated": "2026-07-09T02:08:00+01:00"
 }
