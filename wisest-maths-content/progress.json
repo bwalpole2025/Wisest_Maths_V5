@@ -1,8 +1,8 @@
 {
   "currentLevel": "GCSE",
-  "currentTopic": "Graphs",
-  "currentSubtopic": "Forming and solving",
-  "currentSubtopicId": "gcse.algebra.forming-equations",
+  "currentTopic": "Properties and constructions",
+  "currentSubtopic": "3D solids, plans and elevations",
+  "currentSubtopicId": "gcse.geometry.3d-plans-elevations",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -197,7 +197,35 @@
     "gcse.algebra.linear-equations",
     "gcse.algebra.quadratics-factorising",
     "gcse.algebra.simultaneous-linear",
-    "gcse.algebra.forming-equations"
+    "gcse.algebra.forming-equations",
+    "gcse.algebra.linear-inequalities",
+    "gcse.algebra.special-sequences",
+    "gcse.algebra.nth-term-linear",
+    "gcse.algebra.generating-sequences",
+    "gcse.algebra.nth-term-quadratic",
+    "gcse.ratio.notation",
+    "gcse.ratio.dividing",
+    "gcse.ratio.problem-solving",
+    "gcse.ratio.fractions-linear",
+    "gcse.ratio.percentage-change",
+    "gcse.ratio.reverse-percentages",
+    "gcse.ratio.interest",
+    "gcse.ratio.direct-inverse",
+    "gcse.ratio.unit-conversion",
+    "gcse.ratio.scale",
+    "gcse.ratio.compound-measures",
+    "gcse.ratio.rates-on-graphs",
+    "gcse.geometry.notation",
+    "gcse.geometry.constructions",
+    "gcse.geometry.angle-facts",
+    "gcse.geometry.parallel-angles",
+    "gcse.geometry.polygon-angles",
+    "gcse.geometry.quadrilaterals",
+    "gcse.geometry.congruence",
+    "gcse.geometry.similarity",
+    "gcse.geometry.transformations",
+    "gcse.geometry.circle-vocabulary",
+    "gcse.geometry.3d-plans-elevations"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -212,8 +240,8 @@
     },
     "GCSE": {
       "totalSubtopics": 123,
-      "completedSubtopics": 38,
-      "totalQuestionsGenerated": 2696,
+      "completedSubtopics": 66,
+      "totalQuestionsGenerated": 4656,
       "inProgress": [
         { "id": "gcse.number.ordering", "name": "Ordering and comparing numbers", "questions": 12 },
         { "id": "gcse.number.four-operations", "name": "Four operations and place value", "questions": 24 }
@@ -256,9 +284,37 @@
         { "id": "gcse.algebra.linear-equations", "name": "Linear equations", "questions": 70 },
         { "id": "gcse.algebra.quadratics-factorising", "name": "Quadratics by factorising", "questions": 70 },
         { "id": "gcse.algebra.simultaneous-linear", "name": "Simultaneous equations (linear)", "questions": 70 },
-        { "id": "gcse.algebra.forming-equations", "name": "Forming and solving", "questions": 70 }
+        { "id": "gcse.algebra.forming-equations", "name": "Forming and solving", "questions": 70 },
+        { "id": "gcse.algebra.linear-inequalities", "name": "Linear inequalities", "questions": 70 },
+        { "id": "gcse.algebra.special-sequences", "name": "Special sequences", "questions": 70 },
+        { "id": "gcse.algebra.nth-term-linear", "name": "nth term of linear sequences", "questions": 70 },
+        { "id": "gcse.algebra.generating-sequences", "name": "Generating sequences", "questions": 70 },
+        { "id": "gcse.algebra.nth-term-quadratic", "name": "nth term of quadratic sequences", "questions": 70 },
+        { "id": "gcse.ratio.notation", "name": "Ratio notation and simplifying", "questions": 70 },
+        { "id": "gcse.ratio.dividing", "name": "Dividing in a ratio", "questions": 70 },
+        { "id": "gcse.ratio.problem-solving", "name": "Ratio problem solving", "questions": 70 },
+        { "id": "gcse.ratio.fractions-linear", "name": "Ratios, fractions and linear functions", "questions": 70 },
+        { "id": "gcse.ratio.percentage-change", "name": "Percentage change", "questions": 70 },
+        { "id": "gcse.ratio.reverse-percentages", "name": "Reverse percentages", "questions": 70 },
+        { "id": "gcse.ratio.interest", "name": "Simple and compound interest", "questions": 70 },
+        { "id": "gcse.ratio.direct-inverse", "name": "Direct and inverse proportion", "questions": 70 },
+        { "id": "gcse.ratio.unit-conversion", "name": "Unit conversion", "questions": 70 },
+        { "id": "gcse.ratio.scale", "name": "Scale factors, diagrams and maps", "questions": 70 },
+        { "id": "gcse.ratio.compound-measures", "name": "Compound measures", "questions": 70 },
+        { "id": "gcse.ratio.rates-on-graphs", "name": "Rates of change on graphs", "questions": 70 },
+        { "id": "gcse.geometry.notation", "name": "Notation and drawing", "questions": 70 },
+        { "id": "gcse.geometry.constructions", "name": "Constructions and loci", "questions": 70 },
+        { "id": "gcse.geometry.angle-facts", "name": "Angle facts", "questions": 70 },
+        { "id": "gcse.geometry.parallel-angles", "name": "Angles in parallel lines", "questions": 70 },
+        { "id": "gcse.geometry.polygon-angles", "name": "Angles in polygons", "questions": 70 },
+        { "id": "gcse.geometry.quadrilaterals", "name": "Quadrilateral properties", "questions": 70 },
+        { "id": "gcse.geometry.congruence", "name": "Congruence", "questions": 70 },
+        { "id": "gcse.geometry.similarity", "name": "Similarity", "questions": 70 },
+        { "id": "gcse.geometry.transformations", "name": "Transformations", "questions": 70 },
+        { "id": "gcse.geometry.circle-vocabulary", "name": "Circle vocabulary", "questions": 70 },
+        { "id": "gcse.geometry.3d-plans-elevations", "name": "3D solids, plans and elevations", "questions": 70 }
       ]
     }
   },
-  "lastUpdated": "2026-07-10T03:20:00+01:00"
+  "lastUpdated": "2026-07-10T15:15:00+01:00"
 }

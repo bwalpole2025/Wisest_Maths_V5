@@ -200,6 +200,34 @@ import { questions as gcseLinearEquations } from "@/data/questions/gcse/algebra/
 import { questions as gcseQuadraticsFactorising } from "@/data/questions/gcse/algebra/quadratics-by-factorising";
 import { questions as gcseSimultaneousLinear } from "@/data/questions/gcse/algebra/simultaneous-equations-linear";
 import { questions as gcseFormingSolving } from "@/data/questions/gcse/algebra/forming-and-solving";
+import { questions as gcseLinearInequalities } from "@/data/questions/gcse/algebra/linear-inequalities";
+import { questions as gcseGeneratingSequences } from "@/data/questions/gcse/algebra/generating-sequences";
+import { questions as gcseSpecialSequences } from "@/data/questions/gcse/algebra/special-sequences";
+import { questions as gcseNthTermLinear } from "@/data/questions/gcse/algebra/nth-term-linear";
+import { questions as gcseNthTermQuadratic } from "@/data/questions/gcse/algebra/nth-term-quadratic";
+import { questions as gcseRatioNotation } from "@/data/questions/gcse/ratio/ratio-notation-and-simplifying";
+import { questions as gcseRatioDividing } from "@/data/questions/gcse/ratio/dividing-in-a-ratio";
+import { questions as gcseRatioProblemSolving } from "@/data/questions/gcse/ratio/ratio-problem-solving";
+import { questions as gcseRatioFractionsLinear } from "@/data/questions/gcse/ratio/ratios-fractions-and-linear-functions";
+import { questions as gcseRatioPercentageChange } from "@/data/questions/gcse/ratio/percentage-change";
+import { questions as gcseRatioReversePercentages } from "@/data/questions/gcse/ratio/reverse-percentages";
+import { questions as gcseRatioInterest } from "@/data/questions/gcse/ratio/simple-and-compound-interest";
+import { questions as gcseRatioDirectInverse } from "@/data/questions/gcse/ratio/direct-and-inverse-proportion";
+import { questions as gcseRatioUnitConversion } from "@/data/questions/gcse/ratio/unit-conversion";
+import { questions as gcseRatioScale } from "@/data/questions/gcse/ratio/scale-factors-diagrams-and-maps";
+import { questions as gcseRatioCompoundMeasures } from "@/data/questions/gcse/ratio/compound-measures";
+import { questions as gcseRatioRatesOnGraphs } from "@/data/questions/gcse/ratio/rates-of-change-on-graphs";
+import { questions as gcseGeometryNotation } from "@/data/questions/gcse/geometry/notation-and-drawing";
+import { questions as gcseGeometryConstructions } from "@/data/questions/gcse/geometry/constructions-and-loci";
+import { questions as gcseGeometryAngleFacts } from "@/data/questions/gcse/geometry/angle-facts";
+import { questions as gcseGeometryParallelAngles } from "@/data/questions/gcse/geometry/angles-in-parallel-lines";
+import { questions as gcseGeometryPolygonAngles } from "@/data/questions/gcse/geometry/angles-in-polygons";
+import { questions as gcseGeometryQuadrilaterals } from "@/data/questions/gcse/geometry/quadrilateral-properties";
+import { questions as gcseGeometryCongruence } from "@/data/questions/gcse/geometry/congruence";
+import { questions as gcseGeometrySimilarity } from "@/data/questions/gcse/geometry/similarity";
+import { questions as gcseGeometryTransformations } from "@/data/questions/gcse/geometry/transformations";
+import { questions as gcseGeometryCircleVocabulary } from "@/data/questions/gcse/geometry/circle-vocabulary";
+import { questions as gcseGeometry3dPlansElevations } from "@/data/questions/gcse/geometry/3d-solids-plans-and-elevations";
 
 export { slugForSubtopicId };
 
@@ -399,6 +427,34 @@ export const allQuestions: Question[] = [
   ...gcseQuadraticsFactorising,
   ...gcseSimultaneousLinear,
   ...gcseFormingSolving,
+  ...gcseLinearInequalities,
+  ...gcseGeneratingSequences,
+  ...gcseSpecialSequences,
+  ...gcseNthTermLinear,
+  ...gcseNthTermQuadratic,
+  ...gcseRatioNotation,
+  ...gcseRatioDividing,
+  ...gcseRatioProblemSolving,
+  ...gcseRatioFractionsLinear,
+  ...gcseRatioPercentageChange,
+  ...gcseRatioReversePercentages,
+  ...gcseRatioInterest,
+  ...gcseRatioDirectInverse,
+  ...gcseRatioUnitConversion,
+  ...gcseRatioScale,
+  ...gcseRatioCompoundMeasures,
+  ...gcseRatioRatesOnGraphs,
+  ...gcseGeometryNotation,
+  ...gcseGeometryConstructions,
+  ...gcseGeometryAngleFacts,
+  ...gcseGeometryParallelAngles,
+  ...gcseGeometryPolygonAngles,
+  ...gcseGeometryQuadrilaterals,
+  ...gcseGeometryCongruence,
+  ...gcseGeometrySimilarity,
+  ...gcseGeometryTransformations,
+  ...gcseGeometryCircleVocabulary,
+  ...gcseGeometry3dPlansElevations,
 ];
 
 export function getQuestionById(id: string): Question | undefined {

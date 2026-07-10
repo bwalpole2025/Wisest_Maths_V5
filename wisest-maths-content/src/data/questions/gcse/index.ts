@@ -425,6 +425,286 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 40,
     load: () => import("./algebra/forming-and-solving").then((m) => m.questions),
   },
+  {
+    slug: "linear-inequalities",
+    id: "gcse.algebra.linear-inequalities",
+    name: "Linear inequalities",
+    blurb:
+      "Solve linear inequalities in one variable — one- and two-step, brackets, unknowns on both sides, dividing by a negative and compound ranges — list integer solutions and show them on number lines.",
+    gradient: "from-rose-400 to-orange-500",
+    order: 41,
+    load: () => import("./algebra/linear-inequalities").then((m) => m.questions),
+  },
+  {
+    slug: "generating-sequences",
+    id: "gcse.algebra.generating-sequences",
+    name: "Generating sequences",
+    blurb:
+      "Generate the terms of a sequence from a term-to-term rule or a position-to-term (nth term) rule, including two-step, geometric, Fibonacci and quadratic rules.",
+    gradient: "from-yellow-400 to-lime-500",
+    order: 42,
+    load: () => import("./algebra/generating-sequences").then((m) => m.questions),
+  },
+  {
+    slug: "special-sequences",
+    id: "gcse.algebra.special-sequences",
+    name: "Special sequences",
+    blurb:
+      "Recognise and continue special sequences — square, cube and triangular numbers, arithmetic, geometric, Fibonacci and quadratic — finding terms, positions and rules.",
+    gradient: "from-orange-400 to-amber-500",
+    order: 43,
+    load: () => import("./algebra/special-sequences").then((m) => m.questions),
+  },
+  {
+    slug: "nth-term-linear",
+    id: "gcse.algebra.nth-term-linear",
+    name: "nth term of linear sequences",
+    blurb:
+      "Deduce and use the nth term of arithmetic sequences — increasing and decreasing — to find terms, test whether a value appears and solve problems in context.",
+    gradient: "from-amber-400 to-yellow-500",
+    order: 44,
+    load: () => import("./algebra/nth-term-linear").then((m) => m.questions),
+  },
+  {
+    slug: "nth-term-quadratic",
+    id: "gcse.algebra.nth-term-quadratic",
+    name: "nth term of quadratic sequences",
+    blurb:
+      "Use second differences to find the nth term of quadratic sequences, test whether a value appears, and work with surd-ratio geometric sequences.",
+    gradient: "from-lime-400 to-emerald-500",
+    order: 45,
+    load: () => import("./algebra/nth-term-quadratic").then((m) => m.questions),
+  },
+  {
+    slug: "ratio-notation-and-simplifying",
+    id: "gcse.ratio.notation",
+    name: "Ratio notation and simplifying",
+    blurb:
+      "Write ratios from contexts and simplify them to their lowest terms — including three-part ratios, mixed units, fractions and decimals, and the 1:n form.",
+    gradient: "from-emerald-400 to-teal-500",
+    order: 46,
+    load: () => import("./ratio/ratio-notation-and-simplifying").then((m) => m.questions),
+  },
+  {
+    slug: "dividing-in-a-ratio",
+    id: "gcse.ratio.dividing",
+    name: "Dividing in a ratio",
+    blurb:
+      "Share amounts in two- and three-part ratios, find one share, work with differences, and reverse the process to find totals from a given part.",
+    gradient: "from-teal-400 to-cyan-500",
+    order: 47,
+    load: () => import("./ratio/dividing-in-a-ratio").then((m) => m.questions),
+  },
+  {
+    slug: "ratio-problem-solving",
+    id: "gcse.ratio.problem-solving",
+    name: "Ratio problem solving",
+    blurb:
+      "Solve ratio problems in context — recipes and scaling, best value, currency conversion, mixing, comparison and combining ratios with a shared term.",
+    gradient: "from-cyan-400 to-sky-500",
+    order: 48,
+    load: () => import("./ratio/ratio-problem-solving").then((m) => m.questions),
+  },
+  {
+    slug: "ratios-fractions-and-linear-functions",
+    id: "gcse.ratio.fractions-linear",
+    name: "Ratios, fractions and linear functions",
+    blurb:
+      "Link ratios to fractions and multiplicative relationships, express one quantity as a fraction of another or the total, and connect ratios to y = kx and linear graphs.",
+    gradient: "from-sky-400 to-blue-500",
+    order: 49,
+    load: () => import("./ratio/ratios-fractions-and-linear-functions").then((m) => m.questions),
+  },
+  {
+    slug: "percentage-change",
+    id: "gcse.ratio.percentage-change",
+    name: "Percentage change",
+    blurb:
+      "Increase and decrease amounts using multipliers, express one quantity as a percentage of another, and find percentage profit, loss and successive changes.",
+    gradient: "from-blue-400 to-indigo-500",
+    order: 50,
+    load: () => import("./ratio/percentage-change").then((m) => m.questions),
+  },
+  {
+    slug: "reverse-percentages",
+    id: "gcse.ratio.reverse-percentages",
+    name: "Reverse percentages",
+    blurb:
+      "Work backwards from a final value to the original — removing VAT, undoing sale discounts and reversing single, successive and compound percentage changes.",
+    gradient: "from-indigo-400 to-violet-500",
+    order: 51,
+    load: () => import("./ratio/reverse-percentages").then((m) => m.questions),
+  },
+  {
+    slug: "simple-and-compound-interest",
+    id: "gcse.ratio.interest",
+    name: "Simple and compound interest",
+    blurb:
+      "Calculate simple interest over several years and compound growth and depreciation, compare the two, and find missing years, rates and interest earned.",
+    gradient: "from-violet-400 to-purple-500",
+    order: 52,
+    load: () => import("./ratio/simple-and-compound-interest").then((m) => m.questions),
+  },
+  {
+    slug: "direct-and-inverse-proportion",
+    id: "gcse.ratio.direct-inverse",
+    name: "Direct and inverse proportion",
+    blurb:
+      "Set up and use direct and inverse proportion, find the constant of proportionality, solve worker and speed problems, and work with squares and roots.",
+    gradient: "from-purple-400 to-fuchsia-500",
+    order: 53,
+    load: () => import("./ratio/direct-and-inverse-proportion").then((m) => m.questions),
+  },
+  {
+    slug: "unit-conversion",
+    id: "gcse.ratio.unit-conversion",
+    name: "Unit conversion",
+    blurb:
+      "Convert standard units of length, mass, capacity, time and money, work with area and volume conversions, and change speeds and currencies.",
+    gradient: "from-fuchsia-400 to-pink-500",
+    order: 54,
+    load: () => import("./ratio/unit-conversion").then((m) => m.questions),
+  },
+  {
+    slug: "scale-factors-diagrams-and-maps",
+    id: "gcse.ratio.scale",
+    name: "Scale factors, diagrams and maps",
+    blurb:
+      "Use scale drawings and map scales to find real and drawing lengths, work with enlargement scale factors, and apply length, area and volume scaling.",
+    gradient: "from-pink-400 to-rose-500",
+    order: 55,
+    load: () => import("./ratio/scale-factors-diagrams-and-maps").then((m) => m.questions),
+  },
+  {
+    slug: "compound-measures",
+    id: "gcse.ratio.compound-measures",
+    name: "Compound measures",
+    blurb:
+      "Work with speed, density, pressure, rates of pay and flow, rearrange the formulae, and solve multi-step problems including average speed.",
+    gradient: "from-rose-400 to-red-500",
+    order: 56,
+    load: () => import("./ratio/compound-measures").then((m) => m.questions),
+  },
+  {
+    slug: "rates-of-change-on-graphs",
+    id: "gcse.ratio.rates-on-graphs",
+    name: "Rates of change on graphs",
+    blurb:
+      "Read speed and acceleration as gradients, find distance from the area under a graph, and estimate rates using chords, tangents and the trapezium rule.",
+    gradient: "from-red-400 to-orange-500",
+    order: 57,
+    load: () => import("./ratio/rates-of-change-on-graphs").then((m) => m.questions),
+  },
+  {
+    slug: "notation-and-drawing",
+    id: "gcse.geometry.notation",
+    name: "Notation and drawing",
+    blurb:
+      "Name polygons and solids, use correct angle and line notation, interpret diagram markings, and describe or identify shapes from their properties and coordinates.",
+    gradient: "from-orange-400 to-amber-500",
+    order: 58,
+    load: () => import("./geometry/notation-and-drawing").then((m) => m.questions),
+  },
+  {
+    slug: "constructions-and-loci",
+    id: "gcse.geometry.constructions",
+    name: "Constructions and loci",
+    blurb:
+      "Use perpendicular bisectors, angle bisectors and loci to describe regions, solve grazing and coverage problems, and combine conditions with scale drawings.",
+    gradient: "from-amber-400 to-yellow-500",
+    order: 59,
+    load: () => import("./geometry/constructions-and-loci").then((m) => m.questions),
+  },
+  {
+    slug: "angle-facts",
+    id: "gcse.geometry.angle-facts",
+    name: "Angle facts",
+    blurb:
+      "Find missing angles at a point, on a straight line and vertically opposite, and form and solve angle equations including quadratics.",
+    gradient: "from-lime-400 to-green-500",
+    order: 60,
+    load: () => import("./geometry/angle-facts").then((m) => m.questions),
+  },
+  {
+    slug: "angles-in-parallel-lines",
+    id: "gcse.geometry.parallel-angles",
+    name: "Angles in parallel lines",
+    blurb:
+      "Use corresponding, alternate and co-interior angles to find missing angles, set up equations, and reason through multi-step zig-zag and triangle problems.",
+    gradient: "from-green-400 to-emerald-500",
+    order: 61,
+    load: () => import("./geometry/angles-in-parallel-lines").then((m) => m.questions),
+  },
+  {
+    slug: "angles-in-polygons",
+    id: "gcse.geometry.polygon-angles",
+    name: "Angles in polygons",
+    blurb:
+      "Work with interior and exterior angles of polygons, use the angle-sum formula, find the number of sides, and solve regular-polygon and tessellation problems.",
+    gradient: "from-emerald-400 to-teal-500",
+    order: 62,
+    load: () => import("./geometry/angles-in-polygons").then((m) => m.questions),
+  },
+  {
+    slug: "quadrilateral-properties",
+    id: "gcse.geometry.quadrilaterals",
+    name: "Quadrilateral properties",
+    blurb:
+      "Identify special quadrilaterals from their sides, angles, diagonals and symmetry, and use their properties to find angles and construct simple proofs.",
+    gradient: "from-teal-400 to-cyan-500",
+    order: 63,
+    load: () => import("./geometry/quadrilateral-properties").then((m) => m.questions),
+  },
+  {
+    slug: "congruence",
+    id: "gcse.geometry.congruence",
+    name: "Congruence",
+    blurb:
+      "Use the SSS, SAS, ASA and RHS conditions to test congruence, find missing sides and angles, and write clear congruence proofs and their consequences.",
+    gradient: "from-cyan-400 to-sky-500",
+    order: 64,
+    load: () => import("./geometry/congruence").then((m) => m.questions),
+  },
+  {
+    slug: "similarity",
+    id: "gcse.geometry.similarity",
+    name: "Similarity",
+    blurb:
+      "Use length, area and volume scale factors to find missing sides, areas and volumes, work with similar triangles and parallel lines, and solve real-life problems.",
+    gradient: "from-sky-400 to-blue-500",
+    order: 65,
+    load: () => import("./geometry/similarity").then((m) => m.questions),
+  },
+  {
+    slug: "transformations",
+    id: "gcse.geometry.transformations",
+    name: "Transformations",
+    blurb:
+      "Translate, reflect, rotate and enlarge shapes (including negative and fractional scale factors), describe single transformations, and combine them into one equivalent move.",
+    gradient: "from-blue-400 to-indigo-500",
+    order: 66,
+    load: () => import("./geometry/transformations").then((m) => m.questions),
+  },
+  {
+    slug: "circle-vocabulary",
+    id: "gcse.geometry.circle-vocabulary",
+    name: "Circle vocabulary",
+    blurb:
+      "Name the parts of a circle — radius, diameter, chord, tangent, arc, sector and segment — and find circumference, area, arc lengths and sector areas.",
+    gradient: "from-indigo-400 to-violet-500",
+    order: 67,
+    load: () => import("./geometry/circle-vocabulary").then((m) => m.questions),
+  },
+  {
+    slug: "3d-solids-plans-and-elevations",
+    id: "gcse.geometry.3d-plans-elevations",
+    name: "3D solids, plans and elevations",
+    blurb:
+      "Name 3D solids and count their faces, edges and vertices, use Euler's formula and nets, read plans and elevations, and solve cube-counting and painted-cube problems.",
+    gradient: "from-violet-400 to-purple-500",
+    order: 68,
+    load: () => import("./geometry/3d-solids-plans-and-elevations").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>
