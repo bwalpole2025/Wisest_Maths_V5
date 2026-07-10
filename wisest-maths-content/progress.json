@@ -1,8 +1,8 @@
 {
   "currentLevel": "GCSE",
-  "currentTopic": "Notation, vocabulary and manipulation",
-  "currentSubtopic": "Identities and argument",
-  "currentSubtopicId": "gcse.algebra.identities-proof",
+  "currentTopic": "Graphs",
+  "currentSubtopic": "Forming and solving",
+  "currentSubtopicId": "gcse.algebra.forming-equations",
   "questionsGenerated": 70,
   "targetQuestionsPerSubtopic": 70,
   "completedSubtopics": [
@@ -186,7 +186,18 @@
     "gcse.algebra.factorising-quadratics",
     "gcse.algebra.index-laws",
     "gcse.algebra.rearranging",
-    "gcse.algebra.identities-proof"
+    "gcse.algebra.identities-proof",
+    "gcse.algebra.coordinates",
+    "gcse.algebra.straight-line-graphs",
+    "gcse.algebra.gradient-intercept",
+    "gcse.algebra.parallel-perp",
+    "gcse.algebra.quadratic-graphs",
+    "gcse.algebra.cubic-reciprocal-graphs",
+    "gcse.algebra.real-life-graphs",
+    "gcse.algebra.linear-equations",
+    "gcse.algebra.quadratics-factorising",
+    "gcse.algebra.simultaneous-linear",
+    "gcse.algebra.forming-equations"
   ],
   "overallProgress": {
     "A-Level Maths": {
@@ -201,8 +212,8 @@
     },
     "GCSE": {
       "totalSubtopics": 123,
-      "completedSubtopics": 27,
-      "totalQuestionsGenerated": 1926,
+      "completedSubtopics": 38,
+      "totalQuestionsGenerated": 2696,
       "inProgress": [
         { "id": "gcse.number.ordering", "name": "Ordering and comparing numbers", "questions": 12 },
         { "id": "gcse.number.four-operations", "name": "Four operations and place value", "questions": 24 }
@@ -234,9 +245,20 @@
         { "id": "gcse.algebra.factorising-quadratics", "name": "Factorising quadratics", "questions": 70 },
         { "id": "gcse.algebra.index-laws", "name": "Index laws in algebra", "questions": 70 },
         { "id": "gcse.algebra.rearranging", "name": "Rearranging formulae", "questions": 70 },
-        { "id": "gcse.algebra.identities-proof", "name": "Identities and argument", "questions": 70 }
+        { "id": "gcse.algebra.identities-proof", "name": "Identities and argument", "questions": 70 },
+        { "id": "gcse.algebra.coordinates", "name": "Coordinates", "questions": 70 },
+        { "id": "gcse.algebra.straight-line-graphs", "name": "Straight-line graphs", "questions": 70 },
+        { "id": "gcse.algebra.gradient-intercept", "name": "Gradient and intercepts", "questions": 70 },
+        { "id": "gcse.algebra.parallel-perp", "name": "Parallel and perpendicular lines", "questions": 70 },
+        { "id": "gcse.algebra.quadratic-graphs", "name": "Quadratic graphs", "questions": 70 },
+        { "id": "gcse.algebra.cubic-reciprocal-graphs", "name": "Cubic and reciprocal graphs", "questions": 70 },
+        { "id": "gcse.algebra.real-life-graphs", "name": "Real-life graphs", "questions": 70 },
+        { "id": "gcse.algebra.linear-equations", "name": "Linear equations", "questions": 70 },
+        { "id": "gcse.algebra.quadratics-factorising", "name": "Quadratics by factorising", "questions": 70 },
+        { "id": "gcse.algebra.simultaneous-linear", "name": "Simultaneous equations (linear)", "questions": 70 },
+        { "id": "gcse.algebra.forming-equations", "name": "Forming and solving", "questions": 70 }
       ]
     }
   },
-  "lastUpdated": "2026-07-09T23:10:00+01:00"
+  "lastUpdated": "2026-07-10T03:20:00+01:00"
 }

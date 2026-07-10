@@ -3,6 +3,7 @@ import dynamic from "next/dynamic";
 import { notFound } from "next/navigation";
 import { ArrowLeft } from "lucide-react";
 import { getSubtopicBySlug, subtopics } from "@/lib/question-summaries";
+import { parentTopicForSubtopicId } from "@/lib/curriculum";
 import { loadSubtopic } from "@/data/questions/registry";
 import { AppLink } from "@/components/app-link";
 import { QuestionListSkeleton } from "@/components/link-skeletons";
@@ -25,13 +26,16 @@ export default async function SubtopicPage({ params }: { params: Promise<{ slug:
   if (!subtopic) notFound();
 
   const questions = await loadSubtopic(slug);
+  const parentTopic = parentTopicForSubtopicId(subtopic.id);
+  const backHref = parentTopic?.href ?? "/questions";
+  const backLabel = parentTopic?.name ?? "Question Bank";
 
   return (
     <>
       <section className="mx-auto max-w-6xl px-6 pt-36">
         <Reveal>
-          <AppLink href="/questions" className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-            <ArrowLeft className="h-4 w-4" /> Question Bank
+          <AppLink href={backHref} className="inline-flex items-center gap-1.5 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
+            <ArrowLeft className="h-4 w-4" /> {backLabel}
           </AppLink>
         </Reveal>
 

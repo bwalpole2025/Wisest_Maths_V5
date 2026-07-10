@@ -327,6 +327,34 @@ export function getTopics(
   return { qual: mods.qual, split: mods.split, module, topics };
 }
 
+/** Reverse lookup: the raw curriculum subtopic behind a built subtopic id. */
+function rawForBuiltId(subtopicId: string): RawSub | undefined {
+  const cleaned = cleanId(subtopicId);
+  return SUBS.find((s) => builtIdFor(s.id) === cleaned) ?? SUBS.find((s) => s.id === cleaned);
+}
+
+/** The parent topic of a (built) subtopic: its curriculum-page href (one level
+ *  up from the subtopic's own question bank) and the topic's display name.
+ *  Returns null when the subtopic can't be placed in the curriculum. */
+export function parentTopicForSubtopicId(
+  subtopicId: string,
+): { href: string; name: string } | null {
+  const raw = rawForBuiltId(subtopicId);
+  if (!raw) return null;
+  const qual = QUALS.find((q) => q.id === raw.qualification);
+  if (!qual) return null;
+  const split =
+    qual.id === "GCSE"
+      ? qual.splits.find((s) => (raw.tier === "H" ? s.key === "H" : s.key === "F"))
+      : qual.splits.find((s) => s.key === raw.year);
+  if (!split) return null;
+  const moduleSlug =
+    raw.strand === "mech" ? "mechanics" : raw.strand === "stats" ? "statistics" : raw.strand;
+  const name = topicOf(qual, raw);
+  const topicSlug = slugify(name);
+  return { href: `/curriculum/${qual.slug}/${split.slug}/${moduleSlug}/${topicSlug}`, name };
+}
+
 export interface SubtopicItem {
   id: string;
   name: string;

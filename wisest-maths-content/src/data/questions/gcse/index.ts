@@ -315,6 +315,116 @@ export const SUBTOPICS: SubtopicEntry[] = [
     order: 29,
     load: () => import("./algebra/identities-and-argument").then((m) => m.questions),
   },
+  {
+    slug: "coordinates",
+    id: "gcse.algebra.coordinates",
+    name: "Coordinates",
+    blurb:
+      "Read and plot points in all four quadrants, and solve coordinate problems using midpoints and distances.",
+    gradient: "from-lime-400 to-green-500",
+    order: 30,
+    load: () => import("./algebra/coordinates").then((m) => m.questions),
+  },
+  {
+    slug: "straight-line-graphs",
+    id: "gcse.algebra.straight-line-graphs",
+    name: "Straight-line graphs",
+    blurb:
+      "Plot $y = mx + c$, read off gradients and intercepts, and find the equation of a line from a gradient and point or from two points.",
+    gradient: "from-green-400 to-emerald-500",
+    order: 31,
+    load: () => import("./algebra/straight-line-graphs").then((m) => m.questions),
+  },
+  {
+    slug: "gradient-and-intercepts",
+    id: "gcse.algebra.gradient-intercept",
+    name: "Gradient and intercepts",
+    blurb:
+      "Read, find and interpret gradients and intercepts — from equations, graphs and real-life contexts such as costs, speeds and rates of change.",
+    gradient: "from-emerald-400 to-teal-500",
+    order: 32,
+    load: () => import("./algebra/gradient-and-intercepts").then((m) => m.questions),
+  },
+  {
+    slug: "parallel-and-perpendicular-lines",
+    id: "gcse.algebra.parallel-perp",
+    name: "Parallel and perpendicular lines",
+    blurb:
+      "Use the gradient rules — equal gradients for parallel, negative reciprocals for perpendicular — to test lines, find equations and solve coordinate-geometry problems.",
+    gradient: "from-teal-400 to-cyan-500",
+    order: 33,
+    load: () => import("./algebra/parallel-and-perpendicular-lines").then((m) => m.questions),
+  },
+  {
+    slug: "quadratic-graphs",
+    id: "gcse.algebra.quadratic-graphs",
+    name: "Quadratic graphs",
+    blurb:
+      "Plot and sketch parabolas, find roots, intercepts, the turning point and line of symmetry, and solve quadratic equations graphically.",
+    gradient: "from-cyan-400 to-sky-500",
+    order: 34,
+    load: () => import("./algebra/quadratic-graphs").then((m) => m.questions),
+  },
+  {
+    slug: "cubic-and-reciprocal-graphs",
+    id: "gcse.algebra.cubic-reciprocal-graphs",
+    name: "Cubic and reciprocal graphs",
+    blurb:
+      "Recognise, plot and sketch cubic and reciprocal curves — roots and repeated roots, turning points, asymptotes, symmetry and inverse-proportion contexts.",
+    gradient: "from-sky-400 to-blue-500",
+    order: 35,
+    load: () => import("./algebra/cubic-and-reciprocal-graphs").then((m) => m.questions),
+  },
+  {
+    slug: "real-life-graphs",
+    id: "gcse.algebra.real-life-graphs",
+    name: "Real-life graphs",
+    blurb:
+      "Read and interpret context graphs — distance–time and speed–time, conversion graphs, cost and rate-of-change graphs — using gradient, area and shape.",
+    gradient: "from-blue-400 to-indigo-500",
+    order: 36,
+    load: () => import("./algebra/real-life-graphs").then((m) => m.questions),
+  },
+  {
+    slug: "linear-equations",
+    id: "gcse.algebra.linear-equations",
+    name: "Linear equations",
+    blurb:
+      "Solve linear equations — one- and two-step, brackets, unknowns on both sides, fractions and fractional coefficients — using inverse operations and balancing.",
+    gradient: "from-indigo-400 to-purple-500",
+    order: 37,
+    load: () => import("./algebra/linear-equations").then((m) => m.questions),
+  },
+  {
+    slug: "quadratics-by-factorising",
+    id: "gcse.algebra.quadratics-factorising",
+    name: "Quadratics by factorising",
+    blurb:
+      "Solve quadratic equations by factorising — common factors, difference of two squares, repeated roots and leading coefficients greater than one — including from graphs and real contexts.",
+    gradient: "from-purple-400 to-fuchsia-500",
+    order: 38,
+    load: () => import("./algebra/quadratics-by-factorising").then((m) => m.questions),
+  },
+  {
+    slug: "simultaneous-equations-linear",
+    id: "gcse.algebra.simultaneous-linear",
+    name: "Simultaneous equations (linear)",
+    blurb:
+      "Solve pairs of linear simultaneous equations — by elimination (with and without scaling), substitution and graphically — including forming equations from real contexts.",
+    gradient: "from-fuchsia-400 to-pink-500",
+    order: 39,
+    load: () => import("./algebra/simultaneous-equations-linear").then((m) => m.questions),
+  },
+  {
+    slug: "forming-and-solving",
+    id: "gcse.algebra.forming-equations",
+    name: "Forming and solving",
+    blurb:
+      "Translate real situations — numbers, ages, money, geometry, perimeter and area — into linear and quadratic equations, solve them, and interpret the solutions in context.",
+    gradient: "from-pink-400 to-rose-500",
+    order: 40,
+    load: () => import("./algebra/forming-and-solving").then((m) => m.questions),
+  },
 ];
 
 export const subtopicBySlug = (slug: string): SubtopicEntry | undefined =>

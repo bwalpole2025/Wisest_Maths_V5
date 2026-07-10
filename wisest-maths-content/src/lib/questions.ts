@@ -189,6 +189,17 @@ import { questions as gcseFactorisingQuadratics } from "@/data/questions/gcse/al
 import { questions as gcseIndexLaws } from "@/data/questions/gcse/algebra/index-laws";
 import { questions as gcseRearrangingFormulae } from "@/data/questions/gcse/algebra/rearranging-formulae";
 import { questions as gcseIdentitiesAndArgument } from "@/data/questions/gcse/algebra/identities-and-argument";
+import { questions as gcseCoordinates } from "@/data/questions/gcse/algebra/coordinates";
+import { questions as gcseStraightLineGraphs } from "@/data/questions/gcse/algebra/straight-line-graphs";
+import { questions as gcseGradientAndIntercepts } from "@/data/questions/gcse/algebra/gradient-and-intercepts";
+import { questions as gcseParallelPerpendicular } from "@/data/questions/gcse/algebra/parallel-and-perpendicular-lines";
+import { questions as gcseQuadraticGraphs } from "@/data/questions/gcse/algebra/quadratic-graphs";
+import { questions as gcseCubicReciprocalGraphs } from "@/data/questions/gcse/algebra/cubic-and-reciprocal-graphs";
+import { questions as gcseRealLifeGraphs } from "@/data/questions/gcse/algebra/real-life-graphs";
+import { questions as gcseLinearEquations } from "@/data/questions/gcse/algebra/linear-equations";
+import { questions as gcseQuadraticsFactorising } from "@/data/questions/gcse/algebra/quadratics-by-factorising";
+import { questions as gcseSimultaneousLinear } from "@/data/questions/gcse/algebra/simultaneous-equations-linear";
+import { questions as gcseFormingSolving } from "@/data/questions/gcse/algebra/forming-and-solving";
 
 export { slugForSubtopicId };
 
@@ -377,6 +388,17 @@ export const allQuestions: Question[] = [
   ...gcseIndexLaws,
   ...gcseRearrangingFormulae,
   ...gcseIdentitiesAndArgument,
+  ...gcseCoordinates,
+  ...gcseStraightLineGraphs,
+  ...gcseGradientAndIntercepts,
+  ...gcseParallelPerpendicular,
+  ...gcseQuadraticGraphs,
+  ...gcseCubicReciprocalGraphs,
+  ...gcseRealLifeGraphs,
+  ...gcseLinearEquations,
+  ...gcseQuadraticsFactorising,
+  ...gcseSimultaneousLinear,
+  ...gcseFormingSolving,
 ];
 
 export function getQuestionById(id: string): Question | undefined {
